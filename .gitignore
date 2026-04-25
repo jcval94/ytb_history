@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+
+# Preserve compressed historical outputs
+!data/snapshots/**/*.jsonl.gz
+!data/deltas/**/*.jsonl.gz

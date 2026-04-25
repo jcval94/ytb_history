@@ -10,6 +10,7 @@ Sistema en **Python** para monitorear canales de YouTube durante 6 meses usando 
 - Usar `channels.list` solamente para resolver `channel_id` y `uploads_playlist_id`.
 - Usar `playlistItems.list` para descubrir videos nuevos desde el uploads playlist del canal.
 - Usar `videos.list` para enriquecer y actualizar métricas de videos en batches de hasta 50 IDs.
+- En tests, evitar llamadas reales a APIs externas y usar mocks/stubs/fakes.
 - Mantener bajo consumo de cuota y registrar un reporte de cuota estimada en cada ejecución.
 - No guardar secretos en el repositorio. La API key debe venir de la variable de entorno `YOUTUBE_API_KEY`.
 - El código debe ser modular, testeable y claro.
