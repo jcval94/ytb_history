@@ -148,8 +148,9 @@ Editar `config/settings.yaml`:
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Usa `YOUTUBE_API_KEY` desde GitHub Secrets.
-- Hace commit únicamente cuando hay cambios en `data/`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`.
+- Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
+- Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 
 Configurar el secret en GitHub:
 1. `Settings` > `Secrets and variables` > `Actions`
