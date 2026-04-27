@@ -81,14 +81,32 @@ python -m ytb_history.cli run
 python -m ytb_history.cli validate-latest
 ```
 
-## 9) Tests
+
+## 9) Exportar última corrida
+
+```bash
+python -m ytb_history.cli export-latest
+```
+
+Genera una carpeta particionada en `data/exports/dt=YYYY-MM-DD/run=HHMMSSZ/` con:
+- `latest_snapshots.csv`
+- `latest_deltas.csv`
+- `video_growth_summary.csv`
+- `export_summary.json`
+
+Notas:
+- No llama la API de YouTube.
+- No modifica snapshots, deltas ni catálogo actual.
+- `tags` en `latest_snapshots.csv` se exporta como **JSON string** estable UTF-8 (por ejemplo: `["python", "datos"]`).
+
+## 10) Tests
 
 ```bash
 python -m compileall src tests
 pytest -q
 ```
 
-## 10) Configuración de canales
+## 11) Configuración de canales
 
 Editar `config/channels.py`:
 
@@ -98,7 +116,7 @@ CHANNEL_URLS = [
 ]
 ```
 
-## 11) Configuración de settings
+## 12) Configuración de settings
 
 Editar `config/settings.yaml`:
 - `discovery_window_days`
@@ -107,7 +125,7 @@ Editar `config/settings.yaml`:
 - `operational_quota_limit`
 - `max_pages_per_channel`
 
-## 12) Archivos generados
+## 13) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
@@ -118,7 +136,7 @@ Editar `config/settings.yaml`:
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/discovery_report.jsonl`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/channel_errors.jsonl`
 
-## 13) GitHub Actions
+## 14) GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
@@ -139,14 +157,14 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-## 14) Interpretación de status
+## 15) Interpretación de status
 
 - `success`
 - `success_with_warnings`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 15) Troubleshooting
+## 16) Troubleshooting
 
 - **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
@@ -154,7 +172,7 @@ Configurar el secret en GitHub:
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
-## 16) Seguridad
+## 17) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.

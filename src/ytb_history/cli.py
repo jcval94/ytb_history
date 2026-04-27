@@ -6,6 +6,7 @@ import argparse
 import json
 
 from ytb_history.orchestrator import run_dry_run, run_pipeline
+from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.validation_service import validate_latest_run
 
 
@@ -23,6 +24,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     validate_parser = sub.add_parser("validate-latest", help="Validate latest run artifacts")
     validate_parser.add_argument("--data-dir", default="data")
+
+    export_parser = sub.add_parser("export-latest", help="Export latest run artifacts to CSV")
+    export_parser.add_argument("--data-dir", default="data")
     return parser
 
 
@@ -42,6 +46,11 @@ def main() -> int:
 
     if args.command == "validate-latest":
         summary = validate_latest_run(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "export-latest":
+        summary = export_latest_run(data_dir=args.data_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
