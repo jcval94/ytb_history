@@ -129,6 +129,18 @@ class VideoDelta:
 
 
 @dataclass(slots=True)
+class SnapshotPersistenceResult:
+    snapshot_path: str
+    delta_path: str
+    snapshots_written: int
+    deltas_written: int
+    previous_snapshot_found: bool
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+@dataclass(slots=True)
 class QuotaReport:
     execution_date: datetime
     estimated_units: dict[str, int]
