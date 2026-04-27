@@ -22,14 +22,37 @@ def make_dt_partition(execution_date: datetime) -> str:
     return f"dt={execution_date_utc.strftime('%Y-%m-%d')}"
 
 
-def snapshot_path_for_run(execution_date: datetime, base_dir: str | Path = "data/snapshots") -> Path:
+def _run_dir(execution_date: datetime, base_dir: str | Path) -> Path:
     root = Path(base_dir)
-    return root / make_dt_partition(execution_date) / f"run={make_run_id(execution_date)}" / "snapshots.jsonl.gz"
+    return root / make_dt_partition(execution_date) / f"run={make_run_id(execution_date)}"
+
+
+def snapshot_path_for_run(execution_date: datetime, base_dir: str | Path = "data/snapshots") -> Path:
+    return _run_dir(execution_date, base_dir) / "snapshots.jsonl.gz"
 
 
 def delta_path_for_run(execution_date: datetime, base_dir: str | Path = "data/deltas") -> Path:
-    root = Path(base_dir)
-    return root / make_dt_partition(execution_date) / f"run={make_run_id(execution_date)}" / "deltas.jsonl.gz"
+    return _run_dir(execution_date, base_dir) / "deltas.jsonl.gz"
+
+
+def report_dir_for_run(execution_date: datetime, base_dir: str | Path = "data/reports") -> Path:
+    return _run_dir(execution_date, base_dir)
+
+
+def quota_report_path_for_run(execution_date: datetime, base_dir: str | Path = "data/reports") -> Path:
+    return report_dir_for_run(execution_date, base_dir=base_dir) / "quota_report.json"
+
+
+def run_summary_path_for_run(execution_date: datetime, base_dir: str | Path = "data/reports") -> Path:
+    return report_dir_for_run(execution_date, base_dir=base_dir) / "run_summary.json"
+
+
+def discovery_report_path_for_run(execution_date: datetime, base_dir: str | Path = "data/reports") -> Path:
+    return report_dir_for_run(execution_date, base_dir=base_dir) / "discovery_report.jsonl"
+
+
+def channel_errors_path_for_run(execution_date: datetime, base_dir: str | Path = "data/reports") -> Path:
+    return report_dir_for_run(execution_date, base_dir=base_dir) / "channel_errors.jsonl"
 
 
 def extract_execution_date_from_snapshot_path(path: Path) -> datetime | None:
