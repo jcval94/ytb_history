@@ -20,6 +20,8 @@ def test_monitor_has_required_settings() -> None:
     content = _read(".github/workflows/monitor.yml")
     assert "contents: write" in content
     assert "concurrency:" in content
+    assert "group: youtube-monitor" in content
+    assert "cancel-in-progress: false" in content
     assert "${{ secrets.YOUTUBE_API_KEY }}" in content
     assert "git add data/" in content
     assert "git add ." not in content
@@ -27,11 +29,15 @@ def test_monitor_has_required_settings() -> None:
     assert "python -m ytb_history.cli export-latest" in content
 
     run_pos = content.find("python -m ytb_history.cli run")
+    test_pos = content.find("pytest -q")
     validate_pos = content.find("python -m ytb_history.cli validate-latest")
     export_pos = content.find("python -m ytb_history.cli export-latest")
     assert run_pos != -1
+    assert test_pos != -1
     assert validate_pos != -1
     assert export_pos != -1
+    assert content.count("python -m ytb_history.cli run") == 1
+    assert test_pos < run_pos
     assert run_pos < validate_pos < export_pos
 
 
@@ -40,3 +46,8 @@ def test_workflows_do_not_use_search_list() -> None:
     monitor_content = _read(".github/workflows/monitor.yml")
     assert "search.list" not in ci_content
     assert "search.list" not in monitor_content
+
+
+def test_ci_does_not_require_youtube_api_key_secret() -> None:
+    ci_content = _read(".github/workflows/ci.yml")
+    assert "YOUTUBE_API_KEY" not in ci_content
