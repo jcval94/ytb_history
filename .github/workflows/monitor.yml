@@ -45,6 +45,12 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python -m ytb_history.cli run
 
+      - name: Validate latest run
+        run: python -m ytb_history.cli validate-latest
+
+      - name: Export latest run
+        run: python -m ytb_history.cli export-latest
+
       - name: Commit and push data changes
         run: |
           git config user.name "youtube-tracker-bot"
