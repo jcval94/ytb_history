@@ -112,6 +112,18 @@ def test_list_playlist_items_includes_page_token_only_when_passed(youtube_module
     assert params_with_token["pageToken"] == "TOKEN"
 
 
+
+
+def test_get_videos_by_ids_fields_include_snippet_channel_id(youtube_module) -> None:
+    get_mock = Mock(return_value=_response(200))
+    youtube_module.requests.get = get_mock
+    client = youtube_module.YouTubeClient(api_key="test-key")
+
+    client.get_videos_by_ids(["a"])
+
+    params = get_mock.call_args.kwargs["params"]
+    assert "snippet(channelId,channelTitle,title,description,publishedAt,tags,thumbnails)" in params["fields"]
+
 def test_get_videos_by_ids_joins_ids(youtube_module) -> None:
     get_mock = Mock(return_value=_response(200))
     youtube_module.requests.get = get_mock

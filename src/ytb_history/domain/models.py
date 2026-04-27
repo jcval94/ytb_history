@@ -70,6 +70,7 @@ class TrackedVideoRecord:
 @dataclass(slots=True)
 class VideoSnapshot:
     execution_date: datetime
+    channel_id: str
     channel_name: str
     video_id: str
     title: str
@@ -87,6 +88,20 @@ class VideoSnapshot:
         data["execution_date"] = self.execution_date.isoformat()
         data["upload_date"] = self.upload_date.isoformat()
         return data
+
+
+@dataclass(slots=True)
+class EnrichmentResult:
+    snapshots: list[VideoSnapshot]
+    unavailable_video_ids: list[str]
+    errors: list[str]
+
+    def to_dict(self) -> dict:
+        return {
+            "snapshots": [snapshot.to_dict() for snapshot in self.snapshots],
+            "unavailable_video_ids": list(self.unavailable_video_ids),
+            "errors": list(self.errors),
+        }
 
 
 @dataclass(slots=True)
