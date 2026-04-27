@@ -1,0 +1,58 @@
+name: YouTube Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          python -m pip install -r requirements.txt
+
+      - name: Compile
+        run: python -m compileall src tests
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Dry run
+        run: python -m ytb_history.cli dry-run
+
+      - name: Run monitor pipeline
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python -m ytb_history.cli run
+
+      - name: Commit and push data changes
+        run: |
+          git config user.name "youtube-tracker-bot"
+          git config user.email "youtube-tracker-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update YouTube tracking data $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
