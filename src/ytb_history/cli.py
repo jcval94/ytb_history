@@ -5,13 +5,20 @@ from __future__ import annotations
 import argparse
 import json
 
-from ytb_history.orchestrator import run_pipeline
+from ytb_history.orchestrator import run_dry_run, run_pipeline
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="ytb_history")
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("run", help="Run scaffold pipeline")
+
+    run_parser = sub.add_parser("run", help="Run daily pipeline")
+    run_parser.add_argument("--settings", default="config/settings.yaml")
+    run_parser.add_argument("--data-dir", default="data")
+
+    dry_run_parser = sub.add_parser("dry-run", help="Estimate quota without API calls")
+    dry_run_parser.add_argument("--settings", default="config/settings.yaml")
+    dry_run_parser.add_argument("--data-dir", default="data")
     return parser
 
 
@@ -20,7 +27,12 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.command == "run":
-        summary = run_pipeline()
+        summary = run_pipeline(settings_path=args.settings, data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "dry-run":
+        summary = run_dry_run(settings_path=args.settings, data_dir=args.data_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
