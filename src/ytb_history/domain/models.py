@@ -23,6 +23,33 @@ class ChannelRecord:
 
 
 @dataclass(slots=True)
+class ChannelDiscoveryReport:
+    channel_id: str
+    channel_name: str
+    uploads_playlist_id: str
+    pages_read: int
+    videos_seen: int
+    videos_recent: int
+    stopped_reason: str
+    error_message: str | None = None
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class DiscoveryResult:
+    recent_video_ids: list[str]
+    channel_reports: list[ChannelDiscoveryReport]
+
+    def to_dict(self) -> dict:
+        return {
+            "recent_video_ids": list(self.recent_video_ids),
+            "channel_reports": [report.to_dict() for report in self.channel_reports],
+        }
+
+
+@dataclass(slots=True)
 class TrackedVideoRecord:
     video_id: str
     channel_id: str
