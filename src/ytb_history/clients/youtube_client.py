@@ -30,7 +30,7 @@ class YouTubeClient:
         "snippet/title,snippet/channelTitle,snippet/publishedAt,snippet/thumbnails)"
     )
     _FIELDS_VIDEOS = (
-        "items(id,snippet(channelTitle,title,description,publishedAt,tags,thumbnails),"
+        "items(id,snippet(channelId,channelTitle,title,description,publishedAt,tags,thumbnails),"
         "contentDetails(duration),statistics(viewCount,likeCount,commentCount))"
     )
 

@@ -16,6 +16,7 @@ def _snap(
 ) -> VideoSnapshot:
     return VideoSnapshot(
         execution_date=datetime(2026, 4, 25, tzinfo=timezone.utc),
+        channel_id="UC1",
         channel_name="channel",
         video_id=video_id,
         title=title,
