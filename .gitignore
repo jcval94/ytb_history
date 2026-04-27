@@ -5,6 +5,9 @@ __pycache__/
 .env
 .DS_Store
 
-# Preserve compressed historical outputs
+# Keep data artifacts versioned
 !data/snapshots/**/*.jsonl.gz
 !data/deltas/**/*.jsonl.gz
+!data/reports/**/*.json
+!data/reports/**/*.jsonl
+!data/state/*.jsonl
