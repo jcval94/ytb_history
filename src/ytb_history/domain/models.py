@@ -149,6 +149,9 @@ class QuotaReport:
     warning_limit: int
     soft_warning_limit: int
     limit_status: str
+    observed_units: dict[str, int] = field(default_factory=dict)
+    total_observed_units: int = 0
+    should_abort: bool = False
 
     def to_dict(self) -> dict:
         data = asdict(self)
@@ -165,6 +168,13 @@ class RunSummary:
     channels_failed: int
     videos_discovered: int
     videos_tracked: int
+    videos_snapshotted: int = 0
+    videos_unavailable: int = 0
+    snapshot_path: str | None = None
+    delta_path: str | None = None
+    quota_status: str | None = None
+    estimated_quota_units: int = 0
+    observed_quota_units: int = 0
     errors: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
