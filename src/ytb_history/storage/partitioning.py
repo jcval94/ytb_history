@@ -55,6 +55,27 @@ def channel_errors_path_for_run(execution_date: datetime, base_dir: str | Path =
     return report_dir_for_run(execution_date, base_dir=base_dir) / "channel_errors.jsonl"
 
 
+
+
+def export_dir_for_run(execution_date: datetime, base_dir: str | Path = "data/exports") -> Path:
+    return _run_dir(execution_date, base_dir)
+
+
+def latest_snapshots_csv_path_for_run(execution_date: datetime, base_dir: str | Path = "data/exports") -> Path:
+    return export_dir_for_run(execution_date, base_dir=base_dir) / "latest_snapshots.csv"
+
+
+def latest_deltas_csv_path_for_run(execution_date: datetime, base_dir: str | Path = "data/exports") -> Path:
+    return export_dir_for_run(execution_date, base_dir=base_dir) / "latest_deltas.csv"
+
+
+def growth_summary_csv_path_for_run(execution_date: datetime, base_dir: str | Path = "data/exports") -> Path:
+    return export_dir_for_run(execution_date, base_dir=base_dir) / "video_growth_summary.csv"
+
+
+def export_summary_path_for_run(execution_date: datetime, base_dir: str | Path = "data/exports") -> Path:
+    return export_dir_for_run(execution_date, base_dir=base_dir) / "export_summary.json"
+
 def extract_execution_date_from_snapshot_path(path: Path) -> datetime | None:
     dt_raw: str | None = None
     run_raw: str | None = None
