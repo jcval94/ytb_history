@@ -75,14 +75,20 @@ python -m ytb_history.cli dry-run
 python -m ytb_history.cli run
 ```
 
-## 8) Tests
+## 8) Validar última corrida
+
+```bash
+python -m ytb_history.cli validate-latest
+```
+
+## 9) Tests
 
 ```bash
 python -m compileall src tests
 pytest -q
 ```
 
-## 9) Configuración de canales
+## 10) Configuración de canales
 
 Editar `config/channels.py`:
 
@@ -92,7 +98,7 @@ CHANNEL_URLS = [
 ]
 ```
 
-## 10) Configuración de settings
+## 11) Configuración de settings
 
 Editar `config/settings.yaml`:
 - `discovery_window_days`
@@ -101,7 +107,7 @@ Editar `config/settings.yaml`:
 - `operational_quota_limit`
 - `max_pages_per_channel`
 
-## 11) Archivos generados
+## 12) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
@@ -112,7 +118,7 @@ Editar `config/settings.yaml`:
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/discovery_report.jsonl`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/channel_errors.jsonl`
 
-## 12) GitHub Actions
+## 13) GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
@@ -133,14 +139,14 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-## 13) Interpretación de status
+## 14) Interpretación de status
 
 - `success`
 - `success_with_warnings`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 14) Troubleshooting
+## 15) Troubleshooting
 
 - **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
@@ -148,7 +154,7 @@ Configurar el secret en GitHub:
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
-## 15) Seguridad
+## 16) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.

@@ -69,6 +69,37 @@ def test_cli_dry_run_calls_run_dry_run_once(monkeypatch, capsys) -> None:
     assert json.loads(out)["total_estimated_units"] == 100
 
 
+def test_cli_validate_latest_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "validate_latest_run",
+        lambda **kwargs: {"status": "success", "latest_report_dir": kwargs["data_dir"]},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "validate-latest", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "latest_report_dir": "custom/data"}
+
+
+def test_cli_validate_latest_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "validate_latest_run", lambda **_kwargs: {"status": "failed"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "validate-latest"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "failed"
+
+
 def test_build_parser_has_exact_subcommands() -> None:
     parser = cli.build_parser()
     subcommands: set[str] = set()
@@ -78,4 +109,4 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run"}
+    assert subcommands == {"run", "dry-run", "validate-latest"}
