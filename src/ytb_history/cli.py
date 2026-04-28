@@ -13,6 +13,9 @@ from ytb_history.services.brief_service import generate_weekly_brief
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.model_dataset_service import build_model_dataset
+from ytb_history.services.model_artifact_registry_service import build_model_artifact_registry_report
+from ytb_history.services.model_training_service import train_baseline_model, register_trained_artifact
+from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services.validation_service import validate_latest_run
 
 
@@ -52,6 +55,27 @@ def build_parser() -> argparse.ArgumentParser:
 
     model_parser = sub.add_parser("build-model-dataset", help="Build supervised model-ready dataset and readiness report")
     model_parser.add_argument("--data-dir", default="data")
+
+    registry_parser = sub.add_parser("model-artifact-registry-report", help="Build artifact-based model registry readiness report")
+    registry_parser.add_argument("--data-dir", default="data")
+    registry_parser.add_argument("--modeling-config", default="config/modeling.yaml")
+
+    train_parser = sub.add_parser("train-baseline-model", help="Train baseline model and write artifact directory")
+    train_parser.add_argument("--data-dir", default="data")
+    train_parser.add_argument("--modeling-config", default="config/modeling.yaml")
+    train_parser.add_argument("--artifact-dir", default="build/model_artifact")
+
+    register_parser = sub.add_parser("register-trained-artifact", help="Register trained model artifact into model registry manifests")
+    register_parser.add_argument("--artifact-name", required=True)
+    register_parser.add_argument("--workflow-run-id", required=True)
+    register_parser.add_argument("--artifact-dir", default="build/model_artifact")
+    register_parser.add_argument("--data-dir", default="data")
+
+    predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
+    predict_parser.add_argument("--model-dir", required=True)
+    predict_parser.add_argument("--data-dir", default="data")
+    predict_parser.add_argument("--output-dir", default="data/predictions")
+    predict_parser.add_argument("--allow-historical-supervised-fallback", action="store_true")
     return parser
 
 
@@ -106,6 +130,36 @@ def main() -> int:
 
     if args.command == "build-model-dataset":
         summary = build_model_dataset(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "model-artifact-registry-report":
+        summary = build_model_artifact_registry_report(data_dir=args.data_dir, modeling_config_path=args.modeling_config)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "train-baseline-model":
+        summary = train_baseline_model(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "register-trained-artifact":
+        summary = register_trained_artifact(
+            artifact_name=args.artifact_name,
+            workflow_run_id=args.workflow_run_id,
+            artifact_dir=args.artifact_dir,
+            data_dir=args.data_dir,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "predict-with-model-artifact":
+        summary = predict_with_model_artifact(
+            model_dir=args.model_dir,
+            data_dir=args.data_dir,
+            output_dir=args.output_dir,
+            allow_historical_supervised_fallback=args.allow_historical_supervised_fallback,
+        )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

@@ -1,0 +1,99 @@
+name: Predict With Model Artifact
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Train Baseline Model"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  predict:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          python -m pip install -r requirements.txt
+
+      - name: Build model dataset
+        run: python -m ytb_history.cli build-model-dataset
+
+      - name: Read latest model manifest
+        id: manifest
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path('data/model_registry/latest_model_manifest.json').read_text(encoding='utf-8'))
+          artifact_name = manifest.get('artifact_name', '')
+          workflow_run_id = str(manifest.get('workflow_run_id', '') or '')
+          with open(Path.cwd() / 'manifest_outputs.txt', 'w', encoding='utf-8') as handle:
+              handle.write(f"artifact_name={artifact_name}\n")
+              handle.write(f"workflow_run_id={workflow_run_id}\n")
+          print(json.dumps({'artifact_name': artifact_name, 'workflow_run_id': workflow_run_id}, ensure_ascii=False))
+          PY
+          cat manifest_outputs.txt >> "$GITHUB_OUTPUT"
+
+
+      - name: Skip message when no valid artifact
+        if: steps.manifest.outputs.artifact_name == '' || steps.manifest.outputs.workflow_run_id == ''
+        run: echo "No valid model artifact registered; skipping predictions"
+
+      - name: Download model artifact
+        if: steps.manifest.outputs.artifact_name != '' && steps.manifest.outputs.workflow_run_id != ''
+        uses: actions/download-artifact@v5
+        with:
+          name: ${{ steps.manifest.outputs.artifact_name }}
+          run-id: ${{ steps.manifest.outputs.workflow_run_id }}
+          github-token: ${{ github.token }}
+          path: downloaded_model
+
+      - name: List downloaded files
+        if: steps.manifest.outputs.artifact_name != '' && steps.manifest.outputs.workflow_run_id != ''
+        run: find downloaded_model -maxdepth 3 -type f -print
+
+      - name: Predict with downloaded model
+        if: steps.manifest.outputs.artifact_name != '' && steps.manifest.outputs.workflow_run_id != ''
+        run: |
+          python -m ytb_history.cli predict-with-model-artifact \
+            --model-dir downloaded_model \
+            --data-dir data \
+            --output-dir data/predictions
+
+      - name: Upload predictions artifact
+        if: steps.manifest.outputs.artifact_name != '' && steps.manifest.outputs.workflow_run_id != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: ytb-model-predictions-${{ github.run_id }}
+          path: data/predictions
+          retention-days: 30
+
+      - name: Commit prediction summary
+        if: steps.manifest.outputs.artifact_name != '' && steps.manifest.outputs.workflow_run_id != ''
+        run: |
+          git config user.name "youtube-tracker-bot"
+          git config user.email "youtube-tracker-bot@users.noreply.github.com"
+          git add data/predictions/prediction_summary.json
+          if git diff --cached --quiet; then
+            echo "No summary changes to commit"
+            exit 0
+          fi
+          git commit -m "Update model prediction summary for run ${{ github.run_id }}"
+          git push

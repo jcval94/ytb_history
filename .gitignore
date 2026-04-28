@@ -11,3 +11,7 @@ __pycache__/
 !data/reports/**/*.json
 !data/reports/**/*.jsonl
 !data/state/*.jsonl
+
+# Model training temporary artifacts (never commit binaries)
+build/model_artifact/
+*.joblib

@@ -87,6 +87,78 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _build_latest_inference_examples(
+    *,
+    data_root: Path,
+    allowed_features: list[str],
+) -> tuple[list[dict[str, Any]], list[str]]:
+    warnings: list[str] = []
+    analytics_latest = data_root / "analytics" / "latest"
+    required_paths = {
+        "video_metrics": analytics_latest / "latest_video_metrics.csv",
+        "video_scores": analytics_latest / "latest_video_scores.csv",
+        "video_advanced": analytics_latest / "latest_video_advanced_metrics.csv",
+        "channel_advanced": analytics_latest / "latest_channel_advanced_metrics.csv",
+        "title_metrics": analytics_latest / "latest_title_metrics.csv",
+    }
+
+    loaded_rows: dict[str, list[dict[str, str]]] = {}
+    for key, path in required_paths.items():
+        if not path.exists():
+            warnings.append(f"Missing inference source file: {path}")
+            loaded_rows[key] = []
+            continue
+        loaded_rows[key] = _read_csv(path)
+
+    base_rows = loaded_rows["video_metrics"]
+    if not base_rows:
+        return [], warnings
+
+    video_scores = {row.get("video_id", ""): row for row in loaded_rows["video_scores"] if row.get("video_id")}
+    video_advanced = {row.get("video_id", ""): row for row in loaded_rows["video_advanced"] if row.get("video_id")}
+    title_metrics = {row.get("video_id", ""): row for row in loaded_rows["title_metrics"] if row.get("video_id")}
+    channel_advanced = {row.get("channel_id", ""): row for row in loaded_rows["channel_advanced"] if row.get("channel_id")}
+
+    out_rows: list[dict[str, Any]] = []
+    for row in base_rows:
+        video_id = str(row.get("video_id", "")).strip()
+        if not video_id:
+            continue
+        channel_id = str(row.get("channel_id", "")).strip()
+        score_row = video_scores.get(video_id, {})
+        advanced_row = video_advanced.get(video_id, {})
+        title_row = title_metrics.get(video_id, {})
+        channel_row = channel_advanced.get(channel_id, {})
+
+        merged = {
+            **row,
+            **score_row,
+            **advanced_row,
+            **title_row,
+            **channel_row,
+        }
+
+        inference_row: dict[str, Any] = {
+            "video_id": video_id,
+            "execution_date": merged.get("execution_date", ""),
+            "channel_id": channel_id,
+            "channel_name": merged.get("channel_name", ""),
+            "title": merged.get("title", ""),
+        }
+        for feature in allowed_features:
+            value = merged.get(feature)
+            if feature in {"duration_bucket"}:
+                inference_row[feature] = value or ""
+            elif feature in {"is_short", "has_number", "has_question", "has_ai_word", "has_finance_word", "metadata_changed"}:
+                inference_row[feature] = _to_bool_str(value)
+            else:
+                numeric = _safe_float(value)
+                inference_row[feature] = numeric if numeric is not None else ""
+        out_rows.append(inference_row)
+
+    return out_rows, warnings
+
+
 def _percentile_threshold(values: list[float], q: float) -> float:
     if not values:
         return 0.0
@@ -354,9 +426,15 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
         "target_dictionary": modeling_dir / "target_dictionary.json",
         "leakage_audit": modeling_dir / "leakage_audit.json",
         "model_readiness_report": modeling_dir / "model_readiness_report.json",
+        "latest_inference_examples": modeling_dir / "latest_inference_examples.csv",
     }
 
+    latest_inference_rows, inference_warnings = _build_latest_inference_examples(data_root=data_root, allowed_features=allowed_features)
+    warnings.extend(inference_warnings)
+    inference_columns = ["video_id", "execution_date", "channel_id", "channel_name", "title", *allowed_features]
+
     _write_csv(outputs["supervised_examples"], all_columns, output_rows)
+    _write_csv(outputs["latest_inference_examples"], inference_columns, latest_inference_rows)
     _write_json(outputs["feature_dictionary"], feature_dictionary)
     _write_json(outputs["target_dictionary"], target_dictionary)
     _write_json(outputs["leakage_audit"], leakage_audit)

@@ -114,6 +114,26 @@ def _prepare_dataset(tmp_path: Path) -> Path:
         [{"video_id": "v1", "alpha_score": 70, "opportunity_score": 60}],
     )
     _write_csv(
+        data_dir / "analytics" / "latest" / "latest_video_metrics.csv",
+        ["video_id", "execution_date", "channel_id", "channel_name", "title", "views_delta", "engagement_rate", "comment_rate", "video_age_days", "duration_bucket", "is_short", "metadata_changed"],
+        [
+            {
+                "video_id": "v1",
+                "execution_date": "2026-04-08T00:00:00+00:00",
+                "channel_id": "c1",
+                "channel_name": "Canal 1",
+                "title": "AI 2026?",
+                "views_delta": 80,
+                "engagement_rate": 0.06,
+                "comment_rate": 0.012,
+                "video_age_days": 9,
+                "duration_bucket": "short",
+                "is_short": True,
+                "metadata_changed": False,
+            }
+        ],
+    )
+    _write_csv(
         data_dir / "analytics" / "latest" / "latest_video_advanced_metrics.csv",
         ["video_id", "trend_burst_score", "evergreen_score", "packaging_problem_score", "metric_confidence_score", "channel_relative_success_score"],
         [{"video_id": "v1", "trend_burst_score": 30, "evergreen_score": 50, "packaging_problem_score": 20, "metric_confidence_score": 80, "channel_relative_success_score": 55}],
@@ -144,6 +164,7 @@ def test_build_model_dataset_generates_required_outputs(tmp_path: Path) -> None:
     assert (modeling / "target_dictionary.json").exists()
     assert (modeling / "leakage_audit.json").exists()
     assert (modeling / "model_readiness_report.json").exists()
+    assert (modeling / "latest_inference_examples.csv").exists()
 
 
 def test_build_model_dataset_targets_and_leakage_rules(tmp_path: Path) -> None:
@@ -186,3 +207,16 @@ def test_build_model_dataset_no_api_no_search_list_and_writes_only_modeling(tmp_
     created = updated - existing
     assert created
     assert all(str(path).startswith("modeling/") for path in created)
+
+
+def test_latest_inference_examples_excludes_targets_and_future_columns(tmp_path: Path) -> None:
+    data_dir = _prepare_dataset(tmp_path)
+
+    build_model_dataset(data_dir=data_dir)
+
+    rows = list(csv.DictReader((data_dir / "modeling" / "latest_inference_examples.csv").open("r", encoding="utf-8", newline="")))
+    assert rows
+    columns = set(rows[0].keys())
+    assert all(not column.startswith("future_") for column in columns)
+    assert "is_top_growth_7d" not in columns
+    assert "outperforms_channel_7d" not in columns

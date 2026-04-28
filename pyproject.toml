@@ -9,7 +9,7 @@ description = "YouTube historical monitor scaffold"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{name = "ytb_history"}]
-dependencies = []
+dependencies = ["PyYAML>=6.0", "requests>=2.31", "scikit-learn>=1.5", "joblib>=1.4"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
