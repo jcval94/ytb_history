@@ -8,6 +8,7 @@ import json
 from ytb_history.orchestrator import run_dry_run, run_pipeline
 from ytb_history.services.analytics_service import build_analytics
 from ytb_history.services.export_service import export_latest_run
+from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.validation_service import validate_latest_run
 
 
@@ -31,6 +32,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     analytics_parser = sub.add_parser("build-analytics", help="Build latest analytics data mart")
     analytics_parser.add_argument("--data-dir", default="data")
+
+    pages_parser = sub.add_parser("build-pages-dashboard", help="Build static dashboard data for GitHub Pages")
+    pages_parser.add_argument("--data-dir", default="data")
+    pages_parser.add_argument("--site-dir", default="site")
     return parser
 
 
@@ -60,6 +65,11 @@ def main() -> int:
 
     if args.command == "build-analytics":
         summary = build_analytics(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "build-pages-dashboard":
+        summary = build_pages_dashboard(data_dir=args.data_dir, site_dir=args.site_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

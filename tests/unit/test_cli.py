@@ -172,4 +172,44 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard"}
+
+
+def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_pages_dashboard",
+        lambda **kwargs: {
+            "status": "success",
+            "site_dir": kwargs["site_dir"],
+            "row_counts": {},
+            "warnings": [],
+            "files_written": [],
+        },
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        ["ytb_history", "build-pages-dashboard", "--data-dir", "custom/data", "--site-dir", "custom/site"],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["site_dir"] == "custom/site"
+
+
+def test_cli_build_pages_dashboard_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_pages_dashboard", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-pages-dashboard"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"

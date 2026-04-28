@@ -131,14 +131,37 @@ Además, incluye scores robustos (percentiles + robust_z), métricas de éxito p
 
 `dashboard_index.json` funciona como contrato de integración para el próximo **Dashboard MVP**: el dashboard debe leer este índice para descubrir tablas, rutas, vistas recomendadas, ordenamientos por defecto y KPIs sugeridos, en lugar de hardcodear rutas/columnas.
 
-## 11) Tests
+
+## 11) Construir dashboard estático
+
+```bash
+python -m ytb_history.cli build-pages-dashboard
+```
+
+Lee `data/analytics/` y genera artefactos JSON en `site/data/` listos para publicar en GitHub Pages. Además copia el Dashboard MVP estático (`HTML/CSS/JS` vanilla) desde `apps/pages_dashboard/src/` a `site/` (`index.html` y `assets/`) usando rutas relativas compatibles con subpath de GitHub Pages.
+
+El dashboard no usa Streamlit ni backend: consume exclusivamente `./data/*.json`, tolera faltantes mostrando warnings visuales y mantiene navegación por secciones (Overview, Videos, Channels, Scores, Advanced, Titles, Periods y Data Quality).
+
+
+## 12) Dashboard en GitHub Pages
+
+1. Activa GitHub Pages en `Settings > Pages`.
+2. En `Source`, selecciona `GitHub Actions`.
+3. Ejecuta el workflow **Deploy Dashboard to GitHub Pages** (manual o por cambios en rutas configuradas).
+4. URL esperada del dashboard publicado:
+   - `https://jcval94.github.io/ytb_history/`
+5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
+
+El workflow de Pages construye analytics + dashboard estático y publica únicamente el artefacto `site/`.
+
+## 13) Tests
 
 ```bash
 python -m compileall src tests
 pytest -q
 ```
 
-## 12) Configuración de canales
+## 14) Configuración de canales
 
 Editar `config/channels.py`:
 
@@ -148,7 +171,7 @@ CHANNEL_URLS = [
 ]
 ```
 
-## 13) Configuración de settings
+## 15) Configuración de settings
 
 Editar `config/settings.yaml`:
 - `discovery_window_days`
@@ -158,7 +181,7 @@ Editar `config/settings.yaml`:
 - `max_pages_per_channel`
 - `execution_timezone` (`local` por defecto, o zona IANA como `America/Mexico_City`)
 
-## 14) Archivos generados
+## 16) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
@@ -169,7 +192,7 @@ Editar `config/settings.yaml`:
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/discovery_report.jsonl`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/channel_errors.jsonl`
 
-## 15) GitHub Actions
+## 17) GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
@@ -191,14 +214,14 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-## 16) Interpretación de status
+## 18) Interpretación de status
 
 - `success`
 - `success_with_warnings`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 17) Troubleshooting
+## 19) Troubleshooting
 
 - **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
@@ -206,7 +229,7 @@ Configurar el secret en GitHub:
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
-## 18) Seguridad
+## 20) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.

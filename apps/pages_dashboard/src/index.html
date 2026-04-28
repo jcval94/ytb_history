@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Intelligence Dashboard</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>YouTube Intelligence Dashboard</h1>
+        <p id="generated-at">Generated: --</p>
+      </div>
+      <div class="header-meta">
+        <span id="data-status" class="badge">Data status: loading</span>
+        <span id="videos-count" class="badge">Videos: --</span>
+        <span id="channels-count" class="badge">Channels: --</span>
+      </div>
+    </header>
+
+    <section id="warnings" class="warnings"></section>
+
+    <section class="filters">
+      <input id="global-filter" type="search" placeholder="Global search (title/channel/video)" />
+      <select id="channel-filter"><option value="">All channels</option></select>
+      <select id="duration-filter">
+        <option value="">All durations</option>
+        <option value="short">short</option>
+        <option value="mid">mid</option>
+        <option value="long">long</option>
+      </select>
+      <select id="horizon-filter">
+        <option value="all">all</option>
+        <option value="short_term">short_term</option>
+        <option value="mid_term">mid_term</option>
+        <option value="long_term">long_term</option>
+      </select>
+      <button id="reset-filters" type="button">Reset filters</button>
+    </section>
+
+    <section id="kpis" class="kpi-grid"></section>
+
+    <nav class="tabs" id="tabs">
+      <button data-tab="overview" class="active">Overview</button>
+      <button data-tab="videos">Videos</button>
+      <button data-tab="channels">Channels</button>
+      <button data-tab="scores">Scores</button>
+      <button data-tab="advanced">Advanced</button>
+      <button data-tab="titles">Titles</button>
+      <button data-tab="periods">Periods</button>
+      <button data-tab="data-quality">Data Quality</button>
+    </nav>
+
+    <main>
+      <section id="tab-overview" class="tab-panel active"></section>
+      <section id="tab-videos" class="tab-panel"></section>
+      <section id="tab-channels" class="tab-panel"></section>
+      <section id="tab-scores" class="tab-panel"></section>
+      <section id="tab-advanced" class="tab-panel"></section>
+      <section id="tab-titles" class="tab-panel"></section>
+      <section id="tab-periods" class="tab-panel"></section>
+      <section id="tab-data-quality" class="tab-panel"></section>
+    </main>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

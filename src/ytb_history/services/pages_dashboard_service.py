@@ -1,0 +1,239 @@
+"""Static dashboard builder for GitHub Pages artifacts."""
+
+from __future__ import annotations
+
+import csv
+import json
+import shutil
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+TABLE_SPECS: tuple[tuple[str, str], ...] = (
+    ("latest_video_metrics", "analytics/latest/latest_video_metrics.csv"),
+    ("latest_channel_metrics", "analytics/latest/latest_channel_metrics.csv"),
+    ("latest_video_scores", "analytics/latest/latest_video_scores.csv"),
+    ("latest_video_advanced_metrics", "analytics/latest/latest_video_advanced_metrics.csv"),
+    ("latest_channel_advanced_metrics", "analytics/latest/latest_channel_advanced_metrics.csv"),
+    ("latest_title_metrics", "analytics/latest/latest_title_metrics.csv"),
+    ("latest_metric_eligibility", "analytics/latest/latest_metric_eligibility.csv"),
+    ("channel_baselines", "analytics/baselines/channel_baselines.csv"),
+    ("video_lifecycle_metrics", "analytics/baselines/video_lifecycle_metrics.csv"),
+    ("period_daily_video_metrics", "analytics/periods/grain=daily/video_metrics.csv"),
+    ("period_weekly_video_metrics", "analytics/periods/grain=weekly/video_metrics.csv"),
+    ("period_monthly_video_metrics", "analytics/periods/grain=monthly/video_metrics.csv"),
+    ("period_daily_channel_metrics", "analytics/periods/grain=daily/channel_metrics.csv"),
+    ("period_weekly_channel_metrics", "analytics/periods/grain=weekly/channel_metrics.csv"),
+    ("period_monthly_channel_metrics", "analytics/periods/grain=monthly/channel_metrics.csv"),
+)
+
+FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")
+ASSET_FILES: tuple[str, ...] = (
+    "assets/styles.css",
+    "assets/app.js",
+    "assets/formatters.js",
+    "assets/tables.js",
+    "assets/charts.js",
+)
+PLACEHOLDER_HTML = "Dashboard build placeholder. Frontend pending."
+
+
+def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path = "site") -> dict[str, Any]:
+    """Build static dashboard JSON artifacts for GitHub Pages."""
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+    data_root = Path(data_dir)
+    site_root = Path(site_dir)
+    _resolve_output(site_root, "data").mkdir(parents=True, exist_ok=True)
+    _resolve_output(site_root, "assets").mkdir(parents=True, exist_ok=True)
+
+    warnings: list[str] = []
+    files_written: list[str] = []
+    row_counts: dict[str, int] = {}
+
+    dashboard_index_path = data_root / "analytics" / "latest" / "dashboard_index.json"
+    analytics_manifest_path = data_root / "analytics" / "latest" / "analytics_manifest.json"
+
+    dashboard_index = _read_json_or_empty(dashboard_index_path, "dashboard_index", warnings)
+    analytics_manifest = _read_json_or_empty(analytics_manifest_path, "analytics_manifest", warnings)
+
+    files_written.append(_write_json(site_root, "data/dashboard_index.json", dashboard_index))
+    files_written.append(_write_json(site_root, "data/analytics_manifest.json", analytics_manifest))
+
+    tables: list[str] = []
+    for table_name, csv_relative in TABLE_SPECS:
+        tables.append(table_name)
+        csv_path = data_root / csv_relative
+        table_payload = _csv_to_table_json(table_name=table_name, csv_path=csv_path, generated_at=generated_at, warnings=warnings)
+        row_counts[table_name] = int(table_payload["row_count"])
+        files_written.append(_write_json(site_root, f"data/{table_name}.json", table_payload))
+
+    site_manifest = {
+        "generated_at": generated_at,
+        "source_dashboard_index": str(dashboard_index_path),
+        "source_analytics_manifest": str(analytics_manifest_path),
+        "tables": tables,
+        "row_counts": row_counts,
+        "warnings": warnings,
+        "schema_version": "pages_dashboard_v1",
+    }
+    files_written.append(_write_json(site_root, "data/site_manifest.json", site_manifest))
+
+    files_written.extend(_copy_frontend_assets(site_root=site_root, warnings=warnings))
+
+    status = "success" if not warnings else "success_with_warnings"
+    return {
+        "status": status,
+        "site_dir": str(site_root),
+        "files_written": files_written,
+        "warnings": warnings,
+        "row_counts": row_counts,
+    }
+
+
+def _copy_frontend_assets(*, site_root: Path, warnings: list[str]) -> list[str]:
+    template_root = FRONTEND_TEMPLATE_ROOT
+    written: list[str] = []
+
+    index_source = template_root / "index.html"
+    if index_source.exists():
+        written.append(_copy_file(site_root, index_source, "index.html"))
+    else:
+        warnings.append(f"Missing frontend template: {index_source}")
+        index_path = _resolve_output(site_root, "index.html")
+        if not index_path.exists():
+            index_path.write_text(PLACEHOLDER_HTML, encoding="utf-8")
+            written.append(str(index_path))
+
+    for relative_asset in ASSET_FILES:
+        source = template_root / relative_asset
+        if not source.exists():
+            warnings.append(f"Missing frontend asset: {source}")
+            continue
+        written.append(_copy_file(site_root, source, relative_asset))
+
+    return written
+
+
+def _copy_file(site_root: Path, source: Path, destination_relative: str) -> str:
+    destination = _resolve_output(site_root, destination_relative)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, destination)
+    return str(destination)
+
+
+def _read_json_or_empty(path: Path, name: str, warnings: list[str]) -> dict[str, Any]:
+    if not path.exists():
+        warnings.append(f"Missing required JSON input: {path}")
+        return {}
+
+    try:
+        with path.open("r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except json.JSONDecodeError:
+        warnings.append(f"Invalid JSON in {name}: {path}")
+        return {}
+
+    if isinstance(payload, dict):
+        return payload
+
+    warnings.append(f"Unexpected JSON payload type in {name}: {path}")
+    return {}
+
+
+def _csv_to_table_json(*, table_name: str, csv_path: Path, generated_at: str, warnings: list[str]) -> dict[str, Any]:
+    if not csv_path.exists():
+        warnings.append(f"Missing CSV input for {table_name}: {csv_path}")
+        return {
+            "name": table_name,
+            "generated_at": generated_at,
+            "row_count": 0,
+            "columns": [],
+            "rows": [],
+        }
+
+    with csv_path.open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        columns = list(reader.fieldnames or [])
+        rows = [_convert_csv_row(row, columns) for row in reader]
+
+    return {
+        "name": table_name,
+        "generated_at": generated_at,
+        "row_count": len(rows),
+        "columns": columns,
+        "rows": rows,
+    }
+
+
+def _convert_csv_row(row: dict[str, str | None], columns: list[str]) -> dict[str, Any]:
+    return {column: _convert_csv_value(row.get(column)) for column in columns}
+
+
+def _convert_csv_value(raw_value: str | None) -> Any:
+    if raw_value is None:
+        return None
+
+    value = raw_value.strip()
+    if value == "":
+        return None
+
+    if value == "True":
+        return True
+    if value == "False":
+        return False
+
+    if _looks_like_int(value):
+        try:
+            return int(value)
+        except ValueError:
+            return raw_value
+
+    if _looks_like_float(value):
+        try:
+            return float(value)
+        except ValueError:
+            return raw_value
+
+    return raw_value
+
+
+def _looks_like_int(value: str) -> bool:
+    if value.startswith(("+", "-")):
+        return value[1:].isdigit()
+    return value.isdigit()
+
+
+def _looks_like_float(value: str) -> bool:
+    if any(marker in value for marker in ("e", "E", "inf", "nan", "Infinity", "NaN")):
+        return False
+
+    signless = value[1:] if value.startswith(("+", "-")) else value
+    if signless.count(".") != 1:
+        return False
+
+    left, right = signless.split(".", maxsplit=1)
+    if left == "" and right == "":
+        return False
+
+    left_ok = left == "" or left.isdigit()
+    right_ok = right == "" or right.isdigit()
+    return left_ok and right_ok
+
+
+def _resolve_output(site_root: Path, relative_path: str) -> Path:
+    destination = (site_root / relative_path).resolve()
+    root_resolved = site_root.resolve()
+    try:
+        destination.relative_to(root_resolved)
+    except ValueError as exc:
+        raise ValueError(f"Refusing to write outside site_dir: {destination}") from exc
+    return destination
+
+
+def _write_json(site_root: Path, relative_path: str, payload: dict[str, Any]) -> str:
+    destination = _resolve_output(site_root, relative_path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with destination.open("w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2)
+    return str(destination)
