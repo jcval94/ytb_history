@@ -71,9 +71,15 @@ async function init() {
   setDataStatus(Array.isArray(manifest.warnings) && manifest.warnings.length ? "warning" : "ready");
   (manifest.warnings || []).forEach(pushWarning);
 
+  const TEXT_DATA_KEYS = new Set([
+    "latestWeeklyBriefHtml",
+    "latestModelSuiteReportHtml",
+    "latestContentDriverReportHtml"
+  ]);
+
   for (const [key, path] of Object.entries(DATA_FILES)) {
     if (key === "manifest") continue;
-    if (key === "latestWeeklyBriefHtml") {
+    if (TEXT_DATA_KEYS.has(key)) {
       state.data[key] = await fetchText(path);
       continue;
     }
