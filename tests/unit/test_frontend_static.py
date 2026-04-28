@@ -87,6 +87,15 @@ def test_app_js_data_files_no_duplicate_period_monthly_channel_without_comma() -
     assert app_js.count('periodMonthlyChannel: "./data/period_monthly_channel_metrics.json"') == 1
 
 
+
+def test_app_js_treats_html_reports_as_text_fetches() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert '"latestWeeklyBriefHtml"' in app_js
+    assert '"latestModelSuiteReportHtml"' in app_js
+    assert '"latestContentDriverReportHtml"' in app_js
+    assert "if (TEXT_DATA_KEYS.has(key))" in app_js
+    assert "state.data[key] = await fetchText(path);" in app_js
+
 def test_readme_has_no_streamlit_phrase_duplication() -> None:
     readme = _read("README.md")
     assert readme.count("El dashboard no usa Streamlit") == 1
