@@ -21,7 +21,9 @@ const DATA_FILES = {
   alertSummary: "./data/alert_summary.json",
   latestVideoSignals: "./data/latest_video_signals.json",
   latestChannelSignals: "./data/latest_channel_signals.json",
-  latestSignalCandidates: "./data/latest_signal_candidates.json"
+  latestSignalCandidates: "./data/latest_signal_candidates.json",
+  latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
+  latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"
 };
 
 const state = {
@@ -51,6 +53,10 @@ async function init() {
 
   for (const [key, path] of Object.entries(DATA_FILES)) {
     if (key === "manifest") continue;
+    if (key === "latestWeeklyBriefHtml") {
+      state.data[key] = await fetchText(path);
+      continue;
+    }
     state.data[key] = await fetchJson(path);
   }
 
@@ -76,6 +82,22 @@ async function fetchJson(path, { required = false } = {}) {
   }
 }
 
+async function fetchText(path, { required = false } = {}) {
+  try {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    return await response.text();
+  } catch (error) {
+    const label = `Could not load ${path}: ${error instanceof Error ? error.message : String(error)}`;
+    if (required) {
+      pushWarning(`Required file missing. ${label}`);
+    } else {
+      pushWarning(label);
+    }
+    return "";
+  }
+}
+
 function bindTabs() {
   const tabs = document.querySelector("#tabs");
   if (!tabs) return;
@@ -83,12 +105,18 @@ function bindTabs() {
     button.addEventListener("click", () => {
       const tab = button.getAttribute("data-tab");
       if (!tab) return;
-      tabs.querySelectorAll("button").forEach((item) => item.classList.remove("active"));
-      document.querySelectorAll(".tab-panel").forEach((panel) => panel.classList.remove("active"));
-      button.classList.add("active");
-      document.querySelector(`#tab-${tab}`)?.classList.add("active");
+      activateTab(tab);
     });
   });
+}
+
+function activateTab(tab) {
+  const tabs = document.querySelector("#tabs");
+  if (!tabs) return;
+  tabs.querySelectorAll("button").forEach((item) => item.classList.remove("active"));
+  document.querySelectorAll(".tab-panel").forEach((panel) => panel.classList.remove("active"));
+  tabs.querySelector(`button[data-tab="${tab}"]`)?.classList.add("active");
+  document.querySelector(`#tab-${tab}`)?.classList.add("active");
 }
 
 function bindFilters() {
@@ -158,6 +186,7 @@ function renderAll() {
   renderPeriods();
   renderAlerts();
   renderDataQuality(quality, advanced);
+  renderBrief();
 }
 
 function tableRows(key) {
@@ -230,6 +259,7 @@ function renderOverview(videos, channels, scores) {
     <div id="ov-videos" class="grid-two"></div>
     <div id="ov-channels" class="grid-two"></div>
     <div id="ov-alerts"></div>
+    <div id="ov-brief"></div>
   `;
 
   const topViews = sortRows(videos, "views_delta", "desc").slice(0, 10);
@@ -285,6 +315,22 @@ function renderOverview(videos, channels, scores) {
     topAlertsWrap.innerHTML = `<h3 class="section-title">Signals to watch</h3><ul>${rows}</ul>`;
   }
   panel.querySelector("#ov-alerts")?.append(topAlertsWrap);
+
+  const briefWrap = document.createElement("div");
+  const briefJson = state.data.latestWeeklyBriefJson;
+  const summary = Array.isArray(briefJson?.executive_summary) ? briefJson.executive_summary.slice(0, 3) : [];
+  if (!summary.length) {
+    briefWrap.innerHTML = "<h3 class=\"section-title\">Weekly Brief Highlights</h3><p>No weekly brief generated yet</p>";
+  } else {
+    const items = summary.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("");
+    briefWrap.innerHTML = `
+      <h3 class="section-title">Weekly Brief Highlights</h3>
+      <ul>${items}</ul>
+      <p><button id="go-to-brief" type="button">Go to Brief tab</button></p>
+    `;
+    briefWrap.querySelector("#go-to-brief")?.addEventListener("click", () => activateTab("brief"));
+  }
+  panel.querySelector("#ov-brief")?.append(briefWrap);
 }
 
 function renderVideos(videos) {
@@ -452,6 +498,76 @@ function topAlertsBySeverity(limit = 5) {
 function severityBadge(severity) {
   const value = String(severity || "low").toLowerCase();
   return `<span class="severity-badge severity-${escapeHtml(value)}">${escapeHtml(value)}</span>`;
+}
+
+function renderBrief() {
+  const panel = document.querySelector("#tab-brief");
+  if (!panel) return;
+
+  const briefJson = state.data.latestWeeklyBriefJson;
+  const briefHtml = state.data.latestWeeklyBriefHtml;
+
+  if (briefJson && typeof briefJson === "object" && Object.keys(briefJson).length) {
+    const summary = Array.isArray(briefJson.executive_summary) ? briefJson.executive_summary : [];
+    const keyMetrics = briefJson.key_metrics && typeof briefJson.key_metrics === "object" ? briefJson.key_metrics : {};
+    const actions = Array.isArray(briefJson.top_actions_this_week) ? briefJson.top_actions_this_week : [];
+    const content = Array.isArray(briefJson.top_content_opportunities) ? briefJson.top_content_opportunities : [];
+    const watchlist = Array.isArray(briefJson.watchlist_recommendations) ? briefJson.watchlist_recommendations : [];
+    const alerts = Array.isArray(briefJson.top_alerts) ? briefJson.top_alerts : [];
+    const qualityNotes = Array.isArray(briefJson.data_quality_notes) ? briefJson.data_quality_notes : [];
+
+    const keyMetricsRows = Object.entries(keyMetrics)
+      .map(([metric, value]) => `<tr><td>${escapeHtml(metric)}</td><td>${escapeHtml(String(value))}</td></tr>`)
+      .join("");
+
+    panel.innerHTML = `
+      <h2>Weekly Brief</h2>
+      <h3>Executive Summary</h3>
+      ${summary.length ? `<ul>${summary.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>` : "<p>No executive summary available</p>"}
+
+      <h3>Key Metrics</h3>
+      ${keyMetricsRows ? `<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>${keyMetricsRows}</tbody></table>` : "<p>No key metrics available</p>"}
+
+      <h3>What Actions Should I Take This Week?</h3>
+      <div id="brief-actions"></div>
+
+      <h3>Top Content Opportunities</h3>
+      <div id="brief-content"></div>
+
+      <h3>Watchlist</h3>
+      <div id="brief-watchlist"></div>
+
+      <h3>Alerts to Watch</h3>
+      <div id="brief-alerts"></div>
+
+      <h3>Data Quality Notes</h3>
+      ${qualityNotes.length ? `<ul>${qualityNotes.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>` : "<p>No data quality notes</p>"}
+    `;
+
+    renderTable(panel.querySelector("#brief-actions"), [
+      "priority", "action_type", "recommended_action", "reason", "confidence_level", "decision_score"
+    ], actions, { initialSortKey: "decision_score", title: "Actions" });
+
+    renderTable(panel.querySelector("#brief-content"), [
+      "content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"
+    ], content, { initialSortKey: "evidence_score", title: "Content opportunities" });
+
+    renderTable(panel.querySelector("#brief-watchlist"), [
+      "entity_type", "entity_id", "title", "reason", "watch_priority"
+    ], watchlist, { initialSortKey: "watch_priority", title: "Watchlist" });
+
+    renderTable(panel.querySelector("#brief-alerts"), [
+      "severity", "signal_type", "entity_id", "adjusted_signal_score"
+    ], alerts, { initialSortKey: "adjusted_signal_score", title: "Alerts" });
+    return;
+  }
+
+  if (typeof briefHtml === "string" && briefHtml.trim()) {
+    panel.innerHTML = briefHtml;
+    return;
+  }
+
+  panel.innerHTML = "<p>No weekly brief generated yet</p>";
 }
 
 function renderDataQuality(quality, advanced) {

@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -271,6 +271,68 @@ def test_cli_build_decision_layer_does_not_call_api_flows(monkeypatch, capsys) -
     monkeypatch.setattr(cli, "run_dry_run", _boom)
     monkeypatch.setattr(cli, "build_decision_layer", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "build-decision-layer"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_generate_weekly_brief_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "generate_weekly_brief",
+        lambda **kwargs: {"status": "success", "latest_json_path": f"{kwargs['data_dir']}/briefs/latest_weekly_brief.json"},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-weekly-brief", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["latest_json_path"] == "custom/data/briefs/latest_weekly_brief.json"
+
+
+def test_cli_generate_weekly_brief_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "generate_weekly_brief", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-weekly-brief"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_build_model_dataset_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_model_dataset",
+        lambda **kwargs: {"status": "success", "modeling_dir": kwargs["data_dir"]},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-model-dataset", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["modeling_dir"] == "custom/data"
+
+
+def test_cli_build_model_dataset_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_model_dataset", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-model-dataset"])
 
     code = cli.main()
     out = capsys.readouterr().out

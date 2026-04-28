@@ -36,11 +36,15 @@ def test_pages_workflow_build_order() -> None:
     content = _read(".github/workflows/pages.yml")
     analytics_pos = content.find("python -m ytb_history.cli build-analytics")
     alerts_pos = content.find("python -m ytb_history.cli generate-alerts")
+    decision_pos = content.find("python -m ytb_history.cli build-decision-layer")
+    brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
     pages_pos = content.find("python -m ytb_history.cli build-pages-dashboard")
     assert analytics_pos != -1
     assert alerts_pos != -1
+    assert decision_pos != -1
+    assert brief_pos != -1
     assert pages_pos != -1
-    assert analytics_pos < alerts_pos < pages_pos
+    assert analytics_pos < alerts_pos < decision_pos < brief_pos < pages_pos
 
 
 def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:
@@ -50,6 +54,12 @@ def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:
     assert "git add" not in content
     assert "git push" not in content
     assert "search.list" not in content
+
+
+def test_pages_workflow_trigger_paths_include_brief_inputs() -> None:
+    content = _read(".github/workflows/pages.yml")
+    assert "data/briefs/**" in content
+    assert "src/ytb_history/services/brief_service.py" in content
 
 
 def test_pages_workflow_publishes_site_path() -> None:

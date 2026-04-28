@@ -36,6 +36,12 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("alert_summary", "alerts/alert_summary.json"),
 )
 
+BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
+    ("latest_weekly_brief", "briefs/latest_weekly_brief.json", "json"),
+    ("latest_weekly_brief_markdown", "briefs/latest_weekly_brief.md", "text"),
+    ("latest_weekly_brief_html", "briefs/latest_weekly_brief.html", "text"),
+)
+
 FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")
 ASSET_FILES: tuple[str, ...] = (
     "assets/styles.css",
@@ -84,12 +90,35 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         row_counts[table_name] = _payload_row_count(payload)
         files_written.append(_write_json(site_root, f"data/{table_name}.json", payload))
 
+    brief_outputs: dict[str, str] = {}
+    for brief_name, brief_relative, payload_type in BRIEF_FILE_SPECS:
+        source = data_root / brief_relative
+        destination = f"data/{Path(brief_relative).name}"
+        if payload_type == "json":
+            if source.exists():
+                payload = _read_json_or_empty(source, brief_name, warnings)
+                row_counts[brief_name] = _payload_row_count(payload)
+            else:
+                warnings.append(f"Missing brief JSON input: {source}")
+                payload = {}
+                row_counts[brief_name] = 0
+            files_written.append(_write_json(site_root, destination, payload))
+        else:
+            if source.exists():
+                content = source.read_text(encoding="utf-8")
+            else:
+                warnings.append(f"Missing brief text input: {source}")
+                content = ""
+            files_written.append(_write_text(site_root, destination, content))
+        brief_outputs[brief_name] = destination
+
     site_manifest = {
         "generated_at": generated_at,
         "source_dashboard_index": str(dashboard_index_path),
         "source_analytics_manifest": str(analytics_manifest_path),
         "tables": tables,
         "row_counts": row_counts,
+        "brief_outputs": brief_outputs,
         "warnings": warnings,
         "schema_version": "pages_dashboard_v1",
     }
@@ -252,6 +281,13 @@ def _write_json(site_root: Path, relative_path: str, payload: dict[str, Any]) ->
     destination.parent.mkdir(parents=True, exist_ok=True)
     with destination.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
+    return str(destination)
+
+
+def _write_text(site_root: Path, relative_path: str, content: str) -> str:
+    destination = _resolve_output(site_root, relative_path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(content, encoding="utf-8")
     return str(destination)
 
 

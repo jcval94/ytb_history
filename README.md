@@ -169,7 +169,33 @@ Lee `data/analytics/`, `data/signals/` y `data/alerts/` para generar candidatos 
 
 Esta capa solo convierte señales con `triggered=true` en action candidates reales; señales no disparadas se ignoran y se contabilizan para trazabilidad.
 
-Nota: en este PR, `build-decision-layer` aún no se integra al workflow monitor/pages automático.
+
+## 12.2) Generar brief semanal
+
+```bash
+python -m ytb_history.cli generate-weekly-brief
+```
+
+Genera un brief semanal determinístico en `data/briefs/` usando únicamente artefactos existentes de `analytics`, `signals`, `alerts` y `decision`:
+- `latest_weekly_brief.md`
+- `latest_weekly_brief.html`
+- `latest_weekly_brief.json`
+- versión particionada por semana ISO en `week=YYYY-WW/`
+
+## 12.3) Construir dataset supervisado model-ready
+
+```bash
+python -m ytb_history.cli build-model-dataset
+```
+
+Genera artefactos de preparación para modelado supervisado en `data/modeling/`:
+- `supervised_examples.csv`
+- `feature_dictionary.json`
+- `target_dictionary.json`
+- `leakage_audit.json`
+- `model_readiness_report.json`
+
+Este comando prepara dataset supervisado y auditorías de readiness, pero **no entrena** modelos productivos todavía.
 
 ## 13) Dashboard en GitHub Pages
 
@@ -180,7 +206,7 @@ Nota: en este PR, `build-decision-layer` aún no se integra al workflow monitor/
    - `https://jcval94.github.io/ytb_history/`
 5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
 
-El workflow de Pages construye `build-analytics` → `generate-alerts` → `build-pages-dashboard` y publica únicamente el artefacto `site/`.
+El workflow de Pages construye `build-analytics` → `generate-alerts` → `build-decision-layer` → `generate-weekly-brief` → `build-pages-dashboard` y publica únicamente el artefacto `site/`.
 
 ## 14) Tests
 
@@ -227,6 +253,23 @@ Editar `config/settings.yaml`:
 - `data/alerts/latest_alerts.json`
 - `data/alerts/latest_alerts.md`
 - `data/alerts/alert_summary.json`
+- `data/decision/latest_action_candidates.csv`
+- `data/decision/latest_opportunity_matrix.csv`
+- `data/decision/latest_content_opportunities.csv`
+- `data/decision/latest_watchlist_recommendations.csv`
+- `data/decision/latest_decision_context.json`
+- `data/decision/decision_summary.json`
+- `data/briefs/latest_weekly_brief.md`
+- `data/briefs/latest_weekly_brief.html`
+- `data/briefs/latest_weekly_brief.json`
+- `data/briefs/week=YYYY-WW/weekly_brief.md`
+- `data/briefs/week=YYYY-WW/weekly_brief.html`
+- `data/briefs/week=YYYY-WW/weekly_brief.json`
+- `data/modeling/supervised_examples.csv`
+- `data/modeling/feature_dictionary.json`
+- `data/modeling/target_dictionary.json`
+- `data/modeling/leakage_audit.json`
+- `data/modeling/model_readiness_report.json`
 
 ## 18) GitHub Actions
 
@@ -240,7 +283,7 @@ Editar `config/settings.yaml`:
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `generate-alerts`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `generate-alerts`, `build-decision-layer`, `generate-weekly-brief`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 
@@ -270,4 +313,3 @@ Configurar el secret en GitHub:
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
-
