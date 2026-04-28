@@ -64,6 +64,12 @@ jobs:
       - name: Generate alerts and signals
         run: python -m ytb_history.cli generate-alerts
 
+      - name: Build decision intelligence layer
+        run: python -m ytb_history.cli build-decision-layer
+
+      - name: Generate weekly brief
+        run: python -m ytb_history.cli generate-weekly-brief
+
       - name: Commit and push data changes
         run: |
           git config user.name "youtube-tracker-bot"

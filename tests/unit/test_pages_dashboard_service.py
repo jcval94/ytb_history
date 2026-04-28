@@ -61,6 +61,22 @@ def _prepare_signals_and_alerts(data_dir: Path) -> None:
     )
 
 
+def _prepare_brief(data_dir: Path) -> None:
+    _write_text(
+        data_dir / "briefs" / "latest_weekly_brief.json",
+        json.dumps(
+            {
+                "status": "success",
+                "executive_summary": ["a", "b", "c"],
+                "key_metrics": {"videos_total": 10},
+            },
+            ensure_ascii=False,
+        ),
+    )
+    _write_text(data_dir / "briefs" / "latest_weekly_brief.md", "# Brief\n")
+    _write_text(data_dir / "briefs" / "latest_weekly_brief.html", "<h1>Brief</h1>\n")
+
+
 def test_build_pages_dashboard_warns_when_dashboard_index_missing(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"
@@ -94,6 +110,31 @@ def test_build_pages_dashboard_generates_site_manifest(tmp_path: Path) -> None:
     manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
     assert manifest["schema_version"] == "pages_dashboard_v1"
     assert "latest_video_metrics" in manifest["tables"]
+
+
+def test_build_pages_dashboard_copies_latest_weekly_brief_files(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_brief(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_weekly_brief.json").exists()
+    assert (site_dir / "data" / "latest_weekly_brief.html").exists()
+
+
+def test_site_manifest_includes_latest_weekly_brief_outputs(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_brief(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert "latest_weekly_brief" in manifest["brief_outputs"]
+    assert manifest["brief_outputs"]["latest_weekly_brief"] == "data/latest_weekly_brief.json"
 
 
 def test_build_pages_dashboard_generates_latest_alerts_json_when_source_exists(tmp_path: Path) -> None:
@@ -221,7 +262,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Brief"]:
         assert label in index_html
 
 

@@ -9,9 +9,11 @@ on:
       - data/analytics/**
       - data/signals/**
       - data/alerts/**
+      - data/briefs/**
       - apps/pages_dashboard/**
       - src/ytb_history/services/pages_dashboard_service.py
       - src/ytb_history/services/alerts_service.py
+      - src/ytb_history/services/brief_service.py
       - src/ytb_history/cli.py
       - .github/workflows/pages.yml
 
@@ -64,6 +66,12 @@ jobs:
 
       - name: Generate alerts and signals
         run: python -m ytb_history.cli generate-alerts
+
+      - name: Build decision intelligence layer
+        run: python -m ytb_history.cli build-decision-layer
+
+      - name: Generate weekly brief
+        run: python -m ytb_history.cli generate-weekly-brief
 
       - name: Build pages dashboard
         run: python -m ytb_history.cli build-pages-dashboard

@@ -29,6 +29,9 @@ def test_monitor_has_required_settings() -> None:
     assert "python -m ytb_history.cli export-latest" in content
     assert "python -m ytb_history.cli build-analytics" in content
     assert "python -m ytb_history.cli generate-alerts" in content
+    assert "python -m ytb_history.cli build-decision-layer" in content
+    assert "python -m ytb_history.cli generate-weekly-brief" in content
+    assert "python -m ytb_history.cli build-model-dataset" not in content
     assert "node --check apps/pages_dashboard/src/assets/app.js" in content
     assert "node --check apps/pages_dashboard/src/assets/charts.js" in content
     assert "node --check apps/pages_dashboard/src/assets/formatters.js" in content
@@ -40,6 +43,8 @@ def test_monitor_has_required_settings() -> None:
     export_pos = content.find("python -m ytb_history.cli export-latest")
     analytics_pos = content.find("python -m ytb_history.cli build-analytics")
     alerts_pos = content.find("python -m ytb_history.cli generate-alerts")
+    decision_pos = content.find("python -m ytb_history.cli build-decision-layer")
+    brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
     git_add_pos = content.find("git add data/")
     assert run_pos != -1
     assert test_pos != -1
@@ -47,13 +52,17 @@ def test_monitor_has_required_settings() -> None:
     assert export_pos != -1
     assert analytics_pos != -1
     assert alerts_pos != -1
+    assert decision_pos != -1
+    assert brief_pos != -1
     assert git_add_pos != -1
     assert content.count("python -m ytb_history.cli run") == 1
     assert test_pos < run_pos
-    assert run_pos < validate_pos < export_pos < analytics_pos < alerts_pos < git_add_pos
+    assert run_pos < validate_pos < export_pos < analytics_pos < alerts_pos < decision_pos < brief_pos < git_add_pos
     assert "build-analytics" in content[analytics_pos - 120 : analytics_pos + 120]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[analytics_pos - 200 : analytics_pos + 200]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[alerts_pos - 200 : alerts_pos + 200]
+    assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[decision_pos - 200 : decision_pos + 200]
+    assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[brief_pos - 200 : brief_pos + 200]
 
 
 def test_workflows_do_not_use_search_list() -> None:
@@ -63,6 +72,13 @@ def test_workflows_do_not_use_search_list() -> None:
     assert "search.list" not in ci_content
     assert "search.list" not in monitor_content
     assert "search.list" not in pages_content
+
+
+def test_monitor_and_pages_do_not_run_build_model_dataset_yet() -> None:
+    monitor_content = _read(".github/workflows/monitor.yml")
+    pages_content = _read(".github/workflows/pages.yml")
+    assert "python -m ytb_history.cli build-model-dataset" not in monitor_content
+    assert "python -m ytb_history.cli build-model-dataset" not in pages_content
 
 
 def test_git_add_dot_is_not_used_outside_monitor() -> None:
