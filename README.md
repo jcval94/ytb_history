@@ -99,14 +99,23 @@ Notas:
 - No modifica snapshots, deltas ni catálogo actual.
 - `tags` en `latest_snapshots.csv` se exporta como **JSON string** estable UTF-8 (por ejemplo: `["python", "datos"]`).
 
-## 10) Tests
+
+## 10) Construir capa analítica
+
+```bash
+python -m ytb_history.cli build-analytics
+```
+
+Genera `data/analytics/latest/` con métricas de video, canal, títulos, run y manifest para consumo analítico posterior.
+
+## 11) Tests
 
 ```bash
 python -m compileall src tests
 pytest -q
 ```
 
-## 11) Configuración de canales
+## 12) Configuración de canales
 
 Editar `config/channels.py`:
 
@@ -116,7 +125,7 @@ CHANNEL_URLS = [
 ]
 ```
 
-## 12) Configuración de settings
+## 13) Configuración de settings
 
 Editar `config/settings.yaml`:
 - `discovery_window_days`
@@ -126,7 +135,7 @@ Editar `config/settings.yaml`:
 - `max_pages_per_channel`
 - `execution_timezone` (`local` por defecto, o zona IANA como `America/Mexico_City`)
 
-## 13) Archivos generados
+## 14) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
@@ -137,7 +146,7 @@ Editar `config/settings.yaml`:
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/discovery_report.jsonl`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/channel_errors.jsonl`
 
-## 14) GitHub Actions
+## 15) GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
@@ -159,14 +168,14 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-## 15) Interpretación de status
+## 16) Interpretación de status
 
 - `success`
 - `success_with_warnings`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 16) Troubleshooting
+## 17) Troubleshooting
 
 - **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
@@ -174,7 +183,7 @@ Configurar el secret en GitHub:
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
-## 17) Seguridad
+## 18) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
