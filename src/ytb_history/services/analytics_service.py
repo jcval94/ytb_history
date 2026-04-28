@@ -1540,6 +1540,141 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "warnings": warnings,
     }
 
+    dashboard_index = {
+        "generated_at": _now_iso(),
+        "source_export_dir": str(source_export_dir),
+        "analytics_manifest_path": "data/analytics/latest/analytics_manifest.json",
+        "schema_version": "analytics_v1",
+        "dashboard_ready": True,
+        "primary_tables": {
+            "latest_video_metrics": {
+                "path": "data/analytics/latest/latest_video_metrics.csv",
+                "description": "Métricas principales por video para la última corrida.",
+                "recommended_default_sort": "views_delta desc",
+                "recommended_use": "Vista de videos y ranking de crecimiento por video.",
+            },
+            "latest_channel_metrics": {
+                "path": "data/analytics/latest/latest_channel_metrics.csv",
+                "description": "Resumen agregado por canal para la última corrida.",
+                "recommended_default_sort": "total_views_delta desc",
+                "recommended_use": "Vista de canales y comparación de desempeño agregado.",
+            },
+            "latest_title_metrics": {
+                "path": "data/analytics/latest/latest_title_metrics.csv",
+                "description": "Features de títulos para análisis de packaging y copy.",
+                "recommended_default_sort": "views_delta desc",
+                "recommended_use": "Vista de títulos y análisis de señales semánticas.",
+            },
+            "latest_video_scores": {
+                "path": "data/analytics/latest/latest_video_scores.csv",
+                "description": "Scores robustos por video (alpha, oportunidad y anomalía).",
+                "recommended_default_sort": "alpha_score desc",
+                "recommended_use": "Vista de priorización por score para decisiones rápidas.",
+            },
+            "latest_video_advanced_metrics": {
+                "path": "data/analytics/latest/latest_video_advanced_metrics.csv",
+                "description": "Métricas avanzadas por video con éxito por horizonte y confianza.",
+                "recommended_default_sort": "overall_success_score desc",
+                "recommended_use": "Vista avanzada de performance y diagnóstico por video.",
+            },
+            "latest_channel_advanced_metrics": {
+                "path": "data/analytics/latest/latest_channel_advanced_metrics.csv",
+                "description": "Métricas avanzadas por canal con momentum y consistencia.",
+                "recommended_default_sort": "channel_momentum_score desc",
+                "recommended_use": "Vista avanzada de salud de canal y estabilidad.",
+            },
+            "latest_metric_eligibility": {
+                "path": "data/analytics/latest/latest_metric_eligibility.csv",
+                "description": "Elegibilidad de métricas por horizonte temporal por video.",
+                "recommended_default_sort": "metric_confidence_score asc",
+                "recommended_use": "Vista de data quality y filtros de confiabilidad.",
+            },
+            "channel_baselines": {
+                "path": "data/analytics/baselines/channel_baselines.csv",
+                "description": "Baselines de desempeño por canal para comparaciones relativas.",
+                "recommended_default_sort": "channel_momentum_score desc",
+                "recommended_use": "Vista de baseline y benchmarking entre canales.",
+            },
+            "video_lifecycle_metrics": {
+                "path": "data/analytics/baselines/video_lifecycle_metrics.csv",
+                "description": "Métricas de ciclo de vida por video según edad y velocidad.",
+                "recommended_default_sort": "views_per_day_since_upload desc",
+                "recommended_use": "Vista de lifecycle y detección de evergreen.",
+            },
+            "period_daily_video_metrics": {
+                "path": "data/analytics/periods/grain=daily/video_metrics.csv",
+                "description": "Agregación diaria por video para análisis de tendencia.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de videos en grano diario.",
+            },
+            "period_weekly_video_metrics": {
+                "path": "data/analytics/periods/grain=weekly/video_metrics.csv",
+                "description": "Agregación semanal por video para análisis intersemanal.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de videos en grano semanal.",
+            },
+            "period_monthly_video_metrics": {
+                "path": "data/analytics/periods/grain=monthly/video_metrics.csv",
+                "description": "Agregación mensual por video para evolución macro.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de videos en grano mensual.",
+            },
+            "period_daily_channel_metrics": {
+                "path": "data/analytics/periods/grain=daily/channel_metrics.csv",
+                "description": "Agregación diaria por canal para monitoreo operativo.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de canales en grano diario.",
+            },
+            "period_weekly_channel_metrics": {
+                "path": "data/analytics/periods/grain=weekly/channel_metrics.csv",
+                "description": "Agregación semanal por canal para tendencias de mediano plazo.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de canales en grano semanal.",
+            },
+            "period_monthly_channel_metrics": {
+                "path": "data/analytics/periods/grain=monthly/channel_metrics.csv",
+                "description": "Agregación mensual por canal para lectura ejecutiva.",
+                "recommended_default_sort": "period_views_delta desc",
+                "recommended_use": "Vista temporal de canales en grano mensual.",
+            },
+        },
+        "recommended_dashboard_views": [
+            "overview",
+            "videos",
+            "channels",
+            "scores",
+            "advanced_video_metrics",
+            "advanced_channel_metrics",
+            "titles",
+            "lifecycle",
+            "periods",
+            "data_quality",
+        ],
+        "recommended_view_default_sorts": {
+            "overview": "total_views_delta desc",
+            "videos": "views_delta desc",
+            "scores": "alpha_score desc",
+            "advanced_video_metrics": "overall_success_score desc",
+            "advanced_channel_metrics": "channel_momentum_score desc",
+            "titles": "views_delta desc",
+            "lifecycle": "views_per_day_since_upload desc",
+            "periods": "period_views_delta desc",
+            "data_quality": "metric_confidence_score asc",
+        },
+        "dashboard_kpis": [
+            "videos_total",
+            "channels_total",
+            "total_views_delta",
+            "total_likes_delta",
+            "total_comments_delta",
+            "avg_engagement_rate",
+            "top_alpha_video_id",
+            "top_alpha_video_title",
+            "top_channel_by_growth",
+            "low_confidence_rows",
+        ],
+    }
+
     future_found = [rel for rel in FUTURE_FEATURE_INPUTS if (data_root / rel).exists()]
 
     manifest_outputs = [
@@ -1559,6 +1694,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "analytics/periods/grain=weekly/channel_metrics.csv",
         "analytics/periods/grain=monthly/channel_metrics.csv",
         "analytics/latest/latest_run_metrics.json",
+        "analytics/latest/dashboard_index.json",
         "analytics/latest/analytics_manifest.json",
     ]
     row_counts = {
@@ -1578,6 +1714,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "analytics/periods/grain=weekly/channel_metrics.csv": len(period_outputs["weekly"]["channel_rows"]),
         "analytics/periods/grain=monthly/channel_metrics.csv": len(period_outputs["monthly"]["channel_rows"]),
         "analytics/latest/latest_run_metrics.json": 1,
+        "analytics/latest/dashboard_index.json": 1,
         "analytics/latest/analytics_manifest.json": 1,
     }
 
@@ -1587,6 +1724,9 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "outputs": manifest_outputs,
         "row_counts": row_counts,
         "schema_version": "analytics_v1",
+        "dashboard_ready": True,
+        "dashboard_index_path": "data/analytics/latest/dashboard_index.json",
+        "dashboard_recommended_entrypoint": "data/analytics/latest/dashboard_index.json",
         "scoring_version": "scoring_v1",
         "advanced_metrics_version": "advanced_metrics_v1",
         "success_horizons": {
@@ -1628,6 +1768,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
     period_weekly_channel = analytics_root / "periods" / "grain=weekly" / "channel_metrics.csv"
     period_monthly_channel = analytics_root / "periods" / "grain=monthly" / "channel_metrics.csv"
     output_run = analytics_latest / "latest_run_metrics.json"
+    output_dashboard_index = analytics_latest / "dashboard_index.json"
     output_manifest = analytics_latest / "analytics_manifest.json"
 
     _write_csv(output_video, VIDEO_METRICS_COLUMNS, video_rows)
@@ -1646,6 +1787,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
     _write_csv(period_weekly_channel, PERIOD_CHANNEL_COLUMNS, period_outputs["weekly"]["channel_rows"])
     _write_csv(period_monthly_channel, PERIOD_CHANNEL_COLUMNS, period_outputs["monthly"]["channel_rows"])
     output_run.write_text(json.dumps(run_metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output_dashboard_index.write_text(json.dumps(dashboard_index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     output_manifest.write_text(json.dumps(analytics_manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     analytics_root_abs = analytics_root.resolve()
@@ -1666,6 +1808,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         period_weekly_channel,
         period_monthly_channel,
         output_run,
+        output_dashboard_index,
         output_manifest,
     ]:
         if not path.resolve().is_relative_to(analytics_root_abs):
@@ -1692,6 +1835,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "weekly_channel_metrics_csv": _safe_rel(period_weekly_channel, data_root),
         "monthly_channel_metrics_csv": _safe_rel(period_monthly_channel, data_root),
         "latest_run_metrics_json": _safe_rel(output_run, data_root),
+        "dashboard_index_json": _safe_rel(output_dashboard_index, data_root),
         "analytics_manifest_json": _safe_rel(output_manifest, data_root),
     }
     return result
