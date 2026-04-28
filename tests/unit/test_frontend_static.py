@@ -55,6 +55,8 @@ def test_app_js_contains_render_models() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderModels()" in app_js
     assert "RF importance does not imply direction; direction is estimated with prediction-based directional analysis." in app_js
+    assert "function setDataStatus(" in app_js
+    assert "function setDomainStatus(" in app_js
 
 
 def test_app_js_contains_render_topics_nlp_and_content_drivers() -> None:

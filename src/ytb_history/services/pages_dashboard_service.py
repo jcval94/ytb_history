@@ -74,6 +74,10 @@ ASSET_FILES: tuple[str, ...] = (
     "assets/charts.js",
 )
 PLACEHOLDER_HTML = "Dashboard build placeholder. Frontend pending."
+SLA_POLICY = {
+    "operational_data_status": {"cadence": "daily", "max_age_hours": 36},
+    "ml_data_status": {"cadence": "weekly_or_biweekly", "max_age_hours": 24 * 16},
+}
 
 
 def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path = "site") -> dict[str, Any]:
@@ -157,6 +161,12 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
             files_written.append(_write_text(site_root, destination, content))
         model_report_outputs[report_name] = destination
 
+    freshness = _build_data_freshness(
+        generated_at=generated_at,
+        data_root=data_root,
+    )
+    warnings.extend(freshness["warnings"])
+    notices = list(freshness["notices"])
     site_manifest = {
         "generated_at": generated_at,
         "source_dashboard_index": str(dashboard_index_path),
@@ -165,7 +175,9 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         "row_counts": row_counts,
         "brief_outputs": brief_outputs,
         "model_report_outputs": model_report_outputs,
+        "data_freshness": freshness["blocks"],
         "warnings": warnings,
+        "notices": notices,
         "schema_version": "pages_dashboard_v1",
     }
     files_written.append(_write_json(site_root, "data/site_manifest.json", site_manifest))
@@ -179,6 +191,88 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         "files_written": files_written,
         "warnings": warnings,
         "row_counts": row_counts,
+    }
+
+
+def _build_data_freshness(*, generated_at: str, data_root: Path) -> dict[str, Any]:
+    generated_dt = datetime.fromisoformat(generated_at)
+    blocks = {
+        "operational_data_status": _freshness_block(
+            name="operational_data_status",
+            key_paths=[
+                data_root / "analytics/latest/latest_video_metrics.csv",
+                data_root / "signals/latest_video_signals.csv",
+                data_root / "alerts/latest_alerts.json",
+            ],
+            generated_dt=generated_dt,
+        ),
+        "ml_data_status": _freshness_block(
+            name="ml_data_status",
+            key_paths=[
+                data_root / "model_reports/latest_model_leaderboard.csv",
+                data_root / "model_reports/latest_content_driver_leaderboard.csv",
+                data_root / "model_reports/latest_model_suite_report.html",
+            ],
+            generated_dt=generated_dt,
+        ),
+    }
+
+    warnings: list[str] = []
+    notices: list[str] = []
+    for block_name, block in blocks.items():
+        state = block["state"]
+        if block_name == "operational_data_status" and state in {"not_initialized", "generation_error"}:
+            warnings.append(f"{block_name}: Error real de generación o faltante inesperado.")
+        elif block_name == "ml_data_status" and state in {"not_initialized", "stale_expected"}:
+            notices.append(f"{block_name}: {block['message']}.")
+        elif block_name == "ml_data_status" and state == "generation_error":
+            warnings.append(f"{block_name}: Error real de generación o faltante inesperado.")
+    return {"blocks": blocks, "warnings": warnings, "notices": notices}
+
+
+def _freshness_block(*, name: str, key_paths: list[Path], generated_dt: datetime) -> dict[str, Any]:
+    policy = SLA_POLICY[name]
+    existing = [path for path in key_paths if path.exists()]
+    missing = [str(path) for path in key_paths if not path.exists()]
+    if not existing:
+        return {
+            "cadence": policy["cadence"],
+            "state": "not_initialized",
+            "message": "No inicializado todavía",
+            "latest_source_mtime": None,
+            "missing_inputs": missing,
+        }
+
+    latest_mtime = max(path.stat().st_mtime for path in existing)
+    latest_dt = datetime.fromtimestamp(latest_mtime, tz=timezone.utc)
+    age_hours = (generated_dt - latest_dt).total_seconds() / 3600
+    if age_hours > float(policy["max_age_hours"]):
+        return {
+            "cadence": policy["cadence"],
+            "state": "stale_expected",
+            "message": "Desactualizado",
+            "latest_source_mtime": latest_dt.isoformat(),
+            "age_hours": round(age_hours, 2),
+            "missing_inputs": missing,
+        }
+
+    if missing:
+        return {
+            "cadence": policy["cadence"],
+            "state": "generation_error",
+            "message": "Error real de generación",
+            "latest_source_mtime": latest_dt.isoformat(),
+            "age_hours": round(age_hours, 2),
+            "missing_inputs": missing,
+        }
+
+    return {
+        "cadence": policy["cadence"],
+        "state": "ready",
+        "message": "Datos al día",
+        "latest_source_mtime": latest_dt.isoformat(),
+        "age_hours": round(age_hours, 2),
+        "missing_inputs": [],
     }
 
 

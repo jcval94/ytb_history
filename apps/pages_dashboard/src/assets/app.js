@@ -56,7 +56,8 @@ const state = {
 
 init().catch((error) => {
   pushWarning(`Unexpected error: ${error instanceof Error ? error.message : String(error)}`);
-  setDataStatus("error");
+  setDomainStatus("operational_data_status", { state: "generation_error", message: "Error real de generación" });
+  setDomainStatus("ml_data_status", { state: "generation_error", message: "Error real de generación" });
 });
 
 async function init() {
@@ -68,8 +69,12 @@ async function init() {
   if (!manifest) return;
 
   setGeneratedAt(manifest.generated_at || "");
-  setDataStatus(Array.isArray(manifest.warnings) && manifest.warnings.length ? "warning" : "ready");
+  setDataStatus(manifest.warnings || [], manifest.notices || []);
+  const freshness = manifest.data_freshness || {};
+  setDomainStatus("operational_data_status", freshness.operational_data_status);
+  setDomainStatus("ml_data_status", freshness.ml_data_status);
   (manifest.warnings || []).forEach(pushWarning);
+  (manifest.notices || []).forEach(pushNotice);
 
   const TEXT_DATA_KEYS = new Set([
     "latestWeeklyBriefHtml",
@@ -819,9 +824,29 @@ function setGeneratedAt(value) {
   if (element) element.textContent = `Generated: ${formatDate(value)}`;
 }
 
-function setDataStatus(value) {
-  const element = document.querySelector("#data-status");
-  if (element) element.textContent = `Data status: ${value}`;
+function setDataStatus(warnings, notices) {
+  const statusNode = document.querySelector("#data-status");
+  const warningCount = Array.isArray(warnings) ? warnings.length : 0;
+  const noticeCount = Array.isArray(notices) ? notices.length : 0;
+  const value = warningCount > 0 ? "warning" : noticeCount > 0 ? "ready_with_notices" : "ready";
+  if (statusNode) statusNode.textContent = `Data status: ${value}`;
+}
+
+function setDomainStatus(domain, block) {
+  const mapping = {
+    operational_data_status: "#operational-data-status",
+    ml_data_status: "#ml-data-status"
+  };
+  const label = domain === "operational_data_status" ? "Operational" : "ML";
+  const element = document.querySelector(mapping[domain]);
+  if (!element) return;
+  if (!block || typeof block !== "object") {
+    element.textContent = `${label}: no metadata`;
+    return;
+  }
+  const state = block.state || "unknown";
+  const message = block.message || "Estado desconocido";
+  element.textContent = `${label}: ${state} · ${message}`;
 }
 
 function pushWarning(message) {
@@ -830,6 +855,15 @@ function pushWarning(message) {
   const div = document.createElement("div");
   div.className = "warning";
   div.textContent = message;
+  container.append(div);
+}
+
+function pushNotice(message) {
+  const container = document.querySelector("#notices");
+  if (!container) return;
+  const div = document.createElement("div");
+  div.className = "warning";
+  div.textContent = `Info: ${message}`;
   container.append(div);
 }
 
