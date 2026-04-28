@@ -445,6 +445,7 @@ def test_build_analytics_generates_all_outputs(tmp_path: Path) -> None:
     assert (latest / "latest_channel_advanced_metrics.csv").exists()
     assert (latest / "latest_metric_eligibility.csv").exists()
     assert (latest / "latest_run_metrics.json").exists()
+    assert (latest / "dashboard_index.json").exists()
     assert (latest / "analytics_manifest.json").exists()
     assert (tmp_path / "analytics" / "baselines" / "channel_baselines.csv").exists()
     assert (tmp_path / "analytics" / "baselines" / "video_lifecycle_metrics.csv").exists()
@@ -675,6 +676,66 @@ def test_analytics_manifest_includes_new_outputs_row_counts_and_isolation_forest
     assert manifest["scoring_version"] == "scoring_v1"
     assert manifest["anomaly_method"] == "robust_z"
     assert manifest["isolation_forest_ready"] is False
+
+
+def test_dashboard_index_and_manifest_dashboard_contract(tmp_path: Path) -> None:
+    _prepare_exports(tmp_path)
+    build_analytics(data_dir=tmp_path)
+
+    dashboard_index = json.loads((tmp_path / "analytics" / "latest" / "dashboard_index.json").read_text(encoding="utf-8"))
+    manifest = json.loads((tmp_path / "analytics" / "latest" / "analytics_manifest.json").read_text(encoding="utf-8"))
+
+    assert dashboard_index["dashboard_ready"] is True
+    expected_primary_tables = {
+        "latest_video_metrics",
+        "latest_channel_metrics",
+        "latest_title_metrics",
+        "latest_video_scores",
+        "latest_video_advanced_metrics",
+        "latest_channel_advanced_metrics",
+        "latest_metric_eligibility",
+        "channel_baselines",
+        "video_lifecycle_metrics",
+        "period_daily_video_metrics",
+        "period_weekly_video_metrics",
+        "period_monthly_video_metrics",
+        "period_daily_channel_metrics",
+        "period_weekly_channel_metrics",
+        "period_monthly_channel_metrics",
+    }
+    assert set(dashboard_index["primary_tables"].keys()) == expected_primary_tables
+    assert dashboard_index["recommended_dashboard_views"] == [
+        "overview",
+        "videos",
+        "channels",
+        "scores",
+        "advanced_video_metrics",
+        "advanced_channel_metrics",
+        "titles",
+        "lifecycle",
+        "periods",
+        "data_quality",
+    ]
+    assert dashboard_index["dashboard_kpis"] == [
+        "videos_total",
+        "channels_total",
+        "total_views_delta",
+        "total_likes_delta",
+        "total_comments_delta",
+        "avg_engagement_rate",
+        "top_alpha_video_id",
+        "top_alpha_video_title",
+        "top_channel_by_growth",
+        "low_confidence_rows",
+    ]
+    for table in dashboard_index["primary_tables"].values():
+        assert table["path"].startswith("data/analytics/")
+
+    assert manifest["dashboard_ready"] is True
+    assert manifest["dashboard_index_path"] == "data/analytics/latest/dashboard_index.json"
+    assert manifest["dashboard_recommended_entrypoint"] == "data/analytics/latest/dashboard_index.json"
+    assert "analytics/latest/dashboard_index.json" in manifest["outputs"]
+    assert manifest["row_counts"]["analytics/latest/dashboard_index.json"] == 1
 
 
 def test_analytics_service_no_api_usage() -> None:

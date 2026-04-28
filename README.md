@@ -124,9 +124,12 @@ Genera artefactos analíticos en `data/analytics/`:
   - `periods/grain=weekly/channel_metrics.csv`
   - `periods/grain=monthly/channel_metrics.csv`
 - `latest/latest_run_metrics.json`
+- `latest/dashboard_index.json` (índice dashboard-ready para consumo de UI)
 - `latest/analytics_manifest.json`
 
 Además, incluye scores robustos (percentiles + robust_z), métricas de éxito por horizonte (corto/medio/largo), señales de `trend_burst`, `evergreen_score` y `metric_confidence_score`.
+
+`dashboard_index.json` funciona como contrato de integración para el próximo **Dashboard MVP**: el dashboard debe leer este índice para descubrir tablas, rutas, vistas recomendadas, ordenamientos por defecto y KPIs sugeridos, en lugar de hardcodear rutas/columnas.
 
 ## 11) Tests
 
@@ -178,7 +181,7 @@ Editar `config/settings.yaml`:
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 

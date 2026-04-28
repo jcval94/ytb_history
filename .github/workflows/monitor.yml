@@ -51,6 +51,9 @@ jobs:
       - name: Export latest run
         run: python -m ytb_history.cli export-latest
 
+      - name: Build analytics data mart
+        run: python -m ytb_history.cli build-analytics
+
       - name: Commit and push data changes
         run: |
           git config user.name "youtube-tracker-bot"
