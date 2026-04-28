@@ -33,6 +33,13 @@ def test_index_html_contains_brief_tab() -> None:
     assert "Brief" in index_html
 
 
+def test_index_html_contains_topics_nlp_and_content_drivers_tabs() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="topics"' in index_html
+    assert 'data-tab="nlp"' in index_html
+    assert 'data-tab="content-drivers"' in index_html
+
+
 def test_index_html_contains_models_tab() -> None:
     index_html = _read("apps/pages_dashboard/src/index.html")
     assert 'data-tab="models"' in index_html
@@ -48,6 +55,13 @@ def test_app_js_contains_render_models() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderModels()" in app_js
     assert "RF importance does not imply direction; direction is estimated with prediction-based directional analysis." in app_js
+
+
+def test_app_js_contains_render_topics_nlp_and_content_drivers() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderTopics()" in app_js
+    assert "function renderNlp()" in app_js
+    assert "function renderContentDrivers()" in app_js
 
 
 def test_app_js_data_files_brief_and_signal_candidates_are_unique_and_well_formed() -> None:

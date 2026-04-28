@@ -197,6 +197,58 @@ Genera artefactos de preparación para modelado supervisado en `data/modeling/`:
 
 Este comando prepara dataset supervisado y auditorías de readiness, pero **no entrena** modelos productivos todavía.
 
+
+## 12.4) Construir capa NLP liviana
+
+```bash
+python -m ytb_history.cli build-nlp-features
+```
+
+Genera artefactos reproducibles en `data/nlp_features/` usando diccionarios semánticos + `TF-IDF` (word 1-2 / char 3-5) + `LSA` (`TruncatedSVD`) + clustering `KMeans`:
+- `latest_video_nlp_features.csv`
+- `latest_title_nlp_features.csv`
+- `latest_semantic_vectors.csv`
+- `latest_semantic_clusters.csv`
+- `nlp_feature_summary.json`
+
+Esta capa no llama YouTube API, no usa `search.list`, no usa LLMs y no usa embeddings externos pesados.
+
+
+## 12.5) Construir Topic & Title Intelligence
+
+```bash
+python -m ytb_history.cli build-topic-intelligence
+```
+
+Lee `data/nlp_features/` + `data/analytics/latest/` y, si existen, `data/decision/` y `data/model_intelligence/` para generar inteligencia temática en `data/topic_intelligence/`:
+- `latest_video_topics.csv`
+- `latest_topic_metrics.csv`
+- `latest_title_pattern_metrics.csv`
+- `latest_keyword_metrics.csv`
+- `latest_topic_opportunities.csv`
+- `topic_intelligence_summary.json`
+
+Este comando no llama YouTube API, no usa `search.list`, no usa LLMs ni embeddings externos pesados.
+
+
+## 12.6) Entrenar Content Driver Models supervisados
+
+```bash
+python -m ytb_history.cli train-content-driver-models
+```
+
+Entrena modelos supervisados (Random Forest, lineal regularizado y árbol shallow) con split temporal usando `data/modeling/supervised_examples.csv` + features NLP/tópicas cuando existen.
+
+Genera reportes en `data/model_reports/`:
+- `latest_content_driver_leaderboard.csv`
+- `latest_content_driver_feature_importance.csv`
+- `latest_content_driver_feature_direction.csv`
+- `latest_content_driver_group_importance.csv`
+- `latest_content_driver_report.md`
+- `latest_content_driver_report.html`
+
+Y artefactos fuera de `data/` en `build/content_driver_artifact/` (no se deben versionar modelos en Git).
+
 ## 13) Dashboard en GitHub Pages
 
 1. Activa GitHub Pages en `Settings > Pages`.
@@ -258,6 +310,17 @@ Editar `config/settings.yaml`:
 - `data/decision/latest_content_opportunities.csv`
 - `data/decision/latest_watchlist_recommendations.csv`
 - `data/decision/latest_decision_context.json`
+- `data/nlp_features/latest_video_nlp_features.csv`
+- `data/nlp_features/latest_title_nlp_features.csv`
+- `data/nlp_features/latest_semantic_vectors.csv`
+- `data/nlp_features/latest_semantic_clusters.csv`
+- `data/nlp_features/nlp_feature_summary.json`
+- `data/topic_intelligence/latest_video_topics.csv`
+- `data/topic_intelligence/latest_topic_metrics.csv`
+- `data/topic_intelligence/latest_title_pattern_metrics.csv`
+- `data/topic_intelligence/latest_keyword_metrics.csv`
+- `data/topic_intelligence/latest_topic_opportunities.csv`
+- `data/topic_intelligence/topic_intelligence_summary.json`
 - `data/decision/decision_summary.json`
 - `data/briefs/latest_weekly_brief.md`
 - `data/briefs/latest_weekly_brief.html`
@@ -270,6 +333,12 @@ Editar `config/settings.yaml`:
 - `data/modeling/target_dictionary.json`
 - `data/modeling/leakage_audit.json`
 - `data/modeling/model_readiness_report.json`
+- `data/model_reports/latest_content_driver_leaderboard.csv`
+- `data/model_reports/latest_content_driver_feature_importance.csv`
+- `data/model_reports/latest_content_driver_feature_direction.csv`
+- `data/model_reports/latest_content_driver_group_importance.csv`
+- `data/model_reports/latest_content_driver_report.md`
+- `data/model_reports/latest_content_driver_report.html`
 
 ## 18) GitHub Actions
 

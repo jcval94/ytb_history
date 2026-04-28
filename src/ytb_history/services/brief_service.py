@@ -25,6 +25,14 @@ INPUT_FILES = {
     "video_advanced": Path("analytics/latest/latest_video_advanced_metrics.csv"),
     "channel_advanced": Path("analytics/latest/latest_channel_advanced_metrics.csv"),
     "title_metrics": Path("analytics/latest/latest_title_metrics.csv"),
+    "topic_opportunities": Path("topic_intelligence/latest_topic_opportunities.csv"),
+    "topic_metrics": Path("topic_intelligence/latest_topic_metrics.csv"),
+    "title_pattern_metrics": Path("topic_intelligence/latest_title_pattern_metrics.csv"),
+    "semantic_clusters": Path("nlp_features/latest_semantic_clusters.csv"),
+    "video_nlp_features": Path("nlp_features/latest_video_nlp_features.csv"),
+    "content_driver_leaderboard": Path("model_reports/latest_content_driver_leaderboard.csv"),
+    "content_driver_feature_importance": Path("model_reports/latest_content_driver_feature_importance.csv"),
+    "content_driver_feature_direction": Path("model_reports/latest_content_driver_feature_direction.csv"),
 }
 
 
@@ -190,6 +198,12 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     videos_growth = _sort_desc(tables["video_metrics"], "views_delta")[:10]
     alpha_videos = _sort_desc(tables["video_scores"], "alpha_score")[:10]
     channels_momentum = _sort_desc(tables["channel_advanced"], "channel_momentum_score")[:10]
+    topic_opportunities = _sort_desc(tables["topic_opportunities"], "topic_opportunity_score")[:10]
+    topic_metrics = _sort_desc(tables["topic_metrics"], "topic_opportunity_score")[:10]
+    semantic_clusters = _sort_desc(tables["semantic_clusters"], "semantic_cluster_size")[:10]
+    content_driver_leaderboard = _sort_desc(tables["content_driver_leaderboard"], "spearman_corr")
+    content_driver_importance = _sort_desc(tables["content_driver_feature_importance"], "importance_rank")
+    content_driver_direction = _sort_desc(tables["content_driver_feature_direction"], "direction_score")
 
     alerts_payload = tables["latest_alerts"] if isinstance(tables["latest_alerts"], dict) else {}
     alerts_rows = alerts_payload.get("alerts", []) if isinstance(alerts_payload.get("alerts", []), list) else []
@@ -285,6 +299,12 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "top_videos_by_growth": videos_growth,
         "top_alpha_videos": alpha_videos,
         "top_channels_by_momentum": channels_momentum,
+        "topic_opportunities": topic_opportunities,
+        "topic_metrics": topic_metrics,
+        "semantic_clusters_to_watch": semantic_clusters,
+        "content_driver_leaderboard": content_driver_leaderboard,
+        "content_driver_feature_importance": content_driver_importance,
+        "content_driver_feature_direction": content_driver_direction,
         "top_alerts": top_alerts,
         "title_pattern_snapshot": title_snapshot,
         "data_quality_notes": data_quality_notes,
@@ -354,6 +374,73 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
             ],
         )
     )
+
+    markdown_lines.extend(["", "## Topic Opportunities"])
+    markdown_lines.extend(
+        _tabulate(
+            ["topic", "opportunity_type", "topic_opportunity_score", "recommended_action"],
+            [
+                [
+                    str(row.get("topic", "")),
+                    str(row.get("opportunity_type", "")),
+                    str(row.get("topic_opportunity_score", "")),
+                    str(row.get("recommended_action", "")),
+                ]
+                for row in topic_opportunities
+            ],
+        )
+    )
+
+    markdown_lines.extend(["", "## Title Patterns That Worked"])
+    markdown_lines.extend(
+        _tabulate(
+            ["title_pattern", "video_count", "avg_views_delta", "avg_engagement_rate", "title_pattern_success_score"],
+            [
+                [
+                    str(row.get("title_pattern", "")),
+                    str(row.get("video_count", "")),
+                    str(row.get("avg_views_delta", "")),
+                    str(row.get("avg_engagement_rate", "")),
+                    str(row.get("title_pattern_success_score", "")),
+                ]
+                for row in _sort_desc(tables.get("title_pattern_metrics", []), "title_pattern_success_score")[:10]
+            ],
+        )
+    )
+
+    markdown_lines.extend(["", "## Semantic Clusters to Watch"])
+    markdown_lines.extend(
+        _tabulate(
+            ["video_id", "semantic_cluster_id", "semantic_cluster_label", "cluster_top_terms"],
+            [
+                [
+                    str(row.get("video_id", "")),
+                    str(row.get("semantic_cluster_id", "")),
+                    str(row.get("semantic_cluster_label", "")),
+                    str(row.get("cluster_top_terms", "")),
+                ]
+                for row in semantic_clusters
+            ],
+        )
+    )
+
+    markdown_lines.extend(["", "## Content Drivers"])
+    if content_driver_importance:
+        top_growth = [row for row in content_driver_importance if row.get("target") == "future_log_views_delta_7d"][:5]
+        top_engagement = [row for row in content_driver_importance if row.get("target") == "future_engagement_delta_7d"][:5]
+        pos_direction = [row for row in content_driver_direction if str(row.get("direction", "")).lower() == "positive"][:5]
+        neg_direction = [row for row in content_driver_direction if str(row.get("direction", "")).lower() == "negative"][:5]
+        markdown_lines.extend(["### Variables que maximizan future_log_views_delta_7d"])
+        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_growth] or ["- No data"])
+        markdown_lines.extend(["", "### Variables que maximizan engagement"])
+        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_engagement] or ["- No data"])
+        markdown_lines.extend(["", "### Variables de dirección positiva"])
+        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('direction_method', '')})" for row in pos_direction] or ["- No data"])
+        markdown_lines.extend(["", "### Variables de dirección negativa"])
+        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('direction_method', '')})" for row in neg_direction] or ["- No data"])
+        markdown_lines.extend(["", "Advertencia: estas importancias son predictivas, no causales."])
+    else:
+        markdown_lines.extend(["- Content driver outputs no disponibles en esta corrida."])
 
     markdown_lines.extend(["", "## Opportunity Matrix"])
     markdown_lines.extend(

@@ -37,6 +37,23 @@ jobs:
       - name: Build model dataset
         run: python -m ytb_history.cli build-model-dataset
 
+      - name: Build NLP feature layer
+        run: python -m ytb_history.cli build-nlp-features
+
+      - name: Build topic intelligence
+        run: python -m ytb_history.cli build-topic-intelligence
+
+      - name: Train content driver models
+        run: |
+          report_json="$(python -m ytb_history.cli train-content-driver-models)"
+          echo "$report_json"
+          status="$(python -c 'import json,sys; print(json.load(sys.stdin).get("status", "unknown"))' <<< "$report_json")"
+          if [ "$status" = "success" ] || [ "$status" = "skipped_not_ready" ] || [ "$status" = "skipped_missing_ml_dependencies" ]; then
+            exit 0
+          fi
+          echo "Unexpected train-content-driver-models status: $status"
+          exit 1
+
       - name: Model artifact registry report
         run: python -m ytb_history.cli model-artifact-registry-report
 

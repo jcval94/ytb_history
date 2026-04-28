@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "predict-with-model-artifact"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "train-content-driver-models", "predict-with-model-artifact"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -480,3 +480,130 @@ def test_cli_predict_with_model_artifact_prints_json(monkeypatch, capsys) -> Non
     assert parsed["status"] == "success"
     assert parsed["model_dir"] == "downloaded_model"
     assert parsed["output_dir"] == "custom/predictions"
+
+
+def test_cli_build_nlp_features_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_nlp_features",
+        lambda **kwargs: {"status": "success", "output_dir": f"{kwargs['data_dir']}/nlp_features"},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-nlp-features", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "output_dir": "custom/data/nlp_features"}
+
+
+def test_cli_build_nlp_features_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_nlp_features", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-nlp-features"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_build_topic_intelligence_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_topic_intelligence",
+        lambda **kwargs: {"status": "success", "output_dir": f"{kwargs['data_dir']}/topic_intelligence"},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-topic-intelligence", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "output_dir": "custom/data/topic_intelligence"}
+
+
+def test_cli_build_topic_intelligence_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_topic_intelligence", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-topic-intelligence"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_train_content_driver_models_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "train_content_driver_models",
+        lambda **kwargs: {"status": "success", "artifact_dir": kwargs["artifact_dir"]},
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        ["ytb_history", "train-content-driver-models", "--data-dir", "custom/data", "--artifact-dir", "custom/build"],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "artifact_dir": "custom/build"}
+
+
+def test_cli_train_content_driver_models_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "train_content_driver_models", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "train-content-driver-models"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_build_model_intelligence_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_model_intelligence",
+        lambda **kwargs: {"status": "success", "output_dir": f"{kwargs['data_dir']}/model_intelligence"},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-model-intelligence", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "output_dir": "custom/data/model_intelligence"}
+
+
+def test_cli_build_model_intelligence_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_model_intelligence", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-model-intelligence"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
