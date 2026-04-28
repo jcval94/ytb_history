@@ -112,11 +112,11 @@ def test_train_model_workflow_contract() -> None:
     assert "cron: '30 10 * * 1'" in content
     assert "actions/upload-artifact" in content
     assert "retention-days: 30" in content
-    assert "git add data/model_registry/" in content
+    assert "git add data/model_registry/ data/model_reports/" in content
     assert "git add build/model_artifact" not in content
     assert "YOUTUBE_API_KEY" not in content
     assert "search.list" not in content
-    assert "python -m ytb_history.cli train-baseline-model" in content
+    assert "python -m ytb_history.cli train-model-suite" in content
     assert "python -m ytb_history.cli register-trained-artifact" in content
     assert "git add *.joblib" not in content
 

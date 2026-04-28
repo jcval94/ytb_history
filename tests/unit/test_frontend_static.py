@@ -19,6 +19,8 @@ def test_frontend_js_references_alerts_paths_and_hardening() -> None:
     assert "latestSignalCandidates" in app_js
     assert "latestWeeklyBriefJson" in app_js
     assert "./data/latest_alerts.json" in app_js
+    assert "./data/latest_model_leaderboard.json" in app_js
+    assert "./data/latest_feature_importance.json" in app_js
     assert "./data/latest_weekly_brief.json" in app_js
     assert "search.list" not in app_js
     assert "http://" not in app_js
@@ -31,9 +33,21 @@ def test_index_html_contains_brief_tab() -> None:
     assert "Brief" in index_html
 
 
+def test_index_html_contains_models_tab() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="models"' in index_html
+    assert "Models" in index_html
+
+
 def test_app_js_contains_render_brief() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderBrief()" in app_js
+
+
+def test_app_js_contains_render_models() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderModels()" in app_js
+    assert "RF importance does not imply direction; direction is estimated with prediction-based directional analysis." in app_js
 
 
 def test_app_js_data_files_brief_and_signal_candidates_are_unique_and_well_formed() -> None:

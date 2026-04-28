@@ -1,4 +1,4 @@
-name: Train Baseline Model
+name: Train Model Suite
 
 on:
   workflow_dispatch:
@@ -40,39 +40,39 @@ jobs:
       - name: Model artifact registry report
         run: python -m ytb_history.cli model-artifact-registry-report
 
-      - name: Train baseline model
-        id: train_baseline
+      - name: Train model suite
+        id: train_suite
         run: |
-          report_json="$(python -m ytb_history.cli train-baseline-model)"
+          report_json="$(python -m ytb_history.cli train-model-suite)"
           echo "$report_json"
           train_status="$(python -c 'import json,sys; print(json.load(sys.stdin).get("status", "unknown"))' <<< "$report_json")"
           echo "train_status=$train_status" >> "$GITHUB_OUTPUT"
 
       - name: Upload model artifact
-        if: steps.train_baseline.outputs.train_status == 'success'
+        if: steps.train_suite.outputs.train_status == 'success'
         uses: actions/upload-artifact@v4
         with:
-          name: ytb-model-is-top-growth-7d-${{ github.run_id }}
+          name: ytb-model-suite-${{ github.run_id }}
           path: build/model_artifact
           retention-days: 30
 
       - name: Register trained artifact
-        if: steps.train_baseline.outputs.train_status == 'success'
+        if: steps.train_suite.outputs.train_status == 'success'
         run: |
           python -m ytb_history.cli register-trained-artifact \
-            --artifact-name ytb-model-is-top-growth-7d-${{ github.run_id }} \
+            --artifact-name ytb-model-suite-${{ github.run_id }} \
             --workflow-run-id ${{ github.run_id }} \
             --artifact-dir build/model_artifact
 
       - name: Commit and push model registry updates
-        if: steps.train_baseline.outputs.train_status == 'success'
+        if: steps.train_suite.outputs.train_status == 'success'
         run: |
           git config user.name "youtube-tracker-bot"
           git config user.email "youtube-tracker-bot@users.noreply.github.com"
-          git add data/model_registry/
+          git add data/model_registry/ data/model_reports/
           if git diff --cached --quiet; then
-            echo "No registry changes to commit"
+            echo "No registry/report changes to commit"
             exit 0
           fi
-          git commit -m "Update model artifact registry for run ${{ github.run_id }}"
+          git commit -m "Update model suite registry for run ${{ github.run_id }}"
           git push

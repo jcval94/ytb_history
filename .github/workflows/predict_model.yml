@@ -3,7 +3,7 @@ name: Predict With Model Artifact
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Train Baseline Model"]
+    workflows: ["Train Model Suite"]
     types:
       - completed
 
