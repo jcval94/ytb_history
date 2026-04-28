@@ -77,6 +77,37 @@ def _prepare_brief(data_dir: Path) -> None:
     _write_text(data_dir / "briefs" / "latest_weekly_brief.html", "<h1>Brief</h1>\n")
 
 
+def _prepare_model_reports(data_dir: Path) -> None:
+    _write_text(
+        data_dir / "model_reports" / "latest_model_leaderboard.csv",
+        "model_family,target,champion_metric,champion_metric_value,selected_as_champion,lift_vs_best_baseline\n"
+        "linear_regularized,is_top_growth_7d,precision_at_10,0.9,True,0.2\n",
+    )
+    _write_text(
+        data_dir / "model_reports" / "latest_feature_importance.csv",
+        "model_id,model_family,target,feature,importance_type,importance_value,importance_rank,direction\n"
+        "m1,linear_regularized,is_top_growth_7d,alpha_score,coefficient,0.8,1,positive\n",
+    )
+    _write_text(
+        data_dir / "model_reports" / "latest_feature_direction.csv",
+        "model_id,model_family,target,feature,direction,direction_score,direction_method,low_bin_prediction,high_bin_prediction,notes\n"
+        "m2,random_forest,is_top_growth_7d,views_delta,positive,0.2,quantile_bins,0.3,0.5,estimated\n",
+    )
+    _write_text(data_dir / "model_reports" / "latest_model_suite_report.html", "<h2>Model Suite</h2>")
+    _write_text(
+        data_dir / "model_registry" / "latest_model_manifest.json",
+        json.dumps(
+            {
+                "suite_id": "suite-1",
+                "artifact_name": "ytb-model-suite-1",
+                "workflow_run_id": "1",
+                "expires_at_estimate": "2026-05-01T00:00:00+00:00",
+            },
+            ensure_ascii=False,
+        ),
+    )
+
+
 def test_build_pages_dashboard_warns_when_dashboard_index_missing(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"
@@ -98,6 +129,20 @@ def test_build_pages_dashboard_generates_dashboard_index_json(tmp_path: Path) ->
     output_path = site_dir / "data" / "dashboard_index.json"
     assert output_path.exists()
     assert json.loads(output_path.read_text(encoding="utf-8")) == {"dashboard": "ok"}
+
+
+def test_build_pages_dashboard_includes_model_reports(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_model_reports(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_model_leaderboard.json").exists()
+    assert (site_dir / "data" / "latest_feature_importance.json").exists()
+    assert (site_dir / "data" / "latest_feature_direction.json").exists()
+    assert (site_dir / "data" / "latest_model_suite_report.html").exists()
 
 
 def test_build_pages_dashboard_generates_site_manifest(tmp_path: Path) -> None:
@@ -262,7 +307,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Brief"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Brief"]:
         assert label in index_html
 
 

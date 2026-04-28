@@ -22,6 +22,11 @@ const DATA_FILES = {
   latestVideoSignals: "./data/latest_video_signals.json",
   latestChannelSignals: "./data/latest_channel_signals.json",
   latestSignalCandidates: "./data/latest_signal_candidates.json",
+  latestModelManifest: "./data/latest_model_manifest.json",
+  latestModelLeaderboard: "./data/latest_model_leaderboard.json",
+  latestFeatureImportance: "./data/latest_feature_importance.json",
+  latestFeatureDirection: "./data/latest_feature_direction.json",
+  latestModelSuiteReportHtml: "./data/latest_model_suite_report.html",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
   latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"
 };
@@ -186,6 +191,7 @@ function renderAll() {
   renderPeriods();
   renderAlerts();
   renderDataQuality(quality, advanced);
+  renderModels();
   renderBrief();
 }
 
@@ -583,6 +589,106 @@ function renderDataQuality(quality, advanced) {
   renderTable(document.querySelector("#dq-low"), [
     "title", "channel_name", "metric_confidence_score"
   ], lowConfidenceRows, { initialSortKey: "metric_confidence_score", title: "low confidence rows" });
+}
+
+function renderModels() {
+  const panel = document.querySelector("#tab-models");
+  if (!panel) return;
+
+  const manifest = state.data.latestModelManifest || {};
+  const leaderboard = tableRows("latestModelLeaderboard");
+  const importanceRows = tableRows("latestFeatureImportance");
+  const directionRows = tableRows("latestFeatureDirection");
+  const suiteReportHtml = typeof state.data.latestModelSuiteReportHtml === "string" ? state.data.latestModelSuiteReportHtml : "";
+
+  panel.innerHTML = `
+    <h2>Models</h2>
+    <div id="models-status" class="kpi-grid"></div>
+    <h3 class="section-title">Leaderboard</h3>
+    <div id="models-leaderboard"></div>
+    <h3 class="section-title">Feature Importance</h3>
+    <div class="filters">
+      <select id="models-target-filter"><option value="">All targets</option></select>
+      <select id="models-family-filter"><option value="">All families</option></select>
+    </div>
+    <div id="models-importance"></div>
+    <h3 class="section-title">Linear coefficients</h3>
+    <div id="models-linear-coeff"></div>
+    <h3 class="section-title">Random Forest</h3>
+    <p class="warning">RF importance does not imply direction; direction is estimated with prediction-based directional analysis.</p>
+    <div id="models-rf"></div>
+    <h3 class="section-title">Shallow Tree Rules</h3>
+    <div id="models-tree-rules"></div>
+  `;
+
+  const statusCards = [
+    ["suite_id", manifest.suite_id || "--"],
+    ["artifact_name", manifest.artifact_name || "--"],
+    ["workflow_run_id", manifest.workflow_run_id || "--"],
+    ["expires_at_estimate", manifest.expires_at_estimate || "--"]
+  ];
+  const statusHtml = statusCards
+    .map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`)
+    .join("");
+  const status = panel.querySelector("#models-status");
+  if (status) status.innerHTML = statusHtml;
+
+  renderTable(panel.querySelector("#models-leaderboard"), [
+    "model_family", "target", "champion_metric", "champion_metric_value", "selected_as_champion", "lift_vs_best_baseline"
+  ], leaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard" });
+
+  const targets = [...new Set(importanceRows.map((row) => row.target).filter(Boolean))].sort();
+  const families = [...new Set(importanceRows.map((row) => row.model_family).filter(Boolean))].sort();
+  const targetFilter = panel.querySelector("#models-target-filter");
+  const familyFilter = panel.querySelector("#models-family-filter");
+  if (targetFilter) {
+    targetFilter.insertAdjacentHTML("beforeend", targets.map((target) => `<option value="${escapeHtml(target)}">${escapeHtml(target)}</option>`).join(""));
+  }
+  if (familyFilter) {
+    familyFilter.insertAdjacentHTML("beforeend", families.map((family) => `<option value="${escapeHtml(family)}">${escapeHtml(family)}</option>`).join(""));
+  }
+
+  const redrawImportance = () => {
+    const target = targetFilter?.value || "";
+    const family = familyFilter?.value || "";
+    const filtered = importanceRows.filter((row) => {
+      if (target && row.target !== target) return false;
+      if (family && row.model_family !== family) return false;
+      return true;
+    });
+    const topRows = sortRows(filtered, "importance_rank", "asc").slice(0, 20);
+    renderTable(panel.querySelector("#models-importance"), [
+      "target", "model_family", "feature", "importance_type", "importance_value", "importance_rank", "direction"
+    ], topRows, { initialSortKey: "importance_rank", title: "Top variables" });
+
+    const linearRows = sortRows(
+      filtered.filter((row) => row.model_family === "linear_regularized"),
+      "importance_rank",
+      "asc"
+    ).slice(0, 20);
+    renderTable(panel.querySelector("#models-linear-coeff"), [
+      "feature", "standardized_coefficient", "direction", "importance_rank"
+    ], linearRows, { initialSortKey: "importance_rank", title: "Linear coefficients" });
+
+    const rfRows = sortRows(
+      directionRows.filter((row) => row.model_family === "random_forest").filter((row) => !target || row.target === target),
+      "direction_score",
+      "desc"
+    ).slice(0, 20);
+    renderTable(panel.querySelector("#models-rf"), [
+      "feature", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
+    ], rfRows, { initialSortKey: "direction_score", title: "RF permutation importance & estimated direction" });
+  };
+
+  targetFilter?.addEventListener("change", redrawImportance);
+  familyFilter?.addEventListener("change", redrawImportance);
+  redrawImportance();
+
+  if (suiteReportHtml.trim()) {
+    panel.querySelector("#models-tree-rules").innerHTML = suiteReportHtml;
+  } else {
+    panel.querySelector("#models-tree-rules").innerHTML = "<p>No suite report available</p>";
+  }
 }
 
 function setGeneratedAt(value) {

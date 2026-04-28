@@ -10,3 +10,26 @@ prediction_target: is_top_growth_7d
 allowed_targets:
   - is_top_growth_7d
   - future_log_views_delta_7d
+model_suite:
+  enabled: true
+  models:
+    - linear_regularized
+    - random_forest
+    - shallow_tree
+  targets:
+    - name: is_top_growth_7d
+      task_type: classification
+      horizon: 7d
+      champion_metric: precision_at_10
+    - name: future_log_views_delta_7d
+      task_type: regression
+      horizon: 7d
+      champion_metric: spearman_corr
+  validation:
+    split: temporal
+    validation_fraction: 0.25
+  random_state: 42
+  shallow_tree_max_depth: 4
+  random_forest_n_estimators: 200
+  random_forest_max_depth: 6
+  artifact_retention_days: 30

@@ -28,18 +28,26 @@ CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("period_daily_channel_metrics", "analytics/periods/grain=daily/channel_metrics.csv"),
     ("period_weekly_channel_metrics", "analytics/periods/grain=weekly/channel_metrics.csv"),
     ("period_monthly_channel_metrics", "analytics/periods/grain=monthly/channel_metrics.csv"),
+    ("latest_model_leaderboard", "model_reports/latest_model_leaderboard.csv"),
+    ("latest_feature_importance", "model_reports/latest_feature_importance.csv"),
+    ("latest_feature_direction", "model_reports/latest_feature_direction.csv"),
 )
 
 JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("signal_summary", "signals/signal_summary.json"),
     ("latest_alerts", "alerts/latest_alerts.json"),
     ("alert_summary", "alerts/alert_summary.json"),
+    ("latest_model_manifest", "model_registry/latest_model_manifest.json"),
 )
 
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_weekly_brief", "briefs/latest_weekly_brief.json", "json"),
     ("latest_weekly_brief_markdown", "briefs/latest_weekly_brief.md", "text"),
     ("latest_weekly_brief_html", "briefs/latest_weekly_brief.html", "text"),
+)
+
+MODEL_REPORT_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
+    ("latest_model_suite_report_html", "model_reports/latest_model_suite_report.html", "text"),
 )
 
 FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")
@@ -112,6 +120,28 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
             files_written.append(_write_text(site_root, destination, content))
         brief_outputs[brief_name] = destination
 
+    model_report_outputs: dict[str, str] = {}
+    for report_name, report_relative, payload_type in MODEL_REPORT_FILE_SPECS:
+        source = data_root / report_relative
+        destination = f"data/{Path(report_relative).name}"
+        if payload_type == "json":
+            if source.exists():
+                payload = _read_json_or_empty(source, report_name, warnings)
+                row_counts[report_name] = _payload_row_count(payload)
+            else:
+                warnings.append(f"Missing model report JSON input: {source}")
+                payload = {}
+                row_counts[report_name] = 0
+            files_written.append(_write_json(site_root, destination, payload))
+        else:
+            if source.exists():
+                content = source.read_text(encoding="utf-8")
+            else:
+                warnings.append(f"Missing model report text input: {source}")
+                content = ""
+            files_written.append(_write_text(site_root, destination, content))
+        model_report_outputs[report_name] = destination
+
     site_manifest = {
         "generated_at": generated_at,
         "source_dashboard_index": str(dashboard_index_path),
@@ -119,6 +149,7 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         "tables": tables,
         "row_counts": row_counts,
         "brief_outputs": brief_outputs,
+        "model_report_outputs": model_report_outputs,
         "warnings": warnings,
         "schema_version": "pages_dashboard_v1",
     }

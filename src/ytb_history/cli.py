@@ -14,7 +14,7 @@ from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.model_dataset_service import build_model_dataset
 from ytb_history.services.model_artifact_registry_service import build_model_artifact_registry_report
-from ytb_history.services.model_training_service import train_baseline_model, register_trained_artifact
+from ytb_history.services.model_training_service import train_baseline_model, train_model_suite, register_trained_artifact
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services.validation_service import validate_latest_run
 
@@ -60,7 +60,12 @@ def build_parser() -> argparse.ArgumentParser:
     registry_parser.add_argument("--data-dir", default="data")
     registry_parser.add_argument("--modeling-config", default="config/modeling.yaml")
 
-    train_parser = sub.add_parser("train-baseline-model", help="Train baseline model and write artifact directory")
+    suite_parser = sub.add_parser("train-model-suite", help="Train interpretable model suite and write artifact directory")
+    suite_parser.add_argument("--data-dir", default="data")
+    suite_parser.add_argument("--modeling-config", default="config/modeling.yaml")
+    suite_parser.add_argument("--artifact-dir", default="build/model_artifact")
+
+    train_parser = sub.add_parser("train-baseline-model", help="Train baseline model (temporary alias) and write artifact directory")
     train_parser.add_argument("--data-dir", default="data")
     train_parser.add_argument("--modeling-config", default="config/modeling.yaml")
     train_parser.add_argument("--artifact-dir", default="build/model_artifact")
@@ -75,6 +80,8 @@ def build_parser() -> argparse.ArgumentParser:
     predict_parser.add_argument("--model-dir", required=True)
     predict_parser.add_argument("--data-dir", default="data")
     predict_parser.add_argument("--output-dir", default="data/predictions")
+    predict_parser.add_argument("--target", default="is_top_growth_7d")
+    predict_parser.add_argument("--model-id")
     predict_parser.add_argument("--allow-historical-supervised-fallback", action="store_true")
     return parser
 
@@ -138,6 +145,11 @@ def main() -> int:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
+    if args.command == "train-model-suite":
+        summary = train_model_suite(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
     if args.command == "train-baseline-model":
         summary = train_baseline_model(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
@@ -158,6 +170,8 @@ def main() -> int:
             model_dir=args.model_dir,
             data_dir=args.data_dir,
             output_dir=args.output_dir,
+            target=args.target,
+            model_id=args.model_id,
             allow_historical_supervised_fallback=args.allow_historical_supervised_fallback,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
