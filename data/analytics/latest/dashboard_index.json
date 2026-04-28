@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-04-28T11:19:55.243010+00:00",
+  "source_export_dir": "data/exports/dt=2026-04-28/run=111851Z",
+  "analytics_manifest_path": "data/analytics/latest/analytics_manifest.json",
+  "schema_version": "analytics_v1",
+  "dashboard_ready": true,
+  "primary_tables": {
+    "latest_video_metrics": {
+      "path": "data/analytics/latest/latest_video_metrics.csv",
+      "description": "Métricas principales por video para la última corrida.",
+      "recommended_default_sort": "views_delta desc",
+      "recommended_use": "Vista de videos y ranking de crecimiento por video."
+    },
+    "latest_channel_metrics": {
+      "path": "data/analytics/latest/latest_channel_metrics.csv",
+      "description": "Resumen agregado por canal para la última corrida.",
+      "recommended_default_sort": "total_views_delta desc",
+      "recommended_use": "Vista de canales y comparación de desempeño agregado."
+    },
+    "latest_title_metrics": {
+      "path": "data/analytics/latest/latest_title_metrics.csv",
+      "description": "Features de títulos para análisis de packaging y copy.",
+      "recommended_default_sort": "views_delta desc",
+      "recommended_use": "Vista de títulos y análisis de señales semánticas."
+    },
+    "latest_video_scores": {
+      "path": "data/analytics/latest/latest_video_scores.csv",
+      "description": "Scores robustos por video (alpha, oportunidad y anomalía).",
+      "recommended_default_sort": "alpha_score desc",
+      "recommended_use": "Vista de priorización por score para decisiones rápidas."
+    },
+    "latest_video_advanced_metrics": {
+      "path": "data/analytics/latest/latest_video_advanced_metrics.csv",
+      "description": "Métricas avanzadas por video con éxito por horizonte y confianza.",
+      "recommended_default_sort": "overall_success_score desc",
+      "recommended_use": "Vista avanzada de performance y diagnóstico por video."
+    },
+    "latest_channel_advanced_metrics": {
+      "path": "data/analytics/latest/latest_channel_advanced_metrics.csv",
+      "description": "Métricas avanzadas por canal con momentum y consistencia.",
+      "recommended_default_sort": "channel_momentum_score desc",
+      "recommended_use": "Vista avanzada de salud de canal y estabilidad."
+    },
+    "latest_metric_eligibility": {
+      "path": "data/analytics/latest/latest_metric_eligibility.csv",
+      "description": "Elegibilidad de métricas por horizonte temporal por video.",
+      "recommended_default_sort": "metric_confidence_score asc",
+      "recommended_use": "Vista de data quality y filtros de confiabilidad."
+    },
+    "channel_baselines": {
+      "path": "data/analytics/baselines/channel_baselines.csv",
+      "description": "Baselines de desempeño por canal para comparaciones relativas.",
+      "recommended_default_sort": "channel_momentum_score desc",
+      "recommended_use": "Vista de baseline y benchmarking entre canales."
+    },
+    "video_lifecycle_metrics": {
+      "path": "data/analytics/baselines/video_lifecycle_metrics.csv",
+      "description": "Métricas de ciclo de vida por video según edad y velocidad.",
+      "recommended_default_sort": "views_per_day_since_upload desc",
+      "recommended_use": "Vista de lifecycle y detección de evergreen."
+    },
+    "period_daily_video_metrics": {
+      "path": "data/analytics/periods/grain=daily/video_metrics.csv",
+      "description": "Agregación diaria por video para análisis de tendencia.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de videos en grano diario."
+    },
+    "period_weekly_video_metrics": {
+      "path": "data/analytics/periods/grain=weekly/video_metrics.csv",
+      "description": "Agregación semanal por video para análisis intersemanal.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de videos en grano semanal."
+    },
+    "period_monthly_video_metrics": {
+      "path": "data/analytics/periods/grain=monthly/video_metrics.csv",
+      "description": "Agregación mensual por video para evolución macro.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de videos en grano mensual."
+    },
+    "period_daily_channel_metrics": {
+      "path": "data/analytics/periods/grain=daily/channel_metrics.csv",
+      "description": "Agregación diaria por canal para monitoreo operativo.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de canales en grano diario."
+    },
+    "period_weekly_channel_metrics": {
+      "path": "data/analytics/periods/grain=weekly/channel_metrics.csv",
+      "description": "Agregación semanal por canal para tendencias de mediano plazo.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de canales en grano semanal."
+    },
+    "period_monthly_channel_metrics": {
+      "path": "data/analytics/periods/grain=monthly/channel_metrics.csv",
+      "description": "Agregación mensual por canal para lectura ejecutiva.",
+      "recommended_default_sort": "period_views_delta desc",
+      "recommended_use": "Vista temporal de canales en grano mensual."
+    }
+  },
+  "recommended_dashboard_views": [
+    "overview",
+    "videos",
+    "channels",
+    "scores",
+    "advanced_video_metrics",
+    "advanced_channel_metrics",
+    "titles",
+    "lifecycle",
+    "periods",
+    "data_quality"
+  ],
+  "recommended_view_default_sorts": {
+    "overview": "total_views_delta desc",
+    "videos": "views_delta desc",
+    "scores": "alpha_score desc",
+    "advanced_video_metrics": "overall_success_score desc",
+    "advanced_channel_metrics": "channel_momentum_score desc",
+    "titles": "views_delta desc",
+    "lifecycle": "views_per_day_since_upload desc",
+    "periods": "period_views_delta desc",
+    "data_quality": "metric_confidence_score asc"
+  },
+  "dashboard_kpis": [
+    "videos_total",
+    "channels_total",
+    "total_views_delta",
+    "total_likes_delta",
+    "total_comments_delta",
+    "avg_engagement_rate",
+    "top_alpha_video_id",
+    "top_alpha_video_title",
+    "top_channel_by_growth",
+    "low_confidence_rows"
+  ]
+}

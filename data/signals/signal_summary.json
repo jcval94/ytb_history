@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-04-28T11:19:55.449480+00:00",
+  "video_alerts": 150,
+  "channel_alerts": 62,
+  "data_quality_alerts": 0,
+  "total_alerts": 212,
+  "severity_counts": {
+    "critical": 8,
+    "high": 53,
+    "medium": 149,
+    "low": 2
+  },
+  "signal_type_counts": {
+    "channel_high_growth": 21,
+    "channel_volatility_warning": 20,
+    "channel_momentum_up": 15,
+    "metadata_change_watch": 8,
+    "high_engagement_low_reach": 79,
+    "packaging_problem": 46,
+    "accelerating_video": 12,
+    "trend_burst": 3,
+    "alpha_breakout": 2,
+    "channel_consistent_performer": 6
+  },
+  "top_alerts": [
+    {
+      "alert_id": "alrt_2d5453215fb79b36",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "video_id": "",
+      "channel_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "channel_name": "Caleb Hammer",
+      "title": "",
+      "signal_type": "channel_high_growth",
+      "severity": "critical",
+      "raw_signal_score": 100.0,
+      "adjusted_signal_score": 100.0,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_high_growth.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 100.0,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_bada0e3405e9e258",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "video_id": "",
+      "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "channel_name": "Jaime Higuera",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 98.4848,
+      "adjusted_signal_score": 98.4848,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 98.4848,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_61e438e24f78f22e",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+      "video_id": "",
+      "channel_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+      "channel_name": "Sambucha",
+      "title": "",
+      "signal_type": "channel_high_growth",
+      "severity": "critical",
+      "raw_signal_score": 99.0196,
+      "adjusted_signal_score": 95.5539,
+      "metric_confidence_score": 93.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_high_growth.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 99.0196,
+        "metric_confidence_score": 93.0
+      },
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_0330eaca06283cf5",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "video_id": "",
+      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "channel_name": "COMPUESTOS Podcast",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 95.4545,
+      "adjusted_signal_score": 94.6193,
+      "metric_confidence_score": 98.25,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 95.4545,
+        "metric_confidence_score": 98.25
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_39a055adf69b86f4",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCl5-lvQyfILb-l2abPk4Ntg",
+      "video_id": "",
+      "channel_id": "UCl5-lvQyfILb-l2abPk4Ntg",
+      "channel_name": "Inteligencia Artificial",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 93.9394,
+      "adjusted_signal_score": 93.9394,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 93.9394,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_7fbee375875f1350",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "video_id": "",
+      "channel_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "channel_name": "Caleb Hammer",
+      "title": "",
+      "signal_type": "channel_momentum_up",
+      "severity": "critical",
+      "raw_signal_score": 93.0693,
+      "adjusted_signal_score": 93.0693,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_momentum_up.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 93.0693,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Canal acelerando; revisar últimos videos y frecuencia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_fda8eaebd9500b5f",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "video_id": "",
+      "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "channel_name": "Alex Hormozi",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 92.4242,
+      "adjusted_signal_score": 92.4242,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 92.4242,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_ad18b1a329b144cf",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCbUYAYd1WUznxEEl498z7vA",
+      "video_id": "",
+      "channel_id": "UCbUYAYd1WUznxEEl498z7vA",
+      "channel_name": "Woshingo Streams",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 100.0,
+      "adjusted_signal_score": 90.625,
+      "metric_confidence_score": 81.25,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 100.0,
+        "metric_confidence_score": 81.25
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_6268bb3777960033",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "video_id": "",
+      "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "channel_name": "Alex Hormozi",
+      "title": "",
+      "signal_type": "channel_high_growth",
+      "severity": "high",
+      "raw_signal_score": 89.2157,
+      "adjusted_signal_score": 89.2157,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_high_growth.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 89.2157,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_b3c934e7ba0f6965",
+      "execution_date": "2026-04-28T11:18:51.307212+00:00",
+      "generated_at": "2026-04-28T11:19:55.449480+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCiqJoWIT-vm-hJoXilFGiUQ",
+      "video_id": "",
+      "channel_id": "UCiqJoWIT-vm-hJoXilFGiUQ",
+      "channel_name": "Inversión Inteligente - Alain Cortés",
+      "title": "",
+      "signal_type": "channel_momentum_up",
+      "severity": "high",
+      "raw_signal_score": 93.0693,
+      "adjusted_signal_score": 88.9975,
+      "metric_confidence_score": 91.25,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_momentum_up.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 93.0693,
+        "metric_confidence_score": 91.25
+      },
+      "recommended_action": "Canal acelerando; revisar últimos videos y frecuencia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    }
+  ],
+  "warnings": []
+}

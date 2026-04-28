@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-04-28T11:19:55.243107+00:00",
+  "source_export_dir": "data/exports/dt=2026-04-28/run=111851Z",
+  "outputs": [
+    "analytics/latest/latest_video_metrics.csv",
+    "analytics/latest/latest_channel_metrics.csv",
+    "analytics/latest/latest_title_metrics.csv",
+    "analytics/latest/latest_video_scores.csv",
+    "analytics/latest/latest_video_advanced_metrics.csv",
+    "analytics/latest/latest_channel_advanced_metrics.csv",
+    "analytics/latest/latest_metric_eligibility.csv",
+    "analytics/baselines/channel_baselines.csv",
+    "analytics/baselines/video_lifecycle_metrics.csv",
+    "analytics/periods/grain=daily/video_metrics.csv",
+    "analytics/periods/grain=weekly/video_metrics.csv",
+    "analytics/periods/grain=monthly/video_metrics.csv",
+    "analytics/periods/grain=daily/channel_metrics.csv",
+    "analytics/periods/grain=weekly/channel_metrics.csv",
+    "analytics/periods/grain=monthly/channel_metrics.csv",
+    "analytics/latest/latest_run_metrics.json",
+    "analytics/latest/dashboard_index.json",
+    "analytics/latest/analytics_manifest.json"
+  ],
+  "row_counts": {
+    "analytics/latest/latest_video_metrics.csv": 573,
+    "analytics/latest/latest_channel_metrics.csv": 102,
+    "analytics/latest/latest_title_metrics.csv": 573,
+    "analytics/latest/latest_video_scores.csv": 573,
+    "analytics/latest/latest_video_advanced_metrics.csv": 573,
+    "analytics/latest/latest_channel_advanced_metrics.csv": 102,
+    "analytics/latest/latest_metric_eligibility.csv": 573,
+    "analytics/baselines/channel_baselines.csv": 102,
+    "analytics/baselines/video_lifecycle_metrics.csv": 573,
+    "analytics/periods/grain=daily/video_metrics.csv": 613,
+    "analytics/periods/grain=weekly/video_metrics.csv": 573,
+    "analytics/periods/grain=monthly/video_metrics.csv": 573,
+    "analytics/periods/grain=daily/channel_metrics.csv": 106,
+    "analytics/periods/grain=weekly/channel_metrics.csv": 102,
+    "analytics/periods/grain=monthly/channel_metrics.csv": 102,
+    "analytics/latest/latest_run_metrics.json": 1,
+    "analytics/latest/dashboard_index.json": 1,
+    "analytics/latest/analytics_manifest.json": 1
+  },
+  "schema_version": "analytics_v1",
+  "dashboard_ready": true,
+  "dashboard_index_path": "data/analytics/latest/dashboard_index.json",
+  "dashboard_recommended_entrypoint": "data/analytics/latest/dashboard_index.json",
+  "scoring_version": "scoring_v1",
+  "advanced_metrics_version": "advanced_metrics_v1",
+  "success_horizons": {
+    "short_term": "0-3 days",
+    "mid_term": "4-30 days",
+    "long_term": "31-180 days"
+  },
+  "standardization_methods": [
+    "percentile_rank",
+    "log1p",
+    "robust_z_mad",
+    "channel_relative_baseline",
+    "format_relative_baseline"
+  ],
+  "anomaly_method": "robust_z",
+  "isolation_forest_ready": false,
+  "isolation_forest_reason": "requires larger historical sample and optional sklearn dependency",
+  "channel_momentum_note": "temporarily equals channel_growth_percentile; evolve to 7d_vs_30d when period history grows",
+  "future_feature_inputs_checked": [
+    "features/thumbnails/latest_thumbnail_features.csv",
+    "features/transcripts/latest_transcript_features.csv",
+    "features/topics/latest_topic_features.csv"
+  ],
+  "future_feature_inputs_found": [],
+  "warnings": []
+}
