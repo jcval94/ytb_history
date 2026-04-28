@@ -424,3 +424,42 @@ def test_build_pages_dashboard_creates_site_index_and_site_manifest(tmp_path: Pa
 
     assert (site_dir / "index.html").exists()
     assert (site_dir / "data" / "site_manifest.json").exists()
+
+
+def test_ml_not_initialized_is_notice_not_warning(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_signals_and_alerts(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert "data_freshness" in manifest
+    assert "warnings" in manifest
+    assert "notices" in manifest
+    assert not any("ml_data_status: No inicializado todavía" in w for w in manifest["warnings"])
+    assert any("ml_data_status: No inicializado todavía" in n for n in manifest["notices"])
+
+
+def test_operational_missing_produces_warning(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_model_reports(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert any("operational_data_status" in warning for warning in manifest["warnings"])
+
+
+def test_ml_only_notices_keep_global_non_warning_in_manifest(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_signals_and_alerts(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    domain_warnings = [w for w in manifest["warnings"] if "ml_data_status" in w]
+    assert domain_warnings == []
+    assert any("ml_data_status" in notice for notice in manifest["notices"])
