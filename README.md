@@ -106,7 +106,27 @@ Notas:
 python -m ytb_history.cli build-analytics
 ```
 
-Genera `data/analytics/latest/` con métricas de video, canal, títulos, run y manifest para consumo analítico posterior.
+Genera artefactos analíticos en `data/analytics/`:
+- `latest/latest_video_metrics.csv`
+- `latest/latest_channel_metrics.csv`
+- `latest/latest_title_metrics.csv`
+- `latest/latest_video_scores.csv` (scoring robusto con percentiles + robust_z)
+- `latest/latest_video_advanced_metrics.csv`
+- `latest/latest_channel_advanced_metrics.csv`
+- `latest/latest_metric_eligibility.csv`
+- `baselines/channel_baselines.csv`
+- `baselines/video_lifecycle_metrics.csv`
+- agregaciones temporales en:
+  - `periods/grain=daily/video_metrics.csv`
+  - `periods/grain=weekly/video_metrics.csv`
+  - `periods/grain=monthly/video_metrics.csv`
+  - `periods/grain=daily/channel_metrics.csv`
+  - `periods/grain=weekly/channel_metrics.csv`
+  - `periods/grain=monthly/channel_metrics.csv`
+- `latest/latest_run_metrics.json`
+- `latest/analytics_manifest.json`
+
+Además, incluye scores robustos (percentiles + robust_z), métricas de éxito por horizonte (corto/medio/largo), señales de `trend_burst`, `evergreen_score` y `metric_confidence_score`.
 
 ## 11) Tests
 
