@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -238,6 +238,39 @@ def test_cli_generate_alerts_does_not_call_api_flows(monkeypatch, capsys) -> Non
     monkeypatch.setattr(cli, "run_dry_run", _boom)
     monkeypatch.setattr(cli, "generate_alerts", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-alerts"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_build_decision_layer_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_decision_layer",
+        lambda **kwargs: {"status": "success", "decision_dir": kwargs["data_dir"], "total_action_candidates": 2},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-decision-layer", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    parsed = json.loads(out)
+    assert parsed["status"] == "success"
+    assert parsed["decision_dir"] == "custom/data"
+
+
+def test_cli_build_decision_layer_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_decision_layer", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "build-decision-layer"])
 
     code = cli.main()
     out = capsys.readouterr().out

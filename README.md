@@ -159,6 +159,18 @@ Señales destacadas:
 - `channel_momentum_up`: detecta canales con momentum alto.
 - `metric_confidence_score`: ajusta la confianza para priorizar alertas más sólidas y reducir decisiones sobre métricas débiles.
 
+## 12.1) Construir capa de decisión
+
+```bash
+python -m ytb_history.cli build-decision-layer
+```
+
+Lee `data/analytics/`, `data/signals/` y `data/alerts/` para generar candidatos de acción priorizados, matriz de oportunidad, oportunidades de contenido y watchlist en `data/decision/`.
+
+Esta capa solo convierte señales con `triggered=true` en action candidates reales; señales no disparadas se ignoran y se contabilizan para trazabilidad.
+
+Nota: en este PR, `build-decision-layer` aún no se integra al workflow monitor/pages automático.
+
 ## 13) Dashboard en GitHub Pages
 
 1. Activa GitHub Pages en `Settings > Pages`.
