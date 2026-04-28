@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "generated_at": "2026-04-28T22:52:00.476768+00:00",
+  "prediction_rows": 0,
+  "decision_rows": 284,
+  "hybrid_rows": 140,
+  "warnings": [
+    "Predictions file not found: data/predictions/latest_predictions.csv"
+  ],
+  "files_written": [
+    "data/model_intelligence/latest_hybrid_recommendations.csv",
+    "data/model_intelligence/model_intelligence_summary.json"
+  ]
+}
