@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-baseline-model", "register-trained-artifact", "predict-with-model-artifact"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -339,3 +339,123 @@ def test_cli_build_model_dataset_does_not_call_api_flows(monkeypatch, capsys) ->
 
     assert code == 0
     assert json.loads(out)["status"] == "success"
+
+
+def test_cli_model_artifact_registry_report_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "build_model_artifact_registry_report",
+        lambda **kwargs: {"status": "success", "data_dir": kwargs["data_dir"], "config": kwargs["modeling_config_path"]},
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        ["ytb_history", "model-artifact-registry-report", "--data-dir", "custom/data", "--modeling-config", "custom/modeling.yaml"],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    parsed = json.loads(out)
+    assert parsed["status"] == "success"
+    assert parsed["data_dir"] == "custom/data"
+    assert parsed["config"] == "custom/modeling.yaml"
+
+
+def test_cli_model_artifact_registry_report_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "build_model_artifact_registry_report", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "model-artifact-registry-report"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_train_baseline_model_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "train_baseline_model",
+        lambda **kwargs: {"status": "success", "artifact_dir": kwargs["artifact_dir"], "config": kwargs["modeling_config_path"]},
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        ["ytb_history", "train-baseline-model", "--data-dir", "custom/data", "--modeling-config", "custom/modeling.yaml", "--artifact-dir", "custom/build"],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    parsed = json.loads(out)
+    assert parsed["status"] == "success"
+    assert parsed["artifact_dir"] == "custom/build"
+    assert parsed["config"] == "custom/modeling.yaml"
+
+
+def test_cli_register_trained_artifact_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "register_trained_artifact",
+        lambda **kwargs: {"status": "success", "artifact_name": kwargs["artifact_name"], "workflow_run_id": kwargs["workflow_run_id"]},
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "register-trained-artifact",
+            "--artifact-name",
+            "artifact-1",
+            "--workflow-run-id",
+            "12345",
+            "--artifact-dir",
+            "build/model_artifact",
+            "--data-dir",
+            "custom/data",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    parsed = json.loads(out)
+    assert parsed["status"] == "success"
+    assert parsed["artifact_name"] == "artifact-1"
+    assert parsed["workflow_run_id"] == "12345"
+
+
+def test_cli_predict_with_model_artifact_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "predict_with_model_artifact",
+        lambda **kwargs: {"status": "success", "model_dir": kwargs["model_dir"], "output_dir": kwargs["output_dir"]},
+    )
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "predict-with-model-artifact",
+            "--model-dir",
+            "downloaded_model",
+            "--data-dir",
+            "custom/data",
+            "--output-dir",
+            "custom/predictions",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    parsed = json.loads(out)
+    assert parsed["status"] == "success"
+    assert parsed["model_dir"] == "downloaded_model"
+    assert parsed["output_dir"] == "custom/predictions"

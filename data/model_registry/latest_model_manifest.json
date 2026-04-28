@@ -1,0 +1,14 @@
+{
+  "schema_version": "latest_model_manifest_v1",
+  "status": "none",
+  "model_id": null,
+  "artifact_name": null,
+  "workflow_run_id": null,
+  "target": null,
+  "created_at": null,
+  "expires_at_estimate": null,
+  "metrics": {},
+  "feature_list_sha256": null,
+  "training_manifest_sha256": null,
+  "warnings": []
+}
