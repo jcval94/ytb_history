@@ -7,7 +7,7 @@ from typing import Any
 
 import yaml
 
-DEFAULT_SETTINGS: dict[str, int] = {
+DEFAULT_SETTINGS: dict[str, Any] = {
     "discovery_window_days": 7,
     "tracking_window_days": 183,
     "youtube_batch_size": 50,
@@ -15,11 +15,12 @@ DEFAULT_SETTINGS: dict[str, int] = {
     "warning_quota_limit": 5000,
     "soft_warning_quota_limit": 1000,
     "max_pages_per_channel": 5,
+    "execution_timezone": "local",
 }
 
 
 
-def load_settings(path: str | Path = "config/settings.yaml") -> dict[str, int]:
+def load_settings(path: str | Path = "config/settings.yaml") -> dict[str, Any]:
     """Load settings YAML and fill missing keys with safe defaults."""
     settings_path = Path(path)
     try:
@@ -31,9 +32,21 @@ def load_settings(path: str | Path = "config/settings.yaml") -> dict[str, int]:
     except yaml.YAMLError as exc:
         raise ValueError(f"Invalid YAML in settings file {settings_path}: {exc}") from exc
 
-    resolved = dict(DEFAULT_SETTINGS)
-    for key in DEFAULT_SETTINGS:
+    resolved: dict[str, Any] = dict(DEFAULT_SETTINGS)
+    for key in (
+        "discovery_window_days",
+        "tracking_window_days",
+        "youtube_batch_size",
+        "operational_quota_limit",
+        "warning_quota_limit",
+        "soft_warning_quota_limit",
+        "max_pages_per_channel",
+    ):
         if key in loaded and loaded[key] is not None:
             resolved[key] = int(loaded[key])
+
+    execution_timezone = loaded.get("execution_timezone")
+    if execution_timezone is not None:
+        resolved["execution_timezone"] = str(execution_timezone).strip() or "local"
 
     return resolved

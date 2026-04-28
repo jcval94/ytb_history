@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from ytb_history.clients.quota_meter import QuotaMeter
 from ytb_history.clients.youtube_client import YouTubeClient
@@ -34,12 +35,25 @@ def _load_default_channel_urls() -> list[str]:
         raise ValueError(f"CHANNEL_URLS must be a list in {channels_path}")
     return [str(item) for item in values]
 
-def _as_utc(execution_date: datetime | None) -> datetime:
+def _resolve_execution_date(execution_date: datetime | None, execution_timezone: str) -> datetime:
     if execution_date is None:
-        return datetime.now(timezone.utc)
+        if execution_timezone.lower() == "local":
+            return datetime.now().astimezone()
+        try:
+            return datetime.now(ZoneInfo(execution_timezone))
+        except ZoneInfoNotFoundError as exc:
+            raise ValueError(f"Invalid execution_timezone setting: {execution_timezone}") from exc
     if execution_date.tzinfo is None:
-        return execution_date.replace(tzinfo=timezone.utc)
-    return execution_date.astimezone(timezone.utc)
+        if execution_timezone.lower() == "local":
+            local_tz = datetime.now().astimezone().tzinfo
+            if local_tz is None:
+                return execution_date.replace(tzinfo=timezone.utc)
+            return execution_date.replace(tzinfo=local_tz)
+        try:
+            return execution_date.replace(tzinfo=ZoneInfo(execution_timezone))
+        except ZoneInfoNotFoundError as exc:
+            raise ValueError(f"Invalid execution_timezone setting: {execution_timezone}") from exc
+    return execution_date
 
 
 def _extract_quota_meter(youtube_client: Any) -> QuotaMeter:
@@ -95,8 +109,8 @@ def run_pipeline(
     youtube_client: YouTubeClient | None = None,
 ) -> dict[str, Any]:
     """Execute the complete daily pipeline."""
-    execution_date_utc = _as_utc(execution_date)
     settings = load_settings(settings_path)
+    execution_date_value = _resolve_execution_date(execution_date, settings["execution_timezone"])
     urls = list(channel_urls or _load_default_channel_urls())
 
     data_root = Path(data_dir)
@@ -120,7 +134,7 @@ def run_pipeline(
 
     discovery_result = discover_recent_videos(
         channels,
-        since_datetime=execution_date_utc - timedelta(days=settings["discovery_window_days"]),
+        since_datetime=execution_date_value - timedelta(days=settings["discovery_window_days"]),
         youtube_client=client,
         quota_meter=quota_meter,
         max_pages_per_channel=settings["max_pages_per_channel"],
@@ -130,7 +144,7 @@ def run_pipeline(
     tracking_video_ids = build_tracking_video_ids(
         catalog,
         discovery_result.recent_video_ids,
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
     )
 
     unique_ok_uploads = {
@@ -146,7 +160,7 @@ def run_pipeline(
         batch_size=settings["youtube_batch_size"],
     )
     pre_quota_report = build_quota_report(
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         estimated_units=estimated_units,
         observed_units=quota_meter.as_dict(),
         operational_limit=settings["operational_quota_limit"],
@@ -155,13 +169,13 @@ def run_pipeline(
     )
 
     errors = _build_channel_errors(channels, discovery_result.channel_reports)
-    discovery_report_path = run_report_repo.save_discovery_report(execution_date_utc, discovery_result.channel_reports)
-    channel_errors_path = run_report_repo.save_channel_errors(execution_date_utc, errors)
+    discovery_report_path = run_report_repo.save_discovery_report(execution_date_value, discovery_result.channel_reports)
+    channel_errors_path = run_report_repo.save_channel_errors(execution_date_value, errors)
 
     if pre_quota_report.should_abort:
-        quota_report_path = run_report_repo.save_quota_report(execution_date_utc, pre_quota_report)
+        quota_report_path = run_report_repo.save_quota_report(execution_date_value, pre_quota_report)
         summary = RunSummary(
-            execution_date=execution_date_utc,
+            execution_date=execution_date_value,
             status="aborted_quota_guardrail",
             channels_total=channels_total,
             channels_ok=len(channels_ok_records),
@@ -173,7 +187,7 @@ def run_pipeline(
             observed_quota_units=pre_quota_report.total_observed_units,
             errors=[item["error"] for item in errors],
         )
-        run_summary_path = run_report_repo.save_run_summary(execution_date_utc, summary)
+        run_summary_path = run_report_repo.save_run_summary(execution_date_value, summary)
         result = summary.to_dict()
         result.update(
             {
@@ -188,27 +202,27 @@ def run_pipeline(
     enrichment = fetch_video_snapshots(
         tracking_video_ids,
         youtube_client=client,
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         batch_size=settings["youtube_batch_size"],
     )
 
     updated_catalog = update_tracking_catalog(
         catalog,
         enrichment.snapshots,
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         tracking_window_days=settings["tracking_window_days"],
     )
     video_catalog_repo.save(updated_catalog)
 
     persistence = persist_snapshot_and_deltas(
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         snapshots=enrichment.snapshots,
         snapshot_repo=snapshot_repo,
         delta_repo=delta_repo,
     )
 
     final_quota_report = build_quota_report(
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         estimated_units=estimated_units,
         observed_units=quota_meter.as_dict(),
         operational_limit=settings["operational_quota_limit"],
@@ -216,7 +230,7 @@ def run_pipeline(
         soft_warning_limit=settings["soft_warning_quota_limit"],
     )
 
-    quota_report_path = run_report_repo.save_quota_report(execution_date_utc, final_quota_report)
+    quota_report_path = run_report_repo.save_quota_report(execution_date_value, final_quota_report)
 
     all_errors = list(errors)
     all_errors.extend({"stage": "enrichment", "error": msg} for msg in enrichment.errors)
@@ -230,7 +244,7 @@ def run_pipeline(
         status = "success_with_warnings"
 
     summary = RunSummary(
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         status=status,
         channels_total=channels_total,
         channels_ok=len(channels_ok_records),
@@ -246,9 +260,9 @@ def run_pipeline(
         observed_quota_units=final_quota_report.total_observed_units,
         errors=[item["error"] for item in all_errors],
     )
-    run_summary_path = run_report_repo.save_run_summary(execution_date_utc, summary)
+    run_summary_path = run_report_repo.save_run_summary(execution_date_value, summary)
     # Keep channel errors report persisted with enrichment warnings included.
-    channel_errors_path = run_report_repo.save_channel_errors(execution_date_utc, all_errors)
+    channel_errors_path = run_report_repo.save_channel_errors(execution_date_value, all_errors)
 
     result = summary.to_dict()
     result.update(
@@ -270,8 +284,8 @@ def run_dry_run(
     data_dir: str | Path = "data",
 ) -> dict[str, Any]:
     """Estimate quota and guardrail status without API calls or writes."""
-    execution_date_utc = _as_utc(execution_date)
     settings = load_settings(settings_path)
+    execution_date_value = _resolve_execution_date(execution_date, settings["execution_timezone"])
     urls = list(channel_urls or _load_default_channel_urls())
 
     catalog_repo = VideoCatalogRepo(Path(data_dir) / "state" / "tracked_videos_catalog.jsonl")
@@ -285,7 +299,7 @@ def run_dry_run(
         batch_size=settings["youtube_batch_size"],
     )
     quota_report = build_quota_report(
-        execution_date=execution_date_utc,
+        execution_date=execution_date_value,
         estimated_units=estimated_units,
         observed_units={},
         operational_limit=settings["operational_quota_limit"],

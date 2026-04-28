@@ -18,14 +18,19 @@ from ytb_history.storage.partitioning import (
 )
 
 
-def test_make_dt_partition_uses_utc() -> None:
-    local = datetime(2026, 4, 27, 0, 30, 0, tzinfo=timezone(timedelta(hours=-4)))
+def test_make_dt_partition_uses_execution_timezone() -> None:
+    local = datetime(2026, 4, 27, 23, 30, 0, tzinfo=timezone(timedelta(hours=-4)))
     assert make_dt_partition(local) == "dt=2026-04-27"
 
 
 def test_make_run_id_uses_hhmmssz() -> None:
     dt = datetime(2026, 4, 27, 9, 5, 1, tzinfo=timezone.utc)
     assert make_run_id(dt) == "090501Z"
+
+
+def test_make_run_id_includes_offset_for_non_utc_timezones() -> None:
+    dt = datetime(2026, 4, 27, 23, 5, 1, tzinfo=timezone(timedelta(hours=-4)))
+    assert make_run_id(dt) == "230501-0400"
 
 
 def test_snapshot_path_for_run_generates_expected_path() -> None:
@@ -55,6 +60,12 @@ def test_extract_execution_date_from_snapshot_path_parses_dt_and_run() -> None:
     path = Path("data/snapshots/dt=2026-04-27/run=090501Z/snapshots.jsonl.gz")
     parsed = extract_execution_date_from_snapshot_path(path)
     assert parsed == datetime(2026, 4, 27, 9, 5, 1, tzinfo=timezone.utc)
+
+
+def test_extract_execution_date_from_snapshot_path_parses_offset_run() -> None:
+    path = Path("data/snapshots/dt=2026-04-27/run=230501-0400/snapshots.jsonl.gz")
+    parsed = extract_execution_date_from_snapshot_path(path)
+    assert parsed == datetime(2026, 4, 27, 23, 5, 1, tzinfo=timezone(timedelta(hours=-4)))
 
 
 def test_export_paths_for_run_generate_expected_paths() -> None:
