@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-TABLE_SPECS: tuple[tuple[str, str], ...] = (
+CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_video_metrics", "analytics/latest/latest_video_metrics.csv"),
     ("latest_channel_metrics", "analytics/latest/latest_channel_metrics.csv"),
     ("latest_video_scores", "analytics/latest/latest_video_scores.csv"),
@@ -17,6 +17,9 @@ TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_channel_advanced_metrics", "analytics/latest/latest_channel_advanced_metrics.csv"),
     ("latest_title_metrics", "analytics/latest/latest_title_metrics.csv"),
     ("latest_metric_eligibility", "analytics/latest/latest_metric_eligibility.csv"),
+    ("latest_video_signals", "signals/latest_video_signals.csv"),
+    ("latest_channel_signals", "signals/latest_channel_signals.csv"),
+    ("latest_signal_candidates", "signals/latest_signal_candidates.csv"),
     ("channel_baselines", "analytics/baselines/channel_baselines.csv"),
     ("video_lifecycle_metrics", "analytics/baselines/video_lifecycle_metrics.csv"),
     ("period_daily_video_metrics", "analytics/periods/grain=daily/video_metrics.csv"),
@@ -25,6 +28,12 @@ TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("period_daily_channel_metrics", "analytics/periods/grain=daily/channel_metrics.csv"),
     ("period_weekly_channel_metrics", "analytics/periods/grain=weekly/channel_metrics.csv"),
     ("period_monthly_channel_metrics", "analytics/periods/grain=monthly/channel_metrics.csv"),
+)
+
+JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
+    ("signal_summary", "signals/signal_summary.json"),
+    ("latest_alerts", "alerts/latest_alerts.json"),
+    ("alert_summary", "alerts/alert_summary.json"),
 )
 
 FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")
@@ -61,12 +70,19 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
     files_written.append(_write_json(site_root, "data/analytics_manifest.json", analytics_manifest))
 
     tables: list[str] = []
-    for table_name, csv_relative in TABLE_SPECS:
+    for table_name, csv_relative in CSV_TABLE_SPECS:
         tables.append(table_name)
         csv_path = data_root / csv_relative
         table_payload = _csv_to_table_json(table_name=table_name, csv_path=csv_path, generated_at=generated_at, warnings=warnings)
         row_counts[table_name] = int(table_payload["row_count"])
         files_written.append(_write_json(site_root, f"data/{table_name}.json", table_payload))
+
+    for table_name, json_relative in JSON_FILE_SPECS:
+        tables.append(table_name)
+        json_path = data_root / json_relative
+        payload = _read_json_or_empty(json_path, table_name, warnings)
+        row_counts[table_name] = _payload_row_count(payload)
+        files_written.append(_write_json(site_root, f"data/{table_name}.json", payload))
 
     site_manifest = {
         "generated_at": generated_at,
@@ -237,3 +253,17 @@ def _write_json(site_root: Path, relative_path: str, payload: dict[str, Any]) ->
     with destination.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
     return str(destination)
+
+
+def _payload_row_count(payload: dict[str, Any]) -> int:
+    rows = payload.get("rows")
+    if isinstance(rows, list):
+        return len(rows)
+    alerts = payload.get("alerts")
+    if isinstance(alerts, list):
+        return len(alerts)
+    for key in ("row_count", "alert_count", "total_alerts"):
+        value = payload.get(key)
+        if isinstance(value, int):
+            return value
+    return 0

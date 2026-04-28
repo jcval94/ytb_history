@@ -16,7 +16,12 @@ const DATA_FILES = {
   periodMonthlyVideo: "./data/period_monthly_video_metrics.json",
   periodDailyChannel: "./data/period_daily_channel_metrics.json",
   periodWeeklyChannel: "./data/period_weekly_channel_metrics.json",
-  periodMonthlyChannel: "./data/period_monthly_channel_metrics.json"
+  periodMonthlyChannel: "./data/period_monthly_channel_metrics.json",
+  latestAlerts: "./data/latest_alerts.json",
+  alertSummary: "./data/alert_summary.json",
+  latestVideoSignals: "./data/latest_video_signals.json",
+  latestChannelSignals: "./data/latest_channel_signals.json",
+  latestSignalCandidates: "./data/latest_signal_candidates.json"
 };
 
 const state = {
@@ -151,6 +156,7 @@ function renderAll() {
   renderAdvanced(advanced);
   renderTitles(titles);
   renderPeriods();
+  renderAlerts();
   renderDataQuality(quality, advanced);
 }
 
@@ -220,7 +226,11 @@ function renderOverview(videos, channels, scores) {
   const panel = document.querySelector("#tab-overview");
   if (!panel) return;
 
-  panel.innerHTML = '<div id="ov-videos" class="grid-two"></div><div id="ov-channels" class="grid-two"></div>';
+  panel.innerHTML = `
+    <div id="ov-videos" class="grid-two"></div>
+    <div id="ov-channels" class="grid-two"></div>
+    <div id="ov-alerts"></div>
+  `;
 
   const topViews = sortRows(videos, "views_delta", "desc").slice(0, 10);
   const topAlpha = sortRows(scores, "alpha_score", "desc").slice(0, 10);
@@ -263,6 +273,18 @@ function renderOverview(videos, channels, scores) {
 
   panel.querySelector("#ov-videos")?.append(viewsContainer, alphaContainer);
   panel.querySelector("#ov-channels")?.append(channelsContainer, bucketsContainer);
+
+  const topAlertsWrap = document.createElement("div");
+  const topAlerts = topAlertsBySeverity(5);
+  if (!topAlerts.length) {
+    topAlertsWrap.innerHTML = "<h3 class=\"section-title\">Signals to watch</h3><p>No alerts generated yet</p>";
+  } else {
+    const rows = topAlerts
+      .map((alert) => `<li>${escapeHtml(alert.signal_type)} · ${severityBadge(alert.severity)} · ${escapeHtml(alert.title || alert.channel_name || "--")} · score ${escapeHtml(String(alert.adjusted_signal_score ?? "--"))}</li>`)
+      .join("");
+    topAlertsWrap.innerHTML = `<h3 class="section-title">Signals to watch</h3><ul>${rows}</ul>`;
+  }
+  panel.querySelector("#ov-alerts")?.append(topAlertsWrap);
 }
 
 function renderVideos(videos) {
@@ -326,6 +348,110 @@ function renderPeriods() {
 
   document.querySelector(`#${selectorId}`)?.addEventListener("change", redraw);
   redraw();
+}
+
+function renderAlerts() {
+  const panel = document.querySelector("#tab-alerts");
+  if (!panel) return;
+  const alertPayload = state.data.latestAlerts || {};
+  const summary = state.data.alertSummary || {};
+  const alerts = Array.isArray(alertPayload.alerts) ? alertPayload.alerts : [];
+  const signalCandidates = tableRows("latestSignalCandidates");
+  const counts = summary.severity_counts || {};
+
+  panel.innerHTML = `
+    <div class="kpi-grid" id="alerts-kpis"></div>
+    <h3 class="section-title">Top alerts</h3>
+    <div id="alerts-top"></div>
+    <h3 class="section-title">Filters</h3>
+    <div class="filters" id="alerts-filters">
+      <select id="alerts-severity-filter"><option value="">All severities</option></select>
+      <select id="alerts-signal-filter"><option value="">All signal types</option></select>
+      <select id="alerts-entity-filter"><option value="">All entities</option></select>
+    </div>
+    <div id="alerts-table"></div>
+    <h3 class="section-title">Signal candidates</h3>
+    <div id="signal-candidates-table"></div>
+  `;
+
+  const cards = [
+    ["total_alerts", summary.total_alerts ?? alertPayload.alert_count ?? alerts.length ?? 0],
+    ["critical", counts.critical ?? 0],
+    ["high", counts.high ?? 0],
+    ["medium", counts.medium ?? 0],
+    ["low", counts.low ?? 0]
+  ];
+  document.querySelector("#alerts-kpis").innerHTML = cards
+    .map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`)
+    .join("");
+
+  if (!alerts.length) {
+    document.querySelector("#alerts-top").innerHTML = "<p>No alerts generated yet</p>";
+    document.querySelector("#alerts-table").innerHTML = "<p>No alerts generated yet</p>";
+  } else {
+    const topRows = topAlertsBySeverity(10);
+    renderTable(document.querySelector("#alerts-top"), [
+      "signal_type", "severity", "title", "channel_name", "adjusted_signal_score", "confidence_level", "recommended_action"
+    ], topRows, { initialSortKey: "adjusted_signal_score", title: "Top alerts" });
+  }
+
+  hydrateAlertsFilters(alerts);
+  const redraw = () => {
+    const severity = document.querySelector("#alerts-severity-filter")?.value || "";
+    const signalType = document.querySelector("#alerts-signal-filter")?.value || "";
+    const entityType = document.querySelector("#alerts-entity-filter")?.value || "";
+    const filtered = alerts.filter((row) => {
+      if (severity && row.severity !== severity) return false;
+      if (signalType && row.signal_type !== signalType) return false;
+      if (entityType && row.entity_type !== entityType) return false;
+      return true;
+    });
+    renderTable(document.querySelector("#alerts-table"), [
+      "signal_type", "severity", "entity_type", "title", "channel_name", "adjusted_signal_score", "confidence_level", "recommended_action"
+    ], filtered, { initialSortKey: "adjusted_signal_score", title: "Alerts" });
+  };
+  document.querySelector("#alerts-severity-filter")?.addEventListener("change", redraw);
+  document.querySelector("#alerts-signal-filter")?.addEventListener("change", redraw);
+  document.querySelector("#alerts-entity-filter")?.addEventListener("change", redraw);
+  redraw();
+
+  renderTable(document.querySelector("#signal-candidates-table"), [
+    "entity_type", "entity_id", "signal_type", "triggered", "raw_signal_score", "adjusted_signal_score", "confidence_level"
+  ], signalCandidates, { initialSortKey: "adjusted_signal_score", title: "Signal candidates" });
+}
+
+function hydrateAlertsFilters(alerts) {
+  const severityOptions = [...new Set(alerts.map((row) => row.severity).filter(Boolean))].sort();
+  const signalOptions = [...new Set(alerts.map((row) => row.signal_type).filter(Boolean))].sort();
+  const entityOptions = [...new Set(alerts.map((row) => row.entity_type).filter(Boolean))].sort();
+  const writeOptions = (selector, values) => {
+    const element = document.querySelector(selector);
+    if (!element) return;
+    element.innerHTML = `<option value="">${escapeHtml(element.options[0]?.text || "All")}</option>` +
+      values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("");
+  };
+  writeOptions("#alerts-severity-filter", severityOptions);
+  writeOptions("#alerts-signal-filter", signalOptions);
+  writeOptions("#alerts-entity-filter", entityOptions);
+}
+
+function topAlertsBySeverity(limit = 5) {
+  const alertPayload = state.data.latestAlerts || {};
+  const alerts = Array.isArray(alertPayload.alerts) ? alertPayload.alerts : [];
+  const severityOrder = { critical: 0, high: 1, medium: 2, low: 3 };
+  return [...alerts]
+    .sort((a, b) => {
+      const left = severityOrder[a.severity] ?? 99;
+      const right = severityOrder[b.severity] ?? 99;
+      if (left !== right) return left - right;
+      return asNumber(b.adjusted_signal_score) - asNumber(a.adjusted_signal_score);
+    })
+    .slice(0, limit);
+}
+
+function severityBadge(severity) {
+  const value = String(severity || "low").toLowerCase();
+  return `<span class="severity-badge severity-${escapeHtml(value)}">${escapeHtml(value)}</span>`;
 }
 
 function renderDataQuality(quality, advanced) {

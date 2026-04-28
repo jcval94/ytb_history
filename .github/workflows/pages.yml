@@ -7,8 +7,11 @@ on:
       - main
     paths:
       - data/analytics/**
+      - data/signals/**
+      - data/alerts/**
       - apps/pages_dashboard/**
       - src/ytb_history/services/pages_dashboard_service.py
+      - src/ytb_history/services/alerts_service.py
       - src/ytb_history/cli.py
       - .github/workflows/pages.yml
 
@@ -43,11 +46,21 @@ jobs:
       - name: Compile
         run: python -m compileall src tests
 
+      - name: Validate frontend JavaScript syntax
+        run: |
+          node --check apps/pages_dashboard/src/assets/app.js
+          node --check apps/pages_dashboard/src/assets/charts.js
+          node --check apps/pages_dashboard/src/assets/formatters.js
+          node --check apps/pages_dashboard/src/assets/tables.js
+
       - name: Run tests
         run: pytest -q
 
       - name: Build analytics data mart
         run: python -m ytb_history.cli build-analytics
+
+      - name: Generate alerts and signals
+        run: python -m ytb_history.cli generate-alerts
 
       - name: Build pages dashboard
         run: python -m ytb_history.cli build-pages-dashboard
