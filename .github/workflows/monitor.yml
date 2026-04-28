@@ -61,11 +61,20 @@ jobs:
       - name: Build analytics data mart
         run: python -m ytb_history.cli build-analytics
 
+      - name: Build NLP feature layer
+        run: python -m ytb_history.cli build-nlp-features
+
       - name: Generate alerts and signals
         run: python -m ytb_history.cli generate-alerts
 
       - name: Build decision intelligence layer
         run: python -m ytb_history.cli build-decision-layer
+
+      - name: Build model intelligence
+        run: python -m ytb_history.cli build-model-intelligence
+
+      - name: Build topic intelligence
+        run: python -m ytb_history.cli build-topic-intelligence
 
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief

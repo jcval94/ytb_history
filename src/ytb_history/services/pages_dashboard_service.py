@@ -31,6 +31,18 @@ CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_model_leaderboard", "model_reports/latest_model_leaderboard.csv"),
     ("latest_feature_importance", "model_reports/latest_feature_importance.csv"),
     ("latest_feature_direction", "model_reports/latest_feature_direction.csv"),
+    ("latest_video_nlp_features", "nlp_features/latest_video_nlp_features.csv"),
+    ("latest_title_nlp_features", "nlp_features/latest_title_nlp_features.csv"),
+    ("latest_semantic_clusters", "nlp_features/latest_semantic_clusters.csv"),
+    ("latest_video_topics", "topic_intelligence/latest_video_topics.csv"),
+    ("latest_topic_metrics", "topic_intelligence/latest_topic_metrics.csv"),
+    ("latest_title_pattern_metrics", "topic_intelligence/latest_title_pattern_metrics.csv"),
+    ("latest_keyword_metrics", "topic_intelligence/latest_keyword_metrics.csv"),
+    ("latest_topic_opportunities", "topic_intelligence/latest_topic_opportunities.csv"),
+    ("latest_content_driver_leaderboard", "model_reports/latest_content_driver_leaderboard.csv"),
+    ("latest_content_driver_feature_importance", "model_reports/latest_content_driver_feature_importance.csv"),
+    ("latest_content_driver_feature_direction", "model_reports/latest_content_driver_feature_direction.csv"),
+    ("latest_content_driver_group_importance", "model_reports/latest_content_driver_group_importance.csv"),
 )
 
 JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
@@ -38,6 +50,8 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_alerts", "alerts/latest_alerts.json"),
     ("alert_summary", "alerts/alert_summary.json"),
     ("latest_model_manifest", "model_registry/latest_model_manifest.json"),
+    ("nlp_feature_summary", "nlp_features/nlp_feature_summary.json"),
+    ("topic_intelligence_summary", "topic_intelligence/topic_intelligence_summary.json"),
 )
 
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
@@ -48,6 +62,7 @@ BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
 
 MODEL_REPORT_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_model_suite_report_html", "model_reports/latest_model_suite_report.html", "text"),
+    ("latest_content_driver_report_html", "model_reports/latest_content_driver_report.html", "text"),
 )
 
 FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")

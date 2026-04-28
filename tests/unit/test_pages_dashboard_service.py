@@ -94,6 +94,23 @@ def _prepare_model_reports(data_dir: Path) -> None:
         "m2,random_forest,is_top_growth_7d,views_delta,positive,0.2,quantile_bins,0.3,0.5,estimated\n",
     )
     _write_text(data_dir / "model_reports" / "latest_model_suite_report.html", "<h2>Model Suite</h2>")
+    _write_text(data_dir / "model_reports" / "latest_content_driver_report.html", "<h2>Content Driver</h2>")
+    _write_text(
+        data_dir / "model_reports" / "latest_content_driver_leaderboard.csv",
+        "target,model_family,spearman_corr\nfuture_log_views_delta_7d,random_forest_regressor,0.61\n",
+    )
+    _write_text(
+        data_dir / "model_reports" / "latest_content_driver_feature_importance.csv",
+        "target,model_family,feature,importance_type,importance_value,importance_rank,direction\nfuture_log_views_delta_7d,random_forest_regressor,ai_semantic_score,permutation_importance_mean,0.2,1,positive\n",
+    )
+    _write_text(
+        data_dir / "model_reports" / "latest_content_driver_feature_direction.csv",
+        "target,model_family,feature,direction,direction_score,direction_method,low_bin_prediction,high_bin_prediction\nfuture_log_views_delta_7d,random_forest_regressor,ai_semantic_score,positive,0.2,quantile_directional_analysis,0.1,0.3\n",
+    )
+    _write_text(
+        data_dir / "model_reports" / "latest_content_driver_group_importance.csv",
+        "target,model_family,feature_group,group_importance,feature_count\nfuture_log_views_delta_7d,random_forest_regressor,semantic_scores,0.3,4\n",
+    )
     _write_text(
         data_dir / "model_registry" / "latest_model_manifest.json",
         json.dumps(
@@ -106,6 +123,43 @@ def _prepare_model_reports(data_dir: Path) -> None:
             ensure_ascii=False,
         ),
     )
+
+
+def _prepare_nlp_topic_artifacts(data_dir: Path) -> None:
+    _write_text(
+        data_dir / "nlp_features" / "latest_video_nlp_features.csv",
+        "video_id,title,channel_name,ai_semantic_score,finance_semantic_score,views_delta,semantic_cluster_label\nv1,Video Uno,Canal Uno,80,5,100,ai_cluster\n",
+    )
+    _write_text(
+        data_dir / "nlp_features" / "latest_title_nlp_features.csv",
+        "video_id,title,hook_semantic_type,dominant_semantic_score\nv1,Video Uno,tutorial,80\n",
+    )
+    _write_text(
+        data_dir / "nlp_features" / "latest_semantic_clusters.csv",
+        "video_id,semantic_cluster_id,semantic_cluster_size,semantic_cluster_label,cluster_top_terms\nv1,1,3,ai_cluster,chatgpt ai\n",
+    )
+    _write_text(data_dir / "nlp_features" / "nlp_feature_summary.json", json.dumps({"nlp_mode": "tfidf_lsa_dictionary_v1"}, ensure_ascii=False))
+    _write_text(
+        data_dir / "topic_intelligence" / "latest_video_topics.csv",
+        "video_id,topic_primary,topic_opportunity_score\na1,ai_tools,75\n",
+    )
+    _write_text(
+        data_dir / "topic_intelligence" / "latest_topic_metrics.csv",
+        "topic,video_count,topic_opportunity_score\nai_tools,10,75\n",
+    )
+    _write_text(
+        data_dir / "topic_intelligence" / "latest_title_pattern_metrics.csv",
+        "title_pattern,video_count,title_pattern_success_score\ntutorial_how_to,5,70\n",
+    )
+    _write_text(
+        data_dir / "topic_intelligence" / "latest_keyword_metrics.csv",
+        "keyword,semantic_group,video_count\nchatgpt,ai_tools,7\n",
+    )
+    _write_text(
+        data_dir / "topic_intelligence" / "latest_topic_opportunities.csv",
+        "topic,opportunity_type,topic_opportunity_score,recommended_action\nai_tools,emerging_topic,80,Scale fast\n",
+    )
+    _write_text(data_dir / "topic_intelligence" / "topic_intelligence_summary.json", json.dumps({"mode": "topic_title_intelligence_v1"}, ensure_ascii=False))
 
 
 def test_build_pages_dashboard_warns_when_dashboard_index_missing(tmp_path: Path) -> None:
@@ -143,6 +197,26 @@ def test_build_pages_dashboard_includes_model_reports(tmp_path: Path) -> None:
     assert (site_dir / "data" / "latest_feature_importance.json").exists()
     assert (site_dir / "data" / "latest_feature_direction.json").exists()
     assert (site_dir / "data" / "latest_model_suite_report.html").exists()
+
+
+def test_build_pages_dashboard_includes_nlp_topic_and_content_driver_outputs(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_nlp_topic_artifacts(data_dir)
+    _prepare_model_reports(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_video_nlp_features.json").exists()
+    assert (site_dir / "data" / "latest_title_nlp_features.json").exists()
+    assert (site_dir / "data" / "latest_semantic_clusters.json").exists()
+    assert (site_dir / "data" / "nlp_feature_summary.json").exists()
+    assert (site_dir / "data" / "latest_topic_metrics.json").exists()
+    assert (site_dir / "data" / "latest_topic_opportunities.json").exists()
+    assert (site_dir / "data" / "latest_content_driver_leaderboard.json").exists()
+    assert (site_dir / "data" / "latest_content_driver_feature_importance.json").exists()
+    assert (site_dir / "data" / "latest_content_driver_report.html").exists()
 
 
 def test_build_pages_dashboard_generates_site_manifest(tmp_path: Path) -> None:
@@ -290,6 +364,9 @@ def test_app_js_uses_relative_data_paths_and_hardening_rules(tmp_path: Path) -> 
     assert "./data/latest_video_metrics.json" in app_js
     assert "./data/latest_alerts.json" in app_js
     assert "./data/latest_signal_candidates.json" in app_js
+    assert "./data/latest_topic_metrics.json" in app_js
+    assert "./data/latest_video_nlp_features.json" in app_js
+    assert "./data/latest_content_driver_leaderboard.json" in app_js
     assert "search.list" not in app_js
     assert "http://" not in app_js
     assert "https://" not in app_js
@@ -307,7 +384,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Brief"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief"]:
         assert label in index_html
 
 

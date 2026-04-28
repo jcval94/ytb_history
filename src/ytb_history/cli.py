@@ -16,6 +16,10 @@ from ytb_history.services.model_dataset_service import build_model_dataset
 from ytb_history.services.model_artifact_registry_service import build_model_artifact_registry_report
 from ytb_history.services.model_training_service import train_baseline_model, train_model_suite, register_trained_artifact
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
+from ytb_history.services.nlp_feature_service import build_nlp_features
+from ytb_history.services.topic_intelligence_service import build_topic_intelligence
+from ytb_history.services.model_intelligence_service import build_model_intelligence
+from ytb_history.services.content_driver_model_service import train_content_driver_models
 from ytb_history.services.validation_service import validate_latest_run
 
 
@@ -75,6 +79,19 @@ def build_parser() -> argparse.ArgumentParser:
     register_parser.add_argument("--workflow-run-id", required=True)
     register_parser.add_argument("--artifact-dir", default="build/model_artifact")
     register_parser.add_argument("--data-dir", default="data")
+
+    nlp_parser = sub.add_parser("build-nlp-features", help="Build lightweight NLP feature layer from analytics artifacts")
+    nlp_parser.add_argument("--data-dir", default="data")
+
+    topic_parser = sub.add_parser("build-topic-intelligence", help="Build topic and title intelligence from NLP feature artifacts")
+    topic_parser.add_argument("--data-dir", default="data")
+
+    model_int_parser = sub.add_parser("build-model-intelligence", help="Build hybrid model intelligence outputs from local prediction and decision artifacts")
+    model_int_parser.add_argument("--data-dir", default="data")
+
+    content_driver_parser = sub.add_parser("train-content-driver-models", help="Train supervised content driver models with NLP/topic features")
+    content_driver_parser.add_argument("--data-dir", default="data")
+    content_driver_parser.add_argument("--artifact-dir", default="build/content_driver_artifact")
 
     predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
     predict_parser.add_argument("--model-dir", required=True)
@@ -162,6 +179,26 @@ def main() -> int:
             artifact_dir=args.artifact_dir,
             data_dir=args.data_dir,
         )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "build-nlp-features":
+        summary = build_nlp_features(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "build-topic-intelligence":
+        summary = build_topic_intelligence(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "build-model-intelligence":
+        summary = build_model_intelligence(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "train-content-driver-models":
+        summary = train_content_driver_models(data_dir=args.data_dir, artifact_dir=args.artifact_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

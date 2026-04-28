@@ -27,6 +27,21 @@ const DATA_FILES = {
   latestFeatureImportance: "./data/latest_feature_importance.json",
   latestFeatureDirection: "./data/latest_feature_direction.json",
   latestModelSuiteReportHtml: "./data/latest_model_suite_report.html",
+  latestVideoNlpFeatures: "./data/latest_video_nlp_features.json",
+  latestTitleNlpFeatures: "./data/latest_title_nlp_features.json",
+  latestSemanticClusters: "./data/latest_semantic_clusters.json",
+  nlpFeatureSummary: "./data/nlp_feature_summary.json",
+  latestVideoTopics: "./data/latest_video_topics.json",
+  latestTopicMetrics: "./data/latest_topic_metrics.json",
+  latestTitlePatternMetrics: "./data/latest_title_pattern_metrics.json",
+  latestKeywordMetrics: "./data/latest_keyword_metrics.json",
+  latestTopicOpportunities: "./data/latest_topic_opportunities.json",
+  topicIntelligenceSummary: "./data/topic_intelligence_summary.json",
+  latestContentDriverLeaderboard: "./data/latest_content_driver_leaderboard.json",
+  latestContentDriverFeatureImportance: "./data/latest_content_driver_feature_importance.json",
+  latestContentDriverFeatureDirection: "./data/latest_content_driver_feature_direction.json",
+  latestContentDriverGroupImportance: "./data/latest_content_driver_group_importance.json",
+  latestContentDriverReportHtml: "./data/latest_content_driver_report.html",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
   latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"
 };
@@ -192,6 +207,9 @@ function renderAll() {
   renderAlerts();
   renderDataQuality(quality, advanced);
   renderModels();
+  renderTopics();
+  renderNlp();
+  renderContentDrivers();
   renderBrief();
 }
 
@@ -688,6 +706,105 @@ function renderModels() {
     panel.querySelector("#models-tree-rules").innerHTML = suiteReportHtml;
   } else {
     panel.querySelector("#models-tree-rules").innerHTML = "<p>No suite report available</p>";
+  }
+}
+
+function renderTopics() {
+  const panel = document.querySelector("#tab-topics");
+  if (!panel) return;
+  panel.innerHTML = `
+    <h2>Topics</h2>
+    <div id="topics-opportunities"></div>
+    <div id="topics-metrics"></div>
+    <div id="topics-patterns"></div>
+    <div id="topics-keywords"></div>
+  `;
+  renderTable(panel.querySelector("#topics-opportunities"), [
+    "topic", "opportunity_type", "topic_opportunity_score", "topic_saturation_score", "topic_velocity_score", "recommended_action"
+  ], tableRows("latestTopicOpportunities"), { initialSortKey: "topic_opportunity_score", title: "Topic opportunities" });
+  renderTable(panel.querySelector("#topics-metrics"), [
+    "topic", "video_count", "channel_count", "avg_views_delta", "avg_engagement_rate", "topic_velocity_score", "topic_saturation_score", "topic_opportunity_score"
+  ], tableRows("latestTopicMetrics"), { initialSortKey: "topic_opportunity_score", title: "Topic metrics" });
+  renderTable(panel.querySelector("#topics-patterns"), [
+    "title_pattern", "video_count", "avg_views_delta", "avg_engagement_rate", "title_pattern_success_score", "example_titles"
+  ], tableRows("latestTitlePatternMetrics"), { initialSortKey: "title_pattern_success_score", title: "Title pattern metrics" });
+  renderTable(panel.querySelector("#topics-keywords"), [
+    "keyword", "semantic_group", "video_count", "total_views_delta", "avg_engagement_rate", "top_video_title"
+  ], tableRows("latestKeywordMetrics"), { initialSortKey: "video_count", title: "Keyword metrics" });
+}
+
+function renderNlp() {
+  const panel = document.querySelector("#tab-nlp");
+  if (!panel) return;
+  const clusters = tableRows("latestSemanticClusters");
+  const videos = tableRows("latestVideoNlpFeatures");
+  const titles = tableRows("latestTitleNlpFeatures");
+
+  panel.innerHTML = `
+    <h2>NLP</h2>
+    <div id="nlp-clusters-bars"></div>
+    <div id="nlp-clusters-table"></div>
+    <div id="nlp-video-semantic"></div>
+    <div id="nlp-title-features"></div>
+  `;
+
+  const byCluster = Object.values(videos.reduce((acc, row) => {
+    const key = row.semantic_cluster_label || "unknown";
+    if (!acc[key]) acc[key] = { label: key, views_delta: 0 };
+    acc[key].views_delta += asNumber(row.views_delta);
+    return acc;
+  }, {})).sort((a, b) => b.views_delta - a.views_delta).slice(0, 10);
+  const barsWrap = panel.querySelector("#nlp-clusters-bars");
+  if (barsWrap) {
+    renderHorizontalBars(barsWrap, byCluster, { labelKey: "label", valueKey: "views_delta", title: "Top semantic clusters by views_delta" });
+  }
+  renderTable(panel.querySelector("#nlp-clusters-table"), [
+    "video_id", "semantic_cluster_id", "semantic_cluster_size", "semantic_cluster_label", "cluster_top_terms"
+  ], clusters, { initialSortKey: "semantic_cluster_size", title: "Semantic clusters" });
+  renderTable(panel.querySelector("#nlp-video-semantic"), [
+    "title", "channel_name", "ai_semantic_score", "finance_semantic_score", "productivity_semantic_score", "tutorial_semantic_score", "news_semantic_score", "views_delta"
+  ], videos, { initialSortKey: "views_delta", title: "Semantic scores por video" });
+  renderTable(panel.querySelector("#nlp-title-features"), [
+    "title", "title_length_chars", "title_word_count", "title_has_number", "title_has_question", "hook_semantic_type", "dominant_semantic_score"
+  ], titles, { initialSortKey: "dominant_semantic_score", title: "Title NLP features" });
+}
+
+function renderContentDrivers() {
+  const panel = document.querySelector("#tab-content-drivers");
+  if (!panel) return;
+  const leaderboard = tableRows("latestContentDriverLeaderboard");
+  const importance = tableRows("latestContentDriverFeatureImportance");
+  const directions = tableRows("latestContentDriverFeatureDirection");
+  const groups = tableRows("latestContentDriverGroupImportance");
+  const reportHtml = typeof state.data.latestContentDriverReportHtml === "string" ? state.data.latestContentDriverReportHtml : "";
+
+  panel.innerHTML = `
+    <h2>Content Drivers</h2>
+    <p class="warning">Estas importancias son predictivas, no causales.</p>
+    <div id="cd-leaderboard"></div>
+    <div id="cd-importance"></div>
+    <div id="cd-direction"></div>
+    <div id="cd-groups"></div>
+    <h3 class="section-title">Reporte HTML</h3>
+    <div id="cd-report"></div>
+  `;
+
+  renderTable(panel.querySelector("#cd-leaderboard"), [
+    "target", "model_family", "mae_log", "rmse_log", "spearman_corr", "top_10_overlap_with_actual", "precision_at_top_decile_regression"
+  ], leaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target" });
+  renderTable(panel.querySelector("#cd-importance"), [
+    "target", "model_family", "feature", "feature_group", "importance_type", "importance_value", "importance_rank", "direction"
+  ], importance, { initialSortKey: "importance_rank", title: "Top features por target/model" });
+  renderTable(panel.querySelector("#cd-direction"), [
+    "target", "model_family", "feature", "feature_group", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
+  ], directions, { initialSortKey: "direction_score", title: "Feature directions" });
+  renderTable(panel.querySelector("#cd-groups"), [
+    "target", "model_family", "feature_group", "group_importance", "feature_count"
+  ], groups, { initialSortKey: "group_importance", title: "Group importance" });
+
+  const reportNode = panel.querySelector("#cd-report");
+  if (reportNode) {
+    reportNode.innerHTML = reportHtml.trim() || "<p>No content driver report available.</p>";
   }
 }
 
