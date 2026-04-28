@@ -24,13 +24,23 @@ def test_pages_workflow_uses_pages_actions() -> None:
     assert "actions/deploy-pages" in content
 
 
+def test_pages_workflow_validates_frontend_js_syntax() -> None:
+    content = _read(".github/workflows/pages.yml")
+    assert "node --check apps/pages_dashboard/src/assets/app.js" in content
+    assert "node --check apps/pages_dashboard/src/assets/charts.js" in content
+    assert "node --check apps/pages_dashboard/src/assets/formatters.js" in content
+    assert "node --check apps/pages_dashboard/src/assets/tables.js" in content
+
+
 def test_pages_workflow_build_order() -> None:
     content = _read(".github/workflows/pages.yml")
     analytics_pos = content.find("python -m ytb_history.cli build-analytics")
+    alerts_pos = content.find("python -m ytb_history.cli generate-alerts")
     pages_pos = content.find("python -m ytb_history.cli build-pages-dashboard")
     assert analytics_pos != -1
+    assert alerts_pos != -1
     assert pages_pos != -1
-    assert analytics_pos < pages_pos
+    assert analytics_pos < alerts_pos < pages_pos
 
 
 def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:

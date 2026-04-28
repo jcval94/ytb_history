@@ -24,6 +24,43 @@ def _prepare_minimal_analytics(data_dir: Path) -> None:
     )
 
 
+def _prepare_signals_and_alerts(data_dir: Path) -> None:
+    _write_text(
+        data_dir / "signals" / "latest_video_signals.csv",
+        "execution_date,video_id,channel_id,channel_name,title,alpha_breakout,max_signal_score,top_signal_type,alert_count\n"
+        "2026-04-28,v1,c1,Canal Uno,Video Uno,90,90,alpha_breakout,1\n",
+    )
+    _write_text(
+        data_dir / "signals" / "latest_channel_signals.csv",
+        "execution_date,channel_id,channel_name,channel_momentum_up,max_signal_score,top_signal_type,alert_count\n"
+        "2026-04-28,c1,Canal Uno,85,85,channel_momentum_up,1\n",
+    )
+    _write_text(
+        data_dir / "signals" / "latest_signal_candidates.csv",
+        "execution_date,entity_type,entity_id,signal_type,raw_signal_score,adjusted_signal_score,threshold,triggered,metric_confidence_score,confidence_level\n"
+        "2026-04-28,video,v1,alpha_breakout,90,72,85,True,60,medium\n",
+    )
+    _write_text(
+        data_dir / "signals" / "signal_summary.json",
+        json.dumps({"generated_at": "2026-04-28T00:00:00+00:00", "total_alerts": 1}, ensure_ascii=False),
+    )
+    _write_text(
+        data_dir / "alerts" / "latest_alerts.json",
+        json.dumps(
+            {
+                "generated_at": "2026-04-28T00:00:00+00:00",
+                "alert_count": 1,
+                "alerts": [{"signal_type": "alpha_breakout", "severity": "high"}],
+            },
+            ensure_ascii=False,
+        ),
+    )
+    _write_text(
+        data_dir / "alerts" / "alert_summary.json",
+        json.dumps({"generated_at": "2026-04-28T00:00:00+00:00", "total_alerts": 1}, ensure_ascii=False),
+    )
+
+
 def test_build_pages_dashboard_warns_when_dashboard_index_missing(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"
@@ -57,6 +94,43 @@ def test_build_pages_dashboard_generates_site_manifest(tmp_path: Path) -> None:
     manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
     assert manifest["schema_version"] == "pages_dashboard_v1"
     assert "latest_video_metrics" in manifest["tables"]
+
+
+def test_build_pages_dashboard_generates_latest_alerts_json_when_source_exists(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_signals_and_alerts(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    payload = json.loads((site_dir / "data" / "latest_alerts.json").read_text(encoding="utf-8"))
+    assert payload["alert_count"] == 1
+
+
+def test_build_pages_dashboard_missing_alerts_generates_empty_json_with_warning(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+
+    summary = build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    latest_alerts = json.loads((site_dir / "data" / "latest_alerts.json").read_text(encoding="utf-8"))
+    assert latest_alerts == {}
+    assert any("latest_alerts" in warning for warning in summary["warnings"])
+
+
+def test_site_manifest_includes_alerts_and_signal_summary(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_signals_and_alerts(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert "latest_alerts" in manifest["tables"]
+    assert "signal_summary" in manifest["tables"]
 
 
 def test_build_pages_dashboard_converts_csv_to_json_with_columns_rows_and_types(tmp_path: Path) -> None:
@@ -128,6 +202,8 @@ def test_app_js_uses_relative_data_paths_and_hardening_rules(tmp_path: Path) -> 
     app_js = (site_dir / "assets" / "app.js").read_text(encoding="utf-8")
     assert "./data/site_manifest.json" in app_js
     assert "./data/latest_video_metrics.json" in app_js
+    assert "./data/latest_alerts.json" in app_js
+    assert "./data/latest_signal_candidates.json" in app_js
     assert "search.list" not in app_js
     assert "http://" not in app_js
     assert "https://" not in app_js
@@ -145,7 +221,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Data Quality"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality"]:
         assert label in index_html
 
 

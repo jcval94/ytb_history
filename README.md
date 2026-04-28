@@ -140,10 +140,26 @@ python -m ytb_history.cli build-pages-dashboard
 
 Lee `data/analytics/` y genera artefactos JSON en `site/data/` listos para publicar en GitHub Pages. Además copia el Dashboard MVP estático (`HTML/CSS/JS` vanilla) desde `apps/pages_dashboard/src/` a `site/` (`index.html` y `assets/`) usando rutas relativas compatibles con subpath de GitHub Pages.
 
-El dashboard no usa Streamlit ni backend: consume exclusivamente `./data/*.json`, tolera faltantes mostrando warnings visuales y mantiene navegación por secciones (Overview, Videos, Channels, Scores, Advanced, Titles, Periods y Data Quality).
+El dashboard no usa Streamlit ni backend: consume exclusivamente `./data/*.json`, tolera faltantes mostrando warnings visuales y mantiene navegación por secciones (Overview, Videos, Channels, Scores, Advanced, Titles, Periods, Alerts y Data Quality).
 
 
-## 12) Dashboard en GitHub Pages
+## 12) Generar señales y alertas
+
+```bash
+python -m ytb_history.cli generate-alerts
+```
+
+Este comando lee exclusivamente tablas existentes en `data/analytics/latest/` y genera señales/alertas accionables en `data/signals/` y `data/alerts/`.
+
+Señales destacadas:
+- `alpha_breakout`: detecta videos con `alpha_score` alto para referencia competitiva.
+- `trend_burst`: identifica videos con estallido de tendencia reciente.
+- `evergreen_candidate`: sugiere contenido con potencial de rendimiento sostenido.
+- `packaging_problem`: marca videos con señal de interés pero posible problema de empaque.
+- `channel_momentum_up`: detecta canales con momentum alto.
+- `metric_confidence_score`: ajusta la confianza para priorizar alertas más sólidas y reducir decisiones sobre métricas débiles.
+
+## 13) Dashboard en GitHub Pages
 
 1. Activa GitHub Pages en `Settings > Pages`.
 2. En `Source`, selecciona `GitHub Actions`.
@@ -152,16 +168,16 @@ El dashboard no usa Streamlit ni backend: consume exclusivamente `./data/*.json`
    - `https://jcval94.github.io/ytb_history/`
 5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
 
-El workflow de Pages construye analytics + dashboard estático y publica únicamente el artefacto `site/`.
+El workflow de Pages construye `build-analytics` → `generate-alerts` → `build-pages-dashboard` y publica únicamente el artefacto `site/`.
 
-## 13) Tests
+## 14) Tests
 
 ```bash
 python -m compileall src tests
 pytest -q
 ```
 
-## 14) Configuración de canales
+## 15) Configuración de canales
 
 Editar `config/channels.py`:
 
@@ -171,7 +187,7 @@ CHANNEL_URLS = [
 ]
 ```
 
-## 15) Configuración de settings
+## 16) Configuración de settings
 
 Editar `config/settings.yaml`:
 - `discovery_window_days`
@@ -181,7 +197,7 @@ Editar `config/settings.yaml`:
 - `max_pages_per_channel`
 - `execution_timezone` (`local` por defecto, o zona IANA como `America/Mexico_City`)
 
-## 16) Archivos generados
+## 17) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
@@ -191,8 +207,16 @@ Editar `config/settings.yaml`:
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/run_summary.json`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/discovery_report.jsonl`
 - `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/channel_errors.jsonl`
+- `data/signals/latest_video_signals.csv`
+- `data/signals/latest_channel_signals.csv`
+- `data/signals/latest_signal_candidates.csv`
+- `data/signals/signal_summary.json`
+- `data/alerts/latest_alerts.jsonl`
+- `data/alerts/latest_alerts.json`
+- `data/alerts/latest_alerts.md`
+- `data/alerts/alert_summary.json`
 
-## 17) GitHub Actions
+## 18) GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
@@ -204,7 +228,7 @@ Editar `config/settings.yaml`:
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `generate-alerts`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 
@@ -214,14 +238,14 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-## 18) Interpretación de status
+## 19) Interpretación de status
 
 - `success`
 - `success_with_warnings`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 19) Troubleshooting
+## 20) Troubleshooting
 
 - **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
@@ -229,8 +253,9 @@ Configurar el secret en GitHub:
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
-## 20) Seguridad
+## 21) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
+

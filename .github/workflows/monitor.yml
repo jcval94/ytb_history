@@ -34,6 +34,13 @@ jobs:
       - name: Compile
         run: python -m compileall src tests
 
+      - name: Validate frontend JavaScript syntax
+        run: |
+          node --check apps/pages_dashboard/src/assets/app.js
+          node --check apps/pages_dashboard/src/assets/charts.js
+          node --check apps/pages_dashboard/src/assets/formatters.js
+          node --check apps/pages_dashboard/src/assets/tables.js
+
       - name: Run tests
         run: pytest -q
 
@@ -53,6 +60,9 @@ jobs:
 
       - name: Build analytics data mart
         run: python -m ytb_history.cli build-analytics
+
+      - name: Generate alerts and signals
+        run: python -m ytb_history.cli generate-alerts
 
       - name: Commit and push data changes
         run: |
