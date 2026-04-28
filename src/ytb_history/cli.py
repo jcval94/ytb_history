@@ -10,6 +10,7 @@ from ytb_history.services.alerts_service import generate_alerts
 from ytb_history.services.analytics_service import build_analytics
 from ytb_history.services.decision_service import build_decision_layer
 from ytb_history.services.brief_service import generate_weekly_brief
+from ytb_history.services.creative_packages_service import build_creative_packages
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.model_dataset_service import build_model_dataset
@@ -88,6 +89,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     model_int_parser = sub.add_parser("build-model-intelligence", help="Build hybrid model intelligence outputs from local prediction and decision artifacts")
     model_int_parser.add_argument("--data-dir", default="data")
+
+    creative_parser = sub.add_parser("generate-creative-packages", help="Generate deterministic creative execution packages from intelligence layers")
+    creative_parser.add_argument("--data-dir", default="data")
 
     content_driver_parser = sub.add_parser("train-content-driver-models", help="Train supervised content driver models with NLP/topic features")
     content_driver_parser.add_argument("--data-dir", default="data")
@@ -194,6 +198,11 @@ def main() -> int:
 
     if args.command == "build-model-intelligence":
         summary = build_model_intelligence(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "generate-creative-packages":
+        summary = build_creative_packages(data_dir=args.data_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
