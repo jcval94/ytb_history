@@ -2,13 +2,13 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 
 from ytb_history.domain.models import VideoSnapshot
 from ytb_history.storage.jsonl import read_jsonl_gz, write_jsonl_gz
 from ytb_history.storage.partitioning import (
-    extract_execution_date_from_snapshot_path,
+    latest_run_before,
     list_snapshot_files,
     snapshot_path_for_run,
 )
@@ -60,19 +60,8 @@ class SnapshotRepo:
         return list_snapshot_files(base_dir=self._base_dir)
 
     def latest_path_before(self, execution_date: datetime) -> Path | None:
-        target = self._as_utc(execution_date)
-        candidates: list[tuple[datetime, Path]] = []
-        for path in self.list_snapshot_files():
-            path_date = extract_execution_date_from_snapshot_path(path)
-            if path_date is None:
-                continue
-            if path_date < target:
-                candidates.append((path_date, path))
-
-        if not candidates:
-            return None
-        candidates.sort(key=lambda item: (item[0], item[1]))
-        return candidates[-1][1]
+        files = self.list_snapshot_files()
+        return latest_run_before(files, execution_date)
 
     def load_latest_before(self, execution_date: datetime) -> list[VideoSnapshot]:
         latest_path = self.latest_path_before(execution_date)
@@ -102,9 +91,3 @@ class SnapshotRepo:
             return int(value)
         except (TypeError, ValueError):
             return None
-
-    @staticmethod
-    def _as_utc(execution_date: datetime) -> datetime:
-        if execution_date.tzinfo is None:
-            return execution_date.replace(tzinfo=timezone.utc)
-        return execution_date.astimezone(timezone.utc)

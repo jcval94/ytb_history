@@ -5,3 +5,4 @@ operational_quota_limit: 7000
 warning_quota_limit: 5000
 soft_warning_quota_limit: 1000
 max_pages_per_channel: 5
+execution_timezone: local

@@ -88,7 +88,7 @@ python -m ytb_history.cli validate-latest
 python -m ytb_history.cli export-latest
 ```
 
-Genera una carpeta particionada en `data/exports/dt=YYYY-MM-DD/run=HHMMSSZ/` con:
+Genera una carpeta particionada en `data/exports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/` con:
 - `latest_snapshots.csv`
 - `latest_deltas.csv`
 - `video_growth_summary.csv`
@@ -124,17 +124,18 @@ Editar `config/settings.yaml`:
 - `youtube_batch_size`
 - `operational_quota_limit`
 - `max_pages_per_channel`
+- `execution_timezone` (`local` por defecto, o zona IANA como `America/Mexico_City`)
 
 ## 13) Archivos generados
 
 - `data/state/channel_registry.jsonl`
 - `data/state/tracked_videos_catalog.jsonl`
-- `data/snapshots/dt=YYYY-MM-DD/run=HHMMSSZ/snapshots.jsonl.gz`
-- `data/deltas/dt=YYYY-MM-DD/run=HHMMSSZ/deltas.jsonl.gz`
-- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/quota_report.json`
-- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/run_summary.json`
-- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/discovery_report.jsonl`
-- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ/channel_errors.jsonl`
+- `data/snapshots/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/snapshots.jsonl.gz`
+- `data/deltas/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/deltas.jsonl.gz`
+- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/quota_report.json`
+- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/run_summary.json`
+- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/discovery_report.jsonl`
+- `data/reports/dt=YYYY-MM-DD/run=HHMMSSZ|HHMMSS±ZZZZ/channel_errors.jsonl`
 
 ## 14) GitHub Actions
 
