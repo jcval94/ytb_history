@@ -6,3 +6,9 @@ warning_quota_limit: 5000
 soft_warning_quota_limit: 1000
 max_pages_per_channel: 5
 execution_timezone: local
+
+transcription:
+  daily_ranked_limit: 10
+  forced_channels_enabled: true
+  forced_channels_max_per_run: 50
+  forced_channels_new_video_window_days: 14

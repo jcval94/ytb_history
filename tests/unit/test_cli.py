@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:

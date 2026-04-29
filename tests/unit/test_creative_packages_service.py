@@ -69,9 +69,53 @@ def test_generate_creative_packages_outputs_and_rules(tmp_path: Path) -> None:
 
     summary = json.loads((out / "creative_packages_summary.json").read_text(encoding="utf-8"))
     assert summary["total_packages"] == 3
+    assert "transcript_available" in packages[0]
 
 
 def test_creative_service_no_api_and_no_search_list() -> None:
     text = Path("src/ytb_history/services/creative_packages_service.py").read_text(encoding="utf-8")
     assert "youtube" not in text.lower()
     assert "search.list" not in text
+
+
+def test_creative_packages_uses_transcript_insights_when_available(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    _write_csv(
+        data_dir / "decision" / "latest_action_candidates.csv",
+        ["action_id", "action_type", "video_id", "entity_id", "channel_name", "title", "decision_score", "metric_confidence_score", "timeframe"],
+        [{"action_id": "a1", "action_type": "create_fast_reaction", "video_id": "v1", "entity_id": "v1", "channel_name": "Canal A", "title": "Título", "decision_score": 90, "metric_confidence_score": 80, "timeframe": "next_3_days"}],
+    )
+    _write_csv(data_dir / "decision" / "latest_content_opportunities.csv", ["opportunity_id", "source_video_id", "opportunity_type", "recommended_timeframe", "source_title"], [])
+    _write_csv(data_dir / "topic_intelligence" / "latest_topic_opportunities.csv", ["video_id", "topic", "topic_opportunity_score", "topic_saturation_score", "title_pattern", "tutorial_semantic_score", "title_pattern_success_score"], [{"video_id": "v1", "topic": "Tema X", "topic_opportunity_score": 80, "topic_saturation_score": 20, "title_pattern": "trend", "tutorial_semantic_score": 0, "title_pattern_success_score": 75}])
+    insights_path = data_dir / "transcripts" / "videos" / "v1" / "transcript_insights.json"
+    insights_path.parent.mkdir(parents=True, exist_ok=True)
+    insights_path.write_text(json.dumps({
+        "summary": "Resumen transcript",
+        "hook_analysis": {"hook_type": "surprise", "hook_text": "Dato inesperado", "why_it_works": "curiosidad"},
+        "narrative_structure": [{"section": "intro", "purpose": "gancho", "summary": "Bloque 1"}],
+        "creative_reuse_opportunities": ["clip A"],
+        "risk_notes": ["riesgo A"],
+    }), encoding="utf-8")
+    (data_dir / "transcripts" / "transcript_insights_index.jsonl").write_text(json.dumps({"video_id": "v1", "insights_path": str(insights_path)}) + "\n", encoding="utf-8")
+
+    generate_creative_packages(data_dir=data_dir)
+    out = data_dir / "creative_packages"
+    packages = list(csv.DictReader((out / "latest_creative_packages.csv").open("r", encoding="utf-8", newline="")))
+    assert packages[0]["transcript_available"] in {"True", "true", "1"}
+    assert "Resumen transcript" in packages[0]["transcript_summary"]
+    hooks = list(csv.DictReader((out / "latest_hook_candidates.csv").open("r", encoding="utf-8", newline="")))
+    assert hooks[0]["hook_type"] == "surprise"
+    outlines = list(csv.DictReader((out / "latest_script_outlines.csv").open("r", encoding="utf-8", newline="")))
+    assert outlines[0]["section_1"] == "Bloque 1"
+
+
+def test_creative_packages_handles_incomplete_insights(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    _write_csv(data_dir / "decision" / "latest_action_candidates.csv", ["action_id", "action_type", "video_id", "entity_id", "channel_name", "title", "decision_score", "metric_confidence_score", "timeframe"], [{"action_id": "a1", "action_type": "create_fast_reaction", "video_id": "v1", "entity_id": "v1", "channel_name": "Canal A", "title": "Título", "decision_score": 90, "metric_confidence_score": 80, "timeframe": "next_3_days"}])
+    _write_csv(data_dir / "decision" / "latest_content_opportunities.csv", ["opportunity_id", "source_video_id", "opportunity_type", "recommended_timeframe", "source_title"], [])
+    _write_csv(data_dir / "topic_intelligence" / "latest_topic_opportunities.csv", ["video_id", "topic", "topic_opportunity_score", "topic_saturation_score", "title_pattern", "tutorial_semantic_score", "title_pattern_success_score"], [{"video_id": "v1", "topic": "Tema", "topic_opportunity_score": 70, "topic_saturation_score": 10, "title_pattern": "trend", "tutorial_semantic_score": 0, "title_pattern_success_score": 70}])
+    idx = data_dir / "transcripts" / "transcript_insights_index.jsonl"
+    idx.parent.mkdir(parents=True, exist_ok=True)
+    idx.write_text(json.dumps({"video_id": "v1", "insights_path": str(data_dir / "transcripts" / "videos" / "v1" / "missing.json")}) + "\n", encoding="utf-8")
+    result = generate_creative_packages(data_dir=data_dir)
+    assert result["total_packages"] == 1

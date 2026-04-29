@@ -23,7 +23,11 @@ from ytb_history.services.nlp_feature_service import build_nlp_features
 from ytb_history.services.topic_intelligence_service import build_topic_intelligence
 from ytb_history.services.model_intelligence_service import build_model_intelligence
 from ytb_history.services.content_driver_model_service import train_content_driver_models
+from ytb_history.services.transcript_selection_service import select_transcription_candidates
 from ytb_history.services.validation_service import validate_latest_run
+from ytb_history.services.transcript_store_service import build_transcript_registry_report
+from ytb_history.services.transcription_runner_service import transcribe_selected_videos
+from ytb_history.services.transcript_insights_service import generate_transcript_insights
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -105,6 +109,26 @@ def build_parser() -> argparse.ArgumentParser:
     content_driver_parser = sub.add_parser("train-content-driver-models", help="Train supervised content driver models with NLP/topic features")
     content_driver_parser.add_argument("--data-dir", default="data")
     content_driver_parser.add_argument("--artifact-dir", default="build/content_driver_artifact")
+
+    transcript_parser = sub.add_parser("select-transcription-candidates", help="Select daily high-value videos for transcription queue")
+    transcript_parser.add_argument("--data-dir", default="data")
+    transcript_parser.add_argument("--limit", default=10, type=int)
+
+    transcript_report_parser = sub.add_parser("transcript-registry-report", help="Build transcript registry report from local transcript registry")
+    transcript_report_parser.add_argument("--data-dir", default="data")
+
+    transcribe_parser = sub.add_parser("transcribe-selected-videos", help="Transcribe queued videos from local audio sources with OpenAI STT")
+    transcribe_parser.add_argument("--data-dir", default="data")
+    transcribe_parser.add_argument("--limit", default=10, type=int)
+    transcribe_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    transcribe_parser.add_argument("--model", default="gpt-4o-mini-transcribe")
+
+    insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
+    insights_parser.add_argument("--data-dir", default="data")
+    insights_parser.add_argument("--limit", default=10, type=int)
+    insights_parser.add_argument("--model", default="gpt-4o-mini")
+    insights_parser.add_argument("--force", action="store_true")
+    insights_parser.add_argument("--dry-run", action="store_true")
 
     predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
     predict_parser.add_argument("--model-dir", required=True)
@@ -227,6 +251,37 @@ def main() -> int:
 
     if args.command == "train-content-driver-models":
         summary = train_content_driver_models(data_dir=args.data_dir, artifact_dir=args.artifact_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "select-transcription-candidates":
+        summary = select_transcription_candidates(data_dir=args.data_dir, limit=args.limit)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "transcript-registry-report":
+        summary = build_transcript_registry_report(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "transcribe-selected-videos":
+        summary = transcribe_selected_videos(
+            data_dir=args.data_dir,
+            limit=args.limit,
+            audio_source_dir=args.audio_source_dir,
+            model=args.model,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "generate-transcript-insights":
+        summary = generate_transcript_insights(
+            data_dir=args.data_dir,
+            limit=args.limit,
+            force=args.force,
+            dry_run=args.dry_run,
+            model=args.model,
+        )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
