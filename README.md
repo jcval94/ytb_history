@@ -266,6 +266,33 @@ Genera reportes en `data/model_reports/`:
 
 Y artefactos fuera de `data/` en `build/content_driver_artifact/` (no se deben versionar modelos en Git).
 
+## 12.7) Smoke test de entrenamiento con dataset sintético
+
+```bash
+python -m ytb_history.cli smoke-test-model-training --output-dir build/model_smoke_test
+```
+
+Ejecuta un smoke test end-to-end de entrenamiento + predicción usando datos sintéticos determinísticos (`random_state=42`) sin tocar `data/` real.
+
+
+## 12.9) Generar paquetes creativos
+
+```bash
+python -m ytb_history.cli generate-creative-packages
+```
+
+Genera una capa de ejecución creativa en `data/creative_packages/` a partir de outputs existentes de `decision`, `topic_intelligence`, `model_reports`, `model_intelligence` y `briefs`, sin recalcular fórmulas de decision/topic/model.
+
+Archivos generados:
+- `data/creative_packages/latest_creative_packages.csv`
+- `data/creative_packages/latest_title_candidates.csv`
+- `data/creative_packages/latest_hook_candidates.csv`
+- `data/creative_packages/latest_thumbnail_briefs.csv`
+- `data/creative_packages/latest_script_outlines.csv`
+- `data/creative_packages/latest_originality_checks.csv`
+- `data/creative_packages/latest_production_checklist.csv`
+- `data/creative_packages/creative_packages_summary.json`
+
 ## 13) Dashboard en GitHub Pages
 
 1. Activa GitHub Pages en `Settings > Pages`.
@@ -275,7 +302,7 @@ Y artefactos fuera de `data/` en `build/content_driver_artifact/` (no se deben v
    - `https://jcval94.github.io/ytb_history/`
 5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
 
-El workflow de Pages construye `build-analytics` → `generate-alerts` → `build-decision-layer` → `generate-weekly-brief` → `build-pages-dashboard` y publica únicamente el artefacto `site/`.
+El workflow de Pages construye `build-analytics` → `build-nlp-features` → `generate-alerts` → `build-decision-layer` → `build-model-intelligence` → `build-topic-intelligence` → `generate-creative-packages` → `generate-weekly-brief` → `build-pages-dashboard` y publica únicamente el artefacto `site/` (incluye tab Creative).
 
 ## 14) Tests
 
@@ -366,10 +393,12 @@ Editar `config/settings.yaml`:
 - No requiere `YOUTUBE_API_KEY`.
 
 ### Monitor (`.github/workflows/monitor.yml`)
+
+El monitor ejecuta `generate-creative-packages` después de `build-topic-intelligence` y antes de `generate-weekly-brief`.
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `generate-alerts`, `build-decision-layer`, `generate-weekly-brief`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 
@@ -401,11 +430,4 @@ Configurar el secret en GitHub:
 - No usar `search.list` en flujo normal.
 
 
-## 12.7) Smoke test de entrenamiento con dataset sintético
-
-```bash
-python -m ytb_history.cli smoke-test-model-training --output-dir build/model_smoke_test
-```
-
-Ejecuta un smoke test end-to-end de entrenamiento + predicción usando datos sintéticos determinísticos (`random_state=42`) sin tocar `data/` real.
 

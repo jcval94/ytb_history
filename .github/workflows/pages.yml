@@ -10,10 +10,20 @@ on:
       - data/signals/**
       - data/alerts/**
       - data/briefs/**
+      - data/creative_packages/**
+      - data/modeling/**
+      - data/model_reports/**
+      - data/model_intelligence/**
+      - data/topic_intelligence/**
+      - data/nlp_features/**
       - apps/pages_dashboard/**
       - src/ytb_history/services/pages_dashboard_service.py
       - src/ytb_history/services/alerts_service.py
       - src/ytb_history/services/brief_service.py
+      - src/ytb_history/services/creative_packages_service.py
+      - src/ytb_history/services/model_intelligence_service.py
+      - src/ytb_history/services/topic_intelligence_service.py
+      - src/ytb_history/services/nlp_feature_service.py
       - src/ytb_history/cli.py
       - .github/workflows/pages.yml
 
@@ -78,6 +88,9 @@ jobs:
 
       - name: Build topic intelligence
         run: python -m ytb_history.cli build-topic-intelligence
+
+      - name: Generate creative packages
+        run: python -m ytb_history.cli generate-creative-packages
 
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief

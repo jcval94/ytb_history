@@ -4,7 +4,7 @@ import csv
 import json
 from pathlib import Path
 
-from ytb_history.services.creative_packages_service import build_creative_packages
+from ytb_history.services.creative_packages_service import generate_creative_packages
 
 
 def _write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) -> None:
@@ -15,7 +15,7 @@ def _write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]])
         writer.writerows(rows)
 
 
-def test_build_creative_packages_outputs_and_rules(tmp_path: Path) -> None:
+def test_generate_creative_packages_outputs_and_rules(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     _write_csv(
         data_dir / "decision" / "latest_action_candidates.csv",
@@ -29,8 +29,9 @@ def test_build_creative_packages_outputs_and_rules(tmp_path: Path) -> None:
     _write_csv(data_dir / "decision" / "latest_content_opportunities.csv", ["opportunity_id", "source_video_id", "opportunity_type", "recommended_timeframe", "source_title"], [{"opportunity_id": "o1", "source_video_id": "v1", "opportunity_type": "emerging_topic", "recommended_timeframe": "next_3_days", "source_title": "Título original A"}])
     _write_csv(data_dir / "topic_intelligence" / "latest_topic_opportunities.csv", ["video_id", "topic", "topic_opportunity_score", "topic_saturation_score", "title_pattern", "tutorial_semantic_score", "title_pattern_success_score"], [{"video_id": "v1", "topic": "IA para negocios", "topic_opportunity_score": 80, "topic_saturation_score": 20, "title_pattern": "trend", "tutorial_semantic_score": 0, "title_pattern_success_score": 75}])
 
-    result = build_creative_packages(data_dir=data_dir)
+    result = generate_creative_packages(data_dir=data_dir)
     assert result["status"] in {"success", "warning"}
+    assert result["total_packages"] == 3
 
     out = data_dir / "creative_packages"
     expected = [
@@ -41,21 +42,21 @@ def test_build_creative_packages_outputs_and_rules(tmp_path: Path) -> None:
         assert (out / filename).exists()
 
     packages = list(csv.DictReader((out / "latest_creative_packages.csv").open("r", encoding="utf-8", newline="")))
-    assert len(packages) == 3
     by_action = {r["source_action_id"]: r for r in packages}
     assert by_action["a1"]["package_type"] == "fast_reaction_package"
     assert by_action["a2"]["package_type"] == "evergreen_explainer_package"
     assert by_action["a3"]["package_type"] == "repackage_package"
     assert float(by_action["a1"]["source_decision_score"]) == 90.0
-    assert float(by_action["a1"]["creative_execution_score"]) > 0
+    assert float(by_action["a1"]["creative_execution_score"]) > 0.0
 
     titles = list(csv.DictReader((out / "latest_title_candidates.csv").open("r", encoding="utf-8", newline="")))
     assert len(titles) >= 9
-    assert all(t["title_candidate"].strip().lower() != "título original a" for t in titles)
+    assert all(row["title_candidate"].strip().lower() != row["source_title"].strip().lower() if "source_title" in row else True for row in titles)
+    assert all(row["originality_status"] in {"safe", "review", "risky"} for row in titles)
 
     originality = list(csv.DictReader((out / "latest_originality_checks.csv").open("r", encoding="utf-8", newline="")))
     assert originality
-    assert all(r["originality_status"] in {"ok", "risky"} for r in originality)
+    assert all(row["originality_status"] in {"safe", "review", "risky"} for row in originality)
 
     hooks = list(csv.DictReader((out / "latest_hook_candidates.csv").open("r", encoding="utf-8", newline="")))
     assert hooks

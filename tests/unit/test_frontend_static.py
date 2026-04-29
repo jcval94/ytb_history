@@ -123,3 +123,21 @@ def test_frontend_js_syntax_is_valid_with_node_check(relpath: str) -> None:
     file_path = REPO_ROOT / relpath
     result = subprocess.run([node_bin, "--check", str(file_path)], capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
+
+def test_index_html_contains_creative_tab() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="creative"' in index_html
+    assert "Creative" in index_html
+
+
+def test_app_js_contains_creative_render_and_data_loads() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderCreativePackages()" in app_js
+    assert 'latestCreativePackages: "./data/latest_creative_packages.json"' in app_js
+    assert 'creativePackagesSummary: "./data/creative_packages_summary.json"' in app_js
+
+
+def test_readme_does_not_include_old_pages_workflow_line() -> None:
+    readme = _read("README.md")
+    assert "build-analytics` → `generate-alerts` → `build-decision-layer` → `generate-weekly-brief` → `build-pages-dashboard" not in readme
+

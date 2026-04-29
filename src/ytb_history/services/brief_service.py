@@ -35,6 +35,9 @@ INPUT_FILES = {
     "content_driver_feature_direction": Path("model_reports/latest_content_driver_feature_direction.csv"),
     "model_readiness_diagnostics": Path("modeling/latest_model_readiness_diagnostics.json"),
     "training_gap_report": Path("modeling/latest_training_gap_report.json"),
+    "creative_packages": Path("creative_packages/latest_creative_packages.csv"),
+    "creative_titles": Path("creative_packages/latest_title_candidates.csv"),
+    "creative_hooks": Path("creative_packages/latest_hook_candidates.csv"),
 }
 
 
@@ -208,6 +211,9 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     content_driver_direction = _sort_desc(tables["content_driver_feature_direction"], "direction_score")
     readiness = tables["model_readiness_diagnostics"] if isinstance(tables["model_readiness_diagnostics"], dict) else {}
     gap = tables["training_gap_report"] if isinstance(tables["training_gap_report"], dict) else {}
+    creative_packages = _sort_desc(tables["creative_packages"], "creative_execution_score")[:3]
+    creative_titles = tables["creative_titles"]
+    creative_hooks = tables["creative_hooks"]
 
     alerts_payload = tables["latest_alerts"] if isinstance(tables["latest_alerts"], dict) else {}
     alerts_rows = alerts_payload.get("alerts", []) if isinstance(alerts_payload.get("alerts", []), list) else []
@@ -310,6 +316,7 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "content_driver_feature_importance": content_driver_importance,
         "content_driver_feature_direction": content_driver_direction,
         "top_alerts": top_alerts,
+        "creative_packages_to_execute": creative_packages,
         "title_pattern_snapshot": title_snapshot,
         "data_quality_notes": data_quality_notes,
         "warnings": warnings,
@@ -446,6 +453,41 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         markdown_lines.extend(["", "Advertencia: estas importancias son predictivas, no causales."])
     else:
         markdown_lines.extend(["- Content driver outputs no disponibles en esta corrida."])
+
+    markdown_lines.extend(["", "## Creative Packages to Execute"])
+    markdown_lines.extend(
+        _tabulate(
+            ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
+            [
+                [
+                    str(row.get("package_type", "")),
+                    str(row.get("topic", "")),
+                    str(row.get("creative_angle", "")),
+                    str(row.get("recommended_format", "")),
+                    str(row.get("creative_execution_score", "")),
+                    str(row.get("recommended_next_step", "")),
+                ]
+                for row in creative_packages
+            ],
+        )
+    )
+
+    top_package_ids = [str(row.get("creative_package_id", "")) for row in creative_packages if row.get("creative_package_id")]
+    selected_titles = [row for row in creative_titles if str(row.get("creative_package_id", "")) in top_package_ids][:3]
+    selected_hooks = [row for row in creative_hooks if str(row.get("creative_package_id", "")) in top_package_ids][:3]
+
+    markdown_lines.extend(["", "## Suggested Titles & Hooks"])
+    markdown_lines.append("### Suggested Titles")
+    if selected_titles:
+        markdown_lines.extend([f"- {str(row.get('title_candidate', ''))}" for row in selected_titles])
+    else:
+        markdown_lines.append("- No title candidates available")
+
+    markdown_lines.append("### Suggested Hooks")
+    if selected_hooks:
+        markdown_lines.extend([f"- {str(row.get('hook_text', ''))}" for row in selected_hooks])
+    else:
+        markdown_lines.append("- No hook candidates available")
 
     markdown_lines.extend(["", "## Model Readiness"])
     if readiness:

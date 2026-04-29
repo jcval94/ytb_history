@@ -40,6 +40,7 @@ def test_pages_workflow_build_order() -> None:
     decision_pos = content.find("python -m ytb_history.cli build-decision-layer")
     model_int_pos = content.find("python -m ytb_history.cli build-model-intelligence")
     topic_pos = content.find("python -m ytb_history.cli build-topic-intelligence")
+    creative_pos = content.find("python -m ytb_history.cli generate-creative-packages")
     brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
     pages_pos = content.find("python -m ytb_history.cli build-pages-dashboard")
     assert analytics_pos != -1
@@ -48,9 +49,10 @@ def test_pages_workflow_build_order() -> None:
     assert decision_pos != -1
     assert model_int_pos != -1
     assert topic_pos != -1
+    assert creative_pos != -1
     assert brief_pos != -1
     assert pages_pos != -1
-    assert analytics_pos < nlp_pos < alerts_pos < decision_pos < model_int_pos < topic_pos < brief_pos < pages_pos
+    assert analytics_pos < nlp_pos < alerts_pos < decision_pos < model_int_pos < topic_pos < creative_pos < brief_pos < pages_pos
 
 
 def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:
@@ -58,6 +60,8 @@ def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:
     assert "YOUTUBE_API_KEY" not in content
     assert "python -m ytb_history.cli run" not in content
     assert "python -m ytb_history.cli train-content-driver-models" not in content
+    assert "python -m ytb_history.cli train-model-suite" not in content
+    assert "python -m ytb_history.cli smoke-test-model-training" not in content
     assert "git add" not in content
     assert "git push" not in content
     assert "search.list" not in content
@@ -67,6 +71,10 @@ def test_pages_workflow_trigger_paths_include_brief_inputs() -> None:
     content = _read(".github/workflows/pages.yml")
     assert "data/briefs/**" in content
     assert "src/ytb_history/services/brief_service.py" in content
+    assert "data/creative_packages/**" in content
+    assert "data/topic_intelligence/**" in content
+    assert "src/ytb_history/services/creative_packages_service.py" in content
+    assert "src/ytb_history/services/topic_intelligence_service.py" in content
 
 
 def test_pages_workflow_publishes_site_path() -> None:

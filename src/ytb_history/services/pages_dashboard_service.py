@@ -43,6 +43,13 @@ CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_content_driver_feature_importance", "model_reports/latest_content_driver_feature_importance.csv"),
     ("latest_content_driver_feature_direction", "model_reports/latest_content_driver_feature_direction.csv"),
     ("latest_content_driver_group_importance", "model_reports/latest_content_driver_group_importance.csv"),
+    ("latest_creative_packages", "creative_packages/latest_creative_packages.csv"),
+    ("latest_title_candidates", "creative_packages/latest_title_candidates.csv"),
+    ("latest_hook_candidates", "creative_packages/latest_hook_candidates.csv"),
+    ("latest_thumbnail_briefs", "creative_packages/latest_thumbnail_briefs.csv"),
+    ("latest_script_outlines", "creative_packages/latest_script_outlines.csv"),
+    ("latest_originality_checks", "creative_packages/latest_originality_checks.csv"),
+    ("latest_production_checklist", "creative_packages/latest_production_checklist.csv"),
 )
 
 JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
@@ -54,6 +61,7 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("topic_intelligence_summary", "topic_intelligence/topic_intelligence_summary.json"),
     ("latest_model_readiness_diagnostics", "modeling/latest_model_readiness_diagnostics.json"),
     ("latest_training_gap_report", "modeling/latest_training_gap_report.json"),
+    ("creative_packages_summary", "creative_packages/creative_packages_summary.json"),
 )
 
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (

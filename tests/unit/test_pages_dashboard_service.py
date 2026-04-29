@@ -480,3 +480,45 @@ def test_build_pages_dashboard_includes_model_readiness_outputs(tmp_path: Path) 
     assert (site_dir / "data" / "latest_training_gap_report.json").exists()
     assert (site_dir / "data" / "latest_target_coverage_report.json").exists()
     assert (site_dir / "data" / "latest_model_readiness_report.html").exists()
+
+def _prepare_creative_packages(data_dir: Path) -> None:
+    _write_text(data_dir / "creative_packages" / "latest_creative_packages.csv", "creative_package_id,topic,package_type,creative_execution_score\ncp1,ai,fast_reaction_package,88\n")
+    _write_text(data_dir / "creative_packages" / "latest_title_candidates.csv", "creative_package_id,title_candidate,originality_status\ncp1,Titulo 1,safe\n")
+    _write_text(data_dir / "creative_packages" / "latest_hook_candidates.csv", "creative_package_id,hook_text\ncp1,Hook 1\n")
+    _write_text(data_dir / "creative_packages" / "latest_thumbnail_briefs.csv", "creative_package_id,main_text\ncp1,Main\n")
+    _write_text(data_dir / "creative_packages" / "latest_script_outlines.csv", "creative_package_id,structure_type\ncp1,quick_reaction\n")
+    _write_text(data_dir / "creative_packages" / "latest_originality_checks.csv", "creative_package_id,candidate_type,copy_risk_score\ncp1,title,20\n")
+    _write_text(data_dir / "creative_packages" / "latest_production_checklist.csv", "creative_package_id,production_step\ncp1,revisar evidencia\n")
+    _write_text(data_dir / "creative_packages" / "creative_packages_summary.json", json.dumps({"total_packages": 1}, ensure_ascii=False))
+
+
+def test_build_pages_dashboard_includes_creative_package_jsons(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_creative_packages(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_creative_packages.json").exists()
+    assert (site_dir / "data" / "latest_title_candidates.json").exists()
+    assert (site_dir / "data" / "latest_hook_candidates.json").exists()
+    assert (site_dir / "data" / "latest_thumbnail_briefs.json").exists()
+    assert (site_dir / "data" / "latest_script_outlines.json").exists()
+    assert (site_dir / "data" / "latest_originality_checks.json").exists()
+    assert (site_dir / "data" / "latest_production_checklist.json").exists()
+    assert (site_dir / "data" / "creative_packages_summary.json").exists()
+
+
+def test_site_manifest_includes_creative_tables(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_creative_packages(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+
+    assert "latest_creative_packages" in manifest["tables"]
+    assert "latest_title_candidates" in manifest["tables"]
+    assert "creative_packages_summary" in manifest["tables"]

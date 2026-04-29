@@ -76,6 +76,9 @@ jobs:
       - name: Build topic intelligence
         run: python -m ytb_history.cli build-topic-intelligence
 
+      - name: Generate creative packages
+        run: python -m ytb_history.cli generate-creative-packages
+
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief
 
