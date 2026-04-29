@@ -141,3 +141,14 @@ def test_readme_does_not_include_old_pages_workflow_line() -> None:
     readme = _read("README.md")
     assert "build-analytics` → `generate-alerts` → `build-decision-layer` → `generate-weekly-brief` → `build-pages-dashboard" not in readme
 
+
+
+def test_index_html_contains_analysis_window_badge() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert "id=\"analysis-date-range\"" in index_html
+
+
+def test_app_js_contains_analysis_window_renderer() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderAnalysisDateRange(videos)" in app_js
+    assert "Analysis window:" in app_js
