@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 CREATIVE_PACKAGES_COLUMNS = [
-    "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "evidence_json", "dashboard_tab", "recommended_next_step",
+    "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
 ]
 TITLE_COLUMNS = ["creative_package_id", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "originality_status", "estimated_strength", "notes"]
 HOOK_COLUMNS = ["creative_package_id", "hook_id", "hook_text", "hook_type", "expected_use", "risk"]
@@ -67,6 +67,18 @@ def _safe_float(value: Any) -> float | None:
         return float(str(value))
     except (TypeError, ValueError):
         return None
+
+
+def _read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            text = line.strip()
+            if text:
+                rows.append(json.loads(text))
+    return rows
 
 
 def _tokens(text: str) -> set[str]:
@@ -141,11 +153,13 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
     opp_path = root / "decision" / "latest_content_opportunities.csv"
     topic_path = root / "topic_intelligence" / "latest_topic_opportunities.csv"
     pattern_path = root / "topic_intelligence" / "latest_title_pattern_metrics.csv"
+    transcript_index_path = root / "transcripts" / "transcript_insights_index.jsonl"
 
     actions = _read_csv(action_path) if action_path.exists() else []
     opportunities = _read_csv(opp_path) if opp_path.exists() else []
     topics = _read_csv(topic_path) if topic_path.exists() else []
     patterns = _read_csv(pattern_path) if pattern_path.exists() else []
+    transcript_index = _read_jsonl(transcript_index_path)
 
     if not action_path.exists():
         warnings.append("missing_input:decision/latest_action_candidates.csv")
@@ -158,6 +172,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
 
     opp_by_video = {r.get("source_video_id", ""): r for r in opportunities}
     topic_by_video = {r.get("video_id", ""): r for r in topics}
+    transcript_index_by_video = {str(r.get("video_id", "")).strip(): r for r in transcript_index}
     pattern_success = _safe_float(patterns[0].get("success_score")) if patterns else None
 
     creative_rows: list[dict[str, Any]] = []
@@ -176,6 +191,19 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
         package_type = _package_type(merged)
         topic = topic_row.get("topic") or action.get("topic") or opp.get("opportunity_type") or "tema clave"
         source_title = action.get("title") or opp.get("source_title") or ""
+        transcript_entry = transcript_index_by_video.get(video_id, {})
+        transcript_insights_path = str(transcript_entry.get("insights_path", "")).strip()
+        transcript_insights: dict[str, Any] = {}
+        if transcript_insights_path:
+            try:
+                transcript_insights = json.loads(Path(transcript_insights_path).read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                transcript_insights = {}
+        transcript_summary = str(transcript_insights.get("summary", "") or "")
+        transcript_hook_type = str((transcript_insights.get("hook_analysis") or {}).get("hook_type", "") or "")
+        transcript_narrative = transcript_insights.get("narrative_structure", [])
+        transcript_reuse = transcript_insights.get("creative_reuse_opportunities", [])
+        transcript_risk_notes = transcript_insights.get("risk_notes", [])
         source_score = _safe_float(action.get("decision_score"))
         topic_score = _safe_float(topic_row.get("topic_opportunity_score")) or _safe_float(opp.get("topic_opportunity_score"))
         pattern_score = _safe_float(topic_row.get("title_pattern_success_score")) or pattern_success or 50.0
@@ -253,7 +281,14 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             "production_feasibility_score": feasibility,
             "creative_execution_score": _weighted_score(score_inputs),
             "confidence_score": confidence if confidence is not None else "",
-            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", "")}, ensure_ascii=False),
+            "transcript_available": bool(transcript_insights),
+            "transcript_insights_path": transcript_insights_path,
+            "transcript_summary": transcript_summary,
+            "transcript_hook_type": transcript_hook_type,
+            "transcript_narrative_structure": json.dumps(transcript_narrative if isinstance(transcript_narrative, list) else [], ensure_ascii=False),
+            "transcript_reuse_opportunities": json.dumps(transcript_reuse if isinstance(transcript_reuse, list) else [], ensure_ascii=False),
+            "transcript_risk_notes": json.dumps(transcript_risk_notes if isinstance(transcript_risk_notes, list) else [], ensure_ascii=False),
+            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", ""), "transcript_available": bool(transcript_insights)}, ensure_ascii=False),
             "dashboard_tab": "creative_execution",
             "recommended_next_step": "mantener_watchlist" if package_type == "watchlist_package" else "iniciar_preproduccion",
         })
@@ -266,17 +301,25 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             ("promise_hook", f"En este video saldrás con un plan claro sobre {topic}.", "intro", "low"),
             ("curiosity_hook", f"Hay un detalle de {topic} que cambia toda la decisión.", "intro", "medium"),
         ]
+        hook_analysis = transcript_insights.get("hook_analysis") if isinstance(transcript_insights.get("hook_analysis"), dict) else {}
+        if hook_analysis:
+            hooks = [(
+                str(hook_analysis.get("hook_type", "transcript_hook")),
+                str(hook_analysis.get("hook_text", f"Hook detectado en transcript sobre {topic}")),
+                "intro",
+                "low",
+            )] + hooks
         for i, (hook_type, text, expected_use, risk) in enumerate(hooks, start=1):
             hook_rows.append({"creative_package_id": creative_package_id, "hook_id": f"{creative_package_id}_h{i}", "hook_text": text, "hook_type": hook_type, "expected_use": expected_use, "risk": risk})
 
         thumb_rows.append({
             "creative_package_id": creative_package_id,
             "thumbnail_brief_id": f"{creative_package_id}_tb1",
-            "main_text": topic[:48],
+            "main_text": (transcript_summary[:48] if transcript_summary else topic[:48]),
             "visual_metaphor": "señal vs ruido",
             "emotion": "urgencia" if package_type == "fast_reaction_package" else "claridad",
             "layout_suggestion": "texto corto lado izquierdo + elemento visual lado derecho",
-            "risk_notes": "evitar promesas absolutas y claims no verificables",
+            "risk_notes": "; ".join([str(x) for x in transcript_risk_notes][:2]) if transcript_risk_notes else "evitar promesas absolutas y claims no verificables",
         })
 
         structure_map = {
@@ -287,14 +330,25 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             "repackage_package": "case_breakdown",
         }
         structure = structure_map.get(package_type, "explain_problem_solution")
+        narrative_section_1 = "Contexto y señal principal"
+        narrative_section_2 = "Interpretación para audiencia objetivo"
+        narrative_section_3 = "Plan de ejecución inmediato"
+        if isinstance(transcript_narrative, list):
+            extracted = [str(item.get("summary", "")) for item in transcript_narrative if isinstance(item, dict) and item.get("summary")]
+            if extracted:
+                narrative_section_1 = extracted[0]
+            if len(extracted) > 1:
+                narrative_section_2 = extracted[1]
+            if len(extracted) > 2:
+                narrative_section_3 = extracted[2]
         outline_rows.append({
             "creative_package_id": creative_package_id,
             "outline_id": f"{creative_package_id}_o1",
             "structure_type": structure,
             "intro": f"Por qué {topic} importa ahora",
-            "section_1": "Contexto y señal principal",
-            "section_2": "Interpretación para audiencia objetivo",
-            "section_3": "Plan de ejecución inmediato",
+            "section_1": narrative_section_1,
+            "section_2": narrative_section_2,
+            "section_3": narrative_section_3,
             "closing": "Riesgos y próximos pasos",
             "cta": "Comenta qué ángulo quieres profundizar",
         })
