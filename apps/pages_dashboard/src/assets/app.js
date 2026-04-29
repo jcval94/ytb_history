@@ -219,6 +219,7 @@ function renderAll() {
   const quality = applyFilters(tableRows("latestMetricEligibility"), { skipDuration: true });
 
   renderHeader(videos, channels);
+  renderAnalysisDateRange(videos);
   renderKpis(videos, channels, scores, advanced);
   renderOverview(videos, channels, scores);
   renderVideos(videos);
@@ -267,6 +268,45 @@ function renderHeader(videos, channels) {
   const channelsCount = document.querySelector("#channels-count");
   if (videosCount) videosCount.textContent = `Videos: ${videos.length}`;
   if (channelsCount) channelsCount.textContent = `Channels: ${channels.length}`;
+}
+
+function renderAnalysisDateRange(videos) {
+  const target = document.querySelector("#analysis-date-range");
+  if (!target) return;
+
+  const uploadDates = videos
+    .map((row) => normalizeDateValue(row.upload_date))
+    .filter(Boolean)
+    .sort();
+  const executionDates = videos
+    .map((row) => normalizeDateValue(row.execution_date))
+    .filter(Boolean)
+    .sort();
+
+  const uploadLabel = formatDateRangeLabel(uploadDates);
+  const executionLabel = formatDateRangeLabel(executionDates);
+
+  const parts = [];
+  if (uploadLabel) parts.push(`Upload: ${uploadLabel}`);
+  if (executionLabel) parts.push(`Snapshots: ${executionLabel}`);
+
+  target.textContent = parts.length ? `Analysis window: ${parts.join(" | ")}` : "Analysis window: --";
+}
+
+function normalizeDateValue(value) {
+  if (!value) return "";
+  if (typeof value !== "string") return "";
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  return trimmed.length >= 10 ? trimmed.slice(0, 10) : "";
+}
+
+function formatDateRangeLabel(sortedDates) {
+  if (!sortedDates.length) return "";
+  const first = sortedDates[0];
+  const last = sortedDates[sortedDates.length - 1];
+  if (first === last) return first;
+  return `${first} → ${last}`;
 }
 
 function renderKpis(videos, channels, scores, advanced) {
