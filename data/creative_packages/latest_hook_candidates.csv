@@ -1,0 +1,1429 @@
+creative_package_id,hook_id,hook_text,hook_type,expected_use,risk
+cp_1_f71ccea09f,cp_1_f71ccea09f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_1_f71ccea09f,cp_1_f71ccea09f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_1_f71ccea09f,cp_1_f71ccea09f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_1_f71ccea09f,cp_1_f71ccea09f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_1_f71ccea09f,cp_1_f71ccea09f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_1_f71ccea09f,cp_1_f71ccea09f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_2_b6872e7113,cp_2_b6872e7113_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_2_b6872e7113,cp_2_b6872e7113_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_2_b6872e7113,cp_2_b6872e7113_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_2_b6872e7113,cp_2_b6872e7113_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_2_b6872e7113,cp_2_b6872e7113_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_2_b6872e7113,cp_2_b6872e7113_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_3_99f363af02,cp_3_99f363af02_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_3_99f363af02,cp_3_99f363af02_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_3_99f363af02,cp_3_99f363af02_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_3_99f363af02,cp_3_99f363af02_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_3_99f363af02,cp_3_99f363af02_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_3_99f363af02,cp_3_99f363af02_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_4_87619d323c,cp_4_87619d323c_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_4_87619d323c,cp_4_87619d323c_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_4_87619d323c,cp_4_87619d323c_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_4_87619d323c,cp_4_87619d323c_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_4_87619d323c,cp_4_87619d323c_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_4_87619d323c,cp_4_87619d323c_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_5_7c44d0f981,cp_5_7c44d0f981_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_5_7c44d0f981,cp_5_7c44d0f981_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_5_7c44d0f981,cp_5_7c44d0f981_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_5_7c44d0f981,cp_5_7c44d0f981_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_5_7c44d0f981,cp_5_7c44d0f981_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_5_7c44d0f981,cp_5_7c44d0f981_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_6_24a41d9f61,cp_6_24a41d9f61_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_6_24a41d9f61,cp_6_24a41d9f61_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_6_24a41d9f61,cp_6_24a41d9f61_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_6_24a41d9f61,cp_6_24a41d9f61_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_6_24a41d9f61,cp_6_24a41d9f61_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_6_24a41d9f61,cp_6_24a41d9f61_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_7_45de3ff828,cp_7_45de3ff828_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_7_45de3ff828,cp_7_45de3ff828_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_7_45de3ff828,cp_7_45de3ff828_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_7_45de3ff828,cp_7_45de3ff828_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_7_45de3ff828,cp_7_45de3ff828_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_7_45de3ff828,cp_7_45de3ff828_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_8_7f54860948,cp_8_7f54860948_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_8_7f54860948,cp_8_7f54860948_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_8_7f54860948,cp_8_7f54860948_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_8_7f54860948,cp_8_7f54860948_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_8_7f54860948,cp_8_7f54860948_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_8_7f54860948,cp_8_7f54860948_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_10_c3a23d9534,cp_10_c3a23d9534_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_10_c3a23d9534,cp_10_c3a23d9534_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_10_c3a23d9534,cp_10_c3a23d9534_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_10_c3a23d9534,cp_10_c3a23d9534_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_10_c3a23d9534,cp_10_c3a23d9534_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_10_c3a23d9534,cp_10_c3a23d9534_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_11_b53b066de9,cp_11_b53b066de9_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_11_b53b066de9,cp_11_b53b066de9_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_11_b53b066de9,cp_11_b53b066de9_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_11_b53b066de9,cp_11_b53b066de9_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_11_b53b066de9,cp_11_b53b066de9_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_11_b53b066de9,cp_11_b53b066de9_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_12_8a60e2549f,cp_12_8a60e2549f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_12_8a60e2549f,cp_12_8a60e2549f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_12_8a60e2549f,cp_12_8a60e2549f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_12_8a60e2549f,cp_12_8a60e2549f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_12_8a60e2549f,cp_12_8a60e2549f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_12_8a60e2549f,cp_12_8a60e2549f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_13_f361a60c40,cp_13_f361a60c40_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_13_f361a60c40,cp_13_f361a60c40_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_13_f361a60c40,cp_13_f361a60c40_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_13_f361a60c40,cp_13_f361a60c40_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_13_f361a60c40,cp_13_f361a60c40_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_13_f361a60c40,cp_13_f361a60c40_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_14_7bff0e4272,cp_14_7bff0e4272_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_14_7bff0e4272,cp_14_7bff0e4272_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_14_7bff0e4272,cp_14_7bff0e4272_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_14_7bff0e4272,cp_14_7bff0e4272_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_14_7bff0e4272,cp_14_7bff0e4272_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_14_7bff0e4272,cp_14_7bff0e4272_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_16_40ce473e50,cp_16_40ce473e50_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_16_40ce473e50,cp_16_40ce473e50_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_16_40ce473e50,cp_16_40ce473e50_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_16_40ce473e50,cp_16_40ce473e50_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_16_40ce473e50,cp_16_40ce473e50_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_16_40ce473e50,cp_16_40ce473e50_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_17_96df6120e0,cp_17_96df6120e0_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_17_96df6120e0,cp_17_96df6120e0_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_17_96df6120e0,cp_17_96df6120e0_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_17_96df6120e0,cp_17_96df6120e0_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_17_96df6120e0,cp_17_96df6120e0_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_17_96df6120e0,cp_17_96df6120e0_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_18_0644c55f09,cp_18_0644c55f09_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_18_0644c55f09,cp_18_0644c55f09_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_18_0644c55f09,cp_18_0644c55f09_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_18_0644c55f09,cp_18_0644c55f09_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_18_0644c55f09,cp_18_0644c55f09_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_18_0644c55f09,cp_18_0644c55f09_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_19_3dac72758e,cp_19_3dac72758e_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_19_3dac72758e,cp_19_3dac72758e_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_19_3dac72758e,cp_19_3dac72758e_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_19_3dac72758e,cp_19_3dac72758e_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_19_3dac72758e,cp_19_3dac72758e_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_19_3dac72758e,cp_19_3dac72758e_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_20_c35c510fff,cp_20_c35c510fff_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_20_c35c510fff,cp_20_c35c510fff_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_20_c35c510fff,cp_20_c35c510fff_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_20_c35c510fff,cp_20_c35c510fff_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_20_c35c510fff,cp_20_c35c510fff_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_20_c35c510fff,cp_20_c35c510fff_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_21_859bdd1b58,cp_21_859bdd1b58_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_21_859bdd1b58,cp_21_859bdd1b58_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_21_859bdd1b58,cp_21_859bdd1b58_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_21_859bdd1b58,cp_21_859bdd1b58_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_21_859bdd1b58,cp_21_859bdd1b58_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_21_859bdd1b58,cp_21_859bdd1b58_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_22_221f9baaba,cp_22_221f9baaba_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_22_221f9baaba,cp_22_221f9baaba_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_22_221f9baaba,cp_22_221f9baaba_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_22_221f9baaba,cp_22_221f9baaba_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_22_221f9baaba,cp_22_221f9baaba_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_22_221f9baaba,cp_22_221f9baaba_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_23_e225ffd50a,cp_23_e225ffd50a_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_23_e225ffd50a,cp_23_e225ffd50a_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_23_e225ffd50a,cp_23_e225ffd50a_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_23_e225ffd50a,cp_23_e225ffd50a_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_23_e225ffd50a,cp_23_e225ffd50a_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_23_e225ffd50a,cp_23_e225ffd50a_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_25_5f3f40435f,cp_25_5f3f40435f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_25_5f3f40435f,cp_25_5f3f40435f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_25_5f3f40435f,cp_25_5f3f40435f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_25_5f3f40435f,cp_25_5f3f40435f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_25_5f3f40435f,cp_25_5f3f40435f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_25_5f3f40435f,cp_25_5f3f40435f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_26_69f3df43e4,cp_26_69f3df43e4_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_26_69f3df43e4,cp_26_69f3df43e4_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_26_69f3df43e4,cp_26_69f3df43e4_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_26_69f3df43e4,cp_26_69f3df43e4_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_26_69f3df43e4,cp_26_69f3df43e4_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_26_69f3df43e4,cp_26_69f3df43e4_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_27_9a53c526c7,cp_27_9a53c526c7_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_27_9a53c526c7,cp_27_9a53c526c7_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_27_9a53c526c7,cp_27_9a53c526c7_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_27_9a53c526c7,cp_27_9a53c526c7_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_27_9a53c526c7,cp_27_9a53c526c7_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_27_9a53c526c7,cp_27_9a53c526c7_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_29_d933bd26e7,cp_29_d933bd26e7_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_29_d933bd26e7,cp_29_d933bd26e7_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_29_d933bd26e7,cp_29_d933bd26e7_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_29_d933bd26e7,cp_29_d933bd26e7_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_29_d933bd26e7,cp_29_d933bd26e7_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_29_d933bd26e7,cp_29_d933bd26e7_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_30_8b701a2c07,cp_30_8b701a2c07_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_30_8b701a2c07,cp_30_8b701a2c07_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_30_8b701a2c07,cp_30_8b701a2c07_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_30_8b701a2c07,cp_30_8b701a2c07_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_30_8b701a2c07,cp_30_8b701a2c07_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_30_8b701a2c07,cp_30_8b701a2c07_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_32_0798499bf6,cp_32_0798499bf6_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_32_0798499bf6,cp_32_0798499bf6_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_32_0798499bf6,cp_32_0798499bf6_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_32_0798499bf6,cp_32_0798499bf6_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_32_0798499bf6,cp_32_0798499bf6_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_32_0798499bf6,cp_32_0798499bf6_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_35_9909034e67,cp_35_9909034e67_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_35_9909034e67,cp_35_9909034e67_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_35_9909034e67,cp_35_9909034e67_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_35_9909034e67,cp_35_9909034e67_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_35_9909034e67,cp_35_9909034e67_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_35_9909034e67,cp_35_9909034e67_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_36_041e05155f,cp_36_041e05155f_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_36_041e05155f,cp_36_041e05155f_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_36_041e05155f,cp_36_041e05155f_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_36_041e05155f,cp_36_041e05155f_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_36_041e05155f,cp_36_041e05155f_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_36_041e05155f,cp_36_041e05155f_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_38_4f5560b400,cp_38_4f5560b400_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_38_4f5560b400,cp_38_4f5560b400_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_38_4f5560b400,cp_38_4f5560b400_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_38_4f5560b400,cp_38_4f5560b400_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_38_4f5560b400,cp_38_4f5560b400_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_38_4f5560b400,cp_38_4f5560b400_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_40_334865c3e5,cp_40_334865c3e5_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_40_334865c3e5,cp_40_334865c3e5_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_40_334865c3e5,cp_40_334865c3e5_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_40_334865c3e5,cp_40_334865c3e5_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_40_334865c3e5,cp_40_334865c3e5_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_40_334865c3e5,cp_40_334865c3e5_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_42_25eff1d166,cp_42_25eff1d166_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_42_25eff1d166,cp_42_25eff1d166_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_42_25eff1d166,cp_42_25eff1d166_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_42_25eff1d166,cp_42_25eff1d166_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_42_25eff1d166,cp_42_25eff1d166_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_42_25eff1d166,cp_42_25eff1d166_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_43_509f9d2d84,cp_43_509f9d2d84_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_43_509f9d2d84,cp_43_509f9d2d84_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_43_509f9d2d84,cp_43_509f9d2d84_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_43_509f9d2d84,cp_43_509f9d2d84_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_43_509f9d2d84,cp_43_509f9d2d84_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_43_509f9d2d84,cp_43_509f9d2d84_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_44_496dd07134,cp_44_496dd07134_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_44_496dd07134,cp_44_496dd07134_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_44_496dd07134,cp_44_496dd07134_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_44_496dd07134,cp_44_496dd07134_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_44_496dd07134,cp_44_496dd07134_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_44_496dd07134,cp_44_496dd07134_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_45_428a1b06e4,cp_45_428a1b06e4_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_45_428a1b06e4,cp_45_428a1b06e4_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_45_428a1b06e4,cp_45_428a1b06e4_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_45_428a1b06e4,cp_45_428a1b06e4_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_45_428a1b06e4,cp_45_428a1b06e4_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_45_428a1b06e4,cp_45_428a1b06e4_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_46_0b5b03053c,cp_46_0b5b03053c_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_46_0b5b03053c,cp_46_0b5b03053c_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_46_0b5b03053c,cp_46_0b5b03053c_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_46_0b5b03053c,cp_46_0b5b03053c_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_46_0b5b03053c,cp_46_0b5b03053c_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_46_0b5b03053c,cp_46_0b5b03053c_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_47_877add78ed,cp_47_877add78ed_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_47_877add78ed,cp_47_877add78ed_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_47_877add78ed,cp_47_877add78ed_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_47_877add78ed,cp_47_877add78ed_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_47_877add78ed,cp_47_877add78ed_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_47_877add78ed,cp_47_877add78ed_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_48_3651766d1e,cp_48_3651766d1e_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_48_3651766d1e,cp_48_3651766d1e_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_48_3651766d1e,cp_48_3651766d1e_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_48_3651766d1e,cp_48_3651766d1e_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_48_3651766d1e,cp_48_3651766d1e_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_48_3651766d1e,cp_48_3651766d1e_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_49_298d700483,cp_49_298d700483_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_49_298d700483,cp_49_298d700483_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_49_298d700483,cp_49_298d700483_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_49_298d700483,cp_49_298d700483_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_49_298d700483,cp_49_298d700483_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_49_298d700483,cp_49_298d700483_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_50_61c3579a01,cp_50_61c3579a01_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_50_61c3579a01,cp_50_61c3579a01_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_50_61c3579a01,cp_50_61c3579a01_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_50_61c3579a01,cp_50_61c3579a01_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_50_61c3579a01,cp_50_61c3579a01_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_50_61c3579a01,cp_50_61c3579a01_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_52_932979cbbb,cp_52_932979cbbb_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_52_932979cbbb,cp_52_932979cbbb_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_52_932979cbbb,cp_52_932979cbbb_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_52_932979cbbb,cp_52_932979cbbb_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_52_932979cbbb,cp_52_932979cbbb_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_52_932979cbbb,cp_52_932979cbbb_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_55_e908db3568,cp_55_e908db3568_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_55_e908db3568,cp_55_e908db3568_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_55_e908db3568,cp_55_e908db3568_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_55_e908db3568,cp_55_e908db3568_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_55_e908db3568,cp_55_e908db3568_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_55_e908db3568,cp_55_e908db3568_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_57_27f34bd566,cp_57_27f34bd566_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_57_27f34bd566,cp_57_27f34bd566_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_57_27f34bd566,cp_57_27f34bd566_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_57_27f34bd566,cp_57_27f34bd566_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_57_27f34bd566,cp_57_27f34bd566_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_57_27f34bd566,cp_57_27f34bd566_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_58_543e25c447,cp_58_543e25c447_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_58_543e25c447,cp_58_543e25c447_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_58_543e25c447,cp_58_543e25c447_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_58_543e25c447,cp_58_543e25c447_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_58_543e25c447,cp_58_543e25c447_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_58_543e25c447,cp_58_543e25c447_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_59_fb151eb003,cp_59_fb151eb003_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_59_fb151eb003,cp_59_fb151eb003_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_59_fb151eb003,cp_59_fb151eb003_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_59_fb151eb003,cp_59_fb151eb003_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_59_fb151eb003,cp_59_fb151eb003_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_59_fb151eb003,cp_59_fb151eb003_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_60_d118893fde,cp_60_d118893fde_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_60_d118893fde,cp_60_d118893fde_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_60_d118893fde,cp_60_d118893fde_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_60_d118893fde,cp_60_d118893fde_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_60_d118893fde,cp_60_d118893fde_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_60_d118893fde,cp_60_d118893fde_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_61_5db314f661,cp_61_5db314f661_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_61_5db314f661,cp_61_5db314f661_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_61_5db314f661,cp_61_5db314f661_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_61_5db314f661,cp_61_5db314f661_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_61_5db314f661,cp_61_5db314f661_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_61_5db314f661,cp_61_5db314f661_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_63_e4523660f7,cp_63_e4523660f7_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_63_e4523660f7,cp_63_e4523660f7_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_63_e4523660f7,cp_63_e4523660f7_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_63_e4523660f7,cp_63_e4523660f7_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_63_e4523660f7,cp_63_e4523660f7_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_63_e4523660f7,cp_63_e4523660f7_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_64_fc4208812c,cp_64_fc4208812c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_64_fc4208812c,cp_64_fc4208812c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_64_fc4208812c,cp_64_fc4208812c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_64_fc4208812c,cp_64_fc4208812c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_64_fc4208812c,cp_64_fc4208812c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_64_fc4208812c,cp_64_fc4208812c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_65_1291e38069,cp_65_1291e38069_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_65_1291e38069,cp_65_1291e38069_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_65_1291e38069,cp_65_1291e38069_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_65_1291e38069,cp_65_1291e38069_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_65_1291e38069,cp_65_1291e38069_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_65_1291e38069,cp_65_1291e38069_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_66_1696d24c83,cp_66_1696d24c83_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_66_1696d24c83,cp_66_1696d24c83_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_66_1696d24c83,cp_66_1696d24c83_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_66_1696d24c83,cp_66_1696d24c83_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_66_1696d24c83,cp_66_1696d24c83_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_66_1696d24c83,cp_66_1696d24c83_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_67_49a3083c6d,cp_67_49a3083c6d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_67_49a3083c6d,cp_67_49a3083c6d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_67_49a3083c6d,cp_67_49a3083c6d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_67_49a3083c6d,cp_67_49a3083c6d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_67_49a3083c6d,cp_67_49a3083c6d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_67_49a3083c6d,cp_67_49a3083c6d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_68_59d6b838df,cp_68_59d6b838df_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_68_59d6b838df,cp_68_59d6b838df_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_68_59d6b838df,cp_68_59d6b838df_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_68_59d6b838df,cp_68_59d6b838df_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_68_59d6b838df,cp_68_59d6b838df_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_68_59d6b838df,cp_68_59d6b838df_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_69_04385cc995,cp_69_04385cc995_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_69_04385cc995,cp_69_04385cc995_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_69_04385cc995,cp_69_04385cc995_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_69_04385cc995,cp_69_04385cc995_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_69_04385cc995,cp_69_04385cc995_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_69_04385cc995,cp_69_04385cc995_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_72_e3a6297e15,cp_72_e3a6297e15_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_72_e3a6297e15,cp_72_e3a6297e15_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_72_e3a6297e15,cp_72_e3a6297e15_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_72_e3a6297e15,cp_72_e3a6297e15_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_72_e3a6297e15,cp_72_e3a6297e15_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_72_e3a6297e15,cp_72_e3a6297e15_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_73_58beb529a5,cp_73_58beb529a5_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_73_58beb529a5,cp_73_58beb529a5_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_73_58beb529a5,cp_73_58beb529a5_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_73_58beb529a5,cp_73_58beb529a5_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_73_58beb529a5,cp_73_58beb529a5_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_73_58beb529a5,cp_73_58beb529a5_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_76_27652ae9d5,cp_76_27652ae9d5_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_76_27652ae9d5,cp_76_27652ae9d5_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_76_27652ae9d5,cp_76_27652ae9d5_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_76_27652ae9d5,cp_76_27652ae9d5_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_76_27652ae9d5,cp_76_27652ae9d5_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_76_27652ae9d5,cp_76_27652ae9d5_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_77_c3c93cd311,cp_77_c3c93cd311_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_77_c3c93cd311,cp_77_c3c93cd311_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_77_c3c93cd311,cp_77_c3c93cd311_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_77_c3c93cd311,cp_77_c3c93cd311_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_77_c3c93cd311,cp_77_c3c93cd311_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_77_c3c93cd311,cp_77_c3c93cd311_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_78_1c2bef676f,cp_78_1c2bef676f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_78_1c2bef676f,cp_78_1c2bef676f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_78_1c2bef676f,cp_78_1c2bef676f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_78_1c2bef676f,cp_78_1c2bef676f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_78_1c2bef676f,cp_78_1c2bef676f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_78_1c2bef676f,cp_78_1c2bef676f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_80_382d7815c1,cp_80_382d7815c1_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_80_382d7815c1,cp_80_382d7815c1_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_80_382d7815c1,cp_80_382d7815c1_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_80_382d7815c1,cp_80_382d7815c1_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_80_382d7815c1,cp_80_382d7815c1_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_80_382d7815c1,cp_80_382d7815c1_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_81_0f05ececc1,cp_81_0f05ececc1_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_81_0f05ececc1,cp_81_0f05ececc1_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_81_0f05ececc1,cp_81_0f05ececc1_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_81_0f05ececc1,cp_81_0f05ececc1_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_81_0f05ececc1,cp_81_0f05ececc1_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_81_0f05ececc1,cp_81_0f05ececc1_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_82_b381a1f13d,cp_82_b381a1f13d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_82_b381a1f13d,cp_82_b381a1f13d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_82_b381a1f13d,cp_82_b381a1f13d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_82_b381a1f13d,cp_82_b381a1f13d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_82_b381a1f13d,cp_82_b381a1f13d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_82_b381a1f13d,cp_82_b381a1f13d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_83_9acebb33f4,cp_83_9acebb33f4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_83_9acebb33f4,cp_83_9acebb33f4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_83_9acebb33f4,cp_83_9acebb33f4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_83_9acebb33f4,cp_83_9acebb33f4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_83_9acebb33f4,cp_83_9acebb33f4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_83_9acebb33f4,cp_83_9acebb33f4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_84_eddc05a26c,cp_84_eddc05a26c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_84_eddc05a26c,cp_84_eddc05a26c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_84_eddc05a26c,cp_84_eddc05a26c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_84_eddc05a26c,cp_84_eddc05a26c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_84_eddc05a26c,cp_84_eddc05a26c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_84_eddc05a26c,cp_84_eddc05a26c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_85_76c1faac36,cp_85_76c1faac36_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_85_76c1faac36,cp_85_76c1faac36_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_85_76c1faac36,cp_85_76c1faac36_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_85_76c1faac36,cp_85_76c1faac36_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_85_76c1faac36,cp_85_76c1faac36_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_85_76c1faac36,cp_85_76c1faac36_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_86_f3a52807cf,cp_86_f3a52807cf_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_86_f3a52807cf,cp_86_f3a52807cf_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_86_f3a52807cf,cp_86_f3a52807cf_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_86_f3a52807cf,cp_86_f3a52807cf_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_86_f3a52807cf,cp_86_f3a52807cf_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_86_f3a52807cf,cp_86_f3a52807cf_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_87_59779a8ae0,cp_87_59779a8ae0_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_87_59779a8ae0,cp_87_59779a8ae0_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_87_59779a8ae0,cp_87_59779a8ae0_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_87_59779a8ae0,cp_87_59779a8ae0_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_87_59779a8ae0,cp_87_59779a8ae0_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_87_59779a8ae0,cp_87_59779a8ae0_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_89_1231b32500,cp_89_1231b32500_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_89_1231b32500,cp_89_1231b32500_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_89_1231b32500,cp_89_1231b32500_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_89_1231b32500,cp_89_1231b32500_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_89_1231b32500,cp_89_1231b32500_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_89_1231b32500,cp_89_1231b32500_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_90_623fd9463c,cp_90_623fd9463c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_90_623fd9463c,cp_90_623fd9463c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_90_623fd9463c,cp_90_623fd9463c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_90_623fd9463c,cp_90_623fd9463c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_90_623fd9463c,cp_90_623fd9463c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_90_623fd9463c,cp_90_623fd9463c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_91_bc3d844348,cp_91_bc3d844348_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_91_bc3d844348,cp_91_bc3d844348_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_91_bc3d844348,cp_91_bc3d844348_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_91_bc3d844348,cp_91_bc3d844348_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_91_bc3d844348,cp_91_bc3d844348_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_91_bc3d844348,cp_91_bc3d844348_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_92_06661f5d05,cp_92_06661f5d05_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_92_06661f5d05,cp_92_06661f5d05_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_92_06661f5d05,cp_92_06661f5d05_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_92_06661f5d05,cp_92_06661f5d05_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_92_06661f5d05,cp_92_06661f5d05_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_92_06661f5d05,cp_92_06661f5d05_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_93_d46af751eb,cp_93_d46af751eb_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_93_d46af751eb,cp_93_d46af751eb_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_93_d46af751eb,cp_93_d46af751eb_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_93_d46af751eb,cp_93_d46af751eb_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_93_d46af751eb,cp_93_d46af751eb_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_93_d46af751eb,cp_93_d46af751eb_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_94_0cf57b471e,cp_94_0cf57b471e_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_94_0cf57b471e,cp_94_0cf57b471e_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_94_0cf57b471e,cp_94_0cf57b471e_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_94_0cf57b471e,cp_94_0cf57b471e_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_94_0cf57b471e,cp_94_0cf57b471e_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_94_0cf57b471e,cp_94_0cf57b471e_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_95_59e5798570,cp_95_59e5798570_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_95_59e5798570,cp_95_59e5798570_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_95_59e5798570,cp_95_59e5798570_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_95_59e5798570,cp_95_59e5798570_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_95_59e5798570,cp_95_59e5798570_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_95_59e5798570,cp_95_59e5798570_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_96_51837d5abf,cp_96_51837d5abf_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_96_51837d5abf,cp_96_51837d5abf_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_96_51837d5abf,cp_96_51837d5abf_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_96_51837d5abf,cp_96_51837d5abf_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_96_51837d5abf,cp_96_51837d5abf_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_96_51837d5abf,cp_96_51837d5abf_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_97_5d4a984cde,cp_97_5d4a984cde_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_97_5d4a984cde,cp_97_5d4a984cde_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_97_5d4a984cde,cp_97_5d4a984cde_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_97_5d4a984cde,cp_97_5d4a984cde_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_97_5d4a984cde,cp_97_5d4a984cde_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_97_5d4a984cde,cp_97_5d4a984cde_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_99_83a0112fa0,cp_99_83a0112fa0_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_99_83a0112fa0,cp_99_83a0112fa0_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_99_83a0112fa0,cp_99_83a0112fa0_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_99_83a0112fa0,cp_99_83a0112fa0_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_99_83a0112fa0,cp_99_83a0112fa0_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_99_83a0112fa0,cp_99_83a0112fa0_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_100_0222457567,cp_100_0222457567_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_100_0222457567,cp_100_0222457567_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_100_0222457567,cp_100_0222457567_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_100_0222457567,cp_100_0222457567_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_100_0222457567,cp_100_0222457567_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_100_0222457567,cp_100_0222457567_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_101_a589efb75d,cp_101_a589efb75d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_101_a589efb75d,cp_101_a589efb75d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_101_a589efb75d,cp_101_a589efb75d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_101_a589efb75d,cp_101_a589efb75d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_101_a589efb75d,cp_101_a589efb75d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_101_a589efb75d,cp_101_a589efb75d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_102_a3886af005,cp_102_a3886af005_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_102_a3886af005,cp_102_a3886af005_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_102_a3886af005,cp_102_a3886af005_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_102_a3886af005,cp_102_a3886af005_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_102_a3886af005,cp_102_a3886af005_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_102_a3886af005,cp_102_a3886af005_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_104_7b36f88530,cp_104_7b36f88530_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_104_7b36f88530,cp_104_7b36f88530_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_104_7b36f88530,cp_104_7b36f88530_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_104_7b36f88530,cp_104_7b36f88530_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_104_7b36f88530,cp_104_7b36f88530_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_104_7b36f88530,cp_104_7b36f88530_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_106_72c26bcba2,cp_106_72c26bcba2_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_106_72c26bcba2,cp_106_72c26bcba2_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_106_72c26bcba2,cp_106_72c26bcba2_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_106_72c26bcba2,cp_106_72c26bcba2_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_106_72c26bcba2,cp_106_72c26bcba2_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_106_72c26bcba2,cp_106_72c26bcba2_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_107_43d990467d,cp_107_43d990467d_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_107_43d990467d,cp_107_43d990467d_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_107_43d990467d,cp_107_43d990467d_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_107_43d990467d,cp_107_43d990467d_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_107_43d990467d,cp_107_43d990467d_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_107_43d990467d,cp_107_43d990467d_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_108_b9bb55c877,cp_108_b9bb55c877_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_108_b9bb55c877,cp_108_b9bb55c877_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_108_b9bb55c877,cp_108_b9bb55c877_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_108_b9bb55c877,cp_108_b9bb55c877_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_108_b9bb55c877,cp_108_b9bb55c877_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_108_b9bb55c877,cp_108_b9bb55c877_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_109_086304de9f,cp_109_086304de9f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_109_086304de9f,cp_109_086304de9f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_109_086304de9f,cp_109_086304de9f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_109_086304de9f,cp_109_086304de9f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_109_086304de9f,cp_109_086304de9f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_109_086304de9f,cp_109_086304de9f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_110_744445cbc6,cp_110_744445cbc6_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_110_744445cbc6,cp_110_744445cbc6_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_110_744445cbc6,cp_110_744445cbc6_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_110_744445cbc6,cp_110_744445cbc6_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_110_744445cbc6,cp_110_744445cbc6_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_110_744445cbc6,cp_110_744445cbc6_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_111_a4f059f901,cp_111_a4f059f901_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_111_a4f059f901,cp_111_a4f059f901_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_111_a4f059f901,cp_111_a4f059f901_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_111_a4f059f901,cp_111_a4f059f901_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_111_a4f059f901,cp_111_a4f059f901_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_111_a4f059f901,cp_111_a4f059f901_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_112_533170735d,cp_112_533170735d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_112_533170735d,cp_112_533170735d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_112_533170735d,cp_112_533170735d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_112_533170735d,cp_112_533170735d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_112_533170735d,cp_112_533170735d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_112_533170735d,cp_112_533170735d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_117_d22c179abc,cp_117_d22c179abc_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_117_d22c179abc,cp_117_d22c179abc_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_117_d22c179abc,cp_117_d22c179abc_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_117_d22c179abc,cp_117_d22c179abc_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_117_d22c179abc,cp_117_d22c179abc_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_117_d22c179abc,cp_117_d22c179abc_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_119_87f627c1ec,cp_119_87f627c1ec_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_119_87f627c1ec,cp_119_87f627c1ec_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_119_87f627c1ec,cp_119_87f627c1ec_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_119_87f627c1ec,cp_119_87f627c1ec_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_119_87f627c1ec,cp_119_87f627c1ec_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_119_87f627c1ec,cp_119_87f627c1ec_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_120_6523600b9d,cp_120_6523600b9d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_120_6523600b9d,cp_120_6523600b9d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_120_6523600b9d,cp_120_6523600b9d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_120_6523600b9d,cp_120_6523600b9d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_120_6523600b9d,cp_120_6523600b9d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_120_6523600b9d,cp_120_6523600b9d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_121_787b1f3a22,cp_121_787b1f3a22_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_121_787b1f3a22,cp_121_787b1f3a22_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_121_787b1f3a22,cp_121_787b1f3a22_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_121_787b1f3a22,cp_121_787b1f3a22_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_121_787b1f3a22,cp_121_787b1f3a22_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_121_787b1f3a22,cp_121_787b1f3a22_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_122_4d579438a8,cp_122_4d579438a8_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_122_4d579438a8,cp_122_4d579438a8_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_122_4d579438a8,cp_122_4d579438a8_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_122_4d579438a8,cp_122_4d579438a8_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_122_4d579438a8,cp_122_4d579438a8_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_122_4d579438a8,cp_122_4d579438a8_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_126_06174e6702,cp_126_06174e6702_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_126_06174e6702,cp_126_06174e6702_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_126_06174e6702,cp_126_06174e6702_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_126_06174e6702,cp_126_06174e6702_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_126_06174e6702,cp_126_06174e6702_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_126_06174e6702,cp_126_06174e6702_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_127_7d1c443b15,cp_127_7d1c443b15_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_127_7d1c443b15,cp_127_7d1c443b15_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_127_7d1c443b15,cp_127_7d1c443b15_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_127_7d1c443b15,cp_127_7d1c443b15_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_127_7d1c443b15,cp_127_7d1c443b15_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_127_7d1c443b15,cp_127_7d1c443b15_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_128_f4906bc8db,cp_128_f4906bc8db_h1,¿Qué cambia realmente con create_fast_reaction?,question_hook,intro,low
+cp_128_f4906bc8db,cp_128_f4906bc8db_h2,"Muchos simplifican create_fast_reaction, pero hay matices críticos.",contrast_hook,intro,medium
+cp_128_f4906bc8db,cp_128_f4906bc8db_h3,Los datos recientes de create_fast_reaction muestran una señal accionable.,data_hook,intro,low
+cp_128_f4906bc8db,cp_128_f4906bc8db_h4,Error común: ejecutar create_fast_reaction sin validar evidencia.,mistake_hook,middle,medium
+cp_128_f4906bc8db,cp_128_f4906bc8db_h5,En este video saldrás con un plan claro sobre create_fast_reaction.,promise_hook,intro,low
+cp_128_f4906bc8db,cp_128_f4906bc8db_h6,Hay un detalle de create_fast_reaction que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_129_78d65f25ff,cp_129_78d65f25ff_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_129_78d65f25ff,cp_129_78d65f25ff_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_129_78d65f25ff,cp_129_78d65f25ff_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_129_78d65f25ff,cp_129_78d65f25ff_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_129_78d65f25ff,cp_129_78d65f25ff_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_129_78d65f25ff,cp_129_78d65f25ff_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_130_20bead632a,cp_130_20bead632a_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_130_20bead632a,cp_130_20bead632a_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_130_20bead632a,cp_130_20bead632a_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_130_20bead632a,cp_130_20bead632a_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_130_20bead632a,cp_130_20bead632a_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_130_20bead632a,cp_130_20bead632a_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_131_c78abf3a80,cp_131_c78abf3a80_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_131_c78abf3a80,cp_131_c78abf3a80_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_131_c78abf3a80,cp_131_c78abf3a80_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_131_c78abf3a80,cp_131_c78abf3a80_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_131_c78abf3a80,cp_131_c78abf3a80_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_131_c78abf3a80,cp_131_c78abf3a80_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_135_a22922ad57,cp_135_a22922ad57_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_135_a22922ad57,cp_135_a22922ad57_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_135_a22922ad57,cp_135_a22922ad57_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_135_a22922ad57,cp_135_a22922ad57_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_135_a22922ad57,cp_135_a22922ad57_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_135_a22922ad57,cp_135_a22922ad57_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_136_29d58188a9,cp_136_29d58188a9_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_136_29d58188a9,cp_136_29d58188a9_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_136_29d58188a9,cp_136_29d58188a9_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_136_29d58188a9,cp_136_29d58188a9_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_136_29d58188a9,cp_136_29d58188a9_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_136_29d58188a9,cp_136_29d58188a9_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_137_efae58921b,cp_137_efae58921b_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_137_efae58921b,cp_137_efae58921b_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_137_efae58921b,cp_137_efae58921b_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_137_efae58921b,cp_137_efae58921b_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_137_efae58921b,cp_137_efae58921b_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_137_efae58921b,cp_137_efae58921b_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_139_0788baeb9e,cp_139_0788baeb9e_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_139_0788baeb9e,cp_139_0788baeb9e_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_139_0788baeb9e,cp_139_0788baeb9e_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_139_0788baeb9e,cp_139_0788baeb9e_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_139_0788baeb9e,cp_139_0788baeb9e_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_139_0788baeb9e,cp_139_0788baeb9e_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_140_0b3a186409,cp_140_0b3a186409_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_140_0b3a186409,cp_140_0b3a186409_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_140_0b3a186409,cp_140_0b3a186409_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_140_0b3a186409,cp_140_0b3a186409_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_140_0b3a186409,cp_140_0b3a186409_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_140_0b3a186409,cp_140_0b3a186409_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_142_c50778882a,cp_142_c50778882a_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_142_c50778882a,cp_142_c50778882a_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_142_c50778882a,cp_142_c50778882a_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_142_c50778882a,cp_142_c50778882a_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_142_c50778882a,cp_142_c50778882a_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_142_c50778882a,cp_142_c50778882a_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_143_1101868407,cp_143_1101868407_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_143_1101868407,cp_143_1101868407_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_143_1101868407,cp_143_1101868407_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_143_1101868407,cp_143_1101868407_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_143_1101868407,cp_143_1101868407_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_143_1101868407,cp_143_1101868407_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_144_a26b66f617,cp_144_a26b66f617_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_144_a26b66f617,cp_144_a26b66f617_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_144_a26b66f617,cp_144_a26b66f617_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_144_a26b66f617,cp_144_a26b66f617_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_144_a26b66f617,cp_144_a26b66f617_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_144_a26b66f617,cp_144_a26b66f617_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_146_b5be9747cb,cp_146_b5be9747cb_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_146_b5be9747cb,cp_146_b5be9747cb_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_146_b5be9747cb,cp_146_b5be9747cb_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_146_b5be9747cb,cp_146_b5be9747cb_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_146_b5be9747cb,cp_146_b5be9747cb_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_146_b5be9747cb,cp_146_b5be9747cb_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_147_931bccb704,cp_147_931bccb704_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_147_931bccb704,cp_147_931bccb704_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_147_931bccb704,cp_147_931bccb704_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_147_931bccb704,cp_147_931bccb704_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_147_931bccb704,cp_147_931bccb704_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_147_931bccb704,cp_147_931bccb704_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_148_83307da1db,cp_148_83307da1db_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_148_83307da1db,cp_148_83307da1db_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_148_83307da1db,cp_148_83307da1db_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_148_83307da1db,cp_148_83307da1db_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_148_83307da1db,cp_148_83307da1db_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_148_83307da1db,cp_148_83307da1db_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_149_973bdae55c,cp_149_973bdae55c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_149_973bdae55c,cp_149_973bdae55c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_149_973bdae55c,cp_149_973bdae55c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_149_973bdae55c,cp_149_973bdae55c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_149_973bdae55c,cp_149_973bdae55c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_149_973bdae55c,cp_149_973bdae55c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_151_702aed47bb,cp_151_702aed47bb_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_151_702aed47bb,cp_151_702aed47bb_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_151_702aed47bb,cp_151_702aed47bb_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_151_702aed47bb,cp_151_702aed47bb_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_151_702aed47bb,cp_151_702aed47bb_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_151_702aed47bb,cp_151_702aed47bb_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_152_08132a8d33,cp_152_08132a8d33_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_152_08132a8d33,cp_152_08132a8d33_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_152_08132a8d33,cp_152_08132a8d33_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_152_08132a8d33,cp_152_08132a8d33_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_152_08132a8d33,cp_152_08132a8d33_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_152_08132a8d33,cp_152_08132a8d33_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_153_e35502852a,cp_153_e35502852a_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_153_e35502852a,cp_153_e35502852a_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_153_e35502852a,cp_153_e35502852a_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_153_e35502852a,cp_153_e35502852a_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_153_e35502852a,cp_153_e35502852a_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_153_e35502852a,cp_153_e35502852a_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_154_66fa21ed91,cp_154_66fa21ed91_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_154_66fa21ed91,cp_154_66fa21ed91_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_154_66fa21ed91,cp_154_66fa21ed91_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_154_66fa21ed91,cp_154_66fa21ed91_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_154_66fa21ed91,cp_154_66fa21ed91_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_154_66fa21ed91,cp_154_66fa21ed91_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_155_890c8a343b,cp_155_890c8a343b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_155_890c8a343b,cp_155_890c8a343b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_155_890c8a343b,cp_155_890c8a343b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_155_890c8a343b,cp_155_890c8a343b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_155_890c8a343b,cp_155_890c8a343b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_155_890c8a343b,cp_155_890c8a343b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_158_878e377d19,cp_158_878e377d19_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_158_878e377d19,cp_158_878e377d19_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_158_878e377d19,cp_158_878e377d19_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_158_878e377d19,cp_158_878e377d19_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_158_878e377d19,cp_158_878e377d19_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_158_878e377d19,cp_158_878e377d19_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_159_3201d9bf68,cp_159_3201d9bf68_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_159_3201d9bf68,cp_159_3201d9bf68_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_159_3201d9bf68,cp_159_3201d9bf68_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_159_3201d9bf68,cp_159_3201d9bf68_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_159_3201d9bf68,cp_159_3201d9bf68_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_159_3201d9bf68,cp_159_3201d9bf68_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_161_a8e632398c,cp_161_a8e632398c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_161_a8e632398c,cp_161_a8e632398c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_161_a8e632398c,cp_161_a8e632398c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_161_a8e632398c,cp_161_a8e632398c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_161_a8e632398c,cp_161_a8e632398c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_161_a8e632398c,cp_161_a8e632398c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_162_6259659171,cp_162_6259659171_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_162_6259659171,cp_162_6259659171_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_162_6259659171,cp_162_6259659171_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_162_6259659171,cp_162_6259659171_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_162_6259659171,cp_162_6259659171_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_162_6259659171,cp_162_6259659171_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_163_76e7e573e4,cp_163_76e7e573e4_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_163_76e7e573e4,cp_163_76e7e573e4_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_163_76e7e573e4,cp_163_76e7e573e4_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_163_76e7e573e4,cp_163_76e7e573e4_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_163_76e7e573e4,cp_163_76e7e573e4_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_163_76e7e573e4,cp_163_76e7e573e4_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_164_0cb90f5012,cp_164_0cb90f5012_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_164_0cb90f5012,cp_164_0cb90f5012_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_164_0cb90f5012,cp_164_0cb90f5012_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_164_0cb90f5012,cp_164_0cb90f5012_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_164_0cb90f5012,cp_164_0cb90f5012_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_164_0cb90f5012,cp_164_0cb90f5012_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_165_a47b29818f,cp_165_a47b29818f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_165_a47b29818f,cp_165_a47b29818f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_165_a47b29818f,cp_165_a47b29818f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_165_a47b29818f,cp_165_a47b29818f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_165_a47b29818f,cp_165_a47b29818f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_165_a47b29818f,cp_165_a47b29818f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_166_1894be981e,cp_166_1894be981e_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_166_1894be981e,cp_166_1894be981e_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_166_1894be981e,cp_166_1894be981e_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_166_1894be981e,cp_166_1894be981e_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_166_1894be981e,cp_166_1894be981e_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_166_1894be981e,cp_166_1894be981e_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_169_6b0bf84215,cp_169_6b0bf84215_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_169_6b0bf84215,cp_169_6b0bf84215_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_169_6b0bf84215,cp_169_6b0bf84215_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_169_6b0bf84215,cp_169_6b0bf84215_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_169_6b0bf84215,cp_169_6b0bf84215_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_169_6b0bf84215,cp_169_6b0bf84215_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_170_55ab21f65c,cp_170_55ab21f65c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_170_55ab21f65c,cp_170_55ab21f65c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_170_55ab21f65c,cp_170_55ab21f65c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_170_55ab21f65c,cp_170_55ab21f65c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_170_55ab21f65c,cp_170_55ab21f65c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_170_55ab21f65c,cp_170_55ab21f65c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_171_ec670f0277,cp_171_ec670f0277_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_171_ec670f0277,cp_171_ec670f0277_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_171_ec670f0277,cp_171_ec670f0277_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_171_ec670f0277,cp_171_ec670f0277_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_171_ec670f0277,cp_171_ec670f0277_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_171_ec670f0277,cp_171_ec670f0277_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_173_2e52561e55,cp_173_2e52561e55_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_173_2e52561e55,cp_173_2e52561e55_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_173_2e52561e55,cp_173_2e52561e55_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_173_2e52561e55,cp_173_2e52561e55_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_173_2e52561e55,cp_173_2e52561e55_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_173_2e52561e55,cp_173_2e52561e55_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_174_5324ed997b,cp_174_5324ed997b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_174_5324ed997b,cp_174_5324ed997b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_174_5324ed997b,cp_174_5324ed997b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_174_5324ed997b,cp_174_5324ed997b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_174_5324ed997b,cp_174_5324ed997b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_174_5324ed997b,cp_174_5324ed997b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_175_302220fad7,cp_175_302220fad7_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_175_302220fad7,cp_175_302220fad7_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_175_302220fad7,cp_175_302220fad7_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_175_302220fad7,cp_175_302220fad7_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_175_302220fad7,cp_175_302220fad7_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_175_302220fad7,cp_175_302220fad7_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_176_c88b82a02e,cp_176_c88b82a02e_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_176_c88b82a02e,cp_176_c88b82a02e_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_176_c88b82a02e,cp_176_c88b82a02e_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_176_c88b82a02e,cp_176_c88b82a02e_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_176_c88b82a02e,cp_176_c88b82a02e_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_176_c88b82a02e,cp_176_c88b82a02e_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_178_d67e1a6994,cp_178_d67e1a6994_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_178_d67e1a6994,cp_178_d67e1a6994_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_178_d67e1a6994,cp_178_d67e1a6994_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_178_d67e1a6994,cp_178_d67e1a6994_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_178_d67e1a6994,cp_178_d67e1a6994_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_178_d67e1a6994,cp_178_d67e1a6994_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_179_3b78efb088,cp_179_3b78efb088_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_179_3b78efb088,cp_179_3b78efb088_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_179_3b78efb088,cp_179_3b78efb088_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_179_3b78efb088,cp_179_3b78efb088_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_179_3b78efb088,cp_179_3b78efb088_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_179_3b78efb088,cp_179_3b78efb088_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_180_477e65c4cf,cp_180_477e65c4cf_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_180_477e65c4cf,cp_180_477e65c4cf_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_180_477e65c4cf,cp_180_477e65c4cf_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_180_477e65c4cf,cp_180_477e65c4cf_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_180_477e65c4cf,cp_180_477e65c4cf_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_180_477e65c4cf,cp_180_477e65c4cf_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_183_466a22e140,cp_183_466a22e140_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_183_466a22e140,cp_183_466a22e140_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_183_466a22e140,cp_183_466a22e140_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_183_466a22e140,cp_183_466a22e140_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_183_466a22e140,cp_183_466a22e140_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_183_466a22e140,cp_183_466a22e140_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_184_094ea6cb29,cp_184_094ea6cb29_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_184_094ea6cb29,cp_184_094ea6cb29_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_184_094ea6cb29,cp_184_094ea6cb29_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_184_094ea6cb29,cp_184_094ea6cb29_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_184_094ea6cb29,cp_184_094ea6cb29_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_184_094ea6cb29,cp_184_094ea6cb29_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_186_571462464b,cp_186_571462464b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_186_571462464b,cp_186_571462464b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_186_571462464b,cp_186_571462464b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_186_571462464b,cp_186_571462464b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_186_571462464b,cp_186_571462464b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_186_571462464b,cp_186_571462464b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_187_c75945f282,cp_187_c75945f282_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_187_c75945f282,cp_187_c75945f282_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_187_c75945f282,cp_187_c75945f282_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_187_c75945f282,cp_187_c75945f282_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_187_c75945f282,cp_187_c75945f282_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_187_c75945f282,cp_187_c75945f282_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_191_efa1269a5c,cp_191_efa1269a5c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_191_efa1269a5c,cp_191_efa1269a5c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_191_efa1269a5c,cp_191_efa1269a5c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_191_efa1269a5c,cp_191_efa1269a5c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_191_efa1269a5c,cp_191_efa1269a5c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_191_efa1269a5c,cp_191_efa1269a5c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_193_45e75be48e,cp_193_45e75be48e_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_193_45e75be48e,cp_193_45e75be48e_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_193_45e75be48e,cp_193_45e75be48e_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_193_45e75be48e,cp_193_45e75be48e_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_193_45e75be48e,cp_193_45e75be48e_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_193_45e75be48e,cp_193_45e75be48e_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_195_e79153633a,cp_195_e79153633a_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_195_e79153633a,cp_195_e79153633a_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_195_e79153633a,cp_195_e79153633a_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_195_e79153633a,cp_195_e79153633a_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_195_e79153633a,cp_195_e79153633a_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_195_e79153633a,cp_195_e79153633a_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_196_77d28e9875,cp_196_77d28e9875_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_196_77d28e9875,cp_196_77d28e9875_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_196_77d28e9875,cp_196_77d28e9875_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_196_77d28e9875,cp_196_77d28e9875_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_196_77d28e9875,cp_196_77d28e9875_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_196_77d28e9875,cp_196_77d28e9875_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_197_86bbe79b97,cp_197_86bbe79b97_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_197_86bbe79b97,cp_197_86bbe79b97_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_197_86bbe79b97,cp_197_86bbe79b97_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_197_86bbe79b97,cp_197_86bbe79b97_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_197_86bbe79b97,cp_197_86bbe79b97_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_197_86bbe79b97,cp_197_86bbe79b97_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_198_6fc728dd83,cp_198_6fc728dd83_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_198_6fc728dd83,cp_198_6fc728dd83_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_198_6fc728dd83,cp_198_6fc728dd83_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_198_6fc728dd83,cp_198_6fc728dd83_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_198_6fc728dd83,cp_198_6fc728dd83_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_198_6fc728dd83,cp_198_6fc728dd83_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_199_16ff3483c4,cp_199_16ff3483c4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_199_16ff3483c4,cp_199_16ff3483c4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_199_16ff3483c4,cp_199_16ff3483c4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_199_16ff3483c4,cp_199_16ff3483c4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_199_16ff3483c4,cp_199_16ff3483c4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_199_16ff3483c4,cp_199_16ff3483c4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_200_59e5b60165,cp_200_59e5b60165_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_200_59e5b60165,cp_200_59e5b60165_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_200_59e5b60165,cp_200_59e5b60165_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_200_59e5b60165,cp_200_59e5b60165_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_200_59e5b60165,cp_200_59e5b60165_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_200_59e5b60165,cp_200_59e5b60165_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_201_559003c19a,cp_201_559003c19a_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_201_559003c19a,cp_201_559003c19a_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_201_559003c19a,cp_201_559003c19a_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_201_559003c19a,cp_201_559003c19a_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_201_559003c19a,cp_201_559003c19a_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_201_559003c19a,cp_201_559003c19a_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_202_a6884925b6,cp_202_a6884925b6_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_202_a6884925b6,cp_202_a6884925b6_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_202_a6884925b6,cp_202_a6884925b6_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_202_a6884925b6,cp_202_a6884925b6_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_202_a6884925b6,cp_202_a6884925b6_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_202_a6884925b6,cp_202_a6884925b6_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_203_4d1091b017,cp_203_4d1091b017_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_203_4d1091b017,cp_203_4d1091b017_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_203_4d1091b017,cp_203_4d1091b017_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_203_4d1091b017,cp_203_4d1091b017_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_203_4d1091b017,cp_203_4d1091b017_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_203_4d1091b017,cp_203_4d1091b017_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_204_2d87b64abd,cp_204_2d87b64abd_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_204_2d87b64abd,cp_204_2d87b64abd_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_204_2d87b64abd,cp_204_2d87b64abd_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_204_2d87b64abd,cp_204_2d87b64abd_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_204_2d87b64abd,cp_204_2d87b64abd_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_204_2d87b64abd,cp_204_2d87b64abd_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_205_cb092629b5,cp_205_cb092629b5_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_205_cb092629b5,cp_205_cb092629b5_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_205_cb092629b5,cp_205_cb092629b5_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_205_cb092629b5,cp_205_cb092629b5_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_205_cb092629b5,cp_205_cb092629b5_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_205_cb092629b5,cp_205_cb092629b5_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_206_c3d77d9045,cp_206_c3d77d9045_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_206_c3d77d9045,cp_206_c3d77d9045_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_206_c3d77d9045,cp_206_c3d77d9045_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_206_c3d77d9045,cp_206_c3d77d9045_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_206_c3d77d9045,cp_206_c3d77d9045_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_206_c3d77d9045,cp_206_c3d77d9045_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_208_070f5ead9d,cp_208_070f5ead9d_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_208_070f5ead9d,cp_208_070f5ead9d_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_208_070f5ead9d,cp_208_070f5ead9d_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_208_070f5ead9d,cp_208_070f5ead9d_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_208_070f5ead9d,cp_208_070f5ead9d_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_208_070f5ead9d,cp_208_070f5ead9d_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_209_6c062865df,cp_209_6c062865df_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_209_6c062865df,cp_209_6c062865df_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_209_6c062865df,cp_209_6c062865df_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_209_6c062865df,cp_209_6c062865df_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_209_6c062865df,cp_209_6c062865df_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_209_6c062865df,cp_209_6c062865df_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_211_b30df0e30c,cp_211_b30df0e30c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_211_b30df0e30c,cp_211_b30df0e30c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_211_b30df0e30c,cp_211_b30df0e30c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_211_b30df0e30c,cp_211_b30df0e30c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_211_b30df0e30c,cp_211_b30df0e30c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_211_b30df0e30c,cp_211_b30df0e30c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_212_d77cf46865,cp_212_d77cf46865_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_212_d77cf46865,cp_212_d77cf46865_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_212_d77cf46865,cp_212_d77cf46865_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_212_d77cf46865,cp_212_d77cf46865_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_212_d77cf46865,cp_212_d77cf46865_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_212_d77cf46865,cp_212_d77cf46865_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_214_e3575dab6f,cp_214_e3575dab6f_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_214_e3575dab6f,cp_214_e3575dab6f_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_214_e3575dab6f,cp_214_e3575dab6f_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_214_e3575dab6f,cp_214_e3575dab6f_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_214_e3575dab6f,cp_214_e3575dab6f_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_214_e3575dab6f,cp_214_e3575dab6f_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_215_c5236d30ed,cp_215_c5236d30ed_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_215_c5236d30ed,cp_215_c5236d30ed_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_215_c5236d30ed,cp_215_c5236d30ed_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_215_c5236d30ed,cp_215_c5236d30ed_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_215_c5236d30ed,cp_215_c5236d30ed_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_215_c5236d30ed,cp_215_c5236d30ed_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_217_e925123cb4,cp_217_e925123cb4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_217_e925123cb4,cp_217_e925123cb4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_217_e925123cb4,cp_217_e925123cb4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_217_e925123cb4,cp_217_e925123cb4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_217_e925123cb4,cp_217_e925123cb4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_217_e925123cb4,cp_217_e925123cb4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_219_cbecb06d31,cp_219_cbecb06d31_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_219_cbecb06d31,cp_219_cbecb06d31_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_219_cbecb06d31,cp_219_cbecb06d31_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_219_cbecb06d31,cp_219_cbecb06d31_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_219_cbecb06d31,cp_219_cbecb06d31_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_219_cbecb06d31,cp_219_cbecb06d31_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_220_d329cc5e10,cp_220_d329cc5e10_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_220_d329cc5e10,cp_220_d329cc5e10_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_220_d329cc5e10,cp_220_d329cc5e10_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_220_d329cc5e10,cp_220_d329cc5e10_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_220_d329cc5e10,cp_220_d329cc5e10_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_220_d329cc5e10,cp_220_d329cc5e10_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_221_ee39bdd707,cp_221_ee39bdd707_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_221_ee39bdd707,cp_221_ee39bdd707_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_221_ee39bdd707,cp_221_ee39bdd707_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_221_ee39bdd707,cp_221_ee39bdd707_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_221_ee39bdd707,cp_221_ee39bdd707_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_221_ee39bdd707,cp_221_ee39bdd707_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_222_86d6dda31e,cp_222_86d6dda31e_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_222_86d6dda31e,cp_222_86d6dda31e_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_222_86d6dda31e,cp_222_86d6dda31e_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_222_86d6dda31e,cp_222_86d6dda31e_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_222_86d6dda31e,cp_222_86d6dda31e_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_222_86d6dda31e,cp_222_86d6dda31e_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_223_b6215afc70,cp_223_b6215afc70_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_223_b6215afc70,cp_223_b6215afc70_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_223_b6215afc70,cp_223_b6215afc70_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_223_b6215afc70,cp_223_b6215afc70_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_223_b6215afc70,cp_223_b6215afc70_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_223_b6215afc70,cp_223_b6215afc70_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_224_18363e3363,cp_224_18363e3363_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_224_18363e3363,cp_224_18363e3363_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_224_18363e3363,cp_224_18363e3363_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_224_18363e3363,cp_224_18363e3363_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_224_18363e3363,cp_224_18363e3363_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_224_18363e3363,cp_224_18363e3363_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_226_f2b0201873,cp_226_f2b0201873_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_226_f2b0201873,cp_226_f2b0201873_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_226_f2b0201873,cp_226_f2b0201873_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_226_f2b0201873,cp_226_f2b0201873_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_226_f2b0201873,cp_226_f2b0201873_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_226_f2b0201873,cp_226_f2b0201873_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_228_94f7cf4304,cp_228_94f7cf4304_h1,¿Qué cambia realmente con tema clave?,question_hook,intro,low
+cp_228_94f7cf4304,cp_228_94f7cf4304_h2,"Muchos simplifican tema clave, pero hay matices críticos.",contrast_hook,intro,medium
+cp_228_94f7cf4304,cp_228_94f7cf4304_h3,Los datos recientes de tema clave muestran una señal accionable.,data_hook,intro,low
+cp_228_94f7cf4304,cp_228_94f7cf4304_h4,Error común: ejecutar tema clave sin validar evidencia.,mistake_hook,middle,medium
+cp_228_94f7cf4304,cp_228_94f7cf4304_h5,En este video saldrás con un plan claro sobre tema clave.,promise_hook,intro,low
+cp_228_94f7cf4304,cp_228_94f7cf4304_h6,Hay un detalle de tema clave que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_230_7f892caa49,cp_230_7f892caa49_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_230_7f892caa49,cp_230_7f892caa49_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_230_7f892caa49,cp_230_7f892caa49_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_230_7f892caa49,cp_230_7f892caa49_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_230_7f892caa49,cp_230_7f892caa49_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_230_7f892caa49,cp_230_7f892caa49_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_231_50501cd97f,cp_231_50501cd97f_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_231_50501cd97f,cp_231_50501cd97f_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_231_50501cd97f,cp_231_50501cd97f_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_231_50501cd97f,cp_231_50501cd97f_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_231_50501cd97f,cp_231_50501cd97f_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_231_50501cd97f,cp_231_50501cd97f_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_232_6ba850dd90,cp_232_6ba850dd90_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_232_6ba850dd90,cp_232_6ba850dd90_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_232_6ba850dd90,cp_232_6ba850dd90_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_232_6ba850dd90,cp_232_6ba850dd90_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_232_6ba850dd90,cp_232_6ba850dd90_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_232_6ba850dd90,cp_232_6ba850dd90_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_233_7bb7665089,cp_233_7bb7665089_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_233_7bb7665089,cp_233_7bb7665089_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_233_7bb7665089,cp_233_7bb7665089_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_233_7bb7665089,cp_233_7bb7665089_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_233_7bb7665089,cp_233_7bb7665089_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_233_7bb7665089,cp_233_7bb7665089_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_234_11a129fdc4,cp_234_11a129fdc4_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_234_11a129fdc4,cp_234_11a129fdc4_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_234_11a129fdc4,cp_234_11a129fdc4_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_234_11a129fdc4,cp_234_11a129fdc4_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_234_11a129fdc4,cp_234_11a129fdc4_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_234_11a129fdc4,cp_234_11a129fdc4_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_235_25249e0f87,cp_235_25249e0f87_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_235_25249e0f87,cp_235_25249e0f87_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_235_25249e0f87,cp_235_25249e0f87_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_235_25249e0f87,cp_235_25249e0f87_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_235_25249e0f87,cp_235_25249e0f87_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_235_25249e0f87,cp_235_25249e0f87_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium
+cp_238_2c940ceb41,cp_238_2c940ceb41_h1,¿Qué cambia realmente con repackage_idea?,question_hook,intro,low
+cp_238_2c940ceb41,cp_238_2c940ceb41_h2,"Muchos simplifican repackage_idea, pero hay matices críticos.",contrast_hook,intro,medium
+cp_238_2c940ceb41,cp_238_2c940ceb41_h3,Los datos recientes de repackage_idea muestran una señal accionable.,data_hook,intro,low
+cp_238_2c940ceb41,cp_238_2c940ceb41_h4,Error común: ejecutar repackage_idea sin validar evidencia.,mistake_hook,middle,medium
+cp_238_2c940ceb41,cp_238_2c940ceb41_h5,En este video saldrás con un plan claro sobre repackage_idea.,promise_hook,intro,low
+cp_238_2c940ceb41,cp_238_2c940ceb41_h6,Hay un detalle de repackage_idea que cambia toda la decisión.,curiosity_hook,intro,medium

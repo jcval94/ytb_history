@@ -1,0 +1,715 @@
+creative_package_id,title_candidate_id,title_candidate,title_pattern,title_pattern_success_score,copy_risk_score,originality_score,originality_status,estimated_strength,notes
+cp_1_f71ccea09f,cp_1_f71ccea09f_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_1_f71ccea09f,cp_1_f71ccea09f_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_1_f71ccea09f,cp_1_f71ccea09f_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_2_b6872e7113,cp_2_b6872e7113_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_2_b6872e7113,cp_2_b6872e7113_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_2_b6872e7113,cp_2_b6872e7113_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_3_99f363af02,cp_3_99f363af02_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_3_99f363af02,cp_3_99f363af02_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_3_99f363af02,cp_3_99f363af02_t3,tema clave: diferencias que sí importan,comparison_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_4_87619d323c,cp_4_87619d323c_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_4_87619d323c,cp_4_87619d323c_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_4_87619d323c,cp_4_87619d323c_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_5_7c44d0f981,cp_5_7c44d0f981_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_5_7c44d0f981,cp_5_7c44d0f981_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_5_7c44d0f981,cp_5_7c44d0f981_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_6_24a41d9f61,cp_6_24a41d9f61_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_6_24a41d9f61,cp_6_24a41d9f61_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_6_24a41d9f61,cp_6_24a41d9f61_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_7_45de3ff828,cp_7_45de3ff828_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_7_45de3ff828,cp_7_45de3ff828_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_7_45de3ff828,cp_7_45de3ff828_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_8_7f54860948,cp_8_7f54860948_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_8_7f54860948,cp_8_7f54860948_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_8_7f54860948,cp_8_7f54860948_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_9_a2dddf4cae,cp_9_a2dddf4cae_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_10_c3a23d9534,cp_10_c3a23d9534_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_10_c3a23d9534,cp_10_c3a23d9534_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_10_c3a23d9534,cp_10_c3a23d9534_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_11_b53b066de9,cp_11_b53b066de9_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_11_b53b066de9,cp_11_b53b066de9_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_11_b53b066de9,cp_11_b53b066de9_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_12_8a60e2549f,cp_12_8a60e2549f_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_12_8a60e2549f,cp_12_8a60e2549f_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_12_8a60e2549f,cp_12_8a60e2549f_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_13_f361a60c40,cp_13_f361a60c40_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_13_f361a60c40,cp_13_f361a60c40_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_13_f361a60c40,cp_13_f361a60c40_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_14_7bff0e4272,cp_14_7bff0e4272_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_14_7bff0e4272,cp_14_7bff0e4272_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_14_7bff0e4272,cp_14_7bff0e4272_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_15_c04b6fdb15,cp_15_c04b6fdb15_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_16_40ce473e50,cp_16_40ce473e50_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_16_40ce473e50,cp_16_40ce473e50_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_16_40ce473e50,cp_16_40ce473e50_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_17_96df6120e0,cp_17_96df6120e0_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_17_96df6120e0,cp_17_96df6120e0_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_17_96df6120e0,cp_17_96df6120e0_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_18_0644c55f09,cp_18_0644c55f09_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_18_0644c55f09,cp_18_0644c55f09_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_18_0644c55f09,cp_18_0644c55f09_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_19_3dac72758e,cp_19_3dac72758e_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,4.5455,95.4545,safe,68.1818,deterministic_template
+cp_19_3dac72758e,cp_19_3dac72758e_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,14.2857,85.7143,safe,64.2857,deterministic_template
+cp_19_3dac72758e,cp_19_3dac72758e_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_20_c35c510fff,cp_20_c35c510fff_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_20_c35c510fff,cp_20_c35c510fff_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_20_c35c510fff,cp_20_c35c510fff_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_21_859bdd1b58,cp_21_859bdd1b58_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_21_859bdd1b58,cp_21_859bdd1b58_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,12.5,87.5,safe,65.0,deterministic_template
+cp_21_859bdd1b58,cp_21_859bdd1b58_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_22_221f9baaba,cp_22_221f9baaba_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_22_221f9baaba,cp_22_221f9baaba_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_22_221f9baaba,cp_22_221f9baaba_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_23_e225ffd50a,cp_23_e225ffd50a_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_23_e225ffd50a,cp_23_e225ffd50a_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_23_e225ffd50a,cp_23_e225ffd50a_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_24_8eb07d64b4,cp_24_8eb07d64b4_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_25_5f3f40435f,cp_25_5f3f40435f_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_25_5f3f40435f,cp_25_5f3f40435f_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_25_5f3f40435f,cp_25_5f3f40435f_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_26_69f3df43e4,cp_26_69f3df43e4_t1,create_fast_reaction: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_26_69f3df43e4,cp_26_69f3df43e4_t2,La señal de create_fast_reaction que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_26_69f3df43e4,cp_26_69f3df43e4_t3,"create_fast_reaction: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_27_9a53c526c7,cp_27_9a53c526c7_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_27_9a53c526c7,cp_27_9a53c526c7_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_27_9a53c526c7,cp_27_9a53c526c7_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_28_4a0cf03a3a,cp_28_4a0cf03a3a_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_29_d933bd26e7,cp_29_d933bd26e7_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,4.3478,95.6522,safe,68.2609,deterministic_template
+cp_29_d933bd26e7,cp_29_d933bd26e7_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,8.6957,91.3043,safe,66.5217,deterministic_template
+cp_29_d933bd26e7,cp_29_d933bd26e7_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_30_8b701a2c07,cp_30_8b701a2c07_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_30_8b701a2c07,cp_30_8b701a2c07_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_30_8b701a2c07,cp_30_8b701a2c07_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_31_f46d4f3fd4,cp_31_f46d4f3fd4_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_32_0798499bf6,cp_32_0798499bf6_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_32_0798499bf6,cp_32_0798499bf6_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_32_0798499bf6,cp_32_0798499bf6_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_33_d3434b3e0c,cp_33_d3434b3e0c_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_34_87bdbc0f11,cp_34_87bdbc0f11_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_35_9909034e67,cp_35_9909034e67_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_35_9909034e67,cp_35_9909034e67_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_35_9909034e67,cp_35_9909034e67_t3,tema clave: diferencias que sí importan,comparison_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_36_041e05155f,cp_36_041e05155f_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_36_041e05155f,cp_36_041e05155f_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_36_041e05155f,cp_36_041e05155f_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_37_ef2d3398a1,cp_37_ef2d3398a1_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_38_4f5560b400,cp_38_4f5560b400_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_38_4f5560b400,cp_38_4f5560b400_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_38_4f5560b400,cp_38_4f5560b400_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_39_96a8f3cd32,cp_39_96a8f3cd32_t3,tema clave: diferencias que sí importan,comparison_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_40_334865c3e5,cp_40_334865c3e5_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_40_334865c3e5,cp_40_334865c3e5_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_40_334865c3e5,cp_40_334865c3e5_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_41_dbb2fca38b,cp_41_dbb2fca38b_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_42_25eff1d166,cp_42_25eff1d166_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_42_25eff1d166,cp_42_25eff1d166_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_42_25eff1d166,cp_42_25eff1d166_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_43_509f9d2d84,cp_43_509f9d2d84_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_43_509f9d2d84,cp_43_509f9d2d84_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_43_509f9d2d84,cp_43_509f9d2d84_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_44_496dd07134,cp_44_496dd07134_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_44_496dd07134,cp_44_496dd07134_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_44_496dd07134,cp_44_496dd07134_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_45_428a1b06e4,cp_45_428a1b06e4_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_45_428a1b06e4,cp_45_428a1b06e4_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_45_428a1b06e4,cp_45_428a1b06e4_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_46_0b5b03053c,cp_46_0b5b03053c_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_46_0b5b03053c,cp_46_0b5b03053c_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_46_0b5b03053c,cp_46_0b5b03053c_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_47_877add78ed,cp_47_877add78ed_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_47_877add78ed,cp_47_877add78ed_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_47_877add78ed,cp_47_877add78ed_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_48_3651766d1e,cp_48_3651766d1e_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_48_3651766d1e,cp_48_3651766d1e_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_48_3651766d1e,cp_48_3651766d1e_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_49_298d700483,cp_49_298d700483_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_49_298d700483,cp_49_298d700483_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_49_298d700483,cp_49_298d700483_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_50_61c3579a01,cp_50_61c3579a01_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_50_61c3579a01,cp_50_61c3579a01_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_50_61c3579a01,cp_50_61c3579a01_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,8.6957,91.3043,safe,66.5217,deterministic_template
+cp_51_d2eb2b0c22,cp_51_d2eb2b0c22_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_52_932979cbbb,cp_52_932979cbbb_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_52_932979cbbb,cp_52_932979cbbb_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_52_932979cbbb,cp_52_932979cbbb_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_53_77c57e3cc8,cp_53_77c57e3cc8_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_54_d635fdcf4a,cp_54_d635fdcf4a_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_55_e908db3568,cp_55_e908db3568_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_55_e908db3568,cp_55_e908db3568_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_55_e908db3568,cp_55_e908db3568_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_56_e9c0e1f0e7,cp_56_e9c0e1f0e7_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_57_27f34bd566,cp_57_27f34bd566_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_57_27f34bd566,cp_57_27f34bd566_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_57_27f34bd566,cp_57_27f34bd566_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_58_543e25c447,cp_58_543e25c447_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_58_543e25c447,cp_58_543e25c447_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_58_543e25c447,cp_58_543e25c447_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_59_fb151eb003,cp_59_fb151eb003_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_59_fb151eb003,cp_59_fb151eb003_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_59_fb151eb003,cp_59_fb151eb003_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_60_d118893fde,cp_60_d118893fde_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_60_d118893fde,cp_60_d118893fde_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,8.6957,91.3043,safe,66.5217,deterministic_template
+cp_60_d118893fde,cp_60_d118893fde_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_61_5db314f661,cp_61_5db314f661_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_61_5db314f661,cp_61_5db314f661_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_61_5db314f661,cp_61_5db314f661_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,13.3333,86.6667,safe,64.6667,deterministic_template
+cp_62_ceb6fd315c,cp_62_ceb6fd315c_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_63_e4523660f7,cp_63_e4523660f7_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_63_e4523660f7,cp_63_e4523660f7_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_63_e4523660f7,cp_63_e4523660f7_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_64_fc4208812c,cp_64_fc4208812c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_64_fc4208812c,cp_64_fc4208812c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_64_fc4208812c,cp_64_fc4208812c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_65_1291e38069,cp_65_1291e38069_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_65_1291e38069,cp_65_1291e38069_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,11.5385,88.4615,safe,65.3846,deterministic_template
+cp_65_1291e38069,cp_65_1291e38069_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_66_1696d24c83,cp_66_1696d24c83_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_66_1696d24c83,cp_66_1696d24c83_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_66_1696d24c83,cp_66_1696d24c83_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_67_49a3083c6d,cp_67_49a3083c6d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_67_49a3083c6d,cp_67_49a3083c6d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_67_49a3083c6d,cp_67_49a3083c6d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_68_59d6b838df,cp_68_59d6b838df_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_68_59d6b838df,cp_68_59d6b838df_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_68_59d6b838df,cp_68_59d6b838df_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_69_04385cc995,cp_69_04385cc995_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_69_04385cc995,cp_69_04385cc995_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_69_04385cc995,cp_69_04385cc995_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_70_ed1a67e5f6,cp_70_ed1a67e5f6_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_71_a44ad1afd7,cp_71_a44ad1afd7_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_72_e3a6297e15,cp_72_e3a6297e15_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_72_e3a6297e15,cp_72_e3a6297e15_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_72_e3a6297e15,cp_72_e3a6297e15_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_73_58beb529a5,cp_73_58beb529a5_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,15.3846,84.6154,safe,63.8462,deterministic_template
+cp_73_58beb529a5,cp_73_58beb529a5_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,12.5,87.5,safe,65.0,deterministic_template
+cp_73_58beb529a5,cp_73_58beb529a5_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_74_b0f10d2a7d,cp_74_b0f10d2a7d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_75_e1a1d2f610,cp_75_e1a1d2f610_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_76_27652ae9d5,cp_76_27652ae9d5_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_76_27652ae9d5,cp_76_27652ae9d5_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_76_27652ae9d5,cp_76_27652ae9d5_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_77_c3c93cd311,cp_77_c3c93cd311_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_77_c3c93cd311,cp_77_c3c93cd311_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_77_c3c93cd311,cp_77_c3c93cd311_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_78_1c2bef676f,cp_78_1c2bef676f_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,9.0909,90.9091,safe,66.3636,deterministic_template
+cp_78_1c2bef676f,cp_78_1c2bef676f_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_78_1c2bef676f,cp_78_1c2bef676f_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_79_9bbcbcb398,cp_79_9bbcbcb398_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_80_382d7815c1,cp_80_382d7815c1_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_80_382d7815c1,cp_80_382d7815c1_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_80_382d7815c1,cp_80_382d7815c1_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_81_0f05ececc1,cp_81_0f05ececc1_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_81_0f05ececc1,cp_81_0f05ececc1_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_81_0f05ececc1,cp_81_0f05ececc1_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_82_b381a1f13d,cp_82_b381a1f13d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_82_b381a1f13d,cp_82_b381a1f13d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_82_b381a1f13d,cp_82_b381a1f13d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_83_9acebb33f4,cp_83_9acebb33f4_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_83_9acebb33f4,cp_83_9acebb33f4_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_83_9acebb33f4,cp_83_9acebb33f4_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_84_eddc05a26c,cp_84_eddc05a26c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_84_eddc05a26c,cp_84_eddc05a26c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_84_eddc05a26c,cp_84_eddc05a26c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_85_76c1faac36,cp_85_76c1faac36_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_85_76c1faac36,cp_85_76c1faac36_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_85_76c1faac36,cp_85_76c1faac36_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_86_f3a52807cf,cp_86_f3a52807cf_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_86_f3a52807cf,cp_86_f3a52807cf_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_86_f3a52807cf,cp_86_f3a52807cf_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_87_59779a8ae0,cp_87_59779a8ae0_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_87_59779a8ae0,cp_87_59779a8ae0_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.5385,88.4615,safe,65.3846,deterministic_template
+cp_87_59779a8ae0,cp_87_59779a8ae0_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_88_fea05ff2eb,cp_88_fea05ff2eb_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_89_1231b32500,cp_89_1231b32500_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_89_1231b32500,cp_89_1231b32500_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_89_1231b32500,cp_89_1231b32500_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_90_623fd9463c,cp_90_623fd9463c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_90_623fd9463c,cp_90_623fd9463c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_90_623fd9463c,cp_90_623fd9463c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_91_bc3d844348,cp_91_bc3d844348_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_91_bc3d844348,cp_91_bc3d844348_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_91_bc3d844348,cp_91_bc3d844348_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_92_06661f5d05,cp_92_06661f5d05_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_92_06661f5d05,cp_92_06661f5d05_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_92_06661f5d05,cp_92_06661f5d05_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_93_d46af751eb,cp_93_d46af751eb_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_93_d46af751eb,cp_93_d46af751eb_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_93_d46af751eb,cp_93_d46af751eb_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_94_0cf57b471e,cp_94_0cf57b471e_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_94_0cf57b471e,cp_94_0cf57b471e_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_94_0cf57b471e,cp_94_0cf57b471e_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_95_59e5798570,cp_95_59e5798570_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_95_59e5798570,cp_95_59e5798570_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_95_59e5798570,cp_95_59e5798570_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_96_51837d5abf,cp_96_51837d5abf_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_96_51837d5abf,cp_96_51837d5abf_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,9.0909,90.9091,safe,66.3636,deterministic_template
+cp_96_51837d5abf,cp_96_51837d5abf_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_97_5d4a984cde,cp_97_5d4a984cde_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_97_5d4a984cde,cp_97_5d4a984cde_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_97_5d4a984cde,cp_97_5d4a984cde_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_98_5c7eabe19a,cp_98_5c7eabe19a_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_99_83a0112fa0,cp_99_83a0112fa0_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_99_83a0112fa0,cp_99_83a0112fa0_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,9.0909,90.9091,safe,66.3636,deterministic_template
+cp_99_83a0112fa0,cp_99_83a0112fa0_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_100_0222457567,cp_100_0222457567_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_100_0222457567,cp_100_0222457567_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_100_0222457567,cp_100_0222457567_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_101_a589efb75d,cp_101_a589efb75d_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_101_a589efb75d,cp_101_a589efb75d_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_101_a589efb75d,cp_101_a589efb75d_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_102_a3886af005,cp_102_a3886af005_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_102_a3886af005,cp_102_a3886af005_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_102_a3886af005,cp_102_a3886af005_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_103_6c90eeef1f,cp_103_6c90eeef1f_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_104_7b36f88530,cp_104_7b36f88530_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_104_7b36f88530,cp_104_7b36f88530_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.5455,95.4545,safe,68.1818,deterministic_template
+cp_104_7b36f88530,cp_104_7b36f88530_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_105_282b0f1e0f,cp_105_282b0f1e0f_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_106_72c26bcba2,cp_106_72c26bcba2_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,15.3846,84.6154,safe,63.8462,deterministic_template
+cp_106_72c26bcba2,cp_106_72c26bcba2_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_106_72c26bcba2,cp_106_72c26bcba2_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_107_43d990467d,cp_107_43d990467d_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_107_43d990467d,cp_107_43d990467d_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_107_43d990467d,cp_107_43d990467d_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_108_b9bb55c877,cp_108_b9bb55c877_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_108_b9bb55c877,cp_108_b9bb55c877_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_108_b9bb55c877,cp_108_b9bb55c877_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_109_086304de9f,cp_109_086304de9f_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_109_086304de9f,cp_109_086304de9f_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_109_086304de9f,cp_109_086304de9f_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_110_744445cbc6,cp_110_744445cbc6_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_110_744445cbc6,cp_110_744445cbc6_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_110_744445cbc6,cp_110_744445cbc6_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_111_a4f059f901,cp_111_a4f059f901_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_111_a4f059f901,cp_111_a4f059f901_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_111_a4f059f901,cp_111_a4f059f901_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_112_533170735d,cp_112_533170735d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_112_533170735d,cp_112_533170735d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_112_533170735d,cp_112_533170735d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_113_ce1a97f00b,cp_113_ce1a97f00b_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_114_bbaa3ebcf2,cp_114_bbaa3ebcf2_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_115_ac3694a3d3,cp_115_ac3694a3d3_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_t1,Lo que significa create_fast_reaction esta semana,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_t2,create_fast_reaction: la señal que conviene vigilar ahora,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_116_11aaf4afd4,cp_116_11aaf4afd4_t3,Por qué create_fast_reaction está ganando atención,fast_reaction_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_117_d22c179abc,cp_117_d22c179abc_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_117_d22c179abc,cp_117_d22c179abc_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_117_d22c179abc,cp_117_d22c179abc_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_118_ee8bb4a058,cp_118_ee8bb4a058_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_119_87f627c1ec,cp_119_87f627c1ec_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_119_87f627c1ec,cp_119_87f627c1ec_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_119_87f627c1ec,cp_119_87f627c1ec_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_120_6523600b9d,cp_120_6523600b9d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_120_6523600b9d,cp_120_6523600b9d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_120_6523600b9d,cp_120_6523600b9d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_121_787b1f3a22,cp_121_787b1f3a22_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_121_787b1f3a22,cp_121_787b1f3a22_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_121_787b1f3a22,cp_121_787b1f3a22_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_122_4d579438a8,cp_122_4d579438a8_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_122_4d579438a8,cp_122_4d579438a8_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_122_4d579438a8,cp_122_4d579438a8_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_123_63a8bcdf00,cp_123_63a8bcdf00_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,15.3846,84.6154,safe,63.8462,deterministic_template
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,12.5,87.5,safe,65.0,deterministic_template
+cp_124_9b31ba7d1b,cp_124_9b31ba7d1b_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_125_6b3128ce8e,cp_125_6b3128ce8e_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_126_06174e6702,cp_126_06174e6702_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_126_06174e6702,cp_126_06174e6702_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,16.6667,83.3333,safe,63.3333,deterministic_template
+cp_126_06174e6702,cp_126_06174e6702_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_127_7d1c443b15,cp_127_7d1c443b15_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_127_7d1c443b15,cp_127_7d1c443b15_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_127_7d1c443b15,cp_127_7d1c443b15_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_128_f4906bc8db,cp_128_f4906bc8db_t1,create_fast_reaction: lo que conviene observar antes de decidir,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_128_f4906bc8db,cp_128_f4906bc8db_t2,La señal de create_fast_reaction que todavía necesita más datos,watchlist_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_128_f4906bc8db,cp_128_f4906bc8db_t3,"create_fast_reaction: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_129_78d65f25ff,cp_129_78d65f25ff_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_129_78d65f25ff,cp_129_78d65f25ff_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_129_78d65f25ff,cp_129_78d65f25ff_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_130_20bead632a,cp_130_20bead632a_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_130_20bead632a,cp_130_20bead632a_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_130_20bead632a,cp_130_20bead632a_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_131_c78abf3a80,cp_131_c78abf3a80_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_131_c78abf3a80,cp_131_c78abf3a80_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_131_c78abf3a80,cp_131_c78abf3a80_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_132_4d5ca377d5,cp_132_4d5ca377d5_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_133_52e1fd0dcc,cp_133_52e1fd0dcc_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_134_a3bc1a34ab,cp_134_a3bc1a34ab_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_135_a22922ad57,cp_135_a22922ad57_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_135_a22922ad57,cp_135_a22922ad57_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_135_a22922ad57,cp_135_a22922ad57_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_136_29d58188a9,cp_136_29d58188a9_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_136_29d58188a9,cp_136_29d58188a9_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_136_29d58188a9,cp_136_29d58188a9_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_137_efae58921b,cp_137_efae58921b_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_137_efae58921b,cp_137_efae58921b_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_137_efae58921b,cp_137_efae58921b_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_138_03fe7e70ef,cp_138_03fe7e70ef_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_139_0788baeb9e,cp_139_0788baeb9e_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_139_0788baeb9e,cp_139_0788baeb9e_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_139_0788baeb9e,cp_139_0788baeb9e_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_140_0b3a186409,cp_140_0b3a186409_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_140_0b3a186409,cp_140_0b3a186409_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_140_0b3a186409,cp_140_0b3a186409_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_141_5b75dfe27c,cp_141_5b75dfe27c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_142_c50778882a,cp_142_c50778882a_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_142_c50778882a,cp_142_c50778882a_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_142_c50778882a,cp_142_c50778882a_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_143_1101868407,cp_143_1101868407_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_143_1101868407,cp_143_1101868407_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_143_1101868407,cp_143_1101868407_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_144_a26b66f617,cp_144_a26b66f617_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_144_a26b66f617,cp_144_a26b66f617_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_144_a26b66f617,cp_144_a26b66f617_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_145_ddfda09f2c,cp_145_ddfda09f2c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_146_b5be9747cb,cp_146_b5be9747cb_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_146_b5be9747cb,cp_146_b5be9747cb_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_146_b5be9747cb,cp_146_b5be9747cb_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_147_931bccb704,cp_147_931bccb704_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_147_931bccb704,cp_147_931bccb704_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_147_931bccb704,cp_147_931bccb704_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_148_83307da1db,cp_148_83307da1db_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_148_83307da1db,cp_148_83307da1db_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_148_83307da1db,cp_148_83307da1db_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_149_973bdae55c,cp_149_973bdae55c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_149_973bdae55c,cp_149_973bdae55c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_149_973bdae55c,cp_149_973bdae55c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_150_a01b5f2d67,cp_150_a01b5f2d67_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_151_702aed47bb,cp_151_702aed47bb_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_151_702aed47bb,cp_151_702aed47bb_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_151_702aed47bb,cp_151_702aed47bb_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_152_08132a8d33,cp_152_08132a8d33_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_152_08132a8d33,cp_152_08132a8d33_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_152_08132a8d33,cp_152_08132a8d33_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_153_e35502852a,cp_153_e35502852a_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_153_e35502852a,cp_153_e35502852a_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_153_e35502852a,cp_153_e35502852a_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_154_66fa21ed91,cp_154_66fa21ed91_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_154_66fa21ed91,cp_154_66fa21ed91_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_154_66fa21ed91,cp_154_66fa21ed91_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_155_890c8a343b,cp_155_890c8a343b_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_155_890c8a343b,cp_155_890c8a343b_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_155_890c8a343b,cp_155_890c8a343b_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_156_5f214e5e5d,cp_156_5f214e5e5d_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_157_6d58e4d06a,cp_157_6d58e4d06a_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_158_878e377d19,cp_158_878e377d19_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_158_878e377d19,cp_158_878e377d19_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_158_878e377d19,cp_158_878e377d19_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_159_3201d9bf68,cp_159_3201d9bf68_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_159_3201d9bf68,cp_159_3201d9bf68_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_159_3201d9bf68,cp_159_3201d9bf68_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_160_0c8a547ad3,cp_160_0c8a547ad3_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_161_a8e632398c,cp_161_a8e632398c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_161_a8e632398c,cp_161_a8e632398c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_161_a8e632398c,cp_161_a8e632398c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_162_6259659171,cp_162_6259659171_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_162_6259659171,cp_162_6259659171_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_162_6259659171,cp_162_6259659171_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_163_76e7e573e4,cp_163_76e7e573e4_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_163_76e7e573e4,cp_163_76e7e573e4_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_163_76e7e573e4,cp_163_76e7e573e4_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_164_0cb90f5012,cp_164_0cb90f5012_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_164_0cb90f5012,cp_164_0cb90f5012_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_164_0cb90f5012,cp_164_0cb90f5012_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_165_a47b29818f,cp_165_a47b29818f_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_165_a47b29818f,cp_165_a47b29818f_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_165_a47b29818f,cp_165_a47b29818f_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_166_1894be981e,cp_166_1894be981e_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_166_1894be981e,cp_166_1894be981e_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_166_1894be981e,cp_166_1894be981e_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_167_6b14d4bebd,cp_167_6b14d4bebd_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_168_3f20e44a5f,cp_168_3f20e44a5f_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_169_6b0bf84215,cp_169_6b0bf84215_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_169_6b0bf84215,cp_169_6b0bf84215_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_169_6b0bf84215,cp_169_6b0bf84215_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_170_55ab21f65c,cp_170_55ab21f65c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_170_55ab21f65c,cp_170_55ab21f65c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_170_55ab21f65c,cp_170_55ab21f65c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_171_ec670f0277,cp_171_ec670f0277_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_171_ec670f0277,cp_171_ec670f0277_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_171_ec670f0277,cp_171_ec670f0277_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_172_2fbcf2ae74,cp_172_2fbcf2ae74_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_173_2e52561e55,cp_173_2e52561e55_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_173_2e52561e55,cp_173_2e52561e55_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_173_2e52561e55,cp_173_2e52561e55_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_174_5324ed997b,cp_174_5324ed997b_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_174_5324ed997b,cp_174_5324ed997b_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,16.6667,83.3333,safe,63.3333,deterministic_template
+cp_174_5324ed997b,cp_174_5324ed997b_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_175_302220fad7,cp_175_302220fad7_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_175_302220fad7,cp_175_302220fad7_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_175_302220fad7,cp_175_302220fad7_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_176_c88b82a02e,cp_176_c88b82a02e_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_176_c88b82a02e,cp_176_c88b82a02e_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.5455,95.4545,safe,68.1818,deterministic_template
+cp_176_c88b82a02e,cp_176_c88b82a02e_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_177_9200ff6a9f,cp_177_9200ff6a9f_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_178_d67e1a6994,cp_178_d67e1a6994_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_178_d67e1a6994,cp_178_d67e1a6994_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_178_d67e1a6994,cp_178_d67e1a6994_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_179_3b78efb088,cp_179_3b78efb088_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_179_3b78efb088,cp_179_3b78efb088_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_179_3b78efb088,cp_179_3b78efb088_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_180_477e65c4cf,cp_180_477e65c4cf_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,15.3846,84.6154,safe,63.8462,deterministic_template
+cp_180_477e65c4cf,cp_180_477e65c4cf_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_180_477e65c4cf,cp_180_477e65c4cf_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_181_5d5b0829d2,cp_181_5d5b0829d2_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_182_4c2abd24d4,cp_182_4c2abd24d4_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_183_466a22e140,cp_183_466a22e140_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_183_466a22e140,cp_183_466a22e140_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_183_466a22e140,cp_183_466a22e140_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_184_094ea6cb29,cp_184_094ea6cb29_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_184_094ea6cb29,cp_184_094ea6cb29_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_184_094ea6cb29,cp_184_094ea6cb29_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_185_4b373d9cdf,cp_185_4b373d9cdf_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_186_571462464b,cp_186_571462464b_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_186_571462464b,cp_186_571462464b_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.7647,88.2353,safe,65.2941,deterministic_template
+cp_186_571462464b,cp_186_571462464b_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_187_c75945f282,cp_187_c75945f282_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,4.7619,95.2381,safe,68.0952,deterministic_template
+cp_187_c75945f282,cp_187_c75945f282_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,8.6957,91.3043,safe,66.5217,deterministic_template
+cp_187_c75945f282,cp_187_c75945f282_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,4.5455,95.4545,safe,68.1818,deterministic_template
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_188_f02f30c5f1,cp_188_f02f30c5f1_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_189_1a2d7b8da9,cp_189_1a2d7b8da9_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_190_5e86ef6aa0,cp_190_5e86ef6aa0_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_191_efa1269a5c,cp_191_efa1269a5c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_191_efa1269a5c,cp_191_efa1269a5c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_191_efa1269a5c,cp_191_efa1269a5c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_192_42a5a0bbbf,cp_192_42a5a0bbbf_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_193_45e75be48e,cp_193_45e75be48e_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_193_45e75be48e,cp_193_45e75be48e_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_193_45e75be48e,cp_193_45e75be48e_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_194_bbe9e9e8b2,cp_194_bbe9e9e8b2_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_195_e79153633a,cp_195_e79153633a_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_195_e79153633a,cp_195_e79153633a_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.0,95.0,safe,68.0,deterministic_template
+cp_195_e79153633a,cp_195_e79153633a_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_196_77d28e9875,cp_196_77d28e9875_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_196_77d28e9875,cp_196_77d28e9875_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_196_77d28e9875,cp_196_77d28e9875_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_197_86bbe79b97,cp_197_86bbe79b97_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_197_86bbe79b97,cp_197_86bbe79b97_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_197_86bbe79b97,cp_197_86bbe79b97_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_198_6fc728dd83,cp_198_6fc728dd83_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_198_6fc728dd83,cp_198_6fc728dd83_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_198_6fc728dd83,cp_198_6fc728dd83_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_199_16ff3483c4,cp_199_16ff3483c4_t1,repackage_idea: lo que conviene observar antes de decidir,watchlist_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_199_16ff3483c4,cp_199_16ff3483c4_t2,La señal de repackage_idea que todavía necesita más datos,watchlist_package,50.0,11.7647,88.2353,safe,65.2941,deterministic_template
+cp_199_16ff3483c4,cp_199_16ff3483c4_t3,"repackage_idea: tendencia o ruido, qué vigilar",watchlist_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_200_59e5b60165,cp_200_59e5b60165_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_200_59e5b60165,cp_200_59e5b60165_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_200_59e5b60165,cp_200_59e5b60165_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_201_559003c19a,cp_201_559003c19a_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_201_559003c19a,cp_201_559003c19a_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_201_559003c19a,cp_201_559003c19a_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_202_a6884925b6,cp_202_a6884925b6_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_202_a6884925b6,cp_202_a6884925b6_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_202_a6884925b6,cp_202_a6884925b6_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_203_4d1091b017,cp_203_4d1091b017_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_203_4d1091b017,cp_203_4d1091b017_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_203_4d1091b017,cp_203_4d1091b017_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_204_2d87b64abd,cp_204_2d87b64abd_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_204_2d87b64abd,cp_204_2d87b64abd_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_204_2d87b64abd,cp_204_2d87b64abd_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_205_cb092629b5,cp_205_cb092629b5_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_205_cb092629b5,cp_205_cb092629b5_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_205_cb092629b5,cp_205_cb092629b5_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_206_c3d77d9045,cp_206_c3d77d9045_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_206_c3d77d9045,cp_206_c3d77d9045_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_206_c3d77d9045,cp_206_c3d77d9045_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_207_82e8cc25bf,cp_207_82e8cc25bf_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_208_070f5ead9d,cp_208_070f5ead9d_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_208_070f5ead9d,cp_208_070f5ead9d_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.2632,94.7368,safe,67.8947,deterministic_template
+cp_208_070f5ead9d,cp_208_070f5ead9d_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_209_6c062865df,cp_209_6c062865df_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_209_6c062865df,cp_209_6c062865df_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_209_6c062865df,cp_209_6c062865df_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_210_1ed411a9e1,cp_210_1ed411a9e1_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_211_b30df0e30c,cp_211_b30df0e30c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_211_b30df0e30c,cp_211_b30df0e30c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_211_b30df0e30c,cp_211_b30df0e30c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_212_d77cf46865,cp_212_d77cf46865_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_212_d77cf46865,cp_212_d77cf46865_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_212_d77cf46865,cp_212_d77cf46865_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_213_3c966ed4fb,cp_213_3c966ed4fb_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_214_e3575dab6f,cp_214_e3575dab6f_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_214_e3575dab6f,cp_214_e3575dab6f_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_214_e3575dab6f,cp_214_e3575dab6f_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_215_c5236d30ed,cp_215_c5236d30ed_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_215_c5236d30ed,cp_215_c5236d30ed_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_215_c5236d30ed,cp_215_c5236d30ed_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_216_21a9f1d8c9,cp_216_21a9f1d8c9_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_217_e925123cb4,cp_217_e925123cb4_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_217_e925123cb4,cp_217_e925123cb4_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,10.5263,89.4737,safe,65.7895,deterministic_template
+cp_217_e925123cb4,cp_217_e925123cb4_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_218_4c2f31fbe6,cp_218_4c2f31fbe6_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_219_cbecb06d31,cp_219_cbecb06d31_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_219_cbecb06d31,cp_219_cbecb06d31_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_219_cbecb06d31,cp_219_cbecb06d31_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_220_d329cc5e10,cp_220_d329cc5e10_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,8.3333,91.6667,safe,66.6667,deterministic_template
+cp_220_d329cc5e10,cp_220_d329cc5e10_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_220_d329cc5e10,cp_220_d329cc5e10_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_221_ee39bdd707,cp_221_ee39bdd707_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_221_ee39bdd707,cp_221_ee39bdd707_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_221_ee39bdd707,cp_221_ee39bdd707_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_222_86d6dda31e,cp_222_86d6dda31e_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_222_86d6dda31e,cp_222_86d6dda31e_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_222_86d6dda31e,cp_222_86d6dda31e_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_223_b6215afc70,cp_223_b6215afc70_t1,tema clave: lo que conviene observar antes de decidir,watchlist_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_223_b6215afc70,cp_223_b6215afc70_t2,La señal de tema clave que todavía necesita más datos,watchlist_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_223_b6215afc70,cp_223_b6215afc70_t3,"tema clave: tendencia o ruido, qué vigilar",watchlist_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_224_18363e3363,cp_224_18363e3363_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_224_18363e3363,cp_224_18363e3363_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,15.7895,84.2105,safe,63.6842,deterministic_template
+cp_224_18363e3363,cp_224_18363e3363_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_225_5fea4b00a1,cp_225_5fea4b00a1_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_226_f2b0201873,cp_226_f2b0201873_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_226_f2b0201873,cp_226_f2b0201873_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_226_f2b0201873,cp_226_f2b0201873_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_227_ddc6a4eb7b,cp_227_ddc6a4eb7b_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,7.6923,92.3077,safe,66.9231,deterministic_template
+cp_228_94f7cf4304,cp_228_94f7cf4304_t1,tema clave: comparación simple para decidir mejor,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_228_94f7cf4304,cp_228_94f7cf4304_t2,Qué opción conviene más dentro de tema clave,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_228_94f7cf4304,cp_228_94f7cf4304_t3,tema clave: diferencias que sí importan,comparison_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_229_ab303ef7c6,cp_229_ab303ef7c6_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_230_7f892caa49,cp_230_7f892caa49_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_230_7f892caa49,cp_230_7f892caa49_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_230_7f892caa49,cp_230_7f892caa49_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_231_50501cd97f,cp_231_50501cd97f_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_231_50501cd97f,cp_231_50501cd97f_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_231_50501cd97f,cp_231_50501cd97f_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_232_6ba850dd90,cp_232_6ba850dd90_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,10.0,90.0,safe,66.0,deterministic_template
+cp_232_6ba850dd90,cp_232_6ba850dd90_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.1667,95.8333,safe,68.3333,deterministic_template
+cp_232_6ba850dd90,cp_232_6ba850dd90_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_233_7bb7665089,cp_233_7bb7665089_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_233_7bb7665089,cp_233_7bb7665089_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,11.1111,88.8889,safe,65.5556,deterministic_template
+cp_233_7bb7665089,cp_233_7bb7665089_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,5.8824,94.1176,safe,67.647,deterministic_template
+cp_234_11a129fdc4,cp_234_11a129fdc4_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,6.6667,93.3333,safe,67.3333,deterministic_template
+cp_234_11a129fdc4,cp_234_11a129fdc4_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,5.5556,94.4444,safe,67.7778,deterministic_template
+cp_234_11a129fdc4,cp_234_11a129fdc4_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,6.25,93.75,safe,67.5,deterministic_template
+cp_235_25249e0f87,cp_235_25249e0f87_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,7.1429,92.8571,safe,67.1428,deterministic_template
+cp_235_25249e0f87,cp_235_25249e0f87_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,12.5,87.5,safe,65.0,deterministic_template
+cp_235_25249e0f87,cp_235_25249e0f87_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_236_ca0f129e4a,cp_236_ca0f129e4a_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_237_ee348d5b9c,cp_237_ee348d5b9c_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_238_2c940ceb41,cp_238_2c940ceb41_t1,Una mejor forma de explicar repackage_idea,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template
+cp_238_2c940ceb41,cp_238_2c940ceb41_t2,El ángulo de repackage_idea que casi nadie está usando,repackage_package,50.0,4.5455,95.4545,safe,68.1818,deterministic_template
+cp_238_2c940ceb41,cp_238_2c940ceb41_t3,Cómo replantear repackage_idea para hacerlo más claro,repackage_package,50.0,0.0,100.0,safe,70.0,deterministic_template

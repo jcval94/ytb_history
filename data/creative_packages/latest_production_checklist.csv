@@ -1,0 +1,1429 @@
+creative_package_id,step_order,production_step,estimated_effort,required_input,done_default
+cp_1_f71ccea09f,1,revisar evidencia,bajo,artifacts,false
+cp_1_f71ccea09f,2,elegir título,bajo,artifacts,false
+cp_1_f71ccea09f,3,definir hook,bajo,artifacts,false
+cp_1_f71ccea09f,4,preparar guion,medio,artifacts,false
+cp_1_f71ccea09f,5,preparar miniatura,medio,artifacts,false
+cp_1_f71ccea09f,6,publicar/monitorear,medio,artifacts,false
+cp_2_b6872e7113,1,revisar evidencia,bajo,artifacts,false
+cp_2_b6872e7113,2,elegir título,bajo,artifacts,false
+cp_2_b6872e7113,3,definir hook,bajo,artifacts,false
+cp_2_b6872e7113,4,preparar guion,medio,artifacts,false
+cp_2_b6872e7113,5,preparar miniatura,medio,artifacts,false
+cp_2_b6872e7113,6,publicar/monitorear,medio,artifacts,false
+cp_3_99f363af02,1,revisar evidencia,bajo,artifacts,false
+cp_3_99f363af02,2,elegir título,bajo,artifacts,false
+cp_3_99f363af02,3,definir hook,bajo,artifacts,false
+cp_3_99f363af02,4,preparar guion,medio,artifacts,false
+cp_3_99f363af02,5,preparar miniatura,medio,artifacts,false
+cp_3_99f363af02,6,publicar/monitorear,medio,artifacts,false
+cp_4_87619d323c,1,revisar evidencia,bajo,artifacts,false
+cp_4_87619d323c,2,elegir título,bajo,artifacts,false
+cp_4_87619d323c,3,definir hook,bajo,artifacts,false
+cp_4_87619d323c,4,preparar guion,medio,artifacts,false
+cp_4_87619d323c,5,preparar miniatura,medio,artifacts,false
+cp_4_87619d323c,6,publicar/monitorear,medio,artifacts,false
+cp_5_7c44d0f981,1,revisar evidencia,bajo,artifacts,false
+cp_5_7c44d0f981,2,elegir título,bajo,artifacts,false
+cp_5_7c44d0f981,3,definir hook,bajo,artifacts,false
+cp_5_7c44d0f981,4,preparar guion,medio,artifacts,false
+cp_5_7c44d0f981,5,preparar miniatura,medio,artifacts,false
+cp_5_7c44d0f981,6,publicar/monitorear,medio,artifacts,false
+cp_6_24a41d9f61,1,revisar evidencia,bajo,artifacts,false
+cp_6_24a41d9f61,2,elegir título,bajo,artifacts,false
+cp_6_24a41d9f61,3,definir hook,bajo,artifacts,false
+cp_6_24a41d9f61,4,preparar guion,medio,artifacts,false
+cp_6_24a41d9f61,5,preparar miniatura,medio,artifacts,false
+cp_6_24a41d9f61,6,publicar/monitorear,medio,artifacts,false
+cp_7_45de3ff828,1,revisar evidencia,bajo,artifacts,false
+cp_7_45de3ff828,2,elegir título,bajo,artifacts,false
+cp_7_45de3ff828,3,definir hook,bajo,artifacts,false
+cp_7_45de3ff828,4,preparar guion,medio,artifacts,false
+cp_7_45de3ff828,5,preparar miniatura,medio,artifacts,false
+cp_7_45de3ff828,6,publicar/monitorear,medio,artifacts,false
+cp_8_7f54860948,1,revisar evidencia,bajo,artifacts,false
+cp_8_7f54860948,2,elegir título,bajo,artifacts,false
+cp_8_7f54860948,3,definir hook,bajo,artifacts,false
+cp_8_7f54860948,4,preparar guion,medio,artifacts,false
+cp_8_7f54860948,5,preparar miniatura,medio,artifacts,false
+cp_8_7f54860948,6,publicar/monitorear,medio,artifacts,false
+cp_9_a2dddf4cae,1,revisar evidencia,bajo,artifacts,false
+cp_9_a2dddf4cae,2,elegir título,bajo,artifacts,false
+cp_9_a2dddf4cae,3,definir hook,bajo,artifacts,false
+cp_9_a2dddf4cae,4,preparar guion,medio,artifacts,false
+cp_9_a2dddf4cae,5,preparar miniatura,medio,artifacts,false
+cp_9_a2dddf4cae,6,publicar/monitorear,medio,artifacts,false
+cp_10_c3a23d9534,1,revisar evidencia,bajo,artifacts,false
+cp_10_c3a23d9534,2,elegir título,bajo,artifacts,false
+cp_10_c3a23d9534,3,definir hook,bajo,artifacts,false
+cp_10_c3a23d9534,4,preparar guion,medio,artifacts,false
+cp_10_c3a23d9534,5,preparar miniatura,medio,artifacts,false
+cp_10_c3a23d9534,6,publicar/monitorear,medio,artifacts,false
+cp_11_b53b066de9,1,revisar evidencia,bajo,artifacts,false
+cp_11_b53b066de9,2,elegir título,bajo,artifacts,false
+cp_11_b53b066de9,3,definir hook,bajo,artifacts,false
+cp_11_b53b066de9,4,preparar guion,medio,artifacts,false
+cp_11_b53b066de9,5,preparar miniatura,medio,artifacts,false
+cp_11_b53b066de9,6,publicar/monitorear,medio,artifacts,false
+cp_12_8a60e2549f,1,revisar evidencia,bajo,artifacts,false
+cp_12_8a60e2549f,2,elegir título,bajo,artifacts,false
+cp_12_8a60e2549f,3,definir hook,bajo,artifacts,false
+cp_12_8a60e2549f,4,preparar guion,medio,artifacts,false
+cp_12_8a60e2549f,5,preparar miniatura,medio,artifacts,false
+cp_12_8a60e2549f,6,publicar/monitorear,medio,artifacts,false
+cp_13_f361a60c40,1,revisar evidencia,bajo,artifacts,false
+cp_13_f361a60c40,2,elegir título,bajo,artifacts,false
+cp_13_f361a60c40,3,definir hook,bajo,artifacts,false
+cp_13_f361a60c40,4,preparar guion,medio,artifacts,false
+cp_13_f361a60c40,5,preparar miniatura,medio,artifacts,false
+cp_13_f361a60c40,6,publicar/monitorear,medio,artifacts,false
+cp_14_7bff0e4272,1,revisar evidencia,bajo,artifacts,false
+cp_14_7bff0e4272,2,elegir título,bajo,artifacts,false
+cp_14_7bff0e4272,3,definir hook,bajo,artifacts,false
+cp_14_7bff0e4272,4,preparar guion,medio,artifacts,false
+cp_14_7bff0e4272,5,preparar miniatura,medio,artifacts,false
+cp_14_7bff0e4272,6,publicar/monitorear,medio,artifacts,false
+cp_15_c04b6fdb15,1,revisar evidencia,bajo,artifacts,false
+cp_15_c04b6fdb15,2,elegir título,bajo,artifacts,false
+cp_15_c04b6fdb15,3,definir hook,bajo,artifacts,false
+cp_15_c04b6fdb15,4,preparar guion,medio,artifacts,false
+cp_15_c04b6fdb15,5,preparar miniatura,medio,artifacts,false
+cp_15_c04b6fdb15,6,publicar/monitorear,medio,artifacts,false
+cp_16_40ce473e50,1,revisar evidencia,bajo,artifacts,false
+cp_16_40ce473e50,2,elegir título,bajo,artifacts,false
+cp_16_40ce473e50,3,definir hook,bajo,artifacts,false
+cp_16_40ce473e50,4,preparar guion,medio,artifacts,false
+cp_16_40ce473e50,5,preparar miniatura,medio,artifacts,false
+cp_16_40ce473e50,6,publicar/monitorear,medio,artifacts,false
+cp_17_96df6120e0,1,revisar evidencia,bajo,artifacts,false
+cp_17_96df6120e0,2,elegir título,bajo,artifacts,false
+cp_17_96df6120e0,3,definir hook,bajo,artifacts,false
+cp_17_96df6120e0,4,preparar guion,medio,artifacts,false
+cp_17_96df6120e0,5,preparar miniatura,medio,artifacts,false
+cp_17_96df6120e0,6,publicar/monitorear,medio,artifacts,false
+cp_18_0644c55f09,1,revisar evidencia,bajo,artifacts,false
+cp_18_0644c55f09,2,elegir título,bajo,artifacts,false
+cp_18_0644c55f09,3,definir hook,bajo,artifacts,false
+cp_18_0644c55f09,4,preparar guion,medio,artifacts,false
+cp_18_0644c55f09,5,preparar miniatura,medio,artifacts,false
+cp_18_0644c55f09,6,publicar/monitorear,medio,artifacts,false
+cp_19_3dac72758e,1,revisar evidencia,bajo,artifacts,false
+cp_19_3dac72758e,2,elegir título,bajo,artifacts,false
+cp_19_3dac72758e,3,definir hook,bajo,artifacts,false
+cp_19_3dac72758e,4,preparar guion,medio,artifacts,false
+cp_19_3dac72758e,5,preparar miniatura,medio,artifacts,false
+cp_19_3dac72758e,6,publicar/monitorear,medio,artifacts,false
+cp_20_c35c510fff,1,revisar evidencia,bajo,artifacts,false
+cp_20_c35c510fff,2,elegir título,bajo,artifacts,false
+cp_20_c35c510fff,3,definir hook,bajo,artifacts,false
+cp_20_c35c510fff,4,preparar guion,medio,artifacts,false
+cp_20_c35c510fff,5,preparar miniatura,medio,artifacts,false
+cp_20_c35c510fff,6,publicar/monitorear,medio,artifacts,false
+cp_21_859bdd1b58,1,revisar evidencia,bajo,artifacts,false
+cp_21_859bdd1b58,2,elegir título,bajo,artifacts,false
+cp_21_859bdd1b58,3,definir hook,bajo,artifacts,false
+cp_21_859bdd1b58,4,preparar guion,medio,artifacts,false
+cp_21_859bdd1b58,5,preparar miniatura,medio,artifacts,false
+cp_21_859bdd1b58,6,publicar/monitorear,medio,artifacts,false
+cp_22_221f9baaba,1,revisar evidencia,bajo,artifacts,false
+cp_22_221f9baaba,2,elegir título,bajo,artifacts,false
+cp_22_221f9baaba,3,definir hook,bajo,artifacts,false
+cp_22_221f9baaba,4,preparar guion,medio,artifacts,false
+cp_22_221f9baaba,5,preparar miniatura,medio,artifacts,false
+cp_22_221f9baaba,6,publicar/monitorear,medio,artifacts,false
+cp_23_e225ffd50a,1,revisar evidencia,bajo,artifacts,false
+cp_23_e225ffd50a,2,elegir título,bajo,artifacts,false
+cp_23_e225ffd50a,3,definir hook,bajo,artifacts,false
+cp_23_e225ffd50a,4,preparar guion,medio,artifacts,false
+cp_23_e225ffd50a,5,preparar miniatura,medio,artifacts,false
+cp_23_e225ffd50a,6,publicar/monitorear,medio,artifacts,false
+cp_24_8eb07d64b4,1,revisar evidencia,bajo,artifacts,false
+cp_24_8eb07d64b4,2,elegir título,bajo,artifacts,false
+cp_24_8eb07d64b4,3,definir hook,bajo,artifacts,false
+cp_24_8eb07d64b4,4,preparar guion,medio,artifacts,false
+cp_24_8eb07d64b4,5,preparar miniatura,medio,artifacts,false
+cp_24_8eb07d64b4,6,publicar/monitorear,medio,artifacts,false
+cp_25_5f3f40435f,1,revisar evidencia,bajo,artifacts,false
+cp_25_5f3f40435f,2,elegir título,bajo,artifacts,false
+cp_25_5f3f40435f,3,definir hook,bajo,artifacts,false
+cp_25_5f3f40435f,4,preparar guion,medio,artifacts,false
+cp_25_5f3f40435f,5,preparar miniatura,medio,artifacts,false
+cp_25_5f3f40435f,6,publicar/monitorear,medio,artifacts,false
+cp_26_69f3df43e4,1,revisar evidencia,bajo,artifacts,false
+cp_26_69f3df43e4,2,elegir título,bajo,artifacts,false
+cp_26_69f3df43e4,3,definir hook,bajo,artifacts,false
+cp_26_69f3df43e4,4,preparar guion,medio,artifacts,false
+cp_26_69f3df43e4,5,preparar miniatura,medio,artifacts,false
+cp_26_69f3df43e4,6,publicar/monitorear,medio,artifacts,false
+cp_27_9a53c526c7,1,revisar evidencia,bajo,artifacts,false
+cp_27_9a53c526c7,2,elegir título,bajo,artifacts,false
+cp_27_9a53c526c7,3,definir hook,bajo,artifacts,false
+cp_27_9a53c526c7,4,preparar guion,medio,artifacts,false
+cp_27_9a53c526c7,5,preparar miniatura,medio,artifacts,false
+cp_27_9a53c526c7,6,publicar/monitorear,medio,artifacts,false
+cp_28_4a0cf03a3a,1,revisar evidencia,bajo,artifacts,false
+cp_28_4a0cf03a3a,2,elegir título,bajo,artifacts,false
+cp_28_4a0cf03a3a,3,definir hook,bajo,artifacts,false
+cp_28_4a0cf03a3a,4,preparar guion,medio,artifacts,false
+cp_28_4a0cf03a3a,5,preparar miniatura,medio,artifacts,false
+cp_28_4a0cf03a3a,6,publicar/monitorear,medio,artifacts,false
+cp_29_d933bd26e7,1,revisar evidencia,bajo,artifacts,false
+cp_29_d933bd26e7,2,elegir título,bajo,artifacts,false
+cp_29_d933bd26e7,3,definir hook,bajo,artifacts,false
+cp_29_d933bd26e7,4,preparar guion,medio,artifacts,false
+cp_29_d933bd26e7,5,preparar miniatura,medio,artifacts,false
+cp_29_d933bd26e7,6,publicar/monitorear,medio,artifacts,false
+cp_30_8b701a2c07,1,revisar evidencia,bajo,artifacts,false
+cp_30_8b701a2c07,2,elegir título,bajo,artifacts,false
+cp_30_8b701a2c07,3,definir hook,bajo,artifacts,false
+cp_30_8b701a2c07,4,preparar guion,medio,artifacts,false
+cp_30_8b701a2c07,5,preparar miniatura,medio,artifacts,false
+cp_30_8b701a2c07,6,publicar/monitorear,medio,artifacts,false
+cp_31_f46d4f3fd4,1,revisar evidencia,bajo,artifacts,false
+cp_31_f46d4f3fd4,2,elegir título,bajo,artifacts,false
+cp_31_f46d4f3fd4,3,definir hook,bajo,artifacts,false
+cp_31_f46d4f3fd4,4,preparar guion,medio,artifacts,false
+cp_31_f46d4f3fd4,5,preparar miniatura,medio,artifacts,false
+cp_31_f46d4f3fd4,6,publicar/monitorear,medio,artifacts,false
+cp_32_0798499bf6,1,revisar evidencia,bajo,artifacts,false
+cp_32_0798499bf6,2,elegir título,bajo,artifacts,false
+cp_32_0798499bf6,3,definir hook,bajo,artifacts,false
+cp_32_0798499bf6,4,preparar guion,medio,artifacts,false
+cp_32_0798499bf6,5,preparar miniatura,medio,artifacts,false
+cp_32_0798499bf6,6,publicar/monitorear,medio,artifacts,false
+cp_33_d3434b3e0c,1,revisar evidencia,bajo,artifacts,false
+cp_33_d3434b3e0c,2,elegir título,bajo,artifacts,false
+cp_33_d3434b3e0c,3,definir hook,bajo,artifacts,false
+cp_33_d3434b3e0c,4,preparar guion,medio,artifacts,false
+cp_33_d3434b3e0c,5,preparar miniatura,medio,artifacts,false
+cp_33_d3434b3e0c,6,publicar/monitorear,medio,artifacts,false
+cp_34_87bdbc0f11,1,revisar evidencia,bajo,artifacts,false
+cp_34_87bdbc0f11,2,elegir título,bajo,artifacts,false
+cp_34_87bdbc0f11,3,definir hook,bajo,artifacts,false
+cp_34_87bdbc0f11,4,preparar guion,medio,artifacts,false
+cp_34_87bdbc0f11,5,preparar miniatura,medio,artifacts,false
+cp_34_87bdbc0f11,6,publicar/monitorear,medio,artifacts,false
+cp_35_9909034e67,1,revisar evidencia,bajo,artifacts,false
+cp_35_9909034e67,2,elegir título,bajo,artifacts,false
+cp_35_9909034e67,3,definir hook,bajo,artifacts,false
+cp_35_9909034e67,4,preparar guion,medio,artifacts,false
+cp_35_9909034e67,5,preparar miniatura,medio,artifacts,false
+cp_35_9909034e67,6,publicar/monitorear,medio,artifacts,false
+cp_36_041e05155f,1,revisar evidencia,bajo,artifacts,false
+cp_36_041e05155f,2,elegir título,bajo,artifacts,false
+cp_36_041e05155f,3,definir hook,bajo,artifacts,false
+cp_36_041e05155f,4,preparar guion,medio,artifacts,false
+cp_36_041e05155f,5,preparar miniatura,medio,artifacts,false
+cp_36_041e05155f,6,publicar/monitorear,medio,artifacts,false
+cp_37_ef2d3398a1,1,revisar evidencia,bajo,artifacts,false
+cp_37_ef2d3398a1,2,elegir título,bajo,artifacts,false
+cp_37_ef2d3398a1,3,definir hook,bajo,artifacts,false
+cp_37_ef2d3398a1,4,preparar guion,medio,artifacts,false
+cp_37_ef2d3398a1,5,preparar miniatura,medio,artifacts,false
+cp_37_ef2d3398a1,6,publicar/monitorear,medio,artifacts,false
+cp_38_4f5560b400,1,revisar evidencia,bajo,artifacts,false
+cp_38_4f5560b400,2,elegir título,bajo,artifacts,false
+cp_38_4f5560b400,3,definir hook,bajo,artifacts,false
+cp_38_4f5560b400,4,preparar guion,medio,artifacts,false
+cp_38_4f5560b400,5,preparar miniatura,medio,artifacts,false
+cp_38_4f5560b400,6,publicar/monitorear,medio,artifacts,false
+cp_39_96a8f3cd32,1,revisar evidencia,bajo,artifacts,false
+cp_39_96a8f3cd32,2,elegir título,bajo,artifacts,false
+cp_39_96a8f3cd32,3,definir hook,bajo,artifacts,false
+cp_39_96a8f3cd32,4,preparar guion,medio,artifacts,false
+cp_39_96a8f3cd32,5,preparar miniatura,medio,artifacts,false
+cp_39_96a8f3cd32,6,publicar/monitorear,medio,artifacts,false
+cp_40_334865c3e5,1,revisar evidencia,bajo,artifacts,false
+cp_40_334865c3e5,2,elegir título,bajo,artifacts,false
+cp_40_334865c3e5,3,definir hook,bajo,artifacts,false
+cp_40_334865c3e5,4,preparar guion,medio,artifacts,false
+cp_40_334865c3e5,5,preparar miniatura,medio,artifacts,false
+cp_40_334865c3e5,6,publicar/monitorear,medio,artifacts,false
+cp_41_dbb2fca38b,1,revisar evidencia,bajo,artifacts,false
+cp_41_dbb2fca38b,2,elegir título,bajo,artifacts,false
+cp_41_dbb2fca38b,3,definir hook,bajo,artifacts,false
+cp_41_dbb2fca38b,4,preparar guion,medio,artifacts,false
+cp_41_dbb2fca38b,5,preparar miniatura,medio,artifacts,false
+cp_41_dbb2fca38b,6,publicar/monitorear,medio,artifacts,false
+cp_42_25eff1d166,1,revisar evidencia,bajo,artifacts,false
+cp_42_25eff1d166,2,elegir título,bajo,artifacts,false
+cp_42_25eff1d166,3,definir hook,bajo,artifacts,false
+cp_42_25eff1d166,4,preparar guion,medio,artifacts,false
+cp_42_25eff1d166,5,preparar miniatura,medio,artifacts,false
+cp_42_25eff1d166,6,publicar/monitorear,medio,artifacts,false
+cp_43_509f9d2d84,1,revisar evidencia,bajo,artifacts,false
+cp_43_509f9d2d84,2,elegir título,bajo,artifacts,false
+cp_43_509f9d2d84,3,definir hook,bajo,artifacts,false
+cp_43_509f9d2d84,4,preparar guion,medio,artifacts,false
+cp_43_509f9d2d84,5,preparar miniatura,medio,artifacts,false
+cp_43_509f9d2d84,6,publicar/monitorear,medio,artifacts,false
+cp_44_496dd07134,1,revisar evidencia,bajo,artifacts,false
+cp_44_496dd07134,2,elegir título,bajo,artifacts,false
+cp_44_496dd07134,3,definir hook,bajo,artifacts,false
+cp_44_496dd07134,4,preparar guion,medio,artifacts,false
+cp_44_496dd07134,5,preparar miniatura,medio,artifacts,false
+cp_44_496dd07134,6,publicar/monitorear,medio,artifacts,false
+cp_45_428a1b06e4,1,revisar evidencia,bajo,artifacts,false
+cp_45_428a1b06e4,2,elegir título,bajo,artifacts,false
+cp_45_428a1b06e4,3,definir hook,bajo,artifacts,false
+cp_45_428a1b06e4,4,preparar guion,medio,artifacts,false
+cp_45_428a1b06e4,5,preparar miniatura,medio,artifacts,false
+cp_45_428a1b06e4,6,publicar/monitorear,medio,artifacts,false
+cp_46_0b5b03053c,1,revisar evidencia,bajo,artifacts,false
+cp_46_0b5b03053c,2,elegir título,bajo,artifacts,false
+cp_46_0b5b03053c,3,definir hook,bajo,artifacts,false
+cp_46_0b5b03053c,4,preparar guion,medio,artifacts,false
+cp_46_0b5b03053c,5,preparar miniatura,medio,artifacts,false
+cp_46_0b5b03053c,6,publicar/monitorear,medio,artifacts,false
+cp_47_877add78ed,1,revisar evidencia,bajo,artifacts,false
+cp_47_877add78ed,2,elegir título,bajo,artifacts,false
+cp_47_877add78ed,3,definir hook,bajo,artifacts,false
+cp_47_877add78ed,4,preparar guion,medio,artifacts,false
+cp_47_877add78ed,5,preparar miniatura,medio,artifacts,false
+cp_47_877add78ed,6,publicar/monitorear,medio,artifacts,false
+cp_48_3651766d1e,1,revisar evidencia,bajo,artifacts,false
+cp_48_3651766d1e,2,elegir título,bajo,artifacts,false
+cp_48_3651766d1e,3,definir hook,bajo,artifacts,false
+cp_48_3651766d1e,4,preparar guion,medio,artifacts,false
+cp_48_3651766d1e,5,preparar miniatura,medio,artifacts,false
+cp_48_3651766d1e,6,publicar/monitorear,medio,artifacts,false
+cp_49_298d700483,1,revisar evidencia,bajo,artifacts,false
+cp_49_298d700483,2,elegir título,bajo,artifacts,false
+cp_49_298d700483,3,definir hook,bajo,artifacts,false
+cp_49_298d700483,4,preparar guion,medio,artifacts,false
+cp_49_298d700483,5,preparar miniatura,medio,artifacts,false
+cp_49_298d700483,6,publicar/monitorear,medio,artifacts,false
+cp_50_61c3579a01,1,revisar evidencia,bajo,artifacts,false
+cp_50_61c3579a01,2,elegir título,bajo,artifacts,false
+cp_50_61c3579a01,3,definir hook,bajo,artifacts,false
+cp_50_61c3579a01,4,preparar guion,medio,artifacts,false
+cp_50_61c3579a01,5,preparar miniatura,medio,artifacts,false
+cp_50_61c3579a01,6,publicar/monitorear,medio,artifacts,false
+cp_51_d2eb2b0c22,1,revisar evidencia,bajo,artifacts,false
+cp_51_d2eb2b0c22,2,elegir título,bajo,artifacts,false
+cp_51_d2eb2b0c22,3,definir hook,bajo,artifacts,false
+cp_51_d2eb2b0c22,4,preparar guion,medio,artifacts,false
+cp_51_d2eb2b0c22,5,preparar miniatura,medio,artifacts,false
+cp_51_d2eb2b0c22,6,publicar/monitorear,medio,artifacts,false
+cp_52_932979cbbb,1,revisar evidencia,bajo,artifacts,false
+cp_52_932979cbbb,2,elegir título,bajo,artifacts,false
+cp_52_932979cbbb,3,definir hook,bajo,artifacts,false
+cp_52_932979cbbb,4,preparar guion,medio,artifacts,false
+cp_52_932979cbbb,5,preparar miniatura,medio,artifacts,false
+cp_52_932979cbbb,6,publicar/monitorear,medio,artifacts,false
+cp_53_77c57e3cc8,1,revisar evidencia,bajo,artifacts,false
+cp_53_77c57e3cc8,2,elegir título,bajo,artifacts,false
+cp_53_77c57e3cc8,3,definir hook,bajo,artifacts,false
+cp_53_77c57e3cc8,4,preparar guion,medio,artifacts,false
+cp_53_77c57e3cc8,5,preparar miniatura,medio,artifacts,false
+cp_53_77c57e3cc8,6,publicar/monitorear,medio,artifacts,false
+cp_54_d635fdcf4a,1,revisar evidencia,bajo,artifacts,false
+cp_54_d635fdcf4a,2,elegir título,bajo,artifacts,false
+cp_54_d635fdcf4a,3,definir hook,bajo,artifacts,false
+cp_54_d635fdcf4a,4,preparar guion,medio,artifacts,false
+cp_54_d635fdcf4a,5,preparar miniatura,medio,artifacts,false
+cp_54_d635fdcf4a,6,publicar/monitorear,medio,artifacts,false
+cp_55_e908db3568,1,revisar evidencia,bajo,artifacts,false
+cp_55_e908db3568,2,elegir título,bajo,artifacts,false
+cp_55_e908db3568,3,definir hook,bajo,artifacts,false
+cp_55_e908db3568,4,preparar guion,medio,artifacts,false
+cp_55_e908db3568,5,preparar miniatura,medio,artifacts,false
+cp_55_e908db3568,6,publicar/monitorear,medio,artifacts,false
+cp_56_e9c0e1f0e7,1,revisar evidencia,bajo,artifacts,false
+cp_56_e9c0e1f0e7,2,elegir título,bajo,artifacts,false
+cp_56_e9c0e1f0e7,3,definir hook,bajo,artifacts,false
+cp_56_e9c0e1f0e7,4,preparar guion,medio,artifacts,false
+cp_56_e9c0e1f0e7,5,preparar miniatura,medio,artifacts,false
+cp_56_e9c0e1f0e7,6,publicar/monitorear,medio,artifacts,false
+cp_57_27f34bd566,1,revisar evidencia,bajo,artifacts,false
+cp_57_27f34bd566,2,elegir título,bajo,artifacts,false
+cp_57_27f34bd566,3,definir hook,bajo,artifacts,false
+cp_57_27f34bd566,4,preparar guion,medio,artifacts,false
+cp_57_27f34bd566,5,preparar miniatura,medio,artifacts,false
+cp_57_27f34bd566,6,publicar/monitorear,medio,artifacts,false
+cp_58_543e25c447,1,revisar evidencia,bajo,artifacts,false
+cp_58_543e25c447,2,elegir título,bajo,artifacts,false
+cp_58_543e25c447,3,definir hook,bajo,artifacts,false
+cp_58_543e25c447,4,preparar guion,medio,artifacts,false
+cp_58_543e25c447,5,preparar miniatura,medio,artifacts,false
+cp_58_543e25c447,6,publicar/monitorear,medio,artifacts,false
+cp_59_fb151eb003,1,revisar evidencia,bajo,artifacts,false
+cp_59_fb151eb003,2,elegir título,bajo,artifacts,false
+cp_59_fb151eb003,3,definir hook,bajo,artifacts,false
+cp_59_fb151eb003,4,preparar guion,medio,artifacts,false
+cp_59_fb151eb003,5,preparar miniatura,medio,artifacts,false
+cp_59_fb151eb003,6,publicar/monitorear,medio,artifacts,false
+cp_60_d118893fde,1,revisar evidencia,bajo,artifacts,false
+cp_60_d118893fde,2,elegir título,bajo,artifacts,false
+cp_60_d118893fde,3,definir hook,bajo,artifacts,false
+cp_60_d118893fde,4,preparar guion,medio,artifacts,false
+cp_60_d118893fde,5,preparar miniatura,medio,artifacts,false
+cp_60_d118893fde,6,publicar/monitorear,medio,artifacts,false
+cp_61_5db314f661,1,revisar evidencia,bajo,artifacts,false
+cp_61_5db314f661,2,elegir título,bajo,artifacts,false
+cp_61_5db314f661,3,definir hook,bajo,artifacts,false
+cp_61_5db314f661,4,preparar guion,medio,artifacts,false
+cp_61_5db314f661,5,preparar miniatura,medio,artifacts,false
+cp_61_5db314f661,6,publicar/monitorear,medio,artifacts,false
+cp_62_ceb6fd315c,1,revisar evidencia,bajo,artifacts,false
+cp_62_ceb6fd315c,2,elegir título,bajo,artifacts,false
+cp_62_ceb6fd315c,3,definir hook,bajo,artifacts,false
+cp_62_ceb6fd315c,4,preparar guion,medio,artifacts,false
+cp_62_ceb6fd315c,5,preparar miniatura,medio,artifacts,false
+cp_62_ceb6fd315c,6,publicar/monitorear,medio,artifacts,false
+cp_63_e4523660f7,1,revisar evidencia,bajo,artifacts,false
+cp_63_e4523660f7,2,elegir título,bajo,artifacts,false
+cp_63_e4523660f7,3,definir hook,bajo,artifacts,false
+cp_63_e4523660f7,4,preparar guion,medio,artifacts,false
+cp_63_e4523660f7,5,preparar miniatura,medio,artifacts,false
+cp_63_e4523660f7,6,publicar/monitorear,medio,artifacts,false
+cp_64_fc4208812c,1,revisar evidencia,bajo,artifacts,false
+cp_64_fc4208812c,2,elegir título,bajo,artifacts,false
+cp_64_fc4208812c,3,definir hook,bajo,artifacts,false
+cp_64_fc4208812c,4,preparar guion,medio,artifacts,false
+cp_64_fc4208812c,5,preparar miniatura,medio,artifacts,false
+cp_64_fc4208812c,6,publicar/monitorear,medio,artifacts,false
+cp_65_1291e38069,1,revisar evidencia,bajo,artifacts,false
+cp_65_1291e38069,2,elegir título,bajo,artifacts,false
+cp_65_1291e38069,3,definir hook,bajo,artifacts,false
+cp_65_1291e38069,4,preparar guion,medio,artifacts,false
+cp_65_1291e38069,5,preparar miniatura,medio,artifacts,false
+cp_65_1291e38069,6,publicar/monitorear,medio,artifacts,false
+cp_66_1696d24c83,1,revisar evidencia,bajo,artifacts,false
+cp_66_1696d24c83,2,elegir título,bajo,artifacts,false
+cp_66_1696d24c83,3,definir hook,bajo,artifacts,false
+cp_66_1696d24c83,4,preparar guion,medio,artifacts,false
+cp_66_1696d24c83,5,preparar miniatura,medio,artifacts,false
+cp_66_1696d24c83,6,publicar/monitorear,medio,artifacts,false
+cp_67_49a3083c6d,1,revisar evidencia,bajo,artifacts,false
+cp_67_49a3083c6d,2,elegir título,bajo,artifacts,false
+cp_67_49a3083c6d,3,definir hook,bajo,artifacts,false
+cp_67_49a3083c6d,4,preparar guion,medio,artifacts,false
+cp_67_49a3083c6d,5,preparar miniatura,medio,artifacts,false
+cp_67_49a3083c6d,6,publicar/monitorear,medio,artifacts,false
+cp_68_59d6b838df,1,revisar evidencia,bajo,artifacts,false
+cp_68_59d6b838df,2,elegir título,bajo,artifacts,false
+cp_68_59d6b838df,3,definir hook,bajo,artifacts,false
+cp_68_59d6b838df,4,preparar guion,medio,artifacts,false
+cp_68_59d6b838df,5,preparar miniatura,medio,artifacts,false
+cp_68_59d6b838df,6,publicar/monitorear,medio,artifacts,false
+cp_69_04385cc995,1,revisar evidencia,bajo,artifacts,false
+cp_69_04385cc995,2,elegir título,bajo,artifacts,false
+cp_69_04385cc995,3,definir hook,bajo,artifacts,false
+cp_69_04385cc995,4,preparar guion,medio,artifacts,false
+cp_69_04385cc995,5,preparar miniatura,medio,artifacts,false
+cp_69_04385cc995,6,publicar/monitorear,medio,artifacts,false
+cp_70_ed1a67e5f6,1,revisar evidencia,bajo,artifacts,false
+cp_70_ed1a67e5f6,2,elegir título,bajo,artifacts,false
+cp_70_ed1a67e5f6,3,definir hook,bajo,artifacts,false
+cp_70_ed1a67e5f6,4,preparar guion,medio,artifacts,false
+cp_70_ed1a67e5f6,5,preparar miniatura,medio,artifacts,false
+cp_70_ed1a67e5f6,6,publicar/monitorear,medio,artifacts,false
+cp_71_a44ad1afd7,1,revisar evidencia,bajo,artifacts,false
+cp_71_a44ad1afd7,2,elegir título,bajo,artifacts,false
+cp_71_a44ad1afd7,3,definir hook,bajo,artifacts,false
+cp_71_a44ad1afd7,4,preparar guion,medio,artifacts,false
+cp_71_a44ad1afd7,5,preparar miniatura,medio,artifacts,false
+cp_71_a44ad1afd7,6,publicar/monitorear,medio,artifacts,false
+cp_72_e3a6297e15,1,revisar evidencia,bajo,artifacts,false
+cp_72_e3a6297e15,2,elegir título,bajo,artifacts,false
+cp_72_e3a6297e15,3,definir hook,bajo,artifacts,false
+cp_72_e3a6297e15,4,preparar guion,medio,artifacts,false
+cp_72_e3a6297e15,5,preparar miniatura,medio,artifacts,false
+cp_72_e3a6297e15,6,publicar/monitorear,medio,artifacts,false
+cp_73_58beb529a5,1,revisar evidencia,bajo,artifacts,false
+cp_73_58beb529a5,2,elegir título,bajo,artifacts,false
+cp_73_58beb529a5,3,definir hook,bajo,artifacts,false
+cp_73_58beb529a5,4,preparar guion,medio,artifacts,false
+cp_73_58beb529a5,5,preparar miniatura,medio,artifacts,false
+cp_73_58beb529a5,6,publicar/monitorear,medio,artifacts,false
+cp_74_b0f10d2a7d,1,revisar evidencia,bajo,artifacts,false
+cp_74_b0f10d2a7d,2,elegir título,bajo,artifacts,false
+cp_74_b0f10d2a7d,3,definir hook,bajo,artifacts,false
+cp_74_b0f10d2a7d,4,preparar guion,medio,artifacts,false
+cp_74_b0f10d2a7d,5,preparar miniatura,medio,artifacts,false
+cp_74_b0f10d2a7d,6,publicar/monitorear,medio,artifacts,false
+cp_75_e1a1d2f610,1,revisar evidencia,bajo,artifacts,false
+cp_75_e1a1d2f610,2,elegir título,bajo,artifacts,false
+cp_75_e1a1d2f610,3,definir hook,bajo,artifacts,false
+cp_75_e1a1d2f610,4,preparar guion,medio,artifacts,false
+cp_75_e1a1d2f610,5,preparar miniatura,medio,artifacts,false
+cp_75_e1a1d2f610,6,publicar/monitorear,medio,artifacts,false
+cp_76_27652ae9d5,1,revisar evidencia,bajo,artifacts,false
+cp_76_27652ae9d5,2,elegir título,bajo,artifacts,false
+cp_76_27652ae9d5,3,definir hook,bajo,artifacts,false
+cp_76_27652ae9d5,4,preparar guion,medio,artifacts,false
+cp_76_27652ae9d5,5,preparar miniatura,medio,artifacts,false
+cp_76_27652ae9d5,6,publicar/monitorear,medio,artifacts,false
+cp_77_c3c93cd311,1,revisar evidencia,bajo,artifacts,false
+cp_77_c3c93cd311,2,elegir título,bajo,artifacts,false
+cp_77_c3c93cd311,3,definir hook,bajo,artifacts,false
+cp_77_c3c93cd311,4,preparar guion,medio,artifacts,false
+cp_77_c3c93cd311,5,preparar miniatura,medio,artifacts,false
+cp_77_c3c93cd311,6,publicar/monitorear,medio,artifacts,false
+cp_78_1c2bef676f,1,revisar evidencia,bajo,artifacts,false
+cp_78_1c2bef676f,2,elegir título,bajo,artifacts,false
+cp_78_1c2bef676f,3,definir hook,bajo,artifacts,false
+cp_78_1c2bef676f,4,preparar guion,medio,artifacts,false
+cp_78_1c2bef676f,5,preparar miniatura,medio,artifacts,false
+cp_78_1c2bef676f,6,publicar/monitorear,medio,artifacts,false
+cp_79_9bbcbcb398,1,revisar evidencia,bajo,artifacts,false
+cp_79_9bbcbcb398,2,elegir título,bajo,artifacts,false
+cp_79_9bbcbcb398,3,definir hook,bajo,artifacts,false
+cp_79_9bbcbcb398,4,preparar guion,medio,artifacts,false
+cp_79_9bbcbcb398,5,preparar miniatura,medio,artifacts,false
+cp_79_9bbcbcb398,6,publicar/monitorear,medio,artifacts,false
+cp_80_382d7815c1,1,revisar evidencia,bajo,artifacts,false
+cp_80_382d7815c1,2,elegir título,bajo,artifacts,false
+cp_80_382d7815c1,3,definir hook,bajo,artifacts,false
+cp_80_382d7815c1,4,preparar guion,medio,artifacts,false
+cp_80_382d7815c1,5,preparar miniatura,medio,artifacts,false
+cp_80_382d7815c1,6,publicar/monitorear,medio,artifacts,false
+cp_81_0f05ececc1,1,revisar evidencia,bajo,artifacts,false
+cp_81_0f05ececc1,2,elegir título,bajo,artifacts,false
+cp_81_0f05ececc1,3,definir hook,bajo,artifacts,false
+cp_81_0f05ececc1,4,preparar guion,medio,artifacts,false
+cp_81_0f05ececc1,5,preparar miniatura,medio,artifacts,false
+cp_81_0f05ececc1,6,publicar/monitorear,medio,artifacts,false
+cp_82_b381a1f13d,1,revisar evidencia,bajo,artifacts,false
+cp_82_b381a1f13d,2,elegir título,bajo,artifacts,false
+cp_82_b381a1f13d,3,definir hook,bajo,artifacts,false
+cp_82_b381a1f13d,4,preparar guion,medio,artifacts,false
+cp_82_b381a1f13d,5,preparar miniatura,medio,artifacts,false
+cp_82_b381a1f13d,6,publicar/monitorear,medio,artifacts,false
+cp_83_9acebb33f4,1,revisar evidencia,bajo,artifacts,false
+cp_83_9acebb33f4,2,elegir título,bajo,artifacts,false
+cp_83_9acebb33f4,3,definir hook,bajo,artifacts,false
+cp_83_9acebb33f4,4,preparar guion,medio,artifacts,false
+cp_83_9acebb33f4,5,preparar miniatura,medio,artifacts,false
+cp_83_9acebb33f4,6,publicar/monitorear,medio,artifacts,false
+cp_84_eddc05a26c,1,revisar evidencia,bajo,artifacts,false
+cp_84_eddc05a26c,2,elegir título,bajo,artifacts,false
+cp_84_eddc05a26c,3,definir hook,bajo,artifacts,false
+cp_84_eddc05a26c,4,preparar guion,medio,artifacts,false
+cp_84_eddc05a26c,5,preparar miniatura,medio,artifacts,false
+cp_84_eddc05a26c,6,publicar/monitorear,medio,artifacts,false
+cp_85_76c1faac36,1,revisar evidencia,bajo,artifacts,false
+cp_85_76c1faac36,2,elegir título,bajo,artifacts,false
+cp_85_76c1faac36,3,definir hook,bajo,artifacts,false
+cp_85_76c1faac36,4,preparar guion,medio,artifacts,false
+cp_85_76c1faac36,5,preparar miniatura,medio,artifacts,false
+cp_85_76c1faac36,6,publicar/monitorear,medio,artifacts,false
+cp_86_f3a52807cf,1,revisar evidencia,bajo,artifacts,false
+cp_86_f3a52807cf,2,elegir título,bajo,artifacts,false
+cp_86_f3a52807cf,3,definir hook,bajo,artifacts,false
+cp_86_f3a52807cf,4,preparar guion,medio,artifacts,false
+cp_86_f3a52807cf,5,preparar miniatura,medio,artifacts,false
+cp_86_f3a52807cf,6,publicar/monitorear,medio,artifacts,false
+cp_87_59779a8ae0,1,revisar evidencia,bajo,artifacts,false
+cp_87_59779a8ae0,2,elegir título,bajo,artifacts,false
+cp_87_59779a8ae0,3,definir hook,bajo,artifacts,false
+cp_87_59779a8ae0,4,preparar guion,medio,artifacts,false
+cp_87_59779a8ae0,5,preparar miniatura,medio,artifacts,false
+cp_87_59779a8ae0,6,publicar/monitorear,medio,artifacts,false
+cp_88_fea05ff2eb,1,revisar evidencia,bajo,artifacts,false
+cp_88_fea05ff2eb,2,elegir título,bajo,artifacts,false
+cp_88_fea05ff2eb,3,definir hook,bajo,artifacts,false
+cp_88_fea05ff2eb,4,preparar guion,medio,artifacts,false
+cp_88_fea05ff2eb,5,preparar miniatura,medio,artifacts,false
+cp_88_fea05ff2eb,6,publicar/monitorear,medio,artifacts,false
+cp_89_1231b32500,1,revisar evidencia,bajo,artifacts,false
+cp_89_1231b32500,2,elegir título,bajo,artifacts,false
+cp_89_1231b32500,3,definir hook,bajo,artifacts,false
+cp_89_1231b32500,4,preparar guion,medio,artifacts,false
+cp_89_1231b32500,5,preparar miniatura,medio,artifacts,false
+cp_89_1231b32500,6,publicar/monitorear,medio,artifacts,false
+cp_90_623fd9463c,1,revisar evidencia,bajo,artifacts,false
+cp_90_623fd9463c,2,elegir título,bajo,artifacts,false
+cp_90_623fd9463c,3,definir hook,bajo,artifacts,false
+cp_90_623fd9463c,4,preparar guion,medio,artifacts,false
+cp_90_623fd9463c,5,preparar miniatura,medio,artifacts,false
+cp_90_623fd9463c,6,publicar/monitorear,medio,artifacts,false
+cp_91_bc3d844348,1,revisar evidencia,bajo,artifacts,false
+cp_91_bc3d844348,2,elegir título,bajo,artifacts,false
+cp_91_bc3d844348,3,definir hook,bajo,artifacts,false
+cp_91_bc3d844348,4,preparar guion,medio,artifacts,false
+cp_91_bc3d844348,5,preparar miniatura,medio,artifacts,false
+cp_91_bc3d844348,6,publicar/monitorear,medio,artifacts,false
+cp_92_06661f5d05,1,revisar evidencia,bajo,artifacts,false
+cp_92_06661f5d05,2,elegir título,bajo,artifacts,false
+cp_92_06661f5d05,3,definir hook,bajo,artifacts,false
+cp_92_06661f5d05,4,preparar guion,medio,artifacts,false
+cp_92_06661f5d05,5,preparar miniatura,medio,artifacts,false
+cp_92_06661f5d05,6,publicar/monitorear,medio,artifacts,false
+cp_93_d46af751eb,1,revisar evidencia,bajo,artifacts,false
+cp_93_d46af751eb,2,elegir título,bajo,artifacts,false
+cp_93_d46af751eb,3,definir hook,bajo,artifacts,false
+cp_93_d46af751eb,4,preparar guion,medio,artifacts,false
+cp_93_d46af751eb,5,preparar miniatura,medio,artifacts,false
+cp_93_d46af751eb,6,publicar/monitorear,medio,artifacts,false
+cp_94_0cf57b471e,1,revisar evidencia,bajo,artifacts,false
+cp_94_0cf57b471e,2,elegir título,bajo,artifacts,false
+cp_94_0cf57b471e,3,definir hook,bajo,artifacts,false
+cp_94_0cf57b471e,4,preparar guion,medio,artifacts,false
+cp_94_0cf57b471e,5,preparar miniatura,medio,artifacts,false
+cp_94_0cf57b471e,6,publicar/monitorear,medio,artifacts,false
+cp_95_59e5798570,1,revisar evidencia,bajo,artifacts,false
+cp_95_59e5798570,2,elegir título,bajo,artifacts,false
+cp_95_59e5798570,3,definir hook,bajo,artifacts,false
+cp_95_59e5798570,4,preparar guion,medio,artifacts,false
+cp_95_59e5798570,5,preparar miniatura,medio,artifacts,false
+cp_95_59e5798570,6,publicar/monitorear,medio,artifacts,false
+cp_96_51837d5abf,1,revisar evidencia,bajo,artifacts,false
+cp_96_51837d5abf,2,elegir título,bajo,artifacts,false
+cp_96_51837d5abf,3,definir hook,bajo,artifacts,false
+cp_96_51837d5abf,4,preparar guion,medio,artifacts,false
+cp_96_51837d5abf,5,preparar miniatura,medio,artifacts,false
+cp_96_51837d5abf,6,publicar/monitorear,medio,artifacts,false
+cp_97_5d4a984cde,1,revisar evidencia,bajo,artifacts,false
+cp_97_5d4a984cde,2,elegir título,bajo,artifacts,false
+cp_97_5d4a984cde,3,definir hook,bajo,artifacts,false
+cp_97_5d4a984cde,4,preparar guion,medio,artifacts,false
+cp_97_5d4a984cde,5,preparar miniatura,medio,artifacts,false
+cp_97_5d4a984cde,6,publicar/monitorear,medio,artifacts,false
+cp_98_5c7eabe19a,1,revisar evidencia,bajo,artifacts,false
+cp_98_5c7eabe19a,2,elegir título,bajo,artifacts,false
+cp_98_5c7eabe19a,3,definir hook,bajo,artifacts,false
+cp_98_5c7eabe19a,4,preparar guion,medio,artifacts,false
+cp_98_5c7eabe19a,5,preparar miniatura,medio,artifacts,false
+cp_98_5c7eabe19a,6,publicar/monitorear,medio,artifacts,false
+cp_99_83a0112fa0,1,revisar evidencia,bajo,artifacts,false
+cp_99_83a0112fa0,2,elegir título,bajo,artifacts,false
+cp_99_83a0112fa0,3,definir hook,bajo,artifacts,false
+cp_99_83a0112fa0,4,preparar guion,medio,artifacts,false
+cp_99_83a0112fa0,5,preparar miniatura,medio,artifacts,false
+cp_99_83a0112fa0,6,publicar/monitorear,medio,artifacts,false
+cp_100_0222457567,1,revisar evidencia,bajo,artifacts,false
+cp_100_0222457567,2,elegir título,bajo,artifacts,false
+cp_100_0222457567,3,definir hook,bajo,artifacts,false
+cp_100_0222457567,4,preparar guion,medio,artifacts,false
+cp_100_0222457567,5,preparar miniatura,medio,artifacts,false
+cp_100_0222457567,6,publicar/monitorear,medio,artifacts,false
+cp_101_a589efb75d,1,revisar evidencia,bajo,artifacts,false
+cp_101_a589efb75d,2,elegir título,bajo,artifacts,false
+cp_101_a589efb75d,3,definir hook,bajo,artifacts,false
+cp_101_a589efb75d,4,preparar guion,medio,artifacts,false
+cp_101_a589efb75d,5,preparar miniatura,medio,artifacts,false
+cp_101_a589efb75d,6,publicar/monitorear,medio,artifacts,false
+cp_102_a3886af005,1,revisar evidencia,bajo,artifacts,false
+cp_102_a3886af005,2,elegir título,bajo,artifacts,false
+cp_102_a3886af005,3,definir hook,bajo,artifacts,false
+cp_102_a3886af005,4,preparar guion,medio,artifacts,false
+cp_102_a3886af005,5,preparar miniatura,medio,artifacts,false
+cp_102_a3886af005,6,publicar/monitorear,medio,artifacts,false
+cp_103_6c90eeef1f,1,revisar evidencia,bajo,artifacts,false
+cp_103_6c90eeef1f,2,elegir título,bajo,artifacts,false
+cp_103_6c90eeef1f,3,definir hook,bajo,artifacts,false
+cp_103_6c90eeef1f,4,preparar guion,medio,artifacts,false
+cp_103_6c90eeef1f,5,preparar miniatura,medio,artifacts,false
+cp_103_6c90eeef1f,6,publicar/monitorear,medio,artifacts,false
+cp_104_7b36f88530,1,revisar evidencia,bajo,artifacts,false
+cp_104_7b36f88530,2,elegir título,bajo,artifacts,false
+cp_104_7b36f88530,3,definir hook,bajo,artifacts,false
+cp_104_7b36f88530,4,preparar guion,medio,artifacts,false
+cp_104_7b36f88530,5,preparar miniatura,medio,artifacts,false
+cp_104_7b36f88530,6,publicar/monitorear,medio,artifacts,false
+cp_105_282b0f1e0f,1,revisar evidencia,bajo,artifacts,false
+cp_105_282b0f1e0f,2,elegir título,bajo,artifacts,false
+cp_105_282b0f1e0f,3,definir hook,bajo,artifacts,false
+cp_105_282b0f1e0f,4,preparar guion,medio,artifacts,false
+cp_105_282b0f1e0f,5,preparar miniatura,medio,artifacts,false
+cp_105_282b0f1e0f,6,publicar/monitorear,medio,artifacts,false
+cp_106_72c26bcba2,1,revisar evidencia,bajo,artifacts,false
+cp_106_72c26bcba2,2,elegir título,bajo,artifacts,false
+cp_106_72c26bcba2,3,definir hook,bajo,artifacts,false
+cp_106_72c26bcba2,4,preparar guion,medio,artifacts,false
+cp_106_72c26bcba2,5,preparar miniatura,medio,artifacts,false
+cp_106_72c26bcba2,6,publicar/monitorear,medio,artifacts,false
+cp_107_43d990467d,1,revisar evidencia,bajo,artifacts,false
+cp_107_43d990467d,2,elegir título,bajo,artifacts,false
+cp_107_43d990467d,3,definir hook,bajo,artifacts,false
+cp_107_43d990467d,4,preparar guion,medio,artifacts,false
+cp_107_43d990467d,5,preparar miniatura,medio,artifacts,false
+cp_107_43d990467d,6,publicar/monitorear,medio,artifacts,false
+cp_108_b9bb55c877,1,revisar evidencia,bajo,artifacts,false
+cp_108_b9bb55c877,2,elegir título,bajo,artifacts,false
+cp_108_b9bb55c877,3,definir hook,bajo,artifacts,false
+cp_108_b9bb55c877,4,preparar guion,medio,artifacts,false
+cp_108_b9bb55c877,5,preparar miniatura,medio,artifacts,false
+cp_108_b9bb55c877,6,publicar/monitorear,medio,artifacts,false
+cp_109_086304de9f,1,revisar evidencia,bajo,artifacts,false
+cp_109_086304de9f,2,elegir título,bajo,artifacts,false
+cp_109_086304de9f,3,definir hook,bajo,artifacts,false
+cp_109_086304de9f,4,preparar guion,medio,artifacts,false
+cp_109_086304de9f,5,preparar miniatura,medio,artifacts,false
+cp_109_086304de9f,6,publicar/monitorear,medio,artifacts,false
+cp_110_744445cbc6,1,revisar evidencia,bajo,artifacts,false
+cp_110_744445cbc6,2,elegir título,bajo,artifacts,false
+cp_110_744445cbc6,3,definir hook,bajo,artifacts,false
+cp_110_744445cbc6,4,preparar guion,medio,artifacts,false
+cp_110_744445cbc6,5,preparar miniatura,medio,artifacts,false
+cp_110_744445cbc6,6,publicar/monitorear,medio,artifacts,false
+cp_111_a4f059f901,1,revisar evidencia,bajo,artifacts,false
+cp_111_a4f059f901,2,elegir título,bajo,artifacts,false
+cp_111_a4f059f901,3,definir hook,bajo,artifacts,false
+cp_111_a4f059f901,4,preparar guion,medio,artifacts,false
+cp_111_a4f059f901,5,preparar miniatura,medio,artifacts,false
+cp_111_a4f059f901,6,publicar/monitorear,medio,artifacts,false
+cp_112_533170735d,1,revisar evidencia,bajo,artifacts,false
+cp_112_533170735d,2,elegir título,bajo,artifacts,false
+cp_112_533170735d,3,definir hook,bajo,artifacts,false
+cp_112_533170735d,4,preparar guion,medio,artifacts,false
+cp_112_533170735d,5,preparar miniatura,medio,artifacts,false
+cp_112_533170735d,6,publicar/monitorear,medio,artifacts,false
+cp_113_ce1a97f00b,1,revisar evidencia,bajo,artifacts,false
+cp_113_ce1a97f00b,2,elegir título,bajo,artifacts,false
+cp_113_ce1a97f00b,3,definir hook,bajo,artifacts,false
+cp_113_ce1a97f00b,4,preparar guion,medio,artifacts,false
+cp_113_ce1a97f00b,5,preparar miniatura,medio,artifacts,false
+cp_113_ce1a97f00b,6,publicar/monitorear,medio,artifacts,false
+cp_114_bbaa3ebcf2,1,revisar evidencia,bajo,artifacts,false
+cp_114_bbaa3ebcf2,2,elegir título,bajo,artifacts,false
+cp_114_bbaa3ebcf2,3,definir hook,bajo,artifacts,false
+cp_114_bbaa3ebcf2,4,preparar guion,medio,artifacts,false
+cp_114_bbaa3ebcf2,5,preparar miniatura,medio,artifacts,false
+cp_114_bbaa3ebcf2,6,publicar/monitorear,medio,artifacts,false
+cp_115_ac3694a3d3,1,revisar evidencia,bajo,artifacts,false
+cp_115_ac3694a3d3,2,elegir título,bajo,artifacts,false
+cp_115_ac3694a3d3,3,definir hook,bajo,artifacts,false
+cp_115_ac3694a3d3,4,preparar guion,medio,artifacts,false
+cp_115_ac3694a3d3,5,preparar miniatura,medio,artifacts,false
+cp_115_ac3694a3d3,6,publicar/monitorear,medio,artifacts,false
+cp_116_11aaf4afd4,1,revisar evidencia,bajo,artifacts,false
+cp_116_11aaf4afd4,2,elegir título,bajo,artifacts,false
+cp_116_11aaf4afd4,3,definir hook,bajo,artifacts,false
+cp_116_11aaf4afd4,4,preparar guion,medio,artifacts,false
+cp_116_11aaf4afd4,5,preparar miniatura,medio,artifacts,false
+cp_116_11aaf4afd4,6,publicar/monitorear,medio,artifacts,false
+cp_117_d22c179abc,1,revisar evidencia,bajo,artifacts,false
+cp_117_d22c179abc,2,elegir título,bajo,artifacts,false
+cp_117_d22c179abc,3,definir hook,bajo,artifacts,false
+cp_117_d22c179abc,4,preparar guion,medio,artifacts,false
+cp_117_d22c179abc,5,preparar miniatura,medio,artifacts,false
+cp_117_d22c179abc,6,publicar/monitorear,medio,artifacts,false
+cp_118_ee8bb4a058,1,revisar evidencia,bajo,artifacts,false
+cp_118_ee8bb4a058,2,elegir título,bajo,artifacts,false
+cp_118_ee8bb4a058,3,definir hook,bajo,artifacts,false
+cp_118_ee8bb4a058,4,preparar guion,medio,artifacts,false
+cp_118_ee8bb4a058,5,preparar miniatura,medio,artifacts,false
+cp_118_ee8bb4a058,6,publicar/monitorear,medio,artifacts,false
+cp_119_87f627c1ec,1,revisar evidencia,bajo,artifacts,false
+cp_119_87f627c1ec,2,elegir título,bajo,artifacts,false
+cp_119_87f627c1ec,3,definir hook,bajo,artifacts,false
+cp_119_87f627c1ec,4,preparar guion,medio,artifacts,false
+cp_119_87f627c1ec,5,preparar miniatura,medio,artifacts,false
+cp_119_87f627c1ec,6,publicar/monitorear,medio,artifacts,false
+cp_120_6523600b9d,1,revisar evidencia,bajo,artifacts,false
+cp_120_6523600b9d,2,elegir título,bajo,artifacts,false
+cp_120_6523600b9d,3,definir hook,bajo,artifacts,false
+cp_120_6523600b9d,4,preparar guion,medio,artifacts,false
+cp_120_6523600b9d,5,preparar miniatura,medio,artifacts,false
+cp_120_6523600b9d,6,publicar/monitorear,medio,artifacts,false
+cp_121_787b1f3a22,1,revisar evidencia,bajo,artifacts,false
+cp_121_787b1f3a22,2,elegir título,bajo,artifacts,false
+cp_121_787b1f3a22,3,definir hook,bajo,artifacts,false
+cp_121_787b1f3a22,4,preparar guion,medio,artifacts,false
+cp_121_787b1f3a22,5,preparar miniatura,medio,artifacts,false
+cp_121_787b1f3a22,6,publicar/monitorear,medio,artifacts,false
+cp_122_4d579438a8,1,revisar evidencia,bajo,artifacts,false
+cp_122_4d579438a8,2,elegir título,bajo,artifacts,false
+cp_122_4d579438a8,3,definir hook,bajo,artifacts,false
+cp_122_4d579438a8,4,preparar guion,medio,artifacts,false
+cp_122_4d579438a8,5,preparar miniatura,medio,artifacts,false
+cp_122_4d579438a8,6,publicar/monitorear,medio,artifacts,false
+cp_123_63a8bcdf00,1,revisar evidencia,bajo,artifacts,false
+cp_123_63a8bcdf00,2,elegir título,bajo,artifacts,false
+cp_123_63a8bcdf00,3,definir hook,bajo,artifacts,false
+cp_123_63a8bcdf00,4,preparar guion,medio,artifacts,false
+cp_123_63a8bcdf00,5,preparar miniatura,medio,artifacts,false
+cp_123_63a8bcdf00,6,publicar/monitorear,medio,artifacts,false
+cp_124_9b31ba7d1b,1,revisar evidencia,bajo,artifacts,false
+cp_124_9b31ba7d1b,2,elegir título,bajo,artifacts,false
+cp_124_9b31ba7d1b,3,definir hook,bajo,artifacts,false
+cp_124_9b31ba7d1b,4,preparar guion,medio,artifacts,false
+cp_124_9b31ba7d1b,5,preparar miniatura,medio,artifacts,false
+cp_124_9b31ba7d1b,6,publicar/monitorear,medio,artifacts,false
+cp_125_6b3128ce8e,1,revisar evidencia,bajo,artifacts,false
+cp_125_6b3128ce8e,2,elegir título,bajo,artifacts,false
+cp_125_6b3128ce8e,3,definir hook,bajo,artifacts,false
+cp_125_6b3128ce8e,4,preparar guion,medio,artifacts,false
+cp_125_6b3128ce8e,5,preparar miniatura,medio,artifacts,false
+cp_125_6b3128ce8e,6,publicar/monitorear,medio,artifacts,false
+cp_126_06174e6702,1,revisar evidencia,bajo,artifacts,false
+cp_126_06174e6702,2,elegir título,bajo,artifacts,false
+cp_126_06174e6702,3,definir hook,bajo,artifacts,false
+cp_126_06174e6702,4,preparar guion,medio,artifacts,false
+cp_126_06174e6702,5,preparar miniatura,medio,artifacts,false
+cp_126_06174e6702,6,publicar/monitorear,medio,artifacts,false
+cp_127_7d1c443b15,1,revisar evidencia,bajo,artifacts,false
+cp_127_7d1c443b15,2,elegir título,bajo,artifacts,false
+cp_127_7d1c443b15,3,definir hook,bajo,artifacts,false
+cp_127_7d1c443b15,4,preparar guion,medio,artifacts,false
+cp_127_7d1c443b15,5,preparar miniatura,medio,artifacts,false
+cp_127_7d1c443b15,6,publicar/monitorear,medio,artifacts,false
+cp_128_f4906bc8db,1,revisar evidencia,bajo,artifacts,false
+cp_128_f4906bc8db,2,elegir título,bajo,artifacts,false
+cp_128_f4906bc8db,3,definir hook,bajo,artifacts,false
+cp_128_f4906bc8db,4,preparar guion,medio,artifacts,false
+cp_128_f4906bc8db,5,preparar miniatura,medio,artifacts,false
+cp_128_f4906bc8db,6,publicar/monitorear,medio,artifacts,false
+cp_129_78d65f25ff,1,revisar evidencia,bajo,artifacts,false
+cp_129_78d65f25ff,2,elegir título,bajo,artifacts,false
+cp_129_78d65f25ff,3,definir hook,bajo,artifacts,false
+cp_129_78d65f25ff,4,preparar guion,medio,artifacts,false
+cp_129_78d65f25ff,5,preparar miniatura,medio,artifacts,false
+cp_129_78d65f25ff,6,publicar/monitorear,medio,artifacts,false
+cp_130_20bead632a,1,revisar evidencia,bajo,artifacts,false
+cp_130_20bead632a,2,elegir título,bajo,artifacts,false
+cp_130_20bead632a,3,definir hook,bajo,artifacts,false
+cp_130_20bead632a,4,preparar guion,medio,artifacts,false
+cp_130_20bead632a,5,preparar miniatura,medio,artifacts,false
+cp_130_20bead632a,6,publicar/monitorear,medio,artifacts,false
+cp_131_c78abf3a80,1,revisar evidencia,bajo,artifacts,false
+cp_131_c78abf3a80,2,elegir título,bajo,artifacts,false
+cp_131_c78abf3a80,3,definir hook,bajo,artifacts,false
+cp_131_c78abf3a80,4,preparar guion,medio,artifacts,false
+cp_131_c78abf3a80,5,preparar miniatura,medio,artifacts,false
+cp_131_c78abf3a80,6,publicar/monitorear,medio,artifacts,false
+cp_132_4d5ca377d5,1,revisar evidencia,bajo,artifacts,false
+cp_132_4d5ca377d5,2,elegir título,bajo,artifacts,false
+cp_132_4d5ca377d5,3,definir hook,bajo,artifacts,false
+cp_132_4d5ca377d5,4,preparar guion,medio,artifacts,false
+cp_132_4d5ca377d5,5,preparar miniatura,medio,artifacts,false
+cp_132_4d5ca377d5,6,publicar/monitorear,medio,artifacts,false
+cp_133_52e1fd0dcc,1,revisar evidencia,bajo,artifacts,false
+cp_133_52e1fd0dcc,2,elegir título,bajo,artifacts,false
+cp_133_52e1fd0dcc,3,definir hook,bajo,artifacts,false
+cp_133_52e1fd0dcc,4,preparar guion,medio,artifacts,false
+cp_133_52e1fd0dcc,5,preparar miniatura,medio,artifacts,false
+cp_133_52e1fd0dcc,6,publicar/monitorear,medio,artifacts,false
+cp_134_a3bc1a34ab,1,revisar evidencia,bajo,artifacts,false
+cp_134_a3bc1a34ab,2,elegir título,bajo,artifacts,false
+cp_134_a3bc1a34ab,3,definir hook,bajo,artifacts,false
+cp_134_a3bc1a34ab,4,preparar guion,medio,artifacts,false
+cp_134_a3bc1a34ab,5,preparar miniatura,medio,artifacts,false
+cp_134_a3bc1a34ab,6,publicar/monitorear,medio,artifacts,false
+cp_135_a22922ad57,1,revisar evidencia,bajo,artifacts,false
+cp_135_a22922ad57,2,elegir título,bajo,artifacts,false
+cp_135_a22922ad57,3,definir hook,bajo,artifacts,false
+cp_135_a22922ad57,4,preparar guion,medio,artifacts,false
+cp_135_a22922ad57,5,preparar miniatura,medio,artifacts,false
+cp_135_a22922ad57,6,publicar/monitorear,medio,artifacts,false
+cp_136_29d58188a9,1,revisar evidencia,bajo,artifacts,false
+cp_136_29d58188a9,2,elegir título,bajo,artifacts,false
+cp_136_29d58188a9,3,definir hook,bajo,artifacts,false
+cp_136_29d58188a9,4,preparar guion,medio,artifacts,false
+cp_136_29d58188a9,5,preparar miniatura,medio,artifacts,false
+cp_136_29d58188a9,6,publicar/monitorear,medio,artifacts,false
+cp_137_efae58921b,1,revisar evidencia,bajo,artifacts,false
+cp_137_efae58921b,2,elegir título,bajo,artifacts,false
+cp_137_efae58921b,3,definir hook,bajo,artifacts,false
+cp_137_efae58921b,4,preparar guion,medio,artifacts,false
+cp_137_efae58921b,5,preparar miniatura,medio,artifacts,false
+cp_137_efae58921b,6,publicar/monitorear,medio,artifacts,false
+cp_138_03fe7e70ef,1,revisar evidencia,bajo,artifacts,false
+cp_138_03fe7e70ef,2,elegir título,bajo,artifacts,false
+cp_138_03fe7e70ef,3,definir hook,bajo,artifacts,false
+cp_138_03fe7e70ef,4,preparar guion,medio,artifacts,false
+cp_138_03fe7e70ef,5,preparar miniatura,medio,artifacts,false
+cp_138_03fe7e70ef,6,publicar/monitorear,medio,artifacts,false
+cp_139_0788baeb9e,1,revisar evidencia,bajo,artifacts,false
+cp_139_0788baeb9e,2,elegir título,bajo,artifacts,false
+cp_139_0788baeb9e,3,definir hook,bajo,artifacts,false
+cp_139_0788baeb9e,4,preparar guion,medio,artifacts,false
+cp_139_0788baeb9e,5,preparar miniatura,medio,artifacts,false
+cp_139_0788baeb9e,6,publicar/monitorear,medio,artifacts,false
+cp_140_0b3a186409,1,revisar evidencia,bajo,artifacts,false
+cp_140_0b3a186409,2,elegir título,bajo,artifacts,false
+cp_140_0b3a186409,3,definir hook,bajo,artifacts,false
+cp_140_0b3a186409,4,preparar guion,medio,artifacts,false
+cp_140_0b3a186409,5,preparar miniatura,medio,artifacts,false
+cp_140_0b3a186409,6,publicar/monitorear,medio,artifacts,false
+cp_141_5b75dfe27c,1,revisar evidencia,bajo,artifacts,false
+cp_141_5b75dfe27c,2,elegir título,bajo,artifacts,false
+cp_141_5b75dfe27c,3,definir hook,bajo,artifacts,false
+cp_141_5b75dfe27c,4,preparar guion,medio,artifacts,false
+cp_141_5b75dfe27c,5,preparar miniatura,medio,artifacts,false
+cp_141_5b75dfe27c,6,publicar/monitorear,medio,artifacts,false
+cp_142_c50778882a,1,revisar evidencia,bajo,artifacts,false
+cp_142_c50778882a,2,elegir título,bajo,artifacts,false
+cp_142_c50778882a,3,definir hook,bajo,artifacts,false
+cp_142_c50778882a,4,preparar guion,medio,artifacts,false
+cp_142_c50778882a,5,preparar miniatura,medio,artifacts,false
+cp_142_c50778882a,6,publicar/monitorear,medio,artifacts,false
+cp_143_1101868407,1,revisar evidencia,bajo,artifacts,false
+cp_143_1101868407,2,elegir título,bajo,artifacts,false
+cp_143_1101868407,3,definir hook,bajo,artifacts,false
+cp_143_1101868407,4,preparar guion,medio,artifacts,false
+cp_143_1101868407,5,preparar miniatura,medio,artifacts,false
+cp_143_1101868407,6,publicar/monitorear,medio,artifacts,false
+cp_144_a26b66f617,1,revisar evidencia,bajo,artifacts,false
+cp_144_a26b66f617,2,elegir título,bajo,artifacts,false
+cp_144_a26b66f617,3,definir hook,bajo,artifacts,false
+cp_144_a26b66f617,4,preparar guion,medio,artifacts,false
+cp_144_a26b66f617,5,preparar miniatura,medio,artifacts,false
+cp_144_a26b66f617,6,publicar/monitorear,medio,artifacts,false
+cp_145_ddfda09f2c,1,revisar evidencia,bajo,artifacts,false
+cp_145_ddfda09f2c,2,elegir título,bajo,artifacts,false
+cp_145_ddfda09f2c,3,definir hook,bajo,artifacts,false
+cp_145_ddfda09f2c,4,preparar guion,medio,artifacts,false
+cp_145_ddfda09f2c,5,preparar miniatura,medio,artifacts,false
+cp_145_ddfda09f2c,6,publicar/monitorear,medio,artifacts,false
+cp_146_b5be9747cb,1,revisar evidencia,bajo,artifacts,false
+cp_146_b5be9747cb,2,elegir título,bajo,artifacts,false
+cp_146_b5be9747cb,3,definir hook,bajo,artifacts,false
+cp_146_b5be9747cb,4,preparar guion,medio,artifacts,false
+cp_146_b5be9747cb,5,preparar miniatura,medio,artifacts,false
+cp_146_b5be9747cb,6,publicar/monitorear,medio,artifacts,false
+cp_147_931bccb704,1,revisar evidencia,bajo,artifacts,false
+cp_147_931bccb704,2,elegir título,bajo,artifacts,false
+cp_147_931bccb704,3,definir hook,bajo,artifacts,false
+cp_147_931bccb704,4,preparar guion,medio,artifacts,false
+cp_147_931bccb704,5,preparar miniatura,medio,artifacts,false
+cp_147_931bccb704,6,publicar/monitorear,medio,artifacts,false
+cp_148_83307da1db,1,revisar evidencia,bajo,artifacts,false
+cp_148_83307da1db,2,elegir título,bajo,artifacts,false
+cp_148_83307da1db,3,definir hook,bajo,artifacts,false
+cp_148_83307da1db,4,preparar guion,medio,artifacts,false
+cp_148_83307da1db,5,preparar miniatura,medio,artifacts,false
+cp_148_83307da1db,6,publicar/monitorear,medio,artifacts,false
+cp_149_973bdae55c,1,revisar evidencia,bajo,artifacts,false
+cp_149_973bdae55c,2,elegir título,bajo,artifacts,false
+cp_149_973bdae55c,3,definir hook,bajo,artifacts,false
+cp_149_973bdae55c,4,preparar guion,medio,artifacts,false
+cp_149_973bdae55c,5,preparar miniatura,medio,artifacts,false
+cp_149_973bdae55c,6,publicar/monitorear,medio,artifacts,false
+cp_150_a01b5f2d67,1,revisar evidencia,bajo,artifacts,false
+cp_150_a01b5f2d67,2,elegir título,bajo,artifacts,false
+cp_150_a01b5f2d67,3,definir hook,bajo,artifacts,false
+cp_150_a01b5f2d67,4,preparar guion,medio,artifacts,false
+cp_150_a01b5f2d67,5,preparar miniatura,medio,artifacts,false
+cp_150_a01b5f2d67,6,publicar/monitorear,medio,artifacts,false
+cp_151_702aed47bb,1,revisar evidencia,bajo,artifacts,false
+cp_151_702aed47bb,2,elegir título,bajo,artifacts,false
+cp_151_702aed47bb,3,definir hook,bajo,artifacts,false
+cp_151_702aed47bb,4,preparar guion,medio,artifacts,false
+cp_151_702aed47bb,5,preparar miniatura,medio,artifacts,false
+cp_151_702aed47bb,6,publicar/monitorear,medio,artifacts,false
+cp_152_08132a8d33,1,revisar evidencia,bajo,artifacts,false
+cp_152_08132a8d33,2,elegir título,bajo,artifacts,false
+cp_152_08132a8d33,3,definir hook,bajo,artifacts,false
+cp_152_08132a8d33,4,preparar guion,medio,artifacts,false
+cp_152_08132a8d33,5,preparar miniatura,medio,artifacts,false
+cp_152_08132a8d33,6,publicar/monitorear,medio,artifacts,false
+cp_153_e35502852a,1,revisar evidencia,bajo,artifacts,false
+cp_153_e35502852a,2,elegir título,bajo,artifacts,false
+cp_153_e35502852a,3,definir hook,bajo,artifacts,false
+cp_153_e35502852a,4,preparar guion,medio,artifacts,false
+cp_153_e35502852a,5,preparar miniatura,medio,artifacts,false
+cp_153_e35502852a,6,publicar/monitorear,medio,artifacts,false
+cp_154_66fa21ed91,1,revisar evidencia,bajo,artifacts,false
+cp_154_66fa21ed91,2,elegir título,bajo,artifacts,false
+cp_154_66fa21ed91,3,definir hook,bajo,artifacts,false
+cp_154_66fa21ed91,4,preparar guion,medio,artifacts,false
+cp_154_66fa21ed91,5,preparar miniatura,medio,artifacts,false
+cp_154_66fa21ed91,6,publicar/monitorear,medio,artifacts,false
+cp_155_890c8a343b,1,revisar evidencia,bajo,artifacts,false
+cp_155_890c8a343b,2,elegir título,bajo,artifacts,false
+cp_155_890c8a343b,3,definir hook,bajo,artifacts,false
+cp_155_890c8a343b,4,preparar guion,medio,artifacts,false
+cp_155_890c8a343b,5,preparar miniatura,medio,artifacts,false
+cp_155_890c8a343b,6,publicar/monitorear,medio,artifacts,false
+cp_156_5f214e5e5d,1,revisar evidencia,bajo,artifacts,false
+cp_156_5f214e5e5d,2,elegir título,bajo,artifacts,false
+cp_156_5f214e5e5d,3,definir hook,bajo,artifacts,false
+cp_156_5f214e5e5d,4,preparar guion,medio,artifacts,false
+cp_156_5f214e5e5d,5,preparar miniatura,medio,artifacts,false
+cp_156_5f214e5e5d,6,publicar/monitorear,medio,artifacts,false
+cp_157_6d58e4d06a,1,revisar evidencia,bajo,artifacts,false
+cp_157_6d58e4d06a,2,elegir título,bajo,artifacts,false
+cp_157_6d58e4d06a,3,definir hook,bajo,artifacts,false
+cp_157_6d58e4d06a,4,preparar guion,medio,artifacts,false
+cp_157_6d58e4d06a,5,preparar miniatura,medio,artifacts,false
+cp_157_6d58e4d06a,6,publicar/monitorear,medio,artifacts,false
+cp_158_878e377d19,1,revisar evidencia,bajo,artifacts,false
+cp_158_878e377d19,2,elegir título,bajo,artifacts,false
+cp_158_878e377d19,3,definir hook,bajo,artifacts,false
+cp_158_878e377d19,4,preparar guion,medio,artifacts,false
+cp_158_878e377d19,5,preparar miniatura,medio,artifacts,false
+cp_158_878e377d19,6,publicar/monitorear,medio,artifacts,false
+cp_159_3201d9bf68,1,revisar evidencia,bajo,artifacts,false
+cp_159_3201d9bf68,2,elegir título,bajo,artifacts,false
+cp_159_3201d9bf68,3,definir hook,bajo,artifacts,false
+cp_159_3201d9bf68,4,preparar guion,medio,artifacts,false
+cp_159_3201d9bf68,5,preparar miniatura,medio,artifacts,false
+cp_159_3201d9bf68,6,publicar/monitorear,medio,artifacts,false
+cp_160_0c8a547ad3,1,revisar evidencia,bajo,artifacts,false
+cp_160_0c8a547ad3,2,elegir título,bajo,artifacts,false
+cp_160_0c8a547ad3,3,definir hook,bajo,artifacts,false
+cp_160_0c8a547ad3,4,preparar guion,medio,artifacts,false
+cp_160_0c8a547ad3,5,preparar miniatura,medio,artifacts,false
+cp_160_0c8a547ad3,6,publicar/monitorear,medio,artifacts,false
+cp_161_a8e632398c,1,revisar evidencia,bajo,artifacts,false
+cp_161_a8e632398c,2,elegir título,bajo,artifacts,false
+cp_161_a8e632398c,3,definir hook,bajo,artifacts,false
+cp_161_a8e632398c,4,preparar guion,medio,artifacts,false
+cp_161_a8e632398c,5,preparar miniatura,medio,artifacts,false
+cp_161_a8e632398c,6,publicar/monitorear,medio,artifacts,false
+cp_162_6259659171,1,revisar evidencia,bajo,artifacts,false
+cp_162_6259659171,2,elegir título,bajo,artifacts,false
+cp_162_6259659171,3,definir hook,bajo,artifacts,false
+cp_162_6259659171,4,preparar guion,medio,artifacts,false
+cp_162_6259659171,5,preparar miniatura,medio,artifacts,false
+cp_162_6259659171,6,publicar/monitorear,medio,artifacts,false
+cp_163_76e7e573e4,1,revisar evidencia,bajo,artifacts,false
+cp_163_76e7e573e4,2,elegir título,bajo,artifacts,false
+cp_163_76e7e573e4,3,definir hook,bajo,artifacts,false
+cp_163_76e7e573e4,4,preparar guion,medio,artifacts,false
+cp_163_76e7e573e4,5,preparar miniatura,medio,artifacts,false
+cp_163_76e7e573e4,6,publicar/monitorear,medio,artifacts,false
+cp_164_0cb90f5012,1,revisar evidencia,bajo,artifacts,false
+cp_164_0cb90f5012,2,elegir título,bajo,artifacts,false
+cp_164_0cb90f5012,3,definir hook,bajo,artifacts,false
+cp_164_0cb90f5012,4,preparar guion,medio,artifacts,false
+cp_164_0cb90f5012,5,preparar miniatura,medio,artifacts,false
+cp_164_0cb90f5012,6,publicar/monitorear,medio,artifacts,false
+cp_165_a47b29818f,1,revisar evidencia,bajo,artifacts,false
+cp_165_a47b29818f,2,elegir título,bajo,artifacts,false
+cp_165_a47b29818f,3,definir hook,bajo,artifacts,false
+cp_165_a47b29818f,4,preparar guion,medio,artifacts,false
+cp_165_a47b29818f,5,preparar miniatura,medio,artifacts,false
+cp_165_a47b29818f,6,publicar/monitorear,medio,artifacts,false
+cp_166_1894be981e,1,revisar evidencia,bajo,artifacts,false
+cp_166_1894be981e,2,elegir título,bajo,artifacts,false
+cp_166_1894be981e,3,definir hook,bajo,artifacts,false
+cp_166_1894be981e,4,preparar guion,medio,artifacts,false
+cp_166_1894be981e,5,preparar miniatura,medio,artifacts,false
+cp_166_1894be981e,6,publicar/monitorear,medio,artifacts,false
+cp_167_6b14d4bebd,1,revisar evidencia,bajo,artifacts,false
+cp_167_6b14d4bebd,2,elegir título,bajo,artifacts,false
+cp_167_6b14d4bebd,3,definir hook,bajo,artifacts,false
+cp_167_6b14d4bebd,4,preparar guion,medio,artifacts,false
+cp_167_6b14d4bebd,5,preparar miniatura,medio,artifacts,false
+cp_167_6b14d4bebd,6,publicar/monitorear,medio,artifacts,false
+cp_168_3f20e44a5f,1,revisar evidencia,bajo,artifacts,false
+cp_168_3f20e44a5f,2,elegir título,bajo,artifacts,false
+cp_168_3f20e44a5f,3,definir hook,bajo,artifacts,false
+cp_168_3f20e44a5f,4,preparar guion,medio,artifacts,false
+cp_168_3f20e44a5f,5,preparar miniatura,medio,artifacts,false
+cp_168_3f20e44a5f,6,publicar/monitorear,medio,artifacts,false
+cp_169_6b0bf84215,1,revisar evidencia,bajo,artifacts,false
+cp_169_6b0bf84215,2,elegir título,bajo,artifacts,false
+cp_169_6b0bf84215,3,definir hook,bajo,artifacts,false
+cp_169_6b0bf84215,4,preparar guion,medio,artifacts,false
+cp_169_6b0bf84215,5,preparar miniatura,medio,artifacts,false
+cp_169_6b0bf84215,6,publicar/monitorear,medio,artifacts,false
+cp_170_55ab21f65c,1,revisar evidencia,bajo,artifacts,false
+cp_170_55ab21f65c,2,elegir título,bajo,artifacts,false
+cp_170_55ab21f65c,3,definir hook,bajo,artifacts,false
+cp_170_55ab21f65c,4,preparar guion,medio,artifacts,false
+cp_170_55ab21f65c,5,preparar miniatura,medio,artifacts,false
+cp_170_55ab21f65c,6,publicar/monitorear,medio,artifacts,false
+cp_171_ec670f0277,1,revisar evidencia,bajo,artifacts,false
+cp_171_ec670f0277,2,elegir título,bajo,artifacts,false
+cp_171_ec670f0277,3,definir hook,bajo,artifacts,false
+cp_171_ec670f0277,4,preparar guion,medio,artifacts,false
+cp_171_ec670f0277,5,preparar miniatura,medio,artifacts,false
+cp_171_ec670f0277,6,publicar/monitorear,medio,artifacts,false
+cp_172_2fbcf2ae74,1,revisar evidencia,bajo,artifacts,false
+cp_172_2fbcf2ae74,2,elegir título,bajo,artifacts,false
+cp_172_2fbcf2ae74,3,definir hook,bajo,artifacts,false
+cp_172_2fbcf2ae74,4,preparar guion,medio,artifacts,false
+cp_172_2fbcf2ae74,5,preparar miniatura,medio,artifacts,false
+cp_172_2fbcf2ae74,6,publicar/monitorear,medio,artifacts,false
+cp_173_2e52561e55,1,revisar evidencia,bajo,artifacts,false
+cp_173_2e52561e55,2,elegir título,bajo,artifacts,false
+cp_173_2e52561e55,3,definir hook,bajo,artifacts,false
+cp_173_2e52561e55,4,preparar guion,medio,artifacts,false
+cp_173_2e52561e55,5,preparar miniatura,medio,artifacts,false
+cp_173_2e52561e55,6,publicar/monitorear,medio,artifacts,false
+cp_174_5324ed997b,1,revisar evidencia,bajo,artifacts,false
+cp_174_5324ed997b,2,elegir título,bajo,artifacts,false
+cp_174_5324ed997b,3,definir hook,bajo,artifacts,false
+cp_174_5324ed997b,4,preparar guion,medio,artifacts,false
+cp_174_5324ed997b,5,preparar miniatura,medio,artifacts,false
+cp_174_5324ed997b,6,publicar/monitorear,medio,artifacts,false
+cp_175_302220fad7,1,revisar evidencia,bajo,artifacts,false
+cp_175_302220fad7,2,elegir título,bajo,artifacts,false
+cp_175_302220fad7,3,definir hook,bajo,artifacts,false
+cp_175_302220fad7,4,preparar guion,medio,artifacts,false
+cp_175_302220fad7,5,preparar miniatura,medio,artifacts,false
+cp_175_302220fad7,6,publicar/monitorear,medio,artifacts,false
+cp_176_c88b82a02e,1,revisar evidencia,bajo,artifacts,false
+cp_176_c88b82a02e,2,elegir título,bajo,artifacts,false
+cp_176_c88b82a02e,3,definir hook,bajo,artifacts,false
+cp_176_c88b82a02e,4,preparar guion,medio,artifacts,false
+cp_176_c88b82a02e,5,preparar miniatura,medio,artifacts,false
+cp_176_c88b82a02e,6,publicar/monitorear,medio,artifacts,false
+cp_177_9200ff6a9f,1,revisar evidencia,bajo,artifacts,false
+cp_177_9200ff6a9f,2,elegir título,bajo,artifacts,false
+cp_177_9200ff6a9f,3,definir hook,bajo,artifacts,false
+cp_177_9200ff6a9f,4,preparar guion,medio,artifacts,false
+cp_177_9200ff6a9f,5,preparar miniatura,medio,artifacts,false
+cp_177_9200ff6a9f,6,publicar/monitorear,medio,artifacts,false
+cp_178_d67e1a6994,1,revisar evidencia,bajo,artifacts,false
+cp_178_d67e1a6994,2,elegir título,bajo,artifacts,false
+cp_178_d67e1a6994,3,definir hook,bajo,artifacts,false
+cp_178_d67e1a6994,4,preparar guion,medio,artifacts,false
+cp_178_d67e1a6994,5,preparar miniatura,medio,artifacts,false
+cp_178_d67e1a6994,6,publicar/monitorear,medio,artifacts,false
+cp_179_3b78efb088,1,revisar evidencia,bajo,artifacts,false
+cp_179_3b78efb088,2,elegir título,bajo,artifacts,false
+cp_179_3b78efb088,3,definir hook,bajo,artifacts,false
+cp_179_3b78efb088,4,preparar guion,medio,artifacts,false
+cp_179_3b78efb088,5,preparar miniatura,medio,artifacts,false
+cp_179_3b78efb088,6,publicar/monitorear,medio,artifacts,false
+cp_180_477e65c4cf,1,revisar evidencia,bajo,artifacts,false
+cp_180_477e65c4cf,2,elegir título,bajo,artifacts,false
+cp_180_477e65c4cf,3,definir hook,bajo,artifacts,false
+cp_180_477e65c4cf,4,preparar guion,medio,artifacts,false
+cp_180_477e65c4cf,5,preparar miniatura,medio,artifacts,false
+cp_180_477e65c4cf,6,publicar/monitorear,medio,artifacts,false
+cp_181_5d5b0829d2,1,revisar evidencia,bajo,artifacts,false
+cp_181_5d5b0829d2,2,elegir título,bajo,artifacts,false
+cp_181_5d5b0829d2,3,definir hook,bajo,artifacts,false
+cp_181_5d5b0829d2,4,preparar guion,medio,artifacts,false
+cp_181_5d5b0829d2,5,preparar miniatura,medio,artifacts,false
+cp_181_5d5b0829d2,6,publicar/monitorear,medio,artifacts,false
+cp_182_4c2abd24d4,1,revisar evidencia,bajo,artifacts,false
+cp_182_4c2abd24d4,2,elegir título,bajo,artifacts,false
+cp_182_4c2abd24d4,3,definir hook,bajo,artifacts,false
+cp_182_4c2abd24d4,4,preparar guion,medio,artifacts,false
+cp_182_4c2abd24d4,5,preparar miniatura,medio,artifacts,false
+cp_182_4c2abd24d4,6,publicar/monitorear,medio,artifacts,false
+cp_183_466a22e140,1,revisar evidencia,bajo,artifacts,false
+cp_183_466a22e140,2,elegir título,bajo,artifacts,false
+cp_183_466a22e140,3,definir hook,bajo,artifacts,false
+cp_183_466a22e140,4,preparar guion,medio,artifacts,false
+cp_183_466a22e140,5,preparar miniatura,medio,artifacts,false
+cp_183_466a22e140,6,publicar/monitorear,medio,artifacts,false
+cp_184_094ea6cb29,1,revisar evidencia,bajo,artifacts,false
+cp_184_094ea6cb29,2,elegir título,bajo,artifacts,false
+cp_184_094ea6cb29,3,definir hook,bajo,artifacts,false
+cp_184_094ea6cb29,4,preparar guion,medio,artifacts,false
+cp_184_094ea6cb29,5,preparar miniatura,medio,artifacts,false
+cp_184_094ea6cb29,6,publicar/monitorear,medio,artifacts,false
+cp_185_4b373d9cdf,1,revisar evidencia,bajo,artifacts,false
+cp_185_4b373d9cdf,2,elegir título,bajo,artifacts,false
+cp_185_4b373d9cdf,3,definir hook,bajo,artifacts,false
+cp_185_4b373d9cdf,4,preparar guion,medio,artifacts,false
+cp_185_4b373d9cdf,5,preparar miniatura,medio,artifacts,false
+cp_185_4b373d9cdf,6,publicar/monitorear,medio,artifacts,false
+cp_186_571462464b,1,revisar evidencia,bajo,artifacts,false
+cp_186_571462464b,2,elegir título,bajo,artifacts,false
+cp_186_571462464b,3,definir hook,bajo,artifacts,false
+cp_186_571462464b,4,preparar guion,medio,artifacts,false
+cp_186_571462464b,5,preparar miniatura,medio,artifacts,false
+cp_186_571462464b,6,publicar/monitorear,medio,artifacts,false
+cp_187_c75945f282,1,revisar evidencia,bajo,artifacts,false
+cp_187_c75945f282,2,elegir título,bajo,artifacts,false
+cp_187_c75945f282,3,definir hook,bajo,artifacts,false
+cp_187_c75945f282,4,preparar guion,medio,artifacts,false
+cp_187_c75945f282,5,preparar miniatura,medio,artifacts,false
+cp_187_c75945f282,6,publicar/monitorear,medio,artifacts,false
+cp_188_f02f30c5f1,1,revisar evidencia,bajo,artifacts,false
+cp_188_f02f30c5f1,2,elegir título,bajo,artifacts,false
+cp_188_f02f30c5f1,3,definir hook,bajo,artifacts,false
+cp_188_f02f30c5f1,4,preparar guion,medio,artifacts,false
+cp_188_f02f30c5f1,5,preparar miniatura,medio,artifacts,false
+cp_188_f02f30c5f1,6,publicar/monitorear,medio,artifacts,false
+cp_189_1a2d7b8da9,1,revisar evidencia,bajo,artifacts,false
+cp_189_1a2d7b8da9,2,elegir título,bajo,artifacts,false
+cp_189_1a2d7b8da9,3,definir hook,bajo,artifacts,false
+cp_189_1a2d7b8da9,4,preparar guion,medio,artifacts,false
+cp_189_1a2d7b8da9,5,preparar miniatura,medio,artifacts,false
+cp_189_1a2d7b8da9,6,publicar/monitorear,medio,artifacts,false
+cp_190_5e86ef6aa0,1,revisar evidencia,bajo,artifacts,false
+cp_190_5e86ef6aa0,2,elegir título,bajo,artifacts,false
+cp_190_5e86ef6aa0,3,definir hook,bajo,artifacts,false
+cp_190_5e86ef6aa0,4,preparar guion,medio,artifacts,false
+cp_190_5e86ef6aa0,5,preparar miniatura,medio,artifacts,false
+cp_190_5e86ef6aa0,6,publicar/monitorear,medio,artifacts,false
+cp_191_efa1269a5c,1,revisar evidencia,bajo,artifacts,false
+cp_191_efa1269a5c,2,elegir título,bajo,artifacts,false
+cp_191_efa1269a5c,3,definir hook,bajo,artifacts,false
+cp_191_efa1269a5c,4,preparar guion,medio,artifacts,false
+cp_191_efa1269a5c,5,preparar miniatura,medio,artifacts,false
+cp_191_efa1269a5c,6,publicar/monitorear,medio,artifacts,false
+cp_192_42a5a0bbbf,1,revisar evidencia,bajo,artifacts,false
+cp_192_42a5a0bbbf,2,elegir título,bajo,artifacts,false
+cp_192_42a5a0bbbf,3,definir hook,bajo,artifacts,false
+cp_192_42a5a0bbbf,4,preparar guion,medio,artifacts,false
+cp_192_42a5a0bbbf,5,preparar miniatura,medio,artifacts,false
+cp_192_42a5a0bbbf,6,publicar/monitorear,medio,artifacts,false
+cp_193_45e75be48e,1,revisar evidencia,bajo,artifacts,false
+cp_193_45e75be48e,2,elegir título,bajo,artifacts,false
+cp_193_45e75be48e,3,definir hook,bajo,artifacts,false
+cp_193_45e75be48e,4,preparar guion,medio,artifacts,false
+cp_193_45e75be48e,5,preparar miniatura,medio,artifacts,false
+cp_193_45e75be48e,6,publicar/monitorear,medio,artifacts,false
+cp_194_bbe9e9e8b2,1,revisar evidencia,bajo,artifacts,false
+cp_194_bbe9e9e8b2,2,elegir título,bajo,artifacts,false
+cp_194_bbe9e9e8b2,3,definir hook,bajo,artifacts,false
+cp_194_bbe9e9e8b2,4,preparar guion,medio,artifacts,false
+cp_194_bbe9e9e8b2,5,preparar miniatura,medio,artifacts,false
+cp_194_bbe9e9e8b2,6,publicar/monitorear,medio,artifacts,false
+cp_195_e79153633a,1,revisar evidencia,bajo,artifacts,false
+cp_195_e79153633a,2,elegir título,bajo,artifacts,false
+cp_195_e79153633a,3,definir hook,bajo,artifacts,false
+cp_195_e79153633a,4,preparar guion,medio,artifacts,false
+cp_195_e79153633a,5,preparar miniatura,medio,artifacts,false
+cp_195_e79153633a,6,publicar/monitorear,medio,artifacts,false
+cp_196_77d28e9875,1,revisar evidencia,bajo,artifacts,false
+cp_196_77d28e9875,2,elegir título,bajo,artifacts,false
+cp_196_77d28e9875,3,definir hook,bajo,artifacts,false
+cp_196_77d28e9875,4,preparar guion,medio,artifacts,false
+cp_196_77d28e9875,5,preparar miniatura,medio,artifacts,false
+cp_196_77d28e9875,6,publicar/monitorear,medio,artifacts,false
+cp_197_86bbe79b97,1,revisar evidencia,bajo,artifacts,false
+cp_197_86bbe79b97,2,elegir título,bajo,artifacts,false
+cp_197_86bbe79b97,3,definir hook,bajo,artifacts,false
+cp_197_86bbe79b97,4,preparar guion,medio,artifacts,false
+cp_197_86bbe79b97,5,preparar miniatura,medio,artifacts,false
+cp_197_86bbe79b97,6,publicar/monitorear,medio,artifacts,false
+cp_198_6fc728dd83,1,revisar evidencia,bajo,artifacts,false
+cp_198_6fc728dd83,2,elegir título,bajo,artifacts,false
+cp_198_6fc728dd83,3,definir hook,bajo,artifacts,false
+cp_198_6fc728dd83,4,preparar guion,medio,artifacts,false
+cp_198_6fc728dd83,5,preparar miniatura,medio,artifacts,false
+cp_198_6fc728dd83,6,publicar/monitorear,medio,artifacts,false
+cp_199_16ff3483c4,1,revisar evidencia,bajo,artifacts,false
+cp_199_16ff3483c4,2,elegir título,bajo,artifacts,false
+cp_199_16ff3483c4,3,definir hook,bajo,artifacts,false
+cp_199_16ff3483c4,4,preparar guion,medio,artifacts,false
+cp_199_16ff3483c4,5,preparar miniatura,medio,artifacts,false
+cp_199_16ff3483c4,6,publicar/monitorear,medio,artifacts,false
+cp_200_59e5b60165,1,revisar evidencia,bajo,artifacts,false
+cp_200_59e5b60165,2,elegir título,bajo,artifacts,false
+cp_200_59e5b60165,3,definir hook,bajo,artifacts,false
+cp_200_59e5b60165,4,preparar guion,medio,artifacts,false
+cp_200_59e5b60165,5,preparar miniatura,medio,artifacts,false
+cp_200_59e5b60165,6,publicar/monitorear,medio,artifacts,false
+cp_201_559003c19a,1,revisar evidencia,bajo,artifacts,false
+cp_201_559003c19a,2,elegir título,bajo,artifacts,false
+cp_201_559003c19a,3,definir hook,bajo,artifacts,false
+cp_201_559003c19a,4,preparar guion,medio,artifacts,false
+cp_201_559003c19a,5,preparar miniatura,medio,artifacts,false
+cp_201_559003c19a,6,publicar/monitorear,medio,artifacts,false
+cp_202_a6884925b6,1,revisar evidencia,bajo,artifacts,false
+cp_202_a6884925b6,2,elegir título,bajo,artifacts,false
+cp_202_a6884925b6,3,definir hook,bajo,artifacts,false
+cp_202_a6884925b6,4,preparar guion,medio,artifacts,false
+cp_202_a6884925b6,5,preparar miniatura,medio,artifacts,false
+cp_202_a6884925b6,6,publicar/monitorear,medio,artifacts,false
+cp_203_4d1091b017,1,revisar evidencia,bajo,artifacts,false
+cp_203_4d1091b017,2,elegir título,bajo,artifacts,false
+cp_203_4d1091b017,3,definir hook,bajo,artifacts,false
+cp_203_4d1091b017,4,preparar guion,medio,artifacts,false
+cp_203_4d1091b017,5,preparar miniatura,medio,artifacts,false
+cp_203_4d1091b017,6,publicar/monitorear,medio,artifacts,false
+cp_204_2d87b64abd,1,revisar evidencia,bajo,artifacts,false
+cp_204_2d87b64abd,2,elegir título,bajo,artifacts,false
+cp_204_2d87b64abd,3,definir hook,bajo,artifacts,false
+cp_204_2d87b64abd,4,preparar guion,medio,artifacts,false
+cp_204_2d87b64abd,5,preparar miniatura,medio,artifacts,false
+cp_204_2d87b64abd,6,publicar/monitorear,medio,artifacts,false
+cp_205_cb092629b5,1,revisar evidencia,bajo,artifacts,false
+cp_205_cb092629b5,2,elegir título,bajo,artifacts,false
+cp_205_cb092629b5,3,definir hook,bajo,artifacts,false
+cp_205_cb092629b5,4,preparar guion,medio,artifacts,false
+cp_205_cb092629b5,5,preparar miniatura,medio,artifacts,false
+cp_205_cb092629b5,6,publicar/monitorear,medio,artifacts,false
+cp_206_c3d77d9045,1,revisar evidencia,bajo,artifacts,false
+cp_206_c3d77d9045,2,elegir título,bajo,artifacts,false
+cp_206_c3d77d9045,3,definir hook,bajo,artifacts,false
+cp_206_c3d77d9045,4,preparar guion,medio,artifacts,false
+cp_206_c3d77d9045,5,preparar miniatura,medio,artifacts,false
+cp_206_c3d77d9045,6,publicar/monitorear,medio,artifacts,false
+cp_207_82e8cc25bf,1,revisar evidencia,bajo,artifacts,false
+cp_207_82e8cc25bf,2,elegir título,bajo,artifacts,false
+cp_207_82e8cc25bf,3,definir hook,bajo,artifacts,false
+cp_207_82e8cc25bf,4,preparar guion,medio,artifacts,false
+cp_207_82e8cc25bf,5,preparar miniatura,medio,artifacts,false
+cp_207_82e8cc25bf,6,publicar/monitorear,medio,artifacts,false
+cp_208_070f5ead9d,1,revisar evidencia,bajo,artifacts,false
+cp_208_070f5ead9d,2,elegir título,bajo,artifacts,false
+cp_208_070f5ead9d,3,definir hook,bajo,artifacts,false
+cp_208_070f5ead9d,4,preparar guion,medio,artifacts,false
+cp_208_070f5ead9d,5,preparar miniatura,medio,artifacts,false
+cp_208_070f5ead9d,6,publicar/monitorear,medio,artifacts,false
+cp_209_6c062865df,1,revisar evidencia,bajo,artifacts,false
+cp_209_6c062865df,2,elegir título,bajo,artifacts,false
+cp_209_6c062865df,3,definir hook,bajo,artifacts,false
+cp_209_6c062865df,4,preparar guion,medio,artifacts,false
+cp_209_6c062865df,5,preparar miniatura,medio,artifacts,false
+cp_209_6c062865df,6,publicar/monitorear,medio,artifacts,false
+cp_210_1ed411a9e1,1,revisar evidencia,bajo,artifacts,false
+cp_210_1ed411a9e1,2,elegir título,bajo,artifacts,false
+cp_210_1ed411a9e1,3,definir hook,bajo,artifacts,false
+cp_210_1ed411a9e1,4,preparar guion,medio,artifacts,false
+cp_210_1ed411a9e1,5,preparar miniatura,medio,artifacts,false
+cp_210_1ed411a9e1,6,publicar/monitorear,medio,artifacts,false
+cp_211_b30df0e30c,1,revisar evidencia,bajo,artifacts,false
+cp_211_b30df0e30c,2,elegir título,bajo,artifacts,false
+cp_211_b30df0e30c,3,definir hook,bajo,artifacts,false
+cp_211_b30df0e30c,4,preparar guion,medio,artifacts,false
+cp_211_b30df0e30c,5,preparar miniatura,medio,artifacts,false
+cp_211_b30df0e30c,6,publicar/monitorear,medio,artifacts,false
+cp_212_d77cf46865,1,revisar evidencia,bajo,artifacts,false
+cp_212_d77cf46865,2,elegir título,bajo,artifacts,false
+cp_212_d77cf46865,3,definir hook,bajo,artifacts,false
+cp_212_d77cf46865,4,preparar guion,medio,artifacts,false
+cp_212_d77cf46865,5,preparar miniatura,medio,artifacts,false
+cp_212_d77cf46865,6,publicar/monitorear,medio,artifacts,false
+cp_213_3c966ed4fb,1,revisar evidencia,bajo,artifacts,false
+cp_213_3c966ed4fb,2,elegir título,bajo,artifacts,false
+cp_213_3c966ed4fb,3,definir hook,bajo,artifacts,false
+cp_213_3c966ed4fb,4,preparar guion,medio,artifacts,false
+cp_213_3c966ed4fb,5,preparar miniatura,medio,artifacts,false
+cp_213_3c966ed4fb,6,publicar/monitorear,medio,artifacts,false
+cp_214_e3575dab6f,1,revisar evidencia,bajo,artifacts,false
+cp_214_e3575dab6f,2,elegir título,bajo,artifacts,false
+cp_214_e3575dab6f,3,definir hook,bajo,artifacts,false
+cp_214_e3575dab6f,4,preparar guion,medio,artifacts,false
+cp_214_e3575dab6f,5,preparar miniatura,medio,artifacts,false
+cp_214_e3575dab6f,6,publicar/monitorear,medio,artifacts,false
+cp_215_c5236d30ed,1,revisar evidencia,bajo,artifacts,false
+cp_215_c5236d30ed,2,elegir título,bajo,artifacts,false
+cp_215_c5236d30ed,3,definir hook,bajo,artifacts,false
+cp_215_c5236d30ed,4,preparar guion,medio,artifacts,false
+cp_215_c5236d30ed,5,preparar miniatura,medio,artifacts,false
+cp_215_c5236d30ed,6,publicar/monitorear,medio,artifacts,false
+cp_216_21a9f1d8c9,1,revisar evidencia,bajo,artifacts,false
+cp_216_21a9f1d8c9,2,elegir título,bajo,artifacts,false
+cp_216_21a9f1d8c9,3,definir hook,bajo,artifacts,false
+cp_216_21a9f1d8c9,4,preparar guion,medio,artifacts,false
+cp_216_21a9f1d8c9,5,preparar miniatura,medio,artifacts,false
+cp_216_21a9f1d8c9,6,publicar/monitorear,medio,artifacts,false
+cp_217_e925123cb4,1,revisar evidencia,bajo,artifacts,false
+cp_217_e925123cb4,2,elegir título,bajo,artifacts,false
+cp_217_e925123cb4,3,definir hook,bajo,artifacts,false
+cp_217_e925123cb4,4,preparar guion,medio,artifacts,false
+cp_217_e925123cb4,5,preparar miniatura,medio,artifacts,false
+cp_217_e925123cb4,6,publicar/monitorear,medio,artifacts,false
+cp_218_4c2f31fbe6,1,revisar evidencia,bajo,artifacts,false
+cp_218_4c2f31fbe6,2,elegir título,bajo,artifacts,false
+cp_218_4c2f31fbe6,3,definir hook,bajo,artifacts,false
+cp_218_4c2f31fbe6,4,preparar guion,medio,artifacts,false
+cp_218_4c2f31fbe6,5,preparar miniatura,medio,artifacts,false
+cp_218_4c2f31fbe6,6,publicar/monitorear,medio,artifacts,false
+cp_219_cbecb06d31,1,revisar evidencia,bajo,artifacts,false
+cp_219_cbecb06d31,2,elegir título,bajo,artifacts,false
+cp_219_cbecb06d31,3,definir hook,bajo,artifacts,false
+cp_219_cbecb06d31,4,preparar guion,medio,artifacts,false
+cp_219_cbecb06d31,5,preparar miniatura,medio,artifacts,false
+cp_219_cbecb06d31,6,publicar/monitorear,medio,artifacts,false
+cp_220_d329cc5e10,1,revisar evidencia,bajo,artifacts,false
+cp_220_d329cc5e10,2,elegir título,bajo,artifacts,false
+cp_220_d329cc5e10,3,definir hook,bajo,artifacts,false
+cp_220_d329cc5e10,4,preparar guion,medio,artifacts,false
+cp_220_d329cc5e10,5,preparar miniatura,medio,artifacts,false
+cp_220_d329cc5e10,6,publicar/monitorear,medio,artifacts,false
+cp_221_ee39bdd707,1,revisar evidencia,bajo,artifacts,false
+cp_221_ee39bdd707,2,elegir título,bajo,artifacts,false
+cp_221_ee39bdd707,3,definir hook,bajo,artifacts,false
+cp_221_ee39bdd707,4,preparar guion,medio,artifacts,false
+cp_221_ee39bdd707,5,preparar miniatura,medio,artifacts,false
+cp_221_ee39bdd707,6,publicar/monitorear,medio,artifacts,false
+cp_222_86d6dda31e,1,revisar evidencia,bajo,artifacts,false
+cp_222_86d6dda31e,2,elegir título,bajo,artifacts,false
+cp_222_86d6dda31e,3,definir hook,bajo,artifacts,false
+cp_222_86d6dda31e,4,preparar guion,medio,artifacts,false
+cp_222_86d6dda31e,5,preparar miniatura,medio,artifacts,false
+cp_222_86d6dda31e,6,publicar/monitorear,medio,artifacts,false
+cp_223_b6215afc70,1,revisar evidencia,bajo,artifacts,false
+cp_223_b6215afc70,2,elegir título,bajo,artifacts,false
+cp_223_b6215afc70,3,definir hook,bajo,artifacts,false
+cp_223_b6215afc70,4,preparar guion,medio,artifacts,false
+cp_223_b6215afc70,5,preparar miniatura,medio,artifacts,false
+cp_223_b6215afc70,6,publicar/monitorear,medio,artifacts,false
+cp_224_18363e3363,1,revisar evidencia,bajo,artifacts,false
+cp_224_18363e3363,2,elegir título,bajo,artifacts,false
+cp_224_18363e3363,3,definir hook,bajo,artifacts,false
+cp_224_18363e3363,4,preparar guion,medio,artifacts,false
+cp_224_18363e3363,5,preparar miniatura,medio,artifacts,false
+cp_224_18363e3363,6,publicar/monitorear,medio,artifacts,false
+cp_225_5fea4b00a1,1,revisar evidencia,bajo,artifacts,false
+cp_225_5fea4b00a1,2,elegir título,bajo,artifacts,false
+cp_225_5fea4b00a1,3,definir hook,bajo,artifacts,false
+cp_225_5fea4b00a1,4,preparar guion,medio,artifacts,false
+cp_225_5fea4b00a1,5,preparar miniatura,medio,artifacts,false
+cp_225_5fea4b00a1,6,publicar/monitorear,medio,artifacts,false
+cp_226_f2b0201873,1,revisar evidencia,bajo,artifacts,false
+cp_226_f2b0201873,2,elegir título,bajo,artifacts,false
+cp_226_f2b0201873,3,definir hook,bajo,artifacts,false
+cp_226_f2b0201873,4,preparar guion,medio,artifacts,false
+cp_226_f2b0201873,5,preparar miniatura,medio,artifacts,false
+cp_226_f2b0201873,6,publicar/monitorear,medio,artifacts,false
+cp_227_ddc6a4eb7b,1,revisar evidencia,bajo,artifacts,false
+cp_227_ddc6a4eb7b,2,elegir título,bajo,artifacts,false
+cp_227_ddc6a4eb7b,3,definir hook,bajo,artifacts,false
+cp_227_ddc6a4eb7b,4,preparar guion,medio,artifacts,false
+cp_227_ddc6a4eb7b,5,preparar miniatura,medio,artifacts,false
+cp_227_ddc6a4eb7b,6,publicar/monitorear,medio,artifacts,false
+cp_228_94f7cf4304,1,revisar evidencia,bajo,artifacts,false
+cp_228_94f7cf4304,2,elegir título,bajo,artifacts,false
+cp_228_94f7cf4304,3,definir hook,bajo,artifacts,false
+cp_228_94f7cf4304,4,preparar guion,medio,artifacts,false
+cp_228_94f7cf4304,5,preparar miniatura,medio,artifacts,false
+cp_228_94f7cf4304,6,publicar/monitorear,medio,artifacts,false
+cp_229_ab303ef7c6,1,revisar evidencia,bajo,artifacts,false
+cp_229_ab303ef7c6,2,elegir título,bajo,artifacts,false
+cp_229_ab303ef7c6,3,definir hook,bajo,artifacts,false
+cp_229_ab303ef7c6,4,preparar guion,medio,artifacts,false
+cp_229_ab303ef7c6,5,preparar miniatura,medio,artifacts,false
+cp_229_ab303ef7c6,6,publicar/monitorear,medio,artifacts,false
+cp_230_7f892caa49,1,revisar evidencia,bajo,artifacts,false
+cp_230_7f892caa49,2,elegir título,bajo,artifacts,false
+cp_230_7f892caa49,3,definir hook,bajo,artifacts,false
+cp_230_7f892caa49,4,preparar guion,medio,artifacts,false
+cp_230_7f892caa49,5,preparar miniatura,medio,artifacts,false
+cp_230_7f892caa49,6,publicar/monitorear,medio,artifacts,false
+cp_231_50501cd97f,1,revisar evidencia,bajo,artifacts,false
+cp_231_50501cd97f,2,elegir título,bajo,artifacts,false
+cp_231_50501cd97f,3,definir hook,bajo,artifacts,false
+cp_231_50501cd97f,4,preparar guion,medio,artifacts,false
+cp_231_50501cd97f,5,preparar miniatura,medio,artifacts,false
+cp_231_50501cd97f,6,publicar/monitorear,medio,artifacts,false
+cp_232_6ba850dd90,1,revisar evidencia,bajo,artifacts,false
+cp_232_6ba850dd90,2,elegir título,bajo,artifacts,false
+cp_232_6ba850dd90,3,definir hook,bajo,artifacts,false
+cp_232_6ba850dd90,4,preparar guion,medio,artifacts,false
+cp_232_6ba850dd90,5,preparar miniatura,medio,artifacts,false
+cp_232_6ba850dd90,6,publicar/monitorear,medio,artifacts,false
+cp_233_7bb7665089,1,revisar evidencia,bajo,artifacts,false
+cp_233_7bb7665089,2,elegir título,bajo,artifacts,false
+cp_233_7bb7665089,3,definir hook,bajo,artifacts,false
+cp_233_7bb7665089,4,preparar guion,medio,artifacts,false
+cp_233_7bb7665089,5,preparar miniatura,medio,artifacts,false
+cp_233_7bb7665089,6,publicar/monitorear,medio,artifacts,false
+cp_234_11a129fdc4,1,revisar evidencia,bajo,artifacts,false
+cp_234_11a129fdc4,2,elegir título,bajo,artifacts,false
+cp_234_11a129fdc4,3,definir hook,bajo,artifacts,false
+cp_234_11a129fdc4,4,preparar guion,medio,artifacts,false
+cp_234_11a129fdc4,5,preparar miniatura,medio,artifacts,false
+cp_234_11a129fdc4,6,publicar/monitorear,medio,artifacts,false
+cp_235_25249e0f87,1,revisar evidencia,bajo,artifacts,false
+cp_235_25249e0f87,2,elegir título,bajo,artifacts,false
+cp_235_25249e0f87,3,definir hook,bajo,artifacts,false
+cp_235_25249e0f87,4,preparar guion,medio,artifacts,false
+cp_235_25249e0f87,5,preparar miniatura,medio,artifacts,false
+cp_235_25249e0f87,6,publicar/monitorear,medio,artifacts,false
+cp_236_ca0f129e4a,1,revisar evidencia,bajo,artifacts,false
+cp_236_ca0f129e4a,2,elegir título,bajo,artifacts,false
+cp_236_ca0f129e4a,3,definir hook,bajo,artifacts,false
+cp_236_ca0f129e4a,4,preparar guion,medio,artifacts,false
+cp_236_ca0f129e4a,5,preparar miniatura,medio,artifacts,false
+cp_236_ca0f129e4a,6,publicar/monitorear,medio,artifacts,false
+cp_237_ee348d5b9c,1,revisar evidencia,bajo,artifacts,false
+cp_237_ee348d5b9c,2,elegir título,bajo,artifacts,false
+cp_237_ee348d5b9c,3,definir hook,bajo,artifacts,false
+cp_237_ee348d5b9c,4,preparar guion,medio,artifacts,false
+cp_237_ee348d5b9c,5,preparar miniatura,medio,artifacts,false
+cp_237_ee348d5b9c,6,publicar/monitorear,medio,artifacts,false
+cp_238_2c940ceb41,1,revisar evidencia,bajo,artifacts,false
+cp_238_2c940ceb41,2,elegir título,bajo,artifacts,false
+cp_238_2c940ceb41,3,definir hook,bajo,artifacts,false
+cp_238_2c940ceb41,4,preparar guion,medio,artifacts,false
+cp_238_2c940ceb41,5,preparar miniatura,medio,artifacts,false
+cp_238_2c940ceb41,6,publicar/monitorear,medio,artifacts,false
