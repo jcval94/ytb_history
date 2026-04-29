@@ -251,3 +251,21 @@ def test_generate_weekly_brief_has_no_api_or_search_list_dependency() -> None:
     source = Path("src/ytb_history/services/brief_service.py").read_text(encoding="utf-8")
     assert "search.list" not in source
     assert "youtube_client" not in source
+
+
+def test_generate_weekly_brief_includes_model_readiness_section_when_available(tmp_path: Path) -> None:
+    data_dir = _prepare_data(tmp_path)
+    (data_dir / "modeling").mkdir(parents=True, exist_ok=True)
+    (data_dir / "modeling" / "latest_model_readiness_diagnostics.json").write_text(json.dumps({
+        "status": "not_ready",
+        "trainable_examples": 0,
+        "examples_missing_for_exploratory": 300,
+        "recommended_next_steps": ["step 1"]
+    }, ensure_ascii=False), encoding="utf-8")
+    (data_dir / "modeling" / "latest_training_gap_report.json").write_text(json.dumps({"primary_blocker": "no_trainable_examples"}, ensure_ascii=False), encoding="utf-8")
+
+    generate_weekly_brief(data_dir=data_dir)
+
+    markdown_text = (data_dir / "briefs" / "latest_weekly_brief.md").read_text(encoding="utf-8")
+    assert "## Model Readiness" in markdown_text
+    assert "primary_blocker" in markdown_text

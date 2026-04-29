@@ -14,8 +14,10 @@ from ytb_history.services.creative_packages_service import build_creative_packag
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.model_dataset_service import build_model_dataset
+from ytb_history.services.model_readiness_diagnostics_service import analyze_model_readiness
 from ytb_history.services.model_artifact_registry_service import build_model_artifact_registry_report
 from ytb_history.services.model_training_service import train_baseline_model, train_model_suite, register_trained_artifact
+from ytb_history.services.model_smoke_test_service import smoke_test_model_training
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services.nlp_feature_service import build_nlp_features
 from ytb_history.services.topic_intelligence_service import build_topic_intelligence
@@ -61,9 +63,16 @@ def build_parser() -> argparse.ArgumentParser:
     model_parser = sub.add_parser("build-model-dataset", help="Build supervised model-ready dataset and readiness report")
     model_parser.add_argument("--data-dir", default="data")
 
+    readiness_diag_parser = sub.add_parser("analyze-model-readiness", help="Analyze supervised model readiness diagnostics")
+    readiness_diag_parser.add_argument("--data-dir", default="data")
+
     registry_parser = sub.add_parser("model-artifact-registry-report", help="Build artifact-based model registry readiness report")
     registry_parser.add_argument("--data-dir", default="data")
     registry_parser.add_argument("--modeling-config", default="config/modeling.yaml")
+
+    smoke_parser = sub.add_parser("smoke-test-model-training", help="Run synthetic smoke test for training and prediction")
+    smoke_parser.add_argument("--output-dir", default="build/model_smoke_test")
+    smoke_parser.add_argument("--n-rows", default=500, type=int)
 
     suite_parser = sub.add_parser("train-model-suite", help="Train interpretable model suite and write artifact directory")
     suite_parser.add_argument("--data-dir", default="data")
@@ -161,8 +170,18 @@ def main() -> int:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
+    if args.command == "analyze-model-readiness":
+        summary = analyze_model_readiness(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
     if args.command == "model-artifact-registry-report":
         summary = build_model_artifact_registry_report(data_dir=args.data_dir, modeling_config_path=args.modeling_config)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "smoke-test-model-training":
+        summary = smoke_test_model_training(output_dir=args.output_dir, n_rows=args.n_rows)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

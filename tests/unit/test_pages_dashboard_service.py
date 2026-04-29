@@ -463,3 +463,20 @@ def test_ml_only_notices_keep_global_non_warning_in_manifest(tmp_path: Path) -> 
     domain_warnings = [w for w in manifest["warnings"] if "ml_data_status" in w]
     assert domain_warnings == []
     assert any("ml_data_status" in notice for notice in manifest["notices"])
+
+
+def test_build_pages_dashboard_includes_model_readiness_outputs(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _write_text(data_dir / "modeling" / "latest_model_readiness_diagnostics.json", json.dumps({"recommended_status": "not_ready", "can_train_now": False}, ensure_ascii=False))
+    _write_text(data_dir / "modeling" / "latest_training_gap_report.json", json.dumps({"primary_blocker": "no_trainable_examples"}, ensure_ascii=False))
+    _write_text(data_dir / "modeling" / "latest_target_coverage_report.csv", "target_name,coverage_pct,trainable_rows,blocker,status\nis_top_growth_7d,40.0,10,single_class_target,not_ready\n")
+    _write_text(data_dir / "modeling" / "latest_model_readiness_report.html", "<h2>Readiness</h2>")
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_model_readiness_diagnostics.json").exists()
+    assert (site_dir / "data" / "latest_training_gap_report.json").exists()
+    assert (site_dir / "data" / "latest_target_coverage_report.json").exists()
+    assert (site_dir / "data" / "latest_model_readiness_report.html").exists()

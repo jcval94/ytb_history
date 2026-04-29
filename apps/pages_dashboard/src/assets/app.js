@@ -27,6 +27,10 @@ const DATA_FILES = {
   latestFeatureImportance: "./data/latest_feature_importance.json",
   latestFeatureDirection: "./data/latest_feature_direction.json",
   latestModelSuiteReportHtml: "./data/latest_model_suite_report.html",
+  latestModelReadinessDiagnostics: "./data/latest_model_readiness_diagnostics.json",
+  latestTargetCoverageReport: "./data/latest_target_coverage_report.json",
+  latestTrainingGapReport: "./data/latest_training_gap_report.json",
+  latestModelReadinessReportHtml: "./data/latest_model_readiness_report.html",
   latestVideoNlpFeatures: "./data/latest_video_nlp_features.json",
   latestTitleNlpFeatures: "./data/latest_title_nlp_features.json",
   latestSemanticClusters: "./data/latest_semantic_clusters.json",
@@ -629,6 +633,10 @@ function renderModels() {
   const importanceRows = tableRows("latestFeatureImportance");
   const directionRows = tableRows("latestFeatureDirection");
   const suiteReportHtml = typeof state.data.latestModelSuiteReportHtml === "string" ? state.data.latestModelSuiteReportHtml : "";
+  const readiness = state.data.latestModelReadinessDiagnostics || {};
+  const gap = state.data.latestTrainingGapReport || {};
+  const targetCoverageRows = tableRows("latestTargetCoverageReport");
+  const readinessReportHtml = typeof state.data.latestModelReadinessReportHtml === "string" ? state.data.latestModelReadinessReportHtml : "";
 
   panel.innerHTML = `
     <h2>Models</h2>
@@ -648,6 +656,11 @@ function renderModels() {
     <div id="models-rf"></div>
     <h3 class="section-title">Shallow Tree Rules</h3>
     <div id="models-tree-rules"></div>
+    <h3 class="section-title">Model Readiness</h3>
+    <div id="models-readiness" class="kpi-grid"></div>
+    <div id="models-readiness-message"></div>
+    <div id="models-target-coverage"></div>
+    <div id="models-readiness-html"></div>
   `;
 
   const statusCards = [
@@ -717,6 +730,31 @@ function renderModels() {
     panel.querySelector("#models-tree-rules").innerHTML = suiteReportHtml;
   } else {
     panel.querySelector("#models-tree-rules").innerHTML = "<p>No suite report available</p>";
+  }
+
+  const readinessCards = [
+    ["recommended_status", readiness.recommended_status || "--"],
+    ["can_train_now", String(Boolean(readiness.can_train_now))],
+    ["trainable_examples", String(readiness.trainable_examples ?? "--")],
+    ["missing_exploratory", String(readiness.examples_missing_for_exploratory ?? "--")],
+    ["missing_baseline", String(readiness.examples_missing_for_baseline ?? "--")],
+    ["primary_blocker", gap.primary_blocker || "--"],
+    ["forecast", (readiness.forecast || {}).status || "--"],
+    ["recommended_next_steps", Array.isArray(readiness.recommended_next_steps) ? readiness.recommended_next_steps.join(" | ") : "--"]
+  ];
+  const readinessHtml = readinessCards
+    .map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`)
+    .join("");
+  const readinessWrap = panel.querySelector("#models-readiness");
+  if (readinessWrap) readinessWrap.innerHTML = readinessHtml;
+
+  const msg = panel.querySelector("#models-readiness-message");
+  if (msg && readiness.can_train_now === false) {
+    msg.innerHTML = "<p class=\"warning\">El entrenamiento todavía no está listo porque faltan ejemplos con observación futura. Sigue ejecutando YouTube Monitor diariamente.</p>";
+  }
+  renderTable(panel.querySelector("#models-target-coverage"), ["target_name", "coverage_pct", "trainable_rows", "blocker", "status"], targetCoverageRows, { initialSortKey: "coverage_pct", title: "Target Coverage" });
+  if (readinessReportHtml.trim()) {
+    panel.querySelector("#models-readiness-html").innerHTML = readinessReportHtml;
   }
 }
 
