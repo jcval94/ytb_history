@@ -123,16 +123,28 @@ def test_train_model_workflow_contract() -> None:
     assert "actions/upload-artifact" in content
     assert "retention-days: 30" in content
     assert "git add data/model_registry/ data/model_reports/" in content
+    assert "data/modeling/latest_model_readiness_diagnostics.json" in content
+    assert "data/modeling/latest_model_readiness_timeline.csv" in content
+    assert "data/modeling/latest_target_coverage_report.csv" in content
+    assert "data/modeling/latest_training_gap_report.json" in content
+    assert "data/modeling/latest_model_readiness_report.md" in content
+    assert "data/modeling/latest_model_readiness_report.html" in content
     assert "git add build/model_artifact" not in content
     assert "YOUTUBE_API_KEY" not in content
     assert "search.list" not in content
     assert "python -m ytb_history.cli train-model-suite" in content
+    assert "python -m ytb_history.cli smoke-test-model-training" in content
+    assert "python -m ytb_history.cli analyze-model-readiness" in content
+    assert "skipped_missing_ml_dependencies" in content
     assert "python -m ytb_history.cli build-nlp-features" in content
     assert "python -m ytb_history.cli build-topic-intelligence" in content
     assert "python -m ytb_history.cli train-content-driver-models" in content
     assert "python -m ytb_history.cli register-trained-artifact" in content
     assert "git add build/content_driver_artifact" not in content
+    assert "git add build/model_smoke_test" not in content
     assert "git add *.joblib" not in content
+    assert content.index("python -m ytb_history.cli build-model-dataset") < content.index("python -m ytb_history.cli analyze-model-readiness")
+    assert content.index("python -m ytb_history.cli smoke-test-model-training") < content.index("python -m ytb_history.cli train-model-suite")
 
 
 
@@ -148,3 +160,8 @@ def test_predict_model_workflow_contract() -> None:
     assert "git add downloaded_model" not in content
     assert "git add build/model_artifact" not in content
     assert "git add data/predictions/latest_predictions.csv" not in content
+
+
+def test_pages_workflow_does_not_run_smoke_test_training() -> None:
+    content = _read(".github/workflows/pages.yml")
+    assert "smoke-test-model-training" not in content

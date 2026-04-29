@@ -198,6 +198,23 @@ Genera artefactos de preparación para modelado supervisado en `data/modeling/`:
 Este comando prepara dataset supervisado y auditorías de readiness, pero **no entrena** modelos productivos todavía.
 
 
+
+## 12.3.1) Analizar model readiness diagnostics
+
+```bash
+python -m ytb_history.cli analyze-model-readiness --data-dir data
+```
+
+Genera diagnóstico explícito de madurez de entrenamiento en `data/modeling/`:
+- `latest_model_readiness_diagnostics.json`
+- `latest_model_readiness_timeline.csv`
+- `latest_target_coverage_report.csv`
+- `latest_training_gap_report.json`
+- `latest_model_readiness_report.md`
+- `latest_model_readiness_report.html`
+
+Este comando **explica por qué el entrenamiento está bloqueado**, no llama YouTube API y **no entrena modelos**.
+
 ## 12.4) Construir capa NLP liviana
 
 ```bash
@@ -382,3 +399,13 @@ Configurar el secret en GitHub:
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
+
+
+## 12.7) Smoke test de entrenamiento con dataset sintético
+
+```bash
+python -m ytb_history.cli smoke-test-model-training --output-dir build/model_smoke_test
+```
+
+Ejecuta un smoke test end-to-end de entrenamiento + predicción usando datos sintéticos determinísticos (`random_state=42`) sin tocar `data/` real.
+

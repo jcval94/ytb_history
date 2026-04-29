@@ -33,6 +33,8 @@ INPUT_FILES = {
     "content_driver_leaderboard": Path("model_reports/latest_content_driver_leaderboard.csv"),
     "content_driver_feature_importance": Path("model_reports/latest_content_driver_feature_importance.csv"),
     "content_driver_feature_direction": Path("model_reports/latest_content_driver_feature_direction.csv"),
+    "model_readiness_diagnostics": Path("modeling/latest_model_readiness_diagnostics.json"),
+    "training_gap_report": Path("modeling/latest_training_gap_report.json"),
 }
 
 
@@ -204,6 +206,8 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     content_driver_leaderboard = _sort_desc(tables["content_driver_leaderboard"], "spearman_corr")
     content_driver_importance = _sort_desc(tables["content_driver_feature_importance"], "importance_rank")
     content_driver_direction = _sort_desc(tables["content_driver_feature_direction"], "direction_score")
+    readiness = tables["model_readiness_diagnostics"] if isinstance(tables["model_readiness_diagnostics"], dict) else {}
+    gap = tables["training_gap_report"] if isinstance(tables["training_gap_report"], dict) else {}
 
     alerts_payload = tables["latest_alerts"] if isinstance(tables["latest_alerts"], dict) else {}
     alerts_rows = alerts_payload.get("alerts", []) if isinstance(alerts_payload.get("alerts", []), list) else []
@@ -309,6 +313,7 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "title_pattern_snapshot": title_snapshot,
         "data_quality_notes": data_quality_notes,
         "warnings": warnings,
+        "model_readiness": readiness,
     }
 
     markdown_lines = [
@@ -441,6 +446,21 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         markdown_lines.extend(["", "Advertencia: estas importancias son predictivas, no causales."])
     else:
         markdown_lines.extend(["- Content driver outputs no disponibles en esta corrida."])
+
+    markdown_lines.extend(["", "## Model Readiness"])
+    if readiness:
+        next_steps = readiness.get("recommended_next_steps", [])
+        markdown_lines.extend(
+            [
+                f"- status: {readiness.get('status', 'unknown')}",
+                f"- trainable_examples: {readiness.get('trainable_examples', 0)}",
+                f"- examples_missing_for_exploratory: {readiness.get('examples_missing_for_exploratory', 0)}",
+                f"- primary_blocker: {gap.get('primary_blocker', 'unknown')}",
+                f"- next step: {(next_steps[0] if isinstance(next_steps, list) and next_steps else 'N/A')}",
+            ]
+        )
+    else:
+        markdown_lines.extend(["- Model readiness diagnostics no disponibles en esta corrida."])
 
     markdown_lines.extend(["", "## Opportunity Matrix"])
     markdown_lines.extend(

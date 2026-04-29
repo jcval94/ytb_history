@@ -52,6 +52,8 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_model_manifest", "model_registry/latest_model_manifest.json"),
     ("nlp_feature_summary", "nlp_features/nlp_feature_summary.json"),
     ("topic_intelligence_summary", "topic_intelligence/topic_intelligence_summary.json"),
+    ("latest_model_readiness_diagnostics", "modeling/latest_model_readiness_diagnostics.json"),
+    ("latest_training_gap_report", "modeling/latest_training_gap_report.json"),
 )
 
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
@@ -63,6 +65,11 @@ BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
 MODEL_REPORT_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_model_suite_report_html", "model_reports/latest_model_suite_report.html", "text"),
     ("latest_content_driver_report_html", "model_reports/latest_content_driver_report.html", "text"),
+    ("latest_model_readiness_report_html", "modeling/latest_model_readiness_report.html", "text"),
+)
+
+READINESS_TABLE_SPECS: tuple[tuple[str, str], ...] = (
+    ("latest_target_coverage_report", "modeling/latest_target_coverage_report.csv"),
 )
 
 FRONTEND_TEMPLATE_ROOT = Path("apps/pages_dashboard/src")
@@ -116,6 +123,13 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         payload = _read_json_or_empty(json_path, table_name, warnings)
         row_counts[table_name] = _payload_row_count(payload)
         files_written.append(_write_json(site_root, f"data/{table_name}.json", payload))
+
+    for table_name, csv_relative in READINESS_TABLE_SPECS:
+        tables.append(table_name)
+        csv_path = data_root / csv_relative
+        table_payload = _csv_to_table_json(table_name=table_name, csv_path=csv_path, generated_at=generated_at, warnings=warnings)
+        row_counts[table_name] = int(table_payload["row_count"])
+        files_written.append(_write_json(site_root, f"data/{table_name}.json", table_payload))
 
     brief_outputs: dict[str, str] = {}
     for brief_name, brief_relative, payload_type in BRIEF_FILE_SPECS:

@@ -37,6 +37,20 @@ jobs:
       - name: Build model dataset
         run: python -m ytb_history.cli build-model-dataset
 
+      - name: Analyze model readiness
+        run: python -m ytb_history.cli analyze-model-readiness
+
+      - name: Smoke test model training
+        run: |
+          report_json="$(python -m ytb_history.cli smoke-test-model-training)"
+          echo "$report_json"
+          smoke_status="$(python -c 'import json,sys; print(json.load(sys.stdin).get("status", "unknown"))' <<< "$report_json")"
+          if [ "$smoke_status" = "success" ] || [ "$smoke_status" = "skipped_missing_ml_dependencies" ]; then
+            exit 0
+          fi
+          echo "Unexpected smoke-test-model-training status: $smoke_status"
+          exit 1
+
       - name: Build NLP feature layer
         run: python -m ytb_history.cli build-nlp-features
 
@@ -86,7 +100,13 @@ jobs:
         run: |
           git config user.name "youtube-tracker-bot"
           git config user.email "youtube-tracker-bot@users.noreply.github.com"
-          git add data/model_registry/ data/model_reports/
+          git add data/model_registry/ data/model_reports/ \
+            data/modeling/latest_model_readiness_diagnostics.json \
+            data/modeling/latest_model_readiness_timeline.csv \
+            data/modeling/latest_target_coverage_report.csv \
+            data/modeling/latest_training_gap_report.json \
+            data/modeling/latest_model_readiness_report.md \
+            data/modeling/latest_model_readiness_report.html
           if git diff --cached --quiet; then
             echo "No registry/report changes to commit"
             exit 0

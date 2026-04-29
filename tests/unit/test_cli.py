@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "predict-with-model-artifact"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -638,3 +638,52 @@ def test_cli_generate_creative_packages_does_not_call_api_flows(monkeypatch, cap
 
     assert code == 0
     assert json.loads(out)["status"] == "success"
+
+
+def test_cli_analyze_model_readiness_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "analyze_model_readiness",
+        lambda **_kwargs: {
+            "status": "not_ready",
+            "can_train_now": False,
+            "recommended_status": "not_ready",
+            "diagnostics_path": "data/modeling/latest_model_readiness_diagnostics.json",
+            "gap_report_path": "data/modeling/latest_training_gap_report.json",
+            "warnings": [],
+        },
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "analyze-model-readiness", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    payload = json.loads(out)
+    assert payload["status"] == "not_ready"
+    assert payload["can_train_now"] is False
+
+
+def test_cli_smoke_test_model_training_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "smoke_test_model_training",
+        lambda **_kwargs: {
+            "status": "success",
+            "models_trained": 3,
+            "predictions_generated": 100,
+            "leaderboard_rows": 9,
+            "feature_importance_rows": 20,
+            "artifact_path": "build/model_smoke_test/model_artifact",
+            "warnings": [],
+        },
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "smoke-test-model-training", "--output-dir", "build/model_smoke_test", "--n-rows", "300"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    payload = json.loads(out)
+    assert payload["status"] == "success"
+    assert payload["models_trained"] == 3
