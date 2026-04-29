@@ -180,6 +180,26 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
         )
         (data_dir / "decision" / "decision_summary.json").write_text(json.dumps({"total_action_candidates": 2}, ensure_ascii=False), encoding="utf-8")
 
+
+    _write_csv(
+        data_dir / "creative_packages" / "latest_creative_packages.csv",
+        ["creative_package_id", "package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
+        [
+            {"creative_package_id": "cp1", "package_type": "fast_reaction_package", "topic": "ai_tools", "creative_angle": "angulo 1", "recommended_format": "video corto", "creative_execution_score": 90, "recommended_next_step": "iniciar_preproduccion"},
+            {"creative_package_id": "cp2", "package_type": "evergreen_explainer_package", "topic": "finanzas", "creative_angle": "angulo 2", "recommended_format": "video explicativo", "creative_execution_score": 80, "recommended_next_step": "iniciar_preproduccion"},
+        ],
+    )
+    _write_csv(
+        data_dir / "creative_packages" / "latest_title_candidates.csv",
+        ["creative_package_id", "title_candidate"],
+        [{"creative_package_id": "cp1", "title_candidate": "Título sugerido 1"}, {"creative_package_id": "cp2", "title_candidate": "Título sugerido 2"}],
+    )
+    _write_csv(
+        data_dir / "creative_packages" / "latest_hook_candidates.csv",
+        ["creative_package_id", "hook_text"],
+        [{"creative_package_id": "cp1", "hook_text": "Hook sugerido 1"}, {"creative_package_id": "cp2", "hook_text": "Hook sugerido 2"}],
+    )
+
     return data_dir
 
 
@@ -204,6 +224,8 @@ def test_generate_weekly_brief_generates_outputs_and_sections(tmp_path: Path) ->
     assert "## Topic Opportunities" in markdown_text
     assert "## Content Drivers" in markdown_text
     assert "predictivas, no causales" in markdown_text
+    assert "## Creative Packages to Execute" in markdown_text
+    assert "## Suggested Titles & Hooks" in markdown_text
 
     payload = json.loads((data_dir / "briefs" / "latest_weekly_brief.json").read_text(encoding="utf-8"))
     assert "top_actions_this_week" in payload

@@ -46,6 +46,14 @@ const DATA_FILES = {
   latestContentDriverFeatureDirection: "./data/latest_content_driver_feature_direction.json",
   latestContentDriverGroupImportance: "./data/latest_content_driver_group_importance.json",
   latestContentDriverReportHtml: "./data/latest_content_driver_report.html",
+  latestCreativePackages: "./data/latest_creative_packages.json",
+  latestTitleCandidates: "./data/latest_title_candidates.json",
+  latestHookCandidates: "./data/latest_hook_candidates.json",
+  latestThumbnailBriefs: "./data/latest_thumbnail_briefs.json",
+  latestScriptOutlines: "./data/latest_script_outlines.json",
+  latestOriginalityChecks: "./data/latest_originality_checks.json",
+  latestProductionChecklist: "./data/latest_production_checklist.json",
+  creativePackagesSummary: "./data/creative_packages_summary.json",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
   latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"
 };
@@ -225,6 +233,7 @@ function renderAll() {
   renderTopics();
   renderNlp();
   renderContentDrivers();
+  renderCreativePackages();
   renderBrief();
 }
 
@@ -298,6 +307,7 @@ function renderOverview(videos, channels, scores) {
     <div id="ov-videos" class="grid-two"></div>
     <div id="ov-channels" class="grid-two"></div>
     <div id="ov-alerts"></div>
+    <div id="ov-creative"></div>
     <div id="ov-brief"></div>
   `;
 
@@ -354,6 +364,18 @@ function renderOverview(videos, channels, scores) {
     topAlertsWrap.innerHTML = `<h3 class="section-title">Signals to watch</h3><ul>${rows}</ul>`;
   }
   panel.querySelector("#ov-alerts")?.append(topAlertsWrap);
+
+  const creativeWrap = document.createElement("div");
+  const creativeTop = sortRows(tableRows("latestCreativePackages"), "creative_execution_score", "desc").slice(0, 3);
+  if (!creativeTop.length) {
+    creativeWrap.innerHTML = '<h3 class="section-title">Top Creative Packages</h3><p>No creative packages generated yet</p>';
+  } else {
+    const items = creativeTop
+      .map((row) => `<li>${escapeHtml(String(row.topic || "--"))} · ${escapeHtml(String(row.package_type || "--"))} · score ${escapeHtml(String(row.creative_execution_score || "--"))}</li>`)
+      .join("");
+    creativeWrap.innerHTML = `<h3 class="section-title">Top Creative Packages</h3><ul>${items}</ul>`;
+  }
+  panel.querySelector("#ov-creative")?.append(creativeWrap);
 
   const briefWrap = document.createElement("div");
   const briefJson = state.data.latestWeeklyBriefJson;
@@ -537,6 +559,76 @@ function topAlertsBySeverity(limit = 5) {
 function severityBadge(severity) {
   const value = String(severity || "low").toLowerCase();
   return `<span class="severity-badge severity-${escapeHtml(value)}">${escapeHtml(value)}</span>`;
+}
+
+function renderCreativePackages() {
+  const panel = document.querySelector("#tab-creative");
+  if (!panel) return;
+  const packages = tableRows("latestCreativePackages");
+  const titles = tableRows("latestTitleCandidates");
+  const hooks = tableRows("latestHookCandidates");
+  const thumbs = tableRows("latestThumbnailBriefs");
+  const outlines = tableRows("latestScriptOutlines");
+  const originality = tableRows("latestOriginalityChecks");
+  const checklist = tableRows("latestProductionChecklist");
+  const summary = state.data.creativePackagesSummary || {};
+
+  const typeCounts = summary.package_type_counts || {};
+  const topPackageType = Object.keys(typeCounts).sort((a, b) => asNumber(typeCounts[b]) - asNumber(typeCounts[a]))[0] || "--";
+  const cards = [
+    ["total_packages", summary.total_packages ?? packages.length],
+    ["avg_originality_score", summary.avg_originality_score ?? "--"],
+    ["high_copy_risk_count", summary.high_copy_risk_count ?? 0],
+    ["top_package_type", topPackageType]
+  ].map(([k,v]) => `<article class="kpi-card"><h3>${escapeHtml(String(k))}</h3><p>${escapeHtml(String(v))}</p></article>`).join("");
+
+  panel.innerHTML = `<div class="kpi-grid">${cards}</div><div id="creative-filters"></div><div id="creative-tables"></div>`;
+
+  const packageTypes = [...new Set(packages.map((r) => String(r.package_type || "")).filter(Boolean))].sort();
+  const topics = [...new Set(packages.map((r) => String(r.topic || "")).filter(Boolean))].sort();
+  const timeframes = [...new Set(packages.map((r) => String(r.recommended_timeframe || "")).filter(Boolean))].sort();
+  const statuses = [...new Set(titles.map((r) => String(r.originality_status || "")).filter(Boolean))].sort();
+
+  const filtersHtml = `
+    <h3 class="section-title">Creative Filters</h3>
+    <div class="filters">
+      <select id="creative-package-type"><option value="">All package types</option>${packageTypes.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("")}</select>
+      <select id="creative-topic"><option value="">All topics</option>${topics.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("")}</select>
+      <select id="creative-originality-status"><option value="">All originality</option>${statuses.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("")}</select>
+      <select id="creative-timeframe"><option value="">All timeframes</option>${timeframes.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("")}</select>
+    </div>
+  `;
+  panel.querySelector("#creative-filters").innerHTML = filtersHtml;
+
+  const renderTables = () => {
+    const fType = document.querySelector("#creative-package-type")?.value || "";
+    const fTopic = document.querySelector("#creative-topic")?.value || "";
+    const fStatus = document.querySelector("#creative-originality-status")?.value || "";
+    const fTime = document.querySelector("#creative-timeframe")?.value || "";
+    const filteredPackages = packages.filter((r) => (!fType || r.package_type === fType) && (!fTopic || r.topic === fTopic) && (!fTime || r.recommended_timeframe === fTime));
+    const pkgIds = new Set(filteredPackages.map((r) => String(r.creative_package_id || "")));
+    const filteredTitles = titles.filter((r) => pkgIds.has(String(r.creative_package_id || "")) && (!fStatus || r.originality_status === fStatus));
+    const filteredHooks = hooks.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
+    const filteredThumbs = thumbs.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
+    const filteredOutlines = outlines.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
+    const filteredOriginality = originality.filter((r) => pkgIds.has(String(r.creative_package_id || "")) && (!fStatus || r.originality_status === fStatus));
+    const filteredChecklist = checklist.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
+
+    const target = panel.querySelector("#creative-tables");
+    target.innerHTML = '<div id="creative-packages"></div><div id="creative-titles"></div><div id="creative-hooks"></div><div id="creative-thumbs"></div><div id="creative-outlines"></div><div id="creative-originality"></div><div id="creative-checklist"></div>';
+    renderTable(target.querySelector("#creative-packages"), ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "originality_score", "recommended_timeframe"], sortRows(filteredPackages, "creative_execution_score", "desc"), { title: "Top Creative Packages" });
+    renderTable(target.querySelector("#creative-titles"), ["title_candidate", "title_pattern", "estimated_strength", "originality_status", "copy_risk_score"], sortRows(filteredTitles, "estimated_strength", "desc"), { title: "Title Candidates" });
+    renderTable(target.querySelector("#creative-hooks"), ["hook_text", "hook_type", "expected_use", "risk"], filteredHooks, { title: "Hooks" });
+    renderTable(target.querySelector("#creative-thumbs"), ["main_text", "visual_metaphor", "emotion", "layout_suggestion"], filteredThumbs, { title: "Thumbnail Briefs" });
+    renderTable(target.querySelector("#creative-outlines"), ["structure_type", "intro", "section_1", "section_2", "section_3", "closing"], filteredOutlines, { title: "Script Outlines" });
+    renderTable(target.querySelector("#creative-originality"), ["candidate_type", "copy_risk_score", "originality_status"], sortRows(filteredOriginality, "copy_risk_score", "desc"), { title: "Originality Checks" });
+    renderTable(target.querySelector("#creative-checklist"), ["production_step", "estimated_effort", "required_input"], filteredChecklist, { title: "Production Checklist" });
+  };
+
+  ["#creative-package-type", "#creative-topic", "#creative-originality-status", "#creative-timeframe"].forEach((sel) => {
+    panel.querySelector(sel)?.addEventListener("change", renderTables);
+  });
+  renderTables();
 }
 
 function renderBrief() {

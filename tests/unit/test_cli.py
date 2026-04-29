@@ -612,7 +612,7 @@ def test_cli_build_model_intelligence_does_not_call_api_flows(monkeypatch, capsy
 def test_cli_generate_creative_packages_prints_json(monkeypatch, capsys) -> None:
     monkeypatch.setattr(
         cli,
-        "build_creative_packages",
+        "generate_creative_packages",
         lambda **kwargs: {"status": "success", "output_dir": kwargs["data_dir"]},
     )
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-creative-packages", "--data-dir", "custom/data"])
@@ -630,7 +630,7 @@ def test_cli_generate_creative_packages_does_not_call_api_flows(monkeypatch, cap
 
     monkeypatch.setattr(cli, "run_pipeline", _boom)
     monkeypatch.setattr(cli, "run_dry_run", _boom)
-    monkeypatch.setattr(cli, "build_creative_packages", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr(cli, "generate_creative_packages", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-creative-packages"])
 
     code = cli.main()
@@ -687,3 +687,26 @@ def test_cli_smoke_test_model_training_prints_json(monkeypatch, capsys) -> None:
     payload = json.loads(out)
     assert payload["status"] == "success"
     assert payload["models_trained"] == 3
+
+def test_cli_generate_creative_packages_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "generate_creative_packages",
+        lambda **kwargs: {
+            "status": "success",
+            "creative_packages_dir": f"{kwargs['data_dir']}/creative_packages",
+            "total_packages": 2,
+            "outputs": {},
+            "warnings": [],
+        },
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-creative-packages", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    payload = json.loads(out)
+    assert payload["status"] == "success"
+    assert payload["creative_packages_dir"] == "custom/data/creative_packages"
+    assert payload["total_packages"] == 2

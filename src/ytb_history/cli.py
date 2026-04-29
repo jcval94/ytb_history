@@ -10,7 +10,7 @@ from ytb_history.services.alerts_service import generate_alerts
 from ytb_history.services.analytics_service import build_analytics
 from ytb_history.services.decision_service import build_decision_layer
 from ytb_history.services.brief_service import generate_weekly_brief
-from ytb_history.services.creative_packages_service import build_creative_packages
+from ytb_history.services.creative_packages_service import generate_creative_packages
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
 from ytb_history.services.model_dataset_service import build_model_dataset
@@ -221,7 +221,7 @@ def main() -> int:
         return 0
 
     if args.command == "generate-creative-packages":
-        summary = build_creative_packages(data_dir=args.data_dir)
+        summary = generate_creative_packages(data_dir=args.data_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

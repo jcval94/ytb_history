@@ -1,4 +1,4 @@
-"""Creative execution packages built from decision/topic/model intelligence artifacts."""
+"""Creative execution packages generated from existing intelligence layers."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from typing import Any
 CREATIVE_PACKAGES_COLUMNS = [
     "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "evidence_json", "dashboard_tab", "recommended_next_step",
 ]
-TITLE_COLUMNS = ["creative_package_id", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "estimated_strength", "notes"]
+TITLE_COLUMNS = ["creative_package_id", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "originality_status", "estimated_strength", "notes"]
 HOOK_COLUMNS = ["creative_package_id", "hook_id", "hook_text", "hook_type", "expected_use", "risk"]
 THUMB_COLUMNS = ["creative_package_id", "thumbnail_brief_id", "main_text", "visual_metaphor", "emotion", "layout_suggestion", "risk_notes"]
 OUTLINE_COLUMNS = ["creative_package_id", "outline_id", "structure_type", "intro", "section_1", "section_2", "section_3", "closing", "cta"]
@@ -26,7 +26,19 @@ TITLE_TEMPLATES = {
     "evergreen_explainer_package": ["Cómo entender {topic} sin complicarte", "{topic}: guía simple para empezar", "Lo básico de {topic} explicado fácil"],
     "contrarian_package": ["El problema con la forma en que todos hablan de {topic}", "La verdad incómoda sobre {topic}", "Por qué {topic} no es tan simple como parece"],
     "tutorial_package": ["Cómo usar {topic} paso a paso", "Guía rápida para aplicar {topic}", "{topic}: tutorial práctico desde cero"],
+    "comparison_package": ["{topic}: comparación simple para decidir mejor", "Qué opción conviene más dentro de {topic}", "{topic}: diferencias que sí importan"],
     "repackage_package": ["Una mejor forma de explicar {topic}", "El ángulo de {topic} que casi nadie está usando", "Cómo replantear {topic} para hacerlo más claro"],
+    "watchlist_package": ["{topic}: lo que conviene observar antes de decidir", "La señal de {topic} que todavía necesita más datos", "{topic}: tendencia o ruido, qué vigilar"],
+}
+
+PRODUCTION_FEASIBILITY = {
+    "fast_reaction_package": 75.0,
+    "tutorial_package": 65.0,
+    "evergreen_explainer_package": 80.0,
+    "comparison_package": 60.0,
+    "contrarian_package": 70.0,
+    "repackage_package": 75.0,
+    "watchlist_package": 50.0,
 }
 
 
@@ -53,12 +65,12 @@ def _safe_float(value: Any) -> float | None:
         return None
     try:
         return float(str(value))
-    except (ValueError, TypeError):
+    except (TypeError, ValueError):
         return None
 
 
 def _tokens(text: str) -> set[str]:
-    return {t for t in re.findall(r"[a-z0-9áéíóúñ]+", text.lower()) if t}
+    return {token for token in re.findall(r"[a-z0-9áéíóúñ]+", text.lower()) if token}
 
 
 def _jaccard(a: str, b: str) -> float:
@@ -70,11 +82,23 @@ def _jaccard(a: str, b: str) -> float:
     return len(ta & tb) / len(ta | tb)
 
 
+def _originality_status(copy_risk_score: float) -> str:
+    if copy_risk_score >= 70:
+        return "risky"
+    if copy_risk_score >= 40:
+        return "review"
+    return "safe"
+
+
 def _package_type(row: dict[str, str]) -> str:
     action_type = (row.get("action_type") or "").strip()
     opp_type = (row.get("opportunity_type") or "").strip()
-    saturation = (_safe_float(row.get("topic_saturation_score")) or 0.0)
-    opp_score = (_safe_float(row.get("topic_opportunity_score")) or 0.0)
+    saturation = _safe_float(row.get("topic_saturation_score")) or 0.0
+    opp_score = _safe_float(row.get("topic_opportunity_score")) or 0.0
+    tutorial = _safe_float(row.get("tutorial_semantic_score")) or 0.0
+    hook_semantic_type = (row.get("hook_semantic_type") or "").strip()
+    title_pattern = (row.get("title_pattern") or "").strip()
+
     if action_type == "create_fast_reaction" or opp_type == "emerging_topic":
         return "fast_reaction_package"
     if action_type == "create_evergreen" or opp_type == "evergreen_angle":
@@ -83,23 +107,31 @@ def _package_type(row: dict[str, str]) -> str:
         return "repackage_package"
     if saturation >= 70 and opp_score >= 50:
         return "contrarian_package"
-    if (_safe_float(row.get("tutorial_semantic_score")) or 0.0) > 0 or row.get("title_pattern") == "tutorial_how_to":
+    if tutorial >= 60 or hook_semantic_type == "tutorial" or title_pattern == "tutorial_how_to":
         return "tutorial_package"
     if action_type in {"monitor_next_run", "wait_for_confidence"}:
         return "watchlist_package"
     return "comparison_package"
 
 
-def _score(values: dict[str, float | None]) -> float:
-    w = {"source_decision_score": 0.35, "topic_opportunity_score": 0.20, "title_pattern_success_score": 0.15, "originality_score": 0.15, "production_feasibility_score": 0.10, "confidence_score": 0.05}
-    active = {k: weight for k, weight in w.items() if values.get(k) is not None}
-    if not active:
+def _weighted_score(values: dict[str, float | None]) -> float:
+    weights = {
+        "source_decision_score": 0.35,
+        "topic_opportunity_score": 0.20,
+        "title_pattern_success_score": 0.15,
+        "originality_score": 0.15,
+        "production_feasibility_score": 0.10,
+        "confidence_score": 0.05,
+    }
+    available = {k: w for k, w in weights.items() if values.get(k) is not None}
+    if not available:
         return 0.0
-    total_w = sum(active.values())
-    return sum((values[k] or 0.0) * (aw / total_w) for k, aw in active.items())
+    normalizer = sum(available.values())
+    score = sum((values[k] or 0.0) * (w / normalizer) for k, w in available.items())
+    return round(max(0.0, min(100.0, score)), 4)
 
 
-def build_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
+def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
     root = Path(data_dir)
     out_dir = root / "creative_packages"
     warnings: list[str] = []
@@ -112,85 +144,170 @@ def build_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
 
     actions = _read_csv(action_path) if action_path.exists() else []
     opportunities = _read_csv(opp_path) if opp_path.exists() else []
-    topic_rows = _read_csv(topic_path) if topic_path.exists() else []
-    pattern_rows = _read_csv(pattern_path) if pattern_path.exists() else []
-    if not actions:
-        warnings.append("missing_or_empty: decision/latest_action_candidates.csv")
+    topics = _read_csv(topic_path) if topic_path.exists() else []
+    patterns = _read_csv(pattern_path) if pattern_path.exists() else []
+
+    if not action_path.exists():
+        warnings.append("missing_input:decision/latest_action_candidates.csv")
+    if not opp_path.exists():
+        warnings.append("missing_input:decision/latest_content_opportunities.csv")
+    if not topic_path.exists():
+        warnings.append("missing_input:topic_intelligence/latest_topic_opportunities.csv")
+    if not patterns:
+        warnings.append("missing_or_empty:topic_intelligence/latest_title_pattern_metrics.csv")
 
     opp_by_video = {r.get("source_video_id", ""): r for r in opportunities}
-    topic_by_video = {r.get("video_id", ""): r for r in topic_rows}
-    pattern_score = _safe_float(pattern_rows[0].get("success_score")) if pattern_rows else None
+    topic_by_video = {r.get("video_id", ""): r for r in topics}
+    pattern_success = _safe_float(patterns[0].get("success_score")) if patterns else None
 
-    creative_rows = []
-    title_rows = []
-    hook_rows = []
-    thumb_rows = []
-    outline_rows = []
-    originality_rows = []
-    checklist_rows = []
+    creative_rows: list[dict[str, Any]] = []
+    title_rows: list[dict[str, Any]] = []
+    hook_rows: list[dict[str, Any]] = []
+    thumb_rows: list[dict[str, Any]] = []
+    outline_rows: list[dict[str, Any]] = []
+    originality_rows: list[dict[str, Any]] = []
+    checklist_rows: list[dict[str, Any]] = []
 
-    for idx, row in enumerate(actions, start=1):
-        video_id = row.get("video_id") or row.get("entity_id") or ""
-        topic_row = topic_by_video.get(video_id, {})
+    for idx, action in enumerate(actions, start=1):
+        video_id = action.get("video_id") or action.get("entity_id") or ""
         opp = opp_by_video.get(video_id, {})
-        topic = topic_row.get("topic") or opp.get("opportunity_type") or "tema clave"
-        package_type = _package_type({**row, **topic_row, **opp})
-        pkg_id = f"cp_{idx}_{hashlib.sha1((row.get('action_id','')+video_id).encode()).hexdigest()[:8]}"
-        source_title = row.get("title") or opp.get("source_title") or ""
+        topic_row = topic_by_video.get(video_id, {})
+        merged = {**action, **opp, **topic_row}
+        package_type = _package_type(merged)
+        topic = topic_row.get("topic") or action.get("topic") or opp.get("opportunity_type") or "tema clave"
+        source_title = action.get("title") or opp.get("source_title") or ""
+        source_score = _safe_float(action.get("decision_score"))
+        topic_score = _safe_float(topic_row.get("topic_opportunity_score")) or _safe_float(opp.get("topic_opportunity_score"))
+        pattern_score = _safe_float(topic_row.get("title_pattern_success_score")) or pattern_success or 50.0
+        confidence = _safe_float(action.get("metric_confidence_score"))
 
-        default_title_score = _safe_float(topic_row.get("title_pattern_success_score")) or pattern_score or 50.0
-        sim = _jaccard(source_title, f"{topic}")
-        copy_risk = round(sim * 100, 4)
-        originality = round(max(0.0, 100.0 - copy_risk), 4)
+        creative_package_id = f"cp_{idx}_{hashlib.sha1((action.get('action_id','') + video_id).encode()).hexdigest()[:10]}"
+        feasibility = PRODUCTION_FEASIBILITY[package_type]
 
-        score_inputs = {
-            "source_decision_score": _safe_float(row.get("decision_score")),
-            "topic_opportunity_score": _safe_float(topic_row.get("topic_opportunity_score")),
-            "title_pattern_success_score": default_title_score,
-            "originality_score": originality,
-            "production_feasibility_score": 70.0 if package_type != "fast_reaction_package" else 60.0,
-            "confidence_score": _safe_float(row.get("metric_confidence_score")),
-        }
-        creative_score = round(_score(score_inputs), 4)
-
-        creative_rows.append({
-            "creative_package_id": pkg_id, "generated_at": now, "source_action_id": row.get("action_id", ""), "source_opportunity_id": opp.get("opportunity_id", ""), "source_video_id": video_id,
-            "source_channel_name": row.get("channel_name") or opp.get("source_channel", ""), "source_title": source_title, "topic": topic, "package_type": package_type,
-            "creative_angle": f"Ejecutar {topic} con enfoque {package_type.replace('_package','').replace('_',' ')}", "recommended_format": "video corto explicativo" if package_type == "fast_reaction_package" else "video principal", "recommended_timeframe": row.get("timeframe") or opp.get("recommended_timeframe") or "this_week",
-            "source_decision_score": score_inputs["source_decision_score"] or "", "topic_opportunity_score": score_inputs["topic_opportunity_score"] or "", "title_pattern_success_score": default_title_score,
-            "originality_score": originality, "copy_risk_score": copy_risk, "production_feasibility_score": score_inputs["production_feasibility_score"], "creative_execution_score": creative_score,
-            "confidence_score": score_inputs["confidence_score"] or "", "evidence_json": json.dumps({"action_type": row.get("action_type"), "signal_type": row.get("signal_type")}, ensure_ascii=False), "dashboard_tab": "creative_execution", "recommended_next_step": "iniciar_preproduccion" if package_type != "watchlist_package" else "mantener_watchlist",
-        })
-
-        templates = TITLE_TEMPLATES.get(package_type, ["{topic}: análisis claro y accionable", "Cómo abordar {topic} con criterio", "{topic}: qué priorizar ahora"])[:3]
-        for t_idx, template in enumerate(templates, start=1):
+        templates = TITLE_TEMPLATES[package_type]
+        candidate_scores: list[tuple[float, float]] = []
+        for title_idx, template in enumerate(templates, start=1):
             candidate = template.format(topic=topic)
             if candidate.strip().lower() == source_title.strip().lower():
-                candidate = f"{candidate} (edición)"
-            t_sim = _jaccard(source_title, candidate)
-            t_risk = round(t_sim * 100, 4)
-            t_orig = round(max(0.0, 100.0 - t_risk), 4)
-            title_rows.append({"creative_package_id": pkg_id, "title_candidate_id": f"{pkg_id}_t{t_idx}", "title_candidate": candidate, "title_pattern": package_type, "title_pattern_success_score": default_title_score, "copy_risk_score": t_risk, "originality_score": t_orig, "estimated_strength": round((default_title_score * 0.6) + (t_orig * 0.4), 4), "notes": "deterministic_template"})
-            originality_rows.append({"creative_package_id": pkg_id, "source_title": source_title, "candidate_text": candidate, "candidate_type": "title", "lexical_similarity": round(t_sim, 4), "token_overlap_ratio": round(t_sim, 4), "copy_risk_score": t_risk, "originality_score": t_orig, "originality_status": "risky" if t_risk >= 70 else "ok"})
+                candidate = f"{candidate} - análisis actualizado"
+            overlap = _jaccard(source_title, candidate)
+            copy_risk = round(overlap * 100, 4)
+            originality = round(max(0.0, 100.0 - copy_risk), 4)
+            status = _originality_status(copy_risk)
+            candidate_scores.append((copy_risk, originality))
+
+            title_rows.append({
+                "creative_package_id": creative_package_id,
+                "title_candidate_id": f"{creative_package_id}_t{title_idx}",
+                "title_candidate": candidate,
+                "title_pattern": package_type,
+                "title_pattern_success_score": pattern_score,
+                "copy_risk_score": copy_risk,
+                "originality_score": originality,
+                "originality_status": status,
+                "estimated_strength": round((0.6 * pattern_score) + (0.4 * originality), 4),
+                "notes": "deterministic_template",
+            })
+            originality_rows.append({
+                "creative_package_id": creative_package_id,
+                "source_title": source_title,
+                "candidate_text": candidate,
+                "candidate_type": "title",
+                "lexical_similarity": round(overlap, 4),
+                "token_overlap_ratio": round(overlap, 4),
+                "copy_risk_score": copy_risk,
+                "originality_score": originality,
+                "originality_status": status,
+            })
+
+        avg_copy_risk = round(sum(score[0] for score in candidate_scores) / len(candidate_scores), 4)
+        avg_originality = round(sum(score[1] for score in candidate_scores) / len(candidate_scores), 4)
+
+        score_inputs = {
+            "source_decision_score": source_score,
+            "topic_opportunity_score": topic_score,
+            "title_pattern_success_score": pattern_score,
+            "originality_score": avg_originality,
+            "production_feasibility_score": feasibility,
+            "confidence_score": confidence,
+        }
+
+        creative_rows.append({
+            "creative_package_id": creative_package_id,
+            "generated_at": now,
+            "source_action_id": action.get("action_id", ""),
+            "source_opportunity_id": opp.get("opportunity_id", ""),
+            "source_video_id": video_id,
+            "source_channel_name": action.get("channel_name") or opp.get("source_channel", ""),
+            "source_title": source_title,
+            "topic": topic,
+            "package_type": package_type,
+            "creative_angle": f"Enfoque {package_type.replace('_package', '').replace('_', ' ')} para {topic}",
+            "recommended_format": "video corto" if package_type == "fast_reaction_package" else "video explicativo",
+            "recommended_timeframe": action.get("timeframe") or opp.get("recommended_timeframe") or "this_week",
+            "source_decision_score": source_score if source_score is not None else "",
+            "topic_opportunity_score": topic_score if topic_score is not None else "",
+            "title_pattern_success_score": pattern_score,
+            "originality_score": avg_originality,
+            "copy_risk_score": avg_copy_risk,
+            "production_feasibility_score": feasibility,
+            "creative_execution_score": _weighted_score(score_inputs),
+            "confidence_score": confidence if confidence is not None else "",
+            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", "")}, ensure_ascii=False),
+            "dashboard_tab": "creative_execution",
+            "recommended_next_step": "mantener_watchlist" if package_type == "watchlist_package" else "iniciar_preproduccion",
+        })
 
         hooks = [
             ("question_hook", f"¿Qué cambia realmente con {topic}?", "intro", "low"),
-            ("contrast_hook", f"Todos hablan de {topic}, pero casi nadie explica el costo.", "intro", "medium"),
-            ("data_hook", f"Hay señales de crecimiento en {topic} que no conviene ignorar.", "intro", "low"),
-            ("mistake_hook", f"Error común: copiar {topic} sin adaptar el contexto.", "middle", "medium"),
-            ("promise_hook", f"En minutos tendrás un plan claro para {topic}.", "intro", "low"),
-            ("curiosity_hook", f"El detalle menos obvio de {topic} cambia toda la estrategia.", "intro", "medium"),
+            ("contrast_hook", f"Muchos simplifican {topic}, pero hay matices críticos.", "intro", "medium"),
+            ("data_hook", f"Los datos recientes de {topic} muestran una señal accionable.", "intro", "low"),
+            ("mistake_hook", f"Error común: ejecutar {topic} sin validar evidencia.", "middle", "medium"),
+            ("promise_hook", f"En este video saldrás con un plan claro sobre {topic}.", "intro", "low"),
+            ("curiosity_hook", f"Hay un detalle de {topic} que cambia toda la decisión.", "intro", "medium"),
         ]
-        for h_idx, (h_type, text, use, risk) in enumerate(hooks, start=1):
-            hook_rows.append({"creative_package_id": pkg_id, "hook_id": f"{pkg_id}_h{h_idx}", "hook_text": text, "hook_type": h_type, "expected_use": use, "risk": risk})
+        for i, (hook_type, text, expected_use, risk) in enumerate(hooks, start=1):
+            hook_rows.append({"creative_package_id": creative_package_id, "hook_id": f"{creative_package_id}_h{i}", "hook_text": text, "hook_type": hook_type, "expected_use": expected_use, "risk": risk})
 
-        thumb_rows.append({"creative_package_id": pkg_id, "thumbnail_brief_id": f"{pkg_id}_tb1", "main_text": topic[:48], "visual_metaphor": "flecha ascendente vs señal de alerta", "emotion": "urgencia" if package_type == "fast_reaction_package" else "claridad", "layout_suggestion": "texto corto a la izquierda, elemento visual a la derecha", "risk_notes": "evitar clickbait o claims absolutos"})
+        thumb_rows.append({
+            "creative_package_id": creative_package_id,
+            "thumbnail_brief_id": f"{creative_package_id}_tb1",
+            "main_text": topic[:48],
+            "visual_metaphor": "señal vs ruido",
+            "emotion": "urgencia" if package_type == "fast_reaction_package" else "claridad",
+            "layout_suggestion": "texto corto lado izquierdo + elemento visual lado derecho",
+            "risk_notes": "evitar promesas absolutas y claims no verificables",
+        })
 
-        structure = "quick_reaction" if package_type == "fast_reaction_package" else "explain_problem_solution"
-        outline_rows.append({"creative_package_id": pkg_id, "outline_id": f"{pkg_id}_o1", "structure_type": structure, "intro": f"Contexto de {topic} y por qué importa ahora", "section_1": "Qué está pasando", "section_2": "Qué significa para la audiencia objetivo", "section_3": "Cómo actuar en la próxima pieza", "closing": "Resumen y riesgos", "cta": "Comenta qué ángulo quieres que profundicemos"})
+        structure_map = {
+            "fast_reaction_package": "quick_reaction",
+            "comparison_package": "compare_options",
+            "tutorial_package": "tutorial_steps",
+            "contrarian_package": "myth_vs_reality",
+            "repackage_package": "case_breakdown",
+        }
+        structure = structure_map.get(package_type, "explain_problem_solution")
+        outline_rows.append({
+            "creative_package_id": creative_package_id,
+            "outline_id": f"{creative_package_id}_o1",
+            "structure_type": structure,
+            "intro": f"Por qué {topic} importa ahora",
+            "section_1": "Contexto y señal principal",
+            "section_2": "Interpretación para audiencia objetivo",
+            "section_3": "Plan de ejecución inmediato",
+            "closing": "Riesgos y próximos pasos",
+            "cta": "Comenta qué ángulo quieres profundizar",
+        })
 
-        for s, step in enumerate(["revisar evidencia", "elegir título", "definir hook", "preparar guion", "preparar miniatura", "publicar/monitorear"], start=1):
-            checklist_rows.append({"creative_package_id": pkg_id, "step_order": s, "production_step": step, "estimated_effort": "bajo" if s in {1, 2, 3} else "medio", "required_input": "artifact_data", "done_default": "false"})
+        for step_order, step in enumerate(["revisar evidencia", "elegir título", "definir hook", "preparar guion", "preparar miniatura", "publicar/monitorear"], start=1):
+            checklist_rows.append({
+                "creative_package_id": creative_package_id,
+                "step_order": step_order,
+                "production_step": step,
+                "estimated_effort": "bajo" if step_order <= 3 else "medio",
+                "required_input": "artifacts",
+                "done_default": "false",
+            })
 
     _write_csv(out_dir / "latest_creative_packages.csv", CREATIVE_PACKAGES_COLUMNS, creative_rows)
     _write_csv(out_dir / "latest_title_candidates.csv", TITLE_COLUMNS, title_rows)
@@ -200,14 +317,40 @@ def build_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
     _write_csv(out_dir / "latest_originality_checks.csv", ORIGINALITY_COLUMNS, originality_rows)
     _write_csv(out_dir / "latest_production_checklist.csv", CHECKLIST_COLUMNS, checklist_rows)
 
+    outputs = {
+        "creative_packages": str(out_dir / "latest_creative_packages.csv"),
+        "title_candidates": str(out_dir / "latest_title_candidates.csv"),
+        "hook_candidates": str(out_dir / "latest_hook_candidates.csv"),
+        "thumbnail_briefs": str(out_dir / "latest_thumbnail_briefs.csv"),
+        "script_outlines": str(out_dir / "latest_script_outlines.csv"),
+        "originality_checks": str(out_dir / "latest_originality_checks.csv"),
+        "production_checklist": str(out_dir / "latest_production_checklist.csv"),
+        "summary": str(out_dir / "creative_packages_summary.json"),
+    }
+
     summary = {
         "generated_at": now,
         "total_packages": len(creative_rows),
-        "package_type_counts": dict(Counter(r["package_type"] for r in creative_rows)),
-        "top_packages": sorted([{"creative_package_id": r["creative_package_id"], "creative_execution_score": r["creative_execution_score"]} for r in creative_rows], key=lambda x: x["creative_execution_score"], reverse=True)[:5],
-        "avg_originality_score": round(sum(float(r["originality_score"]) for r in creative_rows) / len(creative_rows), 4) if creative_rows else 0.0,
-        "high_copy_risk_count": sum(1 for r in originality_rows if float(r["copy_risk_score"]) >= 70),
+        "package_type_counts": dict(Counter(row["package_type"] for row in creative_rows)),
+        "top_packages": sorted([
+            {"creative_package_id": row["creative_package_id"], "creative_execution_score": row["creative_execution_score"]}
+            for row in creative_rows
+        ], key=lambda row: float(row["creative_execution_score"]), reverse=True)[:5],
+        "avg_originality_score": round(sum(float(row["originality_score"]) for row in creative_rows) / len(creative_rows), 4) if creative_rows else 0.0,
+        "high_copy_risk_count": sum(1 for row in originality_rows if float(row["copy_risk_score"]) >= 70),
         "warnings": warnings,
     }
     (out_dir / "creative_packages_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    return {"status": "warning" if warnings else "success", "warnings": warnings, "output_dir": str(out_dir), "summary": summary}
+
+    return {
+        "status": "warning" if warnings else "success",
+        "creative_packages_dir": str(out_dir),
+        "total_packages": len(creative_rows),
+        "outputs": outputs,
+        "warnings": warnings,
+    }
+
+
+def build_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
+    """Backward compatible alias."""
+    return generate_creative_packages(data_dir=data_dir)
