@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,10,61.0829,73.1311,67.1,5BbGrGFI2gQ,Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,24,62.2935,73.4449,68.6458,ndkH5fZSIvs,Surprising People That Have Social Media,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,0,0.0,0.0,0.0,,,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,136,50.0063,62.5065,68.9032,dA8XrnlFY5w,Mis ganancias diarias | ¡Invertí 50 mil en REVOLUT!,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,39,61.2441,88.0,67.6538,UCLe_q9axMaeTbjN0hy1Z9xA,TOP 5 HIGHEST DEBT INTEREST RATES ON FINANCIAL AUDIT,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,53,62.8081,85.2503,76.8491,UCF0L4jd9LcSIxsj5gKITMqQ,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,61.3834,61.3834,58.5,RWGr8LwG3TY,El Oscuro y Violento Mundo de la IA para NIÑOS,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,181,50.1505,64.7963,67.9733,Z-xAO96GQtU,Esto es lo primero que vas a hacer mañana  #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,53,62.6663,88.0,71.5943,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer RUINED Financial Audit,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,86,63.1571,85.8636,76.3634,UCF0L4jd9LcSIxsj5gKITMqQ,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
