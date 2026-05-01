@@ -1,13 +1,13 @@
 {
-  "execution_date": "2026-04-30T11:10:02.884862+00:00",
-  "videos_total": 752,
-  "channels_total": 108,
-  "total_views": 148414231,
-  "total_views_delta": 12203119,
-  "total_likes_delta": 404297,
-  "total_comments_delta": 13529,
-  "avg_engagement_rate": 0.05412118641810921,
-  "generated_at": "2026-04-30T11:11:16.525496+00:00",
-  "source_export_dir": "data/exports/dt=2026-04-30/run=111002Z",
+  "execution_date": "2026-05-01T10:45:40.740554+00:00",
+  "videos_total": 842,
+  "channels_total": 115,
+  "total_views": 173412732,
+  "total_views_delta": 14486647,
+  "total_likes_delta": 441785,
+  "total_comments_delta": 16570,
+  "avg_engagement_rate": 0.05426560119047615,
+  "generated_at": "2026-05-01T10:46:55.021581+00:00",
+  "source_export_dir": "data/exports/dt=2026-05-01/run=104540Z",
   "warnings": []
 }
