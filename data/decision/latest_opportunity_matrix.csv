@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,3,69.4906,75.7047,74.0,_SdzVNht_nU,Todo Lo Que He Aprendido Estando Cerca Del Top 1% del Mundo,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,3,62.8519,71.8458,66.1667,dU5sDKcwN9E,YOU WILL NEVER SEE DISCIPLINE THE SAME AGAIN,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,1,66.0987,66.0987,66.0,mDh52QTqR0o,Revisando las  noticias en vivo #14. El nuevo intento de desvivir a Trump.,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,210,51.4641,65.1374,70.0,nZlhHf8vSbU,Por esto ser realista ha matado a nuestra generación #shorts,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,48,64.6397,88.0,72.7604,UCLe_q9axMaeTbjN0hy1Z9xA,Mustang VS Tesla,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,54,66.3707,84.7955,78.8102,UCF0L4jd9LcSIxsj5gKITMqQ,Nunca haría esto #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,61.6419,61.6419,58.5,gEUMAljLr78,"¿Por qué los RICOS fingen ser ""POBRES""?",Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,218,53.7886,66.6174,74.0665,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,56,61.1559,88.0,67.5446,UCWBWgCD4oAqT3hUeq40SCUw,I Made Mascots For Stores That Don’t Have Them,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,55,66.606,84.8853,81.8818,UCF0L4jd9LcSIxsj5gKITMqQ,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
