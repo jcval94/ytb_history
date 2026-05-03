@@ -1,4 +1,982 @@
 grain,period_start,period_end,video_id,channel_id,channel_name,title,period_views_delta,period_likes_delta,period_comments_delta,period_avg_engagement_rate,period_snapshots,latest_views,latest_likes,latest_comments
+daily,2026-05-03,2026-05-03,QPWScf-86po,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Made Mascots For Stores That Don’t Have Them,1322307,36571,477,0.033008,1,4907858,159696,2303
+daily,2026-05-03,2026-05-03,WgcdDVIUXcI,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,¿Cómo funcionan las gomas de borrar?,439060,3322,15,0.017583,1,6408393,112340,339
+daily,2026-05-03,2026-05-03,OrI86PV-aPg,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Ozempic está DESTRUYENDO negocios que NADIE esperaba,428830,17535,378,0.047235,1,798375,36787,924
+daily,2026-05-03,2026-05-03,qgzwtKsXCMo,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Jynxzi REALIZES,409147,7294,62,0.020458,1,2248061,45468,522
+daily,2026-05-03,2026-05-03,ksn5yrsC3Wg,UCHnyfMqiRRG1u-2MsSQLbXA,Veritasium,The Disaster I Never Imagined Having To Worry About,386343,10773,573,0.037724,1,3580236,127451,7611
+daily,2026-05-03,2026-05-03,Su0aCV35IFM,UC415bOPUcGSamy543abLmRA,Cleo Abram,There's a Telescope at the Bottom of the Ocean,337996,10060,80,0.041229,1,4951886,202431,1730
+daily,2026-05-03,2026-05-03,pXI3xinu4bc,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,"People Who Are Famous, But Don’t Feel Famous",316966,15922,128,0.051853,1,814488,41732,502
+daily,2026-05-03,2026-05-03,reCJ5EuvukI,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"Rest in Peace, Charlie Kirk....",309813,12172,167,0.040085,1,585250,22987,473
+daily,2026-05-03,2026-05-03,dqazxW8R5BY,UC415bOPUcGSamy543abLmRA,Cleo Abram,Our Brains Got Bigger. Now They’re Shrinking?,298787,14383,267,0.047498,1,1718257,79875,1739
+daily,2026-05-03,2026-05-03,WOTUpoI2LQA,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,Dron quieto o en movimiento?,260910,7437,204,0.053534,1,2640131,138875,2461
+daily,2026-05-03,2026-05-03,IEJALLQFmDs,UCY1kMZp36IQSyNx_9h4mpCg,Mark Rober,You’re Breathing Dinosaur Breath!,249595,5855,69,0.023974,1,3618022,86105,634
+daily,2026-05-03,2026-05-03,kB_PJC80JhY,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,Por esto NO PUEDES dibujar una BICICLETA,210701,9691,55,0.043644,1,1034991,44922,249
+daily,2026-05-03,2026-05-03,jLFG_FZKbks,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,"Stock Expert: Becoming Rich Is Simple, But You Won’t Do It!",203456,2988,348,0.021366,1,910888,17448,2014
+daily,2026-05-03,2026-05-03,u_f8bJkfg68,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,Este efecto táctil te hará sentir DOBLE,201942,2258,8,0.027138,1,3840262,103305,913
+daily,2026-05-03,2026-05-03,GDex3WIPF7c,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,The Most USELESS College Degrees,189907,5228,164,0.037444,1,1201872,43408,1595
+daily,2026-05-03,2026-05-03,snM0UfZxakc,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"This Cat Operation Cost $9,000",163052,3189,230,0.026443,1,471051,11497,959
+daily,2026-05-03,2026-05-03,yE8fJOgv7Pc,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"Grandma Makes $100,000 Per Year",159386,3357,131,0.026683,1,824386,21243,754
+daily,2026-05-03,2026-05-03,vmRbevilfpU,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,Números de la suerte 🍀,159009,3011,24,0.033609,1,7153076,238771,1638
+daily,2026-05-03,2026-05-03,TmkbUF0V0hM,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Financial Audit's Most Disgusting Guest,153494,1774,734,0.02543,1,527020,9478,3924
+daily,2026-05-03,2026-05-03,eOI7WQIEX1Y,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,"Cole Allen, Trump y los 11 científicos desaparecidos",152527,6327,485,0.061371,1,1418707,79952,7116
+daily,2026-05-03,2026-05-03,FMdrD_jcYgE,UC7_gcs09iThXybpVgjHZ_7g,PBS Space Time,We Found Galaxies Too Old for the Universe,135698,6521,747,0.076778,1,515353,35962,3606
+daily,2026-05-03,2026-05-03,XGAhqBxEV78,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,MAGNUS CARLSEN RETURNS TO CLASSICAL CHESS,135137,2985,162,0.035191,1,419398,13638,1121
+daily,2026-05-03,2026-05-03,3PZ3d4eNWrc,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,How Long Could You Stay At A Dunkin After It Closes?,135063,6203,29,0.05395,1,684461,36657,270
+daily,2026-05-03,2026-05-03,io_Ysi-LFWE,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"I Inherited $200,000 of Debt From My Mother",130099,3459,72,0.031591,1,482289,14924,312
+daily,2026-05-03,2026-05-03,2pao0845DQQ,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Please Say  No....,128967,3380,22,0.029064,1,148016,4267,35
+daily,2026-05-03,2026-05-03,xjcVnFd-4YA,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Mustang VS Tesla,124042,2129,106,0.028956,1,1364541,37444,2068
+daily,2026-05-03,2026-05-03,iBpxQpktHN4,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,1000 DAYS,112512,2552,8,0.029227,1,1771477,51440,335
+daily,2026-05-03,2026-05-03,N-zjDtQOwxc,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,Científicos importantes mueren y desaparecen en Estados Unidos ~ TODO LO QUE SE SABE,109507,5948,383,0.079072,1,689093,51204,3284
+daily,2026-05-03,2026-05-03,pG99B0ui06s,UC415bOPUcGSamy543abLmRA,Cleo Abram,How They Build Underwater Tunnels,102191,4762,22,0.04625,1,1664312,76469,505
+daily,2026-05-03,2026-05-03,2ZV29QhLfjw,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,"Los aranceles de Trump fueron ilegales, ahora el pueblo paga. #diegoruzzarin",97919,2567,67,0.053453,1,651240,33765,1046
+daily,2026-05-03,2026-05-03,7Y7Iv5XAXwI,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"Girlfriend Finds Out Partner is $72,000 in DEBT",97524,1227,14,0.020757,1,1639234,33336,690
+daily,2026-05-03,2026-05-03,UncqiOQc4rI,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Couple Makes $12 an Hour ILLEGALLY,90358,2054,15,0.029202,1,3345170,96407,1280
+daily,2026-05-03,2026-05-03,31t_CBePs34,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,El Cifrado Más Difícil,89813,1868,27,0.041128,1,1119392,45380,658
+daily,2026-05-03,2026-05-03,0y8vRPcSvbw,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,This Paralegal Has a WILD Side Hustle,86880,1285,16,0.026006,1,1942017,49482,1022
+daily,2026-05-03,2026-05-03,W65cfPslnzo,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Tried Getting Banned From Every Store (Again),86790,1438,75,0.027968,1,466634,12025,1026
+daily,2026-05-03,2026-05-03,mpZK1dqX6aA,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,BOOM BOOM BOOM BOOM,83617,2380,15,0.031792,1,727990,22963,181
+daily,2026-05-03,2026-05-03,PnpHwhTWw0c,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,Sex Expert: What Women Actually Need To Enjoy Sex,83020,1262,83,0.022479,1,1350584,27826,2534
+daily,2026-05-03,2026-05-03,jKTNMlUEdgU,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Absurd 💀💀💀,81477,1298,8,0.022761,1,1071761,24181,213
+daily,2026-05-03,2026-05-03,Hk-ARbCTKzM,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,People Who Became Famous For Doing Nothing,80235,3090,14,0.044496,1,5315852,235231,1305
+daily,2026-05-03,2026-05-03,YUwjueXzffE,UCOHxDwCcOzBaLkeTazanwcw,Bravos Research,History is About to Be Made.,76736,1272,4,0.02272,1,191591,4307,46
+daily,2026-05-03,2026-05-03,ndkH5fZSIvs,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Surprising People That Have Social Media,74827,3446,16,0.059685,1,925414,54846,387
+daily,2026-05-03,2026-05-03,U0f47Nt9g-Q,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,Cole Allen: ¿Viaje en el tiempo… o casualidad?,69287,2701,91,0.058641,1,251599,14386,368
+daily,2026-05-03,2026-05-03,pUlUgkaTQZg,UC415bOPUcGSamy543abLmRA,Cleo Abram,There’s Antimatter In This Truck,65999,2229,24,0.051903,1,1662024,85329,935
+daily,2026-05-03,2026-05-03,PoHZWjU54jY,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,HE THREW THE CHAIR,65601,1428,11,0.036835,1,2008748,73434,558
+daily,2026-05-03,2026-05-03,Czf68kDF_7Y,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,This Mother Makes BANK,63429,1642,30,0.024657,1,2129368,51558,946
+daily,2026-05-03,2026-05-03,dU5sDKcwN9E,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,YOU WILL NEVER SEE DISCIPLINE THE SAME AGAIN,63156,3246,20,0.050208,1,329928,16330,235
+daily,2026-05-03,2026-05-03,0t118SCf-2w,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,I'm Selling Everything,61590,759,4,0.017756,1,1915489,33423,588
+daily,2026-05-03,2026-05-03,tkLxg6h07aE,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,The WORST Debt In Financial Audit History,58836,504,123,0.018242,1,860051,12409,3280
+daily,2026-05-03,2026-05-03,W41XcEogOB0,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Biggest One-Hit Wonders In History,52512,1832,18,0.046238,1,3553308,162843,1456
+daily,2026-05-03,2026-05-03,0D14LJGiBkg,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,"Chess, But Each Piece Is A Human?!",52206,2516,161,0.050612,1,297517,13968,1090
+daily,2026-05-03,2026-05-03,69AWec8qjjo,UC55-mxUj5Nj3niXFReG44OQ,Platzi,La batalla legal entre Elon Musk y OpenAI,49236,1475,35,0.038943,1,113062,4274,129
+daily,2026-05-03,2026-05-03,IrGd4xIhTN0,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,the Rise of Woke Books - a Response,48485,2263,585,0.079173,1,439344,27113,7671
+daily,2026-05-03,2026-05-03,vgwG6e9TFcw,UC415bOPUcGSamy543abLmRA,Cleo Abram,What Actually Is A Dyson Sphere?,48174,2154,24,0.05259,1,1484250,76825,1231
+daily,2026-05-03,2026-05-03,gdjCR9h1yGc,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Things You’re Allowed To Own But Not Sell,48092,1574,30,0.056671,1,2450548,136548,2326
+daily,2026-05-03,2026-05-03,rfRFwXnk660,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,Salvá a tus hijos (estás a tiempo),47069,2572,195,0.070074,1,157419,10323,708
+daily,2026-05-03,2026-05-03,dNNyCZwEa6k,UC415bOPUcGSamy543abLmRA,Cleo Abram,There's a Secret Network Under Your Feet,45107,1813,7,0.068142,1,2382100,160483,1838
+daily,2026-05-03,2026-05-03,RniYUmKs93U,UCsXVk37bltHxD1rDPwtNM8Q,Kurzgesagt – In a Nutshell,Pigeons Are GPS Drones,43979,1899,39,0.060404,1,351766,20830,418
+daily,2026-05-03,2026-05-03,jytAQWCc_TI,UCC552Sd-3nyi_tk2BudLUzA,AsapSCIENCE,You’ll never look at it the same after this video,43767,2149,146,0.060803,1,221553,12541,930
+daily,2026-05-03,2026-05-03,t9PF8V132Y4,UCgNg3vwj3xt7QOrcIDaHdFg,PolyMatter,Walmart’s New Plan to Defeat Amazon,42728,1363,214,0.040639,1,153496,5445,793
+daily,2026-05-03,2026-05-03,WPOhGVSPOyM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Some  Problems  Just Aren't Problems,42292,642,2,0.017886,1,55405,987,4
+daily,2026-05-03,2026-05-03,9rHaUzPlJws,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Encontraron Más Cosas,41967,2464,99,0.077868,1,160965,11894,640
+daily,2026-05-03,2026-05-03,XsY6iChNzf0,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Human vs Computer,41310,761,4,0.031167,1,1038491,32084,283
+daily,2026-05-03,2026-05-03,8TvJvfKz8Fo,UCTfQ65AxquXmih3r6rZmK-Q,jefillysh,No es Normal Vivir Así,41207,3018,250,0.093988,1,199259,17500,1228
+daily,2026-05-03,2026-05-03,4iXwPD-VHyg,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,This book called me out (I love it),39910,1211,15,0.030966,1,40108,1226,16
+daily,2026-05-03,2026-05-03,VgH5rhALEfU,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Actors Who Changed Identities For Roles,39747,2727,63,0.051202,1,623455,31330,592
+daily,2026-05-03,2026-05-03,5YKhtb3DNNo,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,Querido Dross llorando a mi mejor amigo,39699,2296,188,0.092433,1,705422,59159,6045
+daily,2026-05-03,2026-05-03,JjwHFerSu4M,UCaRLjOy-9m_eJ9REVqc0YoQ,Gustavo Entrala,CHINA hizo grande a APPLE. APPLE hizo de CHINA una SUPERPOTENCIA.,39446,2257,130,0.064918,1,84275,5158,313
+daily,2026-05-03,2026-05-03,z7Qp9Q_Br88,UCsXVk37bltHxD1rDPwtNM8Q,Kurzgesagt – In a Nutshell,Laughing Gas Is Not So Funny,39373,1836,27,0.055673,1,608790,33049,844
+daily,2026-05-03,2026-05-03,5W2lIWDyXjI,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,He'd Be A Bartender At A Ski Slope,38695,1063,20,0.028886,1,40435,1146,22
+daily,2026-05-03,2026-05-03,v_1Dhh8G84c,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Paying $2500 a Month For Rent in Texas,38369,759,9,0.028824,1,1661521,47184,707
+daily,2026-05-03,2026-05-03,IMM5cm6xrXQ,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Couple Makes $13k Per Month But Spends DOUBLE,37611,644,15,0.022096,1,1513634,32621,824
+daily,2026-05-03,2026-05-03,39czcByvq7c,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Investigated Stores That Are Disappearing (Again),36538,393,31,0.024176,1,663480,14513,1527
+daily,2026-05-03,2026-05-03,vNXFk8iGHk8,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,How Long Could You Stay At Places After They Close?,35820,996,3,0.053339,1,534017,28165,319
+daily,2026-05-03,2026-05-03,dl0-TveDDGA,UCsXVk37bltHxD1rDPwtNM8Q,Kurzgesagt – In a Nutshell,Our Minds Are Weirder than You Think,35425,1020,36,0.050854,1,1768176,86640,3278
+daily,2026-05-03,2026-05-03,m-nnyNZ0TQ0,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,Stanford Neuroscientist: Can’t Remember Your Dreams? Your Brain May Be Warning You!,34702,683,44,0.021833,1,2002991,41037,2695
+daily,2026-05-03,2026-05-03,Cr7oGnSzmb4,UC415bOPUcGSamy543abLmRA,Cleo Abram,What If Earth Was Hollow?,34646,1197,9,0.050459,1,1965198,98590,572
+daily,2026-05-03,2026-05-03,MVFd0qFB9TE,UCHnyfMqiRRG1u-2MsSQLbXA,Veritasium,Why don't trains make *that* sound anymore?,34262,810,8,0.031201,1,4100683,126375,1572
+daily,2026-05-03,2026-05-03,pcAJLeGAtwc,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,DO NOT BUY A NISSAN ALTIMA,33906,644,4,0.026715,1,959288,25147,480
+daily,2026-05-03,2026-05-03,jAaw0vn7eLs,UCR1IuLEqb6UEA_zQ81kwXfg,Real Engineering,Why the Nokia 3310 was so Durable,33133,3301,41,0.083105,1,176078,14334,299
+daily,2026-05-03,2026-05-03,eRD2C7w9r6Y,UCDV1MWcRLthxSrmb2Zv-jeg,Ricardo Alca2,"""Hablemos de Cuerpos Ajenos""",33005,2126,64,0.09038,1,162393,14003,674
+daily,2026-05-03,2026-05-03,u5HPVyEpyNI,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,Por qué son INÚTILES las LEYES de la ROBÓTICA,32943,2036,216,0.080621,1,134506,9844,1000
+daily,2026-05-03,2026-05-03,LMJb-_uL6lQ,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,AI just killed Crypto...,32450,747,195,0.033934,1,47828,1270,353
+daily,2026-05-03,2026-05-03,Ycdklm6W1_o,UC7DdEm33SyaTDtWYGO2CwdA,Physics Girl,What happened to my face,32362,2813,73,0.073658,1,338101,24235,669
+daily,2026-05-03,2026-05-03,DYkyYUjOZTk,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Movie Scenes That Were Improvised,32242,986,3,0.054986,1,1603509,87624,547
+daily,2026-05-03,2026-05-03,JWOErbTL9N4,UCzR-rom72PHN9Zg7RML9EbA,PBS Eons,How Dinosaurs May Have Cursed Us With Aging,31603,918,48,0.04916,1,465708,21632,1262
+daily,2026-05-03,2026-05-03,oOCN30ulVyo,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,My FULL OpenClaw Setup (steal my prompts!),29469,834,29,0.043592,1,150097,6192,351
+daily,2026-05-03,2026-05-03,wgADj9n8XMs,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,¿Por qué te mareas al leer en un coche?,29117,1764,27,0.044645,1,754882,33432,270
+daily,2026-05-03,2026-05-03,BdUzhVM5w1U,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Why is he laying down,28422,445,0,0.027533,1,2462771,67180,627
+daily,2026-05-03,2026-05-03,UsS6bOYnnOI,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,The Fermi Paradox Just Got Worse,27967,971,289,0.068731,1,276703,15611,3407
+daily,2026-05-03,2026-05-03,4at2bVIhLgc,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,GUESS THE ELO 3.0!!!!!!!!,27778,672,1,0.034088,1,632180,20678,872
+daily,2026-05-03,2026-05-03,s6XPoPYDn-Y,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Caleb Hammer RUINED Financial Audit,26630,643,14,0.030607,1,1225059,37121,374
+daily,2026-05-03,2026-05-03,ExlWYbISs6I,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,How Much Money Does It Take To Empty A Vending Machine?,26116,1119,12,0.046151,1,492708,22400,339
+daily,2026-05-03,2026-05-03,_WrHMsTYlOU,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Couple Spent $100k Inheritance on a SCHOOL BUS,26067,460,24,0.027805,1,926175,24541,1211
+daily,2026-05-03,2026-05-03,wdCDxH9KBss,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,Qué Pasa con el Centro de la Tierra,25664,1177,21,0.052395,1,46894,2399,58
+daily,2026-05-03,2026-05-03,fwUWAoSeg2g,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Dos AMANTES en su FUNERAL! 😱 Ft.  @fridaaraujof  - T10E06 #podcast #chismes #amantes,25531,584,54,0.032376,1,230171,6761,691
+daily,2026-05-03,2026-05-03,Hk20QLW6nEc,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,El afilador que creó un imperio de cuchillos,25314,483,2,0.021886,1,41533,904,5
+daily,2026-05-03,2026-05-03,TET8fTKH1e8,UCtIdb7KRqOTcOogKsos_QRw,Lord Draugr,Algo MUY RARO está pasando en el DESIERTO de CHINA,24577,471,6,0.041998,1,545718,22273,646
+daily,2026-05-03,2026-05-03,ERWIJPTNZVM,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,JYNXZI vs GOTHAM CHESS BATTLE,24472,632,39,0.03643,1,1065534,37313,1504
+daily,2026-05-03,2026-05-03,QfUb5MEAOXA,UC4QZ_LsYcvcq7qOsOhpAX4A,ColdFusion,An Unknown Engineer is Apple's New CEO,24058,613,30,0.034919,1,566486,18415,1366
+daily,2026-05-03,2026-05-03,roUppNywDks,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"$388,000 Of Debt To Storm The Capitol | Financial Audit",23885,329,112,0.024742,1,840987,14496,6312
+daily,2026-05-03,2026-05-03,Lqq78q17jDY,UCVt4ugq2txl_szlXAO7B3-g,Adrián Sáenz,La Forma Más Fácil De Ganar Dinero Con Claude,23835,1114,23,0.056399,1,356871,18975,1152
+daily,2026-05-03,2026-05-03,wy3a_xJI3so,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Can You Buy An Entire Movie For Yourself?,23768,756,9,0.059455,1,852825,50068,637
+daily,2026-05-03,2026-05-03,kijJaXVri7Q,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,3 metrajes hechos antes de morir,23369,1062,18,0.069629,1,725212,49047,1449
+daily,2026-05-03,2026-05-03,oNjLzGpMCuw,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Trump y la sociedad del espectáculo: ¿Atentado o propaganda?,23360,1034,52,0.056971,1,69843,3772,207
+daily,2026-05-03,2026-05-03,-1Fhry-Mqks,UCJ24N4O0bP7LGLBDvye7oCA,Matt D'Avella,I tried to optimize my life. It made it worse.,23354,1036,43,0.05956,1,177434,10027,541
+daily,2026-05-03,2026-05-03,LLK879SXq_w,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,La TÍA PATY: Del CHISME en REDES a la CÁRCEL- Más allá del rosa con Perla Calvillo Cantu,22886,356,60,0.021148,1,196046,3486,660
+daily,2026-05-03,2026-05-03,ktkpd9A8MD8,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,El Objeto Que Costó Una Guerra,22749,954,54,0.062581,1,463816,27455,1571
+daily,2026-05-03,2026-05-03,4Zi41MRVP0g,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Me LIGÓ el amigo de mi ESPOSO! 😱 Ft. Fabrizio Santini de La Oficina - T10E07 #podcast #LaOficina,21985,513,72,0.036871,1,79005,2558,355
+daily,2026-05-03,2026-05-03,FYMdllTCrc0,UCR1IuLEqb6UEA_zQ81kwXfg,Real Engineering,The Insane Engineering of the V-22 Osprey,21969,524,12,0.035877,1,798316,27676,965
+daily,2026-05-03,2026-05-03,a9T6IRpz31E,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,TOP 5 HIGHEST DEBT INTEREST RATES ON FINANCIAL AUDIT,21218,483,21,0.037617,1,854135,30978,1152
+daily,2026-05-03,2026-05-03,HRxULulg_hM,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Dog Groomer Has No Idea How Much Money They Make,21063,421,5,0.031542,1,906312,28230,357
+daily,2026-05-03,2026-05-03,1PIbKMyFMAY,UCbdSYaPD-lr1kW27UJuk8Pw,QuantumFracture,¿Existen Fisuras en el Universo?,20866,1113,47,0.069269,1,135645,9095,301
+daily,2026-05-03,2026-05-03,oRVJREzko-M,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Weird Traits That Predict Success,20710,1076,10,0.061631,1,581959,35434,433
+daily,2026-05-03,2026-05-03,aRLwX_dN8AQ,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,My Business Isn't Making Money,19689,385,4,0.022222,1,50221,1109,7
+daily,2026-05-03,2026-05-03,ucN2hf0CgI8,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Togi Bought a LAMBO at an 18% Interest Rate,19431,319,3,0.02564,1,1424040,36169,343
+daily,2026-05-03,2026-05-03,Y254oB1QNOE,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Gen-Z Men Need To LOCK IN,19210,401,51,0.032416,1,310869,9281,796
+daily,2026-05-03,2026-05-03,UM9dcnJXX0k,UCM55RjebjSevVWPnj2LEymw,viyaura,I Mastered Popular Anime Art Styles,18587,539,66,0.051892,1,353003,14911,3407
+daily,2026-05-03,2026-05-03,kH_bSvf7EVA,UCSju5G2aFaWMqn-_0YBtq5A,Stand-up Maths,What is up with UK bridge height signs?,18578,650,110,0.053063,1,455269,21139,3019
+daily,2026-05-03,2026-05-03,er7v-GJj_V0,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,La economía mundial depende de esta isla (NO ES PETRÓLEO),18540,975,48,0.069543,1,505412,33281,1867
+daily,2026-05-03,2026-05-03,Bcag49Fk3zA,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"I Spend $300,000 a Month on Financial Audit",18144,315,4,0.030515,1,1377408,41600,431
+daily,2026-05-03,2026-05-03,KGeCwEOLPGE,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,How Long Could You Stay At A Movie Theater After It Closes?,18058,592,4,0.058937,1,1967885,115329,653
+daily,2026-05-03,2026-05-03,eBbqRceO2qY,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Deadliest Video Games,17749,464,8,0.054881,1,1340261,72420,1135
+daily,2026-05-03,2026-05-03,3era1_feC3U,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,HES A GENIUS,17726,297,4,0.028855,1,1001918,28688,222
+daily,2026-05-03,2026-05-03,-uSQcEfnKp0,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,She Bought a Ford Bronco and Instantly Got it Repossessed,17433,422,11,0.036164,1,633612,22226,688
+daily,2026-05-03,2026-05-03,tbvteFr4SPQ,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,Querido Dross: el infierno del IMSS (Instituto Mexicano de Seguro Social),17239,716,37,0.066355,1,1383595,84425,7384
+daily,2026-05-03,2026-05-03,3LnNwS6rqk8,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,Monté el PC de BATMAN dentro de una Batcueva REAL,17159,804,18,0.061026,1,416366,24687,722
+daily,2026-05-03,2026-05-03,rc-xQnupse0,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,La EXTRAÑA decisión de CHINA sobre IRÁN que DESCONCIERTA a todo el mundo @VisualPolitik,16823,254,11,0.03068,1,461867,13560,610
+daily,2026-05-03,2026-05-03,yk8ziJow5dw,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,THIS FOOD MAKES YOUR PENIS HARDER?!,16743,301,34,0.033477,1,56606,1772,123
+daily,2026-05-03,2026-05-03,gzjXoJoWgjs,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,How Much You Need Invested to Live Off Dividends in 2026,16441,243,133,0.029462,1,67951,1558,444
+daily,2026-05-03,2026-05-03,8QsAx7s9PmQ,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Please stop,16274,175,6,0.025561,1,1311783,33082,448
+daily,2026-05-03,2026-05-03,5-ASQ44GpNI,UCvzk_MwdXD6jQa4Se-6B9ZQ,Adrià Solà Pastor,Experto En Seducción Revela Los Secretos De La Atracción Y El Deseo “La Clave Está En El Sudor”,16147,627,26,0.049859,1,55657,2641,134
+daily,2026-05-03,2026-05-03,BOmc_wliaRg,UCyJbb85EUgWjl38GcF236Jg,Eva Maria Beristain,CASO EDITH GUADALUPE Y JUAN JESUS N - Ruido Social,16144,377,19,0.048492,1,771817,32821,4606
+daily,2026-05-03,2026-05-03,KdmRWazuBRU,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¡Volvió Deepseek v4! Al nivel de GPT y Claude y 10 veces más barato,15756,656,44,0.051792,1,60762,2917,230
+daily,2026-05-03,2026-05-03,98ShZgIhSbk,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Don't Ask This Question In A Sale,15585,463,-2,0.035166,1,77262,2704,13
+daily,2026-05-03,2026-05-03,if955Z_s4Ts,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,I Don't Do Early Meetings,15202,314,3,0.022917,1,241220,5467,61
+daily,2026-05-03,2026-05-03,UPbaPjDGQIE,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Tried Buying All The Fries From McDonald’s,15180,465,5,0.052595,1,2316862,120676,1180
+daily,2026-05-03,2026-05-03,0HSNPIttevk,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Do This in Your 20s To Become a MILLIONAIRE,14975,249,7,0.025158,1,958275,23351,757
+daily,2026-05-03,2026-05-03,8u7HqZJQHDM,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,The Most INSANE Financial Audit Ever,14909,203,36,0.021295,1,957502,14869,5521
+daily,2026-05-03,2026-05-03,mDh52QTqR0o,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Revisando las  noticias en vivo #14. El nuevo intento de desvivir a Trump.,14781,429,36,0.054028,1,253015,13014,656
+daily,2026-05-03,2026-05-03,t6GzhyGTKCo,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,BUYING A HOUSE IS KEEPING YOU POOR,14648,452,49,0.033473,1,63185,1960,155
+daily,2026-05-03,2026-05-03,1d3wR5LJ4-4,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Por qué Elon Musk demandó a OpenAI,13534,460,8,0.041564,1,24733,1011,17
+daily,2026-05-03,2026-05-03,48hHo2WcAQI,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,"¿Argentina, será el nuevo patio trasero de Israel? #diegoruzzarin #milei #argentina",13383,811,194,0.090419,1,450082,37068,3628
+daily,2026-05-03,2026-05-03,5wuHYQMnYhA,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Boyfriend Prevents Her From Scaling a $50k Business,13134,423,2,0.038585,1,868453,32829,680
+daily,2026-05-03,2026-05-03,iRach9lpIlg,UCHnyfMqiRRG1u-2MsSQLbXA,Veritasium,Wombats Poop Cubes,13095,204,4,0.020637,1,1003808,20191,525
+daily,2026-05-03,2026-05-03,up__2flbXw4,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"Couple Spent $10,000 on Squishmallows",12972,141,1,0.021355,1,895781,18691,438
+daily,2026-05-03,2026-05-03,POn6IRgP5-A,UCYZLVhSSwdBllvn4tw5a4uQ,Rob Paper Sheet,La INFIDELIDAD está Fuera de Control...,12716,510,31,0.055039,1,72330,3728,253
+daily,2026-05-03,2026-05-03,RWGr8LwG3TY,UCoXtmmnLCbXDiSo8GxsmOzA,La gata de Schrödinger,El Oscuro y Violento Mundo de la IA para NIÑOS,12258,581,47,0.082552,1,95939,7316,604
+daily,2026-05-03,2026-05-03,LDXkrlIxj8U,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me quedé pensando cuando jaime Higuera dijo esto #shorts,12217,764,5,0.070063,1,17370,1208,9
+daily,2026-05-03,2026-05-03,tVpky2riji0,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,EMIRATOS se REBELA contra ARABIA SAUDÍ y rompe la OPEP: Los motivos de su portazo @VisualPolitik,11955,346,24,0.038046,1,304423,11280,302
+daily,2026-05-03,2026-05-03,aZVcAlzBIp4,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Tested Treehouse Airbnbs,11590,141,5,0.021371,1,757621,14870,1321
+daily,2026-05-03,2026-05-03,o1LnQHf3b6I,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,No One Is Coming To Save You,11385,435,4,0.049255,1,14354,702,5
+daily,2026-05-03,2026-05-03,NRELko2BoRk,UCX9NJ471o7Wie1DQe94RVIg,Fazt,Probé TODOS los Agentes de IA para Código… Esto Aprendí,11207,554,40,0.063055,1,16208,946,76
+daily,2026-05-03,2026-05-03,LkaaMQx9uZ0,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,El TRUCO del DINERO INVISIBLE que TODOS hacemos,11201,468,11,0.050771,1,63009,3135,64
+daily,2026-05-03,2026-05-03,CPJhzRv9y_8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Pay Your Employees More,11031,193,1,0.020432,1,51291,1042,6
+daily,2026-05-03,2026-05-03,GXeBi91SkIw,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,The worst subscriber game I've ever seen. I'm done. Goodbye.,10445,357,8,0.044559,1,627686,26230,1739
+daily,2026-05-03,2026-05-03,YhNUPGphSM8,UCDV1MWcRLthxSrmb2Zv-jeg,Ricardo Alca2,El Lobo de Wall Street de TikTok,10389,439,8,0.073363,1,98510,6924,303
+daily,2026-05-03,2026-05-03,gEUMAljLr78,UCb8GKeOvI7WsFUkB4UVAeXA,Cordura Artificial,"¿Por qué los RICOS fingen ser ""POBRES""?",9887,716,94,0.088888,1,81530,6624,623
+daily,2026-05-03,2026-05-03,Cp3DxMyEBIM,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Por qué EE.UU. necesita a México más que nunca | Dimes y Billetes #447,9834,194,19,0.025338,1,130871,3051,265
+daily,2026-05-03,2026-05-03,MqpQhyjFZQU,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,aimep3 siendo pickme,9793,320,10,0.043324,1,228512,9368,532
+daily,2026-05-03,2026-05-03,zxQJIBt9CBI,UCmE44gpkHmf5bKIVTPSwxnQ,Judith Tiral,Así es DEFENDER a un ASESINO: entrevisto a Beatriz de Vicente,9708,343,16,0.052536,1,156731,7905,329
+daily,2026-05-03,2026-05-03,WeliLUboy3M,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,The Hairiest Guest in Financial Audit History,9654,106,0,0.016379,1,1166638,18571,537
+daily,2026-05-03,2026-05-03,8fIRAhGGRgA,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,What Is The Most Amount Of Cereal You Can Buy At A Target?,9549,275,5,0.05024,1,261465,12861,275
+daily,2026-05-03,2026-05-03,0kHJZFOuMWc,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,El ladrón más tonto del mundo,9415,323,2,0.052235,1,884004,45939,237
+daily,2026-05-03,2026-05-03,oqoBSeL5GIU,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,YOUR PENIS WILL SHRINK FOREVER,9412,455,20,0.036224,1,245801,8408,496
+daily,2026-05-03,2026-05-03,0Z1lChyi2W4,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,This Nurse Makes $130k But Can't Afford Groceries,9183,151,6,0.027676,1,618087,16547,559
+daily,2026-05-03,2026-05-03,FBq_mtNPweg,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Me ligó su mejor amigo #chisme #comedia #podcast,9178,288,0,0.034831,1,22652,785,4
+daily,2026-05-03,2026-05-03,msYTFQ4OIu8,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,This Has Never Happened Before | Financial Audit,8773,113,35,0.021628,1,981770,14492,6742
+daily,2026-05-03,2026-05-03,EGTF9mGda4U,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Biggest Lawsuits Ever,8620,382,4,0.055678,1,554922,30500,397
+daily,2026-05-03,2026-05-03,QzZ4VwDHAT4,UCbfYPyITQ-7l4upoX8nvctg,Two Minute Papers,Sakana AI’s God Simulator Is Brilliant,8545,375,21,0.059193,1,26878,1469,122
+daily,2026-05-03,2026-05-03,07T7V-Szcx0,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Why Are You Doing So Little?,8533,239,1,0.030522,1,424477,12753,203
+daily,2026-05-03,2026-05-03,sKME5er1OKc,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Las CIUDADES que van a explotar ECONÓMICAMENTE,8411,443,30,0.054217,1,167493,8672,409
+daily,2026-05-03,2026-05-03,wEb6ULf3TzU,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Jobs That Don’t Technically Require A License,8383,356,5,0.066613,1,567816,37354,470
+daily,2026-05-03,2026-05-03,-uUlnDjQxhg,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,This Anomaly Could Be The First Evidence of New Physics,8312,177,8,0.040486,1,366176,13872,953
+daily,2026-05-03,2026-05-03,JrGlAw_Q7ow,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,It's Not As Hard As You Think,8158,269,3,0.035081,1,121178,4188,63
+daily,2026-05-03,2026-05-03,5tW7CPAVii0,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Is What Billionaire Are Doing.....,8050,182,1,0.028616,1,240882,6753,140
+daily,2026-05-03,2026-05-03,D4fkiQfzw_I,UChhw6DlKKTQ9mYSpTfXUYqA,Starter Story,How I Work: $77K/Month Solopreneur,7879,333,19,0.051227,1,99616,4840,263
+daily,2026-05-03,2026-05-03,UUzxEVhRQgQ,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,Los Archivos DROSS: Archivo 001 Trampa radioactiva,7778,569,13,0.089937,1,713020,61770,2357
+daily,2026-05-03,2026-05-03,P9MkPdQc74o,UC3aj05GEEyzdOqYM5FLSFeg,midulive,¡Está pasando!,7762,227,32,0.04823,1,98052,4272,457
+daily,2026-05-03,2026-05-03,TRVnxUYQAmI,UCPgVPrgqpALC1s2e63fgKyg,elWacky,El Contenido De Twitch Evoluciona,7686,485,10,0.08516,1,202254,16247,977
+daily,2026-05-03,2026-05-03,OwbaFLtBpkQ,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Couple Makes $120k a Year But Lives in a TRAILER,7651,106,0,0.021889,1,656259,14099,266
+daily,2026-05-03,2026-05-03,FJNk3OGtmbk,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Solo escucha a su mamá #chisme #comedia #podcast,7466,231,1,0.027724,1,13454,372,1
+daily,2026-05-03,2026-05-03,nVHr2D6tnA4,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,Las pasas que cobran vida,7448,424,1,0.073039,1,166157,11980,156
+daily,2026-05-03,2026-05-03,S0WQP5GeTZs,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Husband Spends $200 a Day at The GAS STATION,7291,125,1,0.026141,1,929163,23573,716
+daily,2026-05-03,2026-05-03,DSRfs1qKWR0,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Big news,7064,119,7,0.032857,1,441726,13613,901
+daily,2026-05-03,2026-05-03,9oVPXnEkegY,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Compré la NUEVA Toyota Rav4: Te cuento MI EXPERIENCIA | Review Honesto,7051,186,-46,0.04667,1,36597,1510,198
+daily,2026-05-03,2026-05-03,ZUpr3u1inlg,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,"U.S.A. quiere imponer su Ley, pero México no se deja",7036,512,104,0.1045,1,13799,1215,227
+daily,2026-05-03,2026-05-03,YPboGQjMxNY,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Gotham vs PRODIGY,6954,96,2,0.024154,1,297258,7038,142
+daily,2026-05-03,2026-05-03,iaYdIU5n6vw,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,10 Things That Are No Longer Worth Your Money,6842,161,-1,0.02205,1,662849,12601,2015
+daily,2026-05-03,2026-05-03,AzNb2nQrM7U,UC-bFpJCtP1lXn5vBxJ0b9dw,Diego Revuelta,Llegaron sin nada y hoy viven aquí. ¿Lo harías?,6776,152,9,0.054025,1,53605,2584,312
+daily,2026-05-03,2026-05-03,ehizptRtYzM,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,UN PEQUEÑO CRÁTER Y MILES DE POLÍGONOS EN MARTE 🛰️,6775,496,20,0.087898,1,25575,2183,65
+daily,2026-05-03,2026-05-03,fpmYvXCzO1c,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Things That Are Surprisingly Illegal,6735,210,2,0.054985,1,1200684,64955,1065
+daily,2026-05-03,2026-05-03,wJOakc64crg,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Argentina ha mejorado o empeorado con Milei?,6643,309,70,0.0709,1,64316,3766,794
+daily,2026-05-03,2026-05-03,Rax-kdRVG74,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así funciona la vida #shorts,6611,292,4,0.052022,1,11053,563,12
+daily,2026-05-03,2026-05-03,MWrMtRjLhjk,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Pensó Que Era Gracioso y Lo Funaron,6533,314,22,0.071966,1,195343,12841,1217
+daily,2026-05-03,2026-05-03,mQR17nCXUSA,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Realmente Odian a Su Comunidad,6380,410,74,0.085023,1,109218,8640,646
+daily,2026-05-03,2026-05-03,oixqYBAPwXA,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,Hyperx Cloud Alpha 2,6370,129,0,0.04543,1,25644,1135,30
+daily,2026-05-03,2026-05-03,iQxwDGnuByc,UCxcDzs-4quJV4QsairlFYNg,Alejavi Rivera,La IA China acaba de Explotar en el TOP 1: Y esto puedes hacer ahora 🔥,6260,272,8,0.059366,1,30910,1731,104
+daily,2026-05-03,2026-05-03,k7aOM--Ycts,UCM55RjebjSevVWPnj2LEymw,viyaura,which nail art should i try? #art #artist,6146,323,37,0.071424,1,89858,5780,638
+daily,2026-05-03,2026-05-03,6WqWhSmCbXk,UCvzk_MwdXD6jQa4Se-6B9ZQ,Adrià Solà Pastor,"Experto En Lujo: Las Estrategias Para Luxurizar Tu Vida, Ser Más Deseado Y Ganar Mucho Dinero",6115,176,9,0.04051,1,100839,3884,201
+daily,2026-05-03,2026-05-03,FZbMPtLRr00,UCsXVk37bltHxD1rDPwtNM8Q,Kurzgesagt – In a Nutshell,Fast-Forward Your Life,6019,149,3,0.039782,1,567113,21697,864
+daily,2026-05-03,2026-05-03,mbGPgjXCx24,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,La GUARDIA REVOLUCIONARIA toma el poder y MERZ dice que IRÁN está HUMILLANDO a TRUMP @VisualPolitik,5998,151,14,0.042029,1,280070,11030,741
+daily,2026-05-03,2026-05-03,6r-qlEX6hGY,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,DOES PENIS SIZE REALLY MATTER?,5960,75,13,0.024955,1,152353,3385,417
+daily,2026-05-03,2026-05-03,o8Z1Q8UPSOU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Tienes que cambiar la forma en la que te comportas #shorts,5863,607,11,0.11337,1,10673,1194,16
+daily,2026-05-03,2026-05-03,_jxLMMcKmRQ,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,El truco de la mecha voladora,5764,298,5,0.061834,1,369487,22756,91
+daily,2026-05-03,2026-05-03,VjqsnOrW3AM,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,"If I wanted to hit my first $100,000 by 35 - here's what I'd do",5733,135,4,0.025532,1,110371,2718,100
+daily,2026-05-03,2026-05-03,kTlm_3HwRFg,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Togi Needs $5 Million Before He Gets Canceled,5650,93,0,0.024282,1,329991,7925,88
+daily,2026-05-03,2026-05-03,T7_l896OH20,UCDfbsXLRCyk_LIkrtaTmliQ,PlanetaJuan,Mi abuela tiene 94 años... y esto aprendió.,5631,331,41,0.117644,1,299463,30874,4356
+daily,2026-05-03,2026-05-03,dhbt8y_LXQY,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Tested Dead Places At Their Busiest Hour,5630,150,3,0.050129,1,503505,24894,346
+daily,2026-05-03,2026-05-03,BPt0fwBCDbQ,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Es imposible que un reactor nuclear sufra una explosión nuclear 🤖 #ia #chatgpt #educación,5607,62,1,0.012223,1,365377,4354,112
+daily,2026-05-03,2026-05-03,XfY_L8MLOsU,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,How Much Money Does It Take To Empty A Claw Machine?,5579,140,1,0.045001,1,390746,17334,250
+daily,2026-05-03,2026-05-03,kf9ghd5-VII,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Al Parecer Los Viajes En El Tiempo Son Real,5521,229,5,0.076878,1,252973,18558,890
+daily,2026-05-03,2026-05-03,J7ieKmP96Hc,UCMOqf8ab-42UUQIdVoKwjlQ,Practical Engineering,The Wild Story of the Teton Dam Failure,5284,157,1,0.033168,1,900172,28767,1090
+daily,2026-05-03,2026-05-03,ZAmCJoz4c4w,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Togi Stole $250k From Business Partner,5272,107,-1,0.022901,1,486136,10918,215
+daily,2026-05-03,2026-05-03,VsLOWe6VuyQ,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Magnus Carlsen JUST ENDED CHESS.,5174,101,7,0.028829,1,734202,19982,1184
+daily,2026-05-03,2026-05-03,MlcUa5-3G68,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,¿Realmente Vale la Pena Comprar Casa? Lo que los Números Dicen 🔢💸,5164,159,30,0.044504,1,17167,674,90
+daily,2026-05-03,2026-05-03,Q5rmW96IGqA,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Our First 100K,5159,188,-3,0.0435,1,16092,696,4
+daily,2026-05-03,2026-05-03,sbzsqNJuZvg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Price Your Upsells Like This,5114,116,1,0.022581,1,53541,1198,11
+daily,2026-05-03,2026-05-03,rVixyOY_Xr4,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,CAMBIOS IMPORTANTES en MercadoPago. ¿Conviene invertir?,4976,246,18,0.062924,1,11490,681,42
+daily,2026-05-03,2026-05-03,lk7HWLeXjS4,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,China bloqueó la compra de Manus por Meta,4960,172,27,0.039251,1,56738,2073,154
+daily,2026-05-03,2026-05-03,EFhMcL3Kf1c,UC1VLQPn9cYSqx8plbk9RxxQ,The Action Lab,How To Eliminate Gravity,4925,222,7,0.044378,1,318512,13417,718
+daily,2026-05-03,2026-05-03,Cql6TAdpPDU,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,Tus primeros empleados de IA: Guía Completa de ChatGPT Agents,4925,135,5,0.04004,1,82017,3109,175
+daily,2026-05-03,2026-05-03,SZ8r5VKtGes,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,La crisis Argentina impulsa el consumo de carne de burro.,4916,202,8,0.076429,1,371887,26582,1841
+daily,2026-05-03,2026-05-03,KKwxanUOAd4,UCwd_qoS94df5orGoPLPnsxQ,Franco Pisso,ARIEL SBDAR se tuvo que bajar del escenario por ésto...,4908,306,55,0.080558,1,58318,4307,391
+daily,2026-05-03,2026-05-03,2gFNJ6_ogzg,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,estos whitexicans son peor de lo que imaginas,4835,186,17,0.051664,1,70726,3439,215
+daily,2026-05-03,2026-05-03,Rvy2kXZpBtM,UCs0QXHkbkBDM_NwnRiGFoTA,Crea Y Transforma,50 Datos Sorprendentes de la Ciudad de Miami,4733,98,1,0.027801,1,25215,691,10
+daily,2026-05-03,2026-05-03,RGWm_UCIWnc,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto nunca deberías hablar de tus metas #shorts,4691,321,2,0.071792,1,10795,766,9
+daily,2026-05-03,2026-05-03,NoXtR658c_k,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,"Talibanes Cruzan Montañas Hacia China Tras 80 Años Aislados, pero China Cierra la Salida",4685,115,8,0.03395,1,34256,1117,46
+daily,2026-05-03,2026-05-03,K9S3YgFZN9Y,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Swiftie Makes $85k Per Year!,4659,73,2,0.02356,1,636372,14724,269
+daily,2026-05-03,2026-05-03,9rRvmcDpWwA,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,The Cost of Getting Rich,4608,137,20,0.041498,1,27977,1060,101
+daily,2026-05-03,2026-05-03,F1gM7N-WXdU,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Intermediate Chess Masterclass: 1300 to 2000 Elo,4595,83,1,0.037837,1,375903,13284,939
+daily,2026-05-03,2026-05-03,fKtG9uPeMCc,UCdfnfXWCGkBAx2cN2l-4u2w,Semo Historia,Esto podría salvar a Ciudad de México,4586,291,23,0.085776,1,35989,2821,266
+daily,2026-05-03,2026-05-03,-CB2CwSPtAQ,UCC552Sd-3nyi_tk2BudLUzA,AsapSCIENCE,Your anus created consciousness #science #evolution,4574,148,9,0.037005,1,36319,1244,100
+daily,2026-05-03,2026-05-03,rQmlUxDeTxE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto no debes compartir objetivos con todo el mundo  #shorts,4542,434,8,0.08494,1,9489,795,11
+daily,2026-05-03,2026-05-03,THMW7bXTog4,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Zuckerberg compró INSTAGRAM por $1000M y Wall Street se BURLÓ,4517,379,7,0.077448,1,181360,13889,157
+daily,2026-05-03,2026-05-03,xhCLLakHBa8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Turn Insults Into Compliments,4514,156,2,0.03599,1,54015,1905,39
+daily,2026-05-03,2026-05-03,shkHigLwBnM,UCyJbb85EUgWjl38GcF236Jg,Eva Maria Beristain,Padre de Juan Jesús N,4468,67,2,0.033418,1,326562,10534,379
+daily,2026-05-03,2026-05-03,-pNi4dh7VFo,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,20 MILLONES de G… Saitama rompe la física,4464,196,3,0.060055,1,385478,22755,395
+daily,2026-05-03,2026-05-03,CdlFyd3WHbg,UCX9NJ471o7Wie1DQe94RVIg,Fazt,Este Agente de IA Vive en Tu Servidor y Aprende Solo 😮,4454,205,1,0.053104,1,6572,346,3
+daily,2026-05-03,2026-05-03,iTOXHp4c1YE,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Lo despidieron por grabar vídeos virales,4381,80,0,0.02483,1,128431,3163,26
+daily,2026-05-03,2026-05-03,QIKiQjEMUjY,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Abandoné A Mis Trillizos! 😭 Ft. @CD9MX - T10E05 #podcast #chisme #cd9,4329,92,5,0.03511,1,227541,7258,731
+daily,2026-05-03,2026-05-03,2mOqRPcWgMM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,I Would Give Away 100% Of My Profit To Do This,4314,66,1,0.018352,1,56886,1024,20
+daily,2026-05-03,2026-05-03,OgbLx7K5jKI,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,3 Surprising Things I Learned As a New Dad,4312,53,0,0.019162,1,21866,410,9
+daily,2026-05-03,2026-05-03,AHyZdLVYJfc,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,basically every Breaking Points™ video,4298,204,28,0.101057,1,189329,16871,2262
+daily,2026-05-03,2026-05-03,ftk4VdOcaj8,UC30ajuhy8cViP2DiM1QLjmg,98grados,Que no te pase lo que a mí. Ten en cuenta estas 3 cosas para elegir bien #pc #mouse #perifericos,4287,460,13,0.101935,1,6563,646,23
+daily,2026-05-03,2026-05-03,dqOmDZPkIF4,UCVt4ugq2txl_szlXAO7B3-g,Adrián Sáenz,La Forma Más Fácil De Ganar Dinero Con Skool,4233,146,2,0.045094,1,19692,869,19
+daily,2026-05-03,2026-05-03,bfENsVP77VQ,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,The Only Investing Video You’ll Ever Need (Start With $0),4105,64,2,0.024256,1,164247,3645,339
+daily,2026-05-03,2026-05-03,x2r3FTy9HHE,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,how i imagine they wrote the Michael Jackson movie,4038,168,21,0.067738,1,261566,16599,1119
+daily,2026-05-03,2026-05-03,hXPy19kPego,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,El Gran Vacío de Nuestro Genoma,3995,274,20,0.082667,1,124971,9580,751
+daily,2026-05-03,2026-05-03,7FYFhOiiMIU,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Your Critics Will Die....,3956,126,2,0.041743,1,11499,476,4
+daily,2026-05-03,2026-05-03,kmKuk_TCEvU,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,"Se acabó la subvención de la IA, estas son las mejores alternativas",3923,76,1,0.034425,1,25156,840,26
+daily,2026-05-03,2026-05-03,s23TO2BQBcU,UCX9NJ471o7Wie1DQe94RVIg,Fazt,El FIN de la IA barata ya comenzó 🚨,3850,98,3,0.037477,1,19025,667,46
+daily,2026-05-03,2026-05-03,CE6tiT3Q6c4,UCOvzFyIAr32yspwxx77BHcQ,Rob Paper Clips,El Hermano de Fofo Márquez es PEOR de lo que Imaginas... @robertochairez,3841,136,27,0.064973,1,49590,2751,471
+daily,2026-05-03,2026-05-03,9opMZrn2-zg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,More For You,3830,154,-7,0.045798,1,21595,987,2
+daily,2026-05-03,2026-05-03,0VjrLsr61pk,UC55-mxUj5Nj3niXFReG44OQ,Platzi,El futuro de Apple después de Tim Cook,3819,86,0,0.038222,1,146355,5258,336
+daily,2026-05-03,2026-05-03,kXenRXelpKs,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,I learned to earn unlimited money,3703,197,1,0.05158,1,43408,2200,39
+daily,2026-05-03,2026-05-03,LKxIrZFhONI,UCM55RjebjSevVWPnj2LEymw,viyaura,I mastered anime art so... #art #artist #anime #draw #drawing,3689,170,13,0.068415,1,76124,4963,245
+daily,2026-05-03,2026-05-03,TfojYStTlZE,UC0N6ZYT8Q9bdQkGrgl9g9Ug,Pinwin,Tienes que Aprender a Estar SOLO.,3644,325,10,0.114246,1,103050,11130,643
+daily,2026-05-03,2026-05-03,yy_J5fdELm0,UCM55RjebjSevVWPnj2LEymw,viyaura,QUICK which signature is better? #art #artist #draw #drawing,3635,165,52,0.087379,1,108333,7588,1878
+daily,2026-05-03,2026-05-03,21UbB1_pq3o,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Rubén Rocha pide licencia… próximas horas turbulentas #méxico,3612,248,36,0.083392,1,4269,314,42
+daily,2026-05-03,2026-05-03,sjbKZ4CY1Ow,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,"How Much You Need for $100 Per Month in Dividends with the following stocks: KO, AAPL, T",3607,29,1,0.016262,1,139593,2149,121
+daily,2026-05-03,2026-05-03,-X2P40t70LM,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Que está pasando en México? #méxico,3592,274,9,0.081801,1,4352,346,10
+daily,2026-05-03,2026-05-03,s9TcINJc2pw,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Watch This If You Don't Wan't To Be Average...,3506,127,-15,0.047137,1,54395,2540,24
+daily,2026-05-03,2026-05-03,na5Enw8P18A,UCM55RjebjSevVWPnj2LEymw,viyaura,artists who draw anime be like... #art #artist #draw #drawing,3493,107,3,0.060332,1,169926,9949,303
+daily,2026-05-03,2026-05-03,1VSBgPn28zA,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,If You Work All Day And Get Nothing Done,3478,119,0,0.049647,1,120451,5941,39
+daily,2026-05-03,2026-05-03,MK3Lz4fAvZo,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,MATERIA OSCURA Y AGUJEROS NEGROS DE OTRO UNIVERSO 🌌,3453,207,1,0.086322,1,34858,2922,87
+daily,2026-05-03,2026-05-03,IldLswg2yAM,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Cómo reinventarte cuando tu industria desaparece | Belinda (Bely y Beto) | Dimes y Billetes #448,3377,87,7,0.029459,1,14902,403,36
+daily,2026-05-03,2026-05-03,uSjcVPbJayU,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,¿Qué pasa si MÉXICO sigue IMPORTANDO el 75% de su GAS?,3373,235,10,0.056224,1,317834,16875,995
+daily,2026-05-03,2026-05-03,wN3O2GSvoWE,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,¿No Sabes EN QUÉ Invertir? — Empieza AQUÍ,3372,9,0,0.028154,1,9306,247,15
+daily,2026-05-03,2026-05-03,XXZ2wOom1l0,UCVt4ugq2txl_szlXAO7B3-g,Adrián Sáenz,Curso Completo De Claude Code (+4 Horas),3354,107,0,0.049539,1,91302,4397,126
+daily,2026-05-03,2026-05-03,eYDQWSBQ47s,UC1m55IoeEf7LKC9s68PDHDg,DonebyLaura,Creo una app con IA pero usando solo el móvil.,3337,173,12,0.075873,1,19559,1364,120
+daily,2026-05-03,2026-05-03,nnKkk3CpLes,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,"Freestyleando con Danger AK. Azuky vs Nota Roja, Danger vs. Chilli Parker y más.",3311,117,14,0.053249,1,70968,3429,350
+daily,2026-05-03,2026-05-03,WwEyLRmGU9g,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,¿CUÁLES SON LAS LUNAS MÁS HABITABLES DEL SISTEMA SOLAR? 🌌,3306,172,11,0.075725,1,57933,4251,136
+daily,2026-05-03,2026-05-03,tUmd3tWCDKs,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,WINNING LIKE THIS IS FAILURE,3270,59,0,0.02489,1,151667,3597,178
+daily,2026-05-03,2026-05-03,FbRnMwKmmTA,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Existen pasos para convertirse en experto en IA?,3230,241,5,0.07739,1,7249,533,28
+daily,2026-05-03,2026-05-03,SK7yqZdN3Dg,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es el enfado más peligroso #shorts,3200,166,3,0.066435,1,18966,1224,36
+daily,2026-05-03,2026-05-03,Y9HJ_U3TdXk,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Stop Making Yourself Too Available For Everyone,3191,92,0,0.037358,1,161974,6023,28
+daily,2026-05-03,2026-05-03,yA-SufBCL7g,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,3170,172,0,0.061269,1,11833,717,8
+daily,2026-05-03,2026-05-03,3OUrr_2UCYs,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,THEY'RE LYING TO YOU ABOUT PEPTIDES!,3147,99,7,0.025811,1,956149,23973,706
+daily,2026-05-03,2026-05-03,d0VoQtmw9Eg,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,Burbuja en la bolsa de valores #shorts #bolsa #acciones #finazas,3138,111,1,0.043468,1,12630,546,3
+daily,2026-05-03,2026-05-03,yIUDe9YH0ac,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Dating As An  Entrepreneur,3123,87,1,0.028015,1,207104,5703,99
+daily,2026-05-03,2026-05-03,ZhRgnBzcYHQ,UCvzk_MwdXD6jQa4Se-6B9ZQ,Adrià Solà Pastor,Cómo Ganar Dinero Por Internet (De Verdad) En 2026? Curso Completo Con Resultados Garantizados,3121,155,2,0.069325,1,42207,2834,92
+daily,2026-05-03,2026-05-03,Aa1qfpfSaVY,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You Can Be In A Good Mood,3096,105,-3,0.045801,1,20327,924,7
+daily,2026-05-03,2026-05-03,RCl-cN1Hf-Q,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Competencias de chismes #chisme #comedia #podcast,3033,100,1,0.036965,1,6655,245,1
+daily,2026-05-03,2026-05-03,1X8BPKi1kP8,UCm5iBOcQ0GET_2FqFI61QDA,Cara Nicole,How Americans plan to pay for their summer vacations ☀️,3029,133,6,0.048119,1,7710,341,30
+daily,2026-05-03,2026-05-03,nGakcu0V0ZM,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,"What Makes a Coin $3,000,000?",2985,62,4,0.02451,1,14606,335,23
+daily,2026-05-03,2026-05-03,KztyymfW3Dg,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,"Esa parte… de la persona sin colchón, te recomendamos saltártela. 😬🙈 #chisme #comedia",2972,76,1,0.036714,1,24296,883,9
+daily,2026-05-03,2026-05-03,KXpgCNB6Dcs,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,La valiosa excreción de cachalote,2971,178,1,0.077322,1,465844,35815,205
+daily,2026-05-03,2026-05-03,_9bYQ2tvc_s,UCV5cU7ORoUCCAT79kSrOJmg,Ricardo Alcaraz,La Peor Disculpa que he visto,2963,159,1,0.077272,1,232399,17387,571
+daily,2026-05-03,2026-05-03,nHH771Vtkxw,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Por qué Israel ''manda'' en Estados Unidos?,2946,203,7,0.08319,1,357231,28970,748
+daily,2026-05-03,2026-05-03,GAf7J_t1o8U,UC0N6ZYT8Q9bdQkGrgl9g9Ug,Pinwin,La REALIDAD de CREAR CONTENIDO en 2026...,2884,304,15,0.148239,1,16777,2309,178
+daily,2026-05-03,2026-05-03,o8YcWD2ri9U,UC52kszkc08-acFOuogFl5jw,Tibees,Something Weird Is Happening in Self-Publishing,2835,130,8,0.074211,1,65880,4390,499
+daily,2026-05-03,2026-05-03,9VyCOVdFpL8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Success Is the Only Revenge,2834,84,0,0.027567,1,129393,3545,22
+daily,2026-05-03,2026-05-03,fr78adfAnuA,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,How to Use AI in Your Business in 2026,2800,73,0,0.032623,1,150107,4721,176
+daily,2026-05-03,2026-05-03,YR-4vFbwe18,UCX9NJ471o7Wie1DQe94RVIg,Fazt,Hermes: El Agente IA Open Source que Está Rompiéndola en 2026 🔥,2799,99,8,0.050253,1,31759,1513,83
+daily,2026-05-03,2026-05-03,UgfrzicHc80,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Tiene Un Fetiche Con Su Hermana! 😱 Ft. @leal_stephany y @lozano_gf - T10E04 #podcast #chismes,2785,77,2,0.034956,1,195043,6142,676
+daily,2026-05-03,2026-05-03,nH8YRX4Stfs,UCrr-NczCJHrwi1oBS97uwnw,Finanzas con Gus,Trump Convertirá a China en Superpotencia,2722,95,17,0.049452,1,19696,841,133
+daily,2026-05-03,2026-05-03,enQeP-ztP5A,UCF7UoUGGOUcSSNcVDndq7KQ,Itzcalli,Carta de Matias Galetto en varios idiomas porque me odio #italian #matiasgaletto #french,2686,346,4,0.076391,1,8522,638,13
+daily,2026-05-03,2026-05-03,lB_XJmoBLjw,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,2681,185,3,0.051396,1,7666,388,6
+daily,2026-05-03,2026-05-03,zj0BKLv9r8Y,UC4jlzJyMNQkkcEcCN3EFG7g,Brin,"Cuando el ""RARITO DE LA ESCUELA"" se cansa del bullying",2626,66,12,0.046974,1,97181,3982,583
+daily,2026-05-03,2026-05-03,95KqKaDsIAM,UCxcDzs-4quJV4QsairlFYNg,Alejavi Rivera,Lo hicieron! Crea vídeos largos GRATIS con audio de calidad por IA 🎥,2625,74,1,0.047933,1,41099,1867,103
+daily,2026-05-03,2026-05-03,wnoSOSgBNHk,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,¡La NUEVA “Simula” de Google es INCREÍBLE!,2622,44,4,0.039452,1,36956,1418,40
+daily,2026-05-03,2026-05-03,GybLbhXj2Nw,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,Game Theory #2: The Collapse of the Trump Empire,2589,95,11,0.082757,1,156905,11454,1531
+daily,2026-05-03,2026-05-03,KfaPxlvQx1M,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,El gnomo #chisme #comedia #podcast,2582,247,5,0.069647,1,9103,628,6
+daily,2026-05-03,2026-05-03,XeN7wKfDOPk,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,Our Evolutionary Past Is Killing Us Now,2575,106,20,0.069614,1,153216,9096,1570
+daily,2026-05-03,2026-05-03,crrTHKN_R58,UCTfQ65AxquXmih3r6rZmK-Q,jefillysh,Por qué ODIAMOS a los demás? - CIENCIA SIMPLIFICADA EP#77,2561,184,11,0.078268,1,111221,8124,581
+daily,2026-05-03,2026-05-03,gPmmDEGCQLg,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,Por qué hacer Alioli es casi imposible,2560,173,4,0.089995,1,284637,25156,460
+daily,2026-05-03,2026-05-03,h9kh7KssnMc,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,China Encontró Algo Inexplicable en Esta Montaña de África y Ahora se lo Lleva Rápido,2544,51,0,0.022913,1,112557,2516,63
+daily,2026-05-03,2026-05-03,OEqMxMEBQQY,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,SpaceX comprará Cursor por 60 mil millones. ¿Por qué?,2536,51,4,0.039744,1,39880,1513,72
+daily,2026-05-03,2026-05-03,w_Z0cdu9c9I,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,¿miedo al abandono?,2529,158,3,0.08178,1,6493,518,13
+daily,2026-05-03,2026-05-03,_FP4gbF0KWY,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿ChatGPT o Claude? ¡No importa cuál es mejor!,2480,161,2,0.075562,1,6670,488,16
+daily,2026-05-03,2026-05-03,ByJAH8vTgfw,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,El día que descubrí el futuro,2474,73,4,0.033149,1,28146,909,24
+daily,2026-05-03,2026-05-03,quCJwkDAx0g,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,"US wants Claude all to itself... because it's ""TOO DANGEROUS""",2471,44,11,0.039153,1,36447,1083,344
+daily,2026-05-03,2026-05-03,vTXoE7BLv9s,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,El aterrador manifiesto de Palantir. #diegoruzzarin #noticias,2464,179,10,0.09173,1,268572,23883,753
+daily,2026-05-03,2026-05-03,q1l42BPzbIk,UC4mg-nKTVI9CWodPPqB5d3A,Luna Martínez ,MALLWORLD: TODOS SOÑAMOS LO MISMO..😴👁️ | Luna Martínez ,2446,145,17,0.099118,1,110484,9623,1328
+daily,2026-05-03,2026-05-03,sj1y9FDJKCM,UCJkMlOu7faDgqh4PfzbpLdg,Nerdwriter1,The Film That Attacks You,2429,104,2,0.058871,1,58212,3251,176
+daily,2026-05-03,2026-05-03,6UPfq3KETg4,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,HAN DESCUBIERTO 11.000 NUEVOS INTEGRANTES DEL SISTEMA SOLAR 🌌,2364,175,1,0.035413,1,159714,5531,125
+daily,2026-05-03,2026-05-03,XFpBgNMBNNI,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,The Most Humiliating Defeat Of My Life.,2341,78,1,0.044734,1,336655,14261,799
+daily,2026-05-03,2026-05-03,f2fDaAMvlV4,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Chisme exclusivo con Melissa Ortega #chisme #comedia #podcast,2295,88,0,0.038473,1,9825,376,2
+daily,2026-05-03,2026-05-03,LDQnGP6iSH4,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,¡El NUEVO Navegador de Google que usa un Agente de IA es una LOCURA!,2269,101,4,0.054106,1,8280,429,19
+daily,2026-05-03,2026-05-03,VKaslzzv1QM,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🚨 NOTICIAS IA 🚨: China lanza IA al nivel de USA 🔥🤖,2255,51,1,0.037674,1,93486,3315,207
+daily,2026-05-03,2026-05-03,HyO6rMqRXw0,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,La batalla de #azuky y #notaroja,2248,75,1,0.037192,1,23661,844,36
+daily,2026-05-03,2026-05-03,0DB_Qj43O6Q,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""I Post 5X A Day, But Get No Views""",2215,122,1,0.054911,1,64085,3492,27
+daily,2026-05-03,2026-05-03,UEBpQgCIFTk,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,La peculiar manera de criar del cuco,2183,63,-1,0.043077,1,582426,24882,207
+daily,2026-05-03,2026-05-03,3GUtClCifjw,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,¿se puede programar con agentes y una gráfica integrada?,2168,64,0,0.029441,1,10020,289,6
+daily,2026-05-03,2026-05-03,UszcZZ1QZho,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,Cuando tienes ESTOS 3 HÁBITOS siempre tendrás tu casa Limpia y Ordenada ✨,2140,49,0,0.036207,1,22537,790,26
+daily,2026-05-03,2026-05-03,Lnhy0tZ8SUI,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,6 Ways To Change Your Life,2108,63,0,0.038936,1,57094,2216,7
+daily,2026-05-03,2026-05-03,WEnvorobhEE,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,FBI investigates suspicious disappearances of scientists tied to classified research,2106,64,12,0.0602,1,693738,33590,8173
+daily,2026-05-03,2026-05-03,0elkAIACdFE,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,No te gastes todo lo que ganas,2098,78,4,0.045931,1,18114,818,14
+daily,2026-05-03,2026-05-03,LK1OJ-izQfQ,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""How Do I Get More Qualified Leads?""",2094,68,1,0.0428,1,21799,924,9
+daily,2026-05-03,2026-05-03,qGDMB-PryIU,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,Hermes Birkin bags have appreciated over 650% in the past decade! Are they a good investment though?,2089,30,0,0.019432,1,33811,623,34
+daily,2026-05-03,2026-05-03,RNUjufFVGXs,UCfOaXuYSAQXm7CTYWD8dUXQ,MIGALA D,El aguacate,2066,194,22,0.114626,1,3699,392,32
+daily,2026-05-03,2026-05-03,krqt6eg3UoI,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,EL TRISTE CASO DE JUAN MARTÍN (EL WILLIAMS DE TIIKTOK),2047,58,1,0.043376,1,62201,2559,139
+daily,2026-05-03,2026-05-03,r6AB_e8Rk1I,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Los aranceles de Trump FUERZAN a Hyundai a MOVERSE de México,2036,111,2,0.036402,1,150623,5303,180
+daily,2026-05-03,2026-05-03,pra3fiwosjU,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,todos se enojaron con ella pero NO TIENEN RAZON,2030,49,0,0.03114,1,3404,101,5
+daily,2026-05-03,2026-05-03,PN8bHAr0f1M,UCOHxDwCcOzBaLkeTazanwcw,Bravos Research,The Damage is done…,2026,27,0,0.025851,1,169550,4320,63
+daily,2026-05-03,2026-05-03,oj3-hWAf1uQ,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Herdez puso en PELIGRO su IMPERIO por una ALIANZA,2015,124,0,0.052039,1,37414,1933,14
+daily,2026-05-03,2026-05-03,N8Bc_M2Ew2E,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,¿Por qué las mejores ideas aparecen en la ducha?,1999,110,0,0.065402,1,8012,515,9
+daily,2026-05-03,2026-05-03,U14_qm5y38o,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,Cómo detectar a un charlatán en una sobremesa,1987,93,1,0.048111,1,118373,5442,253
+daily,2026-05-03,2026-05-03,rk2b7fH_Gcc,UCZRsSEs1OX74qBh0x5T22tg,EL CACHONDO,MIL MANERAS DE M0RIR EN ARGENTINA #5,1985,73,1,0.087287,1,45631,3793,190
+daily,2026-05-03,2026-05-03,8Uk97zU2GCg,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Argentina: pesadilla libertaria. (Milei se supera cada día),1968,62,8,0.057777,1,243764,12568,1516
+daily,2026-05-03,2026-05-03,Hf6NC8AzAKo,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,LA VERDAD DETRÁS DEL JUEGO MÁS POPULAR DE LOS MILLENIALS... l Qué caraj* son Los Sims? l Ale Marin,1874,182,9,0.107603,1,3104,316,18
+daily,2026-05-03,2026-05-03,31WQ21L6kE8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You Have To Be The Exception,1865,98,-4,0.060196,1,14702,875,10
+daily,2026-05-03,2026-05-03,4IeYytwcpuQ,UCM55RjebjSevVWPnj2LEymw,viyaura,we tricked the internet...#art #artist,1839,40,1,0.0616,1,103718,6190,199
+daily,2026-05-03,2026-05-03,GmTuhpMe1oM,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,La ballena explosiva,1832,70,0,0.06249,1,169786,10527,83
+daily,2026-05-03,2026-05-03,NlW_R21cBXs,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Milei abandona a las personas con discapacidad.  #diegoruzzarin #Milei #argentina,1821,107,2,0.080767,1,202930,15631,759
+daily,2026-05-03,2026-05-03,TekYNY3eGC0,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,ARTEMIS II FOTOGRAFÍA NUESTRA GALAXIA EN PLENO VIAJE 🌌,1818,122,4,0.060292,1,111789,6534,206
+daily,2026-05-03,2026-05-03,bFO0uAMPx1g,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,Hermes Agent is INSANE...,1771,26,2,0.029698,1,61452,1571,254
+daily,2026-05-03,2026-05-03,_twN29IEQlc,UC7MkZfrLCeE4Xwh9h2QnN0A,Arcade's Books,"La DECADENCIA de la CRÍTICA LITERARIA 🐍 ¿Crítica, adulación o ""hate""? | Arcade's Books",1768,128,6,0.102762,1,32006,3028,261
+daily,2026-05-03,2026-05-03,xfMhpaP8QSg,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Los extraditarías o no? #méxico,1766,170,15,0.100564,1,4962,445,54
+daily,2026-05-03,2026-05-03,IwjPma4PPTM,UCVt4ugq2txl_szlXAO7B3-g,Adrián Sáenz,Pruebo La Nueva IA De Google Para Ganar Dinero,1764,85,0,0.057675,1,73706,4154,97
+daily,2026-05-03,2026-05-03,WB1bBLedJQ4,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Cancelé la boda por su familia #chisme #comedia #podcast,1744,31,0,0.024434,1,17967,437,2
+daily,2026-05-03,2026-05-03,jIj6PuMrDGA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Nunca haría esto #shorts,1740,79,0,0.071639,1,40467,2866,33
+daily,2026-05-03,2026-05-03,VVfMO6SJZLw,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,"Gané $800,000+ en la bolsa de valores. ¿Cuánto pagué de impuestos?",1721,54,-43,0.055443,1,33494,1683,174
+daily,2026-05-03,2026-05-03,H_i8nh8uBco,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,1719,50,0,0.028498,1,7790,217,5
+daily,2026-05-03,2026-05-03,UDiJI3q9wFQ,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,Más vale prevenir,1709,52,3,0.047593,1,31412,1439,56
+daily,2026-05-03,2026-05-03,-APimd6TUro,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,No saben que lo mantengo #chisme #comedia #podcast,1687,20,1,0.021984,1,32296,706,4
+daily,2026-05-03,2026-05-03,0SSctcuOy0o,UCb8GKeOvI7WsFUkB4UVAeXA,Cordura Artificial,Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia,1678,87,6,0.079579,1,22820,1736,80
+daily,2026-05-03,2026-05-03,ND9eyW5Fw0s,UCSIvk78tK2TiviLQn4fSHaw,Up and Atom,Could a TRILLION Monkeys Write Shakespeare Before the Universe Ends?,1672,113,14,0.12501,1,36893,3795,817
+daily,2026-05-03,2026-05-03,HeY4a7uDlkg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""How Do I Get More Leads?""",1660,46,2,0.037133,1,55369,2038,18
+daily,2026-05-03,2026-05-03,2A0dbP8LJoA,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,DEJA de PERDER el tiempo I 5 Cosas en las cuales DEBERÍA DOLERTE gastar tu tiempo,1618,104,3,0.096826,1,5608,515,28
+daily,2026-05-03,2026-05-03,Cd5EHfRerGI,UC52kszkc08-acFOuogFl5jw,Tibees,The physics slop that YouTube wants me to make,1612,78,7,0.083882,1,216637,16078,2094
+daily,2026-05-03,2026-05-03,x3P8Zqux4A4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"If You Feel Like You're Behind, Watch This.",1585,32,0,0.039844,1,57223,2264,16
+daily,2026-05-03,2026-05-03,HVPhcOmSMtM,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,La Verdad que Nadie te Dice sobre Cómo los Colombianos Están Gastando Su Dinero | VP de Mastercard,1546,46,6,0.032466,1,13337,386,47
+daily,2026-05-03,2026-05-03,v3JV42WbomE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Los chinos van a superar a Estados Unidos en IA,1546,61,2,0.046881,1,25021,1111,62
+daily,2026-05-03,2026-05-03,sGEEHGc7eyo,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía de Gemini Pro  fijada en los comentarios de este video.,1529,59,1,0.035196,1,5171,177,5
+daily,2026-05-03,2026-05-03,nWfp_X31vqk,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,¿Te imaginas tener un meteorito REAL en tus manos? 🌌,1521,65,0,0.053755,1,14808,763,33
+daily,2026-05-03,2026-05-03,yemarhfhVA0,UCrdWRLq10OHuy7HmSckV3Vg,Nathaniel Drew,Epic transformation of my 1850s house in France (start to finish),1495,106,10,0.087807,1,111278,9205,566
+daily,2026-05-03,2026-05-03,qey62i2fvg0,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""I Don't Have Recurring Revenue""",1468,15,1,0.027874,1,64002,1751,33
+daily,2026-05-03,2026-05-03,ABoKfabPQyY,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Why Can't You Just Do More?,1456,21,0,0.021074,1,226580,4730,45
+daily,2026-05-03,2026-05-03,8CpQzf_RYb4,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,"""Le vas invertir dinero al aire""",1442,96,0,0.07025,1,3274,228,2
+daily,2026-05-03,2026-05-03,nJ0oh5u6YbM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Don't Even Think About Passive Income,1435,40,1,0.035056,1,116298,4050,27
+daily,2026-05-03,2026-05-03,ckyeC880OPA,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Comparamos el nuevo GPT Images 2.0 vs. Nano Banana 2 🤯,1419,5,0,0.033757,1,50656,1672,38
+daily,2026-05-03,2026-05-03,IJJbQTVdAtE,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Stop Chasing The Women In The Red Dress,1400,33,0,0.032756,1,76382,2488,14
+daily,2026-05-03,2026-05-03,0EqJD2o-Mnk,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Helping 6 Business Owners Scale in 33 Minutes,1376,37,0,0.024713,1,40748,950,57
+daily,2026-05-03,2026-05-03,NM-bwZZoX80,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,d4vd es peor de lo que imaginas,1376,50,4,0.053109,1,81681,4100,238
+daily,2026-05-03,2026-05-03,NuoEsHIW5JA,UCzR-rom72PHN9Zg7RML9EbA,PBS Eons,Why do mammals keep evolving into ant-eaters?,1323,23,0,0.039341,1,88153,3333,135
+daily,2026-05-03,2026-05-03,k30WHO9_ppU,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,1312,58,0,0.038706,1,5968,228,3
+daily,2026-05-03,2026-05-03,tQCVAU-fZPA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,1306,74,1,0.046128,1,301290,13739,159
+daily,2026-05-03,2026-05-03,rfnB9MhBI44,UCbdSYaPD-lr1kW27UJuk8Pw,QuantumFracture,Se Cumplen 40 años del Accidente de Chernobyl,1281,69,0,0.071178,1,169968,11859,239
+daily,2026-05-03,2026-05-03,9LsgBjswQZY,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,Homeless Man Spent $5k on Paintings,1276,23,1,0.020609,1,133195,2712,33
+daily,2026-05-03,2026-05-03,LPTQADIf6Xk,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,Tecnologías de las que NADIE Habla,1276,68,4,0.069951,1,125144,8245,509
+daily,2026-05-03,2026-05-03,W4BkgA1P27o,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,¡Las NUEVAS Actualizaciones de NotebookLM son una LOCURA!,1272,45,4,0.055561,1,9503,505,23
+daily,2026-05-03,2026-05-03,1lx0bttCAbs,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Estos suplementos te harán dormir en menos de 5 minutos #shorts,1267,71,0,0.051951,1,37112,1891,37
+daily,2026-05-03,2026-05-03,OWkM5YoEhgM,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,EL FUTURO DE LA PROPULSIÓN ESPACIAL SIN COMBUSTIBLE 🛰️,1261,59,0,0.077081,1,70082,5307,95
+daily,2026-05-03,2026-05-03,GEXxx3JQmdw,UCvPGx8qh8AkrFZW06tESvaA,Dot Dager,A NADIE LE IMPORTA #dev #programacion,1252,56,2,0.068357,1,6744,447,14
+daily,2026-05-03,2026-05-03,waOGddip3Wk,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,La maldición de la silla presidencial #méxico,1229,91,10,0.096538,1,3957,353,29
+daily,2026-05-03,2026-05-03,uHXjo7DUAAM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Entrepreneurship Often Sucks,1208,52,0,0.049002,1,12979,630,6
+daily,2026-05-03,2026-05-03,dVb9vyCwM2s,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Demanda Repugnante a YouTuber,1183,46,0,0.065132,1,190230,11886,504
+daily,2026-05-03,2026-05-03,4ZK7Ms4IZ7g,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,How to Chose Your Next Business Idea,1177,7,0,0.00783,1,25669,195,6
+daily,2026-05-03,2026-05-03,H3lUaL6-XQQ,UCPgVPrgqpALC1s2e63fgKyg,elWacky,YouTuber Arruina Otro Hobby,1177,51,2,0.061988,1,196942,11547,661
+daily,2026-05-03,2026-05-03,ZOPXzlpBVoM,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Comenzó,1175,52,3,0.068968,1,116982,7466,602
+daily,2026-05-03,2026-05-03,Cs1nC8kqS5k,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Polémica en el Mitin de María Corina Machado.,1174,60,7,0.071781,1,47868,3166,270
+daily,2026-05-03,2026-05-03,yGC0oT995TM,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,Minimalist AI Setup I’d Give To Any Employee,1159,35,1,0.030315,1,13030,388,7
+daily,2026-05-03,2026-05-03,2JhSWzxzLXA,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,DELCY consolida su RÉGIMEN: ¿Está VENEZUELA SUFRIENDO una nueva DECEPCIÓN? @VisualPolitik,1151,24,3,0.041954,1,205415,8037,581
+daily,2026-05-03,2026-05-03,UxUmboIvArE,UC-ktYMwvFKNmhQdps8VDrkg,Daniel Felipe Medina,La nueva estrategia de YouTube que está generando millones,1148,55,3,0.056544,1,2193,116,8
+daily,2026-05-03,2026-05-03,OuOIrxBXB0M,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,How I Filter Feedback,1147,15,0,0.022001,1,128129,2801,18
+daily,2026-05-03,2026-05-03,8hN5PF2oXGs,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,SECRET BRAIN STRATEGIES BEHIND SUCCESS,1141,29,0,0.027504,1,189574,5132,82
+daily,2026-05-03,2026-05-03,wd_xh6gSSOs,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Give It All Away,1131,69,1,0.046442,1,60376,2754,50
+daily,2026-05-03,2026-05-03,DerWppSGkmE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Si ya usas VS Code este es tu siguiente paso en la IA,1124,102,1,0.074705,1,9397,682,20
+daily,2026-05-03,2026-05-03,YD2iT-SCJb0,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,1106,19,1,0.02,1,6250,120,5
+daily,2026-05-03,2026-05-03,EZLeWRbCEbA,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,El Método Exacto para Invertir en CTDs (Renta Fija) y Crear Patrimonio | Experto en Inversiones,1101,37,2,0.042308,1,37203,1489,85
+daily,2026-05-03,2026-05-03,DQiQ30VepbU,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Qué hizo OpenAI para vencer a Anthropic?,1098,51,2,0.047334,1,22584,987,82
+daily,2026-05-03,2026-05-03,_dASAu79K0s,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"Use  ""But"" The Right Way",1094,47,0,0.063523,1,33799,2128,19
+daily,2026-05-03,2026-05-03,Ff0AYRWrnGY,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,The Truth About China’s Green Energy Industry,1081,53,12,0.077588,1,189618,12048,2664
+daily,2026-05-03,2026-05-03,uvfU2B8b4G4,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,¿Por qué ESPERAN años para SALIR a BOLSA?,1073,67,3,0.047971,1,47445,2255,21
+daily,2026-05-03,2026-05-03,-txFIHA4ez8,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Usa Códex como aplicación de dictado GRATIS,1071,43,1,0.046442,1,61066,2734,102
+daily,2026-05-03,2026-05-03,_SdzVNht_nU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Todo Lo Que He Aprendido Estando Cerca Del Top 1% del Mundo,1061,78,1,0.076066,1,7717,566,21
+daily,2026-05-03,2026-05-03,4vHF2qU89Jo,UCwd_qoS94df5orGoPLPnsxQ,Franco Pisso,La pregunta que me salvó la vida (y te va a incomodar),1028,59,4,0.108613,1,67506,6893,439
+daily,2026-05-03,2026-05-03,JTtyJPD0ZOw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Jaime Higuera no se equivocó cuando dijo esto #shorts,1015,70,4,0.075171,1,10363,752,27
+daily,2026-05-03,2026-05-03,3QRWlCFdzyE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,1011,47,0,0.049472,1,18839,913,19
+daily,2026-05-03,2026-05-03,MmtdaRSSUZA,UCaZ5txM63JGqgzRTVXy5e9g,César Dabián Finanzas,Cómo salir de Deudas Para Siempre- Clase Completa,1008,52,2,0.078404,1,5663,410,34
+daily,2026-05-03,2026-05-03,51dULrDA8E8,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,NINTENDO no nació como EMPRESA de videojuegos… ESTO PASÓ,1006,56,2,0.079977,1,15867,1250,19
+daily,2026-05-03,2026-05-03,iGaMJCi8mAk,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Pasó de FUNDADORA a COMPETENCIA,1004,16,0,0.027195,1,10296,277,3
+daily,2026-05-03,2026-05-03,DB1fSfulSJQ,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Is What Wasted Potential Actually Looks Like,997,17,0,0.039408,1,60978,2386,17
+daily,2026-05-03,2026-05-03,pGGJHrxn1VU,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Me estafó un fantasma japonés #chisme #comedia #podcast,991,54,0,0.035909,1,21694,779,0
+daily,2026-05-03,2026-05-03,g_7mUw6Xt2E,UCoXtmmnLCbXDiSo8GxsmOzA,La gata de Schrödinger,Sorpresa mundial: la homeopatía no funciona.,987,48,17,0.054974,1,138157,6913,682
+daily,2026-05-03,2026-05-03,hE1O48iNhBw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Muchos de mis errores se repetían #shorts,979,121,0,0.070704,1,3451,242,2
+daily,2026-05-03,2026-05-03,-0FsgHxwxgQ,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,La Situación de Emilio Antun es muy Divertida,978,27,1,0.038493,1,78924,2920,118
+daily,2026-05-03,2026-05-03,aqIgIWIc3uw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,México empieza a tener matices de país desarrollado #méxico,974,31,0,0.057557,1,18764,1024,56
+daily,2026-05-03,2026-05-03,-IhdnUzV64Y,UCb8GKeOvI7WsFUkB4UVAeXA,Cordura Artificial,La Simple TÉCNICA que convierte a la gente en NPC,947,61,3,0.074111,1,171486,11803,906
+daily,2026-05-03,2026-05-03,MlSS4ZqvJuA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,El interés no se puede fingir #shorts,924,40,0,0.060213,1,28200,1662,36
+daily,2026-05-03,2026-05-03,TUSbI3pqiCM,UCRlBDnRQduDk4tmm1OtpSRg,UN POCO MEJOR,14 Reglas para Ser Rico que el 90% de la Gente Ignora,912,50,0,0.07307,1,19283,1382,27
+daily,2026-05-03,2026-05-03,6XxQMeqG1P4,UCX9NJ471o7Wie1DQe94RVIg,Fazt,"El Fin de las Suscripciones Baratas de IA (Copilot, Claude y más)",909,33,6,0.046083,1,30250,1194,200
+daily,2026-05-03,2026-05-03,AXvou3mSGQA,UC55-mxUj5Nj3niXFReG44OQ,Platzi,"OpenAI lanzó GPT 5.5, ya no necesitas prompts detallados.",898,3,1,0.032958,1,34559,1095,44
+daily,2026-05-03,2026-05-03,Nz7vsR3_W3I,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Tienes que creer en ti #shorts,893,59,0,0.066462,1,12699,826,18
+daily,2026-05-03,2026-05-03,HyWpbCUdCr8,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,889,53,1,0.044779,1,5784,254,5
+daily,2026-05-03,2026-05-03,fgasMQ6UWPY,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,Reporte de resultados,888,32,-1,0.046718,1,4174,177,18
+daily,2026-05-03,2026-05-03,Xcmg2noBQOw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Elige un problema que puedas resolver #shorts,887,143,1,0.109127,1,2520,273,2
+daily,2026-05-03,2026-05-03,L8_m7pOI2-A,UCOvzFyIAr32yspwxx77BHcQ,Rob Paper Clips,¿Los Fans del Temach son una SECTA?,853,24,5,0.05217,1,85374,4020,434
+daily,2026-05-03,2026-05-03,p5zWy46yWxU,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Here's How I'd Get To $1M/Month,848,8,0,0.020069,1,61338,1216,15
+daily,2026-05-03,2026-05-03,TOKUlItJpY4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Lo que tengo no es suerte  #shorts,847,5,0,0.028564,1,7807,218,5
+daily,2026-05-03,2026-05-03,HEW0VJx9iw0,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Watch If You're Under $1M Year,846,26,0,0.037162,1,55217,2037,15
+daily,2026-05-03,2026-05-03,xO5diVmgE8Y,UCM55RjebjSevVWPnj2LEymw,viyaura,i drew secret emojis...#art #artist,835,22,4,0.072244,1,50011,3262,351
+daily,2026-05-03,2026-05-03,z-7AhJ55htQ,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,ESTADO DE ALERTA en COREA: IRÁN pone al país CONTRA LAS CUERDAS @VisualPolitik,835,25,0,0.034836,1,407477,13327,868
+daily,2026-05-03,2026-05-03,U4gpio58908,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,Physicists finally prove that virtual particles are real and all around us,834,29,3,0.057749,1,235258,12154,1432
+daily,2026-05-03,2026-05-03,kLJNcHqVmJA,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,3 Metas Financieras Que NADIE Te Dice (Pero Son Cruciales),834,35,0,0.056145,1,10455,563,24
+daily,2026-05-03,2026-05-03,Fy8H9I2kJkI,UCFBpVaKCC0ajGps1vf0AgBg,Humphrey Yang,Fidelity is introducing $100 ETF fees on 120+ ETFs. Here’s what you need to know+List in description,827,7,0,0.016403,1,320615,4976,283
+daily,2026-05-03,2026-05-03,7IL0scdhgJA,UCm5iBOcQ0GET_2FqFI61QDA,Cara Nicole,Let’s talk about Emily Blunt’s career advice 😬,819,45,2,0.05454,1,6564,335,23
+daily,2026-05-03,2026-05-03,_88DyxJqY-4,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,Cómo Proteger Tus Inversiones Con Billeteras Frías ❄️,818,48,6,0.085417,1,1920,148,16
+daily,2026-05-03,2026-05-03,jdrW-vJOD1w,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Meta está entrenando la IA con sus propios empleados,814,5,0,0.052202,1,15421,775,30
+daily,2026-05-03,2026-05-03,lE7rIBv-nV8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Business Will Always Be Hard,814,18,0,0.033891,1,16907,569,4
+daily,2026-05-03,2026-05-03,XjAeQOmdNFU,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,My 2 paths to meet people,804,12,0,0.034359,1,20693,680,31
+daily,2026-05-03,2026-05-03,eGmGoahyI-U,UCs0QXHkbkBDM_NwnRiGFoTA,Crea Y Transforma,EEUU Tiene un Nuevo PROBLEMA… Su Buen EMPLEO,791,38,2,0.055159,1,12745,656,47
+daily,2026-05-03,2026-05-03,zyJ1yZwX_tE,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""I Want To Make My Competition Irrelevant""",790,6,0,0.023316,1,42932,994,7
+daily,2026-05-03,2026-05-03,sqXsMACtso0,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,ASÍ SE CONFIGURÓ EL MOTOR CLIMÁTICO DEL PLANETA 🌎,789,44,2,0.099598,1,25864,2534,42
+daily,2026-05-03,2026-05-03,CZe8DucT3qA,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Actualización Repugnante,781,55,1,0.075629,1,244508,17484,1008
+daily,2026-05-03,2026-05-03,DgX6SMZaC_8,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,UN PLANETA GIGANTE ORBITANDO UNA PEQUEÑA ESTRELLA 🛰️,776,44,0,0.081192,1,48946,3906,68
+daily,2026-05-03,2026-05-03,cdOcjUyQr8A,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,TRAUMA TRIANGLE SHAPES WHO YOU ARE AS AN ADULT,768,21,1,0.043216,1,193445,8187,173
+daily,2026-05-03,2026-05-03,EXOQ7vN2NXk,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,¿Cuál es la mejor IA para programar?,759,29,3,0.050454,1,22357,1031,97
+daily,2026-05-03,2026-05-03,NDF3VSFbxAU,UC55-mxUj5Nj3niXFReG44OQ,Platzi,¿Claude Design destruyó Figma?,758,14,0,0.044234,1,5810,252,5
+daily,2026-05-03,2026-05-03,Jr9Xm5f44NQ,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,China Abandonó A Millones De Vietnamitas A Su Suerte Arrebatándoles Lo Que Mantenía Viva A La Región,753,25,2,0.058837,1,12781,737,15
+daily,2026-05-03,2026-05-03,a8LrJMGoVL4,UCoXtmmnLCbXDiSo8GxsmOzA,La gata de Schrödinger,Tres libros imprescindibles para cambiar tu forma de ver el mundo,749,60,1,0.078159,1,126626,9425,472
+daily,2026-05-03,2026-05-03,1gyuiKoSc-w,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Bárbara Tijerina: Cómo Detectar Mentiras y Leer a Cualquier Persona en Segundos | EP. #65,743,17,1,0.043944,1,4483,188,9
+daily,2026-05-03,2026-05-03,DBWMP58IOcw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No te rindas si tu vida parece un caos #shorts,743,60,2,0.081953,1,11226,896,24
+daily,2026-05-03,2026-05-03,yzajLZXh9JU,UCbfYPyITQ-7l4upoX8nvctg,Two Minute Papers,Solved: The Bug That Haunted AI Video For Years,736,12,4,0.062784,1,40663,2351,202
+daily,2026-05-03,2026-05-03,pdNaIhcp3z4,UCaZ5txM63JGqgzRTVXy5e9g,César Dabián Finanzas,Me endeudé con 1 Millón en Tarjetas de Crédito - Cómo lo resolví (Storytime),709,23,0,0.049765,1,26163,1221,81
+daily,2026-05-03,2026-05-03,G9L3zK57X6Y,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,El ERROR más PELIGROSO que COMETES sin saber,709,29,0,0.053932,1,88667,4697,85
+daily,2026-05-03,2026-05-03,nbHMeopNtDg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Hard Work Is The Goal,706,30,0,0.033526,1,19865,655,11
+daily,2026-05-03,2026-05-03,-6t20SnbOyc,UCYZLVhSSwdBllvn4tw5a4uQ,Rob Paper Sheet,"Un buen clasista no es aquel que juzga, es que el describe la realidad.",697,24,1,0.060005,1,74010,4221,220
+daily,2026-05-03,2026-05-03,GMXWOLJHnJc,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,I Failed 9 Times In A Row,696,26,0,0.044339,1,68743,3019,29
+daily,2026-05-03,2026-05-03,sncgYGQt1T8,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo el PROMPT para mejorar tu foto de perfil fijado en los comentarios de este vídeo,695,19,0,0.042881,1,9165,381,12
+daily,2026-05-03,2026-05-03,n1G2FQ0UEqc,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,Por qué saber usar IA ya no es opcional.,680,19,1,0.028351,1,68711,1855,93
+daily,2026-05-03,2026-05-03,s2NSwy8xraQ,UCtoo4_P6ilCj7jwa4FmA5lQ,Soy Dalto,Con ESTO tu vida podria ser MÁS FÁCIL,680,42,1,0.062525,1,9932,609,12
+daily,2026-05-03,2026-05-03,lWj_3TE2UsE,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,If You're At Rock Bottom,679,18,0,0.046044,1,12488,569,6
+daily,2026-05-03,2026-05-03,B2ag364pRgQ,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,I got cancelled for my 2x speed,665,14,2,0.040387,1,65145,2230,401
+daily,2026-05-03,2026-05-03,OkuWh46I4m4,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,5 pasos para MULTIPLICAR tu DINERO,655,22,1,0.061371,1,16995,1013,30
+daily,2026-05-03,2026-05-03,jcfifYFAdpM,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Ecatepec en la mira del desarrollo #ecatepec #méxico,640,79,3,0.132542,1,8254,1060,34
+daily,2026-05-03,2026-05-03,fpkC4nn2D60,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,La jugada de USA 🇺🇸 para ingresar a México 🇲🇽 #mexico,640,43,1,0.079051,1,5819,425,35
+daily,2026-05-03,2026-05-03,Ju0usucry_g,UCmE44gpkHmf5bKIVTPSwxnQ,Judith Tiral,Lo que NO defendería jamás como ABOGADA,612,15,0,0.017588,1,20469,347,13
+daily,2026-05-03,2026-05-03,j584RpaMrDg,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,599,19,0,0.029764,1,3427,99,3
+daily,2026-05-03,2026-05-03,67JREKwyixk,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,598,18,0,0.029518,1,8300,243,2
+daily,2026-05-03,2026-05-03,DHk0gFHyHeE,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,ChatGPT 5.5 es un cambio de era 🔥🚀,584,15,1,0.033376,1,149208,4618,362
+daily,2026-05-03,2026-05-03,lWQY5zccbQs,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Stick With The Pan,580,18,0,0.037444,1,24650,885,38
+daily,2026-05-03,2026-05-03,6dfxL42fP0c,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto no debes compartir objetivos con todo el mundo  #shorts,580,49,0,0.092659,1,1662,150,4
+daily,2026-05-03,2026-05-03,uWOLkr7S47A,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Sales Tactic Is Underrated,579,13,0,0.023483,1,75074,1758,5
+daily,2026-05-03,2026-05-03,e7IyFScAa-Q,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,Los 5 NIVELES De La LIBERTAD FINANCIERA,571,10,2,0.043211,1,16408,661,48
+daily,2026-05-03,2026-05-03,B18aH00d8oE,UCJQQVLyM6wtPleV4wFBK06g,VisualPolitik,El PENTÁGONO ya tiene un plan para CUBA:  ¿Intervención a la vista? @VisualPolitik,564,21,0,0.046528,1,279077,12221,764
+daily,2026-05-03,2026-05-03,BnAKfe0qGbE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,La forma más fácil de crear tu primera skill,559,29,0,0.071637,1,12354,881,4
+daily,2026-05-03,2026-05-03,bouvNyq8xCY,UCX6b17PVsYBQ0ip5gyeme-Q,CrashCourse,Earth's Crust and Mantle Explained: Crash Course Geology #3,556,22,0,0.069513,1,30311,2041,66
+daily,2026-05-03,2026-05-03,5fKeNMp7F6s,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Im Doing Too Many Things In The Business,552,13,0,0.025275,1,25519,641,4
+daily,2026-05-03,2026-05-03,4uRgDr5maYo,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Cuando Claude Code ya sabe cómo le hablas 😮‍💨 🕺,549,13,0,0.047455,1,13971,643,20
+daily,2026-05-03,2026-05-03,shgZ8WYcC6k,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You're Going To Look Stupid,547,24,0,0.067521,1,23563,1581,10
+daily,2026-05-03,2026-05-03,dYJM9jmLBzY,UCPgVPrgqpALC1s2e63fgKyg,elWacky,No Lo Puedo Creer,529,40,3,0.108635,1,162959,16904,799
+daily,2026-05-03,2026-05-03,3W1KfxQnQiU,UCOxW1h1VV379Q8GDdUJOhgw,Mariano Trejo,30 Hábitos que (Silenciosamente) Cambiaron mi Vida para Siempre,526,23,1,0.066129,1,10162,642,30
+daily,2026-05-03,2026-05-03,J9p4GMskefU,UC3IEYr87JpgBeVbbc0gP9DA,Irene Albacete,“La memoria colectiva” puede ser tu mayor obstáculo.,523,57,3,0.094269,1,30169,2759,85
+daily,2026-05-03,2026-05-03,QDZUOBnmf4Q,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,LA MATERIA OSCURA PODRÍA TENER DOS ESTADOS 🌌,519,34,1,0.090693,1,39573,3478,111
+daily,2026-05-03,2026-05-03,cnCEUFzWspI,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Just Pick Up The Phone And Start,509,10,0,0.030031,1,43588,1303,6
+daily,2026-05-03,2026-05-03,myMj_ZfZ_xI,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,How To Pick The Right Market,507,5,0,0.023441,1,44154,1026,9
+daily,2026-05-03,2026-05-03,8erUsIGULKc,UCvPGx8qh8AkrFZW06tESvaA,Dot Dager,"Mirá lo que hiciste, Leito.    #dev #programacion",503,27,5,0.05584,1,6447,327,33
+daily,2026-05-03,2026-05-03,lvw8Fe5wcBo,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,"ChatGPT, Claude y Gemini están empatados, ninguno es mejor.",500,15,1,0.037582,1,12506,442,28
+daily,2026-05-03,2026-05-03,5ymn2oV1Zls,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Al Parecer Sí Es Un Monstruo,497,30,-1,0.071467,1,305076,20669,1134
+daily,2026-05-03,2026-05-03,9QKOkpu78CQ,UCV5G678sZwW5IcF3pCfRbHQ,La Hiperactina,Publi⭐️ ¿Por qué hay cosas que lees mil veces y no entiendes… y en vídeo sí? 📹🧬✨,495,36,0,0.080793,1,96951,7704,129
+daily,2026-05-03,2026-05-03,La4ogJrxI0g,UCTfQ65AxquXmih3r6rZmK-Q,jefillysh,"Neuronas jugando Doom, Mega Terremotos y Nuestra Piel tiene Memoria - JefiNews Abril 22 2026",492,20,0,0.074809,1,48096,3410,188
+daily,2026-05-03,2026-05-03,yXl7MRLoxrM,UCm5iBOcQ0GET_2FqFI61QDA,Cara Nicole,Summer ✈️ Prices Are Surging,489,21,0,0.05059,1,8045,373,34
+daily,2026-05-03,2026-05-03,6-PunI-5Ts4,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,DESCUBREN PARTÍCULAS QUE SALEN DIRECTAMENTE DEL VACÍO 🌌,479,34,0,0.101282,1,28633,2813,87
+daily,2026-05-03,2026-05-03,LkRVMOzUypo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,We Really Just Do The Basics,476,10,0,0.043074,1,11515,493,3
+daily,2026-05-03,2026-05-03,-Ap6qWvqk0I,UCF7UoUGGOUcSSNcVDndq7KQ,Itzcalli,"SI ERES MUJER, TU BELLEZA ES UNA MONEDA DE CAMBIO: Barbie y los Diarios de una boticaria",468,64,1,0.145665,1,20046,2769,151
+daily,2026-05-03,2026-05-03,SvLaz6y-mhs,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,467,17,1,0.025441,1,24842,626,6
+daily,2026-05-03,2026-05-03,Xbang1Y_jbA,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Dos amantes en su funeral #chisme #comedia #podcast,462,12,0,0.028823,1,17937,512,5
+daily,2026-05-03,2026-05-03,94PJFiyaSrs,UCyJbb85EUgWjl38GcF236Jg,Eva Maria Beristain,Renovaciones por el mundial,458,13,1,0.05972,1,36989,2071,138
+daily,2026-05-03,2026-05-03,Hs6RxFMX1i4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Almost No One Succeeds At First...,439,14,1,0.041875,1,21994,907,14
+daily,2026-05-03,2026-05-03,AVyYMXc_t9s,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,"""Dinero Roto"" (Broken Money) de Lyn Alden | Club de Lectura #199",438,12,0,0.064058,1,7181,426,34
+daily,2026-05-03,2026-05-03,u7sbQBw3X3g,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Tenía el pie roto! #chisme #comedia #podcast,438,4,0,0.022159,1,22158,491,0
+daily,2026-05-03,2026-05-03,Wz8CxWdCHC0,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto estoy agradecido con mis padres #shorts,435,33,2,0.063062,1,9007,559,9
+daily,2026-05-03,2026-05-03,rhVEOqNhjKo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,People WANT To Buy...,431,15,0,0.03134,1,31429,969,16
+daily,2026-05-03,2026-05-03,RPePcFJDNds,UCsmEAwbV7WbYndpQKbY4Ntw,Juan Villalvazo,Si Iniciara Nuevamente de Programador,427,25,12,0.099647,1,1415,108,33
+daily,2026-05-03,2026-05-03,M_FKC2NTb24,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Gasto culposo de Sofía Niño de Rivera,414,6,0,0.020286,1,25535,510,8
+daily,2026-05-03,2026-05-03,rYKQ0Ukxe6k,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Me borran la memoria y despierto en 2008,414,8,0,0.04336,1,19050,791,35
+daily,2026-05-03,2026-05-03,AxM96v9ZCzI,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,Dándole ojos a la IA 👁️🤖💻,404,6,0,0.026476,1,65872,1732,12
+daily,2026-05-03,2026-05-03,X9fGa-F_ars,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Jugador Profesional Se Enoja y Lo Pierde Todo,402,16,-1,0.07142,1,158232,10848,453
+daily,2026-05-03,2026-05-03,GfSGy5C1OIA,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿Tener seguro hace que pagues más?,398,12,0,0.048023,1,17075,812,8
+daily,2026-05-03,2026-05-03,664cs6FZEZo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,The Reason Why You Can't Is Why You Should,396,4,0,0.028952,1,69598,1980,35
+daily,2026-05-03,2026-05-03,Nq-c06vj5PM,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Médicos vs Aseguradoras ¿Por qué no te alcanza el seguro? | Dimes y Billetes #445,394,6,0,0.035335,1,24112,737,115
+daily,2026-05-03,2026-05-03,yaBzATxyEYs,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,La Gran Mentira del Helio - 3,390,32,3,0.078279,1,40803,3076,118
+daily,2026-05-03,2026-05-03,-5kkpHpexIA,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Se ofendieron sin contexto #chisme #comedia #podcast,390,5,0,0.020636,1,32516,667,4
+daily,2026-05-03,2026-05-03,wZBBnciTACo,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉,385,45,4,0.147036,1,1299,161,30
+daily,2026-05-03,2026-05-03,0IGNbK4bbXA,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Ideas de Negocio: Servicios para Mascotas 🐶 🐱 (Ignorados Pero MUY Rentables),384,17,0,0.067519,1,15181,963,62
+daily,2026-05-03,2026-05-03,L7fVqlOzegQ,UCs0QXHkbkBDM_NwnRiGFoTA,Crea Y Transforma,TRONÓ el Petrodólar! Petróleo en YUANES CHINOS! Deuda de 39 TRILLONES de USA,374,5,0,0.05073,1,60891,2931,158
+daily,2026-05-03,2026-05-03,Q4zggacUY6E,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,El Mejor Consejo Financiero del VP de Mastercard,374,10,0,0.020999,1,3762,78,1
+daily,2026-05-03,2026-05-03,l1-D1s67YU4,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Anthropic perdió su liderazgo frente a OpenAI ¿cómo pasó? ,372,9,1,0.047483,1,52124,2300,175
+daily,2026-05-03,2026-05-03,pVXm6lt1F7w,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es el tiempo más peligroso #shorts,368,20,0,0.100548,1,20617,2055,18
+daily,2026-05-03,2026-05-03,XX7hskkX1AA,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,El imperio en decadencia: El capricho de Trump costeado por el pueblo de U.S.A.,363,8,1,0.046452,1,90287,4068,126
+daily,2026-05-03,2026-05-03,stk7f11pyr8,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía para convertirte en un pastel fijada en los comentarios de este vídeo,361,2,0,0.010761,1,7527,70,11
+daily,2026-05-03,2026-05-03,XV4eV0wnx-c,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,The Identity Shift Effect,358,17,0,0.037411,1,20181,746,9
+daily,2026-05-03,2026-05-03,mT-7tbs7rVw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto digo que vestir bien es un acto de rebeldía  #shorts,346,8,0,0.05918,1,17489,1014,21
+daily,2026-05-03,2026-05-03,5ov8sBSV-pc,UCDnUOd6PIlQAL9bPUTf9BkQ,Sapiencia práctica,6 TRUCOS psicológicos para ENAMORAR a cualquiera,345,11,0,0.08059,1,4405,343,12
+daily,2026-05-03,2026-05-03,EvauKuWaNmk,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,Mis Agentes OpenClaw están empezando a putearse entre ellos 😡,336,7,0,0.050799,1,60690,2814,269
+daily,2026-05-03,2026-05-03,CzIJ566XexE,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Por esto NO DEBES vender BARATO,331,12,0,0.03672,1,11329,414,2
+daily,2026-05-03,2026-05-03,TLdMXZSABH8,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,En vivo: ¿Qué es lo nuevo de Deepseek 4?,329,4,0,0.045239,1,10124,435,23
+daily,2026-05-03,2026-05-03,AU6gGMDF7ts,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Estados Unidos vs Morena #méxico,327,33,2,0.106203,1,7561,744,59
+daily,2026-05-03,2026-05-03,LQd65ctML6o,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es uno de los errores más comunes cuando la gente empieza a ganar dinero #shorts,326,32,1,0.114365,1,5019,569,5
+daily,2026-05-03,2026-05-03,fQK8Lx-oRIU,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,Australia Eliminó Toda Vida en Esta Línea en MEDIO de la Ciudad y Dejó a Todos en Shock,322,9,0,0.046026,1,15839,699,30
+daily,2026-05-03,2026-05-03,5Z4z2oEoxw8,UCQIUhtP5WYIx_pMG8UvMYHg,Cristina Dayz ,"11,7 Cosas que son un DESPERDICIO de Dinero en 2026",321,18,0,0.057542,1,28692,1574,77
+daily,2026-05-03,2026-05-03,K38w2QlgHPQ,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,¿Por qué tardás en responder cuando te hablan?,320,18,1,0.057881,1,12301,688,24
+daily,2026-05-03,2026-05-03,SY53rwqE2i0,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,¡Atención Perú! 🇵🇪,318,13,0,0.05438,1,26517,1374,68
+daily,2026-05-03,2026-05-03,lkM12v2VZyE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Qué es Shadow AI y por qué es peligroso?,316,11,0,0.032301,1,46345,1462,35
+daily,2026-05-03,2026-05-03,ZjtJALByo70,UC55-mxUj5Nj3niXFReG44OQ,Platzi,¿Qué le dirías a la siguiente persona?,314,1,0,0.057321,1,10450,590,9
+daily,2026-05-03,2026-05-03,Um1DSnUqmko,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,311,9,0,0.026551,1,10960,290,1
+daily,2026-05-03,2026-05-03,QSe13hyv68o,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖  Los sistemas de seguridad nuclear están diseñados para proteger la vida 🤖 #ia #chatgpt #nuclear,310,0,1,0.015563,1,33026,496,18
+daily,2026-05-03,2026-05-03,YY99Gla0v4E,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,Por qué no puedes trabajar en un empleo de 9 a 5 después del despertar | Carl Jung,308,16,0,0.072142,1,1802,123,7
+daily,2026-05-03,2026-05-03,OkVrrVAG9yg,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Es normal lo que pasa en México? ¿O nos quieren desestabilizar?,304,26,2,0.094051,1,32259,2552,482
+daily,2026-05-03,2026-05-03,-wkZoxeFIpM,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,Los Mayores Errores Científicos de la Historia - Domingo de Ciencia 225,293,7,0,0.074654,1,4916,358,9
+daily,2026-05-03,2026-05-03,tXgFifuwvno,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Lo que nadie te enseña sobre dinero | Sofía Macías,293,25,0,0.083208,1,1334,108,3
+daily,2026-05-03,2026-05-03,MbX7gs6huVE,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Qué es GPT Image 2.0 y por qué es el mejor generador de imágenes con AI,292,1,0,0.044807,1,13748,602,14
+daily,2026-05-03,2026-05-03,87jnYKGVetM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Most People Quit Right Before This Happens,291,8,0,0.039204,1,30584,1187,12
+daily,2026-05-03,2026-05-03,2FFoc89SAj0,UCOD6LXgeBoeiUZTsPLdG-0g,Vida MRR - Programacion web,GitHub va a cambiar PARA SIEMPRE,291,16,0,0.040391,1,3887,146,11
+daily,2026-05-03,2026-05-03,-JTeDTLElVg,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Abandoné a mis trillizos #chisme #comedia #podcast,288,4,0,0.034374,1,18066,618,3
+daily,2026-05-03,2026-05-03,iq599kyAjVA,UCOHxDwCcOzBaLkeTazanwcw,Bravos Research,The UNTHINKABLE is About to Happen to Stocks (Emergency Update),283,9,0,0.026915,1,147128,3880,80
+daily,2026-05-03,2026-05-03,NkWtrW-9GDY,UCX9NJ471o7Wie1DQe94RVIg,Fazt,3 Formas de Desplegar tu Proyecto Web que TODO Desarrollador Debe Conocer,276,14,0,0.067919,1,5963,387,18
+daily,2026-05-03,2026-05-03,_O6ICkmg1Zg,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Cruzó ESTADOS UNIDOS con UN CENTAVO,276,9,0,0.027224,1,10836,286,9
+daily,2026-05-03,2026-05-03,KppJdbUvqp8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto me cambió la vida   #shorts,276,36,0,0.118664,1,6076,714,7
+daily,2026-05-03,2026-05-03,5zwotvZ1rl0,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,⁠Stablecoins: La revolución financiera | SHAPING THE FUTURE OF FINANCE | Dimes y Billetes #446,271,4,0,0.026629,1,12092,287,35
+daily,2026-05-03,2026-05-03,I-rogofBX8c,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Work Beats Talent....,269,8,0,0.037552,1,25245,941,7
+daily,2026-05-03,2026-05-03,Zu3g28TTetU,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Startups de Silicon Valley dejan OpenAI por modelos chinos 😳,267,19,0,0.052755,1,49019,2406,180
+daily,2026-05-03,2026-05-03,01NMf5-J_P4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Don't Let Them Stop You,262,10,0,0.043603,1,56968,2466,18
+daily,2026-05-03,2026-05-03,_BhjwaNE8mc,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Ser rico es toda una estafa  #shorts,261,37,2,0.115348,1,7395,836,17
+daily,2026-05-03,2026-05-03,QLnHGjCD-Vw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así te espera el 2027 #shorts,261,11,1,0.080524,1,5042,394,12
+daily,2026-05-03,2026-05-03,S3JuEF7RQ5k,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,¿El fin de los expertos?,260,11,0,0.028402,1,63693,1763,46
+daily,2026-05-03,2026-05-03,7PY7jbupwSg,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Qué ganan las empresas que dan Open Source?,259,9,0,0.045541,1,8366,374,7
+daily,2026-05-03,2026-05-03,gtdao7DVsBo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You Have To Pick 1 Thing,258,5,0,0.02972,1,27927,823,7
+daily,2026-05-03,2026-05-03,MSl5mD3E7PE,UC3IEYr87JpgBeVbbc0gP9DA,Irene Albacete,4 creencias que te mantienen pobre.,258,17,1,0.094878,1,20363,1833,99
+daily,2026-05-03,2026-05-03,oIr5NyY01EQ,UCDnUOd6PIlQAL9bPUTf9BkQ,Sapiencia práctica,5 cosas que NUNCA debes DECIRLE a alguien con TDAH (y qué puedes decirle),255,26,1,0.128232,1,1895,229,14
+daily,2026-05-03,2026-05-03,Xf_v62TQOx4,UCbfYPyITQ-7l4upoX8nvctg,Two Minute Papers,NVIDIA's New AI Broke My Brain,253,7,0,0.051337,1,68547,3179,340
+daily,2026-05-03,2026-05-03,NAooB35YkHA,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,OpenClaw 4.25: la VOZ por IA ACABA de CAMBIARLO TODO,248,9,0,0.043123,1,5264,218,9
+daily,2026-05-03,2026-05-03,MX1a5garnwc,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,Cómo INVERTIR Con El Salario MÍNIMO,247,10,1,0.078377,1,8357,562,93
+daily,2026-05-03,2026-05-03,UQXupr6-Wmg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Helping A Stranger Scale Her $300K Year Business,246,10,0,0.031941,1,66121,2092,20
+daily,2026-05-03,2026-05-03,ys1zQyiLrMc,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Le tuve que mentir a mi mamá! #chisme #comedia #podcast,245,10,1,0.051765,1,7109,365,3
+daily,2026-05-03,2026-05-03,siKdeoxrxIA,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,1 de cada 10 mexicanos tiene seguro médico,245,7,1,0.047749,1,17613,817,24
+daily,2026-05-03,2026-05-03,RtCDqPRlu48,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,BOMBAZO: Anthropic sí nerfeó a Claude Opus 4.6,241,8,0,0.043454,1,17674,751,17
+daily,2026-05-03,2026-05-03,T34ygnCahZc,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,¿Nacimos para ser fieles? La mentira de la monogamia,240,9,1,0.03682,1,40413,1376,112
+daily,2026-05-03,2026-05-03,oXKkhajzwgE,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Quieren desestabilizar México? #méxico,239,28,8,0.087828,1,15075,1203,121
+daily,2026-05-03,2026-05-03,tA9L9aV6gXY,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,238,14,1,0.07061,1,1657,111,6
+daily,2026-05-03,2026-05-03,XzkJ2WrHR2c,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No esperes que el mundo sea bueno contigo si no haces el bien #shorts,236,12,0,0.061767,1,19007,1136,38
+daily,2026-05-03,2026-05-03,xAJcbx5h6wE,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Qué Es El Lenguaje No Verbal? 👀 #Compuestos #AndresGarza #BárbaraTijerina #LenguajeNoVerbal,230,3,0,0.026213,1,2823,74,0
+daily,2026-05-03,2026-05-03,dG7UGA71QJU,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Aprende A Detectar Una Mentira 🎭 #Compuestos #AndresGarza #BárbaraTijerina #Mentira,230,14,0,0.041333,1,1621,67,0
+daily,2026-05-03,2026-05-03,1t2Yd_bmg_k,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,228,1,0,0.060868,1,9151,552,5
+daily,2026-05-03,2026-05-03,k0ZYVWoVWAc,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¡S&P rebaja calificación de Colombia! ¿Qué significa esto para tu dinero?,227,5,0,0.054139,1,19764,869,201
+daily,2026-05-03,2026-05-03,f1rK6WfCjCQ,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,The biggest myth in business,223,7,0,0.027386,1,36880,993,17
+daily,2026-05-03,2026-05-03,n16KlvFN28c,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,Empezar a invertir con $100 pesos #shorts #dinero #ahorro #cetes,220,9,0,0.04888,1,21788,1055,10
+daily,2026-05-03,2026-05-03,Qf1PdYlk_9A,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto no confío en personas débiles #shorts,220,18,2,0.068468,1,2775,181,9
+daily,2026-05-03,2026-05-03,y3HkZSayX2s,UC30ajuhy8cViP2DiM1QLjmg,98grados,Decisión por apariencia es mala decisión (probablemente) #smartphone #iphone #apple,219,10,0,0.05416,1,15805,838,18
+daily,2026-05-03,2026-05-03,_BHe9R7pYNw,UCQIUhtP5WYIx_pMG8UvMYHg,Cristina Dayz ,Por qué la clase media es cada vez más POBRE,216,12,0,0.075152,1,7904,560,34
+daily,2026-05-03,2026-05-03,qsJSGpOs5q4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,214,3,0,0.060084,1,14463,862,7
+daily,2026-05-03,2026-05-03,eEfZlpKPAIU,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¡Elon Musk comprará Cursor!,213,6,0,0.041423,1,18299,741,17
+daily,2026-05-03,2026-05-03,x0HFad-M2iE,UC30ajuhy8cViP2DiM1QLjmg,98grados,La gente no me creyó cuando les enseñé la optimización de la laptop #laptop #windows,212,16,0,0.097725,1,23208,2234,34
+daily,2026-05-03,2026-05-03,DWt3zfqtI6g,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,Top 10 AI-Exposed Occupations,207,3,0,0.031376,1,14119,435,8
+daily,2026-05-03,2026-05-03,hCNT8hK1T98,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Es Importante El Lenguaje No Verbal? ⭐ #Compuestos #AndresGarza #BárbaraTijerina #LenguajeNoVerbal,204,16,0,0.041391,1,1208,50,0
+daily,2026-05-03,2026-05-03,Qyf99inRvDE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Así puedes dejar de perder horas en cambios del cliente,204,16,0,0.055806,1,3100,172,1
+daily,2026-05-03,2026-05-03,v8z-clVwRxM,UC9WGON3pXofvE958Uq3Lw3Q,Exito Financiero,Lo Que No Te Dicen De La Subida De Tasas — CUIDADO ⚠️,199,4,0,0.034602,1,32397,1024,97
+daily,2026-05-03,2026-05-03,UWRxdKxuOb8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,195,4,0,0.068089,1,15465,1035,18
+daily,2026-05-03,2026-05-03,A83vXatD6sY,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,194,6,1,0.020898,1,10384,211,6
+daily,2026-05-03,2026-05-03,6AKlPLtjBR8,UC55-mxUj5Nj3niXFReG44OQ,Platzi,¿Fue Tim Cook un buen CEO?,193,5,0,0.0533,1,15591,806,25
+daily,2026-05-03,2026-05-03,R1iBWKeX42I,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Cómo evitar que la IA te reemplace?,192,19,0,0.081732,1,4943,399,5
+daily,2026-05-03,2026-05-03,UN6X2Jj-qrQ,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,Si siempre estás ocupado pero no avanzas… mira ESTO,187,12,0,0.081383,1,9314,756,2
+daily,2026-05-03,2026-05-03,IQZiAOokKXo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Here Is Why People Stop Buying From You,187,2,0,0.025437,1,29327,743,3
+daily,2026-05-03,2026-05-03,sa3zzPEnz_4,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Claude ahora diseña. Lo probamos SIN HUMO ¿Mató a Figma?,186,2,0,0.039686,1,34445,1289,78
+daily,2026-05-03,2026-05-03,EnLpF9i3I4I,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,querido desconocido…,185,7,0,0.069646,1,6131,423,4
+daily,2026-05-03,2026-05-03,0ShXZN7aHqA,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Qué es exactamente una skill de IA?,183,9,0,0.075907,1,6890,519,4
+daily,2026-05-03,2026-05-03,0GmokuFXa_o,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,El Celular Nos Está Haciendo Daño 📱 #Compuestos #AndresGarza #BárbaraTijerina #Celular,183,17,0,0.055168,1,1432,79,0
+daily,2026-05-03,2026-05-03,61fk5yAs7Jw,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Episodio estreno con Frida Araujo! #chisme #comedia #podcast,182,13,0,0.056863,1,4801,273,0
+daily,2026-05-03,2026-05-03,wB2Kb0MiyAc,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Estafó a sus padres por años! #chisme #comedia #podcast,181,3,0,0.018654,1,33880,626,6
+daily,2026-05-03,2026-05-03,MK-6-YuFzC4,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,La CUENTA que más paga en abril 2026,179,2,-9,0.059386,1,14734,792,83
+daily,2026-05-03,2026-05-03,jjSaUeqJi4s,UCX9NJ471o7Wie1DQe94RVIg,Fazt,Probé Claude Design: la nueva IA de Anthropic para crear interfaces,179,2,0,0.029714,1,17399,484,33
+daily,2026-05-03,2026-05-03,1a5xOhqvm-I,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,The Minimum $2K Pricing Effect,177,3,0,0.032056,1,13071,406,13
+daily,2026-05-03,2026-05-03,KKq5yX8mrw0,UC55-mxUj5Nj3niXFReG44OQ,Platzi,¿Claude Design eliminará a Figma?,176,4,0,0.024064,1,12259,292,3
+daily,2026-05-03,2026-05-03,ERxzxl6fXbw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Un mundial para ricos? #mundial2026 #méxico,172,6,0,0.06601,1,14725,953,19
+daily,2026-05-03,2026-05-03,MnlZeYcfowk,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es el verdadero problema   #shorts,172,12,0,0.106893,1,3714,395,2
+daily,2026-05-03,2026-05-03,zSPnVUpVwj8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así es como te están destruyendo sin que te des cuenta  #shorts,171,18,0,0.093464,1,1530,140,3
+daily,2026-05-03,2026-05-03,eYZUzUEUsjo,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es realmente el problema  #shorts,169,13,0,0.067102,1,2146,141,3
+daily,2026-05-03,2026-05-03,Xy09nfcwZ3E,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Los factos van en la factoría #chisme #comedia #podcast,166,1,0,0.038407,1,34108,1305,5
+daily,2026-05-03,2026-05-03,TeheJAFWwYs,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Didi Cuenta vs Bancos Tradicionales | El DINERO Que PIERDES,165,4,1,0.068906,1,8098,503,55
+daily,2026-05-03,2026-05-03,ZgcrZ8qm0-w,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¡No tengas miedo! VOO es para el largo plazo,164,3,0,0.020177,1,793,14,2
+daily,2026-05-03,2026-05-03,au_CNv7ZBS4,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,REGALAN 1000 boletos… pero NO ES casualidad,163,6,2,0.064836,1,15840,996,31
+daily,2026-05-03,2026-05-03,9361MUAmA24,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,Haz ESTO para gestionar BIEN tu tiempo,163,9,0,0.073812,1,14862,1087,10
+daily,2026-05-03,2026-05-03,gS87TtB9nk4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Changed How I Do Business,161,0,0,0.021131,1,108985,2281,22
+daily,2026-05-03,2026-05-03,uZ6Nbwp8GtU,UCX9NJ471o7Wie1DQe94RVIg,Fazt,Convierte Diseños de Figma en Código Automáticamente (MCP Tutorial),160,5,0,0.050212,1,10834,529,15
+daily,2026-05-03,2026-05-03,aYH-DvGfEVU,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT,159,11,3,0.147357,1,889,126,5
+daily,2026-05-03,2026-05-03,OPDzJP8iWLo,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,¿SIRVEN PARA ALGO LOS EXPERIMENTOS EN EL ESPACIO? 🛰️,157,8,0,0.100336,1,30966,3048,59
+daily,2026-05-03,2026-05-03,VREVC0wXPfs,UChhw6DlKKTQ9mYSpTfXUYqA,Starter Story,This idea validation formula has made him $500K from iOS apps,156,2,0,0.026996,1,25522,686,3
+daily,2026-05-03,2026-05-03,nOR-IY0SnEY,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Los mexicanos saben sobrevivir #méxico #mrbeast,156,7,0,0.065142,1,40895,2507,157
+daily,2026-05-03,2026-05-03,kkQDCTCcgC0,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Chisme express con Frida Araujo #chisme #comedia #podcast,154,15,0,0.071787,1,4583,324,5
+daily,2026-05-03,2026-05-03,7vdW8a6jEfw,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""What Should I Price My Products?""",153,6,0,0.03218,1,37725,1204,10
+daily,2026-05-03,2026-05-03,iaT6-gjxQbo,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,se siente como un mundo escondido,152,15,0,0.107442,1,2029,214,4
+daily,2026-05-03,2026-05-03,1HWpBvWbexU,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Planificación Inversa | Sofía Contreras te lo Explica,147,6,0,0.02739,1,1789,48,1
+daily,2026-05-03,2026-05-03,-OmU9HqUNZ0,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,"Las Palabras Engañan, El Cuerpo No 🧘🏼 #Compuestos #AndresGarza #BárbaraTijerina #Cuerpo",146,10,0,0.03819,1,1414,54,0
+daily,2026-05-03,2026-05-03,kp1dLUox9_Y,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿Qué esta haciendo el IMSS?,145,5,0,0.043947,1,21412,911,30
+daily,2026-05-03,2026-05-03,7m9uIc31Egw,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,Las 3 Reglas que Necesitas Seguir para Vivir del Trading - Hyenuk Chu,144,2,0,0.03838,1,6592,246,7
+daily,2026-05-03,2026-05-03,XAQ275WwWnw,UChhw6DlKKTQ9mYSpTfXUYqA,Starter Story,The tech stack behind a $25K/month timer app?,144,4,0,0.029356,1,15738,456,6
+daily,2026-05-03,2026-05-03,CF4oRpaLSqw,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,lunes de whitexicanadas y ratones,144,3,0,0.044792,1,6519,284,8
+daily,2026-05-03,2026-05-03,SK8tkpErsm8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No te hables mal a ti mismo #shorts,143,5,0,0.056257,1,22024,1224,15
+daily,2026-05-03,2026-05-03,03uRM4Uz5t8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto no creo en el amor eterno #shorts,143,10,0,0.07269,1,19879,1408,37
+daily,2026-05-03,2026-05-03,2FdfXwODkr4,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,El hombre que compró su empresa por 1 dólar,140,4,0,0.023604,1,26140,606,11
+daily,2026-05-03,2026-05-03,iS1jGgfO9Z0,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo el link de la Guía de NotbookLM fijado en los comentarios de este vídeo.,139,14,0,0.06825,1,6022,406,5
+daily,2026-05-03,2026-05-03,ZB9IMq0ee0k,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,OpenAI revienta a Nano Banana 🔥🤯,137,1,0,0.04669,1,65903,2900,177
+daily,2026-05-03,2026-05-03,-ZL_mpjxaUo,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es uno de los mayores errores que comete la gente al comenzar #shorts,136,12,0,0.098275,1,4986,486,4
+daily,2026-05-03,2026-05-03,QduEFho6dLg,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,"""ZENcillamente"" de Roberto Cuéllar | Club de Lectura #198",135,5,0,0.062058,1,9056,532,30
+daily,2026-05-03,2026-05-03,wJwQm_aqC8U,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Life Isn't Easy,133,4,1,0.044378,1,26252,1157,8
+daily,2026-05-03,2026-05-03,bM3ojc2bhdA,UC30ajuhy8cViP2DiM1QLjmg,98grados,Las ÚNICAS 3 IA que SÍ Valen la Pena (top herramientas),133,17,0,0.155678,1,2184,308,32
+daily,2026-05-03,2026-05-03,fHes8kAGJHs,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Working Hard Isn't Enough,131,4,0,0.041633,1,39272,1623,12
+daily,2026-05-03,2026-05-03,MdYM6kw372Q,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es el quinto cambio mental que necesitas hacer #shorts,129,6,1,0.064711,1,17076,1086,19
+daily,2026-05-03,2026-05-03,0YCyZKuGPmA,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,🐜📸,129,5,0,0.069145,1,8258,562,9
+daily,2026-05-03,2026-05-03,XyFrfcsbDGY,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,"Japón Perforó Un Agujero En La Tierra Cerca De Un Volcán, y Esto Provocó Algo",127,8,0,0.043461,1,57201,2411,75
+daily,2026-05-03,2026-05-03,oOLYgK6RqS4,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,ARBITRAJE DOLAR CRIPTO-DOLAR CCL,127,13,3,0.143399,1,3954,469,98
+daily,2026-05-03,2026-05-03,tg0LuGGeOPA,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,¿Cómo van las cosas en Irán? Resumen noticias.,126,6,2,0.0618,1,118625,7117,214
+daily,2026-05-03,2026-05-03,AxHTi--S-sU,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Volvió el rey de la IA: ChatGPT supera a Claude Design con GPT-Images-2,125,5,1,0.058169,1,36858,1942,202
+daily,2026-05-03,2026-05-03,1c8cpHNlIb8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así es la era en la que vivimos  #shorts,124,8,0,0.108511,1,3760,403,5
+daily,2026-05-03,2026-05-03,G-i7hiu_yPU,UCrr-NczCJHrwi1oBS97uwnw,Finanzas con Gus,El Imperio Más Poderoso del Mundo Está Empezando a Romperse,122,10,0,0.101691,1,8103,738,86
+daily,2026-05-03,2026-05-03,0dwlHNDdn2s,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿Curar o facturar?,122,4,0,0.050614,1,14245,717,4
+daily,2026-05-03,2026-05-03,HOwVuamQvTc,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,Esta es la historia del edificio que fue el más alto de LATAM durante muchos años,121,8,0,0.056689,1,6421,354,10
+daily,2026-05-03,2026-05-03,uay_qpfTJOE,UC55-mxUj5Nj3niXFReG44OQ,Platzi,Platzi Conf Mexico 2026 🇲🇽 El evento tech del año,120,0,0,0.021765,1,4273,90,3
+daily,2026-05-03,2026-05-03,s47EWzAbZL4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Don't Let It Affect You Twice,119,3,0,0.025207,1,46495,1163,9
+daily,2026-05-03,2026-05-03,FzdGk0ceLCA,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Hay Segundas Oportunidades En La Primera Impresión? 😮 #Compuestos #AndresGarza #BárbaraTijerina,119,12,0,0.047619,1,945,45,0
+daily,2026-05-03,2026-05-03,H5KmfCor3mc,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Cómo Tener Aura? 💫 #Compuestos #AndresGarza #BárbaraTijerina #Aura,119,3,1,0.046729,1,214,9,1
+daily,2026-05-03,2026-05-03,aFvAFWzCwF8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Algunas personas llegan a tu vida por esta razón #shorts,118,10,2,0.066152,1,22917,1475,41
+daily,2026-05-03,2026-05-03,Tu8OUN2WuyU,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,IA va a ser tu agente de compras,118,5,0,0.028436,1,1266,19,17
+daily,2026-05-03,2026-05-03,FpwEaued1Hc,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,What Your Passion Is Actually Covering Up,117,4,0,0.050253,1,46067,2286,29
+daily,2026-05-03,2026-05-03,YfEz4a39qS0,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,Cómo está cambiando la forma en que gastamos,116,3,0,0.032357,1,1298,42,0
+daily,2026-05-03,2026-05-03,pVwkpXd5PCA,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,3 Hyperspecific AI Apps,115,1,0,0.026127,1,17300,443,9
+daily,2026-05-03,2026-05-03,Vd3Pkc0YGrM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Mira estos videos si quieres volverte rico #shorts,115,2,0,0.038752,1,9006,348,1
+daily,2026-05-03,2026-05-03,IBBboS2nK3c,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,114,2,0,0.031962,1,3598,112,3
+daily,2026-05-03,2026-05-03,Mxv60XerzG4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,113,4,0,0.071751,1,7303,508,16
+daily,2026-05-03,2026-05-03,RVu1kgj-miw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Relaciones tensas entre México 🇲🇽 y Estados Unidos 🇺🇸 #mexico #chihuahua,112,2,1,0.069428,1,10140,659,45
+daily,2026-05-03,2026-05-03,XoY4BiK1WW8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Tomar café al despertarte es un error   #shorts,112,5,0,0.042519,1,5033,211,3
+daily,2026-05-03,2026-05-03,3skIuC1lP00,UCOvzFyIAr32yspwxx77BHcQ,Rob Paper Clips,"Las mujeres tienen pepino… y están guangas, según esta fan del temach",111,5,0,0.052777,1,13775,708,19
+daily,2026-05-03,2026-05-03,SYdW3cZKdmY,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Los países nórdicos combinan con éxito la energía hidroeléctrica con la nuclear 🤖 #ia #chatgpt,106,2,0,0.024145,1,12839,300,10
+daily,2026-05-03,2026-05-03,h_G5spN1nJk,UC30ajuhy8cViP2DiM1QLjmg,98grados,"Cuál es el mejor, el peor y el ideal? Rankeando iPhones #iphone #apple",104,7,0,0.064343,1,18588,1174,22
+daily,2026-05-03,2026-05-03,PCAPjDDY-h4,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.,103,5,0,0.082929,1,65152,4872,531
+daily,2026-05-03,2026-05-03,ieJE93iObcI,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,Por qué las personas secretamente te odian (aún más de lo que imaginas) | Carl Jung,102,4,0,0.064446,1,3212,194,13
+daily,2026-05-03,2026-05-03,raie7EtagZk,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿Qué está encareciendo los seguros médicos?,101,2,1,0.089634,1,10621,943,9
+daily,2026-05-03,2026-05-03,vrW0swCG3Kg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Nobody Warns You About This Part Of Wanting Something Big,100,6,0,0.053878,1,31386,1665,26
+daily,2026-05-03,2026-05-03,R6VQrYkJf74,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¡Vercel fue hackeado! ¿Cómo lo lograron y cómo estar prevenido?,100,1,0,0.036665,1,19828,694,33
+daily,2026-05-03,2026-05-03,evVs-Jtor50,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,OpenAI just WON...,99,0,0,0.03423,1,59450,1733,302
+daily,2026-05-03,2026-05-03,sQoa8y7eN-8,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,Deja de ser Esclavo del dinero,97,7,0,0.08349,1,8504,705,5
+daily,2026-05-03,2026-05-03,0moz0GJcIHg,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Which Would You Rather Be?,96,2,0,0.037221,1,28156,1034,14
+daily,2026-05-03,2026-05-03,QCcQpkBhOvI,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,"Claude Design no es rival para Figma, pero…",96,1,0,0.04821,1,12487,587,15
+daily,2026-05-03,2026-05-03,AYIqxqyY-es,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,⚠️ ¡Cuidado! Tu fondo de vivienda corre PELIGRO 😨,93,4,0,0.102016,1,4960,424,82
+daily,2026-05-03,2026-05-03,6q2ptE-BXIc,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,México se desarrollará por su gente #méxico,93,7,1,0.107486,1,2084,210,14
+daily,2026-05-03,2026-05-03,D3h2gmgCBFg,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,92,1,0,0.038854,1,2059,79,1
+daily,2026-05-03,2026-05-03,yawQxLw0K08,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esta técnica es muy efectiva  #shorts,92,10,0,0.094101,1,7120,666,4
+daily,2026-05-03,2026-05-03,nLlqkXdlNsM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así fue cuando me tuve que ir a Londres  #shorts,91,8,1,0.04554,1,23540,1059,13
+daily,2026-05-03,2026-05-03,9dIy1d0jmXw,UCYZLVhSSwdBllvn4tw5a4uQ,Rob Paper Sheet,"Sin condominio, mecánicos adentro del taller.",90,2,-1,0.043493,1,11841,457,58
+daily,2026-05-03,2026-05-03,vd8fb3noIgY,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Jaime Higuera no se equivocó cuando dijo esto #shorts,86,1,0,0.080996,1,16902,1353,16
+daily,2026-05-03,2026-05-03,rXs8JlFIS-U,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,85,2,0,0.052458,1,17862,922,15
+daily,2026-05-03,2026-05-03,seu69-hMmGw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Traición a la patria? #méxico,85,9,1,0.097454,1,12488,1111,106
+daily,2026-05-03,2026-05-03,AMpe2jD0lZw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto paré de leer un libro por semana #shorts,85,5,0,0.068828,1,5768,394,3
+daily,2026-05-03,2026-05-03,UPYFbiBv8H4,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,Haz esto con un empático y desaparecerá de tu vida - carl jung,85,3,0,0.083803,1,1241,101,3
+daily,2026-05-03,2026-05-03,96k8OXI58Ko,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Ventajas de ser un Growth Partner #shorts,84,8,0,0.093797,1,2015,185,4
+daily,2026-05-03,2026-05-03,pqIZk9qrBEM,UC30ajuhy8cViP2DiM1QLjmg,98grados,"La Mejor, Peor e Ideal. Rankeando GPU #pc #pcgamer #gpu",82,3,0,0.073464,1,20146,1416,64
+daily,2026-05-03,2026-05-03,xL5gZGVPjnQ,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¡NOS NOMINARON EN LOS SPOTIFY PODCAST AWARDS!,82,9,1,0.142983,1,1133,125,37
+daily,2026-05-03,2026-05-03,M_iusAv-K8Y,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,Estrategia impulsos Trading Bitcoin,82,2,0,0.024215,1,1528,23,14
+daily,2026-05-03,2026-05-03,jq7ocNZXg_s,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Is Your Lonely Chapter,81,4,0,0.104393,1,25222,2590,43
+daily,2026-05-03,2026-05-03,rg1PhRvmFXk,UCDnUOd6PIlQAL9bPUTf9BkQ,Sapiencia práctica,Cómo  DEJAR de PREOCUPARTE por lo que OTROS PIENSAN de ti,81,10,0,0.121913,1,3806,447,17
+daily,2026-05-03,2026-05-03,ax0ogeQpq3E,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,81,5,0,0.046454,1,17738,804,20
+daily,2026-05-03,2026-05-03,HgD5P0gQxOk,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,¿Cómo este youtuber ha cambiado las redes para siempre?,80,2,0,0.023776,1,12071,282,5
+daily,2026-05-03,2026-05-03,6q8iEtd0IGE,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,EL REGRESO DE DON X (RESIDENT EVIL REQUIEM PARTE 7),78,1,0,0.071099,1,2166,144,10
+daily,2026-05-03,2026-05-03,Zqmsoqo2fJs,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,¿Qué estás esperando? ¡Emprende YA!,78,3,0,0.050074,1,4733,233,4
+daily,2026-05-03,2026-05-03,UkbeRKmr5kM,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Se Puede Vivir De YouTube? 📹 #Compuestos #AndresGarza #EloisaWolf #YouTube,76,1,0,0.012265,1,56093,675,13
+daily,2026-05-03,2026-05-03,ITT9xWeicWM,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,"Mythos leaks, SpaceX buys Cursor and OpenAI drops GPT Image 2.0",75,2,1,0.029721,1,54035,1407,199
+daily,2026-05-03,2026-05-03,tveRHTJJyy8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Is What's Actually Been Stopping You,74,1,0,0.03678,1,21887,800,5
+daily,2026-05-03,2026-05-03,_QHAqfILwPk,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,74,1,0,0.023469,1,3707,86,1
+daily,2026-05-03,2026-05-03,Dic-fJdWqhY,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Cómo Transmitir Confianza? 🤝🏼 #Compuestos #AndresGarza #BárbaraTijerina #Confianza,74,4,0,0.031746,1,315,10,0
+daily,2026-05-03,2026-05-03,i7eGzJCQ1Yg,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,"LEVA vs Nu, Didi, y Revolut: ¿Quién gana en tasas?",71,6,0,0.030641,1,718,20,2
+daily,2026-05-03,2026-05-03,f7fbvRa4eJE,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Why Your Competition Is Already Ahead And You Don't See It,70,1,0,0.029133,1,26877,772,11
+daily,2026-05-03,2026-05-03,TpncXdKNLTQ,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¿Por qué el gobierno paga más caro?,69,1,0,0.031527,1,4631,142,4
+daily,2026-05-03,2026-05-03,wR8P970sqH8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,There Are Only Two Reasons People Feel Hopeless,69,1,0,0.039237,1,25639,997,9
+daily,2026-05-03,2026-05-03,Wj8owIKaQKQ,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Who Should You Blame?,67,0,0,0.051932,1,32562,1676,15
+daily,2026-05-03,2026-05-03,FfMFahO2VE4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,What HARD Feels Like,65,1,0,0.052621,1,31090,1623,13
+daily,2026-05-03,2026-05-03,mPbb2Gk3fr4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Don't Say This In A Sale,65,2,0,0.028302,1,53459,1507,6
+daily,2026-05-03,2026-05-03,xUWqMdypNsM,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,Por qué no podés parar de comer (y no es tu culpa),65,4,0,0.058511,1,13912,785,29
+daily,2026-05-03,2026-05-03,6Np0FPnWdMs,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Cómo hackearon a Vercel?,64,4,0,0.040662,1,19748,787,16
+daily,2026-05-03,2026-05-03,4RmcHqjzw-A,UCOQEA3qmyzFmJdi6Z137yrA,Monitor fantasma,Sobre las elecciones en Perú y una reflexión sobre la democracia,63,5,0,0.114231,1,12002,1065,306
+daily,2026-05-03,2026-05-03,0xTKuxdSrRI,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esta es la forma más rápida de leer a una persona #shorts,62,1,0,0.039555,1,26697,1043,13
+daily,2026-05-03,2026-05-03,rzHYdFYDjcQ,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Frutinovela #chisme #comedia #podcast,62,1,0,0.032495,1,2862,91,2
+daily,2026-05-03,2026-05-03,hrIY-clbdg8,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,OpenAI's GPT 5.5 is wild...,62,1,0,0.02737,1,82572,1898,362
+daily,2026-05-03,2026-05-03,VvBy9AkhR2w,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,62,3,0,0.035753,1,5482,193,3
+daily,2026-05-03,2026-05-03,-8Xee3Y4Yeg,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,62,3,1,0.099567,1,462,39,7
+daily,2026-05-03,2026-05-03,40kncAedwjs,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,"Sexo, luego el vacío — Arthur Schopenhauer",60,6,0,0.082223,1,2627,199,17
+daily,2026-05-03,2026-05-03,1WQetpMA8-k,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,¡las NUEVAS Actualizaciones de Google AI Studio son una LOCURA!,60,0,0,0.04538,1,6677,290,13
+daily,2026-05-03,2026-05-03,uAOfsghz2NY,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Completa para convertirte en Slime fijada en los comentarios de este vídeo.,58,0,0,0.008603,1,28247,231,12
+daily,2026-05-03,2026-05-03,sujVZ7316qo,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Millonario limpiando alfombras ¿GRATIS?,57,2,0,0.027422,1,17249,467,6
+daily,2026-05-03,2026-05-03,zzsUsCRoGcI,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Deja de actuar así #shorts,54,7,0,0.129118,1,2641,337,4
+daily,2026-05-03,2026-05-03,X8ekpP_cQa8,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,3 Consejos clave para invertir con EXITO en Yotepresto',54,3,0,0.031039,1,741,23,0
+daily,2026-05-03,2026-05-03,FHeTJmwxo5s,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,La industria no quiere que sepas esto  #shorts,53,2,0,0.09814,1,1559,151,2
+daily,2026-05-03,2026-05-03,7u0DJM1SNPs,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,“No salgo si no me pagan”,51,0,0,0.017352,1,20920,355,8
+daily,2026-05-03,2026-05-03,qCFEWA_Nu3k,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Es necesario instalar más potencia para suplir a los nuevos consumidores 🤖 #ia #chatgpt #energía,50,0,0,0.019491,1,24934,477,9
+daily,2026-05-03,2026-05-03,ra8QknbAJs4,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¿Hay que invertir en CDTs?,50,0,0,0.035317,1,5125,175,6
+daily,2026-05-03,2026-05-03,HZ2uROlnuEg,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Experta en Lenguaje Corporal Explica la Importancia de las Reacciones Humanas,50,1,0,0.05102,1,98,5,0
+daily,2026-05-03,2026-05-03,7y8W9bita7o,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,la cordialidad del silencio,49,1,0,0.081684,1,4395,352,7
+daily,2026-05-03,2026-05-03,H1fy1Brpa3Q,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,49,3,0,0.054437,1,9240,485,18
+daily,2026-05-03,2026-05-03,E6IrH04B8wg,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo el PROMPT Completo para añadir a tus personajes favoritos fijado en los comentarios.,47,0,0,0.016295,1,6321,94,9
+daily,2026-05-03,2026-05-03,MCnA_GAeAfg,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Revolut: tasas de interés y ganancias diarias,47,1,0,0.023853,1,545,13,0
+daily,2026-05-03,2026-05-03,vm8Yn0BN-TQ,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,viernes de disyuntivas,47,1,0,0.052502,1,6095,295,25
+daily,2026-05-03,2026-05-03,FdFgh2vQp8I,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¡LEVA supera a todos! Paga la TASA más ALTA de todo el mercafdo,47,4,0,0.027746,1,865,24,0
+daily,2026-05-03,2026-05-03,dINRvKoLQ-c,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,46,6,0,0.055111,1,32879,1777,35
+daily,2026-05-03,2026-05-03,oYu0ZgihU8Q,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿Cómo usar agentes en tu Mac mini (Perplexity Personal Computer)?,46,1,0,0.037767,1,3654,130,8
+daily,2026-05-03,2026-05-03,pe_HkAV9yJM,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,"El peligro de usar el celular como ""niñera""",45,1,0,0.0494,1,14170,682,18
+daily,2026-05-03,2026-05-03,qGa8y4tPUkc,UC2RIppRBTTa6JBY-Zwv6lQw,El Maikini Dev,Calificando comentarios de mis videos junto a ChatGPT,45,3,0,0.123199,1,4026,452,44
+daily,2026-05-03,2026-05-03,oeymdn1d4qg,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,La situación en Argentina no mejora #argentina,44,1,0,0.084725,1,7365,596,28
+daily,2026-05-03,2026-05-03,Z0uWs_W9S1A,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,The Real Cost Of Not Using AI...,43,0,0,0.029963,1,15052,439,12
+daily,2026-05-03,2026-05-03,DykSRxbFZZo,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Shrink Your Competition,43,0,0,0.039721,1,29254,1146,16
+daily,2026-05-03,2026-05-03,N14hiQw7Wdk,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¡La Sofipo con MEJOR TASA de interés! Hasta el 12.25% ANUAL | Leva: Alternativas Económicas,43,3,1,0.042324,1,2599,81,29
+daily,2026-05-03,2026-05-03,E7PxcFm-Xs8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,9 Business Lessons From My CEO Wife,42,-1,0,0.046318,1,30010,1384,6
+daily,2026-05-03,2026-05-03,nxCFXdIgxmw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Solo tienes derecho a tener una casa #españa #notícias,41,3,0,0.050545,1,9635,450,37
+daily,2026-05-03,2026-05-03,8MhnMHlXk7Q,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Atacan al presidente Trump #notícias,41,2,0,0.07443,1,5307,361,34
+daily,2026-05-03,2026-05-03,PQOKPfU-zIs,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Enfócate únicamente en una cosa a la vez #shorts,41,3,0,0.059084,1,3842,223,4
+daily,2026-05-03,2026-05-03,Z-xAO96GQtU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es lo primero que vas a hacer mañana  #shorts,40,1,0,0.110372,1,10220,1122,6
+daily,2026-05-03,2026-05-03,HnafDG2aj1I,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,This Is Rarer Than Any Goal You'll Ever Hit,39,0,0,0.031612,1,29546,928,6
+daily,2026-05-03,2026-05-03,qO9602XOIfY,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No tengas miedo a esto #shorts,38,1,1,0.056725,1,16342,913,14
+daily,2026-05-03,2026-05-03,SHPKe7pGqMk,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,el fin se acerca,38,0,0,0.050724,1,6427,315,11
+daily,2026-05-03,2026-05-03,zEUstENVghI,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo el PROMPT Completo fijado en los comentarios de este vídeo.,37,1,0,0.035647,1,12203,403,32
+daily,2026-05-03,2026-05-03,lYpHv3Tg0Vg,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Cómo Tener Buenas Ideas En YouTube? 💡 #Compuestos #AndresGarza #EloisaWolf #Ideas,37,2,0,0.022932,1,15350,349,3
+daily,2026-05-03,2026-05-03,gGvkfd-LiKA,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Claude normalizó la ansiedad por los tokens,37,0,0,0.045245,1,11913,497,42
+daily,2026-05-03,2026-05-03,5cynqLNd1gA,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,como si la idea (pintura) se fuera a secar,37,3,0,0.096085,1,5006,471,10
+daily,2026-05-03,2026-05-03,5BbGrGFI2gQ,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico,37,4,0,0.172195,1,14170,2406,34
+daily,2026-05-03,2026-05-03,vcL1MMmXeO8,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,Nadie se esperaba esto de J Balvin,37,2,0,0.022511,1,10395,228,6
+daily,2026-05-03,2026-05-03,CZtseHx5dAM,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You Just Need To Pick One...,36,0,0,0.033536,1,33099,1099,11
+daily,2026-05-03,2026-05-03,woNfdYrmVGw,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,El anillo que vale más que BANCOS ENTEROS,36,1,0,0.032716,1,10637,345,3
+daily,2026-05-03,2026-05-03,9T90MfOpaZY,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,uando tus Papás se Enferman: Cómo Afrontarlo sin Romperte 💙,35,2,1,0.037536,1,2078,71,7
+daily,2026-05-03,2026-05-03,F4ZxeuNDoUw,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,¿Te gustó supernova Genesis? #supernovagenesis #mexico,35,1,0,0.044788,1,12079,519,22
+daily,2026-05-03,2026-05-03,FOyH5MIRyD4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,33,-1,0,0.056393,1,18566,1037,10
+daily,2026-05-03,2026-05-03,5jOtf3OIgHg,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,MCP es la magia por la que muchos prefieren Claude,32,1,0,0.046942,1,9288,431,5
+daily,2026-05-03,2026-05-03,7Ocx3WwDK_c,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,"""Mi mala relación con los números""",31,1,0,0.044138,1,4282,183,6
+daily,2026-05-03,2026-05-03,w9LJSjmwufQ,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,Estás desarrollando apps de la forma equivocada,31,0,0,0.057425,1,9421,537,4
+daily,2026-05-03,2026-05-03,EJfh57hfc_E,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,30,2,0,0.062431,1,20871,1279,24
+daily,2026-05-03,2026-05-03,_XyunBBcVXY,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Conoce la historia de LEVA: ¿una SOFIPO segura?,30,1,0,0.057769,1,502,19,10
+daily,2026-05-03,2026-05-03,RBz3O-4xBYE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,29,4,0,0.08645,1,14864,1251,34
+daily,2026-05-03,2026-05-03,PfdNPN9Jv6s,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,29,2,0,0.079636,1,19225,1512,19
+daily,2026-05-03,2026-05-03,yqwGsf5XVkI,UCOD6LXgeBoeiUZTsPLdG-0g,Vida MRR - Programacion web,GitHub ARRUINÓ Copilot con estos CAMBIOS,28,2,0,0.052275,1,6045,249,67
+daily,2026-05-03,2026-05-03,Bv4wqAVZ6Ps,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,Los hombres nunca deberían saber esto sobre las mujeres,27,0,1,0.070815,1,2443,162,11
+daily,2026-05-03,2026-05-03,g47pe7T6-KE,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,The First Rule Of Money,26,3,0,0.054399,1,25515,1377,11
+daily,2026-05-03,2026-05-03,VszurX3VCPE,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,En vivo: Se acabó el reinado de Anthropic // Llegaron los agentes a ChatGPT,26,1,0,0.040626,1,13489,527,21
+daily,2026-05-03,2026-05-03,Q9qmcTjw89Q,UC30ajuhy8cViP2DiM1QLjmg,98grados,Malo vs Bueno vs Impecable. Edición PC #pc #pcgamer,26,0,0,0.034402,1,24795,842,11
+daily,2026-05-03,2026-05-03,FjxyqtLuh_M,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,quién es Juan Martin de TikTok?,26,2,0,0.048207,1,7364,335,20
+daily,2026-05-03,2026-05-03,TSAh8dzN0cw,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,25,-1,0,0.02297,1,10753,244,3
+daily,2026-05-03,2026-05-03,UacKz43AiDQ,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Lo que separa a los negocios exitosos de los que fracasan | Sofía Contreras,25,4,0,0.028375,1,2185,61,1
+daily,2026-05-03,2026-05-03,9R7IaubJFhA,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¡Estas quemando tokens por no saber programar!,25,0,0,0.056769,1,10622,573,30
+daily,2026-05-03,2026-05-03,g8NWmUdMh_E,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,GPT 5.5 LET'S GOOOOOOOO!,25,0,3,0.016396,1,20615,311,27
+daily,2026-05-03,2026-05-03,erf6YdpSakA,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,25,0,0,0.033688,1,12111,403,5
+daily,2026-05-03,2026-05-03,X5MyBjZ8Jgw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me quedé pensando cuando Jaime Higuera dijo esto #shorts,24,-2,0,0.055105,1,24154,1320,11
+daily,2026-05-03,2026-05-03,5Tsi4Beca6g,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,OpenAI estuvo en silencio porque planeaban algo GRANDE,24,0,0,0.045184,1,9738,419,21
+daily,2026-05-03,2026-05-03,ZrTIAjdcBGM,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,En vivo: ¡ChatGPT humilla a Claude Design!,24,0,0,0.044826,1,13452,552,51
+daily,2026-05-03,2026-05-03,7A5KHuRU8BE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Empecé a dormir mejor con esta rutina #shorts,24,0,0,0.054867,1,3390,179,7
+daily,2026-05-03,2026-05-03,gaOZZ1TYILU,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Cómo Realmente Proyectar Seguridad? (Respuesta por Experta en Lenguaje Corporal),24,1,0,0.098765,1,81,8,0
+daily,2026-05-03,2026-05-03,nZlhHf8vSbU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto ser realista ha matado a nuestra generación #shorts,23,0,0,0.102086,1,9110,922,8
+daily,2026-05-03,2026-05-03,LikC_lxkVEg,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este es el activo más valioso que puedes poseer #shorts,23,3,0,0.091462,1,6079,549,7
+daily,2026-05-03,2026-05-03,cxBZkkzJcpw,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¿Es LEVA seguro? Analizamos su estabilidad,23,2,0,0.036866,1,217,8,0
+daily,2026-05-03,2026-05-03,-bFkzPRxH4w,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Cambian las Reglas del SAT 🚨💸: Lo que Cambió en tu Declaración Anual,22,3,1,0.043335,1,15207,265,394
+daily,2026-05-03,2026-05-03,9Ke8dmefEqo,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Todo depende de lo que hagas hoy #shorts,22,0,0,0.068706,1,8500,577,7
+daily,2026-05-03,2026-05-03,HyTkdC8bhCg,UCbUYAYd1WUznxEEl498z7vA,Woshingo Streams,yo soy Emilio y...(sonido dramático),22,0,0,0.050079,1,5671,269,15
+daily,2026-05-03,2026-05-03,BwIlVEvq7mU,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Los centros de datos consumen energía de forma masiva y constante 🤖 #ia #chatgpt #educación,21,0,0,0.021673,1,6921,142,8
+daily,2026-05-03,2026-05-03,6cUe6qrXxJU,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Nunca he hecho un Excel,21,0,0,0.034357,1,15077,508,10
+daily,2026-05-03,2026-05-03,RNi5EAKHQ_I,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,21,1,0,0.02951,1,4473,128,4
+daily,2026-05-03,2026-05-03,xpf49h0tGvI,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Experta en Imagen: La Realidad de lo que Representa Cada Color,21,0,0,0.107692,1,130,14,0
+daily,2026-05-03,2026-05-03,PiKd0maLI6o,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo el link de la Guía de NotbookLM fijada en los comentarios de este vídeo.,20,0,0,0.059365,1,10427,611,8
+daily,2026-05-03,2026-05-03,sPHe-L95K0o,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,Estrategia Gaps Tesla,20,0,0,0.021562,1,1716,27,10
+daily,2026-05-03,2026-05-03,NLrfMQ0dqpQ,UCsmEAwbV7WbYndpQKbY4Ntw,Juan Villalvazo,Francia Desecha Windows 11 y Tim Cook Renuncia en Apple,20,0,0,0.104027,1,3278,232,109
+daily,2026-05-03,2026-05-03,mbtA5CBh5qk,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,Estrategia gaps más velas de indecisión,20,0,-6,0.191489,1,94,2,16
+daily,2026-05-03,2026-05-03,aNfOwttNQcg,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,19,0,0,0.02612,1,4441,114,2
+daily,2026-05-03,2026-05-03,SxYWhC51qFo,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,19,1,0,0.059003,1,8186,479,4
+daily,2026-05-03,2026-05-03,kLhNERKdwd4,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Revolut: ¿vale la pena invertir grandes sumas?,19,0,0,0.023756,1,884,20,1
+daily,2026-05-03,2026-05-03,pS5AOr4B7hg,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,"Deja de escribir, simplemente habla 👀🎙️ #desarrolloweb #programacion",19,1,0,0.051904,1,3256,166,3
+daily,2026-05-03,2026-05-03,PMX-urJB7uw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esta es la idea de ingreso pasivo  #shorts,17,1,0,0.088353,1,2739,236,6
+daily,2026-05-03,2026-05-03,tysrC1PivVE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,En el futuro eso ya es tuyo #shorts,17,0,0,0.090298,1,3721,331,5
+daily,2026-05-03,2026-05-03,lrl7lslhv2s,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,16,0,0,0.034901,1,8653,299,3
+daily,2026-05-03,2026-05-03,C9V8L2emj9M,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¿Qué es renta fija? (explicado fácil),16,1,0,0.050914,1,3830,195,0
+daily,2026-05-03,2026-05-03,tLlucpJbi5E,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,La retención de ISR en tus ganancias de Revolut,16,1,0,0.027123,1,848,21,2
+daily,2026-05-03,2026-05-03,_EHKT75Ir0g,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Episodio estreno con CD9! #chisme #comedia #podcast,16,1,0,0.060196,1,2957,176,2
+daily,2026-05-03,2026-05-03,KW2YQ1C0ECs,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,La TRAMPA de los CRÉDITOS | No saques un PRÉSTAMO sin ver esto,16,1,0,0.129794,1,678,67,21
+daily,2026-05-03,2026-05-03,8mnzaIML2AM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Los millonarios no quieren que conozcas este modelo de negocio  #shorts,16,2,0,0.078475,1,2676,206,4
+daily,2026-05-03,2026-05-03,-tzJJPnAenI,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Cuánto Gana Un Canal De YouTube en LATAM? 🎥 #Compuestos #AndresGarza #EloisaWolf #Dinero,15,-1,0,0.047355,1,3062,145,0
+daily,2026-05-03,2026-05-03,kLZUfQUWNNw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,¡Estás a muy poco de vivir la vida de tus sueños #shorts,15,2,0,0.068523,1,2262,148,7
+daily,2026-05-03,2026-05-03,GZ9itUCDrac,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,LEVA: Siempre NICAP 1 y con ganancias en alza,15,3,0,0.027668,1,253,7,0
+daily,2026-05-03,2026-05-03,QeK4l-iH51Y,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 La ley de cambio climático prohíbe la extracción de materiales radioactivos en España 🤖 #chatgpt,14,0,0,0.035487,1,4396,152,4
+daily,2026-05-03,2026-05-03,W1js1spTUPs,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,Así puedes crear tus MVP en un día 👀 #desarrolloweb #programacion #programador,14,0,0,0.023291,1,2662,61,1
+daily,2026-05-03,2026-05-03,ZVnXmeZZDw0,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,"Sí, funciona, puedes encontrarlo buscando caveman ✌🏻 #desarrolloweb #programacion #programador",14,0,0,0.023179,1,4228,95,3
+daily,2026-05-03,2026-05-03,kyojR7HQsVs,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es la fatiga de decisiones #shorts,13,1,0,0.061444,1,4557,273,7
+daily,2026-05-03,2026-05-03,2Ylfj8r_-V8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esta música te hará productivo al instante #shorts,13,-1,0,0.065388,1,9329,598,12
+daily,2026-05-03,2026-05-03,saLXbA_OCkE,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Beneficios de Revolut: interés diario y capital,13,1,0,0.032864,1,426,14,0
+daily,2026-05-03,2026-05-03,6_o0OElprPo,UCOD6LXgeBoeiUZTsPLdG-0g,Vida MRR - Programacion web,GITHUB Copilot va a COBRAR por TOKEN...,13,0,-1,0.056629,1,2225,98,28
+daily,2026-05-03,2026-05-03,Xq-4lUaLIp8,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Fuentes de energía que no salen la salud ni el ambiente 🤖 #ia #chatgpt #energía,12,-1,0,0.024814,1,7657,186,4
+daily,2026-05-03,2026-05-03,h5Snd8uqih8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Muchos dueños de negocio se sienten así    #shorts,12,0,0,0.043385,1,2789,118,3
+daily,2026-05-03,2026-05-03,YY3pLnSX1W4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No consumas tu tiempo y tu energía en algo que no te aporta nada  #shorts,12,0,0,0.076098,1,3916,296,2
+daily,2026-05-03,2026-05-03,jKwIvjb9kgM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Estas personas están atrapadas #shorts,12,0,0,0.081549,1,8265,668,6
+daily,2026-05-03,2026-05-03,8ImVuaOhTf4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,12,0,0,0.077891,1,12633,969,15
+daily,2026-05-03,2026-05-03,jr8lgZvzA34,UCOD6LXgeBoeiUZTsPLdG-0g,Vida MRR - Programacion web,ANTHROPIC quiere ELIMINAR CLAUDE CODE...,12,1,0,0.031742,1,8002,203,51
+daily,2026-05-03,2026-05-03,PZ2yduZysf0,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,11,-1,0,0.029521,1,5928,168,7
+daily,2026-05-03,2026-05-03,q__FKs64J28,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¿Quién define la tasa de interés y por qué?,11,0,0,0.052343,1,3286,170,2
+daily,2026-05-03,2026-05-03,TlwFNKM1OyA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Para conseguir lo que quieres debes enfocarte  #shorts,11,0,0,0.065674,1,6243,403,7
+daily,2026-05-03,2026-05-03,Ux-bi7bqrUU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así trabajan las personas que están construyendo riquezas #shorts,11,0,0,0.084998,1,6459,544,5
+daily,2026-05-03,2026-05-03,rbbMgCB90fk,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,En quién se convierte el narcisista cuando el empático deja de cooperar — Carl Jung,11,0,0,0.068685,1,1718,113,5
+daily,2026-05-03,2026-05-03,Lw3RJgDjXh0,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,10,-1,0,0.023486,1,7281,170,1
+daily,2026-05-03,2026-05-03,F1D4G7VTBnY,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿Qué te separa de los demás?,10,0,0,0.044024,1,3907,171,1
+daily,2026-05-03,2026-05-03,weyrpnOTB-A,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así generaría 10000€ al mes #shorts,10,0,0,0.119261,1,3790,451,1
+daily,2026-05-03,2026-05-03,2F50vE7VUIw,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Chisme express con Traumaditos Podcast #chisme #comedia #podcast,10,0,0,0.095238,1,4662,440,4
+daily,2026-05-03,2026-05-03,rWwPAnF8Qeo,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,En Argentina se come carne de burro 🫏? #argentina,10,1,0,0.076845,1,8849,582,98
+daily,2026-05-03,2026-05-03,Rdfd1KAX6NU,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,9,-1,0,0.035321,1,7531,261,5
+daily,2026-05-03,2026-05-03,SrN39dykl7A,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es lo primero que necesitas  #shorts,9,0,0,0.065387,1,3854,249,3
+daily,2026-05-03,2026-05-03,TCGbMJYgaYA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Estos hábitos están destrozando tu testosterona  #shorts,9,1,0,0.063052,1,4758,297,3
+daily,2026-05-03,2026-05-03,bGis_LtFRRo,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Tiene un fetiche con su hermana #chisme #comedia #podcast,9,0,0,0.030257,1,1322,40,0
+daily,2026-05-03,2026-05-03,qC_5K9u8nY4,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,¡Episodio estreno con Traumaditos Podcast! #chisme #comedia #podcast,9,0,0,0.031095,1,5853,181,1
+daily,2026-05-03,2026-05-03,OHGtOI47r4M,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,Este es el resultado de probar el mismo prompt en 3 IAs distintas 👀 #desarrolloweb #programacion,9,0,0,0.029439,1,5469,159,2
+daily,2026-05-03,2026-05-03,mTqDtRTKvqE,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,8,-1,0,0.037402,1,6390,221,18
+daily,2026-05-03,2026-05-03,YldxYShWvGE,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 La energía nuclear no debe usarse para solucionar cualquier problema 🤖 #ia #chatgpt #educación,8,-1,0,0.020909,1,7174,148,2
+daily,2026-05-03,2026-05-03,bjFyP8D_XvM,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Los Errores Más Comunes Al Crear En YouTube ❌ #Compuestos #AndresGarza #EloisaWolf #Errores,8,1,0,0.071391,1,1891,135,0
+daily,2026-05-03,2026-05-03,rzqgWnJPamU,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Este consejo cambia tu relación con las mujeres #shorts,8,0,0,0.055126,1,2975,160,4
+daily,2026-05-03,2026-05-03,uOGqRV25LOc,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esta es la trampa de la educación #shorts,8,0,0,0.050779,1,1989,99,2
+daily,2026-05-03,2026-05-03,m8mdQGF-Pmw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me quedé pensando cuando Jaime Higuera dijo esto #shorts,8,1,0,0.060262,1,23066,1364,26
+daily,2026-05-03,2026-05-03,eoXIFY2GZTw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Estos libros te pueden cambiar la vida #shorts,8,0,0,0.072967,1,21544,1556,16
+daily,2026-05-03,2026-05-03,tqD_yn5Y_zQ,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,🤖 Recursos por los que hay que seguir apostando 🤖 #ia #chatgpt #educacion,7,-1,0,0.016819,1,4043,67,1
+daily,2026-05-03,2026-05-03,uHx1N_qFfTw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es lo primero que necesitas  #shorts,7,0,0,0.083505,1,2910,240,3
+daily,2026-05-03,2026-05-03,xSS2WTAglww,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Que te rompan el corazón es lo mejor que te puede pasar en la vida #shorts,7,0,0,0.077409,1,3010,226,7
+daily,2026-05-03,2026-05-03,WSSQ8mtQicE,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Gancho chismoso #chisme #comedia #podcast,7,0,0,0.031133,1,4015,125,0
+daily,2026-05-03,2026-05-03,fIZkXHaOuvY,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,La sociedad te está programando #shorts,6,0,0,0.049941,1,2543,123,4
+daily,2026-05-03,2026-05-03,t3oZncJYgwE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No hagas caso a la sociedad actual  #shorts,6,0,0,0.093645,1,3887,358,6
+daily,2026-05-03,2026-05-03,ymxpml7CipE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,genera así 1000€ al mes fácil #shorts,6,0,0,0.064448,1,5229,334,3
+daily,2026-05-03,2026-05-03,hx45I5QyAFw,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto que te rompan el corazón es una de las mejores cosas que te puede pasar en la vida #shorts,6,0,0,0.08172,1,7281,584,11
+daily,2026-05-03,2026-05-03,dA8XrnlFY5w,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Mis ganancias diarias | ¡Invertí 50 mil en REVOLUT!,6,0,0,0.03849,1,2702,89,15
+daily,2026-05-03,2026-05-03,IiPyKNs5dtg,UC3nwmvE2aDzUSJ4evQ1NhoA,IA Innova,GPT 5.5 ACABA de FILTRARSE y es INCREÍBLEMENTE BUENO,6,0,0,0.044934,1,3494,144,13
+daily,2026-05-03,2026-05-03,i6WQdQsE0kc,UCqcbQf6yw5KzRoDDcZ_wBSw,Wes Roth,Introducing ChatGPT Images 2.0,6,0,1,0.022556,1,10463,216,20
+daily,2026-05-03,2026-05-03,2Z1aJVGA1-M,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,"¡Señoronas, señorones! Les tengo una noticia 🤯",5,0,0,0.042294,1,7306,301,8
+daily,2026-05-03,2026-05-03,vaEGXlhFrJQ,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿La Inteligencia Artificial le Quitará el Trabajo a los YouTubers? (La Realidad de 2026),5,0,0,0.043478,1,161,6,1
+daily,2026-05-03,2026-05-03,WBBOTxvDook,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Céntrate en tu objetivo principal #shorts,5,0,0,0.067755,1,3675,245,4
+daily,2026-05-03,2026-05-03,Jlw306k4Sv0,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Te recomiendo esto #shorts,5,0,0,0.051398,1,2218,110,4
+daily,2026-05-03,2026-05-03,GQtuLY1Qs1Q,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así es como se ha creado un protocolo de cómo vivir hasta los 100 años #shorts,5,0,0,0.035083,1,3677,125,4
+daily,2026-05-03,2026-05-03,cRKwXRLqKQM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así deberían pensar los fundadores de e-commerce #shorts,5,1,0,0.028249,1,3363,93,2
+daily,2026-05-03,2026-05-03,wm1qu3D9-ho,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Sonar como un CEO tiene que ver con como tomas las decisiones #shorts,5,1,0,0.067023,1,4118,274,2
+daily,2026-05-03,2026-05-03,pgFxsauDXjc,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,En vivo: Hackearon a Vercel y Lovable,5,1,0,0.040963,1,7934,314,11
+daily,2026-05-03,2026-05-03,YNW_D7b60I4,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Revolut: Gana 5 mil pesos en un año con interés compuesto,5,0,0,0.026455,1,756,20,0
+daily,2026-05-03,2026-05-03,XvLttG6zZck,UCRDQzsHtx2cXvzEXnEhbxBg,Mister Krax,Que hay detrás de lo ocurrido en Teotihuacán? #teotihuacan #méxico,5,1,0,0.051376,1,15883,724,92
+daily,2026-05-03,2026-05-03,TAJkbsNrZuM,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,¿Para dónde va el mercado?,5,0,0,0.054054,1,962,52,0
+daily,2026-05-03,2026-05-03,Enic64S66_s,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.,4,-1,0,0.028144,1,6076,168,3
+daily,2026-05-03,2026-05-03,5qoKwHygsy8,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,Negocios de Mascotas que Nadie Está Haciendo #pequenocerdocapitalista #podcast #semanadellibro,4,0,0,0.045078,1,3505,152,6
+daily,2026-05-03,2026-05-03,YPM2Fep2P3A,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,El Mejor Formato Para Crear Contenido 📱 #Compuestos #AndresGarza #EloisaWolf #Formato,4,0,0,0.05036,1,1807,89,2
+daily,2026-05-03,2026-05-03,uJzhn5czGL4,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿YouTube Es La Mejor Red Para Crear Contenido? 👥#Compuestos #AndresGarza #EloisaWolf #Contenido,4,1,0,0.06971,1,1621,111,2
+daily,2026-05-03,2026-05-03,8XfsycyMf48,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,El Primer Paso Para Vivir De YouTube 🎥 #Compuestos #AndresGarza #EloisaWolf #YouTube,4,1,0,0.047002,1,4553,213,1
+daily,2026-05-03,2026-05-03,3wJvtiigDcg,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Que te rompan el corazón es lo mejor que te puede pasar #shorts,4,0,0,0.086083,1,2637,224,3
+daily,2026-05-03,2026-05-03,vyUuhcDRcf4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,4,0,0,0.040388,1,10102,400,8
+daily,2026-05-03,2026-05-03,MOpYEt-XfaU,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Invierte 50 mil en Revolut y esto ganarás,4,0,0,0.01907,1,839,14,2
+daily,2026-05-03,2026-05-03,wFTojQEC2eE,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,La Estrategia de GAPS que gana 7 de cada 10 veces (REAL),4,0,0,0.107349,1,1211,100,30
+daily,2026-05-03,2026-05-03,l8F9Omk197E,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,"""Aprender a vivir con menos""",3,1,0,0.031982,1,9005,283,5
+daily,2026-05-03,2026-05-03,ppy-SwlSnEo,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,😱 ERRORES que te hacen perder dinero con el SAT 💸,3,-1,0,0.035729,1,2435,85,2
+daily,2026-05-03,2026-05-03,IkNEALHWXUo,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Los Primeros Pasos Para Empezar a Vivir de YouTube (Eloisa Wolf),3,0,0,0.039002,1,641,24,1
+daily,2026-05-03,2026-05-03,4NHnN9EmDk0,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Se Puede Vivir de Ser YouTube? (La Realidad de 2026),3,0,0,0.07989,1,363,27,2
+daily,2026-05-03,2026-05-03,izQP0WI1i9A,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Por esto una marca de ropa e-commerce es muy difícil  #shorts,3,0,0,0.029365,1,4359,127,1
+daily,2026-05-03,2026-05-03,50Esq3fgXzA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Existe otra forma de comenzar un negocio  #shorts,3,1,0,0.081744,1,4037,323,7
+daily,2026-05-03,2026-05-03,FR04V2DkErI,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,“Mi estrategia: hacer lo que me gusta”,2,0,0,0.046766,1,2288,107,0
+daily,2026-05-03,2026-05-03,FAerQflosns,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,Aprendí a cobrar mi trabajo,2,0,0,0.038305,1,7884,290,12
+daily,2026-05-03,2026-05-03,BYv6i1MhiRA,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿El Algoritmo No Te Apoya? 🤖 #Compuestos #AndresGarza #EloisaWolf #Algoritmo,2,0,0,0.007446,1,2686,20,0
+daily,2026-05-03,2026-05-03,kFVzax1iFW8,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Es Bueno Hacer Videos de Experimento en YouTube? (La Respuesta de una Experta),2,0,0,0.052885,1,208,11,0
+daily,2026-05-03,2026-05-03,AWWSm291p7c,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Que te rompan el corazon es lo mejor que te puede pasar #shorts,2,-1,0,0.083681,1,4792,395,6
+daily,2026-05-03,2026-05-03,-rDMPyp2tvQ,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto hice para generar 72.000€ #shorts,2,0,0,0.075022,1,5585,414,5
+daily,2026-05-03,2026-05-03,2q62qBqugJE,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT,2,0,-1,0.171429,1,910,90,66
+daily,2026-05-03,2026-05-03,d4AaggbJACU,UCOD6LXgeBoeiUZTsPLdG-0g,Vida MRR - Programacion web,"Qué pasa con Claude Code, GPT 5.5 y mas chismecito dev",2,0,0,0.095109,1,1104,103,2
+daily,2026-05-03,2026-05-03,5DilrEUdYnY,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,"Si quieres resultados diferentes, necesitas entornos diferentes.",1,0,0,0.076792,1,4688,356,4
+daily,2026-05-03,2026-05-03,u03PlL13QDw,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,La Estructura De Un Buen Video De YouTube📏 #Compuestos #AndresGarza #EloisaWolf #YouTube,1,0,0,0.014391,1,3405,49,0
+daily,2026-05-03,2026-05-03,dUo1R8tp6zQ,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Importa la Edición en YouTube? (La Nueva Tendencia de 2026),1,0,0,0.054348,1,276,15,0
+daily,2026-05-03,2026-05-03,Tx6waClZSYM,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿El Siguiente Mr Beast? 💰 #Compuestos #AndresGarza #EloisaWolf #MrBeast,1,0,0,0.046393,1,2953,136,1
+daily,2026-05-03,2026-05-03,VsjETURd7No,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es un embudo de venta #shorts,1,0,0,0.044843,1,1784,77,3
+daily,2026-05-03,2026-05-03,vW1rzDI4KhM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,1,0,0,0.045633,1,3309,146,5
+daily,2026-05-03,2026-05-03,I66LDF9iWts,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,"Experta en Lenguaje No Verbal: ""Juzgar No es Malo si...""",1,0,0,0.102804,1,107,11,0
+daily,2026-05-03,2026-05-03,0O8CF6F7CVs,UCQIUhtP5WYIx_pMG8UvMYHg,Cristina Dayz ,Emisión en directo de Cristina Dayz,0,0,0,,1,0,0,0
+daily,2026-05-03,2026-05-03,V4tlvp9IP_8,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Calidad o Cantidad en YouTube? (Respuesta por Experta),0,0,0,0.131148,1,183,21,3
+daily,2026-05-03,2026-05-03,dCJJcNtrNjo,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Audiencia Grande O Nicho Específico? 👥 #Compuestos #AndresGarza #EloisaWolf #Audiencia,0,0,0,0.064091,1,1139,73,0
+daily,2026-05-03,2026-05-03,WVEngsk1RuQ,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Tener Suscriptores No Es Importante 👥 #Compuestos #AndresGarza #EloisaWolf #Suscriptores,0,0,0,0.045924,1,1742,80,0
+daily,2026-05-03,2026-05-03,SZLTZDoVcfA,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Haz esto si estás estancado en 0 euros #shorts,0,0,0,0.090387,1,3485,312,3
+daily,2026-05-03,2026-05-03,5aR4agCS1OM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Tómatelo como algo personal #shorts,0,0,0,0.057098,1,6375,357,7
+daily,2026-05-03,2026-05-03,G1xuyxMOUNM,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,¿Cómo se calculan tus rendimientos en Revolut?,0,0,0,0.014503,1,1448,20,1
+daily,2026-05-03,2026-05-03,sZoT8IoDJTU,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Finsus: Alto rendimiento y estabilidad para tu dinero,0,0,0,0.02439,1,697,17,0
+daily,2026-05-03,2026-05-03,wlOrP9Q1akA,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,"Nu: Tasas a la baja, pero ¿qué hay en la 'cajita turbo'?",0,0,0,0.019763,1,759,15,0
+daily,2026-05-03,2026-05-03,Mm2C9CRyDxY,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Morosidad en YoTePresto: ¿Estable o creciente?,0,0,0,0.027607,1,652,18,0
+daily,2026-05-03,2026-05-03,wvJLjIR3nRI,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Supertasas: ¡La SOFIPO más sólida y con regalo!,0,0,0,0.033528,1,686,23,0
+daily,2026-05-03,2026-05-03,nIrSjC_gsk8,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Alerta SOFIPO: NICAP CATEGORIA 2 ¿Quién es?,0,0,0,0.022329,1,627,14,0
+daily,2026-05-03,2026-05-03,IaUn-c8Lxss,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,Multiplica X2 tus ganancias con XTB Código: ALAINXTB,0,0,0,0.027634,1,579,16,0
+daily,2026-05-03,2026-05-03,DYhg0nWZ1UQ,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Crisis Financiera en el Matrimonio | Lo Que Nadie Te Dice,0,1,0,,1,0,7,0
+daily,2026-05-03,2026-05-03,uoRmXpQseH8,UCqGbnzprhyuzTOL8abZD-sQ,Pao Almontes,El Mapa completo para tu Libertad Financiera.,0,0,0,,1,0,1,0
+daily,2026-05-03,2026-05-03,-lSM97fApgQ,UCqGbnzprhyuzTOL8abZD-sQ,Pao Almontes,Las 3 mejores inversiones para empezar hoy.,0,0,0,,1,0,3,0
+daily,2026-05-03,2026-05-03,1sofoaFEV58,UCqGbnzprhyuzTOL8abZD-sQ,Pao Almontes,Los 3 primeros pasos para comenzar a invertir desde cero.,0,1,0,,1,0,1,0
+daily,2026-05-03,2026-05-03,Gr6qcQdzDfw,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,La Verdad Económica del Nuevo Decreto Pensional en Colombia,0,0,0,0.07642,1,4894,292,82
+daily,2026-05-03,2026-05-03,2AOH5hgKzpU,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,¿De quién es realmente Bely y Beto?,0,0,0,0.036326,1,1927,68,2
+daily,2026-05-03,2026-05-03,IAn3Wu2BdyY,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,Chegg DESAPARECIÓ: la IA la borró del mapa ¿cuál SERÁ la SIGUIENTE?,0,0,0,0.050706,1,57922,2893,44
+daily,2026-05-03,2026-05-03,i6wL2IzuW7s,UCLYoURyGHMUuQ5YrfX55PWg,Aprendiz Financiero,Los Bancos no quieren que sepas ESTO #finanzas,0,0,0,0.091686,1,6435,582,8
+daily,2026-05-03,2026-05-03,sXV44nHGfAA,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,6 Ways To Become Who You Want,0,0,0,0.101516,1,1517,154,0
+daily,2026-05-03,2026-05-03,OEtIq4tR1rA,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,$1M Year Is Not Normal...,0,0,0,0.111406,1,4892,542,3
+daily,2026-05-03,2026-05-03,MpPS5I1pJD8,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,You Don't Need A Head Start To Win,0,0,0,0.028711,1,11250,319,4
+daily,2026-05-03,2026-05-03,7NeECqsR_u4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"Is It Worth $100,000?",0,0,0,0.044398,1,15451,678,8
+daily,2026-05-03,2026-05-03,JuRjZqzpP0g,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,The Reason Your Business Can't Run Without You...,0,0,0,0.064926,1,13862,896,4
+daily,2026-05-03,2026-05-03,4yDM3ZFcQm4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,"""Am I Selling The Wrong Thing?""",0,0,0,0.036294,1,131701,4720,60
+daily,2026-05-03,2026-05-03,3fsJFUvA6Ts,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,What Makes The Perfect Business (5 Things),0,0,0,0.055373,1,37762,2002,89
+daily,2026-05-03,2026-05-03,XNDiFY5vIk0,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,What Is Focus?,0,0,0,0.048135,1,10616,505,6
+daily,2026-05-03,2026-05-03,iK6HT02LYX4,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,Raise Your Price,0,0,0,0.033457,1,35359,1168,15
+daily,2026-05-03,2026-05-03,A2O_CSDImRs,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,What The Car You Drive Says About You,0,0,0,0.034432,1,328295,10845,459
+daily,2026-05-03,2026-05-03,n2T6AOoUkOM,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,This New Day Trading Rule Will BANKRUPT People,0,0,0,0.026487,1,963538,25146,375
+daily,2026-05-03,2026-05-03,MOrBFf1DVvs,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,"This Guy Spent $25,000 To Marry a Somali",0,0,0,0.027279,1,610097,16361,282
+daily,2026-05-03,2026-05-03,WFOEVVlOH8s,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,¿Qué Tan Importante Es Gesticular Con Las Manos? 👐🏼 #Compuestos #AndresGarza #BárbaraTijerina #Manos,0,0,0,0.060345,1,116,7,0
+daily,2026-05-03,2026-05-03,IrefshwOoX8,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Así podrás saber si alguien realmente te está prestando atención... (Técnica 99% efectiva),0,0,0,0.295918,1,98,10,19
+daily,2026-05-03,2026-05-03,Cyfs-ngasus,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,Las 2 Tipos De Sonrisas 😁 #Compuestos #AndresGarza #BárbaraTijerina #Sonrisa,0,0,0,0.025974,1,308,8,0
+daily,2026-05-03,2026-05-03,dIwCndpKuSE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así actúan los millonarios #shorts,0,0,0,0.046961,1,724,34,0
+daily,2026-05-03,2026-05-03,f0ukpT07u2c,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así funciona el dinero  #shorts,0,0,0,0.086573,1,3627,311,3
+daily,2026-05-03,2026-05-03,e5jQUYrRPRk,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Reemplaza años de universidad con estos vídeos  #shorts,0,0,0,0.054255,1,2820,151,2
+daily,2026-05-03,2026-05-03,Xshu2lM5PZE,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,No compartas tus objetivos con la gente  #shorts,0,0,0,0.111824,1,2495,279,0
+daily,2026-05-03,2026-05-03,WynveK8qJx4,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Así funciona tu subconsciente  #shorts,0,0,0,0.036161,1,2157,77,1
+daily,2026-05-03,2026-05-03,iPg5fXvAqqo,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,0,0,0,0.032833,1,4264,137,3
+daily,2026-05-03,2026-05-03,N9drBPpPZFI,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Atraes lo que eres #shorts,0,0,0,0.043948,1,2685,114,4
+daily,2026-05-03,2026-05-03,rr8ZpzHcZJc,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Enfócate en este hábito para cambiar tu vida #shorts,0,0,0,0.128824,1,1863,236,4
+daily,2026-05-03,2026-05-03,nrIEhoSCOg8,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,0,0,0,0.070607,1,16174,1121,21
+daily,2026-05-03,2026-05-03,b-NJDpglmeM,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,0,0,0,0.089791,1,6259,552,10
+daily,2026-05-03,2026-05-03,V2d9YyBmeUk,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,Esto es el éxito #shorts,0,0,0,0.072605,1,3705,264,5
+daily,2026-05-03,2026-05-03,qf_JlCrcPy0,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,DeepSeek V4 utiliza chips de Huawei,0,0,0,0.060566,1,6753,392,17
+daily,2026-05-03,2026-05-03,DB302vKJ2Go,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,¿La gente olvidó cómo utilizar Google?,0,0,0,0.096583,1,7931,699,67
+daily,2026-05-03,2026-05-03,f9AFrDB-73g,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,EL DÍA QUE HUBBLE LO CAMBIÓ TODO 🛰️,0,0,0,0.086699,1,23322,1994,28
+daily,2026-05-03,2026-05-03,mK3xENFCGnI,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,El experimento de las descargas eléctricas,0,0,0,0.075965,1,245060,18356,260
+daily,2026-05-03,2026-05-03,4s9LuOSR3Q4,UC7DdEm33SyaTDtWYGO2CwdA,Physics Girl,What would happen if the Sun dissapeared?,0,0,0,0.03027,1,369871,10790,406
+daily,2026-05-03,2026-05-03,1baBzd1XPkU,UC1VLQPn9cYSqx8plbk9RxxQ,The Action Lab,Gravity Assists Are Basically Free Energy,0,0,0,0.05482,1,118095,5793,681
+daily,2026-05-03,2026-05-03,jCyhEO3h-Ik,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,My simple path to getting rich,0,0,0,0.108538,1,691,72,3
+daily,2026-05-03,2026-05-03,UtXLbVdM7wk,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,Importancia de tener un buen historial crediticio #shorts #creditos #dinero #bancos,0,0,0,0.044656,1,9450,412,10
+daily,2026-05-03,2026-05-03,0lt4j7GTtGU,UCuhw3KIv3wM14By2-LcxDGw,El Consejero,7 cosas que debes abandonar ahora para vibrar en una frecuencia más elevada – Carl Jung,0,0,0,0.1344,1,625,83,1
+daily,2026-05-03,2026-05-03,40-68Uco_u0,UCPTlwyaEoJOVyvDLzHagzNQ,WATOP,"Mientras Egipto Gritaba, Etiopía Se Apoderó Del Nilo Y Ahora Podría Privar A Egipto De Toda Su Agua",0,0,0,0.058743,1,8784,495,21
+daily,2026-05-03,2026-05-03,o39vHtwxPRg,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,Complicó su chamba #chisme #comedia #podcast,0,0,0,0.029777,1,2821,83,1
+daily,2026-05-03,2026-05-03,WeAhvFYojh0,UCdfnfXWCGkBAx2cN2l-4u2w,Semo Historia,La ciudad puede ser diferente,0,0,0,0.038862,1,1441,53,3
+daily,2026-05-03,2026-05-03,ywEV7NQlO1Y,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,33.000 € en suscripciones. 🫠,0,0,0,0.070897,1,6051,409,20
+daily,2026-05-03,2026-05-03,2r0m4TsyIxs,UCM55RjebjSevVWPnj2LEymw,viyaura,"These Emojis Should NOT Exist... (yes, again)",0,0,0,0.070448,1,93630,4503,2093
+daily,2026-05-03,2026-05-03,zuzydZz-cmo,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,Milei y el liberalismo como comedia involuntaria,0,0,0,0.079339,1,30275,2127,275
+daily,2026-05-03,2026-05-03,C4OiZ15VTxw,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,soy una fracasada.,0,0,0,0.111499,1,7166,672,127
+daily,2026-05-03,2026-05-03,VITWpByrMdw,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,NADIE te cuenta ESTO sobre la IA...,0,0,0,0.054364,1,1306,69,2
+daily,2026-05-03,2026-05-03,tpay1lEGZ7g,UCNYW2vfGrUE6R5mIJYzkRyQ,DrossRotzank,El muerto que se enterró a sí mismo,0,0,0,0.093971,1,246545,22351,817
+daily,2026-05-03,2026-05-03,Gmfpq60LbVQ,UCPgVPrgqpALC1s2e63fgKyg,elWacky,Quizás Mañana Tu YouTuber Favorito Desaparezca,0,0,0,0.083018,1,160050,12482,805
+daily,2026-05-03,2026-05-03,R-klQGp_308,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,Websites That Have Never Changed,0,0,0,0.043201,1,287006,12229,170
+daily,2026-05-03,2026-05-03,8--Bq5oEsZ8,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Tested AI Survival Products,0,0,0,0.046987,1,189116,8731,155
+daily,2026-05-03,2026-05-03,fuxYQrqkfns,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,0.999 = 1?,0,0,0,0.078115,1,521897,39910,858
+daily,2026-05-03,2026-05-03,MYHiaHDLDB8,UCvPGx8qh8AkrFZW06tESvaA,Dot Dager,HACKEARON WORDPRESS (y L4D2 con Juli) | !discord !falopa !links,0,0,0,0.069531,1,3840,265,2
+daily,2026-05-03,2026-05-03,g-7nUex4nVg,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,El truco de los pochoclos y la gaseosa del cine,0,0,0,0.043818,1,9996,427,11
+daily,2026-05-03,2026-05-03,tPuup43tbgA,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,La mujer que revolcionó la moda femenina,0,0,0,0.026745,1,5085,134,2
+daily,2026-05-03,2026-05-03,vMnp3ptycik,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,Escúchalo completo en Más Allá del Rosa en YouTube,0,0,0,0.019751,1,1924,36,2
+daily,2026-05-03,2026-05-03,81RBVN6P9cM,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Magnus Carlsen Broke Computers With This Game,0,0,0,0.042407,1,223713,8666,821
+daily,2026-05-03,2026-05-03,P1DSZNhApJA,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Jynxzi no no no no nooooooo,0,0,0,0.02226,1,2093584,46310,294
+daily,2026-05-03,2026-05-03,5LJ1cxjQhyE,UC415bOPUcGSamy543abLmRA,Cleo Abram,Why Antarctica Has SO MANY Meteorites,0,0,0,0.056641,1,1321920,74504,371
+daily,2026-05-03,2026-05-03,qxj4Sr5Cm24,UC1yNl2E66ZzKApQdRuTQ4tw,Sabine Hossenfelder,Did Life Come To Earth On An Asteroid?,0,0,0,0.087874,1,44325,3426,469
+daily,2026-05-03,2026-05-03,t9_dqoKfqLo,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,¿porqué este prompt es tan importante?,-1126,24,0,0.030502,1,18884,562,14
 daily,2026-05-02,2026-05-02,QPWScf-86po,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,I Made Mascots For Stores That Don’t Have Them,2070020,63085,704,0.034848,1,3585551,123125,1826
 daily,2026-05-02,2026-05-02,qgzwtKsXCMo,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,Jynxzi REALIZES,1144522,20935,212,0.021009,1,1838914,38174,460
 daily,2026-05-02,2026-05-02,IEJALLQFmDs,UCY1kMZp36IQSyNx_9h4mpCg,Mark Rober,You’re Breathing Dinosaur Breath!,1102612,20140,105,0.023992,1,3368427,80250,565

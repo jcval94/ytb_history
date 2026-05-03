@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-02T10:13:38.456339+00:00",
-  "total_alerts": 333,
+  "generated_at": "2026-05-03T10:19:15.346840+00:00",
+  "total_alerts": 346,
   "severity_counts": {
-    "critical": 13,
-    "high": 131,
-    "medium": 186,
-    "low": 3
+    "critical": 16,
+    "high": 157,
+    "medium": 171,
+    "low": 2
   },
   "top_alerts": [
     {
-      "alert_id": "alrt_e3ff8f275dfb900d",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_51301542a0ca7b5d",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "channel",
       "entity_id": "UCWBWgCD4oAqT3hUeq40SCUw",
       "video_id": "",
@@ -38,9 +38,9 @@
       ]
     },
     {
-      "alert_id": "alrt_a5f13697d483e044",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_c1812a6dce8dd492",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "channel",
       "entity_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
       "video_id": "",
@@ -67,9 +67,9 @@
       ]
     },
     {
-      "alert_id": "alrt_5440ad696826154a",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_ec1a83906e9cad9c",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "channel",
       "entity_id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
       "video_id": "",
@@ -79,14 +79,14 @@
       "signal_type": "channel_high_growth",
       "severity": "critical",
       "raw_signal_score": 98.3333,
-      "adjusted_signal_score": 97.4729,
-      "metric_confidence_score": 98.25,
+      "adjusted_signal_score": 98.3333,
+      "metric_confidence_score": 100.0,
       "confidence_level": "high",
       "message": "Señal de canal detectada: channel_high_growth.",
       "evidence_json": {
         "threshold": 80.0,
         "raw_signal_score": 98.3333,
-        "metric_confidence_score": 98.25
+        "metric_confidence_score": 100.0
       },
       "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
       "dashboard_tab": "Channels",
@@ -96,69 +96,9 @@
       ]
     },
     {
-      "alert_id": "alrt_d5a4d65592fd75c5",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
-      "entity_type": "video",
-      "entity_id": "AxHTi--S-sU",
-      "video_id": "AxHTi--S-sU",
-      "channel_id": "UCP15FVAA2UL-QOcGhy7-ezA",
-      "channel_name": "EDteam",
-      "title": "Volvió el rey de la IA: ChatGPT supera a Claude Design con GPT-Images-2",
-      "signal_type": "metadata_change_watch",
-      "severity": "critical",
-      "raw_signal_score": 100.0,
-      "adjusted_signal_score": 94.75,
-      "metric_confidence_score": 89.5,
-      "confidence_level": "high",
-      "message": "Video con cambio de metadata detectado.",
-      "evidence_json": {
-        "threshold": 1.0,
-        "raw_signal_score": 100.0,
-        "metric_confidence_score": 89.5
-      },
-      "recommended_action": "Vigilar lift posterior del cambio de metadata.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_32588fb99c803cdb",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
-      "entity_type": "channel",
-      "entity_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
-      "video_id": "",
-      "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
-      "channel_name": "Jaime Higuera",
-      "title": "",
-      "signal_type": "channel_volatility_warning",
-      "severity": "critical",
-      "raw_signal_score": 94.3925,
-      "adjusted_signal_score": 94.3925,
-      "metric_confidence_score": 100.0,
-      "confidence_level": "high",
-      "message": "Señal de canal detectada: channel_volatility_warning.",
-      "evidence_json": {
-        "threshold": 30.0,
-        "raw_signal_score": 94.3925,
-        "metric_confidence_score": 100.0
-      },
-      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
-      "dashboard_tab": "Channels",
-      "source_tables": [
-        "latest_channel_advanced_metrics.csv",
-        "latest_channel_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_7d048b90763f51cd",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_1edb81184101c2b5",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "video",
       "entity_id": "V4tlvp9IP_8",
       "video_id": "V4tlvp9IP_8",
@@ -167,15 +107,15 @@
       "title": "¿Calidad o Cantidad en YouTube? (Respuesta por Experta)",
       "signal_type": "high_engagement_low_reach",
       "severity": "critical",
-      "raw_signal_score": 98.7405,
-      "adjusted_signal_score": 93.5566,
-      "metric_confidence_score": 89.5,
+      "raw_signal_score": 98.7871,
+      "adjusted_signal_score": 95.3296,
+      "metric_confidence_score": 93.0,
       "confidence_level": "high",
       "message": "Alta interacción relativa con alcance bajo.",
       "evidence_json": {
         "threshold": 75.0,
-        "raw_signal_score": 98.7405,
-        "metric_confidence_score": 89.5
+        "raw_signal_score": 98.7871,
+        "metric_confidence_score": 93.0
       },
       "recommended_action": "Posible tema fuerte con distribución baja; revisar empaque.",
       "dashboard_tab": "Signals",
@@ -187,9 +127,38 @@
       ]
     },
     {
-      "alert_id": "alrt_e845654ad98dcc3c",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_7beab4a0fe4b13bd",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "video_id": "",
+      "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "channel_name": "Jaime Higuera",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 94.8276,
+      "adjusted_signal_score": 94.8276,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 94.8276,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_8bb83c0169fd3088",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "video",
       "entity_id": "V4tlvp9IP_8",
       "video_id": "V4tlvp9IP_8",
@@ -198,15 +167,15 @@
       "title": "¿Calidad o Cantidad en YouTube? (Respuesta por Experta)",
       "signal_type": "packaging_problem",
       "severity": "critical",
-      "raw_signal_score": 98.2818,
-      "adjusted_signal_score": 93.122,
-      "metric_confidence_score": 89.5,
+      "raw_signal_score": 98.1671,
+      "adjusted_signal_score": 94.7312,
+      "metric_confidence_score": 93.0,
       "confidence_level": "high",
       "message": "Video con posible problema de empaque.",
       "evidence_json": {
         "threshold": 70.0,
-        "raw_signal_score": 98.2818,
-        "metric_confidence_score": 89.5
+        "raw_signal_score": 98.1671,
+        "metric_confidence_score": 93.0
       },
       "recommended_action": "Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.",
       "dashboard_tab": "Signals",
@@ -218,9 +187,69 @@
       ]
     },
     {
-      "alert_id": "alrt_6693e2d8f7ce7723",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_26caf090223a067f",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
+      "entity_type": "video",
+      "entity_id": "uWOLkr7S47A",
+      "video_id": "uWOLkr7S47A",
+      "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "channel_name": "Alex Hormozi",
+      "title": "This Sales Tactic Is Underrated",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 96.3139,
+      "adjusted_signal_score": 92.9429,
+      "metric_confidence_score": 93.0,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 96.3139,
+        "metric_confidence_score": 93.0
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_97ced1ccf15569f6",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "video_id": "",
+      "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "channel_name": "Alex Hormozi",
+      "title": "",
+      "signal_type": "channel_high_growth",
+      "severity": "critical",
+      "raw_signal_score": 92.5,
+      "adjusted_signal_score": 92.5,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_high_growth.",
+      "evidence_json": {
+        "threshold": 80.0,
+        "raw_signal_score": 92.5,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_ddebedfbab11116a",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "video",
       "entity_id": "weyrpnOTB-A",
       "video_id": "weyrpnOTB-A",
@@ -229,15 +258,15 @@
       "title": "Así generaría 10000€ al mes #shorts",
       "signal_type": "high_engagement_low_reach",
       "severity": "critical",
-      "raw_signal_score": 96.6753,
-      "adjusted_signal_score": 91.5998,
-      "metric_confidence_score": 89.5,
+      "raw_signal_score": 95.3514,
+      "adjusted_signal_score": 92.0141,
+      "metric_confidence_score": 93.0,
       "confidence_level": "high",
       "message": "Alta interacción relativa con alcance bajo.",
       "evidence_json": {
         "threshold": 75.0,
-        "raw_signal_score": 96.6753,
-        "metric_confidence_score": 89.5
+        "raw_signal_score": 95.3514,
+        "metric_confidence_score": 93.0
       },
       "recommended_action": "Posible tema fuerte con distribución baja; revisar empaque.",
       "dashboard_tab": "Signals",
@@ -249,63 +278,32 @@
       ]
     },
     {
-      "alert_id": "alrt_61efeeb95a65de29",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
+      "alert_id": "alrt_05acb440330db7fc",
+      "execution_date": "2026-05-03T10:17:44.919746+00:00",
+      "generated_at": "2026-05-03T10:19:15.346840+00:00",
       "entity_type": "channel",
-      "entity_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "entity_id": "UCDOSaJ0pnglwzfkR6fYbisA",
       "video_id": "",
-      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "channel_name": "COMPUESTOS Podcast",
+      "channel_id": "UCDOSaJ0pnglwzfkR6fYbisA",
+      "channel_name": "Luis Mi Negocios",
       "title": "",
-      "signal_type": "channel_volatility_warning",
+      "signal_type": "channel_high_growth",
       "severity": "critical",
-      "raw_signal_score": 91.5888,
-      "adjusted_signal_score": 91.5888,
-      "metric_confidence_score": 100.0,
+      "raw_signal_score": 95.0,
+      "adjusted_signal_score": 91.675,
+      "metric_confidence_score": 93.0,
       "confidence_level": "high",
-      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "message": "Señal de canal detectada: channel_high_growth.",
       "evidence_json": {
-        "threshold": 30.0,
-        "raw_signal_score": 91.5888,
-        "metric_confidence_score": 100.0
+        "threshold": 80.0,
+        "raw_signal_score": 95.0,
+        "metric_confidence_score": 93.0
       },
-      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
       "dashboard_tab": "Channels",
       "source_tables": [
         "latest_channel_advanced_metrics.csv",
         "latest_channel_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_2c145a6583f9abc0",
-      "execution_date": "2026-05-02T10:12:22.126037+00:00",
-      "generated_at": "2026-05-02T10:13:38.456339+00:00",
-      "entity_type": "video",
-      "entity_id": "BYv6i1MhiRA",
-      "video_id": "BYv6i1MhiRA",
-      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "channel_name": "COMPUESTOS Podcast",
-      "title": "¿El Algoritmo No Te Apoya? 🤖 #Compuestos #AndresGarza #EloisaWolf #Algoritmo",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 96.0053,
-      "adjusted_signal_score": 90.965,
-      "metric_confidence_score": 89.5,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 96.0053,
-        "metric_confidence_score": 89.5
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
       ]
     }
   ],

@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-unknown,570,100,13759027.0,24138.6439,0.054145,42.114,9.6329,4.0248,0.0,100.0,76.8571,73.1792,QPWScf-86po,I Made Mascots For Stores That Don’t Have Them,Alex Hormozi
-tutorial,52,20,741547.0,14260.5192,0.044411,31.7453,5.6567,2.3404,0.0,80.0,49.4808,48.0741,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
-ai_tools,245,68,2098294.0,8564.4653,0.05367,38.5435,11.3026,4.6985,0.0,60.0,63.966,50.911,dqazxW8R5BY,Our Brains Got Bigger. Now They’re Shrinking?,Jaime Higuera
-productivity,10,6,65294.0,6529.4,0.074697,40.7686,22.4178,9.0877,0.0,40.0,12.6667,45.7328,rfRFwXnk660,Salvá a tus hijos (estás a tiempo),Aprendiz Financiero
-news_trends,14,11,75187.0,5370.5,0.057036,50.1077,0.0,0.0,0.0,20.0,30.5,39.6662,mDh52QTqR0o,Revisando las noticias en vivo #14. El nuevo intento de desvivir a Trump.,Diego Ruzzarin
-finance_personal,27,18,41889.0,1551.4444,0.056151,37.1531,12.7939,5.3577,0.0,0.0,37.1111,29.7779,LkaaMQx9uZ0,El TRUCO del DINERO INVISIBLE que TODOS hacemos,Luis Mi Negocios
+unknown,613,101,10474156.0,17086.7145,0.054015,41.8982,9.485,3.9783,0.0,100.0,76.8131,73.1243,QPWScf-86po,I Made Mascots For Stores That Don’t Have Them,Alex Hormozi
+tutorial,53,19,465702.0,8786.8302,0.043722,34.7207,7.3265,3.01,0.0,60.0,49.3774,41.6233,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+ai_tools,259,70,1656598.0,6396.1313,0.053043,40.5039,10.6954,4.4384,0.0,40.0,63.6023,44.044,dqazxW8R5BY,Our Brains Got Bigger. Now They’re Shrinking?,Jaime Higuera
+productivity,10,6,126713.0,12671.3,0.071826,53.1866,18.2333,7.2933,0.0,80.0,12.6667,61.2367,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
+news_trends,15,12,46764.0,3117.6,0.057651,44.243,3.2937,1.3401,0.0,20.0,30.0,38.9045,mDh52QTqR0o,Revisando las noticias en vivo #14. El nuevo intento de desvivir a Trump.,Diego Ruzzarin
+finance_personal,28,17,30415.0,1086.25,0.056909,35.4975,13.4629,5.7249,0.0,0.0,36.9524,29.5553,LkaaMQx9uZ0,El TRUCO del DINERO INVISIBLE que TODOS hacemos,Luis Mi Negocios
