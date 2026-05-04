@@ -70,6 +70,22 @@ jobs:
       - name: Build decision intelligence layer
         run: python -m ytb_history.cli build-decision-layer
 
+      - name: Select transcription candidates (daily top + forced channels)
+        run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
+
+      - name: Run transcription queue (idempotent)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
+
+      - name: Generate transcript insights
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10
+
+      - name: Build transcript registry report
+        run: python -m ytb_history.cli transcript-registry-report --data-dir data
+
       - name: Build model intelligence
         run: python -m ytb_history.cli build-model-intelligence
 

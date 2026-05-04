@@ -394,19 +394,27 @@ Editar `config/settings.yaml`:
 
 ### Monitor (`.github/workflows/monitor.yml`)
 
-El monitor ejecuta `generate-creative-packages` después de `build-topic-intelligence` y antes de `generate-weekly-brief`.
+El monitor ejecuta la cadena de transcripción (`select-transcription-candidates` → `transcribe-selected-videos` → `generate-transcript-insights` → `transcript-registry-report`) antes de la capa de inteligencia/brief.
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `select-transcription-candidates`, `transcribe-selected-videos`, `generate-transcript-insights`, `transcript-registry-report`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
+- Usa `OPENAI_API_KEY` en los pasos de transcripción/insights.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
+- La transcripción es idempotente: si el top diario repite videos ya exitosos, se saltan y puede no generarse trabajo nuevo ese día.
 
 Configurar el secret en GitHub:
 1. `Settings` > `Secrets and variables` > `Actions`
 2. `New repository secret`
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
+
+Para transcripción/insights:
+1. `Settings` > `Secrets and variables` > `Actions`
+2. `New repository secret`
+3. Name: `OPENAI_API_KEY`
+4. Value: tu API key de OpenAI
 
 ## 19) Interpretación de status
 
@@ -428,6 +436,5 @@ Configurar el secret en GitHub:
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
-
 
 

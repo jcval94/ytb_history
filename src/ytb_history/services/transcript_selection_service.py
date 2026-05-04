@@ -143,10 +143,19 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     ranked=ranked[:max(0,limit)]
 
     selected=forced_rows+ranked
+    dedup_selected=[]; seen_selected=set(); skipped_duplicate_selected=0
+    for row in selected:
+        vid=str(row.get("video_id","")).strip()
+        if not vid: continue
+        if vid in seen_selected:
+            skipped_duplicate_selected+=1
+            continue
+        seen_selected.add(vid); dedup_selected.append(row)
+    selected=dedup_selected
     q=[]
     for i,row in enumerate(selected,1):
         q.append({"selected_at":now_iso,"video_id":row['video_id'],"channel_id":row['channel_id'],"channel_name":row['channel_name'],"title":row['title'],"upload_date":row['upload_date'],"selection_rank":i,"selection_source":row['selection_source'],"forced_channel":row['forced_channel'],"forced_channel_url":row['forced_channel_url'],"transcription_value_score":row['transcription_value_score'],"decision_score":row.get('decision_score'),"hybrid_decision_score":row.get('hybrid_decision_score'),"creative_execution_score":row.get('creative_execution_score'),"topic_opportunity_score":row.get('topic_opportunity_score'),"alpha_score":row.get('alpha_score'),"metric_confidence_score":row.get('metric_confidence_score'),"status":"queued","source_reason":row['source_reason'],"evidence_json":row['evidence_json']})
     _write_jsonl(tdir/'transcript_queue.jsonl',q)
-    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len(forced_rows),"selected_ranked_count":len(ranked),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
+    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
     (tdir/'transcript_selection_report.json').write_text(json.dumps(rep,ensure_ascii=False,indent=2),encoding='utf-8')
     return rep
