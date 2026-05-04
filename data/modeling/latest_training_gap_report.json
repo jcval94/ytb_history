@@ -4,7 +4,7 @@
   "needed_for_baseline": 1000,
   "examples_missing_for_exploratory": 0,
   "examples_missing_for_baseline": 0,
-  "primary_blocker": "model_artifact_not_available",
+  "primary_blocker": null,
   "secondary_blockers": [],
   "recommended_actions": []
 }

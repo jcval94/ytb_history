@@ -1,20 +1,20 @@
 {
   "schema_version": "latest_model_manifest_v1",
   "status": "valid",
-  "suite_id": "suite-20260504T191601Z",
-  "artifact_name": "ytb-model-suite-25338249570",
-  "workflow_run_id": "25338249570",
-  "created_at": "2026-05-04T19:16:01.130637+00:00",
-  "expires_at_estimate": "2026-06-03T19:16:01.130637+00:00",
+  "suite_id": "suite-20260504T213955Z",
+  "artifact_name": "ytb-model-suite-25344952113",
+  "workflow_run_id": "25344952113",
+  "created_at": "2026-05-04T21:39:55.025174+00:00",
+  "expires_at_estimate": "2026-06-03T21:39:55.025174+00:00",
   "champions": {
     "is_top_growth_7d": {
-      "model_id": "linear_regularized-is_top_growth_7d-20260504T191601Z",
+      "model_id": "linear_regularized-is_top_growth_7d-20260504T213955Z",
       "model_family": "linear_regularized",
       "metric": "precision_at_10",
       "metric_value": 1.0
     },
     "future_log_views_delta_7d": {
-      "model_id": "random_forest-future_log_views_delta_7d-20260504T191601Z",
+      "model_id": "random_forest-future_log_views_delta_7d-20260504T213955Z",
       "model_family": "random_forest",
       "metric": "spearman_corr",
       "metric_value": 0.983653
@@ -22,7 +22,7 @@
   },
   "models": [
     {
-      "model_id": "linear_regularized-is_top_growth_7d-20260504T191601Z",
+      "model_id": "linear_regularized-is_top_growth_7d-20260504T213955Z",
       "model_family": "linear_regularized",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -38,7 +38,7 @@
       "path": "models/linear_regularized"
     },
     {
-      "model_id": "random_forest-is_top_growth_7d-20260504T191601Z",
+      "model_id": "random_forest-is_top_growth_7d-20260504T213955Z",
       "model_family": "random_forest",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -54,7 +54,7 @@
       "path": "models/random_forest"
     },
     {
-      "model_id": "shallow_tree-is_top_growth_7d-20260504T191601Z",
+      "model_id": "shallow_tree-is_top_growth_7d-20260504T213955Z",
       "model_family": "shallow_tree",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -70,7 +70,7 @@
       "path": "models/shallow_tree"
     },
     {
-      "model_id": "random_forest-future_log_views_delta_7d-20260504T191601Z",
+      "model_id": "random_forest-future_log_views_delta_7d-20260504T213955Z",
       "model_family": "random_forest",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -85,7 +85,7 @@
       "path": "models/random_forest"
     },
     {
-      "model_id": "shallow_tree-future_log_views_delta_7d-20260504T191601Z",
+      "model_id": "shallow_tree-future_log_views_delta_7d-20260504T213955Z",
       "model_family": "shallow_tree",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",

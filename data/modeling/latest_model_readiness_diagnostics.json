@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-04T19:15:31+00:00",
-  "status": "not_ready",
+  "generated_at": "2026-05-04T21:39:32+00:00",
+  "status": "ready",
   "recommended_status": "ready_for_baseline",
-  "can_train_now": false,
-  "can_predict_now": false,
+  "can_train_now": true,
+  "can_predict_now": true,
   "total_examples": 2473,
   "trainable_examples": 2473,
   "inference_examples": 1087,
@@ -17,12 +17,11 @@
   "min_trainable_examples_baseline": 1000,
   "examples_missing_for_exploratory": 0,
   "examples_missing_for_baseline": 0,
-  "blockers": [
-    "model_artifact_not_available"
-  ],
+  "blockers": [],
   "target_diagnostics": [],
   "forecast": {
-    "status": "insufficient_history"
+    "status": "no_positive_growth",
+    "daily_trainable_growth": 0.0
   },
   "recommended_next_steps": [],
   "warnings": []
