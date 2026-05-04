@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-04T22:26:36.188116+00:00",
+  "limit": 10,
+  "candidates_considered": 1170,
+  "selected_count": 27,
+  "selected_forced_count": 17,
+  "selected_ranked_count": 10,
+  "forced_channels_configured": [
+    "https://www.youtube.com/@bilinkis",
+    "https://www.youtube.com/veritasium"
+  ],
+  "forced_channels_matched": [
+    "https://www.youtube.com/@bilinkis",
+    "https://www.youtube.com/veritasium"
+  ],
+  "forced_channels_max_per_run": 50,
+  "registry_existing_success_count": 0,
+  "registry_existing_in_progress_count": 0,
+  "registry_existing_recent_failed_count": 0,
+  "skipped_already_transcribed": 0,
+  "skipped_in_progress": 0,
+  "skipped_recent_failures": 0,
+  "skipped_forced_already_transcribed": 0,
+  "skipped_forced_in_progress": 0,
+  "skipped_forced_recent_failures": 0,
+  "skipped_duplicate_selected": 0,
+  "top_selected": [
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E"
+  ],
+  "warnings": []
+}

@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-04T22:26:37.448054+00:00",
+  "limit": 10,
+  "processed": 10,
+  "transcribed_success": 0,
+  "skipped_no_audio_source": 10,
+  "skipped_already_transcribed": 0,
+  "failed": 0,
+  "queue_total": 27,
+  "registry_success_before_run": 0,
+  "processed_video_ids": [
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E",
+    "rfRFwXnk660",
+    "ByJAH8vTgfw",
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ"
+  ],
+  "success_video_ids": [],
+  "already_transcribed_video_ids": [],
+  "missing_audio_video_ids": [
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E",
+    "rfRFwXnk660",
+    "ByJAH8vTgfw",
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ"
+  ],
+  "failed_video_ids": [],
+  "warnings": []
+}
