@@ -104,7 +104,12 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     forced_handles={_url_handle(u):u for u in forced_urls}
     forced_rows=[]
     skipped_forced_success=skipped_forced_progress=skipped_forced_failed=0
-    cutoff=now-timedelta(days=forced_channels_new_video_window_days)
+    parsed_upload_dates=[_parse_dt(str(item.get('upload_date',''))) for item in cands.values()]
+    latest_upload_date=max((d.date() for d in parsed_upload_dates if d), default=None)
+    cutoff_date=(now-timedelta(days=forced_channels_new_video_window_days)).date()
+    if latest_upload_date and latest_upload_date<cutoff_date:
+        cutoff_date=latest_upload_date-timedelta(days=forced_channels_new_video_window_days)
+        warnings.append('forced_channels_window_anchored_to_latest_upload_date')
     if forced_channels_enabled and forced_handles:
         for vid,item in cands.items():
             cname=str(item.get('channel_name','')).lower()
@@ -117,7 +122,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
             if vid in progress: skipped_forced_progress+=1; continue
             if vid in cool: skipped_forced_failed+=1; continue
             ud=_parse_dt(str(item.get('upload_date','')))
-            if ud and ud<cutoff: continue
+            if ud and ud.date()<cutoff_date: continue
             row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"forced_channel_new_video","selection_source":"forced_channel_new_video","forced_channel":True,"forced_channel_url":matched,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
             row['transcription_value_score']=_score(row); forced_rows.append(row)
         forced_rows.sort(key=lambda r:(-(_parse_dt(str(r.get('upload_date',''))) or datetime.min.replace(tzinfo=timezone.utc)).timestamp(),-float(r['transcription_value_score']),r['video_id']))
