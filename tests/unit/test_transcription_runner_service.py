@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from ytb_history.services.transcript_store_service import update_transcript_registry
+from ytb_history.services import transcription_runner_service
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
 
 
@@ -62,6 +63,37 @@ def test_skips_no_audio_source(tmp_path: Path, monkeypatch) -> None:
 
     report = transcribe_selected_videos(data_dir=tmp_path, limit=10, audio_source_dir=tmp_path / "missing", openai_client=FakeOpenAIClient())
     assert report["skipped_no_audio_source"] == 1
+    assert report["audio_source_dir_exists"] is False
+    assert len(report["missing_audio_details"]) == 1
+    detail = report["missing_audio_details"][0]
+    assert detail["video_id"] == "v1"
+    assert len(detail["attempted_paths"]) >= 1
+    assert detail["video_url"].endswith("watch?v=v1")
+
+    registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    assert "attempted=" in str(registry_rows[-1]["error_message"])
+
+
+def test_uses_ytdlp_fallback_when_local_audio_missing(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    audio_dir = tmp_path / "audio_sources"
+    fake_audio = audio_dir / "v1.mp3"
+
+    def _fake_download(*, video_id: str, audio_source_dir: Path):
+        audio_source_dir.mkdir(parents=True, exist_ok=True)
+        fake_audio.write_bytes(b"audio")
+        return fake_audio, None
+
+    monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
+    fake = FakeOpenAIClient()
+    report = transcribe_selected_videos(data_dir=tmp_path, limit=10, audio_source_dir=audio_dir, openai_client=fake)
+
+    assert report["transcribed_success"] == 1
+    assert report["skipped_no_audio_source"] == 0
+    assert report["ytdlp_download_attempts"] == 1
+    assert report["ytdlp_download_success"] == 1
 
 
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:

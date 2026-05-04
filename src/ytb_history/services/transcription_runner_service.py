@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -42,6 +44,39 @@ def _find_audio_source(audio_source_dir: Path, video_id: str) -> Path | None:
     return None
 
 
+def _candidate_audio_paths(audio_source_dir: Path, video_id: str) -> list[str]:
+    return [str(audio_source_dir / f"{video_id}{ext}") for ext in AUDIO_EXTENSIONS]
+
+
+def _youtube_watch_url(video_id: str) -> str:
+    return f"https://www.youtube.com/watch?v={video_id}"
+
+
+def _download_audio_with_ytdlp(*, video_id: str, audio_source_dir: Path) -> tuple[Path | None, str | None]:
+    ytdlp_bin = shutil.which("yt-dlp")
+    if not ytdlp_bin:
+        return None, "yt_dlp_not_installed"
+    audio_source_dir.mkdir(parents=True, exist_ok=True)
+    output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
+    cmd = [
+        ytdlp_bin,
+        "-x",
+        "--audio-format",
+        "mp3",
+        "-o",
+        output_template,
+        _youtube_watch_url(video_id),
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if result.returncode != 0:
+        stderr_tail = (result.stderr or "").strip()[-300:]
+        return None, f"yt_dlp_failed:code={result.returncode};stderr={stderr_tail}"
+    audio_path = _find_audio_source(audio_source_dir, video_id)
+    if audio_path is None:
+        return None, "yt_dlp_completed_but_audio_not_found"
+    return audio_path, None
+
+
 def transcribe_selected_videos(
     *,
     data_dir: str | Path = "data",
@@ -49,6 +84,7 @@ def transcribe_selected_videos(
     audio_source_dir: str | Path = "data/audio_sources",
     model: str = "gpt-4o-mini-transcribe",
     openai_client: OpenAIAudioClient | None = None,
+    allow_ytdlp_fallback: bool = True,
 ) -> dict[str, Any]:
     root = Path(data_dir)
     transcript_dir = root / "transcripts"
@@ -86,12 +122,20 @@ def transcribe_selected_videos(
     failed = 0
     warnings: list[str] = []
     missing_audio_video_ids: list[str] = []
+    missing_audio_details: list[dict[str, Any]] = []
     already_transcribed_video_ids: list[str] = []
     success_video_ids: list[str] = []
     failed_video_ids: list[str] = []
+    failed_details: list[dict[str, Any]] = []
+    ytdlp_download_attempts = 0
+    ytdlp_download_success = 0
+    ytdlp_download_failures: list[dict[str, Any]] = []
     registry_success_before_run = len(success_ids)
 
     source_root = Path(audio_source_dir)
+    source_root_exists = source_root.exists()
+    source_root_is_dir = source_root.is_dir()
+    available_audio_files_sample = sorted([p.name for p in source_root.glob("*") if p.is_file()])[:50] if source_root_is_dir else []
     for row in queued:
         if processed >= max(0, limit):
             break
@@ -107,27 +151,48 @@ def transcribe_selected_videos(
         processed += 1
         audio_path = _find_audio_source(source_root, video_id)
         if audio_path is None:
-            skipped_no_audio_source += 1
-            missing_audio_video_ids.append(video_id)
-            update_transcript_registry(
-                data_dir=data_dir,
-                entry={
-                    "video_id": video_id,
-                    "channel_id": row.get("channel_id", ""),
-                    "channel_name": row.get("channel_name", ""),
-                    "title": row.get("title", ""),
-                    "selected_at": row.get("selected_at"),
-                    "transcribed_at": None,
-                    "status": "skipped_no_audio_source",
-                    "transcript_path": None,
-                    "metadata_path": None,
-                    "insights_path": None,
-                    "source_type": "unknown",
-                    "text_char_count": 0,
-                    "error_message": "audio_source_not_found",
-                },
-            )
-            continue
+            ytdlp_error: str | None = None
+            if allow_ytdlp_fallback:
+                ytdlp_download_attempts += 1
+                audio_path, ytdlp_error = _download_audio_with_ytdlp(video_id=video_id, audio_source_dir=source_root)
+                if audio_path is not None:
+                    ytdlp_download_success += 1
+            if audio_path is None:
+                if ytdlp_error:
+                    ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "video_url": _youtube_watch_url(video_id)})
+                skipped_no_audio_source += 1
+                missing_audio_video_ids.append(video_id)
+                attempted_paths = _candidate_audio_paths(source_root, video_id)
+                missing_audio_details.append(
+                    {
+                        "video_id": video_id,
+                        "audio_source_dir": str(source_root),
+                        "audio_source_dir_exists": source_root_exists,
+                        "audio_source_dir_is_dir": source_root_is_dir,
+                        "video_url": _youtube_watch_url(video_id),
+                        "attempted_paths": attempted_paths,
+                        "ytdlp_error": ytdlp_error,
+                    }
+                )
+                update_transcript_registry(
+                    data_dir=data_dir,
+                    entry={
+                        "video_id": video_id,
+                        "channel_id": row.get("channel_id", ""),
+                        "channel_name": row.get("channel_name", ""),
+                        "title": row.get("title", ""),
+                        "selected_at": row.get("selected_at"),
+                        "transcribed_at": None,
+                        "status": "skipped_no_audio_source",
+                        "transcript_path": None,
+                        "metadata_path": None,
+                        "insights_path": None,
+                        "source_type": "unknown",
+                        "text_char_count": 0,
+                        "error_message": f"audio_source_not_found; video_url={_youtube_watch_url(video_id)}; attempted={attempted_paths}; ytdlp={ytdlp_error}",
+                    },
+                )
+                continue
 
         try:
             transcript_text = client.transcribe_file(file_path=audio_path, model=model)
@@ -172,7 +237,15 @@ def transcribe_selected_videos(
         except Exception as exc:  # noqa: BLE001
             failed += 1
             failed_video_ids.append(video_id)
-            warnings.append(f"transcription_failed:{video_id}")
+            warnings.append(f"transcription_failed:{video_id}:{type(exc).__name__}")
+            failed_details.append(
+                {
+                    "video_id": video_id,
+                    "audio_path": str(audio_path),
+                    "error_type": type(exc).__name__,
+                    "error_message": str(exc),
+                }
+            )
             update_transcript_registry(
                 data_dir=data_dir,
                 entry={
@@ -204,11 +277,21 @@ def transcribe_selected_videos(
         "failed": failed,
         "queue_total": len(queued),
         "registry_success_before_run": registry_success_before_run,
+        "audio_source_dir": str(source_root),
+        "audio_source_dir_exists": source_root_exists,
+        "audio_source_dir_is_dir": source_root_is_dir,
+        "audio_source_files_sample": available_audio_files_sample,
+        "allow_ytdlp_fallback": allow_ytdlp_fallback,
+        "ytdlp_download_attempts": ytdlp_download_attempts,
+        "ytdlp_download_success": ytdlp_download_success,
+        "ytdlp_download_failures": ytdlp_download_failures,
         "processed_video_ids": success_video_ids + missing_audio_video_ids + failed_video_ids,
         "success_video_ids": success_video_ids,
         "already_transcribed_video_ids": already_transcribed_video_ids,
         "missing_audio_video_ids": missing_audio_video_ids,
+        "missing_audio_details": missing_audio_details,
         "failed_video_ids": failed_video_ids,
+        "failed_details": failed_details,
         "warnings": warnings,
     }
     (transcript_dir / "transcription_run_report.json").parent.mkdir(parents=True, exist_ok=True)
