@@ -1,0 +1,10 @@
+target,model_family,mae_log,rmse_log,spearman_corr,top_10_overlap_with_actual,precision_at_top_decile_regression,lift_vs_baseline_alpha,lift_vs_baseline_decision,lift_vs_baseline_views_delta,train_rows,valid_rows
+future_log_views_delta_7d,random_forest_regressor,0.014249,0.02728,0.999938,1.0,1.0,1.252773,5.446934,0.0,1978,495
+future_log_views_delta_7d,linear_regularized_regressor,0.269106,0.381229,0.995261,1.0,0.92,1.243307,5.437468,-0.009466,1978,495
+future_log_views_delta_7d,shallow_tree_regressor,0.198711,0.240234,0.992309,0.8,0.92,1.196872,5.391034,-0.0559,1978,495
+future_relative_views_delta_7d,random_forest_regressor,1.360727,5.026045,0.935398,0.5,0.84,12.754366,16.018652,16.829706,1978,495
+future_relative_views_delta_7d,linear_regularized_regressor,9.44275,12.650957,0.627707,0.4,0.38,1.967633,5.23192,6.042973,1978,495
+future_relative_views_delta_7d,shallow_tree_regressor,1.70926,5.230012,0.387585,0.6,0.84,9.485042,12.749328,13.560381,1978,495
+content_value_score_7d,random_forest_regressor,16.969218,18.253212,0.908454,0.5,0.68,10.770485,15.054278,11.407215,1978,495
+content_value_score_7d,linear_regularized_regressor,16.532709,18.339731,0.900369,0.2,0.7,11.658353,15.942145,12.295083,1978,495
+content_value_score_7d,shallow_tree_regressor,16.943392,18.395707,0.900976,0.2,0.68,10.70229,14.986082,11.33902,1978,495

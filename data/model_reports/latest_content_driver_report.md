@@ -1,0 +1,43 @@
+# Content Driver Models Report
+
+Generated at: 2026-05-04T19:15:58.772269+00:00
+
+## Targets evaluados
+- future_log_views_delta_7d
+- future_relative_views_delta_7d
+- future_engagement_delta_7d
+- content_value_score_7d
+
+## Modelos entrenados
+- random_forest_regressor
+- linear_regularized_regressor
+- shallow_tree_regressor
+
+## Mejor modelo por target
+- content_value_score_7d: random_forest_regressor (spearman=0.908454)
+- future_log_views_delta_7d: random_forest_regressor (spearman=0.999938)
+- future_relative_views_delta_7d: random_forest_regressor (spearman=0.935398)
+
+## Top variables por target
+- **content_value_score_7d**: opportunity_score, alpha_score, channel_relative_success_score, topic_confidence, curiosity_semantic_score
+- **future_log_views_delta_7d**: alpha_score, opportunity_score, views_delta, views_delta, channel_relative_success_score
+- **future_relative_views_delta_7d**: channel_relative_success_score, hybrid_decision_score, opportunity_score, decision_score, topic_confidence
+
+## Variables con dirección (positive/negative/mixed)
+Ver `latest_content_driver_feature_direction.csv` para detalle por feature.
+
+## Importancia por grupo
+- future_relative_views_delta_7d / linear_regularized_regressor / engagement_context: 37.01197957
+- content_value_score_7d / linear_regularized_regressor / engagement_context: 35.91562341
+- content_value_score_7d / linear_regularized_regressor / topic_metrics: 32.3374722
+- future_relative_views_delta_7d / linear_regularized_regressor / title_style: 30.50750063
+- future_relative_views_delta_7d / linear_regularized_regressor / topic_metrics: 25.19556631
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_scores: 24.86135816
+- future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 24.51737985
+- content_value_score_7d / linear_regularized_regressor / semantic_scores: 19.28303169
+- future_relative_views_delta_7d / linear_regularized_regressor / channel_context: 17.40445681
+- content_value_score_7d / linear_regularized_regressor / title_style: 14.98502529
+
+**Estas importancias son predictivas, no causales.**
+
+**En RF, la dirección se estima con directional analysis, no con impurity importance.**

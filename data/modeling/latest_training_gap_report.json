@@ -1,0 +1,10 @@
+{
+  "current_trainable_examples": 2473,
+  "needed_for_exploratory": 300,
+  "needed_for_baseline": 1000,
+  "examples_missing_for_exploratory": 0,
+  "examples_missing_for_baseline": 0,
+  "primary_blocker": "model_artifact_not_available",
+  "secondary_blockers": [],
+  "recommended_actions": []
+}
