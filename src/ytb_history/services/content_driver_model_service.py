@@ -359,7 +359,9 @@ def train_content_driver_models(
     for target in TARGETS:
         y_train = [_safe_float(row.get(target)) for row in train_rows]
         y_val = [_safe_float(row.get(target)) for row in val_rows]
-        if all(value == 0.0 for value in y_train + y_val):
+        observed_values = [row.get(target) for row in train_rows + val_rows]
+        has_observed = any(value not in (None, "") for value in observed_values)
+        if not has_observed:
             warnings.append(f"Target skipped due to missing values: {target}")
             continue
 

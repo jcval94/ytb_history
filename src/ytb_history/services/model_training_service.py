@@ -338,9 +338,15 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
                 coef_rows: list[dict[str, Any]] = []
                 if model_family == "linear_regularized":
                     inner = model.named_steps["model"] if isinstance(model, Pipeline) else model
-                    coeffs = inner.coef_[0].tolist() if hasattr(inner, "coef_") and hasattr(inner.coef_, "tolist") else list(getattr(inner, "coef_", []))
-                    if coeffs and not isinstance(coeffs[0], float):
-                        coeffs = coeffs[0]
+                    raw_coeffs = getattr(inner, "coef_", [])
+                    if hasattr(raw_coeffs, "tolist"):
+                        raw_coeffs = raw_coeffs.tolist()
+                    if isinstance(raw_coeffs, (int, float)):
+                        coeffs = [float(raw_coeffs)]
+                    elif raw_coeffs and isinstance(raw_coeffs, list) and raw_coeffs and isinstance(raw_coeffs[0], list):
+                        coeffs = [float(v) for v in raw_coeffs[0]]
+                    else:
+                        coeffs = [float(v) for v in raw_coeffs] if raw_coeffs else []
                     for feature, coef in zip(feature_list, coeffs):
                         coef_rows.append(
                             {
