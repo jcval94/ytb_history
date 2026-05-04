@@ -85,6 +85,11 @@ def transcribe_selected_videos(
     skipped_already_transcribed = 0
     failed = 0
     warnings: list[str] = []
+    missing_audio_video_ids: list[str] = []
+    already_transcribed_video_ids: list[str] = []
+    success_video_ids: list[str] = []
+    failed_video_ids: list[str] = []
+    registry_success_before_run = len(success_ids)
 
     source_root = Path(audio_source_dir)
     for row in queued:
@@ -96,12 +101,14 @@ def transcribe_selected_videos(
 
         if video_id in success_ids:
             skipped_already_transcribed += 1
+            already_transcribed_video_ids.append(video_id)
             continue
 
         processed += 1
         audio_path = _find_audio_source(source_root, video_id)
         if audio_path is None:
             skipped_no_audio_source += 1
+            missing_audio_video_ids.append(video_id)
             update_transcript_registry(
                 data_dir=data_dir,
                 entry={
@@ -161,8 +168,10 @@ def transcribe_selected_videos(
             )
             transcribed_success += 1
             success_ids.add(video_id)
+            success_video_ids.append(video_id)
         except Exception as exc:  # noqa: BLE001
             failed += 1
+            failed_video_ids.append(video_id)
             warnings.append(f"transcription_failed:{video_id}")
             update_transcript_registry(
                 data_dir=data_dir,
@@ -193,6 +202,13 @@ def transcribe_selected_videos(
         "skipped_no_audio_source": skipped_no_audio_source,
         "skipped_already_transcribed": skipped_already_transcribed,
         "failed": failed,
+        "queue_total": len(queued),
+        "registry_success_before_run": registry_success_before_run,
+        "processed_video_ids": success_video_ids + missing_audio_video_ids + failed_video_ids,
+        "success_video_ids": success_video_ids,
+        "already_transcribed_video_ids": already_transcribed_video_ids,
+        "missing_audio_video_ids": missing_audio_video_ids,
+        "failed_video_ids": failed_video_ids,
         "warnings": warnings,
     }
     (transcript_dir / "transcription_run_report.json").parent.mkdir(parents=True, exist_ok=True)
