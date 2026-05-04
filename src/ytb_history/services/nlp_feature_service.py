@@ -222,7 +222,8 @@ def build_nlp_features(*, data_dir: str | Path = "data") -> dict[str, Any]:
         if not description:
             description = str(merged.get("video_description", "") or "")
         if not description:
-            warnings.append(f"Description missing for video_id={video_id}; using empty text.")
+            description = title
+            warnings.append(f"Description missing for video_id={video_id}; using title as fallback text.")
 
         title_clean = _normalize_whitespace(title)
         desc_clean = _normalize_whitespace(description)
