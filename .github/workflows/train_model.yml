@@ -3,7 +3,7 @@ name: Train Model Suite
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 10 * * 1'
+    - cron: '30 10 * * 1,4'
 
 permissions:
   contents: write

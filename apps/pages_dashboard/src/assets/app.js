@@ -91,7 +91,8 @@ async function init() {
   const TEXT_DATA_KEYS = new Set([
     "latestWeeklyBriefHtml",
     "latestModelSuiteReportHtml",
-    "latestContentDriverReportHtml"
+    "latestContentDriverReportHtml",
+    "latestModelReadinessReportHtml"
   ]);
 
   for (const [key, path] of Object.entries(DATA_FILES)) {

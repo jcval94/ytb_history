@@ -123,7 +123,7 @@ def test_ci_workflow_validates_frontend_js_syntax() -> None:
 def test_train_model_workflow_contract() -> None:
     content = _read(".github/workflows/train_model.yml")
     assert "workflow_dispatch:" in content
-    assert "cron: '30 10 * * 1'" in content
+    assert "cron: '30 10 * * 1,4'" in content
     assert "actions/upload-artifact" in content
     assert "retention-days: 30" in content
     assert "git add data/model_registry/ data/model_reports/" in content
@@ -169,3 +169,8 @@ def test_predict_model_workflow_contract() -> None:
 def test_pages_workflow_does_not_run_smoke_test_training() -> None:
     content = _read(".github/workflows/pages.yml")
     assert "smoke-test-model-training" not in content
+
+
+def test_train_model_schedule_is_twice_weekly() -> None:
+    train_model_content = _read(".github/workflows/train_model.yml")
+    assert "cron: '30 10 * * 1,4'" in train_model_content
