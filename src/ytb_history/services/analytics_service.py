@@ -372,6 +372,16 @@ def _latest_export_dir(exports_root: Path) -> Path | None:
     return max(candidates, key=lambda p: (p.parent.name, p.name))
 
 
+def _first_capture_growth_files_by_day(exports_root: Path) -> list[Path]:
+    first_by_day: dict[str, Path] = {}
+    for csv_path in sorted(exports_root.glob("dt=*/run=*/video_growth_summary.csv")):
+        day_token = next((part for part in csv_path.parts if part.startswith("dt=")), "")
+        if not day_token or day_token in first_by_day:
+            continue
+        first_by_day[day_token] = csv_path
+    return [first_by_day[day] for day in sorted(first_by_day)]
+
+
 def _duration_bucket(duration_seconds: int | None) -> str:
     if duration_seconds is None:
         return "unknown"
@@ -1093,7 +1103,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
             }
         )
 
-    historical_growth_files = sorted(exports_root.glob("dt=*/run=*/video_growth_summary.csv"))
+    historical_growth_files = _first_capture_growth_files_by_day(exports_root)
     if not historical_growth_files:
         historical_growth_files = [required_files["video_growth_summary"]]
     historical_rows: list[dict[str, str]] = []

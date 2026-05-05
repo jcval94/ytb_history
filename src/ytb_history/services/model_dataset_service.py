@@ -87,6 +87,16 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _first_capture_growth_files_by_day(exports_root: Path) -> list[Path]:
+    first_by_day: dict[str, Path] = {}
+    for csv_path in sorted(exports_root.glob("dt=*/run=*/video_growth_summary.csv")):
+        day_token = next((part for part in csv_path.parts if part.startswith("dt=")), "")
+        if not day_token or day_token in first_by_day:
+            continue
+        first_by_day[day_token] = csv_path
+    return [first_by_day[day] for day in sorted(first_by_day)]
+
+
 def _build_latest_inference_examples(
     *,
     data_root: Path,
@@ -179,7 +189,7 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
     modeling_dir = data_root / "modeling"
     warnings: list[str] = []
 
-    export_paths = sorted((data_root / "exports").glob("dt=*/run=*/video_growth_summary.csv"))
+    export_paths = _first_capture_growth_files_by_day(data_root / "exports")
     if not export_paths:
         warnings.append("No export video_growth_summary.csv files were found.")
 

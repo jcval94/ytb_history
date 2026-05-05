@@ -107,9 +107,11 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     parsed_upload_dates=[_parse_dt(str(item.get('upload_date',''))) for item in cands.values()]
     latest_upload_date=max((d.date() for d in parsed_upload_dates if d), default=None)
     cutoff_date=(now-timedelta(days=forced_channels_new_video_window_days)).date()
-    if latest_upload_date and latest_upload_date<cutoff_date:
-        cutoff_date=latest_upload_date-timedelta(days=forced_channels_new_video_window_days)
-        warnings.append('forced_channels_window_anchored_to_latest_upload_date')
+    if latest_upload_date:
+        anchored_cutoff=latest_upload_date-timedelta(days=forced_channels_new_video_window_days)
+        if anchored_cutoff!=cutoff_date:
+            warnings.append('forced_channels_window_anchored_to_latest_upload_date')
+        cutoff_date=anchored_cutoff
     if forced_channels_enabled and forced_handles:
         for vid,item in cands.items():
             cname=str(item.get('channel_name','')).lower()
