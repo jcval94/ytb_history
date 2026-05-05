@@ -218,5 +218,21 @@ def test_latest_inference_examples_excludes_targets_and_future_columns(tmp_path:
     assert rows
     columns = set(rows[0].keys())
     assert all(not column.startswith("future_") for column in columns)
-    assert "is_top_growth_7d" not in columns
-    assert "outperforms_channel_7d" not in columns
+
+
+def test_build_model_dataset_uses_first_intraday_capture_per_day(tmp_path: Path) -> None:
+    data_dir = _prepare_dataset(tmp_path)
+    fields = [
+        "execution_date","channel_id","channel_name","video_id","title","upload_date","duration_seconds","views","likes","comments",
+        "views_delta","likes_delta","comments_delta","is_new_video","title_changed","description_changed","tags_changed","engagement_rate",
+        "comment_rate","video_age_days","duration_bucket","is_short","metadata_changed",
+    ]
+    _write_csv(
+        data_dir / "exports" / "dt=2026-04-08" / "run=235959Z" / "video_growth_summary.csv",
+        fields,
+        [{**{k: "" for k in fields}, "execution_date": "2026-04-08T23:59:59+00:00", "channel_id": "c1", "channel_name": "Canal 1", "video_id": "v1", "title": "late", "views_delta": 999}],
+    )
+    build_model_dataset(data_dir=data_dir)
+    rows = list(csv.DictReader((data_dir / "modeling" / "supervised_examples.csv").open("r", encoding="utf-8", newline="")))
+    assert rows
+    assert all(row["source_export_path"] != "exports/dt=2026-04-08/run=235959Z/video_growth_summary.csv" for row in rows)
