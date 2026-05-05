@@ -155,7 +155,7 @@ def test_ytdlp_requested_format_unavailable_is_reported(tmp_path: Path, monkeypa
     assert report["ytdlp_download_failures"] == [
         {
             "video_id": "v1",
-            "error": "yt_dlp_failed:code=1;stderr=ERROR: [youtube] v1: Requested format is not available",
+            "error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: [youtube] v1: Requested format is not available",
             "error_category": "format_unavailable",
             "video_url": "https://www.youtube.com/watch?v=v1",
         }
@@ -163,6 +163,35 @@ def test_ytdlp_requested_format_unavailable_is_reported(tmp_path: Path, monkeypa
 
     registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
     assert registry_rows[-1]["error_category"] == "format_unavailable"
+
+
+def test_ytdlp_strategy_retries_apply_cooldown_between_attempts(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: HTTP Error 429: Too Many Requests",
+        )
+
+    sleep_calls: list[float] = []
+
+    def _fake_sleep(seconds: float) -> None:
+        sleep_calls.append(seconds)
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", _fake_sleep)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert audio_path is None
+    assert error is not None and "strategy=web" in error
+    assert error_category == "network_or_rate_limit"
+    assert sleep_calls == [transcription_runner_service.YTDLP_STRATEGY_COOLDOWN_SECONDS] * 2
 
 
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
