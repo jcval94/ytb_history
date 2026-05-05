@@ -428,6 +428,14 @@ Rotación recomendada de `YTDLP_COOKIES_TXT`:
 - Rotar preventivamente (por ejemplo mensual) y después de cambios de contraseña o eventos de seguridad.
 - Validar el siguiente run de `monitor.yml`; si falta el secret, el workflow continúa con warning y fallback sin cookies.
 
+Opcionalmente, `monitor.yml` acepta `YTDLP_EXTRA_ARGS` desde GitHub Actions Variables o Secrets para pasar opciones adicionales a `yt-dlp` sin modificar el workflow. Ejemplo seguro para CI como **repository variable** (sin credenciales):
+
+```text
+YTDLP_EXTRA_ARGS=--sleep-requests 1 --sleep-interval 2 --max-sleep-interval 5
+```
+
+Si los argumentos incluyen credenciales (por ejemplo un proxy con usuario/password), guardarlos como **secret** y nunca commitearlos ni imprimirlos en logs.
+
 Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
 ```bash
 python -m pip install yt-dlp
