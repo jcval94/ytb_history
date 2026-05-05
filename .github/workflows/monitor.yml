@@ -31,6 +31,45 @@ jobs:
           python -m pip install -e .
           python -m pip install -r requirements.txt
 
+      - name: Install yt-dlp
+        run: python -m pip install yt-dlp
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Validate workflow secrets availability
+        shell: bash
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          test -n "${YOUTUBE_API_KEY}" || (echo "::error::Missing required secret YOUTUBE_API_KEY" && exit 1)
+          test -n "${OPENAI_API_KEY}" || (echo "::error::Missing required secret OPENAI_API_KEY" && exit 1)
+
+      - name: Validate yt-dlp availability
+        run: yt-dlp --version
+
+      - name: Validate ffmpeg availability
+        run: ffmpeg -version
+
+      - name: Prepare yt-dlp cookies file (optional)
+        shell: bash
+        env:
+          YTDLP_COOKIES_B64: ${{ secrets.YTDLP_COOKIES_B64 }}
+        run: |
+          COOKIES_PATH="${{ runner.temp }}/yt_cookies.txt"
+          if [ -n "${YTDLP_COOKIES_B64}" ]; then
+            printf "%s" "${YTDLP_COOKIES_B64}" | base64 --decode > "${COOKIES_PATH}"
+            chmod 600 "${COOKIES_PATH}"
+            echo "YTDLP_COOKIES_FILE=${COOKIES_PATH}" >> "${GITHUB_ENV}"
+            echo "Prepared temporary yt-dlp cookies file at ${COOKIES_PATH}."
+          else
+            echo "::warning::Secret YTDLP_COOKIES_B64 not configured. Continuing without cookies file (yt-dlp fallback behavior remains active)."
+            echo "YTDLP_COOKIES_FILE=" >> "${GITHUB_ENV}"
+          fi
+
       - name: Compile
         run: python -m compileall src tests
 
@@ -72,36 +111,6 @@ jobs:
 
       - name: Select transcription candidates (daily top + forced channels)
         run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
-
-      - name: Install yt-dlp
-        run: python -m pip install yt-dlp
-
-      - name: Install ffmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
-
-      - name: Validate yt-dlp availability
-        run: yt-dlp --version
-
-      - name: Validate ffmpeg availability
-        run: ffmpeg -version
-
-      - name: Prepare yt-dlp cookies file (optional)
-        shell: bash
-        env:
-          YTDLP_COOKIES_B64: ${{ secrets.YTDLP_COOKIES_B64 }}
-        run: |
-          COOKIES_PATH="${{ runner.temp }}/yt_cookies.txt"
-          if [ -n "${YTDLP_COOKIES_B64}" ]; then
-            printf "%s" "${YTDLP_COOKIES_B64}" | base64 --decode > "${COOKIES_PATH}"
-            chmod 600 "${COOKIES_PATH}"
-            echo "YTDLP_COOKIES_FILE=${COOKIES_PATH}" >> "${GITHUB_ENV}"
-            echo "Prepared temporary yt-dlp cookies file at ${COOKIES_PATH}."
-          else
-            echo "::warning::Secret YTDLP_COOKIES_B64 not configured. Continuing without cookies file (yt-dlp fallback behavior remains active)."
-            echo "YTDLP_COOKIES_FILE=" >> "${GITHUB_ENV}"
-          fi
 
       - name: Run transcription queue (idempotent)
         if: ${{ success() }}
