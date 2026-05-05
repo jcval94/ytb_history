@@ -118,6 +118,8 @@ def transcribe_selected_videos(
     processed = 0
     transcribed_success = 0
     skipped_no_audio_source = 0
+    skipped_missing_ytdlp = 0
+    failed_audio_download = 0
     skipped_already_transcribed = 0
     failed = 0
     warnings: list[str] = []
@@ -160,7 +162,15 @@ def transcribe_selected_videos(
             if audio_path is None:
                 if ytdlp_error:
                     ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "video_url": _youtube_watch_url(video_id)})
-                skipped_no_audio_source += 1
+                if ytdlp_error == "yt_dlp_not_installed":
+                    status = "skipped_missing_ytdlp"
+                    skipped_missing_ytdlp += 1
+                elif allow_ytdlp_fallback and ytdlp_error:
+                    status = "failed_audio_download"
+                    failed_audio_download += 1
+                else:
+                    status = "skipped_no_audio_source"
+                    skipped_no_audio_source += 1
                 missing_audio_video_ids.append(video_id)
                 attempted_paths = _candidate_audio_paths(source_root, video_id)
                 missing_audio_details.append(
@@ -183,7 +193,7 @@ def transcribe_selected_videos(
                         "title": row.get("title", ""),
                         "selected_at": row.get("selected_at"),
                         "transcribed_at": None,
-                        "status": "skipped_no_audio_source",
+                        "status": status,
                         "transcript_path": None,
                         "metadata_path": None,
                         "insights_path": None,
@@ -273,6 +283,8 @@ def transcribe_selected_videos(
         "processed": processed,
         "transcribed_success": transcribed_success,
         "skipped_no_audio_source": skipped_no_audio_source,
+        "skipped_missing_ytdlp": skipped_missing_ytdlp,
+        "failed_audio_download": failed_audio_download,
         "skipped_already_transcribed": skipped_already_transcribed,
         "failed": failed,
         "queue_total": len(queued),

@@ -70,6 +70,8 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
         {"video_id": "v1", "status": "queued"},
         {"video_id": "v2", "status": "failed"},
         {"video_id": "v3", "status": "success"},
+        {"video_id": "v4", "status": "skipped_missing_ytdlp"},
+        {"video_id": "v5", "status": "failed_audio_download"}
     ]
     for entry in entries:
         update_transcript_registry(data_dir=tmp_path, entry=entry)
@@ -77,6 +79,9 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
     assert report["queued_count"] == 1
     assert report["failed_count"] == 1
     assert report["success_count"] == 1
+    assert report["skipped_missing_ytdlp_count"] == 1
+    assert report["failed_audio_download_count"] == 1
+    assert report["skipped_no_audio_source_count"] == 0
 
 
 def test_transcript_store_does_not_write_outside_transcripts(tmp_path: Path) -> None:
