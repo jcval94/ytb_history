@@ -109,6 +109,10 @@ def write_transcript_artifacts(
     }
 
 
+def _is_transcript_failure_status(status: str) -> bool:
+    return status == "failed" or status.startswith("failed_")
+
+
 def update_transcript_registry(*, data_dir: str | Path = "data", entry: dict[str, Any]) -> dict[str, Any]:
     required = ["video_id", "status"]
     missing = [field for field in required if not entry.get(field)]
@@ -119,6 +123,11 @@ def update_transcript_registry(*, data_dir: str | Path = "data", entry: dict[str
     video_id = str(entry["video_id"]).strip()
     registry = [row for row in registry if str(row.get("video_id", "")).strip() != video_id]
 
+    status = str(entry.get("status", "")).strip()
+    failed_at = entry.get("failed_at")
+    if _is_transcript_failure_status(status) and not failed_at:
+        failed_at = _now_iso()
+
     normalized = {
         "video_id": video_id,
         "channel_id": entry.get("channel_id", ""),
@@ -126,7 +135,8 @@ def update_transcript_registry(*, data_dir: str | Path = "data", entry: dict[str
         "title": entry.get("title", ""),
         "selected_at": entry.get("selected_at"),
         "transcribed_at": entry.get("transcribed_at"),
-        "status": entry.get("status"),
+        "failed_at": failed_at,
+        "status": status,
         "transcript_path": entry.get("transcript_path"),
         "metadata_path": entry.get("metadata_path"),
         "insights_path": entry.get("insights_path"),

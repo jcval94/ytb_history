@@ -23,6 +23,18 @@ DEFAULT_COOLDOWN_DAYS=7
 DEFAULT_FORCED_MAX_PER_RUN=50
 DEFAULT_FORCED_WINDOW_DAYS=14
 
+TRANSCRIPT_RETRY_COOLDOWN_STATUSES = {
+    "failed",
+    "failed_audio_download",
+    "failed_audio_download_auth_required",
+    "failed_audio_download_video_unavailable",
+    "failed_audio_download_network_or_rate_limit",
+}
+
+def _is_retry_cooldown_status(status: str) -> bool:
+    return status in TRANSCRIPT_RETRY_COOLDOWN_STATUSES or status.startswith("failed_")
+
+
 def _read_csv(path: Path)->list[dict[str,str]]:
     if not path.exists(): return []
     with path.open("r",encoding="utf-8",newline="") as h: return list(csv.DictReader(h))
@@ -96,8 +108,8 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
         if not vid: continue
         if st=='success': success.add(vid)
         elif st=='in_progress': progress.add(vid)
-        elif st=='failed':
-            fa=_parse_dt(str(e.get('failed_at','')))
+        elif _is_retry_cooldown_status(st):
+            fa=_parse_dt(str(e.get('failed_at',''))) or _parse_dt(str(e.get('selected_at','')))
             if fa and fa>=th: cool.add(vid)
 
     forced_urls = _load_forced_urls()

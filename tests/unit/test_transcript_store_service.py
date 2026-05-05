@@ -93,6 +93,26 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
     assert report["skipped_no_audio_source_count"] == 0
 
 
+
+def test_failed_transcript_registry_entries_get_failed_at(tmp_path: Path) -> None:
+    row = update_transcript_registry(
+        data_dir=tmp_path,
+        entry={
+            "video_id": "v-auth",
+            "status": "failed_audio_download_auth_required",
+            "error_category": "auth_required",
+        },
+    )
+
+    assert row["failed_at"]
+    assert row["status"] == "failed_audio_download_auth_required"
+
+
+def test_success_transcript_registry_entries_do_not_get_failed_at(tmp_path: Path) -> None:
+    row = update_transcript_registry(data_dir=tmp_path, entry={"video_id": "v-ok", "status": "success"})
+
+    assert row["failed_at"] is None
+
 def test_transcript_store_does_not_write_outside_transcripts(tmp_path: Path) -> None:
     try:
         write_transcript_artifacts(video_id="../escape", transcript_text="x", metadata={}, data_dir=tmp_path)
