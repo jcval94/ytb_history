@@ -107,15 +107,19 @@ jobs:
         if: ${{ success() }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          YTDLP_EXTRA_ARGS: ${{ vars.YTDLP_EXTRA_ARGS || secrets.YTDLP_EXTRA_ARGS }}
         shell: bash
         run: |
-          CMD="python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources"
-          if [ -n "${YTDLP_COOKIES_FILE}" ]; then
-            CMD="${CMD} --ytdlp-cookies-file ${YTDLP_COOKIES_FILE}"
+          CMD=(python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources)
+          if [ -n "${YTDLP_COOKIES_FILE:-}" ]; then
+            CMD+=(--ytdlp-cookies-file "${YTDLP_COOKIES_FILE}")
           else
             echo "::warning::No temporary yt-dlp cookies file found. Running transcription queue without --ytdlp-cookies-file."
           fi
-          eval "${CMD}"
+          if [ -n "${YTDLP_EXTRA_ARGS:-}" ]; then
+            CMD+=(--ytdlp-extra-args "${YTDLP_EXTRA_ARGS}")
+          fi
+          "${CMD[@]}"
 
       - name: Generate transcript insights
         env:

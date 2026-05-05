@@ -54,6 +54,8 @@ def _youtube_watch_url(video_id: str) -> str:
 
 def _classify_ytdlp_error(stderr: str) -> str:
     text = (stderr or "").lower()
+    if "requested format is not available" in text:
+        return "format_unavailable"
     if any(token in text for token in ["sign in to confirm", "use --cookies", "cookies", "login required", "authentication"]):
         return "auth_required"
     if any(token in text for token in ["private video", "video unavailable", "this video is unavailable", "unavailable"]):
@@ -78,6 +80,15 @@ def _download_audio_with_ytdlp(
     output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
     cmd = [
         ytdlp_bin,
+        "--no-playlist",
+        "--format",
+        "bestaudio[ext=m4a]/bestaudio/best",
+        "--retries",
+        "3",
+        "--fragment-retries",
+        "3",
+        "--socket-timeout",
+        "30",
         "-x",
         "--audio-format",
         "mp3",

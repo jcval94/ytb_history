@@ -35,6 +35,9 @@ def test_monitor_has_required_settings() -> None:
     assert "python -m ytb_history.cli build-topic-intelligence" in content
     assert "python -m ytb_history.cli generate-creative-packages" in content
     assert "python -m ytb_history.cli generate-weekly-brief" in content
+    assert "--ytdlp-extra-args" in content
+    assert "YTDLP_EXTRA_ARGS" in content
+    assert 'eval "${CMD}"' not in content
     assert "python -m ytb_history.cli train-content-driver-models" not in content
     assert "python -m ytb_history.cli build-model-dataset" not in content
     assert "node --check apps/pages_dashboard/src/assets/app.js" in content

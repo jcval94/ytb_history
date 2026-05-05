@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 from pathlib import Path
 
 from ytb_history.services.transcript_store_service import update_transcript_registry
@@ -99,6 +100,69 @@ def test_uses_ytdlp_fallback_when_local_audio_missing(tmp_path: Path, monkeypatc
     assert report["ytdlp_runtime_options"]["used_cookies_file"] is False
     assert report["ytdlp_runtime_options"]["used_browser_mode"] is False
     assert report["ytdlp_runtime_options"]["extra_args_count"] == 0
+
+
+def test_download_audio_with_ytdlp_includes_preferred_audio_format(tmp_path: Path, monkeypatch) -> None:
+    captured_cmd: list[str] = []
+
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+
+    def _fake_run(cmd: list[str], **kwargs):
+        captured_cmd.extend(cmd)
+        assert kwargs == {"capture_output": True, "text": True, "check": False}
+        (tmp_path / "audio" / "v1.mp3").write_bytes(b"audio")
+        return subprocess.CompletedProcess(args=cmd, returncode=0, stderr="")
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert audio_path == tmp_path / "audio" / "v1.mp3"
+    assert error is None
+    assert error_category is None
+    assert "--format" in captured_cmd
+    assert captured_cmd[captured_cmd.index("--format") + 1] == "bestaudio[ext=m4a]/bestaudio/best"
+    assert "-x" in captured_cmd
+    assert captured_cmd[captured_cmd.index("--audio-format") + 1] == "mp3"
+    assert captured_cmd[-1] == "https://www.youtube.com/watch?v=v1"
+
+
+def test_ytdlp_requested_format_unavailable_is_reported(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Requested format is not available",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=10,
+        audio_source_dir=tmp_path / "audio",
+        openai_client=FakeOpenAIClient(),
+    )
+
+    assert report["failed_audio_download"] == 1
+    assert report["ytdlp_download_failures"] == [
+        {
+            "video_id": "v1",
+            "error": "yt_dlp_failed:code=1;stderr=ERROR: [youtube] v1: Requested format is not available",
+            "error_category": "format_unavailable",
+            "video_url": "https://www.youtube.com/watch?v=v1",
+        }
+    ]
+
+    registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    assert registry_rows[-1]["error_category"] == "format_unavailable"
 
 
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
