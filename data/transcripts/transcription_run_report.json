@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T22:26:37.448054+00:00",
+  "generated_at": "2026-05-05T00:33:47.100198+00:00",
   "limit": 10,
   "processed": 10,
   "transcribed_success": 0,
@@ -8,6 +8,65 @@
   "failed": 0,
   "queue_total": 27,
   "registry_success_before_run": 0,
+  "audio_source_dir": "data/audio_sources",
+  "audio_source_dir_exists": false,
+  "audio_source_dir_is_dir": false,
+  "audio_source_files_sample": [],
+  "allow_ytdlp_fallback": true,
+  "ytdlp_download_attempts": 10,
+  "ytdlp_download_success": 0,
+  "ytdlp_download_failures": [
+    {
+      "video_id": "6hNY0K71Ewo",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=6hNY0K71Ewo"
+    },
+    {
+      "video_id": "SVTPv4sI_Jc",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=SVTPv4sI_Jc"
+    },
+    {
+      "video_id": "B8E4azaZ13k",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=B8E4azaZ13k"
+    },
+    {
+      "video_id": "g-7nUex4nVg",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=g-7nUex4nVg"
+    },
+    {
+      "video_id": "N8Bc_M2Ew2E",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=N8Bc_M2Ew2E"
+    },
+    {
+      "video_id": "rfRFwXnk660",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=rfRFwXnk660"
+    },
+    {
+      "video_id": "ByJAH8vTgfw",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=ByJAH8vTgfw"
+    },
+    {
+      "video_id": "ksn5yrsC3Wg",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=ksn5yrsC3Wg"
+    },
+    {
+      "video_id": "n1G2FQ0UEqc",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=n1G2FQ0UEqc"
+    },
+    {
+      "video_id": "K38w2QlgHPQ",
+      "error": "yt_dlp_not_installed",
+      "video_url": "https://www.youtube.com/watch?v=K38w2QlgHPQ"
+    }
+  ],
   "processed_video_ids": [
     "6hNY0K71Ewo",
     "SVTPv4sI_Jc",
@@ -34,6 +93,159 @@
     "n1G2FQ0UEqc",
     "K38w2QlgHPQ"
   ],
+  "missing_audio_details": [
+    {
+      "video_id": "6hNY0K71Ewo",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=6hNY0K71Ewo",
+      "attempted_paths": [
+        "data/audio_sources/6hNY0K71Ewo.mp3",
+        "data/audio_sources/6hNY0K71Ewo.m4a",
+        "data/audio_sources/6hNY0K71Ewo.wav",
+        "data/audio_sources/6hNY0K71Ewo.webm",
+        "data/audio_sources/6hNY0K71Ewo.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "SVTPv4sI_Jc",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=SVTPv4sI_Jc",
+      "attempted_paths": [
+        "data/audio_sources/SVTPv4sI_Jc.mp3",
+        "data/audio_sources/SVTPv4sI_Jc.m4a",
+        "data/audio_sources/SVTPv4sI_Jc.wav",
+        "data/audio_sources/SVTPv4sI_Jc.webm",
+        "data/audio_sources/SVTPv4sI_Jc.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "B8E4azaZ13k",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=B8E4azaZ13k",
+      "attempted_paths": [
+        "data/audio_sources/B8E4azaZ13k.mp3",
+        "data/audio_sources/B8E4azaZ13k.m4a",
+        "data/audio_sources/B8E4azaZ13k.wav",
+        "data/audio_sources/B8E4azaZ13k.webm",
+        "data/audio_sources/B8E4azaZ13k.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "g-7nUex4nVg",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=g-7nUex4nVg",
+      "attempted_paths": [
+        "data/audio_sources/g-7nUex4nVg.mp3",
+        "data/audio_sources/g-7nUex4nVg.m4a",
+        "data/audio_sources/g-7nUex4nVg.wav",
+        "data/audio_sources/g-7nUex4nVg.webm",
+        "data/audio_sources/g-7nUex4nVg.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "N8Bc_M2Ew2E",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=N8Bc_M2Ew2E",
+      "attempted_paths": [
+        "data/audio_sources/N8Bc_M2Ew2E.mp3",
+        "data/audio_sources/N8Bc_M2Ew2E.m4a",
+        "data/audio_sources/N8Bc_M2Ew2E.wav",
+        "data/audio_sources/N8Bc_M2Ew2E.webm",
+        "data/audio_sources/N8Bc_M2Ew2E.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "rfRFwXnk660",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=rfRFwXnk660",
+      "attempted_paths": [
+        "data/audio_sources/rfRFwXnk660.mp3",
+        "data/audio_sources/rfRFwXnk660.m4a",
+        "data/audio_sources/rfRFwXnk660.wav",
+        "data/audio_sources/rfRFwXnk660.webm",
+        "data/audio_sources/rfRFwXnk660.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "ByJAH8vTgfw",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=ByJAH8vTgfw",
+      "attempted_paths": [
+        "data/audio_sources/ByJAH8vTgfw.mp3",
+        "data/audio_sources/ByJAH8vTgfw.m4a",
+        "data/audio_sources/ByJAH8vTgfw.wav",
+        "data/audio_sources/ByJAH8vTgfw.webm",
+        "data/audio_sources/ByJAH8vTgfw.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "ksn5yrsC3Wg",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=ksn5yrsC3Wg",
+      "attempted_paths": [
+        "data/audio_sources/ksn5yrsC3Wg.mp3",
+        "data/audio_sources/ksn5yrsC3Wg.m4a",
+        "data/audio_sources/ksn5yrsC3Wg.wav",
+        "data/audio_sources/ksn5yrsC3Wg.webm",
+        "data/audio_sources/ksn5yrsC3Wg.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "n1G2FQ0UEqc",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=n1G2FQ0UEqc",
+      "attempted_paths": [
+        "data/audio_sources/n1G2FQ0UEqc.mp3",
+        "data/audio_sources/n1G2FQ0UEqc.m4a",
+        "data/audio_sources/n1G2FQ0UEqc.wav",
+        "data/audio_sources/n1G2FQ0UEqc.webm",
+        "data/audio_sources/n1G2FQ0UEqc.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    },
+    {
+      "video_id": "K38w2QlgHPQ",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=K38w2QlgHPQ",
+      "attempted_paths": [
+        "data/audio_sources/K38w2QlgHPQ.mp3",
+        "data/audio_sources/K38w2QlgHPQ.m4a",
+        "data/audio_sources/K38w2QlgHPQ.wav",
+        "data/audio_sources/K38w2QlgHPQ.webm",
+        "data/audio_sources/K38w2QlgHPQ.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_not_installed"
+    }
+  ],
   "failed_video_ids": [],
+  "failed_details": [],
   "warnings": []
 }
