@@ -1,0 +1,32 @@
+{
+  "execution_date": "2026-05-05T02:32:57.883934+00:00",
+  "status": "success_with_warnings",
+  "channels_total": 176,
+  "channels_ok": 166,
+  "channels_failed": 10,
+  "videos_discovered": 557,
+  "videos_tracked": 1119,
+  "videos_snapshotted": 1118,
+  "videos_unavailable": 1,
+  "snapshot_path": "data/snapshots/dt=2026-05-05/run=023257Z/snapshots.jsonl.gz",
+  "delta_path": "data/deltas/dt=2026-05-05/run=023257Z/deltas.jsonl.gz",
+  "quota_status": "ok",
+  "estimated_quota_units": 863,
+  "observed_quota_units": 305,
+  "errors": [
+    "Unsupported YouTube channel URL format: https://www.youtube.com/c/Myprimermillón",
+    "Unsupported YouTube channel URL format: https://www.youtube.com/c/Caf%C3%A9Kyoto",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Channel not found",
+    "Unsupported YouTube channel URL format: https://www.youtube.com/c/Myprimermillón",
+    "Non-retryable YouTube API error 404 on playlistItems.list",
+    "Non-retryable YouTube API error 404 on playlistItems.list",
+    "video_unavailable"
+  ]
+}

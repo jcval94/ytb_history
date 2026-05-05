@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,10,64.5485,75.4622,63.6,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,9,65.3031,75.1265,64.6111,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,6,68.1197,79.6,66.3333,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,200,57.0588,66.7101,83.455,Z-xAO96GQtU,Esto es lo primero que vas a hacer mañana  #shorts,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,53,64.1419,88.0,72.1745,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Cook Makes $4,000 a Month Forever",Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,60,70.7766,85.6662,83.9083,UCF0L4jd9LcSIxsj5gKITMqQ,Reemplaza años de universidad con estos vídeos  #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,4,69.7065,79.4596,67.625,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,213,56.9989,66.7876,82.7919,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,53,64.3708,88.0,72.6085,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Cook Makes $4,000 a Month Forever",Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,75,69.2212,85.6662,84.5867,UCF0L4jd9LcSIxsj5gKITMqQ,Me voló la cabeza cuando Nietzche dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.

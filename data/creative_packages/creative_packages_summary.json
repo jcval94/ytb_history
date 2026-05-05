@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-05-05T01:47:53.249885+00:00",
-  "total_packages": 329,
+  "generated_at": "2026-05-05T02:35:13.560681+00:00",
+  "total_packages": 354,
   "package_type_counts": {
-    "comparison_package": 59,
-    "watchlist_package": 60,
-    "fast_reaction_package": 10,
-    "repackage_package": 200
+    "comparison_package": 57,
+    "watchlist_package": 75,
+    "fast_reaction_package": 9,
+    "repackage_package": 213
   },
   "top_packages": [
     {
-      "creative_package_id": "cp_1_06d8120cc3",
+      "creative_package_id": "cp_1_6da1126338",
       "creative_execution_score": 80.375
     },
     {
-      "creative_package_id": "cp_2_3e69a623fb",
+      "creative_package_id": "cp_2_2da6afcf08",
       "creative_execution_score": 80.1758
     },
     {
-      "creative_package_id": "cp_3_1922eb90f3",
+      "creative_package_id": "cp_3_0699f40aac",
       "creative_execution_score": 79.9766
     },
     {
-      "creative_package_id": "cp_4_8e1592e707",
-      "creative_execution_score": 79.379
+      "creative_package_id": "cp_4_4564e721b3",
+      "creative_execution_score": 79.5783
     },
     {
-      "creative_package_id": "cp_6_66abbfd367",
+      "creative_package_id": "cp_6_e45fbd4632",
       "creative_execution_score": 79.1799
     }
   ],
-  "avg_originality_score": 97.8032,
+  "avg_originality_score": 97.7516,
   "high_copy_risk_count": 0,
   "warnings": []
 }
