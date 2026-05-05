@@ -69,3 +69,49 @@ def test_transcript_selection_cli_prints_json(monkeypatch, capsys) -> None:
 def test_transcription_channels_config_exists() -> None:
     text = Path("config/transcription_channels.py").read_text(encoding="utf-8")
     assert "@bilinkis" in text and "veritasium" in text
+
+
+def test_recent_auth_required_download_failure_enters_cooldown(tmp_path: Path) -> None:
+    _seed_inputs(tmp_path)
+    now = datetime.now(timezone.utc)
+    _write_jsonl(
+        tmp_path / "transcripts/transcript_registry.jsonl",
+        [
+            {
+                "video_id": "v1",
+                "status": "failed_audio_download_auth_required",
+                "failed_at": (now - timedelta(days=1)).isoformat(),
+                "error_category": "auth_required",
+            }
+        ],
+    )
+
+    report = select_transcription_candidates(data_dir=tmp_path, limit=10, forced_channels_max_per_run=50)
+    queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+
+    assert report["registry_existing_recent_failed_count"] == 1
+    assert report["skipped_forced_recent_failures"] == 1
+    assert all(row["video_id"] != "v1" for row in queue)
+
+
+def test_auth_required_download_failure_without_failed_at_uses_selected_at_cooldown(tmp_path: Path) -> None:
+    _seed_inputs(tmp_path)
+    now = datetime.now(timezone.utc)
+    _write_jsonl(
+        tmp_path / "transcripts/transcript_registry.jsonl",
+        [
+            {
+                "video_id": "v3",
+                "status": "failed_audio_download_auth_required",
+                "selected_at": (now - timedelta(days=1)).isoformat(),
+                "error_category": "auth_required",
+            }
+        ],
+    )
+
+    report = select_transcription_candidates(data_dir=tmp_path, limit=10, forced_channels_max_per_run=50)
+    queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+
+    assert report["registry_existing_recent_failed_count"] == 1
+    assert report["skipped_recent_failures"] == 1
+    assert all(row["video_id"] != "v3" for row in queue)

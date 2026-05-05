@@ -417,17 +417,19 @@ Para transcripción/insights:
 3. Name: `OPENAI_API_KEY`
 4. Value: tu API key de OpenAI
 
-Para habilitar cookies de `yt-dlp` en CI (opcional):
+Para habilitar cookies de `yt-dlp` en CI (recomendado si aparecen `failed_audio_download_auth_required`):
 1. Exporta un `cookies.txt` vigente desde tu navegador/perfil autorizado.
-2. `Settings` > `Secrets and variables` > `Actions`
-3. `New repository secret`
-4. Name: `YTDLP_COOKIES_B64`
-5. Value: contenido completo del archivo `cookies.txt` (texto plano, multi-línea).
+2. Codifica ese archivo en base64, por ejemplo: `base64 -w0 cookies.txt` en Linux.
+3. `Settings` > `Secrets and variables` > `Actions`
+4. `New repository secret`
+5. Name: `YTDLP_COOKIES_B64`
+6. Value: salida base64 del paso 2 (no el texto plano del `cookies.txt`).
 
 Rotación recomendada de `YTDLP_COOKIES_B64`:
 - Reemplazar el secret cuando expire la sesión/cookie o falle descarga por autenticación.
 - Rotar preventivamente (por ejemplo mensual) y después de cambios de contraseña o eventos de seguridad.
 - Validar el siguiente run de `monitor.yml`; si falta el secret, el workflow continúa con warning y fallback sin cookies.
+- Los errores `failed_audio_download_auth_required` quedan en cooldown de selección durante 7 días para evitar reprocesar los mismos videos en cada corrida; configura/rota `YTDLP_COOKIES_B64` antes de reintentar esos IDs.
 
 Opcionalmente, `monitor.yml` acepta `YTDLP_EXTRA_ARGS` desde GitHub Actions Variables o Secrets para pasar opciones adicionales a `yt-dlp` sin modificar el workflow. Ejemplo seguro para CI como **repository variable** (sin credenciales):
 
@@ -490,7 +492,7 @@ ffmpeg -version
 - **canal no resoluble**: valida URL/ID del canal en `config/channels.py`.
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **Errores de descarga en transcripción (`yt-dlp`)**:
-  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`).
+  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En CI, define `YTDLP_COOKIES_B64` con el contenido de `cookies.txt` codificado en base64; estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
   - `failed_audio_download_video_unavailable`: video privado/no disponible/restringido.
   - `failed_audio_download_network_or_rate_limit`: red inestable, timeout o rate limit (`429`).
   - `failed_audio_download`: fallback genérico cuando no se puede clasificar.
