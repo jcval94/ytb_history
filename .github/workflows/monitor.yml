@@ -87,11 +87,35 @@ jobs:
       - name: Validate ffmpeg availability
         run: ffmpeg -version
 
+      - name: Prepare yt-dlp cookies file (optional)
+        shell: bash
+        env:
+          YTDLP_COOKIES_TXT: ${{ secrets.YTDLP_COOKIES_TXT }}
+        run: |
+          COOKIES_PATH="${{ runner.temp }}/yt_cookies.txt"
+          if [ -n "${YTDLP_COOKIES_TXT}" ]; then
+            printf "%s" "${YTDLP_COOKIES_TXT}" > "${COOKIES_PATH}"
+            chmod 600 "${COOKIES_PATH}"
+            echo "YTDLP_COOKIES_FILE=${COOKIES_PATH}" >> "${GITHUB_ENV}"
+            echo "Prepared temporary yt-dlp cookies file at ${COOKIES_PATH}."
+          else
+            echo "::warning::Secret YTDLP_COOKIES_TXT not configured. Continuing without cookies file (yt-dlp fallback behavior remains active)."
+            echo "YTDLP_COOKIES_FILE=" >> "${GITHUB_ENV}"
+          fi
+
       - name: Run transcription queue (idempotent)
         if: ${{ success() }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
+        shell: bash
+        run: |
+          CMD="python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources"
+          if [ -n "${YTDLP_COOKIES_FILE}" ]; then
+            CMD="${CMD} --ytdlp-cookies-file ${YTDLP_COOKIES_FILE}"
+          else
+            echo "::warning::No temporary yt-dlp cookies file found. Running transcription queue without --ytdlp-cookies-file."
+          fi
+          eval "${CMD}"
 
       - name: Generate transcript insights
         env:
@@ -112,6 +136,18 @@ jobs:
 
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief
+
+      - name: Cleanup temporary yt-dlp cookies file
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          COOKIES_PATH="${{ runner.temp }}/yt_cookies.txt"
+          if [ -f "${COOKIES_PATH}" ]; then
+            rm -f "${COOKIES_PATH}"
+            echo "Removed temporary yt-dlp cookies file."
+          else
+            echo "No temporary yt-dlp cookies file to remove."
+          fi
 
       - name: Commit and push data changes
         run: |

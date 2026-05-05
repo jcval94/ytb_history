@@ -52,10 +52,28 @@ def _youtube_watch_url(video_id: str) -> str:
     return f"https://www.youtube.com/watch?v={video_id}"
 
 
-def _download_audio_with_ytdlp(*, video_id: str, audio_source_dir: Path) -> tuple[Path | None, str | None]:
+def _classify_ytdlp_error(stderr: str) -> str:
+    text = (stderr or "").lower()
+    if any(token in text for token in ["sign in to confirm", "use --cookies", "cookies", "login required", "authentication"]):
+        return "auth_required"
+    if any(token in text for token in ["private video", "video unavailable", "this video is unavailable", "unavailable"]):
+        return "video_unavailable"
+    if any(token in text for token in ["429", "too many requests", "timed out", "timeout", "temporarily unavailable", "connection reset", "network"]):
+        return "network_or_rate_limit"
+    return "unknown"
+
+
+def _download_audio_with_ytdlp(
+    *,
+    video_id: str,
+    audio_source_dir: Path,
+    ytdlp_cookies_file: str | None = None,
+    ytdlp_browser: str | None = None,
+    ytdlp_extra_args: list[str] | None = None,
+) -> tuple[Path | None, str | None, str | None]:
     ytdlp_bin = shutil.which("yt-dlp")
     if not ytdlp_bin:
-        return None, "yt_dlp_not_installed"
+        return None, "yt_dlp_not_installed", "tooling_missing"
     audio_source_dir.mkdir(parents=True, exist_ok=True)
     output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
     cmd = [
@@ -65,16 +83,23 @@ def _download_audio_with_ytdlp(*, video_id: str, audio_source_dir: Path) -> tupl
         "mp3",
         "-o",
         output_template,
-        _youtube_watch_url(video_id),
     ]
+    if ytdlp_cookies_file:
+        cmd.extend(["--cookies", ytdlp_cookies_file])
+    if ytdlp_browser:
+        cmd.extend(["--cookies-from-browser", ytdlp_browser])
+    if ytdlp_extra_args:
+        cmd.extend(ytdlp_extra_args)
+    cmd.append(_youtube_watch_url(video_id))
     result = subprocess.run(cmd, capture_output=True, text=True, check=False)
     if result.returncode != 0:
-        stderr_tail = (result.stderr or "").strip()[-300:]
-        return None, f"yt_dlp_failed:code={result.returncode};stderr={stderr_tail}"
+        stderr_full = (result.stderr or "").strip()
+        stderr_tail = stderr_full[-300:]
+        return None, f"yt_dlp_failed:code={result.returncode};stderr={stderr_tail}", _classify_ytdlp_error(stderr_full)
     audio_path = _find_audio_source(audio_source_dir, video_id)
     if audio_path is None:
-        return None, "yt_dlp_completed_but_audio_not_found"
-    return audio_path, None
+        return None, "yt_dlp_completed_but_audio_not_found", "unknown"
+    return audio_path, None, None
 
 
 def transcribe_selected_videos(
@@ -85,6 +110,9 @@ def transcribe_selected_videos(
     model: str = "gpt-4o-mini-transcribe",
     openai_client: OpenAIAudioClient | None = None,
     allow_ytdlp_fallback: bool = True,
+    ytdlp_cookies_file: str | None = None,
+    ytdlp_browser: str | None = None,
+    ytdlp_extra_args: list[str] | None = None,
 ) -> dict[str, Any]:
     root = Path(data_dir)
     transcript_dir = root / "transcripts"
@@ -154,19 +182,33 @@ def transcribe_selected_videos(
         audio_path = _find_audio_source(source_root, video_id)
         if audio_path is None:
             ytdlp_error: str | None = None
+            ytdlp_error_category: str | None = None
             if allow_ytdlp_fallback:
                 ytdlp_download_attempts += 1
-                audio_path, ytdlp_error = _download_audio_with_ytdlp(video_id=video_id, audio_source_dir=source_root)
+                audio_path, ytdlp_error, ytdlp_error_category = _download_audio_with_ytdlp(
+                    video_id=video_id,
+                    audio_source_dir=source_root,
+                    ytdlp_cookies_file=ytdlp_cookies_file,
+                    ytdlp_browser=ytdlp_browser,
+                    ytdlp_extra_args=ytdlp_extra_args,
+                )
                 if audio_path is not None:
                     ytdlp_download_success += 1
             if audio_path is None:
                 if ytdlp_error:
-                    ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "video_url": _youtube_watch_url(video_id)})
+                    ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "error_category": ytdlp_error_category, "video_url": _youtube_watch_url(video_id)})
                 if ytdlp_error == "yt_dlp_not_installed":
                     status = "skipped_missing_ytdlp"
                     skipped_missing_ytdlp += 1
                 elif allow_ytdlp_fallback and ytdlp_error:
-                    status = "failed_audio_download"
+                    if ytdlp_error_category == "auth_required":
+                        status = "failed_audio_download_auth_required"
+                    elif ytdlp_error_category == "video_unavailable":
+                        status = "failed_audio_download_video_unavailable"
+                    elif ytdlp_error_category == "network_or_rate_limit":
+                        status = "failed_audio_download_network_or_rate_limit"
+                    else:
+                        status = "failed_audio_download"
                     failed_audio_download += 1
                 else:
                     status = "skipped_no_audio_source"
@@ -182,6 +224,7 @@ def transcribe_selected_videos(
                         "video_url": _youtube_watch_url(video_id),
                         "attempted_paths": attempted_paths,
                         "ytdlp_error": ytdlp_error,
+                        "ytdlp_error_category": ytdlp_error_category,
                     }
                 )
                 update_transcript_registry(
@@ -199,6 +242,7 @@ def transcribe_selected_videos(
                         "insights_path": None,
                         "source_type": "unknown",
                         "text_char_count": 0,
+                        "error_category": ytdlp_error_category,
                         "error_message": f"audio_source_not_found; video_url={_youtube_watch_url(video_id)}; attempted={attempted_paths}; ytdlp={ytdlp_error}",
                     },
                 )
@@ -294,6 +338,11 @@ def transcribe_selected_videos(
         "audio_source_dir_is_dir": source_root_is_dir,
         "audio_source_files_sample": available_audio_files_sample,
         "allow_ytdlp_fallback": allow_ytdlp_fallback,
+        "ytdlp_runtime_options": {
+            "used_cookies_file": bool(ytdlp_cookies_file),
+            "used_browser_mode": bool(ytdlp_browser),
+            "extra_args_count": len(ytdlp_extra_args or []),
+        },
         "ytdlp_download_attempts": ytdlp_download_attempts,
         "ytdlp_download_success": ytdlp_download_success,
         "ytdlp_download_failures": ytdlp_download_failures,

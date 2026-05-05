@@ -83,10 +83,10 @@ def test_uses_ytdlp_fallback_when_local_audio_missing(tmp_path: Path, monkeypatc
     audio_dir = tmp_path / "audio_sources"
     fake_audio = audio_dir / "v1.mp3"
 
-    def _fake_download(*, video_id: str, audio_source_dir: Path):
+    def _fake_download(*, video_id: str, audio_source_dir: Path, **_kwargs):
         audio_source_dir.mkdir(parents=True, exist_ok=True)
         fake_audio.write_bytes(b"audio")
-        return fake_audio, None
+        return fake_audio, None, None
 
     monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
     fake = FakeOpenAIClient()
@@ -96,6 +96,9 @@ def test_uses_ytdlp_fallback_when_local_audio_missing(tmp_path: Path, monkeypatc
     assert report["skipped_no_audio_source"] == 0
     assert report["ytdlp_download_attempts"] == 1
     assert report["ytdlp_download_success"] == 1
+    assert report["ytdlp_runtime_options"]["used_cookies_file"] is False
+    assert report["ytdlp_runtime_options"]["used_browser_mode"] is False
+    assert report["ytdlp_runtime_options"]["extra_args_count"] == 0
 
 
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
@@ -127,8 +130,8 @@ def test_reports_failed_audio_download_when_ytdlp_fallback_fails(tmp_path: Path,
     _write_queue(tmp_path, ["v1"])
     monkeypatch.setenv("OPENAI_API_KEY", "test-key")
 
-    def _fake_download(*, video_id: str, audio_source_dir: Path):
-        return None, "yt_dlp_failed:code=1;stderr=boom"
+    def _fake_download(*, video_id: str, audio_source_dir: Path, **_kwargs):
+        return None, "yt_dlp_failed:code=1;stderr=boom", "network_or_rate_limit"
 
     monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
     report = transcribe_selected_videos(data_dir=tmp_path, limit=10, audio_source_dir=tmp_path / "missing", openai_client=FakeOpenAIClient())
@@ -138,4 +141,28 @@ def test_reports_failed_audio_download_when_ytdlp_fallback_fails(tmp_path: Path,
     assert report["skipped_no_audio_source"] == 0
 
     registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
-    assert registry_rows[-1]["status"] == "failed_audio_download"
+    assert registry_rows[-1]["status"] == "failed_audio_download_network_or_rate_limit"
+    assert registry_rows[-1]["error_category"] == "network_or_rate_limit"
+
+
+def test_reports_sanitized_ytdlp_runtime_metadata(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    def _fake_download(*, video_id: str, audio_source_dir: Path, **_kwargs):
+        return None, "yt_dlp_not_installed", "tooling_missing"
+
+    monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=10,
+        audio_source_dir=tmp_path / "missing",
+        openai_client=FakeOpenAIClient(),
+        ytdlp_cookies_file="/tmp/cookies.txt",
+        ytdlp_browser="chrome",
+        ytdlp_extra_args=["--proxy", "http://localhost:8080"],
+    )
+
+    assert report["ytdlp_runtime_options"]["used_cookies_file"] is True
+    assert report["ytdlp_runtime_options"]["used_browser_mode"] is True
+    assert report["ytdlp_runtime_options"]["extra_args_count"] == 2

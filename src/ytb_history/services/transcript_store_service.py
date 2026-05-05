@@ -134,6 +134,7 @@ def update_transcript_registry(*, data_dir: str | Path = "data", entry: dict[str
         "transcription_model": entry.get("transcription_model"),
         "language": entry.get("language"),
         "text_char_count": int(entry.get("text_char_count", 0) or 0),
+        "error_category": entry.get("error_category"),
         "error_message": entry.get("error_message"),
     }
 
@@ -160,5 +161,14 @@ def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[s
         "skipped_no_audio_source_count": by_status.get("skipped_no_audio_source", 0),
         "skipped_missing_ytdlp_count": by_status.get("skipped_missing_ytdlp", 0),
         "failed_audio_download_count": by_status.get("failed_audio_download", 0),
+        "failed_audio_download_auth_required_count": by_status.get("failed_audio_download_auth_required", 0),
+        "failed_audio_download_video_unavailable_count": by_status.get("failed_audio_download_video_unavailable", 0),
+        "failed_audio_download_network_or_rate_limit_count": by_status.get("failed_audio_download_network_or_rate_limit", 0),
     }
+    by_error_category: dict[str, int] = {}
+    for row in rows:
+        category = str(row.get("error_category", "")).strip()
+        if category:
+            by_error_category[category] = by_error_category.get(category, 0) + 1
+    report["error_category_counts"] = by_error_category
     return report
