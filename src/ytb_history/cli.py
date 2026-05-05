@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shlex
 
 from ytb_history.orchestrator import run_dry_run, run_pipeline
 from ytb_history.services.alerts_service import generate_alerts
@@ -122,6 +123,9 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--limit", default=10, type=int)
     transcribe_parser.add_argument("--audio-source-dir", default="data/audio_sources")
     transcribe_parser.add_argument("--model", default="gpt-4o-mini-transcribe")
+    transcribe_parser.add_argument("--ytdlp-cookies-file")
+    transcribe_parser.add_argument("--ytdlp-browser")
+    transcribe_parser.add_argument("--ytdlp-extra-args")
 
     insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
     insights_parser.add_argument("--data-dir", default="data")
@@ -265,11 +269,15 @@ def main() -> int:
         return 0
 
     if args.command == "transcribe-selected-videos":
+        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
         summary = transcribe_selected_videos(
             data_dir=args.data_dir,
             limit=args.limit,
             audio_source_dir=args.audio_source_dir,
             model=args.model,
+            ytdlp_cookies_file=args.ytdlp_cookies_file,
+            ytdlp_browser=args.ytdlp_browser,
+            ytdlp_extra_args=ytdlp_extra_args,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0

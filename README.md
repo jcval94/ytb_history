@@ -416,11 +416,48 @@ Para transcripción/insights:
 3. Name: `OPENAI_API_KEY`
 4. Value: tu API key de OpenAI
 
+Para habilitar cookies de `yt-dlp` en CI (opcional):
+1. Exporta un `cookies.txt` vigente desde tu navegador/perfil autorizado.
+2. `Settings` > `Secrets and variables` > `Actions`
+3. `New repository secret`
+4. Name: `YTDLP_COOKIES_TXT`
+5. Value: contenido completo del archivo `cookies.txt` (texto plano, multi-línea).
+
+Rotación recomendada de `YTDLP_COOKIES_TXT`:
+- Reemplazar el secret cuando expire la sesión/cookie o falle descarga por autenticación.
+- Rotar preventivamente (por ejemplo mensual) y después de cambios de contraseña o eventos de seguridad.
+- Validar el siguiente run de `monitor.yml`; si falta el secret, el workflow continúa con warning y fallback sin cookies.
+
 Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
 ```bash
 python -m pip install yt-dlp
 yt-dlp --version
 ```
+
+Uso local recomendado cuando `yt-dlp` requiere autenticación/cookies:
+```bash
+python -m ytb_history.cli transcribe-selected-videos \
+  --data-dir data \
+  --audio-source-dir data/audio_sources \
+  --ytdlp-cookies-file /ruta/local/cookies.txt
+```
+
+Opcional en entorno local (usar cookies del navegador):
+```bash
+python -m ytb_history.cli transcribe-selected-videos \
+  --data-dir data \
+  --ytdlp-browser firefox \
+  --ytdlp-extra-args "--proxy http://127.0.0.1:8080"
+```
+
+Ejemplo CI (ruta de cookies inyectada por secret/file mount):
+```bash
+python -m ytb_history.cli transcribe-selected-videos \
+  --data-dir data \
+  --ytdlp-cookies-file "$YTDLP_COOKIES_FILE"
+```
+
+⚠️ **Seguridad**: nunca commitear `cookies.txt` ni credenciales derivadas. Mantener estos archivos fuera del repositorio y cargarlos desde secretos/variables de entorno en CI.
 
 Además, instalar `ffmpeg` en el sistema y verificar disponibilidad en PATH:
 ```bash
@@ -443,6 +480,13 @@ ffmpeg -version
 - **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
 - **canal no resoluble**: valida URL/ID del canal en `config/channels.py`.
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
+- **Errores de descarga en transcripción (`yt-dlp`)**:
+  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`).
+  - `failed_audio_download_video_unavailable`: video privado/no disponible/restringido.
+  - `failed_audio_download_network_or_rate_limit`: red inestable, timeout o rate limit (`429`).
+  - `failed_audio_download`: fallback genérico cuando no se puede clasificar.
+  - `skipped_missing_ytdlp`: falta binario `yt-dlp` en el entorno.
+  - Para diagnóstico agregado: ejecutar `python -m ytb_history.cli transcript-registry-report` y revisar `status_counts` + `error_category_counts`.
 - **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
 
 ## 21) Seguridad
@@ -450,5 +494,3 @@ ffmpeg -version
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
-
-

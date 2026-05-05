@@ -246,6 +246,54 @@ def test_cli_generate_alerts_does_not_call_api_flows(monkeypatch, capsys) -> Non
     assert json.loads(out)["status"] == "success"
 
 
+def test_cli_transcribe_selected_videos_forwards_ytdlp_options(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_transcribe_selected_videos(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success"}
+
+    monkeypatch.setattr(cli, "transcribe_selected_videos", _fake_transcribe_selected_videos)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "transcribe-selected-videos",
+            "--data-dir",
+            "custom/data",
+            "--limit",
+            "5",
+            "--audio-source-dir",
+            "custom/audio",
+            "--model",
+            "gpt-4o-mini-transcribe",
+            "--ytdlp-cookies-file",
+            "/tmp/cookies.txt",
+            "--ytdlp-browser",
+            "firefox",
+            "--ytdlp-extra-args",
+            "--proxy http://localhost:8080",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+    assert calls == [
+        {
+            "data_dir": "custom/data",
+            "limit": 5,
+            "audio_source_dir": "custom/audio",
+            "model": "gpt-4o-mini-transcribe",
+            "ytdlp_cookies_file": "/tmp/cookies.txt",
+            "ytdlp_browser": "firefox",
+            "ytdlp_extra_args": ["--proxy", "http://localhost:8080"],
+        }
+    ]
+
+
 def test_cli_build_decision_layer_prints_json(monkeypatch, capsys) -> None:
     monkeypatch.setattr(
         cli,
