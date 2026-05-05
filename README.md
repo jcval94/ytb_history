@@ -398,7 +398,7 @@ El monitor ejecuta la cadena de transcripción (`select-transcription-candidates
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `select-transcription-candidates`, `transcribe-selected-videos`, `generate-transcript-insights`, `transcript-registry-report`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `select-transcription-candidates`, `install yt-dlp`, `install ffmpeg`, `yt-dlp --version`, `ffmpeg -version`, `transcribe-selected-videos`, `generate-transcript-insights`, `transcript-registry-report`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
 - Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
 - Usa `OPENAI_API_KEY` en los pasos de transcripción/insights.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
@@ -415,6 +415,20 @@ Para transcripción/insights:
 2. `New repository secret`
 3. Name: `OPENAI_API_KEY`
 4. Value: tu API key de OpenAI
+
+Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
+```bash
+python -m pip install yt-dlp
+yt-dlp --version
+```
+
+Además, instalar `ffmpeg` en el sistema y verificar disponibilidad en PATH:
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install -y ffmpeg
+ffmpeg -version
+```
 
 ## 19) Interpretación de status
 

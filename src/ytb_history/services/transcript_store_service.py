@@ -157,5 +157,8 @@ def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[s
         "success_count": by_status.get("success", 0),
         "failed_count": by_status.get("failed", 0),
         "queued_count": by_status.get("queued", 0),
+        "skipped_no_audio_source_count": by_status.get("skipped_no_audio_source", 0),
+        "skipped_missing_ytdlp_count": by_status.get("skipped_missing_ytdlp", 0),
+        "failed_audio_download_count": by_status.get("failed_audio_download", 0),
     }
     return report

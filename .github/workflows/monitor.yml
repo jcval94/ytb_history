@@ -73,7 +73,22 @@ jobs:
       - name: Select transcription candidates (daily top + forced channels)
         run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 
+      - name: Install yt-dlp
+        run: python -m pip install yt-dlp
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Validate yt-dlp availability
+        run: yt-dlp --version
+
+      - name: Validate ffmpeg availability
+        run: ffmpeg -version
+
       - name: Run transcription queue (idempotent)
+        if: ${{ success() }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
