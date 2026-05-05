@@ -290,6 +290,7 @@ def test_cli_transcribe_selected_videos_forwards_ytdlp_options(monkeypatch, caps
             "ytdlp_cookies_file": "/tmp/cookies.txt",
             "ytdlp_browser": "firefox",
             "ytdlp_extra_args": ["--proxy", "http://localhost:8080"],
+            "ytdlp_cookies_b64": None,
         }
     ]
 

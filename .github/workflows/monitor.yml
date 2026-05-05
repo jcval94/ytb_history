@@ -90,16 +90,16 @@ jobs:
       - name: Prepare yt-dlp cookies file (optional)
         shell: bash
         env:
-          YTDLP_COOKIES_TXT: ${{ secrets.YTDLP_COOKIES_TXT }}
+          YTDLP_COOKIES_B64: ${{ secrets.YTDLP_COOKIES_B64 }}
         run: |
           COOKIES_PATH="${{ runner.temp }}/yt_cookies.txt"
-          if [ -n "${YTDLP_COOKIES_TXT}" ]; then
-            printf "%s" "${YTDLP_COOKIES_TXT}" > "${COOKIES_PATH}"
+          if [ -n "${YTDLP_COOKIES_B64}" ]; then
+            printf "%s" "${YTDLP_COOKIES_B64}" | base64 --decode > "${COOKIES_PATH}"
             chmod 600 "${COOKIES_PATH}"
             echo "YTDLP_COOKIES_FILE=${COOKIES_PATH}" >> "${GITHUB_ENV}"
             echo "Prepared temporary yt-dlp cookies file at ${COOKIES_PATH}."
           else
-            echo "::warning::Secret YTDLP_COOKIES_TXT not configured. Continuing without cookies file (yt-dlp fallback behavior remains active)."
+            echo "::warning::Secret YTDLP_COOKIES_B64 not configured. Continuing without cookies file (yt-dlp fallback behavior remains active)."
             echo "YTDLP_COOKIES_FILE=" >> "${GITHUB_ENV}"
           fi
 
