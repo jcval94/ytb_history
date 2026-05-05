@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-05T00:33:43.174387+00:00",
-  "total_alerts": 309,
+  "generated_at": "2026-05-05T00:56:39.379345+00:00",
+  "total_alerts": 363,
   "severity_counts": {
-    "critical": 15,
-    "high": 149,
-    "medium": 145,
+    "critical": 42,
+    "high": 165,
+    "medium": 156,
     "low": 0
   },
   "top_alerts": [
     {
-      "alert_id": "alrt_ab72d3c01815c6d3",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_1a0cfb13526146ee",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "channel",
       "entity_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
       "video_id": "",
@@ -38,9 +38,9 @@
       ]
     },
     {
-      "alert_id": "alrt_0ece02a6b076b9f3",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_43d5a868e8ae74ad",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "channel",
       "entity_id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
       "video_id": "",
@@ -67,9 +67,9 @@
       ]
     },
     {
-      "alert_id": "alrt_d71dcd9ccac67352",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_542806125f42d64d",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "channel",
       "entity_id": "UCWBWgCD4oAqT3hUeq40SCUw",
       "video_id": "",
@@ -78,14 +78,14 @@
       "title": "",
       "signal_type": "channel_high_growth",
       "severity": "critical",
-      "raw_signal_score": 97.541,
-      "adjusted_signal_score": 97.541,
+      "raw_signal_score": 98.3607,
+      "adjusted_signal_score": 98.3607,
       "metric_confidence_score": 100.0,
       "confidence_level": "high",
       "message": "Señal de canal detectada: channel_high_growth.",
       "evidence_json": {
         "threshold": 80.0,
-        "raw_signal_score": 97.541,
+        "raw_signal_score": 98.3607,
         "metric_confidence_score": 100.0
       },
       "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
@@ -96,9 +96,40 @@
       ]
     },
     {
-      "alert_id": "alrt_3cd66b2b437e9552",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_cc4ed00c2bb9d9e8",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
+      "entity_type": "video",
+      "entity_id": "ZB9IMq0ee0k",
+      "video_id": "ZB9IMq0ee0k",
+      "channel_id": "UCl5-lvQyfILb-l2abPk4Ntg",
+      "channel_name": "Inteligencia Artificial",
+      "title": "OpenAI revienta a Nano Banana 🔥🤯",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 98.6438,
+      "adjusted_signal_score": 96.9175,
+      "metric_confidence_score": 96.5,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 98.6438,
+        "metric_confidence_score": 96.5
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_70a48190985f4468",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "channel",
       "entity_id": "UCUyDOdBWhC1MCxEjC46d-zw",
       "video_id": "",
@@ -125,9 +156,71 @@
       ]
     },
     {
-      "alert_id": "alrt_fdc42d4dd8c9f92e",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_2773390251d4d10e",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
+      "entity_type": "video",
+      "entity_id": "0t118SCf-2w",
+      "video_id": "0t118SCf-2w",
+      "channel_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "channel_name": "Caleb Hammer",
+      "title": "I'm Selling Everything",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 100.0,
+      "adjusted_signal_score": 96.5,
+      "metric_confidence_score": 93.0,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 100.0,
+        "metric_confidence_score": 93.0
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_70d1ce42bf979083",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
+      "entity_type": "video",
+      "entity_id": "1gyuiKoSc-w",
+      "video_id": "1gyuiKoSc-w",
+      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "channel_name": "COMPUESTOS Podcast",
+      "title": "Bárbara Tijerina: Cómo Detectar Mentiras y Leer a Cualquier Persona en Segundos | EP. #65",
+      "signal_type": "metadata_change_watch",
+      "severity": "critical",
+      "raw_signal_score": 100.0,
+      "adjusted_signal_score": 96.5,
+      "metric_confidence_score": 93.0,
+      "confidence_level": "high",
+      "message": "Video con cambio de metadata detectado.",
+      "evidence_json": {
+        "threshold": 1.0,
+        "raw_signal_score": 100.0,
+        "metric_confidence_score": 93.0
+      },
+      "recommended_action": "Vigilar lift posterior del cambio de metadata.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_006a04e370037391",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "channel",
       "entity_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
       "video_id": "",
@@ -154,117 +247,28 @@
       ]
     },
     {
-      "alert_id": "alrt_8094739bf7cf9f14",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
-      "entity_type": "channel",
-      "entity_id": "UC1viRct91s1a3Z5yvk7FJXw",
-      "video_id": "",
-      "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
-      "channel_name": "Diego Ruzzarin",
-      "title": "",
-      "signal_type": "channel_high_growth",
-      "severity": "critical",
-      "raw_signal_score": 95.082,
-      "adjusted_signal_score": 95.082,
-      "metric_confidence_score": 100.0,
-      "confidence_level": "high",
-      "message": "Señal de canal detectada: channel_high_growth.",
-      "evidence_json": {
-        "threshold": 80.0,
-        "raw_signal_score": 95.082,
-        "metric_confidence_score": 100.0
-      },
-      "recommended_action": "Canal dominante en crecimiento; revisar estrategia.",
-      "dashboard_tab": "Channels",
-      "source_tables": [
-        "latest_channel_advanced_metrics.csv",
-        "latest_channel_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_17ad64487a51d69e",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
-      "entity_type": "channel",
-      "entity_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "video_id": "",
-      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "channel_name": "COMPUESTOS Podcast",
-      "title": "",
-      "signal_type": "channel_volatility_warning",
-      "severity": "critical",
-      "raw_signal_score": 93.2773,
-      "adjusted_signal_score": 93.2773,
-      "metric_confidence_score": 100.0,
-      "confidence_level": "high",
-      "message": "Señal de canal detectada: channel_volatility_warning.",
-      "evidence_json": {
-        "threshold": 30.0,
-        "raw_signal_score": 93.2773,
-        "metric_confidence_score": 100.0
-      },
-      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
-      "dashboard_tab": "Channels",
-      "source_tables": [
-        "latest_channel_advanced_metrics.csv",
-        "latest_channel_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_9db0e72183b76998",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
+      "alert_id": "alrt_d3aeaacc02d24077",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
       "entity_type": "video",
-      "entity_id": "V4tlvp9IP_8",
-      "video_id": "V4tlvp9IP_8",
-      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "channel_name": "COMPUESTOS Podcast",
-      "title": "¿Calidad o Cantidad en YouTube? (Respuesta por Experta)",
-      "signal_type": "high_engagement_low_reach",
+      "entity_id": "QduEFho6dLg",
+      "video_id": "QduEFho6dLg",
+      "channel_id": "UCEK0oX3X2yK9y27khCsrNKg",
+      "channel_name": "Mis Propias Finanzas",
+      "title": "\"ZENcillamente\" de Roberto Cuéllar | Club de Lectura #198",
+      "signal_type": "accelerating_video",
       "severity": "critical",
-      "raw_signal_score": 96.5317,
-      "adjusted_signal_score": 93.1531,
-      "metric_confidence_score": 93.0,
+      "raw_signal_score": 97.1067,
+      "adjusted_signal_score": 95.4073,
+      "metric_confidence_score": 96.5,
       "confidence_level": "high",
-      "message": "Alta interacción relativa con alcance bajo.",
-      "evidence_json": {
-        "threshold": 75.0,
-        "raw_signal_score": 96.5317,
-        "metric_confidence_score": 93.0
-      },
-      "recommended_action": "Posible tema fuerte con distribución baja; revisar empaque.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_aa1c1f79227045e9",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
-      "entity_type": "video",
-      "entity_id": "V4tlvp9IP_8",
-      "video_id": "V4tlvp9IP_8",
-      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
-      "channel_name": "COMPUESTOS Podcast",
-      "title": "¿Calidad o Cantidad en YouTube? (Respuesta por Experta)",
-      "signal_type": "packaging_problem",
-      "severity": "critical",
-      "raw_signal_score": 95.5931,
-      "adjusted_signal_score": 92.2473,
-      "metric_confidence_score": 93.0,
-      "confidence_level": "high",
-      "message": "Video con posible problema de empaque.",
+      "message": "Video en aceleración de crecimiento.",
       "evidence_json": {
         "threshold": 70.0,
-        "raw_signal_score": 95.5931,
-        "metric_confidence_score": 93.0
+        "raw_signal_score": 97.1067,
+        "metric_confidence_score": 96.5
       },
-      "recommended_action": "Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.",
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
       "dashboard_tab": "Signals",
       "source_tables": [
         "latest_video_scores.csv",
@@ -274,32 +278,34 @@
       ]
     },
     {
-      "alert_id": "alrt_4913e9bcdd0034f2",
-      "execution_date": "2026-05-05T00:32:20.257721+00:00",
-      "generated_at": "2026-05-05T00:33:43.174387+00:00",
-      "entity_type": "channel",
-      "entity_id": "UCbUYAYd1WUznxEEl498z7vA",
-      "video_id": "",
-      "channel_id": "UCbUYAYd1WUznxEEl498z7vA",
-      "channel_name": "Woshingo Streams",
-      "title": "",
-      "signal_type": "channel_volatility_warning",
+      "alert_id": "alrt_856ee2333bed6c35",
+      "execution_date": "2026-05-05T00:55:00.823465+00:00",
+      "generated_at": "2026-05-05T00:56:39.379345+00:00",
+      "entity_type": "video",
+      "entity_id": "sa3zzPEnz_4",
+      "video_id": "sa3zzPEnz_4",
+      "channel_id": "UCP15FVAA2UL-QOcGhy7-ezA",
+      "channel_name": "EDteam",
+      "title": "Claude ahora diseña. Lo probamos SIN HUMO ¿Mató a Figma?",
+      "signal_type": "accelerating_video",
       "severity": "critical",
-      "raw_signal_score": 99.1597,
-      "adjusted_signal_score": 92.2185,
-      "metric_confidence_score": 86.0,
+      "raw_signal_score": 98.5533,
+      "adjusted_signal_score": 95.104,
+      "metric_confidence_score": 93.0,
       "confidence_level": "high",
-      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "message": "Video en aceleración de crecimiento.",
       "evidence_json": {
-        "threshold": 30.0,
-        "raw_signal_score": 99.1597,
-        "metric_confidence_score": 86.0
+        "threshold": 70.0,
+        "raw_signal_score": 98.5533,
+        "metric_confidence_score": 93.0
       },
-      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
-      "dashboard_tab": "Channels",
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
       "source_tables": [
-        "latest_channel_advanced_metrics.csv",
-        "latest_channel_metrics.csv"
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
       ]
     }
   ],

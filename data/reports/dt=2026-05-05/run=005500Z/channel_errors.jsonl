@@ -1,0 +1,14 @@
+{"stage": "resolver", "channel_url": "https://www.youtube.com/c/Myprimermillón", "channel_id": "", "channel_name": "", "error": "Unsupported YouTube channel URL format: https://www.youtube.com/c/Myprimermillón"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/c/Caf%C3%A9Kyoto", "channel_id": "", "channel_name": "", "error": "Unsupported YouTube channel URL format: https://www.youtube.com/c/Caf%C3%A9Kyoto"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@DEMENTESMedia", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@comofuncionatunegocio", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@irenesauriox", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@noctivoyt", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@ALXI_ESSAY", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@clem/videos", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@Antroporama", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "resolver", "channel_url": "https://www.youtube.com/@TomScott", "channel_id": "", "channel_name": "", "error": "Channel not found"}
+{"stage": "discovery", "channel_id": "", "channel_name": "", "uploads_playlist_id": "", "error": "Unsupported YouTube channel URL format: https://www.youtube.com/c/Myprimermillón"}
+{"stage": "discovery", "channel_id": "UCn4EBiooSyj7MSRBaPpK5_w", "channel_name": "MoureDe3454", "uploads_playlist_id": "UUn4EBiooSyj7MSRBaPpK5_w", "error": "Non-retryable YouTube API error 404 on playlistItems.list"}
+{"stage": "discovery", "channel_id": "UCIj1hc-rCC6PG2zJqMGVOFw", "channel_name": "Joma", "uploads_playlist_id": "UUIj1hc-rCC6PG2zJqMGVOFw", "error": "Non-retryable YouTube API error 404 on playlistItems.list"}
+{"stage": "enrichment", "video_id": "2AOH5hgKzpU", "error": "video_unavailable"}
