@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import shutil
 import subprocess
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,6 +26,24 @@ YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _materialize_cookies_file_from_b64(*, ytdlp_cookies_b64: str | None) -> str | None:
+    raw = (ytdlp_cookies_b64 or "").strip()
+    if not raw:
+        return None
+    try:
+        decoded = base64.b64decode(raw, validate=True)
+    except Exception:
+        return None
+    handle = tempfile.NamedTemporaryFile(prefix="yt_cookies_", suffix=".txt", delete=False)
+    try:
+        handle.write(decoded)
+        handle.flush()
+    finally:
+        handle.close()
+    os.chmod(handle.name, 0o600)
+    return handle.name
 
 
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -161,6 +181,7 @@ def transcribe_selected_videos(
     ytdlp_cookies_file: str | None = None,
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
+    ytdlp_cookies_b64: str | None = None,
 ) -> dict[str, Any]:
     root = Path(data_dir)
     transcript_dir = root / "transcripts"
@@ -210,6 +231,12 @@ def transcribe_selected_videos(
     ytdlp_download_failures: list[dict[str, Any]] = []
     registry_success_before_run = len(success_ids)
 
+    generated_cookies_file: str | None = None
+    effective_cookies_file = ytdlp_cookies_file
+    if not effective_cookies_file:
+        generated_cookies_file = _materialize_cookies_file_from_b64(ytdlp_cookies_b64=ytdlp_cookies_b64 or os.getenv("YTDLP_COOKIES_B64"))
+        effective_cookies_file = generated_cookies_file
+
     source_root = Path(audio_source_dir)
     source_root_exists = source_root.exists()
     source_root_is_dir = source_root.is_dir()
@@ -236,7 +263,7 @@ def transcribe_selected_videos(
                 audio_path, ytdlp_error, ytdlp_error_category = _download_audio_with_ytdlp(
                     video_id=video_id,
                     audio_source_dir=source_root,
-                    ytdlp_cookies_file=ytdlp_cookies_file,
+                    ytdlp_cookies_file=effective_cookies_file,
                     ytdlp_browser=ytdlp_browser,
                     ytdlp_extra_args=ytdlp_extra_args,
                 )
@@ -387,7 +414,7 @@ def transcribe_selected_videos(
         "audio_source_files_sample": available_audio_files_sample,
         "allow_ytdlp_fallback": allow_ytdlp_fallback,
         "ytdlp_runtime_options": {
-            "used_cookies_file": bool(ytdlp_cookies_file),
+            "used_cookies_file": bool(effective_cookies_file),
             "used_browser_mode": bool(ytdlp_browser),
             "extra_args_count": len(ytdlp_extra_args or []),
         },
@@ -405,4 +432,6 @@ def transcribe_selected_videos(
     }
     (transcript_dir / "transcription_run_report.json").parent.mkdir(parents=True, exist_ok=True)
     (transcript_dir / "transcription_run_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    if generated_cookies_file:
+        Path(generated_cookies_file).unlink(missing_ok=True)
     return report

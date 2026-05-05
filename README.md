@@ -60,6 +60,7 @@ python -m pip install -e .
 python -m pip install -r requirements.txt
 ```
 
+
 ## 6) Configurar API key local
 
 ```bash
@@ -420,10 +421,10 @@ Para habilitar cookies de `yt-dlp` en CI (opcional):
 1. Exporta un `cookies.txt` vigente desde tu navegador/perfil autorizado.
 2. `Settings` > `Secrets and variables` > `Actions`
 3. `New repository secret`
-4. Name: `YTDLP_COOKIES_TXT`
+4. Name: `YTDLP_COOKIES_B64`
 5. Value: contenido completo del archivo `cookies.txt` (texto plano, multi-línea).
 
-Rotación recomendada de `YTDLP_COOKIES_TXT`:
+Rotación recomendada de `YTDLP_COOKIES_B64`:
 - Reemplazar el secret cuando expire la sesión/cookie o falle descarga por autenticación.
 - Rotar preventivamente (por ejemplo mensual) y después de cambios de contraseña o eventos de seguridad.
 - Validar el siguiente run de `monitor.yml`; si falta el secret, el workflow continúa con warning y fallback sin cookies.

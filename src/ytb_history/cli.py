@@ -126,6 +126,7 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--ytdlp-cookies-file")
     transcribe_parser.add_argument("--ytdlp-browser")
     transcribe_parser.add_argument("--ytdlp-extra-args")
+    transcribe_parser.add_argument("--ytdlp-cookies-b64")
 
     insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
     insights_parser.add_argument("--data-dir", default="data")
@@ -278,6 +279,7 @@ def main() -> int:
             ytdlp_cookies_file=args.ytdlp_cookies_file,
             ytdlp_browser=args.ytdlp_browser,
             ytdlp_extra_args=ytdlp_extra_args,
+            ytdlp_cookies_b64=args.ytdlp_cookies_b64,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
