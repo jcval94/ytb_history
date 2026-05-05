@@ -1,0 +1,13 @@
+{
+  "execution_date": "2026-05-05T01:45:35.283450+00:00",
+  "source_run_summary_path": "data/reports/dt=2026-05-05/run=014535Z/run_summary.json",
+  "source_quota_report_path": "data/reports/dt=2026-05-05/run=014535Z/quota_report.json",
+  "source_snapshot_path": "data/snapshots/dt=2026-05-05/run=014535Z/snapshots.jsonl.gz",
+  "source_delta_path": "data/deltas/dt=2026-05-05/run=014535Z/deltas.jsonl.gz",
+  "export_dir": "data/exports/dt=2026-05-05/run=014535Z",
+  "snapshots_exported": 1117,
+  "deltas_exported": 1117,
+  "growth_rows_exported": 1117,
+  "generated_at": "2026-05-05T01:46:53.426866+00:00",
+  "warnings": []
+}

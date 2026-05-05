@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T01:27:16.567709+00:00",
-  "source_export_dir": "data/exports/dt=2026-05-05/run=012527Z",
+  "generated_at": "2026-05-05T01:46:55.602574+00:00",
+  "source_export_dir": "data/exports/dt=2026-05-05/run=014535Z",
   "outputs": [
     "analytics/latest/latest_video_metrics.csv",
     "analytics/latest/latest_channel_metrics.csv",
