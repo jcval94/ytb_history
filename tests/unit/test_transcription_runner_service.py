@@ -61,6 +61,7 @@ def test_transcribes_local_audio_and_updates_registry(tmp_path: Path, monkeypatc
 def test_skips_no_audio_source(tmp_path: Path, monkeypatch) -> None:
     _write_queue(tmp_path, ["v1"])
     monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: None)
 
     report = transcribe_selected_videos(data_dir=tmp_path, limit=10, audio_source_dir=tmp_path / "missing", openai_client=FakeOpenAIClient())
     assert report["skipped_no_audio_source"] == 0
