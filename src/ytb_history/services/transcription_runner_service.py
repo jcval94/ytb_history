@@ -6,6 +6,7 @@ import json
 import os
 import shutil
 import subprocess
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -18,6 +19,7 @@ from ytb_history.services.transcript_store_service import (
 )
 
 AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
+YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
 
 
 def _now_iso() -> str:
@@ -65,6 +67,16 @@ def _classify_ytdlp_error(stderr: str) -> str:
     return "unknown"
 
 
+
+
+def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
+    """Ordered yt-dlp strategies tuned to avoid cookies while improving reliability."""
+    return [
+        ("android", ["--extractor-args", "youtube:player_client=android"]),
+        ("ios", ["--extractor-args", "youtube:player_client=ios"]),
+        ("web", ["--extractor-args", "youtube:player_client=web"]),
+    ]
+
 def _download_audio_with_ytdlp(
     *,
     video_id: str,
@@ -78,39 +90,58 @@ def _download_audio_with_ytdlp(
         return None, "yt_dlp_not_installed", "tooling_missing"
     audio_source_dir.mkdir(parents=True, exist_ok=True)
     output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
-    cmd = [
-        ytdlp_bin,
-        "--no-playlist",
-        "--format",
-        "bestaudio[ext=m4a]/bestaudio/best",
-        "--retries",
-        "3",
-        "--fragment-retries",
-        "3",
-        "--socket-timeout",
-        "30",
-        "-x",
-        "--audio-format",
-        "mp3",
-        "-o",
-        output_template,
-    ]
-    if ytdlp_cookies_file:
-        cmd.extend(["--cookies", ytdlp_cookies_file])
-    if ytdlp_browser:
-        cmd.extend(["--cookies-from-browser", ytdlp_browser])
-    if ytdlp_extra_args:
-        cmd.extend(ytdlp_extra_args)
-    cmd.append(_youtube_watch_url(video_id))
-    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-    if result.returncode != 0:
+
+    last_error = "yt_dlp_failed:unknown"
+    last_error_category = "unknown"
+    strategies = _ytdlp_download_strategies()
+    for strategy_idx, (strategy_name, strategy_args) in enumerate(strategies):
+        cmd = [
+            ytdlp_bin,
+            "--no-playlist",
+            "--format",
+            "bestaudio[ext=m4a]/bestaudio/best",
+            "--retries",
+            "5",
+            "--fragment-retries",
+            "5",
+            "--socket-timeout",
+            "30",
+            "--force-ipv4",
+            "-x",
+            "--audio-format",
+            "mp3",
+            "-o",
+            output_template,
+        ]
+        cmd.extend(strategy_args)
+        if ytdlp_cookies_file:
+            cmd.extend(["--cookies", ytdlp_cookies_file])
+        if ytdlp_browser:
+            cmd.extend(["--cookies-from-browser", ytdlp_browser])
+        if ytdlp_extra_args:
+            cmd.extend(ytdlp_extra_args)
+        cmd.append(_youtube_watch_url(video_id))
+
+        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        if result.returncode == 0:
+            audio_path = _find_audio_source(audio_source_dir, video_id)
+            if audio_path is not None:
+                return audio_path, None, None
+            last_error = f"yt_dlp_completed_but_audio_not_found:strategy={strategy_name}"
+            last_error_category = "unknown"
+            continue
+
         stderr_full = (result.stderr or "").strip()
         stderr_tail = stderr_full[-300:]
-        return None, f"yt_dlp_failed:code={result.returncode};stderr={stderr_tail}", _classify_ytdlp_error(stderr_full)
-    audio_path = _find_audio_source(audio_source_dir, video_id)
-    if audio_path is None:
-        return None, "yt_dlp_completed_but_audio_not_found", "unknown"
-    return audio_path, None, None
+        last_error = f"yt_dlp_failed:strategy={strategy_name};code={result.returncode};stderr={stderr_tail}"
+        last_error_category = _classify_ytdlp_error(stderr_full)
+        if last_error_category in {"video_unavailable", "auth_required"}:
+            break
+        has_more_strategies = strategy_idx < len(strategies) - 1
+        if has_more_strategies:
+            time.sleep(YTDLP_STRATEGY_COOLDOWN_SECONDS)
+
+    return None, last_error, last_error_category
 
 
 def transcribe_selected_videos(
