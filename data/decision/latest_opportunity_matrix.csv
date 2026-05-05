@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,68,65.5784,78.5677,68.0074,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,46,66.6963,78.0461,69.5978,Qy_YMLKX8bQ,Me voló la cabeza cuando Nietzche dijo esto #shorts,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,3,64.8102,65.2329,61.5,gpfhjHmbmIE,Semana Triste Para Los YouTubers,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,228,57.0138,68.1067,82.7741,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,53,63.5496,88.0,71.2925,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Cook Makes $4,000 a Month Forever",Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,317,63.1999,85.6662,78.1845,UCF0L4jd9LcSIxsj5gKITMqQ,Me voló la cabeza cuando Nietzche dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,79.2457,79.2457,72.0,Jnc7hVslXdk,"""La Ecuación de la Felicidad"" (The Happiness Equation) de Neil Pasricha | Club de Lectura #196",Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,241,55.876,67.6917,79.7109,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,53,66.2491,88.0,75.217,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Cook Makes $4,000 a Month Forever",Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,172,65.2141,85.6662,81.3765,UCF0L4jd9LcSIxsj5gKITMqQ,Me voló la cabeza cuando Nietzche dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
