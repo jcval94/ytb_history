@@ -70,10 +70,16 @@ def _classify_ytdlp_error(stderr: str) -> str:
 
 
 def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
-    """Ordered yt-dlp strategies tuned to avoid cookies while improving reliability."""
+    """Ordered yt-dlp strategies tuned for robust cookie-less audio extraction.
+
+    We prioritize non-browser clients first because they are less likely to trigger
+    session or cookie challenges, then finish with web-compatible clients.
+    """
     return [
         ("android", ["--extractor-args", "youtube:player_client=android"]),
         ("ios", ["--extractor-args", "youtube:player_client=ios"]),
+        ("mweb", ["--extractor-args", "youtube:player_client=mweb"]),
+        ("tv_simply", ["--extractor-args", "youtube:player_client=tv_simply"]),
         ("web", ["--extractor-args", "youtube:player_client=web"]),
     ]
 

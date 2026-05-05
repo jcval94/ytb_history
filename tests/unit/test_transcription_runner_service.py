@@ -191,7 +191,7 @@ def test_ytdlp_strategy_retries_apply_cooldown_between_attempts(tmp_path: Path, 
     assert audio_path is None
     assert error is not None and "strategy=web" in error
     assert error_category == "network_or_rate_limit"
-    assert sleep_calls == [transcription_runner_service.YTDLP_STRATEGY_COOLDOWN_SECONDS] * 2
+    assert sleep_calls == [transcription_runner_service.YTDLP_STRATEGY_COOLDOWN_SECONDS] * (len(transcription_runner_service._ytdlp_download_strategies()) - 1)
 
 
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
