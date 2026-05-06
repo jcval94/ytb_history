@@ -445,6 +445,8 @@ python -m pip install yt-dlp
 yt-dlp --version
 ```
 
+El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
+
 Uso local recomendado cuando `yt-dlp` requiere autenticación/cookies:
 ```bash
 python -m ytb_history.cli transcribe-selected-videos \

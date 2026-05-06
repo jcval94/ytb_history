@@ -9,6 +9,13 @@ from ytb_history.services import transcription_runner_service
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
 
 
+def _strategy_name_from_ytdlp_cmd(cmd: list[str]) -> str:
+    if "--extractor-args" not in cmd:
+        return "default"
+    extractor_args = cmd[cmd.index("--extractor-args") + 1]
+    return extractor_args.removeprefix("youtube:player_client=")
+
+
 class FakeOpenAIClient:
     def __init__(self) -> None:
         self.calls: list[tuple[str, str]] = []
@@ -128,6 +135,8 @@ def test_download_audio_with_ytdlp_includes_preferred_audio_format(tmp_path: Pat
     assert captured_cmd[captured_cmd.index("--format") + 1] == "bestaudio[ext=m4a]/bestaudio/best"
     assert "-x" in captured_cmd
     assert captured_cmd[captured_cmd.index("--audio-format") + 1] == "mp3"
+    assert captured_cmd[captured_cmd.index("--audio-quality") + 1] == "5"
+    assert "--extractor-args" not in captured_cmd
     assert captured_cmd[-1] == "https://www.youtube.com/watch?v=v1"
 
 
@@ -136,12 +145,8 @@ def test_ytdlp_auth_required_with_cookies_continues_to_later_strategy(tmp_path: 
     monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
     attempted_strategies: list[str] = []
 
-    def _strategy_name(cmd: list[str]) -> str:
-        extractor_args = cmd[cmd.index("--extractor-args") + 1]
-        return extractor_args.removeprefix("youtube:player_client=")
-
     def _fake_run(cmd: list[str], **_kwargs):
-        strategy_name = _strategy_name(cmd)
+        strategy_name = _strategy_name_from_ytdlp_cmd(cmd)
         attempted_strategies.append(strategy_name)
         assert "--cookies" in cmd
         assert cmd[cmd.index("--cookies") + 1] == "/tmp/cookies.txt"
@@ -162,7 +167,7 @@ def test_ytdlp_auth_required_with_cookies_continues_to_later_strategy(tmp_path: 
         ytdlp_cookies_file="/tmp/cookies.txt",
     )
 
-    assert attempted_strategies == ["android", "ios", "mweb"]
+    assert attempted_strategies == ["default", "android", "ios", "mweb"]
     assert audio_path == tmp_path / "audio" / "v1.mp3"
     assert error is None
     assert error_category is None
@@ -174,8 +179,7 @@ def test_ytdlp_auth_required_with_cookies_exhausts_all_strategies(tmp_path: Path
     attempted_strategies: list[str] = []
 
     def _fake_run(cmd: list[str], **_kwargs):
-        extractor_args = cmd[cmd.index("--extractor-args") + 1]
-        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        attempted_strategies.append(_strategy_name_from_ytdlp_cmd(cmd))
         return subprocess.CompletedProcess(
             args=cmd,
             returncode=1,
@@ -201,8 +205,7 @@ def test_ytdlp_auth_required_without_auth_context_stops_after_first_strategy(tmp
     attempted_strategies: list[str] = []
 
     def _fake_run(cmd: list[str], **_kwargs):
-        extractor_args = cmd[cmd.index("--extractor-args") + 1]
-        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        attempted_strategies.append(_strategy_name_from_ytdlp_cmd(cmd))
         return subprocess.CompletedProcess(
             args=cmd,
             returncode=1,
@@ -216,9 +219,9 @@ def test_ytdlp_auth_required_without_auth_context_stops_after_first_strategy(tmp
         audio_source_dir=tmp_path / "audio",
     )
 
-    assert attempted_strategies == ["android"]
+    assert attempted_strategies == ["default"]
     assert audio_path is None
-    assert error is not None and "strategy=android" in error
+    assert error is not None and "strategy=default" in error
     assert error_category == "auth_required"
 
 
@@ -227,8 +230,7 @@ def test_ytdlp_video_unavailable_stops_after_first_strategy_even_with_cookies(tm
     attempted_strategies: list[str] = []
 
     def _fake_run(cmd: list[str], **_kwargs):
-        extractor_args = cmd[cmd.index("--extractor-args") + 1]
-        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        attempted_strategies.append(_strategy_name_from_ytdlp_cmd(cmd))
         return subprocess.CompletedProcess(
             args=cmd,
             returncode=1,
@@ -243,9 +245,9 @@ def test_ytdlp_video_unavailable_stops_after_first_strategy_even_with_cookies(tm
         ytdlp_cookies_file="/tmp/cookies.txt",
     )
 
-    assert attempted_strategies == ["android"]
+    assert attempted_strategies == ["default"]
     assert audio_path is None
-    assert error is not None and "strategy=android" in error
+    assert error is not None and "strategy=default" in error
     assert error_category == "video_unavailable"
 
 
