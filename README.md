@@ -447,6 +447,10 @@ yt-dlp --version
 
 El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
 
+Si el reporte muestra `used_cookies_file: true` pero también `ytdlp_auth_required_despite_cookies`, el archivo sí fue pasado a `yt-dlp`, pero YouTube no aceptó esa sesión desde el entorno de ejecución; rota/exporta nuevamente cookies o valida el mismo `cookies.txt` con `yt-dlp --cookies cookies.txt -F URL` en el entorno donde falla.
+
+La cola de transcripción descarta IDs con formato de canal (`UC...`) cuando aparecen por error en campos `video_id`/`source_video_id`; esos casos se reportan como `invalid_video_ids_skipped` o `skipped_invalid_video_id` para evitar llamadas inútiles a `yt-dlp` contra URLs `watch?v=<channel_id>`.
+
 Uso local recomendado cuando `yt-dlp` requiere autenticación/cookies:
 ```bash
 python -m ytb_history.cli transcribe-selected-videos \

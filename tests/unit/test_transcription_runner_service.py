@@ -380,3 +380,35 @@ def test_reports_sanitized_ytdlp_runtime_metadata(tmp_path: Path, monkeypatch) -
     assert report["ytdlp_runtime_options"]["used_cookies_file"] is True
     assert report["ytdlp_runtime_options"]["used_browser_mode"] is True
     assert report["ytdlp_runtime_options"]["extra_args_count"] == 2
+
+
+def test_transcribe_skips_probable_channel_id_without_ytdlp(tmp_path: Path, monkeypatch) -> None:
+    channel_id = "UCWBWgCD4oAqT3hUeq40SCUw"
+    _write_queue(tmp_path, [channel_id])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    def _fail_if_called(_name: str):
+        raise AssertionError("yt-dlp lookup should not be needed for invalid video IDs")
+
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", _fail_if_called)
+
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=10,
+        audio_source_dir=tmp_path / "audio",
+        openai_client=FakeOpenAIClient(),
+    )
+
+    assert report["processed"] == 1
+    assert report["skipped_invalid_video_id"] == 1
+    assert report["ytdlp_download_attempts"] == 0
+    assert report["invalid_video_id_details"] == [
+        {
+            "video_id": channel_id,
+            "video_url": f"https://www.youtube.com/watch?v={channel_id}",
+            "reason": "probable_channel_id_in_video_id_field",
+        }
+    ]
+    registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    assert registry_rows[-1]["status"] == "skipped_invalid_video_id"
+    assert registry_rows[-1]["error_category"] == "invalid_video_id"

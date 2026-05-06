@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
+
 CREATIVE_PACKAGES_COLUMNS = [
     "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
 ]
@@ -183,8 +185,12 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
     originality_rows: list[dict[str, Any]] = []
     checklist_rows: list[dict[str, Any]] = []
 
+    skipped_invalid_source_video_ids = 0
     for idx, action in enumerate(actions, start=1):
-        video_id = action.get("video_id") or action.get("entity_id") or ""
+        video_id = str(action.get("video_id") or "").strip()
+        if not is_transcribable_video_id_candidate(video_id):
+            skipped_invalid_source_video_ids += 1
+            continue
         opp = opp_by_video.get(video_id, {})
         topic_row = topic_by_video.get(video_id, {})
         merged = {**action, **opp, **topic_row}
@@ -371,6 +377,9 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
     _write_csv(out_dir / "latest_originality_checks.csv", ORIGINALITY_COLUMNS, originality_rows)
     _write_csv(out_dir / "latest_production_checklist.csv", CHECKLIST_COLUMNS, checklist_rows)
 
+    if skipped_invalid_source_video_ids:
+        warnings.append(f"skipped_invalid_source_video_ids:{skipped_invalid_source_video_ids}")
+
     outputs = {
         "creative_packages": str(out_dir / "latest_creative_packages.csv"),
         "title_candidates": str(out_dir / "latest_title_candidates.csv"),
@@ -385,6 +394,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
     summary = {
         "generated_at": now,
         "total_packages": len(creative_rows),
+        "skipped_invalid_source_video_id_count": skipped_invalid_source_video_ids,
         "package_type_counts": dict(Counter(row["package_type"] for row in creative_rows)),
         "top_packages": sorted([
             {"creative_package_id": row["creative_package_id"], "creative_execution_score": row["creative_execution_score"]}
@@ -400,6 +410,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
         "status": "warning" if warnings else "success",
         "creative_packages_dir": str(out_dir),
         "total_packages": len(creative_rows),
+        "skipped_invalid_source_video_id_count": skipped_invalid_source_video_ids,
         "outputs": outputs,
         "warnings": warnings,
     }

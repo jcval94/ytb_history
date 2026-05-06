@@ -19,6 +19,7 @@ from ytb_history.services.transcript_store_service import (
     update_transcript_registry,
     write_transcript_artifacts,
 )
+from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
 YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
@@ -229,6 +230,7 @@ def transcribe_selected_videos(
     processed = 0
     transcribed_success = 0
     skipped_no_audio_source = 0
+    skipped_invalid_video_id = 0
     skipped_missing_ytdlp = 0
     failed_audio_download = 0
     skipped_already_transcribed = 0
@@ -236,6 +238,7 @@ def transcribe_selected_videos(
     warnings: list[str] = []
     missing_audio_video_ids: list[str] = []
     missing_audio_details: list[dict[str, Any]] = []
+    invalid_video_id_details: list[dict[str, Any]] = []
     already_transcribed_video_ids: list[str] = []
     success_video_ids: list[str] = []
     failed_video_ids: list[str] = []
@@ -268,6 +271,47 @@ def transcribe_selected_videos(
             continue
 
         processed += 1
+        if not is_transcribable_video_id_candidate(video_id):
+            skipped_invalid_video_id += 1
+            detail = {
+                "video_id": video_id,
+                "video_url": _youtube_watch_url(video_id),
+                "reason": "probable_channel_id_in_video_id_field",
+            }
+            invalid_video_id_details.append(detail)
+            missing_audio_video_ids.append(video_id)
+            missing_audio_details.append(
+                {
+                    "video_id": video_id,
+                    "audio_source_dir": str(source_root),
+                    "audio_source_dir_exists": source_root_exists,
+                    "audio_source_dir_is_dir": source_root_is_dir,
+                    "video_url": _youtube_watch_url(video_id),
+                    "attempted_paths": [],
+                    "ytdlp_error": "invalid_video_id:probable_channel_id",
+                    "ytdlp_error_category": "invalid_video_id",
+                }
+            )
+            update_transcript_registry(
+                data_dir=data_dir,
+                entry={
+                    "video_id": video_id,
+                    "channel_id": row.get("channel_id", ""),
+                    "channel_name": row.get("channel_name", ""),
+                    "title": row.get("title", ""),
+                    "selected_at": row.get("selected_at"),
+                    "transcribed_at": None,
+                    "status": "skipped_invalid_video_id",
+                    "transcript_path": None,
+                    "metadata_path": None,
+                    "insights_path": None,
+                    "source_type": "unknown",
+                    "text_char_count": 0,
+                    "error_category": "invalid_video_id",
+                    "error_message": "probable channel_id found in video_id field; yt-dlp was not called",
+                },
+            )
+            continue
         audio_path = _find_audio_source(source_root, video_id)
         if audio_path is None:
             ytdlp_error: str | None = None
@@ -410,12 +454,21 @@ def transcribe_selected_videos(
                 },
             )
 
+    auth_required_with_cookies_count = (
+        sum(1 for failure in ytdlp_download_failures if failure.get("error_category") == "auth_required")
+        if effective_cookies_file
+        else 0
+    )
+    if auth_required_with_cookies_count:
+        warnings.append("ytdlp_auth_required_despite_cookies")
+
     report = {
         "generated_at": _now_iso(),
         "limit": limit,
         "processed": processed,
         "transcribed_success": transcribed_success,
         "skipped_no_audio_source": skipped_no_audio_source,
+        "skipped_invalid_video_id": skipped_invalid_video_id,
         "skipped_missing_ytdlp": skipped_missing_ytdlp,
         "failed_audio_download": failed_audio_download,
         "skipped_already_transcribed": skipped_already_transcribed,
@@ -434,12 +487,14 @@ def transcribe_selected_videos(
         },
         "ytdlp_download_attempts": ytdlp_download_attempts,
         "ytdlp_download_success": ytdlp_download_success,
+        "ytdlp_auth_required_with_cookies_count": auth_required_with_cookies_count,
         "ytdlp_download_failures": ytdlp_download_failures,
         "processed_video_ids": success_video_ids + missing_audio_video_ids + failed_video_ids,
         "success_video_ids": success_video_ids,
         "already_transcribed_video_ids": already_transcribed_video_ids,
         "missing_audio_video_ids": missing_audio_video_ids,
         "missing_audio_details": missing_audio_details,
+        "invalid_video_id_details": invalid_video_id_details,
         "failed_video_ids": failed_video_ids,
         "failed_details": failed_details,
         "warnings": warnings,

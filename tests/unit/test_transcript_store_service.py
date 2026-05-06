@@ -71,6 +71,7 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
         {"video_id": "v2", "status": "failed"},
         {"video_id": "v3", "status": "success"},
         {"video_id": "v4", "status": "skipped_missing_ytdlp"},
+        {"video_id": "v4b", "status": "skipped_invalid_video_id", "error_category": "invalid_video_id"},
         {"video_id": "v5", "status": "failed_audio_download"},
         {"video_id": "v6", "status": "failed_audio_download_auth_required", "error_category": "auth_required"},
         {"video_id": "v7", "status": "failed_audio_download_video_unavailable", "error_category": "video_unavailable"},
@@ -83,11 +84,13 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
     assert report["failed_count"] == 1
     assert report["success_count"] == 1
     assert report["skipped_missing_ytdlp_count"] == 1
+    assert report["skipped_invalid_video_id_count"] == 1
     assert report["failed_audio_download_count"] == 1
     assert report["failed_audio_download_auth_required_count"] == 1
     assert report["failed_audio_download_video_unavailable_count"] == 1
     assert report["failed_audio_download_network_or_rate_limit_count"] == 1
     assert report["error_category_counts"]["auth_required"] == 1
+    assert report["error_category_counts"]["invalid_video_id"] == 1
     assert report["error_category_counts"]["video_unavailable"] == 1
     assert report["error_category_counts"]["network_or_rate_limit"] == 1
     assert report["skipped_no_audio_source_count"] == 0
