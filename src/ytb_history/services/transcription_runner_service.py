@@ -103,6 +103,14 @@ def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
         ("web", ["--extractor-args", "youtube:player_client=web"]),
     ]
 
+def _should_stop_ytdlp_strategy_retries(*, error_category: str, has_auth_context: bool) -> bool:
+    if error_category == "video_unavailable":
+        return True
+    if error_category == "auth_required":
+        return not has_auth_context
+    return False
+
+
 def _download_audio_with_ytdlp(
     *,
     video_id: str,
@@ -120,6 +128,7 @@ def _download_audio_with_ytdlp(
     last_error = "yt_dlp_failed:unknown"
     last_error_category = "unknown"
     strategies = _ytdlp_download_strategies()
+    has_auth_context = bool(ytdlp_cookies_file or ytdlp_browser)
     for strategy_idx, (strategy_name, strategy_args) in enumerate(strategies):
         cmd = [
             ytdlp_bin,
@@ -161,7 +170,7 @@ def _download_audio_with_ytdlp(
         stderr_tail = stderr_full[-300:]
         last_error = f"yt_dlp_failed:strategy={strategy_name};code={result.returncode};stderr={stderr_tail}"
         last_error_category = _classify_ytdlp_error(stderr_full)
-        if last_error_category in {"video_unavailable", "auth_required"}:
+        if _should_stop_ytdlp_strategy_retries(error_category=last_error_category, has_auth_context=has_auth_context):
             break
         has_more_strategies = strategy_idx < len(strategies) - 1
         if has_more_strategies:
