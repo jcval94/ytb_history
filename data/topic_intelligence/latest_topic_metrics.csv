@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-ai_tools,317,72,487053.0,1536.4448,0.05444,42.6911,15.0089,6.1878,0.0,80.0,64.2766,58.9242,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
-unknown,758,107,1243072.0,1639.9367,0.054795,44.4901,14.8047,6.0966,0.0,100.0,76.8017,77.9333,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
-news_trends,20,12,8533.0,426.65,0.061734,49.0939,8.3007,3.3203,0.0,60.0,24.0,52.2281,OTt76d3wPiQ,Revisando las noticias en vivo #15 ''Sonidos de guillotina'',Diego Ruzzarin
-tutorial,63,20,6784.0,107.6825,0.04552,32.9831,19.5786,8.0753,0.0,0.0,43.7143,19.6768,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
-finance_personal,40,20,4968.0,124.2,0.054768,42.5907,24.4736,9.9977,0.0,20.0,40.125,35.4257,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés
-productivity,14,8,4532.0,323.7143,0.794854,47.2464,28.7371,11.6663,0.0,40.0,10.3571,46.5274,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
+ai_tools,318,72,385230.0,1211.4151,0.054607,41.9256,11.6683,4.8703,0.0,80.0,63.8194,62.4087,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
+unknown,762,107,1060424.0,1391.6325,0.055076,44.7261,13.3479,5.4901,0.0,100.0,76.8335,77.857,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
+tutorial,63,20,6151.0,97.6349,0.045725,33.3091,17.6477,7.1694,0.0,0.0,43.7143,19.5445,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+news_trends,20,12,6719.0,335.95,0.061589,50.5631,9.2632,3.7053,0.0,60.0,24.0,52.5255,OTt76d3wPiQ,Revisando las noticias en vivo #15 ''Sonidos de guillotina'',Diego Ruzzarin
+finance_personal,40,20,4138.0,103.45,0.054506,41.0609,17.8973,7.2862,0.0,20.0,40.125,30.6539,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés
+productivity,14,8,4210.0,300.7143,0.865004,50.051,32.7146,13.9441,0.0,40.0,12.0238,47.9036,rfRFwXnk660,Salvá a tus hijos (estás a tiempo),Aprendiz Financiero
