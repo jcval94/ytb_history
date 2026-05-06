@@ -87,21 +87,24 @@ def _classify_ytdlp_error(stderr: str) -> str:
     return "unknown"
 
 
-
-
 def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
-    """Ordered yt-dlp strategies tuned for robust cookie-less audio extraction.
+    """Ordered yt-dlp strategies tuned for robust audio extraction.
 
-    We prioritize non-browser clients first because they are less likely to trigger
-    session or cookie challenges, then finish with web-compatible clients.
+    Start with yt-dlp's own YouTube defaults because that matches the simplest
+    successful local/Colab command (`yt-dlp -x --audio-format mp3 ...`) and lets
+    yt-dlp select the currently recommended player clients. Explicit clients are
+    retained as fallbacks for environments where one client is temporarily more
+    reliable than the defaults.
     """
     return [
+        ("default", []),
         ("android", ["--extractor-args", "youtube:player_client=android"]),
         ("ios", ["--extractor-args", "youtube:player_client=ios"]),
         ("mweb", ["--extractor-args", "youtube:player_client=mweb"]),
         ("tv_simply", ["--extractor-args", "youtube:player_client=tv_simply"]),
         ("web", ["--extractor-args", "youtube:player_client=web"]),
     ]
+
 
 def _should_stop_ytdlp_strategy_retries(*, error_category: str, has_auth_context: bool) -> bool:
     if error_category == "video_unavailable":
@@ -145,6 +148,8 @@ def _download_audio_with_ytdlp(
             "-x",
             "--audio-format",
             "mp3",
+            "--audio-quality",
+            "5",
             "-o",
             output_template,
         ]
