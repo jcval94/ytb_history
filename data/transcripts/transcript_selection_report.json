@@ -1,35 +1,32 @@
 {
-  "generated_at": "2026-05-05T22:37:27.755547+00:00",
+  "generated_at": "2026-05-06T00:15:06.193540+00:00",
   "limit": 10,
-  "candidates_considered": 1258,
-  "selected_count": 18,
-  "selected_forced_count": 8,
+  "candidates_considered": 1268,
+  "selected_count": 10,
+  "selected_forced_count": 0,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
   ],
-  "forced_channels_matched": [
-    "https://www.youtube.com/@bilinkis",
-    "https://www.youtube.com/veritasium"
-  ],
+  "forced_channels_matched": [],
   "forced_channels_max_per_run": 50,
   "registry_existing_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 10,
+  "registry_existing_recent_failed_count": 20,
   "skipped_already_transcribed": 0,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 10,
+  "skipped_recent_failures": 20,
   "skipped_forced_already_transcribed": 0,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 10,
+  "skipped_forced_recent_failures": 18,
   "skipped_duplicate_selected": 0,
   "top_selected": [
-    "NOv3U3ZUiro",
-    "iRach9lpIlg",
-    "U14_qm5y38o",
-    "T34ygnCahZc",
-    "S3JuEF7RQ5k"
+    "6CyjL4X8e7g",
+    "kY7n4gNtHXA",
+    "jRLXiOUYpqE",
+    "lxRJpsidN4U",
+    "SWyHoj5CRqs"
   ],
   "warnings": []
 }

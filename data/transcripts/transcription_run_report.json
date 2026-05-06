@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T22:37:40.300624+00:00",
+  "generated_at": "2026-05-06T00:16:33.482660+00:00",
   "limit": 10,
   "processed": 10,
   "transcribed_success": 0,
@@ -8,7 +8,7 @@
   "failed_audio_download": 10,
   "skipped_already_transcribed": 0,
   "failed": 0,
-  "queue_total": 18,
+  "queue_total": 10,
   "registry_success_before_run": 0,
   "audio_source_dir": "data/audio_sources",
   "audio_source_dir_exists": false,
@@ -24,252 +24,252 @@
   "ytdlp_download_success": 0,
   "ytdlp_download_failures": [
     {
-      "video_id": "NOv3U3ZUiro",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "6CyjL4X8e7g",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=NOv3U3ZUiro"
+      "video_url": "https://www.youtube.com/watch?v=6CyjL4X8e7g"
     },
     {
-      "video_id": "iRach9lpIlg",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "kY7n4gNtHXA",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=iRach9lpIlg"
+      "video_url": "https://www.youtube.com/watch?v=kY7n4gNtHXA"
     },
     {
-      "video_id": "U14_qm5y38o",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "jRLXiOUYpqE",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=U14_qm5y38o"
+      "video_url": "https://www.youtube.com/watch?v=jRLXiOUYpqE"
     },
     {
-      "video_id": "T34ygnCahZc",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "lxRJpsidN4U",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=T34ygnCahZc"
+      "video_url": "https://www.youtube.com/watch?v=lxRJpsidN4U"
     },
     {
-      "video_id": "S3JuEF7RQ5k",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "SWyHoj5CRqs",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=S3JuEF7RQ5k"
+      "video_url": "https://www.youtube.com/watch?v=SWyHoj5CRqs"
     },
     {
-      "video_id": "MVFd0qFB9TE",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=MVFd0qFB9TE"
+      "video_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+      "error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UCLe_q9axMa: Video unavailable",
+      "error_category": "video_unavailable",
+      "video_url": "https://www.youtube.com/watch?v=UCLe_q9axMaeTbjN0hy1Z9xA"
     },
     {
-      "video_id": "xUWqMdypNsM",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=xUWqMdypNsM"
+      "video_id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
+      "error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UCQHX6ViZmP: Video unavailable",
+      "error_category": "video_unavailable",
+      "video_url": "https://www.youtube.com/watch?v=UCQHX6ViZmPsWiYSFAyS0a3Q"
     },
     {
-      "video_id": "pe_HkAV9yJM",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "SzG_O-In1vg",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=pe_HkAV9yJM"
+      "video_url": "https://www.youtube.com/watch?v=SzG_O-In1vg"
     },
     {
-      "video_id": "gpfhjHmbmIE",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "video_id": "PGBt4pOj4Vc",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=gpfhjHmbmIE"
+      "video_url": "https://www.youtube.com/watch?v=PGBt4pOj4Vc"
     },
     {
-      "video_id": "rHDw0XcyZ1I",
-      "error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "error_category": "auth_required",
-      "video_url": "https://www.youtube.com/watch?v=rHDw0XcyZ1I"
+      "video_id": "UC1viRct91s1a3Z5yvk7FJXw",
+      "error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UC1viRct91s: Video unavailable",
+      "error_category": "video_unavailable",
+      "video_url": "https://www.youtube.com/watch?v=UC1viRct91s1a3Z5yvk7FJXw"
     }
   ],
   "processed_video_ids": [
-    "NOv3U3ZUiro",
-    "iRach9lpIlg",
-    "U14_qm5y38o",
-    "T34ygnCahZc",
-    "S3JuEF7RQ5k",
-    "MVFd0qFB9TE",
-    "xUWqMdypNsM",
-    "pe_HkAV9yJM",
-    "gpfhjHmbmIE",
-    "rHDw0XcyZ1I"
+    "6CyjL4X8e7g",
+    "kY7n4gNtHXA",
+    "jRLXiOUYpqE",
+    "lxRJpsidN4U",
+    "SWyHoj5CRqs",
+    "UCLe_q9axMaeTbjN0hy1Z9xA",
+    "UCQHX6ViZmPsWiYSFAyS0a3Q",
+    "SzG_O-In1vg",
+    "PGBt4pOj4Vc",
+    "UC1viRct91s1a3Z5yvk7FJXw"
   ],
   "success_video_ids": [],
   "already_transcribed_video_ids": [],
   "missing_audio_video_ids": [
-    "NOv3U3ZUiro",
-    "iRach9lpIlg",
-    "U14_qm5y38o",
-    "T34ygnCahZc",
-    "S3JuEF7RQ5k",
-    "MVFd0qFB9TE",
-    "xUWqMdypNsM",
-    "pe_HkAV9yJM",
-    "gpfhjHmbmIE",
-    "rHDw0XcyZ1I"
+    "6CyjL4X8e7g",
+    "kY7n4gNtHXA",
+    "jRLXiOUYpqE",
+    "lxRJpsidN4U",
+    "SWyHoj5CRqs",
+    "UCLe_q9axMaeTbjN0hy1Z9xA",
+    "UCQHX6ViZmPsWiYSFAyS0a3Q",
+    "SzG_O-In1vg",
+    "PGBt4pOj4Vc",
+    "UC1viRct91s1a3Z5yvk7FJXw"
   ],
   "missing_audio_details": [
     {
-      "video_id": "NOv3U3ZUiro",
+      "video_id": "6CyjL4X8e7g",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=NOv3U3ZUiro",
+      "video_url": "https://www.youtube.com/watch?v=6CyjL4X8e7g",
       "attempted_paths": [
-        "data/audio_sources/NOv3U3ZUiro.mp3",
-        "data/audio_sources/NOv3U3ZUiro.m4a",
-        "data/audio_sources/NOv3U3ZUiro.wav",
-        "data/audio_sources/NOv3U3ZUiro.webm",
-        "data/audio_sources/NOv3U3ZUiro.mp4"
+        "data/audio_sources/6CyjL4X8e7g.mp3",
+        "data/audio_sources/6CyjL4X8e7g.m4a",
+        "data/audio_sources/6CyjL4X8e7g.wav",
+        "data/audio_sources/6CyjL4X8e7g.webm",
+        "data/audio_sources/6CyjL4X8e7g.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "iRach9lpIlg",
+      "video_id": "kY7n4gNtHXA",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=iRach9lpIlg",
+      "video_url": "https://www.youtube.com/watch?v=kY7n4gNtHXA",
       "attempted_paths": [
-        "data/audio_sources/iRach9lpIlg.mp3",
-        "data/audio_sources/iRach9lpIlg.m4a",
-        "data/audio_sources/iRach9lpIlg.wav",
-        "data/audio_sources/iRach9lpIlg.webm",
-        "data/audio_sources/iRach9lpIlg.mp4"
+        "data/audio_sources/kY7n4gNtHXA.mp3",
+        "data/audio_sources/kY7n4gNtHXA.m4a",
+        "data/audio_sources/kY7n4gNtHXA.wav",
+        "data/audio_sources/kY7n4gNtHXA.webm",
+        "data/audio_sources/kY7n4gNtHXA.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "U14_qm5y38o",
+      "video_id": "jRLXiOUYpqE",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=U14_qm5y38o",
+      "video_url": "https://www.youtube.com/watch?v=jRLXiOUYpqE",
       "attempted_paths": [
-        "data/audio_sources/U14_qm5y38o.mp3",
-        "data/audio_sources/U14_qm5y38o.m4a",
-        "data/audio_sources/U14_qm5y38o.wav",
-        "data/audio_sources/U14_qm5y38o.webm",
-        "data/audio_sources/U14_qm5y38o.mp4"
+        "data/audio_sources/jRLXiOUYpqE.mp3",
+        "data/audio_sources/jRLXiOUYpqE.m4a",
+        "data/audio_sources/jRLXiOUYpqE.wav",
+        "data/audio_sources/jRLXiOUYpqE.webm",
+        "data/audio_sources/jRLXiOUYpqE.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "T34ygnCahZc",
+      "video_id": "lxRJpsidN4U",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=T34ygnCahZc",
+      "video_url": "https://www.youtube.com/watch?v=lxRJpsidN4U",
       "attempted_paths": [
-        "data/audio_sources/T34ygnCahZc.mp3",
-        "data/audio_sources/T34ygnCahZc.m4a",
-        "data/audio_sources/T34ygnCahZc.wav",
-        "data/audio_sources/T34ygnCahZc.webm",
-        "data/audio_sources/T34ygnCahZc.mp4"
+        "data/audio_sources/lxRJpsidN4U.mp3",
+        "data/audio_sources/lxRJpsidN4U.m4a",
+        "data/audio_sources/lxRJpsidN4U.wav",
+        "data/audio_sources/lxRJpsidN4U.webm",
+        "data/audio_sources/lxRJpsidN4U.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "S3JuEF7RQ5k",
+      "video_id": "SWyHoj5CRqs",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=S3JuEF7RQ5k",
+      "video_url": "https://www.youtube.com/watch?v=SWyHoj5CRqs",
       "attempted_paths": [
-        "data/audio_sources/S3JuEF7RQ5k.mp3",
-        "data/audio_sources/S3JuEF7RQ5k.m4a",
-        "data/audio_sources/S3JuEF7RQ5k.wav",
-        "data/audio_sources/S3JuEF7RQ5k.webm",
-        "data/audio_sources/S3JuEF7RQ5k.mp4"
+        "data/audio_sources/SWyHoj5CRqs.mp3",
+        "data/audio_sources/SWyHoj5CRqs.m4a",
+        "data/audio_sources/SWyHoj5CRqs.wav",
+        "data/audio_sources/SWyHoj5CRqs.webm",
+        "data/audio_sources/SWyHoj5CRqs.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "MVFd0qFB9TE",
+      "video_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=MVFd0qFB9TE",
+      "video_url": "https://www.youtube.com/watch?v=UCLe_q9axMaeTbjN0hy1Z9xA",
       "attempted_paths": [
-        "data/audio_sources/MVFd0qFB9TE.mp3",
-        "data/audio_sources/MVFd0qFB9TE.m4a",
-        "data/audio_sources/MVFd0qFB9TE.wav",
-        "data/audio_sources/MVFd0qFB9TE.webm",
-        "data/audio_sources/MVFd0qFB9TE.mp4"
+        "data/audio_sources/UCLe_q9axMaeTbjN0hy1Z9xA.mp3",
+        "data/audio_sources/UCLe_q9axMaeTbjN0hy1Z9xA.m4a",
+        "data/audio_sources/UCLe_q9axMaeTbjN0hy1Z9xA.wav",
+        "data/audio_sources/UCLe_q9axMaeTbjN0hy1Z9xA.webm",
+        "data/audio_sources/UCLe_q9axMaeTbjN0hy1Z9xA.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UCLe_q9axMa: Video unavailable",
+      "ytdlp_error_category": "video_unavailable"
+    },
+    {
+      "video_id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=UCQHX6ViZmPsWiYSFAyS0a3Q",
+      "attempted_paths": [
+        "data/audio_sources/UCQHX6ViZmPsWiYSFAyS0a3Q.mp3",
+        "data/audio_sources/UCQHX6ViZmPsWiYSFAyS0a3Q.m4a",
+        "data/audio_sources/UCQHX6ViZmPsWiYSFAyS0a3Q.wav",
+        "data/audio_sources/UCQHX6ViZmPsWiYSFAyS0a3Q.webm",
+        "data/audio_sources/UCQHX6ViZmPsWiYSFAyS0a3Q.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UCQHX6ViZmP: Video unavailable",
+      "ytdlp_error_category": "video_unavailable"
+    },
+    {
+      "video_id": "SzG_O-In1vg",
+      "audio_source_dir": "data/audio_sources",
+      "audio_source_dir_exists": false,
+      "audio_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=SzG_O-In1vg",
+      "attempted_paths": [
+        "data/audio_sources/SzG_O-In1vg.mp3",
+        "data/audio_sources/SzG_O-In1vg.m4a",
+        "data/audio_sources/SzG_O-In1vg.wav",
+        "data/audio_sources/SzG_O-In1vg.webm",
+        "data/audio_sources/SzG_O-In1vg.mp4"
+      ],
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "xUWqMdypNsM",
+      "video_id": "PGBt4pOj4Vc",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=xUWqMdypNsM",
+      "video_url": "https://www.youtube.com/watch?v=PGBt4pOj4Vc",
       "attempted_paths": [
-        "data/audio_sources/xUWqMdypNsM.mp3",
-        "data/audio_sources/xUWqMdypNsM.m4a",
-        "data/audio_sources/xUWqMdypNsM.wav",
-        "data/audio_sources/xUWqMdypNsM.webm",
-        "data/audio_sources/xUWqMdypNsM.mp4"
+        "data/audio_sources/PGBt4pOj4Vc.mp3",
+        "data/audio_sources/PGBt4pOj4Vc.m4a",
+        "data/audio_sources/PGBt4pOj4Vc.wav",
+        "data/audio_sources/PGBt4pOj4Vc.webm",
+        "data/audio_sources/PGBt4pOj4Vc.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "pe_HkAV9yJM",
+      "video_id": "UC1viRct91s1a3Z5yvk7FJXw",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=pe_HkAV9yJM",
+      "video_url": "https://www.youtube.com/watch?v=UC1viRct91s1a3Z5yvk7FJXw",
       "attempted_paths": [
-        "data/audio_sources/pe_HkAV9yJM.mp3",
-        "data/audio_sources/pe_HkAV9yJM.m4a",
-        "data/audio_sources/pe_HkAV9yJM.wav",
-        "data/audio_sources/pe_HkAV9yJM.webm",
-        "data/audio_sources/pe_HkAV9yJM.mp4"
+        "data/audio_sources/UC1viRct91s1a3Z5yvk7FJXw.mp3",
+        "data/audio_sources/UC1viRct91s1a3Z5yvk7FJXw.m4a",
+        "data/audio_sources/UC1viRct91s1a3Z5yvk7FJXw.wav",
+        "data/audio_sources/UC1viRct91s1a3Z5yvk7FJXw.webm",
+        "data/audio_sources/UC1viRct91s1a3Z5yvk7FJXw.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "ytdlp_error_category": "auth_required"
-    },
-    {
-      "video_id": "gpfhjHmbmIE",
-      "audio_source_dir": "data/audio_sources",
-      "audio_source_dir_exists": false,
-      "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=gpfhjHmbmIE",
-      "attempted_paths": [
-        "data/audio_sources/gpfhjHmbmIE.mp3",
-        "data/audio_sources/gpfhjHmbmIE.m4a",
-        "data/audio_sources/gpfhjHmbmIE.wav",
-        "data/audio_sources/gpfhjHmbmIE.webm",
-        "data/audio_sources/gpfhjHmbmIE.mp4"
-      ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "ytdlp_error_category": "auth_required"
-    },
-    {
-      "video_id": "rHDw0XcyZ1I",
-      "audio_source_dir": "data/audio_sources",
-      "audio_source_dir_exists": false,
-      "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=rHDw0XcyZ1I",
-      "attempted_paths": [
-        "data/audio_sources/rHDw0XcyZ1I.mp3",
-        "data/audio_sources/rHDw0XcyZ1I.m4a",
-        "data/audio_sources/rHDw0XcyZ1I.wav",
-        "data/audio_sources/rHDw0XcyZ1I.webm",
-        "data/audio_sources/rHDw0XcyZ1I.mp4"
-      ],
-      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-      "ytdlp_error_category": "auth_required"
+      "ytdlp_error": "yt_dlp_failed:strategy=android;code=1;stderr=ERROR: [youtube] UC1viRct91s: Video unavailable",
+      "ytdlp_error_category": "video_unavailable"
     }
   ],
   "failed_video_ids": [],
