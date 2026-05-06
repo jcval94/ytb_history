@@ -4,6 +4,8 @@ import csv, json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+
+from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium",
@@ -61,9 +63,10 @@ def _parse_dt(v:str|None)->datetime|None:
         return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
     except: return None
 
-def _merge(store:dict[str,dict[str,Any]], row:dict[str,str], mapping:dict[str,str], source:str)->None:
+def _merge(store:dict[str,dict[str,Any]], row:dict[str,str], mapping:dict[str,str], source:str)->str|None:
     vid=(row.get(mapping.get('video_id','video_id'),"") or "").strip()
-    if not vid:return
+    if not vid:return None
+    if not is_transcribable_video_id_candidate(vid): return vid
     item=store.setdefault(vid,{"video_id":vid,"sources":set()})
     item['sources'].add(source)
     for tk,sk in mapping.items():
@@ -72,6 +75,7 @@ def _merge(store:dict[str,dict[str,Any]], row:dict[str,str], mapping:dict[str,st
             n=_safe_float(val)
             if n is not None: item[tk]=n
         elif val and not item.get(tk): item[tk]=val
+    return None
 
 def _score(c:dict[str,Any])->float:
     w={"decision_score":0.30,"hybrid_decision_score":0.20,"creative_execution_score":0.20,"topic_opportunity_score":0.15,"alpha_score":0.10,"metric_confidence_score":0.05}
@@ -88,19 +92,26 @@ def _url_handle(url:str)->str:
 def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT_LIMIT,cooldown_days:int=DEFAULT_COOLDOWN_DAYS,forced_channels_enabled:bool=True,forced_channels_max_per_run:int=DEFAULT_FORCED_MAX_PER_RUN,forced_channels_new_video_window_days:int=DEFAULT_FORCED_WINDOW_DAYS)->dict[str,Any]:
     root=Path(data_dir); tdir=root/'transcripts'; now=datetime.now(timezone.utc); now_iso=now.isoformat(); warnings=[]
     cands:dict[str,dict[str,Any]]={}
+    skipped_invalid_video_ids: list[dict[str,str]]=[]
     for row in _read_csv(root/'decision'/'latest_action_candidates.csv'):
-        _merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","decision_score":"decision_score","alpha_score":"alpha_score","metric_confidence_score":"metric_confidence_score"},"decision")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","decision_score":"decision_score","alpha_score":"alpha_score","metric_confidence_score":"metric_confidence_score"},"decision")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"decision"})
     for row in _read_csv(root/'model_intelligence'/'latest_hybrid_recommendations.csv'):
-        _merge(cands,row,{"video_id":"video_id","hybrid_decision_score":"hybrid_decision_score"},"model_intelligence")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","hybrid_decision_score":"hybrid_decision_score"},"model_intelligence")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"model_intelligence"})
     for row in _read_csv(root/'topic_intelligence'/'latest_topic_opportunities.csv'):
-        _merge(cands,row,{"video_id":"video_id","topic_opportunity_score":"topic_opportunity_score"},"topic")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","topic_opportunity_score":"topic_opportunity_score"},"topic")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"topic"})
     for row in _read_csv(root/'creative_packages'/'latest_creative_packages.csv'):
-        _merge(cands,row,{"video_id":"source_video_id","creative_execution_score":"creative_execution_score"},"creative")
+        invalid_id=_merge(cands,row,{"video_id":"source_video_id","creative_execution_score":"creative_execution_score"},"creative")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"creative"})
     for row in _read_csv(root/'analytics'/'latest'/'latest_video_scores.csv'):
-        _merge(cands,row,{"video_id":"video_id","alpha_score":"alpha_score"},"analytics_scores")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","alpha_score":"alpha_score"},"analytics_scores")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_scores"})
     metrics=_read_csv(root/'analytics'/'latest'/'latest_video_metrics.csv')
     for row in metrics:
-        _merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date"},"analytics_metrics")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date"},"analytics_metrics")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_metrics"})
 
     reg=_read_jsonl(tdir/'transcript_registry.jsonl'); success=set(); progress=set(); cool=set(); th=now-timedelta(days=cooldown_days)
     for e in reg:
@@ -170,6 +181,8 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     for i,row in enumerate(selected,1):
         q.append({"selected_at":now_iso,"video_id":row['video_id'],"channel_id":row['channel_id'],"channel_name":row['channel_name'],"title":row['title'],"upload_date":row['upload_date'],"selection_rank":i,"selection_source":row['selection_source'],"forced_channel":row['forced_channel'],"forced_channel_url":row['forced_channel_url'],"transcription_value_score":row['transcription_value_score'],"decision_score":row.get('decision_score'),"hybrid_decision_score":row.get('hybrid_decision_score'),"creative_execution_score":row.get('creative_execution_score'),"topic_opportunity_score":row.get('topic_opportunity_score'),"alpha_score":row.get('alpha_score'),"metric_confidence_score":row.get('metric_confidence_score'),"status":"queued","source_reason":row['source_reason'],"evidence_json":row['evidence_json']})
     _write_jsonl(tdir/'transcript_queue.jsonl',q)
-    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
+    if skipped_invalid_video_ids:
+        warnings.append('invalid_video_ids_skipped')
+    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"skipped_invalid_video_id_count":len(skipped_invalid_video_ids),"skipped_invalid_video_ids":skipped_invalid_video_ids[:50],"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
     (tdir/'transcript_selection_report.json').write_text(json.dumps(rep,ensure_ascii=False,indent=2),encoding='utf-8')
     return rep

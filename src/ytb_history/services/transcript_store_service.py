@@ -170,6 +170,7 @@ def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[s
         "queued_count": by_status.get("queued", 0),
         "skipped_no_audio_source_count": by_status.get("skipped_no_audio_source", 0),
         "skipped_missing_ytdlp_count": by_status.get("skipped_missing_ytdlp", 0),
+        "skipped_invalid_video_id_count": by_status.get("skipped_invalid_video_id", 0),
         "failed_audio_download_count": by_status.get("failed_audio_download", 0),
         "failed_audio_download_auth_required_count": by_status.get("failed_audio_download_auth_required", 0),
         "failed_audio_download_video_unavailable_count": by_status.get("failed_audio_download_video_unavailable", 0),

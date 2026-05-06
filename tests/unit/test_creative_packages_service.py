@@ -119,3 +119,26 @@ def test_creative_packages_handles_incomplete_insights(tmp_path: Path) -> None:
     idx.write_text(json.dumps({"video_id": "v1", "insights_path": str(data_dir / "transcripts" / "videos" / "v1" / "missing.json")}) + "\n", encoding="utf-8")
     result = generate_creative_packages(data_dir=data_dir)
     assert result["total_packages"] == 1
+
+
+def test_creative_packages_skips_channel_action_ids(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    channel_id = "UCWBWgCD4oAqT3hUeq40SCUw"
+    _write_csv(
+        data_dir / "decision" / "latest_action_candidates.csv",
+        ["action_id", "action_type", "video_id", "entity_id", "channel_name", "title", "decision_score", "metric_confidence_score", "timeframe", "signal_type"],
+        [
+            {"action_id": "a1", "action_type": "benchmark_channel", "video_id": "", "entity_id": channel_id, "channel_name": "Canal", "title": "Canal", "decision_score": 90, "metric_confidence_score": 80, "timeframe": "this_week", "signal_type": "channel_high_growth"},
+            {"action_id": "a2", "action_type": "create_fast_reaction", "video_id": "BflRX7z7SHs", "entity_id": "BflRX7z7SHs", "channel_name": "Canal", "title": "Video", "decision_score": 80, "metric_confidence_score": 70, "timeframe": "next_3_days", "signal_type": "trend_burst"},
+        ],
+    )
+    _write_csv(data_dir / "decision" / "latest_content_opportunities.csv", ["opportunity_id", "source_video_id", "opportunity_type", "recommended_timeframe", "source_title"], [])
+    _write_csv(data_dir / "topic_intelligence" / "latest_topic_opportunities.csv", ["video_id", "topic", "topic_opportunity_score", "topic_saturation_score", "title_pattern", "tutorial_semantic_score", "title_pattern_success_score"], [])
+
+    result = generate_creative_packages(data_dir=data_dir)
+    packages = list(csv.DictReader((data_dir / "creative_packages" / "latest_creative_packages.csv").open("r", encoding="utf-8", newline="")))
+
+    assert result["total_packages"] == 1
+    assert result["skipped_invalid_source_video_id_count"] == 1
+    assert packages[0]["source_video_id"] == "BflRX7z7SHs"
+    assert all(row["source_video_id"] != channel_id for row in packages)

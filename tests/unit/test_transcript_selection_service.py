@@ -115,3 +115,19 @@ def test_auth_required_download_failure_without_failed_at_uses_selected_at_coold
     assert report["registry_existing_recent_failed_count"] == 1
     assert report["skipped_recent_failures"] == 1
     assert all(row["video_id"] != "v3" for row in queue)
+
+
+def test_selection_skips_channel_ids_from_creative_packages(tmp_path: Path) -> None:
+    _write_csv(
+        tmp_path / "creative_packages/latest_creative_packages.csv",
+        ["source_video_id", "creative_execution_score"],
+        [["UCWBWgCD4oAqT3hUeq40SCUw", "99"], ["validVideo1", "80"]],
+    )
+
+    report = select_transcription_candidates(data_dir=tmp_path, limit=10, forced_channels_max_per_run=50)
+    queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+
+    assert [row["video_id"] for row in queue] == ["validVideo1"]
+    assert report["skipped_invalid_video_id_count"] == 1
+    assert report["skipped_invalid_video_ids"] == [{"video_id": "UCWBWgCD4oAqT3hUeq40SCUw", "source": "creative"}]
+    assert "invalid_video_ids_skipped" in report["warnings"]
