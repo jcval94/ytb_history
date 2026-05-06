@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-05-06T00:42:24.984030+00:00",
-  "video_alerts": 285,
+  "generated_at": "2026-05-06T02:12:11.120606+00:00",
+  "video_alerts": 403,
   "channel_alerts": 91,
   "data_quality_alerts": 0,
-  "total_alerts": 376,
+  "total_alerts": 494,
   "severity_counts": {
-    "critical": 48,
-    "high": 175,
-    "medium": 152,
-    "low": 1
+    "critical": 56,
+    "high": 274,
+    "medium": 164,
+    "low": 0
   },
   "signal_type_counts": {
     "channel_high_growth": 25,
-    "accelerating_video": 46,
+    "accelerating_video": 151,
     "channel_volatility_warning": 37,
+    "high_engagement_low_reach": 158,
+    "packaging_problem": 71,
     "channel_momentum_up": 21,
-    "high_engagement_low_reach": 153,
-    "packaging_problem": 70,
-    "trend_burst": 11,
+    "trend_burst": 17,
     "channel_consistent_performer": 8,
-    "alpha_breakout": 5
+    "alpha_breakout": 6
   },
   "top_alerts": [
     {
-      "alert_id": "alrt_c266e3fb161f9f73",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
+      "alert_id": "alrt_695b75b91fe95230",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
       "entity_type": "channel",
       "entity_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
       "video_id": "",
@@ -52,9 +52,9 @@
       ]
     },
     {
-      "alert_id": "alrt_4770afda2f9f8bac",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
+      "alert_id": "alrt_508ef1bff58bb006",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
       "entity_type": "channel",
       "entity_id": "UCWBWgCD4oAqT3hUeq40SCUw",
       "video_id": "",
@@ -81,9 +81,9 @@
       ]
     },
     {
-      "alert_id": "alrt_7661f0d2b8aa7367",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
+      "alert_id": "alrt_942cd4ee61e61072",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
       "entity_type": "channel",
       "entity_id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
       "video_id": "",
@@ -110,149 +110,25 @@
       ]
     },
     {
-      "alert_id": "alrt_ed1015c12636061c",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
+      "alert_id": "alrt_bb3d264992038f99",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
       "entity_type": "video",
-      "entity_id": "-APimd6TUro",
-      "video_id": "-APimd6TUro",
-      "channel_id": "UC5mQQ4Ur6oA8lsGFkvH2lyg",
-      "channel_name": "Noche De Chicxs",
-      "title": "No saben que lo mantengo #chisme #comedia #podcast",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 100.0,
-      "adjusted_signal_score": 98.25,
-      "metric_confidence_score": 96.5,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 100.0,
-        "metric_confidence_score": 96.5
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_2f18a4fc811aad55",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
-      "entity_type": "video",
-      "entity_id": "OkuWh46I4m4",
-      "video_id": "OkuWh46I4m4",
-      "channel_id": "UCDOSaJ0pnglwzfkR6fYbisA",
-      "channel_name": "Luis Mi Negocios",
-      "title": "5 pasos para MULTIPLICAR tu DINERO",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 99.5809,
-      "adjusted_signal_score": 97.8382,
-      "metric_confidence_score": 96.5,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 99.5809,
-        "metric_confidence_score": 96.5
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_ef52cdf5e0ed6030",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
-      "entity_type": "video",
-      "entity_id": "wB2Kb0MiyAc",
-      "video_id": "wB2Kb0MiyAc",
-      "channel_id": "UC5mQQ4Ur6oA8lsGFkvH2lyg",
-      "channel_name": "Noche De Chicxs",
-      "title": "¡Estafó a sus padres por años! #chisme #comedia #podcast",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 99.2456,
-      "adjusted_signal_score": 97.5088,
-      "metric_confidence_score": 96.5,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 99.2456,
-        "metric_confidence_score": 96.5
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_3726cb3ca1ed9ac1",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
-      "entity_type": "video",
-      "entity_id": "q__FKs64J28",
-      "video_id": "q__FKs64J28",
-      "channel_id": "UCEK0oX3X2yK9y27khCsrNKg",
-      "channel_name": "Mis Propias Finanzas",
-      "title": "¿Quién define la tasa de interés y por qué?",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 97.0662,
-      "adjusted_signal_score": 97.0662,
-      "metric_confidence_score": 100.0,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 97.0662,
-        "metric_confidence_score": 100.0
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_4902f44b5ee76a10",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
-      "entity_type": "video",
-      "entity_id": "UQXupr6-Wmg",
-      "video_id": "UQXupr6-Wmg",
+      "entity_id": "p5zWy46yWxU",
+      "video_id": "p5zWy46yWxU",
       "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
       "channel_name": "Alex Hormozi",
-      "title": "Helping A Stranger Scale Her $300K Year Business",
+      "title": "Here's How I'd Get To $1M/Month",
       "signal_type": "accelerating_video",
       "severity": "critical",
-      "raw_signal_score": 98.7427,
-      "adjusted_signal_score": 97.0147,
+      "raw_signal_score": 99.3294,
+      "adjusted_signal_score": 97.5912,
       "metric_confidence_score": 96.5,
       "confidence_level": "high",
       "message": "Video en aceleración de crecimiento.",
       "evidence_json": {
         "threshold": 70.0,
-        "raw_signal_score": 98.7427,
+        "raw_signal_score": 99.3294,
         "metric_confidence_score": 96.5
       },
       "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
@@ -265,40 +141,9 @@
       ]
     },
     {
-      "alert_id": "alrt_6ea91895b9258381",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
-      "entity_type": "video",
-      "entity_id": "TpncXdKNLTQ",
-      "video_id": "TpncXdKNLTQ",
-      "channel_id": "UCEK0oX3X2yK9y27khCsrNKg",
-      "channel_name": "Mis Propias Finanzas",
-      "title": "¿Por qué el gobierno paga más caro?",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "raw_signal_score": 96.8567,
-      "adjusted_signal_score": 96.8567,
-      "metric_confidence_score": 100.0,
-      "confidence_level": "high",
-      "message": "Video en aceleración de crecimiento.",
-      "evidence_json": {
-        "threshold": 70.0,
-        "raw_signal_score": 96.8567,
-        "metric_confidence_score": 100.0
-      },
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
-      "dashboard_tab": "Signals",
-      "source_tables": [
-        "latest_video_scores.csv",
-        "latest_video_advanced_metrics.csv",
-        "latest_metric_eligibility.csv",
-        "latest_video_metrics.csv"
-      ]
-    },
-    {
-      "alert_id": "alrt_1e1764fbe0ee0c91",
-      "execution_date": "2026-05-06T00:40:49.383513+00:00",
-      "generated_at": "2026-05-06T00:42:24.984030+00:00",
+      "alert_id": "alrt_4d8a31835990f451",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
       "entity_type": "channel",
       "entity_id": "UCUyDOdBWhC1MCxEjC46d-zw",
       "video_id": "",
@@ -322,6 +167,159 @@
       "source_tables": [
         "latest_channel_advanced_metrics.csv",
         "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_966f9d8982fbcbd8",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
+      "entity_type": "video",
+      "entity_id": "1gyuiKoSc-w",
+      "video_id": "1gyuiKoSc-w",
+      "channel_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "channel_name": "COMPUESTOS Podcast",
+      "title": "Bárbara Tijerina: Cómo Detectar Mentiras y Leer a Cualquier Persona en Segundos | EP. #65",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 98.1559,
+      "adjusted_signal_score": 96.4382,
+      "metric_confidence_score": 96.5,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 98.1559,
+        "metric_confidence_score": 96.5
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_c145a8c81862ebb0",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
+      "entity_type": "video",
+      "entity_id": "x3P8Zqux4A4",
+      "video_id": "x3P8Zqux4A4",
+      "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+      "channel_name": "Alex Hormozi",
+      "title": "If You Feel Like You're Behind, Watch This.",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 97.9044,
+      "adjusted_signal_score": 96.1911,
+      "metric_confidence_score": 96.5,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 97.9044,
+        "metric_confidence_score": 96.5
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_708c2125b4d9282e",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
+      "entity_type": "video",
+      "entity_id": "AVyYMXc_t9s",
+      "video_id": "AVyYMXc_t9s",
+      "channel_id": "UCEK0oX3X2yK9y27khCsrNKg",
+      "channel_name": "Mis Propias Finanzas",
+      "title": "\"Dinero Roto\" (Broken Money) de Lyn Alden | Club de Lectura #199",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 96.1861,
+      "adjusted_signal_score": 96.1861,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 96.1861,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_42f965993fbf60d8",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
+      "entity_type": "channel",
+      "entity_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "video_id": "",
+      "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+      "channel_name": "Jaime Higuera",
+      "title": "",
+      "signal_type": "channel_volatility_warning",
+      "severity": "critical",
+      "raw_signal_score": 95.8678,
+      "adjusted_signal_score": 95.8678,
+      "metric_confidence_score": 100.0,
+      "confidence_level": "high",
+      "message": "Señal de canal detectada: channel_volatility_warning.",
+      "evidence_json": {
+        "threshold": 30.0,
+        "raw_signal_score": 95.8678,
+        "metric_confidence_score": 100.0
+      },
+      "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad.",
+      "dashboard_tab": "Channels",
+      "source_tables": [
+        "latest_channel_advanced_metrics.csv",
+        "latest_channel_metrics.csv"
+      ]
+    },
+    {
+      "alert_id": "alrt_02303078c6ec181a",
+      "execution_date": "2026-05-06T02:10:44.586831+00:00",
+      "generated_at": "2026-05-06T02:12:11.120606+00:00",
+      "entity_type": "video",
+      "entity_id": "aqIgIWIc3uw",
+      "video_id": "aqIgIWIc3uw",
+      "channel_id": "UCRDQzsHtx2cXvzEXnEhbxBg",
+      "channel_name": "Mister Krax",
+      "title": "México empieza a tener matices de país desarrollado #méxico",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "raw_signal_score": 97.6111,
+      "adjusted_signal_score": 94.1947,
+      "metric_confidence_score": 93.0,
+      "confidence_level": "high",
+      "message": "Video en aceleración de crecimiento.",
+      "evidence_json": {
+        "threshold": 70.0,
+        "raw_signal_score": 97.6111,
+        "metric_confidence_score": 93.0
+      },
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración.",
+      "dashboard_tab": "Signals",
+      "source_tables": [
+        "latest_video_scores.csv",
+        "latest_video_advanced_metrics.csv",
+        "latest_metric_eligibility.csv",
+        "latest_video_metrics.csv"
       ]
     }
   ],

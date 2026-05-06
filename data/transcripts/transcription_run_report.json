@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T00:45:15.259176+00:00",
+  "generated_at": "2026-05-06T02:14:09.269584+00:00",
   "limit": 10,
   "processed": 10,
   "transcribed_success": 0,
@@ -24,252 +24,252 @@
   "ytdlp_download_success": 0,
   "ytdlp_download_failures": [
     {
-      "video_id": "0AheTRgTBzU",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 0AheTRgTBzU: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=0AheTRgTBzU"
+      "video_id": "BflRX7z7SHs",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=BflRX7z7SHs"
     },
     {
-      "video_id": "NUQcYZADgLw",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] NUQcYZADgLw: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=NUQcYZADgLw"
+      "video_id": "-lDwUYFl7Iw",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=-lDwUYFl7Iw"
     },
     {
-      "video_id": "XiPhamWTPcU",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] XiPhamWTPcU: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=XiPhamWTPcU"
+      "video_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=o use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] UCWBWgCD4oA: Video unavailable",
+      "error_category": "video_unavailable",
+      "video_url": "https://www.youtube.com/watch?v=UCWBWgCD4oAqT3hUeq40SCUw"
     },
     {
-      "video_id": "3yj9rCGNqjU",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 3yj9rCGNqjU: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=3yj9rCGNqjU"
+      "video_id": "OTt76d3wPiQ",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=OTt76d3wPiQ"
     },
     {
-      "video_id": "wDUtigax8Lg",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] wDUtigax8Lg: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=wDUtigax8Lg"
+      "video_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=o use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] UCjSVqRtdOs: Video unavailable",
+      "error_category": "video_unavailable",
+      "video_url": "https://www.youtube.com/watch?v=UCjSVqRtdOsxQDss_pJpp_Yg"
     },
     {
-      "video_id": "fRjAMALJ0r0",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] fRjAMALJ0r0: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=fRjAMALJ0r0"
+      "video_id": "OEtIq4tR1rA",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=OEtIq4tR1rA"
     },
     {
-      "video_id": "Z1Ac2v8mULM",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] Z1Ac2v8mULM: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=Z1Ac2v8mULM"
+      "video_id": "Q3JZcugU5zw",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=Q3JZcugU5zw"
     },
     {
-      "video_id": "wAi4zvgGy4w",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] wAi4zvgGy4w: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=wAi4zvgGy4w"
+      "video_id": "Qy_YMLKX8bQ",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=Qy_YMLKX8bQ"
     },
     {
-      "video_id": "YFc40YFhMvk",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] YFc40YFhMvk: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=YFc40YFhMvk"
+      "video_id": "uTBQ0E07n88",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=uTBQ0E07n88"
     },
     {
-      "video_id": "75QtulYanTE",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 75QtulYanTE: Requested format is not available. Use --list-formats for a list of available formats",
-      "error_category": "format_unavailable",
-      "video_url": "https://www.youtube.com/watch?v=75QtulYanTE"
+      "video_id": "dk-pvsityfs",
+      "error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=dk-pvsityfs"
     }
   ],
   "processed_video_ids": [
-    "0AheTRgTBzU",
-    "NUQcYZADgLw",
-    "XiPhamWTPcU",
-    "3yj9rCGNqjU",
-    "wDUtigax8Lg",
-    "fRjAMALJ0r0",
-    "Z1Ac2v8mULM",
-    "wAi4zvgGy4w",
-    "YFc40YFhMvk",
-    "75QtulYanTE"
+    "BflRX7z7SHs",
+    "-lDwUYFl7Iw",
+    "UCWBWgCD4oAqT3hUeq40SCUw",
+    "OTt76d3wPiQ",
+    "UCjSVqRtdOsxQDss_pJpp_Yg",
+    "OEtIq4tR1rA",
+    "Q3JZcugU5zw",
+    "Qy_YMLKX8bQ",
+    "uTBQ0E07n88",
+    "dk-pvsityfs"
   ],
   "success_video_ids": [],
   "already_transcribed_video_ids": [],
   "missing_audio_video_ids": [
-    "0AheTRgTBzU",
-    "NUQcYZADgLw",
-    "XiPhamWTPcU",
-    "3yj9rCGNqjU",
-    "wDUtigax8Lg",
-    "fRjAMALJ0r0",
-    "Z1Ac2v8mULM",
-    "wAi4zvgGy4w",
-    "YFc40YFhMvk",
-    "75QtulYanTE"
+    "BflRX7z7SHs",
+    "-lDwUYFl7Iw",
+    "UCWBWgCD4oAqT3hUeq40SCUw",
+    "OTt76d3wPiQ",
+    "UCjSVqRtdOsxQDss_pJpp_Yg",
+    "OEtIq4tR1rA",
+    "Q3JZcugU5zw",
+    "Qy_YMLKX8bQ",
+    "uTBQ0E07n88",
+    "dk-pvsityfs"
   ],
   "missing_audio_details": [
     {
-      "video_id": "0AheTRgTBzU",
+      "video_id": "BflRX7z7SHs",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=0AheTRgTBzU",
+      "video_url": "https://www.youtube.com/watch?v=BflRX7z7SHs",
       "attempted_paths": [
-        "data/audio_sources/0AheTRgTBzU.mp3",
-        "data/audio_sources/0AheTRgTBzU.m4a",
-        "data/audio_sources/0AheTRgTBzU.wav",
-        "data/audio_sources/0AheTRgTBzU.webm",
-        "data/audio_sources/0AheTRgTBzU.mp4"
+        "data/audio_sources/BflRX7z7SHs.mp3",
+        "data/audio_sources/BflRX7z7SHs.m4a",
+        "data/audio_sources/BflRX7z7SHs.wav",
+        "data/audio_sources/BflRX7z7SHs.webm",
+        "data/audio_sources/BflRX7z7SHs.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 0AheTRgTBzU: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "NUQcYZADgLw",
+      "video_id": "-lDwUYFl7Iw",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=NUQcYZADgLw",
+      "video_url": "https://www.youtube.com/watch?v=-lDwUYFl7Iw",
       "attempted_paths": [
-        "data/audio_sources/NUQcYZADgLw.mp3",
-        "data/audio_sources/NUQcYZADgLw.m4a",
-        "data/audio_sources/NUQcYZADgLw.wav",
-        "data/audio_sources/NUQcYZADgLw.webm",
-        "data/audio_sources/NUQcYZADgLw.mp4"
+        "data/audio_sources/-lDwUYFl7Iw.mp3",
+        "data/audio_sources/-lDwUYFl7Iw.m4a",
+        "data/audio_sources/-lDwUYFl7Iw.wav",
+        "data/audio_sources/-lDwUYFl7Iw.webm",
+        "data/audio_sources/-lDwUYFl7Iw.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] NUQcYZADgLw: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "XiPhamWTPcU",
+      "video_id": "UCWBWgCD4oAqT3hUeq40SCUw",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=XiPhamWTPcU",
+      "video_url": "https://www.youtube.com/watch?v=UCWBWgCD4oAqT3hUeq40SCUw",
       "attempted_paths": [
-        "data/audio_sources/XiPhamWTPcU.mp3",
-        "data/audio_sources/XiPhamWTPcU.m4a",
-        "data/audio_sources/XiPhamWTPcU.wav",
-        "data/audio_sources/XiPhamWTPcU.webm",
-        "data/audio_sources/XiPhamWTPcU.mp4"
+        "data/audio_sources/UCWBWgCD4oAqT3hUeq40SCUw.mp3",
+        "data/audio_sources/UCWBWgCD4oAqT3hUeq40SCUw.m4a",
+        "data/audio_sources/UCWBWgCD4oAqT3hUeq40SCUw.wav",
+        "data/audio_sources/UCWBWgCD4oAqT3hUeq40SCUw.webm",
+        "data/audio_sources/UCWBWgCD4oAqT3hUeq40SCUw.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] XiPhamWTPcU: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=default;code=1;stderr=o use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] UCWBWgCD4oA: Video unavailable",
+      "ytdlp_error_category": "video_unavailable"
     },
     {
-      "video_id": "3yj9rCGNqjU",
+      "video_id": "OTt76d3wPiQ",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=3yj9rCGNqjU",
+      "video_url": "https://www.youtube.com/watch?v=OTt76d3wPiQ",
       "attempted_paths": [
-        "data/audio_sources/3yj9rCGNqjU.mp3",
-        "data/audio_sources/3yj9rCGNqjU.m4a",
-        "data/audio_sources/3yj9rCGNqjU.wav",
-        "data/audio_sources/3yj9rCGNqjU.webm",
-        "data/audio_sources/3yj9rCGNqjU.mp4"
+        "data/audio_sources/OTt76d3wPiQ.mp3",
+        "data/audio_sources/OTt76d3wPiQ.m4a",
+        "data/audio_sources/OTt76d3wPiQ.wav",
+        "data/audio_sources/OTt76d3wPiQ.webm",
+        "data/audio_sources/OTt76d3wPiQ.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 3yj9rCGNqjU: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "wDUtigax8Lg",
+      "video_id": "UCjSVqRtdOsxQDss_pJpp_Yg",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=wDUtigax8Lg",
+      "video_url": "https://www.youtube.com/watch?v=UCjSVqRtdOsxQDss_pJpp_Yg",
       "attempted_paths": [
-        "data/audio_sources/wDUtigax8Lg.mp3",
-        "data/audio_sources/wDUtigax8Lg.m4a",
-        "data/audio_sources/wDUtigax8Lg.wav",
-        "data/audio_sources/wDUtigax8Lg.webm",
-        "data/audio_sources/wDUtigax8Lg.mp4"
+        "data/audio_sources/UCjSVqRtdOsxQDss_pJpp_Yg.mp3",
+        "data/audio_sources/UCjSVqRtdOsxQDss_pJpp_Yg.m4a",
+        "data/audio_sources/UCjSVqRtdOsxQDss_pJpp_Yg.wav",
+        "data/audio_sources/UCjSVqRtdOsxQDss_pJpp_Yg.webm",
+        "data/audio_sources/UCjSVqRtdOsxQDss_pJpp_Yg.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] wDUtigax8Lg: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=default;code=1;stderr=o use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] UCjSVqRtdOs: Video unavailable",
+      "ytdlp_error_category": "video_unavailable"
     },
     {
-      "video_id": "fRjAMALJ0r0",
+      "video_id": "OEtIq4tR1rA",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=fRjAMALJ0r0",
+      "video_url": "https://www.youtube.com/watch?v=OEtIq4tR1rA",
       "attempted_paths": [
-        "data/audio_sources/fRjAMALJ0r0.mp3",
-        "data/audio_sources/fRjAMALJ0r0.m4a",
-        "data/audio_sources/fRjAMALJ0r0.wav",
-        "data/audio_sources/fRjAMALJ0r0.webm",
-        "data/audio_sources/fRjAMALJ0r0.mp4"
+        "data/audio_sources/OEtIq4tR1rA.mp3",
+        "data/audio_sources/OEtIq4tR1rA.m4a",
+        "data/audio_sources/OEtIq4tR1rA.wav",
+        "data/audio_sources/OEtIq4tR1rA.webm",
+        "data/audio_sources/OEtIq4tR1rA.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] fRjAMALJ0r0: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "Z1Ac2v8mULM",
+      "video_id": "Q3JZcugU5zw",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=Z1Ac2v8mULM",
+      "video_url": "https://www.youtube.com/watch?v=Q3JZcugU5zw",
       "attempted_paths": [
-        "data/audio_sources/Z1Ac2v8mULM.mp3",
-        "data/audio_sources/Z1Ac2v8mULM.m4a",
-        "data/audio_sources/Z1Ac2v8mULM.wav",
-        "data/audio_sources/Z1Ac2v8mULM.webm",
-        "data/audio_sources/Z1Ac2v8mULM.mp4"
+        "data/audio_sources/Q3JZcugU5zw.mp3",
+        "data/audio_sources/Q3JZcugU5zw.m4a",
+        "data/audio_sources/Q3JZcugU5zw.wav",
+        "data/audio_sources/Q3JZcugU5zw.webm",
+        "data/audio_sources/Q3JZcugU5zw.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] Z1Ac2v8mULM: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "wAi4zvgGy4w",
+      "video_id": "Qy_YMLKX8bQ",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=wAi4zvgGy4w",
+      "video_url": "https://www.youtube.com/watch?v=Qy_YMLKX8bQ",
       "attempted_paths": [
-        "data/audio_sources/wAi4zvgGy4w.mp3",
-        "data/audio_sources/wAi4zvgGy4w.m4a",
-        "data/audio_sources/wAi4zvgGy4w.wav",
-        "data/audio_sources/wAi4zvgGy4w.webm",
-        "data/audio_sources/wAi4zvgGy4w.mp4"
+        "data/audio_sources/Qy_YMLKX8bQ.mp3",
+        "data/audio_sources/Qy_YMLKX8bQ.m4a",
+        "data/audio_sources/Qy_YMLKX8bQ.wav",
+        "data/audio_sources/Qy_YMLKX8bQ.webm",
+        "data/audio_sources/Qy_YMLKX8bQ.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] wAi4zvgGy4w: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "YFc40YFhMvk",
+      "video_id": "uTBQ0E07n88",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=YFc40YFhMvk",
+      "video_url": "https://www.youtube.com/watch?v=uTBQ0E07n88",
       "attempted_paths": [
-        "data/audio_sources/YFc40YFhMvk.mp3",
-        "data/audio_sources/YFc40YFhMvk.m4a",
-        "data/audio_sources/YFc40YFhMvk.wav",
-        "data/audio_sources/YFc40YFhMvk.webm",
-        "data/audio_sources/YFc40YFhMvk.mp4"
+        "data/audio_sources/uTBQ0E07n88.mp3",
+        "data/audio_sources/uTBQ0E07n88.m4a",
+        "data/audio_sources/uTBQ0E07n88.wav",
+        "data/audio_sources/uTBQ0E07n88.webm",
+        "data/audio_sources/uTBQ0E07n88.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] YFc40YFhMvk: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     },
     {
-      "video_id": "75QtulYanTE",
+      "video_id": "dk-pvsityfs",
       "audio_source_dir": "data/audio_sources",
       "audio_source_dir_exists": false,
       "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=75QtulYanTE",
+      "video_url": "https://www.youtube.com/watch?v=dk-pvsityfs",
       "attempted_paths": [
-        "data/audio_sources/75QtulYanTE.mp3",
-        "data/audio_sources/75QtulYanTE.m4a",
-        "data/audio_sources/75QtulYanTE.wav",
-        "data/audio_sources/75QtulYanTE.webm",
-        "data/audio_sources/75QtulYanTE.mp4"
+        "data/audio_sources/dk-pvsityfs.mp3",
+        "data/audio_sources/dk-pvsityfs.m4a",
+        "data/audio_sources/dk-pvsityfs.wav",
+        "data/audio_sources/dk-pvsityfs.webm",
+        "data/audio_sources/dk-pvsityfs.mp4"
       ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ngs presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: Only images are available for download. use --list-formats to see them\nERROR: [youtube] 75QtulYanTE: Requested format is not available. Use --list-formats for a list of available formats",
-      "ytdlp_error_category": "format_unavailable"
+      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required"
     }
   ],
   "failed_video_ids": [],

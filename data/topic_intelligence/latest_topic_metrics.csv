@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-ai_tools,317,72,144566.0,456.0442,0.054556,41.9002,10.6519,4.3855,0.0,80.0,64.2766,58.4451,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
-unknown,755,107,351428.0,465.4675,0.055252,45.0752,10.268,4.2425,0.0,100.0,77.2936,77.7979,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
-news_trends,20,12,2092.0,104.6,0.061958,47.4014,5.427,2.1708,0.0,60.0,25.6667,52.2444,OTt76d3wPiQ,Revisando las noticias en vivo #15 ''Sonidos de guillotina'',Diego Ruzzarin
-tutorial,61,20,1656.0,27.1475,0.044378,32.4285,7.6065,3.1332,0.0,0.0,43.9016,18.6614,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
-finance_personal,40,20,1749.0,43.725,0.055062,41.8054,15.4302,6.3222,0.0,20.0,41.7917,35.0727,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés
-productivity,14,8,1300.0,92.8571,0.725055,45.7456,23.843,9.7177,0.0,40.0,12.0238,46.4125,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
+ai_tools,317,72,487053.0,1536.4448,0.05444,42.6911,15.0089,6.1878,0.0,80.0,64.2766,58.9242,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
+unknown,758,107,1243072.0,1639.9367,0.054795,44.4901,14.8047,6.0966,0.0,100.0,76.8017,77.9333,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
+news_trends,20,12,8533.0,426.65,0.061734,49.0939,8.3007,3.3203,0.0,60.0,24.0,52.2281,OTt76d3wPiQ,Revisando las noticias en vivo #15 ''Sonidos de guillotina'',Diego Ruzzarin
+tutorial,63,20,6784.0,107.6825,0.04552,32.9831,19.5786,8.0753,0.0,0.0,43.7143,19.6768,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+finance_personal,40,20,4968.0,124.2,0.054768,42.5907,24.4736,9.9977,0.0,20.0,40.125,35.4257,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés
+productivity,14,8,4532.0,323.7143,0.794854,47.2464,28.7371,11.6663,0.0,40.0,10.3571,46.5274,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-06T00:42:27.618495+00:00",
+  "generated_at": "2026-05-06T02:12:14.009952+00:00",
   "limit": 10,
-  "candidates_considered": 1272,
+  "candidates_considered": 1276,
   "selected_count": 10,
   "selected_forced_count": 0,
   "selected_ranked_count": 10,
@@ -13,20 +13,20 @@
   "forced_channels_max_per_run": 50,
   "registry_existing_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 30,
+  "registry_existing_recent_failed_count": 40,
   "skipped_already_transcribed": 0,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 30,
+  "skipped_recent_failures": 40,
   "skipped_forced_already_transcribed": 0,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 18,
   "skipped_duplicate_selected": 0,
   "top_selected": [
-    "0AheTRgTBzU",
-    "NUQcYZADgLw",
-    "XiPhamWTPcU",
-    "3yj9rCGNqjU",
-    "wDUtigax8Lg"
+    "BflRX7z7SHs",
+    "-lDwUYFl7Iw",
+    "UCWBWgCD4oAqT3hUeq40SCUw",
+    "OTt76d3wPiQ",
+    "UCjSVqRtdOsxQDss_pJpp_Yg"
   ],
   "warnings": []
 }
