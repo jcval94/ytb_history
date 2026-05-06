@@ -131,6 +131,124 @@ def test_download_audio_with_ytdlp_includes_preferred_audio_format(tmp_path: Pat
     assert captured_cmd[-1] == "https://www.youtube.com/watch?v=v1"
 
 
+def test_ytdlp_auth_required_with_cookies_continues_to_later_strategy(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
+    attempted_strategies: list[str] = []
+
+    def _strategy_name(cmd: list[str]) -> str:
+        extractor_args = cmd[cmd.index("--extractor-args") + 1]
+        return extractor_args.removeprefix("youtube:player_client=")
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        strategy_name = _strategy_name(cmd)
+        attempted_strategies.append(strategy_name)
+        assert "--cookies" in cmd
+        assert cmd[cmd.index("--cookies") + 1] == "/tmp/cookies.txt"
+        if strategy_name == "mweb":
+            (tmp_path / "audio" / "v1.mp3").write_bytes(b"audio")
+            return subprocess.CompletedProcess(args=cmd, returncode=0, stderr="")
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Sign in to confirm you're not a bot. Use --cookies",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+        ytdlp_cookies_file="/tmp/cookies.txt",
+    )
+
+    assert attempted_strategies == ["android", "ios", "mweb"]
+    assert audio_path == tmp_path / "audio" / "v1.mp3"
+    assert error is None
+    assert error_category is None
+
+
+def test_ytdlp_auth_required_with_cookies_exhausts_all_strategies(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
+    attempted_strategies: list[str] = []
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        extractor_args = cmd[cmd.index("--extractor-args") + 1]
+        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Sign in to confirm you're not a bot. Use --cookies",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+        ytdlp_cookies_file="/tmp/cookies.txt",
+    )
+
+    assert attempted_strategies == [name for name, _args in transcription_runner_service._ytdlp_download_strategies()]
+    assert audio_path is None
+    assert error is not None and "strategy=web" in error
+    assert error_category == "auth_required"
+
+
+def test_ytdlp_auth_required_without_auth_context_stops_after_first_strategy(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    attempted_strategies: list[str] = []
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        extractor_args = cmd[cmd.index("--extractor-args") + 1]
+        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Sign in to confirm you're not a bot. Use --cookies",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert attempted_strategies == ["android"]
+    assert audio_path is None
+    assert error is not None and "strategy=android" in error
+    assert error_category == "auth_required"
+
+
+def test_ytdlp_video_unavailable_stops_after_first_strategy_even_with_cookies(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    attempted_strategies: list[str] = []
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        extractor_args = cmd[cmd.index("--extractor-args") + 1]
+        attempted_strategies.append(extractor_args.removeprefix("youtube:player_client="))
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Video unavailable",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+        ytdlp_cookies_file="/tmp/cookies.txt",
+    )
+
+    assert attempted_strategies == ["android"]
+    assert audio_path is None
+    assert error is not None and "strategy=android" in error
+    assert error_category == "video_unavailable"
+
+
 def test_ytdlp_requested_format_unavailable_is_reported(tmp_path: Path, monkeypatch) -> None:
     _write_queue(tmp_path, ["v1"])
     monkeypatch.setenv("OPENAI_API_KEY", "test-key")
