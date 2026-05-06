@@ -16,1483 +16,1703 @@
   - confidence: high (100.0)
   - evidence: threshold=80.0, raw_signal_score=98.3871, metric_confidence_score=100.0
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · Do This in Your 20s To Become a MILLIONAIRE
-  - score: 98.1676
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=99.9162, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_high_growth** · Alex Hormozi
   - score: 96.7742
   - confidence: high (100.0)
   - evidence: threshold=80.0, raw_signal_score=96.7742, metric_confidence_score=100.0
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · No saben que lo mantengo #chisme #comedia #podcast
-  - score: 96.7676
+- **high_engagement_low_reach** · ¿Calidad o Cantidad en YouTube? (Respuesta por Experta)
+  - score: 96.2198
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=98.4912, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+  - evidence: threshold=75.0, raw_signal_score=97.9336, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Jaime Higuera
   - score: 95.8678
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=95.8678, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · 5 pasos para MULTIPLICAR tu DINERO
+- **packaging_problem** · ¿Calidad o Cantidad en YouTube? (Respuesta por Experta)
+  - score: 95.5815
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=97.2839, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · People Who Became Famous For Doing Nothing
+  - score: 95.0381
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=96.7309, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Couple Makes $12 an Hour ILLEGALLY
+  - score: 94.7087
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=96.3956, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · This Mother Makes BANK
   - score: 94.4617
   - confidence: high (96.5)
   - evidence: threshold=70.0, raw_signal_score=96.1442, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico
-  - score: 94.0758
+- **high_engagement_low_reach** · Así generaría 10000€ al mes #shorts
+  - score: 94.2418
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=95.7514, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=95.9204, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Woshingo Streams
   - score: 94.0444
   - confidence: high (91.25)
   - evidence: threshold=30.0, raw_signal_score=98.3471, metric_confidence_score=91.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
+- **accelerating_video** · Paying $2500 a Month For Rent in Texas
+  - score: 93.391
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=95.0545, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · COMPUESTOS Podcast
   - score: 93.3884
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=93.3884, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · ¿Calidad o Cantidad en YouTube? (Respuesta por Experta)
-  - score: 93.1793
+- **accelerating_video** · Do This in Your 20s To Become a MILLIONAIRE
+  - score: 93.3087
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=94.839, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · El imperio en decadencia: El capricho de Trump costeado por el pueblo de U.S.A.
-  - score: 93.144
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=94.803, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · If You Feel Like You're Behind, Watch This.
-  - score: 93.144
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=94.803, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Tener seguro hace que pagues más?
-  - score: 93.0622
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=96.4376, metric_confidence_score=93.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Actualización Repugnante
-  - score: 92.8211
-  - confidence: high (92.5)
-  - evidence: threshold=70.0, raw_signal_score=96.4376, metric_confidence_score=92.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿SIRVEN PARA ALGO LOS EXPERIMENTOS EN EL ESPACIO? 🛰️
-  - score: 92.8073
-  - confidence: high (94.5)
-  - evidence: threshold=70.0, raw_signal_score=95.4317, metric_confidence_score=94.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Im Doing Too Many Things In The Business
-  - score: 92.6982
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=96.0604, metric_confidence_score=93.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Entrepreneurship Often Sucks
-  - score: 92.496
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=95.8508, metric_confidence_score=93.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · "What Should I Price My Products?"
-  - score: 92.4439
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=94.0905, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **packaging_problem** · ¿Calidad o Cantidad en YouTube? (Respuesta por Experta)
-  - score: 92.1084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=93.749, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · Bárbara Tijerina: Cómo Detectar Mentiras y Leer a Cualquier Persona en Segundos | EP. #65
-  - score: 91.991
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=93.6295, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=94.9707, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_high_growth** · Diego Ruzzarin
-  - score: 91.9355
+  - score: 92.7419
   - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=91.9355, metric_confidence_score=100.0
+  - evidence: threshold=80.0, raw_signal_score=92.7419, metric_confidence_score=100.0
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · Fidelity is introducing $100 ETF fees on 120+ ETFs. Here’s what you need to know+List in description
-  - score: 91.912
-  - confidence: high (88.0)
-  - evidence: threshold=70.0, raw_signal_score=97.7787, metric_confidence_score=88.0
+- **accelerating_video** · Things You’re Allowed To Own But Not Sell
+  - score: 92.6498
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=94.3001, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_momentum_up** · Noche De Chicxs
-  - score: 91.8699
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=100.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · Caleb Hammer
-  - score: 91.8699
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=100.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · Sambucha
-  - score: 91.8699
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=100.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Girlfriend Finds Out Partner is $72,000 in DEBT
+  - score: 92.3674
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=97.4853, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · HE THREW THE CHAIR
+  - score: 91.9086
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=93.5457, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Made Mascots For Stores That Don’t Have Them
+  - score: 91.9086
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=98.8265, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · This Paralegal Has a WILD Side Hustle
+  - score: 91.8908
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=96.9824, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · No hagas caso a la sociedad actual  #shorts
+  - score: 91.8263
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=93.4619, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Inteligencia Artificial
   - score: 91.7355
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=91.7355, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Ecatepec en la mira del desarrollo #ecatepec #méxico
-  - score: 91.4678
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=94.7853, metric_confidence_score=93.0
+- **high_engagement_low_reach** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
+  - score: 91.5088
+  - confidence: high (88.5)
+  - evidence: threshold=75.0, raw_signal_score=97.0915, metric_confidence_score=88.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Luis Mi Negocios
-  - score: 91.129
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=91.129, metric_confidence_score=100.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · Human vs Computer
+  - score: 91.3321
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=92.9589, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Jynxzi REALIZES
+  - score: 91.285
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=98.1559, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · En el futuro eso ya es tuyo #shorts
+  - score: 91.1987
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=92.8231, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Mustang VS Tesla
+  - score: 91.176
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=96.228, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Así es la era en la que vivimos  #shorts
+  - score: 91.1276
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=96.1769, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · La industria no quiere que sepas esto  #shorts
+  - score: 91.1154
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=94.4201, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Deja de actuar así #shorts
+  - score: 91.0359
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=96.0801, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_high_growth** · The Diary Of A CEO
   - score: 90.998
   - confidence: high (91.25)
   - evidence: threshold=80.0, raw_signal_score=95.1613, metric_confidence_score=91.25
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · "Dinero Roto" (Broken Money) de Lyn Alden | Club de Lectura #199
-  - score: 90.9472
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Lo despidieron por grabar vídeos virales
-  - score: 90.9355
-  - confidence: high (84.5)
-  - evidence: threshold=70.0, raw_signal_score=98.575, metric_confidence_score=84.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_high_growth** · CdeCiencia
-  - score: 90.9294
-  - confidence: high (89.5)
-  - evidence: threshold=80.0, raw_signal_score=95.9677, metric_confidence_score=89.5
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **high_engagement_low_reach** · Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico
+  - score: 90.9483
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=92.5683, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Noche De Chicxs
   - score: 90.9091
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=90.9091, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · La batalla de #azuky y #notaroja
-  - score: 90.7393
-  - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=97.5692, metric_confidence_score=86.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Algunas personas llegan a tu vida por esta razón #shorts
-  - score: 90.5498
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=92.1626, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Qué es renta fija? (explicado fácil)
-  - score: 90.2766
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · "ZENcillamente" de Roberto Cuéllar | Club de Lectura #198
-  - score: 90.2766
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
-  - score: 90.1951
-  - confidence: high (88.5)
-  - evidence: threshold=75.0, raw_signal_score=95.6978, metric_confidence_score=88.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · DESCUBREN PARTÍCULAS QUE SALEN DIRECTAMENTE DEL VACÍO 🌌
-  - score: 90.158
-  - confidence: high (94.5)
-  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=94.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · ¡NOS NOMINARON EN LOS SPOTIFY PODCAST AWARDS!
-  - score: 90.0125
+- **high_engagement_low_reach** · Este es el verdadero problema   #shorts
+  - score: 90.8754
   - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=95.0, metric_confidence_score=89.5
+  - evidence: threshold=75.0, raw_signal_score=95.9107, metric_confidence_score=89.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Biggest One-Hit Wonders In History
+  - score: 90.5909
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=92.2045, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Experta en Lenguaje No Verbal: "Juzgar No es Malo si..."
+  - score: 90.5503
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=93.8345, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · I Tried Buying All The Fries From McDonald’s
+  - score: 90.4262
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=92.0369, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Sex Expert: What Women Actually Need To Enjoy Sex
+  - score: 90.3726
+  - confidence: high (91.5)
+  - evidence: threshold=70.0, raw_signal_score=94.3839, metric_confidence_score=91.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · Luis Mi Negocios
+  - score: 90.3226
+  - confidence: high (100.0)
+  - evidence: threshold=80.0, raw_signal_score=90.3226, metric_confidence_score=100.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **high_engagement_low_reach** · Esta es la idea de ingreso pasivo  #shorts
+  - score: 90.3095
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=91.9181, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Esta técnica es muy efectiva  #shorts
+  - score: 90.2421
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=93.5151, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · The Most USELESS College Degrees
+  - score: 90.1157
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=96.8986, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_volatility_warning** · Jessica Fernández García
+  - score: 90.093
+  - confidence: high (91.25)
+  - evidence: threshold=30.0, raw_signal_score=94.2149, metric_confidence_score=91.25
+  - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
 
 ## High
-- **high_engagement_low_reach** · Este es el tiempo más peligroso #shorts
-  - score: 89.9624
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=91.5648, metric_confidence_score=96.5
+- **high_engagement_low_reach** · Ventajas de ser un Growth Partner #shorts
+  - score: 89.9339
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=93.1957, metric_confidence_score=93.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · REGALAN 1000 boletos… pero NO ES casualidad
-  - score: 89.8086
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=91.4082, metric_confidence_score=96.5
+- **accelerating_video** · Stanford Neuroscientist: Can’t Remember Your Dreams? Your Brain May Be Warning You!
+  - score: 89.8108
+  - confidence: high (91.5)
+  - evidence: threshold=70.0, raw_signal_score=93.7972, metric_confidence_score=91.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¡Tenía el pie roto! #chisme #comedia #podcast
-  - score: 89.8086
+- **high_engagement_low_reach** · Chisme express con Traumaditos Podcast #chisme #comedia #podcast
+  - score: 89.8
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=91.4082, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Deja de actuar así #shorts
-  - score: 89.7074
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=94.678, metric_confidence_score=89.5
+  - evidence: threshold=75.0, raw_signal_score=91.3994, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · We Really Just Do The Basics
-  - score: 89.5082
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=94.4677, metric_confidence_score=89.5
+- **accelerating_video** · There's a Telescope at the Bottom of the Ocean
+  - score: 89.7957
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=96.8148, metric_confidence_score=85.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · México se desarrollará por su gente #méxico
+  - score: 89.793
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=93.0497, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · 1000 DAYS
+  - score: 89.7863
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=93.0427, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Este es el activo más valioso que puedes poseer #shorts
+  - score: 89.6914
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=91.2889, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Que te rompan el corazón es lo mejor que te puede pasar #shorts
+  - score: 89.6819
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=91.2792, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · La TRAMPA de los CRÉDITOS | No saques un PRÉSTAMO sin ver esto
+  - score: 89.6562
+  - confidence: high (88.5)
+  - evidence: threshold=75.0, raw_signal_score=95.1259, metric_confidence_score=88.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Por esto ser realista ha matado a nuestra generación #shorts
+  - score: 89.5805
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=91.176, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Haz esto si estás estancado en 0 euros #shorts
+  - score: 89.5344
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=91.1292, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · IA Innova
   - score: 89.5
   - confidence: high (79.0)
   - evidence: threshold=30.0, raw_signal_score=100.0, metric_confidence_score=79.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **packaging_problem** · ¡NOS NOMINARON EN LOS SPOTIFY PODCAST AWARDS!
-  - score: 89.4687
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=94.4261, metric_confidence_score=89.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · ¿Qué es exactamente una skill de IA?
-  - score: 89.3556
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¡Episodio estreno con CD9! #chisme #comedia #podcast
-  - score: 89.3556
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Nobody Warns You About This Part Of Wanting Something Big
-  - score: 89.3556
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · If You're At Rock Bottom
-  - score: 89.3096
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=94.2582, metric_confidence_score=89.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · La TRAMPA de los CRÉDITOS | No saques un PRÉSTAMO sin ver esto
-  - score: 89.2846
-  - confidence: high (88.5)
-  - evidence: threshold=75.0, raw_signal_score=94.7316, metric_confidence_score=88.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_volatility_warning** · Jessica Fernández García
-  - score: 89.2686
-  - confidence: high (89.5)
-  - evidence: threshold=30.0, raw_signal_score=94.2149, metric_confidence_score=89.5
-  - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · Platzi Conf Mexico 2026 🇲🇽 El evento tech del año
-  - score: 89.2309
-  - confidence: high (92.5)
-  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=92.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿El fin de los expertos?
-  - score: 89.1821
-  - confidence: high (90.5)
-  - evidence: threshold=70.0, raw_signal_score=93.6295, metric_confidence_score=90.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Chisme express con Traumaditos Podcast #chisme #comedia #podcast
-  - score: 88.9605
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=90.545, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · El peligro de usar el celular como "niñera"
-  - score: 88.6631
-  - confidence: high (90.5)
-  - evidence: threshold=70.0, raw_signal_score=93.0847, metric_confidence_score=90.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_momentum_up** · Platzi
-  - score: 88.6545
-  - confidence: high (93.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=93.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · ¿Es normal lo que pasa en México? ¿O nos quieren desestabilizar?
-  - score: 88.5386
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=90.1156, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Ser rico es toda una estafa  #shorts
-  - score: 88.5325
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=91.7435, metric_confidence_score=93.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Experta en Imagen: La Realidad de lo que Representa Cada Color
-  - score: 88.4359
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=93.3361, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Haz ESTO para gestionar BIEN tu tiempo
-  - score: 88.3185
-  - confidence: high (85.5)
-  - evidence: threshold=70.0, raw_signal_score=95.2221, metric_confidence_score=85.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Que está pasando en México? #méxico
-  - score: 88.1905
-  - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=96.6471, metric_confidence_score=82.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Helping A Stranger Scale Her $300K Year Business
-  - score: 87.9556
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · This Is What's Actually Been Stopping You
-  - score: 87.9556
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · El Fin de las Suscripciones Baratas de IA (Copilot, Claude y más)
-  - score: 87.7972
-  - confidence: high (84.0)
-  - evidence: threshold=70.0, raw_signal_score=95.4317, metric_confidence_score=84.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · 3 Metas Financieras Que NADIE Te Dice (Pero Son Cruciales)
-  - score: 87.6614
-  - confidence: high (80.0)
-  - evidence: threshold=70.0, raw_signal_score=97.4015, metric_confidence_score=80.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Haz esto si estás estancado en 0 euros #shorts
-  - score: 87.6421
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=89.2031, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · ⚠️ ¡Cuidado! Tu fondo de vivienda corre PELIGRO 😨
-  - score: 87.6241
-  - confidence: high (84.0)
-  - evidence: threshold=70.0, raw_signal_score=95.2436, metric_confidence_score=84.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · ⚠️ ¡Cuidado! Tu fondo de vivienda corre PELIGRO 😨
-  - score: 87.6127
-  - confidence: high (84.0)
-  - evidence: threshold=75.0, raw_signal_score=95.2312, metric_confidence_score=84.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · 👉🏻 Te dejo la Guía Completa para convertirte en Slime fijada en los comentarios de este vídeo.
-  - score: 87.5105
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · Esto es lo primero que vas a hacer mañana  #shorts
-  - score: 87.3845
+  - score: 89.4685
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=88.941, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=91.062, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Why is he laying down
+  - score: 89.2733
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=90.8634, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · La Estrategia de GAPS que gana 7 de cada 10 veces (REAL)
-  - score: 87.261
+  - score: 89.1506
   - confidence: high (88.5)
-  - evidence: threshold=75.0, raw_signal_score=92.5846, metric_confidence_score=88.5
+  - evidence: threshold=75.0, raw_signal_score=94.5895, metric_confidence_score=88.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Lo Que No Te Dicen De La Subida De Tasas — CUIDADO ⚠️
-  - score: 87.2125
-  - confidence: high (83.5)
-  - evidence: threshold=70.0, raw_signal_score=95.0545, metric_confidence_score=83.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Experta en Lenguaje No Verbal: "Juzgar No es Malo si..."
-  - score: 87.1687
+- **high_engagement_low_reach** · Experta en Imagen: La Realidad de lo que Representa Cada Color
+  - score: 88.9717
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=93.9015, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Ser rico es toda una estafa  #shorts
+  - score: 88.9663
   - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=90.3303, metric_confidence_score=93.0
+  - evidence: threshold=75.0, raw_signal_score=92.1931, metric_confidence_score=93.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Chisme express con Frida Araujo #chisme #comedia #podcast
-  - score: 87.1169
+- **accelerating_video** · Couple Makes $13k Per Month But Spends DOUBLE
+  - score: 88.9438
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=90.5281, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · CdeCiencia
+  - score: 88.6371
+  - confidence: high (89.5)
+  - evidence: threshold=80.0, raw_signal_score=93.5484, metric_confidence_score=89.5
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **high_engagement_low_reach** · Esto es lo primero que necesitas  #shorts
+  - score: 88.5835
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=90.1613, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Ozempic está DESTRUYENDO negocios que NADIE esperaba
+  - score: 88.5729
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=97.0662, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · There’s Antimatter In This Truck
+  - score: 88.5518
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=95.4736, metric_confidence_score=85.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Stock Expert: Becoming Rich Is Simple, But You Won’t Do It!
+  - score: 88.5383
+  - confidence: high (84.5)
+  - evidence: threshold=70.0, raw_signal_score=95.9765, metric_confidence_score=84.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Boyfriend Prevents Her From Scaling a $50k Business
+  - score: 88.5321
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=90.109, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Este efecto táctil te hará sentir DOBLE
+  - score: 88.3039
+  - confidence: high (90.5)
+  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=90.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · JYNXZI vs GOTHAM CHESS BATTLE
+  - score: 88.285
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=89.8575, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · BOOM BOOM BOOM BOOM
+  - score: 88.0889
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=94.7192, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Jynxzi no no no no nooooooo
+  - score: 88.0746
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=98.4074, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Why Are You Doing So Little?
+  - score: 88.0379
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=89.606, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Absurd 💀💀💀
+  - score: 87.9992
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=92.8751, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Este es uno de los mayores errores que comete la gente al comenzar #shorts
+  - score: 87.959
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=92.8327, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Los aranceles de Trump fueron ilegales, ahora el pueblo paga. #diegoruzzarin
+  - score: 87.9329
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=94.5516, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Existe otra forma de comenzar un negocio  #shorts
+  - score: 87.9035
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=89.4693, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Caleb Hammer RUINED Financial Audit
+  - score: 87.8449
   - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=91.031, metric_confidence_score=93.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · “No salgo si no me pagan”
-  - score: 87.0085
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Work Beats Talent....
-  - score: 87.0085
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 87.0085
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Se Puede Vivir De YouTube? 📹 #Compuestos #AndresGarza #EloisaWolf #YouTube
-  - score: 87.0085
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · No tengas miedo a esto #shorts
-  - score: 87.0085
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Pagué las 10 IA populares… y SOLO 3 Valieron la Pena
-  - score: 86.9873
-  - confidence: high (82.0)
-  - evidence: threshold=75.0, raw_signal_score=95.5904, metric_confidence_score=82.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · 30 Hábitos que (Silenciosamente) Cambiaron mi Vida para Siempre
-  - score: 86.6521
-  - confidence: high (82.0)
-  - evidence: threshold=70.0, raw_signal_score=95.2221, metric_confidence_score=82.0
+- **accelerating_video** · "Am I Selling The Wrong Thing?"
+  - score: 87.6245
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=97.9044, metric_confidence_score=79.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · This Is Your Lonely Chapter
-  - score: 86.4353
+  - score: 87.5514
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=87.9748, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=89.1108, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · México se desarrollará por su gente #méxico
-  - score: 86.3889
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=93.0
+- **accelerating_video** · I'm Selling Everything
+  - score: 87.5438
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=89.1031, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_high_growth** · elWacky
-  - score: 86.3831
+- **high_engagement_low_reach** · Esto me cambió la vida   #shorts
+  - score: 87.5043
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=92.3528, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿Qué está encareciendo los seguros médicos?
+  - score: 87.4913
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=89.0497, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · This New Day Trading Rule Will BANKRUPT People
+  - score: 87.4744
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=97.7368, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · TOP 5 HIGHEST DEBT INTEREST RATES ON FINANCIAL AUDIT
+  - score: 87.4405
   - confidence: high (93.0)
-  - evidence: threshold=80.0, raw_signal_score=89.5161, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=90.6119, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Togi Bought a LAMBO at an 18% Interest Rate
+  - score: 87.2967
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=88.8516, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Financial Audit Employees Get Free Food DAILY!
+  - score: 87.2351
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=99.4132, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Que te rompan el corazon es lo mejor que te puede pasar #shorts
+  - score: 87.2069
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=88.7602, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Car Detailer Makes $100,000 a Year!
+  - score: 87.0145
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=99.1618, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Asmongold Makes MILLIONS of Dollars Per Year
+  - score: 86.9409
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=99.078, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · JYNXZI PEAK ELOOOOO
+  - score: 86.8674
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=98.9941, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Este es uno de los errores más comunes cuando la gente empieza a ganar dinero #shorts
+  - score: 86.8607
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=91.6736, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿Se Puede Vivir de Ser YouTube? (La Realidad de 2026)
+  - score: 86.8052
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=88.3513, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **metadata_change_watch** · The disaster I never imagined having to worry about
+  - score: 86.75
+  - confidence: high (73.5)
+  - evidence: threshold=1.0, raw_signal_score=100.0, metric_confidence_score=73.5
+  - recommended_action: Vigilar lift posterior del cambio de metadata.
+- **channel_high_growth** · Cleo Abram
+  - score: 86.7308
+  - confidence: high (80.75)
+  - evidence: threshold=80.0, raw_signal_score=95.9677, metric_confidence_score=80.75
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · TRONÓ el Petrodólar! Petróleo en YUANES CHINOS! Deuda de 39 TRILLONES de USA
-  - score: 86.3162
-  - confidence: high (80.5)
-  - evidence: threshold=70.0, raw_signal_score=95.6412, metric_confidence_score=80.5
+- **accelerating_video** · What If Earth Was Hollow?
+  - score: 86.6859
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=93.4619, metric_confidence_score=85.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Escúchalo completo en Más Allá del Rosa en YouTube
-  - score: 86.0771
-  - confidence: high (80.0)
-  - evidence: threshold=70.0, raw_signal_score=95.6412, metric_confidence_score=80.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · This idea validation formula has made him $500K from iOS apps
-  - score: 86.0337
-  - confidence: high (81.5)
-  - evidence: threshold=70.0, raw_signal_score=94.803, metric_confidence_score=81.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Esta es la forma más rápida de leer a una persona #shorts
-  - score: 85.979
+- **high_engagement_low_reach** · Así trabajan las personas que están construyendo riquezas #shorts
+  - score: 86.6094
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=88.1521, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · I Tried Getting Banned From Every Store (Again)
+  - score: 86.6077
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=93.1266, metric_confidence_score=86.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¡Estas quemando tokens por no saber programar!
-  - score: 85.979
+- **packaging_problem** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
+  - score: 86.5497
+  - confidence: high (88.5)
+  - evidence: threshold=70.0, raw_signal_score=91.8299, metric_confidence_score=88.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · YOU WILL NEVER SEE DISCIPLINE THE SAME AGAIN
+  - score: 86.4359
+  - confidence: high (88.0)
+  - evidence: threshold=70.0, raw_signal_score=91.9531, metric_confidence_score=88.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Investigated Stores That Are Disappearing (Again)
+  - score: 86.3085
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=87.8458, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · This Is Rarer Than Any Goal You'll Ever Hit
-  - score: 85.979
+- **accelerating_video** · This Cat Operation Cost $9,000
+  - score: 86.2018
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=94.4677, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ¡NOS NOMINARON EN LOS SPOTIFY PODCAST AWARDS!
+  - score: 86.1255
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=90.8976, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Jaime Higuera no se equivocó cuando dijo esto #shorts
+  - score: 86.0301
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.
-  - score: 85.979
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Me quedé pensando cuando Jaime Higuera dijo esto #shorts
-  - score: 85.979
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Traición a la patria? #méxico
-  - score: 85.979
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Así generaría 10000€ al mes #shorts
-  - score: 85.979
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+  - evidence: threshold=75.0, raw_signal_score=87.5625, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Moris Dieck | Finanzas e Inversiones 
   - score: 85.9504
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=85.9504, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **packaging_problem** · Ecatepec en la mira del desarrollo #ecatepec #méxico
-  - score: 85.7981
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=88.91, metric_confidence_score=93.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · "Le vas invertir dinero al aire"
-  - score: 85.6664
+- **high_engagement_low_reach** · Elige un problema que puedas resolver #shorts
+  - score: 85.928
   - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=93.881, metric_confidence_score=82.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Me cambió la vida cuando Jaime Higuera dijo esto #shorts
-  - score: 85.4587
+  - evidence: threshold=75.0, raw_signal_score=94.1677, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Que te rompan el corazón es lo mejor que te puede pasar en la vida #shorts
+  - score: 85.916
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=87.4463, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · I Don't Do Early Meetings
+  - score: 85.9036
   - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=89.0193, metric_confidence_score=93.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **packaging_problem** · Pagué las 10 IA populares… y SOLO 3 Valieron la Pena
-  - score: 85.4318
-  - confidence: high (82.0)
-  - evidence: threshold=70.0, raw_signal_score=93.8811, metric_confidence_score=82.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_high_growth** · Cleo Abram
-  - score: 85.2732
-  - confidence: high (80.75)
-  - evidence: threshold=80.0, raw_signal_score=94.3548, metric_confidence_score=80.75
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · The tech stack behind a $25K/month timer app?
-  - score: 85.197
+- **accelerating_video** · Rest in Peace, Charlie Kirk....
+  - score: 85.8194
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=94.0486, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
+  - score: 85.8146
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=87.3431, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · I Tested Every Zack D. Films Video
+  - score: 85.7837
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=99.7485, metric_confidence_score=72.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La situación en Argentina no mejora #argentina
+  - score: 85.7653
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=87.2929, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Couple Makes $120k a Year But Lives in a TRAILER
+  - score: 85.6496
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=87.1752, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Este es el tiempo más peligroso #shorts
+  - score: 85.6229
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=87.148, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Qué pasa con Claude Code, GPT 5.5 y mas chismecito dev
+  - score: 85.3964
   - confidence: high (81.5)
-  - evidence: threshold=70.0, raw_signal_score=93.881, metric_confidence_score=81.5
+  - evidence: threshold=75.0, raw_signal_score=94.1007, metric_confidence_score=81.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · What The Car You Drive Says About You
+  - score: 85.2988
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=95.306, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The Most INSANE Financial Audit Ever
+  - score: 85.2378
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=86.7561, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Luis Mi Negocios
   - score: 85.124
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=85.124, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Si quieres resultados diferentes, necesitas entornos diferentes.
-  - score: 84.9952
+- **high_engagement_low_reach** · No consumas tu tiempo y tu energía en algo que no te aporta nada  #shorts
+  - score: 85.0269
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=86.5091, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=86.5413, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Así generaría 10000€ al mes #shorts
-  - score: 84.9587
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=86.4719, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
-  - score: 84.9184
-  - confidence: high (88.5)
-  - evidence: threshold=70.0, raw_signal_score=90.0991, metric_confidence_score=88.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · Tómatelo como algo personal #shorts
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
+- **accelerating_video** · How They Build Underwater Tunnels
+  - score: 84.9858
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=95.2221, metric_confidence_score=78.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Este es el activo más valioso que puedes poseer #shorts
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
+- **accelerating_video** · There's a Secret Network Under Your Feet
+  - score: 84.9755
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=91.6178, metric_confidence_score=85.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Claude Design no es rival para Figma, pero…
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Así trabajan las personas que están construyendo riquezas #shorts
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · La sociedad te está programando #shorts
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · En el futuro eso ya es tuyo #shorts
-  - score: 84.9084
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Esto me cambió la vida   #shorts
-  - score: 84.8818
+- **packaging_problem** · ¡NOS NOMINARON EN LOS SPOTIFY PODCAST AWARDS!
+  - score: 84.9666
   - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=89.5851, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+  - evidence: threshold=70.0, raw_signal_score=89.6745, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **channel_volatility_warning** · VisualPolitik
   - score: 84.8492
   - confidence: high (75.5)
   - evidence: threshold=30.0, raw_signal_score=96.6942, metric_confidence_score=75.5
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · 👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.
-  - score: 84.8223
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=89.5
+- **accelerating_video** · What Actually Is A Dyson Sphere?
+  - score: 84.82
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=91.4501, metric_confidence_score=85.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · "I Have 3 Businesses..."
+  - score: 84.8078
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=96.6471, metric_confidence_score=75.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_high_growth** · Kurzgesagt – In a Nutshell
   - score: 84.7732
   - confidence: high (73.75)
   - evidence: threshold=80.0, raw_signal_score=97.5806, metric_confidence_score=73.75
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · ¿Cómo Transmitir Confianza? 🤝🏼 #Compuestos #AndresGarza #BárbaraTijerina #Confianza
-  - score: 84.5956
-  - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=82.5
+- **packaging_problem** · ¿Se Puede Vivir de Ser YouTube? (La Realidad de 2026)
+  - score: 84.7667
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=86.2766, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Dron quieto o en movimiento?
+  - score: 84.7634
+  - confidence: high (74.5)
+  - evidence: threshold=70.0, raw_signal_score=97.15, metric_confidence_score=74.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The WORST Debt In Financial Audit History
+  - score: 84.7429
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=89.4384, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Scott Galloway: AI Wasn’t Built For You. The Rich Don’t Need You Anymore!
+  - score: 84.6783
+  - confidence: high (70.5)
+  - evidence: threshold=70.0, raw_signal_score=99.3294, metric_confidence_score=70.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Esto hice para generar 72.000€ #shorts
+  - score: 84.6607
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=86.1687, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Los millonarios no quieren que conozcas este modelo de negocio  #shorts
+  - score: 84.5912
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=87.6593, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · CdeCiencia
   - score: 84.5702
   - confidence: high (89.5)
   - evidence: threshold=30.0, raw_signal_score=89.2562, metric_confidence_score=89.5
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · 🤖 La ley de cambio climático prohíbe la extracción de materiales radioactivos en España 🤖 #chatgpt
-  - score: 84.4929
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=100.0
+- **accelerating_video** · How Much Money Does It Take To Empty A Vending Machine?
+  - score: 84.5046
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=89.1869, metric_confidence_score=89.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · 👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.
-  - score: 84.4929
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · 🤖 Recursos por los que hay que seguir apostando 🤖 #ia #chatgpt #educacion
-  - score: 84.4929
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=100.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Por esto ser realista ha matado a nuestra generación #shorts
-  - score: 84.4719
+- **high_engagement_low_reach** · Estas personas están atrapadas #shorts
+  - score: 84.4577
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=85.9765, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=85.9621, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Escúchalo completo en Más Allá del Rosa en YouTube
-  - score: 84.3517
-  - confidence: high (90.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=90.5
+- **accelerating_video** · Please Say  No....
+  - score: 84.4426
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=92.5398, metric_confidence_score=82.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · No hagas caso a la sociedad actual  #shorts
-  - score: 84.2731
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=85.7742, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · La gente no me creyó cuando les enseñé la optimización de la laptop #laptop #windows
-  - score: 84.1796
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=90.7597, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico
-  - score: 84.0033
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=85.4996, metric_confidence_score=96.5
+- **packaging_problem** · México se desarrollará por su gente #méxico
+  - score: 84.4225
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=87.4845, metric_confidence_score=93.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · ¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵
-  - score: 83.9073
-  - confidence: high (86.0)
-  - evidence: threshold=75.0, raw_signal_score=90.223, metric_confidence_score=86.0
+- **accelerating_video** · Our Brains Got Bigger. Now They’re Shrinking?
+  - score: 84.4195
+  - confidence: high (75.0)
+  - evidence: threshold=70.0, raw_signal_score=96.4795, metric_confidence_score=75.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · How Long Could You Stay At Places After They Close?
+  - score: 84.4143
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=85.9179, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Financial Audit's Most Disgusting Guest
+  - score: 84.3661
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=92.456, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The disaster I never imagined having to worry about
+  - score: 84.3504
+  - confidence: high (73.5)
+  - evidence: threshold=70.0, raw_signal_score=97.2339, metric_confidence_score=73.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Francia Desecha Windows 11 y Tim Cook Renuncia en Apple
+  - score: 84.3207
+  - confidence: high (79.5)
+  - evidence: threshold=75.0, raw_signal_score=93.9507, metric_confidence_score=79.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Estrategia gaps más velas de indecisión
+  - score: 84.2764
+  - confidence: high (78.0)
+  - evidence: threshold=75.0, raw_signal_score=94.6926, metric_confidence_score=78.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · How Long Could You Stay At A Movie Theater After It Closes?
+  - score: 84.2496
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=85.7502, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Kids With World Records
+  - score: 84.1794
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=99.9162, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Tested Treehouse Airbnbs
+  - score: 84.1672
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=85.6664, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · This Guy Spent $25,000 To Marry a Somali
+  - score: 84.0985
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=93.9648, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Ecatepec en la mira del desarrollo #ecatepec #méxico
+  - score: 84.0665
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=87.1156, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · $1M Year Is Not Normal...
+  - score: 84.0235
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=93.881, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Asmongold's INSANE Diet
+  - score: 83.9675
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=99.6647, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Por esto que te rompan el corazón es una de las mejores cosas que te puede pasar en la vida #shorts
+  - score: 83.9317
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=85.4267, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿Cómo Realmente Proyectar Seguridad? (Respuesta por Experta en Lenguaje Corporal)
+  - score: 83.9296
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=91.9776, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Cole Allen, Trump y los 11 científicos desaparecidos
+  - score: 83.9007
+  - confidence: high (77.0)
+  - evidence: threshold=70.0, raw_signal_score=94.803, metric_confidence_score=77.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · nah this is insane
+  - score: 83.8969
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=99.5809, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · Noche De Chicxs
+  - score: 83.871
+  - confidence: high (100.0)
+  - evidence: threshold=80.0, raw_signal_score=83.871, metric_confidence_score=100.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
 - **channel_volatility_warning** · Nate Gentile
   - score: 83.8678
   - confidence: high (72.0)
   - evidence: threshold=30.0, raw_signal_score=97.5207, metric_confidence_score=72.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **packaging_problem** · ¿Es normal lo que pasa en México? ¿O nos quieren desestabilizar?
-  - score: 83.8086
+- **accelerating_video** · "Should I Just Do More?"
+  - score: 83.8516
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=95.5574, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Our Minds Are Weirder than You Think
+  - score: 83.7517
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=92.2883, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ¿Traición a la patria? #méxico
+  - score: 83.7396
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=85.3014, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · ¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵
-  - score: 83.7845
-  - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=90.0908, metric_confidence_score=86.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Calificando comentarios de mis videos junto a ChatGPT
-  - score: 83.7409
-  - confidence: high (77.5)
-  - evidence: threshold=75.0, raw_signal_score=94.3559, metric_confidence_score=77.5
+  - evidence: threshold=75.0, raw_signal_score=85.2311, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Así te espera el 2027 #shorts
-  - score: 83.7219
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=88.3609, metric_confidence_score=89.5
+- **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
+  - score: 83.6209
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=85.1103, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · 11,7 Cosas que son un DESPERDICIO de Dinero en 2026
-  - score: 83.6685
-  - confidence: high (80.5)
-  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=80.5
+- **accelerating_video** · Can You Buy An Entire Movie For Yourself?
+  - score: 83.5907
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=85.0796, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · La industria no quiere que sepas esto  #shorts
-  - score: 83.549
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=86.5793, metric_confidence_score=93.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · No compartas tus objetivos con la gente  #shorts
-  - score: 83.5358
-  - confidence: high (79.0)
-  - evidence: threshold=70.0, raw_signal_score=93.3361, metric_confidence_score=79.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Hermes Birkin bags have appreciated over 650% in the past decade! Are they a good investment though?
-  - score: 83.5053
-  - confidence: high (77.5)
-  - evidence: threshold=70.0, raw_signal_score=94.0905, metric_confidence_score=77.5
+- **accelerating_video** · China le pone un alto a Estados Unidos.
+  - score: 83.4839
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=95.1383, metric_confidence_score=75.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 83.476
+  - score: 83.4712
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=84.9628, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=84.958, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · DEJA de PERDER el tiempo I 5 Cosas en las cuales DEBERÍA DOLERTE gastar tu tiempo
-  - score: 83.4499
-  - confidence: high (71.5)
-  - evidence: threshold=70.0, raw_signal_score=97.3177, metric_confidence_score=71.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Japón Perforó Un Agujero En La Tierra Cerca De Un Volcán, y Esto Provocó Algo
-  - score: 83.444
-  - confidence: high (83.5)
-  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=83.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿ChatGPT o Claude? ¡No importa cuál es mejor!
-  - score: 83.41
-  - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=91.4082, metric_confidence_score=82.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Use  "But" The Right Way
-  - score: 83.3961
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=93.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · GPT 5.5 ACABA de FILTRARSE y es INCREÍBLEMENTE BUENO
-  - score: 83.2802
-  - confidence: high (84.5)
-  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=84.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · Así es como te están destruyendo sin que te des cuenta  #shorts
-  - score: 83.2584
+  - score: 83.3608
   - confidence: high (86.0)
-  - evidence: threshold=75.0, raw_signal_score=89.5252, metric_confidence_score=86.0
+  - evidence: threshold=75.0, raw_signal_score=89.6353, metric_confidence_score=86.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · De experimentos en casa a serie de NETFLIX
-  - score: 83.2492
-  - confidence: high (70.5)
-  - evidence: threshold=70.0, raw_signal_score=97.653, metric_confidence_score=70.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · lunes de whitexicanadas y ratones
-  - score: 83.2448
-  - confidence: high (88.0)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=88.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · ¿Se Puede Vivir de Ser YouTube? (La Realidad de 2026)
-  - score: 83.2123
+- **accelerating_video** · HES A GENIUS
+  - score: 83.3437
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=84.6945, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=84.8282, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · 5 HÁBITOS FINANCIEROS que cambiarán tu vida en 90 DÍAS
+  - score: 83.3164
+  - confidence: medium (68.5)
+  - evidence: threshold=75.0, raw_signal_score=98.8919, metric_confidence_score=68.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · EDteam
-  - score: 83.0645
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=83.0645, metric_confidence_score=100.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **channel_momentum_up** · Cleo Abram
-  - score: 83.0274
-  - confidence: high (80.75)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=80.75
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · Aprendiz Financiero
-  - score: 83.0274
-  - confidence: high (80.75)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=80.75
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **accelerating_video** · Esta música te hará productivo al instante #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · "Mi mala relación con los números"
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · El Primer Paso Para Vivir De YouTube 🎥 #Compuestos #AndresGarza #EloisaWolf #YouTube
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Esta es la idea de ingreso pasivo  #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · No consumas tu tiempo y tu energía en algo que no te aporta nada  #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Por esto que te rompan el corazón es una de las mejores cosas que te puede pasar en la vida #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Estas personas están atrapadas #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Me cambió la vida cuando Jaime Higuera dijo esto #shorts
-  - score: 83.0142
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=96.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Este es el verdadero problema   #shorts
-  - score: 82.9162
+- **high_engagement_low_reach** · Estados Unidos vs Morena #méxico
+  - score: 83.2215
   - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=89.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Esta técnica es muy efectiva  #shorts
-  - score: 82.8239
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=85.8278, metric_confidence_score=93.0
+  - evidence: threshold=75.0, raw_signal_score=87.8328, metric_confidence_score=89.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · What Makes a Coin $3,000,000?
-  - score: 82.8204
-  - confidence: high (70.5)
-  - evidence: threshold=70.0, raw_signal_score=97.15, metric_confidence_score=70.5
+- **accelerating_video** · 70-Year-Old Is $300,000 in DEBT
+  - score: 83.1907
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=98.7427, metric_confidence_score=68.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Sobre las elecciones en Perú y una reflexión sobre la democracia
-  - score: 82.7414
-  - confidence: high (78.5)
-  - evidence: threshold=70.0, raw_signal_score=92.7075, metric_confidence_score=78.5
+- **packaging_problem** · 5 HÁBITOS FINANCIEROS que cambiarán tu vida en 90 DÍAS
+  - score: 83.183
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=98.7336, metric_confidence_score=68.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · La Forma Más Fácil De Ganar Dinero Con Claude
+  - score: 83.1389
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=92.1207, metric_confidence_score=80.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿se puede programar con agentes y una gráfica integrada?
-  - score: 82.6188
-  - confidence: medium (69.5)
-  - evidence: threshold=70.0, raw_signal_score=97.4853, metric_confidence_score=69.5
+- **accelerating_video** · CATASTROPHIC Guess The Elo
+  - score: 82.9788
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=98.4912, metric_confidence_score=68.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · En Argentina se come carne de burro 🫏? #argentina
+  - score: 82.9482
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=84.4257, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ARBITRAJE DOLAR CRIPTO-DOLAR CCL
+  - score: 82.9141
+  - confidence: high (85.0)
+  - evidence: threshold=75.0, raw_signal_score=89.6369, metric_confidence_score=85.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Si quieres resultados diferentes, necesitas entornos diferentes.
+  - score: 82.7913
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=84.2659, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Magnus Carlsen Has Fallen
+  - score: 82.6119
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=96.0604, metric_confidence_score=72.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · $388,000 Of Debt To Storm The Capitol | Financial Audit
+  - score: 82.6025
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=84.0738, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · You’re Breathing Dinosaur Breath!
+  - score: 82.5901
+  - confidence: medium (67.0)
+  - evidence: threshold=70.0, raw_signal_score=98.9103, metric_confidence_score=67.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Atacan al presidente Trump #notícias
+  - score: 82.5781
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=84.0489, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Starter Story
   - score: 82.5671
   - confidence: high (73.75)
   - evidence: threshold=30.0, raw_signal_score=95.0413, metric_confidence_score=73.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Ventajas de ser un Growth Partner #shorts
-  - score: 82.4613
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=85.4521, metric_confidence_score=93.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Que te rompan el corazón es lo mejor que te puede pasar en la vida #shorts
-  - score: 82.3685
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=83.8357, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · La maldición de la silla presidencial #méxico
-  - score: 82.3592
-  - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=86.0
+- **accelerating_video** · Why Antarctica Has SO MANY Meteorites
+  - score: 82.5214
+  - confidence: medium (68.0)
+  - evidence: threshold=70.0, raw_signal_score=98.2397, metric_confidence_score=68.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Así es la era en la que vivimos  #shorts
-  - score: 82.2764
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=86.8353, metric_confidence_score=89.5
+- **accelerating_video** · aimep3 siendo pickme
+  - score: 82.4269
+  - confidence: high (91.5)
+  - evidence: threshold=70.0, raw_signal_score=86.0855, metric_confidence_score=91.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ⚠️ ¡Cuidado! Tu fondo de vivienda corre PELIGRO 😨
+  - score: 82.4176
+  - confidence: high (84.0)
+  - evidence: threshold=75.0, raw_signal_score=89.5843, metric_confidence_score=84.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Noche De Chicxs
-  - score: 82.2581
-  - confidence: high (100.0)
-  - evidence: threshold=80.0, raw_signal_score=82.2581, metric_confidence_score=100.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **channel_momentum_up** · IA Innova
-  - score: 82.2236
-  - confidence: high (79.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=79.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · El Consejero
-  - score: 82.2236
-  - confidence: high (79.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=79.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · Qué pasa con Claude Code, GPT 5.5 y mas chismecito dev
-  - score: 82.1209
-  - confidence: high (81.5)
-  - evidence: threshold=75.0, raw_signal_score=90.4913, metric_confidence_score=81.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Este es uno de los errores más comunes cuando la gente empieza a ganar dinero #shorts
-  - score: 82.118
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=86.668, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · En Argentina se come carne de burro 🫏? #argentina
-  - score: 82.0521
+- **accelerating_video** · What Happens If You Set 100 iPhone Alarms At Once?
+  - score: 82.4139
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=97.8206, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · DO NOT BUY A NISSAN ALTIMA
+  - score: 82.2731
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=83.5136, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Que te rompan el corazón es lo mejor que te puede pasar #shorts
-  - score: 81.9528
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=83.4125, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Cómo evitar que la IA te reemplace?
-  - score: 81.8855
+  - evidence: threshold=70.0, raw_signal_score=83.7385, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · GUESS THE ELO 3.0!!!!!!!!
+  - score: 82.2636
   - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=84.8555, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=85.2473, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
+  - score: 82.1986
+  - confidence: high (74.5)
+  - evidence: threshold=75.0, raw_signal_score=94.2104, metric_confidence_score=74.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Cómo está cambiando la forma en que gastamos
-  - score: 81.8837
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=89.5
+- **accelerating_video** · Please stop
+  - score: 82.1907
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=83.6547, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · She Bought a Ford Bronco and Instantly Got it Repossessed
+  - score: 82.1083
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=83.5708, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Los Errores Más Comunes Al Crear En YouTube ❌ #Compuestos #AndresGarza #EloisaWolf #Errores
+  - score: 82.0979
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=83.5602, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Clavicular Looksmaxxing Financial Audit
+  - score: 82.0352
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=95.3898, metric_confidence_score=72.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · como si la idea (pintura) se fuera a secar
+  - score: 81.9496
+  - confidence: high (83.5)
+  - evidence: threshold=75.0, raw_signal_score=89.3184, metric_confidence_score=83.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿YouTube Es La Mejor Red Para Crear Contenido? 👥#Compuestos #AndresGarza #EloisaWolf #Contenido
+  - score: 81.8886
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=83.3472, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · This Has Never Happened Before | Financial Audit
+  - score: 81.8613
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=83.3194, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Why don't trains make *that* sound anymore?
+  - score: 81.8529
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=90.6957, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · "How Do I Deal With Negative Reviews?"
+  - score: 81.7921
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=93.2104, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · elWacky
+  - score: 81.7137
+  - confidence: high (93.0)
+  - evidence: threshold=80.0, raw_signal_score=84.6774, metric_confidence_score=93.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · This Is What Billionaire Are Doing.....
+  - score: 81.6966
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=83.1517, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · PBS Eons
   - score: 81.6942
   - confidence: medium (64.75)
   - evidence: threshold=30.0, raw_signal_score=99.1736, metric_confidence_score=64.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · se siente como un mundo escondido
-  - score: 81.5638
-  - confidence: high (76.5)
-  - evidence: threshold=75.0, raw_signal_score=92.4236, metric_confidence_score=76.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Qué está encareciendo los seguros médicos?
-  - score: 81.5187
+- **accelerating_video** · This Machine Grows Diamonds
+  - score: 81.6295
+  - confidence: medium (64.5)
+  - evidence: threshold=70.0, raw_signal_score=99.2456, metric_confidence_score=64.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Stop Making Yourself Too Available For Everyone
+  - score: 81.6142
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.9707, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=83.0679, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ¿SIRVEN PARA ALGO LOS EXPERIMENTOS EN EL ESPACIO? 🛰️
+  - score: 81.5828
+  - confidence: high (94.5)
+  - evidence: threshold=75.0, raw_signal_score=83.8898, metric_confidence_score=94.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_momentum_up** · Atherion
-  - score: 81.4197
-  - confidence: high (77.25)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=77.25
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **packaging_problem** · ⚠️ ¡Cuidado! Tu fondo de vivienda corre PELIGRO 😨
+  - score: 81.519
+  - confidence: high (84.0)
+  - evidence: threshold=70.0, raw_signal_score=88.6077, metric_confidence_score=84.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **channel_volatility_warning** · Omar - Educación Financiera
   - score: 81.4122
   - confidence: high (80.75)
   - evidence: threshold=30.0, raw_signal_score=90.0826, metric_confidence_score=80.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · 👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.
-  - score: 81.3495
-  - confidence: high (100.0)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=100.0
+- **high_engagement_low_reach** · Pagué las 10 IA populares… y SOLO 3 Valieron la Pena
+  - score: 81.3678
+  - confidence: high (82.0)
+  - evidence: threshold=75.0, raw_signal_score=89.4152, metric_confidence_score=82.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Couple Spent $100k Inheritance on a SCHOOL BUS
+  - score: 81.2848
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=82.7326, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Que te rompan el corazon es lo mejor que te puede pasar #shorts
-  - score: 81.2145
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.661, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Convierte Diseños de Figma en Código Automáticamente (MCP Tutorial)
-  - score: 81.0195
-  - confidence: high (87.5)
-  - evidence: threshold=70.0, raw_signal_score=86.4208, metric_confidence_score=87.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · 5 HÁBITOS FINANCIEROS que cambiarán tu vida en 90 DÍAS
-  - score: 80.9871
-  - confidence: medium (68.5)
-  - evidence: threshold=75.0, raw_signal_score=96.1272, metric_confidence_score=68.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Esto es lo primero que necesitas  #shorts
-  - score: 80.9508
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.3927, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Este es el activo más valioso que puedes poseer #shorts
-  - score: 80.9325
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.3741, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · La Historia de Cómo Medimos la Tierra - Domingo de Ciencia 226
-  - score: 80.9225
-  - confidence: high (73.5)
-  - evidence: threshold=75.0, raw_signal_score=93.2824, metric_confidence_score=73.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · ¿Se Puede Vivir de Ser YouTube? (La Realidad de 2026)
-  - score: 80.8149
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=82.2543, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · Así funciona tu subconsciente  #shorts
-  - score: 80.7976
-  - confidence: high (79.0)
-  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=79.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · En el futuro eso ya es tuyo #shorts
-  - score: 80.7743
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.213, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Atacan al presidente Trump #notícias
-  - score: 80.7338
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=82.1718, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Eze Martínez
-  - score: 80.5696
-  - confidence: high (73.75)
-  - evidence: threshold=80.0, raw_signal_score=92.7419, metric_confidence_score=73.75
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **packaging_problem** · 5 HÁBITOS FINANCIEROS que cambiarán tu vida en 90 DÍAS
-  - score: 80.521
-  - confidence: medium (68.5)
-  - evidence: threshold=70.0, raw_signal_score=95.5739, metric_confidence_score=68.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **accelerating_video** · Escúchalo completo en Más Allá del Rosa en YouTube
-  - score: 80.4795
-  - confidence: high (90.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=90.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Si ya usas VS Code este es tu siguiente paso en la IA
-  - score: 80.4162
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=84.872, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Traición a la patria? #méxico
-  - score: 80.249
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.6784, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · La jugada de USA 🇺🇸 para ingresar a México 🇲🇽 #mexico
-  - score: 80.1972
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=84.6408, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Existe otra forma de comenzar un negocio  #shorts
-  - score: 80.107
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.5339, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Este es uno de los errores más comunes cuando la gente empieza a ganar dinero #shorts
-  - score: 80.057
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=89.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Ser rico es toda una estafa  #shorts
-  - score: 80.0528
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=82.9562, metric_confidence_score=93.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Esta es la idea de ingreso pasivo  #shorts
-  - score: 80.036
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.4616, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · México se desarrollará por su gente #méxico
-  - score: 80.0109
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=82.9129, metric_confidence_score=93.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **high_engagement_low_reach** · Estos libros te pueden cambiar la vida #shorts
-  - score: 79.9955
+  - score: 81.0653
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.4203, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=82.5092, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 79.9259
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=96.5
+- **accelerating_video** · 3 metrajes hechos antes de morir
+  - score: 81.0599
+  - confidence: high (83.5)
+  - evidence: threshold=70.0, raw_signal_score=88.3487, metric_confidence_score=83.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Por esto ser realista ha matado a nuestra generación #shorts
-  - score: 79.9259
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=96.5
+- **channel_momentum_up** · Ale Marin
+  - score: 80.9726
+  - confidence: high (75.5)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=75.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · I Tested AI Survival Products
+  - score: 80.9476
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=90.4443, metric_confidence_score=79.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ¿Qué está encareciendo los seguros médicos?
-  - score: 79.9259
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=96.5
+- **high_engagement_low_reach** · ¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵
+  - score: 80.9396
+  - confidence: high (86.0)
+  - evidence: threshold=75.0, raw_signal_score=87.0318, metric_confidence_score=86.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · How Long Could You Stay At A Dunkin After It Closes?
+  - score: 80.9241
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=88.684, metric_confidence_score=82.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Esta es la trampa de la educación #shorts
-  - score: 79.9259
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=96.5
+- **high_engagement_low_reach** · Por esto no debes compartir objetivos con todo el mundo  #shorts
+  - score: 80.915
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=88.674, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Websites That Have Never Changed
+  - score: 80.8726
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=90.3604, metric_confidence_score=79.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Jaime Higuera no se equivocó cuando dijo esto #shorts
-  - score: 79.9259
+- **accelerating_video** · La TÍA PATY: Del CHISME en REDES a la CÁRCEL- Más allá del rosa con Perla Calvillo Cantu
+  - score: 80.8217
+  - confidence: high (91.5)
+  - evidence: threshold=70.0, raw_signal_score=84.4091, metric_confidence_score=91.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La gente no me creyó cuando les enseñé la optimización de la laptop #laptop #windows
+  - score: 80.8019
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=87.1179, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Científicos importantes mueren y desaparecen en Estados Unidos ~ TODO LO QUE SE SABE
+  - score: 80.6995
+  - confidence: high (73.0)
+  - evidence: threshold=70.0, raw_signal_score=93.2942, metric_confidence_score=73.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.
+  - score: 80.6455
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=82.082, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **channel_high_growth** · Inteligencia Artificial
+  - score: 80.6452
+  - confidence: high (100.0)
+  - evidence: threshold=80.0, raw_signal_score=80.6452, metric_confidence_score=100.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · Las CIUDADES que van a explotar ECONÓMICAMENTE
+  - score: 80.6259
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=82.062, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El TRUCO de CORONA que cambió la industria CERVECERA
+  - score: 80.6153
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=91.8692, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · China BANEA a Zuckerberg (Y sigue floreciendo).
+  - score: 80.5777
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=95.6412, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · No Lo Puedo Creer
+  - score: 80.5538
+  - confidence: high (92.5)
+  - evidence: threshold=75.0, raw_signal_score=83.6922, metric_confidence_score=92.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Dating As An  Entrepreneur
+  - score: 80.5436
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=81.9782, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉
+  - score: 80.5336
+  - confidence: high (74.5)
+  - evidence: threshold=75.0, raw_signal_score=92.3021, metric_confidence_score=74.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Se inaugura tren suburbano Buenavista-AIFA #trensuburbano #méxico
+  - score: 80.4774
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=81.9108, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · The Hairiest Guest in Financial Audit History
+  - score: 80.4612
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=81.8944, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · ¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵
+  - score: 80.3625
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=86.4113, metric_confidence_score=86.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Dog Groomer Has No Idea How Much Money They Make
+  - score: 80.2965
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=81.7267, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · It's Not As Hard As You Think
+  - score: 80.2158
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=84.6605, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Las hormigas explosivas
+  - score: 80.1603
+  - confidence: medium (62.5)
+  - evidence: threshold=70.0, raw_signal_score=98.6588, metric_confidence_score=62.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¡Dos AMANTES en su FUNERAL! 😱 Ft.  @fridaaraujof  - T10E06 #podcast #chismes #amantes
+  - score: 80.0796
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=82.9841, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · We Found Galaxies Too Old for the Universe
+  - score: 80.0004
+  - confidence: medium (67.0)
+  - evidence: threshold=70.0, raw_signal_score=95.8089, metric_confidence_score=67.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Así te espera el 2027 #shorts
+  - score: 79.9834
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=84.4152, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · La distopía tecnológica ya comenzó.
+  - score: 79.9533
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=91.1148, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Advice To Get Around More Successful People
+  - score: 79.9458
+  - confidence: medium (60.8333)
+  - evidence: threshold=75.0, raw_signal_score=99.4144, metric_confidence_score=60.8333
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · History is About to Be Made.
+  - score: 79.9061
+  - confidence: medium (65.5)
+  - evidence: threshold=70.0, raw_signal_score=96.5633, metric_confidence_score=65.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · How Dinosaurs May Have Cursed Us With Aging
+  - score: 79.8722
+  - confidence: high (75.0)
+  - evidence: threshold=70.0, raw_signal_score=91.2825, metric_confidence_score=75.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Santiago Bilinkis
   - score: 79.8719
   - confidence: high (89.5)
   - evidence: threshold=30.0, raw_signal_score=84.2975, metric_confidence_score=89.5
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · La situación en Argentina no mejora #argentina
-  - score: 79.8312
+- **channel_volatility_warning** · Ali Abdaal
+  - score: 79.8192
+  - confidence: high (91.25)
+  - evidence: threshold=30.0, raw_signal_score=83.4711, metric_confidence_score=91.25
+  - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
+- **high_engagement_low_reach** · ¿Es normal lo que pasa en México? ¿O nos quieren desestabilizar?
+  - score: 79.7567
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.2531, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=81.1773, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Por esto no debes compartir objetivos con todo el mundo  #shorts
-  - score: 79.8306
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=87.4855, metric_confidence_score=82.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Estados Unidos vs Morena #méxico
-  - score: 79.8255
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=84.2486, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_momentum_up** · Eze Martínez
-  - score: 79.812
-  - confidence: high (73.75)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=73.75
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · Starter Story
-  - score: 79.812
-  - confidence: high (73.75)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=73.75
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · Por esto no creo en el amor eterno #shorts
-  - score: 79.7845
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.2056, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Este es el verdadero problema   #shorts
-  - score: 79.7746
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=84.1949, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 79.6669
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=81.0859, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ARBITRAJE DOLAR CRIPTO-DOLAR CCL
-  - score: 79.6371
-  - confidence: high (85.0)
-  - evidence: threshold=75.0, raw_signal_score=86.0941, metric_confidence_score=85.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Este es uno de los mayores errores que comete la gente al comenzar #shorts
-  - score: 79.5751
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=83.9843, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Estrategia gaps más velas de indecisión
-  - score: 79.4808
-  - confidence: high (78.0)
-  - evidence: threshold=75.0, raw_signal_score=89.3043, metric_confidence_score=78.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **trend_burst** · Ex-banquero REVELA Si Aún es Momento de Invertir en la Bolsa de Colombia | Diario del Banquero
-  - score: 79.4498
+- **accelerating_video** · Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS
+  - score: 79.7303
   - confidence: medium (68.5)
-  - evidence: threshold=80.0, raw_signal_score=94.3024, metric_confidence_score=68.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
-  - score: 79.4274
-  - confidence: high (74.5)
-  - evidence: threshold=75.0, raw_signal_score=91.0343, metric_confidence_score=74.5
+  - evidence: threshold=70.0, raw_signal_score=94.6354, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Sobre las elecciones en Perú y una reflexión sobre la democracia
+  - score: 79.7045
+  - confidence: high (78.5)
+  - evidence: threshold=75.0, raw_signal_score=89.3048, metric_confidence_score=78.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Revisando las noticias en vivo #15 ''Sonidos de guillotina''
+  - score: 79.6563
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=92.6236, metric_confidence_score=72.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The worst subscriber game I've ever seen. I'm done. Goodbye.
+  - score: 79.6377
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=81.0562, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Dot Dager
+  - score: 79.5884
+  - confidence: high (72.5)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=72.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **high_engagement_low_reach** · Cómo  DEJAR de PREOCUPARTE por lo que OTROS PIENSAN de ti
+  - score: 79.5258
+  - confidence: high (79.5)
+  - evidence: threshold=75.0, raw_signal_score=88.6081, metric_confidence_score=79.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿Quieren desestabilizar México? #méxico
+  - score: 79.4573
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=80.8726, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · El Objeto Que Costó Una Guerra
+  - score: 79.4158
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=87.5105, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Cara Nicole
+  - score: 79.3577
+  - confidence: high (72.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=72.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Las 7 historias más perturbadoras contadas por bomberos
+  - score: 79.343
+  - confidence: medium (62.5)
+  - evidence: threshold=70.0, raw_signal_score=97.653, metric_confidence_score=62.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Inversión Inteligente - Alain Cortés
   - score: 79.3388
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=79.3388, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · uando tus Papás se Enferman: Cómo Afrontarlo sin Romperte 💙
-  - score: 79.2121
-  - confidence: high (87.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=87.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · El aguacate
-  - score: 79.1118
-  - confidence: medium (63.5)
-  - evidence: threshold=70.0, raw_signal_score=96.7728, metric_confidence_score=63.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_volatility_warning** · Ali Abdaal
-  - score: 79.0888
-  - confidence: high (89.5)
-  - evidence: threshold=30.0, raw_signal_score=83.4711, metric_confidence_score=89.5
-  - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
+- **channel_high_growth** · Eze Martínez
+  - score: 79.1683
+  - confidence: high (73.75)
+  - evidence: threshold=80.0, raw_signal_score=91.129, metric_confidence_score=73.75
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **high_engagement_low_reach** · El Imperio Más Poderoso del Mundo Está Empezando a Romperse
+  - score: 79.1513
+  - confidence: high (78.5)
+  - evidence: threshold=75.0, raw_signal_score=88.6849, metric_confidence_score=78.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Por esto no creo en el amor eterno #shorts
+  - score: 79.1198
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=80.529, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **high_engagement_low_reach** · DESCUBREN PARTÍCULAS QUE SALEN DIRECTAMENTE DEL VACÍO 🌌
-  - score: 79.0367
+  - score: 79.0845
   - confidence: high (94.5)
-  - evidence: threshold=75.0, raw_signal_score=81.2717, metric_confidence_score=94.5
+  - evidence: threshold=75.0, raw_signal_score=81.3208, metric_confidence_score=94.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_momentum_up** · Adrià Solà Pastor
-  - score: 79.0081
+- **channel_high_growth** · Veritasium
+  - score: 79.0645
   - confidence: high (72.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=72.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · Así trabajan las personas que están construyendo riquezas #shorts
-  - score: 78.8758
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=80.2808, metric_confidence_score=96.5
+  - evidence: threshold=80.0, raw_signal_score=91.9355, metric_confidence_score=72.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **packaging_problem** · Pagué las 10 IA populares… y SOLO 3 Valieron la Pena
+  - score: 79.0389
+  - confidence: high (82.0)
+  - evidence: threshold=70.0, raw_signal_score=86.8559, metric_confidence_score=82.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · ¿Los extraditarías o no? #méxico
+  - score: 78.964
+  - confidence: high (86.0)
+  - evidence: threshold=75.0, raw_signal_score=84.9075, metric_confidence_score=86.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Quieren desestabilizar México? #méxico
-  - score: 78.815
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=80.2188, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **metadata_change_watch** · Cambia de Hábitos con un Reloj y una Libreta
-  - score: 78.75
-  - confidence: medium (57.5)
-  - evidence: threshold=1.0, raw_signal_score=100.0, metric_confidence_score=57.5
-  - recommended_action: Vigilar lift posterior del cambio de metadata.
-- **accelerating_video** · ¿Cómo Proyectar Una Buena Imagen? 📸 #Compuestos #AndresGarza #BárbaraTijerina #Imagen
-  - score: 78.5557
-  - confidence: high (75.5)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=75.5
+- **accelerating_video** · What would happen if the Sun dissapeared?
+  - score: 78.948
+  - confidence: medium (61.0)
+  - evidence: threshold=70.0, raw_signal_score=98.0721, metric_confidence_score=61.0
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Los Errores Más Comunes Al Crear En YouTube ❌ #Compuestos #AndresGarza #EloisaWolf #Errores
-  - score: 78.5189
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=79.9174, metric_confidence_score=96.5
+- **accelerating_video** · YOU CAN NEVER LOVE YOUR PARENTS TOO MUCH
+  - score: 78.7349
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=96.3118, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Calificando comentarios de mis videos junto a ChatGPT
+  - score: 78.6626
+  - confidence: high (77.5)
+  - evidence: threshold=75.0, raw_signal_score=88.634, metric_confidence_score=77.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Laughing Gas Is Not So Funny
+  - score: 78.6551
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=86.6723, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · DrossRotzank
+  - score: 78.619
+  - confidence: high (77.25)
+  - evidence: threshold=80.0, raw_signal_score=88.7097, metric_confidence_score=77.25
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · Querido Dross llorando a mi mejor amigo
+  - score: 78.5331
+  - confidence: high (80.0)
+  - evidence: threshold=70.0, raw_signal_score=87.259, metric_confidence_score=80.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Alex Hormozi
   - score: 78.5124
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=78.5124, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · Tomar café al despertarte es un error   #shorts
-  - score: 78.5023
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=93.0
+- **accelerating_video** · the Rise of Woke Books - a Response
+  - score: 78.4738
+  - confidence: high (74.5)
+  - evidence: threshold=70.0, raw_signal_score=89.9413, metric_confidence_score=74.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · la cordialidad del silencio
-  - score: 78.4951
-  - confidence: high (83.5)
-  - evidence: threshold=75.0, raw_signal_score=85.5533, metric_confidence_score=83.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Jaime Higuera no se equivocó cuando dijo esto #shorts
-  - score: 78.4073
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=79.8039, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · La economía mundial depende de esta isla (NO ES PETRÓLEO)
+  - score: 78.4487
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=86.9237, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · WATOP
   - score: 78.3709
   - confidence: high (77.25)
   - evidence: threshold=30.0, raw_signal_score=88.4298, metric_confidence_score=77.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · GPT 5.5 LET'S GOOOOOOOO!
-  - score: 78.3671
-  - confidence: high (85.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=85.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · ⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉
-  - score: 78.1081
-  - confidence: high (74.5)
-  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=74.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · El Imperio Más Poderoso del Mundo Está Empezando a Romperse
-  - score: 78.0864
-  - confidence: high (78.5)
-  - evidence: threshold=75.0, raw_signal_score=87.4917, metric_confidence_score=78.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Didi Cuenta vs Bancos Tradicionales | El DINERO Que PIERDES
-  - score: 77.9915
+- **packaging_problem** · Esta es la idea de ingreso pasivo  #shorts
+  - score: 78.2569
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=79.3807, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=79.6508, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_high_growth** · DrossRotzank
-  - score: 77.9042
-  - confidence: high (77.25)
-  - evidence: threshold=80.0, raw_signal_score=87.9032, metric_confidence_score=77.25
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** · trading de impulsos
-  - score: 77.7385
-  - confidence: medium (64.0)
-  - evidence: threshold=70.0, raw_signal_score=94.803, metric_confidence_score=64.0
+- **accelerating_video** · The Insane Engineering of the V-22 Osprey
+  - score: 78.2527
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=87.6781, metric_confidence_score=78.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · 7 cosas que debes abandonar ahora para vibrar en una frecuencia más elevada – Carl Jung
-  - score: 77.7257
-  - confidence: medium (67.0)
-  - evidence: threshold=70.0, raw_signal_score=93.0847, metric_confidence_score=67.0
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · Deja de pensar en el éxito o el fracaso #shorts
-  - score: 77.7099
-  - confidence: high (75.5)
-  - evidence: threshold=70.0, raw_signal_score=88.5583, metric_confidence_score=75.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · como si la idea (pintura) se fuera a secar
-  - score: 77.7015
-  - confidence: high (83.5)
-  - evidence: threshold=75.0, raw_signal_score=84.6883, metric_confidence_score=83.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · reaccionando a comida de la india
-  - score: 77.6657
-  - confidence: medium (55.8333)
-  - evidence: threshold=75.0, raw_signal_score=99.678, metric_confidence_score=55.8333
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Por esto que te rompan el corazón es una de las mejores cosas que te puede pasar en la vida #shorts
-  - score: 77.6629
+- **accelerating_video** · Swiftie Makes $85k Per Year!
+  - score: 78.2376
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=79.0462, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Los extraditarías o no? #méxico
-  - score: 77.6562
-  - confidence: high (86.0)
-  - evidence: threshold=75.0, raw_signal_score=83.5012, metric_confidence_score=86.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Al Parecer Sí Es Un Monstruo
-  - score: 77.6438
-  - confidence: high (92.5)
-  - evidence: threshold=75.0, raw_signal_score=80.6689, metric_confidence_score=92.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · La ciudad puede ser diferente
-  - score: 77.606
-  - confidence: medium (63.0)
-  - evidence: threshold=70.0, raw_signal_score=95.2221, metric_confidence_score=63.0
+  - evidence: threshold=70.0, raw_signal_score=79.6312, metric_confidence_score=96.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · No Lo Puedo Creer
-  - score: 77.5762
-  - confidence: high (92.5)
-  - evidence: threshold=75.0, raw_signal_score=80.5987, metric_confidence_score=92.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.
-  - score: 77.5757
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=78.9575, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Cómo  DEJAR de PREOCUPARTE por lo que OTROS PIENSAN de ti
-  - score: 77.5604
+- **packaging_problem** · Ser rico es toda una estafa  #shorts
+  - score: 78.2243
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=81.0615, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · Francia Desecha Windows 11 y Tim Cook Renuncia en Apple
+  - score: 78.1981
   - confidence: high (79.5)
-  - evidence: threshold=75.0, raw_signal_score=86.4182, metric_confidence_score=79.5
+  - evidence: threshold=70.0, raw_signal_score=87.1288, metric_confidence_score=79.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · ¿CIUDADANOS DE SEGUNDA?: EDO MEX VS CDMX
+  - score: 78.1647
+  - confidence: medium (60.5)
+  - evidence: threshold=70.0, raw_signal_score=97.4015, metric_confidence_score=60.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · LA MATERIA OSCURA PODRÍA TENER DOS ESTADOS 🌌
+  - score: 78.1572
+  - confidence: high (94.5)
+  - evidence: threshold=75.0, raw_signal_score=80.3673, metric_confidence_score=94.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · como si la idea (pintura) se fuera a secar
+- **accelerating_video** · Deadliest Video Games
+  - score: 78.0729
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=79.4635, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Spend $300,000 a Month on Financial Audit
+  - score: 77.9906
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=79.3797, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Inherited $200,000 of Debt From My Mother
+  - score: 77.9411
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=85.4149, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Estados Unidos vs Morena #méxico
+  - score: 77.9086
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=82.2254, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Can a quantum sensor detect your heartbeat from 60 km away?
+  - score: 77.8114
+  - confidence: medium (59.5)
+  - evidence: threshold=70.0, raw_signal_score=97.5692, metric_confidence_score=59.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · En el futuro eso ya es tuyo #shorts
+  - score: 77.8063
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=79.1922, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · El MIEDO de una MAMÁ ante un DIAGNÓSTICO: síndrome de Down - Más allá del rosa con Gloria Torruco
+  - score: 77.7469
+  - confidence: high (70.5)
+  - evidence: threshold=70.0, raw_signal_score=91.1987, metric_confidence_score=70.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Deja de actuar así #shorts
+  - score: 77.7045
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=82.0101, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · ¿Cómo evitar que la IA te reemplace?
+  - score: 77.6845
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=80.5021, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Querido Dross: el infierno del IMSS (Instituto Mexicano de Seguro Social)
   - score: 77.5222
   - confidence: high (83.5)
   - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=83.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Estas personas están atrapadas #shorts
-  - score: 77.5047
+- **packaging_problem** · ¿Traición a la patria? #méxico
+  - score: 77.5215
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=78.8852, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · todos se enojaron con ella pero NO TIENEN RAZON
-  - score: 77.2939
-  - confidence: medium (68.5)
-  - evidence: threshold=70.0, raw_signal_score=91.7435, metric_confidence_score=68.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Cómo Proteger Tus Inversiones Con Billeteras Frías ❄️
-  - score: 77.274
-  - confidence: medium (69.5)
-  - evidence: threshold=75.0, raw_signal_score=91.1788, metric_confidence_score=69.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_consistent_performer** · Adrià Solà Pastor
-  - score: 77.1735
-  - confidence: high (72.0)
-  - evidence: threshold=75.0, raw_signal_score=89.7366, metric_confidence_score=72.0
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **high_engagement_low_reach** · Los millonarios no quieren que conozcas este modelo de negocio  #shorts
-  - score: 77.0745
+  - evidence: threshold=70.0, raw_signal_score=78.9022, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · Ventajas de ser un Growth Partner #shorts
+  - score: 77.5111
   - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=79.8699, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=80.3224, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · La maldición de la silla presidencial #méxico
+  - score: 77.3822
+  - confidence: high (86.0)
+  - evidence: threshold=75.0, raw_signal_score=83.2066, metric_confidence_score=86.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Cómo INVERTIR Con El Salario MÍNIMO
-  - score: 77.067
-  - confidence: high (83.5)
-  - evidence: threshold=75.0, raw_signal_score=83.9967, metric_confidence_score=83.5
+- **high_engagement_low_reach** · Volume IS The Answer
+  - score: 77.3344
+  - confidence: medium (60.8333)
+  - evidence: threshold=75.0, raw_signal_score=96.1671, metric_confidence_score=60.8333
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Guess How Much These Websites Make, Built On @Wix
+  - score: 77.3292
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=91.7854, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Ecatepec en la mira del desarrollo #ecatepec #méxico
+  - score: 77.2886
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=80.0919, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Surprising People That Have Social Media
+  - score: 77.1676
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=79.9665, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¿Nos estamos volviendo más tontos?
+  - score: 77.0956
+  - confidence: medium (62.5)
+  - evidence: threshold=70.0, raw_signal_score=94.8868, metric_confidence_score=62.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · AsapSCIENCE
+  - score: 77.0508
+  - confidence: medium (67.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=67.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Why Can't You Just Do More?
+  - score: 77.0435
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=78.4158, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Sell Above The 3%
+  - score: 77.0111
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=87.7619, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Emprende Aprendiendo
+  - score: 76.9665
+  - confidence: high (91.25)
+  - evidence: threshold=80.0, raw_signal_score=80.4878, metric_confidence_score=91.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Couple Spent $10,000 on Squishmallows
+  - score: 76.9199
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=78.29, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · These Emojis Should NOT Exist...(yes, again)
+  - score: 76.8885
+  - confidence: medium (68.0)
+  - evidence: threshold=70.0, raw_signal_score=91.5339, metric_confidence_score=68.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Gen-Z Men Need To LOCK IN
+  - score: 76.8634
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=82.6488, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Mister Krax
   - score: 76.8595
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=76.8595, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Esto hice para generar 72.000€ #shorts
-  - score: 76.8374
+- **accelerating_video** · My FULL OpenClaw Setup (steal my prompts!)
+  - score: 76.8399
+  - confidence: high (78.0)
+  - evidence: threshold=70.0, raw_signal_score=86.337, metric_confidence_score=78.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ESTO es lo que viene en las GASOLINERAS MEXICANAS
+  - score: 76.7728
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=89.2707, metric_confidence_score=72.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Algo MUY RARO está pasando en el DESIERTO de CHINA
+  - score: 76.7728
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=86.5046, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · No te rindas si tu vida parece un caos #shorts
+  - score: 76.7596
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=81.0128, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Movie Scenes That Were Improvised
+  - score: 76.7552
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=78.206, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿SIRVEN PARA ALGO LOS EXPERIMENTOS EN EL ESPACIO? 🛰️
-  - score: 76.7962
-  - confidence: high (94.5)
-  - evidence: threshold=75.0, raw_signal_score=78.9678, metric_confidence_score=94.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+  - evidence: threshold=70.0, raw_signal_score=78.1224, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · GERMANY IS OVER
+  - score: 76.75
+  - confidence: medium (53.5)
+  - evidence: threshold=70.0, raw_signal_score=100.0, metric_confidence_score=53.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 76.7725
+  - score: 76.7218
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=78.14, metric_confidence_score=96.5
+  - evidence: threshold=75.0, raw_signal_score=78.0883, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Semo Historia
   - score: 76.7107
   - confidence: medium (65.75)
   - evidence: threshold=30.0, raw_signal_score=92.562, metric_confidence_score=65.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · Credit Unions are SO Underrated 🙌🏦
-  - score: 76.5413
-  - confidence: medium (59.5)
-  - evidence: threshold=70.0, raw_signal_score=95.9765, metric_confidence_score=59.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **high_engagement_low_reach** · Francia Desecha Windows 11 y Tim Cook Renuncia en Apple
-  - score: 76.4839
-  - confidence: high (79.5)
-  - evidence: threshold=75.0, raw_signal_score=85.2188, metric_confidence_score=79.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Lo que nadie te enseña sobre dinero | Sofía Macías
-  - score: 76.4747
-  - confidence: high (77.0)
-  - evidence: threshold=75.0, raw_signal_score=86.4121, metric_confidence_score=77.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Santiago Bilinkis
-  - score: 76.4113
-  - confidence: high (89.5)
-  - evidence: threshold=80.0, raw_signal_score=80.6452, metric_confidence_score=89.5
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · Elige un problema que puedas resolver #shorts
-  - score: 76.3324
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=83.6519, metric_confidence_score=82.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Cómo Proteger Tus Inversiones Con Billeteras Frías ❄️
-  - score: 76.317
-  - confidence: medium (69.5)
-  - evidence: threshold=70.0, raw_signal_score=90.0495, metric_confidence_score=69.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_high_growth** · Veritasium
-  - score: 76.2903
-  - confidence: high (72.0)
-  - evidence: threshold=80.0, raw_signal_score=88.7097, metric_confidence_score=72.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **channel_momentum_up** · Irene Albacete
-  - score: 76.252
+- **accelerating_video** · El muerto que se enterró a sí mismo
+  - score: 76.6689
   - confidence: medium (66.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=66.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **trend_burst** · This Cat Operation Cost $9,000
-  - score: 76.1785
+  - evidence: threshold=70.0, raw_signal_score=92.3722, metric_confidence_score=66.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Así actúan los millonarios #shorts
+  - score: 76.6592
+  - confidence: high (79.0)
+  - evidence: threshold=75.0, raw_signal_score=85.6528, metric_confidence_score=79.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Deepseek vs Claude y Chatgpt: ¿quien crea mejores dashboards?
+  - score: 76.623
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=90.9472, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · ¿Qué es exactamente una skill de IA?
+  - score: 76.6013
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=77.9657, metric_confidence_score=96.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Financial Audit's Most Disgusting Guest
+  - score: 76.5924
   - confidence: high (82.5)
-  - evidence: threshold=80.0, raw_signal_score=83.4832, metric_confidence_score=82.5
+  - evidence: threshold=80.0, raw_signal_score=83.9369, metric_confidence_score=82.5
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · LA MATERIA OSCURA PODRÍA TENER DOS ESTADOS 🌌
-  - score: 76.1598
-  - confidence: high (94.5)
-  - evidence: threshold=75.0, raw_signal_score=78.3134, metric_confidence_score=94.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Por esto no debes compartir objetivos con todo el mundo  #shorts
-  - score: 76.1516
+- **accelerating_video** · My Business Isn't Making Money
+  - score: 76.5643
   - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=83.4538, metric_confidence_score=82.5
+  - evidence: threshold=70.0, raw_signal_score=83.9061, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Weird Traits That Predict Success
+  - score: 76.5624
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=80.8047, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · China BANEA a Zuckerberg (Y sigue floreciendo).
+  - score: 76.5257
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=90.8316, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Sexo, luego el vacío — Arthur Schopenhauer
+  - score: 76.4072
+  - confidence: high (84.5)
+  - evidence: threshold=75.0, raw_signal_score=82.8263, metric_confidence_score=84.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Cole Allen: ¿Viaje en el tiempo… o casualidad?
+  - score: 76.3416
+  - confidence: medium (66.5)
+  - evidence: threshold=70.0, raw_signal_score=91.7016, metric_confidence_score=66.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Advice To Get Around More Successful People
+  - score: 76.3267
+  - confidence: medium (60.8333)
+  - evidence: threshold=70.0, raw_signal_score=94.914, metric_confidence_score=60.8333
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · Así es la era en la que vivimos  #shorts
+  - score: 76.3228
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=80.5517, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Togi Needs $5 Million Before He Gets Canceled
+  - score: 76.2611
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=77.6194, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La jugada de USA 🇺🇸 para ingresar a México 🇲🇽 #mexico
+  - score: 76.1927
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=80.4145, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · CATASTROPHIC Guess The Elo
+  - score: 76.1393
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=90.373, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **channel_volatility_warning** · Fazt
   - score: 76.1364
   - confidence: high (84.25)
   - evidence: threshold=30.0, raw_signal_score=82.6446, metric_confidence_score=84.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · ¿Cómo Realmente Proyectar Seguridad? (Respuesta por Experta en Lenguaje Corporal)
-  - score: 76.0649
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=83.3588, metric_confidence_score=82.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Así actúan los millonarios #shorts
-  - score: 76.0362
-  - confidence: high (79.0)
-  - evidence: threshold=75.0, raw_signal_score=84.9566, metric_confidence_score=79.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Deja de actuar así #shorts
-  - score: 75.9878
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=80.1982, metric_confidence_score=89.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · ⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉
-  - score: 75.8916
-  - confidence: high (74.5)
-  - evidence: threshold=75.0, raw_signal_score=86.9818, metric_confidence_score=74.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Publi⭐️ ¿Por qué hay cosas que lees mil veces y no entiendes… y en vídeo sí? 📹🧬✨
-  - score: 75.8332
-  - confidence: high (77.5)
-  - evidence: threshold=75.0, raw_signal_score=85.4459, metric_confidence_score=77.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **accelerating_video** · Francia Desecha Windows 11 y Tim Cook Renuncia en Apple
-  - score: 75.8324
-  - confidence: high (79.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=79.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** · The UNTHINKABLE is About to Happen to Stocks (Emergency Update)
-  - score: 75.8324
-  - confidence: high (79.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=79.5
-  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **packaging_problem** · Cómo INVERTIR Con El Salario MÍNIMO
-  - score: 75.8244
-  - confidence: high (83.5)
-  - evidence: threshold=70.0, raw_signal_score=82.6424, metric_confidence_score=83.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · La maldición de la silla presidencial #méxico
-  - score: 75.8054
-  - confidence: high (86.0)
-  - evidence: threshold=75.0, raw_signal_score=81.5111, metric_confidence_score=86.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **packaging_problem** · La TRAMPA de los CRÉDITOS | No saques un PRÉSTAMO sin ver esto
-  - score: 75.7814
+  - score: 76.0627
   - confidence: high (88.5)
-  - evidence: threshold=70.0, raw_signal_score=80.4046, metric_confidence_score=88.5
+  - evidence: threshold=70.0, raw_signal_score=80.7031, metric_confidence_score=88.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **trend_burst** · I Tested Every Zack D. Films Video
-  - score: 75.6913
-  - confidence: high (72.0)
-  - evidence: threshold=80.0, raw_signal_score=88.0131, metric_confidence_score=72.0
+- **accelerating_video** · El experimento de las descargas eléctricas
+  - score: 76.0591
+  - confidence: high (73.0)
+  - evidence: threshold=70.0, raw_signal_score=87.9296, metric_confidence_score=73.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Togi Stole $250k From Business Partner
+  - score: 76.0352
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=78.793, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Things That Are Surprisingly Illegal
+  - score: 76.014
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=77.368, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · The Most USELESS College Degrees
+  - score: 75.9082
+  - confidence: high (86.0)
+  - evidence: threshold=80.0, raw_signal_score=81.6217, metric_confidence_score=86.0
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **trend_burst** · Rest in Peace, Charlie Kirk....
-  - score: 75.5831
-  - confidence: high (82.5)
-  - evidence: threshold=80.0, raw_signal_score=82.8307, metric_confidence_score=82.5
+- **high_engagement_low_reach** · No compartas tus objetivos con todo el mundo #shorts
+  - score: 75.8494
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=86.4381, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Mustang VS Tesla
+  - score: 75.8256
+  - confidence: high (89.5)
+  - evidence: threshold=80.0, raw_signal_score=80.0271, metric_confidence_score=89.5
   - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · THE BIG AI LIE
+  - score: 75.8175
+  - confidence: high (70.5)
+  - evidence: threshold=70.0, raw_signal_score=88.9355, metric_confidence_score=70.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.
+  - score: 75.7258
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=77.0746, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · Internet Está Cansado
+  - score: 75.6594
+  - confidence: medium (64.5)
+  - evidence: threshold=80.0, raw_signal_score=91.9871, metric_confidence_score=64.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Chisme express con Frida Araujo #chisme #comedia #podcast
+  - score: 75.6484
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=78.3921, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ASÍ SE CONFIGURÓ EL MOTOR CLIMÁTICO DEL PLANETA 🌎
+  - score: 75.6344
+  - confidence: high (91.0)
+  - evidence: threshold=75.0, raw_signal_score=79.1983, metric_confidence_score=91.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Dot Dager
   - score: 75.5579
   - confidence: high (72.5)
   - evidence: threshold=30.0, raw_signal_score=87.6033, metric_confidence_score=72.5
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · No consumas tu tiempo y tu energía en algo que no te aporta nada  #shorts
-  - score: 75.5069
+- **packaging_problem** · No hagas caso a la sociedad actual  #shorts
+  - score: 75.5372
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=76.8518, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=76.8826, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · El gnomo #chisme #comedia #podcast
+  - score: 75.5238
+  - confidence: high (86.0)
+  - evidence: threshold=75.0, raw_signal_score=81.2084, metric_confidence_score=86.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · se siente como un mundo escondido
+  - score: 75.441
+  - confidence: high (76.5)
+  - evidence: threshold=75.0, raw_signal_score=85.4856, metric_confidence_score=76.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Ozempic está DESTRUYENDO negocios que NADIE esperaba
+  - score: 75.3988
+  - confidence: high (82.5)
+  - evidence: threshold=80.0, raw_signal_score=82.6289, metric_confidence_score=82.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **channel_volatility_warning** · Eva Maria Beristain
   - score: 75.3874
   - confidence: high (73.75)
@@ -1503,782 +1723,2118 @@
   - confidence: high (84.25)
   - evidence: threshold=30.0, raw_signal_score=81.8182, metric_confidence_score=84.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Haz esto con un empático y desaparecerá de tu vida - carl jung
-  - score: 75.337
-  - confidence: high (81.0)
-  - evidence: threshold=75.0, raw_signal_score=83.2453, metric_confidence_score=81.0
+- **accelerating_video** · The Reason Aliens Haven’t Contacted Us Might Be Horrifying…
+  - score: 75.3319
+  - confidence: high (74.0)
+  - evidence: threshold=70.0, raw_signal_score=86.5884, metric_confidence_score=74.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Lo despidieron por grabar vídeos virales
+  - score: 75.3156
+  - confidence: high (84.5)
+  - evidence: threshold=70.0, raw_signal_score=81.6429, metric_confidence_score=84.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · El Imperio Más Poderoso del Mundo Está Empezando a Romperse
+  - score: 75.286
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=84.3541, metric_confidence_score=78.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · Se acabó el chollo de la IA
+  - score: 75.267
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=89.3376, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · No compartas tus objetivos con la gente  #shorts
+  - score: 75.2251
+  - confidence: high (79.0)
+  - evidence: threshold=75.0, raw_signal_score=84.0503, metric_confidence_score=79.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · EDteam
   - score: 75.2066
   - confidence: high (100.0)
   - evidence: threshold=30.0, raw_signal_score=75.2066, metric_confidence_score=100.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **accelerating_video** · Estrategia gaps más velas de indecisión
-  - score: 75.1987
-  - confidence: high (78.0)
-  - evidence: threshold=70.0, raw_signal_score=84.4929, metric_confidence_score=78.0
+- **trend_burst** · Stock Expert: Becoming Rich Is Simple, But You Won’t Do It!
+  - score: 75.1016
+  - confidence: high (84.5)
+  - evidence: threshold=80.0, raw_signal_score=81.4109, metric_confidence_score=84.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Monterrey y el problema en la falta de continuidad de proyectos políticos
+  - score: 75.0987
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=85.5826, metric_confidence_score=75.5
   - recommended_action: Monitorear próximas corridas; posible video en aceleración.
-- **channel_high_growth** · Sabine Hossenfelder
-  - score: 75.0645
-  - confidence: high (79.0)
-  - evidence: threshold=80.0, raw_signal_score=83.871, metric_confidence_score=79.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **high_engagement_low_reach** · Por esto no debes compartir objetivos con todo el mundo  #shorts
+  - score: 75.0257
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=82.2199, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · This Is Your Lonely Chapter
+  - score: 75.0243
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=76.3606, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 
 ## Medium
-- **channel_high_growth** · Eva Maria Beristain
-  - score: 74.9647
-  - confidence: high (73.75)
-  - evidence: threshold=80.0, raw_signal_score=86.2903, metric_confidence_score=73.75
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · 6 TRUCOS psicológicos para ENAMORAR a cualquiera
-  - score: 74.8571
-  - confidence: high (79.5)
-  - evidence: threshold=75.0, raw_signal_score=83.4063, metric_confidence_score=79.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_consistent_performer** · Irene Albacete
-  - score: 74.8244
-  - confidence: medium (66.0)
-  - evidence: threshold=75.0, raw_signal_score=90.1498, metric_confidence_score=66.0
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **channel_high_growth** · QuantumFracture
-  - score: 74.629
-  - confidence: medium (65.25)
-  - evidence: threshold=80.0, raw_signal_score=90.3226, metric_confidence_score=65.25
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · Deja de ser Esclavo del dinero
-  - score: 74.5657
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=80.3943, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_momentum_up** · César Dabián Finanzas
-  - score: 74.5295
-  - confidence: medium (62.25)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=62.25
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **trend_burst** · "Am I Selling The Wrong Thing?"
-  - score: 74.4275
-  - confidence: high (79.0)
-  - evidence: threshold=80.0, raw_signal_score=83.1592, metric_confidence_score=79.0
+- **trend_burst** · Los aranceles de Trump fueron ilegales, ahora el pueblo paga. #diegoruzzarin
+  - score: 74.9642
+  - confidence: high (86.0)
+  - evidence: threshold=80.0, raw_signal_score=80.6066, metric_confidence_score=86.0
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · Sobre las elecciones en Perú y una reflexión sobre la democracia
-  - score: 74.4033
-  - confidence: high (78.5)
-  - evidence: threshold=75.0, raw_signal_score=83.365, metric_confidence_score=78.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿Existen pasos para convertirse en experto en IA?
-  - score: 74.394
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=81.5277, metric_confidence_score=82.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Estados Unidos vs Morena #méxico
-  - score: 74.0943
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=78.1998, metric_confidence_score=89.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · El Imperio Más Poderoso del Mundo Está Empezando a Romperse
-  - score: 74.009
-  - confidence: high (78.5)
-  - evidence: threshold=70.0, raw_signal_score=82.9232, metric_confidence_score=78.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · This Is Your Lonely Chapter
-  - score: 73.8944
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=75.2106, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **trend_burst** · Tu pareja dice mucho de ti #shorts
-  - score: 73.8909
-  - confidence: high (75.5)
-  - evidence: threshold=80.0, raw_signal_score=84.2062, metric_confidence_score=75.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **channel_consistent_performer** · EL CACHONDO
-  - score: 73.8044
-  - confidence: medium (57.25)
-  - evidence: threshold=75.0, raw_signal_score=93.8688, metric_confidence_score=57.25
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **trend_burst** · Las hormigas explosivas
-  - score: 73.7235
-  - confidence: medium (62.5)
-  - evidence: threshold=80.0, raw_signal_score=90.7366, metric_confidence_score=62.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **packaging_problem** · ¿Traición a la patria? #méxico
-  - score: 73.6916
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=75.0041, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_consistent_performer** · Physics Girl
-  - score: 73.6575
-  - confidence: medium (59.75)
-  - evidence: threshold=75.0, raw_signal_score=92.216, metric_confidence_score=59.75
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **packaging_problem** · Calificando comentarios de mis videos junto a ChatGPT
-  - score: 73.5943
-  - confidence: high (77.5)
-  - evidence: threshold=70.0, raw_signal_score=82.9232, metric_confidence_score=77.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Sexo, luego el vacío — Arthur Schopenhauer
-  - score: 73.5696
-  - confidence: high (84.5)
-  - evidence: threshold=75.0, raw_signal_score=79.7502, metric_confidence_score=84.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_momentum_up** · Physics Girl
-  - score: 73.3811
-  - confidence: medium (59.75)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=59.75
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **packaging_problem** · México se desarrollará por su gente #méxico
-  - score: 73.3033
+- **packaging_problem** · La industria no quiere que sepas esto  #shorts
+  - score: 74.9465
   - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=75.962, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=77.6648, metric_confidence_score=93.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · La Historia de Cómo Medimos la Tierra - Domingo de Ciencia 226
-  - score: 73.2181
+- **accelerating_video** · New Theory Explains How Time Began
+  - score: 74.9049
+  - confidence: medium (56.5)
+  - evidence: threshold=70.0, raw_signal_score=95.7251, metric_confidence_score=56.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Qué pasa con Claude Code, GPT 5.5 y mas chismecito dev
+  - score: 74.8399
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=82.4682, metric_confidence_score=81.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · You’ll never look at it the same after this video
+  - score: 74.8246
   - confidence: high (73.5)
-  - evidence: threshold=70.0, raw_signal_score=84.4013, metric_confidence_score=73.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **alpha_breakout** · ¿Porque los Gringos celebran mas el 5 de Mayo que México?
-  - score: 73.1697
+  - evidence: threshold=70.0, raw_signal_score=86.2531, metric_confidence_score=73.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
+  - score: 74.7869
   - confidence: medium (68.5)
-  - evidence: threshold=85.0, raw_signal_score=86.8483, metric_confidence_score=68.5
-  - recommended_action: Analizar título, tema, duración y canal; considerar inspiración ética.
-- **trend_burst** · ¿Por qué Este Cometa es Tan Famoso?
-  - score: 73.1407
-  - confidence: medium (61.0)
-  - evidence: threshold=80.0, raw_signal_score=90.858, metric_confidence_score=61.0
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · Detengan a este NecroHombre...
-  - score: 73.062
-  - confidence: medium (46.8333)
-  - evidence: threshold=75.0, raw_signal_score=99.5169, metric_confidence_score=46.8333
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · No compartas tus objetivos con la gente  #shorts
-  - score: 73.0024
-  - confidence: high (79.0)
-  - evidence: threshold=75.0, raw_signal_score=81.5669, metric_confidence_score=79.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **trend_burst** · Nadie te va a odiar más que esta persona #shorts
-  - score: 72.7787
-  - confidence: high (75.5)
-  - evidence: threshold=80.0, raw_signal_score=82.9387, metric_confidence_score=75.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · U.S.A. quiere imponer su Ley, pero México no se deja
-  - score: 72.7664
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=79.744, metric_confidence_score=82.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Conoce la historia de LEVA: ¿una SOFIPO segura?
-  - score: 72.5862
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=75.2188, metric_confidence_score=93.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Ciudades Esponja  La Revolución del Agua Urbana
-  - score: 72.3778
-  - confidence: medium (44.8333)
-  - evidence: threshold=75.0, raw_signal_score=99.9463, metric_confidence_score=44.8333
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · El Mitin de María Corina Machado y el muy cuestionable grito de Carlos Baute.
-  - score: 72.2636
+  - evidence: threshold=70.0, raw_signal_score=88.7678, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Big news
+  - score: 74.7787
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=73.5508, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=76.1106, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Que no te pase lo que a mí. Ten en cuenta estas 3 cosas para elegir bien #pc #mouse #perifericos
+  - score: 74.7671
+  - confidence: high (71.5)
+  - evidence: threshold=75.0, raw_signal_score=87.192, metric_confidence_score=71.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · China le pone un alto a Estados Unidos.
+  - score: 74.7275
+  - confidence: high (75.5)
+  - evidence: threshold=80.0, raw_signal_score=85.1596, metric_confidence_score=75.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Why the Nokia 3310 was so Durable
+  - score: 74.6808
+  - confidence: high (71.5)
+  - evidence: threshold=70.0, raw_signal_score=87.0914, metric_confidence_score=71.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · La situación en Argentina no mejora #argentina
+  - score: 74.6522
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=75.9819, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · Predator EXPOSED On Financial Audit
+  - score: 74.6401
+  - confidence: high (75.5)
+  - evidence: threshold=80.0, raw_signal_score=85.06, metric_confidence_score=75.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · CASO EDITH GUADALUPE Y JUAN JESUS N - Ruido Social
+  - score: 74.6234
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=82.2297, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Salvá a tus hijos (estás a tiempo)
+  - score: 74.6102
+  - confidence: high (80.0)
+  - evidence: threshold=70.0, raw_signal_score=82.9003, metric_confidence_score=80.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · No es Normal Vivir Así
+  - score: 74.5838
+  - confidence: medium (69.0)
+  - evidence: threshold=70.0, raw_signal_score=88.2649, metric_confidence_score=69.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · What The Car You Drive Says About You
+  - score: 74.5759
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=83.325, metric_confidence_score=79.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · El nuevo atentado vs. Trump  #diegoruzzarin #trump
+  - score: 74.575
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=88.5163, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Deja de ser Esclavo del dinero
+  - score: 74.524
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=80.3493, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · ¿Deepseek es mejor que Claude y GPT?
+  - score: 74.5044
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=88.4325, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Cómo reinventarte cuando tu industria desaparece | Belinda (Bely y Beto) | Dimes y Billetes #448
+  - score: 74.4983
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=77.2003, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · I Tried Getting Banned From Every Store (Again)
+  - score: 74.4692
+  - confidence: high (86.0)
+  - evidence: threshold=80.0, raw_signal_score=80.0744, metric_confidence_score=86.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Chess, But Each Piece Is A Human?!
+  - score: 74.4468
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=80.0503, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · I Made Mascots For Stores That Don’t Have Them
+  - score: 74.4458
+  - confidence: high (86.0)
+  - evidence: threshold=80.0, raw_signal_score=80.0493, metric_confidence_score=86.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · 0.999 = 1?
+  - score: 74.4392
+  - confidence: medium (64.0)
+  - evidence: threshold=70.0, raw_signal_score=90.7795, metric_confidence_score=64.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · I Mastered Popular Anime Art Styles
+  - score: 74.4021
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=80.2179, metric_confidence_score=85.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La Mejor, Peor e Ideal. Rankeando GPU #pc #pcgamer #gpu
+  - score: 74.3996
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=80.2152, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · How Car Dealerships Scam America
+  - score: 74.3741
+  - confidence: medium (49.5)
+  - evidence: threshold=70.0, raw_signal_score=99.4971, metric_confidence_score=49.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · This Cat Operation Cost $9,000
+  - score: 74.3458
+  - confidence: high (82.5)
+  - evidence: threshold=80.0, raw_signal_score=81.4748, metric_confidence_score=82.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Estrategia gaps más velas de indecisión
+  - score: 74.3445
+  - confidence: high (78.0)
+  - evidence: threshold=70.0, raw_signal_score=83.5331, metric_confidence_score=78.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_high_growth** · Sabine Hossenfelder
+  - score: 74.3427
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=83.0645, metric_confidence_score=79.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **channel_momentum_up** · PBS Space Time
+  - score: 74.3216
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=99.5935, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_high_growth** · Eva Maria Beristain
+  - score: 74.2641
+  - confidence: high (73.75)
+  - evidence: threshold=80.0, raw_signal_score=85.4839, metric_confidence_score=73.75
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **packaging_problem** · Conoce la historia de LEVA: ¿una SOFIPO segura?
+  - score: 74.2633
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=76.9568, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Los Microondas Podrían Calentar Más... Pero Sería Ilegal
+  - score: 74.2261
+  - confidence: medium (51.5)
+  - evidence: threshold=70.0, raw_signal_score=97.9883, metric_confidence_score=51.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · This Is Your Slumdog Millionaire
+  - score: 74.2161
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=84.5767, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · La crisis Argentina impulsa el consumo de carne de burro.
+  - score: 74.2022
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=75.5239, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Por qué son INÚTILES las LEYES de la ROBÓTICA
+  - score: 74.1513
+  - confidence: high (75.0)
+  - evidence: threshold=70.0, raw_signal_score=84.7443, metric_confidence_score=75.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El PARAÍSO de los MULTIMILLONARIOS 🤑
+  - score: 74.1293
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=94.1324, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · An Unknown Engineer is Apple's New CEO
+  - score: 74.0947
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=83.487, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Relaciones tensas entre México 🇲🇽 y Estados Unidos 🇺🇸 #mexico #chihuahua
+  - score: 74.0683
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=76.7547, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · "Hablemos de Cuerpos Ajenos"
+  - score: 74.0319
+  - confidence: high (72.5)
+  - evidence: threshold=70.0, raw_signal_score=85.834, metric_confidence_score=72.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The Physics Behind the Thumb Trick
+  - score: 73.9885
+  - confidence: medium (50.5)
+  - evidence: threshold=70.0, raw_signal_score=98.3236, metric_confidence_score=50.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Actors Who Changed Identities For Roles
+  - score: 73.979
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=79.5474, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · QuantumFracture
+  - score: 73.9627
+  - confidence: medium (65.25)
+  - evidence: threshold=80.0, raw_signal_score=89.5161, metric_confidence_score=65.25
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · Raise Your Price
+  - score: 73.8956
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=82.565, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Gotham vs PRODIGY
+  - score: 73.8728
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=75.1886, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Her Revenue Tanked...
+  - score: 73.8483
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=84.1576, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La verdad sobre el ARBITRAJE CCL y sus ganancias
+  - score: 73.8041
+  - confidence: medium (67.5)
+  - evidence: threshold=75.0, raw_signal_score=88.1243, metric_confidence_score=67.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Do This If You Have No Money...
+  - score: 73.7982
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=87.5943, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · la cordialidad del silencio
+  - score: 73.792
+  - confidence: high (83.5)
+  - evidence: threshold=75.0, raw_signal_score=80.4272, metric_confidence_score=83.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · I Tested Every Zack D. Films Video
+  - score: 73.7774
+  - confidence: high (72.0)
+  - evidence: threshold=80.0, raw_signal_score=85.7877, metric_confidence_score=72.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Porque el Internet se hace lento cuando llueve￼
+  - score: 73.7332
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=93.6295, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Pigeons Are GPS Drones
+  - score: 73.6748
+  - confidence: high (71.0)
+  - evidence: threshold=70.0, raw_signal_score=86.1693, metric_confidence_score=71.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · DOES PENIS SIZE REALLY MATTER?
+  - score: 73.6144
+  - confidence: high (84.5)
+  - evidence: threshold=70.0, raw_signal_score=79.7988, metric_confidence_score=84.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · ¿Es normal lo que pasa en México? ¿O nos quieren desestabilizar?
+  - score: 73.5892
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=74.9, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · We Hired 90 People In 12 Weeks
+  - score: 73.5863
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=87.3428, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Semana Triste Para Los YouTubers
+  - score: 73.5388
+  - confidence: medium (68.0)
+  - evidence: threshold=80.0, raw_signal_score=87.5462, metric_confidence_score=68.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
+  - score: 73.5384
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=74.8482, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Spotify ?
+  - score: 73.5352
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=93.378, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Los Archivos DROSS: Archivo 001 Trampa radioactiva
+  - score: 73.5231
+  - confidence: high (83.5)
+  - evidence: threshold=70.0, raw_signal_score=80.1341, metric_confidence_score=83.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · CHINA hizo grande a APPLE. APPLE hizo de CHINA una SUPERPOTENCIA.
+  - score: 73.39
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=89.7737, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · No Lo Puedo Creer
+  - score: 73.2169
+  - confidence: high (92.5)
+  - evidence: threshold=70.0, raw_signal_score=76.0695, metric_confidence_score=92.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · What is up with UK bridge height signs?
+  - score: 73.202
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=82.4811, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · This New Day Trading Rule Will BANKRUPT People
+  - score: 73.1941
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=81.7812, metric_confidence_score=79.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · "Am I Selling The Wrong Thing?"
+  - score: 73.063
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=81.6346, metric_confidence_score=79.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · La Estrategia de GAPS que gana 7 de cada 10 veces (REAL)
+  - score: 73.0413
+  - confidence: high (88.5)
+  - evidence: threshold=70.0, raw_signal_score=77.4974, metric_confidence_score=88.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · Revisando las noticias en vivo #15 ''Sonidos de guillotina''
+  - score: 73.0231
+  - confidence: high (72.0)
+  - evidence: threshold=80.0, raw_signal_score=84.9106, metric_confidence_score=72.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · New Theory Explains How Time Began
+  - score: 73.0037
+  - confidence: medium (56.5)
+  - evidence: threshold=80.0, raw_signal_score=93.2955, metric_confidence_score=56.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · What Makes The Perfect Business (5 Things)
+  - score: 72.9954
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=81.5591, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Cordura Artificial
+  - score: 72.9794
+  - confidence: high (70.25)
+  - evidence: threshold=75.0, raw_signal_score=85.732, metric_confidence_score=70.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **high_engagement_low_reach** · Empieza un proyecto #shorts
+  - score: 72.9528
+  - confidence: high (72.0)
+  - evidence: threshold=75.0, raw_signal_score=84.8289, metric_confidence_score=72.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Existe otra forma de comenzar un negocio  #shorts
+  - score: 72.9461
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=74.2454, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Biggest Lawsuits Ever
+  - score: 72.9257
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=74.2246, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · ¿Los extraditarías o no? #méxico
+  - score: 72.8937
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=78.3803, metric_confidence_score=86.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · I tried to optimize my life. It made it worse.
+  - score: 72.8877
+  - confidence: high (70.5)
+  - evidence: threshold=70.0, raw_signal_score=85.4987, metric_confidence_score=70.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El Gran Vacío de Nuestro Genoma
+  - score: 72.8472
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=78.5415, metric_confidence_score=85.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Los retos son los que te van a hacer conseguir cosas  #shorts
+  - score: 72.8352
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=83.0031, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · ARBITRAJE DOLAR CRIPTO-DOLAR CCL
+  - score: 72.8218
+  - confidence: high (85.0)
+  - evidence: threshold=70.0, raw_signal_score=78.7262, metric_confidence_score=85.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · ⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉
+  - score: 72.8142
+  - confidence: high (74.5)
+  - evidence: threshold=70.0, raw_signal_score=83.4547, metric_confidence_score=74.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · $1M Year Is Not Normal...
+  - score: 72.7617
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=81.298, metric_confidence_score=79.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Compré la NUEVA Toyota Rav4: Te cuento MI EXPERIENCIA | Review Honesto
+  - score: 72.7592
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=75.3982, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · 3 Paths to a Rich Retirement
+  - score: 72.7318
+  - confidence: medium (55.8333)
+  - evidence: threshold=75.0, raw_signal_score=93.3456, metric_confidence_score=55.8333
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Que te rompan el corazón es lo mejor que te puede pasar en la vida #shorts
+  - score: 72.6806
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=73.9752, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_momentum_up** · Rob Paper Sheet
+  - score: 72.6677
+  - confidence: high (70.25)
+  - evidence: threshold=80.0, raw_signal_score=85.3659, metric_confidence_score=70.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **trend_burst** · La lealtad es más potente que el amor #shorts
+  - score: 72.6403
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=86.2199, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · El nuevo atentado vs. Trump  #diegoruzzarin #trump
+  - score: 72.6255
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=86.2024, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · En Argentina se come carne de burro 🫏? #argentina
+  - score: 72.5075
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=73.799, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_momentum_up** · Numberphile
+  - score: 72.4543
+  - confidence: medium (45.5)
+  - evidence: threshold=80.0, raw_signal_score=99.5935, metric_confidence_score=45.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Walmart’s New Plan to Defeat Amazon
+  - score: 72.4306
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=88.6002, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Si siempre estás ocupado pero no avanzas… mira ESTO
+  - score: 72.4059
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=78.0656, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Esquema de Pool de rentas #shorts #rentas #finanzas #dinero
+  - score: 72.391
+  - confidence: medium (64.5)
+  - evidence: threshold=70.0, raw_signal_score=88.0134, metric_confidence_score=64.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Intermediate Chess Masterclass: 1300 to 2000 Elo
+  - score: 72.3904
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=73.6798, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Ex-banquero REVELA Si Aún es Momento de Invertir en la Bolsa de Colombia | Diario del Banquero
+  - score: 72.3533
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=85.8792, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · 29 CYGNI B NO ES UNA ESTRELLA NI UN PLANETA 🛰️
+  - score: 72.3523
+  - confidence: high (73.5)
+  - evidence: threshold=70.0, raw_signal_score=83.4032, metric_confidence_score=73.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · GERMANY IS OVER
+  - score: 72.3132
+  - confidence: medium (53.5)
+  - evidence: threshold=80.0, raw_signal_score=94.2191, metric_confidence_score=53.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Por qué EE.UU. necesita a México más que nunca | Dimes y Billetes #447
+  - score: 72.308
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=73.596, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Does Low Power Mode Really Save Battery?
+  - score: 72.3036
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=82.3973, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Numberphile
+  - score: 72.3015
+  - confidence: medium (45.5)
+  - evidence: threshold=75.0, raw_signal_score=99.3835, metric_confidence_score=45.5
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · La EXTRAÑA decisión de CHINA sobre IRÁN que DESCONCIERTA a todo el mundo @VisualPolitik
+  - score: 72.281
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=79.2121, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Santiago Amat
   - score: 72.2479
   - confidence: high (86.0)
   - evidence: threshold=30.0, raw_signal_score=77.6859, metric_confidence_score=86.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **alpha_breakout** · ¡Me di a mis tres SUPERIORES! 🥵 Ft. @LilaDownsOficial y @laseoaneoficial_ - T10E08 #chismes
-  - score: 72.2351
-  - confidence: medium (68.5)
-  - evidence: threshold=85.0, raw_signal_score=85.739, metric_confidence_score=68.5
-  - recommended_action: Analizar título, tema, duración y canal; considerar inspiración ética.
-- **channel_momentum_up** · Arcade's Books
-  - score: 72.2327
-  - confidence: medium (57.25)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=57.25
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · EL CACHONDO
-  - score: 72.2327
-  - confidence: medium (57.25)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=57.25
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · Si siempre estás ocupado pero no avanzas… mira ESTO
-  - score: 72.088
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=77.723, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Si ya usas VS Code este es tu siguiente paso en la IA
-  - score: 72.0483
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=76.0405, metric_confidence_score=89.5
+- **packaging_problem** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
+  - score: 72.165
+  - confidence: high (74.5)
+  - evidence: threshold=70.0, raw_signal_score=82.7106, metric_confidence_score=74.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Los retos son los que te van a hacer conseguir cosas  #shorts
-  - score: 71.968
-  - confidence: high (75.5)
-  - evidence: threshold=75.0, raw_signal_score=82.0149, metric_confidence_score=75.5
+- **high_engagement_low_reach** · U.S.A. quiere imponer su Ley, pero México no se deja
+  - score: 72.1357
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=79.0528, metric_confidence_score=82.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · En Argentina se come carne de burro 🫏? #argentina
-  - score: 71.931
+- **trend_burst** · Jynxzi no no no no nooooooo
+  - score: 72.0752
+  - confidence: high (79.0)
+  - evidence: threshold=80.0, raw_signal_score=80.531, metric_confidence_score=79.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Chegg DESAPARECIÓ: la IA la borró del mapa ¿cuál SERÁ la SIGUIENTE?
+  - score: 72.0576
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=80.5113, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Este es el activo más valioso que puedes poseer #shorts
+  - score: 72.0293
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=73.2122, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Lo que nadie te enseña sobre dinero | Sofía Macías
-  - score: 71.8889
-  - confidence: high (77.0)
-  - evidence: threshold=70.0, raw_signal_score=81.2304, metric_confidence_score=77.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · No te rindas si tu vida parece un caos #shorts
-  - score: 71.8097
-  - confidence: high (89.5)
-  - evidence: threshold=75.0, raw_signal_score=75.7886, metric_confidence_score=89.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Que no te pase lo que a mí. Ten en cuenta estas 3 cosas para elegir bien #pc #mouse #perifericos
-  - score: 71.6696
-  - confidence: high (71.5)
-  - evidence: threshold=75.0, raw_signal_score=83.5797, metric_confidence_score=71.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **alpha_breakout** · China BANEA a Zuckerberg (Y sigue floreciendo).
-  - score: 71.6364
-  - confidence: medium (68.5)
-  - evidence: threshold=85.0, raw_signal_score=85.0283, metric_confidence_score=68.5
-  - recommended_action: Analizar título, tema, duración y canal; considerar inspiración ética.
-- **packaging_problem** · ¿Los extraditarías o no? #méxico
-  - score: 71.5662
-  - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=76.9529, metric_confidence_score=86.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_consistent_performer** · Arcade's Books
-  - score: 71.5301
-  - confidence: medium (57.25)
-  - evidence: threshold=75.0, raw_signal_score=90.9763, metric_confidence_score=57.25
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **alpha_breakout** · Internet Está Cansado
-  - score: 71.5256
-  - confidence: medium (64.5)
-  - evidence: threshold=85.0, raw_signal_score=86.9612, metric_confidence_score=64.5
-  - recommended_action: Analizar título, tema, duración y canal; considerar inspiración ética.
-- **high_engagement_low_reach** · ¿Qué es exactamente una skill de IA?
-  - score: 71.4422
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=72.7147, metric_confidence_score=96.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Empieza un proyecto #shorts
-  - score: 71.4258
-  - confidence: high (72.0)
-  - evidence: threshold=75.0, raw_signal_score=83.0533, metric_confidence_score=72.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · 5 cosas que NUNCA debes DECIRLE a alguien con TDAH (y qué puedes decirle)
-  - score: 71.3802
-  - confidence: medium (69.0)
-  - evidence: threshold=75.0, raw_signal_score=84.4736, metric_confidence_score=69.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Qué pasa con Claude Code, GPT 5.5 y mas chismecito dev
-  - score: 71.3036
-  - confidence: high (81.5)
-  - evidence: threshold=70.0, raw_signal_score=78.5714, metric_confidence_score=81.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · El Paso a Paso para Empezar a Vender en Amazon en 2026
-  - score: 71.2934
-  - confidence: medium (65.0)
-  - evidence: threshold=75.0, raw_signal_score=86.4162, metric_confidence_score=65.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Así te espera el 2027 #shorts
-  - score: 71.2933
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=75.2436, metric_confidence_score=89.5
+  - evidence: threshold=70.0, raw_signal_score=73.3123, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **packaging_problem** · Chisme express con Traumaditos Podcast #chisme #comedia #podcast
-  - score: 71.1846
+  - score: 72.0046
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=72.4525, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=73.2871, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_consistent_performer** · El Maikini Dev
-  - score: 71.1774
-  - confidence: medium (53.0)
-  - evidence: threshold=75.0, raw_signal_score=93.0424, metric_confidence_score=53.0
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **packaging_problem** · La Estrategia de GAPS que gana 7 de cada 10 veces (REAL)
-  - score: 71.1428
-  - confidence: high (88.5)
-  - evidence: threshold=70.0, raw_signal_score=75.4831, metric_confidence_score=88.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
-  - score: 71.1156
+- **accelerating_video** · Magnus Carlsen Broke Computers With This Game
+  - score: 71.9451
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=80.3856, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¿Qué pasa si MÉXICO sigue IMPORTANDO el 75% de su GAS?
+  - score: 71.9374
   - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=72.3823, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=73.2188, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · La lealtad es más potente que el amor #shorts
+  - score: 71.8915
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=85.3311, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¡Volvió Deepseek v4! Al nivel de GPT y Claude y 10 veces más barato
+  - score: 71.8743
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=77.2842, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Actualización Repugnante
+  - score: 71.867
+  - confidence: high (92.5)
+  - evidence: threshold=75.0, raw_signal_score=74.667, metric_confidence_score=92.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Elige un problema que puedas resolver #shorts
+  - score: 71.8405
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=78.7293, metric_confidence_score=82.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · Que te rompan el corazón es lo mejor que te puede pasar #shorts
+  - score: 71.6506
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=72.9268, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Don't Ask This Question In A Sale
+  - score: 71.6404
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=77.0327, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · 10 Things That Are No Longer Worth Your Money
+  - score: 71.6228
+  - confidence: high (88.0)
+  - evidence: threshold=70.0, raw_signal_score=76.1945, metric_confidence_score=88.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Los hombres nunca deberían saber esto sobre las mujeres
+  - score: 71.5428
+  - confidence: high (84.5)
+  - evidence: threshold=75.0, raw_signal_score=77.5532, metric_confidence_score=84.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **high_engagement_low_reach** · 4 creencias que te mantienen pobre.
-  - score: 71.0923
+  - score: 71.5182
   - confidence: high (78.5)
-  - evidence: threshold=75.0, raw_signal_score=79.6552, metric_confidence_score=78.5
+  - evidence: threshold=75.0, raw_signal_score=80.1325, metric_confidence_score=78.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Our Evolutionary Past Is Killing Us Now
-  - score: 71.0424
-  - confidence: high (84.5)
-  - evidence: threshold=70.0, raw_signal_score=77.0107, metric_confidence_score=84.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · ¿Existen pasos para convertirse en experto en IA?
-  - score: 70.9806
-  - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=77.787, metric_confidence_score=82.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · La verdad sobre el ARBITRAJE CCL y sus ganancias
-  - score: 70.7726
-  - confidence: medium (67.5)
-  - evidence: threshold=75.0, raw_signal_score=84.5045, metric_confidence_score=67.5
+- **high_engagement_low_reach** · Haz esto con un empático y desaparecerá de tu vida - carl jung
+  - score: 71.4991
+  - confidence: high (81.0)
+  - evidence: threshold=75.0, raw_signal_score=79.0045, metric_confidence_score=81.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · ESTE ES EL MAPA 3D MÁS GRANDE DEL UNIVERSO 🌌
+  - score: 71.407
+  - confidence: high (73.5)
+  - evidence: threshold=70.0, raw_signal_score=82.3135, metric_confidence_score=73.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Las hormigas explosivas
+  - score: 71.3724
+  - confidence: medium (62.5)
+  - evidence: threshold=80.0, raw_signal_score=87.843, metric_confidence_score=62.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · ¿Nos estamos volviendo más tontos?
+  - score: 71.3094
+  - confidence: medium (62.5)
+  - evidence: threshold=80.0, raw_signal_score=87.7654, metric_confidence_score=62.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · These Emojis Should NOT Exist...(yes, again)
+  - score: 71.2976
+  - confidence: medium (68.0)
+  - evidence: threshold=80.0, raw_signal_score=84.8781, metric_confidence_score=68.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · The disaster I never imagined having to worry about
+  - score: 71.2611
+  - confidence: high (73.5)
+  - evidence: threshold=80.0, raw_signal_score=82.1453, metric_confidence_score=73.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Sobre las elecciones en Perú y una reflexión sobre la democracia
+  - score: 71.2391
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=79.8197, metric_confidence_score=78.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · Las 7 historias más perturbadoras contadas por bomberos
+  - score: 71.2312
+  - confidence: medium (62.5)
+  - evidence: threshold=80.0, raw_signal_score=87.6692, metric_confidence_score=62.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **packaging_problem** · ¿Quieren desestabilizar México? #méxico
-  - score: 70.5761
+  - score: 71.2285
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=71.8332, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=72.4972, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · El gnomo #chisme #comedia #podcast
-  - score: 70.5352
-  - confidence: high (86.0)
-  - evidence: threshold=75.0, raw_signal_score=75.8443, metric_confidence_score=86.0
+- **high_engagement_low_reach** · La Historia de Cómo Medimos la Tierra - Domingo de Ciencia 226
+  - score: 71.1336
+  - confidence: high (73.5)
+  - evidence: threshold=75.0, raw_signal_score=81.9984, metric_confidence_score=73.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Estrategia gaps más velas de indecisión
-  - score: 70.3695
-  - confidence: high (78.0)
-  - evidence: threshold=70.0, raw_signal_score=79.0669, metric_confidence_score=78.0
+- **accelerating_video** · Monté el PC de BATMAN dentro de una Batcueva REAL
+  - score: 71.035
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=78.7091, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Scott Galloway: AI Wasn’t Built For You. The Rich Don’t Need You Anymore!
+  - score: 70.9278
+  - confidence: high (70.5)
+  - evidence: threshold=80.0, raw_signal_score=83.1998, metric_confidence_score=70.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · ¿Por qué Este Cometa es Tan Famoso?
+  - score: 70.9183
+  - confidence: medium (61.0)
+  - evidence: threshold=70.0, raw_signal_score=88.0972, metric_confidence_score=61.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · My simple path to getting rich
+  - score: 70.8835
+  - confidence: high (74.0)
+  - evidence: threshold=70.0, raw_signal_score=81.4753, metric_confidence_score=74.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Esto me cambió la vida   #shorts
+  - score: 70.8305
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=74.7551, metric_confidence_score=89.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · Carta de Matias Galetto en varios idiomas porque me odio #italian #matiasgaletto #french
+  - score: 70.8141
+  - confidence: medium (68.0)
+  - evidence: threshold=75.0, raw_signal_score=84.3025, metric_confidence_score=68.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Detengan el boxeo de influencers
+  - score: 70.8089
+  - confidence: medium (55.0)
+  - evidence: threshold=70.0, raw_signal_score=91.3663, metric_confidence_score=55.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The Only Investing Video You’ll Ever Need (Start With $0)
+  - score: 70.7892
+  - confidence: high (91.5)
+  - evidence: threshold=70.0, raw_signal_score=73.9313, metric_confidence_score=91.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Tienes que Aprender a Estar SOLO.
+  - score: 70.7716
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=79.2959, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Si ya usas VS Code este es tu siguiente paso en la IA
+  - score: 70.765
+  - confidence: high (89.5)
+  - evidence: threshold=75.0, raw_signal_score=74.686, metric_confidence_score=89.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **channel_high_growth** · Date un Vlog
+  - score: 70.7419
+  - confidence: high (72.0)
+  - evidence: threshold=80.0, raw_signal_score=82.2581, metric_confidence_score=72.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **channel_consistent_performer** · Physics Girl
+  - score: 70.7352
+  - confidence: medium (59.75)
+  - evidence: threshold=75.0, raw_signal_score=88.5574, metric_confidence_score=59.75
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **trend_burst** · Científicos importantes mueren y desaparecen en Estados Unidos ~ TODO LO QUE SE SABE
+  - score: 70.6961
+  - confidence: high (73.0)
+  - evidence: threshold=80.0, raw_signal_score=81.7296, metric_confidence_score=73.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · México inaugura puente Nichupté el 2 más largo de LATAM #puentenichupté #cancun #chiapas
+  - score: 70.6708
+  - confidence: high (75.5)
+  - evidence: threshold=80.0, raw_signal_score=80.5365, metric_confidence_score=75.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Don't Even Think About Passive Income
+  - score: 70.6609
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=71.9195, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · México inaugura puente Nichupté el 2 más largo de LATAM #puentenichupté #cancun #chiapas
+  - score: 70.6487
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=80.5113, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · What Happens If You Set 100 iPhone Alarms At Once?
+  - score: 70.6438
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=83.8502, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Entirely Ridiculously Big Numbers - Numberphile
+  - score: 70.6415
+  - confidence: medium (56.5)
+  - evidence: threshold=70.0, raw_signal_score=90.2766, metric_confidence_score=56.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · “La memoria colectiva” puede ser tu mayor obstáculo.
+  - score: 70.6255
+  - confidence: high (78.5)
+  - evidence: threshold=75.0, raw_signal_score=79.1322, metric_confidence_score=78.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Por qué la clase media es cada vez más POBRE
+  - score: 70.6043
+  - confidence: high (80.5)
+  - evidence: threshold=75.0, raw_signal_score=78.2319, metric_confidence_score=80.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · The Reason Your Business Can't Run Without You...
+  - score: 70.5947
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=78.8768, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El Cifrado Más Difícil
+  - score: 70.5157
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=77.7033, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · 5 cosas que NUNCA debes DECIRLE a alguien con TDAH (y qué puedes decirle)
+  - score: 70.5143
+  - confidence: medium (69.0)
+  - evidence: threshold=75.0, raw_signal_score=83.4488, metric_confidence_score=69.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **channel_consistent_performer** · FranqitoM
+  - score: 70.4775
+  - confidence: medium (47.25)
+  - evidence: threshold=75.0, raw_signal_score=95.725, metric_confidence_score=47.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · 🚨 NOTICIAS IA 🚨: Mythos está causando problemas 🔒🧠
+  - score: 70.4648
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=80.3018, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · 3 Paths to a Rich Retirement
+  - score: 70.4568
+  - confidence: medium (55.8333)
+  - evidence: threshold=70.0, raw_signal_score=90.4259, metric_confidence_score=55.8333
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · How Much You Need Invested to Live Off Dividends in 2026
+  - score: 70.4459
+  - confidence: high (74.0)
+  - evidence: threshold=70.0, raw_signal_score=80.9723, metric_confidence_score=74.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La forma más fácil de crear tu primera skill
+  - score: 70.4072
+  - confidence: high (93.0)
+  - evidence: threshold=75.0, raw_signal_score=72.9608, metric_confidence_score=93.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Deepseek vs Claude y Chatgpt: ¿quien crea mejores dashboards?
+  - score: 70.4031
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=83.5645, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Experto En Seducción Revela Los Secretos De La Atracción Y El Deseo “La Clave Está En El Sudor”
+  - score: 70.394
+  - confidence: high (70.0)
+  - evidence: threshold=70.0, raw_signal_score=82.8164, metric_confidence_score=70.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Gravity Assists Are Basically Free Energy
+  - score: 70.3785
+  - confidence: medium (61.0)
+  - evidence: threshold=70.0, raw_signal_score=87.4267, metric_confidence_score=61.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · ESTO es lo que viene en las GASOLINERAS MEXICANAS
+  - score: 70.3705
+  - confidence: high (72.0)
+  - evidence: threshold=80.0, raw_signal_score=81.8261, metric_confidence_score=72.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **channel_volatility_warning** · Tina Huang
   - score: 70.3616
   - confidence: high (73.75)
   - evidence: threshold=30.0, raw_signal_score=80.9917, metric_confidence_score=73.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
+- **trend_burst** · Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS
+  - score: 70.3514
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=83.5031, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **channel_volatility_warning** · The Diary Of A CEO
   - score: 70.3357
   - confidence: high (91.25)
   - evidence: threshold=30.0, raw_signal_score=73.5537, metric_confidence_score=91.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **channel_momentum_up** · El Maikini Dev
-  - score: 70.2805
-  - confidence: medium (53.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=53.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **channel_momentum_up** · Stand-up Maths
-  - score: 70.2805
-  - confidence: medium (53.0)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=53.0
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **packaging_problem** · La jugada de USA 🇺🇸 para ingresar a México 🇲🇽 #mexico
-  - score: 70.2684
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=74.1619, metric_confidence_score=89.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Así es como te están destruyendo sin que te des cuenta  #shorts
-  - score: 70.1301
+- **trend_burst** · ¿Deepseek es mejor que Claude y GPT?
+  - score: 70.3318
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=83.4799, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · I Would Give Away 100% Of My Profit To Do This
+  - score: 70.3152
   - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=75.4088, metric_confidence_score=86.0
+  - evidence: threshold=70.0, raw_signal_score=75.6077, metric_confidence_score=86.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Así es como te están destruyendo sin que te des cuenta  #shorts
+  - score: 70.2062
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=75.4905, metric_confidence_score=86.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · No compartas tus objetivos con todo el mundo #shorts
-  - score: 70.0768
-  - confidence: high (75.5)
-  - evidence: threshold=75.0, raw_signal_score=79.8596, metric_confidence_score=75.5
+- **high_engagement_low_reach** · ¿Que está pasando en México? #méxico
+  - score: 70.188
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=76.9184, metric_confidence_score=82.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · We Found Galaxies Too Old for the Universe
+  - score: 70.1865
+  - confidence: medium (67.0)
+  - evidence: threshold=80.0, raw_signal_score=84.0557, metric_confidence_score=67.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Our Brains Got Bigger. Now They’re Shrinking?
+  - score: 70.1626
+  - confidence: high (75.0)
+  - evidence: threshold=80.0, raw_signal_score=80.1859, metric_confidence_score=75.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · ¿QUÉ ES LA QUIRALIDAD? 🔬
+  - score: 70.131
+  - confidence: medium (66.5)
+  - evidence: threshold=70.0, raw_signal_score=84.2414, metric_confidence_score=66.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · NINTENDO no nació como EMPRESA de videojuegos… ESTO PASÓ
-  - score: 70.0083
+  - score: 70.12
   - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=72.5475, metric_confidence_score=93.0
+  - evidence: threshold=75.0, raw_signal_score=72.6632, metric_confidence_score=93.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · No Lo Puedo Creer
-  - score: 69.8945
-  - confidence: high (92.5)
-  - evidence: threshold=70.0, raw_signal_score=72.6177, metric_confidence_score=92.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Este es el tiempo más peligroso #shorts
-  - score: 69.6309
+- **packaging_problem** · Atacan al presidente Trump #notícias
+  - score: 70.1142
   - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=70.8712, metric_confidence_score=96.5
+  - evidence: threshold=70.0, raw_signal_score=71.3631, metric_confidence_score=96.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_consistent_performer** · Numberphile
-  - score: 69.4921
-  - confidence: medium (45.5)
-  - evidence: threshold=75.0, raw_signal_score=95.5217, metric_confidence_score=45.5
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **packaging_problem** · La gente no me creyó cuando les enseñé la optimización de la laptop #laptop #windows
-  - score: 69.4132
-  - confidence: high (85.5)
-  - evidence: threshold=70.0, raw_signal_score=74.839, metric_confidence_score=85.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · La Mejor, Peor e Ideal. Rankeando GPU #pc #pcgamer #gpu
-  - score: 69.1336
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=74.5376, metric_confidence_score=85.5
+- **accelerating_video** · Zuckerberg compró INSTAGRAM por $1000M y Wall Street se BURLÓ
+  - score: 70.0845
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=71.3328, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · ¿Por qué Este Cometa es Tan Famoso?
+  - score: 70.0682
+  - confidence: medium (61.0)
+  - evidence: threshold=80.0, raw_signal_score=87.0412, metric_confidence_score=61.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · How I Work: $77K/Month Solopreneur
+  - score: 69.9832
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=77.1165, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Al Parecer Sí Es Un Monstruo
+  - score: 69.9463
+  - confidence: high (92.5)
+  - evidence: threshold=75.0, raw_signal_score=72.6714, metric_confidence_score=92.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · TRADING Y ARBITRAJE EN VIVO CON SANTIAGO AMAT
-  - score: 69.1083
-  - confidence: high (74.5)
-  - evidence: threshold=70.0, raw_signal_score=79.2073, metric_confidence_score=74.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · “La memoria colectiva” puede ser tu mayor obstáculo.
-  - score: 69.0987
+- **trend_burst** · YOU CAN NEVER LOVE YOUR PARENTS TOO MUCH
+  - score: 69.9285
+  - confidence: medium (63.5)
+  - evidence: threshold=80.0, raw_signal_score=85.5395, metric_confidence_score=63.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Asmongold's INSANE Diet
+  - score: 69.8929
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=82.959, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · ¡Abandoné A Mis Trillizos! 😭 Ft. @CD9MX - T10E05 #podcast #chisme #cd9
+  - score: 69.7962
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=71.0394, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Muchos de mis errores se repetían #shorts
+  - score: 69.7037
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=76.3876, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · La batalla legal entre Elon Musk y OpenAI
+  - score: 69.6494
   - confidence: high (78.5)
-  - evidence: threshold=75.0, raw_signal_score=77.4216, metric_confidence_score=78.5
+  - evidence: threshold=70.0, raw_signal_score=78.0386, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Polémica en el Mitin de María Corina Machado.
+  - score: 69.6407
+  - confidence: high (96.5)
+  - evidence: threshold=75.0, raw_signal_score=70.8812, metric_confidence_score=96.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Chisme express con Frida Araujo #chisme #comedia #podcast
-  - score: 69.0441
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=71.5483, metric_confidence_score=93.0
+- **packaging_problem** · Por esto ser realista ha matado a nuestra generación #shorts
+  - score: 69.5874
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.8269, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · ¿Qué está encareciendo los seguros médicos?
+  - score: 69.5426
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.7813, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · Que te rompan el corazon es lo mejor que te puede pasar #shorts
+  - score: 69.4825
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.7201, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Wombats Poop Cubes
+  - score: 69.4464
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=76.9489, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Matt D'Avella
+  - score: 69.438
+  - confidence: medium (50.5)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=50.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Por qué Israel ''manda'' en Estados Unidos?
+  - score: 69.4256
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.6622, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¿Existen Fisuras en el Universo?
+  - score: 69.4132
+  - confidence: medium (69.0)
+  - evidence: threshold=70.0, raw_signal_score=82.1459, metric_confidence_score=69.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Por esto no debes compartir objetivos con todo el mundo  #shorts
+  - score: 69.3826
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=76.0358, metric_confidence_score=82.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · I Tested Dead Places At Their Busiest Hour
+  - score: 69.3433
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.5784, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Esto es lo primero que necesitas  #shorts
+  - score: 69.3131
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.5476, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Tu pareja dice mucho de ti #shorts
+  - score: 69.2879
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=78.9606, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · La maldición de la silla presidencial #méxico
+  - score: 69.2797
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=74.4943, metric_confidence_score=86.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Aumento del costo de los pasajes
+  - score: 69.223
+  - confidence: medium (53.5)
+  - evidence: threshold=70.0, raw_signal_score=90.1928, metric_confidence_score=53.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Haz esto si estás estancado en 0 euros #shorts
+  - score: 69.1003
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.3311, metric_confidence_score=96.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · Lo que nadie te enseña sobre dinero | Sofía Macías
+  - score: 69.0281
+  - confidence: high (77.0)
+  - evidence: threshold=75.0, raw_signal_score=77.9979, metric_confidence_score=77.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Este es el verdadero problema   #shorts
+  - score: 68.943
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=72.763, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **channel_volatility_warning** · Cristina Dayz 
   - score: 68.9421
   - confidence: high (72.0)
   - evidence: threshold=30.0, raw_signal_score=80.1653, metric_confidence_score=72.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **packaging_problem** · Ventajas de ser un Growth Partner #shorts
-  - score: 68.8329
-  - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=71.3295, metric_confidence_score=93.0
+- **packaging_problem** · Sexo, luego el vacío — Arthur Schopenhauer
+  - score: 68.9405
+  - confidence: high (84.5)
+  - evidence: threshold=70.0, raw_signal_score=74.7323, metric_confidence_score=84.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Si quieres resultados diferentes, necesitas entornos diferentes.
-  - score: 68.7831
-  - confidence: high (96.5)
-  - evidence: threshold=70.0, raw_signal_score=70.0083, metric_confidence_score=96.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **trend_burst** · Walmart’s New Plan to Defeat Amazon
-  - score: 68.7781
-  - confidence: medium (63.5)
-  - evidence: threshold=80.0, raw_signal_score=84.1322, metric_confidence_score=63.5
+- **accelerating_video** · Herdez puso en PELIGRO su IMPERIO por una ALIANZA
+  - score: 68.938
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=72.7578, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · Physics Girl
+  - score: 68.9244
+  - confidence: medium (59.75)
+  - evidence: threshold=80.0, raw_signal_score=86.2903, metric_confidence_score=59.75
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · Fast-Forward Your Life
+  - score: 68.9183
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=75.943, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · "How Do I Stop Having To Do Everything?"
+  - score: 68.9035
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=81.7846, metric_confidence_score=68.5
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **packaging_problem** · Francia Desecha Windows 11 y Tim Cook Renuncia en Apple
-  - score: 68.7614
-  - confidence: high (79.5)
-  - evidence: threshold=70.0, raw_signal_score=76.6144, metric_confidence_score=79.5
+- **packaging_problem** · Este es uno de los errores más comunes cuando la gente empieza a ganar dinero #shorts
+  - score: 68.8811
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=72.6978, metric_confidence_score=89.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_momentum_up** · Daniel Felipe Medina
+  - score: 68.8613
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · DonebyLaura
+  - score: 68.8613
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · midulive
+  - score: 68.8613
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · Mark Rober
+  - score: 68.8613
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · Soy Dalto
+  - score: 68.8613
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=49.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · ¡Tiene Un Fetiche Con Su Hermana! 😱 Ft. @leal_stephany y @lozano_gf - T10E04 #podcast #chismes
+  - score: 68.8491
+  - confidence: high (96.5)
+  - evidence: threshold=70.0, raw_signal_score=70.0754, metric_confidence_score=96.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El Lobo de Wall Street de TikTok
+  - score: 68.8215
+  - confidence: high (76.0)
+  - evidence: threshold=70.0, raw_signal_score=78.2062, metric_confidence_score=76.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · ¿QUÉ ES LA QUIRALIDAD? 🔬
+  - score: 68.7473
+  - confidence: medium (66.5)
+  - evidence: threshold=80.0, raw_signal_score=82.5794, metric_confidence_score=66.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **channel_consistent_performer** · Wendover Productions
+  - score: 68.7388
+  - confidence: medium (43.0)
+  - evidence: threshold=75.0, raw_signal_score=96.1382, metric_confidence_score=43.0
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **channel_consistent_performer** · The Science Asylum
+  - score: 68.7388
+  - confidence: medium (43.0)
+  - evidence: threshold=75.0, raw_signal_score=96.1382, metric_confidence_score=43.0
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
 - **channel_volatility_warning** · 98grados
   - score: 68.7149
   - confidence: high (80.75)
   - evidence: threshold=30.0, raw_signal_score=76.0331, metric_confidence_score=80.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **trend_burst** · LA COQUETA
-  - score: 68.5964
-  - confidence: medium (54.0)
-  - evidence: threshold=80.0, raw_signal_score=89.0863, metric_confidence_score=54.0
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **channel_momentum_up** · PBS Space Time
-  - score: 68.5579
-  - confidence: medium (49.25)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=49.25
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · ¡CUIDADO! Nu y Revolut están BLOQUEANDO cuentas: esto debes saber
-  - score: 68.537
-  - confidence: high (75.5)
-  - evidence: threshold=75.0, raw_signal_score=78.1049, metric_confidence_score=75.5
+- **accelerating_video** · The Cost of Getting Rich
+  - score: 68.6526
+  - confidence: high (81.0)
+  - evidence: threshold=70.0, raw_signal_score=75.8592, metric_confidence_score=81.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · DEJA de PERDER el tiempo I 5 Cosas en las cuales DEBERÍA DOLERTE gastar tu tiempo
+  - score: 68.6424
+  - confidence: high (71.5)
+  - evidence: threshold=75.0, raw_signal_score=80.0495, metric_confidence_score=71.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Physics Girl
-  - score: 68.2802
-  - confidence: medium (59.75)
-  - evidence: threshold=80.0, raw_signal_score=85.4839, metric_confidence_score=59.75
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **trend_burst** · CHINA hizo grande a APPLE. APPLE hizo de CHINA una SUPERPOTENCIA.
-  - score: 68.1419
-  - confidence: medium (63.5)
-  - evidence: threshold=80.0, raw_signal_score=83.354, metric_confidence_score=63.5
+- **trend_burst** · El muerto que se enterró a sí mismo
+  - score: 68.5819
+  - confidence: medium (66.0)
+  - evidence: threshold=80.0, raw_signal_score=82.6287, metric_confidence_score=66.0
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **packaging_problem** · se siente como un mundo escondido
-  - score: 68.0276
-  - confidence: high (76.5)
-  - evidence: threshold=70.0, raw_signal_score=77.0851, metric_confidence_score=76.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Ser rico es toda una estafa  #shorts
-  - score: 67.9484
+- **accelerating_video** · What Is The Most Amount Of Cereal You Can Buy At A Target?
+  - score: 68.553
   - confidence: high (93.0)
-  - evidence: threshold=70.0, raw_signal_score=70.4129, metric_confidence_score=93.0
+  - evidence: threshold=70.0, raw_signal_score=71.0394, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · MATERIA OSCURA Y AGUJEROS NEGROS DE OTRO UNIVERSO 🌌
+  - score: 68.5443
+  - confidence: high (84.0)
+  - evidence: threshold=75.0, raw_signal_score=74.5047, metric_confidence_score=84.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · "How Do I Stop Having To Do Everything?"
+  - score: 68.537
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Ex-banquero REVELA Si Aún es Momento de Invertir en la Bolsa de Colombia | Diario del Banquero
+  - score: 68.537
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=81.3495, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · QuantumFracture
+  - score: 68.5183
+  - confidence: medium (65.25)
+  - evidence: threshold=80.0, raw_signal_score=82.9268, metric_confidence_score=65.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · Deja de pedirle código a la IA, esto es mejor
+  - score: 68.5143
+  - confidence: medium (62.5)
+  - evidence: threshold=70.0, raw_signal_score=84.3252, metric_confidence_score=62.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Kids With World Records
+  - score: 68.5105
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=81.3181, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Haz ESTO para gestionar BIEN tu tiempo
+  - score: 68.489
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=73.8426, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · El MIEDO de una MAMÁ ante un DIAGNÓSTICO: síndrome de Down - Más allá del rosa con Gloria Torruco
+  - score: 68.4789
+  - confidence: high (70.5)
+  - evidence: threshold=80.0, raw_signal_score=80.3271, metric_confidence_score=70.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **channel_consistent_performer** · Alejavi Rivera
+  - score: 68.4279
+  - confidence: high (72.0)
+  - evidence: threshold=75.0, raw_signal_score=79.5673, metric_confidence_score=72.0
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **high_engagement_low_reach** · ¡CUIDADO! Nu y Revolut están BLOQUEANDO cuentas: esto debes saber
+  - score: 68.4135
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=77.9641, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Guess How Much These Websites Make, Built On @Wix
+  - score: 68.3937
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=81.1795, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · ARTEMIS II FOTOGRAFÍA NUESTRA GALAXIA EN PLENO VIAJE 🌌
+  - score: 68.3929
+  - confidence: high (94.5)
+  - evidence: threshold=70.0, raw_signal_score=70.3269, metric_confidence_score=94.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Juan Villalvazo
+  - score: 68.3598
+  - confidence: medium (66.5)
+  - evidence: threshold=80.0, raw_signal_score=82.1138, metric_confidence_score=66.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_consistent_performer** · DonebyLaura
+  - score: 68.3511
+  - confidence: medium (49.25)
+  - evidence: threshold=75.0, raw_signal_score=91.5928, metric_confidence_score=49.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **high_engagement_low_reach** · El Paso a Paso para Empezar a Vender en Amazon en 2026
+  - score: 68.3393
+  - confidence: medium (65.0)
+  - evidence: threshold=75.0, raw_signal_score=82.8355, metric_confidence_score=65.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · Why Antarctica Has SO MANY Meteorites
+  - score: 68.3365
+  - confidence: medium (68.0)
+  - evidence: threshold=80.0, raw_signal_score=81.353, metric_confidence_score=68.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Jugador Profesional Se Enoja y Lo Pierde Todo
+  - score: 68.3284
+  - confidence: high (92.5)
+  - evidence: threshold=75.0, raw_signal_score=70.9906, metric_confidence_score=92.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **channel_momentum_up** · Gustavo Entrala
+  - score: 68.2846
+  - confidence: medium (48.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=48.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · MIGALA D
+  - score: 68.2846
+  - confidence: medium (48.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=48.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · PolyMatter
+  - score: 68.2846
+  - confidence: medium (48.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=48.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **accelerating_video** · ¿Por qué México es clave para EE.UU.? | Ft. José Medina Mora | Dimes y Billetes #449
+  - score: 68.2582
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=77.7871, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Price Your Upsells Like This
+  - score: 68.2232
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=72.0034, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Me voló la cabeza cuando Jaime Higuera dijo esto #shorts
+  - score: 68.2178
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=80.9707, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · 🐜📸
+  - score: 68.175
+  - confidence: high (83.5)
+  - evidence: threshold=75.0, raw_signal_score=74.3052, metric_confidence_score=83.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Realmente Odian a Su Comunidad
+  - score: 68.1647
+  - confidence: high (82.0)
+  - evidence: threshold=75.0, raw_signal_score=74.9062, metric_confidence_score=82.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia
+  - score: 68.1331
+  - confidence: high (79.5)
+  - evidence: threshold=75.0, raw_signal_score=75.9143, metric_confidence_score=79.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Send this to a dad you know
+  - score: 68.1329
+  - confidence: medium (52.5)
+  - evidence: threshold=70.0, raw_signal_score=89.3546, metric_confidence_score=52.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · EL DÍA QUE HUBBLE LO CAMBIÓ TODO 🛰️
+  - score: 68.0256
+  - confidence: high (77.0)
+  - evidence: threshold=70.0, raw_signal_score=76.865, metric_confidence_score=77.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Comenzó
+  - score: 68.0129
+  - confidence: high (92.5)
+  - evidence: threshold=75.0, raw_signal_score=70.6628, metric_confidence_score=92.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Will Magnus Carlsen play chess after this?
+  - score: 68.0007
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=77.4937, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Este es uno de los mayores errores que comete la gente al comenzar #shorts
+  - score: 68.0006
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=71.7685, metric_confidence_score=89.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **trend_burst** · 70-Year-Old Is $300,000 in DEBT
+  - score: 67.977
+  - confidence: medium (68.5)
+  - evidence: threshold=80.0, raw_signal_score=80.6849, metric_confidence_score=68.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Los millonarios no quieren que conozcas este modelo de negocio  #shorts
+  - score: 67.9757
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=70.4412, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · Lo barato no siempre gana #shorts
+  - score: 67.9489
+  - confidence: high (72.0)
+  - evidence: threshold=75.0, raw_signal_score=79.0103, metric_confidence_score=72.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · "I Don't Have Recurring Revenue"
+  - score: 67.9464
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=70.4107, metric_confidence_score=93.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · FranqitoM
+  - score: 67.9385
+  - confidence: medium (47.25)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=47.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
 - **channel_high_growth** · Practical Engineering
   - score: 67.9355
   - confidence: medium (56.0)
   - evidence: threshold=80.0, raw_signal_score=87.0968, metric_confidence_score=56.0
   - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · Polémica en el Mitin de María Corina Machado.
-  - score: 67.8805
-  - confidence: high (96.5)
-  - evidence: threshold=75.0, raw_signal_score=69.0896, metric_confidence_score=96.5
+- **channel_momentum_up** · Finanzas con Gus
+  - score: 67.9339
+  - confidence: medium (62.25)
+  - evidence: threshold=80.0, raw_signal_score=83.7398, metric_confidence_score=62.25
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **packaging_problem** · Esta técnica es muy efectiva  #shorts
+  - score: 67.8137
+  - confidence: high (93.0)
+  - evidence: threshold=70.0, raw_signal_score=70.2733, metric_confidence_score=93.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · Cómo INVERTIR Con El Salario MÍNIMO
+  - score: 67.7871
+  - confidence: high (83.5)
+  - evidence: threshold=75.0, raw_signal_score=73.8824, metric_confidence_score=83.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Carta de Matias Galetto en varios idiomas porque me odio #italian #matiasgaletto #french
-  - score: 67.8
-  - confidence: medium (68.0)
-  - evidence: threshold=75.0, raw_signal_score=80.7143, metric_confidence_score=68.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **trend_burst** · Internet Está Cansado
-  - score: 67.7564
-  - confidence: medium (64.5)
-  - evidence: threshold=80.0, raw_signal_score=82.3786, metric_confidence_score=64.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **packaging_problem** · ARBITRAJE DOLAR CRIPTO-DOLAR CCL
-  - score: 67.7519
-  - confidence: high (85.0)
-  - evidence: threshold=70.0, raw_signal_score=73.2453, metric_confidence_score=85.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · La maldición de la silla presidencial #méxico
-  - score: 67.7341
-  - confidence: high (86.0)
-  - evidence: threshold=70.0, raw_signal_score=72.8324, metric_confidence_score=86.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Esto me cambió la vida   #shorts
-  - score: 67.7177
-  - confidence: high (89.5)
-  - evidence: threshold=70.0, raw_signal_score=71.4699, metric_confidence_score=89.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · ⚠ CUIDADO TRAMPA ALCISTA DE BITCOIN 📉
-  - score: 67.6458
-  - confidence: high (74.5)
-  - evidence: threshold=70.0, raw_signal_score=77.531, metric_confidence_score=74.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · U.S.A. quiere imponer su Ley, pero México no se deja
-  - score: 67.5521
+- **accelerating_video** · This book called me out (I love it)
+  - score: 67.7714
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=76.3621, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · MAGNUS CARLSEN RETURNS TO CLASSICAL CHESS
+  - score: 67.73
   - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=74.0297, metric_confidence_score=82.5
+  - evidence: threshold=70.0, raw_signal_score=74.2246, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · como si la idea (pintura) se fuera a secar
+  - score: 67.7162
+  - confidence: high (83.5)
+  - evidence: threshold=70.0, raw_signal_score=73.8051, metric_confidence_score=83.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Por qué la clase media es cada vez más POBRE
-  - score: 67.4807
-  - confidence: high (80.5)
-  - evidence: threshold=75.0, raw_signal_score=74.7709, metric_confidence_score=80.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · ¡CUIDADO! Nu y Revolut están BLOQUEANDO cuentas: esto debes saber
-  - score: 67.4103
-  - confidence: high (75.5)
-  - evidence: threshold=70.0, raw_signal_score=76.8208, metric_confidence_score=75.5
+- **channel_consistent_performer** · PBS Space Time
+  - score: 67.6892
+  - confidence: medium (49.25)
+  - evidence: threshold=75.0, raw_signal_score=90.7058, metric_confidence_score=49.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **channel_momentum_up** · Franco Pisso
+  - score: 67.6829
+  - confidence: medium (66.5)
+  - evidence: threshold=80.0, raw_signal_score=81.3008, metric_confidence_score=66.5
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **packaging_problem** · Calificando comentarios de mis videos junto a ChatGPT
+  - score: 67.6363
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=76.21, metric_confidence_score=77.5
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia
-  - score: 67.2402
-  - confidence: high (79.5)
-  - evidence: threshold=75.0, raw_signal_score=74.9195, metric_confidence_score=79.5
+- **high_engagement_low_reach** · Si Iniciara Nuevamente de Programador
+  - score: 67.5922
+  - confidence: medium (65.5)
+  - evidence: threshold=75.0, raw_signal_score=81.6824, metric_confidence_score=65.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · La Gran Mentira del Helio - 3
+  - score: 67.5835
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=72.8663, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · The Wild Story of the Teton Dam Failure
+  - score: 67.5547
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=75.6915, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Physics Girl
+  - score: 67.5366
+  - confidence: medium (59.75)
+  - evidence: threshold=80.0, raw_signal_score=84.5528, metric_confidence_score=59.75
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **high_engagement_low_reach** · ¿Existen pasos para convertirse en experto en IA?
+  - score: 67.5062
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=73.9794, metric_confidence_score=82.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · La valiosa excreción de cachalote
+  - score: 67.5053
+  - confidence: high (90.5)
+  - evidence: threshold=70.0, raw_signal_score=70.8718, metric_confidence_score=90.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · You Don't Need A Head Start To Win
+  - score: 67.4813
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=75.3982, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · Wendover Productions
+  - score: 67.4637
+  - confidence: medium (43.0)
+  - evidence: threshold=80.0, raw_signal_score=94.3548, metric_confidence_score=43.0
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · If I wanted to hit my first $100,000 by 35 - here's what I'd do
+  - score: 67.4468
+  - confidence: high (88.0)
+  - evidence: threshold=70.0, raw_signal_score=71.7519, metric_confidence_score=88.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El Mapa Entero del Dinero en 21 Minutos
+  - score: 67.3655
+  - confidence: medium (50.5)
+  - evidence: threshold=70.0, raw_signal_score=89.5222, metric_confidence_score=50.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Así te espera el 2027 #shorts
+  - score: 67.2715
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=70.9989, metric_confidence_score=89.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **channel_volatility_warning** · Wes Roth
   - score: 67.2211
   - confidence: high (80.75)
   - evidence: threshold=30.0, raw_signal_score=74.3802, metric_confidence_score=80.75
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · The Truth About China’s Green Energy Industry
-  - score: 66.9612
-  - confidence: high (84.5)
-  - evidence: threshold=75.0, raw_signal_score=72.5867, metric_confidence_score=84.5
+- **high_engagement_low_reach** · Cómo Proteger Tus Inversiones Con Billeteras Frías ❄️
+  - score: 67.1493
+  - confidence: medium (69.5)
+  - evidence: threshold=75.0, raw_signal_score=79.2322, metric_confidence_score=69.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **channel_high_growth** · Wendover Productions
-  - score: 66.8871
-  - confidence: medium (43.0)
-  - evidence: threshold=80.0, raw_signal_score=93.5484, metric_confidence_score=43.0
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **channel_momentum_up** · Numberphile
-  - score: 66.8354
-  - confidence: medium (45.5)
-  - evidence: threshold=80.0, raw_signal_score=91.8699, metric_confidence_score=45.5
-  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
-- **high_engagement_low_reach** · La forma más fácil de crear tu primera skill
-  - score: 66.8348
-  - confidence: high (93.0)
-  - evidence: threshold=75.0, raw_signal_score=69.2589, metric_confidence_score=93.0
+- **trend_burst** · What would happen if the Sun dissapeared?
+  - score: 67.1299
+  - confidence: medium (61.0)
+  - evidence: threshold=80.0, raw_signal_score=83.3912, metric_confidence_score=61.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Por esto nunca deberías hablar de tus metas #shorts
+  - score: 67.127
+  - confidence: high (82.5)
+  - evidence: threshold=75.0, raw_signal_score=73.5638, metric_confidence_score=82.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · ¿La gente olvidó cómo utilizar Google?
-  - score: 66.7961
+- **packaging_problem** · ¡CUIDADO! Nu y Revolut están BLOQUEANDO cuentas: esto debes saber
+  - score: 67.0762
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=76.4401, metric_confidence_score=75.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Revisando las  noticias en vivo #14. El nuevo intento de desvivir a Trump.
+  - score: 67.0319
+  - confidence: high (89.5)
+  - evidence: threshold=70.0, raw_signal_score=70.746, metric_confidence_score=89.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · La mejor casa de Bolsa en México 🤑💰
+  - score: 66.9851
+  - confidence: medium (59.5)
+  - evidence: threshold=80.0, raw_signal_score=83.9939, metric_confidence_score=59.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Deja de pedirle código a la IA, esto es mejor
+  - score: 66.9784
+  - confidence: medium (62.5)
+  - evidence: threshold=80.0, raw_signal_score=82.4349, metric_confidence_score=62.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Libros de productividad no tan malos.
+  - score: 66.9369
+  - confidence: medium (53.5)
+  - evidence: threshold=80.0, raw_signal_score=87.2141, metric_confidence_score=53.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · Atraes lo que eres #shorts
+  - score: 66.934
   - confidence: high (79.0)
-  - evidence: threshold=75.0, raw_signal_score=74.6325, metric_confidence_score=79.0
+  - evidence: threshold=75.0, raw_signal_score=74.7866, metric_confidence_score=79.0
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Jugador Profesional Se Enoja y Lo Pierde Todo
-  - score: 66.2404
-  - confidence: high (92.5)
-  - evidence: threshold=75.0, raw_signal_score=68.8212, metric_confidence_score=92.5
+- **trend_burst** · Porque el Internet se hace lento cuando llueve￼
+  - score: 66.8912
+  - confidence: medium (57.5)
+  - evidence: threshold=80.0, raw_signal_score=84.9412, metric_confidence_score=57.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · CAMBIOS IMPORTANTES en MercadoPago. ¿Conviene invertir?
+  - score: 66.8462
+  - confidence: high (71.5)
+  - evidence: threshold=70.0, raw_signal_score=77.9547, metric_confidence_score=71.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · SOFI MAURE, la PAGINA AZUL y un problema generacional cada vez más grande l Ale Marin
+  - score: 66.8233
+  - confidence: medium (58.0)
+  - evidence: threshold=80.0, raw_signal_score=84.5864, metric_confidence_score=58.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · QUICK which signature is better? #art #artist #draw #drawing
+  - score: 66.8198
+  - confidence: high (82.0)
+  - evidence: threshold=70.0, raw_signal_score=73.4283, metric_confidence_score=82.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ☕️🍟 Por qué siempre hay TRES TAMAÑOS de Café o de Papas Fritas
+  - score: 66.8066
+  - confidence: medium (64.5)
+  - evidence: threshold=70.0, raw_signal_score=81.2238, metric_confidence_score=64.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · i “love” how people talk about books in 2026
+  - score: 66.7965
+  - confidence: medium (60.5)
+  - evidence: threshold=70.0, raw_signal_score=83.2355, metric_confidence_score=60.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Matt D'Avella
+  - score: 66.7469
+  - confidence: medium (50.5)
+  - evidence: threshold=75.0, raw_signal_score=88.7002, metric_confidence_score=50.5
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · He'd Be A Bartender At A Ski Slope
+  - score: 66.6974
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=73.093, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · U.S.A. quiere imponer su Ley, pero México no se deja
+  - score: 66.6955
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=73.0909, metric_confidence_score=82.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Me cambió la vida cuando Jaime Higuera dijo esto #shorts
+  - score: 66.5949
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=79.0444, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · soy una fracasada.
+  - score: 66.5397
+  - confidence: medium (65.0)
+  - evidence: threshold=75.0, raw_signal_score=80.6542, metric_confidence_score=65.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · ¿CIUDADANOS DE SEGUNDA?: EDO MEX VS CDMX
+  - score: 66.4929
+  - confidence: medium (60.5)
+  - evidence: threshold=80.0, raw_signal_score=82.8572, metric_confidence_score=60.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Cómo  DEJAR de PREOCUPARTE por lo que OTROS PIENSAN de ti
+  - score: 66.4366
+  - confidence: high (79.5)
+  - evidence: threshold=70.0, raw_signal_score=74.0241, metric_confidence_score=79.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Mi abuela tiene 94 años... y esto aprendió.
+  - score: 66.4325
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=74.4342, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · 0.999 = 1?
+  - score: 66.4212
+  - confidence: medium (64.0)
+  - evidence: threshold=80.0, raw_signal_score=81.0015, metric_confidence_score=64.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · El truco de los pochoclos y la gaseosa del cine
+  - score: 66.4158
+  - confidence: high (73.0)
+  - evidence: threshold=70.0, raw_signal_score=76.7812, metric_confidence_score=73.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Chau Arbitraje | Bloqueos Masivos de cuentas Bancarias
+  - score: 66.3792
+  - confidence: medium (60.5)
+  - evidence: threshold=80.0, raw_signal_score=82.7155, metric_confidence_score=60.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · 50 Datos Sorprendentes de la Ciudad de Miami
+  - score: 66.3194
+  - confidence: high (77.0)
+  - evidence: threshold=70.0, raw_signal_score=74.9371, metric_confidence_score=77.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Me cambió la vida cuando Jaime Higuera dijo esto #shorts
+  - score: 66.2571
+  - confidence: high (79.0)
+  - evidence: threshold=75.0, raw_signal_score=74.0303, metric_confidence_score=79.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Me quedé pensando cuando Jaime Higuera dijo esto #shorts
+  - score: 66.2418
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=78.6253, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Itzcalli
+  - score: 66.176
+  - confidence: medium (62.25)
+  - evidence: threshold=75.0, raw_signal_score=81.5729, metric_confidence_score=62.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **packaging_problem** · La verdad sobre el ARBITRAJE CCL y sus ganancias
+  - score: 66.1728
+  - confidence: medium (67.5)
+  - evidence: threshold=70.0, raw_signal_score=79.0123, metric_confidence_score=67.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · ¿Te pueden regresar impuestos al comprar un inmueble? #shorts #inmuebles #impuestos #sat
+  - score: 66.1421
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=83.9899, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · 7 cosas que hacen los que SE HACEN RESPETAR (sin levantar la voz)
+  - score: 66.0917
+  - confidence: medium (51.5)
+  - evidence: threshold=80.0, raw_signal_score=87.2498, metric_confidence_score=51.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · Experto En Lujo: Las Estrategias Para Luxurizar Tu Vida, Ser Más Deseado Y Ganar Mucho Dinero
+  - score: 66.0799
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=73.2188, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · What happened to my face
+  - score: 66.0585
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=74.0151, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¿La IA ser volverá más cara que contratar personas?
+  - score: 66.0516
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=75.2724, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Adrián Sáenz
+  - score: 65.9981
+  - confidence: high (72.0)
+  - evidence: threshold=75.0, raw_signal_score=76.7419, metric_confidence_score=72.0
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · Convirtió los macarrones en comida SANA
+  - score: 65.9893
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=80.7209, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_momentum_up** · Wendover Productions
+  - score: 65.9776
+  - confidence: medium (43.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=43.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **channel_momentum_up** · The Science Asylum
+  - score: 65.9776
+  - confidence: medium (43.0)
+  - evidence: threshold=80.0, raw_signal_score=92.2764, metric_confidence_score=43.0
+  - recommended_action: Canal acelerando; revisar últimos videos y frecuencia.
+- **high_engagement_low_reach** · Publi⭐️ ¿Por qué hay cosas que lees mil veces y no entiendes… y en vídeo sí? 📹🧬✨
+  - score: 65.9266
+  - confidence: high (77.5)
+  - evidence: threshold=75.0, raw_signal_score=74.2835, metric_confidence_score=77.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · BUYING A HOUSE IS KEEPING YOU POOR
+  - score: 65.9216
+  - confidence: high (81.0)
+  - evidence: threshold=70.0, raw_signal_score=72.8416, metric_confidence_score=81.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · How To Eliminate Gravity
+  - score: 65.9088
+  - confidence: high (78.5)
+  - evidence: threshold=70.0, raw_signal_score=73.8474, metric_confidence_score=78.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · El Oscuro y Violento Mundo de la IA para NIÑOS
+  - score: 65.8709
+  - confidence: high (76.0)
+  - evidence: threshold=70.0, raw_signal_score=74.8533, metric_confidence_score=76.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · No compartas tus objetivos con todo el mundo #shorts
+  - score: 65.8594
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=75.0535, metric_confidence_score=75.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **packaging_problem** · La cruda REALIDAD FINANCIERA de las MUJERES
+  - score: 65.8453
+  - confidence: high (86.0)
+  - evidence: threshold=70.0, raw_signal_score=70.8014, metric_confidence_score=86.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · The Biggest Misconception I Had When Starting A Business...
+  - score: 65.8309
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=75.021, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · El aguacate
+  - score: 65.7751
+  - confidence: medium (63.5)
+  - evidence: threshold=75.0, raw_signal_score=80.4589, metric_confidence_score=63.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · i “love” how people talk about books in 2026
+  - score: 65.7206
+  - confidence: medium (60.5)
+  - evidence: threshold=80.0, raw_signal_score=81.8949, metric_confidence_score=60.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Que no te pase lo que a mí. Ten en cuenta estas 3 cosas para elegir bien #pc #mouse #perifericos
+  - score: 65.7177
+  - confidence: high (71.5)
+  - evidence: threshold=70.0, raw_signal_score=76.6388, metric_confidence_score=71.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_high_growth** · Mark Rober
+  - score: 65.5978
+  - confidence: medium (49.25)
+  - evidence: threshold=80.0, raw_signal_score=87.9032, metric_confidence_score=49.25
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **accelerating_video** · LA COQUETA
+  - score: 65.5759
+  - confidence: medium (54.0)
+  - evidence: threshold=70.0, raw_signal_score=85.1635, metric_confidence_score=54.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · The Physics Behind the Thumb Trick
+  - score: 65.5253
+  - confidence: medium (50.5)
+  - evidence: threshold=80.0, raw_signal_score=87.0769, metric_confidence_score=50.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · La gente no me creyó cuando les enseñé la optimización de la laptop #laptop #windows
+  - score: 65.5118
+  - confidence: high (85.5)
+  - evidence: threshold=70.0, raw_signal_score=70.6327, metric_confidence_score=85.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · 👉🏻 Te dejo la Guía Pro de ChatGPT fijada en los comentarios de este video.
+  - score: 65.4631
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=74.6018, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Por esto te sientes estancado #shorts
+  - score: 65.4309
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=74.5652, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Cómo INVERTIR Con El Salario MÍNIMO
+  - score: 65.3053
+  - confidence: high (83.5)
+  - evidence: threshold=70.0, raw_signal_score=71.1775, metric_confidence_score=83.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Curso Completo De Claude Code (+4 Horas)
+  - score: 65.2856
+  - confidence: high (80.5)
+  - evidence: threshold=70.0, raw_signal_score=72.3386, metric_confidence_score=80.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Detengan el boxeo de influencers
+  - score: 65.1878
+  - confidence: medium (55.0)
+  - evidence: threshold=80.0, raw_signal_score=84.1133, metric_confidence_score=55.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Gravity Assists Are Basically Free Energy
+  - score: 64.8385
+  - confidence: medium (61.0)
+  - evidence: threshold=80.0, raw_signal_score=80.5447, metric_confidence_score=61.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **trend_burst** · Aumento del costo de los pasajes
+  - score: 64.8138
+  - confidence: medium (53.5)
+  - evidence: threshold=80.0, raw_signal_score=84.448, metric_confidence_score=53.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Cómo Proteger Tus Inversiones Con Billeteras Frías ❄️
+  - score: 64.625
+  - confidence: medium (69.5)
+  - evidence: threshold=70.0, raw_signal_score=76.2537, metric_confidence_score=69.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · how i imagine they wrote the Michael Jackson movie
+  - score: 64.5824
+  - confidence: high (81.5)
+  - evidence: threshold=70.0, raw_signal_score=71.1651, metric_confidence_score=81.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Me quedé pensando cuando jaime Higuera dijo esto #shorts
+  - score: 64.5709
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=73.5851, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Cómo Hablar Articulado Y Parecer Más Inteligente? Comunica Con Claridad Y Convicción
+  - score: 64.5086
+  - confidence: medium (59.5)
+  - evidence: threshold=70.0, raw_signal_score=80.8885, metric_confidence_score=59.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · EMIRATOS ROMPE la OPEP: el GOLPE que puede hundir el CÁRTEL del petróleo @VisualPolitik
+  - score: 64.5069
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=73.5122, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · LA COQUETA
+  - score: 64.4471
+  - confidence: medium (54.0)
+  - evidence: threshold=80.0, raw_signal_score=83.6976, metric_confidence_score=54.0
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · 7 cosas que debes abandonar ahora para vibrar en una frecuencia más elevada – Carl Jung
+  - score: 64.3773
+  - confidence: medium (67.0)
+  - evidence: threshold=75.0, raw_signal_score=77.0986, metric_confidence_score=67.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **high_engagement_low_reach** · ¿Cómo Proyectar Una Buena Imagen? 📸 #Compuestos #AndresGarza #BárbaraTijerina #Imagen
+  - score: 64.1786
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=73.138, metric_confidence_score=75.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · SOFI MAURE, la PAGINA AZUL y un problema generacional cada vez más grande l Ale Marin
+  - score: 64.1006
+  - confidence: medium (58.0)
+  - evidence: threshold=70.0, raw_signal_score=81.14, metric_confidence_score=58.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Pay Your Employees More
+  - score: 64.0968
+  - confidence: high (82.5)
+  - evidence: threshold=70.0, raw_signal_score=70.2431, metric_confidence_score=82.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Normal YouTuber vs. MrBeast
+  - score: 64.0488
+  - confidence: medium (64.5)
+  - evidence: threshold=70.0, raw_signal_score=77.8709, metric_confidence_score=64.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_consistent_performer** · Soy Dalto
+  - score: 64.0339
+  - confidence: medium (49.25)
+  - evidence: threshold=75.0, raw_signal_score=85.8076, metric_confidence_score=49.25
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · ⚠️ El Documental que NETFLIX no quiere que veas ❌ sobre MORIA CASAN y SUSANA l Ale Marin
+  - score: 63.8961
+  - confidence: medium (61.5)
+  - evidence: threshold=70.0, raw_signal_score=79.1282, metric_confidence_score=61.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · La gente que gana hace más que tu #shorts
+  - score: 63.8744
+  - confidence: high (72.0)
+  - evidence: threshold=75.0, raw_signal_score=74.2726, metric_confidence_score=72.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · "La Ecuación de la Felicidad" (The Happiness Equation) de Neil Pasricha | Club de Lectura #196
+  - score: 63.8574
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=72.772, metric_confidence_score=75.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · The Goal Of Good Branding
+  - score: 63.8407
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=75.7754, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · 7 Errores (muy caros) a EVITAR cuando empiezas a INVERTIR
+  - score: 63.8076
+  - confidence: medium (59.5)
+  - evidence: threshold=75.0, raw_signal_score=80.0095, metric_confidence_score=59.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **high_engagement_low_reach** · ¿miedo al abandono?
-  - score: 66.0977
+  - score: 63.7749
   - confidence: medium (69.5)
-  - evidence: threshold=75.0, raw_signal_score=77.9913, metric_confidence_score=69.5
+  - evidence: threshold=75.0, raw_signal_score=75.2506, metric_confidence_score=69.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · La Gran Mentira del Helio - 3
-  - score: 65.9475
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=71.1024, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Sexo, luego el vacío — Arthur Schopenhauer
-  - score: 65.7405
-  - confidence: high (84.5)
-  - evidence: threshold=70.0, raw_signal_score=71.2634, metric_confidence_score=84.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Por esto te sientes estancado #shorts
-  - score: 65.4593
-  - confidence: high (75.5)
-  - evidence: threshold=75.0, raw_signal_score=74.5974, metric_confidence_score=75.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Me cambió la vida cuando Jaime Higuera dijo esto #shorts
-  - score: 65.3956
-  - confidence: high (79.0)
-  - evidence: threshold=75.0, raw_signal_score=73.0677, metric_confidence_score=79.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Sobre las elecciones en Perú y una reflexión sobre la democracia
-  - score: 64.9808
-  - confidence: high (78.5)
-  - evidence: threshold=70.0, raw_signal_score=72.8076, metric_confidence_score=78.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_consistent_performer** · PBS Space Time
-  - score: 64.8074
-  - confidence: medium (49.25)
-  - evidence: threshold=75.0, raw_signal_score=86.8441, metric_confidence_score=49.25
-  - recommended_action: Canal con desempeño consistente; usar como benchmark.
-- **packaging_problem** · Por esto no debes compartir objetivos con todo el mundo  #shorts
-  - score: 63.9805
-  - confidence: high (82.5)
-  - evidence: threshold=70.0, raw_signal_score=70.1156, metric_confidence_score=82.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Haz ESTO para gestionar BIEN tu tiempo
-  - score: 63.7857
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=68.7717, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · ¿La gente olvidó cómo utilizar Google?
-  - score: 63.766
-  - confidence: high (79.0)
-  - evidence: threshold=70.0, raw_signal_score=71.2469, metric_confidence_score=79.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
 - **channel_volatility_warning** · Sabine Hossenfelder
   - score: 63.6116
   - confidence: high (79.0)
   - evidence: threshold=30.0, raw_signal_score=71.0744, metric_confidence_score=79.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **packaging_problem** · Cómo  DEJAR de PREOCUPARTE por lo que OTROS PIENSAN de ti
-  - score: 63.455
+- **accelerating_video** · Nadie te va a odiar más que esta persona #shorts
+  - score: 63.5875
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=72.4644, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · How Car Dealerships Scam America
+  - score: 63.5141
+  - confidence: medium (49.5)
+  - evidence: threshold=80.0, raw_signal_score=84.9687, metric_confidence_score=49.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **high_engagement_low_reach** · 6 TRUCOS psicológicos para ENAMORAR a cualquiera
+  - score: 63.4965
   - confidence: high (79.5)
-  - evidence: threshold=70.0, raw_signal_score=70.7019, metric_confidence_score=79.5
+  - evidence: threshold=75.0, raw_signal_score=70.7482, metric_confidence_score=79.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · 7 cosas que hacen los que SE HACEN RESPETAR (sin levantar la voz)
+  - score: 63.4954
+  - confidence: medium (51.5)
+  - evidence: threshold=70.0, raw_signal_score=83.8223, metric_confidence_score=51.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · i drew secret emojis...#art #artist
+  - score: 63.3891
+  - confidence: high (85.5)
+  - evidence: threshold=75.0, raw_signal_score=68.3441, metric_confidence_score=85.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · Salir de la pobreza es un cambio de identidad #shorts
+  - score: 63.2758
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=75.1048, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · ¿Por qué los RICOS fingen ser "POBRES"?
+  - score: 63.2596
+  - confidence: high (72.5)
+  - evidence: threshold=70.0, raw_signal_score=73.3445, metric_confidence_score=72.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · THIS FOOD MAKES YOUR PENIS HARDER?!
+  - score: 63.2334
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=71.249, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Los Microondas Podrían Calentar Más... Pero Sería Ilegal
+  - score: 63.2134
+  - confidence: medium (51.5)
+  - evidence: threshold=80.0, raw_signal_score=83.4501, metric_confidence_score=51.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **packaging_problem** · Lo que nadie te enseña sobre dinero | Sofía Macías
+  - score: 63.1706
+  - confidence: high (77.0)
+  - evidence: threshold=70.0, raw_signal_score=71.3792, metric_confidence_score=77.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Si Iniciara Nuevamente de Programador
-  - score: 63.4189
-  - confidence: medium (65.5)
-  - evidence: threshold=75.0, raw_signal_score=76.6391, metric_confidence_score=65.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Atraes lo que eres #shorts
-  - score: 63.3484
-  - confidence: high (79.0)
-  - evidence: threshold=75.0, raw_signal_score=70.7803, metric_confidence_score=79.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · 33.000 € en suscripciones. 🫠
+  - score: 63.1574
+  - confidence: medium (63.0)
+  - evidence: threshold=70.0, raw_signal_score=77.4937, metric_confidence_score=63.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Is the Universe just a Machine?
+  - score: 63.1342
+  - confidence: medium (49.5)
+  - evidence: threshold=80.0, raw_signal_score=84.4605, metric_confidence_score=49.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
 - **channel_volatility_warning** · El Rincón Del Dev
   - score: 63.093
   - confidence: high (75.5)
   - evidence: threshold=30.0, raw_signal_score=71.9008, metric_confidence_score=75.5
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **trend_burst** · New Theory Explains How Time Began
-  - score: 63.0875
-  - confidence: medium (56.5)
-  - evidence: threshold=80.0, raw_signal_score=80.623, metric_confidence_score=56.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
-- **high_engagement_low_reach** · i drew secret emojis...#art #artist
-  - score: 62.5182
-  - confidence: high (85.5)
-  - evidence: threshold=75.0, raw_signal_score=67.405, metric_confidence_score=85.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · La verdad sobre el ARBITRAJE CCL y sus ganancias
-  - score: 62.4218
-  - confidence: medium (67.5)
-  - evidence: threshold=70.0, raw_signal_score=74.5334, metric_confidence_score=67.5
+- **accelerating_video** · La Peor Disculpa que he visto
+  - score: 62.8987
+  - confidence: high (77.5)
+  - evidence: threshold=70.0, raw_signal_score=70.8718, metric_confidence_score=77.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · soy una fracasada.
+  - score: 62.8543
+  - confidence: medium (65.0)
+  - evidence: threshold=70.0, raw_signal_score=76.187, metric_confidence_score=65.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_high_growth** · FranqitoM
-  - score: 62.3437
-  - confidence: medium (47.25)
-  - evidence: threshold=80.0, raw_signal_score=84.6774, metric_confidence_score=47.25
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · 7 cosas que debes abandonar ahora para vibrar en una frecuencia más elevada – Carl Jung
-  - score: 62.2992
-  - confidence: medium (67.0)
-  - evidence: threshold=75.0, raw_signal_score=74.6098, metric_confidence_score=67.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · Que no te pase lo que a mí. Ten en cuenta estas 3 cosas para elegir bien #pc #mouse #perifericos
-  - score: 62.1847
+- **accelerating_video** · El experimento del escroto
+  - score: 62.7988
+  - confidence: medium (69.5)
+  - evidence: threshold=70.0, raw_signal_score=74.0989, metric_confidence_score=69.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Milei y el liberalismo como comedia involuntaria
+  - score: 62.7925
+  - confidence: high (79.0)
+  - evidence: threshold=70.0, raw_signal_score=70.1593, metric_confidence_score=79.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **trend_burst** · Send this to a dad you know
+  - score: 62.6023
+  - confidence: medium (52.5)
+  - evidence: threshold=80.0, raw_signal_score=82.1013, metric_confidence_score=52.5
+  - recommended_action: Revisar si el tema merece reacción rápida.
+- **accelerating_video** · The Dry Well Effect
+  - score: 62.5631
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=76.5298, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Chao Claude Code! Codex 2.0 ahora hace Más, Mejor y GRATIS 💣
+  - score: 62.5366
+  - confidence: medium (59.5)
+  - evidence: threshold=70.0, raw_signal_score=78.4158, metric_confidence_score=59.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Qué Pasa con el Centro de la Tierra
+  - score: 62.5335
   - confidence: high (71.5)
-  - evidence: threshold=70.0, raw_signal_score=72.5186, metric_confidence_score=71.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **trend_burst** · Libros de productividad no tan malos.
-  - score: 62.0585
-  - confidence: medium (53.5)
-  - evidence: threshold=80.0, raw_signal_score=80.858, metric_confidence_score=53.5
-  - recommended_action: Revisar si el tema merece reacción rápida.
+  - evidence: threshold=70.0, raw_signal_score=72.9254, metric_confidence_score=71.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · The difference a credit score makes to your interest rate 👀
+  - score: 62.4946
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=76.4459, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · La INFIDELIDAD está Fuera de Control...
+  - score: 62.3303
+  - confidence: medium (69.0)
+  - evidence: threshold=70.0, raw_signal_score=73.7636, metric_confidence_score=69.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **high_engagement_low_reach** · Neuronas jugando Doom, Mega Terremotos y Nuestra Piel tiene Memoria - JefiNews Abril 22 2026
-  - score: 61.9468
+  - score: 62.2865
   - confidence: high (79.5)
-  - evidence: threshold=75.0, raw_signal_score=69.0215, metric_confidence_score=79.5
+  - evidence: threshold=75.0, raw_signal_score=69.4, metric_confidence_score=79.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **accelerating_video** · La NUEVA Actualización de Google Gemini es ¡UNA LOCURA!
+  - score: 62.1519
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=76.0268, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 - **channel_volatility_warning** · Bravos Research
   - score: 61.9091
   - confidence: high (70.25)
   - evidence: threshold=30.0, raw_signal_score=72.7273, metric_confidence_score=70.25
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · Por esto nunca deberías hablar de tus metas #shorts
-  - score: 61.8405
-  - confidence: high (82.5)
-  - evidence: threshold=75.0, raw_signal_score=67.7704, metric_confidence_score=82.5
+- **accelerating_video** · Jaime Higuera tenía razón cuando dijo esto #shorts
+  - score: 61.859
+  - confidence: high (75.5)
+  - evidence: threshold=70.0, raw_signal_score=70.4946, metric_confidence_score=75.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · La Historia de Cómo Medimos la Tierra - Domingo de Ciencia 226
+  - score: 61.7704
+  - confidence: high (73.5)
+  - evidence: threshold=70.0, raw_signal_score=71.2051, metric_confidence_score=73.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · Esta es la fuerza ás poderosa que puedes tener en tu vida #shorts
+  - score: 61.7355
+  - confidence: high (75.5)
+  - evidence: threshold=75.0, raw_signal_score=70.3539, metric_confidence_score=75.5
   - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **trend_burst** · GERMANY IS OVER
-  - score: 61.6215
-  - confidence: medium (53.5)
-  - evidence: threshold=80.0, raw_signal_score=80.2886, metric_confidence_score=53.5
+- **accelerating_video** · My favourite book for finding love
+  - score: 61.4543
+  - confidence: high (70.5)
+  - evidence: threshold=70.0, raw_signal_score=72.0872, metric_confidence_score=70.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **packaging_problem** · Volume IS The Answer
+  - score: 61.1885
+  - confidence: medium (60.8333)
+  - evidence: threshold=70.0, raw_signal_score=76.0893, metric_confidence_score=60.8333
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · Escúchalo completo en Más Allá del Rosa en YouTube
+  - score: 60.9185
+  - confidence: medium (63.5)
+  - evidence: threshold=70.0, raw_signal_score=74.518, metric_confidence_score=63.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Importancia de tener un buen historial crediticio #shorts #creditos #dinero #bancos
+  - score: 60.8701
+  - confidence: medium (68.0)
+  - evidence: threshold=70.0, raw_signal_score=72.4644, metric_confidence_score=68.0
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · A rare mathematical symbol ⊰
+  - score: 60.8523
+  - confidence: medium (43.8333)
+  - evidence: threshold=75.0, raw_signal_score=84.6151, metric_confidence_score=43.8333
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Empieza un proyecto #shorts
+  - score: 60.8207
+  - confidence: high (72.0)
+  - evidence: threshold=70.0, raw_signal_score=70.7217, metric_confidence_score=72.0
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **high_engagement_low_reach** · 14 Reglas para Ser Rico que el 90% de la Gente Ignora
+  - score: 60.6554
+  - confidence: high (78.5)
+  - evidence: threshold=75.0, raw_signal_score=67.9612, metric_confidence_score=78.5
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **trend_burst** · El Mapa Entero del Dinero en 21 Minutos
+  - score: 60.545
+  - confidence: medium (50.5)
+  - evidence: threshold=80.0, raw_signal_score=80.4585, metric_confidence_score=50.5
   - recommended_action: Revisar si el tema merece reacción rápida.
-- **packaging_problem** · "La Ecuación de la Felicidad" (The Happiness Equation) de Neil Pasricha | Club de Lectura #196
-  - score: 61.5844
-  - confidence: high (75.5)
-  - evidence: threshold=70.0, raw_signal_score=70.1817, metric_confidence_score=75.5
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · soy una fracasada.
-  - score: 61.4628
-  - confidence: medium (65.0)
-  - evidence: threshold=70.0, raw_signal_score=74.5004, metric_confidence_score=65.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **high_engagement_low_reach** · Me quedé pensando cuando jaime Higuera dijo esto #shorts
-  - score: 61.3797
-  - confidence: high (75.5)
-  - evidence: threshold=75.0, raw_signal_score=69.9484, metric_confidence_score=75.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · 5 cosas que NUNCA debes DECIRLE a alguien con TDAH (y qué puedes decirle)
-  - score: 61.013
-  - confidence: medium (69.0)
-  - evidence: threshold=70.0, raw_signal_score=72.2048, metric_confidence_score=69.0
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **channel_high_growth** · Mark Rober
-  - score: 60.7833
-  - confidence: medium (49.25)
-  - evidence: threshold=80.0, raw_signal_score=81.4516, metric_confidence_score=49.25
-  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
-- **high_engagement_low_reach** · 7 Errores (muy caros) a EVITAR cuando empiezas a INVERTIR
-  - score: 60.4315
-  - confidence: medium (59.5)
-  - evidence: threshold=75.0, raw_signal_score=75.7762, metric_confidence_score=59.5
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
 - **channel_volatility_warning** · Veritasium
   - score: 60.4132
   - confidence: high (72.0)
   - evidence: threshold=30.0, raw_signal_score=70.2479, metric_confidence_score=72.0
   - recommended_action: Interpretar señales del canal con cautela por alta volatilidad.
-- **high_engagement_low_reach** · La gente que gana hace más que tu #shorts
-  - score: 60.2604
-  - confidence: high (72.0)
-  - evidence: threshold=75.0, raw_signal_score=70.0702, metric_confidence_score=72.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · RESIDENT EVIL: REQUIEM (PARTE 8)
-  - score: 57.9742
-  - confidence: medium (67.0)
-  - evidence: threshold=75.0, raw_signal_score=69.4302, metric_confidence_score=67.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **high_engagement_low_reach** · Cómo salir de Deudas Para Siempre- Clase Completa
-  - score: 57.163
-  - confidence: medium (68.0)
-  - evidence: threshold=75.0, raw_signal_score=68.0512, metric_confidence_score=68.0
-  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
-- **packaging_problem** · La mejor casa de Bolsa en México 🤑💰
-  - score: 56.0555
-  - confidence: medium (59.5)
-  - evidence: threshold=70.0, raw_signal_score=70.289, metric_confidence_score=59.5
+- **accelerating_video** · Tienes un problema de energía #shorts
+  - score: 60.3803
+  - confidence: medium (68.5)
+  - evidence: threshold=70.0, raw_signal_score=71.6681, metric_confidence_score=68.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · $750,000+ en BOLSA DE VALORES: Mi PORTAFOLIO a Mayo 2026
+  - score: 60.3332
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=76.6136, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Cambia de Hábitos con un Reloj y una Libreta
+  - score: 60.0692
+  - confidence: medium (57.5)
+  - evidence: threshold=70.0, raw_signal_score=76.2783, metric_confidence_score=57.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · Aimep3 Pickme...
+  - score: 60.0379
+  - confidence: medium (61.5)
+  - evidence: threshold=70.0, raw_signal_score=74.3504, metric_confidence_score=61.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **channel_high_growth** · FranqitoM
+  - score: 59.9688
+  - confidence: medium (47.25)
+  - evidence: threshold=80.0, raw_signal_score=81.4516, metric_confidence_score=47.25
+  - recommended_action: Canal dominante en crecimiento; revisar estrategia.
+- **channel_consistent_performer** · Kurzgesagt – In a Nutshell
+  - score: 59.5131
+  - confidence: high (73.75)
+  - evidence: threshold=75.0, raw_signal_score=68.5043, metric_confidence_score=73.75
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **packaging_problem** · 5 cosas que NUNCA debes DECIRLE a alguien con TDAH (y qué puedes decirle)
+  - score: 59.3545
+  - confidence: medium (69.0)
+  - evidence: threshold=70.0, raw_signal_score=70.242, metric_confidence_score=69.0
   - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **channel_consistent_performer** · Ricardo Alca2
+  - score: 59.0548
+  - confidence: medium (66.5)
+  - evidence: threshold=75.0, raw_signal_score=70.9366, metric_confidence_score=66.5
+  - recommended_action: Canal con desempeño consistente; usar como benchmark.
+- **accelerating_video** · Is Vibe Coding Actually Like This?
+  - score: 58.3208
+  - confidence: medium (60.5)
+  - evidence: threshold=70.0, raw_signal_score=72.6739, metric_confidence_score=60.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · RESIDENT EVIL: REQUIEM (PARTE 8)
+  - score: 58.2113
+  - confidence: medium (67.0)
+  - evidence: threshold=75.0, raw_signal_score=69.7142, metric_confidence_score=67.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · FAN de PC Prueba MacBook Pro por Primera Vez
+  - score: 57.8684
+  - confidence: medium (64.5)
+  - evidence: threshold=70.0, raw_signal_score=70.3567, metric_confidence_score=64.5
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · NVIDIA's New AI Turns One Photo Into A World That Never Breaks
+  - score: 57.5564
+  - confidence: medium (59.5)
+  - evidence: threshold=70.0, raw_signal_score=72.171, metric_confidence_score=59.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · La IA Fue Un Fracaso: Cuesta Más Que Contratar Programadores
+  - score: 57.5277
+  - confidence: medium (58.5)
+  - evidence: threshold=70.0, raw_signal_score=72.5901, metric_confidence_score=58.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **accelerating_video** · La mejor casa de Bolsa en México 🤑💰
+  - score: 57.289
+  - confidence: medium (59.5)
+  - evidence: threshold=70.0, raw_signal_score=71.8357, metric_confidence_score=59.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
+- **high_engagement_low_reach** · Cómo salir de Deudas Para Siempre- Clase Completa
+  - score: 57.1309
+  - confidence: medium (68.0)
+  - evidence: threshold=75.0, raw_signal_score=68.0129, metric_confidence_score=68.0
+  - recommended_action: Posible tema fuerte con distribución baja; revisar empaque.
+- **packaging_problem** · Si quieres ser rico no puedes ignorar este vídeo  #shorts
+  - score: 56.97
+  - confidence: medium (60.8333)
+  - evidence: threshold=70.0, raw_signal_score=70.8436, metric_confidence_score=60.8333
+  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- **accelerating_video** · ¿Porqué casi nadie hace esta prueba?
+  - score: 56.7647
+  - confidence: medium (55.5)
+  - evidence: threshold=70.0, raw_signal_score=73.0092, metric_confidence_score=55.5
+  - recommended_action: Monitorear próximas corridas; posible video en aceleración.
 
 ## Low
-- **packaging_problem** · reaccionando a comida de la india
-  - score: 54.828
-  - confidence: medium (55.8333)
-  - evidence: threshold=70.0, raw_signal_score=70.3675, metric_confidence_score=55.8333
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Detengan a este NecroHombre...
-  - score: 51.4493
-  - confidence: medium (46.8333)
-  - evidence: threshold=70.0, raw_signal_score=70.0784, metric_confidence_score=46.8333
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
-- **packaging_problem** · Ciudades Esponja  La Revolución del Agua Urbana
-  - score: 51.1431
-  - confidence: medium (44.8333)
-  - evidence: threshold=70.0, raw_signal_score=70.6235, metric_confidence_score=44.8333
-  - recommended_action: Hay señales de interés con bajo alcance relativo; revisar título/thumbnail/ángulo.
+- Sin alertas

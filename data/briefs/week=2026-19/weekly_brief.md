@@ -10,14 +10,14 @@
 ## Key Metrics
 | metric | value |
 | --- | --- |
-| videos_total | 1217 |
+| videos_total | 1227 |
 | channels_total | 124 |
-| total_views_delta | 1466872.0 |
-| total_likes_delta | 48932.0 |
-| total_comments_delta | 2129.0 |
-| avg_engagement_rate | 0.063875 |
-| total_alerts | 455 |
-| total_action_candidates | 455 |
+| total_views_delta | 6306967.0 |
+| total_likes_delta | 184642.0 |
+| total_comments_delta | 8218.0 |
+| avg_engagement_rate | 0.06728 |
+| total_alerts | 766 |
+| total_action_candidates | 766 |
 | high_priority_actions | 10 |
 
 ## What Actions Should I Take This Week?
@@ -29,76 +29,76 @@
 | high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 96.77 y confianza high. | high | 86.2082 | {"adjusted_signal_score": 96.7742, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
 | high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 95.87 y confianza high. | high | 85.7047 | {"adjusted_signal_score": 95.8678, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
 | high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 93.39 y confianza high. | high | 84.3276 | {"adjusted_signal_score": 93.3884, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 91.94 y confianza high. | high | 83.5205 | {"adjusted_signal_score": 91.9355, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | benchmark_channel | Revisar estrategia reciente del canal. | Señal channel_momentum_up activada con score ajustado 91.87 y confianza high. | high | 83.4841 | {"adjusted_signal_score": 91.8699, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | benchmark_channel | Revisar estrategia reciente del canal. | Señal channel_momentum_up activada con score ajustado 91.87 y confianza high. | high | 83.4841 | {"adjusted_signal_score": 91.8699, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | benchmark_channel | Revisar estrategia reciente del canal. | Señal channel_momentum_up activada con score ajustado 91.87 y confianza high. | high | 83.4841 | {"adjusted_signal_score": 91.8699, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 92.74 y confianza high. | high | 83.9685 | {"adjusted_signal_score": 92.7419, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 91.74 y confianza high. | high | 83.4094 | {"adjusted_signal_score": 91.7355, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 90.91 y confianza high. | high | 82.9504 | {"adjusted_signal_score": 90.9091, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 90.32 y confianza high. | high | 82.6247 | {"adjusted_signal_score": 90.3226, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
 
 ## Top Content Opportunities
 | content_strategy | source_title | why_it_matters | evidence_score | recommended_timeframe |
 | --- | --- | --- | --- | --- |
-| Evaluar crear contenido rápido sobre esta tendencia. | Tu pareja dice mucho de ti #shorts | Señal trend_burst activada con score ajustado 73.89 y confianza high. | 76.5677 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Nadie te va a odiar más que esta persona #shorts | Señal trend_burst activada con score ajustado 72.78 y confianza high. | 76.0635 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | "Am I Selling The Wrong Thing?" | Señal trend_burst activada con score ajustado 74.43 y confianza high. | 75.4829 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | I Tested Every Zack D. Films Video | Señal trend_burst activada con score ajustado 75.69 y confianza high. | 75.127 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Rest in Peace, Charlie Kirk.... | Señal trend_burst activada con score ajustado 75.58 y confianza high. | 73.6331 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | This Cat Operation Cost $9,000 | Señal trend_burst activada con score ajustado 76.18 y confianza high. | 71.0634 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Ex-banquero REVELA Si Aún es Momento de Invertir en la Bolsa de Colombia | Diario del Banquero | Señal trend_burst activada con score ajustado 79.45 y confianza medium. | 68.5316 | next_3_days |
-| Analizar como tema con interés pero baja distribución. | Así generaría 10000€ al mes #shorts | Señal high_engagement_low_reach activada con score ajustado 84.96 y confianza high. | 68.4023 | this_week |
-| Analizar título, formato, duración y enfoque como referencia competitiva. | ¿Porque los Gringos celebran mas el 5 de Mayo que México? | Señal alpha_breakout activada con score ajustado 73.17 y confianza medium. | 68.1786 | this_week |
-| Analizar como tema con interés pero baja distribución. | ¿Calidad o Cantidad en YouTube? (Respuesta por Experta) | Señal high_engagement_low_reach activada con score ajustado 93.18 y confianza high. | 68.0206 | this_week |
+| Evaluar crear contenido rápido sobre esta tendencia. | Los aranceles de Trump fueron ilegales, ahora el pueblo paga. #diegoruzzarin | Señal trend_burst activada con score ajustado 74.96 y confianza high. | 77.357 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Ozempic está DESTRUYENDO negocios que NADIE esperaba | Señal trend_burst activada con score ajustado 75.4 y confianza high. | 76.9958 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | China le pone un alto a Estados Unidos. | Señal trend_burst activada con score ajustado 74.73 y confianza high. | 76.4417 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | $1M Year Is Not Normal... | Señal trend_burst activada con score ajustado 72.76 y confianza high. | 76.3899 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | I Made Mascots For Stores That Don’t Have Them | Señal trend_burst activada con score ajustado 74.45 y confianza high. | 75.4481 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | México inaugura puente Nichupté el 2 más largo de LATAM #puentenichupté #cancun #chiapas | Señal trend_burst activada con score ajustado 70.67 y confianza high. | 74.654 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | "Am I Selling The Wrong Thing?" | Señal trend_burst activada con score ajustado 73.06 y confianza high. | 74.5651 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Revisando las noticias en vivo #15 ''Sonidos de guillotina'' | Señal trend_burst activada con score ajustado 73.02 y confianza high. | 74.0122 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | The Most USELESS College Degrees | Señal trend_burst activada con score ajustado 75.91 y confianza high. | 74.0029 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Stock Expert: Becoming Rich Is Simple, But You Won’t Do It! | Señal trend_burst activada con score ajustado 75.1 y confianza high. | 73.8749 | next_3_days |
 
 ## Watchlist
 | entity_type | entity_id | title | reason | watch_priority |
 | --- | --- | --- | --- | --- |
-| channel | UCF0L4jd9LcSIxsj5gKITMqQ | Tu pareja dice mucho de ti #shorts | Señal channel_volatility_warning activada con score ajustado 95.87 y confianza high. | high |
-| channel | UCjSVqRtdOsxQDss_pJpp_Yg | ¿Cómo Empezar A Vender En Amazon? 📦 #Compuestos #AndresGarza #RicardoDomínguez #Amazon | Señal channel_volatility_warning activada con score ajustado 93.39 y confianza high. | high |
+| channel | UCF0L4jd9LcSIxsj5gKITMqQ | Me voló la cabeza cuando Jaime Higuera dijo esto #shorts | Señal channel_volatility_warning activada con score ajustado 95.87 y confianza high. | high |
+| channel | UCjSVqRtdOsxQDss_pJpp_Yg | ¿Cuánto Dinero Se Gana Con Amazon? 💵 #Compuestos #AndresGarza #RicardoDomínguez #Amazon | Señal channel_volatility_warning activada con score ajustado 93.39 y confianza high. | high |
 | channel | UCl5-lvQyfILb-l2abPk4Ntg | Se acabó el chollo de la IA | Señal channel_volatility_warning activada con score ajustado 91.74 y confianza high. | high |
 | channel | UC5mQQ4Ur6oA8lsGFkvH2lyg | ¡Me di a mis tres SUPERIORES! 🥵 Ft. @LilaDownsOficial y @laseoaneoficial_ - T10E08 #chismes | Señal channel_volatility_warning activada con score ajustado 90.91 y confianza high. | high |
 | channel | UCbUYAYd1WUznxEEl498z7vA | LA CAIDA DEL PADRE DOMINGO | Señal channel_volatility_warning activada con score ajustado 94.04 y confianza high. | high |
-| channel | UCxFACDJ98idvo9Gq9M9AQgg | "Sin patrocinadores, no hay programa" | Señal channel_volatility_warning activada con score ajustado 85.95 y confianza high. | high |
+| channel | UCxFACDJ98idvo9Gq9M9AQgg | ¿Por qué México es clave para EE.UU.? | Ft. José Medina Mora | Dimes y Billetes #449 | Señal channel_volatility_warning activada con score ajustado 85.95 y confianza high. | high |
 | channel | UCDOSaJ0pnglwzfkR6fYbisA | Ozempic está DESTRUYENDO negocios que NADIE esperaba | Señal channel_volatility_warning activada con score ajustado 85.12 y confianza high. | high |
-| channel | UCBBWpss2iXVXtTzl7-4eWbg | La TÍA PATY: Del CHISME en REDES a la CÁRCEL- Más allá del rosa con Perla Calvillo Cantu | Señal channel_volatility_warning activada con score ajustado 89.27 y confianza high. | high |
-| video | 0HSNPIttevk | Do This in Your 20s To Become a MILLIONAIRE | Señal accelerating_video activada con score ajustado 98.17 y confianza high. | high |
-| video | -APimd6TUro | No saben que lo mantengo #chisme #comedia #podcast | Señal accelerating_video activada con score ajustado 96.77 y confianza high. | high |
+| channel | UCBBWpss2iXVXtTzl7-4eWbg | El MIEDO de una MAMÁ ante un DIAGNÓSTICO: síndrome de Down - Más allá del rosa con Gloria Torruco | Señal channel_volatility_warning activada con score ajustado 90.09 y confianza high. | high |
+| video | Hk-ARbCTKzM | People Who Became Famous For Doing Nothing | Señal accelerating_video activada con score ajustado 95.04 y confianza high. | high |
+| channel | UCiqJoWIT-vm-hJoXilFGiUQ | ¡CUIDADO! Nu y Revolut están BLOQUEANDO cuentas: esto debes saber | Señal channel_volatility_warning activada con score ajustado 79.34 y confianza high. | high |
 
 ## Topic Opportunities
 | topic | opportunity_type | topic_opportunity_score | recommended_action |
 | --- | --- | --- | --- |
-| unknown | watch_topic | 77.857 | Monitorear señales y validar subtemas antes de escalar |
-| ai_tools | watch_topic | 62.4087 | Monitorear señales y validar subtemas antes de escalar |
-| news_trends | evergreen_angle | 52.5255 | Escalar variante evergreen y reciclar mejores títulos |
-| productivity | evergreen_angle | 47.9036 | Escalar variante evergreen y reciclar mejores títulos |
-| finance_personal | low_priority | 30.6539 | Mantener en backlog y revisar siguiente ventana |
-| tutorial | low_priority | 19.5445 | Mantener en backlog y revisar siguiente ventana |
+| unknown | watch_topic | 79.0966 | Monitorear señales y validar subtemas antes de escalar |
+| ai_tools | watch_topic | 59.4649 | Monitorear señales y validar subtemas antes de escalar |
+| news_trends | evergreen_angle | 53.5949 | Escalar variante evergreen y reciclar mejores títulos |
+| productivity | evergreen_angle | 51.6755 | Escalar variante evergreen y reciclar mejores títulos |
+| finance_personal | low_priority | 34.4419 | Mantener en backlog y revisar siguiente ventana |
+| tutorial | low_priority | 21.3397 | Mantener en backlog y revisar siguiente ventana |
 
 ## Title Patterns That Worked
 | title_pattern | video_count | avg_views_delta | avg_engagement_rate | title_pattern_success_score |
 | --- | --- | --- | --- | --- |
-| mistake | 12 | 22.8333 | 0.071762 | 19.374 |
-| warning | 33 | 43.697 | 0.073451 | 19.2292 |
-| comparison | 24 | 842.4583 | 0.061942 | 18.5136 |
-| contrarian | 24 | 529.2083 | 0.065364 | 17.2553 |
-| promise_save | 29 | 253.2069 | 0.059086 | 16.0491 |
-| tutorial_how_to | 73 | 86.8767 | 0.049254 | 14.9678 |
-| semantic_finance | 50 | 140.74 | 0.054696 | 14.8132 |
-| unknown | 464 | 1699.0194 | 0.055625 | 14.1706 |
-| numbered_list | 223 | 894.2377 | 0.100586 | 13.7045 |
-| semantic_ai_tool | 374 | 1050.1925 | 0.082498 | 13.0418 |
+| comparison | 24 | 3735.5417 | 0.060197 | 25.2536 |
+| unknown | 471 | 7434.017 | 0.054068 | 19.9207 |
+| warning | 33 | 197.8788 | 0.072976 | 19.5718 |
+| numbered_list | 225 | 4048.2 | 0.125314 | 18.9126 |
+| mistake | 12 | 124.3333 | 0.071313 | 18.7099 |
+| contrarian | 24 | 2045.2083 | 0.06419 | 17.8233 |
+| personal_experiment | 3 | 607.3333 | 0.042822 | 17.1817 |
+| question | 195 | 3359.7846 | 0.052406 | 17.1632 |
+| news_update | 15 | 1354.2 | 0.055155 | 16.9265 |
+| semantic_ai_tool | 375 | 4186.216 | 0.096918 | 16.5704 |
 
 ## Semantic Clusters to Watch
 | video_id | semantic_cluster_id | semantic_cluster_label | cluster_top_terms |
 | --- | --- | --- | --- |
-| 1djBIY7HO0k | 0 | the_you_to | the you to |
-| n-gYFcVx-8Y | 0 | the_you_to | the you to |
-| 0idqiLonGYI | 0 | the_you_to | the you to |
-| wDUtigax8Lg | 0 | the_you_to | the you to |
-| N5iBaZ5gnfE | 0 | the_you_to | the you to |
-| SzG_O-In1vg | 0 | the_you_to | the you to |
-| MjWI_rWQL68 | 0 | the_you_to | the you to |
-| GREaEG_0Xcw | 0 | the_you_to | the you to |
-| T_LWKGJDKgo | 0 | the_you_to | the you to |
-| NdU6UdUKaYc | 0 | the_you_to | the you to |
+| n-gYFcVx-8Y | 1 | de_el_shorts | de el shorts |
+| wDUtigax8Lg | 1 | de_el_shorts | de el shorts |
+| N5iBaZ5gnfE | 1 | de_el_shorts | de el shorts |
+| 0idqiLonGYI | 1 | de_el_shorts | de el shorts |
+| SzG_O-In1vg | 1 | de_el_shorts | de el shorts |
+| GREaEG_0Xcw | 1 | de_el_shorts | de el shorts |
+| NdU6UdUKaYc | 1 | de_el_shorts | de el shorts |
+| k8j-6Xvw_G4 | 1 | de_el_shorts | de el shorts |
+| B9ocddyGfo8 | 1 | de_el_shorts | de el shorts |
+| 4m_M1Wpnr2Q | 1 | de_el_shorts | de el shorts |
 
 ## Content Drivers
 ### Variables que maximizan future_log_views_delta_7d
@@ -130,9 +130,9 @@ Advertencia: estas importancias son predictivas, no causales.
 ## Creative Packages to Execute
 | package_type | topic | creative_angle | recommended_format | creative_execution_score | recommended_next_step |
 | --- | --- | --- | --- | --- | --- |
-| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 75.7171 | iniciar_preproduccion |
-| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 75.4613 | iniciar_preproduccion |
-| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 74.8707 | iniciar_preproduccion |
+| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 76.3897 | iniciar_preproduccion |
+| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 75.8835 | iniciar_preproduccion |
+| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 75.8581 | iniciar_preproduccion |
 
 ## Suggested Titles & Hooks
 ### Suggested Titles
@@ -154,55 +154,55 @@ Advertencia: estas importancias son predictivas, no causales.
 ## Opportunity Matrix
 | action_type | candidates_count | avg_decision_score | recommended_focus |
 | --- | --- | --- | --- |
-| monitor_next_run | 161 | 67.6727 | Esperar confirmación de tendencia en próxima corrida. |
-| analyze_reference | 4 | 67.0861 | Extraer aprendizajes de formato y ángulo ganador. |
-| benchmark_channel | 54 | 65.4433 | Documentar patrones replicables del canal referencia. |
-| create_fast_reaction | 16 | 65.2858 | Priorizar ideas rápidas y publicar en ventana corta. |
-| repackage_idea | 220 | 57.7577 | Optimizar empaque de temas con potencial latente. |
+| create_fast_reaction | 76 | 64.0288 | Priorizar ideas rápidas y publicar en ventana corta. |
+| monitor_next_run | 369 | 63.3977 | Esperar confirmación de tendencia en próxima corrida. |
+| benchmark_channel | 65 | 59.1484 | Documentar patrones replicables del canal referencia. |
+| repackage_idea | 256 | 57.9649 | Optimizar empaque de temas con potencial latente. |
 | create_evergreen | 0 | 0.0 | Planificar piezas con valor sostenido en el tiempo. |
+| analyze_reference | 0 | 0.0 | Extraer aprendizajes de formato y ángulo ganador. |
 | wait_for_confidence | 0 | 0.0 | Acumular evidencia antes de una acción fuerte. |
 
 ## Top Videos by Growth
 | video_id | title | views_delta |
 | --- | --- | --- |
-| 1djBIY7HO0k | The Richest Guest In Financial Audit History | 136845 |
-| n-gYFcVx-8Y | GERMANY IS OVER | 84646 |
-| 0idqiLonGYI | I Tested Every Zack D. Films Video | 70381 |
-| wDUtigax8Lg | Kids With World Records | 68421 |
-| N5iBaZ5gnfE | nah this is insane | 43114 |
-| SzG_O-In1vg | Asmongold's INSANE Diet | 42278 |
-| MjWI_rWQL68 | Financial Audit Employees Get Free Food DAILY! | 41220 |
-| GlOQIsLX2rA | Las hormigas explosivas | 39227 |
-| GREaEG_0Xcw | How Car Dealerships Scam America | 36030 |
-| T_LWKGJDKgo | Predator EXPOSED On Financial Audit | 35101 |
+| 1djBIY7HO0k | The Richest Guest In Financial Audit History | 438613 |
+| n-gYFcVx-8Y | GERMANY IS OVER | 411894 |
+| wDUtigax8Lg | Kids With World Records | 298715 |
+| N5iBaZ5gnfE | nah this is insane | 218853 |
+| 0idqiLonGYI | I Tested Every Zack D. Films Video | 216268 |
+| SzG_O-In1vg | Asmongold's INSANE Diet | 190213 |
+| MjWI_rWQL68 | Financial Audit Employees Get Free Food DAILY! | 147278 |
+| GREaEG_0Xcw | How Car Dealerships Scam America | 145786 |
+| NdU6UdUKaYc | Scott Galloway: AI Wasn’t Built For You. The Rich Don’t Need You Anymore! | 123018 |
+| k8j-6Xvw_G4 | JYNXZI PEAK ELOOOOO | 117128 |
 
 ## Top Alpha Videos
 | video_id | title | alpha_score |
 | --- | --- | --- |
-| FGFaysGrKng | Internet Está Cansado | 86.96123 |
-| 7tilLI0Vifk | ¿Porque los Gringos celebran mas el 5 de Mayo que México? | 86.848252 |
-| r79B-_e2v-s | ¡Me di a mis tres SUPERIORES! 🥵 Ft. @LilaDownsOficial y @laseoaneoficial_ - T10E08 #chismes | 85.73901 |
-| KLYwFWIhPWI | China BANEA a Zuckerberg (Y sigue floreciendo). | 85.028314 |
-| 0xt5-FTpASM | New Theory Explains How Time Began | 84.587115 |
-| _OGwq1_pxCE | LA CAIDA DEL PADRE DOMINGO | 84.56952 |
-| GlOQIsLX2rA | Las hormigas explosivas | 84.267989 |
-| wgtGulLPwE8 | Libros de productividad no tan malos. | 84.200676 |
-| MPsK-Z5jIuc | ¿Por qué la Macbook Neo hace irrelevante a las PC con Windows? | 83.974469 |
-| 6CyjL4X8e7g | Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS | 83.698146 |
+| FGFaysGrKng | Internet Está Cansado | 84.953507 |
+| 7tilLI0Vifk | ¿Porque los Gringos celebran mas el 5 de Mayo que México? | 83.652633 |
+| 0xt5-FTpASM | New Theory Explains How Time Began | 83.249854 |
+| n-gYFcVx-8Y | GERMANY IS OVER | 82.541527 |
+| KLYwFWIhPWI | China BANEA a Zuckerberg (Y sigue floreciendo). | 82.232087 |
+| GlOQIsLX2rA | Las hormigas explosivas | 81.432623 |
+| _O-il5eIVDo | Detengan a este NecroHombre... | 81.087706 |
+| Z1Ac2v8mULM | La lealtad es más potente que el amor #shorts | 80.676089 |
+| 6CyjL4X8e7g | Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS | 80.464997 |
+| r79B-_e2v-s | ¡Me di a mis tres SUPERIORES! 🥵 Ft. @LilaDownsOficial y @laseoaneoficial_ - T10E08 #chismes | 80.414236 |
 
 ## Channel Momentum
 | channel_id | channel_name | channel_momentum_score |
 | --- | --- | --- |
-| UCLe_q9axMaeTbjN0hy1Z9xA | Caleb Hammer | 91.869919 |
-| UCWBWgCD4oAqT3hUeq40SCUw | Sambucha | 91.869919 |
-| UC415bOPUcGSamy543abLmRA | Cleo Abram | 91.869919 |
-| UCOWFKaCN-rzmYk502JFWnqg | Eze Martínez | 91.869919 |
-| UC7DdEm33SyaTDtWYGO2CwdA | Physics Girl | 91.869919 |
-| UC7_gcs09iThXybpVgjHZ_7g | PBS Space Time | 91.869919 |
-| UC5mQQ4Ur6oA8lsGFkvH2lyg | Noche De Chicxs | 91.869919 |
-| UCZRsSEs1OX74qBh0x5T22tg | EL CACHONDO | 91.869919 |
-| UCoxcjq-8xIDTYp3uz647V5A | Numberphile | 91.869919 |
-| UCvzk_MwdXD6jQa4Se-6B9ZQ | Adrià Solà Pastor | 91.869919 |
+| UC7_gcs09iThXybpVgjHZ_7g | PBS Space Time | 99.593496 |
+| UCoxcjq-8xIDTYp3uz647V5A | Numberphile | 99.593496 |
+| UC9RM-iSvTu1uPJb8X5yp3EQ | Wendover Productions | 92.276423 |
+| UCY1kMZp36IQSyNx_9h4mpCg | Mark Rober | 92.276423 |
+| UCqLiW00gUvXG0J5vlZZNJ1g | FranqitoM | 92.276423 |
+| UCC552Sd-3nyi_tk2BudLUzA | AsapSCIENCE | 92.276423 |
+| UCaRLjOy-9m_eJ9REVqc0YoQ | Gustavo Entrala | 92.276423 |
+| UCgNg3vwj3xt7QOrcIDaHdFg | PolyMatter | 92.276423 |
+| UCXgNowiGxwwnLeQ7DXTwXPg | The Science Asylum | 92.276423 |
+| UCJ24N4O0bP7LGLBDvye7oCA | Matt D'Avella | 92.276423 |
 
 ## Alerts to Watch
 | severity | signal_type | entity_id | adjusted_signal_score |
@@ -210,13 +210,13 @@ Advertencia: estas importancias son predictivas, no causales.
 | critical | channel_high_growth | UCLe_q9axMaeTbjN0hy1Z9xA | 100.0 |
 | critical | channel_high_growth | UCWBWgCD4oAqT3hUeq40SCUw | 99.1935 |
 | critical | channel_high_growth | UCQHX6ViZmPsWiYSFAyS0a3Q | 98.3871 |
-| critical | accelerating_video | 0HSNPIttevk | 98.1676 |
 | critical | channel_high_growth | UCUyDOdBWhC1MCxEjC46d-zw | 96.7742 |
-| critical | accelerating_video | -APimd6TUro | 96.7676 |
+| critical | high_engagement_low_reach | V4tlvp9IP_8 | 96.2198 |
 | critical | channel_volatility_warning | UCF0L4jd9LcSIxsj5gKITMqQ | 95.8678 |
-| critical | accelerating_video | OkuWh46I4m4 | 94.4617 |
-| critical | high_engagement_low_reach | 5BbGrGFI2gQ | 94.0758 |
-| critical | channel_volatility_warning | UCbUYAYd1WUznxEEl498z7vA | 94.0444 |
+| critical | packaging_problem | V4tlvp9IP_8 | 95.5815 |
+| critical | accelerating_video | Hk-ARbCTKzM | 95.0381 |
+| critical | accelerating_video | UncqiOQc4rI | 94.7087 |
+| critical | accelerating_video | Czf68kDF_7Y | 94.4617 |
 
 ## Title Pattern Snapshot
 - has_number: sample_size=, avg_views_delta=
