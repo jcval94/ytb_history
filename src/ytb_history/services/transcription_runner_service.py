@@ -23,6 +23,7 @@ from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
 YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
+YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD = 3
 
 
 def _now_iso() -> str:
@@ -45,6 +46,51 @@ def _materialize_cookies_file_from_b64(*, ytdlp_cookies_b64: str | None) -> str 
         handle.close()
     os.chmod(handle.name, 0o600)
     return handle.name
+
+
+def _inspect_ytdlp_cookies_file(cookies_file: str | None) -> dict[str, Any]:
+    """Return non-secret diagnostics for the cookies file passed to yt-dlp."""
+    diagnostics: dict[str, Any] = {
+        "path_provided": bool(cookies_file),
+        "exists": False,
+        "is_file": False,
+        "size_bytes": 0,
+        "non_comment_cookie_rows": 0,
+        "youtube_google_cookie_rows": 0,
+        "expired_youtube_google_cookie_rows": 0,
+    }
+    if not cookies_file:
+        return diagnostics
+
+    path = Path(cookies_file)
+    diagnostics["exists"] = path.exists()
+    diagnostics["is_file"] = path.is_file()
+    if not path.is_file():
+        return diagnostics
+
+    try:
+        diagnostics["size_bytes"] = path.stat().st_size
+        now_epoch = int(time.time())
+        with path.open("r", encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                text = line.strip()
+                if not text or text.startswith("#"):
+                    continue
+                diagnostics["non_comment_cookie_rows"] += 1
+                fields = text.split("\t")
+                domain = fields[0].lower() if fields else ""
+                if domain in {".youtube.com", "youtube.com", ".google.com", "google.com"}:
+                    diagnostics["youtube_google_cookie_rows"] += 1
+                    if len(fields) >= 5:
+                        try:
+                            expires_at = int(fields[4])
+                        except ValueError:
+                            expires_at = 0
+                        if expires_at > 0 and expires_at <= now_epoch:
+                            diagnostics["expired_youtube_google_cookie_rows"] += 1
+    except OSError as exc:
+        diagnostics["read_error_type"] = type(exc).__name__
+    return diagnostics
 
 
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -247,6 +293,7 @@ def transcribe_selected_videos(
     ytdlp_download_success = 0
     ytdlp_download_failures: list[dict[str, Any]] = []
     registry_success_before_run = len(success_ids)
+    consecutive_auth_required_with_cookies = 0
 
     generated_cookies_file: str | None = None
     effective_cookies_file = ytdlp_cookies_file
@@ -269,6 +316,13 @@ def transcribe_selected_videos(
             skipped_already_transcribed += 1
             already_transcribed_video_ids.append(video_id)
             continue
+
+        if (
+            effective_cookies_file
+            and consecutive_auth_required_with_cookies >= YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
+        ):
+            warnings.append("ytdlp_auth_required_circuit_open")
+            break
 
         processed += 1
         if not is_transcribable_video_id_candidate(video_id):
@@ -327,6 +381,7 @@ def transcribe_selected_videos(
                 )
                 if audio_path is not None:
                     ytdlp_download_success += 1
+                    consecutive_auth_required_with_cookies = 0
             if audio_path is None:
                 if ytdlp_error:
                     ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "error_category": ytdlp_error_category, "video_url": _youtube_watch_url(video_id)})
@@ -343,6 +398,10 @@ def transcribe_selected_videos(
                     else:
                         status = "failed_audio_download"
                     failed_audio_download += 1
+                    if effective_cookies_file and ytdlp_error_category == "auth_required":
+                        consecutive_auth_required_with_cookies += 1
+                    else:
+                        consecutive_auth_required_with_cookies = 0
                 else:
                     status = "skipped_no_audio_source"
                     skipped_no_audio_source += 1
@@ -459,8 +518,14 @@ def transcribe_selected_videos(
         if effective_cookies_file
         else 0
     )
+    cookie_file_diagnostics = _inspect_ytdlp_cookies_file(effective_cookies_file)
     if auth_required_with_cookies_count:
         warnings.append("ytdlp_auth_required_despite_cookies")
+        warnings.append("rotate_ytdlp_cookies_or_validate_cookie_export")
+        if cookie_file_diagnostics.get("youtube_google_cookie_rows") == 0:
+            warnings.append("ytdlp_cookies_file_missing_youtube_google_domains")
+        elif cookie_file_diagnostics.get("expired_youtube_google_cookie_rows") == cookie_file_diagnostics.get("youtube_google_cookie_rows"):
+            warnings.append("ytdlp_cookies_file_youtube_google_cookies_expired")
 
     report = {
         "generated_at": _now_iso(),
@@ -488,6 +553,8 @@ def transcribe_selected_videos(
         "ytdlp_download_attempts": ytdlp_download_attempts,
         "ytdlp_download_success": ytdlp_download_success,
         "ytdlp_auth_required_with_cookies_count": auth_required_with_cookies_count,
+        "ytdlp_auth_required_with_cookies_abort_threshold": YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD,
+        "ytdlp_cookies_file_diagnostics": cookie_file_diagnostics,
         "ytdlp_download_failures": ytdlp_download_failures,
         "processed_video_ids": success_video_ids + missing_audio_video_ids + failed_video_ids,
         "success_video_ids": success_video_ids,
