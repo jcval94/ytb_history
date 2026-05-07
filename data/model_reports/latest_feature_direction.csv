@@ -1,81 +1,81 @@
 model_id,model_family,target,feature,direction,direction_score,direction_method,low_bin_prediction,high_bin_prediction,notes
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,views_delta,positive,5.860229,quantile_bins,3.320516,9.180745,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,engagement_rate,positive,0.05296,quantile_bins,5.902455,5.955414,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,comment_rate,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,video_age_days,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,duration_bucket,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,is_short,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,alpha_score,positive,6.011476,quantile_bins,2.980787,8.992263,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,opportunity_score,positive,4.68047,quantile_bins,3.525673,8.206143,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,trend_burst_score,mixed,0.800814,quantile_bins,5.899289,6.700103,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,evergreen_score,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,packaging_problem_score,negative,-2.724402,quantile_bins,7.478002,4.7536,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,metric_confidence_score,negative,-2.303607,quantile_bins,6.975533,4.671926,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,channel_momentum_score,mixed,-0.690875,quantile_bins,6.041131,5.350256,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,channel_relative_success_score,positive,3.964248,quantile_bins,3.717243,7.681491,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,title_length_chars,negative,-1.529551,quantile_bins,6.73888,5.209329,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,has_number,mixed,0.584797,quantile_bins,5.859481,6.444279,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,has_question,mixed,-0.374936,quantile_bins,6.010238,5.635302,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,has_ai_word,mixed,-0.321864,quantile_bins,5.91537,5.593506,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,has_finance_word,mixed,0.02307,quantile_bins,5.914164,5.937234,direction estimated via directional analysis
-random_forest-is_top_growth_7d-20260504T213955Z,random_forest,is_top_growth_7d,metadata_changed,mixed,-0.034662,quantile_bins,5.967857,5.933195,direction estimated via directional analysis
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,views_delta,positive,5.643776,quantile_bins,3.43524,9.079017,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,engagement_rate,mixed,0.21739,quantile_bins,5.776848,5.994238,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,comment_rate,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,video_age_days,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,duration_bucket,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,is_short,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,alpha_score,positive,5.886497,quantile_bins,3.078151,8.964648,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,opportunity_score,positive,4.828432,quantile_bins,3.509809,8.338241,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,trend_burst_score,mixed,1.053531,quantile_bins,5.870696,6.924227,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,evergreen_score,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,packaging_problem_score,negative,-2.435513,quantile_bins,7.376083,4.940571,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,metric_confidence_score,negative,-2.130017,quantile_bins,6.939525,4.809507,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,channel_momentum_score,mixed,-0.519317,quantile_bins,6.058503,5.539186,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,channel_relative_success_score,positive,4.217065,quantile_bins,3.786688,8.003753,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,title_length_chars,negative,-1.32406,quantile_bins,6.688832,5.364772,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,has_number,mixed,0.590353,quantile_bins,5.878044,6.468398,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,has_question,mixed,-0.415355,quantile_bins,6.052282,5.636927,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,has_ai_word,mixed,-0.36031,quantile_bins,5.965343,5.605033,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,has_finance_word,mixed,-0.010431,quantile_bins,5.947427,5.936996,estimated from prediction behavior
-shallow_tree-is_top_growth_7d-20260504T213955Z,shallow_tree,is_top_growth_7d,metadata_changed,negative,-0.022054,quantile_bins,6.006702,5.984648,estimated from prediction behavior
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,views_delta,positive,5.860229,quantile_bins,3.320516,9.180745,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,engagement_rate,positive,0.05296,quantile_bins,5.902455,5.955414,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,comment_rate,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,video_age_days,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,duration_bucket,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,is_short,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,alpha_score,positive,6.011476,quantile_bins,2.980787,8.992263,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,opportunity_score,positive,4.68047,quantile_bins,3.525673,8.206143,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,trend_burst_score,mixed,0.800814,quantile_bins,5.899289,6.700103,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,evergreen_score,mixed,-0.140485,quantile_bins,5.967857,5.827372,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,packaging_problem_score,negative,-2.724402,quantile_bins,7.478002,4.7536,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,metric_confidence_score,negative,-2.303607,quantile_bins,6.975533,4.671926,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,channel_momentum_score,mixed,-0.690875,quantile_bins,6.041131,5.350256,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,channel_relative_success_score,positive,3.964248,quantile_bins,3.717243,7.681491,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,title_length_chars,negative,-1.529551,quantile_bins,6.73888,5.209329,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,has_number,mixed,0.584797,quantile_bins,5.859481,6.444279,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,has_question,mixed,-0.374936,quantile_bins,6.010238,5.635302,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,has_ai_word,mixed,-0.321864,quantile_bins,5.91537,5.593506,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,has_finance_word,mixed,0.02307,quantile_bins,5.914164,5.937234,direction estimated via directional analysis
-random_forest-future_log_views_delta_7d-20260504T213955Z,random_forest,future_log_views_delta_7d,metadata_changed,mixed,-0.034662,quantile_bins,5.967857,5.933195,direction estimated via directional analysis
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,views_delta,positive,5.643776,quantile_bins,3.43524,9.079017,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,engagement_rate,mixed,0.21739,quantile_bins,5.776848,5.994238,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,comment_rate,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,video_age_days,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,duration_bucket,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,is_short,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,alpha_score,positive,5.886497,quantile_bins,3.078151,8.964648,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,opportunity_score,positive,4.828432,quantile_bins,3.509809,8.338241,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,trend_burst_score,mixed,1.053531,quantile_bins,5.870696,6.924227,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,evergreen_score,mixed,-0.10965,quantile_bins,6.006702,5.897052,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,packaging_problem_score,negative,-2.435513,quantile_bins,7.376083,4.940571,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,metric_confidence_score,negative,-2.130017,quantile_bins,6.939525,4.809507,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,channel_momentum_score,mixed,-0.519317,quantile_bins,6.058503,5.539186,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,channel_relative_success_score,positive,4.217065,quantile_bins,3.786688,8.003753,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,title_length_chars,negative,-1.32406,quantile_bins,6.688832,5.364772,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,has_number,mixed,0.590353,quantile_bins,5.878044,6.468398,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,has_question,mixed,-0.415355,quantile_bins,6.052282,5.636927,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,has_ai_word,mixed,-0.36031,quantile_bins,5.965343,5.605033,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,has_finance_word,mixed,-0.010431,quantile_bins,5.947427,5.936996,estimated from prediction behavior
-shallow_tree-future_log_views_delta_7d-20260504T213955Z,shallow_tree,future_log_views_delta_7d,metadata_changed,negative,-0.022054,quantile_bins,6.006702,5.984648,estimated from prediction behavior
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,views_delta,positive,4.380301,quantile_bins,2.770429,7.15073,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,engagement_rate,mixed,-0.0746,quantile_bins,4.021175,3.946575,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,comment_rate,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,video_age_days,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,duration_bucket,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,is_short,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,alpha_score,positive,5.857672,quantile_bins,1.419066,7.276738,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,opportunity_score,positive,4.542123,quantile_bins,1.928771,6.470893,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,trend_burst_score,mixed,0.488495,quantile_bins,3.961925,4.450421,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,evergreen_score,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,packaging_problem_score,negative,-2.792311,quantile_bins,5.705818,2.913507,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,metric_confidence_score,negative,-2.507243,quantile_bins,5.374313,2.86707,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,channel_momentum_score,positive,2.001494,quantile_bins,3.094793,5.096287,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,channel_relative_success_score,positive,3.089966,quantile_bins,2.67526,5.765226,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,title_length_chars,negative,-1.65603,quantile_bins,4.965132,3.309102,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,has_number,mixed,0.353035,quantile_bins,4.131724,4.484759,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,has_question,negative,-0.43588,quantile_bins,4.180744,3.744864,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,has_ai_word,negative,-0.576903,quantile_bins,4.243912,3.667009,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,has_finance_word,negative,-0.16704,quantile_bins,4.133522,3.966481,direction estimated via directional analysis
+random_forest-is_top_growth_7d-20260507T121851Z,random_forest,is_top_growth_7d,metadata_changed,mixed,-0.067798,quantile_bins,4.136177,4.068379,direction estimated via directional analysis
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,views_delta,positive,3.925223,quantile_bins,2.908843,6.834066,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,engagement_rate,negative,-0.201078,quantile_bins,4.088886,3.887808,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,comment_rate,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,video_age_days,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,duration_bucket,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,is_short,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,alpha_score,positive,5.371327,quantile_bins,1.687354,7.058682,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,opportunity_score,positive,4.182653,quantile_bins,2.159152,6.341805,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,trend_burst_score,mixed,0.429561,quantile_bins,3.962467,4.392028,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,evergreen_score,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,packaging_problem_score,negative,-2.548721,quantile_bins,5.516672,2.967951,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,metric_confidence_score,negative,-2.350727,quantile_bins,5.241957,2.891229,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,channel_momentum_score,positive,1.814445,quantile_bins,3.236386,5.050831,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,channel_relative_success_score,positive,2.998026,quantile_bins,2.738386,5.736411,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,title_length_chars,negative,-1.545676,quantile_bins,4.909043,3.363367,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,has_number,mixed,0.430917,quantile_bins,4.076106,4.507022,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,has_question,negative,-0.522011,quantile_bins,4.192127,3.670116,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,has_ai_word,negative,-0.599077,quantile_bins,4.230043,3.630966,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,has_finance_word,negative,-0.205525,quantile_bins,4.104827,3.899302,estimated from prediction behavior
+shallow_tree-is_top_growth_7d-20260507T121851Z,shallow_tree,is_top_growth_7d,metadata_changed,mixed,-0.125715,quantile_bins,4.111413,3.985699,estimated from prediction behavior
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,views_delta,positive,4.380301,quantile_bins,2.770429,7.15073,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,engagement_rate,mixed,-0.0746,quantile_bins,4.021175,3.946575,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,comment_rate,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,video_age_days,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,duration_bucket,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,is_short,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,alpha_score,positive,5.857672,quantile_bins,1.419066,7.276738,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,opportunity_score,positive,4.542123,quantile_bins,1.928771,6.470893,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,trend_burst_score,mixed,0.488495,quantile_bins,3.961925,4.450421,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,evergreen_score,negative,-0.156582,quantile_bins,4.182532,4.02595,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,packaging_problem_score,negative,-2.792311,quantile_bins,5.705818,2.913507,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,metric_confidence_score,negative,-2.507243,quantile_bins,5.374313,2.86707,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,channel_momentum_score,positive,2.001494,quantile_bins,3.094793,5.096287,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,channel_relative_success_score,positive,3.089966,quantile_bins,2.67526,5.765226,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,title_length_chars,negative,-1.65603,quantile_bins,4.965132,3.309102,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,has_number,mixed,0.353035,quantile_bins,4.131724,4.484759,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,has_question,negative,-0.43588,quantile_bins,4.180744,3.744864,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,has_ai_word,negative,-0.576903,quantile_bins,4.243912,3.667009,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,has_finance_word,negative,-0.16704,quantile_bins,4.133522,3.966481,direction estimated via directional analysis
+random_forest-future_log_views_delta_7d-20260507T121851Z,random_forest,future_log_views_delta_7d,metadata_changed,mixed,-0.067798,quantile_bins,4.136177,4.068379,direction estimated via directional analysis
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,views_delta,positive,3.925223,quantile_bins,2.908843,6.834066,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,engagement_rate,negative,-0.201078,quantile_bins,4.088886,3.887808,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,comment_rate,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,video_age_days,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,duration_bucket,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,is_short,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,alpha_score,positive,5.371327,quantile_bins,1.687354,7.058682,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,opportunity_score,positive,4.182653,quantile_bins,2.159152,6.341805,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,trend_burst_score,mixed,0.429561,quantile_bins,3.962467,4.392028,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,evergreen_score,negative,-0.191183,quantile_bins,4.156041,3.964859,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,packaging_problem_score,negative,-2.548721,quantile_bins,5.516672,2.967951,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,metric_confidence_score,negative,-2.350727,quantile_bins,5.241957,2.891229,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,channel_momentum_score,positive,1.814445,quantile_bins,3.236386,5.050831,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,channel_relative_success_score,positive,2.998026,quantile_bins,2.738386,5.736411,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,title_length_chars,negative,-1.545676,quantile_bins,4.909043,3.363367,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,has_number,mixed,0.430917,quantile_bins,4.076106,4.507022,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,has_question,negative,-0.522011,quantile_bins,4.192127,3.670116,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,has_ai_word,negative,-0.599077,quantile_bins,4.230043,3.630966,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,has_finance_word,negative,-0.205525,quantile_bins,4.104827,3.899302,estimated from prediction behavior
+shallow_tree-future_log_views_delta_7d-20260507T121851Z,shallow_tree,future_log_views_delta_7d,metadata_changed,mixed,-0.125715,quantile_bins,4.111413,3.985699,estimated from prediction behavior

@@ -1,6 +1,6 @@
 # Content Driver Models Report
 
-Generated at: 2026-05-04T21:39:53.053090+00:00
+Generated at: 2026-05-07T12:18:48.623161+00:00
 
 ## Targets evaluados
 - future_log_views_delta_7d
@@ -14,29 +14,31 @@ Generated at: 2026-05-04T21:39:53.053090+00:00
 - shallow_tree_regressor
 
 ## Mejor modelo por target
-- content_value_score_7d: random_forest_regressor (spearman=0.908454)
-- future_log_views_delta_7d: random_forest_regressor (spearman=0.999938)
-- future_relative_views_delta_7d: random_forest_regressor (spearman=0.935398)
+- content_value_score_7d: random_forest_regressor (spearman=0.602619)
+- future_engagement_delta_7d: random_forest_regressor (spearman=1.0)
+- future_log_views_delta_7d: linear_regularized_regressor (spearman=0.915719)
+- future_relative_views_delta_7d: random_forest_regressor (spearman=0.566562)
 
 ## Top variables por target
-- **content_value_score_7d**: opportunity_score, alpha_score, channel_relative_success_score, topic_confidence, curiosity_semantic_score
-- **future_log_views_delta_7d**: alpha_score, opportunity_score, views_delta, views_delta, channel_relative_success_score
-- **future_relative_views_delta_7d**: channel_relative_success_score, hybrid_decision_score, opportunity_score, decision_score, topic_confidence
+- **content_value_score_7d**: opportunity_score, decision_score, hybrid_decision_score, alpha_score, channel_relative_success_score
+- **future_engagement_delta_7d**: ai_semantic_score, alpha_score, channel_momentum_score, channel_relative_success_score, curiosity_semantic_score
+- **future_log_views_delta_7d**: alpha_score, opportunity_score, views_delta, decision_score, views_delta
+- **future_relative_views_delta_7d**: decision_score, hybrid_decision_score, opportunity_score, alpha_score, topic_confidence
 
 ## Variables con dirección (positive/negative/mixed)
 Ver `latest_content_driver_feature_direction.csv` para detalle por feature.
 
 ## Importancia por grupo
-- future_relative_views_delta_7d / linear_regularized_regressor / engagement_context: 37.01197957
-- content_value_score_7d / linear_regularized_regressor / engagement_context: 35.91562341
-- content_value_score_7d / linear_regularized_regressor / topic_metrics: 32.3374722
-- future_relative_views_delta_7d / linear_regularized_regressor / title_style: 30.50750063
-- future_relative_views_delta_7d / linear_regularized_regressor / topic_metrics: 25.19556631
-- future_relative_views_delta_7d / linear_regularized_regressor / semantic_scores: 24.86135816
-- future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 24.51737985
-- content_value_score_7d / linear_regularized_regressor / semantic_scores: 19.28303169
-- future_relative_views_delta_7d / linear_regularized_regressor / channel_context: 17.40445681
-- content_value_score_7d / linear_regularized_regressor / title_style: 14.98502529
+- future_relative_views_delta_7d / linear_regularized_regressor / engagement_context: 68.86953273
+- future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 56.11742795
+- content_value_score_7d / linear_regularized_regressor / engagement_context: 43.2146943
+- future_relative_views_delta_7d / linear_regularized_regressor / title_style: 34.63663841
+- content_value_score_7d / linear_regularized_regressor / model_decision: 33.11569692
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_scores: 33.03748821
+- future_relative_views_delta_7d / linear_regularized_regressor / topic_metrics: 32.6628003
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_cluster: 19.35748617
+- content_value_score_7d / linear_regularized_regressor / title_style: 15.72119804
+- content_value_score_7d / linear_regularized_regressor / topic_metrics: 9.33089101
 
 **Estas importancias son predictivas, no causales.**
 

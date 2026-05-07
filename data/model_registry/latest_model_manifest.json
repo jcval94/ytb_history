@@ -1,106 +1,119 @@
 {
   "schema_version": "latest_model_manifest_v1",
   "status": "valid",
-  "suite_id": "suite-20260504T213955Z",
-  "artifact_name": "ytb-model-suite-25344952113",
-  "workflow_run_id": "25344952113",
-  "created_at": "2026-05-04T21:39:55.025174+00:00",
-  "expires_at_estimate": "2026-06-03T21:39:55.025174+00:00",
+  "suite_id": "suite-20260507T121851Z",
+  "artifact_name": "ytb-model-suite-25495236961",
+  "workflow_run_id": "25495236961",
+  "created_at": "2026-05-07T12:18:51.112775+00:00",
+  "expires_at_estimate": "2026-06-06T12:18:51.112775+00:00",
   "champions": {
+    "future_log_views_delta_7d": {
+      "model_id": "linear_regularized-future_log_views_delta_7d-20260507T121851Z",
+      "model_family": "linear_regularized",
+      "metric": "spearman_corr",
+      "metric_value": 0.976517
+    },
     "is_top_growth_7d": {
-      "model_id": "linear_regularized-is_top_growth_7d-20260504T213955Z",
+      "model_id": "linear_regularized-is_top_growth_7d-20260507T121851Z",
       "model_family": "linear_regularized",
       "metric": "precision_at_10",
       "metric_value": 1.0
-    },
-    "future_log_views_delta_7d": {
-      "model_id": "random_forest-future_log_views_delta_7d-20260504T213955Z",
-      "model_family": "random_forest",
-      "metric": "spearman_corr",
-      "metric_value": 0.983653
     }
   },
   "models": [
     {
-      "model_id": "linear_regularized-is_top_growth_7d-20260504T213955Z",
+      "model_id": "linear_regularized-is_top_growth_7d-20260507T121851Z",
       "model_family": "linear_regularized",
       "target": "is_top_growth_7d",
       "task_type": "classification",
       "metrics": {
         "precision_at_10": 1.0,
-        "recall_at_10": 0.07874,
-        "roc_auc": 0.996383,
-        "pr_auc": 0.985964,
-        "brier_score": 0.021665,
-        "lift_vs_baseline_alpha": 0.1,
+        "recall_at_10": 0.050251,
+        "roc_auc": 0.990155,
+        "pr_auc": 0.974994,
+        "brier_score": 0.055525,
+        "lift_vs_baseline_alpha": 0.0,
         "lift_vs_baseline_views_delta": 0.0
       },
       "path": "models/linear_regularized"
     },
     {
-      "model_id": "random_forest-is_top_growth_7d-20260504T213955Z",
+      "model_id": "random_forest-is_top_growth_7d-20260507T121851Z",
       "model_family": "random_forest",
       "target": "is_top_growth_7d",
       "task_type": "classification",
       "metrics": {
         "precision_at_10": 1.0,
-        "recall_at_10": 0.07874,
-        "roc_auc": 0.998128,
-        "pr_auc": 0.992947,
-        "brier_score": 0.024523,
-        "lift_vs_baseline_alpha": 0.1,
+        "recall_at_10": 0.050251,
+        "roc_auc": 0.989111,
+        "pr_auc": 0.971901,
+        "brier_score": 0.061736,
+        "lift_vs_baseline_alpha": 0.0,
         "lift_vs_baseline_views_delta": 0.0
       },
       "path": "models/random_forest"
     },
     {
-      "model_id": "shallow_tree-is_top_growth_7d-20260504T213955Z",
+      "model_id": "shallow_tree-is_top_growth_7d-20260507T121851Z",
       "model_family": "shallow_tree",
       "target": "is_top_growth_7d",
       "task_type": "classification",
       "metrics": {
-        "precision_at_10": 0.9,
-        "recall_at_10": 0.070866,
-        "roc_auc": 0.963527,
-        "pr_auc": 0.862863,
-        "brier_score": 0.048842,
-        "lift_vs_baseline_alpha": 0.0,
-        "lift_vs_baseline_views_delta": -0.1
+        "precision_at_10": 0.7,
+        "recall_at_10": 0.035176,
+        "roc_auc": 0.946739,
+        "pr_auc": 0.875189,
+        "brier_score": 0.075814,
+        "lift_vs_baseline_alpha": -0.3,
+        "lift_vs_baseline_views_delta": -0.3
       },
       "path": "models/shallow_tree"
     },
     {
-      "model_id": "random_forest-future_log_views_delta_7d-20260504T213955Z",
+      "model_id": "linear_regularized-future_log_views_delta_7d-20260507T121851Z",
+      "model_family": "linear_regularized",
+      "target": "future_log_views_delta_7d",
+      "task_type": "regression",
+      "metrics": {
+        "mae_log": 0.919976,
+        "rmse_log": 1.055724,
+        "spearman_corr": 0.976517,
+        "top_10_overlap_with_actual": 0.7,
+        "lift_vs_baseline_alpha": 0.142821,
+        "lift_vs_baseline_views_delta": 0.335137
+      },
+      "path": "models/linear_regularized"
+    },
+    {
+      "model_id": "random_forest-future_log_views_delta_7d-20260507T121851Z",
       "model_family": "random_forest",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
       "metrics": {
-        "mae_log": 0.376846,
-        "rmse_log": 0.520419,
-        "spearman_corr": 0.983653,
-        "top_10_overlap_with_actual": 0.7,
-        "lift_vs_baseline_alpha": 0.13091,
-        "lift_vs_baseline_views_delta": 0.144734
+        "mae_log": 0.947739,
+        "rmse_log": 1.113697,
+        "spearman_corr": 0.968153,
+        "top_10_overlap_with_actual": 0.6,
+        "lift_vs_baseline_alpha": 0.134457,
+        "lift_vs_baseline_views_delta": 0.326773
       },
       "path": "models/random_forest"
     },
     {
-      "model_id": "shallow_tree-future_log_views_delta_7d-20260504T213955Z",
+      "model_id": "shallow_tree-future_log_views_delta_7d-20260507T121851Z",
       "model_family": "shallow_tree",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
       "metrics": {
-        "mae_log": 0.817903,
-        "rmse_log": 1.021336,
-        "spearman_corr": 0.926371,
-        "top_10_overlap_with_actual": 0.6,
-        "lift_vs_baseline_alpha": 0.073628,
-        "lift_vs_baseline_views_delta": 0.087452
+        "mae_log": 1.170019,
+        "rmse_log": 1.426913,
+        "spearman_corr": 0.916019,
+        "top_10_overlap_with_actual": 0.0,
+        "lift_vs_baseline_alpha": 0.082323,
+        "lift_vs_baseline_views_delta": 0.274639
       },
       "path": "models/shallow_tree"
     }
   ],
-  "warnings": [
-    "model_failed:linear_regularized:future_log_views_delta_7d:'float' object is not subscriptable"
-  ]
+  "warnings": []
 }
