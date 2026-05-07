@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,76,64.0288,77.357,67.4737,2ZV29QhLfjw,"Los aranceles de Trump fueron ilegales, ahora el pueblo paga. #diegoruzzarin",Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,57,67.2112,77.8991,70.386,OrI86PV-aPg,Ozempic está DESTRUYENDO negocios que NADIE esperaba,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,0,0.0,0.0,0.0,,,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,256,57.9649,70.1065,85.3971,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,65,59.1484,88.0,65.9615,UCLe_q9axMaeTbjN0hy1Z9xA,The Richest Guest In Financial Audit History,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,369,63.3977,85.7047,79.416,UCF0L4jd9LcSIxsj5gKITMqQ,Me voló la cabeza cuando Jaime Higuera dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,62.8585,62.8585,57.0,wgtGulLPwE8,Libros de desarrollo personal no tan malos.,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,311,57.0948,70.5902,81.4539,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,66,59.5769,88.0,66.7121,UCLe_q9axMaeTbjN0hy1Z9xA,The Richest Guest In Financial Audit History,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,390,65.2795,84.3873,82.6045,UCF0L4jd9LcSIxsj5gKITMqQ,Salir de la pobreza es un cambio de identidad #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.

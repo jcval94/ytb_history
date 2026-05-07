@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-ai_tools,318,72,1532739.0,4819.934,0.052974,42.305,22.4239,9.1525,0.0,80.0,64.2956,59.4649,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
-unknown,771,107,4693112.0,6087.0454,0.053715,43.9533,28.1534,11.5064,0.0,100.0,77.3411,79.0966,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
-news_trends,20,12,27375.0,1368.75,0.061061,47.9337,20.8155,8.5242,0.0,60.0,25.6667,53.5949,OTt76d3wPiQ,Revisando las noticias en vivo #15 ''Sonidos de guillotina'',Diego Ruzzarin
-productivity,14,8,16587.0,1184.7857,1.290067,47.3978,36.9089,14.7932,0.0,40.0,25.3571,51.6755,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
-finance_personal,40,20,18711.0,467.775,0.053593,42.0238,13.2117,5.5042,0.0,20.0,40.125,34.4419,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés
-tutorial,64,20,18443.0,288.1719,0.044779,33.4375,10.5788,4.3315,0.0,0.0,51.526,21.3397,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+unknown,809,107,7406551.0,9155.1928,0.054954,41.8638,29.1725,11.883,0.0,100.0,76.8497,74.7111,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
+ai_tools,340,76,2209114.0,6497.3941,0.054557,38.7227,23.5444,9.6478,0.0,80.0,64.201,58.9983,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
+news_trends,20,12,67557.0,3377.85,0.059486,48.8808,28.1007,11.4256,0.0,60.0,24.0,49.8172,rHDw0XcyZ1I,El nuevo atentado vs. Trump #diegoruzzarin #trump,Diego Ruzzarin
+finance_personal,45,20,40111.0,891.3556,0.06214,36.3348,19.2855,8.1138,0.0,20.0,35.0,40.573,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Mis Propias Finanzas
+productivity,13,7,39572.0,3044.0,0.081438,46.9655,32.8828,13.2444,0.0,40.0,12.4359,47.4245,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
+tutorial,68,20,39276.0,577.5882,0.048624,31.7494,12.9209,5.3321,0.0,0.0,49.9559,20.8156,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
