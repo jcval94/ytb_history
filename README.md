@@ -447,7 +447,7 @@ yt-dlp --version
 
 El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
 
-Si el reporte muestra `used_cookies_file: true` pero también `ytdlp_auth_required_despite_cookies`, el archivo sí fue pasado a `yt-dlp`, pero YouTube no aceptó esa sesión desde el entorno de ejecución; rota/exporta nuevamente cookies o valida el mismo `cookies.txt` con `yt-dlp --cookies cookies.txt -F URL` en el entorno donde falla.
+Si el reporte muestra `used_cookies_file: true` pero también `ytdlp_auth_required_despite_cookies`, el archivo sí fue pasado a `yt-dlp`, pero YouTube no aceptó esa sesión desde el entorno de ejecución; rota/exporta nuevamente cookies o valida el mismo `cookies.txt` con `yt-dlp --cookies cookies.txt -F URL` en el entorno donde falla. El reporte incluye `ytdlp_cookies_file_diagnostics` sin valores secretos (existencia, tamaño y conteos de filas YouTube/Google/expiradas) para detectar secrets mal codificados o cookies vencidas. Si se repiten fallos de autenticación con cookies, la corrida abre `ytdlp_auth_required_circuit_open` después de 3 intentos consecutivos para no gastar tiempo ni llenar el registro con los 10 videos de la cola hasta que se roten las cookies.
 
 La cola de transcripción descarta IDs con formato de canal (`UC...`) cuando aparecen por error en campos `video_id`/`source_video_id`; esos casos se reportan como `invalid_video_ids_skipped` o `skipped_invalid_video_id` para evitar llamadas inútiles a `yt-dlp` contra URLs `watch?v=<channel_id>`.
 
@@ -498,7 +498,7 @@ ffmpeg -version
 - **canal no resoluble**: valida URL/ID del canal en `config/channels.py`.
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **Errores de descarga en transcripción (`yt-dlp`)**:
-  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En CI, define `YTDLP_COOKIES_B64` con el contenido de `cookies.txt` codificado en base64; estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
+  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En CI, define o rota `YTDLP_COOKIES_B64` con el contenido vigente de `cookies.txt` codificado en base64; revisa `ytdlp_cookies_file_diagnostics`, `ytdlp_auth_required_despite_cookies` y `ytdlp_auth_required_circuit_open` para diferenciar un secret ausente/mal formado de una sesión expirada/no aceptada por YouTube. Estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
   - `failed_audio_download_video_unavailable`: video privado/no disponible/restringido.
   - `failed_audio_download_network_or_rate_limit`: red inestable, timeout o rate limit (`429`).
   - `failed_audio_download`: fallback genérico cuando no se puede clasificar.

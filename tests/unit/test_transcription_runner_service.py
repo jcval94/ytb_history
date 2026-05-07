@@ -315,6 +315,50 @@ def test_ytdlp_strategy_retries_apply_cooldown_between_attempts(tmp_path: Path, 
     assert sleep_calls == [transcription_runner_service.YTDLP_STRATEGY_COOLDOWN_SECONDS] * (len(transcription_runner_service._ytdlp_download_strategies()) - 1)
 
 
+def test_ytdlp_auth_required_with_cookies_opens_circuit_and_reports_cookie_diagnostics(tmp_path: Path, monkeypatch) -> None:
+    video_ids = [f"video{i:06d}" for i in range(1, 6)]
+    _write_queue(tmp_path, video_ids)
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    cookies_file = tmp_path / "cookies.txt"
+    cookies_file.write_text(
+        "# Netscape HTTP Cookie File\n"
+        ".youtube.com\tTRUE\t/\tTRUE\t1\tVISITOR_INFO1_LIVE\told\n",
+        encoding="utf-8",
+    )
+
+    def _fake_download(*, video_id: str, audio_source_dir: Path, **_kwargs):
+        return None, "yt_dlp_failed:code=1;stderr=Sign in to confirm you're not a bot. Use --cookies", "auth_required"
+
+    monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
+
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=5,
+        audio_source_dir=tmp_path / "audio",
+        openai_client=FakeOpenAIClient(),
+        ytdlp_cookies_file=str(cookies_file),
+    )
+
+    assert report["processed"] == transcription_runner_service.YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
+    assert report["failed_audio_download"] == transcription_runner_service.YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
+    assert report["ytdlp_auth_required_with_cookies_count"] == transcription_runner_service.YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
+    assert report["ytdlp_auth_required_with_cookies_abort_threshold"] == transcription_runner_service.YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
+    assert "ytdlp_auth_required_circuit_open" in report["warnings"]
+    assert "ytdlp_auth_required_despite_cookies" in report["warnings"]
+    assert "rotate_ytdlp_cookies_or_validate_cookie_export" in report["warnings"]
+    assert "ytdlp_cookies_file_youtube_google_cookies_expired" in report["warnings"]
+    assert report["ytdlp_cookies_file_diagnostics"] == {
+        "path_provided": True,
+        "exists": True,
+        "is_file": True,
+        "size_bytes": cookies_file.stat().st_size,
+        "non_comment_cookie_rows": 1,
+        "youtube_google_cookie_rows": 1,
+        "expired_youtube_google_cookie_rows": 1,
+    }
+
+
 def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
     _write_queue(tmp_path, ["v1"])
     update_transcript_registry(data_dir=tmp_path, entry={"video_id": "v1", "status": "success"})
