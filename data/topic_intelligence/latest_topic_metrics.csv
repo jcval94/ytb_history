@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-unknown,809,107,7406551.0,9155.1928,0.054954,41.8638,29.1725,11.883,0.0,100.0,76.8497,74.7111,n-gYFcVx-8Y,GERMANY IS OVER,Alex Hormozi
-ai_tools,340,76,2209114.0,6497.3941,0.054557,38.7227,23.5444,9.6478,0.0,80.0,64.201,58.9983,1djBIY7HO0k,The Richest Guest In Financial Audit History,Jaime Higuera
-news_trends,20,12,67557.0,3377.85,0.059486,48.8808,28.1007,11.4256,0.0,60.0,24.0,49.8172,rHDw0XcyZ1I,El nuevo atentado vs. Trump #diegoruzzarin #trump,Diego Ruzzarin
-finance_personal,45,20,40111.0,891.3556,0.06214,36.3348,19.2855,8.1138,0.0,20.0,35.0,40.573,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Mis Propias Finanzas
-productivity,13,7,39572.0,3044.0,0.081438,46.9655,32.8828,13.2444,0.0,40.0,12.4359,47.4245,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
-tutorial,68,20,39276.0,577.5882,0.048624,31.7494,12.9209,5.3321,0.0,0.0,49.9559,20.8156,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+unknown,824,107,6329825.0,7681.8265,0.054224,43.3032,10.1213,4.2217,0.0,100.0,76.8681,73.4002,TIqrd6dCa8o,Dark Energy Is Getting Weaker?,Alex Hormozi
+ai_tools,342,75,1803349.0,5272.9503,0.05389,41.8489,10.0312,4.1478,0.0,80.0,64.193,58.3648,IM4NXjEW8vA,Actors Who Got Paid For Doing Nothing,Jaime Higuera
+tutorial,69,20,30906.0,447.913,0.045559,33.291,8.3061,3.4075,0.0,0.0,44.087,18.9012,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+news_trends,22,13,33188.0,1508.5455,0.063133,43.0251,12.2554,5.0257,0.0,40.0,25.1212,44.9953,rHDw0XcyZ1I,El nuevo atentado vs. Trump #diegoruzzarin #trump,Diego Ruzzarin
+productivity,13,7,25154.0,1934.9231,0.070685,48.4221,24.0224,9.8309,0.0,60.0,12.4359,53.9603,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
+finance_personal,46,20,24450.0,531.5217,0.05484,41.7801,13.2836,5.4036,0.0,20.0,41.5797,38.8217,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Inversión Inteligente - Alain Cortés

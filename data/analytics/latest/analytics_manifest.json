@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T01:37:02.465614+00:00",
-  "source_export_dir": "data/exports/dt=2026-05-07/run=013548Z",
+  "generated_at": "2026-05-07T11:25:11.937089+00:00",
+  "source_export_dir": "data/exports/dt=2026-05-07/run=112342Z",
   "outputs": [
     "analytics/latest/latest_video_metrics.csv",
     "analytics/latest/latest_channel_metrics.csv",
@@ -22,15 +22,15 @@
     "analytics/latest/analytics_manifest.json"
   ],
   "row_counts": {
-    "analytics/latest/latest_video_metrics.csv": 1295,
+    "analytics/latest/latest_video_metrics.csv": 1316,
     "analytics/latest/latest_channel_metrics.csv": 125,
-    "analytics/latest/latest_title_metrics.csv": 1295,
-    "analytics/latest/latest_video_scores.csv": 1295,
-    "analytics/latest/latest_video_advanced_metrics.csv": 1295,
+    "analytics/latest/latest_title_metrics.csv": 1316,
+    "analytics/latest/latest_video_scores.csv": 1316,
+    "analytics/latest/latest_video_advanced_metrics.csv": 1316,
     "analytics/latest/latest_channel_advanced_metrics.csv": 125,
-    "analytics/latest/latest_metric_eligibility.csv": 1295,
+    "analytics/latest/latest_metric_eligibility.csv": 1316,
     "analytics/baselines/channel_baselines.csv": 125,
-    "analytics/baselines/video_lifecycle_metrics.csv": 1295,
+    "analytics/baselines/video_lifecycle_metrics.csv": 1316,
     "analytics/periods/grain=daily/video_metrics.csv": 9453,
     "analytics/periods/grain=weekly/video_metrics.csv": 2273,
     "analytics/periods/grain=monthly/video_metrics.csv": 2047,
