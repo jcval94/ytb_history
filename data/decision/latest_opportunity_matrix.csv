@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,1,74.0505,74.0505,72.0,EM5vv6_MQLY,Estos 5 HÁBITOS financieros te harán AHORRADOR en 3 meses,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,27,70.979,79.8049,76.3704,fRjAMALJ0r0,China le pone un alto a Estados Unidos.,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,4,67.9128,76.1641,64.875,EM5vv6_MQLY,Estos 5 HÁBITOS financieros te harán AHORRADOR en 3 meses,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,275,58.6896,71.0026,85.577,pVXm6lt1F7w,Este es el tiempo más peligroso #shorts,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,67,60.4611,88.0,67.7799,UCLe_q9axMaeTbjN0hy1Z9xA,The Best $300 a Month Grocery Budget,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,81,69.4028,84.3873,88.3488,UCF0L4jd9LcSIxsj5gKITMqQ,Me voló la cabeza cuando Voltaire  dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,59.9012,59.9012,52.5,B_BjBZE0aU0,Quieren ENCARCELAR a este Querido Youtuber…,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,330,57.7706,72.5894,83.3934,V4tlvp9IP_8,¿Calidad o Cantidad en YouTube? (Respuesta por Experta),Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,66,60.0637,88.0,67.0189,UCLe_q9axMaeTbjN0hy1Z9xA,The Best $300 a Month Grocery Budget,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,128,68.4966,85.7421,86.6504,UCF0L4jd9LcSIxsj5gKITMqQ,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
