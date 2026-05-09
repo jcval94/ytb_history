@@ -63,7 +63,8 @@ const state = {
   filterText: "",
   channel: "",
   duration: "",
-  horizon: "all"
+  horizon: "all",
+  renderedTabs: new Set()
 };
 
 init().catch((error) => {
@@ -154,6 +155,26 @@ function bindTabs() {
   });
 }
 
+const TAB_RENDERERS = {
+  videos: () => renderVideos(applyFilters(tableRows("latestVideoMetrics"))),
+  channels: () => renderChannels(applyFilters(tableRows("latestChannelMetrics"), { skipDuration: true })),
+  scores: () => renderScores(applyFilters(tableRows("latestVideoScores"))),
+  advanced: () => renderAdvanced(applyFilters(tableRows("latestVideoAdvancedMetrics"))),
+  titles: () => renderTitles(applyFilters(tableRows("latestTitleMetrics"))),
+  periods: () => renderPeriods(),
+  alerts: () => renderAlerts(),
+  "data-quality": () => renderDataQuality(
+    applyFilters(tableRows("latestMetricEligibility"), { skipDuration: true }),
+    applyFilters(tableRows("latestVideoAdvancedMetrics"))
+  ),
+  models: () => renderModels(),
+  topics: () => renderTopics(),
+  nlp: () => renderNlp(),
+  "content-drivers": () => renderContentDrivers(),
+  creative: () => renderCreativePackages(),
+  brief: () => renderBrief()
+};
+
 function activateTab(tab) {
   const tabs = document.querySelector("#tabs");
   if (!tabs) return;
@@ -161,6 +182,25 @@ function activateTab(tab) {
   document.querySelectorAll(".tab-panel").forEach((panel) => panel.classList.remove("active"));
   tabs.querySelector(`button[data-tab="${tab}"]`)?.classList.add("active");
   document.querySelector(`#tab-${tab}`)?.classList.add("active");
+  renderActiveTab(tab);
+}
+
+function renderActiveTab(tab) {
+  if (state.renderedTabs.has(tab)) return;
+  const renderer = TAB_RENDERERS[tab];
+  if (!renderer) return;
+  renderer();
+  state.renderedTabs.add(tab);
+}
+
+function getActiveTab() {
+  return document.querySelector("#tabs button.active")?.getAttribute("data-tab") || "overview";
+}
+
+function renderAfterGlobalFilterChange() {
+  state.renderedTabs.clear();
+  renderAll();
+  renderActiveTab(getActiveTab());
 }
 
 function bindFilters() {
@@ -172,19 +212,19 @@ function bindFilters() {
 
   filterInput?.addEventListener("input", () => {
     state.filterText = String(filterInput.value || "").toLowerCase();
-    renderAll();
+    renderAfterGlobalFilterChange();
   });
   channelFilter?.addEventListener("change", () => {
     state.channel = String(channelFilter.value || "");
-    renderAll();
+    renderAfterGlobalFilterChange();
   });
   durationFilter?.addEventListener("change", () => {
     state.duration = String(durationFilter.value || "");
-    renderAll();
+    renderAfterGlobalFilterChange();
   });
   horizonFilter?.addEventListener("change", () => {
     state.horizon = String(horizonFilter.value || "all");
-    renderAll();
+    renderAfterGlobalFilterChange();
   });
   resetButton?.addEventListener("click", () => {
     state.filterText = "";
@@ -195,7 +235,7 @@ function bindFilters() {
     if (channelFilter) channelFilter.value = "";
     if (durationFilter) durationFilter.value = "";
     if (horizonFilter) horizonFilter.value = "all";
-    renderAll();
+    renderAfterGlobalFilterChange();
   });
 }
 
@@ -216,27 +256,11 @@ function renderAll() {
   const channels = applyFilters(tableRows("latestChannelMetrics"), { skipDuration: true });
   const scores = applyFilters(tableRows("latestVideoScores"));
   const advanced = applyFilters(tableRows("latestVideoAdvancedMetrics"));
-  const titles = applyFilters(tableRows("latestTitleMetrics"));
-  const quality = applyFilters(tableRows("latestMetricEligibility"), { skipDuration: true });
 
   renderHeader(videos, channels);
   renderAnalysisDateRange(videos);
   renderKpis(videos, channels, scores, advanced);
   renderOverview(videos, channels, scores);
-  renderVideos(videos);
-  renderChannels(channels);
-  renderScores(scores);
-  renderAdvanced(advanced);
-  renderTitles(titles);
-  renderPeriods();
-  renderAlerts();
-  renderDataQuality(quality, advanced);
-  renderModels();
-  renderTopics();
-  renderNlp();
-  renderContentDrivers();
-  renderCreativePackages();
-  renderBrief();
 }
 
 function tableRows(key) {
