@@ -35,8 +35,14 @@ def test_monitor_has_required_settings() -> None:
     assert "python -m ytb_history.cli build-topic-intelligence" in content
     assert "python -m ytb_history.cli generate-creative-packages" in content
     assert "python -m ytb_history.cli generate-weekly-brief" in content
-    assert "--ytdlp-extra-args" in content
-    assert "YTDLP_EXTRA_ARGS" in content
+    assert "yt-dlp" not in content
+    assert "ffmpeg" not in content
+    assert "OPENAI_API_KEY" not in content
+    assert "YTDLP" not in content
+    assert "select-transcription-candidates" not in content
+    assert "transcribe-selected-videos" not in content
+    assert "generate-transcript-insights" not in content
+    assert "transcript-registry-report" not in content
     assert 'eval "${CMD}"' not in content
     assert "python -m ytb_history.cli train-content-driver-models" not in content
     assert "python -m ytb_history.cli build-model-dataset" not in content
