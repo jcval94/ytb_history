@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-09T05:39:32.804807+00:00",
+  "generated_at": "2026-05-09T10:19:59.953948+00:00",
   "limit": 10,
-  "candidates_considered": 1498,
+  "candidates_considered": 1506,
   "selected_count": 10,
   "selected_forced_count": 0,
   "selected_ranked_count": 10,
@@ -11,14 +11,14 @@
   ],
   "forced_channels_matched": [],
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 3,
-  "persisted_transcript_success_count": 3,
+  "registry_existing_success_count": 11,
+  "persisted_transcript_success_count": 11,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 96,
-  "skipped_already_transcribed": 3,
+  "registry_existing_recent_failed_count": 98,
+  "skipped_already_transcribed": 11,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 91,
+  "skipped_recent_failures": 93,
   "skipped_forced_already_transcribed": 0,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 20,
@@ -26,11 +26,11 @@
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "KGHb_XF0Z8M",
-    "8Vq_Vm8Pe9Y",
-    "imAjmQy8p8c",
-    "kWIBe2hzd4M",
-    "m1ddx427bHI"
+    "xaN83gVwJ60",
+    "PDLLR1NwC2o",
+    "_WaudpvolTs",
+    "1mHrzCe7Gkc",
+    "LAjjk7ivtFM"
   ],
   "warnings": []
 }

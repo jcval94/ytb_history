@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,5,66.9862,75.8302,70.4,W-9lPpj_ILQ,Honduras gate #méxico,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,0,0.0,0.0,0.0,,,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,0,0.0,0.0,0.0,,,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,326,58.6601,70.9272,85.3579,-8Xee3Y4Yeg,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,67,61.4439,88.0,69.6791,UCLe_q9axMaeTbjN0hy1Z9xA,Togi is NOT a Millionaire,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,84,70.6419,86.6561,89.5208,UCF0L4jd9LcSIxsj5gKITMqQ,Esto es realmente el lujo  #shorts,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,1,66.7277,66.7277,67.5,bsqWl-u1aQQ,Al Parecer Sí Eran Bots,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,310,59.8859,71.0966,88.9269,Z-xAO96GQtU,Esto es lo primero que vas a hacer mañana  #shorts,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,69,62.7773,88.0,71.5181,UCLe_q9axMaeTbjN0hy1Z9xA,Togi is NOT a Millionaire,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,50,71.57,86.6561,88.51,UCF0L4jd9LcSIxsj5gKITMqQ,Esto es realmente el lujo  #shorts,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
