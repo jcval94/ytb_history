@@ -152,3 +152,26 @@ def test_app_js_contains_analysis_window_renderer() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderAnalysisDateRange(videos)" in app_js
     assert "Analysis window:" in app_js
+
+
+def test_app_js_uses_lazy_tab_rendering() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    render_all_body = app_js.split("function renderAll()", 1)[1].split("function tableRows", 1)[0]
+
+    assert "renderedTabs: new Set()" in app_js
+    assert "const TAB_RENDERERS = {" in app_js
+    assert "function renderActiveTab(tab)" in app_js
+    assert "state.renderedTabs.has(tab)" in app_js
+    assert "state.renderedTabs.add(tab)" in app_js
+    assert "state.renderedTabs.clear();" in app_js
+    assert "renderActiveTab(tab);" in app_js
+    assert "renderActiveTab(getActiveTab());" in app_js
+
+    assert "renderHeader(videos, channels);" in render_all_body
+    assert "renderAnalysisDateRange(videos);" in render_all_body
+    assert "renderKpis(videos, channels, scores, advanced);" in render_all_body
+    assert "renderOverview(videos, channels, scores);" in render_all_body
+    assert "renderVideos(videos);" not in render_all_body
+    assert "renderChannels(channels);" not in render_all_body
+    assert "renderModels();" not in render_all_body
+    assert "renderBrief();" not in render_all_body
