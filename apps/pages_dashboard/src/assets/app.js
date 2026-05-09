@@ -462,32 +462,32 @@ function renderOverview(videos, channels, scores) {
 function renderVideos(videos) {
   renderTable(document.querySelector("#tab-videos"), [
     "title", "channel_name", "views_delta", "engagement_rate", "video_age_days", "duration_bucket"
-  ], videos, { initialSortKey: "views_delta", title: "Videos" });
+  ], videos, { initialSortKey: "views_delta", title: "Videos", pageSize: 25 });
 }
 
 function renderChannels(channels) {
   renderTable(document.querySelector("#tab-channels"), [
     "channel_name", "total_views_delta", "avg_engagement_rate", "channel_momentum_score", "videos_tracked"
-  ], channels, { initialSortKey: "total_views_delta", title: "Channels" });
+  ], channels, { initialSortKey: "total_views_delta", title: "Channels", pageSize: 10 });
 }
 
 function renderScores(scores) {
   renderTable(document.querySelector("#tab-scores"), [
     "title", "channel_name", "alpha_score", "opportunity_score", "anomaly_score"
-  ], scores, { initialSortKey: "alpha_score", title: "Scores" });
+  ], scores, { initialSortKey: "alpha_score", title: "Scores", pageSize: 25 });
 }
 
 function renderAdvanced(advanced) {
   renderTable(document.querySelector("#tab-advanced"), [
     "title", "short_term_success_score", "mid_term_success_score", "long_term_success_score", "trend_burst_score",
     "evergreen_score", "packaging_problem_score", "metric_confidence_score"
-  ], advanced, { initialSortKey: "short_term_success_score", title: "Advanced" });
+  ], advanced, { initialSortKey: "short_term_success_score", title: "Advanced", pageSize: 25 });
 }
 
 function renderTitles(titles) {
   renderTable(document.querySelector("#tab-titles"), [
     "title", "has_number", "has_question", "has_ai_word", "has_finance_word", "views_delta"
-  ], titles, { initialSortKey: "views_delta", title: "Titles" });
+  ], titles, { initialSortKey: "views_delta", title: "Titles", pageSize: 25 });
 }
 
 function renderPeriods() {
@@ -512,10 +512,10 @@ function renderPeriods() {
     const channelRows = tableRows(`period${capitalize(grain)}Channel`);
     renderTable(document.querySelector("#period-video-table"), [
       "period_start", "title", "period_views_delta", "period_avg_engagement_rate"
-    ], videoRows, { initialSortKey: "period_views_delta", title: `Video period metrics (${grain})` });
+    ], videoRows, { initialSortKey: "period_views_delta", title: `Video period metrics (${grain})`, pageSize: 25 });
     renderTable(document.querySelector("#period-channel-table"), [
       "period_start", "channel_name", "period_views_delta", "period_avg_engagement_rate"
-    ], channelRows, { initialSortKey: "period_views_delta", title: `Channel period metrics (${grain})` });
+    ], channelRows, { initialSortKey: "period_views_delta", title: `Channel period metrics (${grain})`, pageSize: 25 });
   };
 
   document.querySelector(`#${selectorId}`)?.addEventListener("change", redraw);
@@ -564,7 +564,7 @@ function renderAlerts() {
     const topRows = topAlertsBySeverity(10);
     renderTable(document.querySelector("#alerts-top"), [
       "signal_type", "severity", "title", "channel_name", "adjusted_signal_score", "confidence_level", "recommended_action"
-    ], topRows, { initialSortKey: "adjusted_signal_score", title: "Top alerts" });
+    ], topRows, { initialSortKey: "adjusted_signal_score", title: "Top alerts", pageSize: 10 });
   }
 
   hydrateAlertsFilters(alerts);
@@ -580,7 +580,7 @@ function renderAlerts() {
     });
     renderTable(document.querySelector("#alerts-table"), [
       "signal_type", "severity", "entity_type", "title", "channel_name", "adjusted_signal_score", "confidence_level", "recommended_action"
-    ], filtered, { initialSortKey: "adjusted_signal_score", title: "Alerts" });
+    ], filtered, { initialSortKey: "adjusted_signal_score", title: "Alerts", pageSize: 25 });
   };
   document.querySelector("#alerts-severity-filter")?.addEventListener("change", redraw);
   document.querySelector("#alerts-signal-filter")?.addEventListener("change", redraw);
@@ -589,7 +589,7 @@ function renderAlerts() {
 
   renderTable(document.querySelector("#signal-candidates-table"), [
     "entity_type", "entity_id", "signal_type", "triggered", "raw_signal_score", "adjusted_signal_score", "confidence_level"
-  ], signalCandidates, { initialSortKey: "adjusted_signal_score", title: "Signal candidates" });
+  ], signalCandidates, { initialSortKey: "adjusted_signal_score", title: "Signal candidates", pageSize: 25 });
 }
 
 function hydrateAlertsFilters(alerts) {
@@ -681,13 +681,13 @@ function renderCreativePackages() {
 
     const target = panel.querySelector("#creative-tables");
     target.innerHTML = '<div id="creative-packages"></div><div id="creative-titles"></div><div id="creative-hooks"></div><div id="creative-thumbs"></div><div id="creative-outlines"></div><div id="creative-originality"></div><div id="creative-checklist"></div>';
-    renderTable(target.querySelector("#creative-packages"), ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "originality_score", "recommended_timeframe"], sortRows(filteredPackages, "creative_execution_score", "desc"), { title: "Top Creative Packages" });
-    renderTable(target.querySelector("#creative-titles"), ["title_candidate", "title_pattern", "estimated_strength", "originality_status", "copy_risk_score"], sortRows(filteredTitles, "estimated_strength", "desc"), { title: "Title Candidates" });
-    renderTable(target.querySelector("#creative-hooks"), ["hook_text", "hook_type", "expected_use", "risk"], filteredHooks, { title: "Hooks" });
-    renderTable(target.querySelector("#creative-thumbs"), ["main_text", "visual_metaphor", "emotion", "layout_suggestion"], filteredThumbs, { title: "Thumbnail Briefs" });
-    renderTable(target.querySelector("#creative-outlines"), ["structure_type", "intro", "section_1", "section_2", "section_3", "closing"], filteredOutlines, { title: "Script Outlines" });
-    renderTable(target.querySelector("#creative-originality"), ["candidate_type", "copy_risk_score", "originality_status"], sortRows(filteredOriginality, "copy_risk_score", "desc"), { title: "Originality Checks" });
-    renderTable(target.querySelector("#creative-checklist"), ["production_step", "estimated_effort", "required_input"], filteredChecklist, { title: "Production Checklist" });
+    renderTable(target.querySelector("#creative-packages"), ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "originality_score", "recommended_timeframe"], sortRows(filteredPackages, "creative_execution_score", "desc"), { title: "Top Creative Packages", pageSize: 25 });
+    renderTable(target.querySelector("#creative-titles"), ["title_candidate", "title_pattern", "estimated_strength", "originality_status", "copy_risk_score"], sortRows(filteredTitles, "estimated_strength", "desc"), { title: "Title Candidates", pageSize: 25 });
+    renderTable(target.querySelector("#creative-hooks"), ["hook_text", "hook_type", "expected_use", "risk"], filteredHooks, { title: "Hooks", pageSize: 25 });
+    renderTable(target.querySelector("#creative-thumbs"), ["main_text", "visual_metaphor", "emotion", "layout_suggestion"], filteredThumbs, { title: "Thumbnail Briefs", pageSize: 25 });
+    renderTable(target.querySelector("#creative-outlines"), ["structure_type", "intro", "section_1", "section_2", "section_3", "closing"], filteredOutlines, { title: "Script Outlines", pageSize: 25 });
+    renderTable(target.querySelector("#creative-originality"), ["candidate_type", "copy_risk_score", "originality_status"], sortRows(filteredOriginality, "copy_risk_score", "desc"), { title: "Originality Checks", pageSize: 25 });
+    renderTable(target.querySelector("#creative-checklist"), ["production_step", "estimated_effort", "required_input"], filteredChecklist, { title: "Production Checklist", pageSize: 10 });
   };
 
   ["#creative-package-type", "#creative-topic", "#creative-originality-status", "#creative-timeframe"].forEach((sel) => {
@@ -742,19 +742,19 @@ function renderBrief() {
 
     renderTable(panel.querySelector("#brief-actions"), [
       "priority", "action_type", "recommended_action", "reason", "confidence_level", "decision_score"
-    ], actions, { initialSortKey: "decision_score", title: "Actions" });
+    ], actions, { initialSortKey: "decision_score", title: "Actions", pageSize: 10 });
 
     renderTable(panel.querySelector("#brief-content"), [
       "content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"
-    ], content, { initialSortKey: "evidence_score", title: "Content opportunities" });
+    ], content, { initialSortKey: "evidence_score", title: "Content opportunities", pageSize: 10 });
 
     renderTable(panel.querySelector("#brief-watchlist"), [
       "entity_type", "entity_id", "title", "reason", "watch_priority"
-    ], watchlist, { initialSortKey: "watch_priority", title: "Watchlist" });
+    ], watchlist, { initialSortKey: "watch_priority", title: "Watchlist", pageSize: 10 });
 
     renderTable(panel.querySelector("#brief-alerts"), [
       "severity", "signal_type", "entity_id", "adjusted_signal_score"
-    ], alerts, { initialSortKey: "adjusted_signal_score", title: "Alerts" });
+    ], alerts, { initialSortKey: "adjusted_signal_score", title: "Alerts", pageSize: 10 });
     return;
   }
 
@@ -774,11 +774,11 @@ function renderDataQuality(quality, advanced) {
   panel.innerHTML = '<div id="dq-metric"></div><div id="dq-low"></div>';
   renderTable(document.querySelector("#dq-metric"), [
     "video_id", "channel_id", "short_term_eligible", "mid_term_eligible", "long_term_eligible", "confidence_reason"
-  ], quality, { initialSortKey: "video_id", title: "metric eligibility" });
+  ], quality, { initialSortKey: "video_id", title: "metric eligibility", pageSize: 25 });
 
   renderTable(document.querySelector("#dq-low"), [
     "title", "channel_name", "metric_confidence_score"
-  ], lowConfidenceRows, { initialSortKey: "metric_confidence_score", title: "low confidence rows" });
+  ], lowConfidenceRows, { initialSortKey: "metric_confidence_score", title: "low confidence rows", pageSize: 25 });
 }
 
 function renderModels() {
@@ -834,7 +834,7 @@ function renderModels() {
 
   renderTable(panel.querySelector("#models-leaderboard"), [
     "model_family", "target", "champion_metric", "champion_metric_value", "selected_as_champion", "lift_vs_best_baseline"
-  ], leaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard" });
+  ], leaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard", pageSize: 10 });
 
   const targets = [...new Set(importanceRows.map((row) => row.target).filter(Boolean))].sort();
   const families = [...new Set(importanceRows.map((row) => row.model_family).filter(Boolean))].sort();
@@ -858,7 +858,7 @@ function renderModels() {
     const topRows = sortRows(filtered, "importance_rank", "asc").slice(0, 20);
     renderTable(panel.querySelector("#models-importance"), [
       "target", "model_family", "feature", "importance_type", "importance_value", "importance_rank", "direction"
-    ], topRows, { initialSortKey: "importance_rank", title: "Top variables" });
+    ], topRows, { initialSortKey: "importance_rank", title: "Top variables", pageSize: 10 });
 
     const linearRows = sortRows(
       filtered.filter((row) => row.model_family === "linear_regularized"),
@@ -867,7 +867,7 @@ function renderModels() {
     ).slice(0, 20);
     renderTable(panel.querySelector("#models-linear-coeff"), [
       "feature", "standardized_coefficient", "direction", "importance_rank"
-    ], linearRows, { initialSortKey: "importance_rank", title: "Linear coefficients" });
+    ], linearRows, { initialSortKey: "importance_rank", title: "Linear coefficients", pageSize: 10 });
 
     const rfRows = sortRows(
       directionRows.filter((row) => row.model_family === "random_forest").filter((row) => !target || row.target === target),
@@ -876,7 +876,7 @@ function renderModels() {
     ).slice(0, 20);
     renderTable(panel.querySelector("#models-rf"), [
       "feature", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
-    ], rfRows, { initialSortKey: "direction_score", title: "RF permutation importance & estimated direction" });
+    ], rfRows, { initialSortKey: "direction_score", title: "RF permutation importance & estimated direction", pageSize: 10 });
   };
 
   targetFilter?.addEventListener("change", redrawImportance);
@@ -909,7 +909,7 @@ function renderModels() {
   if (msg && readiness.can_train_now === false) {
     msg.innerHTML = "<p class=\"warning\">El entrenamiento todavía no está listo porque faltan ejemplos con observación futura. Sigue ejecutando YouTube Monitor diariamente.</p>";
   }
-  renderTable(panel.querySelector("#models-target-coverage"), ["target_name", "coverage_pct", "trainable_rows", "blocker", "status"], targetCoverageRows, { initialSortKey: "coverage_pct", title: "Target Coverage" });
+  renderTable(panel.querySelector("#models-target-coverage"), ["target_name", "coverage_pct", "trainable_rows", "blocker", "status"], targetCoverageRows, { initialSortKey: "coverage_pct", title: "Target Coverage", pageSize: 10 });
   if (readinessReportHtml.trim()) {
     panel.querySelector("#models-readiness-html").innerHTML = readinessReportHtml;
   }
@@ -927,16 +927,16 @@ function renderTopics() {
   `;
   renderTable(panel.querySelector("#topics-opportunities"), [
     "topic", "opportunity_type", "topic_opportunity_score", "topic_saturation_score", "topic_velocity_score", "recommended_action"
-  ], tableRows("latestTopicOpportunities"), { initialSortKey: "topic_opportunity_score", title: "Topic opportunities" });
+  ], tableRows("latestTopicOpportunities"), { initialSortKey: "topic_opportunity_score", title: "Topic opportunities", pageSize: 10 });
   renderTable(panel.querySelector("#topics-metrics"), [
     "topic", "video_count", "channel_count", "avg_views_delta", "avg_engagement_rate", "topic_velocity_score", "topic_saturation_score", "topic_opportunity_score"
-  ], tableRows("latestTopicMetrics"), { initialSortKey: "topic_opportunity_score", title: "Topic metrics" });
+  ], tableRows("latestTopicMetrics"), { initialSortKey: "topic_opportunity_score", title: "Topic metrics", pageSize: 25 });
   renderTable(panel.querySelector("#topics-patterns"), [
     "title_pattern", "video_count", "avg_views_delta", "avg_engagement_rate", "title_pattern_success_score", "example_titles"
-  ], tableRows("latestTitlePatternMetrics"), { initialSortKey: "title_pattern_success_score", title: "Title pattern metrics" });
+  ], tableRows("latestTitlePatternMetrics"), { initialSortKey: "title_pattern_success_score", title: "Title pattern metrics", pageSize: 25 });
   renderTable(panel.querySelector("#topics-keywords"), [
     "keyword", "semantic_group", "video_count", "total_views_delta", "avg_engagement_rate", "top_video_title"
-  ], tableRows("latestKeywordMetrics"), { initialSortKey: "video_count", title: "Keyword metrics" });
+  ], tableRows("latestKeywordMetrics"), { initialSortKey: "video_count", title: "Keyword metrics", pageSize: 25 });
 }
 
 function renderNlp() {
@@ -966,13 +966,13 @@ function renderNlp() {
   }
   renderTable(panel.querySelector("#nlp-clusters-table"), [
     "video_id", "semantic_cluster_id", "semantic_cluster_size", "semantic_cluster_label", "cluster_top_terms"
-  ], clusters, { initialSortKey: "semantic_cluster_size", title: "Semantic clusters" });
+  ], clusters, { initialSortKey: "semantic_cluster_size", title: "Semantic clusters", pageSize: 25 });
   renderTable(panel.querySelector("#nlp-video-semantic"), [
     "title", "channel_name", "ai_semantic_score", "finance_semantic_score", "productivity_semantic_score", "tutorial_semantic_score", "news_semantic_score", "views_delta"
-  ], videos, { initialSortKey: "views_delta", title: "Semantic scores por video" });
+  ], videos, { initialSortKey: "views_delta", title: "Semantic scores por video", pageSize: 25 });
   renderTable(panel.querySelector("#nlp-title-features"), [
     "title", "title_length_chars", "title_word_count", "title_has_number", "title_has_question", "hook_semantic_type", "dominant_semantic_score"
-  ], titles, { initialSortKey: "dominant_semantic_score", title: "Title NLP features" });
+  ], titles, { initialSortKey: "dominant_semantic_score", title: "Title NLP features", pageSize: 25 });
 }
 
 function renderContentDrivers() {
@@ -997,16 +997,16 @@ function renderContentDrivers() {
 
   renderTable(panel.querySelector("#cd-leaderboard"), [
     "target", "model_family", "mae_log", "rmse_log", "spearman_corr", "top_10_overlap_with_actual", "precision_at_top_decile_regression"
-  ], leaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target" });
+  ], leaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target", pageSize: 10 });
   renderTable(panel.querySelector("#cd-importance"), [
     "target", "model_family", "feature", "feature_group", "importance_type", "importance_value", "importance_rank", "direction"
-  ], importance, { initialSortKey: "importance_rank", title: "Top features por target/model" });
+  ], importance, { initialSortKey: "importance_rank", title: "Top features por target/model", pageSize: 25 });
   renderTable(panel.querySelector("#cd-direction"), [
     "target", "model_family", "feature", "feature_group", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
-  ], directions, { initialSortKey: "direction_score", title: "Feature directions" });
+  ], directions, { initialSortKey: "direction_score", title: "Feature directions", pageSize: 25 });
   renderTable(panel.querySelector("#cd-groups"), [
     "target", "model_family", "feature_group", "group_importance", "feature_count"
-  ], groups, { initialSortKey: "group_importance", title: "Group importance" });
+  ], groups, { initialSortKey: "group_importance", title: "Group importance", pageSize: 10 });
 
   const reportNode = panel.querySelector("#cd-report");
   if (reportNode) {
