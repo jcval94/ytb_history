@@ -1,0 +1,82 @@
+{
+  "video_id": "yHYYyV2Pdmk",
+  "language": "es",
+  "summary": "El video aborda las estafas en YouTube, donde ciertos streamers utilizan tácticas engañosas para ganar dinero a expensas de niños, creando directos falsos para atraer donaciones. Jacksfilms, un creador popular, expone esta red de estafadores que opera a gran escala y revela cómo han sido expuestos y forzados a eliminar su contenido.",
+  "main_topics": [
+    "Estafas en YouTube",
+    "Tácticas de streamers",
+    "Jacksfilms y su exposición de estafadores",
+    "Impacto en la audiencia infantil"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a las estafas en YouTube",
+      "purpose": "Contextualizar el problema de las estafas en plataformas de streaming.",
+      "summary": "Se describe cómo algunos directos buscan engañar a los espectadores con falsas promesas."
+    },
+    {
+      "section": "Exposición por Jacksfilms",
+      "purpose": "Presentar el trabajo de Jacksfilms en revelar a los estafadores.",
+      "summary": "Jacksfilms publica un video que expone a una red de streamers estafadores, lo que lleva a su caída."
+    },
+    {
+      "section": "Reacciones de los estafadores",
+      "purpose": "Describir la respuesta de los estafadores a la exposición.",
+      "summary": "Los estafadores publican disculpas y eliminan su contenido tras ser expuestos."
+    },
+    {
+      "section": "Reflexión y cierre",
+      "purpose": "Concluir el video con una reflexión personal.",
+      "summary": "Se utiliza un versículo bíblico para reflexionar sobre la avaricia y sus consecuencias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing statement",
+    "hook_text": "estoy a.de llamar al 911, si me donas, me estoy por hacerlo",
+    "why_it_works": "Genera curiosidad y sorpresa, atrapando la atención del espectador desde el inicio."
+  },
+  "claims": [
+    {
+      "claim": "YouTube es un lugar donde se producen estafas masivas.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Jacksfilms expuso a una red de streamers estafadores.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Los streamers apuntan a un público infantil con sus tácticas.",
+      "support_level": "implicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Denunciar canales que utilicen tácticas engañosas.",
+    "Informar a los niños sobre los peligros de las estafas en línea.",
+    "Promover el contenido ético en plataformas de streaming."
+  ],
+  "audience": "Usuarios de YouTube y personas interesadas en las denuncias de fraudes online.",
+  "tone": "Crítico e informativo",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Historias personales",
+    "Citas impactantes",
+    "Uso de humor"
+  ],
+  "title_supporting_quotes": [
+    "El mundo vergonzoso y depredador de los estafadores en directo.",
+    "Se apresura a ser rico el avaro, pero no sabe que le ha de venir pobreza."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías explicativas sobre cómo identificar estafas.",
+    "Realizar un video tutorial sobre cómo reportar estafas en plataformas."
+  ],
+  "risk_notes": [
+    "Posible reacción negativa de la comunidad de streamers.",
+    "Riesgo de que los estafadores cambien sus tácticas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

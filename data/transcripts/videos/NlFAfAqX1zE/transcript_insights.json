@@ -1,0 +1,93 @@
+{
+  "video_id": "NlFAfAqX1zE",
+  "language": "es",
+  "summary": "El video discute la tecnología HAARP y su supuesta capacidad para manipular el clima, vinculándola con eventos extremos como terremotos y ciclones. Se menciona la utilización de esta tecnología por parte de la CIA en conflictos bélicos y su impacto en la soberanía de países como Irán.",
+  "main_topics": [
+    "Tecnología HAARP",
+    "Manipulación del clima",
+    "Efectos en desastres naturales",
+    "Uso militar de la tecnología climática",
+    "Soberanía nacional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a HAARP",
+      "purpose": "Presentar la tecnología y su función",
+      "summary": "Se explica cómo HAARP modula el clima y sus efectos."
+    },
+    {
+      "section": "Investigación de la Universidad de Marañón",
+      "purpose": "Apoyar la afirmación sobre los efectos de HAARP",
+      "summary": "Se refiere a investigaciones que sugieren que HAARP puede desencadenar desastres naturales."
+    },
+    {
+      "section": "Uso militar por la CIA",
+      "purpose": "Contextualizar el uso de HAARP en conflictos",
+      "summary": "Menciona documentos desclasificados que confirman el uso de esta tecnología como arma."
+    },
+    {
+      "section": "Instalaciones de HAARP alrededor del mundo",
+      "purpose": "Mostrar la extensión de la tecnología",
+      "summary": "Se presenta un mapa de instalaciones HAARP en diferentes países."
+    },
+    {
+      "section": "Caso de Irán",
+      "purpose": "Ilustrar los efectos de intervenir con HAARP",
+      "summary": "Describe cómo la destrucción de bases militares de EE. UU. provocó un cambio climático favorable en Irán."
+    },
+    {
+      "section": "Reflexiones finales",
+      "purpose": "Conectar los puntos y ofrecer una crítica histórica",
+      "summary": "El narrador reflexiona sobre el impacto de las intervenciones de EE. UU. a lo largo de la historia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "¿Qué va a pasar aquí?",
+    "why_it_works": "Genera curiosidad y anticipación sobre los efectos y repercusiones de dicho tema."
+  },
+  "claims": [
+    {
+      "claim": "HAARP puede causar terremotos y ciclones.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La CIA ha utilizado HAARP como arma de guerra.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La lluvia en Irán se restableció tras la destrucción de bases militares.",
+      "support_level": "weak",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la tecnología HAARP.",
+    "Analizar otras teorías sobre manipulación climática.",
+    "Examinar la relación entre clima y soberanía nacional."
+  ],
+  "audience": "Interesados en teorías de conspiración y manipulación del clima.",
+  "tone": "Crítico e inquisitivo",
+  "content_style": "Informativo y provocador",
+  "retention_devices": [
+    "Citas impactantes",
+    "Preguntas retóricas",
+    "Referencias a hechos históricos"
+  ],
+  "title_supporting_quotes": [
+    "La CIA ha admitido en documentos oficiales desclasificados que han usado esto en Vietnam..."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de la tecnología climática.",
+    "Documentales sobre conspiraciones relacionadas con HAARP.",
+    "Debates sobre ética militar y tecnología."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones pueden ser consideradas teorías de conspiración.",
+    "La falta de evidencia clara puede llevar a desinformación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

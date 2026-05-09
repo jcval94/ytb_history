@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-05-09T05:28:18.318849+00:00",
+  "generated_at": "2026-05-09T05:37:16.580142+00:00",
   "limit": 3,
   "processed": 3,
-  "transcribed_success": 0,
+  "transcribed_success": 3,
   "skipped_no_audio_source": 0,
   "skipped_invalid_video_id": 0,
   "skipped_missing_ytdlp": 0,
-  "failed_audio_download": 3,
+  "failed_audio_download": 0,
   "skipped_already_transcribed": 0,
   "failed": 0,
-  "queue_total": 4,
+  "queue_total": 3,
   "registry_success_before_run": 0,
   "persisted_success_before_run": 0,
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
-  "audio_source_dir_exists": false,
-  "audio_source_dir_is_dir": false,
+  "audio_source_dir_exists": true,
+  "audio_source_dir_is_dir": true,
   "audio_source_files_sample": [],
   "allow_ytdlp_fallback": true,
   "ytdlp_runtime_options": {
     "used_cookies_file": false,
-    "used_browser_mode": true,
+    "used_browser_mode": false,
     "extra_args_count": 0
   },
   "ytdlp_download_attempts": 3,
-  "ytdlp_download_success": 0,
+  "ytdlp_download_success": 3,
   "ytdlp_auth_required_with_cookies_count": 0,
   "ytdlp_auth_required_with_cookies_abort_threshold": 3,
   "ytdlp_cookies_file_diagnostics": {
@@ -35,88 +35,20 @@
     "youtube_google_cookie_rows": 0,
     "expired_youtube_google_cookie_rows": 0
   },
-  "ytdlp_download_failures": [
-    {
-      "video_id": "2zOD6Q4hfFA",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "error_category": "browser_cookie_access_error",
-      "video_url": "https://www.youtube.com/watch?v=2zOD6Q4hfFA"
-    },
-    {
-      "video_id": "UEYBrtzl3wg",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "error_category": "browser_cookie_access_error",
-      "video_url": "https://www.youtube.com/watch?v=UEYBrtzl3wg"
-    },
-    {
-      "video_id": "cH_ZScbZVEA",
-      "error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "error_category": "browser_cookie_access_error",
-      "video_url": "https://www.youtube.com/watch?v=cH_ZScbZVEA"
-    }
-  ],
+  "ytdlp_download_failures": [],
   "processed_video_ids": [
-    "2zOD6Q4hfFA",
-    "UEYBrtzl3wg",
-    "cH_ZScbZVEA"
+    "yHYYyV2Pdmk",
+    "HBezrmK2eEY",
+    "NlFAfAqX1zE"
   ],
-  "success_video_ids": [],
+  "success_video_ids": [
+    "yHYYyV2Pdmk",
+    "HBezrmK2eEY",
+    "NlFAfAqX1zE"
+  ],
   "already_transcribed_video_ids": [],
-  "missing_audio_video_ids": [
-    "2zOD6Q4hfFA",
-    "UEYBrtzl3wg",
-    "cH_ZScbZVEA"
-  ],
-  "missing_audio_details": [
-    {
-      "video_id": "2zOD6Q4hfFA",
-      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
-      "audio_source_dir_exists": false,
-      "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=2zOD6Q4hfFA",
-      "attempted_paths": [
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2zOD6Q4hfFA.mp3",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2zOD6Q4hfFA.m4a",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2zOD6Q4hfFA.wav",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2zOD6Q4hfFA.webm",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2zOD6Q4hfFA.mp4"
-      ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "ytdlp_error_category": "browser_cookie_access_error"
-    },
-    {
-      "video_id": "UEYBrtzl3wg",
-      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
-      "audio_source_dir_exists": false,
-      "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=UEYBrtzl3wg",
-      "attempted_paths": [
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UEYBrtzl3wg.mp3",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UEYBrtzl3wg.m4a",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UEYBrtzl3wg.wav",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UEYBrtzl3wg.webm",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UEYBrtzl3wg.mp4"
-      ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "ytdlp_error_category": "browser_cookie_access_error"
-    },
-    {
-      "video_id": "cH_ZScbZVEA",
-      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
-      "audio_source_dir_exists": false,
-      "audio_source_dir_is_dir": false,
-      "video_url": "https://www.youtube.com/watch?v=cH_ZScbZVEA",
-      "attempted_paths": [
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cH_ZScbZVEA.mp3",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cH_ZScbZVEA.m4a",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cH_ZScbZVEA.wav",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cH_ZScbZVEA.webm",
-        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cH_ZScbZVEA.mp4"
-      ],
-      "ytdlp_error": "yt_dlp_failed:strategy=web;code=1;stderr=ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info\nERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info",
-      "ytdlp_error_category": "browser_cookie_access_error"
-    }
-  ],
+  "missing_audio_video_ids": [],
+  "missing_audio_details": [],
   "invalid_video_id_details": [],
   "failed_video_ids": [],
   "failed_details": [],

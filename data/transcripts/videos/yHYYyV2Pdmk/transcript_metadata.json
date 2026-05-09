@@ -1,0 +1,14 @@
+{
+  "video_id": "yHYYyV2Pdmk",
+  "channel_id": "UCPgVPrgqpALC1s2e63fgKyg",
+  "channel_name": "elWacky",
+  "title": "Acaban De Exponer a Todos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\yHYYyV2Pdmk.mp3",
+  "transcribed_at": "2026-05-09T05:36:51.939187+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 7412,
+  "text_sha256": "d52b52ba0962c68909a8aec59352b192c737b812f95046189d6d258b8f68b3f8",
+  "repo_schema_version": "transcript_metadata_v1"
+}
