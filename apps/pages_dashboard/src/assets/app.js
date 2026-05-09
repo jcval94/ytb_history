@@ -1,4 +1,4 @@
-import { renderHorizontalBars } from "./charts.js";
+import { renderFunnel, renderGauge, renderHeatmap, renderHorizontalBars, renderLineChart, renderScatterPlot } from "./charts.js";
 import { formatDate, formatNumber, formatPercent, asNumber, escapeHtml } from "./formatters.js";
 import { renderTable, sortRows } from "./tables.js";
 
@@ -369,6 +369,7 @@ function renderOverview(videos, channels, scores) {
   if (!panel) return;
 
   panel.innerHTML = `
+    <div id="ov-decision-lab" class="chart-grid"></div>
     <div id="ov-videos" class="grid-two"></div>
     <div id="ov-channels" class="grid-two"></div>
     <div id="ov-alerts"></div>
@@ -417,6 +418,7 @@ function renderOverview(videos, channels, scores) {
 
   panel.querySelector("#ov-videos")?.append(viewsContainer, alphaContainer);
   panel.querySelector("#ov-channels")?.append(channelsContainer, bucketsContainer);
+  renderOverviewCharts(panel, videos, scores);
 
   const topAlertsWrap = document.createElement("div");
   const topAlerts = topAlertsBySeverity(5);
@@ -457,6 +459,58 @@ function renderOverview(videos, channels, scores) {
     briefWrap.querySelector("#go-to-brief")?.addEventListener("click", () => activateTab("brief"));
   }
   panel.querySelector("#ov-brief")?.append(briefWrap);
+}
+
+function renderOverviewCharts(panel, videos, scores) {
+  const chartGrid = panel.querySelector("#ov-decision-lab");
+  if (!chartGrid) return;
+  chartGrid.innerHTML = `
+    <div id="ov-performance-scatter"></div>
+    <div id="ov-opportunity-matrix"></div>
+    <div id="ov-signal-funnel"></div>
+  `;
+
+  const scoreByVideo = new Map(scores.map((row) => [String(row.video_id || ""), row]));
+  const performanceRows = videos
+    .map((row) => {
+      const score = scoreByVideo.get(String(row.video_id || "")) || {};
+      return {
+        ...row,
+        alpha_score: asNumber(score.alpha_score ?? row.alpha_score),
+        opportunity_score: asNumber(score.opportunity_score ?? row.opportunity_score)
+      };
+    })
+    .filter((row) => asNumber(row.views_delta) > 0 || asNumber(row.engagement_rate) > 0);
+
+  renderScatterPlot(chartGrid.querySelector("#ov-performance-scatter"), performanceRows, {
+    xKey: "views_delta",
+    yKey: "engagement_rate",
+    sizeKey: "alpha_score",
+    colorKey: "channel_name",
+    labelKey: "title",
+    title: "Reach vs engagement map",
+    subtitle: "Separates high-reach videos from high-quality-audience videos.",
+    xLabel: "views_delta",
+    yLabel: "engagement_rate",
+    formatY: formatPercent
+  });
+
+  renderScatterPlot(chartGrid.querySelector("#ov-opportunity-matrix"), getOpportunityMatrixRows(), {
+    xKey: "avg_confidence_score",
+    yKey: "avg_decision_score",
+    sizeKey: "candidates_count",
+    colorKey: "action_type",
+    labelKey: "recommended_focus",
+    title: "Opportunity vs confidence",
+    subtitle: "Prioritize the upper-right: strong score with enough evidence.",
+    xLabel: "avg confidence",
+    yLabel: "avg decision"
+  });
+
+  renderFunnel(chartGrid.querySelector("#ov-signal-funnel"), buildSignalFunnelSteps(), {
+    title: "Signals to action funnel",
+    subtitle: "A quick audit of how many signals survive into alerts and actions."
+  });
 }
 
 function renderVideos(videos) {
@@ -502,6 +556,7 @@ function renderPeriods() {
       <option value="weekly">weekly</option>
       <option value="monthly">monthly</option>
     </select>
+    <div id="period-growth-line" class="chart-grid"></div>
     <div id="period-video-table"></div>
     <div id="period-channel-table"></div>
   `;
@@ -510,6 +565,16 @@ function renderPeriods() {
     const grain = document.querySelector(`#${selectorId}`)?.value || "daily";
     const videoRows = tableRows(`period${capitalize(grain)}Video`);
     const channelRows = tableRows(`period${capitalize(grain)}Channel`);
+    renderLineChart(document.querySelector("#period-growth-line"), channelRows, {
+      xKey: "period_start",
+      yKey: "period_views_delta",
+      groupKey: "channel_name",
+      title: `Growth time-series by channel (${grain})`,
+      subtitle: "Use this to spot sustained momentum versus one-period spikes.",
+      xLabel: "period_start",
+      yLabel: "views_delta",
+      maxGroups: 6
+    });
     renderTable(document.querySelector("#period-video-table"), [
       "period_start", "title", "period_views_delta", "period_avg_engagement_rate"
     ], videoRows, { initialSortKey: "period_views_delta", title: `Video period metrics (${grain})`, pageSize: 25 });
@@ -533,6 +598,7 @@ function renderAlerts() {
 
   panel.innerHTML = `
     <div class="kpi-grid" id="alerts-kpis"></div>
+    <div class="chart-grid"><div id="alerts-flow"></div></div>
     <h3 class="section-title">Top alerts</h3>
     <div id="alerts-top"></div>
     <h3 class="section-title">Filters</h3>
@@ -556,6 +622,10 @@ function renderAlerts() {
   document.querySelector("#alerts-kpis").innerHTML = cards
     .map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`)
     .join("");
+  renderFunnel(document.querySelector("#alerts-flow"), buildSignalFunnelSteps(), {
+    title: "Candidate to alert funnel",
+    subtitle: "Shows how strict the alerting layer is on this run."
+  });
 
   if (!alerts.length) {
     document.querySelector("#alerts-top").innerHTML = "<p>No alerts generated yet</p>";
@@ -722,7 +792,9 @@ function renderBrief() {
       ${summary.length ? `<ul>${summary.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>` : "<p>No executive summary available</p>"}
 
       <h3>Key Metrics</h3>
+      <div id="brief-scorecard" class="kpi-grid"></div>
       ${keyMetricsRows ? `<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>${keyMetricsRows}</tbody></table>` : "<p>No key metrics available</p>"}
+      <div id="brief-visuals" class="chart-grid"></div>
 
       <h3>What Actions Should I Take This Week?</h3>
       <div id="brief-actions"></div>
@@ -739,6 +811,9 @@ function renderBrief() {
       <h3>Data Quality Notes</h3>
       ${qualityNotes.length ? `<ul>${qualityNotes.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>` : "<p>No data quality notes</p>"}
     `;
+
+    renderBriefScorecard(panel.querySelector("#brief-scorecard"), keyMetrics);
+    renderBriefCharts(panel.querySelector("#brief-visuals"), keyMetrics, actions, content, alerts);
 
     renderTable(panel.querySelector("#brief-actions"), [
       "priority", "action_type", "recommended_action", "reason", "confidence_level", "decision_score"
@@ -800,6 +875,7 @@ function renderModels() {
     <div id="models-status" class="kpi-grid"></div>
     <h3 class="section-title">Leaderboard</h3>
     <div id="models-leaderboard"></div>
+    <div id="models-leaderboard-visuals" class="chart-grid"></div>
     <h3 class="section-title">Feature Importance</h3>
     <div class="filters">
       <select id="models-target-filter"><option value="">All targets</option></select>
@@ -815,6 +891,7 @@ function renderModels() {
     <div id="models-tree-rules"></div>
     <h3 class="section-title">Model Readiness</h3>
     <div id="models-readiness" class="kpi-grid"></div>
+    <div id="models-readiness-visuals" class="chart-grid"></div>
     <div id="models-readiness-message"></div>
     <div id="models-target-coverage"></div>
     <div id="models-readiness-html"></div>
@@ -835,6 +912,7 @@ function renderModels() {
   renderTable(panel.querySelector("#models-leaderboard"), [
     "model_family", "target", "champion_metric", "champion_metric_value", "selected_as_champion", "lift_vs_best_baseline"
   ], leaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard", pageSize: 10 });
+  renderModelLeaderboardCharts(panel.querySelector("#models-leaderboard-visuals"), leaderboard);
 
   const targets = [...new Set(importanceRows.map((row) => row.target).filter(Boolean))].sort();
   const families = [...new Set(importanceRows.map((row) => row.model_family).filter(Boolean))].sort();
@@ -904,6 +982,7 @@ function renderModels() {
     .join("");
   const readinessWrap = panel.querySelector("#models-readiness");
   if (readinessWrap) readinessWrap.innerHTML = readinessHtml;
+  renderModelReadinessCharts(panel.querySelector("#models-readiness-visuals"), readiness, gap, targetCoverageRows);
 
   const msg = panel.querySelector("#models-readiness-message");
   if (msg && readiness.can_train_now === false) {
@@ -987,6 +1066,7 @@ function renderContentDrivers() {
   panel.innerHTML = `
     <h2>Content Drivers</h2>
     <p class="warning">Estas importancias son predictivas, no causales.</p>
+    <div id="cd-visuals" class="chart-grid"></div>
     <div id="cd-leaderboard"></div>
     <div id="cd-importance"></div>
     <div id="cd-direction"></div>
@@ -998,6 +1078,7 @@ function renderContentDrivers() {
   renderTable(panel.querySelector("#cd-leaderboard"), [
     "target", "model_family", "mae_log", "rmse_log", "spearman_corr", "top_10_overlap_with_actual", "precision_at_top_decile_regression"
   ], leaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target", pageSize: 10 });
+  renderContentDriverCharts(panel.querySelector("#cd-visuals"), leaderboard, importance, directions, groups);
   renderTable(panel.querySelector("#cd-importance"), [
     "target", "model_family", "feature", "feature_group", "importance_type", "importance_value", "importance_rank", "direction"
   ], importance, { initialSortKey: "importance_rank", title: "Top features por target/model", pageSize: 25 });
@@ -1012,6 +1093,244 @@ function renderContentDrivers() {
   if (reportNode) {
     reportNode.innerHTML = reportHtml.trim() || "<p>No content driver report available.</p>";
   }
+}
+
+function renderBriefScorecard(container, keyMetrics) {
+  if (!container) return;
+  const cards = [
+    ["videos_total", keyMetrics.videos_total ?? "--"],
+    ["total_views_delta", formatNumber(keyMetrics.total_views_delta)],
+    ["avg_engagement_rate", formatPercent(keyMetrics.avg_engagement_rate)],
+    ["total_alerts", keyMetrics.total_alerts ?? "--"],
+    ["action_candidates", keyMetrics.total_action_candidates ?? "--"],
+    ["high_priority_actions", keyMetrics.high_priority_actions ?? "--"]
+  ];
+  container.innerHTML = cards
+    .map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`)
+    .join("");
+}
+
+function renderBriefCharts(container, keyMetrics, actions, content, alerts) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="brief-action-matrix"></div>
+    <div id="brief-content-bubbles"></div>
+    <div id="brief-alert-funnel"></div>
+  `;
+
+  const actionRows = actions.map((row) => ({
+    ...row,
+    confidence_score: asNumber(row.metric_confidence_score) || confidenceScore(row.confidence_level),
+    impact_score: asNumber(row.expected_value_score) || asNumber(row.decision_score)
+  }));
+  renderScatterPlot(container.querySelector("#brief-action-matrix"), actionRows, {
+    xKey: "confidence_score",
+    yKey: "decision_score",
+    sizeKey: "impact_score",
+    colorKey: "action_type",
+    labelKey: "recommended_action",
+    title: "Action priority vs confidence",
+    subtitle: "Upper-right actions are stronger bets; bubble size estimates expected value.",
+    xLabel: "confidence",
+    yLabel: "decision_score"
+  });
+
+  const opportunityRows = content.map((row) => ({
+    ...row,
+    urgency_score: timeframeScore(row.recommended_timeframe),
+    impact_score: asNumber(row.evidence_score)
+  }));
+  renderScatterPlot(container.querySelector("#brief-content-bubbles"), opportunityRows, {
+    xKey: "evidence_score",
+    yKey: "urgency_score",
+    sizeKey: "impact_score",
+    colorKey: "recommended_timeframe",
+    labelKey: "source_title",
+    title: "Content opportunity bubbles",
+    subtitle: "Evidence on X, urgency on Y, size by impact signal.",
+    xLabel: "evidence_score",
+    yLabel: "timeframe urgency"
+  });
+
+  const actionTotal = asNumber(keyMetrics.total_action_candidates) || actions.length;
+  renderFunnel(container.querySelector("#brief-alert-funnel"), [
+    { label: "Signals", value: tableRows("latestSignalCandidates").length, detail: "raw candidates" },
+    { label: "Alerts", value: alerts.length, detail: "brief watch items" },
+    { label: "Actions", value: actionTotal, detail: "decision candidates" },
+    { label: "Top actions", value: actions.length, detail: "shown this week" }
+  ], {
+    title: "Weekly signal flow",
+    subtitle: "Connects monitoring noise to concrete recommended actions."
+  });
+}
+
+function renderModelLeaderboardCharts(container, leaderboard) {
+  if (!container) return;
+  container.innerHTML = `<div id="models-champion-bars"></div>`;
+  const championRows = leaderboard
+    .filter((row) => isTruthy(row.selected_as_champion))
+    .concat(leaderboard.filter((row) => !leaderboard.some((candidate) => isTruthy(candidate.selected_as_champion))))
+    .map((row) => ({
+      ...row,
+      target_label: `${row.target || "--"} / ${row.model_family || "--"}`
+    }));
+  renderHorizontalBars(container.querySelector("#models-champion-bars"), championRows, {
+    labelKey: "target_label",
+    valueKey: "champion_metric_value",
+    title: "Champion metric by target"
+  });
+}
+
+function renderModelReadinessCharts(container, readiness, gap, targetCoverageRows) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="models-readiness-gauge"></div>
+    <div id="models-gap-burn"></div>
+    <div id="models-coverage-bars"></div>
+  `;
+
+  renderGauge(container.querySelector("#models-readiness-gauge"), {
+    title: "Readiness gauge",
+    value: readinessPercent(readiness, gap),
+    max: 100,
+    label: readiness.recommended_status || readiness.status || "unknown",
+    subtitle: "Progress toward baseline-ready training volume."
+  });
+
+  const trainable = asNumber(readiness.trainable_examples ?? gap.current_trainable_examples);
+  const exploratoryNeed = trainable + asNumber(readiness.examples_missing_for_exploratory ?? gap.examples_missing_for_exploratory);
+  const baselineNeed = trainable + asNumber(readiness.examples_missing_for_baseline ?? gap.examples_missing_for_baseline);
+  renderFunnel(container.querySelector("#models-gap-burn"), [
+    { label: "Trainable now", value: trainable, detail: "current examples" },
+    { label: "Exploratory target", value: exploratoryNeed || trainable, detail: "minimum useful signal" },
+    { label: "Baseline target", value: baselineNeed || trainable, detail: "stable baseline goal" }
+  ], {
+    title: "Training gap burn-down",
+    subtitle: "Shows how many examples are still needed for stronger ML use."
+  });
+
+  const coverageRows = targetCoverageRows.map((row) => ({
+    ...row,
+    target_label: row.target_name || row.target || "--",
+    coverage_pct: asNumber(row.coverage_pct)
+  }));
+  renderHorizontalBars(container.querySelector("#models-coverage-bars"), coverageRows, {
+    labelKey: "target_label",
+    valueKey: "coverage_pct",
+    title: "Coverage by target"
+  });
+}
+
+function renderContentDriverCharts(container, leaderboard, importance, directions, groups) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="cd-group-heatmap"></div>
+    <div id="cd-top-features"></div>
+    <div id="cd-direction-map"></div>
+    <div id="cd-model-bars"></div>
+  `;
+
+  renderHeatmap(container.querySelector("#cd-group-heatmap"), groups, {
+    xKey: "feature_group",
+    yKey: "target",
+    valueKey: "group_importance",
+    title: "Target x feature-group heatmap",
+    subtitle: "Predictive importance by target. This is not causal evidence."
+  });
+
+  const topFeatures = sortRows(importance, "importance_rank", "asc").slice(0, 18).map((row) => ({
+    ...row,
+    feature_label: `${row.target || "--"} / ${row.feature || "--"}`,
+    importance_magnitude: Math.abs(asNumber(row.importance_value))
+  }));
+  renderHorizontalBars(container.querySelector("#cd-top-features"), topFeatures, {
+    labelKey: "feature_label",
+    valueKey: "importance_magnitude",
+    title: "Top predictive features"
+  });
+
+  const directionRows = directions.map((row) => ({
+    ...row,
+    direction_score_abs: Math.abs(asNumber(row.direction_score))
+  }));
+  renderScatterPlot(container.querySelector("#cd-direction-map"), directionRows, {
+    xKey: "low_bin_prediction",
+    yKey: "high_bin_prediction",
+    sizeKey: "direction_score_abs",
+    colorKey: "direction",
+    labelKey: "feature",
+    title: "Driver direction map",
+    subtitle: "Compares low-bin and high-bin predictions; direction remains predictive.",
+    xLabel: "low bin prediction",
+    yLabel: "high bin prediction"
+  });
+
+  const modelRows = leaderboard.map((row) => ({
+    ...row,
+    model_label: `${row.target || "--"} / ${row.model_family || "--"}`
+  }));
+  renderHorizontalBars(container.querySelector("#cd-model-bars"), modelRows, {
+    labelKey: "model_label",
+    valueKey: "spearman_corr",
+    title: "Model quality by target"
+  });
+}
+
+function getOpportunityMatrixRows() {
+  const brief = state.data.latestWeeklyBriefJson;
+  return Array.isArray(brief?.opportunity_matrix) ? brief.opportunity_matrix : [];
+}
+
+function buildSignalFunnelSteps() {
+  const signalCandidates = tableRows("latestSignalCandidates");
+  const triggered = signalCandidates.filter((row) => isTruthy(row.triggered)).length;
+  const alertPayload = state.data.latestAlerts || {};
+  const alerts = Array.isArray(alertPayload.alerts) ? alertPayload.alerts.length : asNumber(alertPayload.alert_count);
+  const brief = state.data.latestWeeklyBriefJson || {};
+  const actionTotal = asNumber(brief?.key_metrics?.total_action_candidates) || (Array.isArray(brief?.top_actions_this_week) ? brief.top_actions_this_week.length : 0);
+  return [
+    { label: "Candidates", value: signalCandidates.length, detail: "scored signals" },
+    { label: "Triggered", value: triggered, detail: "above threshold" },
+    { label: "Alerts", value: alerts, detail: "surfaced risks" },
+    { label: "Actions", value: actionTotal, detail: "recommended next moves" }
+  ];
+}
+
+function confidenceScore(value) {
+  const normalized = String(value || "").toLowerCase();
+  if (normalized === "high") return 90;
+  if (normalized === "medium") return 60;
+  if (normalized === "low") return 30;
+  return 45;
+}
+
+function timeframeScore(value) {
+  const normalized = String(value || "").toLowerCase();
+  const mapping = {
+    now: 100,
+    next_3_days: 92,
+    this_week: 78,
+    next_run: 66,
+    next_2_weeks: 54,
+    this_month: 42,
+    backlog: 25
+  };
+  return mapping[normalized] ?? 45;
+}
+
+function readinessPercent(readiness, gap) {
+  const trainable = asNumber(readiness.trainable_examples ?? gap.current_trainable_examples);
+  const baseline = asNumber(readiness.min_trainable_examples_baseline ?? gap.needed_for_baseline);
+  const exploratory = asNumber(readiness.min_trainable_examples_exploratory ?? gap.needed_for_exploratory);
+  const target = baseline || exploratory || (readiness.can_train_now ? trainable : 100);
+  if (!target) return readiness.can_train_now ? 100 : 0;
+  return Math.min(100, (trainable / target) * 100);
+}
+
+function isTruthy(value) {
+  if (value === true) return true;
+  if (typeof value === "number") return value !== 0;
+  return ["true", "1", "yes"].includes(String(value || "").toLowerCase());
 }
 
 function setGeneratedAt(value) {

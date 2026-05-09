@@ -66,6 +66,30 @@ def test_app_js_contains_render_topics_nlp_and_content_drivers() -> None:
     assert "function renderContentDrivers()" in app_js
 
 
+def test_dashboard_contains_aesthetic_chart_layers() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    charts_js = _read("apps/pages_dashboard/src/assets/charts.js")
+    styles_css = _read("apps/pages_dashboard/src/assets/styles.css")
+
+    for helper in ["renderScatterPlot", "renderHeatmap", "renderLineChart", "renderFunnel", "renderGauge"]:
+        assert helper in charts_js
+        assert helper in app_js
+
+    for chart_label in [
+        "Opportunity vs confidence",
+        "Target x feature-group heatmap",
+        "Growth time-series by channel",
+        "Content opportunity bubbles",
+        "Readiness gauge",
+        "Signals to action funnel",
+    ]:
+        assert chart_label in app_js
+
+    assert ".chart-card" in styles_css
+    assert ".heatmap" in styles_css
+    assert ".gauge" in styles_css
+
+
 def test_app_js_data_files_brief_and_signal_candidates_are_unique_and_well_formed() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert app_js.count('latestSignalCandidates: "./data/latest_signal_candidates.json"') == 1
