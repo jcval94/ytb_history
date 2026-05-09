@@ -29,10 +29,16 @@ body { margin: 0; padding: 1rem 1.25rem 2rem; background: var(--bg); color: var(
 .tab-panel.active { display: block; }
 .warnings { display: grid; gap: .4rem; }
 .warning { border: 1px solid #f5d0a4; color: var(--warn); background: #fff7ed; padding: .5rem .65rem; border-radius: .55rem; }
-.table-wrap { overflow: auto; margin-top: .55rem; }
+.table-wrap { overflow: auto; margin-top: .55rem; max-height: 32rem; border: 1px solid var(--border); border-radius: .65rem; }
 table { width: 100%; border-collapse: collapse; }
 th, td { border-bottom: 1px solid var(--border); text-align: left; padding: .42rem; font-size: .88rem; white-space: nowrap; }
-th { cursor: pointer; color: var(--muted); }
+th { cursor: pointer; color: var(--muted); position: sticky; top: 0; z-index: 1; background: #f8fafc; box-shadow: 0 1px 0 var(--border); }
+.table-controls { display: flex; align-items: center; justify-content: flex-end; gap: .55rem; flex-wrap: wrap; margin: .55rem 0 .2rem; color: var(--muted); font-size: .85rem; }
+.table-controls button, .table-controls select { border: 1px solid var(--border); border-radius: .5rem; background: #fff; color: var(--ink); padding: .35rem .55rem; }
+.table-controls button { cursor: pointer; }
+.table-controls button:disabled { cursor: not-allowed; opacity: .5; }
+.table-controls label { display: inline-flex; align-items: center; gap: .35rem; }
+.table-count { margin-right: auto; font-weight: 600; color: var(--muted); }
 .bar-row { display: grid; grid-template-columns: 170px 1fr 80px; gap: .5rem; align-items: center; margin: .35rem 0; }
 .bar { height: .65rem; border-radius: 999px; background: linear-gradient(90deg, #60a5fa, #2563eb); }
 .progress { background: #dbeafe; border-radius: 999px; height: .65rem; overflow: hidden; }
