@@ -11,6 +11,13 @@ requires-python = ">=3.11"
 authors = [{name = "ytb_history"}]
 dependencies = ["PyYAML>=6.0", "requests>=2.31", "scikit-learn>=1.5", "joblib>=1.4"]
 
+[project.optional-dependencies]
+transcription = [
+  "openai>=1.0",
+  "yt-dlp",
+  "imageio-ffmpeg>=0.6",
+]
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 

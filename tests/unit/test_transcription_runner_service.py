@@ -7,6 +7,7 @@ from pathlib import Path
 from ytb_history.services.transcript_store_service import update_transcript_registry
 from ytb_history.services import transcription_runner_service
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
+from ytb_history.services.transcript_store_service import write_transcript_artifacts
 
 
 def _strategy_name_from_ytdlp_cmd(cmd: list[str]) -> str:
@@ -138,6 +139,62 @@ def test_download_audio_with_ytdlp_includes_preferred_audio_format(tmp_path: Pat
     assert captured_cmd[captured_cmd.index("--audio-quality") + 1] == "5"
     assert "--extractor-args" not in captured_cmd
     assert captured_cmd[-1] == "https://www.youtube.com/watch?v=v1"
+
+
+def test_download_audio_with_ytdlp_uses_module_fallback_when_binary_missing(tmp_path: Path, monkeypatch) -> None:
+    captured_cmd: list[str] = []
+
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda _name: None)
+    monkeypatch.setattr(
+        transcription_runner_service.importlib.util,
+        "find_spec",
+        lambda name: object() if name == "yt_dlp" else None,
+    )
+    monkeypatch.setattr(transcription_runner_service.sys, "executable", "C:/Python313/python.exe")
+
+    def _fake_run(cmd: list[str], **kwargs):
+        captured_cmd.extend(cmd)
+        assert kwargs == {"capture_output": True, "text": True, "check": False}
+        (tmp_path / "audio" / "v1.mp3").write_bytes(b"audio")
+        return subprocess.CompletedProcess(args=cmd, returncode=0, stderr="")
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert audio_path == tmp_path / "audio" / "v1.mp3"
+    assert error is None
+    assert error_category is None
+    assert captured_cmd[:3] == ["C:/Python313/python.exe", "-m", "yt_dlp"]
+
+
+def test_download_audio_with_ytdlp_passes_ffmpeg_location_when_resolved(tmp_path: Path, monkeypatch) -> None:
+    captured_cmd: list[str] = []
+
+    monkeypatch.setattr(transcription_runner_service, "_resolve_ytdlp_command", lambda: ["/usr/bin/yt-dlp"])
+    monkeypatch.setattr(transcription_runner_service, "_resolve_ffmpeg_location", lambda: "/tools/ffmpeg/bin/ffmpeg")
+
+    def _fake_run(cmd: list[str], **kwargs):
+        captured_cmd.extend(cmd)
+        assert kwargs == {"capture_output": True, "text": True, "check": False}
+        (tmp_path / "audio" / "v1.mp3").write_bytes(b"audio")
+        return subprocess.CompletedProcess(args=cmd, returncode=0, stderr="")
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert audio_path == tmp_path / "audio" / "v1.mp3"
+    assert error is None
+    assert error_category is None
+    assert "--ffmpeg-location" in captured_cmd
+    assert captured_cmd[captured_cmd.index("--ffmpeg-location") + 1] == "/tools/ffmpeg/bin/ffmpeg"
 
 
 def test_ytdlp_auth_required_with_cookies_continues_to_later_strategy(tmp_path: Path, monkeypatch) -> None:
@@ -366,6 +423,30 @@ def test_skips_already_success(tmp_path: Path, monkeypatch) -> None:
 
     fake = FakeOpenAIClient()
     report = transcribe_selected_videos(data_dir=tmp_path, limit=10, openai_client=fake)
+    assert report["skipped_already_transcribed"] == 1
+    assert len(fake.calls) == 0
+
+
+def test_skips_persisted_transcript_even_without_registry_success(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    write_transcript_artifacts(
+        video_id="v1",
+        transcript_text="texto ya persistido",
+        metadata={
+            "channel_id": "c1",
+            "channel_name": "canal",
+            "title": "title",
+            "source_type": "audio_file",
+        },
+        data_dir=tmp_path,
+    )
+    update_transcript_registry(data_dir=tmp_path, entry={"video_id": "v1", "status": "failed"})
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    fake = FakeOpenAIClient()
+    report = transcribe_selected_videos(data_dir=tmp_path, limit=10, openai_client=fake)
+    assert report["registry_success_before_run"] == 0
+    assert report["persisted_success_before_run"] == 1
     assert report["skipped_already_transcribed"] == 1
     assert len(fake.calls) == 0
 

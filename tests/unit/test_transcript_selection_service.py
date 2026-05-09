@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from ytb_history import cli
 from ytb_history.services.transcript_selection_service import select_transcription_candidates
+from ytb_history.services.transcript_store_service import write_transcript_artifacts
 
 
 def _write_csv(path: Path, header: list[str], rows: list[list[str]]) -> None:
@@ -92,6 +93,31 @@ def test_recent_auth_required_download_failure_enters_cooldown(tmp_path: Path) -
     assert report["registry_existing_recent_failed_count"] == 1
     assert report["skipped_forced_recent_failures"] == 1
     assert all(row["video_id"] != "v1" for row in queue)
+
+
+def test_selection_skips_persisted_transcripts_even_without_registry_success(tmp_path: Path) -> None:
+    _seed_inputs(tmp_path)
+    write_transcript_artifacts(
+        video_id="v3",
+        transcript_text="transcript ya existente",
+        metadata={
+            "channel_id": "c3",
+            "channel_name": "other",
+            "title": "T3",
+            "source_type": "audio_file",
+        },
+        data_dir=tmp_path,
+    )
+    _write_jsonl(tmp_path / "transcripts/transcript_registry.jsonl", [{"video_id": "v3", "status": "failed"}])
+
+    report = select_transcription_candidates(data_dir=tmp_path, limit=10, forced_channels_max_per_run=50)
+    queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+
+    assert report["registry_existing_success_count"] == 0
+    assert report["persisted_transcript_success_count"] == 1
+    assert report["artifact_only_success_count"] == 1
+    assert report["skipped_already_transcribed"] == 1
+    assert all(row["video_id"] != "v3" for row in queue)
 
 
 def test_auth_required_download_failure_without_failed_at_uses_selected_at_cooldown(tmp_path: Path) -> None:

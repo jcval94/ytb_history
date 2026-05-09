@@ -39,7 +39,7 @@ def test_monitor_has_required_settings() -> None:
     assert "ffmpeg" not in content
     assert "OPENAI_API_KEY" not in content
     assert "YTDLP" not in content
-    assert "select-transcription-candidates" not in content
+    assert "python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10" in content
     assert "transcribe-selected-videos" not in content
     assert "generate-transcript-insights" not in content
     assert "transcript-registry-report" not in content
@@ -63,6 +63,7 @@ def test_monitor_has_required_settings() -> None:
     topic_pos = content.find("python -m ytb_history.cli build-topic-intelligence")
     creative_pos = content.find("python -m ytb_history.cli generate-creative-packages")
     brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
+    select_transcription_pos = content.find("python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10")
     git_add_pos = content.find("git add data/")
     assert run_pos != -1
     assert test_pos != -1
@@ -76,16 +77,18 @@ def test_monitor_has_required_settings() -> None:
     assert topic_pos != -1
     assert creative_pos != -1
     assert brief_pos != -1
+    assert select_transcription_pos != -1
     assert git_add_pos != -1
     assert content.count("python -m ytb_history.cli run") == 1
     assert test_pos < run_pos
-    assert run_pos < validate_pos < export_pos < analytics_pos < nlp_pos < alerts_pos < decision_pos < model_int_pos < topic_pos < creative_pos < brief_pos < git_add_pos
+    assert run_pos < validate_pos < export_pos < analytics_pos < nlp_pos < alerts_pos < decision_pos < model_int_pos < topic_pos < creative_pos < brief_pos < select_transcription_pos < git_add_pos
     assert "build-analytics" in content[analytics_pos - 120 : analytics_pos + 120]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[analytics_pos - 200 : analytics_pos + 200]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[alerts_pos - 200 : alerts_pos + 200]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[decision_pos - 200 : decision_pos + 200]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[creative_pos - 200 : creative_pos + 200]
     assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[brief_pos - 200 : brief_pos + 200]
+    assert "${{ secrets.YOUTUBE_API_KEY }}" not in content[select_transcription_pos - 200 : select_transcription_pos + 200]
 
 
 def test_workflows_do_not_use_search_list() -> None:

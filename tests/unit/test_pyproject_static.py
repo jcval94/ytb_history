@@ -26,3 +26,12 @@ def test_pyproject_has_single_dependencies_key_under_project() -> None:
         section_lines.append(line)
     project_section = "\n".join(section_lines)
     assert project_section.count("dependencies =") == 1
+
+
+def test_pyproject_declares_transcription_optional_dependencies() -> None:
+    parsed = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    optional = parsed["project"].get("optional-dependencies", {})
+    transcription = optional.get("transcription", [])
+    assert any(dep.startswith("openai") for dep in transcription)
+    assert any(dep.startswith("yt-dlp") for dep in transcription)
+    assert any(dep.startswith("imageio-ffmpeg") for dep in transcription)

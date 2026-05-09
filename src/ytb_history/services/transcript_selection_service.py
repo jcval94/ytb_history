@@ -5,6 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.services.transcript_store_service import list_transcribed_video_ids
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
     "https://www.youtube.com/@bilinkis",
@@ -113,15 +114,16 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
         invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date"},"analytics_metrics")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_metrics"})
 
-    reg=_read_jsonl(tdir/'transcript_registry.jsonl'); success=set(); progress=set(); cool=set(); th=now-timedelta(days=cooldown_days)
+    reg=_read_jsonl(tdir/'transcript_registry.jsonl'); registry_success=set(); progress=set(); cool=set(); th=now-timedelta(days=cooldown_days)
     for e in reg:
         vid=str(e.get('video_id','')).strip(); st=str(e.get('status','')).strip()
         if not vid: continue
-        if st=='success': success.add(vid)
+        if st=='success': registry_success.add(vid)
         elif st=='in_progress': progress.add(vid)
         elif _is_retry_cooldown_status(st):
             fa=_parse_dt(str(e.get('failed_at',''))) or _parse_dt(str(e.get('selected_at','')))
             if fa and fa>=th: cool.add(vid)
+    success=list_transcribed_video_ids(data_dir=root)
 
     forced_urls = _load_forced_urls()
     forced_handles={_url_handle(u):u for u in forced_urls}
@@ -183,6 +185,6 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     _write_jsonl(tdir/'transcript_queue.jsonl',q)
     if skipped_invalid_video_ids:
         warnings.append('invalid_video_ids_skipped')
-    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"skipped_invalid_video_id_count":len(skipped_invalid_video_ids),"skipped_invalid_video_ids":skipped_invalid_video_ids[:50],"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
+    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(registry_success),"persisted_transcript_success_count":len(success),"artifact_only_success_count":len(success-registry_success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"skipped_invalid_video_id_count":len(skipped_invalid_video_ids),"skipped_invalid_video_ids":skipped_invalid_video_ids[:50],"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
     (tdir/'transcript_selection_report.json').write_text(json.dumps(rep,ensure_ascii=False,indent=2),encoding='utf-8')
     return rep

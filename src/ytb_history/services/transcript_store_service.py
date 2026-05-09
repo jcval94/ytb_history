@@ -21,6 +21,13 @@ def _transcript_root(data_dir: str | Path) -> Path:
     return Path(data_dir) / TRANSCRIPTS_DIRNAME
 
 
+def _video_dir(video_id: str, *, data_dir: str | Path = "data") -> Path:
+    safe_video_id = video_id.strip()
+    if not safe_video_id or "/" in safe_video_id or ".." in safe_video_id:
+        raise ValueError("video_id inválido para ruta de storage")
+    return _transcript_root(data_dir) / VIDEOS_DIRNAME / safe_video_id
+
+
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -45,12 +52,29 @@ def load_transcript_registry(data_dir: str | Path = "data") -> list[dict[str, An
     return _read_jsonl(_transcript_root(data_dir) / REGISTRY_FILENAME)
 
 
+def list_transcribed_video_ids(*, data_dir: str | Path = "data") -> set[str]:
+    success_ids = {
+        str(row.get("video_id", "")).strip()
+        for row in load_transcript_registry(data_dir=data_dir)
+        if str(row.get("video_id", "")).strip() and str(row.get("status", "")).strip() == "success"
+    }
+
+    videos_root = _transcript_root(data_dir) / VIDEOS_DIRNAME
+    if not videos_root.exists():
+        return success_ids
+
+    for video_dir in videos_root.iterdir():
+        if not video_dir.is_dir():
+            continue
+        transcript_path = video_dir / "transcript.txt"
+        metadata_path = video_dir / "transcript_metadata.json"
+        if transcript_path.is_file() and metadata_path.is_file():
+            success_ids.add(video_dir.name)
+    return success_ids
+
+
 def transcript_exists(video_id: str, *, data_dir: str | Path = "data") -> bool:
-    rows = load_transcript_registry(data_dir=data_dir)
-    for row in rows:
-        if str(row.get("video_id", "")).strip() == video_id and str(row.get("status", "")).strip() == "success":
-            return True
-    return False
+    return video_id.strip() in list_transcribed_video_ids(data_dir=data_dir)
 
 
 def write_transcript_artifacts(

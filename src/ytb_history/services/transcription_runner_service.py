@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import base64
+import importlib.util
 import json
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 import time
 from datetime import datetime, timezone
@@ -15,6 +17,7 @@ from typing import Any
 
 from ytb_history.clients.openai_audio_client import OpenAIAudioClient
 from ytb_history.services.transcript_store_service import (
+    list_transcribed_video_ids,
     load_transcript_registry,
     update_transcript_registry,
     write_transcript_artifacts,
@@ -125,6 +128,8 @@ def _classify_ytdlp_error(stderr: str) -> str:
     text = (stderr or "").lower()
     if "requested format is not available" in text:
         return "format_unavailable"
+    if "ffmpeg" in text and any(token in text for token in ["not found", "is required", "not installed"]):
+        return "tooling_missing"
     if any(token in text for token in ["sign in to confirm", "use --cookies", "cookies", "login required", "authentication"]):
         return "auth_required"
     if any(token in text for token in ["private video", "video unavailable", "this video is unavailable", "unavailable"]):
@@ -132,6 +137,38 @@ def _classify_ytdlp_error(stderr: str) -> str:
     if any(token in text for token in ["429", "too many requests", "timed out", "timeout", "temporarily unavailable", "connection reset", "network"]):
         return "network_or_rate_limit"
     return "unknown"
+
+
+def _resolve_ytdlp_command() -> list[str] | None:
+    ytdlp_bin = shutil.which("yt-dlp")
+    if ytdlp_bin:
+        return [ytdlp_bin]
+    if importlib.util.find_spec("yt_dlp") is not None:
+        return [sys.executable, "-m", "yt_dlp"]
+    return None
+
+
+def _resolve_ffmpeg_location() -> str | None:
+    configured_path = os.getenv("YTDLP_FFMPEG_LOCATION", "").strip()
+    if configured_path:
+        return configured_path
+
+    ffmpeg_bin = shutil.which("ffmpeg")
+    if ffmpeg_bin:
+        return ffmpeg_bin
+
+    if importlib.util.find_spec("imageio_ffmpeg") is None:
+        return None
+
+    try:
+        from imageio_ffmpeg import get_ffmpeg_exe
+    except ImportError:
+        return None
+
+    try:
+        return str(Path(get_ffmpeg_exe()))
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
@@ -169,11 +206,12 @@ def _download_audio_with_ytdlp(
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
 ) -> tuple[Path | None, str | None, str | None]:
-    ytdlp_bin = shutil.which("yt-dlp")
-    if not ytdlp_bin:
+    ytdlp_command = _resolve_ytdlp_command()
+    if not ytdlp_command:
         return None, "yt_dlp_not_installed", "tooling_missing"
     audio_source_dir.mkdir(parents=True, exist_ok=True)
     output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
+    ffmpeg_location = _resolve_ffmpeg_location()
 
     last_error = "yt_dlp_failed:unknown"
     last_error_category = "unknown"
@@ -181,7 +219,7 @@ def _download_audio_with_ytdlp(
     has_auth_context = bool(ytdlp_cookies_file or ytdlp_browser)
     for strategy_idx, (strategy_name, strategy_args) in enumerate(strategies):
         cmd = [
-            ytdlp_bin,
+            *ytdlp_command,
             "--no-playlist",
             "--format",
             "bestaudio[ext=m4a]/bestaudio/best",
@@ -200,6 +238,8 @@ def _download_audio_with_ytdlp(
             "-o",
             output_template,
         ]
+        if ffmpeg_location:
+            cmd.extend(["--ffmpeg-location", ffmpeg_location])
         cmd.extend(strategy_args)
         if ytdlp_cookies_file:
             cmd.extend(["--cookies", ytdlp_cookies_file])
@@ -267,11 +307,12 @@ def transcribe_selected_videos(
     client = openai_client or OpenAIAudioClient(api_key=api_key)
     queued = _read_jsonl(queue_path)
     registry = load_transcript_registry(data_dir=data_dir)
-    success_ids = {
+    registry_success_ids = {
         str(row.get("video_id", "")).strip()
         for row in registry
         if str(row.get("status", "")).strip() == "success"
     }
+    success_ids = list_transcribed_video_ids(data_dir=data_dir)
 
     processed = 0
     transcribed_success = 0
@@ -292,7 +333,8 @@ def transcribe_selected_videos(
     ytdlp_download_attempts = 0
     ytdlp_download_success = 0
     ytdlp_download_failures: list[dict[str, Any]] = []
-    registry_success_before_run = len(success_ids)
+    registry_success_before_run = len(registry_success_ids)
+    persisted_success_before_run = len(success_ids)
     consecutive_auth_required_with_cookies = 0
 
     generated_cookies_file: str | None = None
@@ -540,6 +582,7 @@ def transcribe_selected_videos(
         "failed": failed,
         "queue_total": len(queued),
         "registry_success_before_run": registry_success_before_run,
+        "persisted_success_before_run": persisted_success_before_run,
         "audio_source_dir": str(source_root),
         "audio_source_dir_exists": source_root_exists,
         "audio_source_dir_is_dir": source_root_is_dir,

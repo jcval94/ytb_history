@@ -6,6 +6,7 @@ from pathlib import Path
 from ytb_history import cli
 from ytb_history.services.transcript_store_service import (
     build_transcript_registry_report,
+    list_transcribed_video_ids,
     transcript_exists,
     update_transcript_registry,
     write_transcript_artifacts,
@@ -115,6 +116,24 @@ def test_success_transcript_registry_entries_do_not_get_failed_at(tmp_path: Path
     row = update_transcript_registry(data_dir=tmp_path, entry={"video_id": "v-ok", "status": "success"})
 
     assert row["failed_at"] is None
+
+
+def test_transcript_exists_and_list_transcribed_ids_detect_persisted_artifacts_without_registry_success(tmp_path: Path) -> None:
+    write_transcript_artifacts(
+        video_id="artifact_only",
+        transcript_text="texto ya persistido",
+        metadata={
+            "channel_id": "ch1",
+            "channel_name": "Canal 1",
+            "title": "Video 1",
+            "source_type": "audio_file",
+        },
+        data_dir=tmp_path,
+    )
+    update_transcript_registry(data_dir=tmp_path, entry={"video_id": "artifact_only", "status": "failed"})
+
+    assert transcript_exists("artifact_only", data_dir=tmp_path)
+    assert "artifact_only" in list_transcribed_video_ids(data_dir=tmp_path)
 
 def test_transcript_store_does_not_write_outside_transcripts(tmp_path: Path) -> None:
     try:

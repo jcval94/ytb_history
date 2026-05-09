@@ -60,14 +60,38 @@ python -m pip install -e .
 python -m pip install -r requirements.txt
 ```
 
+Si además vas a descargar audio y generar transcripciones/insights localmente:
+
+```bash
+python -m pip install -e ".[transcription]"
+```
+
+En **Windows PowerShell**:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e .
+python -m pip install -e ".[transcription]"
+```
+
 
 ## 6) Configurar API key local
 
 ```bash
 export YOUTUBE_API_KEY="..."
+export OPENAI_API_KEY="..."
 ```
 
-También puedes copiar `.env.example` y cargarlo en tu entorno local.
+En **Windows PowerShell**:
+
+```powershell
+$env:YOUTUBE_API_KEY="..."
+$env:OPENAI_API_KEY="..."
+```
+
+`OPENAI_API_KEY` solo es necesaria para transcripción e insights. También puedes copiar `.env.example` y cargarlo en tu entorno local.
 
 ## 7) Ejecutar local
 
@@ -399,7 +423,7 @@ GitHub Actions ya no ejecuta transcripción local ni pasos dependientes de `yt-d
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`, `select-transcription-candidates`.
 - Valida únicamente el secret `YOUTUBE_API_KEY` y lo usa desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 
@@ -415,16 +439,24 @@ La transcripción ya no forma parte de `.github/workflows/monitor.yml`. Si el eq
 
 Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
 ```bash
-python -m pip install yt-dlp
+python -m pip install -e ".[transcription]"
 yt-dlp --version
 ```
 
+La extra `transcription` instala `openai`, `yt-dlp` e `imageio-ffmpeg`. El runner intenta resolver `yt-dlp` desde `PATH` o desde el mismo entorno Python (`python -m yt_dlp`) y usa `ffmpeg` del sistema cuando existe; si no, puede reutilizar el binario gestionado por `imageio-ffmpeg`. Si prefieres un binario propio, puedes definir `YTDLP_FFMPEG_LOCATION`.
+
+GitHub Actions puede dejar preparada la cola diaria (`data/transcripts/transcript_queue.jsonl`) con `select-transcription-candidates`, pero la descarga de audio, transcripciÃ³n e insights siguen ejecutÃ¡ndose solo en entorno local/controlado.
+
 Flujo local sugerido para mantener artefactos de transcripción/insights y registro:
 ```bash
-python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
 python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10
 python -m ytb_history.cli transcript-registry-report --data-dir data
+```
+
+Si por alguna razÃ³n necesitas regenerar la cola manualmente fuera de Actions:
+```bash
+python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 ```
 
 El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
@@ -451,7 +483,7 @@ python -m ytb_history.cli transcribe-selected-videos \
 
 ⚠️ **Seguridad**: nunca commitear `cookies.txt` ni credenciales derivadas. Mantener estos archivos fuera del repositorio y gestionarlos únicamente en entornos locales/controlados.
 
-Además, instalar `ffmpeg` en el sistema y verificar disponibilidad en PATH:
+Si prefieres usar `ffmpeg` del sistema, instalarlo y verificar disponibilidad en PATH:
 ```bash
 # Ubuntu/Debian
 sudo apt-get update
