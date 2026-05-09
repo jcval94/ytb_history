@@ -1,0 +1,14 @@
+{
+  "video_id": "m1ddx427bHI",
+  "channel_id": "UC1yNl2E66ZzKApQdRuTQ4tw",
+  "channel_name": "Sabine Hossenfelder",
+  "title": "Quantum Physics Is An Unnecessary Complication, Physicists Say",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\m1ddx427bHI.mp3",
+  "transcribed_at": "2026-05-09T05:49:54.882876+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 5693,
+  "text_sha256": "7d2b6e1a9797f086ddb47c2725bf95f8f4db77aaba069cbb1d3347f3ecd90a1f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

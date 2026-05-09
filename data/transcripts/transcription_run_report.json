@@ -1,29 +1,33 @@
 {
-  "generated_at": "2026-05-09T05:37:16.580142+00:00",
-  "limit": 3,
-  "processed": 3,
-  "transcribed_success": 3,
+  "generated_at": "2026-05-09T05:51:32.460285+00:00",
+  "limit": 10,
+  "processed": 10,
+  "transcribed_success": 8,
   "skipped_no_audio_source": 0,
   "skipped_invalid_video_id": 0,
   "skipped_missing_ytdlp": 0,
   "failed_audio_download": 0,
   "skipped_already_transcribed": 0,
-  "failed": 0,
-  "queue_total": 3,
-  "registry_success_before_run": 0,
-  "persisted_success_before_run": 0,
+  "failed": 2,
+  "queue_total": 10,
+  "registry_success_before_run": 3,
+  "persisted_success_before_run": 3,
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
   "audio_source_dir_exists": true,
   "audio_source_dir_is_dir": true,
-  "audio_source_files_sample": [],
+  "audio_source_files_sample": [
+    "HBezrmK2eEY.mp3",
+    "NlFAfAqX1zE.mp3",
+    "yHYYyV2Pdmk.mp3"
+  ],
   "allow_ytdlp_fallback": true,
   "ytdlp_runtime_options": {
     "used_cookies_file": false,
     "used_browser_mode": false,
     "extra_args_count": 0
   },
-  "ytdlp_download_attempts": 3,
-  "ytdlp_download_success": 3,
+  "ytdlp_download_attempts": 10,
+  "ytdlp_download_success": 10,
   "ytdlp_auth_required_with_cookies_count": 0,
   "ytdlp_auth_required_with_cookies_abort_threshold": 3,
   "ytdlp_cookies_file_diagnostics": {
@@ -37,20 +41,51 @@
   },
   "ytdlp_download_failures": [],
   "processed_video_ids": [
-    "yHYYyV2Pdmk",
-    "HBezrmK2eEY",
-    "NlFAfAqX1zE"
+    "8Vq_Vm8Pe9Y",
+    "kWIBe2hzd4M",
+    "m1ddx427bHI",
+    "iNuSrPJlZjU",
+    "dbAz9kzA7yU",
+    "0QtQXR__SpY",
+    "H57K_ZTfLK4",
+    "qtz20vF8OR0",
+    "KGHb_XF0Z8M",
+    "imAjmQy8p8c"
   ],
   "success_video_ids": [
-    "yHYYyV2Pdmk",
-    "HBezrmK2eEY",
-    "NlFAfAqX1zE"
+    "8Vq_Vm8Pe9Y",
+    "kWIBe2hzd4M",
+    "m1ddx427bHI",
+    "iNuSrPJlZjU",
+    "dbAz9kzA7yU",
+    "0QtQXR__SpY",
+    "H57K_ZTfLK4",
+    "qtz20vF8OR0"
   ],
   "already_transcribed_video_ids": [],
   "missing_audio_video_ids": [],
   "missing_audio_details": [],
   "invalid_video_id_details": [],
-  "failed_video_ids": [],
-  "failed_details": [],
-  "warnings": []
+  "failed_video_ids": [
+    "KGHb_XF0Z8M",
+    "imAjmQy8p8c"
+  ],
+  "failed_details": [
+    {
+      "video_id": "KGHb_XF0Z8M",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\KGHb_XF0Z8M.mp3",
+      "error_type": "BadRequestError",
+      "error_message": "Error code: 400 - {'error': {'message': 'Total number of tokens in instructions + audio is too large for this model', 'type': 'invalid_request_error', 'param': None, 'code': 'input_too_large'}}"
+    },
+    {
+      "video_id": "imAjmQy8p8c",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\imAjmQy8p8c.mp3",
+      "error_type": "APIConnectionError",
+      "error_message": "Connection error."
+    }
+  ],
+  "warnings": [
+    "transcription_failed:KGHb_XF0Z8M:BadRequestError",
+    "transcription_failed:imAjmQy8p8c:APIConnectionError"
+  ]
 }

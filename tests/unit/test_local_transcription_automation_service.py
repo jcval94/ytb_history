@@ -83,8 +83,8 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
     assert report["status"] == "success"
     assert commands == [
         ["git", "pull", "--rebase", "--autostash"],
-        ["git", "add", "data"],
-        ["git", "status", "--porcelain", "--", "data"],
+        ["git", "add", "data/transcripts"],
+        ["git", "status", "--porcelain", "--", "data/transcripts"],
         ["git", "commit", "-m", "Run local transcription automation"],
         ["git", "push"],
     ]
@@ -119,8 +119,8 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
     assert commands == [
         ["git", "pull", "--rebase", "--autostash"],
-        ["git", "add", "data"],
-        ["git", "status", "--porcelain", "--", "data"],
+        ["git", "add", "data/transcripts"],
+        ["git", "status", "--porcelain", "--", "data/transcripts"],
     ]
 
 

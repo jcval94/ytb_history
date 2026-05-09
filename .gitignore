@@ -9,6 +9,12 @@ __pycache__/
 pytest-cache-files-*/
 
 # Keep data artifacts versioned
+data/audio_sources/
+*.mp3
+*.mp4
+*.m4a
+*.wav
+*.webm
 !data/snapshots/**/*.jsonl.gz
 !data/deltas/**/*.jsonl.gz
 !data/reports/**/*.json

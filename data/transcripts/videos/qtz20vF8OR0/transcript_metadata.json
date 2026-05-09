@@ -1,0 +1,14 @@
+{
+  "video_id": "qtz20vF8OR0",
+  "channel_id": "UCEQXxiYxNZbym9Fad7-n2Lg",
+  "channel_name": "Doctor Fisión",
+  "title": "¿QUÉ ES ESTE ANIMAL TAN INCREÍBLE? 😱",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\qtz20vF8OR0.mp3",
+  "transcribed_at": "2026-05-09T05:51:32.373066+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1383,
+  "text_sha256": "362da0e32bac6e7bfc03d86a51fcd885a182452a62931e1c7d29f96bd117d69c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

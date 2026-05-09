@@ -1,0 +1,82 @@
+{
+  "video_id": "dbAz9kzA7yU",
+  "language": "es",
+  "summary": "Un ex camarógrafo de TheGrefg revela sus malas condiciones laborales, alegando que su ex jefe prefirió gastar dinero en objetos lujosos en lugar de ofrecerle un contrato legal. Esto desata un debate sobre la naturaleza de las relaciones laborales en el mundo del contenido digital.",
+  "main_topics": [
+    "Condiciones laborales de los creadores de contenido",
+    "La relación entre TheGrefg y su ex camarógrafo",
+    "Reacciones del público y otros creadores"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y contexto del ex camarógrafo de TheGrefg.",
+      "summary": "El ex camarógrafo menciona que prefirió un gasto personal a ofrecerle un contrato laboral."
+    },
+    {
+      "section": "Desarrollo del conflicto",
+      "purpose": "Explicar las acusaciones recientes y sus repercusiones.",
+      "summary": "El ex cámara revela sus condiciones laborales y su descontento, lo que provoca una ola de reacciones."
+    },
+    {
+      "section": "Reacciones",
+      "purpose": "Mostrar cómo otros creadores defienden a Grefg y el contexto de si era un trabajo freelance.",
+      "summary": "Ex editores y amigos de Grefg salen en su defensa, explicando la naturaleza freelance de la relación."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la situación y las lecciones aprendidas.",
+      "summary": "Las acusaciones pueden haber perjudicado más al ex camarógrafo que a Grefg, reflexionando sobre la moralidad del asunto."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "polarizing statement",
+    "hook_text": "Prefirió comprarse un goku gigante antes que hacerme un contrato fijo.",
+    "why_it_works": "Captura la atención al presentar una comparación llamativa que desafía las expectativas sobre relaciones laborales."
+  },
+  "claims": [
+    {
+      "claim": "TheGrefg no ofreció un contrato a su ex camarógrafo.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El ex camarógrafo se siente agraviado por su situación laboral.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Hay apoyo considerable hacia Grefg entre otros creadores.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "El camarógrafo estaba repartiendo comida mientras era el cámara de Grefg.",
+    "Reacciones positivas de otros creadores que trabajaron con Grefg."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre la naturaleza del trabajo freelance.",
+    "Considerar las implicaciones éticas de las relaciones laborales en el mundo digital."
+  ],
+  "audience": "Creadores de contenido, seguidores de TheGrefg, trabajadores freelance.",
+  "tone": "informal y polémico",
+  "content_style": "narrativo y de análisis crítico",
+  "retention_devices": [
+    "Preguntas retóricas para involucrar al público",
+    "Uso de anécdotas personales"
+  ],
+  "title_supporting_quotes": [
+    "Prefirió comprarse un Goku gigante antes que hacerme un contrato fijo.",
+    "Las cosas hubieran sido muy fáciles haciéndolas como tenían que ser."
+  ],
+  "creative_reuse_opportunities": [
+    "Resumen de tendencias laborales en la economía de creadores.",
+    "Análisis de relaciones laborales en el sector del entretenimiento digital."
+  ],
+  "risk_notes": [
+    "Se podría considerar que el ex camarógrafo es responsable por no buscar un contrato más formal.",
+    "El tema de la reputación podría afectar negativamente al ex camarógrafo en futuros trabajos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

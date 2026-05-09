@@ -118,7 +118,7 @@ def run_local_transcription_automation(
     effective_settings_path = _resolve_under_repo(repo_root, settings_path)
     effective_audio_source_dir = _resolve_under_repo(repo_root, audio_source_dir)
     report_path = repo_root / "build" / "local_automation" / "latest_run_report.json"
-    data_relative_path = _as_repo_relative(repo_root, effective_data_dir)
+    transcripts_relative_path = _as_repo_relative(repo_root, effective_data_dir / "transcripts")
 
     report: JsonReport = {
         "generated_at": _now_iso(),
@@ -182,7 +182,7 @@ def run_local_transcription_automation(
             return report
 
         add_report = _run_command(
-            ["git", "add", data_relative_path],
+            ["git", "add", transcripts_relative_path],
             cwd=repo_root,
             command_runner=command_runner,
         )
@@ -195,7 +195,7 @@ def run_local_transcription_automation(
             return report
 
         status_report = _run_command(
-            ["git", "status", "--porcelain", "--", data_relative_path],
+            ["git", "status", "--porcelain", "--", transcripts_relative_path],
             cwd=repo_root,
             command_runner=command_runner,
         )

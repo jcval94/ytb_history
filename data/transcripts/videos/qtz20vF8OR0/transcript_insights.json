@@ -1,0 +1,88 @@
+{
+  "video_id": "qtz20vF8OR0",
+  "language": "es",
+  "summary": "El video presenta al cetenóforo, un asombroso animal marino, explicando su biología, su capacidad de camuflaje y su papel ecológico en el océano.",
+  "main_topics": [
+    "Cetenóforo",
+    "Biología marina",
+    "Camuflaje",
+    "Ecosistemas oceánicos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al cetenóforo",
+      "purpose": "Presentar el animal de forma intrigante.",
+      "summary": "Introducción al cetenóforo como un animal increíble del océano."
+    },
+    {
+      "section": "Características físicas",
+      "purpose": "Describir cómo se ve y se mueve el cetenóforo.",
+      "summary": "Explicación de su tamaño, forma y el efecto óptico que genera."
+    },
+    {
+      "section": "Mecanismos de camuflaje",
+      "purpose": "Informar sobre cómo se oculta de los depredadores.",
+      "summary": "Descripción del esfuerzo del cetenóforo para mantener su transparencia."
+    },
+    {
+      "section": "Alimentación y papel ecológico",
+      "purpose": "Describir su dieta y su importancia en el ecosistema.",
+      "summary": "Explicación sobre cómo atrapa presas y su rol en el ciclo del carbono."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cierre reflexivo sobre la maravilla de la naturaleza.",
+      "summary": "Invitación a apreciar lo sorprendente de la naturaleza."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿No te parece increíble?",
+    "why_it_works": "Genera curiosidad y conexión emocional con el espectador."
+  },
+  "claims": [
+    {
+      "claim": "El cetenóforo puede medir más de un metro de largo.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El cetenóforo utiliza cilios para desplazarse.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Pierde su transparencia cuando está estresado o agotado.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Desempeña un papel vital en el ciclo del carbono de los océanos.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre ecosistemas marinos.",
+    "Observar documentales sobre biología marina."
+  ],
+  "audience": "Personas interesadas en la naturaleza y la biodiversidad.",
+  "tone": "Informativo y asombroso.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Preguntas provocativas",
+    "Curiosidades científicas"
+  ],
+  "title_supporting_quotes": [
+    "La naturaleza no deja de sorprendernos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre el cetenóforo.",
+    "Desarrollar un video educativo sobre animales marinos."
+  ],
+  "risk_notes": [
+    "La información sobre el cetenóforo puede ser compleja para algunos espectadores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

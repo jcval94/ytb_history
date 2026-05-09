@@ -521,17 +521,29 @@ ffmpeg -version
 
 ## 22) Automatizacion Local De Transcripcion
 
-Para encadenar seleccion, transcripcion, insights y sincronizacion con Git desde tu entorno local en una sola corrida:
+Para encadenar seleccion, transcripcion, insights y sincronizacion con Git desde tu entorno local en una sola corrida manual:
 
 ```bash
 python -m ytb_history.cli run-local-transcription-automation \
   --repo-dir . \
   --data-dir data \
   --skip-youtube-refresh \
-  --limit 10 \
-  --ytdlp-browser firefox
+  --limit 10
 ```
 
-La automatizacion hace `git pull --rebase --autostash` al inicio y solo intenta `commit` + `push` cuando se generan resultados publicables nuevos de transcripcion o insights dentro de `data/`. El reporte operativo se guarda localmente en `build/local_automation/latest_run_report.json`, pero ya no se incluye en el commit automatico.
+La automatizacion hace `git pull --rebase --autostash` al inicio y solo intenta `commit` + `push` cuando se generan resultados publicables nuevos de transcripcion o insights dentro de `data/transcripts/`. Los audios descargados por `yt-dlp` se tratan como cache local en `data/audio_sources/`: no se versionan y el repo no depende de que existan.
 
-Si `yt-dlp` reporta que no pudo copiar la base de cookies del navegador, normalmente hace falta cerrar Chrome/Edge por completo o exportar un `cookies.txt` fresco fuera del repositorio antes de reintentar la corrida.
+Para registrar la ejecucion automatica local en Windows Task Scheduler:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\register_local_transcription_task.ps1
+```
+
+Esto crea la tarea `YtbHistoryLocalTranscription` con dos disparadores:
+
+- Lunes y jueves a las 09:00 hora local.
+- Al arrancar Windows, con guardas para ejecutar solo si hay una corrida pendiente dentro de la ventana de catch-up.
+
+El script ejecutado por la tarea es `scripts/run_local_transcription_automation.ps1`. Mantiene un estado local en `build/local_automation/schedule_state.json`, escribe logs en `build/local_automation/logs/`, evita ejecuciones solapadas con un lock local y no guarda secretos. Por seguridad, la tarea corre como tu usuario interactivo; si Windows exige correr antes del inicio de sesion, habria que usar una cuenta/credencial administrada por Task Scheduler, no guardarla en el repositorio.
+
+Si `yt-dlp` reporta que no pudo copiar la base de cookies del navegador, primero prueba sin `--ytdlp-browser`; en esta maquina la descarga sin cookies funciono mejor. Usa cookies de navegador o `cookies.txt` solo si YouTube empieza a exigir autenticacion.
