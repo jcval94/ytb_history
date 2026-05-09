@@ -22,6 +22,9 @@ def test_frontend_js_references_alerts_paths_and_hardening() -> None:
     assert "./data/latest_model_leaderboard.json" in app_js
     assert "./data/latest_feature_importance.json" in app_js
     assert "./data/latest_weekly_brief.json" in app_js
+    assert "./data/latest_process_status.json" in app_js
+    assert "./data/operation_summary.json" in app_js
+    assert "./data/dashboard_impact_matrix.json" in app_js
     assert "search.list" not in app_js
     assert "http://" not in app_js
     assert "https://" not in app_js
@@ -31,6 +34,14 @@ def test_index_html_contains_brief_tab() -> None:
     index_html = _read("apps/pages_dashboard/src/index.html")
     assert 'data-tab="brief"' in index_html
     assert "Brief" in index_html
+    assert "brand-lockup" in index_html
+    assert "ytb_history intelligence" in index_html
+
+
+def test_index_html_contains_operations_tab() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="operations"' in index_html
+    assert "Operations" in index_html
 
 
 def test_index_html_contains_topics_nlp_and_content_drivers_tabs() -> None:
@@ -49,6 +60,13 @@ def test_index_html_contains_models_tab() -> None:
 def test_app_js_contains_render_brief() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderBrief()" in app_js
+
+
+def test_app_js_contains_render_operations() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderOperations()" in app_js
+    assert "renderOperationsCharts" in app_js
+    assert "Dashboard impact matrix" in app_js
 
 
 def test_app_js_contains_render_models() -> None:
@@ -82,10 +100,27 @@ def test_dashboard_contains_aesthetic_chart_layers() -> None:
         "Content opportunity bubbles",
         "Readiness gauge",
         "Signals to action funnel",
+        "Video reach vs engagement",
+        "Channel growth vs engagement",
+        "Alpha vs opportunity",
+        "Success score vs confidence",
+        "Title signal frequency",
+        "Topic velocity vs saturation",
+        "Originality vs execution",
     ]:
         assert chart_label in app_js
 
+    for quality_rule in ["shouldUseDistinctColors", "selectImportantScatterLabels", "tooltipKeys", "pointLabelKeys", "chart-play"]:
+        assert quality_rule in charts_js
+
+    assert "function bindChartReplayControls()" in app_js
     assert ".chart-card" in styles_css
+    assert ".chart-grid-focus" in styles_css
+    assert ".chart-grid-wide" in styles_css
+    assert ".chart-point-label" in styles_css
+    assert ".brand-mark" in styles_css
+    assert "prefers-reduced-motion" in styles_css
+    assert "@keyframes chart-point-rise" in styles_css
     assert ".heatmap" in styles_css
     assert ".gauge" in styles_css
 
@@ -128,6 +163,24 @@ def test_readme_has_no_streamlit_phrase_duplication() -> None:
     assert "aún no se integra al workflow monitor/pages automático" not in readme
     assert readme.count("El workflow de Pages construye") == 1
     assert readme.count("- Ejecuta en orden:") == 1
+
+
+def test_readme_links_dashboard_and_documents_visual_quality_rules() -> None:
+    readme = _read("README.md")
+    assert "[https://jcval94.github.io/ytb_history/](https://jcval94.github.io/ytb_history/)" in readme
+    assert "Estandar de visualizacion del dashboard" in readme
+    assert "menos de 8 puntos" in readme
+    assert "hover" in readme
+    assert "control `Play`" in readme
+    assert "Remotion queda como capa futura" in readme
+
+
+def test_readme_documents_operations_observability() -> None:
+    readme = _read("README.md")
+    assert "Observabilidad operativa" in readme
+    assert "python -m ytb_history.cli build-operations" in readme
+    assert "config/operations.yaml" in readme
+    assert "data/operations/" in readme
 
 
 @pytest.mark.parametrize(

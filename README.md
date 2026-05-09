@@ -159,6 +159,8 @@ Además, incluye scores robustos (percentiles + robust_z), métricas de éxito p
 
 ## 11) Construir dashboard estático
 
+Dashboard publicado: [https://jcval94.github.io/ytb_history/](https://jcval94.github.io/ytb_history/)
+
 ```bash
 python -m ytb_history.cli build-pages-dashboard
 ```
@@ -166,6 +168,48 @@ python -m ytb_history.cli build-pages-dashboard
 Lee `data/analytics/` y genera artefactos JSON en `site/data/` listos para publicar en GitHub Pages. Además copia el Dashboard MVP estático (`HTML/CSS/JS` vanilla) desde `apps/pages_dashboard/src/` a `site/` (`index.html` y `assets/`) usando rutas relativas compatibles con subpath de GitHub Pages.
 
 El dashboard no usa Streamlit ni backend: consume exclusivamente `./data/*.json`, tolera faltantes mostrando warnings visuales y mantiene navegación por secciones (Overview, Videos, Channels, Scores, Advanced, Titles, Periods, Alerts y Data Quality).
+
+### 11.1) Estandar de visualizacion del dashboard
+
+Cada pestaña debe tener grafica solo cuando agrega una lectura que la tabla no entrega rapido. Las pestañas de detalle mantienen tablas, pero se agregan graficas de diagnostico cuando ayudan a detectar outliers, trade-offs, concentracion, calidad de datos u oportunidades accionables.
+
+Reglas para graficas actuales y futuras:
+- Usar dimensiones balanceadas: evitar tarjetas demasiado pequeñas como miniaturas, graficas de una sola columna que ocupen todo el ancho, y visuales excesivamente altos. El layout base limita el ancho de cada grafica y Content Drivers usa una grilla mas amplia y separada.
+- En scatter plots, etiquetar solo puntos importantes: maximos, outliers o puntos con mayor combinacion de señal. El resto debe identificarse por hover.
+- Cada punto debe exponer en hover el identificador y la informacion mas valiosa disponible: titulo/canal/video, variables X/Y, tamaño, categoria y metricas de contexto.
+- Usar colores categoricos solo cuando hay menos de 8 puntos, series o elementos distinguibles. Con 8 o mas categorias, usar color unico/acento y dejar la distincion fina al tooltip, filtros o tablas.
+- No usar color como unica codificacion de importancia: combinar posicion, tamaño, orden, etiquetas selectivas o tabla de respaldo.
+- Mantener titulos y subtitulos orientados a decision: explicar que se puede leer del grafico, no solo repetir nombres de columnas.
+- Evitar graficas decorativas. Si una pestaña no tiene suficiente variacion o el patron ya esta mejor cubierto por la tabla, dejarla como tabla.
+- Mantener branding sobrio de producto de inteligencia: superficie clara, tinta fuerte, acentos azul/teal/rose/ambar, radios de 8px o menos y sin fondos decorativos dominantes.
+- Cada grafica incluye un control `Play` para repetir una animacion ligera. La animacion debe reforzar lectura temporal/progresiva, respetar `prefers-reduced-motion` y no ser requisito para entender el dato.
+- Remotion queda como capa futura para piezas exportables o videos de reporte; el dashboard runtime debe seguir siendo estatico, liviano y sin dependencia de render de video.
+
+### 11.2) Observabilidad operativa
+
+El registro central de procesos vive en `config/operations.yaml`. Cada proceso declara `process_id`, dominio, cadencia, SLA, comando/workflow, entradas, salidas, secretos requeridos, artefactos esperados, dependencias y tabs del dashboard impactadas.
+
+```bash
+python -m ytb_history.cli build-operations
+```
+
+El comando genera vistas versionadas en `data/operations/`:
+- `latest_process_status.json`: estado normalizado por proceso.
+- `process_catalog.json`: catalogo declarativo listo para dashboard.
+- `dashboard_impact_matrix.csv`: matriz proceso -> tab.
+- `operation_summary.json`: KPIs operativos y procesos que requieren atencion.
+- `runs/dt=YYYY-MM-DD/run=HHMMSSZ/`: snapshot historico append-only.
+
+Estados normalizados:
+- `success`: artefacto durable encontrado y dentro de SLA.
+- `success_with_warnings`: el proceso corrio pero reporto warnings, errores parciales o fallos tolerados.
+- `failed`: el artefacto reporta fallo real o JSON invalido.
+- `skipped`: ejecucion omitida de forma esperada.
+- `stale`: el ultimo artefacto excede su SLA.
+- `not_initialized`: proceso registrado sin artefacto requerido todavia.
+- `unknown`: proceso configurado sin artefacto durable disponible.
+
+Para procesos futuros, agregar una entrada en `config/operations.yaml` y preferir que el comando emita JSON con `status`, `generated_at`, `outputs`, `warnings` y `errors`/conteos. No publicar secretos, stdout completo ni logs crudos en los artefactos operativos.
 
 
 ## 12) Generar señales y alertas
@@ -327,7 +371,7 @@ Archivos generados:
    - `https://jcval94.github.io/ytb_history/`
 5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
 
-El workflow de Pages construye `build-analytics` → `build-nlp-features` → `generate-alerts` → `build-decision-layer` → `build-model-intelligence` → `build-topic-intelligence` → `generate-creative-packages` → `generate-weekly-brief` → `build-pages-dashboard` y publica únicamente el artefacto `site/` (incluye tab Creative).
+El workflow de Pages construye `build-analytics` → `build-nlp-features` → `generate-alerts` → `build-decision-layer` → `build-model-intelligence` → `build-topic-intelligence` → `generate-creative-packages` → `generate-weekly-brief` → `build-operations` → `build-pages-dashboard` y publica únicamente el artefacto `site/` (incluye tabs Creative y Operations).
 
 ## 14) Tests
 

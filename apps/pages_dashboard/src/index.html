@@ -8,9 +8,14 @@
   </head>
   <body>
     <header class="header">
-      <div>
-        <h1>YouTube Intelligence Dashboard</h1>
-        <p id="generated-at">Generated: --</p>
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">YT</div>
+        <div>
+          <p class="brand-kicker">ytb_history intelligence</p>
+          <h1>YouTube Intelligence Dashboard</h1>
+          <p class="brand-subtitle">Monitoring intelligence for channels, videos, models, and operations.</p>
+          <p id="generated-at">Generated: --</p>
+        </div>
       </div>
       <div class="header-meta">
         <span id="data-status" class="badge">Data status: loading</span>
@@ -61,6 +66,7 @@
       <button data-tab="content-drivers">Content Drivers</button>
       <button data-tab="creative">Creative</button>
       <button data-tab="brief">Brief</button>
+      <button data-tab="operations">Operations</button>
     </nav>
 
     <main>
@@ -79,6 +85,7 @@
       <section id="tab-content-drivers" class="tab-panel"></section>
       <section id="tab-creative" class="tab-panel"></section>
       <section id="tab-brief" class="tab-panel"></section>
+      <section id="tab-operations" class="tab-panel"></section>
     </main>
 
     <script type="module" src="./assets/app.js"></script>

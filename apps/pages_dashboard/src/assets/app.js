@@ -55,7 +55,11 @@ const DATA_FILES = {
   latestProductionChecklist: "./data/latest_production_checklist.json",
   creativePackagesSummary: "./data/creative_packages_summary.json",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
-  latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"
+  latestWeeklyBriefHtml: "./data/latest_weekly_brief.html",
+  latestProcessStatus: "./data/latest_process_status.json",
+  processCatalog: "./data/process_catalog.json",
+  operationSummary: "./data/operation_summary.json",
+  dashboardImpactMatrix: "./data/dashboard_impact_matrix.json"
 };
 
 const state = {
@@ -76,6 +80,7 @@ init().catch((error) => {
 async function init() {
   bindTabs();
   bindFilters();
+  bindChartReplayControls();
 
   const manifest = await fetchJson(DATA_FILES.manifest, { required: true });
   state.data.manifest = manifest ?? {};
@@ -172,7 +177,8 @@ const TAB_RENDERERS = {
   nlp: () => renderNlp(),
   "content-drivers": () => renderContentDrivers(),
   creative: () => renderCreativePackages(),
-  brief: () => renderBrief()
+  brief: () => renderBrief(),
+  operations: () => renderOperations()
 };
 
 function activateTab(tab) {
@@ -461,6 +467,18 @@ function renderOverview(videos, channels, scores) {
   panel.querySelector("#ov-brief")?.append(briefWrap);
 }
 
+function bindChartReplayControls() {
+  document.addEventListener("click", (event) => {
+    const button = event.target instanceof Element ? event.target.closest("[data-chart-play]") : null;
+    if (!button) return;
+    const card = button.closest(".chart-card");
+    if (!card) return;
+    card.classList.remove("is-replaying");
+    void card.offsetWidth;
+    card.classList.add("is-replaying");
+  });
+}
+
 function renderOverviewCharts(panel, videos, scores) {
   const chartGrid = panel.querySelector("#ov-decision-lab");
   if (!chartGrid) return;
@@ -492,7 +510,10 @@ function renderOverviewCharts(panel, videos, scores) {
     subtitle: "Separates high-reach videos from high-quality-audience videos.",
     xLabel: "views_delta",
     yLabel: "engagement_rate",
-    formatY: formatPercent
+    formatY: formatPercent,
+    tooltipKeys: ["channel_name", "video_age_days", "duration_bucket", "alpha_score", "opportunity_score"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
   });
 
   renderScatterPlot(chartGrid.querySelector("#ov-opportunity-matrix"), getOpportunityMatrixRows(), {
@@ -504,7 +525,10 @@ function renderOverviewCharts(panel, videos, scores) {
     title: "Opportunity vs confidence",
     subtitle: "Prioritize the upper-right: strong score with enough evidence.",
     xLabel: "avg confidence",
-    yLabel: "avg decision"
+    yLabel: "avg decision",
+    tooltipKeys: ["action_type", "candidates_count", "recommended_focus"],
+    pointLabelKeys: ["recommended_focus", "action_type"],
+    maxPointLabels: 4
   });
 
   renderFunnel(chartGrid.querySelector("#ov-signal-funnel"), buildSignalFunnelSteps(), {
@@ -514,32 +538,67 @@ function renderOverviewCharts(panel, videos, scores) {
 }
 
 function renderVideos(videos) {
-  renderTable(document.querySelector("#tab-videos"), [
+  const panel = document.querySelector("#tab-videos");
+  if (!panel) return;
+  panel.innerHTML = `
+    <div id="videos-visuals" class="chart-grid"></div>
+    <div id="videos-table"></div>
+  `;
+  renderVideoCharts(panel.querySelector("#videos-visuals"), videos);
+  renderTable(panel.querySelector("#videos-table"), [
     "title", "channel_name", "views_delta", "engagement_rate", "video_age_days", "duration_bucket"
   ], videos, { initialSortKey: "views_delta", title: "Videos", pageSize: 25 });
 }
 
 function renderChannels(channels) {
-  renderTable(document.querySelector("#tab-channels"), [
+  const panel = document.querySelector("#tab-channels");
+  if (!panel) return;
+  panel.innerHTML = `
+    <div id="channels-visuals" class="chart-grid"></div>
+    <div id="channels-table"></div>
+  `;
+  renderChannelCharts(panel.querySelector("#channels-visuals"), channels);
+  renderTable(panel.querySelector("#channels-table"), [
     "channel_name", "total_views_delta", "avg_engagement_rate", "channel_momentum_score", "videos_tracked"
   ], channels, { initialSortKey: "total_views_delta", title: "Channels", pageSize: 10 });
 }
 
 function renderScores(scores) {
-  renderTable(document.querySelector("#tab-scores"), [
+  const panel = document.querySelector("#tab-scores");
+  if (!panel) return;
+  panel.innerHTML = `
+    <div id="scores-visuals" class="chart-grid"></div>
+    <div id="scores-table"></div>
+  `;
+  renderScoreCharts(panel.querySelector("#scores-visuals"), scores);
+  renderTable(panel.querySelector("#scores-table"), [
     "title", "channel_name", "alpha_score", "opportunity_score", "anomaly_score"
   ], scores, { initialSortKey: "alpha_score", title: "Scores", pageSize: 25 });
 }
 
 function renderAdvanced(advanced) {
-  renderTable(document.querySelector("#tab-advanced"), [
+  const panel = document.querySelector("#tab-advanced");
+  if (!panel) return;
+  panel.innerHTML = `
+    <div id="advanced-visuals" class="chart-grid"></div>
+    <div id="advanced-table"></div>
+  `;
+  renderAdvancedCharts(panel.querySelector("#advanced-visuals"), advanced);
+  renderTable(panel.querySelector("#advanced-table"), [
     "title", "short_term_success_score", "mid_term_success_score", "long_term_success_score", "trend_burst_score",
     "evergreen_score", "packaging_problem_score", "metric_confidence_score"
   ], advanced, { initialSortKey: "short_term_success_score", title: "Advanced", pageSize: 25 });
 }
 
 function renderTitles(titles) {
-  renderTable(document.querySelector("#tab-titles"), [
+  const panel = document.querySelector("#tab-titles");
+  if (!panel) return;
+  panel.innerHTML = `
+    <div id="titles-visuals" class="chart-grid"></div>
+    <div id="titles-table"></div>
+  `;
+  renderTitleCharts(panel.querySelector("#titles-visuals"), titles);
+  renderTable(panel.querySelector("#titles-table"), [
     "title", "has_number", "has_question", "has_ai_word", "has_finance_word", "views_delta"
   ], titles, { initialSortKey: "views_delta", title: "Titles", pageSize: 25 });
 }
@@ -556,7 +615,7 @@ function renderPeriods() {
       <option value="weekly">weekly</option>
       <option value="monthly">monthly</option>
     </select>
-    <div id="period-growth-line" class="chart-grid"></div>
+    <div id="period-growth-line" class="chart-grid chart-grid-wide"></div>
     <div id="period-video-table"></div>
     <div id="period-channel-table"></div>
   `;
@@ -717,7 +776,7 @@ function renderCreativePackages() {
     ["top_package_type", topPackageType]
   ].map(([k,v]) => `<article class="kpi-card"><h3>${escapeHtml(String(k))}</h3><p>${escapeHtml(String(v))}</p></article>`).join("");
 
-  panel.innerHTML = `<div class="kpi-grid">${cards}</div><div id="creative-filters"></div><div id="creative-tables"></div>`;
+  panel.innerHTML = `<div class="kpi-grid">${cards}</div><div id="creative-visuals" class="chart-grid"></div><div id="creative-filters"></div><div id="creative-tables"></div>`;
 
   const packageTypes = [...new Set(packages.map((r) => String(r.package_type || "")).filter(Boolean))].sort();
   const topics = [...new Set(packages.map((r) => String(r.topic || "")).filter(Boolean))].sort();
@@ -748,6 +807,8 @@ function renderCreativePackages() {
     const filteredOutlines = outlines.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
     const filteredOriginality = originality.filter((r) => pkgIds.has(String(r.creative_package_id || "")) && (!fStatus || r.originality_status === fStatus));
     const filteredChecklist = checklist.filter((r) => pkgIds.has(String(r.creative_package_id || "")));
+
+    renderCreativeCharts(panel.querySelector("#creative-visuals"), filteredPackages, filteredOriginality);
 
     const target = panel.querySelector("#creative-tables");
     target.innerHTML = '<div id="creative-packages"></div><div id="creative-titles"></div><div id="creative-hooks"></div><div id="creative-thumbs"></div><div id="creative-outlines"></div><div id="creative-originality"></div><div id="creative-checklist"></div>';
@@ -841,17 +902,99 @@ function renderBrief() {
   panel.innerHTML = "<p>No weekly brief generated yet</p>";
 }
 
+function renderOperations() {
+  const panel = document.querySelector("#tab-operations");
+  if (!panel) return;
+
+  const processPayload = state.data.latestProcessStatus || {};
+  const processes = Array.isArray(processPayload.processes) ? processPayload.processes : [];
+  const impactRows = tableRows("dashboardImpactMatrix");
+  const summary = state.data.operationSummary || {};
+
+  const cards = [
+    ["processes_total", summary.processes_total ?? processes.length],
+    ["healthy", summary.healthy_count ?? countByStatus(processes, "success")],
+    ["warnings", summary.warning_count ?? countByStatus(processes, "success_with_warnings")],
+    ["stale", summary.stale_count ?? countByStatus(processes, "stale")],
+    ["failed", summary.failed_count ?? countByStatus(processes, "failed")],
+    ["not_initialized", summary.not_initialized_count ?? countByStatus(processes, "not_initialized")]
+  ].map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(String(label))}</h3><p>${escapeHtml(String(value ?? "--"))}</p></article>`).join("");
+
+  panel.innerHTML = `
+    <h2>Operations</h2>
+    <div class="kpi-grid">${cards}</div>
+    <div id="operations-visuals" class="chart-grid"></div>
+    <section class="filters operations-filters">
+      <select id="operations-domain-filter"><option value="">All domains</option>${selectOptions(uniqueValues(processes, "domain"))}</select>
+      <select id="operations-status-filter"><option value="">All statuses</option>${selectOptions(uniqueValues(processes, "status"))}</select>
+      <select id="operations-tab-filter"><option value="">All impacted tabs</option>${selectOptions(uniqueTabValues(processes))}</select>
+      <button id="operations-reset-filters" type="button">Reset filters</button>
+    </section>
+    <div id="operations-stale-list"></div>
+    <div id="operations-process-table"></div>
+    <div id="operations-artifact-table"></div>
+    <div id="operations-impact-table"></div>
+  `;
+
+  renderOperationsCharts(panel.querySelector("#operations-visuals"), processes, summary);
+
+  const redraw = () => {
+    const domain = panel.querySelector("#operations-domain-filter")?.value || "";
+    const status = panel.querySelector("#operations-status-filter")?.value || "";
+    const tab = panel.querySelector("#operations-tab-filter")?.value || "";
+    const filtered = processes.filter((process) => {
+      if (domain && process.domain !== domain) return false;
+      if (status && process.status !== status) return false;
+      if (tab && !(process.dashboard_tabs || []).includes(tab)) return false;
+      return true;
+    });
+    const processIds = new Set(filtered.map((process) => process.process_id));
+    const filteredImpact = impactRows.filter((row) => processIds.has(row.process_id) && (!tab || row.dashboard_tab === tab));
+    const artifactRows = filtered.flatMap(operationArtifactRows);
+    const staleRows = filtered.filter((process) => ["stale", "failed", "success_with_warnings", "not_initialized"].includes(process.status));
+
+    renderTable(panel.querySelector("#operations-stale-list"), [
+      "process_id", "name", "domain", "status", "base_status", "age_hours", "status_detail"
+    ], operationProcessRows(staleRows), { initialSortKey: "status", title: "Action queue", pageSize: 10 });
+
+    renderTable(panel.querySelector("#operations-process-table"), [
+      "process_id", "name", "domain", "process_type", "cadence", "status", "base_status", "last_run_at", "age_hours", "sla_hours", "dashboard_tabs", "depends_on"
+    ], operationProcessRows(filtered), { initialSortKey: "status", title: "Process status", pageSize: 25 });
+
+    renderTable(panel.querySelector("#operations-artifact-table"), [
+      "process_id", "artifact_path", "exists", "required", "status", "observed_at", "age_hours", "warnings_count", "errors_count", "failure_count"
+    ], artifactRows, { initialSortKey: "process_id", title: "Artifact trace", pageSize: 25 });
+
+    renderTable(panel.querySelector("#operations-impact-table"), [
+      "process_id", "name", "domain", "process_type", "cadence", "dashboard_tab", "impact_type", "status", "last_run_at", "is_stale"
+    ], filteredImpact, { initialSortKey: "dashboard_tab", title: "Dashboard impact matrix", pageSize: 25 });
+  };
+
+  ["#operations-domain-filter", "#operations-status-filter", "#operations-tab-filter"].forEach((selector) => {
+    panel.querySelector(selector)?.addEventListener("change", redraw);
+  });
+  panel.querySelector("#operations-reset-filters")?.addEventListener("click", () => {
+    ["#operations-domain-filter", "#operations-status-filter", "#operations-tab-filter"].forEach((selector) => {
+      const node = panel.querySelector(selector);
+      if (node) node.value = "";
+    });
+    redraw();
+  });
+  redraw();
+}
+
 function renderDataQuality(quality, advanced) {
   const panel = document.querySelector("#tab-data-quality");
   if (!panel) return;
   const lowConfidenceRows = advanced.filter((row) => asNumber(row.metric_confidence_score) < 50);
 
-  panel.innerHTML = '<div id="dq-metric"></div><div id="dq-low"></div>';
-  renderTable(document.querySelector("#dq-metric"), [
+  panel.innerHTML = '<div id="dq-visuals" class="chart-grid"></div><div id="dq-metric"></div><div id="dq-low"></div>';
+  renderDataQualityCharts(panel.querySelector("#dq-visuals"), quality, advanced);
+  renderTable(panel.querySelector("#dq-metric"), [
     "video_id", "channel_id", "short_term_eligible", "mid_term_eligible", "long_term_eligible", "confidence_reason"
   ], quality, { initialSortKey: "video_id", title: "metric eligibility", pageSize: 25 });
 
-  renderTable(document.querySelector("#dq-low"), [
+  renderTable(panel.querySelector("#dq-low"), [
     "title", "channel_name", "metric_confidence_score"
   ], lowConfidenceRows, { initialSortKey: "metric_confidence_score", title: "low confidence rows", pageSize: 25 });
 }
@@ -997,8 +1140,14 @@ function renderModels() {
 function renderTopics() {
   const panel = document.querySelector("#tab-topics");
   if (!panel) return;
+  const opportunities = tableRows("latestTopicOpportunities");
+  const metrics = tableRows("latestTopicMetrics");
+  const patterns = tableRows("latestTitlePatternMetrics");
+  const keywords = tableRows("latestKeywordMetrics");
+
   panel.innerHTML = `
     <h2>Topics</h2>
+    <div id="topics-visuals" class="chart-grid"></div>
     <div id="topics-opportunities"></div>
     <div id="topics-metrics"></div>
     <div id="topics-patterns"></div>
@@ -1006,16 +1155,17 @@ function renderTopics() {
   `;
   renderTable(panel.querySelector("#topics-opportunities"), [
     "topic", "opportunity_type", "topic_opportunity_score", "topic_saturation_score", "topic_velocity_score", "recommended_action"
-  ], tableRows("latestTopicOpportunities"), { initialSortKey: "topic_opportunity_score", title: "Topic opportunities", pageSize: 10 });
+  ], opportunities, { initialSortKey: "topic_opportunity_score", title: "Topic opportunities", pageSize: 10 });
   renderTable(panel.querySelector("#topics-metrics"), [
     "topic", "video_count", "channel_count", "avg_views_delta", "avg_engagement_rate", "topic_velocity_score", "topic_saturation_score", "topic_opportunity_score"
-  ], tableRows("latestTopicMetrics"), { initialSortKey: "topic_opportunity_score", title: "Topic metrics", pageSize: 25 });
+  ], metrics, { initialSortKey: "topic_opportunity_score", title: "Topic metrics", pageSize: 25 });
   renderTable(panel.querySelector("#topics-patterns"), [
     "title_pattern", "video_count", "avg_views_delta", "avg_engagement_rate", "title_pattern_success_score", "example_titles"
-  ], tableRows("latestTitlePatternMetrics"), { initialSortKey: "title_pattern_success_score", title: "Title pattern metrics", pageSize: 25 });
+  ], patterns, { initialSortKey: "title_pattern_success_score", title: "Title pattern metrics", pageSize: 25 });
   renderTable(panel.querySelector("#topics-keywords"), [
     "keyword", "semantic_group", "video_count", "total_views_delta", "avg_engagement_rate", "top_video_title"
-  ], tableRows("latestKeywordMetrics"), { initialSortKey: "video_count", title: "Keyword metrics", pageSize: 25 });
+  ], keywords, { initialSortKey: "video_count", title: "Keyword metrics", pageSize: 25 });
+  renderTopicCharts(panel.querySelector("#topics-visuals"), opportunities, metrics, patterns);
 }
 
 function renderNlp() {
@@ -1027,22 +1177,13 @@ function renderNlp() {
 
   panel.innerHTML = `
     <h2>NLP</h2>
-    <div id="nlp-clusters-bars"></div>
+    <div id="nlp-visuals" class="chart-grid"></div>
     <div id="nlp-clusters-table"></div>
     <div id="nlp-video-semantic"></div>
     <div id="nlp-title-features"></div>
   `;
 
-  const byCluster = Object.values(videos.reduce((acc, row) => {
-    const key = row.semantic_cluster_label || "unknown";
-    if (!acc[key]) acc[key] = { label: key, views_delta: 0 };
-    acc[key].views_delta += asNumber(row.views_delta);
-    return acc;
-  }, {})).sort((a, b) => b.views_delta - a.views_delta).slice(0, 10);
-  const barsWrap = panel.querySelector("#nlp-clusters-bars");
-  if (barsWrap) {
-    renderHorizontalBars(barsWrap, byCluster, { labelKey: "label", valueKey: "views_delta", title: "Top semantic clusters by views_delta" });
-  }
+  renderNlpCharts(panel.querySelector("#nlp-visuals"), videos);
   renderTable(panel.querySelector("#nlp-clusters-table"), [
     "video_id", "semantic_cluster_id", "semantic_cluster_size", "semantic_cluster_label", "cluster_top_terms"
   ], clusters, { initialSortKey: "semantic_cluster_size", title: "Semantic clusters", pageSize: 25 });
@@ -1066,7 +1207,7 @@ function renderContentDrivers() {
   panel.innerHTML = `
     <h2>Content Drivers</h2>
     <p class="warning">Estas importancias son predictivas, no causales.</p>
-    <div id="cd-visuals" class="chart-grid"></div>
+    <div id="cd-visuals" class="chart-grid chart-grid-focus"></div>
     <div id="cd-leaderboard"></div>
     <div id="cd-importance"></div>
     <div id="cd-direction"></div>
@@ -1093,6 +1234,317 @@ function renderContentDrivers() {
   if (reportNode) {
     reportNode.innerHTML = reportHtml.trim() || "<p>No content driver report available.</p>";
   }
+}
+
+function renderVideoCharts(container, videos) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="videos-reach-map"></div>
+    <div id="videos-age-velocity"></div>
+  `;
+
+  renderScatterPlot(container.querySelector("#videos-reach-map"), videos, {
+    xKey: "views_delta",
+    yKey: "engagement_rate",
+    sizeKey: "views_per_day_since_upload",
+    colorKey: "duration_bucket",
+    labelKey: "title",
+    title: "Video reach vs engagement",
+    subtitle: "Highlights videos that combine growth with strong audience reaction.",
+    xLabel: "views_delta",
+    yLabel: "engagement_rate",
+    formatY: formatPercent,
+    tooltipKeys: ["channel_name", "video_age_days", "duration_bucket", "likes_delta", "comments_delta"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
+  });
+
+  renderScatterPlot(container.querySelector("#videos-age-velocity"), videos, {
+    xKey: "video_age_days",
+    yKey: "views_per_day_since_upload",
+    sizeKey: "views_delta",
+    colorKey: "channel_name",
+    labelKey: "title",
+    title: "Freshness vs velocity",
+    subtitle: "Finds young videos earning attention faster than the catalog baseline.",
+    xLabel: "age days",
+    yLabel: "views per day",
+    tooltipKeys: ["channel_name", "upload_date", "duration_bucket", "views_delta"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 4
+  });
+}
+
+function renderChannelCharts(container, channels) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="channels-momentum-map"></div>
+    <div id="channels-format-mix"></div>
+  `;
+
+  renderScatterPlot(container.querySelector("#channels-momentum-map"), channels, {
+    xKey: "total_views_delta",
+    yKey: "avg_engagement_rate",
+    sizeKey: "videos_tracked",
+    colorKey: "channel_name",
+    labelKey: "channel_name",
+    title: "Channel growth vs engagement",
+    subtitle: "Separates volume leaders from channels with concentrated engagement.",
+    xLabel: "views_delta",
+    yLabel: "avg engagement",
+    formatY: formatPercent,
+    tooltipKeys: ["videos_tracked", "new_videos", "top_video_title", "top_video_views_delta"],
+    pointLabelKeys: ["channel_name"],
+    maxPointLabels: 5
+  });
+
+  const formatRows = [
+    { label: "shorts", value: sumRows(channels, "shorts_count") },
+    { label: "mid", value: sumRows(channels, "mid_count") },
+    { label: "long", value: sumRows(channels, "long_count") }
+  ];
+  renderHorizontalBars(container.querySelector("#channels-format-mix"), formatRows, {
+    labelKey: "label",
+    valueKey: "value",
+    title: "Tracked format mix",
+    subtitle: "Checks whether channel comparisons are driven by format mix.",
+  });
+}
+
+function renderScoreCharts(container, scores) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="scores-opportunity-map"></div>
+    <div id="scores-anomaly-bars"></div>
+  `;
+
+  renderScatterPlot(container.querySelector("#scores-opportunity-map"), scores, {
+    xKey: "alpha_score",
+    yKey: "opportunity_score",
+    sizeKey: "anomaly_score",
+    colorKey: "channel_name",
+    labelKey: "title",
+    title: "Alpha vs opportunity",
+    subtitle: "Upper-right videos are strong candidates for deeper review.",
+    xLabel: "alpha_score",
+    yLabel: "opportunity_score",
+    tooltipKeys: ["channel_name", "views_delta", "engagement_rate", "relative_growth_percentile"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
+  });
+
+  const anomalyRows = sortRows(scores, "anomaly_score", "desc").slice(0, 7);
+  renderHorizontalBars(container.querySelector("#scores-anomaly-bars"), anomalyRows, {
+    labelKey: "title",
+    valueKey: "anomaly_score",
+    title: "Highest anomaly scores",
+    subtitle: "Use this as a QA list before acting on surprising score spikes."
+  });
+}
+
+function renderAdvancedCharts(container, advanced) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="advanced-confidence-map"></div>
+    <div id="advanced-horizon-bars"></div>
+  `;
+
+  const enriched = advanced.map((row) => ({
+    ...row,
+    best_success_score: Math.max(
+      asNumber(row.short_term_success_score),
+      asNumber(row.mid_term_success_score),
+      asNumber(row.long_term_success_score),
+      asNumber(row.overall_success_score)
+    )
+  }));
+  renderScatterPlot(container.querySelector("#advanced-confidence-map"), enriched, {
+    xKey: "metric_confidence_score",
+    yKey: "best_success_score",
+    sizeKey: "trend_burst_score",
+    colorKey: "success_horizon_label",
+    labelKey: "title",
+    title: "Success score vs confidence",
+    subtitle: "Prioritize high-success videos that also have reliable measurement.",
+    xLabel: "metric confidence",
+    yLabel: "best success score",
+    tooltipKeys: ["channel_name", "views_delta", "duration_bucket", "evergreen_score", "packaging_problem_score"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
+  });
+
+  const horizonRows = groupCountRows(advanced, "success_horizon_label", "horizon", "count").slice(0, 7);
+  renderHorizontalBars(container.querySelector("#advanced-horizon-bars"), horizonRows, {
+    labelKey: "horizon",
+    valueKey: "count",
+    title: "Success horizon distribution",
+    subtitle: "Shows whether current opportunities are near-term or compounding bets."
+  });
+}
+
+function renderTitleCharts(container, titles) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="titles-pattern-bars"></div>
+    <div id="titles-length-map"></div>
+  `;
+
+  const featureRows = [
+    { label: "number", value: countTruthyRows(titles, "has_number") },
+    { label: "question", value: countTruthyRows(titles, "has_question") },
+    { label: "colon", value: countTruthyRows(titles, "has_colon") },
+    { label: "promise", value: countTruthyRows(titles, "has_promise_word") },
+    { label: "urgency", value: countTruthyRows(titles, "has_urgency_word") },
+    { label: "AI word", value: countTruthyRows(titles, "has_ai_word") },
+    { label: "finance word", value: countTruthyRows(titles, "has_finance_word") }
+  ];
+  renderHorizontalBars(container.querySelector("#titles-pattern-bars"), featureRows, {
+    labelKey: "label",
+    valueKey: "value",
+    title: "Title signal frequency",
+    subtitle: "Keeps copy-pattern interpretation grounded in actual counts."
+  });
+
+  renderScatterPlot(container.querySelector("#titles-length-map"), titles, {
+    xKey: "title_word_count",
+    yKey: "views_delta",
+    sizeKey: "engagement_rate",
+    colorKey: "channel_name",
+    labelKey: "title",
+    title: "Title length vs growth",
+    subtitle: "Labels only standout titles so the shape stays readable.",
+    xLabel: "word count",
+    yLabel: "views_delta",
+    tooltipKeys: ["channel_name", "has_number", "has_question", "has_ai_word", "engagement_rate"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
+  });
+}
+
+function renderDataQualityCharts(container, quality, advanced) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="dq-confidence-gauge"></div>
+    <div id="dq-reason-bars"></div>
+  `;
+
+  const avgConfidence = averageRows(advanced, "metric_confidence_score");
+  renderGauge(container.querySelector("#dq-confidence-gauge"), {
+    title: "Average metric confidence",
+    value: avgConfidence,
+    max: 100,
+    label: `${formatNumber(advanced.filter((row) => asNumber(row.metric_confidence_score) < 50).length)} low-confidence rows`,
+    subtitle: "Flags whether the current run is strong enough for decisions."
+  });
+
+  const reasonRows = groupCountRows(quality, "confidence_reason", "reason", "count").slice(0, 7);
+  renderHorizontalBars(container.querySelector("#dq-reason-bars"), reasonRows, {
+    labelKey: "reason",
+    valueKey: "count",
+    title: "Confidence blockers",
+    subtitle: "Shows why rows are excluded or downgraded."
+  });
+}
+
+function renderTopicCharts(container, opportunities, metrics, patterns) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="topics-opportunity-map"></div>
+    <div id="topics-pattern-bars"></div>
+  `;
+
+  renderScatterPlot(container.querySelector("#topics-opportunity-map"), metrics, {
+    xKey: "topic_saturation_score",
+    yKey: "topic_velocity_score",
+    sizeKey: "topic_opportunity_score",
+    colorKey: "top_channel_name",
+    labelKey: "topic",
+    title: "Topic velocity vs saturation",
+    subtitle: "Upper-left tends to mean fast topics with more room to move.",
+    xLabel: "saturation",
+    yLabel: "velocity",
+    tooltipKeys: ["video_count", "channel_count", "avg_views_delta", "top_video_title", "top_channel_name"],
+    pointLabelKeys: ["topic"],
+    maxPointLabels: 5
+  });
+
+  const patternRows = sortRows(patterns, "title_pattern_success_score", "desc").slice(0, 7);
+  renderHorizontalBars(container.querySelector("#topics-pattern-bars"), patternRows, {
+    labelKey: "title_pattern",
+    valueKey: "title_pattern_success_score",
+    title: "Best title patterns",
+    subtitle: opportunities.length ? "Compared against current topic opportunities." : "Uses historical title-pattern signal only."
+  });
+}
+
+function renderNlpCharts(container, videos) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="nlp-clusters-bars"></div>
+    <div id="nlp-semantic-map"></div>
+  `;
+
+  const byCluster = Object.values(videos.reduce((acc, row) => {
+    const key = row.semantic_cluster_label || "unknown";
+    if (!acc[key]) acc[key] = { label: key, views_delta: 0 };
+    acc[key].views_delta += asNumber(row.views_delta);
+    return acc;
+  }, {})).sort((a, b) => b.views_delta - a.views_delta).slice(0, 10);
+  renderHorizontalBars(container.querySelector("#nlp-clusters-bars"), byCluster, {
+    labelKey: "label",
+    valueKey: "views_delta",
+    title: "Top semantic clusters by views_delta",
+    subtitle: "Capped width keeps this readable without stretching across the page."
+  });
+
+  renderScatterPlot(container.querySelector("#nlp-semantic-map"), videos, {
+    xKey: "ai_semantic_score",
+    yKey: "views_delta",
+    sizeKey: "dominant_semantic_score",
+    colorKey: "semantic_cluster_label",
+    labelKey: "title",
+    title: "AI semantic signal vs growth",
+    subtitle: "Tests whether a theme score is associated with actual traction.",
+    xLabel: "AI semantic score",
+    yLabel: "views_delta",
+    tooltipKeys: ["channel_name", "semantic_cluster_label", "finance_semantic_score", "productivity_semantic_score"],
+    pointLabelKeys: ["title"],
+    maxPointLabels: 5
+  });
+}
+
+function renderCreativeCharts(container, packages, originality) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="creative-execution-map"></div>
+    <div id="creative-risk-bars"></div>
+  `;
+
+  renderScatterPlot(container.querySelector("#creative-execution-map"), packages, {
+    xKey: "originality_score",
+    yKey: "creative_execution_score",
+    sizeKey: "confidence_score",
+    colorKey: "package_type",
+    labelKey: "topic",
+    title: "Originality vs execution",
+    subtitle: "Prioritize ideas with high execution value and low copy risk.",
+    xLabel: "originality",
+    yLabel: "execution score",
+    tooltipKeys: ["source_channel_name", "source_title", "package_type", "recommended_timeframe", "copy_risk_score"],
+    pointLabelKeys: ["topic", "source_title"],
+    maxPointLabels: 5
+  });
+
+  const riskRows = sortRows(originality, "copy_risk_score", "desc").slice(0, 7).map((row) => ({
+    ...row,
+    label: row.candidate_type || row.creative_package_id || "--"
+  }));
+  renderHorizontalBars(container.querySelector("#creative-risk-bars"), riskRows, {
+    labelKey: "label",
+    valueKey: "copy_risk_score",
+    title: "Highest copy-risk checks",
+    subtitle: "Review these before using titles, hooks, or thumbnails."
+  });
 }
 
 function renderBriefScorecard(container, keyMetrics) {
@@ -1132,7 +1584,10 @@ function renderBriefCharts(container, keyMetrics, actions, content, alerts) {
     title: "Action priority vs confidence",
     subtitle: "Upper-right actions are stronger bets; bubble size estimates expected value.",
     xLabel: "confidence",
-    yLabel: "decision_score"
+    yLabel: "decision_score",
+    tooltipKeys: ["priority", "action_type", "reason", "expected_value_score"],
+    pointLabelKeys: ["recommended_action", "action_type"],
+    maxPointLabels: 4
   });
 
   const opportunityRows = content.map((row) => ({
@@ -1149,7 +1604,10 @@ function renderBriefCharts(container, keyMetrics, actions, content, alerts) {
     title: "Content opportunity bubbles",
     subtitle: "Evidence on X, urgency on Y, size by impact signal.",
     xLabel: "evidence_score",
-    yLabel: "timeframe urgency"
+    yLabel: "timeframe urgency",
+    tooltipKeys: ["content_strategy", "recommended_timeframe", "why_it_matters"],
+    pointLabelKeys: ["source_title", "content_strategy"],
+    maxPointLabels: 4
   });
 
   const actionTotal = asNumber(keyMetrics.total_action_candidates) || actions.length;
@@ -1262,7 +1720,10 @@ function renderContentDriverCharts(container, leaderboard, importance, direction
     title: "Driver direction map",
     subtitle: "Compares low-bin and high-bin predictions; direction remains predictive.",
     xLabel: "low bin prediction",
-    yLabel: "high bin prediction"
+    yLabel: "high bin prediction",
+    tooltipKeys: ["target", "model_family", "feature_group", "direction_score", "direction_method"],
+    pointLabelKeys: ["feature"],
+    maxPointLabels: 5
   });
 
   const modelRows = leaderboard.map((row) => ({
@@ -1274,6 +1735,145 @@ function renderContentDriverCharts(container, leaderboard, importance, direction
     valueKey: "spearman_corr",
     title: "Model quality by target"
   });
+}
+
+function renderOperationsCharts(container, processes, summary) {
+  if (!container) return;
+  container.innerHTML = `
+    <div id="operations-health-gauge"></div>
+    <div id="operations-status-bars"></div>
+    <div id="operations-domain-bars"></div>
+    <div id="operations-age-bars"></div>
+  `;
+
+  const total = processes.length || asNumber(summary.processes_total);
+  const healthy = asNumber(summary.healthy_count ?? countByStatus(processes, "success"));
+  renderGauge(container.querySelector("#operations-health-gauge"), {
+    title: "Operations health",
+    value: total ? (healthy / total) * 100 : 0,
+    max: 100,
+    label: `${formatNumber(healthy)} / ${formatNumber(total)} healthy`,
+    subtitle: "Durable process telemetry status."
+  });
+
+  const statusCounts = summary.status_counts && typeof summary.status_counts === "object"
+    ? summary.status_counts
+    : processes.reduce((acc, process) => {
+        const key = process.status || "unknown";
+        acc[key] = (acc[key] || 0) + 1;
+        return acc;
+      }, {});
+  const statusRows = Object.entries(statusCounts)
+    .map(([status, count]) => ({ status, count: asNumber(count) }))
+    .sort((a, b) => b.count - a.count);
+  renderHorizontalBars(container.querySelector("#operations-status-bars"), statusRows, {
+    labelKey: "status",
+    valueKey: "count",
+    title: "Process status mix",
+    subtitle: "Normalized states across configured workflows and CLI jobs."
+  });
+
+  const domainRows = groupCountRows(processes, "domain", "domain", "count").slice(0, 10);
+  renderHorizontalBars(container.querySelector("#operations-domain-bars"), domainRows, {
+    labelKey: "domain",
+    valueKey: "count",
+    title: "Processes by domain",
+    subtitle: "Operational ownership surface."
+  });
+
+  const ageRows = processes
+    .filter((process) => process.age_hours !== null && process.age_hours !== undefined)
+    .map((process) => ({ label: process.process_id, age_hours: asNumber(process.age_hours) }))
+    .sort((a, b) => b.age_hours - a.age_hours)
+    .slice(0, 10);
+  renderHorizontalBars(container.querySelector("#operations-age-bars"), ageRows, {
+    labelKey: "label",
+    valueKey: "age_hours",
+    title: "Oldest durable artifacts",
+    subtitle: "A quick stale-risk scan by process age.",
+    formatValue: (value) => `${formatNumber(value)}h`
+  });
+}
+
+function operationProcessRows(processes) {
+  return processes.map((process) => ({
+    process_id: process.process_id || "",
+    name: process.name || "",
+    domain: process.domain || "",
+    process_type: process.process_type || "",
+    cadence: process.cadence || "",
+    status: process.status || "unknown",
+    base_status: process.base_status || "",
+    last_run_at: process.last_run_at || "",
+    age_hours: process.age_hours ?? "",
+    sla_hours: process.sla_hours ?? "",
+    dashboard_tabs: joinList(process.dashboard_tabs),
+    depends_on: joinList(process.depends_on),
+    status_detail: process.status_detail || ""
+  }));
+}
+
+function operationArtifactRows(process) {
+  const artifacts = Array.isArray(process.artifacts) ? process.artifacts : [];
+  return artifacts.map((artifact) => ({
+    process_id: process.process_id || "",
+    artifact_path: artifact.resolved_path || artifact.path || "",
+    exists: String(Boolean(artifact.exists)),
+    required: String(Boolean(artifact.required)),
+    status: artifact.status || "unknown",
+    observed_at: artifact.observed_at_iso || "",
+    age_hours: artifact.age_hours ?? "",
+    warnings_count: artifact.warnings_count ?? 0,
+    errors_count: artifact.errors_count ?? 0,
+    failure_count: artifact.failure_count ?? 0
+  }));
+}
+
+function uniqueValues(rows, key) {
+  return [...new Set(rows.map((row) => row?.[key]).filter(Boolean))].sort();
+}
+
+function uniqueTabValues(processes) {
+  return [...new Set(processes.flatMap((process) => Array.isArray(process.dashboard_tabs) ? process.dashboard_tabs : []))]
+    .filter(Boolean)
+    .sort();
+}
+
+function selectOptions(values) {
+  return values.map((value) => `<option value="${escapeHtml(String(value))}">${escapeHtml(String(value))}</option>`).join("");
+}
+
+function joinList(value) {
+  return Array.isArray(value) ? value.join(", ") : "";
+}
+
+function countByStatus(processes, status) {
+  return processes.filter((process) => process.status === status).length;
+}
+
+function sumRows(rows, key) {
+  return rows.reduce((total, row) => total + asNumber(row?.[key]), 0);
+}
+
+function averageRows(rows, key) {
+  const values = rows.map((row) => asNumber(row?.[key])).filter((value) => Number.isFinite(value));
+  if (!values.length) return 0;
+  return values.reduce((total, value) => total + value, 0) / values.length;
+}
+
+function countTruthyRows(rows, key) {
+  return rows.filter((row) => isTruthy(row?.[key])).length;
+}
+
+function groupCountRows(rows, sourceKey, labelKey, valueKey) {
+  const counts = rows.reduce((acc, row) => {
+    const label = String(row?.[sourceKey] || "unknown");
+    acc[label] = (acc[label] || 0) + 1;
+    return acc;
+  }, {});
+  return Object.entries(counts)
+    .map(([label, count]) => ({ [labelKey]: label, [valueKey]: count }))
+    .sort((a, b) => asNumber(b[valueKey]) - asNumber(a[valueKey]));
 }
 
 function getOpportunityMatrixRows() {

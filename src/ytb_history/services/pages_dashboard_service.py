@@ -50,6 +50,7 @@ CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_script_outlines", "creative_packages/latest_script_outlines.csv"),
     ("latest_originality_checks", "creative_packages/latest_originality_checks.csv"),
     ("latest_production_checklist", "creative_packages/latest_production_checklist.csv"),
+    ("dashboard_impact_matrix", "operations/dashboard_impact_matrix.csv"),
 )
 
 JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
@@ -62,6 +63,9 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_model_readiness_diagnostics", "modeling/latest_model_readiness_diagnostics.json"),
     ("latest_training_gap_report", "modeling/latest_training_gap_report.json"),
     ("creative_packages_summary", "creative_packages/creative_packages_summary.json"),
+    ("latest_process_status", "operations/latest_process_status.json"),
+    ("process_catalog", "operations/process_catalog.json"),
+    ("operation_summary", "operations/operation_summary.json"),
 )
 
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
@@ -457,10 +461,13 @@ def _payload_row_count(payload: dict[str, Any]) -> int:
     rows = payload.get("rows")
     if isinstance(rows, list):
         return len(rows)
+    processes = payload.get("processes")
+    if isinstance(processes, list):
+        return len(processes)
     alerts = payload.get("alerts")
     if isinstance(alerts, list):
         return len(alerts)
-    for key in ("row_count", "alert_count", "total_alerts"):
+    for key in ("row_count", "alert_count", "total_alerts", "processes_total", "dashboard_impact_rows"):
         value = payload.get(key)
         if isinstance(value, int):
             return value

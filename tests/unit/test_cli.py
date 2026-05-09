@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -213,6 +213,27 @@ def test_cli_build_pages_dashboard_does_not_call_api_flows(monkeypatch, capsys) 
 
     assert code == 0
     assert json.loads(out)["status"] == "success"
+
+
+def test_cli_build_operations_prints_json(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_build_operations(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "operations_dir": kwargs["data_dir"]}
+
+    monkeypatch.setattr(cli, "build_operations", _fake_build_operations)
+    monkeypatch.setattr(
+        "sys.argv",
+        ["ytb_history", "build-operations", "--data-dir", "custom/data", "--config", "custom/operations.yaml", "--repo-dir", "/repo"],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["operations_dir"] == "custom/data"
+    assert calls == [{"data_dir": "custom/data", "config_path": "custom/operations.yaml", "repo_dir": "/repo"}]
 
 
 def test_cli_generate_alerts_prints_json(monkeypatch, capsys) -> None:

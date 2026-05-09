@@ -18,14 +18,17 @@ on:
       - data/model_intelligence/**
       - data/topic_intelligence/**
       - data/nlp_features/**
+      - data/operations/**
       - apps/pages_dashboard/**
       - src/ytb_history/services/pages_dashboard_service.py
+      - src/ytb_history/services/operations_service.py
       - src/ytb_history/services/alerts_service.py
       - src/ytb_history/services/brief_service.py
       - src/ytb_history/services/creative_packages_service.py
       - src/ytb_history/services/model_intelligence_service.py
       - src/ytb_history/services/topic_intelligence_service.py
       - src/ytb_history/services/nlp_feature_service.py
+      - config/operations.yaml
       - src/ytb_history/cli.py
       - .github/workflows/pages.yml
 
@@ -96,6 +99,9 @@ jobs:
 
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief
+
+      - name: Build operations telemetry
+        run: python -m ytb_history.cli build-operations
 
       - name: Build pages dashboard
         run: python -m ytb_history.cli build-pages-dashboard

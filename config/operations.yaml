@@ -1,0 +1,801 @@
+schema_version: operations_registry_v1
+defaults:
+  timezone: UTC
+  status_contract:
+    required_json_keys:
+      - status
+      - generated_at
+      - warnings
+  new_process_rule: "Every new CLI or workflow process must be registered here and should emit a JSON report with status, generated_at, outputs, warnings, and errors/counts."
+
+processes:
+  - process_id: github_ci
+    name: CI
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/ci.yml
+    cadence: push_or_pull_request
+    sla_hours: 168
+    command: GitHub Actions workflow
+    inputs:
+      - src/**
+      - tests/**
+      - apps/pages_dashboard/**
+    outputs: []
+    secrets_required: []
+    expected_artifacts: []
+    dashboard_tabs:
+      - Operations
+    depends_on: []
+
+  - process_id: github_monitor
+    name: YouTube Monitor
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/monitor.yml
+    cadence: daily
+    sla_hours: 36
+    command: GitHub Actions workflow
+    inputs:
+      - config/channels.py
+      - config/settings.yaml
+    outputs:
+      - data/reports/**
+      - data/snapshots/**
+      - data/deltas/**
+      - data/analytics/**
+      - data/operations/**
+    secrets_required:
+      - YOUTUBE_API_KEY
+    expected_artifacts:
+      - path: reports/dt=*/run=*/run_summary.json
+        type: json
+        timestamp_field: execution_date
+        required: true
+      - path: reports/dt=*/run=*/quota_report.json
+        type: json
+        timestamp_field: execution_date
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Scores
+      - Advanced
+      - Titles
+      - Periods
+      - Alerts
+      - Data Quality
+      - Operations
+    depends_on: []
+
+  - process_id: github_pages
+    name: Deploy Dashboard to GitHub Pages
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/pages.yml
+    cadence: daily_or_on_data_change
+    sla_hours: 36
+    command: GitHub Actions workflow
+    inputs:
+      - data/**
+      - apps/pages_dashboard/**
+    outputs:
+      - site/**
+    secrets_required: []
+    expected_artifacts:
+      - path: site/data/site_manifest.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Scores
+      - Advanced
+      - Titles
+      - Periods
+      - Alerts
+      - Data Quality
+      - Models
+      - Topics
+      - NLP
+      - Content Drivers
+      - Creative
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_pages_dashboard
+
+  - process_id: github_train_model
+    name: Train Model Suite
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/train_model.yml
+    cadence: twice_weekly
+    sla_hours: 120
+    command: GitHub Actions workflow
+    inputs:
+      - data/modeling/**
+      - data/analytics/**
+      - data/nlp_features/**
+      - data/topic_intelligence/**
+    outputs:
+      - data/model_registry/**
+      - data/model_reports/**
+      - data/modeling/**
+    secrets_required: []
+    expected_artifacts:
+      - path: model_registry/latest_model_manifest.json
+        type: json
+        timestamp_field: created_at
+        required: false
+      - path: modeling/latest_model_readiness_diagnostics.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Models
+      - Content Drivers
+      - Operations
+    depends_on:
+      - cli_build_model_dataset
+      - cli_analyze_model_readiness
+      - cli_build_nlp_features
+      - cli_build_topic_intelligence
+
+  - process_id: github_predict_model
+    name: Predict With Model Artifact
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/predict_model.yml
+    cadence: after_model_training
+    sla_hours: 120
+    command: GitHub Actions workflow
+    inputs:
+      - data/model_registry/latest_model_manifest.json
+      - data/modeling/**
+    outputs:
+      - data/predictions/**
+    secrets_required: []
+    expected_artifacts:
+      - path: predictions/prediction_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Models
+      - Operations
+    depends_on:
+      - github_train_model
+
+  - process_id: cli_run
+    name: Daily YouTube pipeline
+    domain: ingestion
+    process_type: cli
+    cadence: daily
+    sla_hours: 36
+    command: python -m ytb_history.cli run
+    inputs:
+      - config/channels.py
+      - config/settings.yaml
+      - YOUTUBE_API_KEY
+    outputs:
+      - data/reports/**
+      - data/snapshots/**
+      - data/deltas/**
+      - data/state/**
+    secrets_required:
+      - YOUTUBE_API_KEY
+    expected_artifacts:
+      - path: reports/dt=*/run=*/run_summary.json
+        type: json
+        timestamp_field: execution_date
+        required: true
+      - path: reports/dt=*/run=*/quota_report.json
+        type: json
+        timestamp_field: execution_date
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Scores
+      - Advanced
+      - Titles
+      - Periods
+      - Alerts
+      - Data Quality
+      - Operations
+    depends_on: []
+
+  - process_id: cli_dry_run
+    name: Quota dry run
+    domain: ingestion
+    process_type: cli
+    cadence: before_monitor_run
+    sla_hours: 36
+    command: python -m ytb_history.cli dry-run
+    inputs:
+      - config/settings.yaml
+      - data/state/tracked_videos_catalog.jsonl
+    outputs: []
+    secrets_required: []
+    expected_artifacts: []
+    dashboard_tabs:
+      - Operations
+    depends_on: []
+
+  - process_id: cli_validate_latest
+    name: Validate latest run
+    domain: validation
+    process_type: cli
+    cadence: after_monitor_run
+    sla_hours: 36
+    command: python -m ytb_history.cli validate-latest
+    inputs:
+      - data/reports/**
+      - data/snapshots/**
+      - data/deltas/**
+    outputs: []
+    secrets_required: []
+    expected_artifacts: []
+    dashboard_tabs:
+      - Data Quality
+      - Operations
+    depends_on:
+      - cli_run
+
+  - process_id: cli_export_latest
+    name: Export latest run
+    domain: analytics
+    process_type: cli
+    cadence: after_monitor_run
+    sla_hours: 36
+    command: python -m ytb_history.cli export-latest
+    inputs:
+      - data/reports/**
+      - data/snapshots/**
+      - data/deltas/**
+    outputs:
+      - data/exports/**
+    secrets_required: []
+    expected_artifacts:
+      - path: exports/dt=*/run=*/export_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Periods
+      - Operations
+    depends_on:
+      - cli_run
+
+  - process_id: cli_build_analytics
+    name: Build analytics data mart
+    domain: analytics
+    process_type: cli
+    cadence: after_export
+    sla_hours: 36
+    command: python -m ytb_history.cli build-analytics
+    inputs:
+      - data/exports/**
+    outputs:
+      - data/analytics/**
+    secrets_required: []
+    expected_artifacts:
+      - path: analytics/latest/analytics_manifest.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+      - path: analytics/latest/dashboard_index.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Scores
+      - Advanced
+      - Titles
+      - Periods
+      - Data Quality
+      - Operations
+    depends_on:
+      - cli_export_latest
+
+  - process_id: cli_build_nlp_features
+    name: Build NLP feature layer
+    domain: intelligence
+    process_type: cli
+    cadence: after_analytics
+    sla_hours: 36
+    command: python -m ytb_history.cli build-nlp-features
+    inputs:
+      - data/analytics/**
+    outputs:
+      - data/nlp_features/**
+    secrets_required: []
+    expected_artifacts:
+      - path: nlp_features/nlp_feature_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - NLP
+      - Topics
+      - Content Drivers
+      - Creative
+      - Operations
+    depends_on:
+      - cli_build_analytics
+
+  - process_id: cli_generate_alerts
+    name: Generate alerts and signals
+    domain: intelligence
+    process_type: cli
+    cadence: after_analytics
+    sla_hours: 36
+    command: python -m ytb_history.cli generate-alerts
+    inputs:
+      - data/analytics/**
+    outputs:
+      - data/signals/**
+      - data/alerts/**
+    secrets_required: []
+    expected_artifacts:
+      - path: alerts/alert_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+      - path: signals/signal_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Alerts
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_analytics
+
+  - process_id: cli_build_decision_layer
+    name: Build decision intelligence layer
+    domain: intelligence
+    process_type: cli
+    cadence: after_alerts
+    sla_hours: 36
+    command: python -m ytb_history.cli build-decision-layer
+    inputs:
+      - data/alerts/**
+      - data/signals/**
+      - data/analytics/**
+    outputs:
+      - data/decision/**
+    secrets_required: []
+    expected_artifacts:
+      - path: decision/decision_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Alerts
+      - Brief
+      - Creative
+      - Operations
+    depends_on:
+      - cli_generate_alerts
+
+  - process_id: cli_build_model_intelligence
+    name: Build model intelligence
+    domain: ml
+    process_type: cli
+    cadence: after_decision_layer
+    sla_hours: 120
+    command: python -m ytb_history.cli build-model-intelligence
+    inputs:
+      - data/model_registry/**
+      - data/predictions/**
+      - data/decision/**
+    outputs:
+      - data/model_intelligence/**
+    secrets_required: []
+    expected_artifacts:
+      - path: model_intelligence/model_intelligence_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Models
+      - Content Drivers
+      - Creative
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_decision_layer
+
+  - process_id: cli_build_topic_intelligence
+    name: Build topic intelligence
+    domain: intelligence
+    process_type: cli
+    cadence: after_nlp_features
+    sla_hours: 36
+    command: python -m ytb_history.cli build-topic-intelligence
+    inputs:
+      - data/nlp_features/**
+      - data/analytics/**
+    outputs:
+      - data/topic_intelligence/**
+    secrets_required: []
+    expected_artifacts:
+      - path: topic_intelligence/topic_intelligence_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Topics
+      - Content Drivers
+      - Creative
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_nlp_features
+
+  - process_id: cli_generate_creative_packages
+    name: Generate creative packages
+    domain: creative
+    process_type: cli
+    cadence: after_intelligence_layers
+    sla_hours: 36
+    command: python -m ytb_history.cli generate-creative-packages
+    inputs:
+      - data/decision/**
+      - data/topic_intelligence/**
+      - data/model_intelligence/**
+      - data/transcripts/**
+    outputs:
+      - data/creative_packages/**
+    secrets_required: []
+    expected_artifacts:
+      - path: creative_packages/creative_packages_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Creative
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_decision_layer
+      - cli_build_topic_intelligence
+
+  - process_id: cli_generate_weekly_brief
+    name: Generate weekly brief
+    domain: reporting
+    process_type: cli
+    cadence: after_intelligence_layers
+    sla_hours: 36
+    command: python -m ytb_history.cli generate-weekly-brief
+    inputs:
+      - data/analytics/**
+      - data/alerts/**
+      - data/decision/**
+      - data/creative_packages/**
+    outputs:
+      - data/briefs/**
+    secrets_required: []
+    expected_artifacts:
+      - path: briefs/latest_weekly_brief.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Overview
+      - Brief
+      - Operations
+    depends_on:
+      - cli_generate_creative_packages
+
+  - process_id: cli_build_pages_dashboard
+    name: Build pages dashboard
+    domain: publishing
+    process_type: cli
+    cadence: after_operations
+    sla_hours: 36
+    command: python -m ytb_history.cli build-pages-dashboard
+    inputs:
+      - data/analytics/**
+      - data/alerts/**
+      - data/operations/**
+      - apps/pages_dashboard/**
+    outputs:
+      - site/**
+    secrets_required: []
+    expected_artifacts:
+      - path: site/data/site_manifest.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Overview
+      - Videos
+      - Channels
+      - Scores
+      - Advanced
+      - Titles
+      - Periods
+      - Alerts
+      - Data Quality
+      - Models
+      - Topics
+      - NLP
+      - Content Drivers
+      - Creative
+      - Brief
+      - Operations
+    depends_on:
+      - cli_build_operations
+
+  - process_id: cli_build_operations
+    name: Build operations telemetry
+    domain: operations
+    process_type: cli
+    cadence: after_pipeline_or_before_pages
+    sla_hours: 36
+    command: python -m ytb_history.cli build-operations
+    inputs:
+      - config/operations.yaml
+      - .github/workflows/**
+      - data/**
+    outputs:
+      - data/operations/**
+    secrets_required: []
+    expected_artifacts:
+      - path: operations/latest_process_status.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Operations
+    depends_on: []
+
+  - process_id: cli_build_model_dataset
+    name: Build model dataset
+    domain: ml
+    process_type: cli
+    cadence: before_model_training
+    sla_hours: 120
+    command: python -m ytb_history.cli build-model-dataset
+    inputs:
+      - data/analytics/**
+      - data/nlp_features/**
+      - data/topic_intelligence/**
+    outputs:
+      - data/modeling/**
+    secrets_required: []
+    expected_artifacts:
+      - path: modeling/latest_training_gap_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Models
+      - Operations
+    depends_on:
+      - cli_build_analytics
+
+  - process_id: cli_analyze_model_readiness
+    name: Analyze model readiness
+    domain: ml
+    process_type: cli
+    cadence: before_model_training
+    sla_hours: 120
+    command: python -m ytb_history.cli analyze-model-readiness
+    inputs:
+      - data/modeling/**
+    outputs:
+      - data/modeling/latest_model_readiness_diagnostics.json
+      - data/modeling/latest_target_coverage_report.csv
+    secrets_required: []
+    expected_artifacts:
+      - path: modeling/latest_model_readiness_diagnostics.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Models
+      - Operations
+    depends_on:
+      - cli_build_model_dataset
+
+  - process_id: cli_train_model_suite
+    name: Train model suite
+    domain: ml
+    process_type: cli
+    cadence: twice_weekly
+    sla_hours: 120
+    command: python -m ytb_history.cli train-model-suite
+    inputs:
+      - data/modeling/**
+      - config/modeling.yaml
+    outputs:
+      - build/model_artifact/**
+      - data/model_reports/**
+    secrets_required: []
+    expected_artifacts:
+      - path: model_reports/latest_model_leaderboard.csv
+        type: csv
+        required: false
+      - path: model_reports/latest_model_suite_report.html
+        type: text
+        required: false
+    dashboard_tabs:
+      - Models
+      - Operations
+    depends_on:
+      - cli_analyze_model_readiness
+
+  - process_id: cli_predict_with_model_artifact
+    name: Predict with model artifact
+    domain: ml
+    process_type: cli
+    cadence: after_model_training
+    sla_hours: 120
+    command: python -m ytb_history.cli predict-with-model-artifact
+    inputs:
+      - data/model_registry/latest_model_manifest.json
+      - downloaded_model/**
+    outputs:
+      - data/predictions/**
+    secrets_required: []
+    expected_artifacts:
+      - path: predictions/prediction_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Models
+      - Operations
+    depends_on:
+      - cli_train_model_suite
+
+  - process_id: cli_select_transcription_candidates
+    name: Select transcription candidates
+    domain: transcription
+    process_type: cli
+    cadence: daily_after_monitor
+    sla_hours: 36
+    command: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
+    inputs:
+      - data/analytics/**
+      - data/transcripts/transcript_registry.jsonl
+    outputs:
+      - data/transcripts/transcript_queue.jsonl
+      - data/transcripts/transcript_selection_report.json
+    secrets_required: []
+    expected_artifacts:
+      - path: transcripts/transcript_selection_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_build_analytics
+
+  - process_id: cli_transcribe_selected_videos
+    name: Transcribe selected videos
+    domain: transcription
+    process_type: cli
+    cadence: local_manual_or_scheduled
+    sla_hours: 168
+    command: python -m ytb_history.cli transcribe-selected-videos
+    inputs:
+      - data/transcripts/transcript_queue.jsonl
+      - data/audio_sources/**
+      - OPENAI_API_KEY
+    outputs:
+      - data/transcripts/**
+    secrets_required:
+      - OPENAI_API_KEY
+    expected_artifacts:
+      - path: transcripts/transcription_run_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_select_transcription_candidates
+
+  - process_id: cli_generate_transcript_insights
+    name: Generate transcript insights
+    domain: transcription
+    process_type: cli
+    cadence: local_manual_or_scheduled
+    sla_hours: 168
+    command: python -m ytb_history.cli generate-transcript-insights
+    inputs:
+      - data/transcripts/videos/**
+      - OPENAI_API_KEY
+    outputs:
+      - data/transcripts/transcript_insights_run_report.json
+      - data/transcripts/transcript_insights_index.jsonl
+    secrets_required:
+      - OPENAI_API_KEY
+    expected_artifacts:
+      - path: transcripts/transcript_insights_run_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_transcribe_selected_videos
+
+  - process_id: cli_transcript_registry_report
+    name: Transcript registry report
+    domain: transcription
+    process_type: cli
+    cadence: local_manual_or_scheduled
+    sla_hours: 168
+    command: python -m ytb_history.cli transcript-registry-report
+    inputs:
+      - data/transcripts/transcript_registry.jsonl
+    outputs:
+      - stdout_json
+    secrets_required: []
+    expected_artifacts:
+      - path: transcripts/transcript_registry.jsonl
+        type: text
+        required: false
+    dashboard_tabs:
+      - Operations
+    depends_on:
+      - cli_transcribe_selected_videos
+
+  - process_id: local_transcription_automation
+    name: Local transcription automation
+    domain: local
+    process_type: local_automation
+    cadence: monday_thursday_with_startup_catchup
+    sla_hours: 120
+    command: scripts/run_local_transcription_automation.ps1
+    inputs:
+      - data/transcripts/**
+      - data/audio_sources/**
+      - OPENAI_API_KEY
+    outputs:
+      - build/local_automation/latest_run_report.json
+      - build/local_automation/schedule_state.json
+    secrets_required:
+      - OPENAI_API_KEY
+    expected_artifacts:
+      - path: build/local_automation/latest_run_report.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: build/local_automation/schedule_state.json
+        base: repo
+        type: json
+        timestamp_field: updated_at
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_select_transcription_candidates

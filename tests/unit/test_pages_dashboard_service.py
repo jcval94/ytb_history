@@ -384,7 +384,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief", "Operations"]:
         assert label in index_html
 
 
@@ -492,6 +492,33 @@ def _prepare_creative_packages(data_dir: Path) -> None:
     _write_text(data_dir / "creative_packages" / "creative_packages_summary.json", json.dumps({"total_packages": 1}, ensure_ascii=False))
 
 
+def _prepare_operations(data_dir: Path) -> None:
+    _write_text(
+        data_dir / "operations" / "latest_process_status.json",
+        json.dumps(
+            {
+                "schema_version": "operations_process_status_v1",
+                "generated_at": "2026-04-28T00:00:00+00:00",
+                "processes": [{"process_id": "cli_run", "status": "success", "dashboard_tabs": ["Overview"]}],
+            },
+            ensure_ascii=False,
+        ),
+    )
+    _write_text(
+        data_dir / "operations" / "process_catalog.json",
+        json.dumps({"schema_version": "operations_process_catalog_v1", "processes": [{"process_id": "cli_run"}]}, ensure_ascii=False),
+    )
+    _write_text(
+        data_dir / "operations" / "operation_summary.json",
+        json.dumps({"schema_version": "operations_summary_v1", "processes_total": 1, "status_counts": {"success": 1}}, ensure_ascii=False),
+    )
+    _write_text(
+        data_dir / "operations" / "dashboard_impact_matrix.csv",
+        "process_id,name,domain,process_type,cadence,dashboard_tab,impact_type,status,last_run_at,is_stale\n"
+        "cli_run,Daily YouTube pipeline,ingestion,cli,daily,Overview,data_source,success,2026-04-28T00:00:00+00:00,False\n",
+    )
+
+
 def test_build_pages_dashboard_includes_creative_package_jsons(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"
@@ -522,3 +549,20 @@ def test_site_manifest_includes_creative_tables(tmp_path: Path) -> None:
     assert "latest_creative_packages" in manifest["tables"]
     assert "latest_title_candidates" in manifest["tables"]
     assert "creative_packages_summary" in manifest["tables"]
+
+
+def test_build_pages_dashboard_includes_operations_outputs(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_operations(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_process_status.json").exists()
+    assert (site_dir / "data" / "process_catalog.json").exists()
+    assert (site_dir / "data" / "operation_summary.json").exists()
+    assert (site_dir / "data" / "dashboard_impact_matrix.json").exists()
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert "latest_process_status" in manifest["tables"]
+    assert "dashboard_impact_matrix" in manifest["tables"]

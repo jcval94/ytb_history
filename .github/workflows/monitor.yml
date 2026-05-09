@@ -92,6 +92,9 @@ jobs:
       - name: Select transcription candidates
         run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 
+      - name: Build operations telemetry
+        run: python -m ytb_history.cli build-operations
+
       - name: Commit and push data changes
         run: |
           git config user.name "youtube-tracker-bot"

@@ -21,6 +21,7 @@ from ytb_history.services.model_training_service import train_baseline_model, tr
 from ytb_history.services.model_smoke_test_service import smoke_test_model_training
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services.nlp_feature_service import build_nlp_features
+from ytb_history.services.operations_service import build_operations
 from ytb_history.services.topic_intelligence_service import build_topic_intelligence
 from ytb_history.services.model_intelligence_service import build_model_intelligence
 from ytb_history.services.content_driver_model_service import train_content_driver_models
@@ -56,6 +57,11 @@ def build_parser() -> argparse.ArgumentParser:
     pages_parser = sub.add_parser("build-pages-dashboard", help="Build static dashboard data for GitHub Pages")
     pages_parser.add_argument("--data-dir", default="data")
     pages_parser.add_argument("--site-dir", default="site")
+
+    operations_parser = sub.add_parser("build-operations", help="Build versioned operations telemetry for dashboard monitoring")
+    operations_parser.add_argument("--data-dir", default="data")
+    operations_parser.add_argument("--config", default="config/operations.yaml")
+    operations_parser.add_argument("--repo-dir", default=".")
 
     alerts_parser = sub.add_parser("generate-alerts", help="Generate actionable signals and alerts")
     alerts_parser.add_argument("--data-dir", default="data")
@@ -189,6 +195,11 @@ def main() -> int:
 
     if args.command == "build-pages-dashboard":
         summary = build_pages_dashboard(data_dir=args.data_dir, site_dir=args.site_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "build-operations":
+        summary = build_operations(data_dir=args.data_dir, config_path=args.config, repo_dir=args.repo_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
