@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-08T10:53:32.581894+00:00",
+  "generated_at": "2026-05-09T05:07:05.057434+00:00",
   "limit": 10,
-  "candidates_considered": 1418,
+  "candidates_considered": 1498,
   "selected_count": 11,
   "selected_forced_count": 1,
   "selected_ranked_count": 10,
@@ -14,23 +14,25 @@
   ],
   "forced_channels_max_per_run": 50,
   "registry_existing_success_count": 0,
+  "persisted_transcript_success_count": 0,
+  "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 90,
+  "registry_existing_recent_failed_count": 93,
   "skipped_already_transcribed": 0,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 85,
+  "skipped_recent_failures": 88,
   "skipped_forced_already_transcribed": 0,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 18,
+  "skipped_forced_recent_failures": 19,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "PBJZdZSTGlE",
-    "YAA0iXJ9gCQ",
-    "9Gr2QjvSQ-I",
-    "54IzxU24YT0",
-    "ifa-F8OY0KY"
+    "2zOD6Q4hfFA",
+    "UEYBrtzl3wg",
+    "cH_ZScbZVEA",
+    "yHYYyV2Pdmk",
+    "HBezrmK2eEY"
   ],
   "warnings": []
 }
