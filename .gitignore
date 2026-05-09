@@ -17,4 +17,5 @@ pytest-cache-files-*/
 
 # Model training temporary artifacts (never commit binaries)
 build/model_artifact/
+build/local_automation/
 *.joblib

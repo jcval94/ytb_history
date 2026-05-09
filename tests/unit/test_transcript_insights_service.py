@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from ytb_history.services import transcript_insights_service
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 
 
@@ -46,8 +47,19 @@ def _seed_success_registry(tmp_path: Path, video_id: str = "v1", sha: str = "sha
 def test_skip_without_api_key(tmp_path: Path, monkeypatch) -> None:
     _seed_success_registry(tmp_path)
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.setattr(transcript_insights_service, "resolve_environment_variable", lambda _name: "")
     report = generate_transcript_insights(data_dir=tmp_path, limit=10)
     assert "skipped_missing_api_key" in report["warnings"]
+
+
+def test_uses_persistent_env_api_key_fallback(tmp_path: Path, monkeypatch) -> None:
+    _seed_success_registry(tmp_path)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.setattr(transcript_insights_service, "resolve_environment_variable", lambda _name: "persisted-key")
+    fake = FakeInsightsClient()
+    report = generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=fake)
+    assert report["generated"] == 1
+    assert fake.calls == 1
 
 
 def test_fake_client_generates_insights_and_writes_outputs(tmp_path: Path, monkeypatch) -> None:

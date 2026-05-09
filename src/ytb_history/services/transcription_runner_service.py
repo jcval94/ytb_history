@@ -22,6 +22,7 @@ from ytb_history.services.transcript_store_service import (
     update_transcript_registry,
     write_transcript_artifacts,
 )
+from ytb_history.utils.environment import resolve_environment_variable
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
@@ -128,6 +129,8 @@ def _classify_ytdlp_error(stderr: str) -> str:
     text = (stderr or "").lower()
     if "requested format is not available" in text:
         return "format_unavailable"
+    if "could not copy" in text and "cookie database" in text:
+        return "browser_cookie_access_error"
     if "ffmpeg" in text and any(token in text for token in ["not found", "is required", "not installed"]):
         return "tooling_missing"
     if any(token in text for token in ["sign in to confirm", "use --cookies", "cookies", "login required", "authentication"]):
@@ -149,7 +152,7 @@ def _resolve_ytdlp_command() -> list[str] | None:
 
 
 def _resolve_ffmpeg_location() -> str | None:
-    configured_path = os.getenv("YTDLP_FFMPEG_LOCATION", "").strip()
+    configured_path = resolve_environment_variable("YTDLP_FFMPEG_LOCATION")
     if configured_path:
         return configured_path
 
@@ -288,7 +291,7 @@ def transcribe_selected_videos(
     transcript_dir = root / "transcripts"
     queue_path = transcript_dir / "transcript_queue.jsonl"
 
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    api_key = resolve_environment_variable("OPENAI_API_KEY")
     if not api_key:
         report = {
             "generated_at": _now_iso(),
@@ -340,7 +343,9 @@ def transcribe_selected_videos(
     generated_cookies_file: str | None = None
     effective_cookies_file = ytdlp_cookies_file
     if not effective_cookies_file:
-        generated_cookies_file = _materialize_cookies_file_from_b64(ytdlp_cookies_b64=ytdlp_cookies_b64 or os.getenv("YTDLP_COOKIES_B64"))
+        generated_cookies_file = _materialize_cookies_file_from_b64(
+            ytdlp_cookies_b64=ytdlp_cookies_b64 or resolve_environment_variable("YTDLP_COOKIES_B64")
+        )
         effective_cookies_file = generated_cookies_file
 
     source_root = Path(audio_source_dir)
@@ -433,6 +438,8 @@ def transcribe_selected_videos(
                 elif allow_ytdlp_fallback and ytdlp_error:
                     if ytdlp_error_category == "auth_required":
                         status = "failed_audio_download_auth_required"
+                    elif ytdlp_error_category == "browser_cookie_access_error":
+                        status = "failed_audio_download_browser_cookie_access"
                     elif ytdlp_error_category == "video_unavailable":
                         status = "failed_audio_download_video_unavailable"
                     elif ytdlp_error_category == "network_or_rate_limit":

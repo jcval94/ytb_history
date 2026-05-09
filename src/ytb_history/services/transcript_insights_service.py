@@ -3,10 +3,11 @@
 from __future__ import annotations
 
 import json
-import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+from ytb_history.utils.environment import resolve_environment_variable
 
 TRANSCRIPT_INSIGHTS_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -141,7 +142,8 @@ def generate_transcript_insights(
     registry = _read_jsonl(transcript_root / "transcript_registry.jsonl")
     success_rows = [row for row in registry if str(row.get("status", "")) == "success"]
 
-    if not dry_run and not os.getenv("OPENAI_API_KEY", "").strip():
+    api_key = resolve_environment_variable("OPENAI_API_KEY")
+    if not dry_run and not api_key:
         report = {
             "generated_at": _now_iso(), "limit": limit, "processed": 0, "generated": 0, "cached": 0, "failed": 0,
             "warnings": ["skipped_missing_api_key"],
@@ -149,7 +151,7 @@ def generate_transcript_insights(
         (transcript_root / "transcript_insights_run_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         return report
 
-    client = insights_client or OpenAITranscriptInsightsClient(api_key=os.getenv("OPENAI_API_KEY", ""), model=model)
+    client = insights_client or OpenAITranscriptInsightsClient(api_key=api_key, model=model)
     processed = generated = cached = failed = 0
     warnings: list[str] = []
     index = _read_jsonl(transcript_root / "transcript_insights_index.jsonl")

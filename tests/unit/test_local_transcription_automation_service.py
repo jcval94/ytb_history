@@ -75,7 +75,7 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
         command_runner=_command_runner,
         pipeline_runner=lambda **kwargs: {"pipeline_kwargs": kwargs},
         candidate_selector=lambda **kwargs: {"candidate_kwargs": kwargs},
-        transcription_runner=lambda **kwargs: {"transcription_kwargs": kwargs},
+        transcription_runner=lambda **kwargs: {"transcribed_success": 1, "transcription_kwargs": kwargs},
         insights_generator=lambda **kwargs: {"insights_kwargs": kwargs},
         registry_report_builder=lambda **kwargs: {"registry_kwargs": kwargs},
     )
@@ -83,13 +83,13 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
     assert report["status"] == "success"
     assert commands == [
         ["git", "pull", "--rebase", "--autostash"],
-        ["git", "add", "data", "build/local_automation/latest_run_report.json"],
-        ["git", "status", "--porcelain", "--", "data", "build/local_automation/latest_run_report.json"],
-        ["git", "add", "build/local_automation/latest_run_report.json"],
+        ["git", "add", "data"],
+        ["git", "status", "--porcelain", "--", "data"],
         ["git", "commit", "-m", "Run local transcription automation"],
         ["git", "push"],
     ]
     assert report["git"]["has_changes"] is True
+    assert report["git"]["publishable_outputs"] is True
     assert report["steps"]["youtube_refresh"]["pipeline_kwargs"] == {
         "settings_path": str(tmp_path / "config" / "settings.yaml"),
         "data_dir": str(tmp_path / "data"),
@@ -108,7 +108,7 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
         skip_youtube_refresh=True,
         command_runner=_command_runner,
         candidate_selector=lambda **_kwargs: {},
-        transcription_runner=lambda **_kwargs: {},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 1},
         insights_generator=lambda **_kwargs: {},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -117,6 +117,38 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
     assert ["git", "commit", "-m", "Run local transcription automation"] not in commands
     assert ["git", "push"] not in commands
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
+    assert commands == [
+        ["git", "pull", "--rebase", "--autostash"],
+        ["git", "add", "data"],
+        ["git", "status", "--porcelain", "--", "data"],
+    ]
+
+
+def test_run_local_transcription_automation_skips_git_sync_without_publishable_outputs(tmp_path: Path) -> None:
+    commands: list[list[str]] = []
+
+    def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
+        commands.append(command)
+        return _completed(command)
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        skip_youtube_refresh=True,
+        command_runner=_command_runner,
+        candidate_selector=lambda **_kwargs: {},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "failed_audio_download": 2},
+        insights_generator=lambda **_kwargs: {"generated": 0},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["git"]["publishable_outputs"] is False
+    assert report["git"]["has_changes"] is False
+    assert report["warnings"] == ["git_sync_skipped_no_publishable_outputs"]
+    assert report["steps"]["git_add"] == {"skipped": True, "reason": "no_publishable_outputs"}
+    assert report["steps"]["git_status"] == {"skipped": True, "reason": "no_publishable_outputs"}
+    assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_publishable_outputs"}
+    assert report["steps"]["git_push"] == {"skipped": True, "reason": "no_publishable_outputs"}
+    assert commands == [["git", "pull", "--rebase", "--autostash"]]
 
 
 def test_run_local_transcription_automation_stops_when_git_pull_fails(tmp_path: Path) -> None:

@@ -518,3 +518,20 @@ ffmpeg -version
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
+
+## 22) Automatizacion Local De Transcripcion
+
+Para encadenar seleccion, transcripcion, insights y sincronizacion con Git desde tu entorno local en una sola corrida:
+
+```bash
+python -m ytb_history.cli run-local-transcription-automation \
+  --repo-dir . \
+  --data-dir data \
+  --skip-youtube-refresh \
+  --limit 10 \
+  --ytdlp-browser firefox
+```
+
+La automatizacion hace `git pull --rebase --autostash` al inicio y solo intenta `commit` + `push` cuando se generan resultados publicables nuevos de transcripcion o insights dentro de `data/`. El reporte operativo se guarda localmente en `build/local_automation/latest_run_report.json`, pero ya no se incluye en el commit automatico.
+
+Si `yt-dlp` reporta que no pudo copiar la base de cookies del navegador, normalmente hace falta cerrar Chrome/Edge por completo o exportar un `cookies.txt` fresco fuera del repositorio antes de reintentar la corrida.

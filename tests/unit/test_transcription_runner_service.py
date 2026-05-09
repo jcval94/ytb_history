@@ -38,11 +38,31 @@ def _write_queue(data_dir: Path, video_ids: list[str]) -> None:
 def test_missing_api_key_returns_skip(tmp_path: Path, monkeypatch) -> None:
     _write_queue(tmp_path, ["v1"])
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.setattr(transcription_runner_service, "resolve_environment_variable", lambda _name: "")
 
     report = transcribe_selected_videos(data_dir=tmp_path, limit=10, openai_client=FakeOpenAIClient())
 
     assert "skipped_missing_api_key" in report["warnings"]
     assert report["processed"] == 0
+
+
+def test_reads_api_key_from_windows_persistent_env_fallback(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    audio_dir = tmp_path / "audio_sources"
+    audio_dir.mkdir(parents=True, exist_ok=True)
+    (audio_dir / "v1.mp3").write_bytes(b"fake-audio")
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.setattr(
+        transcription_runner_service,
+        "resolve_environment_variable",
+        lambda name: "persisted-key" if name == "OPENAI_API_KEY" else "",
+    )
+
+    fake = FakeOpenAIClient()
+    report = transcribe_selected_videos(data_dir=tmp_path, limit=10, audio_source_dir=audio_dir, openai_client=fake)
+
+    assert report["transcribed_success"] == 1
+    assert len(fake.calls) == 1
 
 
 def test_transcribes_local_audio_and_updates_registry(tmp_path: Path, monkeypatch) -> None:
@@ -482,6 +502,27 @@ def test_reports_failed_audio_download_when_ytdlp_fallback_fails(tmp_path: Path,
     registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
     assert registry_rows[-1]["status"] == "failed_audio_download_network_or_rate_limit"
     assert registry_rows[-1]["error_category"] == "network_or_rate_limit"
+
+
+def test_reports_browser_cookie_access_errors_when_cookie_db_cannot_be_copied(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    def _fake_download(*, video_id: str, audio_source_dir: Path, **_kwargs):
+        return None, "yt_dlp_failed:code=1;stderr=Could not copy Chrome cookie database", "browser_cookie_access_error"
+
+    monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fake_download)
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=10,
+        audio_source_dir=tmp_path / "missing",
+        openai_client=FakeOpenAIClient(),
+    )
+
+    assert report["failed_audio_download"] == 1
+    registry_rows = [json.loads(line) for line in (tmp_path / "transcripts" / "transcript_registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    assert registry_rows[-1]["status"] == "failed_audio_download_browser_cookie_access"
+    assert registry_rows[-1]["error_category"] == "browser_cookie_access_error"
 
 
 def test_reports_sanitized_ytdlp_runtime_metadata(tmp_path: Path, monkeypatch) -> None:

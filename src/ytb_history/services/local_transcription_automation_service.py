@@ -71,6 +71,24 @@ def _git_has_staged_or_worktree_changes(status_report: JsonReport) -> bool:
     return bool(str(status_report.get("stdout", "")).strip())
 
 
+def _count_step_items(step_report: JsonReport, key: str) -> int:
+    value = step_report.get(key, 0)
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return 0
+
+
+def _has_publishable_transcription_outputs(report: JsonReport) -> bool:
+    steps = report.get("steps", {})
+    transcription_step = steps.get("transcription", {})
+    insights_step = steps.get("transcript_insights", {})
+    return (
+        _count_step_items(transcription_step, "transcribed_success") > 0
+        or _count_step_items(insights_step, "generated") > 0
+    )
+
+
 def run_local_transcription_automation(
     *,
     repo_dir: str | Path,
@@ -100,7 +118,6 @@ def run_local_transcription_automation(
     effective_settings_path = _resolve_under_repo(repo_root, settings_path)
     effective_audio_source_dir = _resolve_under_repo(repo_root, audio_source_dir)
     report_path = repo_root / "build" / "local_automation" / "latest_run_report.json"
-    report_relative_path = _as_repo_relative(repo_root, report_path)
     data_relative_path = _as_repo_relative(repo_root, effective_data_dir)
 
     report: JsonReport = {
@@ -151,9 +168,21 @@ def run_local_transcription_automation(
     report["steps"]["transcript_registry_report"] = registry_report_builder(data_dir=str(effective_data_dir))
 
     if not no_sync_git:
+        report["git"]["publishable_outputs"] = _has_publishable_transcription_outputs(report)
         _write_report(report_path, report)
+        if not report["git"]["publishable_outputs"]:
+            report["git"]["has_changes"] = False
+            report["git"]["commit_attempted"] = False
+            report["warnings"].append("git_sync_skipped_no_publishable_outputs")
+            report["steps"]["git_add"] = {"skipped": True, "reason": "no_publishable_outputs"}
+            report["steps"]["git_status"] = {"skipped": True, "reason": "no_publishable_outputs"}
+            report["steps"]["git_commit"] = {"skipped": True, "reason": "no_publishable_outputs"}
+            report["steps"]["git_push"] = {"skipped": True, "reason": "no_publishable_outputs"}
+            _write_report(report_path, report)
+            return report
+
         add_report = _run_command(
-            ["git", "add", data_relative_path, report_relative_path],
+            ["git", "add", data_relative_path],
             cwd=repo_root,
             command_runner=command_runner,
         )
@@ -166,7 +195,7 @@ def run_local_transcription_automation(
             return report
 
         status_report = _run_command(
-            ["git", "status", "--porcelain", "--", data_relative_path, report_relative_path],
+            ["git", "status", "--porcelain", "--", data_relative_path],
             cwd=repo_root,
             command_runner=command_runner,
         )
@@ -182,20 +211,6 @@ def run_local_transcription_automation(
         report["git"]["has_changes"] = has_changes
         report["git"]["commit_attempted"] = has_changes
         _write_report(report_path, report)
-
-        # Stage the report after writing the consolidated pre-commit state.
-        add_report_after_report_write = _run_command(
-            ["git", "add", report_relative_path],
-            cwd=repo_root,
-            command_runner=command_runner,
-        )
-        report["git"]["commands"].append(add_report_after_report_write)
-        report["steps"]["git_add_report"] = add_report_after_report_write
-        if not add_report_after_report_write["ok"]:
-            report["status"] = "failed"
-            report["warnings"].append("git_add_report_failed")
-            _write_report(report_path, report)
-            return report
 
         if has_changes:
             commit_report = _run_command(
@@ -221,6 +236,7 @@ def run_local_transcription_automation(
             report["steps"]["git_push"] = {"skipped": True, "reason": "no_changes"}
     else:
         report["steps"]["git_add"] = {"skipped": True, "reason": "no_sync_git"}
+        report["steps"]["git_status"] = {"skipped": True, "reason": "no_sync_git"}
         report["steps"]["git_commit"] = {"skipped": True, "reason": "no_sync_git"}
         report["steps"]["git_push"] = {"skipped": True, "reason": "no_sync_git"}
         _write_report(report_path, report)

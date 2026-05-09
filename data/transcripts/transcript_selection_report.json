@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-09T05:07:05.057434+00:00",
-  "limit": 10,
+  "generated_at": "2026-05-09T05:27:27.744663+00:00",
+  "limit": 3,
   "candidates_considered": 1498,
-  "selected_count": 11,
+  "selected_count": 4,
   "selected_forced_count": 1,
-  "selected_ranked_count": 10,
+  "selected_ranked_count": 3,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
@@ -31,8 +31,7 @@
     "2zOD6Q4hfFA",
     "UEYBrtzl3wg",
     "cH_ZScbZVEA",
-    "yHYYyV2Pdmk",
-    "HBezrmK2eEY"
+    "yHYYyV2Pdmk"
   ],
   "warnings": []
 }
