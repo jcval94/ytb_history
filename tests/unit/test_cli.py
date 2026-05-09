@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -759,3 +759,58 @@ def test_cli_generate_creative_packages_prints_json(monkeypatch, capsys) -> None
     assert payload["status"] == "success"
     assert payload["creative_packages_dir"] == "custom/data/creative_packages"
     assert payload["total_packages"] == 2
+
+
+def test_cli_run_local_transcription_automation_forwards_options(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_run_local_transcription_automation(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "limit": kwargs["limit"]}
+
+    monkeypatch.setattr(cli, "run_local_transcription_automation", _fake_run_local_transcription_automation)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "run-local-transcription-automation",
+            "--repo-dir",
+            "/repo",
+            "--data-dir",
+            "custom/data",
+            "--settings",
+            "custom/settings.yaml",
+            "--limit",
+            "4",
+            "--skip-youtube-refresh",
+            "--no-sync-git",
+            "--audio-source-dir",
+            "custom/audio",
+            "--ytdlp-cookies-file",
+            "cookies.txt",
+            "--ytdlp-browser",
+            "firefox",
+            "--ytdlp-extra-args",
+            "--force-ipv4 --socket-timeout 10",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "limit": 4}
+    assert calls == [
+        {
+            "repo_dir": "/repo",
+            "data_dir": "custom/data",
+            "settings_path": "custom/settings.yaml",
+            "limit": 4,
+            "skip_youtube_refresh": True,
+            "no_sync_git": True,
+            "audio_source_dir": "custom/audio",
+            "ytdlp_cookies_file": "cookies.txt",
+            "ytdlp_browser": "firefox",
+            "ytdlp_extra_args": ["--force-ipv4", "--socket-timeout", "10"],
+        }
+    ]
