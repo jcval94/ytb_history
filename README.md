@@ -395,15 +395,13 @@ Editar `config/settings.yaml`:
 
 ### Monitor (`.github/workflows/monitor.yml`)
 
-El monitor ejecuta la cadena de transcripción (`select-transcription-candidates` → `transcribe-selected-videos` → `generate-transcript-insights` → `transcript-registry-report`) antes de la capa de inteligencia/brief.
+GitHub Actions ya no ejecuta transcripción local ni pasos dependientes de `yt-dlp`, `ffmpeg`, cookies de navegador u `OPENAI_API_KEY`. La transcripción, sus insights y la regeneración del registro de transcripciones quedan bajo responsabilidad del equipo en un entorno local/controlado.
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `select-transcription-candidates`, `install yt-dlp`, `install ffmpeg`, `yt-dlp --version`, `ffmpeg -version`, `transcribe-selected-videos`, `generate-transcript-insights`, `transcript-registry-report`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
-- Usa `YOUTUBE_API_KEY` desde GitHub Secrets **solo** en el paso `run`.
-- Usa `OPENAI_API_KEY` en los pasos de transcripción/insights.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`.
+- Valida únicamente el secret `YOUTUBE_API_KEY` y lo usa desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
-- La transcripción es idempotente: si el top diario repite videos ya exitosos, se saltan y puede no generarse trabajo nuevo ese día.
 
 Configurar el secret en GitHub:
 1. `Settings` > `Secrets and variables` > `Actions`
@@ -411,38 +409,22 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-Para transcripción/insights:
-1. `Settings` > `Secrets and variables` > `Actions`
-2. `New repository secret`
-3. Name: `OPENAI_API_KEY`
-4. Value: tu API key de OpenAI
+### Transcripción local (responsabilidad del equipo)
 
-Para habilitar cookies de `yt-dlp` en CI (recomendado si aparecen `failed_audio_download_auth_required`):
-1. Exporta un `cookies.txt` vigente desde tu navegador/perfil autorizado.
-2. Codifica ese archivo en base64, por ejemplo: `base64 -w0 cookies.txt` en Linux.
-3. `Settings` > `Secrets and variables` > `Actions`
-4. `New repository secret`
-5. Name: `YTDLP_COOKIES_B64`
-6. Value: salida base64 del paso 2 (no el texto plano del `cookies.txt`).
-
-Rotación recomendada de `YTDLP_COOKIES_B64`:
-- Reemplazar el secret cuando expire la sesión/cookie o falle descarga por autenticación.
-- Rotar preventivamente (por ejemplo mensual) y después de cambios de contraseña o eventos de seguridad.
-- Validar el siguiente run de `monitor.yml`; si falta el secret, el workflow continúa con warning y fallback sin cookies.
-- Los errores `failed_audio_download_auth_required` quedan en cooldown de selección durante 7 días para evitar reprocesar los mismos videos en cada corrida; configura/rota `YTDLP_COOKIES_B64` antes de reintentar esos IDs.
-
-Opcionalmente, `monitor.yml` acepta `YTDLP_EXTRA_ARGS` desde GitHub Actions Variables o Secrets para pasar opciones adicionales a `yt-dlp` sin modificar el workflow. Ejemplo seguro para CI como **repository variable** (sin credenciales):
-
-```text
-YTDLP_EXTRA_ARGS=--sleep-requests 1 --sleep-interval 2 --max-sleep-interval 5
-```
-
-Si los argumentos incluyen credenciales (por ejemplo un proxy con usuario/password), guardarlos como **secret** y nunca commitearlos ni imprimirlos en logs.
+La transcripción ya no forma parte de `.github/workflows/monitor.yml`. Si el equipo necesita transcribir, generar insights o reconstruir el registro, debe ejecutar localmente los comandos correspondientes y gestionar de forma segura `OPENAI_API_KEY`, `yt-dlp`, `ffmpeg`, cookies y argumentos adicionales fuera de GitHub Actions.
 
 Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
 ```bash
 python -m pip install yt-dlp
 yt-dlp --version
+```
+
+Flujo local sugerido para mantener artefactos de transcripción/insights y registro:
+```bash
+python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
+python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
+python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10
+python -m ytb_history.cli transcript-registry-report --data-dir data
 ```
 
 El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
@@ -467,14 +449,7 @@ python -m ytb_history.cli transcribe-selected-videos \
   --ytdlp-extra-args "--proxy http://127.0.0.1:8080"
 ```
 
-Ejemplo CI (ruta de cookies inyectada por secret/file mount):
-```bash
-python -m ytb_history.cli transcribe-selected-videos \
-  --data-dir data \
-  --ytdlp-cookies-file "$YTDLP_COOKIES_FILE"
-```
-
-⚠️ **Seguridad**: nunca commitear `cookies.txt` ni credenciales derivadas. Mantener estos archivos fuera del repositorio y cargarlos desde secretos/variables de entorno en CI.
+⚠️ **Seguridad**: nunca commitear `cookies.txt` ni credenciales derivadas. Mantener estos archivos fuera del repositorio y gestionarlos únicamente en entornos locales/controlados.
 
 Además, instalar `ffmpeg` en el sistema y verificar disponibilidad en PATH:
 ```bash
@@ -498,7 +473,7 @@ ffmpeg -version
 - **canal no resoluble**: valida URL/ID del canal en `config/channels.py`.
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
 - **Errores de descarga en transcripción (`yt-dlp`)**:
-  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En CI, define o rota `YTDLP_COOKIES_B64` con el contenido vigente de `cookies.txt` codificado en base64; revisa `ytdlp_cookies_file_diagnostics`, `ytdlp_auth_required_despite_cookies` y `ytdlp_auth_required_circuit_open` para diferenciar un secret ausente/mal formado de una sesión expirada/no aceptada por YouTube. Estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
+  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En el entorno local/controlado, rota o reexporta `cookies.txt`; revisa `ytdlp_cookies_file_diagnostics`, `ytdlp_auth_required_despite_cookies` y `ytdlp_auth_required_circuit_open` para diferenciar cookies mal formadas de una sesión expirada/no aceptada por YouTube. Estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
   - `failed_audio_download_video_unavailable`: video privado/no disponible/restringido.
   - `failed_audio_download_network_or_rate_limit`: red inestable, timeout o rate limit (`429`).
   - `failed_audio_download`: fallback genérico cuando no se puede clasificar.
