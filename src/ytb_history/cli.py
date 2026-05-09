@@ -29,6 +29,7 @@ from ytb_history.services.validation_service import validate_latest_run
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
+from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -134,6 +135,18 @@ def build_parser() -> argparse.ArgumentParser:
     insights_parser.add_argument("--model", default="gpt-4o-mini")
     insights_parser.add_argument("--force", action="store_true")
     insights_parser.add_argument("--dry-run", action="store_true")
+
+    local_auto_parser = sub.add_parser("run-local-transcription-automation", help="Run local git, YouTube refresh, transcription, insights, and reporting automation")
+    local_auto_parser.add_argument("--repo-dir", required=True)
+    local_auto_parser.add_argument("--data-dir", default="data")
+    local_auto_parser.add_argument("--settings", default="config/settings.yaml")
+    local_auto_parser.add_argument("--limit", default=10, type=int)
+    local_auto_parser.add_argument("--skip-youtube-refresh", action="store_true")
+    local_auto_parser.add_argument("--no-sync-git", action="store_true")
+    local_auto_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    local_auto_parser.add_argument("--ytdlp-cookies-file")
+    local_auto_parser.add_argument("--ytdlp-browser")
+    local_auto_parser.add_argument("--ytdlp-extra-args")
 
     predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
     predict_parser.add_argument("--model-dir", required=True)
@@ -291,6 +304,23 @@ def main() -> int:
             force=args.force,
             dry_run=args.dry_run,
             model=args.model,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "run-local-transcription-automation":
+        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
+        summary = run_local_transcription_automation(
+            repo_dir=args.repo_dir,
+            data_dir=args.data_dir,
+            settings_path=args.settings,
+            limit=args.limit,
+            skip_youtube_refresh=args.skip_youtube_refresh,
+            no_sync_git=args.no_sync_git,
+            audio_source_dir=args.audio_source_dir,
+            ytdlp_cookies_file=args.ytdlp_cookies_file,
+            ytdlp_browser=args.ytdlp_browser,
+            ytdlp_extra_args=ytdlp_extra_args,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
