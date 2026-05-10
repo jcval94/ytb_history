@@ -566,3 +566,19 @@ def test_build_pages_dashboard_includes_operations_outputs(tmp_path: Path) -> No
     manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
     assert "latest_process_status" in manifest["tables"]
     assert "dashboard_impact_matrix" in manifest["tables"]
+
+
+def test_build_pages_dashboard_auto_builds_operations_when_missing(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    process_status = json.loads((site_dir / "data" / "latest_process_status.json").read_text(encoding="utf-8"))
+    operation_summary = json.loads((site_dir / "data" / "operation_summary.json").read_text(encoding="utf-8"))
+    process_ids = {process["process_id"] for process in process_status["processes"]}
+
+    assert len(process_status["processes"]) > 0
+    assert operation_summary["processes_total"] == len(process_status["processes"])
+    assert "cli_build_operations" in process_ids

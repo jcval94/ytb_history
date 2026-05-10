@@ -133,7 +133,7 @@ CHANNEL_URLS = [
     "https://www.youtube.com/@EsquizofreniaNatural",
     "https://www.youtube.com/@Monitorfantasma",
     "https://www.youtube.com/@dateunvlog",
-    "https://www.youtube.com/@clem/videos",
+    "https://www.youtube.com/@clem",
     "https://www.youtube.com/@betterideas",
     "https://www.youtube.com/@jomakaze",
     "https://www.youtube.com/@KenJee_ds",

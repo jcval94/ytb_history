@@ -153,6 +153,70 @@ def test_build_operations_marks_missing_required_artifact_not_initialized(tmp_pa
     assert process_status["processes"][0]["missing_required_artifacts"] == ["reports/missing.json"]
 
 
+def test_build_operations_reads_json_with_utf8_bom(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    config_path = tmp_path / "operations.yaml"
+    payload = {
+        "status": "success",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "warnings": [],
+        "errors": [],
+    }
+    artifact_path = data_dir / "reports" / "bom.json"
+    artifact_path.parent.mkdir(parents=True, exist_ok=True)
+    artifact_path.write_bytes(b"\xef\xbb\xbf" + json.dumps(payload).encode("utf-8"))
+    _write_registry(
+        config_path,
+        [
+            _process(
+                expected_artifacts=[
+                    {"path": "reports/bom.json", "type": "json", "timestamp_field": "generated_at", "required": True}
+                ],
+            )
+        ],
+    )
+
+    build_operations(data_dir=data_dir, config_path=config_path, repo_dir=tmp_path)
+    process_status = json.loads((data_dir / "operations" / "latest_process_status.json").read_text(encoding="utf-8"))
+
+    process = process_status["processes"][0]
+    assert process["status"] == "success"
+    assert process["errors_count"] == 0
+
+
+def test_build_operations_marks_missing_local_only_artifacts_skipped(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    config_path = tmp_path / "operations.yaml"
+    _write_registry(
+        config_path,
+        [
+            _process(
+                domain="local",
+                observability_scope="local_only",
+                expected_artifacts=[
+                    {
+                        "path": "build/local_automation/schedule_state.json",
+                        "base": "repo",
+                        "type": "json",
+                        "timestamp_field": "updated_at",
+                        "required": False,
+                    }
+                ],
+            )
+        ],
+    )
+
+    build_operations(data_dir=data_dir, config_path=config_path, repo_dir=tmp_path)
+    process_status = json.loads((data_dir / "operations" / "latest_process_status.json").read_text(encoding="utf-8"))
+
+    process = process_status["processes"][0]
+    assert process["observability_scope"] == "local_only"
+    assert process["status"] == "skipped"
+    assert process["base_status"] == "skipped"
+    assert process["missing_required_artifacts"] == []
+    assert "Local-only artifacts" in process["status_detail"]
+
+
 def test_build_operations_writes_latest_and_snapshot_outputs(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     config_path = tmp_path / "operations.yaml"

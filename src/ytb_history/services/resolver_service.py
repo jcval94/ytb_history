@@ -24,6 +24,13 @@ def normalize_channel_url(channel_url: str) -> str:
     path = parsed.path.rstrip("/")
     if not path:
         raise ValueError(f"Invalid YouTube channel URL: {channel_url}")
+    if path.startswith("/@"):
+        handle = path.split("/", maxsplit=2)[1]
+        path = f"/{handle}"
+    elif path.startswith("/channel/"):
+        parts = path.split("/")
+        if len(parts) >= 3 and parts[2]:
+            path = f"/channel/{parts[2]}"
 
     return f"https://www.youtube.com{path}"
 

@@ -44,6 +44,8 @@ def test_pages_workflow_build_order() -> None:
     brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
     operations_pos = content.find("python -m ytb_history.cli build-operations")
     pages_pos = content.find("python -m ytb_history.cli build-pages-dashboard")
+    operations_refresh_pos = content.find("python -m ytb_history.cli build-operations", operations_pos + 1)
+    pages_refresh_pos = content.find("python -m ytb_history.cli build-pages-dashboard", pages_pos + 1)
     assert analytics_pos != -1
     assert nlp_pos != -1
     assert alerts_pos != -1
@@ -54,7 +56,24 @@ def test_pages_workflow_build_order() -> None:
     assert brief_pos != -1
     assert operations_pos != -1
     assert pages_pos != -1
-    assert analytics_pos < nlp_pos < alerts_pos < decision_pos < model_int_pos < topic_pos < creative_pos < brief_pos < operations_pos < pages_pos
+    assert operations_refresh_pos != -1
+    assert pages_refresh_pos != -1
+    assert content.count("python -m ytb_history.cli build-operations") == 2
+    assert content.count("python -m ytb_history.cli build-pages-dashboard") == 2
+    assert (
+        analytics_pos
+        < nlp_pos
+        < alerts_pos
+        < decision_pos
+        < model_int_pos
+        < topic_pos
+        < creative_pos
+        < brief_pos
+        < operations_pos
+        < pages_pos
+        < operations_refresh_pos
+        < pages_refresh_pos
+    )
 
 
 def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:

@@ -771,6 +771,7 @@ processes:
     name: Local transcription automation
     domain: local
     process_type: local_automation
+    observability_scope: local_only
     cadence: monday_thursday_with_startup_catchup
     sla_hours: 120
     command: scripts/run_local_transcription_automation.ps1

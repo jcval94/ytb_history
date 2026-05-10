@@ -164,3 +164,11 @@ def test_run_local_transcription_automation_stops_when_git_pull_fails(tmp_path: 
     assert report["status"] == "failed"
     assert report["warnings"] == ["git_pull_failed"]
     assert "youtube_refresh" not in report["steps"]
+
+
+def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:
+    content = Path("scripts/run_local_transcription_automation.ps1").read_text(encoding="utf-8")
+
+    assert "New-Object System.Text.UTF8Encoding $false" in content
+    assert "[System.IO.File]::WriteAllText($statePath" in content
+    assert "ConvertTo-Json -Depth 5 | Set-Content -Path $statePath -Encoding UTF8" not in content

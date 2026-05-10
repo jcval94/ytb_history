@@ -106,6 +106,12 @@ jobs:
       - name: Build pages dashboard
         run: python -m ytb_history.cli build-pages-dashboard
 
+      - name: Refresh operations telemetry after dashboard build
+        run: python -m ytb_history.cli build-operations
+
+      - name: Rebuild pages dashboard with refreshed operations
+        run: python -m ytb_history.cli build-pages-dashboard
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

@@ -114,6 +114,26 @@ def test_normalize_trailing_slash(tmp_path) -> None:
     client.get_channel_by_handle.assert_called_once_with("MyHandle")
 
 
+def test_normalize_handle_subpath(tmp_path) -> None:
+    client = Mock()
+    client.get_channel_by_handle.return_value = _ok_response(
+        channel_id="UC_CLEM",
+        title="Clem",
+        uploads="UU_CLEM",
+    )
+    repo = ChannelRegistryRepo(tmp_path / "state" / "registry.jsonl")
+
+    records = resolver_service.resolve_channels(
+        ["https://www.youtube.com/@clem/videos"],
+        youtube_client=client,
+        channel_registry_repo=repo,
+    )
+
+    assert len(records) == 1
+    assert records[0].channel_url == "https://www.youtube.com/@clem"
+    client.get_channel_by_handle.assert_called_once_with("clem")
+
+
 def test_deduplicate_repeated_urls(tmp_path) -> None:
     client = Mock()
     client.get_channel_by_handle.return_value = _ok_response(
@@ -127,6 +147,7 @@ def test_deduplicate_repeated_urls(tmp_path) -> None:
         [
             "https://www.youtube.com/@dup",
             "https://www.youtube.com/@dup/",
+            "https://www.youtube.com/@dup/featured",
             "https://youtube.com/@dup",
         ],
         youtube_client=client,

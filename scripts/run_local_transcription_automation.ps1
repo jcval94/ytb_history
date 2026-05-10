@@ -115,7 +115,8 @@ try {
         repo_dir = $repoRoot
         limit = $Limit
     }
-    $newState | ConvertTo-Json -Depth 5 | Set-Content -Path $statePath -Encoding UTF8
+    $utf8NoBom = New-Object System.Text.UTF8Encoding $false
+    [System.IO.File]::WriteAllText($statePath, (($newState | ConvertTo-Json -Depth 5) + [Environment]::NewLine), $utf8NoBom)
 
     if ($exitCode -ne 0) {
         throw "Local transcription automation exited with code $exitCode."

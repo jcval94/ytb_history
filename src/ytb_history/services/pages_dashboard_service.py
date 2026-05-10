@@ -9,6 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.services.operations_service import build_operations
+
 CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_video_metrics", "analytics/latest/latest_video_metrics.csv"),
     ("latest_channel_metrics", "analytics/latest/latest_channel_metrics.csv"),
@@ -117,6 +119,8 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
 
     dashboard_index = _read_json_or_empty(dashboard_index_path, "dashboard_index", warnings)
     analytics_manifest = _read_json_or_empty(analytics_manifest_path, "analytics_manifest", warnings)
+
+    _ensure_operations_artifacts(data_root=data_root, warnings=warnings)
 
     files_written.append(_write_json(site_root, "data/dashboard_index.json", dashboard_index))
     files_written.append(_write_json(site_root, "data/analytics_manifest.json", analytics_manifest))
@@ -254,6 +258,58 @@ def _build_data_freshness(*, generated_at: str, data_root: Path) -> dict[str, An
         elif block_name == "ml_data_status" and state == "generation_error":
             warnings.append(f"{block_name}: Error real de generación o faltante inesperado.")
     return {"blocks": blocks, "warnings": warnings, "notices": notices}
+
+
+def _ensure_operations_artifacts(*, data_root: Path, warnings: list[str]) -> None:
+    if _operations_artifacts_ready(data_root):
+        return
+
+    try:
+        build_operations(data_dir=data_root, config_path="config/operations.yaml", repo_dir=".")
+    except Exception as exc:  # pragma: no cover - dashboard build should degrade gracefully.
+        warnings.append(f"Could not auto-build operations telemetry: {exc}")
+
+
+def _operations_artifacts_ready(data_root: Path) -> bool:
+    operations_root = data_root / "operations"
+    process_status = _read_json_mapping(operations_root / "latest_process_status.json")
+    process_catalog = _read_json_mapping(operations_root / "process_catalog.json")
+    operation_summary = _read_json_mapping(operations_root / "operation_summary.json")
+
+    processes = process_status.get("processes")
+    catalog_processes = process_catalog.get("processes")
+    processes_total = operation_summary.get("processes_total")
+    return (
+        isinstance(processes, list)
+        and len(processes) > 0
+        and isinstance(catalog_processes, list)
+        and len(catalog_processes) > 0
+        and isinstance(processes_total, int)
+        and processes_total > 0
+        and _csv_has_rows(operations_root / "dashboard_impact_matrix.csv")
+    )
+
+
+def _read_json_mapping(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8-sig") as handle:
+            payload = json.load(handle)
+    except json.JSONDecodeError:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def _csv_has_rows(path: Path) -> bool:
+    if not path.exists():
+        return False
+    try:
+        with path.open("r", encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            return next(reader, None) is not None
+    except UnicodeDecodeError:
+        return False
 
 
 def _freshness_block(*, name: str, key_paths: list[Path], generated_dt: datetime) -> dict[str, Any]:

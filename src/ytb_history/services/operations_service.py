@@ -190,6 +190,10 @@ def _evaluate_process(process: dict[str, Any], *, data_root: Path, repo_root: Pa
         _evaluate_artifact(artifact, data_root=data_root, repo_root=repo_root, now=now)
         for artifact in process.get("expected_artifacts", [])
     ]
+    observability_scope = str(process.get("observability_scope", "")).strip()
+    local_only_missing = observability_scope == "local_only" and bool(artifact_results) and not any(
+        item.get("exists") for item in artifact_results
+    )
     workflow_file = process.get("workflow_file")
     configured = True
     configuration_warnings: list[str] = []
@@ -201,7 +205,7 @@ def _evaluate_process(process: dict[str, Any], *, data_root: Path, repo_root: Pa
 
     last_run_at = _latest_timestamp([item.get("observed_at") for item in artifact_results])
     age_hours = _age_hours(last_run_at, now)
-    base_status = _derive_base_status(artifact_results, configured=configured)
+    base_status = "skipped" if local_only_missing else _derive_base_status(artifact_results, configured=configured)
     is_stale = last_run_at is not None and age_hours is not None and age_hours > float(process["sla_hours"])
     status = "stale" if is_stale else base_status
 
@@ -228,10 +232,17 @@ def _evaluate_process(process: dict[str, Any], *, data_root: Path, repo_root: Pa
         "sla_hours": process["sla_hours"],
         "command": process["command"],
         "workflow_file": workflow_file or "",
+        "observability_scope": observability_scope,
         "configured": configured,
         "status": status,
         "base_status": base_status,
-        "status_detail": _status_detail(status, base_status, artifact_results, configuration_warnings),
+        "status_detail": _status_detail(
+            status,
+            base_status,
+            artifact_results,
+            configuration_warnings,
+            local_only_missing=local_only_missing,
+        ),
         "last_run_at": last_run_at.isoformat() if last_run_at else None,
         "age_hours": round(age_hours, 2) if age_hours is not None else None,
         "is_stale": is_stale,
@@ -341,7 +352,7 @@ def _artifact_summary(path: Path, *, spec: dict[str, Any], base: Path, now: date
 
     if spec["type"] == "json":
         try:
-            payload = json.loads(path.read_text(encoding="utf-8"))
+            payload = json.loads(path.read_text(encoding="utf-8-sig"))
         except json.JSONDecodeError as exc:
             return {
                 "resolved_path": relative_path,
@@ -540,9 +551,13 @@ def _status_detail(
     base_status: str,
     artifact_results: list[dict[str, Any]],
     configuration_warnings: list[str],
+    *,
+    local_only_missing: bool = False,
 ) -> str:
     if configuration_warnings:
         return "; ".join(configuration_warnings)
+    if local_only_missing:
+        return "Local-only artifacts are unavailable in this environment; process is skipped for remote observability."
     if status == "stale":
         return f"Last successful artifact is older than SLA; base status was {base_status}."
     missing = [item["path"] for item in artifact_results if item.get("required") and not item.get("exists")]
@@ -591,6 +606,7 @@ def _build_process_catalog(generated_at: str, processes: list[dict[str, Any]]) -
                 "sla_hours": process["sla_hours"],
                 "command": process["command"],
                 "workflow_file": process.get("workflow_file", ""),
+                "observability_scope": process.get("observability_scope", ""),
                 "inputs": process.get("inputs", []),
                 "outputs": process.get("outputs", []),
                 "secrets_required": process.get("secrets_required", []),
