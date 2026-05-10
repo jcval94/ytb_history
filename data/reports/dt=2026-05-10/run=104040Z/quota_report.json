@@ -1,0 +1,20 @@
+{
+  "execution_date": "2026-05-10T10:40:40.545208+00:00",
+  "estimated_units": {
+    "channels.list": 10,
+    "playlistItems.list": 835,
+    "videos.list": 32
+  },
+  "total_estimated_units": 877,
+  "operational_limit": 7000,
+  "warning_limit": 5000,
+  "soft_warning_limit": 1000,
+  "limit_status": "ok",
+  "observed_units": {
+    "channels.list": 8,
+    "playlistItems.list": 272,
+    "videos.list": 32
+  },
+  "total_observed_units": 312,
+  "should_abort": false
+}

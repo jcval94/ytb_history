@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-unknown,947,110,4234799.0,4471.8046,0.054296,43.5766,8.9043,3.7188,0.0,100.0,77.4252,73.5078,B3hwrASGkpY,Humans That Became Animals,Alex Hormozi
-ai_tools,391,75,977087.0,2498.9437,0.053641,42.0092,9.0896,3.742,0.0,80.0,63.6423,58.1425,BTJGr78-zyw,"Professor Jiang: World War 3 Has Already Begun, Let Me Explain!",Jaime Higuera
-news_trends,24,13,20253.0,843.875,0.05817,48.5981,7.6609,3.0644,0.0,60.0,28.625,53.4901,8Vq_Vm8Pe9Y,''Honduras Gate'' el nuevo plan de U.S.A e Israel para desestabilizar gobiernos.,Diego Ruzzarin
-tutorial,78,22,15382.0,197.2051,0.044775,32.8562,8.4155,3.4543,0.0,20.0,49.7692,27.55,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
-productivity,13,7,6441.0,495.4615,0.068303,44.6479,18.9963,7.5985,0.0,40.0,15.7692,46.9477,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Aprendiz Financiero
-finance_personal,53,20,6496.0,122.566,0.054639,40.3786,9.5104,3.9463,0.0,0.0,34.9623,29.3347,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Mis Propias Finanzas
+ai_tools,403,76,4494924.0,11153.6576,0.053123,40.1286,11.2428,4.6209,0.0,80.0,64.0802,58.1675,BTJGr78-zyw,"Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",Jaime Higuera
+unknown,995,111,14855365.0,14930.0151,0.054737,41.1531,10.9998,4.5948,0.0,100.0,76.9024,73.1626,B3hwrASGkpY,Humans That Became Animals,Alex Hormozi
+news_trends,23,13,91033.0,3957.9565,0.058017,47.6593,8.1281,3.2512,0.0,60.0,25.5362,52.46,8Vq_Vm8Pe9Y,''Honduras Gate'' el nuevo plan de U.S.A e Israel para desestabilizar gobiernos.,Diego Ruzzarin
+tutorial,79,22,84133.0,1064.9747,0.046838,32.412,10.5228,4.2902,0.0,20.0,48.6962,27.3287,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
+finance_personal,56,21,25531.0,455.9107,0.055221,37.2773,12.6224,5.2812,0.0,0.0,35.0179,29.1532,uTBQ0E07n88,El Mapa Entero del Dinero en 21 Minutos,Mis Propias Finanzas
+productivity,13,7,24443.0,1880.2308,0.067795,45.162,19.1933,7.6773,0.0,40.0,10.7692,45.5405,rfRFwXnk660,Salvá a tus hijos (estás a tiempo),Aprendiz Financiero
