@@ -1,414 +1,489 @@
 creative_package_id,thumbnail_brief_id,main_text,visual_metaphor,emotion,layout_suggestion,risk_notes
-cp_19_521594378d,cp_19_521594378d_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_21_3a009a5543,cp_21_3a009a5543_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_23_0f5933d7b9,cp_23_0f5933d7b9_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_25_a37c6d7cfe,cp_25_a37c6d7cfe_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_26_17a9391a5d,cp_26_17a9391a5d_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_27_aaba52f9c0,cp_27_aaba52f9c0_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_29_3c3027c722,cp_29_3c3027c722_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_30_5a84be0db9,cp_30_5a84be0db9_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_31_f5f93d9f45,cp_31_f5f93d9f45_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_34_b195765105,cp_34_b195765105_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_36_f287652a99,cp_36_f287652a99_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_37_6fb78672bc,cp_37_6fb78672bc_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_38_b26bb536d7,cp_38_b26bb536d7_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_42_4b8b8e9043,cp_42_4b8b8e9043_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_43_1b774edf1b,cp_43_1b774edf1b_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_44_71897aa886,cp_44_71897aa886_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_45_b7a99d6a07,cp_45_b7a99d6a07_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_47_6ded38b623,cp_47_6ded38b623_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_50_575b4cc35d,cp_50_575b4cc35d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_54_e0345ec47f,cp_54_e0345ec47f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_57_5953c183d8,cp_57_5953c183d8_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_59_6cc6e599e5,cp_59_6cc6e599e5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_62_ba458abfc1,cp_62_ba458abfc1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_63_fd6c9b1219,cp_63_fd6c9b1219_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_64_f575752d9b,cp_64_f575752d9b_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_66_55a26cddd8,cp_66_55a26cddd8_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_67_173a716fd3,cp_67_173a716fd3_tb1,create_fast_reaction,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_68_85bad6b5f0,cp_68_85bad6b5f0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_70_d110a31736,cp_70_d110a31736_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_72_dec41a4f77,cp_72_dec41a4f77_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_73_0d959eb10a,cp_73_0d959eb10a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_75_a366f04eac,cp_75_a366f04eac_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_77_18683e1af1,cp_77_18683e1af1_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_80_cf173acc9b,cp_80_cf173acc9b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_82_a0451017b2,cp_82_a0451017b2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_84_37d63f0a84,cp_84_37d63f0a84_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_85_4fd30b52b3,cp_85_4fd30b52b3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_87_830aaeb455,cp_87_830aaeb455_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_88_f4aaad333e,cp_88_f4aaad333e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_89_711aa3aa47,cp_89_711aa3aa47_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_90_9077d5cebe,cp_90_9077d5cebe_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_91_044b0916bd,cp_91_044b0916bd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_92_0298e939c3,cp_92_0298e939c3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_93_bbf8f9e3e9,cp_93_bbf8f9e3e9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_94_53afe98096,cp_94_53afe98096_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_96_40d0d77282,cp_96_40d0d77282_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_97_048450c4e6,cp_97_048450c4e6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_98_672384313d,cp_98_672384313d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_99_2aa66c8c7c,cp_99_2aa66c8c7c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_100_f631af1eea,cp_100_f631af1eea_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_101_e713c12435,cp_101_e713c12435_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_102_e426de7c85,cp_102_e426de7c85_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_103_bdcf6fe51a,cp_103_bdcf6fe51a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_104_2132040959,cp_104_2132040959_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_105_6f15c7d30d,cp_105_6f15c7d30d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_106_7771ae5410,cp_106_7771ae5410_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_108_3972270f07,cp_108_3972270f07_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_109_242c70578a,cp_109_242c70578a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_110_7b94b82d8c,cp_110_7b94b82d8c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_112_ae32fe606c,cp_112_ae32fe606c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_113_da4ad3fe1e,cp_113_da4ad3fe1e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_114_99334e90ae,cp_114_99334e90ae_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_115_9d5d8ebb5f,cp_115_9d5d8ebb5f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_116_d7e3846e35,cp_116_d7e3846e35_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_117_7dc19fb112,cp_117_7dc19fb112_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_119_b084a99984,cp_119_b084a99984_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_120_fae518e986,cp_120_fae518e986_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_121_1b58c8b8f5,cp_121_1b58c8b8f5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_122_f27715aa76,cp_122_f27715aa76_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_123_b297d467b6,cp_123_b297d467b6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_124_84f45fd105,cp_124_84f45fd105_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_125_6ba421349f,cp_125_6ba421349f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_126_155e082fd3,cp_126_155e082fd3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_127_58591d4602,cp_127_58591d4602_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_128_c712ba5869,cp_128_c712ba5869_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_129_86103dbd8b,cp_129_86103dbd8b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_131_58175dba11,cp_131_58175dba11_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_132_763e20a426,cp_132_763e20a426_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_133_dd306fc31d,cp_133_dd306fc31d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_134_1b64f7c865,cp_134_1b64f7c865_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_135_c0b138b929,cp_135_c0b138b929_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_136_4034ba064f,cp_136_4034ba064f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_137_5950c37c19,cp_137_5950c37c19_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_140_53a79502a1,cp_140_53a79502a1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_141_48cad6bde5,cp_141_48cad6bde5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_142_f68bb03219,cp_142_f68bb03219_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_145_9f9cdccf17,cp_145_9f9cdccf17_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_146_4461f774ca,cp_146_4461f774ca_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_147_eb3fcaa1eb,cp_147_eb3fcaa1eb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_148_86a9f308f9,cp_148_86a9f308f9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_149_a998914988,cp_149_a998914988_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_150_465b2c0459,cp_150_465b2c0459_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_151_0ad0466d85,cp_151_0ad0466d85_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_152_bd5b7bc5b8,cp_152_bd5b7bc5b8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_153_4e19a9b29a,cp_153_4e19a9b29a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_155_894b438456,cp_155_894b438456_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_156_349bc77b4d,cp_156_349bc77b4d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_157_e33fdb11e1,cp_157_e33fdb11e1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_159_7f1b545bc7,cp_159_7f1b545bc7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_160_af0c81a61d,cp_160_af0c81a61d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_161_8fe5cb771c,cp_161_8fe5cb771c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_162_29ae69ad87,cp_162_29ae69ad87_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_163_8567871acd,cp_163_8567871acd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_164_03c0b94d40,cp_164_03c0b94d40_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_166_df035d5fe0,cp_166_df035d5fe0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_167_ac0446321e,cp_167_ac0446321e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_168_2a5073a1ca,cp_168_2a5073a1ca_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_169_62e2d63b49,cp_169_62e2d63b49_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_170_b3728239d3,cp_170_b3728239d3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_171_76f573b16c,cp_171_76f573b16c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_172_cc9dea5d02,cp_172_cc9dea5d02_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_173_62409a6878,cp_173_62409a6878_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_174_dd2d8cbcc4,cp_174_dd2d8cbcc4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_175_8f300ab6d9,cp_175_8f300ab6d9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_176_2ac5220f66,cp_176_2ac5220f66_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_177_a541efd808,cp_177_a541efd808_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_178_ad41a391da,cp_178_ad41a391da_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_179_d50da4d5ac,cp_179_d50da4d5ac_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_180_70c41c8379,cp_180_70c41c8379_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_182_e248e7e2c6,cp_182_e248e7e2c6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_183_b5dceef78b,cp_183_b5dceef78b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_184_5202f2f95e,cp_184_5202f2f95e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_185_62a3d0d586,cp_185_62a3d0d586_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_186_c89b3eca20,cp_186_c89b3eca20_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_187_992bf27ab2,cp_187_992bf27ab2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_189_9120d51c1e,cp_189_9120d51c1e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_190_f53f208daf,cp_190_f53f208daf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_191_d717a20267,cp_191_d717a20267_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_192_854c0a7ba5,cp_192_854c0a7ba5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_193_91efd13903,cp_193_91efd13903_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_195_f8635a48f1,cp_195_f8635a48f1_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_196_40e310f392,cp_196_40e310f392_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_198_49907a6d0d,cp_198_49907a6d0d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_199_237822a6f1,cp_199_237822a6f1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_200_c345b3f956,cp_200_c345b3f956_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_201_1a0b582686,cp_201_1a0b582686_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_202_d0e29a8ad1,cp_202_d0e29a8ad1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_203_fc114cf6e8,cp_203_fc114cf6e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_204_0fa2cad030,cp_204_0fa2cad030_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_206_7b56a3855f,cp_206_7b56a3855f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_207_d33314dae2,cp_207_d33314dae2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_208_5e239d2548,cp_208_5e239d2548_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_209_773e29020a,cp_209_773e29020a_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_210_b1accb0116,cp_210_b1accb0116_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_211_d08877143d,cp_211_d08877143d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_212_36a91d148f,cp_212_36a91d148f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_213_a603b48c59,cp_213_a603b48c59_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_214_721ebc26d7,cp_214_721ebc26d7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_215_7bd62263cc,cp_215_7bd62263cc_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_218_c822be19e6,cp_218_c822be19e6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_219_1e65522254,cp_219_1e65522254_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_220_fd64cb9846,cp_220_fd64cb9846_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_221_13f3230eca,cp_221_13f3230eca_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_222_e4cc3735e5,cp_222_e4cc3735e5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_224_f25a5ce6af,cp_224_f25a5ce6af_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_225_71141b7976,cp_225_71141b7976_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_226_08362f8700,cp_226_08362f8700_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_227_43694ce4f2,cp_227_43694ce4f2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_228_fd06ab5051,cp_228_fd06ab5051_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_229_f0d5f62c78,cp_229_f0d5f62c78_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_230_120b21096b,cp_230_120b21096b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_231_916338fd08,cp_231_916338fd08_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_232_d29e04e822,cp_232_d29e04e822_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_233_ef39625f7b,cp_233_ef39625f7b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_234_ac7a7f6feb,cp_234_ac7a7f6feb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_235_4f189c7c47,cp_235_4f189c7c47_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_236_f75f9926b0,cp_236_f75f9926b0_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_237_0ae2094a15,cp_237_0ae2094a15_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_238_21361a190c,cp_238_21361a190c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_239_acfeca6ad5,cp_239_acfeca6ad5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_240_1709d9fd0c,cp_240_1709d9fd0c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_241_d5b8f61dd5,cp_241_d5b8f61dd5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_242_166694b38a,cp_242_166694b38a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_243_6f549c8be5,cp_243_6f549c8be5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_244_79bb385a59,cp_244_79bb385a59_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_245_a7eb1e945a,cp_245_a7eb1e945a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_246_901817efcd,cp_246_901817efcd_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_247_6cb4759c81,cp_247_6cb4759c81_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_249_a892e0427e,cp_249_a892e0427e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_250_e47c062758,cp_250_e47c062758_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_251_ec4763ab47,cp_251_ec4763ab47_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_252_7c5be9c1cc,cp_252_7c5be9c1cc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_253_bd12f5da7a,cp_253_bd12f5da7a_tb1,analyze_reference,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_254_0676b8be47,cp_254_0676b8be47_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_255_51ba5c133e,cp_255_51ba5c133e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_256_7531883717,cp_256_7531883717_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_257_91651dead7,cp_257_91651dead7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_258_ba92a34d14,cp_258_ba92a34d14_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_259_d342d19aec,cp_259_d342d19aec_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_260_f2b18ff5bf,cp_260_f2b18ff5bf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_261_965bf971fa,cp_261_965bf971fa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_262_5a902cbafa,cp_262_5a902cbafa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_264_01807e7ff1,cp_264_01807e7ff1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_266_0227f01d8d,cp_266_0227f01d8d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_267_fd89012d7b,cp_267_fd89012d7b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_268_8513116bb6,cp_268_8513116bb6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_269_2ca460f242,cp_269_2ca460f242_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_270_6837743677,cp_270_6837743677_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_271_0be02e4c8e,cp_271_0be02e4c8e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_272_bbee963f42,cp_272_bbee963f42_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_273_f64b1fb76d,cp_273_f64b1fb76d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_274_42b5be54a6,cp_274_42b5be54a6_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_275_90d19dd1aa,cp_275_90d19dd1aa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_276_4dc990aee3,cp_276_4dc990aee3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_277_c0bdc4b7de,cp_277_c0bdc4b7de_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_278_4ca58f2492,cp_278_4ca58f2492_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_279_d58cb90c34,cp_279_d58cb90c34_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_280_e18fcaa779,cp_280_e18fcaa779_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_281_d598308661,cp_281_d598308661_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_282_c377e3ef74,cp_282_c377e3ef74_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_283_65b2cc45b1,cp_283_65b2cc45b1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_284_e7caea8652,cp_284_e7caea8652_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_285_7be9e60bfc,cp_285_7be9e60bfc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_286_2a4b05acc5,cp_286_2a4b05acc5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_287_0cd393967d,cp_287_0cd393967d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_288_9e98a22b4f,cp_288_9e98a22b4f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_290_9ee2b8b1dd,cp_290_9ee2b8b1dd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_291_2301c8396e,cp_291_2301c8396e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_292_8ee2cb074d,cp_292_8ee2cb074d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_293_1df1d24f79,cp_293_1df1d24f79_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_294_0c8daba1e8,cp_294_0c8daba1e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_295_7e01bec361,cp_295_7e01bec361_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_296_beb1ee82f0,cp_296_beb1ee82f0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_297_8bb912d9cd,cp_297_8bb912d9cd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_298_9e7748aeae,cp_298_9e7748aeae_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_299_10454ca809,cp_299_10454ca809_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_300_ce02760ade,cp_300_ce02760ade_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_301_e4657c3ad2,cp_301_e4657c3ad2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_302_d7731c0a29,cp_302_d7731c0a29_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_303_38bff47591,cp_303_38bff47591_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_304_87720350e2,cp_304_87720350e2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_306_f1c4cc4d8a,cp_306_f1c4cc4d8a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_307_5d9ad12846,cp_307_5d9ad12846_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_308_ccdee4a7b2,cp_308_ccdee4a7b2_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_309_261c2b642a,cp_309_261c2b642a_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_310_0d0fa4246a,cp_310_0d0fa4246a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_311_9d44615bcd,cp_311_9d44615bcd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_312_b9bffc73dc,cp_312_b9bffc73dc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_313_038e06029a,cp_313_038e06029a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_314_1398440e8c,cp_314_1398440e8c_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_315_72a9e3d285,cp_315_72a9e3d285_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_316_fdf5d074d8,cp_316_fdf5d074d8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_317_841821e46c,cp_317_841821e46c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_318_a48240da11,cp_318_a48240da11_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_319_3e31568683,cp_319_3e31568683_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_321_1ab41b8f3a,cp_321_1ab41b8f3a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_322_61c3d3e2f8,cp_322_61c3d3e2f8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_323_d4f6232a27,cp_323_d4f6232a27_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_324_6eb3619cd6,cp_324_6eb3619cd6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_325_0374d2897d,cp_325_0374d2897d_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_326_96c34da0e1,cp_326_96c34da0e1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_327_bae07586ce,cp_327_bae07586ce_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_328_d5eecaceb2,cp_328_d5eecaceb2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_329_c21ee0c50c,cp_329_c21ee0c50c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_330_f91c41f294,cp_330_f91c41f294_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_331_d736923ecf,cp_331_d736923ecf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_332_7b6a413686,cp_332_7b6a413686_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_333_707d473ed5,cp_333_707d473ed5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_334_4cee3d3a41,cp_334_4cee3d3a41_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_335_c1f75db9e9,cp_335_c1f75db9e9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_336_9de9a5c085,cp_336_9de9a5c085_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_337_e5cd7500fa,cp_337_e5cd7500fa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_338_2889931ab8,cp_338_2889931ab8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_339_37e92f4474,cp_339_37e92f4474_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_340_d174ae7f0b,cp_340_d174ae7f0b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_341_b70b40fefb,cp_341_b70b40fefb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_342_e47fa07766,cp_342_e47fa07766_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_343_e670363d08,cp_343_e670363d08_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_344_1019d280c2,cp_344_1019d280c2_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_346_5212e61bad,cp_346_5212e61bad_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_347_0504e54a71,cp_347_0504e54a71_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_348_44f885d9a8,cp_348_44f885d9a8_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_349_5d7da63f2c,cp_349_5d7da63f2c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_352_a313d5ee25,cp_352_a313d5ee25_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_353_196be713ce,cp_353_196be713ce_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_354_1508a98e44,cp_354_1508a98e44_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_355_512a506a44,cp_355_512a506a44_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_356_327d02e6e4,cp_356_327d02e6e4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_358_6df22efb6d,cp_358_6df22efb6d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_359_5f2dc68f76,cp_359_5f2dc68f76_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_360_59e4120194,cp_360_59e4120194_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_361_8ecb4e7c89,cp_361_8ecb4e7c89_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_362_62c228ea42,cp_362_62c228ea42_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_363_0f15fad030,cp_363_0f15fad030_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_364_4dcd88c034,cp_364_4dcd88c034_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_365_5fa3948c18,cp_365_5fa3948c18_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_366_23867aff11,cp_366_23867aff11_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_367_4358a20522,cp_367_4358a20522_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_368_c48b5a10e3,cp_368_c48b5a10e3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_370_83d34c37d5,cp_370_83d34c37d5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_371_6a18aafb7c,cp_371_6a18aafb7c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_372_eb5ac3a51a,cp_372_eb5ac3a51a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_373_807437408a,cp_373_807437408a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_374_d334245a09,cp_374_d334245a09_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_375_9b6c88b492,cp_375_9b6c88b492_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_376_6a62ad1e03,cp_376_6a62ad1e03_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_377_1daf054dc2,cp_377_1daf054dc2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_378_f803e26fb8,cp_378_f803e26fb8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_379_d6180a38a3,cp_379_d6180a38a3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_380_7288147fd4,cp_380_7288147fd4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_381_09fa53a80c,cp_381_09fa53a80c_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_383_7d48b08ec9,cp_383_7d48b08ec9_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_384_8db9061b65,cp_384_8db9061b65_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_385_27f7252bf1,cp_385_27f7252bf1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_386_8616586367,cp_386_8616586367_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_387_04aab454e8,cp_387_04aab454e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_388_2262e9695d,cp_388_2262e9695d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_389_4b7d1bcb43,cp_389_4b7d1bcb43_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_390_4a30b9aaf4,cp_390_4a30b9aaf4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_391_f8f8113726,cp_391_f8f8113726_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_392_4aa99d3233,cp_392_4aa99d3233_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_393_8992adbba7,cp_393_8992adbba7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_394_6f17a715cc,cp_394_6f17a715cc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_396_10b5185dc0,cp_396_10b5185dc0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_398_cdd1a4bd5c,cp_398_cdd1a4bd5c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_399_60f4c2359e,cp_399_60f4c2359e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_400_526d4c3050,cp_400_526d4c3050_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_401_2a10c08ed9,cp_401_2a10c08ed9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_402_3c393145d6,cp_402_3c393145d6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_404_85098988b1,cp_404_85098988b1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_405_5aea77cc7f,cp_405_5aea77cc7f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_406_1fcdc8083d,cp_406_1fcdc8083d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_407_ed34a6e20b,cp_407_ed34a6e20b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_408_10a7ecf9e7,cp_408_10a7ecf9e7_tb1,analyze_reference,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_409_633d017b22,cp_409_633d017b22_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_410_e0411d101f,cp_410_e0411d101f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_412_8e5526d1f5,cp_412_8e5526d1f5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_413_fd3a0f3e52,cp_413_fd3a0f3e52_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_414_a48f926f68,cp_414_a48f926f68_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_415_2534d915d3,cp_415_2534d915d3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_416_9d758cc522,cp_416_9d758cc522_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_417_46071f36a5,cp_417_46071f36a5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_418_a267d4ae8f,cp_418_a267d4ae8f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_419_370c15985b,cp_419_370c15985b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_420_ac09eb62cf,cp_420_ac09eb62cf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_421_b22ec9a6b3,cp_421_b22ec9a6b3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_422_f960655a47,cp_422_f960655a47_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_423_59e282393a,cp_423_59e282393a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_424_a80e168451,cp_424_a80e168451_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_425_716c14e06f,cp_425_716c14e06f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_426_afa12ad4cc,cp_426_afa12ad4cc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_427_2d1e83a51d,cp_427_2d1e83a51d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_428_09c3878bc5,cp_428_09c3878bc5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_431_9a312d15a5,cp_431_9a312d15a5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_432_f609edcaea,cp_432_f609edcaea_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_433_c7a3cf2adb,cp_433_c7a3cf2adb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_434_a9ec8abeb3,cp_434_a9ec8abeb3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_435_3fe1d80aa4,cp_435_3fe1d80aa4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_437_9f4ab7a336,cp_437_9f4ab7a336_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_438_ee70928f8c,cp_438_ee70928f8c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_440_14d636444f,cp_440_14d636444f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_441_2f03184d1e,cp_441_2f03184d1e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_443_2ef02c5ebf,cp_443_2ef02c5ebf_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_444_e0c43df273,cp_444_e0c43df273_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_445_79fdbfdbc5,cp_445_79fdbfdbc5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_446_d911f1f35a,cp_446_d911f1f35a_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_447_d708540bf0,cp_447_d708540bf0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_448_17cff1ed24,cp_448_17cff1ed24_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_449_acff425a6a,cp_449_acff425a6a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_450_c4b8e7f49e,cp_450_c4b8e7f49e_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_451_afeb8ec844,cp_451_afeb8ec844_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_453_236e3213a6,cp_453_236e3213a6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_454_f62540f261,cp_454_f62540f261_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_455_542baf463b,cp_455_542baf463b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_456_a8536aecfb,cp_456_a8536aecfb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_458_de101ef77b,cp_458_de101ef77b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_459_fdc0248991,cp_459_fdc0248991_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_460_211b4de44e,cp_460_211b4de44e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_461_c48605e559,cp_461_c48605e559_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_463_2878b351fe,cp_463_2878b351fe_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_464_764e3a9dc5,cp_464_764e3a9dc5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_465_ab9d9681ab,cp_465_ab9d9681ab_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_466_5121dc8462,cp_466_5121dc8462_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_470_30371bedfc,cp_470_30371bedfc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_472_3664b4b6e0,cp_472_3664b4b6e0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_473_158cc60c56,cp_473_158cc60c56_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_474_df7db4267d,cp_474_df7db4267d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_475_0145922d36,cp_475_0145922d36_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_477_08153121dc,cp_477_08153121dc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_480_15c2b02659,cp_480_15c2b02659_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_481_d81034936a,cp_481_d81034936a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_482_23e16cf328,cp_482_23e16cf328_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_484_3e87bf1975,cp_484_3e87bf1975_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_485_f8cea749d6,cp_485_f8cea749d6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_487_b12ce88532,cp_487_b12ce88532_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_488_24af3d9145,cp_488_24af3d9145_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_491_3c17d6afb8,cp_491_3c17d6afb8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_492_dc76253261,cp_492_dc76253261_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_495_72d1b25c27,cp_495_72d1b25c27_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_496_3813cb9aa8,cp_496_3813cb9aa8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_497_747c14c505,cp_497_747c14c505_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_500_97db751202,cp_500_97db751202_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_501_7877ed4762,cp_501_7877ed4762_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_502_7b08d33563,cp_502_7b08d33563_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_504_159fe3cb42,cp_504_159fe3cb42_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_505_31ca256d3a,cp_505_31ca256d3a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_507_d4f822e78d,cp_507_d4f822e78d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_508_e9c2108801,cp_508_e9c2108801_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_509_dcbad76c08,cp_509_dcbad76c08_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_510_e90626499c,cp_510_e90626499c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_511_7465786747,cp_511_7465786747_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_512_1c4a992311,cp_512_1c4a992311_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_514_60b9ea4adf,cp_514_60b9ea4adf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_515_164bdaff58,cp_515_164bdaff58_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_516_ba24a0df12,cp_516_ba24a0df12_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_517_ea2a0c2204,cp_517_ea2a0c2204_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_518_2ddd9bb9db,cp_518_2ddd9bb9db_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_519_214c4c4710,cp_519_214c4c4710_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_520_c90e38e2ae,cp_520_c90e38e2ae_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_521_94863dc3ec,cp_521_94863dc3ec_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_522_cbc8a946af,cp_522_cbc8a946af_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_523_57be1fc3c7,cp_523_57be1fc3c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
-cp_524_8590a95fcf,cp_524_8590a95fcf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_23_8bdd1f1236,cp_23_8bdd1f1236_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_24_f8c941289f,cp_24_f8c941289f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_25_ab15854694,cp_25_ab15854694_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_26_f415bd1d16,cp_26_f415bd1d16_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_29_774928f87c,cp_29_774928f87c_tb1,analyze_reference,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_33_fc2cfd1d5f,cp_33_fc2cfd1d5f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_35_ff80554d49,cp_35_ff80554d49_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_36_20e3172ce0,cp_36_20e3172ce0_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_37_84ff0c6505,cp_37_84ff0c6505_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_38_7be296205b,cp_38_7be296205b_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_44_2dd02d1790,cp_44_2dd02d1790_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_45_43692d31df,cp_45_43692d31df_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_46_e59bcb2c90,cp_46_e59bcb2c90_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_47_f16167e519,cp_47_f16167e519_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_48_b42faecea5,cp_48_b42faecea5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_49_e172dc98b7,cp_49_e172dc98b7_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_53_d376e5cdb5,cp_53_d376e5cdb5_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_56_7afeea4a40,cp_56_7afeea4a40_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_57_cfd30bec4c,cp_57_cfd30bec4c_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_59_90377d553f,cp_59_90377d553f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_60_28ac097dd3,cp_60_28ac097dd3_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_62_cb92d84f38,cp_62_cb92d84f38_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_64_04355c8368,cp_64_04355c8368_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_65_24ba77cc4f,cp_65_24ba77cc4f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_66_18bf80ec87,cp_66_18bf80ec87_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_67_87ef556ad4,cp_67_87ef556ad4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_68_01ffcf1111,cp_68_01ffcf1111_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_70_56a25294fb,cp_70_56a25294fb_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_71_f9f5e94eaa,cp_71_f9f5e94eaa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_72_75a5201128,cp_72_75a5201128_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_73_a9e566852b,cp_73_a9e566852b_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_74_94713acaa2,cp_74_94713acaa2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_75_452f164b1e,cp_75_452f164b1e_tb1,analyze_reference,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_76_e09d2eb836,cp_76_e09d2eb836_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_77_f9d512973e,cp_77_f9d512973e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_79_50a0863f8e,cp_79_50a0863f8e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_80_49104754c9,cp_80_49104754c9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_81_33123fc7e4,cp_81_33123fc7e4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_83_bed50ebc24,cp_83_bed50ebc24_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_85_ed5ba27503,cp_85_ed5ba27503_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_88_f812bd1cf8,cp_88_f812bd1cf8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_89_fd9404adad,cp_89_fd9404adad_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_91_3004329654,cp_91_3004329654_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_92_7e1f4d32db,cp_92_7e1f4d32db_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_94_8f7283f6c0,cp_94_8f7283f6c0_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_95_a265178539,cp_95_a265178539_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_97_bb26604170,cp_97_bb26604170_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_99_fbcea28cb4,cp_99_fbcea28cb4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_100_3b2afa238b,cp_100_3b2afa238b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_101_d227774e5c,cp_101_d227774e5c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_102_6a5732935c,cp_102_6a5732935c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_103_58c129e8a7,cp_103_58c129e8a7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_104_4a3b2b1445,cp_104_4a3b2b1445_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_106_5564e68810,cp_106_5564e68810_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_107_2e19cbe706,cp_107_2e19cbe706_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_108_0a85ab06c0,cp_108_0a85ab06c0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_110_d99b55945a,cp_110_d99b55945a_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_111_e4b954bfa4,cp_111_e4b954bfa4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_112_2070e17aef,cp_112_2070e17aef_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_113_587b6643e8,cp_113_587b6643e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_114_2a4554aa3e,cp_114_2a4554aa3e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_115_05fcfca331,cp_115_05fcfca331_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_116_719861d259,cp_116_719861d259_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_117_81ff36bbc8,cp_117_81ff36bbc8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_118_f86dc0a824,cp_118_f86dc0a824_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_119_69b3f1b7c9,cp_119_69b3f1b7c9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_120_df12272d05,cp_120_df12272d05_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_121_219fb6aa51,cp_121_219fb6aa51_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_124_3b3e08e727,cp_124_3b3e08e727_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_125_2a171caa76,cp_125_2a171caa76_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_126_cdc5974e89,cp_126_cdc5974e89_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_127_d28e394986,cp_127_d28e394986_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_128_59dc6532e8,cp_128_59dc6532e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_129_3afbc9524c,cp_129_3afbc9524c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_130_f708fbdea0,cp_130_f708fbdea0_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_131_f41e6915b4,cp_131_f41e6915b4_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_132_88194bfe3f,cp_132_88194bfe3f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_133_40731682a4,cp_133_40731682a4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_134_d45398e50a,cp_134_d45398e50a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_135_49a36d67cc,cp_135_49a36d67cc_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_137_b6ee971771,cp_137_b6ee971771_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_138_014370856c,cp_138_014370856c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_139_6ec2c6cee6,cp_139_6ec2c6cee6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_141_398025e201,cp_141_398025e201_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_143_2bf532a6f2,cp_143_2bf532a6f2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_144_82b2d6e0c7,cp_144_82b2d6e0c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_145_32f40130e8,cp_145_32f40130e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_146_f04c65e279,cp_146_f04c65e279_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_147_f78a0680dd,cp_147_f78a0680dd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_148_b57e180cc0,cp_148_b57e180cc0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_149_6a273365b9,cp_149_6a273365b9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_150_d62f87be8b,cp_150_d62f87be8b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_151_cba7cdd171,cp_151_cba7cdd171_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_152_601762161f,cp_152_601762161f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_153_28e9d5f8e2,cp_153_28e9d5f8e2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_154_cb97613f52,cp_154_cb97613f52_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_155_f937c1af11,cp_155_f937c1af11_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_156_3ed45da221,cp_156_3ed45da221_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_157_2b596ba6a6,cp_157_2b596ba6a6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_158_a521790e6e,cp_158_a521790e6e_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_159_befde92898,cp_159_befde92898_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_160_9ab7c30636,cp_160_9ab7c30636_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_161_c008605d6c,cp_161_c008605d6c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_162_f9ce984596,cp_162_f9ce984596_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_163_bd8a5a7c80,cp_163_bd8a5a7c80_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_164_6d1a7102dc,cp_164_6d1a7102dc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_165_65a06bc9a6,cp_165_65a06bc9a6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_167_0c4e75e58f,cp_167_0c4e75e58f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_168_dfe4928519,cp_168_dfe4928519_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_169_2b292266e8,cp_169_2b292266e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_170_f009b1417f,cp_170_f009b1417f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_171_ee5e45d745,cp_171_ee5e45d745_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_172_10e5794fce,cp_172_10e5794fce_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_173_fc6368953f,cp_173_fc6368953f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_175_624a1f6d66,cp_175_624a1f6d66_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_176_c97c193c65,cp_176_c97c193c65_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_177_f034e3e189,cp_177_f034e3e189_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_180_5a215fe0b9,cp_180_5a215fe0b9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_181_6eb041cf1d,cp_181_6eb041cf1d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_182_ffc70c9b51,cp_182_ffc70c9b51_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_183_90cc36b20f,cp_183_90cc36b20f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_184_d1e6f3ef54,cp_184_d1e6f3ef54_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_185_fd6f0a8803,cp_185_fd6f0a8803_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_186_2308df44dc,cp_186_2308df44dc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_187_6e67ebd66d,cp_187_6e67ebd66d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_188_0de3b66d50,cp_188_0de3b66d50_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_189_a67cfd1f58,cp_189_a67cfd1f58_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_191_64862949c7,cp_191_64862949c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_194_30ad7d1143,cp_194_30ad7d1143_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_196_518de44507,cp_196_518de44507_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_197_fb1daa4f72,cp_197_fb1daa4f72_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_198_0ab6dbf9a1,cp_198_0ab6dbf9a1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_199_2586892fde,cp_199_2586892fde_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_200_b5303ee72b,cp_200_b5303ee72b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_201_13aa31fa24,cp_201_13aa31fa24_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_202_2a5d982e16,cp_202_2a5d982e16_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_203_9bb98e0951,cp_203_9bb98e0951_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_204_7c8b1408ba,cp_204_7c8b1408ba_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_206_28f882a0e7,cp_206_28f882a0e7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_207_bd3bffdadf,cp_207_bd3bffdadf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_208_5179a0ca3e,cp_208_5179a0ca3e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_209_c32133d055,cp_209_c32133d055_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_210_364a639951,cp_210_364a639951_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_211_66cb78ee74,cp_211_66cb78ee74_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_212_0af368cac8,cp_212_0af368cac8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_213_f001990fd2,cp_213_f001990fd2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_214_1a866e1c97,cp_214_1a866e1c97_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_215_d45186e054,cp_215_d45186e054_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_216_b400aad649,cp_216_b400aad649_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_218_9f2610d938,cp_218_9f2610d938_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_219_631cbb2469,cp_219_631cbb2469_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_220_38065828f8,cp_220_38065828f8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_221_059013e25a,cp_221_059013e25a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_222_7a1a31a530,cp_222_7a1a31a530_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_223_53aa49283e,cp_223_53aa49283e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_224_f4a73e1b9e,cp_224_f4a73e1b9e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_225_8553991574,cp_225_8553991574_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_226_237d2ccc9d,cp_226_237d2ccc9d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_228_1481ca4638,cp_228_1481ca4638_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_229_b97ccbf9ed,cp_229_b97ccbf9ed_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_230_9652b30c8d,cp_230_9652b30c8d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_231_37a7ca032b,cp_231_37a7ca032b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_232_bcf8fb7e01,cp_232_bcf8fb7e01_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_233_9f25a97f34,cp_233_9f25a97f34_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_234_c8aa214da6,cp_234_c8aa214da6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_236_a27bb6d940,cp_236_a27bb6d940_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_237_ea00bd374f,cp_237_ea00bd374f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_238_b357ce9379,cp_238_b357ce9379_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_239_c26f77191b,cp_239_c26f77191b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_240_ba0ebf9fdf,cp_240_ba0ebf9fdf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_241_cadf01cc5b,cp_241_cadf01cc5b_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_242_6ad8286583,cp_242_6ad8286583_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_243_05c6929733,cp_243_05c6929733_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_244_05ccd45d49,cp_244_05ccd45d49_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_245_7f0514cb57,cp_245_7f0514cb57_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_246_e0007eedca,cp_246_e0007eedca_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_247_558bcf5a76,cp_247_558bcf5a76_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_248_8ebef27427,cp_248_8ebef27427_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_250_0b6c1afcd7,cp_250_0b6c1afcd7_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_251_99b9654657,cp_251_99b9654657_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_252_ad43f91677,cp_252_ad43f91677_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_253_67641ce9b9,cp_253_67641ce9b9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_254_f41a9af712,cp_254_f41a9af712_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_255_d01b90ec13,cp_255_d01b90ec13_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_256_b249bbfe20,cp_256_b249bbfe20_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_257_88ef3d46cd,cp_257_88ef3d46cd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_258_40237c4fa2,cp_258_40237c4fa2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_259_777ae60408,cp_259_777ae60408_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_260_85d509e7a8,cp_260_85d509e7a8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_261_d77881dd35,cp_261_d77881dd35_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_262_bdece96f85,cp_262_bdece96f85_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_263_624d000be5,cp_263_624d000be5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_264_cb88a59ee6,cp_264_cb88a59ee6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_265_5bb12ca7c5,cp_265_5bb12ca7c5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_266_22c34d2f87,cp_266_22c34d2f87_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_267_7171628cf8,cp_267_7171628cf8_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_268_73d33e9727,cp_268_73d33e9727_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_269_b2b21526d6,cp_269_b2b21526d6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_270_4ad4518530,cp_270_4ad4518530_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_271_287cc35b69,cp_271_287cc35b69_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_272_0c868b68f4,cp_272_0c868b68f4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_273_1825898893,cp_273_1825898893_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_274_934a535ce0,cp_274_934a535ce0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_276_2bf5d2839a,cp_276_2bf5d2839a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_277_3b26558be5,cp_277_3b26558be5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_278_ef6a832832,cp_278_ef6a832832_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_279_8fa95ad50a,cp_279_8fa95ad50a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_280_2b5a5c1b31,cp_280_2b5a5c1b31_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_281_512edab4db,cp_281_512edab4db_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_282_07824d08ab,cp_282_07824d08ab_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_283_b78f13b6cb,cp_283_b78f13b6cb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_284_d1ea17c4d5,cp_284_d1ea17c4d5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_285_75ca3ca965,cp_285_75ca3ca965_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_286_38e8813885,cp_286_38e8813885_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_287_39afa44d25,cp_287_39afa44d25_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_288_7ef7a1fad2,cp_288_7ef7a1fad2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_289_d73731bd4e,cp_289_d73731bd4e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_290_3856990ba7,cp_290_3856990ba7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_291_f34ba497c7,cp_291_f34ba497c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_292_e4082f085c,cp_292_e4082f085c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_293_87f79725d4,cp_293_87f79725d4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_294_6b5ff4edf8,cp_294_6b5ff4edf8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_295_d0f434fb78,cp_295_d0f434fb78_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_296_1c1a1d42f3,cp_296_1c1a1d42f3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_297_8adc21b464,cp_297_8adc21b464_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_298_67abf60db2,cp_298_67abf60db2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_299_cf7c11e2dd,cp_299_cf7c11e2dd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_300_87edd728fb,cp_300_87edd728fb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_301_397ff04d40,cp_301_397ff04d40_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_302_39206f49fa,cp_302_39206f49fa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_303_b06b7992f9,cp_303_b06b7992f9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_304_91d90611de,cp_304_91d90611de_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_305_bd266435e9,cp_305_bd266435e9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_306_a8ceeffb52,cp_306_a8ceeffb52_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_307_bc358e38ca,cp_307_bc358e38ca_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_308_f4ac391068,cp_308_f4ac391068_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_309_90e06a3d90,cp_309_90e06a3d90_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_310_b5065a6e00,cp_310_b5065a6e00_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_311_7e412fc8f9,cp_311_7e412fc8f9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_312_6ad9874747,cp_312_6ad9874747_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_313_d172006ba9,cp_313_d172006ba9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_314_6ef442aa10,cp_314_6ef442aa10_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_315_43de3ca851,cp_315_43de3ca851_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_316_0bf52f869a,cp_316_0bf52f869a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_317_e85733a7f0,cp_317_e85733a7f0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_318_96ea7e22c0,cp_318_96ea7e22c0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_319_8f3818bd28,cp_319_8f3818bd28_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_320_5d5b42e70a,cp_320_5d5b42e70a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_322_9bd7c06fcf,cp_322_9bd7c06fcf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_323_8cf40543df,cp_323_8cf40543df_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_324_0999602eb6,cp_324_0999602eb6_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_325_761ae60134,cp_325_761ae60134_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_326_aeeb8da75b,cp_326_aeeb8da75b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_327_d6b1cc2a0b,cp_327_d6b1cc2a0b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_328_85d86ebef6,cp_328_85d86ebef6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_329_6bb93fe435,cp_329_6bb93fe435_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_330_817c11e641,cp_330_817c11e641_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_331_64982d287a,cp_331_64982d287a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_332_3df73e696e,cp_332_3df73e696e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_333_99a4cc3c5c,cp_333_99a4cc3c5c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_334_36e8d277e4,cp_334_36e8d277e4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_335_78e02ff49e,cp_335_78e02ff49e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_336_98999345fd,cp_336_98999345fd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_337_20fec643ae,cp_337_20fec643ae_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_338_1ade4464f5,cp_338_1ade4464f5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_339_8156e4240a,cp_339_8156e4240a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_340_4bcbbaa621,cp_340_4bcbbaa621_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_341_b6466ed0e6,cp_341_b6466ed0e6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_342_c33b1bb202,cp_342_c33b1bb202_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_343_a28722aabe,cp_343_a28722aabe_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_344_b6d4b67ca5,cp_344_b6d4b67ca5_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_345_e94336d0ab,cp_345_e94336d0ab_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_346_f9cc9d283a,cp_346_f9cc9d283a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_347_9ce59f713f,cp_347_9ce59f713f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_348_3afd92d496,cp_348_3afd92d496_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_349_84f9dba95d,cp_349_84f9dba95d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_350_e2b880d187,cp_350_e2b880d187_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_351_7409d88fea,cp_351_7409d88fea_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_352_ebc086c772,cp_352_ebc086c772_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_353_4f17d37311,cp_353_4f17d37311_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_354_ef93ebe416,cp_354_ef93ebe416_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_355_9fd1bb08aa,cp_355_9fd1bb08aa_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_356_21a18474c7,cp_356_21a18474c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_357_7a1298f665,cp_357_7a1298f665_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_359_3f5cb04b09,cp_359_3f5cb04b09_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_360_248631bd7a,cp_360_248631bd7a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_361_1e97b93b3b,cp_361_1e97b93b3b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_362_a2ba5615f9,cp_362_a2ba5615f9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_363_d744c3c8df,cp_363_d744c3c8df_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_364_0fbb2bf6c0,cp_364_0fbb2bf6c0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_365_694c40ef52,cp_365_694c40ef52_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_367_2f5be38a6d,cp_367_2f5be38a6d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_368_a5c32cb3a3,cp_368_a5c32cb3a3_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_369_668647cae3,cp_369_668647cae3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_370_672b57425e,cp_370_672b57425e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_371_b77eed1a83,cp_371_b77eed1a83_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_372_48b82ed8b0,cp_372_48b82ed8b0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_373_3b2b5e3aa4,cp_373_3b2b5e3aa4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_374_c95c3f651f,cp_374_c95c3f651f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_375_f6a3242bf9,cp_375_f6a3242bf9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_376_35705037d6,cp_376_35705037d6_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_377_ea4b219a05,cp_377_ea4b219a05_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_379_9d5ea4f380,cp_379_9d5ea4f380_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_380_167e4cddf2,cp_380_167e4cddf2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_381_e018cfae66,cp_381_e018cfae66_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_383_2af7a1c834,cp_383_2af7a1c834_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_384_becb38017a,cp_384_becb38017a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_385_294801f945,cp_385_294801f945_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_386_76c945d2c9,cp_386_76c945d2c9_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_387_014452337b,cp_387_014452337b_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_388_20aec7a9cf,cp_388_20aec7a9cf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_389_6856bd18e5,cp_389_6856bd18e5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_390_097d31a7d5,cp_390_097d31a7d5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_391_a86bb7101a,cp_391_a86bb7101a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_392_cf33241b3e,cp_392_cf33241b3e_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_393_58dd4024e1,cp_393_58dd4024e1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_394_8d5b2f7a6b,cp_394_8d5b2f7a6b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_395_1562949275,cp_395_1562949275_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_396_8c870fef0b,cp_396_8c870fef0b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_397_4924248da9,cp_397_4924248da9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_399_a8ef46ca45,cp_399_a8ef46ca45_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_400_183fc79fa1,cp_400_183fc79fa1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_401_9016a9ecd2,cp_401_9016a9ecd2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_402_68b7396e3e,cp_402_68b7396e3e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_405_1686944dee,cp_405_1686944dee_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_406_8f31d23fad,cp_406_8f31d23fad_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_407_157fe357bf,cp_407_157fe357bf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_408_71b7442358,cp_408_71b7442358_tb1,create_fast_reaction,señal vs ruido,urgencia,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_409_02fba541b0,cp_409_02fba541b0_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_410_7773227e11,cp_410_7773227e11_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_411_e287d13c2f,cp_411_e287d13c2f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_412_acb1fd3847,cp_412_acb1fd3847_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_413_3c1e0754a7,cp_413_3c1e0754a7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_414_d12c843df1,cp_414_d12c843df1_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_415_38bfd79815,cp_415_38bfd79815_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_416_e9ca3f02cb,cp_416_e9ca3f02cb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_417_24d5beff09,cp_417_24d5beff09_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_418_843ee6607d,cp_418_843ee6607d_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_419_db5bcbc1e7,cp_419_db5bcbc1e7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_420_9ab65d872c,cp_420_9ab65d872c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_421_08ecfa5e4d,cp_421_08ecfa5e4d_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_422_7ac4f31b9b,cp_422_7ac4f31b9b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_424_30f110aab4,cp_424_30f110aab4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_425_c213570bce,cp_425_c213570bce_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_426_dbee9deb2b,cp_426_dbee9deb2b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_427_2f21799377,cp_427_2f21799377_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_428_7bc4474aa6,cp_428_7bc4474aa6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_429_9ca7d6c770,cp_429_9ca7d6c770_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_431_b5070dbea5,cp_431_b5070dbea5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_432_09d43cb966,cp_432_09d43cb966_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_433_7374996d5d,cp_433_7374996d5d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_434_e6bbc1b0e6,cp_434_e6bbc1b0e6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_435_d6a238e944,cp_435_d6a238e944_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_436_d3cc8074d2,cp_436_d3cc8074d2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_437_5e5ff77807,cp_437_5e5ff77807_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_438_6aba035744,cp_438_6aba035744_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_440_2c33fbd754,cp_440_2c33fbd754_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_441_dab01dbaad,cp_441_dab01dbaad_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_442_adec5820f2,cp_442_adec5820f2_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_443_aaa102aea4,cp_443_aaa102aea4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_444_d30439ac75,cp_444_d30439ac75_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_445_09cbc0ef8f,cp_445_09cbc0ef8f_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_446_26fde1ee21,cp_446_26fde1ee21_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_447_3015a1fc30,cp_447_3015a1fc30_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_448_fe90577c32,cp_448_fe90577c32_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_451_8b946a2927,cp_451_8b946a2927_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_452_c268b7aaad,cp_452_c268b7aaad_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_453_0e64c6612e,cp_453_0e64c6612e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_454_66df40ddd1,cp_454_66df40ddd1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_455_85b929fe77,cp_455_85b929fe77_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_456_53beb0240b,cp_456_53beb0240b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_457_67486397c1,cp_457_67486397c1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_458_6b711aa0df,cp_458_6b711aa0df_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_459_97c20c95bc,cp_459_97c20c95bc_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_460_d5bcc5c9a0,cp_460_d5bcc5c9a0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_461_6608f68196,cp_461_6608f68196_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_462_9dac27f2a5,cp_462_9dac27f2a5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_463_41a7c67a60,cp_463_41a7c67a60_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_464_448009c51a,cp_464_448009c51a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_465_0799941eb5,cp_465_0799941eb5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_466_eb00ebe31c,cp_466_eb00ebe31c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_467_4e1c93a17d,cp_467_4e1c93a17d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_468_2d06b146eb,cp_468_2d06b146eb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_469_8f40b6ca41,cp_469_8f40b6ca41_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_470_30a6e20a76,cp_470_30a6e20a76_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_471_752ee7f4a5,cp_471_752ee7f4a5_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_472_380996253f,cp_472_380996253f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_473_964f3f1484,cp_473_964f3f1484_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_475_2197dbf773,cp_475_2197dbf773_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_476_1a22ed3335,cp_476_1a22ed3335_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_477_b67f32f831,cp_477_b67f32f831_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_478_2d567dd477,cp_478_2d567dd477_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_480_03a302552c,cp_480_03a302552c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_481_020ab345ef,cp_481_020ab345ef_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_482_30b8b7177f,cp_482_30b8b7177f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_483_3b1af4f6d9,cp_483_3b1af4f6d9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_484_638e701dff,cp_484_638e701dff_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_487_5a8810f602,cp_487_5a8810f602_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_488_b90492edcc,cp_488_b90492edcc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_489_85b7091cb7,cp_489_85b7091cb7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_490_94db060a30,cp_490_94db060a30_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_491_19c685f83d,cp_491_19c685f83d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_492_04e98a9bc0,cp_492_04e98a9bc0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_493_f1ea0d4a18,cp_493_f1ea0d4a18_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_495_8b05614c42,cp_495_8b05614c42_tb1,tema clave,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_496_6893d850b4,cp_496_6893d850b4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_497_0c1bd43c5d,cp_497_0c1bd43c5d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_498_8db76017b1,cp_498_8db76017b1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_499_0ade798b71,cp_499_0ade798b71_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_500_687d6e2415,cp_500_687d6e2415_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_501_cc843d7b07,cp_501_cc843d7b07_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_502_f46bb8dacf,cp_502_f46bb8dacf_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_504_e9eecfac17,cp_504_e9eecfac17_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_505_f239f719fd,cp_505_f239f719fd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_506_c786982f3d,cp_506_c786982f3d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_507_f0ba910653,cp_507_f0ba910653_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_508_7c9cff7223,cp_508_7c9cff7223_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_510_32be38c52b,cp_510_32be38c52b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_513_77dd747e0b,cp_513_77dd747e0b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_514_4228520d8b,cp_514_4228520d8b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_515_9293f020ba,cp_515_9293f020ba_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_516_9ee349d84f,cp_516_9ee349d84f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_517_e8e885aa04,cp_517_e8e885aa04_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_518_3adf5de15c,cp_518_3adf5de15c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_520_07ccf7c96e,cp_520_07ccf7c96e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_521_2bbd0b1b25,cp_521_2bbd0b1b25_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_523_6a22c1e307,cp_523_6a22c1e307_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_524_e60d2e68ea,cp_524_e60d2e68ea_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_526_666ded9fc8,cp_526_666ded9fc8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_527_3073def2bd,cp_527_3073def2bd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_528_959a62f633,cp_528_959a62f633_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_529_be19c3bf87,cp_529_be19c3bf87_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_531_a21ed81510,cp_531_a21ed81510_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_532_a82d6a6243,cp_532_a82d6a6243_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_533_f47360624b,cp_533_f47360624b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_534_bb6a69dfb9,cp_534_bb6a69dfb9_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_535_08328f6257,cp_535_08328f6257_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_538_442470d3aa,cp_538_442470d3aa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_539_c5c4b7807a,cp_539_c5c4b7807a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_540_1ebb66d842,cp_540_1ebb66d842_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_542_6c2e73359c,cp_542_6c2e73359c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_543_d78de2b3aa,cp_543_d78de2b3aa_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_544_5301f8cb29,cp_544_5301f8cb29_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_545_d26c8a1e22,cp_545_d26c8a1e22_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_546_d939c15820,cp_546_d939c15820_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_548_2ca063d21d,cp_548_2ca063d21d_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_549_6437640a14,cp_549_6437640a14_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_550_090f71dc16,cp_550_090f71dc16_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_552_223eea77e8,cp_552_223eea77e8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_553_3a2ac8e264,cp_553_3a2ac8e264_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_554_eb61f1fb5e,cp_554_eb61f1fb5e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_555_144a5e220e,cp_555_144a5e220e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_558_40ea35d1cb,cp_558_40ea35d1cb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_560_8b9463c965,cp_560_8b9463c965_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_561_2569ea77c7,cp_561_2569ea77c7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_562_1f762a0dc3,cp_562_1f762a0dc3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_563_230ee7b007,cp_563_230ee7b007_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_564_a3a4c3a2d0,cp_564_a3a4c3a2d0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_565_fcfe3b4899,cp_565_fcfe3b4899_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_566_47c86588cb,cp_566_47c86588cb_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_567_e7ba3252c6,cp_567_e7ba3252c6_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_568_edf7066fd3,cp_568_edf7066fd3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_570_38157d2003,cp_570_38157d2003_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_571_466f0c4bcd,cp_571_466f0c4bcd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_572_faac538316,cp_572_faac538316_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_573_2fc4cd529f,cp_573_2fc4cd529f_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_574_1aecbf12a8,cp_574_1aecbf12a8_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_575_933c6cc42c,cp_575_933c6cc42c_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_576_e3765bd8c1,cp_576_e3765bd8c1_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_577_384bd69fdd,cp_577_384bd69fdd_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_579_c4e79ff978,cp_579_c4e79ff978_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_580_ed97f2639e,cp_580_ed97f2639e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_581_8ab7c61be3,cp_581_8ab7c61be3_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_582_e199ecb9f0,cp_582_e199ecb9f0_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_583_620d38a79b,cp_583_620d38a79b_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_584_e566540a2e,cp_584_e566540a2e_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_585_8124a71726,cp_585_8124a71726_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_586_b6d39b1a14,cp_586_b6d39b1a14_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_587_9e25461bd4,cp_587_9e25461bd4_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_588_285b5ae944,cp_588_285b5ae944_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_589_8d6f472181,cp_589_8d6f472181_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_590_b74a2a3803,cp_590_b74a2a3803_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_591_1afe4135fc,cp_591_1afe4135fc_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_592_a57dac1aed,cp_592_a57dac1aed_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_593_378fb001d7,cp_593_378fb001d7_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_594_783418fc73,cp_594_783418fc73_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_595_c222ec3a5a,cp_595_c222ec3a5a_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables
+cp_596_6a2837ee58,cp_596_6a2837ee58_tb1,repackage_idea,señal vs ruido,claridad,texto corto lado izquierdo + elemento visual lado derecho,evitar promesas absolutas y claims no verificables

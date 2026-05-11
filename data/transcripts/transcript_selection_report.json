@@ -1,16 +1,17 @@
 {
-  "generated_at": "2026-05-10T10:42:15.829729+00:00",
+  "generated_at": "2026-05-11T12:27:05.785465+00:00",
   "limit": 10,
-  "candidates_considered": 1569,
-  "selected_count": 11,
-  "selected_forced_count": 1,
+  "candidates_considered": 1651,
+  "selected_count": 13,
+  "selected_forced_count": 3,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
   ],
   "forced_channels_matched": [
-    "https://www.youtube.com/@bilinkis"
+    "https://www.youtube.com/@bilinkis",
+    "https://www.youtube.com/veritasium"
   ],
   "forced_channels_max_per_run": 50,
   "registry_existing_success_count": 11,
@@ -28,11 +29,11 @@
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
+    "T32B8W5B3XY",
+    "7F4pY8Td9QQ",
     "Yo4aGwiAUBk",
-    "bsqWl-u1aQQ",
-    "g7ANmC6IYog",
-    "xaN83gVwJ60",
-    "_WaudpvolTs"
+    "-peAopWmtxU",
+    "zkmezdV88JA"
   ],
   "warnings": []
 }
