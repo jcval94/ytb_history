@@ -54,6 +54,11 @@ const DATA_FILES = {
   latestOriginalityChecks: "./data/latest_originality_checks.json",
   latestProductionChecklist: "./data/latest_production_checklist.json",
   creativePackagesSummary: "./data/creative_packages_summary.json",
+  transcriptSelectionReport: "./data/transcript_selection_report.json",
+  transcriptionRunReport: "./data/transcription_run_report.json",
+  transcriptInsightsRunReport: "./data/transcript_insights_run_report.json",
+  transcriptRegistry: "./data/transcript_registry.json",
+  transcriptInsightsIndex: "./data/transcript_insights_index.json",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
   latestWeeklyBriefHtml: "./data/latest_weekly_brief.html",
   latestProcessStatus: "./data/latest_process_status.json",
@@ -177,6 +182,7 @@ const TAB_RENDERERS = {
   nlp: () => renderNlp(),
   "content-drivers": () => renderContentDrivers(),
   creative: () => renderCreativePackages(),
+  transcripts: () => renderTranscripts(),
   brief: () => renderBrief(),
   operations: () => renderOperations()
 };
@@ -812,11 +818,11 @@ function renderCreativePackages() {
 
     const target = panel.querySelector("#creative-tables");
     target.innerHTML = '<div id="creative-packages"></div><div id="creative-titles"></div><div id="creative-hooks"></div><div id="creative-thumbs"></div><div id="creative-outlines"></div><div id="creative-originality"></div><div id="creative-checklist"></div>';
-    renderTable(target.querySelector("#creative-packages"), ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "originality_score", "recommended_timeframe"], sortRows(filteredPackages, "creative_execution_score", "desc"), { title: "Top Creative Packages", pageSize: 25 });
+    renderTable(target.querySelector("#creative-packages"), ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "transcript_available", "transcript_summary", "recommended_timeframe"], sortRows(filteredPackages, "creative_execution_score", "desc"), { title: "Top Creative Packages", pageSize: 25 });
     renderTable(target.querySelector("#creative-titles"), ["title_candidate", "title_pattern", "estimated_strength", "originality_status", "copy_risk_score"], sortRows(filteredTitles, "estimated_strength", "desc"), { title: "Title Candidates", pageSize: 25 });
-    renderTable(target.querySelector("#creative-hooks"), ["hook_text", "hook_type", "expected_use", "risk"], filteredHooks, { title: "Hooks", pageSize: 25 });
-    renderTable(target.querySelector("#creative-thumbs"), ["main_text", "visual_metaphor", "emotion", "layout_suggestion"], filteredThumbs, { title: "Thumbnail Briefs", pageSize: 25 });
-    renderTable(target.querySelector("#creative-outlines"), ["structure_type", "intro", "section_1", "section_2", "section_3", "closing"], filteredOutlines, { title: "Script Outlines", pageSize: 25 });
+    renderTable(target.querySelector("#creative-hooks"), ["hook_text", "hook_type", "expected_use", "risk", "transcript_aware"], filteredHooks, { title: "Hooks", pageSize: 25 });
+    renderTable(target.querySelector("#creative-thumbs"), ["main_text", "visual_metaphor", "emotion", "layout_suggestion", "transcript_aware"], filteredThumbs, { title: "Thumbnail Briefs", pageSize: 25 });
+    renderTable(target.querySelector("#creative-outlines"), ["structure_type", "intro", "section_1", "section_2", "section_3", "closing", "transcript_aware"], filteredOutlines, { title: "Script Outlines", pageSize: 25 });
     renderTable(target.querySelector("#creative-originality"), ["candidate_type", "copy_risk_score", "originality_status"], sortRows(filteredOriginality, "copy_risk_score", "desc"), { title: "Originality Checks", pageSize: 25 });
     renderTable(target.querySelector("#creative-checklist"), ["production_step", "estimated_effort", "required_input"], filteredChecklist, { title: "Production Checklist", pageSize: 10 });
   };
@@ -825,6 +831,40 @@ function renderCreativePackages() {
     panel.querySelector(sel)?.addEventListener("change", renderTables);
   });
   renderTables();
+}
+
+function renderTranscripts() {
+  const panel = document.querySelector("#tab-transcripts");
+  if (!panel) return;
+
+  const selection = state.data.transcriptSelectionReport || {};
+  const transcription = state.data.transcriptionRunReport || {};
+  const insightsRun = state.data.transcriptInsightsRunReport || {};
+  const registryRows = tableRows("transcriptRegistry");
+  const insightsRows = tableRows("transcriptInsightsIndex");
+
+  const cards = [
+    ["selected_count", selection.selected_count ?? 0],
+    ["selected_forced_count", selection.selected_forced_count ?? 0],
+    ["selected_ranked_count", selection.selected_ranked_count ?? 0],
+    ["transcribed_success", transcription.transcribed_success ?? 0],
+    ["skipped_no_audio_source", transcription.skipped_no_audio_source ?? 0],
+    ["insights_generated", insightsRun.generated_success ?? insightsRun.generated ?? 0]
+  ].map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(String(label))}</h3><p>${escapeHtml(String(value))}</p></article>`).join("");
+
+  panel.innerHTML = `
+    <div class="kpi-grid">${cards}</div>
+    <p class="notice">Audio sources are not stored in the repo. Place authorized audio files in data/audio_sources/ locally or in the workflow environment.</p>
+    <div id="transcript-registry-table"></div>
+    <div id="transcript-insights-table"></div>
+  `;
+
+  renderTable(panel.querySelector("#transcript-registry-table"), [
+    "video_id", "channel_name", "title", "status", "source_type", "transcription_model", "text_char_count"
+  ], registryRows, { initialSortKey: "text_char_count", title: "Transcript Registry", pageSize: 25 });
+  renderTable(panel.querySelector("#transcript-insights-table"), [
+    "video_id", "summary", "main_topics", "status"
+  ], insightsRows, { title: "Transcript Insights", pageSize: 25 });
 }
 
 function renderBrief() {

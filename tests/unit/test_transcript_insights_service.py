@@ -14,6 +14,7 @@ class FakeInsightsClient:
     def generate(self, *, video_id: str, transcript_text: str, language: str | None) -> dict:
         self.calls += 1
         return {
+            "schema_version": "transcript_insights_v1",
             "video_id": video_id,
             "language": language or "unknown",
             "summary": "Resumen",
@@ -31,6 +32,11 @@ class FakeInsightsClient:
             "creative_reuse_opportunities": ["clip"],
             "risk_notes": [],
         }
+
+
+class InvalidInsightsClient:
+    def generate(self, *, video_id: str, transcript_text: str, language: str | None) -> dict:
+        return {"video_id": video_id, "summary": "missing schema fields"}
 
 
 def _seed_success_registry(tmp_path: Path, video_id: str = "v1", sha: str = "sha1") -> None:
@@ -52,13 +58,27 @@ def test_skip_without_api_key(tmp_path: Path, monkeypatch) -> None:
     assert "skipped_missing_api_key" in report["warnings"]
 
 
+def test_dry_run_does_not_require_api_key_or_call_client(tmp_path: Path, monkeypatch) -> None:
+    _seed_success_registry(tmp_path)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.setattr(transcript_insights_service, "resolve_environment_variable", lambda _name: "")
+    fake = FakeInsightsClient()
+
+    report = generate_transcript_insights(data_dir=tmp_path, limit=10, dry_run=True, insights_client=fake)
+
+    assert report["status"] == "success"
+    assert report["candidates_considered"] == 1
+    assert fake.calls == 0
+    assert not (tmp_path / "transcripts" / "transcript_insights_index.jsonl").exists()
+
+
 def test_uses_persistent_env_api_key_fallback(tmp_path: Path, monkeypatch) -> None:
     _seed_success_registry(tmp_path)
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     monkeypatch.setattr(transcript_insights_service, "resolve_environment_variable", lambda _name: "persisted-key")
     fake = FakeInsightsClient()
     report = generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=fake)
-    assert report["generated"] == 1
+    assert report["generated_success"] == 1
     assert fake.calls == 1
 
 
@@ -67,10 +87,28 @@ def test_fake_client_generates_insights_and_writes_outputs(tmp_path: Path, monke
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     fake = FakeInsightsClient()
     report = generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=fake)
-    assert report["generated"] == 1
+    assert report["generated_success"] == 1
     assert fake.calls == 1
     assert (tmp_path / "transcripts" / "videos" / "v1" / "transcript_insights.json").exists()
     assert (tmp_path / "transcripts" / "transcript_insights_index.jsonl").exists()
+    payload = json.loads((tmp_path / "transcripts" / "videos" / "v1" / "transcript_insights.json").read_text(encoding="utf-8"))
+    assert payload["schema_version"] == "transcript_insights_v1"
+
+
+def test_invalid_schema_marks_failed(tmp_path: Path, monkeypatch) -> None:
+    _seed_success_registry(tmp_path)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+
+    report = generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=InvalidInsightsClient())
+
+    assert report["failed"] == 1
+    assert report["generated_success"] == 0
+    index_rows = [
+        json.loads(line)
+        for line in (tmp_path / "transcripts" / "transcript_insights_index.jsonl").read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    assert index_rows[0]["status"] == "failed"
 
 
 def test_cache_avoids_regenerate(tmp_path: Path, monkeypatch) -> None:
@@ -80,7 +118,7 @@ def test_cache_avoids_regenerate(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     fake = FakeInsightsClient()
     report = generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=fake)
-    assert report["cached"] == 1
+    assert report["skipped_cache"] == 1
     assert fake.calls == 0
 
 
@@ -91,7 +129,7 @@ def test_force_regenerates(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     fake = FakeInsightsClient()
     report = generate_transcript_insights(data_dir=tmp_path, limit=10, force=True, insights_client=fake)
-    assert report["generated"] == 1
+    assert report["generated_success"] == 1
     assert fake.calls == 1
 
 
@@ -102,3 +140,9 @@ def test_does_not_modify_transcript_txt(tmp_path: Path, monkeypatch) -> None:
     generate_transcript_insights(data_dir=tmp_path, limit=10, insights_client=FakeInsightsClient())
     after = (tmp_path / "transcripts" / "videos" / "v1" / "transcript.txt").read_text(encoding="utf-8")
     assert before == after
+
+
+def test_transcript_insights_service_has_no_youtube_dependency() -> None:
+    source = Path("src/ytb_history/services/transcript_insights_service.py").read_text(encoding="utf-8")
+    assert "search.list" not in source
+    assert "youtube" not in source.lower()

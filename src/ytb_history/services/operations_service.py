@@ -492,7 +492,7 @@ def _trim_scalar(value: Any) -> Any:
 
 def _failure_count(payload: dict[str, Any]) -> int:
     total = 0
-    for key in ("failed", "failed_count", "failure_count", "failed_audio_download", "channels_failed"):
+    for key in ("failed", "failed_count", "failure_count", "channels_failed"):
         value = payload.get(key)
         if isinstance(value, bool):
             continue

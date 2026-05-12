@@ -31,6 +31,8 @@ from ytb_history.services.transcript_store_service import build_transcript_regis
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
+from ytb_history.services.local_repo_sync_service import sync_local_repo
+from ytb_history.services.local_transcription_diagnostics_service import diagnose_local_transcription
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -129,30 +131,52 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--data-dir", default="data")
     transcribe_parser.add_argument("--limit", default=10, type=int)
     transcribe_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    transcribe_parser.add_argument("--video-source-dir", default="data/video_sources")
     transcribe_parser.add_argument("--model", default="gpt-4o-mini-transcribe")
+    transcribe_parser.add_argument("--include-forced", action="store_true")
+    transcribe_parser.add_argument("--ranked-limit", type=int)
+    transcribe_parser.add_argument("--dry-run", action="store_true")
+    transcribe_parser.add_argument("--no-ytdlp-fallback", dest="allow_ytdlp_fallback", action="store_false", default=True)
     transcribe_parser.add_argument("--ytdlp-cookies-file")
     transcribe_parser.add_argument("--ytdlp-browser")
     transcribe_parser.add_argument("--ytdlp-extra-args")
     transcribe_parser.add_argument("--ytdlp-cookies-b64")
+    transcribe_parser.add_argument("--no-segment-large-audio", dest="segment_large_audio", action="store_false", default=True)
 
     insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
     insights_parser.add_argument("--data-dir", default="data")
     insights_parser.add_argument("--limit", default=10, type=int)
-    insights_parser.add_argument("--model", default="gpt-4o-mini")
+    insights_parser.add_argument("--model", default="gpt-5.5-mini")
     insights_parser.add_argument("--force", action="store_true")
     insights_parser.add_argument("--dry-run", action="store_true")
 
-    local_auto_parser = sub.add_parser("run-local-transcription-automation", help="Run local git, YouTube refresh, transcription, insights, and reporting automation")
+    local_auto_parser = sub.add_parser("run-local-transcription-automation", help="Run local transcript selection, local-audio transcription, insights, and reporting automation")
     local_auto_parser.add_argument("--repo-dir", required=True)
     local_auto_parser.add_argument("--data-dir", default="data")
     local_auto_parser.add_argument("--settings", default="config/settings.yaml")
     local_auto_parser.add_argument("--limit", default=10, type=int)
-    local_auto_parser.add_argument("--skip-youtube-refresh", action="store_true")
+    local_auto_parser.add_argument("--skip-youtube-refresh", action="store_true", help="Deprecated compatibility flag; local transcript automation skips YouTube refresh by default")
     local_auto_parser.add_argument("--no-sync-git", action="store_true")
+    local_auto_parser.add_argument("--allow-stale-repo", action="store_true")
     local_auto_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    local_auto_parser.add_argument("--video-source-dir", default="data/video_sources")
+    local_auto_parser.add_argument("--no-ytdlp-fallback", dest="allow_ytdlp_fallback", action="store_false", default=True)
     local_auto_parser.add_argument("--ytdlp-cookies-file")
     local_auto_parser.add_argument("--ytdlp-browser")
     local_auto_parser.add_argument("--ytdlp-extra-args")
+
+    sync_parser = sub.add_parser("sync-local-repo", help="Safely sync the local repo for scheduled automation")
+    sync_parser.add_argument("--repo-dir", default=".")
+    sync_parser.add_argument("--remote", default="origin")
+    sync_parser.add_argument("--branch", default="main")
+    sync_parser.add_argument("--check-only", action="store_true")
+
+    diagnose_parser = sub.add_parser("diagnose-local-transcription", help="Inspect local transcription scheduler, Git, local audio, and OpenAI readiness")
+    diagnose_parser.add_argument("--repo-dir", default=".")
+    diagnose_parser.add_argument("--data-dir", default="data")
+    diagnose_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    diagnose_parser.add_argument("--video-source-dir", default="data/video_sources")
+    diagnose_parser.add_argument("--task-name", default="YtbHistoryLocalTranscription")
 
     predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
     predict_parser.add_argument("--model-dir", required=True)
@@ -294,16 +318,22 @@ def main() -> int:
         return 0
 
     if args.command == "transcribe-selected-videos":
-        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
+        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else []
         summary = transcribe_selected_videos(
             data_dir=args.data_dir,
             limit=args.limit,
             audio_source_dir=args.audio_source_dir,
+            video_source_dir=args.video_source_dir,
             model=args.model,
+            include_forced=args.include_forced,
+            ranked_limit=args.ranked_limit,
+            dry_run=args.dry_run,
+            allow_ytdlp_fallback=args.allow_ytdlp_fallback,
             ytdlp_cookies_file=args.ytdlp_cookies_file,
             ytdlp_browser=args.ytdlp_browser,
             ytdlp_extra_args=ytdlp_extra_args,
             ytdlp_cookies_b64=args.ytdlp_cookies_b64,
+            segment_large_audio=args.segment_large_audio,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
@@ -320,7 +350,7 @@ def main() -> int:
         return 0
 
     if args.command == "run-local-transcription-automation":
-        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
+        ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else []
         summary = run_local_transcription_automation(
             repo_dir=args.repo_dir,
             data_dir=args.data_dir,
@@ -328,10 +358,34 @@ def main() -> int:
             limit=args.limit,
             skip_youtube_refresh=args.skip_youtube_refresh,
             no_sync_git=args.no_sync_git,
+            allow_stale_repo=args.allow_stale_repo,
             audio_source_dir=args.audio_source_dir,
+            video_source_dir=args.video_source_dir,
+            allow_ytdlp_fallback=args.allow_ytdlp_fallback,
             ytdlp_cookies_file=args.ytdlp_cookies_file,
             ytdlp_browser=args.ytdlp_browser,
             ytdlp_extra_args=ytdlp_extra_args,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "sync-local-repo":
+        summary = sync_local_repo(
+            repo_dir=args.repo_dir,
+            remote=args.remote,
+            branch=args.branch,
+            check_only=args.check_only,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "diagnose-local-transcription":
+        summary = diagnose_local_transcription(
+            repo_dir=args.repo_dir,
+            data_dir=args.data_dir,
+            audio_source_dir=args.audio_source_dir,
+            video_source_dir=args.video_source_dir,
+            task_name=args.task_name,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0

@@ -1,91 +1,441 @@
 {
-  "generated_at": "2026-05-09T05:51:32.460285+00:00",
+  "generated_at": "2026-05-11T22:08:04.940764+00:00",
+  "status": "success",
   "limit": 10,
-  "processed": 10,
-  "transcribed_success": 8,
-  "skipped_no_audio_source": 0,
-  "skipped_invalid_video_id": 0,
-  "skipped_missing_ytdlp": 0,
-  "failed_audio_download": 0,
+  "ranked_limit": 10,
+  "include_forced": true,
+  "dry_run": true,
+  "queue_total": 26,
+  "processed": 26,
+  "transcribed_success": 0,
+  "skipped_no_audio_source": 26,
   "skipped_already_transcribed": 0,
-  "failed": 2,
-  "queue_total": 10,
-  "registry_success_before_run": 3,
-  "persisted_success_before_run": 3,
-  "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+  "skipped_missing_api_key": 0,
+  "skipped_invalid_video_id": 0,
+  "failed": 0,
+  "audio_source_dir": "data\\audio_sources",
   "audio_source_dir_exists": true,
   "audio_source_dir_is_dir": true,
   "audio_source_files_sample": [
+    "0QtQXR__SpY.mp3",
+    "8Vq_Vm8Pe9Y.mp3",
+    "H57K_ZTfLK4.mp3",
     "HBezrmK2eEY.mp3",
+    "KGHb_XF0Z8M.mp3",
     "NlFAfAqX1zE.mp3",
+    "dbAz9kzA7yU.mp3",
+    "iNuSrPJlZjU.mp3",
+    "imAjmQy8p8c.mp3",
+    "kWIBe2hzd4M.mp3",
+    "m1ddx427bHI.mp3",
+    "qtz20vF8OR0.mp3",
     "yHYYyV2Pdmk.mp3"
   ],
-  "allow_ytdlp_fallback": true,
-  "ytdlp_runtime_options": {
-    "used_cookies_file": false,
-    "used_browser_mode": false,
-    "extra_args_count": 0
-  },
-  "ytdlp_download_attempts": 10,
-  "ytdlp_download_success": 10,
-  "ytdlp_auth_required_with_cookies_count": 0,
-  "ytdlp_auth_required_with_cookies_abort_threshold": 3,
-  "ytdlp_cookies_file_diagnostics": {
-    "path_provided": false,
-    "exists": false,
-    "is_file": false,
-    "size_bytes": 0,
-    "non_comment_cookie_rows": 0,
-    "youtube_google_cookie_rows": 0,
-    "expired_youtube_google_cookie_rows": 0
-  },
-  "ytdlp_download_failures": [],
   "processed_video_ids": [
-    "8Vq_Vm8Pe9Y",
-    "kWIBe2hzd4M",
-    "m1ddx427bHI",
-    "iNuSrPJlZjU",
-    "dbAz9kzA7yU",
-    "0QtQXR__SpY",
-    "H57K_ZTfLK4",
-    "qtz20vF8OR0",
-    "KGHb_XF0Z8M",
-    "imAjmQy8p8c"
+    "2zOD6Q4hfFA",
+    "PBJZdZSTGlE",
+    "NOv3U3ZUiro",
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E",
+    "rfRFwXnk660",
+    "ByJAH8vTgfw",
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ",
+    "iRach9lpIlg",
+    "U14_qm5y38o",
+    "T34ygnCahZc",
+    "0O8CF6F7CVs",
+    "cH_ZScbZVEA",
+    "PDLLR1NwC2o",
+    "fRjAMALJ0r0",
+    "_WaudpvolTs",
+    "OEtIq4tR1rA",
+    "LAjjk7ivtFM",
+    "rWjQ27r4akc",
+    "Yikyh4ymps0",
+    "GIpW82nODbE"
   ],
-  "success_video_ids": [
-    "8Vq_Vm8Pe9Y",
-    "kWIBe2hzd4M",
-    "m1ddx427bHI",
-    "iNuSrPJlZjU",
-    "dbAz9kzA7yU",
-    "0QtQXR__SpY",
-    "H57K_ZTfLK4",
-    "qtz20vF8OR0"
-  ],
+  "success_video_ids": [],
   "already_transcribed_video_ids": [],
-  "missing_audio_video_ids": [],
-  "missing_audio_details": [],
-  "invalid_video_id_details": [],
-  "failed_video_ids": [
-    "KGHb_XF0Z8M",
-    "imAjmQy8p8c"
+  "missing_audio_video_ids": [
+    "2zOD6Q4hfFA",
+    "PBJZdZSTGlE",
+    "NOv3U3ZUiro",
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E",
+    "rfRFwXnk660",
+    "ByJAH8vTgfw",
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ",
+    "iRach9lpIlg",
+    "U14_qm5y38o",
+    "T34ygnCahZc",
+    "0O8CF6F7CVs",
+    "cH_ZScbZVEA",
+    "PDLLR1NwC2o",
+    "fRjAMALJ0r0",
+    "_WaudpvolTs",
+    "OEtIq4tR1rA",
+    "LAjjk7ivtFM",
+    "rWjQ27r4akc",
+    "Yikyh4ymps0",
+    "GIpW82nODbE"
   ],
-  "failed_details": [
+  "missing_audio_details": [
     {
-      "video_id": "KGHb_XF0Z8M",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\KGHb_XF0Z8M.mp3",
-      "error_type": "BadRequestError",
-      "error_message": "Error code: 400 - {'error': {'message': 'Total number of tokens in instructions + audio is too large for this model', 'type': 'invalid_request_error', 'param': None, 'code': 'input_too_large'}}"
+      "video_id": "2zOD6Q4hfFA",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\2zOD6Q4hfFA.mp3",
+        "data\\audio_sources\\2zOD6Q4hfFA.m4a",
+        "data\\audio_sources\\2zOD6Q4hfFA.wav",
+        "data\\audio_sources\\2zOD6Q4hfFA.webm",
+        "data\\audio_sources\\2zOD6Q4hfFA.mp4"
+      ]
     },
     {
-      "video_id": "imAjmQy8p8c",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\imAjmQy8p8c.mp3",
-      "error_type": "APIConnectionError",
-      "error_message": "Connection error."
+      "video_id": "PBJZdZSTGlE",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\PBJZdZSTGlE.mp3",
+        "data\\audio_sources\\PBJZdZSTGlE.m4a",
+        "data\\audio_sources\\PBJZdZSTGlE.wav",
+        "data\\audio_sources\\PBJZdZSTGlE.webm",
+        "data\\audio_sources\\PBJZdZSTGlE.mp4"
+      ]
+    },
+    {
+      "video_id": "NOv3U3ZUiro",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\NOv3U3ZUiro.mp3",
+        "data\\audio_sources\\NOv3U3ZUiro.m4a",
+        "data\\audio_sources\\NOv3U3ZUiro.wav",
+        "data\\audio_sources\\NOv3U3ZUiro.webm",
+        "data\\audio_sources\\NOv3U3ZUiro.mp4"
+      ]
+    },
+    {
+      "video_id": "6hNY0K71Ewo",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\6hNY0K71Ewo.mp3",
+        "data\\audio_sources\\6hNY0K71Ewo.m4a",
+        "data\\audio_sources\\6hNY0K71Ewo.wav",
+        "data\\audio_sources\\6hNY0K71Ewo.webm",
+        "data\\audio_sources\\6hNY0K71Ewo.mp4"
+      ]
+    },
+    {
+      "video_id": "SVTPv4sI_Jc",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\SVTPv4sI_Jc.mp3",
+        "data\\audio_sources\\SVTPv4sI_Jc.m4a",
+        "data\\audio_sources\\SVTPv4sI_Jc.wav",
+        "data\\audio_sources\\SVTPv4sI_Jc.webm",
+        "data\\audio_sources\\SVTPv4sI_Jc.mp4"
+      ]
+    },
+    {
+      "video_id": "B8E4azaZ13k",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\B8E4azaZ13k.mp3",
+        "data\\audio_sources\\B8E4azaZ13k.m4a",
+        "data\\audio_sources\\B8E4azaZ13k.wav",
+        "data\\audio_sources\\B8E4azaZ13k.webm",
+        "data\\audio_sources\\B8E4azaZ13k.mp4"
+      ]
+    },
+    {
+      "video_id": "g-7nUex4nVg",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\g-7nUex4nVg.mp3",
+        "data\\audio_sources\\g-7nUex4nVg.m4a",
+        "data\\audio_sources\\g-7nUex4nVg.wav",
+        "data\\audio_sources\\g-7nUex4nVg.webm",
+        "data\\audio_sources\\g-7nUex4nVg.mp4"
+      ]
+    },
+    {
+      "video_id": "N8Bc_M2Ew2E",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\N8Bc_M2Ew2E.mp3",
+        "data\\audio_sources\\N8Bc_M2Ew2E.m4a",
+        "data\\audio_sources\\N8Bc_M2Ew2E.wav",
+        "data\\audio_sources\\N8Bc_M2Ew2E.webm",
+        "data\\audio_sources\\N8Bc_M2Ew2E.mp4"
+      ]
+    },
+    {
+      "video_id": "rfRFwXnk660",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\rfRFwXnk660.mp3",
+        "data\\audio_sources\\rfRFwXnk660.m4a",
+        "data\\audio_sources\\rfRFwXnk660.wav",
+        "data\\audio_sources\\rfRFwXnk660.webm",
+        "data\\audio_sources\\rfRFwXnk660.mp4"
+      ]
+    },
+    {
+      "video_id": "ByJAH8vTgfw",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\ByJAH8vTgfw.mp3",
+        "data\\audio_sources\\ByJAH8vTgfw.m4a",
+        "data\\audio_sources\\ByJAH8vTgfw.wav",
+        "data\\audio_sources\\ByJAH8vTgfw.webm",
+        "data\\audio_sources\\ByJAH8vTgfw.mp4"
+      ]
+    },
+    {
+      "video_id": "ksn5yrsC3Wg",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\ksn5yrsC3Wg.mp3",
+        "data\\audio_sources\\ksn5yrsC3Wg.m4a",
+        "data\\audio_sources\\ksn5yrsC3Wg.wav",
+        "data\\audio_sources\\ksn5yrsC3Wg.webm",
+        "data\\audio_sources\\ksn5yrsC3Wg.mp4"
+      ]
+    },
+    {
+      "video_id": "n1G2FQ0UEqc",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\n1G2FQ0UEqc.mp3",
+        "data\\audio_sources\\n1G2FQ0UEqc.m4a",
+        "data\\audio_sources\\n1G2FQ0UEqc.wav",
+        "data\\audio_sources\\n1G2FQ0UEqc.webm",
+        "data\\audio_sources\\n1G2FQ0UEqc.mp4"
+      ]
+    },
+    {
+      "video_id": "K38w2QlgHPQ",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\K38w2QlgHPQ.mp3",
+        "data\\audio_sources\\K38w2QlgHPQ.m4a",
+        "data\\audio_sources\\K38w2QlgHPQ.wav",
+        "data\\audio_sources\\K38w2QlgHPQ.webm",
+        "data\\audio_sources\\K38w2QlgHPQ.mp4"
+      ]
+    },
+    {
+      "video_id": "iRach9lpIlg",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\iRach9lpIlg.mp3",
+        "data\\audio_sources\\iRach9lpIlg.m4a",
+        "data\\audio_sources\\iRach9lpIlg.wav",
+        "data\\audio_sources\\iRach9lpIlg.webm",
+        "data\\audio_sources\\iRach9lpIlg.mp4"
+      ]
+    },
+    {
+      "video_id": "U14_qm5y38o",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\U14_qm5y38o.mp3",
+        "data\\audio_sources\\U14_qm5y38o.m4a",
+        "data\\audio_sources\\U14_qm5y38o.wav",
+        "data\\audio_sources\\U14_qm5y38o.webm",
+        "data\\audio_sources\\U14_qm5y38o.mp4"
+      ]
+    },
+    {
+      "video_id": "T34ygnCahZc",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\T34ygnCahZc.mp3",
+        "data\\audio_sources\\T34ygnCahZc.m4a",
+        "data\\audio_sources\\T34ygnCahZc.wav",
+        "data\\audio_sources\\T34ygnCahZc.webm",
+        "data\\audio_sources\\T34ygnCahZc.mp4"
+      ]
+    },
+    {
+      "video_id": "0O8CF6F7CVs",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\0O8CF6F7CVs.mp3",
+        "data\\audio_sources\\0O8CF6F7CVs.m4a",
+        "data\\audio_sources\\0O8CF6F7CVs.wav",
+        "data\\audio_sources\\0O8CF6F7CVs.webm",
+        "data\\audio_sources\\0O8CF6F7CVs.mp4"
+      ]
+    },
+    {
+      "video_id": "cH_ZScbZVEA",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\cH_ZScbZVEA.mp3",
+        "data\\audio_sources\\cH_ZScbZVEA.m4a",
+        "data\\audio_sources\\cH_ZScbZVEA.wav",
+        "data\\audio_sources\\cH_ZScbZVEA.webm",
+        "data\\audio_sources\\cH_ZScbZVEA.mp4"
+      ]
+    },
+    {
+      "video_id": "PDLLR1NwC2o",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\PDLLR1NwC2o.mp3",
+        "data\\audio_sources\\PDLLR1NwC2o.m4a",
+        "data\\audio_sources\\PDLLR1NwC2o.wav",
+        "data\\audio_sources\\PDLLR1NwC2o.webm",
+        "data\\audio_sources\\PDLLR1NwC2o.mp4"
+      ]
+    },
+    {
+      "video_id": "fRjAMALJ0r0",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\fRjAMALJ0r0.mp3",
+        "data\\audio_sources\\fRjAMALJ0r0.m4a",
+        "data\\audio_sources\\fRjAMALJ0r0.wav",
+        "data\\audio_sources\\fRjAMALJ0r0.webm",
+        "data\\audio_sources\\fRjAMALJ0r0.mp4"
+      ]
+    },
+    {
+      "video_id": "_WaudpvolTs",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\_WaudpvolTs.mp3",
+        "data\\audio_sources\\_WaudpvolTs.m4a",
+        "data\\audio_sources\\_WaudpvolTs.wav",
+        "data\\audio_sources\\_WaudpvolTs.webm",
+        "data\\audio_sources\\_WaudpvolTs.mp4"
+      ]
+    },
+    {
+      "video_id": "OEtIq4tR1rA",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\OEtIq4tR1rA.mp3",
+        "data\\audio_sources\\OEtIq4tR1rA.m4a",
+        "data\\audio_sources\\OEtIq4tR1rA.wav",
+        "data\\audio_sources\\OEtIq4tR1rA.webm",
+        "data\\audio_sources\\OEtIq4tR1rA.mp4"
+      ]
+    },
+    {
+      "video_id": "LAjjk7ivtFM",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\LAjjk7ivtFM.mp3",
+        "data\\audio_sources\\LAjjk7ivtFM.m4a",
+        "data\\audio_sources\\LAjjk7ivtFM.wav",
+        "data\\audio_sources\\LAjjk7ivtFM.webm",
+        "data\\audio_sources\\LAjjk7ivtFM.mp4"
+      ]
+    },
+    {
+      "video_id": "rWjQ27r4akc",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\rWjQ27r4akc.mp3",
+        "data\\audio_sources\\rWjQ27r4akc.m4a",
+        "data\\audio_sources\\rWjQ27r4akc.wav",
+        "data\\audio_sources\\rWjQ27r4akc.webm",
+        "data\\audio_sources\\rWjQ27r4akc.mp4"
+      ]
+    },
+    {
+      "video_id": "Yikyh4ymps0",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\Yikyh4ymps0.mp3",
+        "data\\audio_sources\\Yikyh4ymps0.m4a",
+        "data\\audio_sources\\Yikyh4ymps0.wav",
+        "data\\audio_sources\\Yikyh4ymps0.webm",
+        "data\\audio_sources\\Yikyh4ymps0.mp4"
+      ]
+    },
+    {
+      "video_id": "GIpW82nODbE",
+      "audio_source_dir": "data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "attempted_paths": [
+        "data\\audio_sources\\GIpW82nODbE.mp3",
+        "data\\audio_sources\\GIpW82nODbE.m4a",
+        "data\\audio_sources\\GIpW82nODbE.wav",
+        "data\\audio_sources\\GIpW82nODbE.webm",
+        "data\\audio_sources\\GIpW82nODbE.mp4"
+      ]
     }
   ],
-  "warnings": [
-    "transcription_failed:KGHb_XF0Z8M:BadRequestError",
-    "transcription_failed:imAjmQy8p8c:APIConnectionError"
-  ]
+  "invalid_video_id_details": [],
+  "failed_video_ids": [],
+  "failed_details": [],
+  "warnings": [],
+  "selected_count": 26,
+  "selected_forced_count": 16,
+  "selected_ranked_count": 10,
+  "registry_success_before_run": 11,
+  "persisted_success_before_run": 11
 }

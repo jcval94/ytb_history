@@ -91,7 +91,7 @@ def test_creative_packages_uses_transcript_insights_when_available(tmp_path: Pat
     insights_path.parent.mkdir(parents=True, exist_ok=True)
     insights_path.write_text(json.dumps({
         "summary": "Resumen transcript",
-        "hook_analysis": {"hook_type": "surprise", "hook_text": "Dato inesperado", "why_it_works": "curiosidad"},
+        "hook_analysis": {"hook_type": "question", "hook_text": "Dato inesperado", "why_it_works": "curiosidad"},
         "narrative_structure": [{"section": "intro", "purpose": "gancho", "summary": "Bloque 1"}],
         "creative_reuse_opportunities": ["clip A"],
         "risk_notes": ["riesgo A"],
@@ -103,10 +103,19 @@ def test_creative_packages_uses_transcript_insights_when_available(tmp_path: Pat
     packages = list(csv.DictReader((out / "latest_creative_packages.csv").open("r", encoding="utf-8", newline="")))
     assert packages[0]["transcript_available"] in {"True", "true", "1"}
     assert "Resumen transcript" in packages[0]["transcript_summary"]
+    assert packages[0]["transcript_insights_path"] == str(insights_path)
+    assert packages[0]["transcript_hook_type"] == "question"
+    assert float(packages[0]["transcript_enrichment_score"]) > 0.0
     hooks = list(csv.DictReader((out / "latest_hook_candidates.csv").open("r", encoding="utf-8", newline="")))
-    assert hooks[0]["hook_type"] == "surprise"
+    assert hooks[0]["hook_type"] == "question"
+    assert hooks[0]["transcript_aware"] in {"True", "true", "1"}
+    assert hooks[0]["transcript_source"] == str(insights_path)
     outlines = list(csv.DictReader((out / "latest_script_outlines.csv").open("r", encoding="utf-8", newline="")))
     assert outlines[0]["section_1"] == "Bloque 1"
+    assert outlines[0]["transcript_aware"] in {"True", "true", "1"}
+    thumbs = list(csv.DictReader((out / "latest_thumbnail_briefs.csv").open("r", encoding="utf-8", newline="")))
+    assert thumbs[0]["visual_metaphor"] == "clip A"
+    assert thumbs[0]["transcript_aware"] in {"True", "true", "1"}
 
 
 def test_creative_packages_handles_incomplete_insights(tmp_path: Path) -> None:

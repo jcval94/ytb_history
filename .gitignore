@@ -13,10 +13,12 @@ codex_pytest_work/
 codex_temp_root/
 build/pytest-*/
 pytestbase_*/
+pytest_*_tmp/
 tmp4_dcb3ed/
 
 # Keep data artifacts versioned
 data/audio_sources/
+data/video_sources/
 *.mp3
 *.mp4
 *.m4a

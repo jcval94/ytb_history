@@ -207,11 +207,33 @@ def test_index_html_contains_creative_tab() -> None:
     assert "Creative" in index_html
 
 
+def test_index_html_contains_transcripts_tab() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="transcripts"' in index_html
+    assert 'id="tab-transcripts"' in index_html
+    assert "Transcripts" in index_html
+
+
 def test_app_js_contains_creative_render_and_data_loads() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderCreativePackages()" in app_js
     assert 'latestCreativePackages: "./data/latest_creative_packages.json"' in app_js
     assert 'creativePackagesSummary: "./data/creative_packages_summary.json"' in app_js
+    assert "transcript_available" in app_js
+    assert "transcript_summary" in app_js
+
+
+def test_app_js_contains_transcripts_render_and_data_loads() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderTranscripts()" in app_js
+    assert 'transcriptSelectionReport: "./data/transcript_selection_report.json"' in app_js
+    assert 'transcriptionRunReport: "./data/transcription_run_report.json"' in app_js
+    assert 'transcriptInsightsRunReport: "./data/transcript_insights_run_report.json"' in app_js
+    assert 'transcriptRegistry: "./data/transcript_registry.json"' in app_js
+    assert 'transcriptInsightsIndex: "./data/transcript_insights_index.json"' in app_js
+    assert "Audio sources are not stored in the repo." in app_js
+    assert "selected_forced_count" in app_js
+    assert "skipped_no_audio_source" in app_js
 
 
 def test_readme_does_not_include_old_pages_workflow_line() -> None:

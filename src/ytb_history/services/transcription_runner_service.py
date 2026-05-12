@@ -1,4 +1,4 @@
-"""Run transcription for queued videos using local audio sources and OpenAI STT."""
+"""Run transcription for queued videos using local media and safe fallbacks."""
 
 from __future__ import annotations
 
@@ -9,11 +9,10 @@ import os
 import shutil
 import subprocess
 import sys
-import tempfile
-import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable, Sequence
 
 from ytb_history.clients.openai_audio_client import OpenAIAudioClient
 from ytb_history.services.transcript_store_service import (
@@ -25,76 +24,14 @@ from ytb_history.services.transcript_store_service import (
 from ytb_history.utils.environment import resolve_environment_variable
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
-AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
-YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
-YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD = 3
+AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".ogg", ".opus", ".flac", ".mp4"]
+VIDEO_EXTENSIONS = [".mp4", ".webm", ".mkv", ".mov"]
+
+CommandRunner = Callable[..., subprocess.CompletedProcess[str]]
 
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
-
-
-def _materialize_cookies_file_from_b64(*, ytdlp_cookies_b64: str | None) -> str | None:
-    raw = (ytdlp_cookies_b64 or "").strip()
-    if not raw:
-        return None
-    try:
-        decoded = base64.b64decode(raw, validate=True)
-    except Exception:
-        return None
-    handle = tempfile.NamedTemporaryFile(prefix="yt_cookies_", suffix=".txt", delete=False)
-    try:
-        handle.write(decoded)
-        handle.flush()
-    finally:
-        handle.close()
-    os.chmod(handle.name, 0o600)
-    return handle.name
-
-
-def _inspect_ytdlp_cookies_file(cookies_file: str | None) -> dict[str, Any]:
-    """Return non-secret diagnostics for the cookies file passed to yt-dlp."""
-    diagnostics: dict[str, Any] = {
-        "path_provided": bool(cookies_file),
-        "exists": False,
-        "is_file": False,
-        "size_bytes": 0,
-        "non_comment_cookie_rows": 0,
-        "youtube_google_cookie_rows": 0,
-        "expired_youtube_google_cookie_rows": 0,
-    }
-    if not cookies_file:
-        return diagnostics
-
-    path = Path(cookies_file)
-    diagnostics["exists"] = path.exists()
-    diagnostics["is_file"] = path.is_file()
-    if not path.is_file():
-        return diagnostics
-
-    try:
-        diagnostics["size_bytes"] = path.stat().st_size
-        now_epoch = int(time.time())
-        with path.open("r", encoding="utf-8", errors="replace") as handle:
-            for line in handle:
-                text = line.strip()
-                if not text or text.startswith("#"):
-                    continue
-                diagnostics["non_comment_cookie_rows"] += 1
-                fields = text.split("\t")
-                domain = fields[0].lower() if fields else ""
-                if domain in {".youtube.com", "youtube.com", ".google.com", "google.com"}:
-                    diagnostics["youtube_google_cookie_rows"] += 1
-                    if len(fields) >= 5:
-                        try:
-                            expires_at = int(fields[4])
-                        except ValueError:
-                            expires_at = 0
-                        if expires_at > 0 and expires_at <= now_epoch:
-                            diagnostics["expired_youtube_google_cookie_rows"] += 1
-    except OSError as exc:
-        diagnostics["read_error_type"] = type(exc).__name__
-    return diagnostics
 
 
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -109,169 +46,444 @@ def _read_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
-def _find_audio_source(audio_source_dir: Path, video_id: str) -> Path | None:
-    for ext in AUDIO_EXTENSIONS:
-        candidate = audio_source_dir / f"{video_id}{ext}"
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def _make_local_temp_dir(parent: Path, prefix: str) -> Path:
+    parent.mkdir(parents=True, exist_ok=True)
+    for _ in range(100):
+        candidate = parent / f"{prefix}{uuid.uuid4().hex}"
+        try:
+            candidate.mkdir()
+            return candidate
+        except FileExistsError:
+            continue
+    raise RuntimeError(f"could_not_create_temp_dir:{parent}")
+
+
+def _safe_rmtree(path: Path) -> None:
+    shutil.rmtree(path, ignore_errors=True)
+
+
+def _find_media_source(source_dir: Path, video_id: str, extensions: Sequence[str]) -> Path | None:
+    for ext in extensions:
+        candidate = source_dir / f"{video_id}{ext}"
         if candidate.exists() and candidate.is_file():
             return candidate
     return None
 
 
-def _candidate_audio_paths(audio_source_dir: Path, video_id: str) -> list[str]:
-    return [str(audio_source_dir / f"{video_id}{ext}") for ext in AUDIO_EXTENSIONS]
+def _find_audio_source(audio_source_dir: Path, video_id: str) -> Path | None:
+    return _find_media_source(audio_source_dir, video_id, AUDIO_EXTENSIONS)
 
 
-def _youtube_watch_url(video_id: str) -> str:
-    return f"https://www.youtube.com/watch?v={video_id}"
+def _candidate_media_paths(source_dir: Path, video_id: str, extensions: Sequence[str]) -> list[str]:
+    return [str(source_dir / f"{video_id}{ext}") for ext in extensions]
 
 
-def _classify_ytdlp_error(stderr: str) -> str:
-    text = (stderr or "").lower()
-    if "requested format is not available" in text:
-        return "format_unavailable"
-    if "could not copy" in text and "cookie database" in text:
-        return "browser_cookie_access_error"
-    if "ffmpeg" in text and any(token in text for token in ["not found", "is required", "not installed"]):
-        return "tooling_missing"
-    if any(token in text for token in ["sign in to confirm", "use --cookies", "cookies", "login required", "authentication"]):
-        return "auth_required"
-    if any(token in text for token in ["private video", "video unavailable", "this video is unavailable", "unavailable"]):
-        return "video_unavailable"
-    if any(token in text for token in ["429", "too many requests", "timed out", "timeout", "temporarily unavailable", "connection reset", "network"]):
-        return "network_or_rate_limit"
-    return "unknown"
+def _select_queue_rows(
+    queued: list[dict[str, Any]],
+    *,
+    limit: int,
+    include_forced: bool,
+    ranked_limit: int | None,
+) -> list[dict[str, Any]]:
+    if not include_forced:
+        return queued[: max(0, limit)]
+
+    effective_ranked_limit = max(0, ranked_limit if ranked_limit is not None else limit)
+    forced_rows = [
+        row
+        for row in queued
+        if bool(row.get("forced_channel")) or row.get("selection_source") == "forced_channel_new_video"
+    ]
+    ranked_rows = [
+        row
+        for row in queued
+        if not (bool(row.get("forced_channel")) or row.get("selection_source") == "forced_channel_new_video")
+    ]
+    return forced_rows + ranked_rows[:effective_ranked_limit]
 
 
-def _resolve_ytdlp_command() -> list[str] | None:
-    ytdlp_bin = shutil.which("yt-dlp")
-    if ytdlp_bin:
-        return [ytdlp_bin]
+def _sample_files(source_root: Path) -> tuple[bool, list[str]]:
+    source_root_is_dir = source_root.is_dir()
+    files = sorted([p.name for p in source_root.glob("*") if p.is_file()])[:50] if source_root_is_dir else []
+    return source_root_is_dir, files
+
+
+def _base_report(
+    *,
+    generated_at: str,
+    limit: int,
+    ranked_limit: int | None,
+    include_forced: bool,
+    dry_run: bool,
+    queue_total: int,
+    audio_source_root: Path,
+    video_source_root: Path,
+    allow_ytdlp_fallback: bool,
+    segment_large_audio: bool,
+    warnings: list[str],
+) -> dict[str, Any]:
+    audio_is_dir, audio_files_sample = _sample_files(audio_source_root)
+    video_is_dir, video_files_sample = _sample_files(video_source_root)
+    return {
+        "generated_at": generated_at,
+        "status": "success",
+        "limit": limit,
+        "ranked_limit": ranked_limit,
+        "include_forced": include_forced,
+        "dry_run": dry_run,
+        "queue_total": queue_total,
+        "processed": 0,
+        "transcribed_success": 0,
+        "skipped_no_audio_source": 0,
+        "skipped_already_transcribed": 0,
+        "skipped_missing_api_key": 0,
+        "skipped_invalid_video_id": 0,
+        "failed": 0,
+        "audio_source_dir": str(audio_source_root),
+        "audio_source_dir_exists": audio_source_root.exists(),
+        "audio_source_dir_is_dir": audio_is_dir,
+        "audio_source_files_sample": audio_files_sample,
+        "video_source_dir": str(video_source_root),
+        "video_source_dir_exists": video_source_root.exists(),
+        "video_source_dir_is_dir": video_is_dir,
+        "video_source_files_sample": video_files_sample,
+        "allow_ytdlp_fallback": allow_ytdlp_fallback,
+        "segment_large_audio": segment_large_audio,
+        "extracted_audio_from_video": 0,
+        "downloaded_audio_with_ytdlp": 0,
+        "segmented_audio_transcriptions": 0,
+        "processed_video_ids": [],
+        "success_video_ids": [],
+        "already_transcribed_video_ids": [],
+        "missing_audio_video_ids": [],
+        "missing_audio_details": [],
+        "invalid_video_id_details": [],
+        "failed_video_ids": [],
+        "failed_details": [],
+        "media_resolution_details": [],
+        "warnings": warnings,
+    }
+
+
+def _command_to_report(command: Sequence[str], result: subprocess.CompletedProcess[str]) -> dict[str, Any]:
+    return {
+        "command": list(command),
+        "returncode": result.returncode,
+        "stdout": result.stdout,
+        "stderr": result.stderr,
+        "ok": result.returncode == 0,
+    }
+
+
+def _resolve_ytdlp_command() -> list[str]:
+    executable = shutil.which("yt-dlp")
+    if executable:
+        return [executable]
     if importlib.util.find_spec("yt_dlp") is not None:
         return [sys.executable, "-m", "yt_dlp"]
-    return None
+    return []
 
 
-def _resolve_ffmpeg_location() -> str | None:
-    configured_path = resolve_environment_variable("YTDLP_FFMPEG_LOCATION")
-    if configured_path:
-        return configured_path
-
-    ffmpeg_bin = shutil.which("ffmpeg")
-    if ffmpeg_bin:
-        return ffmpeg_bin
-
-    if importlib.util.find_spec("imageio_ffmpeg") is None:
-        return None
-
+def _resolve_ffmpeg_executable() -> str | None:
+    executable = shutil.which("ffmpeg")
+    if executable:
+        return executable
     try:
-        from imageio_ffmpeg import get_ffmpeg_exe
-    except ImportError:
-        return None
+        import imageio_ffmpeg  # type: ignore[import-not-found]
 
-    try:
-        return str(Path(get_ffmpeg_exe()))
+        return str(imageio_ffmpeg.get_ffmpeg_exe())
     except Exception:  # noqa: BLE001
         return None
 
 
-def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
-    """Ordered yt-dlp strategies tuned for robust audio extraction.
+def _classify_ytdlp_error(stdout: str = "", stderr: str = "") -> str:
+    text = f"{stdout}\n{stderr}".lower()
+    if any(marker in text for marker in ["sign in", "not a bot", "cookies", "authentication", "login required"]):
+        return "auth_required"
+    if any(marker in text for marker in ["private video", "members-only", "this video is unavailable", "video unavailable", "removed"]):
+        return "unavailable"
+    if any(marker in text for marker in ["timed out", "timeout", "connection", "network", "temporary failure", "http error 5"]):
+        return "network"
+    if any(marker in text for marker in ["not recognized", "no module named yt_dlp", "no such file", "not found"]):
+        return "tooling"
+    return "download_failed"
 
-    Start with yt-dlp's own YouTube defaults because that matches the simplest
-    successful local/Colab command (`yt-dlp -x --audio-format mp3 ...`) and lets
-    yt-dlp select the currently recommended player clients. Explicit clients are
-    retained as fallbacks for environments where one client is temporarily more
-    reliable than the defaults.
-    """
-    return [
-        ("default", []),
-        ("android", ["--extractor-args", "youtube:player_client=android"]),
-        ("ios", ["--extractor-args", "youtube:player_client=ios"]),
-        ("mweb", ["--extractor-args", "youtube:player_client=mweb"]),
-        ("tv_simply", ["--extractor-args", "youtube:player_client=tv_simply"]),
-        ("web", ["--extractor-args", "youtube:player_client=web"]),
+
+def _inspect_ytdlp_cookies_file(path: Path | None) -> dict[str, Any]:
+    if path is None:
+        return {"provided": False}
+    return {
+        "provided": True,
+        "exists": path.exists(),
+        "is_file": path.is_file(),
+        "size_bytes": path.stat().st_size if path.exists() and path.is_file() else 0,
+    }
+
+
+def _materialize_cookies_file_from_b64(cookies_b64: str | None, work_dir: Path) -> tuple[Path | None, str | None]:
+    if not cookies_b64:
+        return None, None
+    try:
+        decoded = base64.b64decode(cookies_b64, validate=True)
+    except Exception as exc:  # noqa: BLE001
+        return None, f"invalid_ytdlp_cookies_b64:{type(exc).__name__}"
+    path = work_dir / "yt_dlp_cookies.txt"
+    path.write_bytes(decoded)
+    return path, None
+
+
+def _build_ytdlp_strategy(
+    command: Sequence[str],
+    *,
+    url: str,
+    output_template: str,
+    cookies_file: Path | None,
+    browser: str | None,
+    extra_args: Sequence[str],
+) -> list[list[str]]:
+    strategies: list[list[str]] = []
+    common = [
+        "--no-playlist",
+        "--extract-audio",
+        "--audio-format",
+        "mp3",
+        "--audio-quality",
+        "0",
+        "-o",
+        output_template,
     ]
-
-
-def _should_stop_ytdlp_strategy_retries(*, error_category: str, has_auth_context: bool) -> bool:
-    if error_category == "video_unavailable":
-        return True
-    if error_category == "auth_required":
-        return not has_auth_context
-    return False
+    if cookies_file is not None:
+        strategies.append(list(command) + ["--cookies", str(cookies_file), *extra_args, *common, url])
+    if browser:
+        strategies.append(list(command) + ["--cookies-from-browser", browser, *extra_args, *common, url])
+    strategies.append(list(command) + [*extra_args, *common, url])
+    return strategies
 
 
 def _download_audio_with_ytdlp(
     *,
     video_id: str,
     audio_source_dir: Path,
-    ytdlp_cookies_file: str | None = None,
-    ytdlp_browser: str | None = None,
-    ytdlp_extra_args: list[str] | None = None,
-) -> tuple[Path | None, str | None, str | None]:
-    ytdlp_command = _resolve_ytdlp_command()
-    if not ytdlp_command:
-        return None, "yt_dlp_not_installed", "tooling_missing"
+    ytdlp_cookies_file: str | Path | None,
+    ytdlp_browser: str | None,
+    ytdlp_extra_args: Sequence[str] | None,
+    ytdlp_cookies_b64: str | None,
+    command_runner: CommandRunner,
+) -> dict[str, Any]:
+    command = _resolve_ytdlp_command()
+    if not command:
+        return {"ok": False, "error_category": "tooling", "error_message": "yt-dlp_not_available", "attempts": []}
+
     audio_source_dir.mkdir(parents=True, exist_ok=True)
     output_template = str(audio_source_dir / f"{video_id}.%(ext)s")
-    ffmpeg_location = _resolve_ffmpeg_location()
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    attempts: list[dict[str, Any]] = []
+    extra_args = list(ytdlp_extra_args or [])
 
-    last_error = "yt_dlp_failed:unknown"
-    last_error_category = "unknown"
-    strategies = _ytdlp_download_strategies()
-    has_auth_context = bool(ytdlp_cookies_file or ytdlp_browser)
-    for strategy_idx, (strategy_name, strategy_args) in enumerate(strategies):
-        cmd = [
-            *ytdlp_command,
-            "--no-playlist",
-            "--format",
-            "bestaudio[ext=m4a]/bestaudio/best",
-            "--retries",
-            "5",
-            "--fragment-retries",
-            "5",
-            "--socket-timeout",
-            "30",
-            "--force-ipv4",
-            "-x",
-            "--audio-format",
-            "mp3",
-            "--audio-quality",
-            "5",
-            "-o",
-            output_template,
+    temp_root = _make_local_temp_dir(audio_source_dir / ".tmp", "yt_dlp_")
+    try:
+        materialized_cookies, cookies_warning = _materialize_cookies_file_from_b64(
+            ytdlp_cookies_b64 or os.environ.get("YTDLP_COOKIES_B64", ""),
+            temp_root,
+        )
+        cookies_path = Path(ytdlp_cookies_file) if ytdlp_cookies_file else materialized_cookies
+        strategies = _build_ytdlp_strategy(
+            command,
+            url=url,
+            output_template=output_template,
+            cookies_file=cookies_path,
+            browser=ytdlp_browser,
+            extra_args=extra_args,
+        )
+        last_category = "download_failed"
+        last_message = cookies_warning or ""
+        for strategy in strategies:
+            result = command_runner(strategy, capture_output=True, text=True, check=False)
+            attempt = _command_to_report(strategy, result)
+            attempt["error_category"] = _classify_ytdlp_error(result.stdout, result.stderr)
+            attempts.append(attempt)
+            if result.returncode == 0:
+                audio_path = _find_audio_source(audio_source_dir, video_id)
+                if audio_path is not None:
+                    return {
+                        "ok": True,
+                        "source_type": "yt_dlp_audio_download",
+                        "audio_path": str(audio_path),
+                        "attempts": attempts,
+                        "cookies_file": _inspect_ytdlp_cookies_file(cookies_path),
+                        "cookies_warning": cookies_warning,
+                    }
+                last_category = "download_missing_output"
+                last_message = "yt-dlp_completed_without_expected_audio_file"
+            else:
+                last_category = str(attempt["error_category"])
+                last_message = result.stderr or result.stdout
+    finally:
+        _safe_rmtree(temp_root)
+
+    return {
+        "ok": False,
+        "error_category": last_category,
+        "error_message": last_message,
+        "attempts": attempts,
+        "cookies_warning": cookies_warning,
+    }
+
+
+def _extract_audio_from_video(
+    *,
+    video_path: Path,
+    audio_path: Path,
+    command_runner: CommandRunner,
+) -> dict[str, Any]:
+    ffmpeg = _resolve_ffmpeg_executable()
+    if not ffmpeg:
+        return {"ok": False, "error_category": "tooling", "error_message": "ffmpeg_not_available"}
+    audio_path.parent.mkdir(parents=True, exist_ok=True)
+    command = [
+        ffmpeg,
+        "-y",
+        "-i",
+        str(video_path),
+        "-vn",
+        "-acodec",
+        "libmp3lame",
+        "-ar",
+        "16000",
+        "-ac",
+        "1",
+        str(audio_path),
+    ]
+    result = command_runner(command, capture_output=True, text=True, check=False)
+    report = _command_to_report(command, result)
+    report["output_path"] = str(audio_path)
+    if result.returncode == 0 and audio_path.exists():
+        report["source_type"] = "video_file_extracted_audio"
+        return report
+    report["ok"] = False
+    report["error_category"] = "tooling" if result.returncode != 0 else "extract_missing_output"
+    report["error_message"] = result.stderr or result.stdout or "ffmpeg_completed_without_expected_audio_file"
+    return report
+
+
+def _is_input_too_large_error(exc: Exception) -> bool:
+    text = f"{type(exc).__name__}: {exc}".lower()
+    return any(
+        marker in text
+        for marker in [
+            "413",
+            "too large",
+            "maximum content size",
+            "maximum file size",
+            "request entity too large",
+            "content_length_exceeded",
         ]
-        if ffmpeg_location:
-            cmd.extend(["--ffmpeg-location", ffmpeg_location])
-        cmd.extend(strategy_args)
-        if ytdlp_cookies_file:
-            cmd.extend(["--cookies", ytdlp_cookies_file])
-        if ytdlp_browser:
-            cmd.extend(["--cookies-from-browser", ytdlp_browser])
-        if ytdlp_extra_args:
-            cmd.extend(ytdlp_extra_args)
-        cmd.append(_youtube_watch_url(video_id))
+    )
 
-        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-        if result.returncode == 0:
-            audio_path = _find_audio_source(audio_source_dir, video_id)
-            if audio_path is not None:
-                return audio_path, None, None
-            last_error = f"yt_dlp_completed_but_audio_not_found:strategy={strategy_name}"
-            last_error_category = "unknown"
-            continue
 
-        stderr_full = (result.stderr or "").strip()
-        stderr_tail = stderr_full[-300:]
-        last_error = f"yt_dlp_failed:strategy={strategy_name};code={result.returncode};stderr={stderr_tail}"
-        last_error_category = _classify_ytdlp_error(stderr_full)
-        if _should_stop_ytdlp_strategy_retries(error_category=last_error_category, has_auth_context=has_auth_context):
-            break
-        has_more_strategies = strategy_idx < len(strategies) - 1
-        if has_more_strategies:
-            time.sleep(YTDLP_STRATEGY_COOLDOWN_SECONDS)
+def _split_audio_for_transcription(
+    *,
+    audio_path: Path,
+    output_dir: Path,
+    segment_seconds: int,
+    command_runner: CommandRunner,
+) -> dict[str, Any]:
+    ffmpeg = _resolve_ffmpeg_executable()
+    if not ffmpeg:
+        return {"ok": False, "error_category": "tooling", "error_message": "ffmpeg_not_available", "segments": []}
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_pattern = output_dir / f"{audio_path.stem}_part_%03d.mp3"
+    command = [
+        ffmpeg,
+        "-y",
+        "-i",
+        str(audio_path),
+        "-f",
+        "segment",
+        "-segment_time",
+        str(max(1, segment_seconds)),
+        "-c",
+        "copy",
+        str(output_pattern),
+    ]
+    result = command_runner(command, capture_output=True, text=True, check=False)
+    report = _command_to_report(command, result)
+    segments = sorted(output_dir.glob(f"{audio_path.stem}_part_*.mp3"))
+    report["segments"] = [str(path) for path in segments]
+    if result.returncode == 0 and segments:
+        return report
+    report["ok"] = False
+    report["error_category"] = "tooling" if result.returncode != 0 else "segment_missing_output"
+    report["error_message"] = result.stderr or result.stdout or "ffmpeg_completed_without_segment_files"
+    return report
 
-    return None, last_error, last_error_category
+
+def _transcribe_with_optional_segments(
+    *,
+    client: OpenAIAudioClient,
+    audio_path: Path,
+    model: str,
+    segment_large_audio: bool,
+    segment_seconds: int,
+    command_runner: CommandRunner,
+) -> tuple[str, dict[str, Any]]:
+    try:
+        return client.transcribe_file(file_path=audio_path, model=model), {"segmented": False}
+    except Exception as exc:
+        if not segment_large_audio or not _is_input_too_large_error(exc):
+            raise
+        temp_root = _make_local_temp_dir(audio_path.parent / ".tmp_segments", "segments_")
+        try:
+            split_report = _split_audio_for_transcription(
+                audio_path=audio_path,
+                output_dir=temp_root,
+                segment_seconds=segment_seconds,
+                command_runner=command_runner,
+            )
+            if not split_report.get("ok"):
+                raise RuntimeError(f"audio_segmentation_failed:{split_report.get('error_message')}") from exc
+            parts: list[str] = []
+            for segment_path in split_report.get("segments", []):
+                parts.append(client.transcribe_file(file_path=Path(segment_path), model=model))
+            return "\n\n".join(parts), {"segmented": True, "split_report": split_report}
+        finally:
+            _safe_rmtree(temp_root)
+
+
+def _record_registry_skip(
+    *,
+    data_dir: str | Path,
+    row: dict[str, Any],
+    video_id: str,
+    status: str,
+    source_type: str,
+    error_category: str,
+    error_message: str,
+) -> None:
+    update_transcript_registry(
+        data_dir=data_dir,
+        entry={
+            "video_id": video_id,
+            "channel_id": row.get("channel_id", ""),
+            "channel_name": row.get("channel_name", ""),
+            "title": row.get("title", ""),
+            "selected_at": row.get("selected_at"),
+            "transcribed_at": None,
+            "status": status,
+            "transcript_path": None,
+            "metadata_path": None,
+            "insights_path": None,
+            "source_type": source_type,
+            "text_char_count": 0,
+            "error_category": error_category,
+            "error_message": error_message,
+        },
+    )
 
 
 def transcribe_selected_videos(
@@ -279,218 +491,207 @@ def transcribe_selected_videos(
     data_dir: str | Path = "data",
     limit: int = 10,
     audio_source_dir: str | Path = "data/audio_sources",
+    video_source_dir: str | Path = "data/video_sources",
     model: str = "gpt-4o-mini-transcribe",
     openai_client: OpenAIAudioClient | None = None,
+    include_forced: bool = False,
+    ranked_limit: int | None = None,
+    dry_run: bool = False,
     allow_ytdlp_fallback: bool = True,
-    ytdlp_cookies_file: str | None = None,
+    ytdlp_cookies_file: str | Path | None = None,
     ytdlp_browser: str | None = None,
-    ytdlp_extra_args: list[str] | None = None,
+    ytdlp_extra_args: Sequence[str] | None = None,
     ytdlp_cookies_b64: str | None = None,
+    segment_large_audio: bool = True,
+    segment_seconds: int = 1200,
+    command_runner: CommandRunner = subprocess.run,
 ) -> dict[str, Any]:
     root = Path(data_dir)
     transcript_dir = root / "transcripts"
     queue_path = transcript_dir / "transcript_queue.jsonl"
+    audio_root = Path(audio_source_dir)
+    video_root = Path(video_source_dir)
+    queued = _read_jsonl(queue_path)
+    selected_rows = _select_queue_rows(
+        queued,
+        limit=limit,
+        include_forced=include_forced,
+        ranked_limit=ranked_limit,
+    )
+
+    generated_at = _now_iso()
+    warnings: list[str] = []
+    report = _base_report(
+        generated_at=generated_at,
+        limit=limit,
+        ranked_limit=ranked_limit,
+        include_forced=include_forced,
+        dry_run=dry_run,
+        queue_total=len(queued),
+        audio_source_root=audio_root,
+        video_source_root=video_root,
+        allow_ytdlp_fallback=allow_ytdlp_fallback,
+        segment_large_audio=segment_large_audio,
+        warnings=warnings,
+    )
+    report["selected_count"] = len(selected_rows)
+    report["selected_forced_count"] = sum(1 for row in selected_rows if bool(row.get("forced_channel")))
+    report["selected_ranked_count"] = len(selected_rows) - int(report["selected_forced_count"])
 
     api_key = resolve_environment_variable("OPENAI_API_KEY")
-    if not api_key:
-        report = {
-            "generated_at": _now_iso(),
-            "limit": limit,
-            "processed": 0,
-            "transcribed_success": 0,
-            "skipped_no_audio_source": 0,
-            "skipped_already_transcribed": 0,
-            "failed": 0,
-            "warnings": ["skipped_missing_api_key"],
-        }
-        (transcript_dir / "transcription_run_report.json").parent.mkdir(parents=True, exist_ok=True)
-        (transcript_dir / "transcription_run_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    if not dry_run and not api_key:
+        report["status"] = "skipped_missing_api_key"
+        report["skipped_missing_api_key"] = len(selected_rows)
+        warnings.append("skipped_missing_api_key")
+        _write_json(transcript_dir / "transcription_run_report.json", report)
         return report
 
-    client = openai_client or OpenAIAudioClient(api_key=api_key)
-    queued = _read_jsonl(queue_path)
+    client = openai_client or (OpenAIAudioClient(api_key=api_key) if not dry_run else None)
     registry = load_transcript_registry(data_dir=data_dir)
-    registry_success_ids = {
+    registry_success_before_run = {
         str(row.get("video_id", "")).strip()
         for row in registry
         if str(row.get("status", "")).strip() == "success"
     }
     success_ids = list_transcribed_video_ids(data_dir=data_dir)
+    report["registry_success_before_run"] = len(registry_success_before_run)
+    report["persisted_success_before_run"] = len(success_ids)
 
-    processed = 0
-    transcribed_success = 0
-    skipped_no_audio_source = 0
-    skipped_invalid_video_id = 0
-    skipped_missing_ytdlp = 0
-    failed_audio_download = 0
-    skipped_already_transcribed = 0
-    failed = 0
-    warnings: list[str] = []
-    missing_audio_video_ids: list[str] = []
-    missing_audio_details: list[dict[str, Any]] = []
-    invalid_video_id_details: list[dict[str, Any]] = []
-    already_transcribed_video_ids: list[str] = []
-    success_video_ids: list[str] = []
-    failed_video_ids: list[str] = []
-    failed_details: list[dict[str, Any]] = []
-    ytdlp_download_attempts = 0
-    ytdlp_download_success = 0
-    ytdlp_download_failures: list[dict[str, Any]] = []
-    registry_success_before_run = len(registry_success_ids)
-    persisted_success_before_run = len(success_ids)
-    consecutive_auth_required_with_cookies = 0
-
-    generated_cookies_file: str | None = None
-    effective_cookies_file = ytdlp_cookies_file
-    if not effective_cookies_file:
-        generated_cookies_file = _materialize_cookies_file_from_b64(
-            ytdlp_cookies_b64=ytdlp_cookies_b64 or resolve_environment_variable("YTDLP_COOKIES_B64")
-        )
-        effective_cookies_file = generated_cookies_file
-
-    source_root = Path(audio_source_dir)
-    source_root_exists = source_root.exists()
-    source_root_is_dir = source_root.is_dir()
-    available_audio_files_sample = sorted([p.name for p in source_root.glob("*") if p.is_file()])[:50] if source_root_is_dir else []
-    for row in queued:
-        if processed >= max(0, limit):
-            break
+    for row in selected_rows:
         video_id = str(row.get("video_id", "")).strip()
         if not video_id:
             continue
 
         if video_id in success_ids:
-            skipped_already_transcribed += 1
-            already_transcribed_video_ids.append(video_id)
+            report["skipped_already_transcribed"] += 1
+            report["already_transcribed_video_ids"].append(video_id)
             continue
 
-        if (
-            effective_cookies_file
-            and consecutive_auth_required_with_cookies >= YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD
-        ):
-            warnings.append("ytdlp_auth_required_circuit_open")
-            break
-
-        processed += 1
         if not is_transcribable_video_id_candidate(video_id):
-            skipped_invalid_video_id += 1
-            detail = {
-                "video_id": video_id,
-                "video_url": _youtube_watch_url(video_id),
-                "reason": "probable_channel_id_in_video_id_field",
-            }
-            invalid_video_id_details.append(detail)
-            missing_audio_video_ids.append(video_id)
-            missing_audio_details.append(
+            report["processed"] += 1
+            report["skipped_invalid_video_id"] += 1
+            report["processed_video_ids"].append(video_id)
+            detail = {"video_id": video_id, "reason": "probable_channel_id_in_video_id_field"}
+            report["invalid_video_id_details"].append(detail)
+            if not dry_run:
+                _record_registry_skip(
+                    data_dir=data_dir,
+                    row=row,
+                    video_id=video_id,
+                    status="skipped_invalid_video_id",
+                    source_type="unknown",
+                    error_category="invalid_video_id",
+                    error_message="probable channel_id found in video_id field",
+                )
+            continue
+
+        audio_path = _find_audio_source(audio_root, video_id)
+        source_type = "audio_file" if audio_path is not None else "unknown"
+        media_resolution: dict[str, Any] = {"video_id": video_id, "steps": []}
+
+        if audio_path is None and not dry_run:
+            video_path = _find_media_source(video_root, video_id, VIDEO_EXTENSIONS)
+            if video_path is not None:
+                extracted_path = audio_root / f"{video_id}.mp3"
+                extract_report = _extract_audio_from_video(
+                    video_path=video_path,
+                    audio_path=extracted_path,
+                    command_runner=command_runner,
+                )
+                extract_report["source_video_path"] = str(video_path)
+                media_resolution["steps"].append({"type": "extract_audio_from_video", **extract_report})
+                if extract_report.get("ok"):
+                    audio_path = extracted_path
+                    source_type = "video_file_extracted_audio"
+                    report["extracted_audio_from_video"] += 1
+                else:
+                    warnings.append(f"video_audio_extract_failed:{video_id}:{extract_report.get('error_category')}")
+
+        if audio_path is None and not dry_run and allow_ytdlp_fallback:
+            download_report = _download_audio_with_ytdlp(
+                video_id=video_id,
+                audio_source_dir=audio_root,
+                ytdlp_cookies_file=ytdlp_cookies_file,
+                ytdlp_browser=ytdlp_browser,
+                ytdlp_extra_args=ytdlp_extra_args,
+                ytdlp_cookies_b64=ytdlp_cookies_b64,
+                command_runner=command_runner,
+            )
+            media_resolution["steps"].append({"type": "download_audio_with_ytdlp", **download_report})
+            if download_report.get("ok"):
+                audio_path = Path(str(download_report["audio_path"]))
+                source_type = "yt_dlp_audio_download"
+                report["downloaded_audio_with_ytdlp"] += 1
+            else:
+                warnings.append(f"ytdlp_download_failed:{video_id}:{download_report.get('error_category')}")
+
+        if media_resolution["steps"]:
+            report["media_resolution_details"].append(media_resolution)
+
+        if audio_path is None:
+            report["processed"] += 1
+            report["skipped_no_audio_source"] += 1
+            report["processed_video_ids"].append(video_id)
+            report["missing_audio_video_ids"].append(video_id)
+            attempted_audio_paths = _candidate_media_paths(audio_root, video_id, AUDIO_EXTENSIONS)
+            attempted_video_paths = _candidate_media_paths(video_root, video_id, VIDEO_EXTENSIONS)
+            resolution_error_category = "media_missing"
+            resolution_error_message = "audio_or_video_source_not_found"
+            for step in reversed(media_resolution["steps"]):
+                if step.get("ok"):
+                    continue
+                resolution_error_category = str(step.get("error_category") or resolution_error_category)
+                resolution_error_message = str(step.get("error_message") or resolution_error_message)
+                break
+            report["missing_audio_details"].append(
                 {
                     "video_id": video_id,
-                    "audio_source_dir": str(source_root),
-                    "audio_source_dir_exists": source_root_exists,
-                    "audio_source_dir_is_dir": source_root_is_dir,
-                    "video_url": _youtube_watch_url(video_id),
-                    "attempted_paths": [],
-                    "ytdlp_error": "invalid_video_id:probable_channel_id",
-                    "ytdlp_error_category": "invalid_video_id",
+                    "audio_source_dir": str(audio_root),
+                    "video_source_dir": str(video_root),
+                    "audio_source_dir_exists": audio_root.exists(),
+                    "audio_source_dir_is_dir": audio_root.is_dir(),
+                    "video_source_dir_exists": video_root.exists(),
+                    "video_source_dir_is_dir": video_root.is_dir(),
+                    "attempted_audio_paths": attempted_audio_paths,
+                    "attempted_video_paths": attempted_video_paths,
+                    "allow_ytdlp_fallback": allow_ytdlp_fallback,
+                    "resolution_error_category": resolution_error_category,
+                    "resolution_error_message": resolution_error_message,
                 }
             )
-            update_transcript_registry(
-                data_dir=data_dir,
-                entry={
-                    "video_id": video_id,
-                    "channel_id": row.get("channel_id", ""),
-                    "channel_name": row.get("channel_name", ""),
-                    "title": row.get("title", ""),
-                    "selected_at": row.get("selected_at"),
-                    "transcribed_at": None,
-                    "status": "skipped_invalid_video_id",
-                    "transcript_path": None,
-                    "metadata_path": None,
-                    "insights_path": None,
-                    "source_type": "unknown",
-                    "text_char_count": 0,
-                    "error_category": "invalid_video_id",
-                    "error_message": "probable channel_id found in video_id field; yt-dlp was not called",
-                },
-            )
-            continue
-        audio_path = _find_audio_source(source_root, video_id)
-        if audio_path is None:
-            ytdlp_error: str | None = None
-            ytdlp_error_category: str | None = None
-            if allow_ytdlp_fallback:
-                ytdlp_download_attempts += 1
-                audio_path, ytdlp_error, ytdlp_error_category = _download_audio_with_ytdlp(
-                    video_id=video_id,
-                    audio_source_dir=source_root,
-                    ytdlp_cookies_file=effective_cookies_file,
-                    ytdlp_browser=ytdlp_browser,
-                    ytdlp_extra_args=ytdlp_extra_args,
-                )
-                if audio_path is not None:
-                    ytdlp_download_success += 1
-                    consecutive_auth_required_with_cookies = 0
-            if audio_path is None:
-                if ytdlp_error:
-                    ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "error_category": ytdlp_error_category, "video_url": _youtube_watch_url(video_id)})
-                if ytdlp_error == "yt_dlp_not_installed":
-                    status = "skipped_missing_ytdlp"
-                    skipped_missing_ytdlp += 1
-                elif allow_ytdlp_fallback and ytdlp_error:
-                    if ytdlp_error_category == "auth_required":
-                        status = "failed_audio_download_auth_required"
-                    elif ytdlp_error_category == "browser_cookie_access_error":
-                        status = "failed_audio_download_browser_cookie_access"
-                    elif ytdlp_error_category == "video_unavailable":
-                        status = "failed_audio_download_video_unavailable"
-                    elif ytdlp_error_category == "network_or_rate_limit":
-                        status = "failed_audio_download_network_or_rate_limit"
-                    else:
-                        status = "failed_audio_download"
-                    failed_audio_download += 1
-                    if effective_cookies_file and ytdlp_error_category == "auth_required":
-                        consecutive_auth_required_with_cookies += 1
-                    else:
-                        consecutive_auth_required_with_cookies = 0
-                else:
-                    status = "skipped_no_audio_source"
-                    skipped_no_audio_source += 1
-                missing_audio_video_ids.append(video_id)
-                attempted_paths = _candidate_audio_paths(source_root, video_id)
-                missing_audio_details.append(
-                    {
-                        "video_id": video_id,
-                        "audio_source_dir": str(source_root),
-                        "audio_source_dir_exists": source_root_exists,
-                        "audio_source_dir_is_dir": source_root_is_dir,
-                        "video_url": _youtube_watch_url(video_id),
-                        "attempted_paths": attempted_paths,
-                        "ytdlp_error": ytdlp_error,
-                        "ytdlp_error_category": ytdlp_error_category,
-                    }
-                )
-                update_transcript_registry(
+            if not dry_run:
+                _record_registry_skip(
                     data_dir=data_dir,
-                    entry={
-                        "video_id": video_id,
-                        "channel_id": row.get("channel_id", ""),
-                        "channel_name": row.get("channel_name", ""),
-                        "title": row.get("title", ""),
-                        "selected_at": row.get("selected_at"),
-                        "transcribed_at": None,
-                        "status": status,
-                        "transcript_path": None,
-                        "metadata_path": None,
-                        "insights_path": None,
-                        "source_type": "unknown",
-                        "text_char_count": 0,
-                        "error_category": ytdlp_error_category,
-                        "error_message": f"audio_source_not_found; video_url={_youtube_watch_url(video_id)}; attempted={attempted_paths}; ytdlp={ytdlp_error}",
-                    },
+                    row=row,
+                    video_id=video_id,
+                    status="skipped_no_audio_source",
+                    source_type=source_type,
+                    error_category=resolution_error_category,
+                    error_message=f"audio_source_not_found; attempted_audio={attempted_audio_paths}; attempted_video={attempted_video_paths}; last_error={resolution_error_message}",
                 )
-                continue
+            continue
+
+        report["processed"] += 1
+        report["processed_video_ids"].append(video_id)
+        if dry_run:
+            continue
 
         try:
-            transcript_text = client.transcribe_file(file_path=audio_path, model=model)
+            if client is None:
+                raise RuntimeError("openai_client_unavailable")
+            transcript_text, transcription_meta = _transcribe_with_optional_segments(
+                client=client,
+                audio_path=audio_path,
+                model=model,
+                segment_large_audio=segment_large_audio,
+                segment_seconds=segment_seconds,
+                command_runner=command_runner,
+            )
+            if transcription_meta.get("segmented"):
+                report["segmented_audio_transcriptions"] += 1
+                media_resolution = {"video_id": video_id, "steps": [{"type": "segment_large_audio", **transcription_meta}]}
+                report["media_resolution_details"].append(media_resolution)
+            transcribed_at = _now_iso()
             artifacts = write_transcript_artifacts(
                 video_id=video_id,
                 transcript_text=transcript_text,
@@ -498,9 +699,9 @@ def transcribe_selected_videos(
                     "channel_id": row.get("channel_id", ""),
                     "channel_name": row.get("channel_name", ""),
                     "title": row.get("title", ""),
-                    "source_type": "audio_file",
+                    "source_type": source_type,
                     "source_uri_or_path": str(audio_path),
-                    "transcribed_at": _now_iso(),
+                    "transcribed_at": transcribed_at,
                     "transcription_model": model,
                     "language": None,
                 },
@@ -514,29 +715,30 @@ def transcribe_selected_videos(
                     "channel_name": row.get("channel_name", ""),
                     "title": row.get("title", ""),
                     "selected_at": row.get("selected_at"),
-                    "transcribed_at": _now_iso(),
+                    "transcribed_at": transcribed_at,
                     "status": "success",
                     "transcript_path": artifacts["transcript_path"],
                     "metadata_path": artifacts["metadata_path"],
                     "insights_path": artifacts["insights_path"],
-                    "source_type": "audio_file",
+                    "source_type": source_type,
                     "transcription_model": model,
                     "language": None,
                     "text_char_count": len(transcript_text),
                     "error_message": None,
                 },
             )
-            transcribed_success += 1
+            report["transcribed_success"] += 1
+            report["success_video_ids"].append(video_id)
             success_ids.add(video_id)
-            success_video_ids.append(video_id)
         except Exception as exc:  # noqa: BLE001
-            failed += 1
-            failed_video_ids.append(video_id)
+            report["failed"] += 1
+            report["failed_video_ids"].append(video_id)
             warnings.append(f"transcription_failed:{video_id}:{type(exc).__name__}")
-            failed_details.append(
+            report["failed_details"].append(
                 {
                     "video_id": video_id,
                     "audio_path": str(audio_path),
+                    "source_type": source_type,
                     "error_type": type(exc).__name__,
                     "error_message": str(exc),
                 }
@@ -554,70 +756,14 @@ def transcribe_selected_videos(
                     "transcript_path": None,
                     "metadata_path": None,
                     "insights_path": None,
-                    "source_type": "audio_file",
+                    "source_type": source_type,
                     "transcription_model": model,
                     "language": None,
                     "text_char_count": 0,
+                    "error_category": "openai_transcription",
                     "error_message": str(exc),
                 },
             )
 
-    auth_required_with_cookies_count = (
-        sum(1 for failure in ytdlp_download_failures if failure.get("error_category") == "auth_required")
-        if effective_cookies_file
-        else 0
-    )
-    cookie_file_diagnostics = _inspect_ytdlp_cookies_file(effective_cookies_file)
-    if auth_required_with_cookies_count:
-        warnings.append("ytdlp_auth_required_despite_cookies")
-        warnings.append("rotate_ytdlp_cookies_or_validate_cookie_export")
-        if cookie_file_diagnostics.get("youtube_google_cookie_rows") == 0:
-            warnings.append("ytdlp_cookies_file_missing_youtube_google_domains")
-        elif cookie_file_diagnostics.get("expired_youtube_google_cookie_rows") == cookie_file_diagnostics.get("youtube_google_cookie_rows"):
-            warnings.append("ytdlp_cookies_file_youtube_google_cookies_expired")
-
-    report = {
-        "generated_at": _now_iso(),
-        "limit": limit,
-        "processed": processed,
-        "transcribed_success": transcribed_success,
-        "skipped_no_audio_source": skipped_no_audio_source,
-        "skipped_invalid_video_id": skipped_invalid_video_id,
-        "skipped_missing_ytdlp": skipped_missing_ytdlp,
-        "failed_audio_download": failed_audio_download,
-        "skipped_already_transcribed": skipped_already_transcribed,
-        "failed": failed,
-        "queue_total": len(queued),
-        "registry_success_before_run": registry_success_before_run,
-        "persisted_success_before_run": persisted_success_before_run,
-        "audio_source_dir": str(source_root),
-        "audio_source_dir_exists": source_root_exists,
-        "audio_source_dir_is_dir": source_root_is_dir,
-        "audio_source_files_sample": available_audio_files_sample,
-        "allow_ytdlp_fallback": allow_ytdlp_fallback,
-        "ytdlp_runtime_options": {
-            "used_cookies_file": bool(effective_cookies_file),
-            "used_browser_mode": bool(ytdlp_browser),
-            "extra_args_count": len(ytdlp_extra_args or []),
-        },
-        "ytdlp_download_attempts": ytdlp_download_attempts,
-        "ytdlp_download_success": ytdlp_download_success,
-        "ytdlp_auth_required_with_cookies_count": auth_required_with_cookies_count,
-        "ytdlp_auth_required_with_cookies_abort_threshold": YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD,
-        "ytdlp_cookies_file_diagnostics": cookie_file_diagnostics,
-        "ytdlp_download_failures": ytdlp_download_failures,
-        "processed_video_ids": success_video_ids + missing_audio_video_ids + failed_video_ids,
-        "success_video_ids": success_video_ids,
-        "already_transcribed_video_ids": already_transcribed_video_ids,
-        "missing_audio_video_ids": missing_audio_video_ids,
-        "missing_audio_details": missing_audio_details,
-        "invalid_video_id_details": invalid_video_id_details,
-        "failed_video_ids": failed_video_ids,
-        "failed_details": failed_details,
-        "warnings": warnings,
-    }
-    (transcript_dir / "transcription_run_report.json").parent.mkdir(parents=True, exist_ok=True)
-    (transcript_dir / "transcription_run_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    if generated_cookies_file:
-        Path(generated_cookies_file).unlink(missing_ok=True)
+    _write_json(transcript_dir / "transcription_run_report.json", report)
     return report

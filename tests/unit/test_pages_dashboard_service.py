@@ -384,7 +384,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief", "Operations"]:
+    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief", "Creative", "Transcripts", "Operations"]:
         assert label in index_html
 
 
@@ -535,6 +535,37 @@ def test_build_pages_dashboard_includes_creative_package_jsons(tmp_path: Path) -
     assert (site_dir / "data" / "latest_originality_checks.json").exists()
     assert (site_dir / "data" / "latest_production_checklist.json").exists()
     assert (site_dir / "data" / "creative_packages_summary.json").exists()
+
+
+def test_build_pages_dashboard_converts_transcript_jsonl_to_json_rows(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _write_text(
+        data_dir / "transcripts" / "transcript_registry.jsonl",
+        json.dumps({"video_id": "v1", "channel_name": "Canal A", "title": "Video A", "status": "success"}, ensure_ascii=False) + "\n",
+    )
+    _write_text(
+        data_dir / "transcripts" / "transcript_insights_index.jsonl",
+        json.dumps({"video_id": "v1", "summary": "Resumen", "main_topics": ["IA"], "status": "success"}, ensure_ascii=False) + "\n",
+    )
+    _write_text(data_dir / "transcripts" / "transcript_selection_report.json", json.dumps({"selected_count": 1}, ensure_ascii=False))
+    _write_text(data_dir / "transcripts" / "transcription_run_report.json", json.dumps({"transcribed_success": 1}, ensure_ascii=False))
+    _write_text(data_dir / "transcripts" / "transcript_insights_run_report.json", json.dumps({"generated_success": 1}, ensure_ascii=False))
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    registry = json.loads((site_dir / "data" / "transcript_registry.json").read_text(encoding="utf-8"))
+    insights = json.loads((site_dir / "data" / "transcript_insights_index.json").read_text(encoding="utf-8"))
+    selection_report = json.loads((site_dir / "data" / "transcript_selection_report.json").read_text(encoding="utf-8"))
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+
+    assert registry["rows"][0]["video_id"] == "v1"
+    assert registry["row_count"] == 1
+    assert insights["rows"][0]["summary"] == "Resumen"
+    assert selection_report["selected_count"] == 1
+    assert "transcript_registry" in manifest["tables"]
+    assert "transcript_insights_index" in manifest["tables"]
 
 
 def test_site_manifest_includes_creative_tables(tmp_path: Path) -> None:

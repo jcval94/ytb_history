@@ -14,12 +14,12 @@ from typing import Any
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 CREATIVE_PACKAGES_COLUMNS = [
-    "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
+    "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_enrichment_score", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
 ]
 TITLE_COLUMNS = ["creative_package_id", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "originality_status", "estimated_strength", "notes"]
-HOOK_COLUMNS = ["creative_package_id", "hook_id", "hook_text", "hook_type", "expected_use", "risk"]
-THUMB_COLUMNS = ["creative_package_id", "thumbnail_brief_id", "main_text", "visual_metaphor", "emotion", "layout_suggestion", "risk_notes"]
-OUTLINE_COLUMNS = ["creative_package_id", "outline_id", "structure_type", "intro", "section_1", "section_2", "section_3", "closing", "cta"]
+HOOK_COLUMNS = ["creative_package_id", "hook_id", "hook_text", "hook_type", "expected_use", "risk", "transcript_aware", "transcript_source"]
+THUMB_COLUMNS = ["creative_package_id", "thumbnail_brief_id", "main_text", "visual_metaphor", "emotion", "layout_suggestion", "risk_notes", "transcript_aware", "transcript_source"]
+OUTLINE_COLUMNS = ["creative_package_id", "outline_id", "structure_type", "intro", "section_1", "section_2", "section_3", "closing", "cta", "transcript_aware", "transcript_source"]
 ORIGINALITY_COLUMNS = ["creative_package_id", "source_title", "candidate_text", "candidate_type", "lexical_similarity", "token_overlap_ratio", "copy_risk_score", "originality_score", "originality_status"]
 CHECKLIST_COLUMNS = ["creative_package_id", "step_order", "production_step", "estimated_effort", "required_input", "done_default"]
 
@@ -145,6 +145,23 @@ def _weighted_score(values: dict[str, float | None]) -> float:
     return round(max(0.0, min(100.0, score)), 4)
 
 
+def _transcript_enrichment_score(insights: dict[str, Any]) -> float:
+    if not insights:
+        return 0.0
+    score = 0.0
+    if insights.get("summary"):
+        score += 20.0
+    if isinstance(insights.get("hook_analysis"), dict) and insights["hook_analysis"].get("hook_text"):
+        score += 20.0
+    if insights.get("narrative_structure"):
+        score += 25.0
+    if insights.get("creative_reuse_opportunities"):
+        score += 25.0
+    if "risk_notes" in insights:
+        score += 10.0
+    return round(min(100.0, score), 4)
+
+
 def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, Any]:
     root = Path(data_dir)
     out_dir = root / "creative_packages"
@@ -210,6 +227,8 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
         transcript_narrative = transcript_insights.get("narrative_structure", [])
         transcript_reuse = transcript_insights.get("creative_reuse_opportunities", [])
         transcript_risk_notes = transcript_insights.get("risk_notes", [])
+        transcript_available = bool(transcript_insights)
+        transcript_enrichment_score = _transcript_enrichment_score(transcript_insights)
         source_score = _safe_float(action.get("decision_score"))
         topic_score = _safe_float(topic_row.get("topic_opportunity_score")) or _safe_float(opp.get("topic_opportunity_score"))
         pattern_score = _safe_float(topic_row.get("title_pattern_success_score")) or pattern_success or 50.0
@@ -287,14 +306,15 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             "production_feasibility_score": feasibility,
             "creative_execution_score": _weighted_score(score_inputs),
             "confidence_score": confidence if confidence is not None else "",
-            "transcript_available": bool(transcript_insights),
+            "transcript_available": transcript_available,
             "transcript_insights_path": transcript_insights_path,
             "transcript_summary": transcript_summary,
             "transcript_hook_type": transcript_hook_type,
+            "transcript_enrichment_score": transcript_enrichment_score,
             "transcript_narrative_structure": json.dumps(transcript_narrative if isinstance(transcript_narrative, list) else [], ensure_ascii=False),
             "transcript_reuse_opportunities": json.dumps(transcript_reuse if isinstance(transcript_reuse, list) else [], ensure_ascii=False),
             "transcript_risk_notes": json.dumps(transcript_risk_notes if isinstance(transcript_risk_notes, list) else [], ensure_ascii=False),
-            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", ""), "transcript_available": bool(transcript_insights)}, ensure_ascii=False),
+            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", ""), "transcript_available": transcript_available}, ensure_ascii=False),
             "dashboard_tab": "creative_execution",
             "recommended_next_step": "mantener_watchlist" if package_type == "watchlist_package" else "iniciar_preproduccion",
         })
@@ -316,16 +336,27 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
                 "low",
             )] + hooks
         for i, (hook_type, text, expected_use, risk) in enumerate(hooks, start=1):
-            hook_rows.append({"creative_package_id": creative_package_id, "hook_id": f"{creative_package_id}_h{i}", "hook_text": text, "hook_type": hook_type, "expected_use": expected_use, "risk": risk})
+            hook_rows.append({
+                "creative_package_id": creative_package_id,
+                "hook_id": f"{creative_package_id}_h{i}",
+                "hook_text": text,
+                "hook_type": hook_type,
+                "expected_use": expected_use,
+                "risk": risk,
+                "transcript_aware": transcript_available,
+                "transcript_source": transcript_insights_path if transcript_available else "",
+            })
 
         thumb_rows.append({
             "creative_package_id": creative_package_id,
             "thumbnail_brief_id": f"{creative_package_id}_tb1",
             "main_text": (transcript_summary[:48] if transcript_summary else topic[:48]),
-            "visual_metaphor": "señal vs ruido",
+            "visual_metaphor": str(transcript_reuse[0]) if isinstance(transcript_reuse, list) and transcript_reuse else "señal vs ruido",
             "emotion": "urgencia" if package_type == "fast_reaction_package" else "claridad",
             "layout_suggestion": "texto corto lado izquierdo + elemento visual lado derecho",
             "risk_notes": "; ".join([str(x) for x in transcript_risk_notes][:2]) if transcript_risk_notes else "evitar promesas absolutas y claims no verificables",
+            "transcript_aware": transcript_available,
+            "transcript_source": transcript_insights_path if transcript_available else "",
         })
 
         structure_map = {
@@ -357,6 +388,8 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             "section_3": narrative_section_3,
             "closing": "Riesgos y próximos pasos",
             "cta": "Comenta qué ángulo quieres profundizar",
+            "transcript_aware": transcript_available,
+            "transcript_source": transcript_insights_path if transcript_available else "",
         })
 
         for step_order, step in enumerate(["revisar evidencia", "elegir título", "definir hook", "preparar guion", "preparar miniatura", "publicar/monitorear"], start=1):

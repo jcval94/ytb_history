@@ -16,6 +16,10 @@ def test_monitor_workflow_exists() -> None:
     assert (REPO_ROOT / ".github/workflows/monitor.yml").exists()
 
 
+def test_transcripts_workflow_exists() -> None:
+    assert (REPO_ROOT / ".github/workflows/transcripts.yml").exists()
+
+
 def test_monitor_has_required_settings() -> None:
     content = _read(".github/workflows/monitor.yml")
     assert "contents: write" in content
@@ -101,11 +105,13 @@ def test_workflows_do_not_use_search_list() -> None:
     pages_content = _read(".github/workflows/pages.yml")
     train_model_content = _read(".github/workflows/train_model.yml")
     predict_model_content = _read(".github/workflows/predict_model.yml")
+    transcripts_content = _read(".github/workflows/transcripts.yml")
     assert "search.list" not in ci_content
     assert "search.list" not in monitor_content
     assert "search.list" not in pages_content
     assert "search.list" not in train_model_content
     assert "search.list" not in predict_model_content
+    assert "search.list" not in transcripts_content
 
 
 def test_monitor_and_pages_do_not_run_build_model_dataset_yet() -> None:
@@ -190,3 +196,34 @@ def test_pages_workflow_does_not_run_smoke_test_training() -> None:
 def test_train_model_schedule_is_twice_weekly() -> None:
     train_model_content = _read(".github/workflows/train_model.yml")
     assert "cron: '30 10 * * 1,4'" in train_model_content
+
+
+def test_transcripts_workflow_contract() -> None:
+    content = _read(".github/workflows/transcripts.yml")
+    assert "workflow_dispatch:" in content
+    assert "schedule:" not in content
+    assert "contents: write" in content
+    assert "YOUTUBE_API_KEY" not in content
+    assert "OPENAI_API_KEY" in content
+    assert "yt-dlp" not in content
+    assert "ffmpeg" not in content
+    assert "python -m ytb_history.cli run" not in content
+    assert "python -m ytb_history.cli train-model-suite" not in content
+    assert "python -m ytb_history.cli train-content-driver-models" not in content
+    assert "python -m ytb_history.cli select-transcription-candidates" in content
+    assert "python -m ytb_history.cli transcribe-selected-videos" in content
+    assert "python -m ytb_history.cli generate-transcript-insights" in content
+    assert "python -m ytb_history.cli generate-creative-packages" in content
+    assert "python -m ytb_history.cli generate-weekly-brief" in content
+    assert "python -m ytb_history.cli build-pages-dashboard" in content
+    assert "--include-forced --ranked-limit" in content
+    assert "--dry-run" in content
+    assert "git add ." not in content
+    assert "git add data/audio_sources" not in content
+    assert "git add data/transcripts/" in content
+    assert "git add data/creative_packages/" in content
+    assert "git add data/briefs/" in content
+    assert "site/data/" in content
+
+    openai_lines = [line.strip() for line in content.splitlines() if "OPENAI_API_KEY" in line]
+    assert openai_lines == ["OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}", "OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}"]

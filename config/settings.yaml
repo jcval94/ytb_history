@@ -12,3 +12,7 @@ transcription:
   forced_channels_enabled: true
   forced_channels_max_per_run: 50
   forced_channels_new_video_window_days: 14
+  retry_cooldown_days: 7
+  default_transcription_model: "gpt-4o-mini-transcribe"
+  default_insights_model: "gpt-5.5-mini"
+  max_transcriptions_per_run: 60

@@ -246,6 +246,67 @@ def test_generate_weekly_brief_includes_topic_and_content_driver_sections_when_i
     assert "predictivas, no causales" in markdown_text
 
 
+def test_generate_weekly_brief_includes_transcript_intelligence_when_available(tmp_path: Path) -> None:
+    data_dir = _prepare_data(tmp_path)
+    (data_dir / "transcripts").mkdir(parents=True, exist_ok=True)
+    (data_dir / "transcripts" / "transcript_selection_report.json").write_text(
+        json.dumps({"selected_forced_count": 2, "selected_ranked_count": 10}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    (data_dir / "transcripts" / "transcription_run_report.json").write_text(
+        json.dumps({"transcribed_success": 1, "skipped_no_audio_source": 3}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    (data_dir / "transcripts" / "transcript_insights_run_report.json").write_text(
+        json.dumps({"generated_success": 1}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    (data_dir / "transcripts" / "transcript_insights_index.jsonl").write_text(
+        json.dumps({"video_id": "v1", "summary": "Resumen transcript", "main_topics": ["IA"], "status": "success"}, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    _write_csv(
+        data_dir / "creative_packages" / "latest_creative_packages.csv",
+        [
+            "creative_package_id",
+            "package_type",
+            "topic",
+            "creative_angle",
+            "recommended_format",
+            "creative_execution_score",
+            "transcript_available",
+            "transcript_summary",
+            "recommended_next_step",
+        ],
+        [
+            {
+                "creative_package_id": "cp1",
+                "package_type": "fast_reaction_package",
+                "topic": "ai_tools",
+                "creative_angle": "angulo",
+                "recommended_format": "video corto",
+                "creative_execution_score": 90,
+                "transcript_available": "true",
+                "transcript_summary": "Resumen transcript",
+                "recommended_next_step": "iniciar",
+            }
+        ],
+    )
+
+    generate_weekly_brief(data_dir=data_dir)
+
+    markdown_text = (data_dir / "briefs" / "latest_weekly_brief.md").read_text(encoding="utf-8")
+    payload = json.loads((data_dir / "briefs" / "latest_weekly_brief.json").read_text(encoding="utf-8"))
+
+    assert "## Transcript Intelligence" in markdown_text
+    assert "selected_forced_count: 2" in markdown_text
+    assert "selected_ranked_count: 10" in markdown_text
+    assert "transcribed_success: 1" in markdown_text
+    assert "Nota: faltan fuentes locales de audio" in markdown_text
+    assert "Resumen transcript" in markdown_text
+    assert payload["transcript_intelligence"]["top_transcript_summaries"][0]["summary"] == "Resumen transcript"
+
+
 def test_generate_weekly_brief_handles_missing_alerts_and_decision_with_warnings(tmp_path: Path) -> None:
     data_dir = _prepare_data(tmp_path, with_alerts=False, with_decision=False)
 

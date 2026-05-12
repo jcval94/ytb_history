@@ -60,7 +60,7 @@ python -m pip install -e .
 python -m pip install -r requirements.txt
 ```
 
-Si además vas a descargar audio y generar transcripciones/insights localmente:
+Si además vas a transcribir audio autorizado y generar insights localmente:
 
 ```bash
 python -m pip install -e ".[transcription]"
@@ -458,114 +458,191 @@ Editar `config/settings.yaml`:
 ### CI (`.github/workflows/ci.yml`)
 - Corre en `push` y `pull_request`.
 - Instala el paquete con `src layout` usando `python -m pip install -e .`.
-- Ejecuta compilación, tests y `dry-run`.
+- Ejecuta compilacion, tests y `dry-run`.
 - No requiere `YOUTUBE_API_KEY`.
 
 ### Monitor (`.github/workflows/monitor.yml`)
 
-GitHub Actions ya no ejecuta transcripción local ni pasos dependientes de `yt-dlp`, `ffmpeg`, cookies de navegador u `OPENAI_API_KEY`. La transcripción, sus insights y la regeneración del registro de transcripciones quedan bajo responsabilidad del equipo en un entorno local/controlado.
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
-  - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
 - Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`, `select-transcription-candidates`.
-- Valida únicamente el secret `YOUTUBE_API_KEY` y lo usa desde GitHub Secrets **solo** en el paso `run`.
-- Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
+- Valida el secret `YOUTUBE_API_KEY` y lo usa desde GitHub Secrets solo en el paso `run`.
+- No transcribe, no genera insights con OpenAI y no descarga audio.
+- Hace commit unicamente cuando hay cambios en `data/`.
 
-Configurar el secret en GitHub:
+Configurar el secret de YouTube en GitHub:
 1. `Settings` > `Secrets and variables` > `Actions`
 2. `New repository secret`
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
-### Transcripción local (responsabilidad del equipo)
+### Transcript Intelligence (`.github/workflows/transcripts.yml`)
 
-La transcripción ya no forma parte de `.github/workflows/monitor.yml`. Si el equipo necesita transcribir, generar insights o reconstruir el registro, debe ejecutar localmente los comandos correspondientes y gestionar de forma segura `OPENAI_API_KEY`, `yt-dlp`, `ffmpeg`, cookies y argumentos adicionales fuera de GitHub Actions.
+Workflow manual para seleccionar candidatos, transcribir desde audio local autorizado, generar insights, enriquecer Creative Packages, actualizar el brief y reconstruir el dashboard.
 
-Prerrequisito local para transcripción (mismo entorno virtual del proyecto):
-```bash
-python -m pip install -e ".[transcription]"
-yt-dlp --version
+- Trigger: `workflow_dispatch`, sin schedule.
+- Inputs: `select_limit`, `include_forced`, `transcription_model`, `insights_model`, `dry_run`, `generate_insights`.
+- `dry_run=true` no requiere `OPENAI_API_KEY` y no llama OpenAI.
+- `dry_run=false` usa `OPENAI_API_KEY` solo en los pasos de transcripcion e insights.
+- No usa `YOUTUBE_API_KEY`, no ejecuta collector, no entrena modelos y no toca `data/audio_sources/`.
+- Staging explicito: `data/transcripts/`, `data/creative_packages/`, `data/briefs/` y `site/data/` si existe. No usa `git add .`.
+
+## 19) Transcript Intelligence
+
+### 19.1) Configurar canales forzados de transcripcion
+
+Editar `config/transcription_channels.py`:
+
+```python
+TRANSCRIPTION_CHANNEL_URLS = [
+    "https://www.youtube.com/@bilinkis",
+    "https://www.youtube.com/veritasium",
+]
 ```
 
-La extra `transcription` instala `openai`, `yt-dlp` e `imageio-ffmpeg`. El runner intenta resolver `yt-dlp` desde `PATH` o desde el mismo entorno Python (`python -m yt_dlp`) y usa `ffmpeg` del sistema cuando existe; si no, puede reutilizar el binario gestionado por `imageio-ffmpeg`. Si prefieres un binario propio, puedes definir `YTDLP_FFMPEG_LOCATION`.
+Los videos nuevos observados localmente de estos canales entran primero en la cola como `forced_channel_new_video`. No cuentan dentro del top 10 diario y se deduplican si tambien aparecen como ranked.
 
-GitHub Actions puede dejar preparada la cola diaria (`data/transcripts/transcript_queue.jsonl`) con `select-transcription-candidates`, pero la descarga de audio, transcripciÃ³n e insights siguen ejecutÃ¡ndose solo en entorno local/controlado.
+Defaults en `config/settings.yaml`:
 
-Flujo local sugerido para mantener artefactos de transcripción/insights y registro:
-```bash
-python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --audio-source-dir data/audio_sources
-python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10
-python -m ytb_history.cli transcript-registry-report --data-dir data
+```yaml
+transcription:
+  daily_ranked_limit: 10
+  forced_channels_enabled: true
+  forced_channels_max_per_run: 50
+  forced_channels_new_video_window_days: 14
+  retry_cooldown_days: 7
+  default_transcription_model: "gpt-4o-mini-transcribe"
+  default_insights_model: "gpt-5.5-mini"
+  max_transcriptions_per_run: 60
 ```
 
-Si por alguna razÃ³n necesitas regenerar la cola manualmente fuera de Actions:
+### 19.2) Seleccionar candidatos
+
 ```bash
 python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 ```
 
-El fallback automático de descarga de audio empieza con los defaults nativos de `yt-dlp` (equivalente al patrón Colab `yt-dlp -x --audio-format mp3 ...`) y luego prueba clientes YouTube explícitos (`android`, `ios`, `mweb`, `tv_simply`, `web`) si hace falta.
+La seleccion consume capas locales existentes en `data/analytics`, `data/decision`, `data/model_intelligence`, `data/topic_intelligence` y `data/creative_packages`. No llama YouTube API, no usa `search.list`, no llama OpenAI y no descarga audio/video.
 
-Si el reporte muestra `used_cookies_file: true` pero también `ytdlp_auth_required_despite_cookies`, el archivo sí fue pasado a `yt-dlp`, pero YouTube no aceptó esa sesión desde el entorno de ejecución; rota/exporta nuevamente cookies o valida el mismo `cookies.txt` con `yt-dlp --cookies cookies.txt -F URL` en el entorno donde falla. El reporte incluye `ytdlp_cookies_file_diagnostics` sin valores secretos (existencia, tamaño y conteos de filas YouTube/Google/expiradas) para detectar secrets mal codificados o cookies vencidas. Si se repiten fallos de autenticación con cookies, la corrida abre `ytdlp_auth_required_circuit_open` después de 3 intentos consecutivos para no gastar tiempo ni llenar el registro con los 10 videos de la cola hasta que se roten las cookies.
+### 19.3) Resolucion de media
 
-La cola de transcripción descarta IDs con formato de canal (`UC...`) cuando aparecen por error en campos `video_id`/`source_video_id`; esos casos se reportan como `invalid_video_ids_skipped` o `skipped_invalid_video_id` para evitar llamadas inútiles a `yt-dlp` contra URLs `watch?v=<channel_id>`.
+La transcripcion local resuelve media en este orden:
 
-Uso local recomendado cuando `yt-dlp` requiere autenticación/cookies:
+1. Usa audio existente en `data/audio_sources/<video_id>.*`.
+2. Si existe video local en `data/video_sources/<video_id>.*`, extrae audio con `ffmpeg` o `imageio-ffmpeg`.
+3. Si no hay media local y el fallback esta habilitado, intenta descargar audio con `yt-dlp`.
+
+```text
+data/audio_sources/<video_id>.mp3
+data/audio_sources/<video_id>.m4a
+data/audio_sources/<video_id>.wav
+data/audio_sources/<video_id>.webm
+data/audio_sources/<video_id>.mp4
+data/video_sources/<video_id>.mp4
+data/video_sources/<video_id>.webm
+data/video_sources/<video_id>.mkv
+data/video_sources/<video_id>.mov
+```
+
+`data/audio_sources/` y `data/video_sources/` estan en `.gitignore`; audio y video no se guardan en Git.
+
+### 19.4) Transcribir
+
 ```bash
 python -m ytb_history.cli transcribe-selected-videos \
   --data-dir data \
+  --include-forced \
+  --ranked-limit 10 \
   --audio-source-dir data/audio_sources \
-  --ytdlp-cookies-file /ruta/local/cookies.txt
+  --video-source-dir data/video_sources \
+  --model gpt-4o-mini-transcribe
 ```
 
-Opcional en entorno local (usar cookies del navegador):
+Opciones utiles para descargas locales con `yt-dlp`:
+
 ```bash
 python -m ytb_history.cli transcribe-selected-videos \
   --data-dir data \
-  --ytdlp-browser firefox \
-  --ytdlp-extra-args "--proxy http://127.0.0.1:8080"
+  --limit 10 \
+  --ytdlp-browser chrome \
+  --ytdlp-extra-args "--force-ipv4"
 ```
 
-⚠️ **Seguridad**: nunca commitear `cookies.txt` ni credenciales derivadas. Mantener estos archivos fuera del repositorio y gestionarlos únicamente en entornos locales/controlados.
+Tambien acepta `--ytdlp-cookies-file`, `--ytdlp-cookies-b64` o la variable `YTDLP_COOKIES_B64`. Usa `--no-ytdlp-fallback` si quieres exigir solo media local.
 
-Si prefieres usar `ffmpeg` del sistema, instalarlo y verificar disponibilidad en PATH:
+Para validar sin OpenAI:
+
 ```bash
-# Ubuntu/Debian
-sudo apt-get update
-sudo apt-get install -y ffmpeg
-ffmpeg -version
+python -m ytb_history.cli transcribe-selected-videos --data-dir data --limit 10 --dry-run
 ```
 
-## 19) Interpretación de status
+Si falta `OPENAI_API_KEY` y no es dry-run, el comando devuelve `skipped_missing_api_key` con exit code 0.
+
+### 19.5) Generar insights
+
+```bash
+python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10 --model gpt-5.5-mini
+```
+
+Dry-run:
+
+```bash
+python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 10 --model gpt-5.5-mini --dry-run
+```
+
+Los insights usan Structured Outputs con schema `transcript_insights_v1`, cache por `text_sha256` y no modifican `transcript.txt`.
+
+### 19.6) Reporte de registry
+
+```bash
+python -m ytb_history.cli transcript-registry-report --data-dir data
+```
+
+### 19.7) Archivos generados
+
+- `data/transcripts/transcript_registry.jsonl`
+- `data/transcripts/transcript_queue.jsonl`
+- `data/transcripts/transcript_selection_report.json`
+- `data/transcripts/transcription_run_report.json`
+- `data/transcripts/transcript_insights_index.jsonl`
+- `data/transcripts/transcript_insights_run_report.json`
+- `data/transcripts/videos/<video_id>/transcript.txt`
+- `data/transcripts/videos/<video_id>/transcript_metadata.json`
+- `data/transcripts/videos/<video_id>/transcript_insights.json`
+
+Los TXT, metadata e insights se guardan permanentemente en el repo. El audio no.
+
+## 20) Interpretacion de status
 
 - `success`
 - `success_with_warnings`
+- `skipped_missing_api_key`
 - `aborted_quota_guardrail`
 - `failed`
 
-## 20) Troubleshooting
+## 21) Troubleshooting
 
-- **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions.
-- **quota guardrail abort**: revisa `operational_quota_limit` y tamaño de corrida.
+- **Missing YOUTUBE_API_KEY**: define variable local o secret en Actions para el monitor.
+- **Missing OPENAI_API_KEY**: define variable local o secret en Actions para transcripcion/insights reales; dry-run no la necesita.
+- **quota guardrail abort**: revisa `operational_quota_limit` y tamano de corrida.
 - **canal no resoluble**: valida URL/ID del canal en `config/channels.py`.
 - **video unavailable/private/deleted**: revisar `channel_errors.jsonl` y reportes.
-- **Errores de descarga en transcripción (`yt-dlp`)**:
-  - `failed_audio_download_auth_required`: normalmente requiere cookies/sesión (`--ytdlp-cookies-file` o `--ytdlp-browser`). En el entorno local/controlado, rota o reexporta `cookies.txt`; revisa `ytdlp_cookies_file_diagnostics`, `ytdlp_auth_required_despite_cookies` y `ytdlp_auth_required_circuit_open` para diferenciar cookies mal formadas de una sesión expirada/no aceptada por YouTube. Estos fallos entran en cooldown para no repetirse cada día sin cookies válidas.
-  - `failed_audio_download_video_unavailable`: video privado/no disponible/restringido.
-  - `failed_audio_download_network_or_rate_limit`: red inestable, timeout o rate limit (`429`).
-  - `failed_audio_download`: fallback genérico cuando no se puede clasificar.
-  - `skipped_missing_ytdlp`: falta binario `yt-dlp` en el entorno.
-  - Para diagnóstico agregado: ejecutar `python -m ytb_history.cli transcript-registry-report` y revisar `status_counts` + `error_category_counts`.
-- **no changes to commit**: comportamiento esperado si no hubo cambios en `data/`.
+- **skipped_no_audio_source**: coloca audio en `data/audio_sources/`, video en `data/video_sources/`, revisa `yt-dlp`/cookies o ejecuta el diagnostico local.
+- **ffmpeg_not_available**: instala `ffmpeg` o instala el extra `transcription` para usar `imageio-ffmpeg`.
+- **auth_required en yt-dlp**: usa `--ytdlp-browser chrome`, `--ytdlp-cookies-file` o `YTDLP_COOKIES_B64`.
+- **no changes to commit**: comportamiento esperado si no hubo cambios publicables.
 
-## 21) Seguridad
+## 22) Seguridad
 
 - No guardar API keys en el repositorio.
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
+- Descargar audio/video solo en ejecuciones locales autorizadas y dentro de rutas ignoradas.
+- No guardar audio ni video en Git.
 
-## 22) Automatizacion Local De Transcripcion
+## 23) Automatizacion Local De Transcripcion
 
-Para encadenar seleccion, transcripcion, insights y sincronizacion con Git desde tu entorno local en una sola corrida manual:
+Para encadenar seleccion, transcripcion desde fuentes locales autorizadas, insights y sincronizacion con Git desde tu entorno local en una sola corrida manual:
 
 ```bash
 python -m ytb_history.cli run-local-transcription-automation \
@@ -575,7 +652,14 @@ python -m ytb_history.cli run-local-transcription-automation \
   --limit 10
 ```
 
-La automatizacion hace `git pull --rebase --autostash` al inicio y solo intenta `commit` + `push` cuando se generan resultados publicables nuevos de transcripcion o insights dentro de `data/transcripts/`. Los audios descargados por `yt-dlp` se tratan como cache local en `data/audio_sources/`: no se versionan y el repo no depende de que existan.
+La automatizacion intenta sincronizar el repo al inicio con modo seguro. Si el worktree esta limpio, usa `git pull --rebase --autostash`; si hay cambios locales, no hace pull y deja el reporte en `build/local_automation/latest_sync_report.json`. Por defecto bloquea la transcripcion con `blocked_dirty_worktree`; con `--allow-stale-repo` continua usando la copia local, pero no publica cambios con Git.
+
+Comandos de apoyo:
+
+```bash
+python -m ytb_history.cli sync-local-repo --repo-dir . --check-only
+python -m ytb_history.cli diagnose-local-transcription --repo-dir .
+```
 
 Para registrar la ejecucion automatica local en Windows Task Scheduler:
 
@@ -583,11 +667,4 @@ Para registrar la ejecucion automatica local en Windows Task Scheduler:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\register_local_transcription_task.ps1
 ```
 
-Esto crea la tarea `YtbHistoryLocalTranscription` con dos disparadores:
-
-- Lunes y jueves a las 09:00 hora local.
-- Al arrancar Windows, con guardas para ejecutar solo si hay una corrida pendiente dentro de la ventana de catch-up.
-
-El script ejecutado por la tarea es `scripts/run_local_transcription_automation.ps1`. Mantiene un estado local en `build/local_automation/schedule_state.json`, escribe logs en `build/local_automation/logs/`, evita ejecuciones solapadas con un lock local y no guarda secretos. Por seguridad, la tarea corre como tu usuario interactivo; si Windows exige correr antes del inicio de sesion, habria que usar una cuenta/credencial administrada por Task Scheduler, no guardarla en el repositorio.
-
-Si `yt-dlp` reporta que no pudo copiar la base de cookies del navegador, primero prueba sin `--ytdlp-browser`; en esta maquina la descarga sin cookies funciono mejor. Usa cookies de navegador o `cookies.txt` solo si YouTube empieza a exigir autenticacion.
+El script ejecutado por la tarea es `scripts/run_local_transcription_automation.ps1`. Mantiene `schedule_state.json`, `latest_sync_report.json`, `latest_run_report.json` y logs en `build/local_automation/`, evita ejecuciones solapadas con un lock local y no guarda secretos. El registro crea sync diario a las 08:00, sync lunes/jueves a las 08:45, catch-up al iniciar sesion, intento al desbloquear sesion y heartbeat cada 3 horas.

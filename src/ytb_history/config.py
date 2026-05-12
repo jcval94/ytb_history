@@ -16,6 +16,16 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "soft_warning_quota_limit": 1000,
     "max_pages_per_channel": 5,
     "execution_timezone": "local",
+    "transcription": {
+        "daily_ranked_limit": 10,
+        "forced_channels_enabled": True,
+        "forced_channels_max_per_run": 50,
+        "forced_channels_new_video_window_days": 14,
+        "retry_cooldown_days": 7,
+        "default_transcription_model": "gpt-4o-mini-transcribe",
+        "default_insights_model": "gpt-5.5-mini",
+        "max_transcriptions_per_run": 60,
+    },
 }
 
 
@@ -48,5 +58,24 @@ def load_settings(path: str | Path = "config/settings.yaml") -> dict[str, Any]:
     execution_timezone = loaded.get("execution_timezone")
     if execution_timezone is not None:
         resolved["execution_timezone"] = str(execution_timezone).strip() or "local"
+
+    transcription_loaded = loaded.get("transcription")
+    transcription_defaults = dict(DEFAULT_SETTINGS["transcription"])
+    if isinstance(transcription_loaded, dict):
+        for key in (
+            "daily_ranked_limit",
+            "forced_channels_max_per_run",
+            "forced_channels_new_video_window_days",
+            "retry_cooldown_days",
+            "max_transcriptions_per_run",
+        ):
+            if key in transcription_loaded and transcription_loaded[key] is not None:
+                transcription_defaults[key] = int(transcription_loaded[key])
+        if "forced_channels_enabled" in transcription_loaded:
+            transcription_defaults["forced_channels_enabled"] = bool(transcription_loaded["forced_channels_enabled"])
+        for key in ("default_transcription_model", "default_insights_model"):
+            if key in transcription_loaded and transcription_loaded[key] is not None:
+                transcription_defaults[key] = str(transcription_loaded[key]).strip() or transcription_defaults[key]
+    resolved["transcription"] = transcription_defaults
 
     return resolved

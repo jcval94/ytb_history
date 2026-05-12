@@ -24,7 +24,7 @@ def _transcript_root(data_dir: str | Path) -> Path:
 def _video_dir(video_id: str, *, data_dir: str | Path = "data") -> Path:
     safe_video_id = video_id.strip()
     if not safe_video_id or "/" in safe_video_id or ".." in safe_video_id:
-        raise ValueError("video_id inválido para ruta de storage")
+        raise ValueError("video_id invalido para ruta de storage")
     return _transcript_root(data_dir) / VIDEOS_DIRNAME / safe_video_id
 
 
@@ -87,7 +87,7 @@ def write_transcript_artifacts(
 ) -> dict[str, str]:
     safe_video_id = video_id.strip()
     if not safe_video_id or "/" in safe_video_id or ".." in safe_video_id:
-        raise ValueError("video_id inválido para ruta de storage")
+        raise ValueError("video_id invalido para ruta de storage")
 
     root = _transcript_root(data_dir)
     video_dir = root / VIDEOS_DIRNAME / safe_video_id
@@ -182,23 +182,43 @@ def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[s
     rows = load_transcript_registry(data_dir=data_dir)
     by_status: dict[str, int] = {}
     for row in rows:
-        status = str(row.get("status", "unknown"))
+        status = _registry_report_status(str(row.get("status", "unknown")))
         by_status[status] = by_status.get(status, 0) + 1
 
+    transcript_root = _transcript_root(data_dir)
+    videos_root = transcript_root / VIDEOS_DIRNAME
+    transcripts_available = 0
+    insights_available = 0
+    if videos_root.exists():
+        for video_dir in videos_root.iterdir():
+            if not video_dir.is_dir():
+                continue
+            if (video_dir / "transcript.txt").is_file():
+                transcripts_available += 1
+            insights_path = video_dir / "transcript_insights.json"
+            if not insights_path.is_file():
+                continue
+            try:
+                payload = json.loads(insights_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            if payload.get("status") != "not_generated":
+                insights_available += 1
+
     report = {
+        "status": "success",
         "generated_at": _now_iso(),
+        "registry_path": str(transcript_root / REGISTRY_FILENAME),
         "total_records": len(rows),
         "status_counts": by_status,
+        "transcripts_available": transcripts_available,
+        "insights_available": insights_available,
+        "warnings": [],
         "success_count": by_status.get("success", 0),
         "failed_count": by_status.get("failed", 0),
         "queued_count": by_status.get("queued", 0),
         "skipped_no_audio_source_count": by_status.get("skipped_no_audio_source", 0),
-        "skipped_missing_ytdlp_count": by_status.get("skipped_missing_ytdlp", 0),
         "skipped_invalid_video_id_count": by_status.get("skipped_invalid_video_id", 0),
-        "failed_audio_download_count": by_status.get("failed_audio_download", 0),
-        "failed_audio_download_auth_required_count": by_status.get("failed_audio_download_auth_required", 0),
-        "failed_audio_download_video_unavailable_count": by_status.get("failed_audio_download_video_unavailable", 0),
-        "failed_audio_download_network_or_rate_limit_count": by_status.get("failed_audio_download_network_or_rate_limit", 0),
     }
     by_error_category: dict[str, int] = {}
     for row in rows:
@@ -207,3 +227,9 @@ def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[s
             by_error_category[category] = by_error_category.get(category, 0) + 1
     report["error_category_counts"] = by_error_category
     return report
+
+
+def _registry_report_status(status: str) -> str:
+    if status.startswith("failed_"):
+        return "failed"
+    return status

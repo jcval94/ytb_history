@@ -52,6 +52,7 @@ main { max-width: 1480px; margin: 0 auto; }
 .tab-panel.active { display: block; }
 .warnings { display: grid; gap: .4rem; }
 .warning { border: 1px solid #efd1a8; color: var(--warn); background: #fff8ed; padding: .5rem .65rem; border-radius: .5rem; }
+.notice { border: 1px solid var(--border); color: var(--muted); background: var(--panel); padding: .55rem .7rem; border-radius: .5rem; }
 .table-wrap { overflow: auto; margin-top: .55rem; max-height: 32rem; border: 1px solid var(--border); border-radius: .5rem; background: var(--surface); }
 table { width: 100%; border-collapse: collapse; }
 th, td { border-bottom: 1px solid var(--border); text-align: left; padding: .42rem; font-size: .88rem; white-space: nowrap; }

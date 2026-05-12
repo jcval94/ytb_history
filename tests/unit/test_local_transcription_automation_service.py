@@ -30,8 +30,10 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
         skip_youtube_refresh=True,
         no_sync_git=True,
         audio_source_dir="custom_audio",
+        video_source_dir="custom_video",
+        allow_ytdlp_fallback=False,
         ytdlp_cookies_file="cookies.txt",
-        ytdlp_browser="firefox",
+        ytdlp_browser="chrome",
         ytdlp_extra_args=["--force-ipv4"],
         pipeline_runner=_pipeline,
         candidate_selector=lambda **kwargs: _record("candidates", kwargs),
@@ -42,15 +44,17 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
 
     assert report["status"] == "success"
     assert report["steps"]["youtube_refresh"] == {"skipped": True, "reason": "skip_youtube_refresh"}
-    assert report["steps"]["git_pull"] == {"skipped": True, "reason": "no_sync_git"}
+    assert report["steps"]["repo_sync"] == {"skipped": True, "reason": "no_sync_git"}
     assert [name for name, _ in calls] == ["candidates", "transcription", "insights", "registry"]
     assert calls[0][1] == {"data_dir": str(tmp_path / "custom_data"), "limit": 3}
     assert calls[1][1] == {
         "data_dir": str(tmp_path / "custom_data"),
         "limit": 3,
         "audio_source_dir": str(tmp_path / "custom_audio"),
+        "video_source_dir": str(tmp_path / "custom_video"),
+        "allow_ytdlp_fallback": False,
         "ytdlp_cookies_file": "cookies.txt",
-        "ytdlp_browser": "firefox",
+        "ytdlp_browser": "chrome",
         "ytdlp_extra_args": ["--force-ipv4"],
     }
 
@@ -72,7 +76,9 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
     report = run_local_transcription_automation(
         repo_dir=tmp_path,
         limit=2,
+        skip_youtube_refresh=False,
         command_runner=_command_runner,
+        sync_runner=lambda **_kwargs: {"status": "up_to_date", "dirty_worktree_blocked": False},
         pipeline_runner=lambda **kwargs: {"pipeline_kwargs": kwargs},
         candidate_selector=lambda **kwargs: {"candidate_kwargs": kwargs},
         transcription_runner=lambda **kwargs: {"transcribed_success": 1, "transcription_kwargs": kwargs},
@@ -82,7 +88,6 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
 
     assert report["status"] == "success"
     assert commands == [
-        ["git", "pull", "--rebase", "--autostash"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
         ["git", "commit", "-m", "Run local transcription automation"],
@@ -107,6 +112,7 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
         repo_dir=tmp_path,
         skip_youtube_refresh=True,
         command_runner=_command_runner,
+        sync_runner=lambda **_kwargs: {"status": "up_to_date", "dirty_worktree_blocked": False},
         candidate_selector=lambda **_kwargs: {},
         transcription_runner=lambda **_kwargs: {"transcribed_success": 1},
         insights_generator=lambda **_kwargs: {},
@@ -118,7 +124,6 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
     assert ["git", "push"] not in commands
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
     assert commands == [
-        ["git", "pull", "--rebase", "--autostash"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
     ]
@@ -135,9 +140,10 @@ def test_run_local_transcription_automation_skips_git_sync_without_publishable_o
         repo_dir=tmp_path,
         skip_youtube_refresh=True,
         command_runner=_command_runner,
+        sync_runner=lambda **_kwargs: {"status": "up_to_date", "dirty_worktree_blocked": False},
         candidate_selector=lambda **_kwargs: {},
-        transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "failed_audio_download": 2},
-        insights_generator=lambda **_kwargs: {"generated": 0},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "skipped_no_audio_source": 2},
+        insights_generator=lambda **_kwargs: {"generated_success": 0},
         registry_report_builder=lambda **_kwargs: {},
     )
 
@@ -148,22 +154,37 @@ def test_run_local_transcription_automation_skips_git_sync_without_publishable_o
     assert report["steps"]["git_status"] == {"skipped": True, "reason": "no_publishable_outputs"}
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_publishable_outputs"}
     assert report["steps"]["git_push"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert commands == [["git", "pull", "--rebase", "--autostash"]]
+    assert commands == []
 
 
-def test_run_local_transcription_automation_stops_when_git_pull_fails(tmp_path: Path) -> None:
-    def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
-        return subprocess.CompletedProcess(command, 1, stdout="", stderr="pull failed")
-
+def test_run_local_transcription_automation_blocks_dirty_worktree_before_transcribing(tmp_path: Path) -> None:
     report = run_local_transcription_automation(
         repo_dir=tmp_path,
-        command_runner=_command_runner,
+        sync_runner=lambda **_kwargs: {"status": "blocked_dirty_worktree", "dirty_worktree_blocked": True},
         pipeline_runner=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("pipeline should not run")),
     )
 
-    assert report["status"] == "failed"
-    assert report["warnings"] == ["git_pull_failed"]
+    assert report["status"] == "blocked_dirty_worktree"
+    assert report["warnings"] == ["dirty_worktree_blocks_local_transcription"]
     assert "youtube_refresh" not in report["steps"]
+
+
+def test_run_local_transcription_automation_allows_stale_repo_but_skips_publish(tmp_path: Path) -> None:
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        skip_youtube_refresh=True,
+        allow_stale_repo=True,
+        sync_runner=lambda **_kwargs: {"status": "blocked_dirty_worktree", "dirty_worktree_blocked": True},
+        candidate_selector=lambda **_kwargs: {},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 1},
+        insights_generator=lambda **_kwargs: {},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["status"] == "success"
+    assert "continuing_with_stale_repo_due_to_dirty_worktree" in report["warnings"]
+    assert "git_publish_skipped_dirty_worktree" in report["warnings"]
+    assert report["steps"]["git_add"] == {"skipped": True, "reason": "dirty_worktree"}
 
 
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:

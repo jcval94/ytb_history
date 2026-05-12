@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T10:19:58.641297+00:00",
+  "generated_at": "2026-05-11T22:08:16.215315+00:00",
   "week": "2026-19",
   "period_start": "2026-05-04",
   "period_end": "2026-05-09",
@@ -25830,7 +25830,7 @@
   "creative_packages_to_execute": [
     {
       "creative_package_id": "cp_20_ab7c183566",
-      "generated_at": "2026-05-09T10:19:57.411627+00:00",
+      "generated_at": "2026-05-11T21:57:41.606799+00:00",
       "source_action_id": "act_3b9e6a0e4c3a0a93",
       "source_opportunity_id": "",
       "source_video_id": "xAJcbx5h6wE",
@@ -25853,6 +25853,7 @@
       "transcript_insights_path": "",
       "transcript_summary": "",
       "transcript_hook_type": "",
+      "transcript_enrichment_score": "0.0",
       "transcript_narrative_structure": "[]",
       "transcript_reuse_opportunities": "[]",
       "transcript_risk_notes": "[]",
@@ -25862,7 +25863,7 @@
     },
     {
       "creative_package_id": "cp_26_2960600741",
-      "generated_at": "2026-05-09T10:19:57.411627+00:00",
+      "generated_at": "2026-05-11T21:57:41.606799+00:00",
       "source_action_id": "act_e47f6da5d55fd93d",
       "source_opportunity_id": "opp_act_755c4d92db448da1",
       "source_video_id": "tysrC1PivVE",
@@ -25885,6 +25886,7 @@
       "transcript_insights_path": "",
       "transcript_summary": "",
       "transcript_hook_type": "",
+      "transcript_enrichment_score": "0.0",
       "transcript_narrative_structure": "[]",
       "transcript_reuse_opportunities": "[]",
       "transcript_risk_notes": "[]",
@@ -25894,7 +25896,7 @@
     },
     {
       "creative_package_id": "cp_46_b3380718b8",
-      "generated_at": "2026-05-09T10:19:57.411627+00:00",
+      "generated_at": "2026-05-11T21:57:41.606799+00:00",
       "source_action_id": "act_bc4a5dc874dda2aa",
       "source_opportunity_id": "opp_act_bc4a5dc874dda2aa",
       "source_video_id": "Z-xAO96GQtU",
@@ -25917,6 +25919,7 @@
       "transcript_insights_path": "",
       "transcript_summary": "",
       "transcript_hook_type": "",
+      "transcript_enrichment_score": "0.0",
       "transcript_narrative_structure": "[]",
       "transcript_reuse_opportunities": "[]",
       "transcript_risk_notes": "[]",
@@ -25925,6 +25928,14 @@
       "recommended_next_step": "iniciar_preproduccion"
     }
   ],
+  "transcript_intelligence": {
+    "selected_forced_count": 16,
+    "selected_ranked_count": 10,
+    "transcribed_success": 0,
+    "skipped_no_audio_source": 26,
+    "insights_generated": 0,
+    "top_transcript_summaries": []
+  },
   "title_pattern_snapshot": {
     "has_number": {},
     "has_question": {},

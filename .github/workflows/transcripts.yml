@@ -1,0 +1,114 @@
+name: Transcript Intelligence
+
+on:
+  workflow_dispatch:
+    inputs:
+      select_limit:
+        description: "Ranked daily transcription limit"
+        default: "10"
+      include_forced:
+        description: "Include forced transcription channels"
+        default: "true"
+      transcription_model:
+        description: "OpenAI speech-to-text model"
+        default: "gpt-4o-mini-transcribe"
+      insights_model:
+        description: "OpenAI structured insights model"
+        default: "gpt-5.5-mini"
+      dry_run:
+        description: "Do not call OpenAI"
+        default: "true"
+      generate_insights:
+        description: "Generate transcript insights"
+        default: "true"
+
+permissions:
+  contents: write
+
+jobs:
+  transcript-intelligence:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[transcription]"
+          python -m pip install -r requirements.txt
+
+      - name: Compile
+        run: python -m compileall src tests
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Select transcription candidates
+        run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit "${{ inputs.select_limit }}"
+
+      - name: Transcribe selected videos dry run
+        if: ${{ inputs.dry_run == 'true' }}
+        run: |
+          args=(--data-dir data --audio-source-dir data/audio_sources --model "${{ inputs.transcription_model }}" --dry-run)
+          if [ "${{ inputs.include_forced }}" = "true" ]; then
+            args+=(--include-forced --ranked-limit "${{ inputs.select_limit }}")
+          else
+            args+=(--limit "${{ inputs.select_limit }}")
+          fi
+          python -m ytb_history.cli transcribe-selected-videos "${args[@]}"
+
+      - name: Transcribe selected videos with OpenAI
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          args=(--data-dir data --audio-source-dir data/audio_sources --model "${{ inputs.transcription_model }}")
+          if [ "${{ inputs.include_forced }}" = "true" ]; then
+            args+=(--include-forced --ranked-limit "${{ inputs.select_limit }}")
+          else
+            args+=(--limit "${{ inputs.select_limit }}")
+          fi
+          python -m ytb_history.cli transcribe-selected-videos "${args[@]}"
+
+      - name: Generate transcript insights dry run
+        if: ${{ inputs.generate_insights == 'true' && inputs.dry_run == 'true' }}
+        run: python -m ytb_history.cli generate-transcript-insights --data-dir data --limit "${{ inputs.select_limit }}" --model "${{ inputs.insights_model }}" --dry-run
+
+      - name: Generate transcript insights with OpenAI
+        if: ${{ inputs.generate_insights == 'true' && inputs.dry_run != 'true' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m ytb_history.cli generate-transcript-insights --data-dir data --limit "${{ inputs.select_limit }}" --model "${{ inputs.insights_model }}"
+
+      - name: Generate creative packages
+        run: python -m ytb_history.cli generate-creative-packages --data-dir data
+
+      - name: Generate weekly brief
+        run: python -m ytb_history.cli generate-weekly-brief --data-dir data
+
+      - name: Build pages dashboard
+        run: python -m ytb_history.cli build-pages-dashboard --data-dir data
+
+      - name: Commit transcript intelligence outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/transcripts/
+          git add data/creative_packages/
+          git add data/briefs/
+          if [ -d site/data ]; then
+            git add site/data/
+          fi
+          if git diff --cached --quiet; then
+            echo "No transcript intelligence changes to commit."
+            exit 0
+          fi
+          git commit -m "Update transcript intelligence outputs"
+          git push

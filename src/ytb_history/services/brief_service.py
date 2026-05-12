@@ -70,6 +70,18 @@ def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            text = line.strip()
+            if text:
+                rows.append(json.loads(text))
+    return rows
+
+
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -214,6 +226,27 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     creative_packages = _sort_desc(tables["creative_packages"], "creative_execution_score")[:3]
     creative_titles = tables["creative_titles"]
     creative_hooks = tables["creative_hooks"]
+    transcript_selection = _read_json(data_root / "transcripts" / "transcript_selection_report.json") if (data_root / "transcripts" / "transcript_selection_report.json").exists() else {}
+    transcription_run = _read_json(data_root / "transcripts" / "transcription_run_report.json") if (data_root / "transcripts" / "transcription_run_report.json").exists() else {}
+    transcript_insights_run = _read_json(data_root / "transcripts" / "transcript_insights_run_report.json") if (data_root / "transcripts" / "transcript_insights_run_report.json").exists() else {}
+    transcript_insights_index = _read_jsonl(data_root / "transcripts" / "transcript_insights_index.jsonl")
+    top_transcript_summaries = [
+        {
+            "video_id": str(row.get("video_id", "")),
+            "summary": str(row.get("summary", "")),
+            "main_topics": row.get("main_topics", []),
+        }
+        for row in transcript_insights_index
+        if str(row.get("status", "")) in {"success", "skipped_cache"} and row.get("summary")
+    ][:5]
+    transcript_intelligence = {
+        "selected_forced_count": int(transcript_selection.get("selected_forced_count", 0) or 0),
+        "selected_ranked_count": int(transcript_selection.get("selected_ranked_count", 0) or 0),
+        "transcribed_success": int(transcription_run.get("transcribed_success", 0) or 0),
+        "skipped_no_audio_source": int(transcription_run.get("skipped_no_audio_source", 0) or 0),
+        "insights_generated": int(transcript_insights_run.get("generated_success", transcript_insights_run.get("generated", 0)) or 0),
+        "top_transcript_summaries": top_transcript_summaries,
+    }
 
     alerts_payload = tables["latest_alerts"] if isinstance(tables["latest_alerts"], dict) else {}
     alerts_rows = alerts_payload.get("alerts", []) if isinstance(alerts_payload.get("alerts", []), list) else []
@@ -317,6 +350,7 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "content_driver_feature_direction": content_driver_direction,
         "top_alerts": top_alerts,
         "creative_packages_to_execute": creative_packages,
+        "transcript_intelligence": transcript_intelligence,
         "title_pattern_snapshot": title_snapshot,
         "data_quality_notes": data_quality_notes,
         "warnings": warnings,
@@ -454,10 +488,26 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     else:
         markdown_lines.extend(["- Content driver outputs no disponibles en esta corrida."])
 
+    markdown_lines.extend(["", "## Transcript Intelligence"])
+    markdown_lines.extend(
+        [
+            f"- selected_forced_count: {transcript_intelligence['selected_forced_count']}",
+            f"- selected_ranked_count: {transcript_intelligence['selected_ranked_count']}",
+            f"- transcribed_success: {transcript_intelligence['transcribed_success']}",
+            f"- skipped_no_audio_source: {transcript_intelligence['skipped_no_audio_source']}",
+            f"- insights_generated: {transcript_intelligence['insights_generated']}",
+        ]
+    )
+    if top_transcript_summaries:
+        markdown_lines.append("### Top transcript summaries")
+        markdown_lines.extend([f"- {row['video_id']}: {row['summary'][:180]}" for row in top_transcript_summaries[:3]])
+    if transcript_intelligence["skipped_no_audio_source"]:
+        markdown_lines.append("- Nota: faltan fuentes locales de audio para algunos videos seleccionados.")
+
     markdown_lines.extend(["", "## Creative Packages to Execute"])
     markdown_lines.extend(
         _tabulate(
-            ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
+            ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "transcript_available", "transcript_summary", "recommended_next_step"],
             [
                 [
                     str(row.get("package_type", "")),
@@ -465,6 +515,8 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
                     str(row.get("creative_angle", "")),
                     str(row.get("recommended_format", "")),
                     str(row.get("creative_execution_score", "")),
+                    str(row.get("transcript_available", "")),
+                    str(row.get("transcript_summary", ""))[:120],
                     str(row.get("recommended_next_step", "")),
                 ]
                 for row in creative_packages

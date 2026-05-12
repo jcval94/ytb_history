@@ -63,7 +63,9 @@ def test_transcript_store_writes_artifacts_and_registry(tmp_path: Path) -> None:
     assert transcript_exists("abc123", data_dir=tmp_path)
 
     report = build_transcript_registry_report(data_dir=tmp_path)
+    assert report["status"] == "success"
     assert report["success_count"] == 1
+    assert report["transcripts_available"] == 1
 
 
 def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
@@ -71,12 +73,8 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
         {"video_id": "v1", "status": "queued"},
         {"video_id": "v2", "status": "failed"},
         {"video_id": "v3", "status": "success"},
-        {"video_id": "v4", "status": "skipped_missing_ytdlp"},
         {"video_id": "v4b", "status": "skipped_invalid_video_id", "error_category": "invalid_video_id"},
-        {"video_id": "v5", "status": "failed_audio_download"},
-        {"video_id": "v6", "status": "failed_audio_download_auth_required", "error_category": "auth_required"},
-        {"video_id": "v7", "status": "failed_audio_download_video_unavailable", "error_category": "video_unavailable"},
-        {"video_id": "v8", "status": "failed_audio_download_network_or_rate_limit", "error_category": "network_or_rate_limit"},
+        {"video_id": "v5", "status": "skipped_no_audio_source"},
     ]
     for entry in entries:
         update_transcript_registry(data_dir=tmp_path, entry=entry)
@@ -84,17 +82,9 @@ def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:
     assert report["queued_count"] == 1
     assert report["failed_count"] == 1
     assert report["success_count"] == 1
-    assert report["skipped_missing_ytdlp_count"] == 1
     assert report["skipped_invalid_video_id_count"] == 1
-    assert report["failed_audio_download_count"] == 1
-    assert report["failed_audio_download_auth_required_count"] == 1
-    assert report["failed_audio_download_video_unavailable_count"] == 1
-    assert report["failed_audio_download_network_or_rate_limit_count"] == 1
-    assert report["error_category_counts"]["auth_required"] == 1
+    assert report["skipped_no_audio_source_count"] == 1
     assert report["error_category_counts"]["invalid_video_id"] == 1
-    assert report["error_category_counts"]["video_unavailable"] == 1
-    assert report["error_category_counts"]["network_or_rate_limit"] == 1
-    assert report["skipped_no_audio_source_count"] == 0
 
 
 
@@ -103,13 +93,13 @@ def test_failed_transcript_registry_entries_get_failed_at(tmp_path: Path) -> Non
         data_dir=tmp_path,
         entry={
             "video_id": "v-auth",
-            "status": "failed_audio_download_auth_required",
-            "error_category": "auth_required",
+            "status": "failed",
+            "error_category": "transcription_error",
         },
     )
 
     assert row["failed_at"]
-    assert row["status"] == "failed_audio_download_auth_required"
+    assert row["status"] == "failed"
 
 
 def test_success_transcript_registry_entries_do_not_get_failed_at(tmp_path: Path) -> None:

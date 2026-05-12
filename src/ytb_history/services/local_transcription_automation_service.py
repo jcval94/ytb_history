@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any, Callable, Sequence
 
 from ytb_history.orchestrator import run_pipeline
+from ytb_history.services.local_repo_sync_service import sync_local_repo
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 from ytb_history.services.transcript_selection_service import select_transcription_candidates
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
@@ -85,6 +86,7 @@ def _has_publishable_transcription_outputs(report: JsonReport) -> bool:
     insights_step = steps.get("transcript_insights", {})
     return (
         _count_step_items(transcription_step, "transcribed_success") > 0
+        or _count_step_items(insights_step, "generated_success") > 0
         or _count_step_items(insights_step, "generated") > 0
     )
 
@@ -95,13 +97,17 @@ def run_local_transcription_automation(
     data_dir: str | Path = "data",
     settings_path: str | Path = "config/settings.yaml",
     limit: int = 10,
-    skip_youtube_refresh: bool = False,
+    skip_youtube_refresh: bool = True,
     no_sync_git: bool = False,
+    allow_stale_repo: bool = False,
     audio_source_dir: str | Path = "data/audio_sources",
-    ytdlp_cookies_file: str | None = None,
+    video_source_dir: str | Path = "data/video_sources",
+    allow_ytdlp_fallback: bool = True,
+    ytdlp_cookies_file: str | Path | None = None,
     ytdlp_browser: str | None = None,
-    ytdlp_extra_args: list[str] | None = None,
+    ytdlp_extra_args: Sequence[str] | None = None,
     command_runner: CommandRunner = subprocess.run,
+    sync_runner: Callable[..., JsonReport] = sync_local_repo,
     pipeline_runner: Callable[..., JsonReport] = run_pipeline,
     candidate_selector: Callable[..., JsonReport] = select_transcription_candidates,
     transcription_runner: Callable[..., JsonReport] = transcribe_selected_videos,
@@ -111,12 +117,13 @@ def run_local_transcription_automation(
     """Run the local transcription automation workflow.
 
     All external side effects are injectable so unit tests can use fakes instead
-    of hitting Git, YouTube, OpenAI, or yt-dlp.
+    of hitting Git, YouTube, or OpenAI.
     """
     repo_root = Path(repo_dir).expanduser().resolve()
     effective_data_dir = _resolve_under_repo(repo_root, data_dir)
     effective_settings_path = _resolve_under_repo(repo_root, settings_path)
     effective_audio_source_dir = _resolve_under_repo(repo_root, audio_source_dir)
+    effective_video_source_dir = _resolve_under_repo(repo_root, video_source_dir)
     report_path = repo_root / "build" / "local_automation" / "latest_run_report.json"
     transcripts_relative_path = _as_repo_relative(repo_root, effective_data_dir / "transcripts")
 
@@ -129,23 +136,34 @@ def run_local_transcription_automation(
         "limit": limit,
         "skip_youtube_refresh": skip_youtube_refresh,
         "no_sync_git": no_sync_git,
+        "allow_stale_repo": allow_stale_repo,
         "audio_source_dir": str(effective_audio_source_dir),
+        "video_source_dir": str(effective_video_source_dir),
+        "allow_ytdlp_fallback": allow_ytdlp_fallback,
+        "ytdlp_cookies_file": str(ytdlp_cookies_file) if ytdlp_cookies_file else None,
+        "ytdlp_browser": ytdlp_browser,
+        "ytdlp_extra_args": list(ytdlp_extra_args or []),
         "steps": {},
         "git": {"enabled": not no_sync_git, "commands": []},
         "warnings": [],
     }
 
     if not no_sync_git:
-        pull_report = _run_command(["git", "pull", "--rebase", "--autostash"], cwd=repo_root, command_runner=command_runner)
-        report["git"]["commands"].append(pull_report)
-        report["steps"]["git_pull"] = pull_report
-        if not pull_report["ok"]:
-            report["status"] = "failed"
-            report["warnings"].append("git_pull_failed")
+        sync_report = sync_runner(repo_dir=repo_root, command_runner=command_runner)
+        report["steps"]["repo_sync"] = sync_report
+        report["git"]["sync_status"] = sync_report.get("status")
+        report["git"]["dirty_worktree_blocked"] = bool(sync_report.get("dirty_worktree_blocked"))
+        if sync_report.get("status") == "blocked_dirty_worktree" and not allow_stale_repo:
+            report["status"] = "blocked_dirty_worktree"
+            report["warnings"].append("dirty_worktree_blocks_local_transcription")
             _write_report(report_path, report)
             return report
+        if sync_report.get("status") == "blocked_dirty_worktree":
+            report["warnings"].append("continuing_with_stale_repo_due_to_dirty_worktree")
+        elif sync_report.get("status") == "sync_failed":
+            report["warnings"].append("repo_sync_failed_continuing_with_local_state")
     else:
-        report["steps"]["git_pull"] = {"skipped": True, "reason": "no_sync_git"}
+        report["steps"]["repo_sync"] = {"skipped": True, "reason": "no_sync_git"}
 
     if skip_youtube_refresh:
         report["steps"]["youtube_refresh"] = {"skipped": True, "reason": "skip_youtube_refresh"}
@@ -160,14 +178,18 @@ def run_local_transcription_automation(
         data_dir=str(effective_data_dir),
         limit=limit,
         audio_source_dir=str(effective_audio_source_dir),
+        video_source_dir=str(effective_video_source_dir),
+        allow_ytdlp_fallback=allow_ytdlp_fallback,
         ytdlp_cookies_file=ytdlp_cookies_file,
         ytdlp_browser=ytdlp_browser,
-        ytdlp_extra_args=ytdlp_extra_args,
+        ytdlp_extra_args=list(ytdlp_extra_args or []),
     )
     report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=limit)
     report["steps"]["transcript_registry_report"] = registry_report_builder(data_dir=str(effective_data_dir))
 
-    if not no_sync_git:
+    repo_sync_status = report["steps"].get("repo_sync", {}).get("status")
+    publish_allowed = not no_sync_git and repo_sync_status not in {"blocked_dirty_worktree", "sync_failed"}
+    if publish_allowed:
         report["git"]["publishable_outputs"] = _has_publishable_transcription_outputs(report)
         _write_report(report_path, report)
         if not report["git"]["publishable_outputs"]:
@@ -235,10 +257,20 @@ def run_local_transcription_automation(
             report["steps"]["git_commit"] = {"skipped": True, "reason": "no_changes"}
             report["steps"]["git_push"] = {"skipped": True, "reason": "no_changes"}
     else:
-        report["steps"]["git_add"] = {"skipped": True, "reason": "no_sync_git"}
-        report["steps"]["git_status"] = {"skipped": True, "reason": "no_sync_git"}
-        report["steps"]["git_commit"] = {"skipped": True, "reason": "no_sync_git"}
-        report["steps"]["git_push"] = {"skipped": True, "reason": "no_sync_git"}
+        if no_sync_git:
+            reason = "no_sync_git"
+        elif repo_sync_status == "sync_failed":
+            reason = "repo_sync_failed"
+        else:
+            reason = "dirty_worktree"
+        report["steps"]["git_add"] = {"skipped": True, "reason": reason}
+        report["steps"]["git_status"] = {"skipped": True, "reason": reason}
+        report["steps"]["git_commit"] = {"skipped": True, "reason": reason}
+        report["steps"]["git_push"] = {"skipped": True, "reason": reason}
+        if reason == "dirty_worktree":
+            report["warnings"].append("git_publish_skipped_dirty_worktree")
+        if reason == "repo_sync_failed":
+            report["warnings"].append("git_publish_skipped_repo_sync_failed")
         _write_report(report_path, report)
 
     return report

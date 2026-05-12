@@ -131,12 +131,20 @@
 
 Advertencia: estas importancias son predictivas, no causales.
 
+## Transcript Intelligence
+- selected_forced_count: 16
+- selected_ranked_count: 10
+- transcribed_success: 0
+- skipped_no_audio_source: 26
+- insights_generated: 0
+- Nota: faltan fuentes locales de audio para algunos videos seleccionados.
+
 ## Creative Packages to Execute
-| package_type | topic | creative_angle | recommended_format | creative_execution_score | recommended_next_step |
-| --- | --- | --- | --- | --- | --- |
-| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 75.0141 | mantener_watchlist |
-| watchlist_package | repackage_idea | Enfoque watchlist para repackage_idea | video explicativo | 74.7164 | mantener_watchlist |
-| repackage_package | repackage_idea | Enfoque repackage para repackage_idea | video explicativo | 74.5258 | iniciar_preproduccion |
+| package_type | topic | creative_angle | recommended_format | creative_execution_score | transcript_available | transcript_summary | recommended_next_step |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 75.0141 | False |  | mantener_watchlist |
+| watchlist_package | repackage_idea | Enfoque watchlist para repackage_idea | video explicativo | 74.7164 | False |  | mantener_watchlist |
+| repackage_package | repackage_idea | Enfoque repackage para repackage_idea | video explicativo | 74.5258 | False |  | iniciar_preproduccion |
 
 ## Suggested Titles & Hooks
 ### Suggested Titles

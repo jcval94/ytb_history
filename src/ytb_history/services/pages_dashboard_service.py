@@ -70,6 +70,17 @@ JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("operation_summary", "operations/operation_summary.json"),
 )
 
+TRANSCRIPT_JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
+    ("transcript_selection_report", "transcripts/transcript_selection_report.json"),
+    ("transcription_run_report", "transcripts/transcription_run_report.json"),
+    ("transcript_insights_run_report", "transcripts/transcript_insights_run_report.json"),
+)
+
+TRANSCRIPT_JSONL_TABLE_SPECS: tuple[tuple[str, str], ...] = (
+    ("transcript_registry", "transcripts/transcript_registry.jsonl"),
+    ("transcript_insights_index", "transcripts/transcript_insights_index.jsonl"),
+)
+
 BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_weekly_brief", "briefs/latest_weekly_brief.json", "json"),
     ("latest_weekly_brief_markdown", "briefs/latest_weekly_brief.md", "text"),
@@ -111,6 +122,7 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
     _resolve_output(site_root, "assets").mkdir(parents=True, exist_ok=True)
 
     warnings: list[str] = []
+    transcript_notices: list[str] = []
     files_written: list[str] = []
     row_counts: dict[str, int] = {}
 
@@ -139,6 +151,20 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         payload = _read_json_or_empty(json_path, table_name, warnings)
         row_counts[table_name] = _payload_row_count(payload)
         files_written.append(_write_json(site_root, f"data/{table_name}.json", payload))
+
+    for table_name, json_relative in TRANSCRIPT_JSON_FILE_SPECS:
+        tables.append(table_name)
+        json_path = data_root / json_relative
+        payload = _read_optional_json_or_empty(json_path, table_name, transcript_notices)
+        row_counts[table_name] = _payload_row_count(payload)
+        files_written.append(_write_json(site_root, f"data/{table_name}.json", payload))
+
+    for table_name, jsonl_relative in TRANSCRIPT_JSONL_TABLE_SPECS:
+        tables.append(table_name)
+        jsonl_path = data_root / jsonl_relative
+        table_payload = _jsonl_to_table_json(table_name=table_name, jsonl_path=jsonl_path, generated_at=generated_at, notices=transcript_notices)
+        row_counts[table_name] = int(table_payload["row_count"])
+        files_written.append(_write_json(site_root, f"data/{table_name}.json", table_payload))
 
     for table_name, csv_relative in READINESS_TABLE_SPECS:
         tables.append(table_name)
@@ -196,7 +222,7 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         data_root=data_root,
     )
     warnings.extend(freshness["warnings"])
-    notices = list(freshness["notices"])
+    notices = transcript_notices + list(freshness["notices"])
     site_manifest = {
         "generated_at": generated_at,
         "source_dashboard_index": str(dashboard_index_path),
@@ -408,6 +434,25 @@ def _read_json_or_empty(path: Path, name: str, warnings: list[str]) -> dict[str,
     return {}
 
 
+def _read_optional_json_or_empty(path: Path, name: str, notices: list[str]) -> dict[str, Any]:
+    if not path.exists():
+        notices.append(f"Optional transcript JSON missing: {path}")
+        return {}
+
+    try:
+        with path.open("r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except json.JSONDecodeError:
+        notices.append(f"Invalid optional transcript JSON in {name}: {path}")
+        return {}
+
+    if isinstance(payload, dict):
+        return payload
+
+    notices.append(f"Unexpected optional transcript JSON payload type in {name}: {path}")
+    return {}
+
+
 def _csv_to_table_json(*, table_name: str, csv_path: Path, generated_at: str, warnings: list[str]) -> dict[str, Any]:
     if not csv_path.exists():
         warnings.append(f"Missing CSV input for {table_name}: {csv_path}")
@@ -423,6 +468,46 @@ def _csv_to_table_json(*, table_name: str, csv_path: Path, generated_at: str, wa
         reader = csv.DictReader(handle)
         columns = list(reader.fieldnames or [])
         rows = [_convert_csv_row(row, columns) for row in reader]
+
+    return {
+        "name": table_name,
+        "generated_at": generated_at,
+        "row_count": len(rows),
+        "columns": columns,
+        "rows": rows,
+    }
+
+
+def _jsonl_to_table_json(*, table_name: str, jsonl_path: Path, generated_at: str, notices: list[str]) -> dict[str, Any]:
+    if not jsonl_path.exists():
+        notices.append(f"Optional transcript JSONL missing: {jsonl_path}")
+        return {
+            "name": table_name,
+            "generated_at": generated_at,
+            "row_count": 0,
+            "columns": [],
+            "rows": [],
+        }
+
+    rows: list[dict[str, Any]] = []
+    columns: list[str] = []
+    with jsonl_path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            text = line.strip()
+            if not text:
+                continue
+            try:
+                row = json.loads(text)
+            except json.JSONDecodeError:
+                notices.append(f"Invalid optional transcript JSONL row {line_number}: {jsonl_path}")
+                continue
+            if not isinstance(row, dict):
+                notices.append(f"Unexpected optional transcript JSONL row type {line_number}: {jsonl_path}")
+                continue
+            rows.append(row)
+            for key in row:
+                if key not in columns:
+                    columns.append(key)
 
     return {
         "name": table_name,
