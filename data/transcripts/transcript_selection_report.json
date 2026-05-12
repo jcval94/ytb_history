@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11T12:27:05.785465+00:00",
+  "generated_at": "2026-05-12T11:30:06.177694+00:00",
   "limit": 10,
-  "candidates_considered": 1651,
-  "selected_count": 13,
-  "selected_forced_count": 3,
+  "candidates_considered": 1737,
+  "selected_count": 14,
+  "selected_forced_count": 4,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
@@ -29,11 +29,11 @@
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
+    "zvBx0ylgPOE",
     "T32B8W5B3XY",
     "7F4pY8Td9QQ",
     "Yo4aGwiAUBk",
-    "-peAopWmtxU",
-    "zkmezdV88JA"
+    "yipK0StLn9k"
   ],
   "warnings": []
 }

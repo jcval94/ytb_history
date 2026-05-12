@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-05-11T12:27:03.144378+00:00",
-  "total_packages": 488,
-  "skipped_invalid_source_video_id_count": 108,
+  "generated_at": "2026-05-12T11:30:03.596385+00:00",
+  "total_packages": 494,
+  "skipped_invalid_source_video_id_count": 107,
   "package_type_counts": {
-    "watchlist_package": 95,
-    "comparison_package": 1,
-    "fast_reaction_package": 4,
-    "repackage_package": 388
+    "watchlist_package": 83,
+    "fast_reaction_package": 10,
+    "repackage_package": 399,
+    "comparison_package": 2
   },
   "top_packages": [
     {
-      "creative_package_id": "cp_23_8bdd1f1236",
-      "creative_execution_score": 75.1279
+      "creative_package_id": "cp_20_452c84bcfa",
+      "creative_execution_score": 77.8975
     },
     {
-      "creative_package_id": "cp_24_f8c941289f",
-      "creative_execution_score": 74.8858
+      "creative_package_id": "cp_23_644969912a",
+      "creative_execution_score": 76.9179
     },
     {
-      "creative_package_id": "cp_45_43692d31df",
-      "creative_execution_score": 74.6916
+      "creative_package_id": "cp_39_00384e15cf",
+      "creative_execution_score": 76.174
     },
     {
-      "creative_package_id": "cp_65_24ba77cc4f",
-      "creative_execution_score": 74.4654
+      "creative_package_id": "cp_41_9f9b16e2ef",
+      "creative_execution_score": 75.8537
     },
     {
-      "creative_package_id": "cp_25_ab15854694",
-      "creative_execution_score": 74.4399
+      "creative_package_id": "cp_17_10b06ab4f2",
+      "creative_execution_score": 75.7155
     }
   ],
-  "avg_originality_score": 97.5308,
+  "avg_originality_score": 97.5463,
   "high_copy_risk_count": 0,
   "warnings": [
-    "skipped_invalid_source_video_ids:108"
+    "skipped_invalid_source_video_ids:107"
   ]
 }
