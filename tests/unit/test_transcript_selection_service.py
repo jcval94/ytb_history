@@ -42,6 +42,10 @@ def test_forced_channels_and_ranked_behavior(tmp_path: Path) -> None:
     queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
     assert report["selected_forced_count"] == 1
     assert report["selected_ranked_count"] == 1
+    assert report["expected_ranked_count"] == 1
+    assert report["ranked_shortfall"] == 0
+    assert report["forced_candidate_pool_count"] == 2
+    assert report["source_artifacts"]["decision"]["row_count"] == 4
     assert queue[0]["selection_source"] == "forced_channel_new_video"
     assert queue[0]["video_id"] == "v1"
     assert queue[1]["selection_source"] == "ranked_daily_top"
@@ -141,6 +145,26 @@ def test_auth_required_download_failure_without_failed_at_uses_selected_at_coold
     assert report["registry_existing_recent_failed_count"] == 1
     assert report["skipped_recent_failures"] == 1
     assert all(row["video_id"] != "v3" for row in queue)
+
+
+def test_selection_reports_ranked_shortfall_and_forced_source_context(tmp_path: Path) -> None:
+    _write_csv(
+        tmp_path / "decision/latest_action_candidates.csv",
+        ["video_id", "channel_id", "channel_name", "title", "upload_date", "decision_score"],
+        [["v1", "c1", "other", "T1", "2026-04-20T00:00:00+00:00", "80"]],
+    )
+
+    report = select_transcription_candidates(data_dir=tmp_path, limit=10, forced_channels_max_per_run=50)
+
+    assert report["selected_count"] == 1
+    assert report["selected_ranked_count"] == 1
+    assert report["ranked_shortfall"] == 9
+    assert "ranked_selection_shortfall" in report["warnings"]
+    assert "forced_channels_without_matches" in report["warnings"]
+    assert report["forced_channels_without_matches"] == [
+        "https://www.youtube.com/@bilinkis",
+        "https://www.youtube.com/veritasium",
+    ]
 
 
 def test_selection_skips_channel_ids_from_creative_packages(tmp_path: Path) -> None:

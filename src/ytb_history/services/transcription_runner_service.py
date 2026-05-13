@@ -13,7 +13,7 @@ import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 from ytb_history.clients.openai_audio_client import OpenAIAudioClient
 from ytb_history.services.transcript_store_service import (
@@ -32,6 +32,12 @@ YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD = 3
 OPENAI_TRANSCRIPTION_RETRY_ATTEMPTS = 2
 OPENAI_TRANSCRIPTION_RETRY_SECONDS = 2.0
 SEGMENT_SECONDS = 600
+ProgressCallback = Callable[[int, str], None]
+
+
+def _emit_progress(progress_callback: ProgressCallback | None, percent: int, message: str) -> None:
+    if progress_callback is not None:
+        progress_callback(max(0, min(100, percent)), message)
 
 
 def _now_iso() -> str:
@@ -422,6 +428,7 @@ def transcribe_selected_videos(
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
     ytdlp_cookies_b64: str | None = None,
+    progress_callback: ProgressCallback | None = None,
 ) -> dict[str, Any]:
     root = Path(data_dir)
     transcript_dir = root / "transcripts"
@@ -429,6 +436,7 @@ def transcribe_selected_videos(
 
     api_key = resolve_environment_variable("OPENAI_API_KEY")
     if not api_key:
+        _emit_progress(progress_callback, 78, "No se encontro OPENAI_API_KEY; se omite la transcripcion.")
         report = {
             "generated_at": _now_iso(),
             "limit": limit,
@@ -500,6 +508,20 @@ def transcribe_selected_videos(
     video_root_is_dir = video_root.is_dir()
     available_audio_files_sample = sorted([p.name for p in source_root.glob("*") if p.is_file()])[:50] if source_root_is_dir else []
     available_video_files_sample = sorted([p.name for p in video_root.glob("*") if p.is_file()])[:50] if video_root_is_dir else []
+    eligible_queue_count = len(
+        [
+            row
+            for row in queued
+            if str(row.get("video_id", "")).strip()
+            and str(row.get("video_id", "")).strip() not in success_ids
+        ]
+    )
+    total_to_attempt = min(max(0, limit), eligible_queue_count)
+    _emit_progress(
+        progress_callback,
+        40,
+        f"Cola de transcripcion: {len(queued)} videos; se intentaran hasta {total_to_attempt}.",
+    )
     for row in queued:
         if processed >= max(0, limit):
             break
@@ -520,6 +542,14 @@ def transcribe_selected_videos(
             break
 
         processed += 1
+        video_title = str(row.get("title", "")).strip()
+        label = f"{video_id} - {video_title}" if video_title else video_id
+        video_percent = 45 + int(((processed - 1) / max(total_to_attempt, 1)) * 30)
+        _emit_progress(
+            progress_callback,
+            video_percent,
+            f"Video {processed}/{max(total_to_attempt, 1)}: buscando audio para {label}.",
+        )
         if not is_transcribable_video_id_candidate(video_id):
             skipped_invalid_video_id += 1
             detail = {
@@ -560,6 +590,7 @@ def transcribe_selected_videos(
                     "error_message": "probable channel_id found in video_id field; yt-dlp was not called",
                 },
             )
+            _emit_progress(progress_callback, video_percent, f"Video {processed}: id invalido; se omite {video_id}.")
             continue
         media_resolution_source = "failed_media_resolution"
         media_resolution_error: str | None = None
@@ -567,9 +598,11 @@ def transcribe_selected_videos(
         audio_path = _find_audio_source(source_root, video_id)
         if audio_path is not None:
             media_resolution_source = "existing_audio"
+            _emit_progress(progress_callback, video_percent, f"Video {processed}: audio local encontrado.")
         if audio_path is None:
             video_path = _find_video_source(video_root, video_id)
             if video_path is not None:
+                _emit_progress(progress_callback, video_percent, f"Video {processed}: extrayendo audio desde video local.")
                 audio_path, media_resolution_error, media_resolution_error_category = _extract_audio_from_video(
                     video_path=video_path,
                     audio_source_dir=source_root,
@@ -577,6 +610,7 @@ def transcribe_selected_videos(
                 )
                 if audio_path is not None:
                     media_resolution_source = "extracted_from_video"
+                    _emit_progress(progress_callback, video_percent, f"Video {processed}: audio extraido correctamente.")
             else:
                 media_resolution_error = "video_source_not_found"
                 media_resolution_error_category = "local_video_missing"
@@ -586,6 +620,7 @@ def transcribe_selected_videos(
             ytdlp_error_category: str | None = None
             if allow_ytdlp_fallback:
                 ytdlp_download_attempts += 1
+                _emit_progress(progress_callback, video_percent, f"Video {processed}: descargando audio con yt-dlp.")
                 audio_path, ytdlp_error, ytdlp_error_category = _download_audio_with_ytdlp(
                     video_id=video_id,
                     audio_source_dir=source_root,
@@ -599,6 +634,7 @@ def transcribe_selected_videos(
                     media_resolution_source = "downloaded_ytdlp"
                     media_resolution_error = None
                     media_resolution_error_category = None
+                    _emit_progress(progress_callback, video_percent, f"Video {processed}: audio descargado con yt-dlp.")
             if audio_path is None:
                 if ytdlp_error:
                     ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "error_category": ytdlp_error_category, "video_url": _youtube_watch_url(video_id)})
@@ -677,6 +713,11 @@ def transcribe_selected_videos(
                         "error_message": f"audio_source_not_found; video_url={_youtube_watch_url(video_id)}; attempted={attempted_paths}; ytdlp={ytdlp_error}",
                     },
                 )
+                _emit_progress(
+                    progress_callback,
+                    video_percent,
+                    f"Video {processed}: no se pudo resolver audio ({media_resolution_error_category or 'sin_categoria'}).",
+                )
                 continue
 
         try:
@@ -689,6 +730,7 @@ def transcribe_selected_videos(
                 }
             )
             segment_root = source_root / "segments" / video_id
+            _emit_progress(progress_callback, video_percent + 2, f"Video {processed}: enviando audio a OpenAI.")
             transcript_text, transcription_metadata = _transcribe_with_segmentation_fallback(
                 client,
                 audio_path=audio_path,
@@ -742,6 +784,7 @@ def transcribe_selected_videos(
             transcribed_success += 1
             success_ids.add(video_id)
             success_video_ids.append(video_id)
+            _emit_progress(progress_callback, video_percent + 4, f"Video {processed}: transcripcion completada.")
         except Exception as exc:  # noqa: BLE001
             failed += 1
             failed_video_ids.append(video_id)
@@ -775,6 +818,7 @@ def transcribe_selected_videos(
                     "error_message": str(exc),
                 },
             )
+            _emit_progress(progress_callback, video_percent + 4, f"Video {processed}: fallo la transcripcion ({type(exc).__name__}).")
 
     auth_required_with_cookies_count = (
         sum(1 for failure in ytdlp_download_failures if failure.get("error_category") == "auth_required")
@@ -789,6 +833,11 @@ def transcribe_selected_videos(
             warnings.append("ytdlp_cookies_file_missing_youtube_google_domains")
         elif cookie_file_diagnostics.get("expired_youtube_google_cookie_rows") == cookie_file_diagnostics.get("youtube_google_cookie_rows"):
             warnings.append("ytdlp_cookies_file_youtube_google_cookies_expired")
+    _emit_progress(
+        progress_callback,
+        78,
+        f"Transcripcion terminada: {transcribed_success} exitos, {failed_audio_download + skipped_no_audio_source} sin audio util, {failed} fallos.",
+    )
 
     report = {
         "generated_at": _now_iso(),

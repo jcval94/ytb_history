@@ -20,6 +20,10 @@ def test_manual_play_script_runs_sync_before_transcription_and_writes_report() -
     assert '"sync_failed_or_blocked"' in content
     assert "$PauseOnExit" in content
     assert "-Force" in content
+    assert "Inicio manual: sincronizar repo" in content
+    assert "Cola seleccionada" in content
+    assert "Resultado transcripcion" in content
+    assert "Presiona Enter para cerrar esta ventana" in content
 
 
 def test_play_shortcut_installer_targets_desktop_shortcut() -> None:
@@ -44,6 +48,10 @@ def test_windows_transcription_runner_forwards_ytdlp_options() -> None:
     assert "--ytdlp-browser" in content
     assert "--ytdlp-extra-args" in content
     assert "--ytdlp-cookies-b64" in content
+    assert "--progress-log" in content
+    assert "--no-json-output" in content
+    assert "Seleccion:" in content
+    assert "Transcripcion:" in content
 
 
 def test_task_registration_preserves_six_hour_windows_and_ytdlp_options() -> None:
@@ -57,3 +65,12 @@ def test_task_registration_preserves_six_hour_windows_and_ytdlp_options() -> Non
     assert "-YtdlpBrowser" in content
     assert "-YtdlpExtraArgs" in content
     assert "-YtdlpCookiesB64" in content
+
+
+def test_windows_sync_runner_uses_human_progress_output() -> None:
+    content = _script("run_local_repo_sync.ps1")
+
+    assert "--progress-log" in content
+    assert "--no-json-output" in content
+    assert "Repo ya estaba al dia con origin/main" in content
+    assert "Sync bloqueado" in content

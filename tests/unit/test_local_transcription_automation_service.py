@@ -197,6 +197,34 @@ def test_run_local_transcription_automation_allows_stale_repo_when_explicit(tmp_
     assert "stale_repo_allowed_after_sync_status:blocked_dirty_worktree" in report["warnings"]
 
 
+def test_run_local_transcription_automation_transcribes_all_selected_candidates(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
+    calls: list[dict[str, Any]] = []
+
+    def _transcription_runner(**kwargs: Any) -> dict[str, Any]:
+        calls.append(kwargs)
+        return {"transcribed_success": 12}
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        limit=10,
+        skip_youtube_refresh=True,
+        command_runner=lambda command, **_kwargs: _completed(command),
+        candidate_selector=lambda **_kwargs: {
+            "selected_count": 12,
+            "selected_ranked_count": 10,
+            "selected_forced_count": 2,
+        },
+        transcription_runner=_transcription_runner,
+        insights_generator=lambda **_kwargs: {"generated": 12},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["ranked_limit"] == 10
+    assert report["transcription_limit"] == 12
+    assert calls[0]["limit"] == 12
+
+
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:
     content = Path("scripts/run_local_transcription_automation.ps1").read_text(encoding="utf-8")
 

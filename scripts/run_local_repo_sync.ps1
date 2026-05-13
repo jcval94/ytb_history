@@ -35,6 +35,29 @@ function Write-JsonNoBom {
     [System.IO.File]::WriteAllText($Path, (($Payload | ConvertTo-Json -Depth 20) + [Environment]::NewLine), $utf8NoBom)
 }
 
+function Write-StatusLine {
+    param(
+        [int]$Percent,
+        [string]$Message
+    )
+
+    Write-Output ("[{0,3}%] {1}" -f $Percent, $Message)
+}
+
+function Get-SyncStatusMessage {
+    param([string]$Status)
+
+    switch ($Status) {
+        "success" { return "Repo actualizado con git pull --ff-only." }
+        "up_to_date" { return "Repo ya estaba al dia con origin/main." }
+        "skipped_recent_success" { return "Sync omitido porque hubo uno exitoso recientemente." }
+        "blocked_dirty_worktree" { return "Sync bloqueado: hay cambios tracked locales sin commit." }
+        "blocked_non_fast_forward" { return "Sync bloqueado: hay commits locales o divergencia con origin/main." }
+        "failed" { return "Sync fallo; revisa el reporte tecnico." }
+        default { return "Estado de sync: $Status" }
+    }
+}
+
 function Test-WithinAllowedWindow {
     param(
         [datetime]$Now,
@@ -67,14 +90,14 @@ if ((-not $Force) -and (-not (Test-WithinAllowedWindow -Now $now -Earliest $Earl
         warnings = @()
     }
     Write-JsonNoBom -Path $latestReportPath -Payload $skipReport
-    Write-Output "Repo sync skipped outside allowed hours: $($now.ToString("o"))"
+    Write-StatusLine -Percent 100 -Message "Sync omitido fuera del horario permitido ($($EarliestHour):00-$($LatestHour):00)."
     exit 0
 }
 
 if (Test-Path $lockPath) {
     $lockAge = $now - (Get-Item $lockPath).LastWriteTime
     if ($lockAge.TotalHours -lt 2) {
-        Write-Output "Another repo sync run appears active. Lock: $lockPath"
+        Write-StatusLine -Percent 100 -Message "Sync omitido: ya hay otra sincronizacion en curso. Lock: $lockPath"
         exit 0
     }
     Remove-Item -LiteralPath $lockPath -Force
@@ -87,14 +110,17 @@ try {
     $logPath = Join-Path $logDir "repo_sync_$timestamp.log"
     $args = @(
         "-m", "ytb_history.cli", "sync-local-repo",
-        "--repo-dir", $repoRoot
+        "--repo-dir", $repoRoot,
+        "--progress-log",
+        "--no-json-output"
     )
     if ($CatchUpOnly) {
         $args += @("--min-success-interval-hours", [string]$MinSuccessIntervalHours)
     }
 
     Set-Location $repoRoot
-    Write-Output "Running local repo sync. Log: $logPath"
+    Write-StatusLine -Percent 0 -Message "Iniciando sincronizacion segura del repositorio."
+    Write-StatusLine -Percent 5 -Message "Log de sync: $logPath"
     & $PythonPath @args *>&1 | Tee-Object -FilePath $logPath
     $exitCode = $LASTEXITCODE
 
@@ -119,12 +145,13 @@ try {
         catch_up_only = [bool]$CatchUpOnly
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
+    Write-StatusLine -Percent 100 -Message (Get-SyncStatusMessage -Status $syncStatus)
 
     if ($exitCode -ne 0) {
-        throw "Local repo sync exited with code $exitCode."
+        throw "La sincronizacion del repo termino con codigo $exitCode."
     }
     if ($syncStatus -notin @("success", "up_to_date", "skipped_recent_success")) {
-        throw "Local repo sync report status was '$syncStatus'."
+        throw "La sincronizacion del repo termino con estado '$syncStatus'."
     }
 }
 finally {

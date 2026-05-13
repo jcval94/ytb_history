@@ -48,6 +48,97 @@ function Write-PlayLog {
     Add-Content -Path $Path -Value $line -Encoding UTF8
 }
 
+function Write-ProgressLog {
+    param(
+        [int]$Percent,
+        [string]$Message,
+        [string]$Path
+    )
+
+    Write-PlayLog -Path $Path -Message ("[{0,3}%] {1}" -f $Percent, $Message)
+}
+
+function Get-IntValue {
+    param(
+        [object]$Object,
+        [string]$Name
+    )
+
+    if (-not $Object) {
+        return 0
+    }
+    try {
+        return [int]$Object.$Name
+    }
+    catch {
+        return 0
+    }
+}
+
+function Get-SyncStatusMessage {
+    param([string]$Status)
+
+    switch ($Status) {
+        "success" { return "Repo actualizado desde GitHub." }
+        "up_to_date" { return "Repo ya estaba al dia con GitHub." }
+        "skipped_recent_success" { return "Sync omitido por exito reciente." }
+        "blocked_dirty_worktree" { return "Sync bloqueado por cambios locales sin commit." }
+        "blocked_non_fast_forward" { return "Sync bloqueado por divergencia con GitHub." }
+        default { return "Estado de sync: $Status" }
+    }
+}
+
+function Write-PlaySummary {
+    param(
+        [object]$RunReport,
+        [string]$Path
+    )
+
+    if (-not $RunReport) {
+        Write-ProgressLog -Percent 95 -Path $Path -Message "No se pudo leer el reporte final de transcripcion."
+        return
+    }
+
+    $selection = $RunReport.steps.transcription_candidates
+    $transcription = $RunReport.steps.transcription
+    $insights = $RunReport.steps.transcript_insights
+
+    if ($selection) {
+        $selected = Get-IntValue -Object $selection -Name "selected_count"
+        $ranked = Get-IntValue -Object $selection -Name "selected_ranked_count"
+        $forced = Get-IntValue -Object $selection -Name "selected_forced_count"
+        $considered = Get-IntValue -Object $selection -Name "candidates_considered"
+        $shortfall = Get-IntValue -Object $selection -Name "ranked_shortfall"
+        Write-ProgressLog -Percent 90 -Path $Path -Message "Cola seleccionada: $selected videos ($ranked ranking + $forced forzados), $considered candidatos revisados."
+        if ($shortfall -gt 0) {
+            Write-ProgressLog -Percent 90 -Path $Path -Message "Atencion: faltaron $shortfall videos para completar los 10 del ranking. Mira transcript_selection_report.json."
+        }
+    }
+
+    if ($transcription) {
+        $queueTotal = Get-IntValue -Object $transcription -Name "queue_total"
+        $processed = Get-IntValue -Object $transcription -Name "processed"
+        $success = Get-IntValue -Object $transcription -Name "transcribed_success"
+        $downloaded = Get-IntValue -Object $transcription -Name "ytdlp_download_success"
+        $failedDownloads = Get-IntValue -Object $transcription -Name "failed_audio_download"
+        $failed = Get-IntValue -Object $transcription -Name "failed"
+        Write-ProgressLog -Percent 94 -Path $Path -Message "Resultado transcripcion: cola $queueTotal, procesados $processed, exitos $success, yt-dlp $downloaded, fallos audio $failedDownloads, fallos OpenAI $failed."
+    }
+
+    if ($insights) {
+        $generated = Get-IntValue -Object $insights -Name "generated"
+        $cached = Get-IntValue -Object $insights -Name "cached"
+        Write-ProgressLog -Percent 96 -Path $Path -Message "Insights: $generated nuevos, $cached ya existentes."
+    }
+
+    if ($RunReport.git.has_changes -eq $true) {
+        Write-ProgressLog -Percent 98 -Path $Path -Message "Publicacion: se detectaron cambios en data/transcripts y se intento subirlos a GitHub."
+    }
+    else {
+        Write-ProgressLog -Percent 98 -Path $Path -Message "Publicacion: no hubo cambios nuevos que subir a GitHub."
+    }
+}
+
 $repoRoot = (Resolve-Path $RepoDir).Path
 $syncRunnerPath = Join-Path $repoRoot "scripts\run_local_repo_sync.ps1"
 $transcriptionRunnerPath = Join-Path $repoRoot "scripts\run_local_transcription_automation.ps1"
@@ -83,8 +174,9 @@ $report = [ordered]@{
 
 try {
     Set-Location $repoRoot
-    Write-PlayLog -Path $logPath -Message "Starting manual local play."
-    Write-PlayLog -Path $logPath -Message "Step 1/2: safe repo sync."
+    Write-ProgressLog -Percent 0 -Path $logPath -Message "Inicio manual: sincronizar repo, transcribir y publicar resultados."
+    Write-ProgressLog -Percent 5 -Path $logPath -Message "Log principal: $logPath"
+    Write-ProgressLog -Percent 10 -Path $logPath -Message "Paso 1/2: sincronizacion segura del repo."
 
     $syncArgs = @(
         "-NoProfile",
@@ -110,11 +202,12 @@ try {
         $report["status"] = "sync_failed_or_blocked"
         $report["warnings"] += "sync_status:$syncStatus"
         Write-JsonNoBom -Path $playReportPath -Payload $report
-        Write-PlayLog -Path $logPath -Message "Stopped before transcription. Sync status: $syncStatus"
+        Write-ProgressLog -Percent 100 -Path $logPath -Message "Proceso detenido antes de transcribir. $(Get-SyncStatusMessage -Status $syncStatus)"
         return
     }
+    Write-ProgressLog -Percent 25 -Path $logPath -Message (Get-SyncStatusMessage -Status $syncStatus)
 
-    Write-PlayLog -Path $logPath -Message "Step 2/2: local transcription and publication."
+    Write-ProgressLog -Percent 30 -Path $logPath -Message "Paso 2/2: seleccion, transcripcion, insights y publicacion."
     $transcriptionArgs = @(
         "-NoProfile",
         "-ExecutionPolicy", "Bypass",
@@ -153,29 +246,33 @@ try {
 
     if (($transcriptionExitCode -eq 0) -and ($runStatus -eq "success")) {
         $report["status"] = "success"
-        Write-PlayLog -Path $logPath -Message "Manual local play completed successfully."
     }
     else {
         $scriptExitCode = if ($transcriptionExitCode -ne 0) { $transcriptionExitCode } else { 1 }
         $report["status"] = "transcription_failed"
         $report["warnings"] += "transcription_status:$runStatus"
-        Write-PlayLog -Path $logPath -Message "Manual local play finished with transcription status: $runStatus"
+        Write-PlaySummary -RunReport $runReport -Path $logPath
+        Write-ProgressLog -Percent 100 -Path $logPath -Message "Proceso terminado con estado de transcripcion: $runStatus"
+    }
+    if (($transcriptionExitCode -eq 0) -and ($runStatus -eq "success")) {
+        Write-PlaySummary -RunReport $runReport -Path $logPath
+        Write-ProgressLog -Percent 100 -Path $logPath -Message "Play local terminado correctamente."
     }
 }
 catch {
     $scriptExitCode = 1
     $report["status"] = "failed"
     $report["error"] = $_.Exception.Message
-    Write-PlayLog -Path $logPath -Message "Manual local play failed: $($_.Exception.Message)"
+    Write-ProgressLog -Percent 100 -Path $logPath -Message "Play local fallo: $($_.Exception.Message)"
 }
 finally {
     $report["completed_at"] = (Get-Date).ToUniversalTime().ToString("o")
     $report["exit_code"] = $scriptExitCode
     Write-JsonNoBom -Path $playReportPath -Payload $report
-    Write-PlayLog -Path $logPath -Message "Latest play report: $playReportPath"
+    Write-ProgressLog -Percent 100 -Path $logPath -Message "Reporte final: $playReportPath"
     if ($PauseOnExit) {
         Write-Output ""
-        Read-Host "Press Enter to close this window"
+        Read-Host "Presiona Enter para cerrar esta ventana"
     }
     exit $scriptExitCode
 }

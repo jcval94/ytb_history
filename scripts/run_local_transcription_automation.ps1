@@ -42,6 +42,79 @@ function Write-JsonNoBom {
     [System.IO.File]::WriteAllText($Path, (($Payload | ConvertTo-Json -Depth 20) + [Environment]::NewLine), $utf8NoBom)
 }
 
+function Write-StatusLine {
+    param(
+        [int]$Percent,
+        [string]$Message
+    )
+
+    Write-Output ("[{0,3}%] {1}" -f $Percent, $Message)
+}
+
+function Get-IntValue {
+    param(
+        [object]$Object,
+        [string]$Name
+    )
+
+    if (-not $Object) {
+        return 0
+    }
+    try {
+        return [int]$Object.$Name
+    }
+    catch {
+        return 0
+    }
+}
+
+function Write-RunSummary {
+    param([object]$RunReport)
+
+    if (-not $RunReport) {
+        Write-StatusLine -Percent 100 -Message "No se pudo leer latest_run_report.json para resumir la corrida."
+        return
+    }
+
+    $selection = $RunReport.steps.transcription_candidates
+    $transcription = $RunReport.steps.transcription
+    $insights = $RunReport.steps.transcript_insights
+    $git = $RunReport.git
+    if ($selection) {
+        $selected = Get-IntValue -Object $selection -Name "selected_count"
+        $ranked = Get-IntValue -Object $selection -Name "selected_ranked_count"
+        $forced = Get-IntValue -Object $selection -Name "selected_forced_count"
+        $considered = Get-IntValue -Object $selection -Name "candidates_considered"
+        $shortfall = Get-IntValue -Object $selection -Name "ranked_shortfall"
+        Write-StatusLine -Percent 84 -Message "Seleccion: $selected videos en cola ($ranked ranking + $forced forzados), $considered candidatos revisados."
+        if ($shortfall -gt 0) {
+            Write-StatusLine -Percent 84 -Message "Aviso: faltaron $shortfall videos para completar los 10 del ranking; revisar cooldown, ya transcritos y artefactos fuente."
+        }
+    }
+    if ($transcription) {
+        $queueTotal = Get-IntValue -Object $transcription -Name "queue_total"
+        $processed = Get-IntValue -Object $transcription -Name "processed"
+        $success = Get-IntValue -Object $transcription -Name "transcribed_success"
+        $downloaded = Get-IntValue -Object $transcription -Name "ytdlp_download_success"
+        $failedDownloads = Get-IntValue -Object $transcription -Name "failed_audio_download"
+        $failed = Get-IntValue -Object $transcription -Name "failed"
+        Write-StatusLine -Percent 88 -Message "Transcripcion: cola $queueTotal, procesados $processed, exitos $success, descargados con yt-dlp $downloaded, fallos audio $failedDownloads, fallos OpenAI $failed."
+    }
+    if ($insights) {
+        $generated = Get-IntValue -Object $insights -Name "generated"
+        $cached = Get-IntValue -Object $insights -Name "cached"
+        Write-StatusLine -Percent 92 -Message "Insights: $generated nuevos, $cached ya existentes."
+    }
+    if ($git) {
+        if ($git.has_changes -eq $true) {
+            Write-StatusLine -Percent 98 -Message "GitHub: hubo cambios publicables en data/transcripts; se intento commit/push."
+        }
+        else {
+            Write-StatusLine -Percent 98 -Message "GitHub: no hubo cambios nuevos que publicar."
+        }
+    }
+}
+
 function Test-WithinAllowedWindow {
     param(
         [datetime]$Now,
@@ -105,7 +178,7 @@ if ((-not $Force) -and (-not (Test-WithinAllowedWindow -Now $now -Earliest $Earl
         catch_up_only = [bool]$CatchUpOnly
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
-    Write-Output "Local transcription skipped outside allowed hours: $($now.ToString("o"))"
+    Write-StatusLine -Percent 100 -Message "Transcripcion omitida fuera del horario permitido ($($EarliestHour):00-$($LatestHour):00)."
     exit 0
 }
 
@@ -129,14 +202,14 @@ if ((-not $Force) -and $CatchUpOnly -and (Test-RecentSuccess -State $state -Now 
         catch_up_only = [bool]$CatchUpOnly
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
-    Write-Output "Local transcription skipped because a successful run is recent."
+    Write-StatusLine -Percent 100 -Message "Transcripcion omitida: ya hubo una corrida exitosa recientemente."
     exit 0
 }
 
 if (Test-Path $lockPath) {
     $lockAge = $now - (Get-Item $lockPath).LastWriteTime
     if ($lockAge.TotalHours -lt 8) {
-        Write-Output "Another local transcription run appears active. Lock: $lockPath"
+        Write-StatusLine -Percent 100 -Message "Transcripcion omitida: ya hay otra corrida en curso. Lock: $lockPath"
         exit 0
     }
     Remove-Item -LiteralPath $lockPath -Force
@@ -154,7 +227,9 @@ try {
         "--skip-youtube-refresh",
         "--limit", [string]$Limit,
         "--audio-source-dir", "data/audio_sources",
-        "--video-source-dir", "data/video_sources"
+        "--video-source-dir", "data/video_sources",
+        "--progress-log",
+        "--no-json-output"
     )
     if ($NoSyncGit) {
         $args += "--no-sync-git"
@@ -176,7 +251,8 @@ try {
     }
 
     Set-Location $repoRoot
-    Write-Output "Running local transcription automation. Log: $logPath"
+    Write-StatusLine -Percent 0 -Message "Iniciando transcripcion local."
+    Write-StatusLine -Percent 5 -Message "Log de transcripcion: $logPath"
     & $PythonPath @args *>&1 | Tee-Object -FilePath $logPath
     $exitCode = $LASTEXITCODE
 
@@ -195,13 +271,15 @@ try {
         catch_up_only = [bool]$CatchUpOnly
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
+    Write-RunSummary -RunReport $runReport
 
     if ($exitCode -ne 0) {
-        throw "Local transcription automation exited with code $exitCode."
+        throw "La automatizacion de transcripcion termino con codigo $exitCode."
     }
     if ($runStatus -ne "success") {
-        throw "Local transcription automation report status was '$runStatus'."
+        throw "La automatizacion de transcripcion termino con estado '$runStatus'."
     }
+    Write-StatusLine -Percent 100 -Message "Transcripcion local terminada correctamente."
 }
 finally {
     if (Test-Path $lockPath) {

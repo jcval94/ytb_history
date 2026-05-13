@@ -616,6 +616,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_local_play_s
 
 Esto crea un acceso directo en el Escritorio llamado `YTB History - Play Local Automation`. Al abrirlo, ejecuta `scripts/run_local_play.ps1`, que fuerza una corrida manual fuera del horario programado: primero sincroniza el repo de forma segura y despues lanza la transcripcion/publicacion. La ventana queda abierta al final para revisar el resultado. El reporte queda en `build/local_automation/latest_play_report.json` y el log en `build/local_automation/logs/manual_play_*.log`.
 
+El modo "play" muestra progreso en espanol con porcentajes y no imprime el JSON tecnico completo en pantalla. Los JSON completos siguen disponibles para diagnostico:
+
+- `build/local_automation/latest_sync_report.json`: estado de sync y SHA local/remoto.
+- `build/local_automation/latest_run_report.json`: seleccion, transcripcion, insights y Git.
+- `data/transcripts/transcript_selection_report.json`: por que la cola tuvo o no tuvo `10 + forzados`.
+- `data/transcripts/transcription_run_report.json`: por video, origen de audio y errores de `yt-dlp`/OpenAI.
+
+En la seleccion, `--limit 10` significa 10 videos del ranking diario. Los videos de canales forzados se agregan encima de esos 10 cuando existen en los artefactos locales, no estan ya transcritos, no estan en cooldown y caen en la ventana configurada. La automatizacion local transcribe toda la cola seleccionada, asi que una cola de `10 + forzados` ya no se corta artificialmente en 10.
+
 Para registrar la ejecucion automatica local en Windows Task Scheduler:
 
 ```powershell

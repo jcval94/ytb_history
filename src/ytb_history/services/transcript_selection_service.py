@@ -53,6 +53,29 @@ def _write_jsonl(path:Path,rows:list[dict[str,Any]])->None:
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text("".join(json.dumps(r,ensure_ascii=False)+"\n" for r in rows),encoding='utf-8')
 
+def _source_artifact_summary(root: Path) -> dict[str, dict[str, Any]]:
+    paths = {
+        "decision": root / "decision" / "latest_action_candidates.csv",
+        "model_intelligence": root / "model_intelligence" / "latest_hybrid_recommendations.csv",
+        "topic": root / "topic_intelligence" / "latest_topic_opportunities.csv",
+        "creative": root / "creative_packages" / "latest_creative_packages.csv",
+        "analytics_scores": root / "analytics" / "latest" / "latest_video_scores.csv",
+        "analytics_metrics": root / "analytics" / "latest" / "latest_video_metrics.csv",
+    }
+    summary: dict[str, dict[str, Any]] = {}
+    for name, path in paths.items():
+        exists = path.exists()
+        item: dict[str, Any] = {
+            "path": str(path),
+            "exists": exists,
+            "row_count": len(_read_csv(path)) if exists else 0,
+            "modified_at": None,
+        }
+        if exists:
+            item["modified_at"] = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat()
+        summary[name] = item
+    return summary
+
 def _safe_float(v:Any)->float|None:
     try: return None if v in (None,"") else float(str(v))
     except: return None
@@ -94,6 +117,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     root=Path(data_dir); tdir=root/'transcripts'; now=datetime.now(timezone.utc); now_iso=now.isoformat(); warnings=[]
     cands:dict[str,dict[str,Any]]={}
     skipped_invalid_video_ids: list[dict[str,str]]=[]
+    source_artifacts = _source_artifact_summary(root)
     for row in _read_csv(root/'decision'/'latest_action_candidates.csv'):
         invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","decision_score":"decision_score","alpha_score":"alpha_score","metric_confidence_score":"metric_confidence_score"},"decision")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"decision"})
@@ -129,6 +153,9 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     forced_handles={_url_handle(u):u for u in forced_urls}
     forced_rows=[]
     skipped_forced_success=skipped_forced_progress=skipped_forced_failed=0
+    skipped_forced_outside_window=0
+    forced_candidate_pool_count=0
+    forced_match_counts: dict[str, int] = {url: 0 for url in forced_urls}
     parsed_upload_dates=[_parse_dt(str(item.get('upload_date',''))) for item in cands.values()]
     latest_upload_date=max((d.date() for d in parsed_upload_dates if d), default=None)
     cutoff_date=(now-timedelta(days=forced_channels_new_video_window_days)).date()
@@ -145,17 +172,27 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
                 if h and h in cname:
                     matched=url; break
             if not matched: continue
+            forced_candidate_pool_count+=1
+            forced_match_counts[matched]=forced_match_counts.get(matched,0)+1
             if vid in success: skipped_forced_success+=1; continue
             if vid in progress: skipped_forced_progress+=1; continue
             if vid in cool: skipped_forced_failed+=1; continue
             ud=_parse_dt(str(item.get('upload_date','')))
-            if ud and ud.date()<cutoff_date: continue
+            if ud and ud.date()<cutoff_date:
+                skipped_forced_outside_window+=1
+                continue
             row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"forced_channel_new_video","selection_source":"forced_channel_new_video","forced_channel":True,"forced_channel_url":matched,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
             row['transcription_value_score']=_score(row); forced_rows.append(row)
         forced_rows.sort(key=lambda r:(-(_parse_dt(str(r.get('upload_date',''))) or datetime.min.replace(tzinfo=timezone.utc)).timestamp(),-float(r['transcription_value_score']),r['video_id']))
+        available_forced_before_truncation=len(forced_rows)
         if len(forced_rows)>forced_channels_max_per_run:
             warnings.append('forced_channels_truncated_max_per_run')
             forced_rows=forced_rows[:forced_channels_max_per_run]
+    else:
+        available_forced_before_truncation=0
+    forced_channels_without_matches=[url for url,count in forced_match_counts.items() if count==0]
+    if forced_channels_enabled and forced_channels_without_matches:
+        warnings.append('forced_channels_without_matches')
 
     ranked=[]; skipped_success=skipped_progress=skipped_fail=0
     forced_ids={r['video_id'] for r in forced_rows}
@@ -167,7 +204,11 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
         row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"top_daily_value","selection_source":"ranked_daily_top","forced_channel":False,"forced_channel_url":None,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
         row['transcription_value_score']=_score(row); ranked.append(row)
     ranked.sort(key=lambda r:(-float(r['transcription_value_score']),r['video_id']))
+    available_ranked_count=len(ranked)
     ranked=ranked[:max(0,limit)]
+    ranked_shortfall=max(0, limit-len(ranked))
+    if ranked_shortfall:
+        warnings.append('ranked_selection_shortfall')
 
     selected=forced_rows+ranked
     dedup_selected=[]; seen_selected=set(); skipped_duplicate_selected=0
@@ -185,6 +226,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     _write_jsonl(tdir/'transcript_queue.jsonl',q)
     if skipped_invalid_video_ids:
         warnings.append('invalid_video_ids_skipped')
-    rep={"generated_at":now_iso,"limit":limit,"candidates_considered":len(cands),"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(registry_success),"persisted_transcript_success_count":len(success),"artifact_only_success_count":len(success-registry_success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_duplicate_selected":skipped_duplicate_selected,"skipped_invalid_video_id_count":len(skipped_invalid_video_ids),"skipped_invalid_video_ids":skipped_invalid_video_ids[:50],"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
+    expected_selected_count=limit+len(forced_rows)
+    rep={"generated_at":now_iso,"limit":limit,"expected_ranked_count":limit,"expected_selected_count":expected_selected_count,"ranked_shortfall":ranked_shortfall,"candidates_considered":len(cands),"available_ranked_count":available_ranked_count,"source_artifacts":source_artifacts,"selected_count":len(q),"selected_forced_count":len([r for r in q if r.get('forced_channel')]),"selected_ranked_count":len([r for r in q if not r.get('forced_channel')]),"forced_channels_configured":list(forced_urls),"forced_channels_matched":sorted({r['forced_channel_url'] for r in forced_rows if r.get('forced_channel_url')}),"forced_channels_without_matches":forced_channels_without_matches,"forced_match_counts":forced_match_counts,"forced_candidate_pool_count":forced_candidate_pool_count,"available_forced_before_truncation":available_forced_before_truncation,"forced_window_cutoff_date":cutoff_date.isoformat(),"latest_upload_date":latest_upload_date.isoformat() if latest_upload_date else None,"forced_channels_max_per_run":forced_channels_max_per_run,"registry_existing_success_count":len(registry_success),"persisted_transcript_success_count":len(success),"artifact_only_success_count":len(success-registry_success),"registry_existing_in_progress_count":len(progress),"registry_existing_recent_failed_count":len(cool),"skipped_already_transcribed":skipped_success,"skipped_in_progress":skipped_progress,"skipped_recent_failures":skipped_fail,"skipped_forced_already_transcribed":skipped_forced_success,"skipped_forced_in_progress":skipped_forced_progress,"skipped_forced_recent_failures":skipped_forced_failed,"skipped_forced_outside_window":skipped_forced_outside_window,"skipped_duplicate_selected":skipped_duplicate_selected,"skipped_invalid_video_id_count":len(skipped_invalid_video_ids),"skipped_invalid_video_ids":skipped_invalid_video_ids[:50],"top_selected":[r['video_id'] for r in q[:5]],"warnings":warnings}
     (tdir/'transcript_selection_report.json').write_text(json.dumps(rep,ensure_ascii=False,indent=2),encoding='utf-8')
     return rep

@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import shlex
+import sys
 
 from ytb_history.orchestrator import run_dry_run, run_pipeline
 from ytb_history.services.alerts_service import generate_alerts
@@ -33,6 +34,15 @@ from ytb_history.services.transcript_insights_service import generate_transcript
 from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
 from ytb_history.services.local_repo_sync_service import sync_local_repo
 from ytb_history.services.local_transcription_diagnostics_service import diagnose_local_transcription
+
+
+def _make_spanish_progress_printer(*, to_stdout: bool = False):
+    stream = sys.stdout if to_stdout else sys.stderr
+
+    def _printer(percent: int, message: str) -> None:
+        print(f"[{percent:3d}%] {message}", file=stream, flush=True)
+
+    return _printer
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -137,6 +147,8 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--ytdlp-browser")
     transcribe_parser.add_argument("--ytdlp-extra-args")
     transcribe_parser.add_argument("--ytdlp-cookies-b64")
+    transcribe_parser.add_argument("--progress-log", action="store_true")
+    transcribe_parser.add_argument("--no-json-output", action="store_true")
 
     insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
     insights_parser.add_argument("--data-dir", default="data")
@@ -160,6 +172,8 @@ def build_parser() -> argparse.ArgumentParser:
     local_auto_parser.add_argument("--ytdlp-browser")
     local_auto_parser.add_argument("--ytdlp-extra-args")
     local_auto_parser.add_argument("--ytdlp-cookies-b64")
+    local_auto_parser.add_argument("--progress-log", action="store_true")
+    local_auto_parser.add_argument("--no-json-output", action="store_true")
 
     sync_parser = sub.add_parser("sync-local-repo", help="Safely fast-forward the local repo from origin/main")
     sync_parser.add_argument("--repo-dir", required=True)
@@ -167,6 +181,8 @@ def build_parser() -> argparse.ArgumentParser:
     sync_parser.add_argument("--branch", default="main")
     sync_parser.add_argument("--report-path")
     sync_parser.add_argument("--min-success-interval-hours", type=float)
+    sync_parser.add_argument("--progress-log", action="store_true")
+    sync_parser.add_argument("--no-json-output", action="store_true")
 
     diagnose_parser = sub.add_parser("diagnose-local-transcription", help="Diagnose local repo sync and transcription automation")
     diagnose_parser.add_argument("--repo-dir", required=True)
@@ -315,18 +331,22 @@ def main() -> int:
 
     if args.command == "transcribe-selected-videos":
         ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
-        summary = transcribe_selected_videos(
-            data_dir=args.data_dir,
-            limit=args.limit,
-            audio_source_dir=args.audio_source_dir,
-            video_source_dir=args.video_source_dir,
-            model=args.model,
-            ytdlp_cookies_file=args.ytdlp_cookies_file,
-            ytdlp_browser=args.ytdlp_browser,
-            ytdlp_extra_args=ytdlp_extra_args,
-            ytdlp_cookies_b64=args.ytdlp_cookies_b64,
-        )
-        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        kwargs = {
+            "data_dir": args.data_dir,
+            "limit": args.limit,
+            "audio_source_dir": args.audio_source_dir,
+            "video_source_dir": args.video_source_dir,
+            "model": args.model,
+            "ytdlp_cookies_file": args.ytdlp_cookies_file,
+            "ytdlp_browser": args.ytdlp_browser,
+            "ytdlp_extra_args": ytdlp_extra_args,
+            "ytdlp_cookies_b64": args.ytdlp_cookies_b64,
+        }
+        if args.progress_log:
+            kwargs["progress_callback"] = _make_spanish_progress_printer(to_stdout=args.no_json_output)
+        summary = transcribe_selected_videos(**kwargs)
+        if not args.no_json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     if args.command == "generate-transcript-insights":
@@ -342,26 +362,33 @@ def main() -> int:
 
     if args.command == "run-local-transcription-automation":
         ytdlp_extra_args = shlex.split(args.ytdlp_extra_args) if args.ytdlp_extra_args else None
-        summary = run_local_transcription_automation(
-            repo_dir=args.repo_dir,
-            data_dir=args.data_dir,
-            settings_path=args.settings,
-            limit=args.limit,
-            skip_youtube_refresh=args.skip_youtube_refresh,
-            no_sync_git=args.no_sync_git,
-            allow_stale_repo=args.allow_stale_repo,
-            audio_source_dir=args.audio_source_dir,
-            video_source_dir=args.video_source_dir,
-            sync_report_path=args.sync_report_path,
-            ytdlp_cookies_file=args.ytdlp_cookies_file,
-            ytdlp_browser=args.ytdlp_browser,
-            ytdlp_extra_args=ytdlp_extra_args,
-            ytdlp_cookies_b64=args.ytdlp_cookies_b64,
-        )
-        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        kwargs = {
+            "repo_dir": args.repo_dir,
+            "data_dir": args.data_dir,
+            "settings_path": args.settings,
+            "limit": args.limit,
+            "skip_youtube_refresh": args.skip_youtube_refresh,
+            "no_sync_git": args.no_sync_git,
+            "allow_stale_repo": args.allow_stale_repo,
+            "audio_source_dir": args.audio_source_dir,
+            "video_source_dir": args.video_source_dir,
+            "sync_report_path": args.sync_report_path,
+            "ytdlp_cookies_file": args.ytdlp_cookies_file,
+            "ytdlp_browser": args.ytdlp_browser,
+            "ytdlp_extra_args": ytdlp_extra_args,
+            "ytdlp_cookies_b64": args.ytdlp_cookies_b64,
+        }
+        if args.progress_log:
+            kwargs["progress_callback"] = _make_spanish_progress_printer(to_stdout=args.no_json_output)
+        summary = run_local_transcription_automation(**kwargs)
+        if not args.no_json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     if args.command == "sync-local-repo":
+        progress_printer = _make_spanish_progress_printer(to_stdout=args.no_json_output)
+        if args.progress_log:
+            progress_printer(10, "Consultando origin/main y comparando con el repo local.")
         summary = sync_local_repo(
             repo_dir=args.repo_dir,
             remote=args.remote,
@@ -369,7 +396,12 @@ def main() -> int:
             report_path=args.report_path,
             min_success_interval_hours=args.min_success_interval_hours,
         )
-        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        if args.progress_log:
+            status = str(summary.get("status", "unknown"))
+            action = str(summary.get("git", {}).get("action", "sin_accion"))
+            progress_printer(100, f"Sincronizacion terminada: {status} ({action}).")
+        if not args.no_json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     if args.command == "diagnose-local-transcription":

@@ -17,10 +17,16 @@ from ytb_history.services.transcription_runner_service import transcribe_selecte
 
 JsonReport = dict[str, Any]
 CommandRunner = Callable[..., subprocess.CompletedProcess[str]]
+ProgressCallback = Callable[[int, str], None]
 
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _emit_progress(progress_callback: ProgressCallback | None, percent: int, message: str) -> None:
+    if progress_callback is not None:
+        progress_callback(max(0, min(100, percent)), message)
 
 
 def _resolve_under_repo(repo_root: Path, path: str | Path) -> Path:
@@ -121,6 +127,7 @@ def run_local_transcription_automation(
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
     ytdlp_cookies_b64: str | None = None,
+    progress_callback: ProgressCallback | None = None,
     command_runner: CommandRunner = subprocess.run,
     pipeline_runner: Callable[..., JsonReport] = run_pipeline,
     candidate_selector: Callable[..., JsonReport] = select_transcription_candidates,
@@ -152,6 +159,8 @@ def run_local_transcription_automation(
         "data_dir": str(effective_data_dir),
         "settings_path": str(effective_settings_path),
         "limit": limit,
+        "ranked_limit": limit,
+        "transcribe_all_selected": True,
         "skip_youtube_refresh": skip_youtube_refresh,
         "no_sync_git": no_sync_git,
         "allow_stale_repo": allow_stale_repo,
@@ -162,8 +171,10 @@ def run_local_transcription_automation(
         "git": {"enabled": not no_sync_git, "commands": []},
         "warnings": [],
     }
+    _emit_progress(progress_callback, 5, "Iniciando automatizacion local de transcripcion.")
 
     if not no_sync_git:
+        _emit_progress(progress_callback, 10, "Validando que la sincronizacion del repo haya terminado bien.")
         sync_report = _read_json_report(effective_sync_report_path)
         sync_status = str((sync_report or {}).get("status") or "missing_report")
         report["steps"]["sync_preflight"] = {
@@ -180,6 +191,7 @@ def run_local_transcription_automation(
             report["steps"]["git_commit"] = {"skipped": True, "reason": "sync_preflight_blocked"}
             report["steps"]["git_push"] = {"skipped": True, "reason": "sync_preflight_blocked"}
             _write_report(report_path, report)
+            _emit_progress(progress_callback, 100, f"Proceso detenido: sync no valido ({sync_status}).")
             return report
         if sync_status not in SYNC_SUCCESS_STATUSES:
             report["warnings"].append(f"stale_repo_allowed_after_sync_status:{sync_status}")
@@ -188,24 +200,44 @@ def run_local_transcription_automation(
 
     if skip_youtube_refresh:
         report["steps"]["youtube_refresh"] = {"skipped": True, "reason": "skip_youtube_refresh"}
+        _emit_progress(progress_callback, 20, "Refresh de YouTube omitido; se usaran artefactos locales ya sincronizados.")
     else:
+        _emit_progress(progress_callback, 15, "Actualizando datos de YouTube antes de seleccionar candidatos.")
         report["steps"]["youtube_refresh"] = pipeline_runner(
             settings_path=str(effective_settings_path),
             data_dir=str(effective_data_dir),
         )
 
+    _emit_progress(progress_callback, 25, "Seleccionando candidatos: 10 del ranking mas videos de canales forzados.")
     report["steps"]["transcription_candidates"] = candidate_selector(data_dir=str(effective_data_dir), limit=limit)
+    candidates_step = report["steps"]["transcription_candidates"]
+    selected_count = _count_step_items(candidates_step, "selected_count")
+    selected_forced_count = _count_step_items(candidates_step, "selected_forced_count")
+    selected_ranked_count = _count_step_items(candidates_step, "selected_ranked_count")
+    effective_transcription_limit = selected_count if selected_count > 0 else limit
+    report["selected_count"] = selected_count
+    report["selected_forced_count"] = selected_forced_count
+    report["selected_ranked_count"] = selected_ranked_count
+    report["transcription_limit"] = effective_transcription_limit
+    _emit_progress(
+        progress_callback,
+        35,
+        f"Cola preparada: {selected_count} videos ({selected_ranked_count} ranking + {selected_forced_count} forzados).",
+    )
     report["steps"]["transcription"] = transcription_runner(
         data_dir=str(effective_data_dir),
-        limit=limit,
+        limit=effective_transcription_limit,
         audio_source_dir=str(effective_audio_source_dir),
         video_source_dir=str(effective_video_source_dir),
         ytdlp_cookies_file=ytdlp_cookies_file,
         ytdlp_browser=ytdlp_browser,
         ytdlp_extra_args=ytdlp_extra_args,
         ytdlp_cookies_b64=ytdlp_cookies_b64,
+        progress_callback=progress_callback,
     )
-    report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=limit)
+    _emit_progress(progress_callback, 82, "Generando insights para las transcripciones disponibles.")
+    report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=effective_transcription_limit)
+    _emit_progress(progress_callback, 88, "Actualizando reporte del registro de transcripciones.")
     report["steps"]["transcript_registry_report"] = registry_report_builder(data_dir=str(effective_data_dir))
 
     if not no_sync_git:
@@ -220,8 +252,10 @@ def run_local_transcription_automation(
             report["steps"]["git_commit"] = {"skipped": True, "reason": "no_publishable_outputs"}
             report["steps"]["git_push"] = {"skipped": True, "reason": "no_publishable_outputs"}
             _write_report(report_path, report)
+            _emit_progress(progress_callback, 100, "Proceso terminado: no hubo transcripciones nuevas que publicar.")
             return report
 
+        _emit_progress(progress_callback, 92, "Preparando cambios de data/transcripts para Git.")
         add_report = _run_command(
             ["git", "add", transcripts_relative_path],
             cwd=repo_root,
@@ -254,6 +288,7 @@ def run_local_transcription_automation(
         _write_report(report_path, report)
 
         if has_changes:
+            _emit_progress(progress_callback, 96, "Creando commit local con nuevas transcripciones.")
             commit_report = _run_command(
                 ["git", "commit", "-m", "Run local transcription automation"],
                 cwd=repo_root,
@@ -266,6 +301,7 @@ def run_local_transcription_automation(
                 report["warnings"].append("git_commit_failed")
                 return report
 
+            _emit_progress(progress_callback, 98, "Subiendo commit de transcripciones a GitHub.")
             push_report = _run_command(["git", "push"], cwd=repo_root, command_runner=command_runner)
             report["git"]["commands"].append(push_report)
             report["steps"]["git_push"] = push_report
@@ -282,4 +318,5 @@ def run_local_transcription_automation(
         report["steps"]["git_push"] = {"skipped": True, "reason": "no_sync_git"}
         _write_report(report_path, report)
 
+    _emit_progress(progress_callback, 100, f"Proceso terminado con estado: {report['status']}.")
     return report
