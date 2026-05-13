@@ -1,0 +1,81 @@
+{
+  "video_id": "Yo4aGwiAUBk",
+  "language": "es",
+  "summary": "El video aborda el impacto negativo que el uso excesivo de pantallas y redes sociales tiene en la inteligencia y salud mental de la juventud actual, destacando un aumento en casos de depresión y ansiedad desde 2010.",
+  "main_topics": [
+    "Impacto de las pantallas en la inteligencia",
+    "Salud mental de los adolescentes",
+    "Efectos de las redes sociales",
+    "Aumento de la ansiedad y depresión"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al problema",
+      "purpose": "Presentar la preocupación sobre la inteligencia de las nuevas generaciones.",
+      "summary": "Se plantea la idea de que la generación actual podría ser menos inteligente que la anterior debido al uso de tecnologías desde temprana edad."
+    },
+    {
+      "section": "Efectos de las redes sociales",
+      "purpose": "Explicar las consecuencias del uso excesivo de redes sociales.",
+      "summary": "Se discute cómo el uso de celulares y redes sociales afecta negativamente la autoestima y genera problemas de salud mental."
+    },
+    {
+      "section": "Evidencia actual",
+      "purpose": "Mostrar la confirmación de los efectos nocivos.",
+      "summary": "Se mencionan estudios recientes que demuestran el aumento de casos de depresión y ansiedad en adolescentes, comenzando desde 2010."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "estadística alarmante",
+    "hook_text": "Estamos criando la primera generación de chicos que van a ser menos inteligentes que sus padres.",
+    "why_it_works": "Captura la atención al plantear una afirmación impactante sobre el futuro de la inteligencia en generaciones jóvenes."
+  },
+  "claims": [
+    {
+      "claim": "La generación actual es menos inteligente que sus padres.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "El uso excesivo de redes sociales causa problemas de salud mental.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Aumento de casos de depresión y ansiedad desde 2010.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Incidencia de depresión en adolescentes",
+    "Ataques de pánico y ansiedad",
+    "Aumento desde el lanzamiento de Facebook"
+  ],
+  "actionable_ideas": [
+    "Limitar el tiempo de pantalla para los niños",
+    "Promover actividades sin tecnología",
+    "Fomentar conversaciones sobre salud mental"
+  ],
+  "audience": "Padres y educadores",
+  "tone": "preocupante",
+  "content_style": "informativo",
+  "retention_devices": [
+    "Datos estadísticos",
+    "Ejemplos de impacto en la salud mental"
+  ],
+  "title_supporting_quotes": [
+    "El uso indiscriminado de redes sociales tiene serios efectos de salud mental.",
+    "La incidencia de depresión en adolescentes es sin precedentes."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre salud mental en jóvenes",
+    "Charlas y talleres para padres",
+    "Infografías sobre el impacto de la tecnología"
+  ],
+  "risk_notes": [
+    "Problemas de interpretación de estadísticas",
+    "Generalización sobre todas las generaciones"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "g-7nUex4nVg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El truco de los pochoclos y la gaseosa del cine",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\g-7nUex4nVg.mp3",
+  "transcribed_at": "2026-05-13T05:40:47.998347+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 941,
+  "text_sha256": "650ba8c678b4c31b303cea8fdbdc15321b60466e2fba1bb3776f36c62c6e27df",
+  "repo_schema_version": "transcript_metadata_v1"
+}

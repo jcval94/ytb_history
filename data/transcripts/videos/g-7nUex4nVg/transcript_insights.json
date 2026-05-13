@@ -1,0 +1,90 @@
+{
+  "video_id": "g-7nUex4nVg",
+  "language": "es",
+  "summary": "El video aborda el consumo excesivo de sodio en la dieta moderna, destacando que gran parte proviene de alimentos ultraprocesados. Se analiza el uso de la sal en la gastronomía y sus efectos perjudiciales para la salud, incluyendo hipertensión y otros problemas cardíacos y renales.",
+  "main_topics": [
+    "Consumo de sodio",
+    "Alimentos ultraprocesados",
+    "Efectos de la sal en la salud",
+    "Hipertensión",
+    "Engaños en etiquetado de alimentos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Captar la atención",
+      "summary": "Se presenta una pregunta provocativa sobre el consumo de snacks en el cine."
+    },
+    {
+      "section": "Problema",
+      "purpose": "Informar sobre un problema de salud pública",
+      "summary": "Se menciona el alto consumo de sodio y sus fuentes principales."
+    },
+    {
+      "section": "Efectos de la sal",
+      "purpose": "Advertir sobre las consecuencias de la ingesta de sodio",
+      "summary": "Se explican los efectos del sodio en el cuerpo y el riesgo de enfermedades."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con una reflexión sobre la industria alimentaria",
+      "summary": "Se critica el uso de ingredientes dañinos en productos comunes."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Nunca te preguntaste por qué en el cine te ofrecen pochoclos salados?",
+    "why_it_works": "Despierta la curiosidad del espectador y lo hace reflexionar sobre sus hábitos."
+  },
+  "claims": [
+    {
+      "claim": "Hoy consumimos el doble de sal que el máximo recomendado por la OMS",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "El 70% del sodio proviene de alimentos ultraprocesados",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La sal es utilizada para disfrazar sabores en alimentos baratos",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El exceso de sodio contribuye a problemas de salud como hipertensión",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Leer etiquetas de los alimentos para identificar sodio y otros ingredientes dañinos.",
+    "Reducir el consumo de alimentos ultraprocesados en favor de opciones frescas y naturales.",
+    "Incorporar hierbas y especias para sazonar alimentos en lugar de sal."
+  ],
+  "audience": "Consumidores interesados en salud y nutrición",
+  "tone": "Informativo y crítico",
+  "content_style": "Directo y provocativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Datos estadísticos",
+    "Consecuencias graves para la salud"
+  ],
+  "title_supporting_quotes": [
+    "\"Hoy consumimos el doble de sal que el máximo recomendado por la OMS\"",
+    "\"Cerca del 70% del sodio que consumimos viene de alimentos ultraprocesados.\"",
+    "\"Cuando consumís sodio en exceso, tu cuerpo retiene agua.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Infografías sobre sodio en la dieta",
+    "Artículos sobre el impacto de los ultraprocesados en la salud",
+    "Videos cortos sobre el etiquetado de alimentos"
+  ],
+  "risk_notes": [
+    "El exceso de sodio es un riesgo para la salud pública.",
+    "La falta de conciencia sobre el contenido de sodio en alimentos comunes puede llevar a problemas de salud a largo plazo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

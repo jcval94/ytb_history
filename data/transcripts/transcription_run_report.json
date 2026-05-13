@@ -1,25 +1,98 @@
 {
-  "generated_at": "2026-05-09T05:51:32.460285+00:00",
+  "generated_at": "2026-05-13T05:40:55.473067+00:00",
   "limit": 10,
   "processed": 10,
-  "transcribed_success": 8,
+  "transcribed_success": 10,
   "skipped_no_audio_source": 0,
   "skipped_invalid_video_id": 0,
   "skipped_missing_ytdlp": 0,
   "failed_audio_download": 0,
   "skipped_already_transcribed": 0,
-  "failed": 2,
-  "queue_total": 10,
-  "registry_success_before_run": 3,
-  "persisted_success_before_run": 3,
+  "failed": 0,
+  "queue_total": 24,
+  "registry_success_before_run": 11,
+  "persisted_success_before_run": 11,
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
   "audio_source_dir_exists": true,
   "audio_source_dir_is_dir": true,
   "audio_source_files_sample": [
+    "0QtQXR__SpY.mp3",
+    "8Vq_Vm8Pe9Y.mp3",
+    "H57K_ZTfLK4.mp3",
     "HBezrmK2eEY.mp3",
+    "KGHb_XF0Z8M.mp3",
     "NlFAfAqX1zE.mp3",
+    "dbAz9kzA7yU.mp3",
+    "iNuSrPJlZjU.mp3",
+    "imAjmQy8p8c.mp3",
+    "kWIBe2hzd4M.mp3",
+    "m1ddx427bHI.mp3",
+    "qtz20vF8OR0.mp3",
     "yHYYyV2Pdmk.mp3"
   ],
+  "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
+  "video_source_dir_exists": false,
+  "video_source_dir_is_dir": false,
+  "video_source_files_sample": [],
+  "media_resolution_counts": {
+    "existing_audio": 0,
+    "extracted_from_video": 0,
+    "downloaded_ytdlp": 10,
+    "failed_media_resolution": 0
+  },
+  "media_resolution_details": [
+    {
+      "video_id": "zvBx0ylgPOE",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zvBx0ylgPOE.mp3"
+    },
+    {
+      "video_id": "T32B8W5B3XY",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\T32B8W5B3XY.mp3"
+    },
+    {
+      "video_id": "7F4pY8Td9QQ",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\7F4pY8Td9QQ.mp3"
+    },
+    {
+      "video_id": "Yo4aGwiAUBk",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Yo4aGwiAUBk.mp3"
+    },
+    {
+      "video_id": "NOv3U3ZUiro",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NOv3U3ZUiro.mp3"
+    },
+    {
+      "video_id": "6hNY0K71Ewo",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\6hNY0K71Ewo.mp3"
+    },
+    {
+      "video_id": "SVTPv4sI_Jc",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\SVTPv4sI_Jc.mp3"
+    },
+    {
+      "video_id": "B8E4azaZ13k",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\B8E4azaZ13k.mp3"
+    },
+    {
+      "video_id": "g-7nUex4nVg",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\g-7nUex4nVg.mp3"
+    },
+    {
+      "video_id": "N8Bc_M2Ew2E",
+      "source": "downloaded_ytdlp",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\N8Bc_M2Ew2E.mp3"
+    }
+  ],
+  "segmented_transcriptions": 0,
   "allow_ytdlp_fallback": true,
   "ytdlp_runtime_options": {
     "used_cookies_file": false,
@@ -41,51 +114,34 @@
   },
   "ytdlp_download_failures": [],
   "processed_video_ids": [
-    "8Vq_Vm8Pe9Y",
-    "kWIBe2hzd4M",
-    "m1ddx427bHI",
-    "iNuSrPJlZjU",
-    "dbAz9kzA7yU",
-    "0QtQXR__SpY",
-    "H57K_ZTfLK4",
-    "qtz20vF8OR0",
-    "KGHb_XF0Z8M",
-    "imAjmQy8p8c"
+    "zvBx0ylgPOE",
+    "T32B8W5B3XY",
+    "7F4pY8Td9QQ",
+    "Yo4aGwiAUBk",
+    "NOv3U3ZUiro",
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E"
   ],
   "success_video_ids": [
-    "8Vq_Vm8Pe9Y",
-    "kWIBe2hzd4M",
-    "m1ddx427bHI",
-    "iNuSrPJlZjU",
-    "dbAz9kzA7yU",
-    "0QtQXR__SpY",
-    "H57K_ZTfLK4",
-    "qtz20vF8OR0"
+    "zvBx0ylgPOE",
+    "T32B8W5B3XY",
+    "7F4pY8Td9QQ",
+    "Yo4aGwiAUBk",
+    "NOv3U3ZUiro",
+    "6hNY0K71Ewo",
+    "SVTPv4sI_Jc",
+    "B8E4azaZ13k",
+    "g-7nUex4nVg",
+    "N8Bc_M2Ew2E"
   ],
   "already_transcribed_video_ids": [],
   "missing_audio_video_ids": [],
   "missing_audio_details": [],
   "invalid_video_id_details": [],
-  "failed_video_ids": [
-    "KGHb_XF0Z8M",
-    "imAjmQy8p8c"
-  ],
-  "failed_details": [
-    {
-      "video_id": "KGHb_XF0Z8M",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\KGHb_XF0Z8M.mp3",
-      "error_type": "BadRequestError",
-      "error_message": "Error code: 400 - {'error': {'message': 'Total number of tokens in instructions + audio is too large for this model', 'type': 'invalid_request_error', 'param': None, 'code': 'input_too_large'}}"
-    },
-    {
-      "video_id": "imAjmQy8p8c",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\imAjmQy8p8c.mp3",
-      "error_type": "APIConnectionError",
-      "error_message": "Connection error."
-    }
-  ],
-  "warnings": [
-    "transcription_failed:KGHb_XF0Z8M:BadRequestError",
-    "transcription_failed:imAjmQy8p8c:APIConnectionError"
-  ]
+  "failed_video_ids": [],
+  "failed_details": [],
+  "warnings": []
 }

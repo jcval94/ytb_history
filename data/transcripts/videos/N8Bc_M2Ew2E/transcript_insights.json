@@ -1,0 +1,84 @@
+{
+  "video_id": "N8Bc_M2Ew2E",
+  "language": "es",
+  "summary": "El video discute el síndrome de vibración fantasma y cómo la presencia constante del celular afecta nuestra capacidad de concentración y creatividad, destacando la necesidad de momentos sin estímulos para un mejor rendimiento mental.",
+  "main_topics": [
+    "síndrome de vibración fantasma",
+    "efectos del celular en la concentración",
+    "creatividad en la ausencia de estímulos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al síndrome de vibración fantasma",
+      "purpose": "Presentar el concepto y su prevalencia.",
+      "summary": "Se explica qué es el síndrome de vibración fantasma y se menciona que afecta a casi el 90% de las personas."
+    },
+    {
+      "section": "Estudio de concentración por Adrian Ward",
+      "purpose": "Demostrar el impacto del celular en el rendimiento mental.",
+      "summary": "Se resumen los resultados de un estudio que revela que la presencia del celular, incluso sin ser utilizado, disminuye el rendimiento en test de concentración."
+    },
+    {
+      "section": "La creatividad en la ducha",
+      "purpose": "Ilustrar la importancia de momentos sin estímulos.",
+      "summary": "Se argumenta que nuestros mejores momentos creativos ocurren cuando estamos lejos del celular, como en la ducha."
+    },
+    {
+      "section": "Conclusión sobre la dependencia del teléfono",
+      "purpose": "Reflexionar sobre la necesidad de desconectar.",
+      "summary": "Se enfatiza cómo estamos constantemente buscando estímulos a través del celular incluso en momentos que deberían ser de tranquilidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Te pasó alguna vez sentir que el celular te vibró en el bolsillo?",
+    "why_it_works": "Engancha a la audiencia al apelar a una experiencia común y personal."
+  },
+  "claims": [
+    {
+      "claim": "El síndrome de vibración fantasma afecta a casi 9 de cada 10 personas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La presencia del celular reduce el rendimiento en tareas de concentración.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los mejores momentos de creatividad ocurren en ausencia de estímulos tecnológicos.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Sentir que el celular vibró sin que haya recibido notificación.",
+    "Rendimiento peor en tests de concentración al tener el celular presente."
+  ],
+  "actionable_ideas": [
+    "Dejar el celular en otra habitación durante momentos de trabajo concentrado.",
+    "Buscar momentos de desconexión diaria para fomentar la creatividad.",
+    "Limitar el uso del celular durante actividades cotidianas."
+  ],
+  "audience": "Personas interesadas en la tecnología y la psique humana",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo con ejemplos cotidianos",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Estudios de caso",
+    "Ejemplos cotidianos"
+  ],
+  "title_supporting_quotes": [
+    "La sola presencia del aparato le consume recursos al cerebro.",
+    "Es uno de los últimos lugares donde no llevas el teléfono."
+  ],
+  "creative_reuse_opportunities": [
+    "Convertir el tema en una serie sobre la salud mental y tecnología.",
+    "Crear infografías sobre el impacto del uso del celular en la concentración."
+  ],
+  "risk_notes": [
+    "Los resultados de los estudios pueden variar entre diferentes grupos de población.",
+    "Depender de testimonios personales puede limitar la generalización."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

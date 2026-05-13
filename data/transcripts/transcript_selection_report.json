@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T11:30:06.177694+00:00",
+  "generated_at": "2026-05-13T05:38:22.061971+00:00",
   "limit": 10,
   "candidates_considered": 1737,
-  "selected_count": 14,
-  "selected_forced_count": 4,
+  "selected_count": 24,
+  "selected_forced_count": 14,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
@@ -18,13 +18,13 @@
   "persisted_transcript_success_count": 11,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 98,
+  "registry_existing_recent_failed_count": 38,
   "skipped_already_transcribed": 11,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 92,
+  "skipped_recent_failures": 37,
   "skipped_forced_already_transcribed": 0,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 19,
+  "skipped_forced_recent_failures": 1,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
@@ -33,7 +33,9 @@
     "T32B8W5B3XY",
     "7F4pY8Td9QQ",
     "Yo4aGwiAUBk",
-    "yipK0StLn9k"
+    "NOv3U3ZUiro"
   ],
-  "warnings": []
+  "warnings": [
+    "forced_channels_window_anchored_to_latest_upload_date"
+  ]
 }

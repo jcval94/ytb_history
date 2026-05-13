@@ -1,0 +1,87 @@
+{
+  "video_id": "T32B8W5B3XY",
+  "language": "es",
+  "summary": "El video discute la preocupación sobre la recopilación de datos por parte de teléfonos y aplicaciones, sugiriendo que la información personal es constantemente monitorizada y utilizada de maneras inesperadas, incluso en publicidad.",
+  "main_topics": [
+    "Recopilación de datos",
+    "Privacidad digital",
+    "Publicidad dirigida",
+    "Tecnologías de seguimiento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la preocupación",
+      "purpose": "Presentar el tema de la recopilación de datos a través de teléfonos.",
+      "summary": "Se plantea la pregunta sobre si los teléfonos realmente 'escuchan' a los usuarios."
+    },
+    {
+      "section": "Explicación de la recopilación de datos",
+      "purpose": "Explicar cómo la tecnología registra la actividad del usuario.",
+      "summary": "Se describe cómo las acciones cotidianas dejan una huella de datos."
+    },
+    {
+      "section": "Percepción pública",
+      "purpose": "Mostrar la reacción de la gente ante el tema.",
+      "summary": "Se menciona que muchas personas no sienten preocupación por su privacidad."
+    },
+    {
+      "section": "Ejemplo de uso de datos",
+      "purpose": "Ilustrar cómo se utilizan los datos en aplicaciones de taxis.",
+      "summary": "Un ejemplo muestra cómo la batería del teléfono podría influir en tarifas."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Llamar la atención sobre la falta de privacidad.",
+      "summary": "Se concluye que el escrutinio de datos sobre ciudadanos es extremadamente alto."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocadora",
+    "hook_text": "¿Es real eso que el teléfono escucha?",
+    "why_it_works": "Genera curiosidad y conexión inmediata con la audiencia sobre un tema cotidiano."
+  },
+  "claims": [
+    {
+      "claim": "Los teléfonos recopilan información constantemente.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las plataformas principales niegan usar audios para publicidad.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La información personal puede ser utilizada en contra del usuario.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Ejemplo de tarifas de taxis basado en la batería del celular."
+  ],
+  "actionable_ideas": [
+    "Revisar la configuración de privacidad de aplicaciones.",
+    "Informarse sobre la política de datos de las plataformas utilizadas."
+  ],
+  "audience": "Usuarios de teléfonos y aplicaciones móviles.",
+  "tone": "Informativo y alarmante.",
+  "content_style": "Conversacional y reflexivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos personales",
+    "Estadísticas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "Tenés una máquina bestial de recopilación de información."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre privacidad digital.",
+    "Desarrollar contenido sobre la ética en la recopilación de datos."
+  ],
+  "risk_notes": [
+    "Los datos pueden ser mal utilizados.",
+    "La percepción pública sobre privacidad puede ser inadecuada."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

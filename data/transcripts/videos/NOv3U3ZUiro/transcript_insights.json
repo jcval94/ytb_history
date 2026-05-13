@@ -1,0 +1,89 @@
+{
+  "video_id": "NOv3U3ZUiro",
+  "language": "es",
+  "summary": "El video discute los efectos adversos de las plataformas digitales en la salud mental y el rendimiento intelectual, señalando que estos problemas han sido documentados por Meta y otros investigadores.",
+  "main_topics": [
+    "Efectos de las redes sociales en la salud mental",
+    "Declive del coeficiente intelectual",
+    "Influencia del entorno en el desarrollo cognitivo",
+    "Investigaciones sobre inteligencia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los efectos de las plataformas digitales",
+      "purpose": "Presentar la problemática sobre la salud mental",
+      "summary": "Documentos internos de Meta reflejan que la empresa conocía los efectos negativos de sus plataformas."
+    },
+    {
+      "section": "Evolución de la inteligencia a lo largo de un siglo",
+      "purpose": "Establecer contexto histórico sobre el desarrollo intelectual",
+      "summary": "El coeficiente intelectual ha aumentado durante un siglo, pero se observa una reciente caída."
+    },
+    {
+      "section": "Estudios sobre el rendimiento intelectual",
+      "purpose": "Presentar evidencia científica",
+      "summary": "Investigaciones de Northwestern University muestran un declive en habilidades cognitivas en un amplio conjunto de datos."
+    },
+    {
+      "section": "Debate sobre las causas del declive",
+      "purpose": "Plantear preguntas críticas",
+      "summary": "Se cuestiona si las pantallas son la causa de la crisis intelectual o si hay otras influencias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadísticas Impactantes",
+    "hook_text": "Documentos internos de la propia meta revelaron que sabían que sus plataformas causaban efectos nocivos sobre la salud mental.",
+    "why_it_works": "Genera interés inmediato al revelar información confidencial que podría implicar responsabilidad a una gran empresa."
+  },
+  "claims": [
+    {
+      "claim": "Meta conocía los efectos nocivos de sus plataformas sobre la salud mental.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El coeficiente intelectual de la población ha ido en declive.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los hermanos menores tienden a rendir peor que los mayores.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El entorno y el uso de la tecnología afectan el desarrollo cognitivo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Estudio de Northwestern University sobre 400,000 tests de inteligencia.",
+    "Hallazgos de Noruega sobre el rendimiento de hermanos."
+  ],
+  "actionable_ideas": [
+    "Promover un uso equilibrado de las redes sociales.",
+    "Fomentar el desarrollo de habilidades cognitivas sin pantallas.",
+    "Iniciativas educativas que incorporen habilidades del siglo XXI."
+  ],
+  "audience": "Profesionales de la salud, educadores, padres",
+  "tone": "Crítico e informativo",
+  "content_style": "Analítico y reflexivo",
+  "retention_devices": [
+    "Estadísticas sorprendentes",
+    "Argumentos provocativos",
+    "Preguntas abiertas para la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "No fue un accidente, no fue un error, fue una decisión de negocio."
+  ],
+  "creative_reuse_opportunities": [
+    "Infografías sobre la evolución del coeficiente intelectual.",
+    "Webinars sobre el impacto de la tecnología en la educación y la salud mental."
+  ],
+  "risk_notes": [
+    "La información puede generar controversia entre defensores de la tecnología.",
+    "Las implicaciones de los hallazgos pueden ser interpretadas de diversas maneras."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

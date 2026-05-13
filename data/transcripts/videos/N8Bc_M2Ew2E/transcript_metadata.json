@@ -1,0 +1,14 @@
+{
+  "video_id": "N8Bc_M2Ew2E",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué las mejores ideas aparecen en la ducha?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\N8Bc_M2Ew2E.mp3",
+  "transcribed_at": "2026-05-13T05:40:55.414194+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1264,
+  "text_sha256": "a104f10ca16713bff15ac0292358fdc5e582cf5b42367e67eb903ddfc64ebe52",
+  "repo_schema_version": "transcript_metadata_v1"
+}

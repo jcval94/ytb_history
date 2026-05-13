@@ -1,0 +1,14 @@
+{
+  "video_id": "Yo4aGwiAUBk",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La ciencia confirmó el peor miedo de los padres",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Yo4aGwiAUBk.mp3",
+  "transcribed_at": "2026-05-13T05:39:10.531296+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1036,
+  "text_sha256": "7fbee7ad953568cba56ae2706692d1abee1b45146b7b7af66577e2126ead9177",
+  "repo_schema_version": "transcript_metadata_v1"
+}

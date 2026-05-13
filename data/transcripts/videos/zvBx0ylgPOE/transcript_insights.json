@@ -1,0 +1,84 @@
+{
+  "video_id": "zvBx0ylgPOE",
+  "language": "es",
+  "summary": "El video aborda los problemas de salud relacionados con el sobrepeso y cómo la industria alimentaria manipula a los consumidores con productos ultraprocesados. Se enfatiza la necesidad de entender las estrategias de marketing detrás de estos alimentos para poder enfrentar el problema del sobrepeso de manera efectiva.",
+  "main_topics": [
+    "Sobrepeso y salud",
+    "Manipulación de la industria alimentaria",
+    "Estrategias de marketing",
+    "Alimentos ultraprocesados",
+    "Conocimiento y educación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los problemas de salud",
+      "purpose": "Presentar el contexto y el problema principal.",
+      "summary": "Se introduce el tema del sobrepeso y los problemas de salud relacionados."
+    },
+    {
+      "section": "Manipulación de la industria alimentaria",
+      "purpose": "Explicar cómo la industria alimentaria interfiere en el comportamiento del consumidor.",
+      "summary": "Se describe cómo la industria usa técnicas para hacer que los consumidores coman de más."
+    },
+    {
+      "section": "La desventaja de los alimentos saludables",
+      "purpose": "Discutir la percepción errónea sobre el costo de la comida saludable.",
+      "summary": "Se argumenta que los alimentos saludables pueden parecer caros pero son una mejor inversión a largo plazo."
+    },
+    {
+      "section": "Cambio de perspectiva",
+      "purpose": "Motivar a los espectadores a ver la situación desde otra perspectiva.",
+      "summary": "Se anima a los espectadores a reconocer al verdadero rival en su lucha contra el sobrepeso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística Impactante",
+    "hook_text": "Estamos en un planeta con graves problemas de salud generados o agravados por el sobrepeso.",
+    "why_it_works": "Utiliza una afirmación contundente para captar la atención inmediata del espectador sobre un problema serio y relevante."
+  },
+  "claims": [
+    {
+      "claim": "La industria alimentaria manipula a los consumidores.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Comer alimentos poco saludables tiene un costo a largo plazo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los alimentos saludables son menos adictivos.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre los ingredientes de los productos procesados.",
+    "Optar por alimentos reales y saludables en lugar de ultraprocesados.",
+    "Reconocer las estrategias de marketing al momento de comprar."
+  ],
+  "audience": "Personas interesadas en la salud y bienestar.",
+  "tone": "Informativo y reflexivo.",
+  "content_style": "Directo y persuasivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos claros",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Saber que cuando opens un paquete de galletitas no estás compitiendo solo contra vos mismo.",
+    "El costo de comer mal se paga a largo plazo."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre el impacto del consumo de ultraprocesados.",
+    "Desarrollar materiales educativos sobre alimentación saludable.",
+    "Realizar un podcast sobre la industria alimentaria y la salud."
+  ],
+  "risk_notes": [
+    "Necesidad de respaldar claims con estudios o datos.",
+    "Evitar lenguaje que pueda ser percibido como acusatorio hacia el consumidor."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

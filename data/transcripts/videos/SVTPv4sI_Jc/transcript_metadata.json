@@ -1,0 +1,14 @@
+{
+  "video_id": "SVTPv4sI_Jc",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Can a quantum sensor detect your heartbeat from 60 km away?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\SVTPv4sI_Jc.mp3",
+  "transcribed_at": "2026-05-13T05:40:33.120014+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 10147,
+  "text_sha256": "0a18e561c98bbbadc2dc32a4871b6c1436913e7b4846dd72970a74bdbb23f4d9",
+  "repo_schema_version": "transcript_metadata_v1"
+}

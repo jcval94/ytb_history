@@ -1,0 +1,14 @@
+{
+  "video_id": "T32B8W5B3XY",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Te usan o las usás? La verdad sobre las apps gratuitas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\T32B8W5B3XY.mp3",
+  "transcribed_at": "2026-05-13T05:38:53.682781+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1519,
+  "text_sha256": "20665da4e27aca0cd74e45cc4537da18c862e48c9d17770a5b2db79208cc2494",
+  "repo_schema_version": "transcript_metadata_v1"
+}
