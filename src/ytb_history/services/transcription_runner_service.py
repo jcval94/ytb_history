@@ -26,8 +26,12 @@ from ytb_history.utils.environment import resolve_environment_variable
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".webm", ".mp4"]
+VIDEO_EXTENSIONS = [".mp4", ".webm", ".mkv", ".mov", ".m4v"]
 YTDLP_STRATEGY_COOLDOWN_SECONDS = 1.5
 YTDLP_AUTH_REQUIRED_WITH_COOKIES_ABORT_THRESHOLD = 3
+OPENAI_TRANSCRIPTION_RETRY_ATTEMPTS = 2
+OPENAI_TRANSCRIPTION_RETRY_SECONDS = 2.0
+SEGMENT_SECONDS = 600
 
 
 def _now_iso() -> str:
@@ -117,8 +121,20 @@ def _find_audio_source(audio_source_dir: Path, video_id: str) -> Path | None:
     return None
 
 
+def _find_video_source(video_source_dir: Path, video_id: str) -> Path | None:
+    for ext in VIDEO_EXTENSIONS:
+        candidate = video_source_dir / f"{video_id}{ext}"
+        if candidate.exists() and candidate.is_file():
+            return candidate
+    return None
+
+
 def _candidate_audio_paths(audio_source_dir: Path, video_id: str) -> list[str]:
     return [str(audio_source_dir / f"{video_id}{ext}") for ext in AUDIO_EXTENSIONS]
+
+
+def _candidate_video_paths(video_source_dir: Path, video_id: str) -> list[str]:
+    return [str(video_source_dir / f"{video_id}{ext}") for ext in VIDEO_EXTENSIONS]
 
 
 def _youtube_watch_url(video_id: str) -> str:
@@ -172,6 +188,125 @@ def _resolve_ffmpeg_location() -> str | None:
         return str(Path(get_ffmpeg_exe()))
     except Exception:  # noqa: BLE001
         return None
+
+
+def _extract_audio_from_video(*, video_path: Path, audio_source_dir: Path, video_id: str) -> tuple[Path | None, str | None, str | None]:
+    ffmpeg_location = _resolve_ffmpeg_location()
+    if not ffmpeg_location:
+        return None, "ffmpeg_not_available_for_video_audio_extraction", "tooling_missing"
+    audio_source_dir.mkdir(parents=True, exist_ok=True)
+    output_path = audio_source_dir / f"{video_id}.mp3"
+    cmd = [
+        ffmpeg_location,
+        "-y",
+        "-i",
+        str(video_path),
+        "-vn",
+        "-ac",
+        "1",
+        "-ar",
+        "16000",
+        "-b:a",
+        "64k",
+        str(output_path),
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if result.returncode == 0 and output_path.exists():
+        return output_path, None, None
+    stderr_tail = (result.stderr or "").strip()[-300:]
+    return None, f"ffmpeg_audio_extraction_failed:code={result.returncode};stderr={stderr_tail}", "tooling_missing"
+
+
+def _segment_audio_file(*, audio_path: Path, segment_dir: Path, segment_seconds: int = SEGMENT_SECONDS) -> tuple[list[Path], str | None, str | None]:
+    ffmpeg_location = _resolve_ffmpeg_location()
+    if not ffmpeg_location:
+        return [], "ffmpeg_not_available_for_audio_segmentation", "tooling_missing"
+    segment_dir.mkdir(parents=True, exist_ok=True)
+    output_template = segment_dir / "segment_%03d.mp3"
+    cmd = [
+        ffmpeg_location,
+        "-y",
+        "-i",
+        str(audio_path),
+        "-f",
+        "segment",
+        "-segment_time",
+        str(segment_seconds),
+        "-vn",
+        "-ac",
+        "1",
+        "-ar",
+        "16000",
+        "-b:a",
+        "64k",
+        str(output_template),
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    segments = sorted(segment_dir.glob("segment_*.mp3"))
+    if result.returncode == 0 and segments:
+        return segments, None, None
+    stderr_tail = (result.stderr or "").strip()[-300:]
+    return [], f"ffmpeg_audio_segmentation_failed:code={result.returncode};stderr={stderr_tail}", "tooling_missing"
+
+
+def _is_transient_openai_error(exc: Exception) -> bool:
+    error_type = type(exc).__name__.lower()
+    message = str(exc).lower()
+    transient_types = ["apiconnectionerror", "apitimeouterror", "ratelimiterror", "internalservererror", "serviceunavailableerror"]
+    transient_tokens = ["connection error", "timed out", "timeout", "temporarily unavailable", "rate limit", "try again"]
+    return any(token in error_type for token in transient_types) or any(token in message for token in transient_tokens)
+
+
+def _is_input_too_large_error(exc: Exception) -> bool:
+    text = f"{type(exc).__name__} {exc}".lower()
+    return "input_too_large" in text or ("too large" in text and ("audio" in text or "token" in text))
+
+
+def _transcribe_with_retries(client: OpenAIAudioClient, *, file_path: Path, model: str) -> str:
+    attempts = OPENAI_TRANSCRIPTION_RETRY_ATTEMPTS + 1
+    for attempt in range(attempts):
+        try:
+            return client.transcribe_file(file_path=file_path, model=model)
+        except Exception as exc:  # noqa: BLE001
+            if attempt >= attempts - 1 or not _is_transient_openai_error(exc):
+                raise
+            time.sleep(OPENAI_TRANSCRIPTION_RETRY_SECONDS * (attempt + 1))
+    raise RuntimeError("unreachable_transcription_retry_state")
+
+
+def _transcribe_with_segmentation_fallback(
+    client: OpenAIAudioClient,
+    *,
+    audio_path: Path,
+    model: str,
+    segment_root: Path,
+) -> tuple[str, dict[str, Any]]:
+    try:
+        return _transcribe_with_retries(client, file_path=audio_path, model=model), {
+            "segmented": False,
+            "segment_count": 0,
+            "segment_paths": [],
+        }
+    except Exception as exc:  # noqa: BLE001
+        if not _is_input_too_large_error(exc):
+            raise
+        segments, segment_error, segment_error_category = _segment_audio_file(
+            audio_path=audio_path,
+            segment_dir=segment_root,
+        )
+        if not segments:
+            raise RuntimeError(f"audio_segmentation_failed:{segment_error_category}:{segment_error}") from exc
+        segment_texts = [
+            _transcribe_with_retries(client, file_path=segment_path, model=model)
+            for segment_path in segments
+        ]
+        return "\n\n".join(segment_texts), {
+            "segmented": True,
+            "segment_count": len(segments),
+            "segment_paths": [str(segment_path) for segment_path in segments],
+            "original_error_type": type(exc).__name__,
+            "original_error_message": str(exc),
+        }
 
 
 def _ytdlp_download_strategies() -> list[tuple[str, list[str]]]:
@@ -279,6 +414,7 @@ def transcribe_selected_videos(
     data_dir: str | Path = "data",
     limit: int = 10,
     audio_source_dir: str | Path = "data/audio_sources",
+    video_source_dir: str | Path = "data/video_sources",
     model: str = "gpt-4o-mini-transcribe",
     openai_client: OpenAIAudioClient | None = None,
     allow_ytdlp_fallback: bool = True,
@@ -333,6 +469,14 @@ def transcribe_selected_videos(
     success_video_ids: list[str] = []
     failed_video_ids: list[str] = []
     failed_details: list[dict[str, Any]] = []
+    media_resolution_details: list[dict[str, Any]] = []
+    media_resolution_counts = {
+        "existing_audio": 0,
+        "extracted_from_video": 0,
+        "downloaded_ytdlp": 0,
+        "failed_media_resolution": 0,
+    }
+    segmented_transcriptions = 0
     ytdlp_download_attempts = 0
     ytdlp_download_success = 0
     ytdlp_download_failures: list[dict[str, Any]] = []
@@ -349,9 +493,13 @@ def transcribe_selected_videos(
         effective_cookies_file = generated_cookies_file
 
     source_root = Path(audio_source_dir)
+    video_root = Path(video_source_dir)
     source_root_exists = source_root.exists()
     source_root_is_dir = source_root.is_dir()
+    video_root_exists = video_root.exists()
+    video_root_is_dir = video_root.is_dir()
     available_audio_files_sample = sorted([p.name for p in source_root.glob("*") if p.is_file()])[:50] if source_root_is_dir else []
+    available_video_files_sample = sorted([p.name for p in video_root.glob("*") if p.is_file()])[:50] if video_root_is_dir else []
     for row in queued:
         if processed >= max(0, limit):
             break
@@ -413,7 +561,26 @@ def transcribe_selected_videos(
                 },
             )
             continue
+        media_resolution_source = "failed_media_resolution"
+        media_resolution_error: str | None = None
+        media_resolution_error_category: str | None = None
         audio_path = _find_audio_source(source_root, video_id)
+        if audio_path is not None:
+            media_resolution_source = "existing_audio"
+        if audio_path is None:
+            video_path = _find_video_source(video_root, video_id)
+            if video_path is not None:
+                audio_path, media_resolution_error, media_resolution_error_category = _extract_audio_from_video(
+                    video_path=video_path,
+                    audio_source_dir=source_root,
+                    video_id=video_id,
+                )
+                if audio_path is not None:
+                    media_resolution_source = "extracted_from_video"
+            else:
+                media_resolution_error = "video_source_not_found"
+                media_resolution_error_category = "local_video_missing"
+
         if audio_path is None:
             ytdlp_error: str | None = None
             ytdlp_error_category: str | None = None
@@ -429,9 +596,14 @@ def transcribe_selected_videos(
                 if audio_path is not None:
                     ytdlp_download_success += 1
                     consecutive_auth_required_with_cookies = 0
+                    media_resolution_source = "downloaded_ytdlp"
+                    media_resolution_error = None
+                    media_resolution_error_category = None
             if audio_path is None:
                 if ytdlp_error:
                     ytdlp_download_failures.append({"video_id": video_id, "error": ytdlp_error, "error_category": ytdlp_error_category, "video_url": _youtube_watch_url(video_id)})
+                    media_resolution_error = ytdlp_error
+                    media_resolution_error_category = ytdlp_error_category
                 if ytdlp_error == "yt_dlp_not_installed":
                     status = "skipped_missing_ytdlp"
                     skipped_missing_ytdlp += 1
@@ -456,16 +628,33 @@ def transcribe_selected_videos(
                     skipped_no_audio_source += 1
                 missing_audio_video_ids.append(video_id)
                 attempted_paths = _candidate_audio_paths(source_root, video_id)
+                attempted_video_paths = _candidate_video_paths(video_root, video_id)
                 missing_audio_details.append(
                     {
                         "video_id": video_id,
                         "audio_source_dir": str(source_root),
                         "audio_source_dir_exists": source_root_exists,
                         "audio_source_dir_is_dir": source_root_is_dir,
+                        "video_source_dir": str(video_root),
+                        "video_source_dir_exists": video_root_exists,
+                        "video_source_dir_is_dir": video_root_is_dir,
                         "video_url": _youtube_watch_url(video_id),
                         "attempted_paths": attempted_paths,
+                        "attempted_video_paths": attempted_video_paths,
                         "ytdlp_error": ytdlp_error,
                         "ytdlp_error_category": ytdlp_error_category,
+                        "media_resolution_source": media_resolution_source,
+                        "media_resolution_error": media_resolution_error,
+                        "media_resolution_error_category": media_resolution_error_category,
+                    }
+                )
+                media_resolution_counts["failed_media_resolution"] += 1
+                media_resolution_details.append(
+                    {
+                        "video_id": video_id,
+                        "source": "failed_media_resolution",
+                        "error": media_resolution_error,
+                        "error_category": media_resolution_error_category,
                     }
                 )
                 update_transcript_registry(
@@ -482,6 +671,7 @@ def transcribe_selected_videos(
                         "metadata_path": None,
                         "insights_path": None,
                         "source_type": "unknown",
+                        "media_resolution_source": "failed_media_resolution",
                         "text_char_count": 0,
                         "error_category": ytdlp_error_category,
                         "error_message": f"audio_source_not_found; video_url={_youtube_watch_url(video_id)}; attempted={attempted_paths}; ytdlp={ytdlp_error}",
@@ -490,7 +680,23 @@ def transcribe_selected_videos(
                 continue
 
         try:
-            transcript_text = client.transcribe_file(file_path=audio_path, model=model)
+            media_resolution_counts[media_resolution_source] += 1
+            media_resolution_details.append(
+                {
+                    "video_id": video_id,
+                    "source": media_resolution_source,
+                    "audio_path": str(audio_path),
+                }
+            )
+            segment_root = source_root / "segments" / video_id
+            transcript_text, transcription_metadata = _transcribe_with_segmentation_fallback(
+                client,
+                audio_path=audio_path,
+                model=model,
+                segment_root=segment_root,
+            )
+            if transcription_metadata.get("segmented"):
+                segmented_transcriptions += 1
             artifacts = write_transcript_artifacts(
                 video_id=video_id,
                 transcript_text=transcript_text,
@@ -500,6 +706,10 @@ def transcribe_selected_videos(
                     "title": row.get("title", ""),
                     "source_type": "audio_file",
                     "source_uri_or_path": str(audio_path),
+                    "media_resolution_source": media_resolution_source,
+                    "segmented_transcription": transcription_metadata.get("segmented", False),
+                    "segment_count": transcription_metadata.get("segment_count", 0),
+                    "segment_paths": transcription_metadata.get("segment_paths", []),
                     "transcribed_at": _now_iso(),
                     "transcription_model": model,
                     "language": None,
@@ -520,9 +730,12 @@ def transcribe_selected_videos(
                     "metadata_path": artifacts["metadata_path"],
                     "insights_path": artifacts["insights_path"],
                     "source_type": "audio_file",
+                    "media_resolution_source": media_resolution_source,
                     "transcription_model": model,
                     "language": None,
                     "text_char_count": len(transcript_text),
+                    "segmented_transcription": transcription_metadata.get("segmented", False),
+                    "segment_count": transcription_metadata.get("segment_count", 0),
                     "error_message": None,
                 },
             )
@@ -555,6 +768,7 @@ def transcribe_selected_videos(
                     "metadata_path": None,
                     "insights_path": None,
                     "source_type": "audio_file",
+                    "media_resolution_source": media_resolution_source,
                     "transcription_model": model,
                     "language": None,
                     "text_char_count": 0,
@@ -594,6 +808,13 @@ def transcribe_selected_videos(
         "audio_source_dir_exists": source_root_exists,
         "audio_source_dir_is_dir": source_root_is_dir,
         "audio_source_files_sample": available_audio_files_sample,
+        "video_source_dir": str(video_root),
+        "video_source_dir_exists": video_root_exists,
+        "video_source_dir_is_dir": video_root_is_dir,
+        "video_source_files_sample": available_video_files_sample,
+        "media_resolution_counts": media_resolution_counts,
+        "media_resolution_details": media_resolution_details,
+        "segmented_transcriptions": segmented_transcriptions,
         "allow_ytdlp_fallback": allow_ytdlp_fallback,
         "ytdlp_runtime_options": {
             "used_cookies_file": bool(effective_cookies_file),

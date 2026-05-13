@@ -563,9 +563,22 @@ ffmpeg -version
 - No imprimir secrets en logs.
 - No usar `search.list` en flujo normal.
 
-## 22) Automatizacion Local De Transcripcion
+## 22) Automatizacion Local De Sync Y Transcripcion
 
-Para encadenar seleccion, transcripcion, insights y sincronizacion con Git desde tu entorno local en una sola corrida manual:
+La automatizacion local esta separada en dos pasos para evitar pulls peligrosos mientras el repositorio tiene cambios locales:
+
+1. Sincronizar el repo con un fast-forward seguro.
+2. Transcribir usando la cola local ya sincronizada.
+
+Para revisar si hay commits nuevos de `origin/main` y hacer pull solo cuando sea seguro:
+
+```bash
+python -m ytb_history.cli sync-local-repo --repo-dir .
+```
+
+El sync ejecuta `git ls-remote origin refs/heads/main`, compara contra `HEAD`, bloquea si hay cambios tracked locales o commits locales no publicados, y solo usa `git pull --ff-only` cuando el worktree esta limpio. Nunca ejecuta `reset`, `clean`, `checkout` destructivo ni sobrescribe cambios locales. El reporte queda en `build/local_automation/latest_sync_report.json`.
+
+Para encadenar seleccion, transcripcion, insights y publicacion de transcripciones desde tu entorno local:
 
 ```bash
 python -m ytb_history.cli run-local-transcription-automation \
@@ -575,7 +588,33 @@ python -m ytb_history.cli run-local-transcription-automation \
   --limit 10
 ```
 
-La automatizacion hace `git pull --rebase --autostash` al inicio y solo intenta `commit` + `push` cuando se generan resultados publicables nuevos de transcripcion o insights dentro de `data/transcripts/`. Los audios descargados por `yt-dlp` se tratan como cache local en `data/audio_sources/`: no se versionan y el repo no depende de que existan.
+La transcripcion ya no hace pull directo. Primero lee `build/local_automation/latest_sync_report.json` y solo continua si el sync termino como `success`, `up_to_date` o `skipped_recent_success`. Si el sync quedo bloqueado por cambios locales, la transcripcion termina como `blocked_sync_dirty_worktree`; para una corrida manual consciente se puede usar `--allow-stale-repo`.
+
+Solo se intenta `commit` + `push` cuando se generan resultados publicables nuevos dentro de `data/transcripts/`. Los audios descargados por `yt-dlp` y los videos locales se tratan como cache local en `data/audio_sources/` y `data/video_sources/`: no se versionan y el repo no depende de que existan.
+
+La resolucion de media sigue esta cascada:
+
+- Audio local en `data/audio_sources/<video_id>.*`.
+- Video local en `data/video_sources/<video_id>.*`, extrayendo audio con `ffmpeg` o `imageio-ffmpeg`.
+- Descarga de audio con `yt-dlp`.
+
+Si OpenAI rechaza un audio por `input_too_large`, el runner segmenta el audio y concatena las transcripciones parciales. Los errores transitorios de OpenAI se reintentan con backoff.
+
+Para diagnosticar el entorno local sin imprimir secretos:
+
+```bash
+python -m ytb_history.cli diagnose-local-transcription --repo-dir .
+```
+
+El diagnostico reporta tareas programadas, ultimo sync, SHA local/remoto, estado del worktree, cola, canales obligatorios, audios/videos disponibles, presencia de `OPENAI_API_KEY`, `yt-dlp`, `ffmpeg` e `imageio_ffmpeg`. El JSON queda en `build/local_automation/latest_diagnosis.json`.
+
+Para tener un boton manual de "play" en Windows:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_local_play_shortcut.ps1
+```
+
+Esto crea un acceso directo en el Escritorio llamado `YTB History - Play Local Automation`. Al abrirlo, ejecuta `scripts/run_local_play.ps1`, que fuerza una corrida manual fuera del horario programado: primero sincroniza el repo de forma segura y despues lanza la transcripcion/publicacion. La ventana queda abierta al final para revisar el resultado. El reporte queda en `build/local_automation/latest_play_report.json` y el log en `build/local_automation/logs/manual_play_*.log`.
 
 Para registrar la ejecucion automatica local en Windows Task Scheduler:
 
@@ -583,11 +622,13 @@ Para registrar la ejecucion automatica local en Windows Task Scheduler:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\register_local_transcription_task.ps1
 ```
 
-Esto crea la tarea `YtbHistoryLocalTranscription` con dos disparadores:
+Esto crea cuatro tareas:
 
-- Lunes y jueves a las 09:00 hora local.
-- Al arrancar Windows, con guardas para ejecutar solo si hay una corrida pendiente dentro de la ventana de catch-up.
+- `YtbHistoryLocalRepoSync`: cada 6 horas desde 09:00 hasta 23:00; en la practica 09:00, 15:00 y 21:00.
+- `YtbHistoryLocalRepoSyncLogonCatchup`: al iniciar sesion, solo si esta dentro de la ventana 09:00-23:00 y no hubo sync exitoso reciente.
+- `YtbHistoryLocalTranscription`: cada 6 horas desde 09:20 hasta 23:00; en la practica 09:20, 15:20 y 21:20.
+- `YtbHistoryLocalTranscriptionLogonCatchup`: al iniciar sesion, solo si esta dentro de la ventana 09:00-23:00 y no hubo transcripcion exitosa reciente.
 
-El script ejecutado por la tarea es `scripts/run_local_transcription_automation.ps1`. Mantiene un estado local en `build/local_automation/schedule_state.json`, escribe logs en `build/local_automation/logs/`, evita ejecuciones solapadas con un lock local y no guarda secretos. Por seguridad, la tarea corre como tu usuario interactivo; si Windows exige correr antes del inicio de sesion, habria que usar una cuenta/credencial administrada por Task Scheduler, no guardarla en el repositorio.
+Los scripts ejecutados son `scripts/run_local_repo_sync.ps1` y `scripts/run_local_transcription_automation.ps1`. Mantienen estado local en `build/local_automation/sync_state.json` y `build/local_automation/schedule_state.json`, escriben logs en `build/local_automation/logs/`, evitan ejecuciones solapadas con locks locales y no guardan secretos. Por seguridad, las tareas corren como tu usuario interactivo; si Windows exige correr antes del inicio de sesion, habria que usar una cuenta/credencial administrada por Task Scheduler, no guardarla en el repositorio.
 
 Si `yt-dlp` reporta que no pudo copiar la base de cookies del navegador, primero prueba sin `--ytdlp-browser`; en esta maquina la descarga sin cookies funciono mejor. Usa cookies de navegador o `cookies.txt` solo si YouTube empieza a exigir autenticacion.

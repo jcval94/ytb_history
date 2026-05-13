@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -286,6 +286,8 @@ def test_cli_transcribe_selected_videos_forwards_ytdlp_options(monkeypatch, caps
             "5",
             "--audio-source-dir",
             "custom/audio",
+            "--video-source-dir",
+            "custom/video",
             "--model",
             "gpt-4o-mini-transcribe",
             "--ytdlp-cookies-file",
@@ -307,6 +309,7 @@ def test_cli_transcribe_selected_videos_forwards_ytdlp_options(monkeypatch, caps
             "data_dir": "custom/data",
             "limit": 5,
             "audio_source_dir": "custom/audio",
+            "video_source_dir": "custom/video",
             "model": "gpt-4o-mini-transcribe",
             "ytdlp_cookies_file": "/tmp/cookies.txt",
             "ytdlp_browser": "firefox",
@@ -807,12 +810,19 @@ def test_cli_run_local_transcription_automation_forwards_options(monkeypatch, ca
             "--no-sync-git",
             "--audio-source-dir",
             "custom/audio",
+            "--video-source-dir",
+            "custom/video",
+            "--sync-report-path",
+            "custom/sync.json",
+            "--allow-stale-repo",
             "--ytdlp-cookies-file",
             "cookies.txt",
             "--ytdlp-browser",
             "firefox",
             "--ytdlp-extra-args",
             "--force-ipv4 --socket-timeout 10",
+            "--ytdlp-cookies-b64",
+            "cookie64",
         ],
     )
 
@@ -829,9 +839,94 @@ def test_cli_run_local_transcription_automation_forwards_options(monkeypatch, ca
             "limit": 4,
             "skip_youtube_refresh": True,
             "no_sync_git": True,
+            "allow_stale_repo": True,
             "audio_source_dir": "custom/audio",
+            "video_source_dir": "custom/video",
+            "sync_report_path": "custom/sync.json",
             "ytdlp_cookies_file": "cookies.txt",
             "ytdlp_browser": "firefox",
             "ytdlp_extra_args": ["--force-ipv4", "--socket-timeout", "10"],
+            "ytdlp_cookies_b64": "cookie64",
+        }
+    ]
+
+
+def test_cli_sync_local_repo_prints_json(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_sync_local_repo(**kwargs):
+        calls.append(kwargs)
+        return {"status": "up_to_date"}
+
+    monkeypatch.setattr(cli, "sync_local_repo", _fake_sync_local_repo)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "sync-local-repo",
+            "--repo-dir",
+            "/repo",
+            "--remote",
+            "origin",
+            "--branch",
+            "main",
+            "--report-path",
+            "report.json",
+            "--min-success-interval-hours",
+            "6",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "up_to_date"
+    assert calls == [
+        {
+            "repo_dir": "/repo",
+            "remote": "origin",
+            "branch": "main",
+            "report_path": "report.json",
+            "min_success_interval_hours": 6.0,
+        }
+    ]
+
+
+def test_cli_diagnose_local_transcription_prints_json(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_diagnose(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success"}
+
+    monkeypatch.setattr(cli, "diagnose_local_transcription", _fake_diagnose)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "diagnose-local-transcription",
+            "--repo-dir",
+            "/repo",
+            "--data-dir",
+            "custom/data",
+            "--audio-source-dir",
+            "custom/audio",
+            "--video-source-dir",
+            "custom/video",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+    assert calls == [
+        {
+            "repo_dir": "/repo",
+            "data_dir": "custom/data",
+            "audio_source_dir": "custom/audio",
+            "video_source_dir": "custom/video",
         }
     ]

@@ -12,6 +12,12 @@ def _completed(command: list[str], *, stdout: str = "", returncode: int = 0) -> 
     return subprocess.CompletedProcess(command, returncode, stdout=stdout, stderr="")
 
 
+def _write_sync_report(tmp_path: Path, status: str = "up_to_date") -> None:
+    report_path = tmp_path / "build" / "local_automation" / "latest_sync_report.json"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps({"status": status, "last_success_at": "2026-05-11T15:00:00+00:00"}, ensure_ascii=False), encoding="utf-8")
+
+
 def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube(tmp_path: Path) -> None:
     calls: list[tuple[str, dict[str, Any]]] = []
 
@@ -30,9 +36,11 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
         skip_youtube_refresh=True,
         no_sync_git=True,
         audio_source_dir="custom_audio",
+        video_source_dir="custom_video",
         ytdlp_cookies_file="cookies.txt",
         ytdlp_browser="firefox",
         ytdlp_extra_args=["--force-ipv4"],
+        ytdlp_cookies_b64="cookie64",
         pipeline_runner=_pipeline,
         candidate_selector=lambda **kwargs: _record("candidates", kwargs),
         transcription_runner=lambda **kwargs: _record("transcription", kwargs),
@@ -42,16 +50,18 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
 
     assert report["status"] == "success"
     assert report["steps"]["youtube_refresh"] == {"skipped": True, "reason": "skip_youtube_refresh"}
-    assert report["steps"]["git_pull"] == {"skipped": True, "reason": "no_sync_git"}
+    assert report["steps"]["sync_preflight"] == {"skipped": True, "reason": "no_sync_git"}
     assert [name for name, _ in calls] == ["candidates", "transcription", "insights", "registry"]
     assert calls[0][1] == {"data_dir": str(tmp_path / "custom_data"), "limit": 3}
     assert calls[1][1] == {
         "data_dir": str(tmp_path / "custom_data"),
         "limit": 3,
         "audio_source_dir": str(tmp_path / "custom_audio"),
+        "video_source_dir": str(tmp_path / "custom_video"),
         "ytdlp_cookies_file": "cookies.txt",
         "ytdlp_browser": "firefox",
         "ytdlp_extra_args": ["--force-ipv4"],
+        "ytdlp_cookies_b64": "cookie64",
     }
 
     report_path = tmp_path / "build" / "local_automation" / "latest_run_report.json"
@@ -60,7 +70,8 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
     assert written["steps"]["git_commit"] == {"skipped": True, "reason": "no_sync_git"}
 
 
-def test_run_local_transcription_automation_syncs_git_and_commits_only_with_changes(tmp_path: Path) -> None:
+def test_run_local_transcription_automation_commits_only_with_changes_after_successful_sync(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
     commands: list[list[str]] = []
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
@@ -82,7 +93,6 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
 
     assert report["status"] == "success"
     assert commands == [
-        ["git", "pull", "--rebase", "--autostash"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
         ["git", "commit", "-m", "Run local transcription automation"],
@@ -97,6 +107,7 @@ def test_run_local_transcription_automation_syncs_git_and_commits_only_with_chan
 
 
 def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
     commands: list[list[str]] = []
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
@@ -118,13 +129,13 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
     assert ["git", "push"] not in commands
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
     assert commands == [
-        ["git", "pull", "--rebase", "--autostash"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
     ]
 
 
 def test_run_local_transcription_automation_skips_git_sync_without_publishable_outputs(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
     commands: list[list[str]] = []
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
@@ -148,12 +159,14 @@ def test_run_local_transcription_automation_skips_git_sync_without_publishable_o
     assert report["steps"]["git_status"] == {"skipped": True, "reason": "no_publishable_outputs"}
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_publishable_outputs"}
     assert report["steps"]["git_push"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert commands == [["git", "pull", "--rebase", "--autostash"]]
+    assert commands == []
 
 
-def test_run_local_transcription_automation_stops_when_git_pull_fails(tmp_path: Path) -> None:
+def test_run_local_transcription_automation_stops_when_sync_report_is_blocked(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path, status="blocked_dirty_worktree")
+
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
-        return subprocess.CompletedProcess(command, 1, stdout="", stderr="pull failed")
+        raise AssertionError(f"git command should not run: {command}")
 
     report = run_local_transcription_automation(
         repo_dir=tmp_path,
@@ -161,14 +174,32 @@ def test_run_local_transcription_automation_stops_when_git_pull_fails(tmp_path: 
         pipeline_runner=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("pipeline should not run")),
     )
 
-    assert report["status"] == "failed"
-    assert report["warnings"] == ["git_pull_failed"]
+    assert report["status"] == "blocked_sync_dirty_worktree"
+    assert report["warnings"] == ["sync_preflight_blocked:blocked_dirty_worktree"]
     assert "youtube_refresh" not in report["steps"]
+
+
+def test_run_local_transcription_automation_allows_stale_repo_when_explicit(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path, status="blocked_dirty_worktree")
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        skip_youtube_refresh=True,
+        allow_stale_repo=True,
+        command_runner=lambda command, **_kwargs: _completed(command),
+        candidate_selector=lambda **_kwargs: {},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 0},
+        insights_generator=lambda **_kwargs: {"generated": 0},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["status"] == "success"
+    assert "stale_repo_allowed_after_sync_status:blocked_dirty_worktree" in report["warnings"]
 
 
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:
     content = Path("scripts/run_local_transcription_automation.ps1").read_text(encoding="utf-8")
 
     assert "New-Object System.Text.UTF8Encoding $false" in content
-    assert "[System.IO.File]::WriteAllText($statePath" in content
+    assert "Write-JsonNoBom -Path $statePath" in content
     assert "ConvertTo-Json -Depth 5 | Set-Content -Path $statePath -Encoding UTF8" not in content

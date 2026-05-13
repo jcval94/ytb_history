@@ -704,6 +704,7 @@ processes:
     inputs:
       - data/transcripts/transcript_queue.jsonl
       - data/audio_sources/**
+      - data/video_sources/**
       - OPENAI_API_KEY
     outputs:
       - data/transcripts/**
@@ -772,12 +773,14 @@ processes:
     domain: local
     process_type: local_automation
     observability_scope: local_only
-    cadence: monday_thursday_with_startup_catchup
-    sla_hours: 120
+    cadence: every_6_hours_0920_1520_2120_with_logon_catchup
+    sla_hours: 48
     command: scripts/run_local_transcription_automation.ps1
     inputs:
       - data/transcripts/**
       - data/audio_sources/**
+      - data/video_sources/**
+      - build/local_automation/latest_sync_report.json
       - OPENAI_API_KEY
     outputs:
       - build/local_automation/latest_run_report.json
@@ -799,4 +802,68 @@ processes:
       - Creative
       - Operations
     depends_on:
+      - local_repo_sync
       - cli_select_transcription_candidates
+
+  - process_id: local_repo_sync
+    name: Local repo sync
+    domain: local
+    process_type: local_automation
+    observability_scope: local_only
+    cadence: every_6_hours_0900_1500_2100_with_logon_catchup
+    sla_hours: 24
+    command: scripts/run_local_repo_sync.ps1
+    inputs:
+      - origin/main
+      - local_git_worktree
+    outputs:
+      - build/local_automation/latest_sync_report.json
+      - build/local_automation/sync_state.json
+    secrets_required: []
+    expected_artifacts:
+      - path: build/local_automation/latest_sync_report.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: build/local_automation/sync_state.json
+        base: repo
+        type: json
+        timestamp_field: updated_at
+        required: false
+    dashboard_tabs:
+      - Operations
+    depends_on: []
+
+  - process_id: local_play_automation
+    name: Local manual play automation
+    domain: local
+    process_type: local_automation
+    observability_scope: local_only
+    cadence: manual_desktop_shortcut
+    sla_hours: null
+    command: scripts/run_local_play.ps1
+    inputs:
+      - origin/main
+      - local_git_worktree
+      - data/transcripts/**
+      - data/audio_sources/**
+      - data/video_sources/**
+      - OPENAI_API_KEY
+    outputs:
+      - build/local_automation/latest_play_report.json
+      - build/local_automation/latest_sync_report.json
+      - build/local_automation/latest_run_report.json
+    secrets_required:
+      - OPENAI_API_KEY
+    expected_artifacts:
+      - path: build/local_automation/latest_play_report.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Operations
+    depends_on:
+      - local_repo_sync
+      - local_transcription_automation

@@ -126,9 +126,112 @@ def test_uses_ytdlp_fallback_when_local_audio_missing(tmp_path: Path, monkeypatc
     assert report["skipped_no_audio_source"] == 0
     assert report["ytdlp_download_attempts"] == 1
     assert report["ytdlp_download_success"] == 1
+    assert report["media_resolution_counts"]["downloaded_ytdlp"] == 1
     assert report["ytdlp_runtime_options"]["used_cookies_file"] is False
     assert report["ytdlp_runtime_options"]["used_browser_mode"] is False
     assert report["ytdlp_runtime_options"]["extra_args_count"] == 0
+
+
+def test_extracts_audio_from_local_video_before_ytdlp(tmp_path: Path, monkeypatch) -> None:
+    _write_queue(tmp_path, ["v1"])
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    video_dir = tmp_path / "video_sources"
+    audio_dir = tmp_path / "audio_sources"
+    video_dir.mkdir(parents=True)
+    video_path = video_dir / "v1.mp4"
+    video_path.write_bytes(b"video")
+    extracted_audio = audio_dir / "v1.mp3"
+
+    def _fake_extract(*, video_path: Path, audio_source_dir: Path, video_id: str):
+        audio_source_dir.mkdir(parents=True, exist_ok=True)
+        extracted_audio.write_bytes(b"audio")
+        return extracted_audio, None, None
+
+    def _fail_ytdlp(**_kwargs):
+        raise AssertionError("yt-dlp should not run when local video extraction succeeds")
+
+    monkeypatch.setattr(transcription_runner_service, "_extract_audio_from_video", _fake_extract)
+    monkeypatch.setattr(transcription_runner_service, "_download_audio_with_ytdlp", _fail_ytdlp)
+
+    fake = FakeOpenAIClient()
+    report = transcribe_selected_videos(
+        data_dir=tmp_path,
+        limit=10,
+        audio_source_dir=audio_dir,
+        video_source_dir=video_dir,
+        openai_client=fake,
+    )
+
+    assert report["transcribed_success"] == 1
+    assert report["media_resolution_counts"]["extracted_from_video"] == 1
+    assert fake.calls == [(str(extracted_audio), "gpt-4o-mini-transcribe")]
+
+
+def test_transient_openai_errors_are_retried(tmp_path: Path, monkeypatch) -> None:
+    class APIConnectionError(Exception):
+        pass
+
+    class FlakyClient:
+        def __init__(self) -> None:
+            self.calls = 0
+
+        def transcribe_file(self, *, file_path: str | Path, model: str = "gpt-4o-mini-transcribe") -> str:
+            self.calls += 1
+            if self.calls == 1:
+                raise APIConnectionError("Connection error.")
+            return "texto tras retry"
+
+    _write_queue(tmp_path, ["v1"])
+    audio_dir = tmp_path / "audio_sources"
+    audio_dir.mkdir(parents=True)
+    (audio_dir / "v1.mp3").write_bytes(b"audio")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
+
+    client = FlakyClient()
+    report = transcribe_selected_videos(data_dir=tmp_path, audio_source_dir=audio_dir, openai_client=client)
+
+    assert report["transcribed_success"] == 1
+    assert client.calls == 2
+
+
+def test_input_too_large_audio_is_segmented(tmp_path: Path, monkeypatch) -> None:
+    class SegmentingClient:
+        def __init__(self, original_audio: Path) -> None:
+            self.original_audio = original_audio
+            self.calls: list[str] = []
+
+        def transcribe_file(self, *, file_path: str | Path, model: str = "gpt-4o-mini-transcribe") -> str:
+            path = Path(file_path)
+            self.calls.append(path.name)
+            if path == self.original_audio:
+                raise RuntimeError("input_too_large: audio is too large for this model")
+            return f"text:{path.stem}"
+
+    _write_queue(tmp_path, ["v1"])
+    audio_dir = tmp_path / "audio_sources"
+    audio_dir.mkdir(parents=True)
+    original_audio = audio_dir / "v1.mp3"
+    original_audio.write_bytes(b"audio")
+    segment_a = tmp_path / "segment_000.mp3"
+    segment_b = tmp_path / "segment_001.mp3"
+    segment_a.write_bytes(b"a")
+    segment_b.write_bytes(b"b")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setattr(
+        transcription_runner_service,
+        "_segment_audio_file",
+        lambda **_kwargs: ([segment_a, segment_b], None, None),
+    )
+
+    client = SegmentingClient(original_audio)
+    report = transcribe_selected_videos(data_dir=tmp_path, audio_source_dir=audio_dir, openai_client=client)
+
+    assert report["transcribed_success"] == 1
+    assert report["segmented_transcriptions"] == 1
+    assert client.calls == ["v1.mp3", "segment_000.mp3", "segment_001.mp3"]
+    transcript = tmp_path / "transcripts" / "videos" / "v1" / "transcript.txt"
+    assert transcript.read_text(encoding="utf-8") == "text:segment_000\n\ntext:segment_001"
 
 
 def test_download_audio_with_ytdlp_includes_preferred_audio_format(tmp_path: Path, monkeypatch) -> None:

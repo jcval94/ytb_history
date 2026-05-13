@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any, Callable, Sequence
 
 from ytb_history.orchestrator import run_pipeline
+from ytb_history.services.local_repo_sync_service import SYNC_SUCCESS_STATUSES
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 from ytb_history.services.transcript_selection_service import select_transcription_candidates
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
@@ -67,6 +68,15 @@ def _write_report(report_path: Path, report: JsonReport) -> None:
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _read_json_report(path: Path) -> JsonReport | None:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def _git_has_staged_or_worktree_changes(status_report: JsonReport) -> bool:
     return bool(str(status_report.get("stdout", "")).strip())
 
@@ -89,6 +99,12 @@ def _has_publishable_transcription_outputs(report: JsonReport) -> bool:
     )
 
 
+def _blocked_sync_status(sync_status: str) -> str:
+    if sync_status.startswith("blocked_"):
+        return f"blocked_sync_{sync_status.removeprefix('blocked_')}"
+    return f"blocked_sync_{sync_status}"
+
+
 def run_local_transcription_automation(
     *,
     repo_dir: str | Path,
@@ -97,10 +113,14 @@ def run_local_transcription_automation(
     limit: int = 10,
     skip_youtube_refresh: bool = False,
     no_sync_git: bool = False,
+    allow_stale_repo: bool = False,
     audio_source_dir: str | Path = "data/audio_sources",
+    video_source_dir: str | Path = "data/video_sources",
+    sync_report_path: str | Path | None = None,
     ytdlp_cookies_file: str | None = None,
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
+    ytdlp_cookies_b64: str | None = None,
     command_runner: CommandRunner = subprocess.run,
     pipeline_runner: Callable[..., JsonReport] = run_pipeline,
     candidate_selector: Callable[..., JsonReport] = select_transcription_candidates,
@@ -117,7 +137,12 @@ def run_local_transcription_automation(
     effective_data_dir = _resolve_under_repo(repo_root, data_dir)
     effective_settings_path = _resolve_under_repo(repo_root, settings_path)
     effective_audio_source_dir = _resolve_under_repo(repo_root, audio_source_dir)
+    effective_video_source_dir = _resolve_under_repo(repo_root, video_source_dir)
     report_path = repo_root / "build" / "local_automation" / "latest_run_report.json"
+    effective_sync_report_path = _resolve_under_repo(
+        repo_root,
+        sync_report_path or Path("build") / "local_automation" / "latest_sync_report.json",
+    )
     transcripts_relative_path = _as_repo_relative(repo_root, effective_data_dir / "transcripts")
 
     report: JsonReport = {
@@ -129,23 +154,37 @@ def run_local_transcription_automation(
         "limit": limit,
         "skip_youtube_refresh": skip_youtube_refresh,
         "no_sync_git": no_sync_git,
+        "allow_stale_repo": allow_stale_repo,
         "audio_source_dir": str(effective_audio_source_dir),
+        "video_source_dir": str(effective_video_source_dir),
+        "sync_report_path": str(effective_sync_report_path),
         "steps": {},
         "git": {"enabled": not no_sync_git, "commands": []},
         "warnings": [],
     }
 
     if not no_sync_git:
-        pull_report = _run_command(["git", "pull", "--rebase", "--autostash"], cwd=repo_root, command_runner=command_runner)
-        report["git"]["commands"].append(pull_report)
-        report["steps"]["git_pull"] = pull_report
-        if not pull_report["ok"]:
-            report["status"] = "failed"
-            report["warnings"].append("git_pull_failed")
+        sync_report = _read_json_report(effective_sync_report_path)
+        sync_status = str((sync_report or {}).get("status") or "missing_report")
+        report["steps"]["sync_preflight"] = {
+            "status": sync_status,
+            "ok": sync_status in SYNC_SUCCESS_STATUSES,
+            "report_path": str(effective_sync_report_path),
+            "latest_sync_report": sync_report,
+        }
+        if sync_status not in SYNC_SUCCESS_STATUSES and not allow_stale_repo:
+            report["status"] = _blocked_sync_status(sync_status)
+            report["warnings"].append(f"sync_preflight_blocked:{sync_status}")
+            report["steps"]["git_add"] = {"skipped": True, "reason": "sync_preflight_blocked"}
+            report["steps"]["git_status"] = {"skipped": True, "reason": "sync_preflight_blocked"}
+            report["steps"]["git_commit"] = {"skipped": True, "reason": "sync_preflight_blocked"}
+            report["steps"]["git_push"] = {"skipped": True, "reason": "sync_preflight_blocked"}
             _write_report(report_path, report)
             return report
+        if sync_status not in SYNC_SUCCESS_STATUSES:
+            report["warnings"].append(f"stale_repo_allowed_after_sync_status:{sync_status}")
     else:
-        report["steps"]["git_pull"] = {"skipped": True, "reason": "no_sync_git"}
+        report["steps"]["sync_preflight"] = {"skipped": True, "reason": "no_sync_git"}
 
     if skip_youtube_refresh:
         report["steps"]["youtube_refresh"] = {"skipped": True, "reason": "skip_youtube_refresh"}
@@ -160,9 +199,11 @@ def run_local_transcription_automation(
         data_dir=str(effective_data_dir),
         limit=limit,
         audio_source_dir=str(effective_audio_source_dir),
+        video_source_dir=str(effective_video_source_dir),
         ytdlp_cookies_file=ytdlp_cookies_file,
         ytdlp_browser=ytdlp_browser,
         ytdlp_extra_args=ytdlp_extra_args,
+        ytdlp_cookies_b64=ytdlp_cookies_b64,
     )
     report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=limit)
     report["steps"]["transcript_registry_report"] = registry_report_builder(data_dir=str(effective_data_dir))
