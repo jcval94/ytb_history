@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -375,6 +375,64 @@ def test_cli_generate_weekly_brief_does_not_call_api_flows(monkeypatch, capsys) 
     monkeypatch.setattr(cli, "run_dry_run", _boom)
     monkeypatch.setattr(cli, "generate_weekly_brief", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-weekly-brief"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_generate_category_report_forwards_options(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_generate_category_report(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "primary_report_path": f"{kwargs['output_dir']}/latest_category_report.{kwargs['format']}"}
+
+    monkeypatch.setattr(cli, "generate_category_report", _fake_generate_category_report)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "generate-category-report",
+            "--category-name",
+            "ai_tools",
+            "--data-dir",
+            "custom/data",
+            "--output-dir",
+            "custom/reports",
+            "--period-days",
+            "14",
+            "--format",
+            "html",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["primary_report_path"] == "custom/reports/latest_category_report.html"
+    assert calls == [
+        {
+            "category_name": "ai_tools",
+            "data_dir": "custom/data",
+            "output_dir": "custom/reports",
+            "period_days": 14,
+            "format": "html",
+        }
+    ]
+
+
+def test_cli_generate_category_report_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "generate_category_report", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-category-report", "--category-name", "ai_tools"])
 
     code = cli.main()
     out = capsys.readouterr().out

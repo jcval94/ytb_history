@@ -12,6 +12,7 @@ from ytb_history.services.alerts_service import generate_alerts
 from ytb_history.services.analytics_service import build_analytics
 from ytb_history.services.decision_service import build_decision_layer
 from ytb_history.services.brief_service import generate_weekly_brief
+from ytb_history.services.category_report_service import generate_category_report
 from ytb_history.services.creative_packages_service import generate_creative_packages
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
@@ -83,6 +84,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     brief_parser = sub.add_parser("generate-weekly-brief", help="Generate weekly intelligence brief outputs")
     brief_parser.add_argument("--data-dir", default="data")
+
+    category_report_parser = sub.add_parser("generate-category-report", help="Generate category-level intelligence report outputs")
+    category_report_parser.add_argument("--category-name", required=True)
+    category_report_parser.add_argument("--data-dir", default="data")
+    category_report_parser.add_argument("--output-dir")
+    category_report_parser.add_argument("--period-days", default=30, type=int)
+    category_report_parser.add_argument("--format", choices=["md", "html"], default="md")
 
     model_parser = sub.add_parser("build-model-dataset", help="Build supervised model-ready dataset and readiness report")
     model_parser.add_argument("--data-dir", default="data")
@@ -251,6 +259,17 @@ def main() -> int:
 
     if args.command == "generate-weekly-brief":
         summary = generate_weekly_brief(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "generate-category-report":
+        summary = generate_category_report(
+            category_name=args.category_name,
+            data_dir=args.data_dir,
+            output_dir=args.output_dir,
+            period_days=args.period_days,
+            format=args.format,
+        )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
