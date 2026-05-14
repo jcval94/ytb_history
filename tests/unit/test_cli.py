@@ -133,6 +133,48 @@ def test_cli_export_latest_does_not_call_api_flows(monkeypatch, capsys) -> None:
 
 
 
+
+def test_cli_generate_category_report_prints_json(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_generate_category_report(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "preferred_report_path": "out/latest_category_report.html"}
+
+    monkeypatch.setattr(cli, "generate_category_report", _fake_generate_category_report)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "generate-category-report",
+            "--category-name",
+            "AI",
+            "--data-dir",
+            "custom/data",
+            "--output-dir",
+            "custom/reports",
+            "--period-days",
+            "14",
+            "--format",
+            "html",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert calls == [
+        {
+            "category_name": "AI",
+            "data_dir": "custom/data",
+            "output_dir": "custom/reports",
+            "period_days": 14,
+            "format": "html",
+        }
+    ]
+    assert json.loads(out)["preferred_report_path"] == "out/latest_category_report.html"
+
 def test_cli_build_analytics_prints_json(monkeypatch, capsys) -> None:
     monkeypatch.setattr(
         cli,
@@ -172,7 +214,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
