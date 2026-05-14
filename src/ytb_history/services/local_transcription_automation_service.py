@@ -224,17 +224,19 @@ def run_local_transcription_automation(
         35,
         f"Cola preparada: {selected_count} videos ({selected_ranked_count} ranking + {selected_forced_count} forzados).",
     )
-    report["steps"]["transcription"] = transcription_runner(
-        data_dir=str(effective_data_dir),
-        limit=effective_transcription_limit,
-        audio_source_dir=str(effective_audio_source_dir),
-        video_source_dir=str(effective_video_source_dir),
-        ytdlp_cookies_file=ytdlp_cookies_file,
-        ytdlp_browser=ytdlp_browser,
-        ytdlp_extra_args=ytdlp_extra_args,
-        ytdlp_cookies_b64=ytdlp_cookies_b64,
-        progress_callback=progress_callback,
-    )
+    transcription_kwargs: dict[str, Any] = {
+        "data_dir": str(effective_data_dir),
+        "limit": effective_transcription_limit,
+        "audio_source_dir": str(effective_audio_source_dir),
+        "video_source_dir": str(effective_video_source_dir),
+        "ytdlp_cookies_file": ytdlp_cookies_file,
+        "ytdlp_browser": ytdlp_browser,
+        "ytdlp_extra_args": ytdlp_extra_args,
+        "ytdlp_cookies_b64": ytdlp_cookies_b64,
+    }
+    if progress_callback is not None:
+        transcription_kwargs["progress_callback"] = progress_callback
+    report["steps"]["transcription"] = transcription_runner(**transcription_kwargs)
     _emit_progress(progress_callback, 82, "Generando insights para las transcripciones disponibles.")
     report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=effective_transcription_limit)
     _emit_progress(progress_callback, 88, "Actualizando reporte del registro de transcripciones.")
