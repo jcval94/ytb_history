@@ -4,7 +4,7 @@ import csv
 import json
 from pathlib import Path
 
-from ytb_history.services.brief_service import generate_weekly_brief
+from ytb_history.services.brief_service import generate_client_brief, generate_weekly_brief
 
 
 def _write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) -> None:
@@ -291,3 +291,41 @@ def test_generate_weekly_brief_includes_model_readiness_section_when_available(t
     markdown_text = (data_dir / "briefs" / "latest_weekly_brief.md").read_text(encoding="utf-8")
     assert "## Model Readiness" in markdown_text
     assert "primary_blocker" in markdown_text
+
+
+def test_generate_client_brief_writes_client_outputs_and_sections(tmp_path: Path) -> None:
+    data_dir = _prepare_data(tmp_path)
+    generate_weekly_brief(data_dir=data_dir)
+    _write_csv(
+        data_dir / "model_intelligence" / "latest_hybrid_recommendations.csv",
+        ["video_id", "hybrid_decision_score", "model_score_percentile", "model_score", "prediction_rank", "decision_score", "confidence_level"],
+        [{"video_id": "v2", "hybrid_decision_score": 91, "model_score_percentile": 99, "model_score": 0.8, "prediction_rank": 1, "decision_score": 95, "confidence_level": "high"}],
+    )
+    (data_dir / "model_intelligence" / "model_intelligence_summary.json").write_text(
+        json.dumps({"status": "success", "hybrid_rows": 1, "warnings": []}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    result = generate_client_brief(data_dir=data_dir)
+
+    assert result["status"] in {"success", "success_with_warnings"}
+    assert (data_dir / "client_briefs" / "latest_client_brief.md").exists()
+    assert (data_dir / "client_briefs" / "latest_client_brief.html").exists()
+    assert (data_dir / "client_briefs" / "latest_client_brief_summary.json").exists()
+
+    markdown_text = (data_dir / "client_briefs" / "latest_client_brief.md").read_text(encoding="utf-8")
+    for section in [
+        "## 1. Resumen ejecutivo",
+        "## 2. Videos que aceleraron",
+        "## 3. Canales a observar",
+        "## 4. Temas emergentes",
+        "## 5. Títulos/patrones ganadores",
+        "## 6. Recomendaciones para publicar esta semana",
+        "## 7. Riesgos o señales débiles",
+    ]:
+        assert section in markdown_text
+
+    summary = json.loads((data_dir / "client_briefs" / "latest_client_brief_summary.json").read_text(encoding="utf-8"))
+    assert summary["accelerating_videos"][0]["title"] == "Video 2"
+    assert summary["publishing_recommendations"][0]["recommendation"] == "angulo 1"
+    assert summary["emerging_topics"][0]["topic"] == "ai_tools"

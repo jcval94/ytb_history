@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-05-13T14:17:25.041908+00:00",
+  "status": "success",
+  "source_files": {
+    "weekly_brief_json": "briefs/latest_weekly_brief.json",
+    "weekly_brief_markdown": "briefs/latest_weekly_brief.md",
+    "latest_alerts": "alerts/latest_alerts.json",
+    "alert_summary": "alerts/alert_summary.json",
+    "topic_opportunities": "topic_intelligence/latest_topic_opportunities.csv",
+    "topic_metrics": "topic_intelligence/latest_topic_metrics.csv",
+    "title_pattern_metrics": "topic_intelligence/latest_title_pattern_metrics.csv",
+    "topic_summary": "topic_intelligence/topic_intelligence_summary.json",
+    "hybrid_recommendations": "model_intelligence/latest_hybrid_recommendations.csv",
+    "model_intelligence_summary": "model_intelligence/model_intelligence_summary.json",
+    "creative_packages": "creative_packages/latest_creative_packages.csv",
+    "creative_titles": "creative_packages/latest_title_candidates.csv",
+    "creative_hooks": "creative_packages/latest_hook_candidates.csv",
+    "video_metrics": "analytics/latest/latest_video_metrics.csv",
+    "channel_advanced": "analytics/latest/latest_channel_advanced_metrics.csv"
+  },
+  "executive_summary": [
+    "Hay 10 acciones prioritarias esta semana; revisar primero las de mayor decision_score.",
+    "No se detectan señales claras de reacción rápida en esta semana.",
+    "No se detectan oportunidades evergreen fuertes en esta corrida.",
+    "Base analizada: 1737 videos y 128 canales en los artefactos actuales.",
+    "Temas detectados: 6; oportunidades priorizadas: 6.",
+    "Modelo híbrido: 348 recomendaciones disponibles para contrastar con señales editoriales.",
+    "El brief semanal existente se usó como contexto editorial base para esta versión orientada a cliente."
+  ],
+  "accelerating_videos": [
+    {
+      "video_id": "BTJGr78-zyw",
+      "title": "Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",
+      "channel_name": "The Diary Of A CEO",
+      "views_delta": 730026,
+      "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes."
+    },
+    {
+      "video_id": "kwEtOyaFhCA",
+      "title": "Pulitzer Prize Historian: You Won't Notice Until It’s Too Late - Anne Applebaum",
+      "channel_name": "The Diary Of A CEO",
+      "views_delta": 672269,
+      "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes."
+    },
+    {
+      "video_id": "rvVGTI7PFUQ",
+      "title": "24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹",
+      "channel_name": "PlanetaJuan",
+      "views_delta": 415299,
+      "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes."
+    },
+    {
+      "video_id": "Xq7pk4z4rlk",
+      "title": "Humans That Defied Science",
+      "channel_name": "Sambucha",
+      "views_delta": 376989,
+      "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes."
+    },
+    {
+      "video_id": "c5Jej6WbEpM",
+      "title": "ASÍ TE ROBAN EN LOS CONCIERTOS: BTS en MÉXICO - Ruido Social",
+      "channel_name": "Eva Maria Beristain",
+      "views_delta": 339055,
+      "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes."
+    }
+  ],
+  "channels_to_watch": [
+    {
+      "channel_id": "UCL8w_A8p8P1HWI3k6PR5Z6w",
+      "channel_name": "Two Cents",
+      "momentum_score": 100.0,
+      "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura."
+    },
+    {
+      "channel_id": "UCSPLhwvj0gBufjDRzSQb3GQ",
+      "channel_name": "BobbyBroccoli",
+      "momentum_score": 97.637795,
+      "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura."
+    },
+    {
+      "channel_id": "UC9RM-iSvTu1uPJb8X5yp3EQ",
+      "channel_name": "Wendover Productions",
+      "momentum_score": 97.637795,
+      "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura."
+    },
+    {
+      "channel_id": "UCtscFf8VayggrDYjOwDke_Q",
+      "channel_name": "Angela Collier",
+      "momentum_score": 97.637795,
+      "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura."
+    },
+    {
+      "channel_id": "UCCApWEDxZLSe2u0BB-znodA",
+      "channel_name": "Don Canitro 👺",
+      "momentum_score": 97.637795,
+      "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura."
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "unknown",
+      "opportunity_type": "watch_topic",
+      "score": 73.1507,
+      "recommended_action": "Monitorear señales y validar subtemas antes de escalar",
+      "why_it_matters": "Balancea tracción, saturación y señal de decisión para priorizar próximos contenidos."
+    },
+    {
+      "topic": "ai_tools",
+      "opportunity_type": "watch_topic",
+      "score": 58.0056,
+      "recommended_action": "Monitorear señales y validar subtemas antes de escalar",
+      "why_it_matters": "Balancea tracción, saturación y señal de decisión para priorizar próximos contenidos."
+    },
+    {
+      "topic": "news_trends",
+      "opportunity_type": "watch_topic",
+      "score": 52.2589,
+      "recommended_action": "Monitorear señales y validar subtemas antes de escalar",
+      "why_it_matters": "Balancea tracción, saturación y señal de decisión para priorizar próximos contenidos."
+    },
+    {
+      "topic": "finance_personal",
+      "opportunity_type": "low_priority",
+      "score": 43.8994,
+      "recommended_action": "Mantener en backlog y revisar siguiente ventana",
+      "why_it_matters": "Balancea tracción, saturación y señal de decisión para priorizar próximos contenidos."
+    },
+    {
+      "topic": "productivity",
+      "opportunity_type": "evergreen_angle",
+      "score": 39.0478,
+      "recommended_action": "Escalar variante evergreen y reciclar mejores títulos",
+      "why_it_matters": "Balancea tracción, saturación y señal de decisión para priorizar próximos contenidos."
+    }
+  ],
+  "winning_title_patterns": [
+    {
+      "pattern": "comparison",
+      "success_score": 17.3797,
+      "avg_views_delta": 7250.3235,
+      "example_titles": "Jynxzi (5 Queens) vs Gothamchess | Human vs Computer | ¿CIUDADANOS DE SEGUNDA?: EDO MEX VS CDMX"
+    },
+    {
+      "pattern": "contrarian",
+      "success_score": 16.3893,
+      "avg_views_delta": 3971.7879,
+      "example_titles": "La verdad sobre PENSAR DEMASIADO - CIENCIA SIMPLIFICADA EP#75 | ¿Te usan o las usás? La verdad sobre las apps gratuitas | Ozempic está DESTRUYENDO negocios que NADIE esperaba"
+    },
+    {
+      "pattern": "warning",
+      "success_score": 15.6227,
+      "avg_views_delta": 8626.2143,
+      "example_titles": "24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 | Este Machito es PELIGROSO... | La ciencia confirmó el peor miedo de los padres"
+    },
+    {
+      "pattern": "promise_save",
+      "success_score": 15.1916,
+      "avg_views_delta": 1532.4468,
+      "example_titles": "Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | El Mapa Entero del Dinero en 21 Minutos | La Forma Más Fácil De Ganar Dinero Con Claude"
+    },
+    {
+      "pattern": "promise_gain",
+      "success_score": 14.3156,
+      "avg_views_delta": 1349.9756,
+      "example_titles": "Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | La Forma Más Fácil De Ganar Dinero Con Claude | Por Qué Los Piratas No Atacan Las Plataformas Petroleras…"
+    }
+  ],
+  "suggested_titles": [
+    "tema clave: lo que conviene observar antes de decidir",
+    "La señal de tema clave que todavía necesita más datos",
+    "tema clave: tendencia o ruido, qué vigilar",
+    "Lo que significa create_fast_reaction esta semana",
+    "create_fast_reaction: la señal que conviene vigilar ahora"
+  ],
+  "publishing_recommendations": [
+    {
+      "recommendation": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "timeframe": "next_3_days",
+      "topic": "create_fast_reaction",
+      "score": 77.8975
+    },
+    {
+      "recommendation": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "timeframe": "next_3_days",
+      "topic": "create_fast_reaction",
+      "score": 76.9179
+    },
+    {
+      "recommendation": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "timeframe": "next_3_days",
+      "topic": "create_fast_reaction",
+      "score": 76.174
+    },
+    {
+      "recommendation": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "timeframe": "next_3_days",
+      "topic": "create_fast_reaction",
+      "score": 75.8537
+    },
+    {
+      "recommendation": "Revisar canal dominante por crecimiento.",
+      "format": "benchmark_channel",
+      "timeframe": "",
+      "topic": "",
+      "score": 88.0
+    }
+  ],
+  "risks_or_weak_signals": [
+    {
+      "signal": "metadata_change_watch",
+      "severity": "critical",
+      "entity": "El futuro de Apple después de Tim Cook",
+      "recommended_action": "Vigilar lift posterior del cambio de metadata."
+    },
+    {
+      "signal": "metadata_change_watch",
+      "severity": "critical",
+      "entity": "La batalla legal entre Elon Musk y OpenAI",
+      "recommended_action": "Vigilar lift posterior del cambio de metadata."
+    },
+    {
+      "signal": "metadata_change_watch",
+      "severity": "critical",
+      "entity": "Stock Expert: Becoming Rich Is Simple, But You Won’t Do It!",
+      "recommended_action": "Vigilar lift posterior del cambio de metadata."
+    },
+    {
+      "signal": "channel_high_growth",
+      "severity": "critical",
+      "entity": "Caleb Hammer",
+      "recommended_action": "Canal dominante en crecimiento; revisar estrategia."
+    },
+    {
+      "signal": "model_intelligence",
+      "severity": "low",
+      "entity": "Predictions file not found: data/predictions/latest_predictions.csv",
+      "recommended_action": "No depender solo del ranking predictivo."
+    }
+  ],
+  "warnings": []
+}
