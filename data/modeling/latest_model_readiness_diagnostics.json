@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-11T13:25:19+00:00",
+  "generated_at": "2026-05-14T12:12:01+00:00",
   "status": "ready",
   "recommended_status": "ready_for_baseline",
   "can_train_now": true,
   "can_predict_now": true,
-  "total_examples": 8158,
-  "trainable_examples": 8158,
-  "inference_examples": 1651,
-  "unique_videos": 1205,
-  "unique_channels": 124,
+  "total_examples": 12366,
+  "trainable_examples": 12366,
+  "inference_examples": 1914,
+  "unique_videos": 1497,
+  "unique_channels": 126,
   "date_range": {
     "start": "2026-04-27T23:50:18.831706+00:00",
-    "end": "2026-05-06T00:13:20.592026+00:00"
+    "end": "2026-05-09T05:05:36.079326+00:00"
   },
   "min_trainable_examples_exploratory": 300,
   "min_trainable_examples_baseline": 1000,
@@ -21,7 +21,7 @@
   "target_diagnostics": [],
   "forecast": {
     "status": "ok",
-    "daily_trainable_growth": 841.3739234105532,
+    "daily_trainable_growth": 1019.2766429363575,
     "estimated_days_to_exploratory": 0.0,
     "estimated_days_to_baseline": 0.0
   },
