@@ -40,6 +40,25 @@ INPUT_FILES = {
     "creative_hooks": Path("creative_packages/latest_hook_candidates.csv"),
 }
 
+CLIENT_INPUT_FILES = {
+    "weekly_brief_json": Path("briefs/latest_weekly_brief.json"),
+    "weekly_brief_markdown": Path("briefs/latest_weekly_brief.md"),
+    "latest_alerts": Path("alerts/latest_alerts.json"),
+    "alert_summary": Path("alerts/alert_summary.json"),
+    "topic_opportunities": Path("topic_intelligence/latest_topic_opportunities.csv"),
+    "topic_metrics": Path("topic_intelligence/latest_topic_metrics.csv"),
+    "title_pattern_metrics": Path("topic_intelligence/latest_title_pattern_metrics.csv"),
+    "topic_summary": Path("topic_intelligence/topic_intelligence_summary.json"),
+    "hybrid_recommendations": Path("model_intelligence/latest_hybrid_recommendations.csv"),
+    "model_intelligence_summary": Path("model_intelligence/model_intelligence_summary.json"),
+    "creative_packages": Path("creative_packages/latest_creative_packages.csv"),
+    "creative_titles": Path("creative_packages/latest_title_candidates.csv"),
+    "creative_hooks": Path("creative_packages/latest_hook_candidates.csv"),
+    "video_metrics": Path("analytics/latest/latest_video_metrics.csv"),
+    "channel_advanced": Path("analytics/latest/latest_channel_advanced_metrics.csv"),
+}
+
+
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -102,9 +121,9 @@ def _tabulate(headers: list[str], rows: list[list[str]]) -> list[str]:
     return lines
 
 
-def _markdown_to_html(markdown_text: str) -> str:
+def _markdown_to_html(markdown_text: str, *, document_title: str = "Weekly Intelligence Brief") -> str:
     lines = markdown_text.splitlines()
-    html_lines: list[str] = ["<html>", "<head><meta charset=\"utf-8\"><title>Weekly Intelligence Brief</title></head>", "<body>"]
+    html_lines: list[str] = ["<html>", f"<head><meta charset=\"utf-8\"><title>{html.escape(document_title)}</title></head>", "<body>"]
 
     in_list = False
     in_table = False
@@ -181,6 +200,295 @@ def _markdown_to_html(markdown_text: str) -> str:
     html_lines.extend(["</body>", "</html>"])
     return "\n".join(html_lines) + "\n"
 
+
+def _short_text(value: Any, *, limit: int = 140) -> str:
+    text = " ".join(str(value or "").split())
+    if len(text) <= limit:
+        return text
+    return text[: max(0, limit - 1)].rstrip() + "…"
+
+
+def _client_label(row: dict[str, Any], *keys: str, fallback: str = "Sin dato") -> str:
+    for key in keys:
+        value = str(row.get(key, "") or "").strip()
+        if value:
+            return value
+    return fallback
+
+
+def _load_client_inputs(data_root: Path) -> tuple[dict[str, Any], list[str]]:
+    tables: dict[str, Any] = {}
+    warnings: list[str] = []
+    for key, rel_path in CLIENT_INPUT_FILES.items():
+        path = data_root / rel_path
+        if not path.exists():
+            warnings.append(f"Missing input file: {path}")
+            if path.suffix == ".csv":
+                tables[key] = []
+            elif path.suffix == ".md":
+                tables[key] = ""
+            else:
+                tables[key] = {}
+            continue
+        if path.suffix == ".csv":
+            tables[key] = _read_csv(path)
+        elif path.suffix == ".md":
+            tables[key] = path.read_text(encoding="utf-8")
+        else:
+            tables[key] = _read_json(path)
+    return tables, warnings
+
+
+def _client_video_items(weekly_json: dict[str, Any], tables: dict[str, Any]) -> list[dict[str, Any]]:
+    source = weekly_json.get("top_videos_by_growth") if isinstance(weekly_json, dict) else []
+    rows = source if isinstance(source, list) and source else tables.get("video_metrics", [])
+    items: list[dict[str, Any]] = []
+    for row in _sort_desc(rows, "views_delta")[:5]:
+        items.append(
+            {
+                "video_id": row.get("video_id", ""),
+                "title": _client_label(row, "title", fallback="Video sin título"),
+                "channel_name": row.get("channel_name", ""),
+                "views_delta": _safe_int(row.get("views_delta")) or 0,
+                "why_it_matters": "Está ganando tracción relativa; revisar tema, empaque y timing para replicar aprendizajes.",
+            }
+        )
+    return items
+
+
+def _client_channel_items(weekly_json: dict[str, Any], tables: dict[str, Any]) -> list[dict[str, Any]]:
+    source = weekly_json.get("top_channels_by_momentum") if isinstance(weekly_json, dict) else []
+    rows = source if isinstance(source, list) and source else tables.get("channel_advanced", [])
+    items: list[dict[str, Any]] = []
+    for row in _sort_desc(rows, "channel_momentum_score")[:5]:
+        items.append(
+            {
+                "channel_id": row.get("channel_id", ""),
+                "channel_name": _client_label(row, "channel_name", fallback="Canal sin nombre"),
+                "momentum_score": _safe_float(row.get("channel_momentum_score")) or 0.0,
+                "recommended_watch": "Observar frecuencia, formatos recientes y cambios de título/miniatura.",
+            }
+        )
+    return items
+
+
+def _client_topic_items(tables: dict[str, Any]) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+    for row in _sort_desc(tables.get("topic_opportunities", []), "topic_opportunity_score")[:5]:
+        items.append(
+            {
+                "topic": _client_label(row, "topic", fallback="Tema sin etiqueta"),
+                "opportunity_type": row.get("opportunity_type", ""),
+                "score": _safe_float(row.get("topic_opportunity_score")) or 0.0,
+                "recommended_action": _client_label(row, "recommended_action", fallback="Validar con una pieza o ángulo pequeño."),
+                "why_it_matters": _short_text(row.get("why_it_matters", "Señal combinada de demanda, velocidad y oportunidad.")),
+            }
+        )
+    return items
+
+
+def _client_title_items(tables: dict[str, Any]) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+    for row in _sort_desc(tables.get("title_pattern_metrics", []), "title_pattern_success_score")[:5]:
+        items.append(
+            {
+                "pattern": _client_label(row, "title_pattern", fallback="Patrón sin etiqueta"),
+                "success_score": _safe_float(row.get("title_pattern_success_score")) or 0.0,
+                "avg_views_delta": _safe_float(row.get("avg_views_delta")) or 0.0,
+                "example_titles": _short_text(row.get("example_titles", ""), limit=180),
+            }
+        )
+    return items
+
+
+def _client_title_suggestions(tables: dict[str, Any]) -> list[str]:
+    suggestions: list[str] = []
+    for row in tables.get("creative_titles", []):
+        title = _client_label(row, "title_candidate", fallback="")
+        if title and title not in suggestions:
+            suggestions.append(title)
+        if len(suggestions) >= 5:
+            break
+    return suggestions
+
+
+def _client_recommendation_items(weekly_json: dict[str, Any], tables: dict[str, Any]) -> list[dict[str, Any]]:
+    recs: list[dict[str, Any]] = []
+    for row in _sort_desc(tables.get("creative_packages", []), "creative_execution_score")[:4]:
+        recs.append(
+            {
+                "recommendation": _client_label(row, "creative_angle", "recommended_next_step", fallback="Ejecutar paquete creativo priorizado."),
+                "format": row.get("recommended_format", ""),
+                "timeframe": row.get("recommended_timeframe", ""),
+                "topic": row.get("topic", ""),
+                "score": _safe_float(row.get("creative_execution_score")) or 0.0,
+            }
+        )
+    weekly_actions = weekly_json.get("top_actions_this_week") if isinstance(weekly_json, dict) else []
+    for row in _sort_desc(weekly_actions if isinstance(weekly_actions, list) else [], "decision_score")[: max(0, 5 - len(recs))]:
+        recs.append(
+            {
+                "recommendation": _client_label(row, "recommended_action", "recommendation", fallback="Priorizar acción táctica."),
+                "format": row.get("action_type", ""),
+                "timeframe": row.get("recommended_timeframe", ""),
+                "topic": row.get("topic", ""),
+                "score": _safe_float(row.get("decision_score")) or 0.0,
+            }
+        )
+    return recs[:5]
+
+
+def _client_risk_items(weekly_json: dict[str, Any], tables: dict[str, Any], warnings: list[str]) -> list[dict[str, Any]]:
+    risks: list[dict[str, Any]] = []
+    alerts_payload = tables.get("latest_alerts", {})
+    alerts = alerts_payload.get("alerts", []) if isinstance(alerts_payload, dict) and isinstance(alerts_payload.get("alerts"), list) else []
+    for row in sorted(alerts, key=lambda r: (_severity_rank(str(r.get("severity", ""))), _safe_float(r.get("adjusted_signal_score")) or 0.0), reverse=True)[:4]:
+        risks.append(
+            {
+                "signal": _client_label(row, "signal_type", fallback="alert"),
+                "severity": row.get("severity", ""),
+                "entity": _client_label(row, "title", "channel_name", "entity_id", fallback="Entidad sin nombre"),
+                "recommended_action": _client_label(row, "recommended_action", fallback="Monitorear antes de escalar decisión."),
+            }
+        )
+    for note in weekly_json.get("data_quality_notes", []) if isinstance(weekly_json, dict) else []:
+        risks.append({"signal": "data_quality", "severity": "medium", "entity": _short_text(note), "recommended_action": "Interpretar insights con cautela."})
+    model_summary = tables.get("model_intelligence_summary", {})
+    if isinstance(model_summary, dict):
+        for warning in model_summary.get("warnings", [])[:2] if isinstance(model_summary.get("warnings"), list) else []:
+            risks.append({"signal": "model_intelligence", "severity": "low", "entity": _short_text(warning), "recommended_action": "No depender solo del ranking predictivo."})
+    for warning in warnings[:2]:
+        risks.append({"signal": "missing_input", "severity": "low", "entity": _short_text(warning), "recommended_action": "Regenerar pipeline si falta contexto crítico."})
+    return risks[:6]
+
+
+def _build_client_markdown(summary: dict[str, Any]) -> str:
+    lines = [
+        "# Client Brief de YouTube",
+        "",
+        f"Generado: {summary['generated_at']}",
+        "",
+        "## 1. Resumen ejecutivo",
+    ]
+    lines.extend([f"- {line}" for line in summary["executive_summary"]] or ["- Sin señales suficientes para resumen ejecutivo."])
+
+    lines.extend(["", "## 2. Videos que aceleraron"])
+    lines.extend(
+        _tabulate(
+            ["video", "canal", "views_delta", "lectura"],
+            [[_short_text(v["title"], limit=70), str(v.get("channel_name", "")), str(v["views_delta"]), v["why_it_matters"]] for v in summary["accelerating_videos"]],
+        )
+        if summary["accelerating_videos"]
+        else ["- Sin videos acelerando detectados."]
+    )
+
+    lines.extend(["", "## 3. Canales a observar"])
+    lines.extend(
+        _tabulate(
+            ["canal", "momentum", "qué mirar"],
+            [[c["channel_name"], str(c["momentum_score"]), c["recommended_watch"]] for c in summary["channels_to_watch"]],
+        )
+        if summary["channels_to_watch"]
+        else ["- Sin canales destacados esta semana."]
+    )
+
+    lines.extend(["", "## 4. Temas emergentes"])
+    lines.extend(
+        _tabulate(
+            ["tema", "tipo", "score", "acción"],
+            [[t["topic"], str(t["opportunity_type"]), str(t["score"]), t["recommended_action"]] for t in summary["emerging_topics"]],
+        )
+        if summary["emerging_topics"]
+        else ["- Sin temas emergentes claros."]
+    )
+
+    lines.extend(["", "## 5. Títulos/patrones ganadores"])
+    lines.extend(
+        _tabulate(
+            ["patrón", "score", "views_delta prom.", "ejemplos"],
+            [[p["pattern"], str(p["success_score"]), str(p["avg_views_delta"]), p["example_titles"]] for p in summary["winning_title_patterns"]],
+        )
+        if summary["winning_title_patterns"]
+        else ["- Sin patrones suficientes para recomendar."]
+    )
+    if summary.get("suggested_titles"):
+        lines.append("")
+        lines.append("Títulos candidatos para adaptar:")
+        lines.extend([f"- {_short_text(title, limit=120)}" for title in summary["suggested_titles"]])
+
+    lines.extend(["", "## 6. Recomendaciones para publicar esta semana"])
+    lines.extend(
+        [f"- **{_short_text(r['recommendation'], limit=120)}** · formato: {r.get('format', '') or 'por definir'} · ventana: {r.get('timeframe', '') or 'esta semana'} · score: {r['score']}" for r in summary["publishing_recommendations"]]
+        or ["- Publicar una pieza de prueba sobre el tema con mayor score y medir respuesta en la próxima corrida."]
+    )
+
+    lines.extend(["", "## 7. Riesgos o señales débiles"])
+    lines.extend(
+        [f"- **{r['signal']}** ({r.get('severity', 'n/a')}): {_short_text(r.get('entity', ''), limit=120)} → {r['recommended_action']}" for r in summary["risks_or_weak_signals"]]
+        or ["- Sin riesgos críticos detectados; mantener monitoreo semanal."]
+    )
+    return "\n".join(lines).strip() + "\n"
+
+
+def generate_client_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
+    """Generate a client-facing brief from existing local intelligence artifacts."""
+    data_root = Path(data_dir)
+    generated_at = _now_iso()
+    tables, warnings = _load_client_inputs(data_root)
+    weekly_json = tables.get("weekly_brief_json", {}) if isinstance(tables.get("weekly_brief_json"), dict) else {}
+    weekly_md = tables.get("weekly_brief_markdown", "") if isinstance(tables.get("weekly_brief_markdown"), str) else ""
+
+    key_metrics = weekly_json.get("key_metrics", {}) if isinstance(weekly_json, dict) and isinstance(weekly_json.get("key_metrics"), dict) else {}
+    topic_summary = tables.get("topic_summary", {}) if isinstance(tables.get("topic_summary"), dict) else {}
+    model_summary = tables.get("model_intelligence_summary", {}) if isinstance(tables.get("model_intelligence_summary"), dict) else {}
+    hybrid_recommendations = tables.get("hybrid_recommendations", []) if isinstance(tables.get("hybrid_recommendations"), list) else []
+
+    executive_summary = list(weekly_json.get("executive_summary", [])[:3]) if isinstance(weekly_json.get("executive_summary"), list) else []
+    executive_summary.extend(
+        [
+            f"Base analizada: {key_metrics.get('videos_total', 0)} videos y {key_metrics.get('channels_total', 0)} canales en los artefactos actuales.",
+            f"Temas detectados: {topic_summary.get('topics', 0)}; oportunidades priorizadas: {topic_summary.get('opportunities', 0)}.",
+            f"Modelo híbrido: {model_summary.get('hybrid_rows', len(hybrid_recommendations))} recomendaciones disponibles para contrastar con señales editoriales.",
+        ]
+    )
+    if weekly_md:
+        executive_summary.append("El brief semanal existente se usó como contexto editorial base para esta versión orientada a cliente.")
+
+    summary = {
+        "generated_at": generated_at,
+        "status": "success_with_warnings" if warnings else "success",
+        "source_files": {key: str(Path(value)) for key, value in CLIENT_INPUT_FILES.items()},
+        "executive_summary": executive_summary,
+        "accelerating_videos": _client_video_items(weekly_json, tables),
+        "channels_to_watch": _client_channel_items(weekly_json, tables),
+        "emerging_topics": _client_topic_items(tables),
+        "winning_title_patterns": _client_title_items(tables),
+        "suggested_titles": _client_title_suggestions(tables),
+        "publishing_recommendations": _client_recommendation_items(weekly_json, tables),
+        "risks_or_weak_signals": _client_risk_items(weekly_json, tables, warnings),
+        "warnings": warnings,
+    }
+
+    markdown_content = _build_client_markdown(summary)
+    html_content = _markdown_to_html(markdown_content, document_title="Client Brief de YouTube")
+
+    out_dir = data_root / "client_briefs"
+    latest_md = out_dir / "latest_client_brief.md"
+    latest_html = out_dir / "latest_client_brief.html"
+    latest_json = out_dir / "latest_client_brief_summary.json"
+
+    _write_text(latest_md, markdown_content)
+    _write_text(latest_html, html_content)
+    _write_json(latest_json, summary)
+
+    return {
+        "status": summary["status"],
+        "client_brief_dir": str(out_dir),
+        "latest_markdown_path": str(latest_md),
+        "latest_html_path": str(latest_html),
+        "latest_summary_json_path": str(latest_json),
+        "warnings": warnings,
+    }
 
 def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     data_root = Path(data_dir)

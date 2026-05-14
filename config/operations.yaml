@@ -841,7 +841,7 @@ processes:
     process_type: local_automation
     observability_scope: local_only
     cadence: manual_desktop_shortcut
-    sla_hours: null
+    sla_hours: 168
     command: scripts/run_local_play.ps1
     inputs:
       - origin/main

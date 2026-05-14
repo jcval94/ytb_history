@@ -11,7 +11,7 @@ from ytb_history.orchestrator import run_dry_run, run_pipeline
 from ytb_history.services.alerts_service import generate_alerts
 from ytb_history.services.analytics_service import build_analytics
 from ytb_history.services.decision_service import build_decision_layer
-from ytb_history.services.brief_service import generate_weekly_brief
+from ytb_history.services.brief_service import generate_client_brief, generate_weekly_brief
 from ytb_history.services.creative_packages_service import generate_creative_packages
 from ytb_history.services.export_service import export_latest_run
 from ytb_history.services.pages_dashboard_service import build_pages_dashboard
@@ -83,6 +83,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     brief_parser = sub.add_parser("generate-weekly-brief", help="Generate weekly intelligence brief outputs")
     brief_parser.add_argument("--data-dir", default="data")
+
+    client_brief_parser = sub.add_parser("generate-client-brief", help="Generate client-facing brief outputs")
+    client_brief_parser.add_argument("--data-dir", default="data")
 
     model_parser = sub.add_parser("build-model-dataset", help="Build supervised model-ready dataset and readiness report")
     model_parser.add_argument("--data-dir", default="data")
@@ -251,6 +254,11 @@ def main() -> int:
 
     if args.command == "generate-weekly-brief":
         summary = generate_weekly_brief(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "generate-client-brief":
+        summary = generate_client_brief(data_dir=args.data_dir)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

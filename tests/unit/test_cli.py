@@ -172,7 +172,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -375,6 +375,37 @@ def test_cli_generate_weekly_brief_does_not_call_api_flows(monkeypatch, capsys) 
     monkeypatch.setattr(cli, "run_dry_run", _boom)
     monkeypatch.setattr(cli, "generate_weekly_brief", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-weekly-brief"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_generate_client_brief_prints_json(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(
+        cli,
+        "generate_client_brief",
+        lambda **kwargs: {"status": "success", "latest_summary_json_path": f"{kwargs['data_dir']}/client_briefs/latest_client_brief_summary.json"},
+    )
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-client-brief", "--data-dir", "custom/data"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["latest_summary_json_path"] == "custom/data/client_briefs/latest_client_brief_summary.json"
+
+
+def test_cli_generate_client_brief_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "generate_client_brief", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-client-brief"])
 
     code = cli.main()
     out = capsys.readouterr().out
