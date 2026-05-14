@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-ai_tools,448,81,4221086.0,9422.067,0.053508,38.2406,12.3315,5.0888,0.0,80.0,64.1726,58.0056,BTJGr78-zyw,"Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",Jaime Higuera
-unknown,1100,113,12645795.0,11496.1773,0.05396,40.7686,11.7101,4.8507,0.0,100.0,76.8844,73.1507,rvVGTI7PFUQ,24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹,Alex Hormozi
-finance_personal,64,22,112522.0,1758.1562,0.055786,38.2612,13.2847,5.4731,0.0,40.0,36.8854,43.8994,gztlPinApRE,Esta es mi tarjeta de crédito,Mis Propias Finanzas
-news_trends,24,13,59262.0,2469.25,0.056238,44.2949,12.84,5.136,0.0,60.0,25.2917,52.2589,8Vq_Vm8Pe9Y,''Honduras Gate'' el nuevo plan de U.S.A e Israel para desestabilizar gobiernos.,Diego Ruzzarin
-tutorial,88,26,85254.0,968.7955,0.049337,30.7789,13.8498,5.6858,0.0,0.0,50.9508,21.0392,WgcdDVIUXcI,¿Cómo funcionan las gomas de borrar?,Inteligencia Artificial
-productivity,13,7,19904.0,1531.0769,0.067227,42.7298,23.8451,9.538,0.0,20.0,12.4359,39.0478,rfRFwXnk660,Salvá a tus hijos (estás a tiempo),Aprendiz Financiero
+ai_tools,500,83,7243257.0,14486.514,0.053049,36.0223,17.023,6.9758,0.0,80.0,63.9471,57.9826,BTJGr78-zyw,"Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",Jaime Higuera
+unknown,1205,114,20892182.0,17337.9104,0.053444,38.0716,16.4577,6.7715,0.0,100.0,76.5498,73.03,tJH_gXK_WBM,Memory Loss,Alex Hormozi
+tutorial,94,27,229321.0,2439.5851,0.048111,30.3654,12.7561,5.2399,0.0,20.0,48.9468,27.2868,yIZSL7ZtlYs,Cómo PERÚ amenaza la GUERRA de los CHIPS: el país que puede PARALIZAR la IA @VisualPolitik,Inteligencia Artificial
+finance_personal,69,22,179718.0,2604.6087,0.055891,36.5186,15.9744,6.5535,0.0,40.0,37.0145,47.8928,gztlPinApRE,Esta es mi tarjeta de crédito,Mis Propias Finanzas
+news_trends,30,14,127491.0,4249.7,0.054193,38.6003,19.914,7.9902,0.0,60.0,25.1667,47.9381,8Vq_Vm8Pe9Y,''Honduras Gate'' el nuevo plan de U.S.A e Israel para desestabilizar gobiernos.,Diego Ruzzarin
+productivity,16,9,29194.0,1824.625,0.06216,32.6448,29.9404,11.9762,0.0,0.0,14.1667,31.542,rfRFwXnk660,Salvá a tus hijos (estás a tiempo),Aprendiz Financiero

@@ -1,41 +1,90 @@
 {
-  "generated_at": "2026-05-13T05:38:22.061971+00:00",
+  "generated_at": "2026-05-14T11:24:41.029209+00:00",
   "limit": 10,
-  "candidates_considered": 1737,
-  "selected_count": 24,
-  "selected_forced_count": 14,
+  "expected_ranked_count": 10,
+  "expected_selected_count": 13,
+  "ranked_shortfall": 0,
+  "candidates_considered": 1914,
+  "available_ranked_count": 1873,
+  "source_artifacts": {
+    "decision": {
+      "path": "data/decision/latest_action_candidates.csv",
+      "exists": true,
+      "row_count": 779,
+      "modified_at": "2026-05-14T11:24:34.628165+00:00"
+    },
+    "model_intelligence": {
+      "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
+      "exists": true,
+      "row_count": 513,
+      "modified_at": "2026-05-14T11:24:35.833171+00:00"
+    },
+    "topic": {
+      "path": "data/topic_intelligence/latest_topic_opportunities.csv",
+      "exists": true,
+      "row_count": 6,
+      "modified_at": "2026-05-14T11:24:37.171516+00:00"
+    },
+    "creative": {
+      "path": "data/creative_packages/latest_creative_packages.csv",
+      "exists": true,
+      "row_count": 674,
+      "modified_at": "2026-05-14T11:24:38.419182+00:00"
+    },
+    "analytics_scores": {
+      "path": "data/analytics/latest/latest_video_scores.csv",
+      "exists": true,
+      "row_count": 1914,
+      "modified_at": "2026-05-14T11:24:29.465143+00:00"
+    },
+    "analytics_metrics": {
+      "path": "data/analytics/latest/latest_video_metrics.csv",
+      "exists": true,
+      "row_count": 1914,
+      "modified_at": "2026-05-14T11:24:29.433143+00:00"
+    }
+  },
+  "selected_count": 13,
+  "selected_forced_count": 3,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
   ],
   "forced_channels_matched": [
-    "https://www.youtube.com/@bilinkis",
-    "https://www.youtube.com/veritasium"
+    "https://www.youtube.com/@bilinkis"
   ],
+  "forced_channels_without_matches": [],
+  "forced_match_counts": {
+    "https://www.youtube.com/@bilinkis": 19,
+    "https://www.youtube.com/veritasium": 5
+  },
+  "forced_candidate_pool_count": 24,
+  "available_forced_before_truncation": 3,
+  "forced_window_cutoff_date": "2026-04-30",
+  "latest_upload_date": "2026-05-14",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 11,
-  "persisted_transcript_success_count": 11,
+  "registry_existing_success_count": 21,
+  "persisted_transcript_success_count": 21,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 38,
-  "skipped_already_transcribed": 11,
+  "registry_existing_recent_failed_count": 18,
+  "skipped_already_transcribed": 21,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 37,
-  "skipped_forced_already_transcribed": 0,
+  "skipped_recent_failures": 17,
+  "skipped_forced_already_transcribed": 10,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 1,
+  "skipped_forced_outside_window": 10,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "zvBx0ylgPOE",
-    "T32B8W5B3XY",
-    "7F4pY8Td9QQ",
-    "Yo4aGwiAUBk",
-    "NOv3U3ZUiro"
+    "VEAic3PrzHM",
+    "rfRFwXnk660",
+    "ByJAH8vTgfw",
+    "4LFP-oTXUN8",
+    "QHE2QO8peRA"
   ],
-  "warnings": [
-    "forced_channels_window_anchored_to_latest_upload_date"
-  ]
+  "warnings": []
 }

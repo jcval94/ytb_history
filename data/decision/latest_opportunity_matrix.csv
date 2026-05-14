@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,10,72.5917,80.0514,78.8,NlFAfAqX1zE,HAARP ¿Otra teoría de conspiración confirmada? #diegoruzzarin #geopolitics,Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,15,69.4081,76.9994,76.3,TkDWgKCjdtU,I Tested Every Zack D. Films Video (Again),Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,2,64.9236,66.0826,63.5,Hw7PE5a3DGo,"""1,000 days left"" Anthropic founder",Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,399,59.5298,72.2636,86.6683,-8Xee3Y4Yeg,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,69,64.6951,88.0,73.6558,UCLe_q9axMaeTbjN0hy1Z9xA,Asmongold Makes MILLIONS of Dollars Per Year,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,121,68.655,87.5591,91.5269,UCBBWpss2iXVXtTzl7-4eWbg,El MIEDO de una MAMÁ ante un DIAGNÓSTICO: síndrome de Down - Más allá del rosa con Gloria Torruco,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,0,0.0,0.0,0.0,,,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,480,58.4101,73.0373,84.5517,-8Xee3Y4Yeg,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,66,66.9493,88.0,77.1856,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Chef Makes $2,000 Monthly FOREVER",Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,218,69.6778,88.0,91.2798,UCBBWpss2iXVXtTzl7-4eWbg,Buscar con tus PROPIAS MANOS a tu HERMANO en FOSAS CLANDESTINAS- Más allá del rosa con Jael Jacobo,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
