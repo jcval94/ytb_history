@@ -24,6 +24,7 @@ from ytb_history.services.model_smoke_test_service import smoke_test_model_train
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services.nlp_feature_service import build_nlp_features
 from ytb_history.services.operations_service import build_operations
+from ytb_history.services.opportunity_radar_service import generate_opportunity_radar
 from ytb_history.services.topic_intelligence_service import build_topic_intelligence
 from ytb_history.services.model_intelligence_service import build_model_intelligence
 from ytb_history.services.content_driver_model_service import train_content_driver_models
@@ -87,6 +88,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     client_brief_parser = sub.add_parser("generate-client-brief", help="Generate client-facing brief outputs")
     client_brief_parser.add_argument("--data-dir", default="data")
+
+    radar_parser = sub.add_parser("generate-opportunity-radar", help="Generate commercial Opportunity Radar outputs")
+    radar_parser.add_argument("--data-dir", default="data")
+    radar_parser.add_argument("--config", default="config/commercial_radar.yaml")
+    radar_parser.add_argument("--profile")
+    radar_parser.add_argument("--output-dir")
+    radar_parser.add_argument("--anonymize", action="store_true")
 
     category_report_parser = sub.add_parser("generate-category-report", help="Generate category-level report outputs")
     category_report_parser.add_argument("--category-name", required=True)
@@ -212,6 +220,8 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     parser = build_parser()
     args = parser.parse_args()
 
@@ -267,6 +277,17 @@ def main() -> int:
 
     if args.command == "generate-client-brief":
         summary = generate_client_brief(data_dir=args.data_dir)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "generate-opportunity-radar":
+        summary = generate_opportunity_radar(
+            data_dir=args.data_dir,
+            config_path=args.config,
+            profile_name=args.profile,
+            output_dir=args.output_dir,
+            anonymize=args.anonymize,
+        )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 

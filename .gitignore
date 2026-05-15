@@ -12,6 +12,7 @@ pytest-cache-files-*/
 codex_pytest_work/
 codex_temp_root/
 codex_tmp_*/
+site/
 manual_validation_*/
 py_created_dir/
 py_chmod_dir/

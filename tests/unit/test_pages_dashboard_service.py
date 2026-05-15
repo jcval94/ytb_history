@@ -77,6 +77,23 @@ def _prepare_brief(data_dir: Path) -> None:
     _write_text(data_dir / "briefs" / "latest_weekly_brief.html", "<h1>Brief</h1>\n")
 
 
+def _prepare_commercial_radar(data_dir: Path) -> None:
+    radar_dir = data_dir / "commercial_radar" / "spanish-business-ai"
+    _write_text(
+        radar_dir / "latest_opportunity_radar.json",
+        json.dumps(
+            {
+                "status": "success",
+                "profile": {"package_name": "Weekly YouTube Opportunity Radar"},
+                "priority_opportunities": [{"recommendation": "Publish one test", "score": 91}],
+            },
+            ensure_ascii=False,
+        ),
+    )
+    _write_text(radar_dir / "latest_opportunity_radar.md", "# Radar\n")
+    _write_text(radar_dir / "latest_opportunity_radar.html", "<h1>Radar</h1>\n")
+
+
 def _prepare_model_reports(data_dir: Path) -> None:
     _write_text(
         data_dir / "model_reports" / "latest_model_leaderboard.csv",
@@ -256,6 +273,34 @@ def test_site_manifest_includes_latest_weekly_brief_outputs(tmp_path: Path) -> N
     assert manifest["brief_outputs"]["latest_weekly_brief"] == "data/latest_weekly_brief.json"
 
 
+def test_build_pages_dashboard_copies_latest_commercial_radar_files(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_commercial_radar(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    assert (site_dir / "data" / "latest_opportunity_radar.json").exists()
+    assert (site_dir / "data" / "latest_opportunity_radar.html").exists()
+    payload = json.loads((site_dir / "data" / "latest_opportunity_radar.json").read_text(encoding="utf-8"))
+    assert payload["profile"]["package_name"] == "Weekly YouTube Opportunity Radar"
+
+
+def test_site_manifest_includes_latest_commercial_radar_outputs(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+    _prepare_commercial_radar(data_dir)
+
+    build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    manifest = json.loads((site_dir / "data" / "site_manifest.json").read_text(encoding="utf-8"))
+    assert "latest_opportunity_radar" in manifest["commercial_radar_outputs"]
+    assert manifest["commercial_radar_outputs"]["latest_opportunity_radar"] == "data/latest_opportunity_radar.json"
+    assert manifest["row_counts"]["latest_opportunity_radar"] == 1
+
+
 def test_build_pages_dashboard_generates_latest_alerts_json_when_source_exists(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"
@@ -364,6 +409,8 @@ def test_app_js_uses_relative_data_paths_and_hardening_rules(tmp_path: Path) -> 
     assert "./data/latest_video_metrics.json" in app_js
     assert "./data/latest_alerts.json" in app_js
     assert "./data/latest_signal_candidates.json" in app_js
+    assert "./data/latest_opportunity_radar.json" in app_js
+    assert "./data/latest_opportunity_radar.html" in app_js
     assert "./data/latest_topic_metrics.json" in app_js
     assert "./data/latest_video_nlp_features.json" in app_js
     assert "./data/latest_content_driver_leaderboard.json" in app_js
@@ -384,7 +431,7 @@ def test_dashboard_has_expected_sections(tmp_path: Path) -> None:
     build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
 
     index_html = (site_dir / "index.html").read_text(encoding="utf-8")
-    for label in ["Overview", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief", "Operations"]:
+    for label in ["Overview", "Radar", "Videos", "Channels", "Scores", "Advanced", "Titles", "Periods", "Alerts", "Data Quality", "Models", "Topics", "NLP", "Content Drivers", "Brief", "Operations"]:
         assert label in index_html
 
 

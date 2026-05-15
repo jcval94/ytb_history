@@ -89,6 +89,9 @@ jobs:
       - name: Generate weekly brief
         run: python -m ytb_history.cli generate-weekly-brief
 
+      - name: Generate commercial Opportunity Radar
+        run: python -m ytb_history.cli generate-opportunity-radar
+
       - name: Select transcription candidates
         run: python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
 
