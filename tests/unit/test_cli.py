@@ -214,7 +214,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-opportunity-radar", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -448,6 +448,63 @@ def test_cli_generate_client_brief_does_not_call_api_flows(monkeypatch, capsys) 
     monkeypatch.setattr(cli, "run_dry_run", _boom)
     monkeypatch.setattr(cli, "generate_client_brief", lambda **_kwargs: {"status": "success"})
     monkeypatch.setattr("sys.argv", ["ytb_history", "generate-client-brief"])
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["status"] == "success"
+
+
+def test_cli_generate_opportunity_radar_prints_json(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_generate_opportunity_radar(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "summary_path": "out/latest_opportunity_radar.json"}
+
+    monkeypatch.setattr(cli, "generate_opportunity_radar", _fake_generate_opportunity_radar)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "generate-opportunity-radar",
+            "--data-dir",
+            "custom/data",
+            "--config",
+            "custom/commercial.yaml",
+            "--profile",
+            "agency",
+            "--output-dir",
+            "custom/radar",
+            "--anonymize",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert calls == [
+        {
+            "data_dir": "custom/data",
+            "config_path": "custom/commercial.yaml",
+            "profile_name": "agency",
+            "output_dir": "custom/radar",
+            "anonymize": True,
+        }
+    ]
+    assert json.loads(out)["summary_path"] == "out/latest_opportunity_radar.json"
+
+
+def test_cli_generate_opportunity_radar_does_not_call_api_flows(monkeypatch, capsys) -> None:
+    def _boom(**_kwargs):
+        raise AssertionError("API flow should not be called")
+
+    monkeypatch.setattr(cli, "run_pipeline", _boom)
+    monkeypatch.setattr(cli, "run_dry_run", _boom)
+    monkeypatch.setattr(cli, "generate_opportunity_radar", lambda **_kwargs: {"status": "success"})
+    monkeypatch.setattr("sys.argv", ["ytb_history", "generate-opportunity-radar"])
 
     code = cli.main()
     out = capsys.readouterr().out

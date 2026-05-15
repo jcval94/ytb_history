@@ -18,10 +18,12 @@ def test_frontend_js_references_alerts_paths_and_hardening() -> None:
     assert "latestAlerts" in app_js
     assert "latestSignalCandidates" in app_js
     assert "latestWeeklyBriefJson" in app_js
+    assert "latestOpportunityRadarJson" in app_js
     assert "./data/latest_alerts.json" in app_js
     assert "./data/latest_model_leaderboard.json" in app_js
     assert "./data/latest_feature_importance.json" in app_js
     assert "./data/latest_weekly_brief.json" in app_js
+    assert "./data/latest_opportunity_radar.json" in app_js
     assert "./data/latest_process_status.json" in app_js
     assert "./data/operation_summary.json" in app_js
     assert "./data/dashboard_impact_matrix.json" in app_js
@@ -36,6 +38,12 @@ def test_index_html_contains_brief_tab() -> None:
     assert "Brief" in index_html
     assert "brand-lockup" in index_html
     assert "ytb_history intelligence" in index_html
+
+
+def test_index_html_contains_radar_tab() -> None:
+    index_html = _read("apps/pages_dashboard/src/index.html")
+    assert 'data-tab="radar"' in index_html
+    assert "Radar" in index_html
 
 
 def test_index_html_contains_operations_tab() -> None:
@@ -60,6 +68,13 @@ def test_index_html_contains_models_tab() -> None:
 def test_app_js_contains_render_brief() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderBrief()" in app_js
+
+
+def test_app_js_contains_render_opportunity_radar() -> None:
+    app_js = _read("apps/pages_dashboard/src/assets/app.js")
+    assert "function renderOpportunityRadar()" in app_js
+    assert "function renderOpportunityRadarCharts(" in app_js
+    assert "Methodology And Compliance" in app_js
 
 
 def test_app_js_contains_render_operations() -> None:
@@ -130,6 +145,8 @@ def test_app_js_data_files_brief_and_signal_candidates_are_unique_and_well_forme
     assert app_js.count('latestSignalCandidates: "./data/latest_signal_candidates.json"') == 1
     assert app_js.count('latestWeeklyBriefJson: "./data/latest_weekly_brief.json"') == 1
     assert app_js.count('latestWeeklyBriefHtml: "./data/latest_weekly_brief.html"') == 1
+    assert app_js.count('latestOpportunityRadarJson: "./data/latest_opportunity_radar.json"') == 1
+    assert app_js.count('latestOpportunityRadarHtml: "./data/latest_opportunity_radar.html"') == 1
 
     bad_sequence = (
         'latestSignalCandidates: "./data/latest_signal_candidates.json"\n'
@@ -152,6 +169,7 @@ def test_app_js_data_files_no_duplicate_period_monthly_channel_without_comma() -
 def test_app_js_treats_html_reports_as_text_fetches() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert '"latestWeeklyBriefHtml"' in app_js
+    assert '"latestOpportunityRadarHtml"' in app_js
     assert '"latestModelSuiteReportHtml"' in app_js
     assert '"latestContentDriverReportHtml"' in app_js
     assert "if (TEXT_DATA_KEYS.has(key))" in app_js
@@ -198,7 +216,10 @@ def test_frontend_js_syntax_is_valid_with_node_check(relpath: str) -> None:
         pytest.skip("node not available")
 
     file_path = REPO_ROOT / relpath
-    result = subprocess.run([node_bin, "--check", str(file_path)], capture_output=True, text=True)
+    try:
+        result = subprocess.run([node_bin, "--check", str(file_path)], capture_output=True, text=True)
+    except PermissionError:
+        pytest.skip("node is installed but not executable in this environment")
     assert result.returncode == 0, result.stderr
 
 def test_index_html_contains_creative_tab() -> None:

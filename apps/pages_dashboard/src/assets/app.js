@@ -56,6 +56,8 @@ const DATA_FILES = {
   creativePackagesSummary: "./data/creative_packages_summary.json",
   latestWeeklyBriefJson: "./data/latest_weekly_brief.json",
   latestWeeklyBriefHtml: "./data/latest_weekly_brief.html",
+  latestOpportunityRadarJson: "./data/latest_opportunity_radar.json",
+  latestOpportunityRadarHtml: "./data/latest_opportunity_radar.html",
   latestProcessStatus: "./data/latest_process_status.json",
   processCatalog: "./data/process_catalog.json",
   operationSummary: "./data/operation_summary.json",
@@ -96,6 +98,7 @@ async function init() {
 
   const TEXT_DATA_KEYS = new Set([
     "latestWeeklyBriefHtml",
+    "latestOpportunityRadarHtml",
     "latestModelSuiteReportHtml",
     "latestContentDriverReportHtml",
     "latestModelReadinessReportHtml"
@@ -161,6 +164,7 @@ function bindTabs() {
 }
 
 const TAB_RENDERERS = {
+  radar: () => renderOpportunityRadar(),
   videos: () => renderVideos(applyFilters(tableRows("latestVideoMetrics"))),
   channels: () => renderChannels(applyFilters(tableRows("latestChannelMetrics"), { skipDuration: true })),
   scores: () => renderScores(applyFilters(tableRows("latestVideoScores"))),
@@ -825,6 +829,142 @@ function renderCreativePackages() {
     panel.querySelector(sel)?.addEventListener("change", renderTables);
   });
   renderTables();
+}
+
+function renderOpportunityRadar() {
+  const panel = document.querySelector("#tab-radar");
+  if (!panel) return;
+
+  const radar = state.data.latestOpportunityRadarJson;
+  const radarHtml = state.data.latestOpportunityRadarHtml;
+
+  if (!radar || typeof radar !== "object" || !Object.keys(radar).length) {
+    if (typeof radarHtml === "string" && radarHtml.trim()) {
+      panel.innerHTML = `<h2>Opportunity Radar</h2><div class="radar-html">${radarHtml}</div>`;
+      return;
+    }
+    panel.innerHTML = "<p>No Opportunity Radar generated yet</p>";
+    return;
+  }
+
+  const profile = radar.profile && typeof radar.profile === "object" ? radar.profile : {};
+  const keyMetrics = radar.key_metrics && typeof radar.key_metrics === "object" ? radar.key_metrics : {};
+  const quota = radar.quota_report && typeof radar.quota_report === "object" ? radar.quota_report : {};
+  const summary = radarArray(radar.executive_summary);
+  const opportunities = radarArray(radar.priority_opportunities);
+  const acceleratingVideos = radarArray(radar.accelerating_videos);
+  const channels = radarArray(radar.channels_to_watch);
+  const topics = radarArray(radar.emerging_topics);
+  const titlePatterns = radarArray(radar.title_patterns);
+  const creativePackages = radarArray(radar.creative_packages);
+  const alerts = radarArray(radar.alerts_to_watch);
+  const nextActions = radarArray(radar.commercial_next_actions);
+  const policyNotes = radarArray(radar.data_policy_notes);
+  const sourceFiles = radar.source_files && typeof radar.source_files === "object" ? radar.source_files : {};
+  const quotaRows = radarQuotaRows(quota);
+
+  const cards = [
+    ["package", profile.package_name || "Weekly YouTube Opportunity Radar"],
+    ["category", profile.category_name || "--"],
+    ["plan", profile.plan_name || "--"],
+    ["pilot_price", profile.monthly_price_usd ? `USD ${formatNumber(profile.monthly_price_usd)}/mo` : "--"],
+    ["videos_considered", formatNumber(keyMetrics.videos_considered)],
+    ["channels_in_scope", formatNumber(keyMetrics.channels_in_scope)],
+    ["priority_opportunities", formatNumber(keyMetrics.priority_opportunities ?? opportunities.length)],
+    ["creative_packages", formatNumber(keyMetrics.creative_packages ?? creativePackages.length)],
+    ["alerts_considered", formatNumber(keyMetrics.alerts_considered ?? alerts.length)],
+    ["quota_estimate", quota.total_estimated_units ? `${formatNumber(quota.total_estimated_units)} units` : "--"]
+  ].map(([label, value]) => `<article class="kpi-card"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(String(value))}</p></article>`).join("");
+
+  panel.innerHTML = `
+    <section class="radar-hero">
+      <div>
+        <p class="radar-kicker">${escapeHtml(profile.client_name || "Commercial demo")}</p>
+        <h2>YouTube Opportunity Radar</h2>
+        <p class="radar-subtitle">Weekly commercial interface for editorial decisions, prospect demos, and client delivery.</p>
+        <p class="radar-meta">Generated ${escapeHtml(formatDate(radar.generated_at))} | ${escapeHtml(String(profile.period_days || 7))}-day operating window</p>
+      </div>
+      <div class="radar-actions" aria-label="Radar actions">
+        <button type="button" data-open-tab="brief">Brief</button>
+        <button type="button" data-open-tab="creative">Creative</button>
+        <button type="button" data-open-tab="operations">Ops</button>
+      </div>
+    </section>
+
+    <div class="kpi-grid">${cards}</div>
+
+    <section class="radar-section">
+      <h3 class="section-title">Executive Summary</h3>
+      ${radarList(summary, "No executive summary available")}
+    </section>
+
+    <div id="radar-visuals" class="chart-grid"></div>
+
+    <section class="radar-section">
+      <h3 class="section-title">Commercial Next Actions</h3>
+      ${radarList(nextActions, "No next actions available")}
+    </section>
+
+    <section class="radar-section">
+      <div id="radar-opportunities"></div>
+      <div id="radar-videos"></div>
+      <div id="radar-channels"></div>
+      <div id="radar-topics"></div>
+      <div id="radar-title-patterns"></div>
+      <div id="radar-creative"></div>
+      <div id="radar-alerts"></div>
+      <div id="radar-quota"></div>
+    </section>
+
+    <section class="radar-method">
+      <div>
+        <h3 class="section-title">Methodology And Compliance</h3>
+        ${radarList(policyNotes, "No policy notes available")}
+      </div>
+      <div>
+        <h3 class="section-title">Traceable Sources</h3>
+        ${radarSourceList(sourceFiles)}
+      </div>
+      <div>
+        <h3 class="section-title">Quota Guardrail</h3>
+        <p>${escapeHtml(quota.method || "No quota method recorded")}</p>
+        <p>Status: <strong>${escapeHtml(quota.limit_status || quota.status || "--")}</strong></p>
+      </div>
+    </section>
+  `;
+
+  panel.querySelectorAll("[data-open-tab]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const tab = button.getAttribute("data-open-tab");
+      if (tab) activateTab(tab);
+    });
+  });
+
+  renderOpportunityRadarCharts(panel.querySelector("#radar-visuals"), radar);
+  renderTable(panel.querySelector("#radar-opportunities"), [
+    "priority", "opportunity_type", "recommendation", "evidence", "score", "confidence", "timeframe"
+  ], sortRows(opportunities, "score", "desc"), { initialSortKey: "score", title: "Top Opportunities", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-videos"), [
+    "title", "channel_name", "views_delta", "engagement_rate", "evidence"
+  ], sortRows(acceleratingVideos, "views_delta", "desc"), { initialSortKey: "views_delta", title: "Accelerating Videos", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-channels"), [
+    "channel_name", "momentum_score", "views_delta", "recommended_watch"
+  ], sortRows(channels, "momentum_score", "desc"), { initialSortKey: "momentum_score", title: "Channels To Watch", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-topics"), [
+    "topic", "opportunity_type", "score", "recommended_action"
+  ], sortRows(topics, "score", "desc"), { initialSortKey: "score", title: "Emerging Topics", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-title-patterns"), [
+    "pattern", "success_score", "avg_views_delta", "examples"
+  ], sortRows(titlePatterns, "success_score", "desc"), { initialSortKey: "success_score", title: "Title Patterns", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-creative"), [
+    "package_type", "angle", "hook", "title_candidate", "format", "score", "next_step"
+  ], sortRows(creativePackages, "score", "desc"), { initialSortKey: "score", title: "Creative Packages", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-alerts"), [
+    "severity", "signal_type", "entity", "score", "recommended_action"
+  ], sortRows(alerts, "score", "desc"), { initialSortKey: "score", title: "Alerts To Watch", pageSize: 10 });
+  renderTable(panel.querySelector("#radar-quota"), [
+    "endpoint", "estimated_units", "observed_units"
+  ], quotaRows, { initialSortKey: "estimated_units", title: "Estimated Quota By Endpoint", pageSize: 10, showPagination: false });
 }
 
 function renderBrief() {
@@ -1545,6 +1685,81 @@ function renderCreativeCharts(container, packages, originality) {
     title: "Highest copy-risk checks",
     subtitle: "Review these before using titles, hooks, or thumbnails."
   });
+}
+
+function renderOpportunityRadarCharts(container, radar) {
+  if (!container) return;
+  const keyMetrics = radar.key_metrics && typeof radar.key_metrics === "object" ? radar.key_metrics : {};
+  const opportunities = radarArray(radar.priority_opportunities);
+  const titlePatterns = radarArray(radar.title_patterns);
+
+  container.innerHTML = `
+    <div id="radar-opportunity-bars"></div>
+    <div id="radar-title-bars"></div>
+    <div id="radar-signal-funnel"></div>
+  `;
+
+  renderHorizontalBars(container.querySelector("#radar-opportunity-bars"), sortRows(opportunities, "score", "desc").slice(0, 8), {
+    labelKey: "recommendation",
+    valueKey: "score",
+    title: "Opportunity priority",
+    subtitle: "Scores convert noisy monitoring signals into client-ready actions."
+  });
+
+  renderHorizontalBars(container.querySelector("#radar-title-bars"), sortRows(titlePatterns, "success_score", "desc").slice(0, 8), {
+    labelKey: "pattern",
+    valueKey: "success_score",
+    title: "Winning title patterns",
+    subtitle: "Patterns are evidence for ideation, not guaranteed causality."
+  });
+
+  renderFunnel(container.querySelector("#radar-signal-funnel"), [
+    { label: "Videos", value: keyMetrics.videos_considered ?? 0, detail: "scoped artifacts" },
+    { label: "Channels", value: keyMetrics.channels_in_scope ?? 0, detail: "category scope" },
+    { label: "Opportunities", value: keyMetrics.priority_opportunities ?? opportunities.length, detail: "ranked actions" },
+    { label: "Creative packages", value: keyMetrics.creative_packages ?? radarArray(radar.creative_packages).length, detail: "execution-ready" },
+    { label: "Alerts", value: keyMetrics.alerts_considered ?? radarArray(radar.alerts_to_watch).length, detail: "watch items" }
+  ], {
+    title: "Signal to deliverable",
+    subtitle: "How the internal pipeline becomes the commercial radar."
+  });
+}
+
+function radarArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function radarList(items, emptyLabel) {
+  if (!items.length) return `<p>${escapeHtml(emptyLabel)}</p>`;
+  return `<ul class="radar-list">${items.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>`;
+}
+
+function radarSourceList(sourceFiles) {
+  const entries = Object.entries(sourceFiles || {});
+  if (!entries.length) return "<p>No traceable sources recorded</p>";
+  const items = entries
+    .map(([name, source]) => `<li><strong>${escapeHtml(name)}</strong>: ${escapeHtml(source)}</li>`)
+    .join("");
+  return `<ul class="radar-list">${items}</ul>`;
+}
+
+function radarQuotaRows(quota) {
+  const estimated = quota.estimated_units && typeof quota.estimated_units === "object" ? quota.estimated_units : {};
+  const observed = quota.observed_units && typeof quota.observed_units === "object" ? quota.observed_units : {};
+  const endpoints = [...new Set([...Object.keys(estimated), ...Object.keys(observed)])].sort();
+  const rows = endpoints.map((endpoint) => ({
+    endpoint,
+    estimated_units: asNumber(estimated[endpoint]),
+    observed_units: asNumber(observed[endpoint])
+  }));
+  if (quota.total_estimated_units || quota.total_observed_units) {
+    rows.push({
+      endpoint: "total",
+      estimated_units: asNumber(quota.total_estimated_units),
+      observed_units: asNumber(quota.total_observed_units)
+    });
+  }
+  return rows;
 }
 
 function renderBriefScorecard(container, keyMetrics) {

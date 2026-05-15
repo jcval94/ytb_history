@@ -505,6 +505,37 @@ processes:
     depends_on:
       - cli_generate_creative_packages
 
+  - process_id: cli_generate_opportunity_radar
+    name: Generate commercial Opportunity Radar
+    domain: reporting
+    process_type: cli
+    cadence: after_weekly_brief
+    sla_hours: 36
+    command: python -m ytb_history.cli generate-opportunity-radar
+    inputs:
+      - config/commercial_radar.yaml
+      - data/analytics/**
+      - data/alerts/**
+      - data/decision/**
+      - data/topic_intelligence/**
+      - data/creative_packages/**
+      - data/briefs/**
+      - data/reports/**
+    outputs:
+      - data/commercial_radar/**
+    secrets_required: []
+    expected_artifacts:
+      - path: commercial_radar/*/latest_opportunity_radar.json
+        type: json
+        timestamp_field: generated_at
+        required: true
+    dashboard_tabs:
+      - Radar
+      - Brief
+      - Operations
+    depends_on:
+      - cli_generate_weekly_brief
+
   - process_id: cli_build_pages_dashboard
     name: Build pages dashboard
     domain: publishing
@@ -515,6 +546,8 @@ processes:
     inputs:
       - data/analytics/**
       - data/alerts/**
+      - data/briefs/**
+      - data/commercial_radar/**
       - data/operations/**
       - apps/pages_dashboard/**
     outputs:
@@ -528,6 +561,7 @@ processes:
         required: false
     dashboard_tabs:
       - Overview
+      - Radar
       - Videos
       - Channels
       - Scores

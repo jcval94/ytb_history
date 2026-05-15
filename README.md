@@ -251,6 +251,33 @@ Genera un brief semanal determinístico en `data/briefs/` usando únicamente art
 - `latest_weekly_brief.json`
 - versión particionada por semana ISO en `week=YYYY-WW/`
 
+## 12.2.1) Generar Opportunity Radar comercial
+
+```bash
+python -m ytb_history.cli generate-opportunity-radar
+```
+
+Genera un entregable comercial en `data/commercial_radar/<perfil>/` usando solo artefactos ya existentes. El radar esta pensado para vender claridad editorial semanal, no datos crudos:
+- `latest_opportunity_radar.md`
+- `latest_opportunity_radar.html`
+- `latest_opportunity_radar.json`
+
+La implementacion comercial completa esta documentada en [`README_OPPORTUNITY_RADAR.md`](README_OPPORTUNITY_RADAR.md). El dashboard web tambien incluye una pestaña **Radar** que muestra la interfaz de usuario final para prospectos y clientes.
+
+La configuracion comercial vive en `config/commercial_radar.yaml`. El perfil inicial es `spanish_business_ai` y representa el paquete **Weekly YouTube Opportunity Radar** para negocios, finanzas e IA en espanol.
+
+Opciones utiles:
+
+```bash
+python -m ytb_history.cli generate-opportunity-radar --profile spanish_business_ai
+python -m ytb_history.cli generate-opportunity-radar --anonymize --output-dir data/commercial_radar/demo
+```
+
+Notas comerciales y de compliance:
+- El radar expone insights derivados: oportunidades, senales, patrones, paquetes creativos y quota proxy.
+- No debe venderse como feed crudo de YouTube ni como garantia de views.
+- La transcripcion queda fuera del entregable base y solo debe usarse con videos propios, autorizados o provistos por el cliente.
+
 ## 12.3) Construir dataset supervisado model-ready
 
 ```bash
@@ -371,7 +398,7 @@ Archivos generados:
    - `https://jcval94.github.io/ytb_history/`
 5. El dashboard se reconstruye automáticamente cuando cambia `data/analytics/**` o `apps/pages_dashboard/**` (además del builder/CLI/workflow de Pages).
 
-El workflow de Pages construye `build-analytics` → `build-nlp-features` → `generate-alerts` → `build-decision-layer` → `build-model-intelligence` → `build-topic-intelligence` → `generate-creative-packages` → `generate-weekly-brief` → `build-operations` → `build-pages-dashboard` y publica únicamente el artefacto `site/` (incluye tabs Creative y Operations).
+El workflow de Pages construye `build-analytics` → `build-nlp-features` → `generate-alerts` → `build-decision-layer` → `build-model-intelligence` → `build-topic-intelligence` → `generate-creative-packages` → `generate-weekly-brief` → `generate-opportunity-radar` → `build-operations` → `build-pages-dashboard` y publica únicamente el artefacto `site/` (incluye tabs Radar, Creative y Operations).
 
 ## 14) Tests
 
@@ -441,6 +468,9 @@ Editar `config/settings.yaml`:
 - `data/briefs/week=YYYY-WW/weekly_brief.md`
 - `data/briefs/week=YYYY-WW/weekly_brief.html`
 - `data/briefs/week=YYYY-WW/weekly_brief.json`
+- `data/commercial_radar/<perfil>/latest_opportunity_radar.md`
+- `data/commercial_radar/<perfil>/latest_opportunity_radar.html`
+- `data/commercial_radar/<perfil>/latest_opportunity_radar.json`
 - `data/modeling/supervised_examples.csv`
 - `data/modeling/feature_dictionary.json`
 - `data/modeling/target_dictionary.json`
@@ -467,7 +497,7 @@ GitHub Actions ya no ejecuta transcripción local ni pasos dependientes de `yt-d
 - Corre manual (`workflow_dispatch`) y diario (`schedule`).
 - Cron configurado: `17 9 * * *` (UTC).
   - Referencia: **09:17 UTC** ≈ **03:17 en America/Matamoros** dependiendo del horario local.
-- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`, `select-transcription-candidates`.
+- Ejecuta en orden: `compile`, `pytest -q`, `dry-run`, `run`, `validate-latest`, `export-latest`, `build-analytics`, `build-nlp-features`, `generate-alerts`, `build-decision-layer`, `build-model-intelligence`, `build-topic-intelligence`, `generate-creative-packages`, `generate-weekly-brief`, `generate-opportunity-radar`, `select-transcription-candidates`.
 - Valida únicamente el secret `YOUTUBE_API_KEY` y lo usa desde GitHub Secrets **solo** en el paso `run`.
 - Hace commit únicamente cuando hay cambios en `data/` (stagea solo `data/`).
 

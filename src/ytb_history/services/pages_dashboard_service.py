@@ -76,6 +76,12 @@ BRIEF_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_weekly_brief_html", "briefs/latest_weekly_brief.html", "text"),
 )
 
+RADAR_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
+    ("latest_opportunity_radar", "latest_opportunity_radar.json", "json"),
+    ("latest_opportunity_radar_markdown", "latest_opportunity_radar.md", "text"),
+    ("latest_opportunity_radar_html", "latest_opportunity_radar.html", "text"),
+)
+
 MODEL_REPORT_FILE_SPECS: tuple[tuple[str, str, str], ...] = (
     ("latest_model_suite_report_html", "model_reports/latest_model_suite_report.html", "text"),
     ("latest_content_driver_report_html", "model_reports/latest_content_driver_report.html", "text"),
@@ -169,6 +175,14 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
             files_written.append(_write_text(site_root, destination, content))
         brief_outputs[brief_name] = destination
 
+    commercial_radar_outputs = _copy_latest_commercial_radar(
+        data_root=data_root,
+        site_root=site_root,
+        warnings=warnings,
+        row_counts=row_counts,
+        files_written=files_written,
+    )
+
     model_report_outputs: dict[str, str] = {}
     for report_name, report_relative, payload_type in MODEL_REPORT_FILE_SPECS:
         source = data_root / report_relative
@@ -204,6 +218,7 @@ def build_pages_dashboard(*, data_dir: str | Path = "data", site_dir: str | Path
         "tables": tables,
         "row_counts": row_counts,
         "brief_outputs": brief_outputs,
+        "commercial_radar_outputs": commercial_radar_outputs,
         "model_report_outputs": model_report_outputs,
         "data_freshness": freshness["blocks"],
         "warnings": warnings,
@@ -268,6 +283,50 @@ def _ensure_operations_artifacts(*, data_root: Path, warnings: list[str]) -> Non
         build_operations(data_dir=data_root, config_path="config/operations.yaml", repo_dir=".")
     except Exception as exc:  # pragma: no cover - dashboard build should degrade gracefully.
         warnings.append(f"Could not auto-build operations telemetry: {exc}")
+
+
+def _copy_latest_commercial_radar(
+    *,
+    data_root: Path,
+    site_root: Path,
+    warnings: list[str],
+    row_counts: dict[str, int],
+    files_written: list[str],
+) -> dict[str, str]:
+    radar_dir = _latest_commercial_radar_dir(data_root)
+    outputs: dict[str, str] = {}
+    if radar_dir is None:
+        warnings.append(f"Missing commercial radar input: {data_root / 'commercial_radar'}")
+
+    for output_name, filename, payload_type in RADAR_FILE_SPECS:
+        source = radar_dir / filename if radar_dir is not None else None
+        destination = f"data/{filename}"
+        if payload_type == "json":
+            if source is not None and source.exists():
+                payload = _read_json_or_empty(source, output_name, warnings)
+                row_counts[output_name] = _payload_row_count(payload)
+            else:
+                payload = {}
+                row_counts[output_name] = 0
+            files_written.append(_write_json(site_root, destination, payload))
+        else:
+            content = source.read_text(encoding="utf-8") if source is not None and source.exists() else ""
+            files_written.append(_write_text(site_root, destination, content))
+        outputs[output_name] = destination
+
+    return outputs
+
+
+def _latest_commercial_radar_dir(data_root: Path) -> Path | None:
+    radar_root = data_root / "commercial_radar"
+    if not radar_root.exists():
+        return None
+
+    candidates = [path.parent for path in radar_root.glob("*/latest_opportunity_radar.json")]
+    if not candidates:
+        return None
+
+    return max(candidates, key=lambda path: (path / "latest_opportunity_radar.json").stat().st_mtime)
 
 
 def _operations_artifacts_ready(data_root: Path) -> bool:
@@ -523,6 +582,9 @@ def _payload_row_count(payload: dict[str, Any]) -> int:
     alerts = payload.get("alerts")
     if isinstance(alerts, list):
         return len(alerts)
+    opportunities = payload.get("priority_opportunities")
+    if isinstance(opportunities, list):
+        return len(opportunities)
     for key in ("row_count", "alert_count", "total_alerts", "processes_total", "dashboard_impact_rows"):
         value = payload.get(key)
         if isinstance(value, int):

@@ -1,0 +1,23 @@
+schema_version: commercial_radar_v1
+default_profile: spanish_business_ai
+
+profiles:
+  spanish_business_ai:
+    client_name: Pilot Agency Prospect
+    category_name: Negocios, finanzas e IA en espanol
+    package_name: Weekly YouTube Opportunity Radar
+    plan_name: Pilot Radar
+    monthly_price_usd: 750
+    max_channels: 50
+    period_days: 7
+    output_slug: spanish-business-ai
+    include_keywords:
+      - ai
+      - ia
+      - inteligencia artificial
+      - finanza
+      - dinero
+      - negocio
+      - business
+      - emprend
+      - podcast

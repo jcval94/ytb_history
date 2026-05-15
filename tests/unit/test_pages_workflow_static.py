@@ -42,6 +42,7 @@ def test_pages_workflow_build_order() -> None:
     topic_pos = content.find("python -m ytb_history.cli build-topic-intelligence")
     creative_pos = content.find("python -m ytb_history.cli generate-creative-packages")
     brief_pos = content.find("python -m ytb_history.cli generate-weekly-brief")
+    radar_pos = content.find("python -m ytb_history.cli generate-opportunity-radar")
     operations_pos = content.find("python -m ytb_history.cli build-operations")
     pages_pos = content.find("python -m ytb_history.cli build-pages-dashboard")
     operations_refresh_pos = content.find("python -m ytb_history.cli build-operations", operations_pos + 1)
@@ -54,6 +55,7 @@ def test_pages_workflow_build_order() -> None:
     assert topic_pos != -1
     assert creative_pos != -1
     assert brief_pos != -1
+    assert radar_pos != -1
     assert operations_pos != -1
     assert pages_pos != -1
     assert operations_refresh_pos != -1
@@ -69,6 +71,7 @@ def test_pages_workflow_build_order() -> None:
         < topic_pos
         < creative_pos
         < brief_pos
+        < radar_pos
         < operations_pos
         < pages_pos
         < operations_refresh_pos
@@ -91,10 +94,13 @@ def test_pages_workflow_does_not_use_forbidden_commands_or_secrets() -> None:
 def test_pages_workflow_trigger_paths_include_brief_inputs() -> None:
     content = _read(".github/workflows/pages.yml")
     assert "data/briefs/**" in content
+    assert "data/commercial_radar/**" in content
     assert "src/ytb_history/services/brief_service.py" in content
+    assert "src/ytb_history/services/opportunity_radar_service.py" in content
     assert "data/creative_packages/**" in content
     assert "data/topic_intelligence/**" in content
     assert "data/operations/**" in content
+    assert "config/commercial_radar.yaml" in content
     assert "config/operations.yaml" in content
     assert "src/ytb_history/services/creative_packages_service.py" in content
     assert "src/ytb_history/services/topic_intelligence_service.py" in content
