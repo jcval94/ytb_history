@@ -1,0 +1,14 @@
+{
+  "video_id": "yipK0StLn9k",
+  "channel_id": "UCPgVPrgqpALC1s2e63fgKyg",
+  "channel_name": "elWacky",
+  "title": "La Situación De Bobicraft Es Triste",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\yipK0StLn9k.mp3",
+  "transcribed_at": "2026-05-15T01:25:16.282745+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 7610,
+  "text_sha256": "b76065e18cc163e03c863ccdd0b2793b57317c486afbe2c68e595179379248a4",
+  "repo_schema_version": "transcript_metadata_v1"
+}

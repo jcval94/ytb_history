@@ -1,0 +1,14 @@
+{
+  "video_id": "ByJAH8vTgfw",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El día que descubrí el futuro",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ByJAH8vTgfw.mp3",
+  "transcribed_at": "2026-05-15T01:23:12.310750+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1753,
+  "text_sha256": "926df89700dfa13405aee7c1f825a1fa098093c275bce6cc53a22d80ec0ef56f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

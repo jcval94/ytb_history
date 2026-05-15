@@ -1,0 +1,14 @@
+{
+  "video_id": "gV-VoaHsy-c",
+  "channel_id": "UCdfnfXWCGkBAx2cN2l-4u2w",
+  "channel_name": "Semo Historia",
+  "title": "El hundimiento de CDMX no es como lo cuentan #cdmx",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\gV-VoaHsy-c.mp3",
+  "transcribed_at": "2026-05-15T01:24:05.855638+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2833,
+  "text_sha256": "ddd2fa2493abf224169325988ba06358048c07e138839e6ebb20e12eefbbe1d6",
+  "repo_schema_version": "transcript_metadata_v1"
+}

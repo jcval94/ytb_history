@@ -1,0 +1,80 @@
+{
+  "video_id": "VEAic3PrzHM",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre la importancia de estar presente en la vida de los hijos, especialmente durante las cenas familiares. A través de una experiencia personal, destaca cómo la distracción del celular puede afectar la conexión familiar.",
+  "main_topics": [
+    "La importancia de la atención en la familia",
+    "Impacto de la tecnología en las relaciones",
+    "Reflexión sobre la crianza de hijos adolescentes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción Personal",
+      "purpose": "Introducir el tema de la desconexión familiar.",
+      "summary": "El hablante comparte una historia sobre una mujer distraída por el celular mientras su hijo busca atención."
+    },
+    {
+      "section": "Reflexión Propia",
+      "purpose": "Conectar la historia personal con la experiencia del hablante.",
+      "summary": "El hablante se da cuenta de sus propias distracciones y cómo afectan a sus hijos."
+    },
+    {
+      "section": "Llamado a la Acción",
+      "purpose": "Invitar a la audiencia a reflexionar sobre su propia atención hacia sus hijos.",
+      "summary": "Se anima a evitar distracciones durante las cenas en familia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta Provocativa",
+    "hook_text": "¿Cuántas cenas te quedan antes de que se vaya de casa?",
+    "why_it_works": "Genera reflexión inmediata y conexión emocional con los padres que temen la pérdida del tiempo con sus hijos."
+  },
+  "claims": [
+    {
+      "claim": "La atención plena en la familia es esencial para las relaciones sanas.",
+      "support_level": "explicit",
+      "risk": "baja"
+    },
+    {
+      "claim": "El uso del celular en la mesa disminuye la calidad del tiempo familiar.",
+      "support_level": "explicit",
+      "risk": "baja"
+    },
+    {
+      "claim": "Es común distraerse y no notar las necesidades emocionales de los hijos.",
+      "support_level": "implicit",
+      "risk": "media"
+    }
+  ],
+  "examples": [
+    "La historia del niño acariciando el cabello de su madre debe resonar con muchos padres.",
+    "La anécdota del hijo diciendo 'escuchame con los ojos' es un claro llamado a la atención plena."
+  ],
+  "actionable_ideas": [
+    "Eliminar celulares de la mesa durante las cenas.",
+    "Establecer momentos específicos para desconectar de la tecnología y conectar con la familia.",
+    "Reflexionar sobre el tiempo que se tiene con los hijos adolescentes."
+  ],
+  "audience": "Padres de adolescentes",
+  "tone": "Reflexivo y personal",
+  "content_style": "Narrativo con un toque emocional",
+  "retention_devices": [
+    "Historias personales",
+    "Preguntas retóricas",
+    "Ejemplos cotidianos"
+  ],
+  "title_supporting_quotes": [
+    "Escuchame con los ojos.",
+    "Hay batallas que hay que dar para estar presentes."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la parentalidad consciente.",
+    "Publicaciones en redes sociales sobre la desconexión digital.",
+    "Videos cortos sobre la importancia de la atención familiar."
+  ],
+  "risk_notes": [
+    "Puede provocar incomodidad en padres que son conscientes de sus distracciones.",
+    "El mensaje puede ser ignorado por aquellos que no ven problema en el uso del celular."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

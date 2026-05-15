@@ -1,0 +1,84 @@
+{
+  "video_id": "ByJAH8vTgfw",
+  "language": "es",
+  "summary": "En este video, el narrador comparte su asombroso experiencia en Singularity University, ubicada en una base de la NASA en Silicon Valley, donde tuvo clases con figuras notables como Larry Page y Buzz Aldrin, lo cual le permitió vislumbrar el futuro de la tecnología, incluyendo temas como inteligencia artificial y biología sintética.",
+  "main_topics": [
+    "Singularity University",
+    "Experiencia en Silicon Valley",
+    "Clases con expertos",
+    "Futuro de la tecnología",
+    "Impacto de la inteligencia artificial"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la Singularity University",
+      "purpose": "Presentar la temática del video",
+      "summary": "Se plantea la pregunta sobre qué es la Singularity University y su ubicación especial."
+    },
+    {
+      "section": "Experiencia personal",
+      "purpose": "Compartir la experiencia vivida",
+      "summary": "El narrador detalla su proceso de postulación y aceptación en la universidad, junto con sus emociones al formar parte de esa experiencia."
+    },
+    {
+      "section": "Encuentros destacados",
+      "purpose": "Resaltar la importancia de los educadores",
+      "summary": "Se mencionan las clases con figuras emblemáticas de la tecnología y la exploración espacial."
+    },
+    {
+      "section": "Reflexiones sobre el futuro",
+      "purpose": "Discutir implicaciones futuras",
+      "summary": "El narrador reflexiona sobre lo que aprendió y las predicciones sobre tecnología como inteligencia artificial."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta intrigante",
+    "hook_text": "¿Qué carajo es la Singularity University, que queda en una base de la NASA de Silicon Valley?",
+    "why_it_works": "Genera curiosidad inmediata y lleva al espectador a querer aprender sobre un tema poco conocido."
+  },
+  "claims": [
+    {
+      "claim": "La Singularity University ofrece una experiencia única en tecnología avanzada.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los educadores en Singularity University son líderes reconocidos en sus campos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La inteligencia artificial tendrá un impacto significativo en el futuro.",
+      "support_level": "implicit",
+      "risk": "mediano"
+    }
+  ],
+  "examples": [
+    "Clases con Larry Page y Buzz Aldrin.",
+    "Predicciones sobre inteligencia artificial y biología sintética."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la Singularity University.",
+    "Considerar el impacto de la inteligencia artificial en tu vida profesional.",
+    "Estar al tanto de tendencias tecnológicas futuras."
+  ],
+  "audience": "Interesados en tecnología, emprendimiento y el futuro de la inteligencia artificial.",
+  "tone": "Conversacional y reflexivo",
+  "content_style": "Narrativa personal con elementos de asombro y descubrimiento",
+  "retention_devices": [
+    "Narrativa personal",
+    "Uso de anécdotas",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Te lavaron la cabeza, boludo.",
+    "Fue tan increíble que después no podía creer que lo viví."
+  ],
+  "creative_reuse_opportunities": [
+    "Transformar la historia en un artículo o blog.",
+    "Crear una serie de videos sobre experiencias en tecnología.",
+    "Desarrollar un podcast discutiendo la evolución tecnológica."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

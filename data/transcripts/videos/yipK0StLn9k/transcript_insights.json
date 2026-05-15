@@ -1,0 +1,86 @@
+{
+  "video_id": "yipK0StLn9k",
+  "language": "es",
+  "summary": "El video analiza la situación problemática de Bobby Craft, un youtuber de Minecraft que frecuentemente es objeto de críticas y 'funas' en redes sociales, principalmente en Twitter, debido a sus polémicos videos que relacionan temas complejos con el juego. A lo largo del tiempo, ha enfrentado críticas por diversos motivos, incluidos los métodos que utiliza para abordar temas delicados en sus contenidos.",
+  "main_topics": [
+    "Bobby Craft",
+    "Polémicas en YouTube",
+    "Criticas en redes sociales",
+    "Contenidos de Minecraft",
+    "Libertad de expresión"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar a Bobby Craft y el tema del video.",
+      "summary": "Se introduce a Bobby Craft como un youtuber que ha sido criticado en múltiples ocasiones."
+    },
+    {
+      "section": "Polémicas",
+      "purpose": "Analizar las razones de las funas.",
+      "summary": "Se explican las situaciones específicas que han llevado a Bobby Craft a ser criticado, incluyendo polémicas políticas."
+    },
+    {
+      "section": "Respuesta de Bobby Craft",
+      "purpose": "Mostrar la reacción de Bobby Craft a las críticas.",
+      "summary": "Bobby Craft responde a las acusaciones y defiende su contenido."
+    },
+    {
+      "section": "Reflexión y cierre",
+      "purpose": "Cierre del video con una reflexión.",
+      "summary": "Se deja al público una reflexión acerca de las críticas y se agradece por la visualización."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Ten agallas de taguearme la próxima.",
+    "why_it_works": "Provoca curiosidad y lleva a los espectadores a querer saber más sobre la situación de Bobby Craft."
+  },
+  "claims": [
+    {
+      "claim": "Bobby Craft es frecuentemente criticado en Twitter.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las críticas son infundadas en muchas ocasiones.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Bobby Craft aborda temas delicados que pueden ofender a algunos.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Videos sobre el Papa Francisco y elecciones en Venezuela.",
+    "Reacciones negativas por miniaturas y temas tratados."
+  ],
+  "actionable_ideas": [
+    "Crear contenido más sensible y consciente para evitar controversias.",
+    "Fomentar un diálogo abierto y constructivo sobre las críticas.",
+    "Considerar la salud mental del creador ante la presión de las redes sociales."
+  ],
+  "audience": "Jóvenes y adultos interesados en el fenómeno de YouTube y redes sociales.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Respuestas impactantes",
+    "Referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "Ten agallas de taguearme la próxima.",
+    "Al necio no le interesa entender, sino sólo expresar su propia opinión."
+  ],
+  "creative_reuse_opportunities": [
+    "Analizar otros youtubers en situaciones similares.",
+    "Discutir el impacto de las redes sociales en creadores de contenido."
+  ],
+  "risk_notes": [
+    "La crítica constante puede afectar la salud mental del creador.",
+    "Temas sensibles deben manejarse con cuidado para evitar la desinformación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,89 @@
+{
+  "video_id": "rfRFwXnk660",
+  "language": "es",
+  "summary": "El video aborda la crisis emocional y psicológica que enfrentan los adolescentes en la actualidad, destacando estadísticas alarmantes sobre autolesiones, bullying y ansiedad. Se discuten los efectos negativos del uso excesivo de teléfonos y redes sociales en el desarrollo infantil y la salud mental de los jóvenes.",
+  "main_topics": [
+    "Crisis emocional en adolescentes",
+    "Efectos del uso de redes sociales",
+    "Consecuencias de la falta de juego",
+    "Relación entre el smartphone y salud mental",
+    "Impacto en la vida adulta"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el problema de autolesiones en adolescentes.",
+      "summary": "Uno de cada cinco adolescentes se autolesiona, no como intento de suicidio, sino para manejar su dolor emocional."
+    },
+    {
+      "section": "Parte 1: Una generación en crisis",
+      "purpose": "Revisar el estado emocional de los jóvenes y los efectos del bullying y la ansiedad.",
+      "summary": "1 de cada 3 chicos enfrenta bullying en redes sociales. En Latinoamérica, casi la mitad de los jóvenes tiene tristeza persistente."
+    },
+    {
+      "section": "Parte 2: La trampa del plato sin fondo",
+      "purpose": "Explicar cómo el contenido infinito de las redes sociales afecta el comportamiento y la salud.",
+      "summary": "El acceso constante a contenido digital crea una dependencia que afecta el sueño y la salud mental."
+    },
+    {
+      "section": "Parte 3: Los adultos también estamos rotos",
+      "purpose": "Reconocer que el problema no solo afecta a los jóvenes, sino también a los adultos.",
+      "summary": "Los adultos también utilizan el teléfono de manera compulsiva y enfrentan problemas relacionados con su uso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impactante estadística",
+    "hook_text": "1 de cada 5 adolescentes en el mundo se autolesionó alguna vez.",
+    "why_it_works": "Captura la atención del espectador al presentar una cifra alarmante y sorprendente sobre la salud mental de los jóvenes."
+  },
+  "claims": [
+    {
+      "claim": "La crisis emocional en adolescentes es una epidemia global.",
+      "support_level": "explicit",
+      "risk": "alta"
+    },
+    {
+      "claim": "El uso excesivo de redes sociales contribuye a problemas de salud mental.",
+      "support_level": "explicit",
+      "risk": "alta"
+    },
+    {
+      "claim": "El juego es fundamental para el desarrollo cognitivo y emocional.",
+      "support_level": "implicit",
+      "risk": "media"
+    },
+    {
+      "claim": "Los adultos también tienen problemas relacionados con el uso del celular.",
+      "support_level": "weak",
+      "risk": "baja"
+    }
+  ],
+  "examples": [
+    "Cierre de FAO Schwartz y apertura de un Apple Store.",
+    "La estadística del 'síndrome de vibración fantasma'."
+  ],
+  "actionable_ideas": [
+    "Fomentar el juego al aire libre en niños.",
+    "Limitar el uso de dispositivos antes de dormir.",
+    "Realizar pausas digitales para mejorar la concentración."
+  ],
+  "audience": "Padres, educadores y adultos interesados en la salud mental de los jóvenes.",
+  "tone": "Informativo y reflexivo.",
+  "content_style": "Narrativo con ejemplos y datos estadísticos.",
+  "retention_devices": [
+    "Citas impactantes.",
+    "Estadísticas alarmantes.",
+    "Preguntas provocativas."
+  ],
+  "title_supporting_quotes": [
+    "Los resultados son mucho peores de lo que pensábamos."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre salud mental en adolescentes.",
+    "Charlas y talleres para padres sobre el uso de redes sociales."
+  ],
+  "risk_notes": [
+    "Es necesario abordar estos temas con sensibilidad para no alarmar sin ofrecer soluciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

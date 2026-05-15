@@ -1,0 +1,92 @@
+{
+  "video_id": "QBLH2Q3K_aE",
+  "language": "es",
+  "summary": "El video presenta una efectiva configuración de Linux, específicamente en Ubuntu, ideal para computadoras con recursos limitados. El presentador demuestra cómo utilizar múltiples terminales y aplicaciones simultáneamente, destacando el rendimiento eficaz con solo 8 GB de RAM. Además, muestra la instalación y configuración de extensiones que mejoran la experiencia de usuario, optimizando la gestión de escritorios y la apariencia del entorno de trabajo.",
+  "main_topics": [
+    "Configuración de Linux",
+    "Uso de Ubuntu",
+    "Optimización en computadoras antiguas",
+    "Uso de múltiples terminales",
+    "Extensiones de GNOME"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y la configuración mostrada en el video.",
+      "summary": "El presentador expone la posibilidad de utilizar Linux de manera eficiente en hardware limitado."
+    },
+    {
+      "section": "Demostración de configuración",
+      "purpose": "Mostrar cómo se configuran y utilizan múltiples aplicaciones y terminales.",
+      "summary": "Se explica cómo abrir, redimensionar y trabajar con múltiples instancias de aplicaciones y terminales."
+    },
+    {
+      "section": "Configuración de escritorios",
+      "purpose": "Enseñar a personalizar la cantidad de escritorios y atajos de teclado.",
+      "summary": "Se detallan los pasos para ajustar la configuración de escritorios y la personalización de atajos."
+    },
+    {
+      "section": "Instalación de extensiones",
+      "purpose": "Guiar sobre la instalación de extensiones para mejorar el entorno de trabajo.",
+      "summary": "Se muestran diversas extensiones y su configuración para optimizar la experiencia en GNOME."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Motivar a la audiencia a aplicar lo aprendido y fomentar la suscripción.",
+      "summary": "El presentador invita a los espectadores a suscribirse y compartir el video."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing Statement",
+    "hook_text": "Descubrí una configuración brutal para Linux...",
+    "why_it_works": "Capta la atención al prometer una solución efectiva para un problema común en usuarios de Linux."
+  },
+  "claims": [
+    {
+      "claim": "La configuración funciona perfectamente en computadoras con solo 8 GB de RAM.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Las extensiones permiten mejorar notablemente la experiencia de usuario en GNOME.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Linux es más eficiente que Windows y macOS en recursos limitados.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Uso de Alacritty como terminal",
+    "Gestión de escritorios con atajos",
+    "Extensiones Just Perfection y Blur My Shell"
+  ],
+  "actionable_ideas": [
+    "Probar la configuración en un sistema Linux.",
+    "Instalar extensiones de GNOME para mejorar la productividad.",
+    "Personalizar atajos de teclado para un acceso rápido a los escritorios."
+  ],
+  "audience": "Usuarios de Linux, desarrolladores y personas con computadoras antiguas.",
+  "tone": "Informativo y motivador",
+  "content_style": "Práctico, con enfoque en tutoriales visuales.",
+  "retention_devices": [
+    "Demostraciones en tiempo real",
+    "Uso de humor ligero",
+    "Interacción con la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "Esta configuración la verdad es que es increíble porque agiliza mucho el trabajo."
+  ],
+  "creative_reuse_opportunities": [
+    "Tutoriales cortos sobre cada extensión.",
+    "Comparativas entre Linux y otros sistemas operativos.",
+    "Videos enfocados en optimización de hardware antiguo."
+  ],
+  "risk_notes": [
+    "La modificación de configuraciones puede no ser reversible.",
+    "Algunas extensiones pueden causar conflictos con otras configuraciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

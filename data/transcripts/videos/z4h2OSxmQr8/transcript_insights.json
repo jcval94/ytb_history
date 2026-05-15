@@ -1,0 +1,71 @@
+{
+  "video_id": "z4h2OSxmQr8",
+  "language": "es",
+  "summary": "El hablante enfatiza la importancia de vivir auténticamente y ser una buena persona, destacando que no se pueden controlar las opiniones de los demás.",
+  "main_topics": [
+    "Autenticidad",
+    "Vida Honesta",
+    "Influencia personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea principal sobre la autenticidad.",
+      "summary": "Se invita a la audiencia a escuchar atentamente sobre la importancia de ser una buena persona."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar lo que se puede controlar en la vida.",
+      "summary": "Se discute que lo único que se puede controlar es cómo se vive y se actúa."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reiterar el mensaje de autenticidad.",
+      "summary": "Se concluye con la importancia de hablar y vivir con coherencia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Afirmación directa",
+    "hook_text": "Mírame, escucha atentamente.",
+    "why_it_works": "Capta la atención del espectador de inmediato, estableciendo un tono personal y urgente."
+  },
+  "claims": [
+    {
+      "claim": "No puedes controlar las opiniones de los demás.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La autenticidad es clave para una vida plena.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practicar la honestidad en tus interacciones diarias.",
+    "Reflexionar sobre lo que realmente piensas antes de hablar.",
+    "Buscar ser coherente entre tus palabras y acciones."
+  ],
+  "audience": "Personas interesadas en el crecimiento personal y la autenticidad.",
+  "tone": "Reflexivo y motivacional",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Afirmaciones poderosas"
+  ],
+  "title_supporting_quotes": [
+    "Vivir tu mejor vida",
+    "Hablar con autenticidad"
+  ],
+  "creative_reuse_opportunities": [
+    "Publicaciones en redes sociales sobre autenticidad",
+    "Notas de desarrollo personal",
+    "Charlas motivacionales"
+  ],
+  "risk_notes": [
+    "El mensaje podría ser malinterpretado como simple.",
+    "Puede no resonar con quienes buscan técnicas más concretas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

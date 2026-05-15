@@ -1,0 +1,14 @@
+{
+  "video_id": "QBLH2Q3K_aE",
+  "channel_id": "UC4FHiPgS1KXkUMx3dxBUtPg",
+  "channel_name": "HolaMundo",
+  "title": "Esta configuración de LINUX es BRUTAL!",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\QBLH2Q3K_aE.mp3",
+  "transcribed_at": "2026-05-15T01:26:10.312910+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9521,
+  "text_sha256": "177e95c8dd5d950451a5f19e64b7c048ecaf75f7de6050d96bf636896cd8dc74",
+  "repo_schema_version": "transcript_metadata_v1"
+}

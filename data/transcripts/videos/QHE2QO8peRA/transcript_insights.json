@@ -1,0 +1,77 @@
+{
+  "video_id": "QHE2QO8peRA",
+  "language": "unknown",
+  "summary": "The dialogue features a heated exchange regarding the issue of rising gasoline prices, with citizens expressing frustration and the president responding with acknowledgment and reiteration of efforts to address the problem amidst other national concerns.",
+  "main_topics": [
+    "Gasoline Prices",
+    "Economic Concern",
+    "Presidential Response",
+    "Public Frustration"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Public Concern",
+      "purpose": "To state the public's frustration about gas prices.",
+      "summary": "The public expresses deep concern regarding high gasoline prices."
+    },
+    {
+      "section": "Presidential Response",
+      "purpose": "To acknowledge the concern and outline actions being taken.",
+      "summary": "The president reassures the public that measures are being taken to address the situation."
+    },
+    {
+      "section": "Frustration and Dismissal",
+      "purpose": "To illustrate the public's frustration with the president's response.",
+      "summary": "The public's impatience is apparent, with dismissive sentiments towards broader issues."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emotive Response",
+    "hook_text": "We feel your pain, and I'm doing everything I can.",
+    "why_it_works": "It seeks to create a connection with the audience by acknowledging their concerns emotionally."
+  },
+  "claims": [
+    {
+      "claim": "The high price of gasoline is a significant issue for American families.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "The administration is taking steps to address this issue.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Other national issues are prioritized over gas prices.",
+      "support_level": "weak",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promote electric vehicle adoption.",
+    "Increase support for public transportation.",
+    "Implement measures to stabilize fuel prices."
+  ],
+  "audience": "American public concerned about fuel prices",
+  "tone": "Frustrated and confrontational",
+  "content_style": "Casual and conversational",
+  "retention_devices": [
+    "Use of strong language.",
+    "Repetition of concerns.",
+    "Direct address to the president."
+  ],
+  "title_supporting_quotes": [
+    "We need to know what your administration is going to do about it.",
+    "We're doing a war here. There's more important stuff going on."
+  ],
+  "creative_reuse_opportunities": [
+    "Address public response strategies for governmental action.",
+    "Create a follow-up analysis on the impact of energy prices."
+  ],
+  "risk_notes": [
+    "Potential backlash from uncontrolled language.",
+    "Overlooking nuances in public sentiments."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

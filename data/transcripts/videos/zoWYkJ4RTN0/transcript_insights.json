@@ -1,0 +1,77 @@
+{
+  "video_id": "zoWYkJ4RTN0",
+  "language": "es",
+  "summary": "El video analiza el hype y las teorías en torno al tercer tráiler de GTA 6, incluyendo especulaciones sobre la fecha de lanzamiento y el uso de astrología para prever el anuncio, destacando análisis de las posiciones planetarias en relación a lanzamientos pasados de Rockstar.",
+  "main_topics": [
+    "Teorías sobre el tráiler 3 de GTA 6",
+    "Alineación planetaria y astrología",
+    "Fechas especulativas de lanzamiento",
+    "Análisis de tráilers anteriores de Rockstar"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el enfoque del video sobre el tráiler de GTA 6.",
+      "summary": "Inicia comentando sobre el interés por el tráiler 3 y el anuncio oficial de lanzamiento para noviembre."
+    },
+    {
+      "section": "Teorías y rumores",
+      "purpose": "Explorar las especulaciones sobre el lanzamiento del tráiler.",
+      "summary": "Describe cómo los fans analizan las alineaciones planetarias y cómo esto se relaciona con lanzamientos pasados."
+    },
+    {
+      "section": "Estudio de un fan",
+      "purpose": "Presentar un análisis detallado basado en posiciones planetarias.",
+      "summary": "Se describe el proceso de un fan que estudió las posiciones planetarias para predecir la fecha de lanzamiento del tráiler."
+    },
+    {
+      "section": "Conclusión y reflexión",
+      "purpose": "Reflexionar sobre el fenómeno cultural de GTA.",
+      "summary": "Se concluye con una broma sobre la posibilidad de que la predicción resulte cierta y una cita bíblica."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "pasé tres meses trazando las posiciones planetarias para cada salida de tráiler de Rockstar",
+    "why_it_works": "Genera curiosidad sobre la relación entre la astrología y los lanzamientos de videojuegos."
+  },
+  "claims": [
+    {
+      "claim": "El tráiler 3 de GTA 6 se espera que salga pronto.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El análisis astrológico de un fan muestra patrones en lanzamientos pasados.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Fechas como el 12 y 13 de mayo se consideran relevantes.",
+    "La alineación de planetas en fechas de tráilers anteriores se correlaciona."
+  ],
+  "actionable_ideas": [
+    "Seguir en redes sociales las actualizaciones de Rockstar.",
+    "Unirse a foros de discusión sobre GTA 6."
+  ],
+  "audience": "fanáticos de GTA y la industria de los videojuegos.",
+  "tone": "informal y entusiasta",
+  "content_style": "narrativo con análisis",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Referencias a cultura popular"
+  ],
+  "title_supporting_quotes": [
+    "No te jactes del día de mañana porque no sabes qué dará de sí el día."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre las teorías de lanzamiento.",
+    "Desarrollar un video análisis basado en astrología y videojuegos."
+  ],
+  "risk_notes": [
+    "La información sobre fechas es especulativa.",
+    "Las teorías pueden no ser verificables."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

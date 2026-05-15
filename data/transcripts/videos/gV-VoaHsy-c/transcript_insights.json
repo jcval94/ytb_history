@@ -1,0 +1,93 @@
+{
+  "video_id": "gV-VoaHsy-c",
+  "language": "es",
+  "summary": "El video aborda el tema del hundimiento de la Ciudad de México, explicando que aunque es un fenómeno medido y documentado, no es tan alarmante como algunos medios lo pintan. Se discuten las causas y efectos del hundimiento, así como la diferencia en su impacto dependiendo de la ubicación en la ciudad.",
+  "main_topics": [
+    "Hundimiento de la Ciudad de México",
+    "Causas del hundimiento",
+    "Impacto diferencial del hundimiento",
+    "Datos sobre la infraestructura y el agua subterránea"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del hundimiento y la viralidad del mapa de la NASA.",
+      "summary": "Se menciona el mapa viral y la importancia de hablar del hundimiento en la Ciudad de México."
+    },
+    {
+      "section": "Naturaleza del hundimiento",
+      "purpose": "Aclarar el fenómeno del hundimiento.",
+      "summary": "Se destaca que el hundimiento se ha documentado por más de un siglo y se mide con sensores."
+    },
+    {
+      "section": "Efectos del hundimiento",
+      "purpose": "Describir cómo afecta el hundimiento a diferentes áreas de la ciudad.",
+      "summary": "Se explica que el hundimiento no es uniforme y afecta más a ciertas zonas, generando daños estructurales."
+    },
+    {
+      "section": "Causas del hundimiento",
+      "purpose": "Explicar por qué sucede el hundimiento en la ciudad.",
+      "summary": "Se discuten las causas principales: la sobreexplotación del agua subterránea y el peso de los edificios."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Cerrar el tema con un enfoque informativo.",
+      "summary": "Se enfatiza que el fenómeno debe ser entendido con precisión y no provocando pánico."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "Es importante que platiquemos de él por varias razones.",
+    "why_it_works": "Engancha al espectador al prometer información valiosa y necesaria sobre un tema de preocupación común."
+  },
+  "claims": [
+    {
+      "claim": "El hundimiento de la Ciudad de México es un fenómeno real y documentado.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El hundimiento no es uniforme y no afecta por igual a toda la ciudad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La ciudad se hunde principalmente por la sobreexplotación del agua subterránea.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "El hundimiento ha causado daños a edificios, pero no ha resultado en pérdidas de edificios únicamente por este fenómeno.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Informar a la población sobre los mecanismos del hundimiento sin generar pánico.",
+    "Implementar políticas para la gestión sostenible del agua subterránea.",
+    "Realizar inspecciones regulares en zonas afectadas para prevenir daños estructurales."
+  ],
+  "audience": "Público general interesado en temas de urbanismo y medio ambiente.",
+  "tone": "Informativo y reflexivo.",
+  "content_style": "Expositivo con un enfoque en la claridad y precisión.",
+  "retention_devices": [
+    "Datos claros y estadísticas sobre el hundimiento.",
+    "Referencias a estudios de la UNAM y el INEGI.",
+    "Ejemplos visuales del impacto del hundimiento en la ciudad."
+  ],
+  "title_supporting_quotes": [
+    "el hundimiento es real, llevamos más de un siglo documentándolo.",
+    "nunca hemos perdido un edificio sólo por hundimiento."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre los datos del hundimiento.",
+    "Desarrollar un artículo en un blog sobre la historia del hundimiento en la Ciudad de México.",
+    "Organizar una charla comunitaria para educar sobre la gestión del agua."
+  ],
+  "risk_notes": [
+    "La sobreexplotación del agua presenta un riesgo a largo plazo para la estabilidad de la ciudad.",
+    "La información alarmista puede llevar a reacciones contrarias en la población."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

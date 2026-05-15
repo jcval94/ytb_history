@@ -1,0 +1,14 @@
+{
+  "video_id": "rfRFwXnk660",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Salvá a tus hijos (estás a tiempo)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\rfRFwXnk660.mp3",
+  "transcribed_at": "2026-05-15T01:23:04.205376+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8732,
+  "text_sha256": "43b13860cdcb8f7be3725adefeaa4cd9c609815fac0eb7149c7e82a2bd96cc64",
+  "repo_schema_version": "transcript_metadata_v1"
+}

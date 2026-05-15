@@ -1,0 +1,14 @@
+{
+  "video_id": "zoWYkJ4RTN0",
+  "channel_id": "UCPgVPrgqpALC1s2e63fgKyg",
+  "channel_name": "elWacky",
+  "title": "Dicen Que Sale Mañana",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zoWYkJ4RTN0.mp3",
+  "transcribed_at": "2026-05-15T01:23:55.484446+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 7266,
+  "text_sha256": "5144835440fb2bc438b546a48425655ee7b87c5ade262d944822b54991afa00d",
+  "repo_schema_version": "transcript_metadata_v1"
+}
