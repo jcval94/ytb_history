@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-15T01:22:14.997316+00:00",
+  "generated_at": "2026-05-15T11:33:28.833883+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
-  "expected_selected_count": 13,
+  "expected_selected_count": 12,
   "ranked_shortfall": 0,
-  "candidates_considered": 1914,
-  "available_ranked_count": 1883,
+  "candidates_considered": 2013,
+  "available_ranked_count": 1973,
   "source_artifacts": {
     "decision": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
+      "path": "data/decision/latest_action_candidates.csv",
       "exists": true,
-      "row_count": 779,
-      "modified_at": "2026-05-15T01:22:12.285218+00:00"
+      "row_count": 652,
+      "modified_at": "2026-05-15T11:33:21.595102+00:00"
     },
     "model_intelligence": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\model_intelligence\\latest_hybrid_recommendations.csv",
+      "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
       "exists": true,
-      "row_count": 513,
-      "modified_at": "2026-05-15T01:22:12.300479+00:00"
+      "row_count": 379,
+      "modified_at": "2026-05-15T11:33:22.727104+00:00"
     },
     "topic": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\topic_intelligence\\latest_topic_opportunities.csv",
+      "path": "data/topic_intelligence/latest_topic_opportunities.csv",
       "exists": true,
       "row_count": 6,
-      "modified_at": "2026-05-15T01:22:12.332266+00:00"
+      "modified_at": "2026-05-15T11:33:23.972225+00:00"
     },
     "creative": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\creative_packages\\latest_creative_packages.csv",
+      "path": "data/creative_packages/latest_creative_packages.csv",
       "exists": true,
-      "row_count": 674,
-      "modified_at": "2026-05-15T01:22:12.278750+00:00"
+      "row_count": 547,
+      "modified_at": "2026-05-15T11:33:25.114108+00:00"
     },
     "analytics_scores": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_scores.csv",
+      "path": "data/analytics/latest/latest_video_scores.csv",
       "exists": true,
-      "row_count": 1914,
-      "modified_at": "2026-05-15T01:22:12.237804+00:00"
+      "row_count": 2013,
+      "modified_at": "2026-05-15T11:33:16.503099+00:00"
     },
     "analytics_metrics": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_metrics.csv",
+      "path": "data/analytics/latest/latest_video_metrics.csv",
       "exists": true,
-      "row_count": 1914,
-      "modified_at": "2026-05-15T01:22:12.237804+00:00"
+      "row_count": 2013,
+      "modified_at": "2026-05-15T11:33:16.470099+00:00"
     }
   },
-  "selected_count": 13,
-  "selected_forced_count": 3,
+  "selected_count": 12,
+  "selected_forced_count": 2,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
@@ -56,37 +56,35 @@
   ],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
-    "https://www.youtube.com/@bilinkis": 19,
+    "https://www.youtube.com/@bilinkis": 20,
     "https://www.youtube.com/veritasium": 5
   },
-  "forced_candidate_pool_count": 24,
-  "available_forced_before_truncation": 3,
-  "forced_window_cutoff_date": "2026-04-30",
-  "latest_upload_date": "2026-05-14",
+  "forced_candidate_pool_count": 25,
+  "available_forced_before_truncation": 2,
+  "forced_window_cutoff_date": "2026-05-01",
+  "latest_upload_date": "2026-05-15",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 21,
-  "persisted_transcript_success_count": 21,
+  "registry_existing_success_count": 33,
+  "persisted_transcript_success_count": 33,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 8,
-  "skipped_already_transcribed": 21,
+  "registry_existing_recent_failed_count": 6,
+  "skipped_already_transcribed": 33,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 7,
-  "skipped_forced_already_transcribed": 10,
+  "skipped_recent_failures": 5,
+  "skipped_forced_already_transcribed": 13,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 1,
+  "skipped_forced_recent_failures": 0,
   "skipped_forced_outside_window": 10,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "VEAic3PrzHM",
-    "rfRFwXnk660",
-    "ByJAH8vTgfw",
-    "4LFP-oTXUN8",
-    "QHE2QO8peRA"
+    "w8y1_GB7wLM",
+    "PBJZdZSTGlE",
+    "QouigspVqvw",
+    "2OlWcZcMnQQ",
+    "iW-xD8UiTZQ"
   ],
-  "warnings": [
-    "forced_channels_window_anchored_to_latest_upload_date"
-  ]
+  "warnings": []
 }

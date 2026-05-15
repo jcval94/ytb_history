@@ -1,9 +1,9 @@
 {
   "status": "success",
-  "generated_at": "2026-05-14T11:24:35.834867+00:00",
+  "generated_at": "2026-05-15T11:33:22.728221+00:00",
   "prediction_rows": 0,
-  "decision_rows": 779,
-  "hybrid_rows": 513,
+  "decision_rows": 652,
+  "hybrid_rows": 379,
   "warnings": [
     "Predictions file not found: data/predictions/latest_predictions.csv"
   ],

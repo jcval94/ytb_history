@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,15,69.4081,76.9994,76.3,TkDWgKCjdtU,I Tested Every Zack D. Films Video (Again),Priorizar ideas rápidas y publicar en ventana corta.
+create_fast_reaction,create_fast_reaction,1,72.1054,72.1054,77.5,XfGEMCb6BQU,What's Hidden Under Antarctica?,Priorizar ideas rápidas y publicar en ventana corta.
 create_evergreen,create_evergreen,0,0.0,0.0,0.0,,,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,0,0.0,0.0,0.0,,,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,480,58.4101,73.0373,84.5517,-8Xee3Y4Yeg,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,66,66.9493,88.0,77.1856,UCLe_q9axMaeTbjN0hy1Z9xA,"This Military Chef Makes $2,000 Monthly FOREVER",Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,218,69.6778,88.0,91.2798,UCBBWpss2iXVXtTzl7-4eWbg,Buscar con tus PROPIAS MANOS a tu HERMANO en FOSAS CLANDESTINAS- Más allá del rosa con Jael Jacobo,Esperar confirmación de tendencia en próxima corrida.
+analyze_reference,analyze_reference,3,71.3137,81.1241,66.6667,X9LVL35yvio,"Si vas a votar en las elecciones de Colombia, te invito a ver este video",Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,478,59.1602,72.2051,86.2877,-8Xee3Y4Yeg,¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵,Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,66,68.7101,88.0,79.322,UCLe_q9axMaeTbjN0hy1Z9xA,The Saddest Moment in Financial Audit History,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,104,73.0534,88.0,92.4688,UCBBWpss2iXVXtTzl7-4eWbg,Buscar con tus PROPIAS MANOS a tu HERMANO en FOSAS CLANDESTINAS- Más allá del rosa con Jael Jacobo,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.

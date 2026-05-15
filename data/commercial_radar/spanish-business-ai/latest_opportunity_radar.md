@@ -4,86 +4,86 @@
 - Cliente/perfil: Pilot Agency Prospect
 - Categoria: Negocios, finanzas e IA en espanol
 - Oferta: Pilot Radar - USD 750/mes - hasta 50 canales
-- Generado: 2026-05-15T03:39:10.201465+00:00
+- Generado: 2026-05-15T11:33:27.724262+00:00
 - Vender como Weekly YouTube Opportunity Radar para Negocios, finanzas e IA en espanol, no como dashboard generico.
 - Oferta recomendada: Pilot Radar desde USD 750/mes para hasta 50 canales.
-- Esta corrida resume 1098 videos y 95 canales en el alcance comercial configurado.
+- Esta corrida resume 1150 videos y 96 canales en el alcance comercial configurado.
 - El entregable muestra senales y oportunidades, no promesas de views ni causalidad.
 - El dashboard queda como anexo de evidencia; la venta principal es claridad editorial semanal.
 
 ## 2. Que hacer esta semana
 | Tipo | Prioridad | Recomendacion | Score | Evidencia |
 | --- | --- | --- | --- | --- |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 88.00 | Señal channel_high_growth activada con score ajustado 100.0 y confianza high. |
 | monitor_next_run | high | Interpretar señales con cautela por volatilidad. | 88.00 | Señal channel_volatility_warning activada con score ajustado 100.0 y confianza high. |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 87.57 | Señal channel_high_growth activada con score ajustado 99.22 y confianza high. |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 87.14 | Señal channel_high_growth activada con score ajustado 98.45 y confianza high. |
-| monitor_next_run | high | Interpretar señales con cautela por volatilidad. | 87.13 | Señal channel_volatility_warning activada con score ajustado 98.43 y confianza high. |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 86.71 | Señal channel_high_growth activada con score ajustado 97.67 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 88.00 | Señal channel_high_growth activada con score ajustado 100.0 y confianza high. |
+| monitor_next_run | high | Interpretar señales con cautela por volatilidad. | 87.56 | Señal channel_volatility_warning activada con score ajustado 99.21 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 87.15 | Señal channel_high_growth activada con score ajustado 98.46 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 86.72 | Señal channel_high_growth activada con score ajustado 97.69 y confianza high. |
 | monitor_next_run | high | Interpretar señales con cautela por volatilidad. | 86.69 | Señal channel_volatility_warning activada con score ajustado 97.64 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 86.29 | Señal channel_high_growth activada con score ajustado 96.92 y confianza high. |
 | monitor_next_run | high | Interpretar señales con cautela por volatilidad. | 86.25 | Señal channel_volatility_warning activada con score ajustado 96.85 y confianza high. |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 85.85 | Señal channel_high_growth activada con score ajustado 96.12 y confianza high. |
-| benchmark_channel | high | Revisar canal dominante por crecimiento. | 85.42 | Señal channel_high_growth activada con score ajustado 95.35 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 85.86 | Señal channel_high_growth activada con score ajustado 96.15 y confianza high. |
+| benchmark_channel | high | Revisar canal dominante por crecimiento. | 85.44 | Señal channel_high_growth activada con score ajustado 95.38 y confianza high. |
 
 ## 3. Videos acelerando
 | Video | Canal | Views delta | Lectura |
 | --- | --- | --- | --- |
-| Professor Jiang: World War 3 Is About To Begin, Let Me Explain! | The Diary Of A CEO | 1238151 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| Pulitzer Prize Historian: You Won't Notice Until It's Too Late - An... | The Diary Of A CEO | 486065 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| EBT Final Boss \| Financial Audit | Caleb Hammer | 424921 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| I Tested Desert Airbnbs | Sambucha | 350365 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| Predator EXPOSED On Financial Audit | Caleb Hammer | 296625 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| I Tested Every Zack D. Films Video (Again) | Sambucha | 250763 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| Togi is NOT a Millionaire | Caleb Hammer | 209531 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
-| ASÍ TE ROBAN EN LOS CONCIERTOS: BTS en MÉXICO - Ruido Social | Eva Maria Beristain | 199394 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| UFO Roundtable: CIA Physicist Proves Aliens Exist! | The Diary Of A CEO | 1318956 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| The Saddest Moment in Financial Audit History | Caleb Hammer | 879827 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| Professor Jiang: World War 3 Is About To Begin, Let Me Explain! | The Diary Of A CEO | 513556 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| The Worst Finances In Financial Audit History | Caleb Hammer | 217012 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| Jobs AI Can't Replace | Sambucha | 213385 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| Togi is NOT a Millionaire | Caleb Hammer | 212537 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| Most Expensive Commercials Ever | Sambucha | 189939 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
+| Predator EXPOSED On Financial Audit | Caleb Hammer | 181027 | Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing. |
 
 ## 4. Canales a observar
 | Canal | Momentum | Views delta | Que mirar |
 | --- | --- | --- | --- |
-| Two Cents | 98.83 | 4360 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
-| Luna Martínez | 96.09 | 15645 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
-| UN POCO MEJOR | 94.53 | 27521 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
-| Inversión Inteligente - Alain Cortés | 90.62 | 8033 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
-| The Diary Of A CEO | 89.84 | 2418694 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
-| Alejavi Rivera | 89.06 | 51261 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| Inversión Inteligente - Alain Cortés | 94.57 | 974 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| Alejavi Rivera | 92.25 | 19182 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| Emprende Aprendiendo | 91.47 | 28894 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| El Robot de Platón | 88.37 | 122108 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| Moris Dieck \| Finanzas e Inversiones | 87.60 | 90033 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
+| UN POCO MEJOR | 85.27 | 11805 | Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes. |
 
 ## 5. Temas y patrones de titulo
 Temas:
 | Tema | Tipo | Score | Accion |
 | --- | --- | --- | --- |
-| ai_tools | watch_topic | 57.98 | Monitorear señales y validar subtemas antes de escalar |
-| productivity | evergreen_angle | 31.54 | Escalar variante evergreen y reciclar mejores títulos |
-| tutorial | low_priority | 27.29 | Mantener en backlog y revisar siguiente ventana |
+| ai_tools | watch_topic | 65.15 | Monitorear señales y validar subtemas antes de escalar |
+| productivity | evergreen_angle | 54.02 | Escalar variante evergreen y reciclar mejores títulos |
+| tutorial | low_priority | 33.68 | Mantener en backlog y revisar siguiente ventana |
 
 Patrones:
 | Patron | Score | Views delta prom. | Ejemplos |
 | --- | --- | --- | --- |
-| comparison | 20.39 | 13590.35 | Jynxzi (5 Queens) vs Gothamchess \| Human vs Computer \| high gas prices when a Democrat is president vs a Republican |
-| mistake | 15.82 | 240.14 | TRUMP ya está ROMPIENDO la OTAN y este puede ser su PEOR ERROR @VisualPolitik \| 4 errores que NO debes cometer cuando eres joven ⚠️ \| Evita estos errores que te mantienen pobre... |
-| warning | 15.41 | 8746.08 | 24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 \| EL NIETO DE CAPUILINA REGRESO PEOR QUE NUNCA \| La ciencia confirmó el peor miedo de los padres |
-| promise_save | 15.32 | 2728.73 | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal \| La regla del dinero en tus 20s \| El Mapa Entero del Dinero en 21 Minutos |
-| personal_experiment | 15.31 | 75380.20 | 24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 \| Compré la NUEVA Toyota Rav4: Te cuento MI EXPERIENCIA \| Review Honesto \| Probé TODOS los Agentes de IA para Código... Esto Apr... |
+| mistake | 17.84 | 1557.43 | ¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik \| No hagas esto #shorts \| Evita estos errores que te mantienen pobre \| 4 Verdad... |
+| contrarian | 17.38 | 2003.15 | Nadie Le Cree \| Ozempic está DESTRUYENDO negocios que NADIE esperaba \| La verdad sobre PENSAR DEMASIADO - CIENCIA SIMPLIFICADA EP#75 |
+| comparison | 16.69 | 8131.08 | Jynxzi (5 Queens) vs Gothamchess \| Human vs Computer \| ¡Compartí hombre CON MI MAMÁ! Ft. @sargentoleon - T10E10 #infidelidad #storytime #sugardaddy |
+| warning | 15.60 | 3985.37 | 24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 \| ¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik \| EL NIETO DE CAPUILINA REGR... |
+| semantic_finance | 14.76 | 1456.87 | Dejé de cambiar tiempo por dinero \| Werevertumorro \| Dimes y Billetes #453 \| Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal \| Esta es mi tarjeta de cré... |
 
 ## 6. Paquetes creativos accionables
-- **Enfoque fast reaction para create_fast_reaction** | formato: video corto | score: 76.56 | titulo: Lo que significa create_fast_reaction esta semana | hook: ¿Qué cambia realmente con create_fast_reaction?
-- **Enfoque watchlist para tema clave** | formato: video explicativo | score: 75.99 | titulo: tema clave: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con tema clave?
-- **Enfoque watchlist para tema clave** | formato: video explicativo | score: 75.98 | titulo: tema clave: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con tema clave?
-- **Enfoque watchlist para tema clave** | formato: video explicativo | score: 75.72 | titulo: tema clave: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con tema clave?
-- **Enfoque watchlist para tema clave** | formato: video explicativo | score: 75.58 | titulo: tema clave: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con tema clave?
+- **Enfoque watchlist para repackage_idea** | formato: video explicativo | score: 76.10 | titulo: repackage_idea: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con repackage_idea?
+- **Enfoque comparison para analyze_reference** | formato: video explicativo | score: 75.32 | titulo: analyze_reference: comparación simple para decidir mejor | hook: ¿Qué cambia realmente con analyze_reference?
+- **Enfoque watchlist para repackage_idea** | formato: video explicativo | score: 75.19 | titulo: repackage_idea: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con repackage_idea?
+- **Enfoque watchlist para tema clave** | formato: video explicativo | score: 75.07 | titulo: tema clave: lo que conviene observar antes de decidir | hook: ¿Qué cambia realmente con tema clave?
+- **Enfoque repackage para repackage_idea** | formato: video explicativo | score: 75.06 | titulo: Una mejor forma de explicar repackage_idea | hook: ¿Qué cambia realmente con repackage_idea?
 
 ## 7. Alertas y riesgos
-- **metadata_change_watch** (critical): Noticias IA | Mythos está causando problemas -> Vigilar lift posterior del cambio de metadata.
+- **metadata_change_watch** (critical): La Verdad Económica del Nuevo Decreto Pensional en Colombia -> Vigilar lift posterior del cambio de metadata.
+- **metadata_change_watch** (critical): "La Ecuación de la Felicidad" (The Happiness Equation) de Neil Pasricha | Club de Lectura #196 -> Vigilar lift posterior del cambio de metadata.
 - **channel_volatility_warning** (critical): Jessica Fernández García -> Interpretar señales del canal con cautela por alta volatilidad.
 - **channel_high_growth** (critical): Caleb Hammer -> Canal dominante en crecimiento; revisar estrategia.
-- **accelerating_video** (critical): Predator EXPOSED On Financial Audit -> Monitorear próximas corridas; posible video en aceleración.
-- **accelerating_video** (critical): Jynxzi REALIZES -> Monitorear próximas corridas; posible video en aceleración.
+- **channel_volatility_warning** (critical): Jaime Higuera -> Interpretar señales del canal con cautela por alta volatilidad.
 
 ## 8. Cuota y margen operativo
 - Estado: ok
 - Metodo: Proxy based on the latest run quota report and scoped channel share; not a billing meter.
-- Canales en alcance: 95 de base 176
-- Cuota estimada proxy: 476.62 unidades
-- Cuota observada proxy: 170.57 unidades
+- Canales en alcance: 96 de base 176
+- Cuota estimada proxy: 482.73 unidades
+- Cuota observada proxy: 174.55 unidades
 
 ## 9. Politica comercial y metodologia
 - El radar vende insights derivados; no redistribuye un feed crudo de datos de YouTube.
