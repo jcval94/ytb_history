@@ -1,6 +1,6 @@
 {
   "schema_version": "commercial_opportunity_radar_v1",
-  "generated_at": "2026-05-15T11:33:27.724262+00:00",
+  "generated_at": "2026-05-16T10:41:41.937418+00:00",
   "status": "success",
   "profile": {
     "profile_name": "spanish_business_ai",
@@ -29,8 +29,8 @@
     "weekly_brief": "briefs/latest_weekly_brief.json"
   },
   "key_metrics": {
-    "videos_considered": 1150,
-    "channels_in_scope": 96,
+    "videos_considered": 1194,
+    "channels_in_scope": 97,
     "priority_opportunities": 10,
     "creative_packages": 5,
     "alerts_considered": 5,
@@ -40,7 +40,7 @@
   "executive_summary": [
     "Vender como Weekly YouTube Opportunity Radar para Negocios, finanzas e IA en espanol, no como dashboard generico.",
     "Oferta recomendada: Pilot Radar desde USD 750/mes para hasta 50 canales.",
-    "Esta corrida resume 1150 videos y 96 canales en el alcance comercial configurado.",
+    "Esta corrida resume 1194 videos y 97 canales en el alcance comercial configurado.",
     "El entregable muestra senales y oportunidades, no promesas de views ni causalidad.",
     "El dashboard queda como anexo de evidencia; la venta principal es claridad editorial semanal."
   ],
@@ -61,8 +61,8 @@
       "opportunity_type": "benchmark_channel",
       "priority": "high",
       "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 100.0 y confianza high.",
-      "score": 88.0,
+      "evidence": "Señal channel_high_growth activada con score ajustado 99.23 y confianza high.",
+      "score": 87.5727,
       "confidence": "high",
       "timeframe": "this_week",
       "dashboard_tab": "channel_benchmark"
@@ -72,22 +72,11 @@
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 99.21 y confianza high.",
-      "score": 87.5626,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 98.44 y confianza high.",
+      "score": 87.1321,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
-    },
-    {
-      "source": "decision/latest_action_candidates.csv",
-      "opportunity_type": "benchmark_channel",
-      "priority": "high",
-      "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 98.46 y confianza high.",
-      "score": 87.1455,
-      "confidence": "high",
-      "timeframe": "this_week",
-      "dashboard_tab": "channel_benchmark"
     },
     {
       "source": "decision/latest_action_candidates.csv",
@@ -105,8 +94,8 @@
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 97.64 y confianza high.",
-      "score": 86.6879,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 97.66 y confianza high.",
+      "score": 86.6981,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
@@ -127,8 +116,8 @@
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 96.85 y confianza high.",
-      "score": 86.2506,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 96.88 y confianza high.",
+      "score": 86.2642,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
@@ -154,145 +143,156 @@
       "confidence": "high",
       "timeframe": "this_week",
       "dashboard_tab": "channel_benchmark"
+    },
+    {
+      "source": "decision/latest_action_candidates.csv",
+      "opportunity_type": "monitor_next_run",
+      "priority": "high",
+      "recommendation": "Interpretar señales con cautela por volatilidad.",
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 95.31 y confianza high.",
+      "score": 85.3963,
+      "confidence": "high",
+      "timeframe": "next_run",
+      "dashboard_tab": "watchlist"
     }
   ],
   "accelerating_videos": [
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "UFO Roundtable: CIA Physicist Proves Aliens Exist!",
-      "channel_name": "The Diary Of A CEO",
-      "views_delta": 1318956,
-      "engagement_rate": 0.040364,
+      "title": "The Saddest Moment in Financial Audit History",
+      "channel_name": "Caleb Hammer",
+      "views_delta": 707685,
+      "engagement_rate": 0.042925,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "The Saddest Moment in Financial Audit History",
-      "channel_name": "Caleb Hammer",
-      "views_delta": 879827,
-      "engagement_rate": 0.045263,
+      "title": "UFO Roundtable: CIA Physicist Proves Aliens Exist!",
+      "channel_name": "The Diary Of A CEO",
+      "views_delta": 677540,
+      "engagement_rate": 0.038191,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "ES OFICIAL: Estados Unidos reconoce la existencia de OVNIS",
+      "channel_name": "DrossRotzank",
+      "views_delta": 519780,
+      "engagement_rate": 0.08072,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",
       "channel_name": "The Diary Of A CEO",
-      "views_delta": 513556,
-      "engagement_rate": 0.033699,
+      "views_delta": 324946,
+      "engagement_rate": 0.033485,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "The Worst Finances In Financial Audit History",
-      "channel_name": "Caleb Hammer",
-      "views_delta": 217012,
-      "engagement_rate": 0.023751,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Jobs AI Can't Replace",
+      "title": "I Tested Places After Closing (Again)",
       "channel_name": "Sambucha",
-      "views_delta": 213385,
-      "engagement_rate": 0.061387,
+      "views_delta": 204564,
+      "engagement_rate": 0.027258,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Togi is NOT a Millionaire",
       "channel_name": "Caleb Hammer",
-      "views_delta": 212537,
-      "engagement_rate": 0.024061,
+      "views_delta": 149834,
+      "engagement_rate": 0.023679,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "Hasta 250k un boleto para BTS",
+      "channel_name": "Eva Maria Beristain",
+      "views_delta": 124623,
+      "engagement_rate": 0.015322,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Most Expensive Commercials Ever",
       "channel_name": "Sambucha",
-      "views_delta": 189939,
-      "engagement_rate": 0.054247,
+      "views_delta": 120424,
+      "engagement_rate": 0.054785,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Predator EXPOSED On Financial Audit",
       "channel_name": "Caleb Hammer",
-      "views_delta": 181027,
-      "engagement_rate": 0.027119,
+      "views_delta": 120397,
+      "engagement_rate": 0.027275,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Los efectos de la fruta milagrosa",
-      "channel_name": "CdeCiencia",
-      "views_delta": 167088,
-      "engagement_rate": 0.044698,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Haití: El país controlado por Pandillas 🇭🇹",
-      "channel_name": "PlanetaJuan",
-      "views_delta": 134953,
-      "engagement_rate": 0.056195,
+      "title": "Financial Audit Employees Get Free Food DAILY!",
+      "channel_name": "Caleb Hammer",
+      "views_delta": 107085,
+      "engagement_rate": 0.029977,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     }
   ],
   "channels_to_watch": [
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Inversión Inteligente - Alain Cortés",
-      "momentum_score": 94.573643,
-      "views_delta": 974,
-      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
-    },
-    {
-      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Alejavi Rivera",
-      "momentum_score": 92.248062,
-      "views_delta": 19182,
+      "channel_name": "Eduardo Rosas - Finanzas Personales",
+      "momentum_score": 99.224806,
+      "views_delta": 5691,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
       "channel_name": "Emprende Aprendiendo",
-      "momentum_score": 91.472868,
-      "views_delta": 28894,
-      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
-    },
-    {
-      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "El Robot de Platón",
-      "momentum_score": 88.372093,
-      "views_delta": 122108,
-      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
-    },
-    {
-      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Moris Dieck | Finanzas e Inversiones",
-      "momentum_score": 87.596899,
-      "views_delta": 90033,
-      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
-    },
-    {
-      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "UN POCO MEJOR",
-      "momentum_score": 85.271318,
-      "views_delta": 11805,
-      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
-    },
-    {
-      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "The Diary Of A CEO",
-      "momentum_score": 83.72093,
-      "views_delta": 2311122,
+      "momentum_score": 92.248062,
+      "views_delta": 13412,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
       "channel_name": "Eva Maria Beristain",
+      "momentum_score": 89.922481,
+      "views_delta": 306237,
+      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
+    },
+    {
+      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
+      "channel_name": "Alejavi Rivera",
+      "momentum_score": 89.147287,
+      "views_delta": 26322,
+      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
+    },
+    {
+      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
+      "channel_name": "El Robot de Platón",
+      "momentum_score": 87.596899,
+      "views_delta": 95833,
+      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
+    },
+    {
+      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
+      "channel_name": "Moris Dieck | Finanzas e Inversiones",
+      "momentum_score": 86.821705,
+      "views_delta": 67388,
+      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
+    },
+    {
+      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
+      "channel_name": "COMPUESTOS Podcast",
+      "momentum_score": 85.271318,
+      "views_delta": 7423,
+      "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
+    },
+    {
+      "source": "analytics/latest/latest_channel_advanced_metrics.csv",
+      "channel_name": "Inversión Inteligente - Alain Cortés",
       "momentum_score": 82.945736,
-      "views_delta": 149256,
+      "views_delta": 424,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     }
   ],
@@ -301,119 +301,109 @@
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "ai_tools",
       "opportunity_type": "watch_topic",
-      "score": 65.1468,
+      "score": 58.1892,
       "recommended_action": "Monitorear señales y validar subtemas antes de escalar"
     },
     {
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "productivity",
       "opportunity_type": "evergreen_angle",
-      "score": 54.0242,
+      "score": 54.2093,
       "recommended_action": "Escalar variante evergreen y reciclar mejores títulos"
     },
     {
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "tutorial",
       "opportunity_type": "low_priority",
-      "score": 33.6818,
+      "score": 27.2862,
       "recommended_action": "Mantener en backlog y revisar siguiente ventana"
     }
   ],
   "title_patterns": [
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "mistake",
-      "success_score": 17.8428,
-      "avg_views_delta": 1557.4286,
-      "examples": "¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik | No hagas esto #shorts | Evita estos errores que te mantienen pobre | 4 Verdad..."
-    },
-    {
-      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "contrarian",
-      "success_score": 17.383,
-      "avg_views_delta": 2003.1538,
+      "success_score": 16.0529,
+      "avg_views_delta": 1312.9524,
       "examples": "Nadie Le Cree | Ozempic está DESTRUYENDO negocios que NADIE esperaba | La verdad sobre PENSAR DEMASIADO - CIENCIA SIMPLIFICADA EP#75"
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "comparison",
-      "success_score": 16.6929,
-      "avg_views_delta": 8131.0789,
-      "examples": "Jynxzi (5 Queens) vs Gothamchess | Human vs Computer | ¡Compartí hombre CON MI MAMÁ! Ft. @sargentoleon - T10E10 #infidelidad #storytime #sugardaddy"
-    },
-    {
-      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "warning",
-      "success_score": 15.6011,
-      "avg_views_delta": 3985.3667,
-      "examples": "24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 | ¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik | EL NIETO DE CAPUILINA REGR..."
-    },
-    {
-      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "semantic_finance",
-      "success_score": 14.7631,
-      "avg_views_delta": 1456.87,
-      "examples": "Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453 | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | Esta es mi tarjeta de cré..."
+      "pattern": "mistake",
+      "success_score": 15.8841,
+      "avg_views_delta": 718.7619,
+      "examples": "¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik | No hagas esto #shorts | Evita estos errores que te mantienen pobre | 4 Verdad..."
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "promise_save",
-      "success_score": 14.69,
-      "avg_views_delta": 1785.1731,
-      "examples": "Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453 | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | El Mapa Entero del Dinero..."
+      "success_score": 15.8148,
+      "avg_views_delta": 2388.4545,
+      "examples": "Sí, el DINERO Compra la FELICIDAD el problema es... | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | Dejé de cambiar tiempo por dinero | Werevertumor..."
+    },
+    {
+      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
+      "pattern": "warning",
+      "success_score": 15.6529,
+      "avg_views_delta": 6176.8197,
+      "examples": "El PC que nunca vio la luz 😢 | 24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 | ¿Se acerca el FIN de NETANYAHU? El ERROR estratégico en IRÁN que ISRAEL no perdona @VisualPolitik"
+    },
+    {
+      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
+      "pattern": "comparison",
+      "success_score": 15.52,
+      "avg_views_delta": 86574.65,
+      "examples": "Tennis Ball Cannon vs Human Strength | Jynxzi (5 Queens) vs Gothamchess | Human vs Computer"
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "promise_gain",
-      "success_score": 13.691,
-      "avg_views_delta": 1254.28,
-      "examples": "Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | Ya tenemos al GANADOR de la carrera por la IA (y no es OpenAI) | Experto En Negocios Online: La Nueva..."
+      "success_score": 14.6163,
+      "avg_views_delta": 1114.62,
+      "examples": "Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | La Forma Más Fácil De Ganar Dinero Con Claude | Esto es lo que ocurre con los que ganan #shorts"
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "personal_experiment",
-      "success_score": 13.5544,
-      "avg_views_delta": 33009.2,
-      "examples": "24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 | Compré la NUEVA Toyota Rav4: Te cuento MI EXPERIENCIA | Review Honesto | Probé TODOS los Agentes de IA para Código... Esto Apr..."
+      "pattern": "semantic_finance",
+      "success_score": 14.5209,
+      "avg_views_delta": 1692.767,
+      "examples": "Sí, el DINERO Compra la FELICIDAD el problema es... | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | Esta es mi tarjeta de crédito"
+    },
+    {
+      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
+      "pattern": "unknown",
+      "success_score": 12.4413,
+      "avg_views_delta": 8518.7219,
+      "examples": "JYNXZI WHAT 😂 | How Far Away The Moon REALLY Is | The Crystal That Could Destroy All Medicine"
     }
   ],
   "creative_packages": [
     {
       "source": "creative_packages/latest_creative_packages.csv",
       "package_type": "watchlist_package",
-      "angle": "Enfoque watchlist para repackage_idea",
+      "angle": "Enfoque watchlist para tema clave",
       "format": "video explicativo",
-      "score": 76.1021,
+      "score": 75.5643,
       "next_step": "mantener_watchlist",
-      "title_candidate": "repackage_idea: lo que conviene observar antes de decidir",
-      "hook": "¿Qué cambia realmente con repackage_idea?"
-    },
-    {
-      "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "comparison_package",
-      "angle": "Enfoque comparison para analyze_reference",
-      "format": "video explicativo",
-      "score": 75.3192,
-      "next_step": "iniciar_preproduccion",
-      "title_candidate": "analyze_reference: comparación simple para decidir mejor",
-      "hook": "¿Qué cambia realmente con analyze_reference?"
-    },
-    {
-      "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "watchlist_package",
-      "angle": "Enfoque watchlist para repackage_idea",
-      "format": "video explicativo",
-      "score": 75.1898,
-      "next_step": "mantener_watchlist",
-      "title_candidate": "repackage_idea: lo que conviene observar antes de decidir",
-      "hook": "¿Qué cambia realmente con repackage_idea?"
+      "title_candidate": "tema clave: lo que conviene observar antes de decidir",
+      "hook": "¿Qué cambia realmente con tema clave?"
     },
     {
       "source": "creative_packages/latest_creative_packages.csv",
       "package_type": "watchlist_package",
       "angle": "Enfoque watchlist para tema clave",
       "format": "video explicativo",
-      "score": 75.0667,
+      "score": 75.4816,
+      "next_step": "mantener_watchlist",
+      "title_candidate": "tema clave: lo que conviene observar antes de decidir",
+      "hook": "¿Qué cambia realmente con tema clave?"
+    },
+    {
+      "source": "creative_packages/latest_creative_packages.csv",
+      "package_type": "watchlist_package",
+      "angle": "Enfoque watchlist para tema clave",
+      "format": "video explicativo",
+      "score": 75.2515,
       "next_step": "mantener_watchlist",
       "title_candidate": "tema clave: lo que conviene observar antes de decidir",
       "hook": "¿Qué cambia realmente con tema clave?"
@@ -423,29 +413,23 @@
       "package_type": "repackage_package",
       "angle": "Enfoque repackage para repackage_idea",
       "format": "video explicativo",
-      "score": 75.0617,
+      "score": 75.2277,
       "next_step": "iniciar_preproduccion",
       "title_candidate": "Una mejor forma de explicar repackage_idea",
       "hook": "¿Qué cambia realmente con repackage_idea?"
+    },
+    {
+      "source": "creative_packages/latest_creative_packages.csv",
+      "package_type": "fast_reaction_package",
+      "angle": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "score": 75.2087,
+      "next_step": "iniciar_preproduccion",
+      "title_candidate": "Lo que significa create_fast_reaction esta semana",
+      "hook": "¿Qué cambia realmente con create_fast_reaction?"
     }
   ],
   "alerts_to_watch": [
-    {
-      "source": "alerts/latest_alerts.json",
-      "signal_type": "metadata_change_watch",
-      "severity": "critical",
-      "entity": "La Verdad Económica del Nuevo Decreto Pensional en Colombia",
-      "score": 100.0,
-      "recommended_action": "Vigilar lift posterior del cambio de metadata."
-    },
-    {
-      "source": "alerts/latest_alerts.json",
-      "signal_type": "metadata_change_watch",
-      "severity": "critical",
-      "entity": "\"La Ecuación de la Felicidad\" (The Happiness Equation) de Neil Pasricha | Club de Lectura #196",
-      "score": 100.0,
-      "recommended_action": "Vigilar lift posterior del cambio de metadata."
-    },
     {
       "source": "alerts/latest_alerts.json",
       "signal_type": "channel_volatility_warning",
@@ -459,37 +443,53 @@
       "signal_type": "channel_high_growth",
       "severity": "critical",
       "entity": "Caleb Hammer",
-      "score": 100.0,
+      "score": 99.2308,
       "recommended_action": "Canal dominante en crecimiento; revisar estrategia."
+    },
+    {
+      "source": "alerts/latest_alerts.json",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "entity": "People Who Became Famous For Doing Nothing",
+      "score": 99.1632,
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
+    },
+    {
+      "source": "alerts/latest_alerts.json",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "entity": "Boyfriend Prevents Her From Scaling a $50k Business",
+      "score": 99.1109,
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
     },
     {
       "source": "alerts/latest_alerts.json",
       "signal_type": "channel_volatility_warning",
       "severity": "critical",
       "entity": "Jaime Higuera",
-      "score": 99.2126,
+      "score": 98.4375,
       "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad."
     }
   ],
   "quota_report": {
     "status": "ok",
-    "source_run": "data/reports/dt=2026-05-15/run=113141Z",
+    "source_run": "data/reports/dt=2026-05-16/run=104000Z",
     "method": "Proxy based on the latest run quota report and scoped channel share; not a billing meter.",
     "base_channels": 176,
-    "scoped_channels": 96,
-    "scoped_channel_share": 0.5455,
+    "scoped_channels": 97,
+    "scoped_channel_share": 0.5511,
     "estimated_units": {
-      "channels.list": 4.91,
-      "playlistItems.list": 455.45,
-      "videos.list": 22.36
+      "channels.list": 4.96,
+      "playlistItems.list": 460.2,
+      "videos.list": 23.7
     },
     "observed_units": {
-      "channels.list": 3.82,
-      "playlistItems.list": 148.36,
-      "videos.list": 22.36
+      "channels.list": 3.86,
+      "playlistItems.list": 150.46,
+      "videos.list": 23.7
     },
-    "total_estimated_units": 482.73,
-    "total_observed_units": 174.55,
+    "total_estimated_units": 488.86,
+    "total_observed_units": 178.02,
     "operational_limit": 7000,
     "limit_status": "ok"
   },
