@@ -1,7 +1,7 @@
 topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-unknown,1323,118,16449906.0,12433.7914,0.053463,40.0038,11.5577,4.7868,0.0,100.0,77.3469,73.162,NnvIwG0S8WE,Tennis Ball Cannon vs Human Strength,Alex Hormozi
-ai_tools,551,83,4742826.0,8607.6697,0.052627,39.2906,12.4355,5.1454,0.0,80.0,64.2219,58.1892,L8BkLkDtThU,The Saddest Moment in Financial Audit History,Jaime Higuera
-finance_personal,78,23,109266.0,1400.8462,0.057891,39.863,17.3995,7.2752,0.0,40.0,40.2308,49.5037,Xknz4LiogTQ,"Sí, el DINERO Compra la FELICIDAD el problema es...",Mis Propias Finanzas
-tutorial,100,27,121545.0,1215.45,0.049265,31.0834,12.5758,5.1435,0.0,20.0,48.65,27.2862,3duWdYNv3yY,¿Cómo funciona el juego de Oiuja?,Inteligencia Artificial
-productivity,16,9,33610.0,2100.625,0.060991,42.8771,18.4738,7.6388,0.0,60.0,17.5,54.2093,Zt_XxHuDRm4,Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453,Aprendiz Financiero
-news_trends,32,14,35065.0,1095.7812,0.055108,43.4645,7.3785,2.9514,0.0,0.0,25.2917,26.6975,szYJSm5P0YE,Un nuevo hackeo fue frenado ¡gracias a la IA! - El caso de TanStack,Diego Ruzzarin
+unknown,1371,118,23743571.0,17318.4325,0.0531,40.4423,12.8385,5.297,0.0,100.0,76.581,73.1,gNwzZxHjEOs,I Tried Anti-Scream Devices,Alex Hormozi
+ai_tools,572,83,6786395.0,11864.3269,0.052312,39.1585,13.017,5.386,0.0,80.0,64.219,58.2167,oGTO67JoZDQ,I Hired a Hood Translator For Financial Audit,Jaime Higuera
+finance_personal,81,22,52881.0,652.8519,0.056067,36.6616,20.5639,8.3728,0.0,0.0,36.7407,34.196,gztlPinApRE,Esta es mi tarjeta de crédito,Mis Propias Finanzas
+tutorial,102,28,104065.0,1020.2451,0.050754,31.7954,19.1941,7.8386,0.0,40.0,50.2255,35.4047,3duWdYNv3yY,¿Cómo funciona el juego de Oiuja?,Inteligencia Artificial
+productivity,17,9,36785.0,2163.8235,0.062461,40.5931,24.459,10.1937,0.0,60.0,27.0588,57.2454,Zt_XxHuDRm4,Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453,Aprendiz Financiero
+news_trends,33,14,27487.0,832.9394,0.054728,40.7635,9.0085,3.6666,0.0,20.0,28.4545,34.3842,szYJSm5P0YE,Un nuevo hackeo fue frenado ¡gracias a la IA! - El caso de TanStack,Diego Ruzzarin
