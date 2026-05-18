@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-17T10:43:51.454049+00:00",
+  "generated_at": "2026-05-18T02:19:35.642282+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
   "expected_selected_count": 16,
   "ranked_shortfall": 0,
-  "candidates_considered": 2176,
-  "available_ranked_count": 2136,
+  "candidates_considered": 11157,
+  "available_ranked_count": 11106,
   "source_artifacts": {
     "decision": {
       "path": "data/decision/latest_action_candidates.csv",
       "exists": true,
-      "row_count": 775,
-      "modified_at": "2026-05-17T10:43:43.681818+00:00"
+      "row_count": 4289,
+      "modified_at": "2026-05-18T02:19:24.536121+00:00"
     },
     "model_intelligence": {
       "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
       "exists": true,
-      "row_count": 477,
-      "modified_at": "2026-05-17T10:43:44.898824+00:00"
+      "row_count": 2769,
+      "modified_at": "2026-05-18T02:19:25.921156+00:00"
     },
     "topic": {
       "path": "data/topic_intelligence/latest_topic_opportunities.csv",
       "exists": true,
-      "row_count": 6,
-      "modified_at": "2026-05-17T10:43:46.259571+00:00"
+      "row_count": 16,
+      "modified_at": "2026-05-18T02:19:28.131211+00:00"
     },
     "creative": {
       "path": "data/creative_packages/latest_creative_packages.csv",
       "exists": true,
-      "row_count": 672,
-      "modified_at": "2026-05-17T10:43:47.508835+00:00"
+      "row_count": 4059,
+      "modified_at": "2026-05-18T02:19:29.752252+00:00"
     },
     "analytics_scores": {
       "path": "data/analytics/latest/latest_video_scores.csv",
       "exists": true,
-      "row_count": 2176,
-      "modified_at": "2026-05-17T10:43:38.244798+00:00"
+      "row_count": 11157,
+      "modified_at": "2026-05-18T02:18:51.064294+00:00"
     },
     "analytics_metrics": {
       "path": "data/analytics/latest/latest_video_metrics.csv",
       "exists": true,
-      "row_count": 2176,
-      "modified_at": "2026-05-17T10:43:38.206798+00:00"
+      "row_count": 11157,
+      "modified_at": "2026-05-18T02:18:50.870290+00:00"
     }
   },
   "selected_count": 16,
@@ -57,23 +57,23 @@
   ],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
-    "https://www.youtube.com/@bilinkis": 23,
+    "https://www.youtube.com/@bilinkis": 24,
     "https://www.youtube.com/veritasium": 6
   },
-  "forced_candidate_pool_count": 29,
+  "forced_candidate_pool_count": 30,
   "available_forced_before_truncation": 6,
-  "forced_window_cutoff_date": "2026-05-03",
-  "latest_upload_date": "2026-05-17",
+  "forced_window_cutoff_date": "2026-05-04",
+  "latest_upload_date": "2026-05-18",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 33,
-  "persisted_transcript_success_count": 33,
+  "registry_existing_success_count": 44,
+  "persisted_transcript_success_count": 44,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
   "registry_existing_recent_failed_count": 1,
-  "skipped_already_transcribed": 33,
+  "skipped_already_transcribed": 44,
   "skipped_in_progress": 0,
   "skipped_recent_failures": 1,
-  "skipped_forced_already_transcribed": 13,
+  "skipped_forced_already_transcribed": 14,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 0,
   "skipped_forced_outside_window": 10,
@@ -81,11 +81,11 @@
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
+    "HtyVLX7aLuk",
     "mQAGfvOE2EM",
     "OtbHrLODinY",
     "IGCKBKoplVE",
-    "zXvygWE3Ess",
-    "w8y1_GB7wLM"
+    "zXvygWE3Ess"
   ],
   "warnings": []
 }

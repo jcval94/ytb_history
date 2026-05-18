@@ -1,7 +1,17 @@
-topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-unknown,1371,118,23743571.0,17318.4325,0.0531,40.4423,12.8385,5.297,0.0,100.0,76.581,73.1,gNwzZxHjEOs,I Tried Anti-Scream Devices,Alex Hormozi
-ai_tools,572,83,6786395.0,11864.3269,0.052312,39.1585,13.017,5.386,0.0,80.0,64.219,58.2167,oGTO67JoZDQ,I Hired a Hood Translator For Financial Audit,Jaime Higuera
-finance_personal,81,22,52881.0,652.8519,0.056067,36.6616,20.5639,8.3728,0.0,0.0,36.7407,34.196,gztlPinApRE,Esta es mi tarjeta de crédito,Mis Propias Finanzas
-tutorial,102,28,104065.0,1020.2451,0.050754,31.7954,19.1941,7.8386,0.0,40.0,50.2255,35.4047,3duWdYNv3yY,¿Cómo funciona el juego de Oiuja?,Inteligencia Artificial
-productivity,17,9,36785.0,2163.8235,0.062461,40.5931,24.459,10.1937,0.0,60.0,27.0588,57.2454,Zt_XxHuDRm4,Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453,Aprendiz Financiero
-news_trends,33,14,27487.0,832.9394,0.054728,40.7635,9.0085,3.6666,0.0,20.0,28.4545,34.3842,szYJSm5P0YE,Un nuevo hackeo fue frenado ¡gracias a la IA! - El caso de TanStack,Diego Ruzzarin
+content_format,topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
+shorts,unknown,2604,197,9860425.0,3786.6455,0.029419,12.0723,10.6723,4.439,0.0,100.0,72.7154,64.8466,gNwzZxHjEOs,I Tried Anti-Scream Devices,Jaime Higuera
+videos,ai_tools,2228,218,1974509.0,886.2249,0.030309,7.5287,13.8647,5.7864,0.0,80.0,69.7171,59.2017,BTJGr78-zyw,"Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",Firstpost
+shorts,ai_tools,946,112,2125420.0,2246.7442,0.030214,10.271,12.6673,5.2529,0.0,93.3333,66.8132,61.9685,NbcOjP9Cm0I,Financial Audit Guest Demands Money From Me,Jaime Higuera
+videos,unknown,4718,346,3973859.0,842.2762,0.030531,7.145,12.7444,5.3479,0.0,73.3333,76.1234,59.9783,zXvygWE3Ess,How Alpha Particles Can Break Computer Chips,ABC News
+videos,finance_personal,81,31,35831.0,442.358,0.050555,30.0435,29.9791,12.3886,0.0,53.3333,49.3704,53.7953,WSEjAKfLvXM,¿Por qué los PAÍSES más RICOS son los más ENDEUDADOS?,Mis Propias Finanzas
+videos,tutorial,112,50,62850.0,561.1607,0.053524,23.045,28.4642,11.8615,0.0,60.0,54.9554,57.9823,DqU3d7vvfjU,Negociador Del FBI: Cómo Leer La Mente De Cualquiera Y Detectar Mentiras En Segundos,COMPUESTOS Podcast
+videos,productivity,19,13,22585.0,1188.6842,0.044546,29.9234,14.9902,5.9961,0.0,86.6667,31.1053,56.0193,Zt_XxHuDRm4,Dejé de cambiar tiempo por dinero | Werevertumorro | Dimes y Billetes #453,Aprendiz Financiero
+shorts,finance_personal,32,14,23959.0,748.7188,0.055195,33.2031,27.8358,11.6208,0.0,66.6667,33.0208,56.5442,-K1kl2SsKA8,¿Nu puede cerrarte cuentas? #shorts #nu #dinero #ahorros,Omar - Educación Financiera
+shorts,tutorial,65,22,14511.0,223.2462,0.029334,20.534,17.4296,7.0937,0.0,46.6667,46.5897,38.8091,3duWdYNv3yY,¿Cómo funciona el juego de Oiuja?,Inteligencia Artificial
+videos,news_trends,234,33,19282.0,82.4017,0.026068,6.2992,9.529,3.9543,0.0,33.3333,55.9615,32.8575,8Vq_Vm8Pe9Y,''Honduras Gate'' el nuevo plan de U.S.A e Israel para desestabilizar gobiernos.,Imagen Noticias
+shorts,productivity,10,7,2106.0,210.6,0.046546,24.0961,18.7128,8.0453,0.0,40.0,22.8333,38.0735,U0f47Nt9g-Q,Cole Allen: ¿Viaje en el tiempo… o casualidad?,Jaime Higuera
+shorts,news_trends,56,17,36.0,0.6429,0.022094,1.6036,9.2799,3.838,0.0,26.6667,38.4881,23.2213,0SSctcuOy0o,Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia,Imagen Noticias
+unknown,unknown,40,27,0.0,0.0,10.479311,0.0,5.647,2.6375,0.0,0.0,42.2083,33.19,0O8CF6F7CVs,Emisión en directo de Cristina Dayz,Harvard University
+unknown,finance_personal,1,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.6667,35.0,12.8333,1sofoaFEV58,Los 3 primeros pasos para comenzar a invertir desde cero.,Pao Almontes
+unknown,ai_tools,10,7,0.0,0.0,0.150993,0.0,4.4314,2.2536,0.0,13.3333,27.1667,30.6007,dryWd18dhUQ,"DIRECTO | EL ULTIMÁTUM DE XI JINPING A TRUMP, ¿EL FIN DE LA PAZ MUNDIAL?, E IRÁN CONTRA LAS CUERDAS",Yahoo Finance
+unknown,news_trends,1,1,0.0,0.0,0.151832,0.0,44.1744,22.5055,0.0,20.0,39.3334,41.9678,yrtD5qe1s_s,Once Noticias Dominical - Pumas y Pachuca se juegan pase a la final del Clausura 2026 (17/05/2026),Canal Once
