@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 
 from ytb_history.clients.youtube_client import YouTubeClient
+from ytb_history.domain.content_format import classify_content_format
 from ytb_history.domain.models import EnrichmentResult, VideoSnapshot
 from ytb_history.utils.batching import chunked
 from ytb_history.utils.dates import parse_iso8601_utc
@@ -73,6 +74,15 @@ def _normalize_snapshot(*, item: dict, execution_date: datetime, errors: list[st
 
     thumbnails = snippet.get("thumbnails", {}) or {}
 
+    duration_seconds = parse_youtube_duration_to_seconds(content_details.get("duration"))
+    classification = classify_content_format(
+        duration_seconds=duration_seconds,
+        upload_date=published_at,
+        title=snippet.get("title"),
+        description=snippet.get("description"),
+        tags=snippet.get("tags", []) or [],
+    )
+
     return VideoSnapshot(
         execution_date=execution_date,
         channel_id=snippet.get("channelId", "") or "",
@@ -83,10 +93,12 @@ def _normalize_snapshot(*, item: dict, execution_date: datetime, errors: list[st
         upload_date=published_at,
         tags=snippet.get("tags", []) or [],
         thumbnail_url=_pick_thumbnail_url(thumbnails),
-        duration_seconds=parse_youtube_duration_to_seconds(content_details.get("duration")),
+        duration_seconds=duration_seconds,
         views=_safe_int(statistics.get("viewCount")),
         likes=_safe_int(statistics.get("likeCount")),
         comments=_safe_int(statistics.get("commentCount")),
+        content_format=classification.content_format,
+        content_format_reason=classification.reason,
     )
 
 

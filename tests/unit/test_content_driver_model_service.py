@@ -157,3 +157,22 @@ def test_no_api_no_search_list_and_no_models_in_data_git_path(tmp_path: Path) ->
     model_files = list((data_dir / "model_reports").glob("*.pkl"))
     assert not model_files
     assert (artifact_dir / "suite_manifest.json").exists() or True
+
+
+@pytest.mark.skipif(_HAS_SKLEARN is False, reason='sklearn missing')
+def test_trains_content_driver_models_per_format_when_split_inputs_exist(tmp_path: Path) -> None:
+    data_dir, artifact_dir = _prepare_dataset(tmp_path, n_rows=40)
+    root_modeling = data_dir / "modeling" / "supervised_examples.csv"
+    for fmt in ["shorts", "videos"]:
+        split_path = data_dir / "modeling" / "formats" / fmt / "supervised_examples.csv"
+        split_path.parent.mkdir(parents=True, exist_ok=True)
+        split_path.write_text(root_modeling.read_text(encoding="utf-8"), encoding="utf-8")
+
+    result = train_content_driver_models(data_dir=data_dir, artifact_dir=artifact_dir)
+
+    assert result["status"] == "success"
+    assert set(result["format_results"]) == {"shorts", "videos"}
+    assert (artifact_dir / "formats" / "shorts" / "suite_manifest.json").exists()
+    assert (artifact_dir / "formats" / "videos" / "suite_manifest.json").exists()
+    rows = list(csv.DictReader((data_dir / "model_reports" / "latest_content_driver_leaderboard.csv").open("r", encoding="utf-8", newline="")))
+    assert {"shorts", "videos"}.issubset({row["content_format"] for row in rows})

@@ -12,6 +12,8 @@ from pathlib import Path
 from statistics import median
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS, classify_content_format, resolve_content_format
+
 VIDEO_METRICS_COLUMNS = [
     "execution_date",
     "channel_id",
@@ -22,6 +24,8 @@ VIDEO_METRICS_COLUMNS = [
     "duration_seconds",
     "duration_bucket",
     "is_short",
+    "content_format",
+    "content_format_reason",
     "views",
     "likes",
     "comments",
@@ -98,6 +102,7 @@ VIDEO_SCORES_COLUMNS = [
     "views_delta",
     "engagement_rate",
     "video_age_days",
+    "content_format",
     "metadata_changed",
     "growth_percentile",
     "engagement_percentile",
@@ -187,6 +192,7 @@ VIDEO_ADVANCED_COLUMNS = [
     "title",
     "video_age_days",
     "duration_bucket",
+    "content_format",
     "views_delta",
     "likes_delta",
     "comments_delta",
@@ -255,6 +261,7 @@ METRIC_ELIGIBILITY_COLUMNS = [
     "video_id",
     "channel_id",
     "video_age_days",
+    "content_format",
     "short_term_eligible",
     "mid_term_eligible",
     "long_term_eligible",
@@ -390,6 +397,27 @@ def _duration_bucket(duration_seconds: int | None) -> str:
     if duration_seconds <= 600:
         return "mid"
     return "long"
+
+
+def _content_format_for_rows(growth: dict[str, Any], snapshot: dict[str, Any] | None = None) -> tuple[str, str]:
+    snapshot = snapshot or {}
+    existing = resolve_content_format(growth.get("content_format") or snapshot.get("content_format"))
+    classification = classify_content_format(
+        duration_seconds=growth.get("duration_seconds") or snapshot.get("duration_seconds"),
+        upload_date=growth.get("upload_date") or snapshot.get("upload_date"),
+        title=str(growth.get("title") or snapshot.get("title") or ""),
+        description=str(snapshot.get("description") or ""),
+        tags=snapshot.get("tags"),
+    )
+    content_format = classification.content_format if existing == "unknown" else existing
+    reason = str(growth.get("content_format_reason") or snapshot.get("content_format_reason") or classification.reason)
+    return content_format, reason
+
+
+def _filter_growth_rows_by_content_format(rows: list[dict[str, str]], content_format: str) -> list[dict[str, str]]:
+    if content_format == "all":
+        return rows
+    return [row for row in rows if _content_format_for_rows(row)[0] == content_format]
 
 
 def _rank_desc(values: list[float | None]) -> list[str]:
@@ -721,16 +749,25 @@ def build_period_aggregations(rows: list[dict[str, str]], *, grain: str) -> tupl
     return video_rows, channel_rows
 
 
-def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
+def build_analytics(
+    *,
+    data_dir: str | Path = "data",
+    content_format: str = "all",
+    build_format_splits: bool = True,
+) -> dict[str, Any]:
     data_root = Path(data_dir)
     exports_root = data_root / "exports"
-    analytics_root = data_root / "analytics"
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    analytics_root = data_root / "analytics" if normalized_format == "all" else data_root / "analytics" / "formats" / normalized_format
     analytics_latest = analytics_root / "latest"
 
     result: dict[str, Any] = {
         "status": "failed",
         "source_export_dir": None,
         "analytics_dir": str(analytics_latest),
+        "content_format": normalized_format,
         "warnings": [],
         "outputs": {},
     }
@@ -756,12 +793,16 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         warnings.append(f"Faltan archivos de export requeridos: {missing}")
         return result
 
-    growth_rows = _read_csv(required_files["video_growth_summary"])
     snapshot_rows = _read_csv(required_files["latest_snapshots"])
+    snapshots_by_video = {str(row.get("video_id", "")): row for row in snapshot_rows}
+    growth_rows = [
+        row
+        for row in _read_csv(required_files["video_growth_summary"])
+        if normalized_format == "all" or _content_format_for_rows(row, snapshots_by_video.get(str(row.get("video_id", "")), {}))[0] == normalized_format
+    ]
     delta_rows = _read_csv(required_files["latest_deltas"])
     export_summary = json.loads(required_files["export_summary"].read_text(encoding="utf-8"))
 
-    snapshots_by_video = {str(row.get("video_id", "")): row for row in snapshot_rows}
     deltas_by_video = {str(row.get("video_id", "")): row for row in delta_rows}
 
     video_rows: list[dict[str, Any]] = []
@@ -774,6 +815,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         upload_date = str(growth.get("upload_date", "") or snapshot.get("upload_date", ""))
 
         duration_seconds = _to_int(growth.get("duration_seconds") or snapshot.get("duration_seconds"))
+        row_content_format, row_content_format_reason = _content_format_for_rows(growth, snapshot)
         views = _to_int(growth.get("views") or snapshot.get("views"))
         likes = _to_int(growth.get("likes") or snapshot.get("likes"))
         comments = _to_int(growth.get("comments") or snapshot.get("comments"))
@@ -823,6 +865,8 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
             "duration_seconds": "" if duration_seconds is None else str(duration_seconds),
             "duration_bucket": _duration_bucket(duration_seconds),
             "is_short": str(duration_seconds is not None and duration_seconds <= 60),
+            "content_format": row_content_format,
+            "content_format_reason": row_content_format_reason,
             "views": "" if views is None else str(views),
             "likes": "" if likes is None else str(likes),
             "comments": "" if comments is None else str(comments),
@@ -1031,6 +1075,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "views_delta": row["views_delta"],
                 "engagement_rate": row["engagement_rate"],
                 "video_age_days": row["video_age_days"],
+                "content_format": row["content_format"],
                 "metadata_changed": row["metadata_changed"],
                 "growth_percentile": growth_percentiles[idx],
                 "engagement_percentile": engagement_percentiles[idx],
@@ -1108,7 +1153,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         historical_growth_files = [required_files["video_growth_summary"]]
     historical_rows: list[dict[str, str]] = []
     for csv_path in historical_growth_files:
-        historical_rows.extend(_read_csv(csv_path))
+        historical_rows.extend(_filter_growth_rows_by_content_format(_read_csv(csv_path), normalized_format))
 
     period_outputs: dict[str, dict[str, list[dict[str, str]]]] = {}
     for grain in ["daily", "weekly", "monthly"]:
@@ -1381,6 +1426,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "video_id": video_id,
                 "channel_id": channel_id,
                 "video_age_days": row["video_age_days"],
+                "content_format": row["content_format"],
                 "short_term_eligible": str(short_eligible),
                 "mid_term_eligible": str(mid_eligible),
                 "long_term_eligible": str(long_eligible),
@@ -1401,6 +1447,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "title": row["title"],
                 "video_age_days": row["video_age_days"],
                 "duration_bucket": row["duration_bucket"],
+                "content_format": row["content_format"],
                 "views_delta": row["views_delta"],
                 "likes_delta": row["likes_delta"],
                 "comments_delta": row["comments_delta"],
@@ -1533,6 +1580,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
 
     run_metrics = {
         "execution_date": execution_date,
+        "content_format": normalized_format,
         "videos_total": len(video_rows),
         "channels_total": len(channel_rows),
         "total_views": sum((_to_int(row["views"]) or 0) for row in video_rows),
@@ -1731,6 +1779,7 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
     analytics_manifest = {
         "generated_at": _now_iso(),
         "source_export_dir": str(source_export_dir),
+        "content_format": normalized_format,
         "outputs": manifest_outputs,
         "row_counts": row_counts,
         "schema_version": "analytics_v1",
@@ -1848,4 +1897,13 @@ def build_analytics(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "dashboard_index_json": _safe_rel(output_dashboard_index, data_root),
         "analytics_manifest_json": _safe_rel(output_manifest, data_root),
     }
+    if normalized_format == "all" and build_format_splits:
+        format_outputs: dict[str, Any] = {}
+        for fmt in CONTENT_FORMATS:
+            format_outputs[fmt] = build_analytics(
+                data_dir=data_root,
+                content_format=fmt,
+                build_format_splits=False,
+            )
+        result["format_outputs"] = format_outputs
     return result

@@ -231,7 +231,7 @@ def test_no_api_no_search_list_and_writes_only_topic_intelligence(tmp_path: Path
     updated = {path.relative_to(data_dir) for path in data_dir.rglob("*") if path.is_file()}
     created = updated - existing
     assert created
-    assert all(str(path).startswith("topic_intelligence/") for path in created)
+    assert all(path.parts[0] == "topic_intelligence" for path in created)
 
 
 def test_summary_is_json(tmp_path: Path) -> None:

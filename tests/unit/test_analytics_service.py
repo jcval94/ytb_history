@@ -473,6 +473,23 @@ def test_video_metrics_formulas_and_ranks(tmp_path: Path) -> None:
     assert by_id["v-3"]["growth_rank"] == ""
 
 
+def test_build_analytics_writes_format_splits_without_mixing_ids(tmp_path: Path) -> None:
+    _prepare_exports(tmp_path)
+    build_analytics(data_dir=tmp_path)
+
+    shorts = _read_csv(tmp_path / "analytics" / "formats" / "shorts" / "latest" / "latest_video_metrics.csv")
+    videos = _read_csv(tmp_path / "analytics" / "formats" / "videos" / "latest" / "latest_video_metrics.csv")
+    shorts_scores = _read_csv(tmp_path / "analytics" / "formats" / "shorts" / "latest" / "latest_video_scores.csv")
+    videos_scores = _read_csv(tmp_path / "analytics" / "formats" / "videos" / "latest" / "latest_video_scores.csv")
+
+    assert {row["video_id"] for row in shorts} == {"v-1"}
+    assert {row["video_id"] for row in videos} == {"v-2", "v-4"}
+    assert {row["content_format"] for row in shorts} == {"shorts"}
+    assert {row["content_format"] for row in videos} == {"videos"}
+    assert {row["video_id"] for row in shorts_scores} == {"v-1"}
+    assert {row["video_id"] for row in videos_scores} == {"v-2", "v-4"}
+
+
 def test_channel_metrics_aggregation(tmp_path: Path) -> None:
     _prepare_exports(tmp_path)
     build_analytics(data_dir=tmp_path)

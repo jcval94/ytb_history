@@ -22,6 +22,7 @@ ACTION_CANDIDATE_COLUMNS = [
     "channel_id",
     "channel_name",
     "title",
+    "content_format",
     "signal_type",
     "raw_signal_score",
     "adjusted_signal_score",
@@ -56,6 +57,7 @@ CONTENT_OPPORTUNITY_COLUMNS = [
     "source_video_id",
     "source_channel",
     "source_title",
+    "content_format",
     "content_strategy",
     "suggested_angle_type",
     "why_it_matters",
@@ -71,6 +73,7 @@ WATCHLIST_COLUMNS = [
     "entity_id",
     "title",
     "channel_name",
+    "content_format",
     "reason",
     "watch_priority",
     "next_check",
@@ -407,6 +410,7 @@ def build_decision_layer(*, data_dir: str | Path = "data") -> dict[str, Any]:
         channel_id = meta.get("channel_id", "")
         channel_name = meta.get("channel_name", "")
         title = meta.get("title", "") or meta.get("top_video_title", "")
+        content_format = str(meta.get("content_format", "") or "")
         video_id = entity_id if entity_type == "video" else ""
 
         raw_signal_score = _safe_float(row.get("raw_signal_score")) or 0.0
@@ -455,6 +459,7 @@ def build_decision_layer(*, data_dir: str | Path = "data") -> dict[str, Any]:
             "metric_confidence_score": round(metric_confidence_score or 0.0, 4),
             "opportunity_score": opportunity_score,
             "channel_relative_success_score": channel_relative_success_score,
+            "content_format": content_format,
             "source_entity": entity_id,
         }
 
@@ -476,6 +481,7 @@ def build_decision_layer(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "channel_id": channel_id if channel_id else (entity_id if entity_type == "channel" else ""),
                 "channel_name": channel_name,
                 "title": title,
+                "content_format": content_format,
                 "signal_type": signal_type,
                 "raw_signal_score": round(raw_signal_score, 4),
                 "adjusted_signal_score": round(adjusted_signal_score, 4),
@@ -537,6 +543,7 @@ def build_decision_layer(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "source_video_id": row["video_id"],
                 "source_channel": row["channel_name"],
                 "source_title": row["title"],
+                "content_format": row["content_format"],
                 "content_strategy": row["recommended_action"],
                 "suggested_angle_type": row["signal_type"],
                 "why_it_matters": row["reason"],
@@ -558,6 +565,7 @@ def build_decision_layer(*, data_dir: str | Path = "data") -> dict[str, Any]:
                 "entity_id": row["entity_id"],
                 "title": row["title"],
                 "channel_name": row["channel_name"],
+                "content_format": row["content_format"],
                 "reason": row["reason"],
                 "watch_priority": row["priority"],
                 "next_check": row["timeframe"],

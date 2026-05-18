@@ -5,6 +5,7 @@ import json
 import pickle
 from pathlib import Path
 
+from ytb_history.services import model_prediction_service
 from ytb_history.services.model_prediction_service import predict_with_model_artifact
 from ytb_history.services import model_training_service
 from ytb_history.services.model_training_service import train_model_suite
@@ -57,7 +58,7 @@ model_suite:
 
     result = train_model_suite(data_dir=data_dir, modeling_config_path=config, artifact_dir=artifact_dir)
     if result.get("status") == "failed_missing_ml_dependencies":
-        model_path = artifact_dir / "models" / "linear_regularized"
+        model_path = artifact_dir / "models" / "is_top_growth_7d" / "linear_regularized"
         model_path.mkdir(parents=True, exist_ok=True)
         payload = {"model": _DummyBinaryModel(), "feature_list": ["views_delta", "alpha_score"], "task_type": "classification", "model_family": "linear_regularized", "model_id": "dummy-model-1"}
         with (model_path / "model.joblib").open("wb") as handle:
@@ -65,7 +66,7 @@ model_suite:
         suite_manifest = {
             "suite_id": "suite-dummy-1",
             "champions": {"is_top_growth_7d": {"model_id": "dummy-model-1"}},
-            "models": [{"model_id": "dummy-model-1", "path": "models/linear_regularized"}],
+            "models": [{"model_id": "dummy-model-1", "path": "models/is_top_growth_7d/linear_regularized"}],
         }
         _write_json(artifact_dir / "suite_manifest.json", suite_manifest)
     else:
@@ -77,6 +78,11 @@ model_suite:
 class _DummyBinaryModel:
     def predict_proba(self, rows):
         return [[0.3, 0.7] for _ in rows]
+
+
+class _ScoreModel:
+    def predict_proba(self, rows):
+        return [[max(0.0, 1.0 - float(row[0]) / 100.0), min(1.0, float(row[0]) / 100.0)] for row in rows]
 
 
 def test_predict_uses_target_champion_by_default(tmp_path: Path) -> None:
@@ -100,3 +106,52 @@ def test_predict_accepts_model_id(tmp_path: Path) -> None:
 def test_predict_fails_without_inference_data(tmp_path: Path) -> None:
     result = predict_with_model_artifact(model_dir=tmp_path / "missing", data_dir=tmp_path / "data", output_dir=tmp_path / "out")
     assert result["status"] == "failed_no_inference_rows"
+
+
+def test_predict_routes_by_content_format_and_ranks_within_format(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(model_prediction_service, "joblib", None)
+    data_dir = tmp_path / "data"
+    model_dir = tmp_path / "model"
+
+    for fmt, rows in {
+        "shorts": [
+            {"video_id": "s-low", "execution_date": "2026-04-01", "views_delta": 10},
+            {"video_id": "s-high", "execution_date": "2026-04-01", "views_delta": 90},
+        ],
+        "videos": [
+            {"video_id": "v-low", "execution_date": "2026-04-01", "views_delta": 20},
+            {"video_id": "v-high", "execution_date": "2026-04-01", "views_delta": 80},
+        ],
+    }.items():
+        _write_csv(data_dir / "modeling" / "formats" / fmt / "latest_inference_examples.csv", ["video_id", "execution_date", "views_delta"], rows)
+        payload = {"model": _ScoreModel(), "feature_list": ["views_delta"], "task_type": "classification", "model_family": "linear_regularized", "model_id": f"{fmt}-model"}
+        model_path = model_dir / "formats" / fmt / "models" / "is_top_growth_7d" / "linear_regularized"
+        model_path.mkdir(parents=True, exist_ok=True)
+        with (model_path / "model.joblib").open("wb") as handle:
+            pickle.dump(payload, handle)
+
+    _write_json(
+        model_dir / "suite_manifest.json",
+        {
+            "suite_id": "suite-format-test",
+            "champions": {
+                "shorts": {"is_top_growth_7d": {"model_id": "shorts-model"}},
+                "videos": {"is_top_growth_7d": {"model_id": "videos-model"}},
+            },
+            "models": [
+                {"content_format": "shorts", "model_id": "shorts-model", "path": "formats/shorts/models/is_top_growth_7d/linear_regularized"},
+                {"content_format": "videos", "model_id": "videos-model", "path": "formats/videos/models/is_top_growth_7d/linear_regularized"},
+            ],
+        },
+    )
+
+    result = predict_with_model_artifact(model_dir=model_dir, data_dir=data_dir, output_dir=tmp_path / "out", target="is_top_growth_7d")
+
+    assert result["status"] == "success"
+    rows = list(csv.DictReader((tmp_path / "out" / "latest_predictions.csv").open(encoding="utf-8")))
+    by_format = {
+        fmt: {row["video_id"]: row["prediction_rank"] for row in rows if row["content_format"] == fmt}
+        for fmt in ["shorts", "videos"]
+    }
+    assert by_format["shorts"] == {"s-high": "1", "s-low": "2"}
+    assert by_format["videos"] == {"v-high": "1", "v-low": "2"}

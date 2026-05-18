@@ -10,6 +10,8 @@ from pathlib import Path
 from typing import Any
 
 
+CONTENT_FORMATS = ("shorts", "videos")
+
 INPUT_FILES = {
     "action_candidates": Path("decision/latest_action_candidates.csv"),
     "opportunity_matrix": Path("decision/latest_opportunity_matrix.csv"),
@@ -101,6 +103,35 @@ def _write_text(path: Path, content: str) -> None:
 
 def _sort_desc(rows: list[dict[str, Any]], key: str) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda row: (_safe_float(row.get(key)) is not None, _safe_float(row.get(key)) or 0.0), reverse=True)
+
+
+def _content_format(row: dict[str, Any]) -> str:
+    value = str(row.get("content_format", "") or "").strip().lower()
+    return value if value in CONTENT_FORMATS else "unknown"
+
+
+def _format_breakdown(
+    *,
+    video_rows: list[dict[str, Any]],
+    action_rows: list[dict[str, Any]],
+    topic_rows: list[dict[str, Any]],
+    creative_rows: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    breakdown: dict[str, dict[str, Any]] = {}
+    for content_format in CONTENT_FORMATS:
+        videos = [row for row in video_rows if _content_format(row) == content_format]
+        actions = [row for row in action_rows if _content_format(row) == content_format]
+        topics = [row for row in topic_rows if _content_format(row) == content_format]
+        creative = [row for row in creative_rows if _content_format(row) == content_format]
+        breakdown[content_format] = {
+            "videos_total": len(videos),
+            "total_views_delta": round(sum(_safe_float(row.get("views_delta")) or 0.0 for row in videos), 4),
+            "top_actions": len(actions),
+            "topic_opportunities": len(topics),
+            "creative_packages": len(creative),
+            "top_video_ids": [str(row.get("video_id", "")) for row in _sort_desc(videos, "views_delta")[:5] if row.get("video_id")],
+        }
+    return breakdown
 
 
 def _iso_week_parts(period_end: date) -> tuple[str, str, str]:
@@ -246,6 +277,7 @@ def _client_video_items(weekly_json: dict[str, Any], tables: dict[str, Any]) -> 
     for row in _sort_desc(rows, "views_delta")[:5]:
         items.append(
             {
+                "content_format": _content_format(row),
                 "video_id": row.get("video_id", ""),
                 "title": _client_label(row, "title", fallback="Video sin título"),
                 "channel_name": row.get("channel_name", ""),
@@ -277,6 +309,7 @@ def _client_topic_items(tables: dict[str, Any]) -> list[dict[str, Any]]:
     for row in _sort_desc(tables.get("topic_opportunities", []), "topic_opportunity_score")[:5]:
         items.append(
             {
+                "content_format": _content_format(row),
                 "topic": _client_label(row, "topic", fallback="Tema sin etiqueta"),
                 "opportunity_type": row.get("opportunity_type", ""),
                 "score": _safe_float(row.get("topic_opportunity_score")) or 0.0,
@@ -293,6 +326,7 @@ def _client_title_items(tables: dict[str, Any]) -> list[dict[str, Any]]:
         items.append(
             {
                 "pattern": _client_label(row, "title_pattern", fallback="Patrón sin etiqueta"),
+                "content_format": _content_format(row),
                 "success_score": _safe_float(row.get("title_pattern_success_score")) or 0.0,
                 "avg_views_delta": _safe_float(row.get("avg_views_delta")) or 0.0,
                 "example_titles": _short_text(row.get("example_titles", ""), limit=180),
@@ -317,6 +351,7 @@ def _client_recommendation_items(weekly_json: dict[str, Any], tables: dict[str, 
     for row in _sort_desc(tables.get("creative_packages", []), "creative_execution_score")[:4]:
         recs.append(
             {
+                "content_format": _content_format(row),
                 "recommendation": _client_label(row, "creative_angle", "recommended_next_step", fallback="Ejecutar paquete creativo priorizado."),
                 "format": row.get("recommended_format", ""),
                 "timeframe": row.get("recommended_timeframe", ""),
@@ -329,6 +364,7 @@ def _client_recommendation_items(weekly_json: dict[str, Any], tables: dict[str, 
         recs.append(
             {
                 "recommendation": _client_label(row, "recommended_action", "recommendation", fallback="Priorizar acción táctica."),
+                "content_format": _content_format(row),
                 "format": row.get("action_type", ""),
                 "timeframe": row.get("recommended_timeframe", ""),
                 "topic": row.get("topic", ""),
@@ -375,8 +411,8 @@ def _build_client_markdown(summary: dict[str, Any]) -> str:
     lines.extend(["", "## 2. Videos que aceleraron"])
     lines.extend(
         _tabulate(
-            ["video", "canal", "views_delta", "lectura"],
-            [[_short_text(v["title"], limit=70), str(v.get("channel_name", "")), str(v["views_delta"]), v["why_it_matters"]] for v in summary["accelerating_videos"]],
+            ["format", "video", "canal", "views_delta", "lectura"],
+            [[str(v.get("content_format", "")), _short_text(v["title"], limit=70), str(v.get("channel_name", "")), str(v["views_delta"]), v["why_it_matters"]] for v in summary["accelerating_videos"]],
         )
         if summary["accelerating_videos"]
         else ["- Sin videos acelerando detectados."]
@@ -459,6 +495,7 @@ def generate_client_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "status": "success_with_warnings" if warnings else "success",
         "source_files": {key: str(Path(value)) for key, value in CLIENT_INPUT_FILES.items()},
         "executive_summary": executive_summary,
+        "format_breakdown": weekly_json.get("format_breakdown", {}) if isinstance(weekly_json, dict) else {},
         "accelerating_videos": _client_video_items(weekly_json, tables),
         "channels_to_watch": _client_channel_items(weekly_json, tables),
         "emerging_topics": _client_topic_items(tables),
@@ -593,6 +630,12 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "total_action_candidates": len(tables["action_candidates"]),
         "high_priority_actions": len(high_priority_actions),
     }
+    format_breakdown = _format_breakdown(
+        video_rows=tables["video_metrics"],
+        action_rows=actions,
+        topic_rows=topic_opportunities,
+        creative_rows=creative_packages,
+    )
 
     data_quality_notes: list[str] = []
     if low_confidence_signals > 0:
@@ -610,6 +653,7 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         "status": status,
         "executive_summary": executive_summary,
         "key_metrics": key_metrics,
+        "format_breakdown": format_breakdown,
         "top_actions_this_week": actions,
         "top_content_opportunities": content_ops,
         "watchlist_recommendations": watchlist,
@@ -641,12 +685,31 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     markdown_lines.extend(["", "## Key Metrics"])
     markdown_lines.extend(_tabulate(["metric", "value"], [[key, str(value)] for key, value in key_metrics.items()]))
 
+    markdown_lines.extend(["", "## Shorts vs Videos"])
+    markdown_lines.extend(
+        _tabulate(
+            ["content_format", "videos_total", "total_views_delta", "top_actions", "topic_opportunities", "creative_packages"],
+            [
+                [
+                    content_format,
+                    str(values["videos_total"]),
+                    str(values["total_views_delta"]),
+                    str(values["top_actions"]),
+                    str(values["topic_opportunities"]),
+                    str(values["creative_packages"]),
+                ]
+                for content_format, values in format_breakdown.items()
+            ],
+        )
+    )
+
     markdown_lines.extend(["", "## What Actions Should I Take This Week?"])
     markdown_lines.extend(
         _tabulate(
-            ["priority", "action_type", "recommendation", "reason", "confidence_level", "decision_score", "evidence", "dashboard_tab"],
+            ["format", "priority", "action_type", "recommendation", "reason", "confidence_level", "decision_score", "evidence", "dashboard_tab"],
             [
                 [
+                    str(row.get("content_format", "")),
                     str(row.get("priority", "")),
                     str(row.get("action_type", "")),
                     str(row.get("recommended_action", row.get("recommendation", ""))),
@@ -664,9 +727,10 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     markdown_lines.extend(["", "## Top Content Opportunities"])
     markdown_lines.extend(
         _tabulate(
-            ["content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"],
+            ["format", "content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"],
             [
                 [
+                    str(row.get("content_format", "")),
                     str(row.get("content_strategy", "")),
                     str(row.get("source_title", "")),
                     str(row.get("why_it_matters", "")),
@@ -698,9 +762,10 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     markdown_lines.extend(["", "## Topic Opportunities"])
     markdown_lines.extend(
         _tabulate(
-            ["topic", "opportunity_type", "topic_opportunity_score", "recommended_action"],
+            ["format", "topic", "opportunity_type", "topic_opportunity_score", "recommended_action"],
             [
                 [
+                    str(row.get("content_format", "")),
                     str(row.get("topic", "")),
                     str(row.get("opportunity_type", "")),
                     str(row.get("topic_opportunity_score", "")),
@@ -751,9 +816,9 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
         pos_direction = [row for row in content_driver_direction if str(row.get("direction", "")).lower() == "positive"][:5]
         neg_direction = [row for row in content_driver_direction if str(row.get("direction", "")).lower() == "negative"][:5]
         markdown_lines.extend(["### Variables que maximizan future_log_views_delta_7d"])
-        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_growth] or ["- No data"])
+        markdown_lines.extend([f"- [{row.get('content_format', '')}] {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_growth] or ["- No data"])
         markdown_lines.extend(["", "### Variables que maximizan engagement"])
-        markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_engagement] or ["- No data"])
+        markdown_lines.extend([f"- [{row.get('content_format', '')}] {row.get('feature', '')} ({row.get('model_family', '')})" for row in top_engagement] or ["- No data"])
         markdown_lines.extend(["", "### Variables de dirección positiva"])
         markdown_lines.extend([f"- {row.get('feature', '')} ({row.get('direction_method', '')})" for row in pos_direction] or ["- No data"])
         markdown_lines.extend(["", "### Variables de dirección negativa"])
@@ -765,9 +830,10 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     markdown_lines.extend(["", "## Creative Packages to Execute"])
     markdown_lines.extend(
         _tabulate(
-            ["package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
+            ["format", "package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
             [
                 [
+                    str(row.get("content_format", "")),
                     str(row.get("package_type", "")),
                     str(row.get("topic", "")),
                     str(row.get("creative_angle", "")),
@@ -829,10 +895,10 @@ def generate_weekly_brief(*, data_dir: str | Path = "data") -> dict[str, Any]:
     )
 
     markdown_lines.extend(["", "## Top Videos by Growth"])
-    markdown_lines.extend(_tabulate(["video_id", "title", "views_delta"], [[str(r.get("video_id", "")), str(r.get("title", "")), str(r.get("views_delta", ""))] for r in videos_growth]))
+    markdown_lines.extend(_tabulate(["format", "video_id", "title", "views_delta"], [[str(r.get("content_format", "")), str(r.get("video_id", "")), str(r.get("title", "")), str(r.get("views_delta", ""))] for r in videos_growth]))
 
     markdown_lines.extend(["", "## Top Alpha Videos"])
-    markdown_lines.extend(_tabulate(["video_id", "title", "alpha_score"], [[str(r.get("video_id", "")), str(r.get("title", "")), str(r.get("alpha_score", ""))] for r in alpha_videos]))
+    markdown_lines.extend(_tabulate(["format", "video_id", "title", "alpha_score"], [[str(r.get("content_format", "")), str(r.get("video_id", "")), str(r.get("title", "")), str(r.get("alpha_score", ""))] for r in alpha_videos]))
 
     markdown_lines.extend(["", "## Channel Momentum"])
     markdown_lines.extend(_tabulate(["channel_id", "channel_name", "channel_momentum_score"], [[str(r.get("channel_id", "")), str(r.get("channel_name", "")), str(r.get("channel_momentum_score", ""))] for r in channels_momentum]))

@@ -206,7 +206,7 @@ def test_build_model_dataset_no_api_no_search_list_and_writes_only_modeling(tmp_
     updated = {p.relative_to(data_dir) for p in data_dir.rglob("*") if p.is_file()}
     created = updated - existing
     assert created
-    assert all(str(path).startswith("modeling/") for path in created)
+    assert all(path.parts[0] == "modeling" for path in created)
 
 
 def test_latest_inference_examples_excludes_targets_and_future_columns(tmp_path: Path) -> None:
@@ -218,6 +218,22 @@ def test_latest_inference_examples_excludes_targets_and_future_columns(tmp_path:
     assert rows
     columns = set(rows[0].keys())
     assert all(not column.startswith("future_") for column in columns)
+
+
+def test_build_model_dataset_writes_format_splits_and_keeps_format_out_of_features(tmp_path: Path) -> None:
+    data_dir = _prepare_dataset(tmp_path)
+
+    build_model_dataset(data_dir=data_dir)
+
+    shorts_rows = list(csv.DictReader((data_dir / "modeling" / "formats" / "shorts" / "supervised_examples.csv").open("r", encoding="utf-8", newline="")))
+    videos_rows = list(csv.DictReader((data_dir / "modeling" / "formats" / "videos" / "supervised_examples.csv").open("r", encoding="utf-8", newline="")))
+    shorts_features = json.loads((data_dir / "modeling" / "formats" / "shorts" / "feature_dictionary.json").read_text(encoding="utf-8"))
+
+    assert {row["video_id"] for row in shorts_rows} == {"v1"}
+    assert videos_rows == []
+    feature_names = {item["name"] for item in shorts_features["features"]}
+    assert "is_short" not in feature_names
+    assert "content_format" not in feature_names
 
 
 def test_build_model_dataset_uses_first_intraday_capture_per_day(tmp_path: Path) -> None:

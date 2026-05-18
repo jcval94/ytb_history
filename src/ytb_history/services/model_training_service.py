@@ -11,6 +11,9 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+
+from ytb_history.domain.content_format import CONTENT_FORMATS
+
 try:
     import joblib
     _HAS_JOBLIB = True
@@ -38,6 +41,7 @@ _TARGET_COLUMNS = {
     "is_top_growth_7d",
     "outperforms_channel_7d",
 }
+_BANNED_FEATURE_COLUMNS = {"content_format", "content_format_reason", "is_short"}
 
 _INTERPRETABILITY = {
     "linear_regularized": "high",
@@ -107,10 +111,53 @@ def _get_git_sha() -> str | None:
         return None
 
 
+def _write_combined_model_reports(*, data_root: Path) -> None:
+    report_dir = data_root / "model_reports"
+    format_root = report_dir / "formats"
+    leaderboard_rows: list[dict[str, Any]] = []
+    importance_rows: list[dict[str, Any]] = []
+    direction_rows: list[dict[str, Any]] = []
+
+    for fmt in CONTENT_FORMATS:
+        fmt_dir = format_root / fmt
+        lb_path = fmt_dir / "latest_model_leaderboard.csv"
+        fi_path = fmt_dir / "latest_feature_importance.csv"
+        fd_path = fmt_dir / "latest_feature_direction.csv"
+        if lb_path.exists():
+            leaderboard_rows.extend(_read_csv(lb_path))
+        if fi_path.exists():
+            importance_rows.extend(_read_csv(fi_path))
+        if fd_path.exists():
+            direction_rows.extend(_read_csv(fd_path))
+
+    if leaderboard_rows:
+        _write_csv(report_dir / "latest_model_leaderboard.csv", list(leaderboard_rows[0].keys()), leaderboard_rows)
+        _write_json(report_dir / "latest_model_leaderboard.json", {"rows": leaderboard_rows})
+    if importance_rows:
+        _write_csv(report_dir / "latest_feature_importance.csv", list(importance_rows[0].keys()), importance_rows)
+    if direction_rows:
+        _write_csv(report_dir / "latest_feature_direction.csv", list(direction_rows[0].keys()), direction_rows)
+
+    md = "# Model Suite Report\n\n"
+    md += "## Champions by content format\n"
+    for row in leaderboard_rows:
+        if str(row.get("selected_as_champion")) == "True":
+            md += f"- {row.get('content_format')}/{row.get('target')}: {row.get('model_id')} ({row.get('champion_metric')}={row.get('champion_metric_value')})\n"
+    md += "\n**Advertencia**: RF direction es estimada por directional analysis, no por impurity importance.\n"
+    (report_dir / "latest_model_suite_report.md").write_text(md, encoding="utf-8")
+    (report_dir / "latest_model_suite_report.html").write_text(f"<html><body><pre>{md}</pre></body></html>", encoding="utf-8")
+
+
 def _resolve_feature_list(feature_dictionary: dict[str, Any]) -> list[str]:
     features = feature_dictionary.get("features", [])
     names = [str(item.get("name")) for item in features if isinstance(item, dict) and item.get("name")]
-    return [name for name in names if not name.startswith("future_") and name not in _TARGET_COLUMNS]
+    return [
+        name
+        for name in names
+        if not name.startswith("future_")
+        and name not in _TARGET_COLUMNS
+        and name not in _BANNED_FEATURE_COLUMNS
+    ]
 
 
 def _build_matrix(rows: list[dict[str, str]], feature_list: list[str]) -> list[list[float]]:
@@ -203,7 +250,98 @@ def _direction_from_bins(values: list[float], predictions: list[float]) -> tuple
     return direction, round(diff, 6), round(low_avg, 6), round(high_avg, 6)
 
 
-def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: str | Path = "config/modeling.yaml", artifact_dir: str | Path = "build/model_artifact") -> dict[str, Any]:
+def train_model_suite(
+    *,
+    data_dir: str | Path = "data",
+    modeling_config_path: str | Path = "config/modeling.yaml",
+    artifact_dir: str | Path = "build/model_artifact",
+    content_format: str = "all",
+) -> dict[str, Any]:
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+
+    data_root = Path(data_dir)
+    artifact_path = Path(artifact_dir)
+    if normalized_format == "all":
+        format_results: dict[str, dict[str, Any]] = {}
+        model_records: list[dict[str, Any]] = []
+        champions: dict[str, Any] = {}
+        warnings: list[str] = []
+        for fmt in CONTENT_FORMATS:
+            modeling_dir = data_root / "modeling" / "formats" / fmt
+            if not modeling_dir.exists():
+                warnings.append(f"modeling_dir_missing_for_format:{fmt}")
+                continue
+            result = _train_model_suite_single(
+                data_dir=data_root,
+                modeling_config_path=modeling_config_path,
+                artifact_dir=artifact_path / "formats" / fmt,
+                content_format=fmt,
+                modeling_dir=modeling_dir,
+            )
+            format_results[fmt] = result
+            warnings.extend(result.get("warnings", []))
+            if result.get("status") == "success":
+                single_manifest = _read_json(artifact_path / "formats" / fmt / "suite_manifest.json")
+                champions[fmt] = single_manifest.get("champions", {})
+                for model in single_manifest.get("models", []):
+                    item = dict(model)
+                    item["content_format"] = fmt
+                    item["path"] = f"formats/{fmt}/{item.get('path', '')}"
+                    model_records.append(item)
+
+        if not model_records and (data_root / "modeling" / "supervised_examples.csv").exists():
+            return _train_model_suite_single(
+                data_dir=data_root,
+                modeling_config_path=modeling_config_path,
+                artifact_dir=artifact_path,
+                content_format="all",
+                modeling_dir=data_root / "modeling",
+            )
+
+        status = "success" if model_records else "skipped_not_ready"
+        created_at = datetime.now(timezone.utc)
+        suite_manifest = {
+            "schema_version": "model_suite_manifest_v2",
+            "status": status,
+            "suite_id": f"suite-{created_at.strftime('%Y%m%dT%H%M%SZ')}",
+            "created_at": created_at.isoformat(),
+            "content_formats": list(CONTENT_FORMATS),
+            "champions": champions,
+            "models": model_records,
+            "format_results": format_results,
+            "warnings": warnings,
+            "git_sha": _get_git_sha(),
+        }
+        _write_json(artifact_path / "suite_manifest.json", suite_manifest)
+        _write_combined_model_reports(data_root=data_root)
+        return {
+            "status": status,
+            "content_format": "all",
+            "trained_models": len(model_records),
+            "champions": champions,
+            "format_results": format_results,
+            "warnings": warnings,
+        }
+
+    return _train_model_suite_single(
+        data_dir=data_root,
+        modeling_config_path=modeling_config_path,
+        artifact_dir=artifact_path,
+        content_format=normalized_format,
+        modeling_dir=data_root / "modeling" / "formats" / normalized_format,
+    )
+
+
+def _train_model_suite_single(
+    *,
+    data_dir: str | Path = "data",
+    modeling_config_path: str | Path = "config/modeling.yaml",
+    artifact_dir: str | Path = "build/model_artifact",
+    content_format: str = "all",
+    modeling_dir: str | Path | None = None,
+) -> dict[str, Any]:
     if not _HAS_SKLEARN or not _HAS_JOBLIB:
         missing: list[str] = []
         if not _HAS_SKLEARN:
@@ -218,7 +356,7 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
         }
 
     data_root = Path(data_dir)
-    modeling_dir = data_root / "modeling"
+    modeling_dir = Path(modeling_dir) if modeling_dir is not None else data_root / "modeling"
     readiness = _read_json(modeling_dir / "model_readiness_report.json") if (modeling_dir / "model_readiness_report.json").exists() else {}
     recommended_status = str(readiness.get("recommended_status") or "not_ready")
     if recommended_status == "not_ready":
@@ -292,8 +430,8 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
             baselines["decision"] = [_safe_float(item["raw"].get("decision_score")) for item in valid_rows]
 
         for model_family in model_families:
-            model_id = f"{model_family}-{target}-{created_at.strftime('%Y%m%dT%H%M%SZ')}"
-            model_dir = models_root / model_family
+            model_id = f"{content_format}-{model_family}-{target}-{created_at.strftime('%Y%m%dT%H%M%SZ')}"
+            model_dir = models_root / target / model_family
             model_dir.mkdir(parents=True, exist_ok=True)
             try:
                 if model_family == "linear_regularized":
@@ -405,6 +543,7 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
                 baseline_metric_value = max([float(metrics.get(k, -999.0) or -999.0) for k in metrics if k.startswith("lift_vs_baseline_")] + [-999.0])
 
                 leader = {
+                    "content_format": content_format,
                     "model_id": model_id,
                     "model_family": model_family,
                     "task_type": task_type,
@@ -431,10 +570,10 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
                     "created_at": created_at.isoformat(),
                 }
                 leaderboard_rows.append(leader)
-                model_records.append({"model_id": model_id, "model_family": model_family, "target": target, "task_type": task_type, "metrics": metrics, "path": f"models/{model_family}"})
+                model_records.append({"content_format": content_format, "model_id": model_id, "model_family": model_family, "target": target, "task_type": task_type, "metrics": metrics, "path": f"models/{target}/{model_family}"})
 
                 for rank, feature in enumerate(feature_list, start=1):
-                    global_importance.append({"model_id": model_id, "model_family": model_family, "target": target, "feature": feature, "importance_type": "model_native", "importance_value": float(rank * -1), "importance_rank": rank, "direction": None, "direction_method": None, "coefficient": None, "standardized_coefficient": None, "permutation_importance_mean": None, "permutation_importance_std": None, "notes": ""})
+                    global_importance.append({"content_format": content_format, "model_id": model_id, "model_family": model_family, "target": target, "feature": feature, "importance_type": "model_native", "importance_value": float(rank * -1), "importance_rank": rank, "direction": None, "direction_method": None, "coefficient": None, "standardized_coefficient": None, "permutation_importance_mean": None, "permutation_importance_std": None, "notes": ""})
             except Exception as exc:  # noqa: BLE001
                 warnings.append(f"model_failed:{model_family}:{target}:{exc}")
 
@@ -454,7 +593,7 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
         }
 
     for row in leaderboard_rows:
-        model_path = models_root / row["model_family"]
+        model_path = models_root / row["target"] / row["model_family"]
         _write_json(model_path / "training_manifest.json", {"model_id": row["model_id"], "target": row["target"], "task_type": row["task_type"], "suite_id": suite_id, "created_at": created_at.isoformat(), "expires_at_estimate": (created_at + timedelta(days=retention_days)).isoformat(), "feature_list_sha256": fingerprint_text(json.dumps(feature_list, sort_keys=True)), "metrics": {k: row.get(k) for k in ["precision_at_10", "recall_at_10", "roc_auc", "pr_auc", "brier_score", "mae_log", "rmse_log", "spearman_corr"]}})
 
     lb_fields = list(leaderboard_rows[0].keys())
@@ -463,10 +602,10 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
 
     feature_direction_rows: list[dict[str, Any]] = []
     for row in leaderboard_rows:
-        dpath = models_root / row["model_family"] / "feature_direction.csv"
+        dpath = models_root / row["target"] / row["model_family"] / "feature_direction.csv"
         if dpath.exists():
             for drow in _read_csv(dpath):
-                feature_direction_rows.append({"model_id": row["model_id"], "model_family": row["model_family"], "target": row["target"], **drow})
+                feature_direction_rows.append({"content_format": content_format, "model_id": row["model_id"], "model_family": row["model_family"], "target": row["target"], **drow})
 
     _write_csv(artifact_path / "feature_importance_global.csv", list(global_importance[0].keys()), global_importance)
     if feature_direction_rows:
@@ -475,9 +614,10 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
         _write_csv(artifact_path / "feature_direction_global.csv", ["model_id", "model_family", "target", "feature", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction", "notes"], [])
 
     suite_manifest = {
-        "schema_version": "model_suite_manifest_v1",
+        "schema_version": "model_suite_manifest_v2",
         "status": "valid",
         "suite_id": suite_id,
+        "content_format": content_format,
         "created_at": created_at.isoformat(),
         "expires_at_estimate": (created_at + timedelta(days=retention_days)).isoformat(),
         "champions": champions,
@@ -487,7 +627,7 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
     }
     _write_json(artifact_path / "suite_manifest.json", suite_manifest)
 
-    report_dir = data_root / "model_reports"
+    report_dir = data_root / "model_reports" if content_format == "all" else data_root / "model_reports" / "formats" / content_format
     _write_csv(report_dir / "latest_model_leaderboard.csv", lb_fields, leaderboard_rows)
     _write_json(report_dir / "latest_model_leaderboard.json", {"rows": leaderboard_rows})
     _write_csv(report_dir / "latest_feature_importance.csv", list(global_importance[0].keys()), global_importance)
@@ -504,12 +644,12 @@ def train_model_suite(*, data_dir: str | Path = "data", modeling_config_path: st
     (report_dir / "latest_model_suite_report.md").write_text(md, encoding="utf-8")
     (report_dir / "latest_model_suite_report.html").write_text(f"<html><body><pre>{md}</pre></body></html>", encoding="utf-8")
 
-    return {"status": "success", "suite_id": suite_id, "trained_models": len(leaderboard_rows), "champions": champions, "warnings": warnings}
+    return {"status": "success", "content_format": content_format, "suite_id": suite_id, "trained_models": len(leaderboard_rows), "champions": champions, "warnings": warnings}
 
 
-def train_baseline_model(*, data_dir: str | Path = "data", modeling_config_path: str | Path = "config/modeling.yaml", artifact_dir: str | Path = "build/model_artifact") -> dict[str, Any]:
+def train_baseline_model(*, data_dir: str | Path = "data", modeling_config_path: str | Path = "config/modeling.yaml", artifact_dir: str | Path = "build/model_artifact", content_format: str = "all") -> dict[str, Any]:
     """Temporary alias to the model suite trainer."""
-    return train_model_suite(data_dir=data_dir, modeling_config_path=modeling_config_path, artifact_dir=artifact_dir)
+    return train_model_suite(data_dir=data_dir, modeling_config_path=modeling_config_path, artifact_dir=artifact_dir, content_format=content_format)
 
 
 def register_trained_artifact(*, artifact_name: str, workflow_run_id: str, artifact_dir: str | Path = "build/model_artifact", data_dir: str | Path = "data") -> dict[str, Any]:
@@ -520,9 +660,11 @@ def register_trained_artifact(*, artifact_name: str, workflow_run_id: str, artif
 
     suite_manifest = _read_json(suite_manifest_path)
     latest_manifest = {
-        "schema_version": "latest_model_manifest_v1",
+        "schema_version": "latest_model_manifest_v2",
         "status": suite_manifest.get("status", "valid"),
         "suite_id": suite_manifest.get("suite_id"),
+        "content_format": suite_manifest.get("content_format"),
+        "content_formats": suite_manifest.get("content_formats", []),
         "artifact_name": artifact_name,
         "workflow_run_id": workflow_run_id,
         "created_at": suite_manifest.get("created_at"),
@@ -539,7 +681,7 @@ def register_trained_artifact(*, artifact_name: str, workflow_run_id: str, artif
     runs_index_path = registry_dir / "training_runs_index.json"
     runs_index = _read_json(runs_index_path) if runs_index_path.exists() else {"schema_version": "training_runs_index_v1", "runs": []}
     runs = runs_index.get("runs", []) if isinstance(runs_index.get("runs"), list) else []
-    runs.append({"suite_id": latest_manifest.get("suite_id"), "created_at": latest_manifest.get("created_at"), "artifact_name": artifact_name, "workflow_run_id": workflow_run_id, "champions": latest_manifest.get("champions", {}), "models": latest_manifest.get("models", [])})
+    runs.append({"suite_id": latest_manifest.get("suite_id"), "created_at": latest_manifest.get("created_at"), "artifact_name": artifact_name, "workflow_run_id": workflow_run_id, "content_formats": latest_manifest.get("content_formats", []), "champions": latest_manifest.get("champions", {}), "models": latest_manifest.get("models", [])})
 
     _write_json(latest_manifest_path, latest_manifest)
     _write_json(runs_index_path, {"schema_version": "training_runs_index_v1", "runs": runs})

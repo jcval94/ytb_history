@@ -144,9 +144,9 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
 
 def _rel(path: Path, base: Path) -> str:
     try:
-        return str(path.resolve().relative_to(base.resolve()))
+        return path.resolve().relative_to(base.resolve()).as_posix()
     except ValueError:
-        return str(path)
+        return path.as_posix()
 
 
 def _alert_id(execution_date: str, entity_type: str, entity_id: str, signal_type: str) -> str:

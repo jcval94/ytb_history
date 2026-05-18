@@ -41,6 +41,7 @@ VIDEO_TOPICS_COLUMNS = [
     "channel_id",
     "channel_name",
     "title",
+    "content_format",
     "topic_primary",
     "topic_secondary",
     "topic_confidence",
@@ -60,6 +61,7 @@ VIDEO_TOPICS_COLUMNS = [
 ]
 
 TOPIC_METRICS_COLUMNS = [
+    "content_format",
     "topic",
     "video_count",
     "channel_count",
@@ -79,6 +81,7 @@ TOPIC_METRICS_COLUMNS = [
 ]
 
 TITLE_PATTERN_COLUMNS = [
+    "content_format",
     "title_pattern",
     "video_count",
     "total_views_delta",
@@ -92,10 +95,11 @@ TITLE_PATTERN_COLUMNS = [
     "example_titles",
 ]
 
-KEYWORD_COLUMNS = ["keyword", "semantic_group", "video_count", "total_views_delta", "avg_engagement_rate", "top_video_title"]
+KEYWORD_COLUMNS = ["content_format", "keyword", "semantic_group", "video_count", "total_views_delta", "avg_engagement_rate", "top_video_title"]
 
 TOPIC_OPPORTUNITY_COLUMNS = [
     "opportunity_id",
+    "content_format",
     "topic",
     "opportunity_type",
     "topic_opportunity_score",
@@ -306,6 +310,13 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         decision_score = _safe_float(decision_row.get("decision_score") or decision_row.get("final_priority_score") or decision_row.get("action_score"))
         hybrid_decision_score = _safe_float(hybrid_row.get("hybrid_decision_score") or hybrid_row.get("hybrid_score"))
         model_score_percentile = _safe_float(hybrid_row.get("model_score_percentile") or hybrid_row.get("prediction_percentile"))
+        content_format = str(
+            row.get("content_format")
+            or score_row.get("content_format")
+            or decision_row.get("content_format")
+            or hybrid_row.get("content_format")
+            or "unknown"
+        )
 
         video_topic_rows.append(
             {
@@ -314,6 +325,7 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
                 "channel_id": row.get("channel_id", ""),
                 "channel_name": row.get("channel_name", ""),
                 "title": title,
+                "content_format": content_format,
                 "topic_primary": topic_primary,
                 "topic_secondary": topic_secondary,
                 "topic_confidence": topic_confidence,
@@ -333,19 +345,19 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         )
 
     # Topic aggregates
-    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in video_topic_rows:
-        grouped[str(row.get("topic_primary", "unknown"))].append(row)
+        grouped[(str(row.get("content_format", "unknown")), str(row.get("topic_primary", "unknown")))].append(row)
 
-    velocity_base = {topic: _avg([_safe_float(r.get("views_delta")) for r in rows]) for topic, rows in grouped.items()}
+    velocity_base = {key: _avg([_safe_float(r.get("views_delta")) for r in rows]) for key, rows in grouped.items()}
     velocity_percentile = _percentile_map(velocity_base)
-    engagement_percentile = _percentile_map({topic: _avg([_safe_float(r.get("engagement_rate")) for r in rows]) for topic, rows in grouped.items()})
+    engagement_percentile = _percentile_map({key: _avg([_safe_float(r.get("engagement_rate")) for r in rows]) for key, rows in grouped.items()})
 
-    saturation_video_pct = _percentile_map({topic: float(len(rows)) for topic, rows in grouped.items()})
-    saturation_channel_pct = _percentile_map({topic: float(len({str(r.get('channel_id', '')) for r in rows})) for topic, rows in grouped.items()})
+    saturation_video_pct = _percentile_map({key: float(len(rows)) for key, rows in grouped.items()})
+    saturation_channel_pct = _percentile_map({key: float(len({str(r.get('channel_id', '')) for r in rows})) for key, rows in grouped.items()})
 
     topic_metrics_rows: list[dict[str, Any]] = []
-    for topic, rows in grouped.items():
+    for (content_format, topic), rows in grouped.items():
         video_count = len(rows)
         channel_ids = {str(row.get("channel_id", "")) for row in rows}
         total_views = sum(_safe_float(row.get("views_delta")) for row in rows)
@@ -365,8 +377,8 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
 
         saturation = min(
             100.0,
-            0.40 * saturation_video_pct.get(topic, 0.0)
-            + 0.25 * saturation_channel_pct.get(topic, 0.0)
+            0.40 * saturation_video_pct.get((content_format, topic), 0.0)
+            + 0.25 * saturation_channel_pct.get((content_format, topic), 0.0)
             + 0.20 * cluster_density_score
             + 0.15 * repeated_pattern_score,
         )
@@ -374,8 +386,8 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         signal_score = avg_hybrid if avg_hybrid > 0 else avg_decision
         opportunity = min(
             100.0,
-            0.35 * velocity_percentile.get(topic, 0.0)
-            + 0.20 * engagement_percentile.get(topic, 0.0)
+            0.35 * velocity_percentile.get((content_format, topic), 0.0)
+            + 0.20 * engagement_percentile.get((content_format, topic), 0.0)
             + 0.20 * signal_score
             + 0.15 * avg_alpha
             + 0.10 * avg_model_pct
@@ -387,6 +399,7 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
 
         topic_metrics_rows.append(
             {
+                "content_format": content_format,
                 "topic": topic,
                 "video_count": video_count,
                 "channel_count": len(channel_ids),
@@ -397,7 +410,7 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
                 "avg_decision_score": round(avg_decision, 4),
                 "avg_hybrid_decision_score": round(avg_hybrid, 4),
                 "avg_model_score_percentile": round(avg_model_pct, 4),
-                "topic_velocity_score": round(velocity_percentile.get(topic, 0.0), 4),
+                "topic_velocity_score": round(velocity_percentile.get((content_format, topic), 0.0), 4),
                 "topic_saturation_score": round(saturation, 4),
                 "topic_opportunity_score": round(opportunity, 4),
                 "top_video_id": top_video.get("video_id", ""),
@@ -408,20 +421,20 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
             }
         )
 
-    topic_metric_by_topic = {row["topic"]: row for row in topic_metrics_rows}
+    topic_metric_by_topic = {(row.get("content_format", "unknown"), row["topic"]): row for row in topic_metrics_rows}
     for row in video_topic_rows:
-        topic_row = topic_metric_by_topic.get(str(row.get("topic_primary", "unknown")), {})
+        topic_row = topic_metric_by_topic.get((str(row.get("content_format", "unknown")), str(row.get("topic_primary", "unknown"))), {})
         row["topic_opportunity_score"] = topic_row.get("topic_opportunity_score", 0.0)
         row["topic_saturation_score"] = topic_row.get("topic_saturation_score", 0.0)
 
     # Title pattern metrics
-    pattern_group: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    pattern_group: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in video_topic_rows:
         for pattern in str(row.get("title_patterns", "unknown")).split("|"):
-            pattern_group[pattern].append(row)
+            pattern_group[(str(row.get("content_format", "unknown")), pattern)].append(row)
 
     title_pattern_rows: list[dict[str, Any]] = []
-    for pattern, rows in pattern_group.items():
+    for (content_format, pattern), rows in pattern_group.items():
         avg_views = _avg([_safe_float(r.get("views_delta")) for r in rows])
         avg_eng = _avg([_safe_float(r.get("engagement_rate")) for r in rows])
         avg_alpha = _avg([_safe_float(r.get("alpha_score")) for r in rows])
@@ -432,6 +445,7 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         titles = [str(r.get("title", "")) for r in rows][:3]
         title_pattern_rows.append(
             {
+                "content_format": content_format,
                 "title_pattern": pattern,
                 "video_count": len(rows),
                 "total_views_delta": round(sum(_safe_float(r.get("views_delta")) for r in rows), 4),
@@ -458,15 +472,16 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
                 if term in title:
                     token_rows.append((term, topic, row))
 
-    keyword_group: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    keyword_group: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
     for token, group, row in token_rows:
-        keyword_group[(token, group)].append(row)
+        keyword_group[(str(row.get("content_format", "unknown")), token, group)].append(row)
 
     keyword_rows: list[dict[str, Any]] = []
-    for (keyword, semantic_group), rows in sorted(keyword_group.items(), key=lambda kv: len(kv[1]), reverse=True)[:120]:
+    for (content_format, keyword, semantic_group), rows in sorted(keyword_group.items(), key=lambda kv: len(kv[1]), reverse=True)[:120]:
         top_video = max(rows, key=lambda r: _safe_float(r.get("views_delta")), default={})
         keyword_rows.append(
             {
+                "content_format": content_format,
                 "keyword": keyword,
                 "semantic_group": semantic_group,
                 "video_count": len(rows),
@@ -478,15 +493,16 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
 
     # Opportunities
     topic_opportunity_rows: list[dict[str, Any]] = []
-    video_count_percentiles = _percentile_map({row["topic"]: float(row["video_count"]) for row in topic_metrics_rows})
+    video_count_percentiles = _percentile_map({(row.get("content_format", "unknown"), row["topic"]): float(row["video_count"]) for row in topic_metrics_rows})
 
     for idx, row in enumerate(sorted(topic_metrics_rows, key=lambda r: _safe_float(r.get("topic_opportunity_score")), reverse=True), start=1):
         topic = str(row.get("topic", "unknown"))
+        content_format = str(row.get("content_format", "unknown"))
         velocity = _safe_float(row.get("topic_velocity_score"))
         saturation = _safe_float(row.get("topic_saturation_score"))
-        confidence_avg = _avg([_safe_float(v.get("topic_confidence")) for v in grouped.get(topic, [])])
+        confidence_avg = _avg([_safe_float(v.get("topic_confidence")) for v in grouped.get((content_format, topic), [])])
         signal = _safe_float(row.get("avg_hybrid_decision_score")) or _safe_float(row.get("avg_decision_score"))
-        low_count = video_count_percentiles.get(topic, 0.0) < 35.0 or _safe_float(row.get("video_count")) <= 2
+        low_count = video_count_percentiles.get((content_format, topic), 0.0) < 35.0 or _safe_float(row.get("video_count")) <= 2
 
         if velocity >= 75 and saturation < 60:
             opportunity_type = "emerging_topic"
@@ -520,6 +536,7 @@ def build_topic_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         topic_opportunity_rows.append(
             {
                 "opportunity_id": f"topic_{idx:03d}",
+                "content_format": content_format,
                 "topic": topic,
                 "opportunity_type": opportunity_type,
                 "topic_opportunity_score": row.get("topic_opportunity_score", 0),

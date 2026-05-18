@@ -119,23 +119,23 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     skipped_invalid_video_ids: list[dict[str,str]]=[]
     source_artifacts = _source_artifact_summary(root)
     for row in _read_csv(root/'decision'/'latest_action_candidates.csv'):
-        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","decision_score":"decision_score","alpha_score":"alpha_score","metric_confidence_score":"metric_confidence_score"},"decision")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","content_format":"content_format","decision_score":"decision_score","alpha_score":"alpha_score","metric_confidence_score":"metric_confidence_score"},"decision")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"decision"})
     for row in _read_csv(root/'model_intelligence'/'latest_hybrid_recommendations.csv'):
-        invalid_id=_merge(cands,row,{"video_id":"video_id","hybrid_decision_score":"hybrid_decision_score"},"model_intelligence")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","content_format":"content_format","hybrid_decision_score":"hybrid_decision_score"},"model_intelligence")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"model_intelligence"})
     for row in _read_csv(root/'topic_intelligence'/'latest_topic_opportunities.csv'):
-        invalid_id=_merge(cands,row,{"video_id":"video_id","topic_opportunity_score":"topic_opportunity_score"},"topic")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","content_format":"content_format","topic_opportunity_score":"topic_opportunity_score"},"topic")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"topic"})
     for row in _read_csv(root/'creative_packages'/'latest_creative_packages.csv'):
-        invalid_id=_merge(cands,row,{"video_id":"source_video_id","creative_execution_score":"creative_execution_score"},"creative")
+        invalid_id=_merge(cands,row,{"video_id":"source_video_id","content_format":"content_format","creative_execution_score":"creative_execution_score"},"creative")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"creative"})
     for row in _read_csv(root/'analytics'/'latest'/'latest_video_scores.csv'):
-        invalid_id=_merge(cands,row,{"video_id":"video_id","alpha_score":"alpha_score"},"analytics_scores")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","content_format":"content_format","alpha_score":"alpha_score"},"analytics_scores")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_scores"})
     metrics=_read_csv(root/'analytics'/'latest'/'latest_video_metrics.csv')
     for row in metrics:
-        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date"},"analytics_metrics")
+        invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","content_format":"content_format"},"analytics_metrics")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_metrics"})
 
     reg=_read_jsonl(tdir/'transcript_registry.jsonl'); registry_success=set(); progress=set(); cool=set(); th=now-timedelta(days=cooldown_days)
@@ -181,7 +181,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
             if ud and ud.date()<cutoff_date:
                 skipped_forced_outside_window+=1
                 continue
-            row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"forced_channel_new_video","selection_source":"forced_channel_new_video","forced_channel":True,"forced_channel_url":matched,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
+            row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"content_format":item.get("content_format",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"forced_channel_new_video","selection_source":"forced_channel_new_video","forced_channel":True,"forced_channel_url":matched,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
             row['transcription_value_score']=_score(row); forced_rows.append(row)
         forced_rows.sort(key=lambda r:(-(_parse_dt(str(r.get('upload_date',''))) or datetime.min.replace(tzinfo=timezone.utc)).timestamp(),-float(r['transcription_value_score']),r['video_id']))
         available_forced_before_truncation=len(forced_rows)
@@ -201,7 +201,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
         if vid in success: skipped_success+=1; continue
         if vid in progress: skipped_progress+=1; continue
         if vid in cool: skipped_fail+=1; continue
-        row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"top_daily_value","selection_source":"ranked_daily_top","forced_channel":False,"forced_channel_url":None,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
+        row={"video_id":vid,"channel_id":item.get("channel_id",""),"channel_name":item.get("channel_name",""),"title":item.get("title",""),"upload_date":item.get("upload_date",""),"content_format":item.get("content_format",""),"decision_score":item.get("decision_score"),"hybrid_decision_score":item.get("hybrid_decision_score"),"creative_execution_score":item.get("creative_execution_score"),"topic_opportunity_score":item.get("topic_opportunity_score"),"alpha_score":item.get("alpha_score"),"metric_confidence_score":item.get("metric_confidence_score"),"source_reason":"top_daily_value","selection_source":"ranked_daily_top","forced_channel":False,"forced_channel_url":None,"evidence_json":{"sources":sorted(item.get('sources',set()))}}
         row['transcription_value_score']=_score(row); ranked.append(row)
     ranked.sort(key=lambda r:(-float(r['transcription_value_score']),r['video_id']))
     available_ranked_count=len(ranked)
@@ -222,7 +222,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     selected=dedup_selected
     q=[]
     for i,row in enumerate(selected,1):
-        q.append({"selected_at":now_iso,"video_id":row['video_id'],"channel_id":row['channel_id'],"channel_name":row['channel_name'],"title":row['title'],"upload_date":row['upload_date'],"selection_rank":i,"selection_source":row['selection_source'],"forced_channel":row['forced_channel'],"forced_channel_url":row['forced_channel_url'],"transcription_value_score":row['transcription_value_score'],"decision_score":row.get('decision_score'),"hybrid_decision_score":row.get('hybrid_decision_score'),"creative_execution_score":row.get('creative_execution_score'),"topic_opportunity_score":row.get('topic_opportunity_score'),"alpha_score":row.get('alpha_score'),"metric_confidence_score":row.get('metric_confidence_score'),"status":"queued","source_reason":row['source_reason'],"evidence_json":row['evidence_json']})
+        q.append({"selected_at":now_iso,"video_id":row['video_id'],"channel_id":row['channel_id'],"channel_name":row['channel_name'],"title":row['title'],"upload_date":row['upload_date'],"content_format":row.get('content_format',''),"selection_rank":i,"selection_source":row['selection_source'],"forced_channel":row['forced_channel'],"forced_channel_url":row['forced_channel_url'],"transcription_value_score":row['transcription_value_score'],"decision_score":row.get('decision_score'),"hybrid_decision_score":row.get('hybrid_decision_score'),"creative_execution_score":row.get('creative_execution_score'),"topic_opportunity_score":row.get('topic_opportunity_score'),"alpha_score":row.get('alpha_score'),"metric_confidence_score":row.get('metric_confidence_score'),"status":"queued","source_reason":row['source_reason'],"evidence_json":row['evidence_json']})
     _write_jsonl(tdir/'transcript_queue.jsonl',q)
     if skipped_invalid_video_ids:
         warnings.append('invalid_video_ids_skipped')

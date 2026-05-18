@@ -9,6 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS
+
 try:
     import joblib
 except Exception:  # pragma: no cover
@@ -40,7 +42,7 @@ def _safe_float(value: Any) -> float:
         return 1.0 if text in {"true", "yes", "y"} else 0.0
 
 
-def _resolve_model_choice(*, model_root: Path, target: str | None, model_id: str | None, registry_manifest: dict[str, Any]) -> tuple[Path | None, dict[str, Any], list[str]]:
+def _resolve_model_choice(*, model_root: Path, target: str | None, model_id: str | None, registry_manifest: dict[str, Any], content_format: str = "all") -> tuple[Path | None, dict[str, Any], list[str]]:
     warnings: list[str] = []
     suite_manifest_path = model_root / "suite_manifest.json"
     suite_manifest = _read_json(suite_manifest_path) if suite_manifest_path.exists() else {}
@@ -55,10 +57,14 @@ def _resolve_model_choice(*, model_root: Path, target: str | None, model_id: str
                 break
     else:
         target_name = target or registry_manifest.get("prediction_target") or "is_top_growth_7d"
-        champ = (suite_manifest.get("champions") or {}).get(target_name)
+        champions = suite_manifest.get("champions") or {}
+        if content_format != "all" and isinstance(champions.get(content_format), dict):
+            champ = champions.get(content_format, {}).get(target_name)
+        else:
+            champ = champions.get(target_name)
         if champ:
             for item in suite_manifest.get("models", []):
-                if item.get("model_id") == champ.get("model_id"):
+                if item.get("model_id") == champ.get("model_id") and (content_format == "all" or item.get("content_format", content_format) == content_format):
                     selected = item
                     break
 
@@ -76,11 +82,72 @@ def predict_with_model_artifact(
     target: str = "is_top_growth_7d",
     model_id: str | None = None,
     allow_historical_supervised_fallback: bool = False,
+    content_format: str = "all",
 ) -> dict[str, Any]:
     del allow_historical_supervised_fallback
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    if normalized_format == "all":
+        data_root = Path(data_dir)
+        model_root = Path(model_dir)
+        suite_manifest = _read_json(model_root / "suite_manifest.json") if (model_root / "suite_manifest.json").exists() else {}
+        champions = suite_manifest.get("champions") if isinstance(suite_manifest.get("champions"), dict) else {}
+        has_format_contract = any(
+            (data_root / "modeling" / "formats" / fmt / "latest_inference_examples.csv").exists()
+            or (model_root / "formats" / fmt).exists()
+            or isinstance(champions.get(fmt), dict)
+            for fmt in CONTENT_FORMATS
+        )
+        if not has_format_contract:
+            # Legacy root-only artifact: keep the old contract working, but do not
+            # use this path once per-format inputs/artifacts exist.
+            pass
+        else:
+            format_results = {
+                fmt: predict_with_model_artifact(
+                    model_dir=model_dir,
+                    data_dir=data_dir,
+                    output_dir=Path(output_dir) / "formats" / fmt,
+                    target=target,
+                    model_id=model_id,
+                    content_format=fmt,
+                )
+                for fmt in CONTENT_FORMATS
+            }
+            output_root = Path(output_dir)
+            output_root.mkdir(parents=True, exist_ok=True)
+            combined_rows: list[dict[str, str]] = []
+            for fmt, result in format_results.items():
+                latest_path = str(result.get("latest_predictions", "") or "")
+                if not latest_path:
+                    continue
+                pred_path = Path(latest_path)
+                if pred_path.exists() and pred_path.is_file():
+                    for row in _read_csv(pred_path):
+                        row["content_format"] = fmt
+                        combined_rows.append(row)
+            combined_path = output_root / "latest_predictions.csv"
+            fields = ["content_format", "video_id", "execution_date", "target", "model_id", "model_family", "model_score", "prediction_rank"]
+            with combined_path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields)
+                writer.writeheader()
+                for row in combined_rows:
+                    writer.writerow({field: row.get(field, "") for field in fields})
+            summary = {
+                "status": "success" if combined_rows else "failed_no_predictions",
+                "content_format": "all",
+                "format_results": format_results,
+                "prediction_rows": len(combined_rows),
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "warnings": [warning for result in format_results.values() for warning in result.get("warnings", [])],
+            }
+            _write_json(output_root / "prediction_summary.json", summary)
+            return {"status": summary["status"], "latest_predictions": str(combined_path), "prediction_rows": len(combined_rows), "warnings": summary["warnings"], "format_results": format_results}
+
     model_root = Path(model_dir)
     data_root = Path(data_dir)
-    rows_path = data_root / "modeling" / "latest_inference_examples.csv"
+    rows_path = data_root / "modeling" / "latest_inference_examples.csv" if normalized_format == "all" else data_root / "modeling" / "formats" / normalized_format / "latest_inference_examples.csv"
     if not rows_path.exists():
         return {"status": "failed_no_inference_rows", "warnings": ["latest_inference_examples_missing_or_empty"], "prediction_rows": 0}
     rows = _read_csv(rows_path)
@@ -88,7 +155,7 @@ def predict_with_model_artifact(
         return {"status": "failed_no_inference_rows", "warnings": ["latest_inference_examples_missing_or_empty"], "prediction_rows": 0}
 
     registry_manifest = _read_json(data_root / "model_registry" / "latest_model_manifest.json") if (data_root / "model_registry" / "latest_model_manifest.json").exists() else {}
-    resolved_model_dir, suite_manifest, warnings = _resolve_model_choice(model_root=model_root, target=target, model_id=model_id, registry_manifest=registry_manifest)
+    resolved_model_dir, suite_manifest, warnings = _resolve_model_choice(model_root=model_root, target=target, model_id=model_id, registry_manifest=registry_manifest, content_format=normalized_format)
     if resolved_model_dir is None:
         return {"status": "failed_model_resolution", "warnings": warnings, "prediction_rows": 0}
 
@@ -121,12 +188,13 @@ def predict_with_model_artifact(
     output_root.mkdir(parents=True, exist_ok=True)
     pred_path = output_root / "latest_predictions.csv"
     with pred_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["video_id", "execution_date", "target", "model_id", "model_family", "model_score", "prediction_rank"])
+        writer = csv.DictWriter(handle, fieldnames=["content_format", "video_id", "execution_date", "target", "model_id", "model_family", "model_score", "prediction_rank"])
         writer.writeheader()
         for idx, row in enumerate(rows):
             writer.writerow(
                 {
                     "video_id": row.get("video_id", f"row_{idx}"),
+                    "content_format": normalized_format,
                     "execution_date": row.get("execution_date", ""),
                     "target": target,
                     "model_id": payload.get("model_id", ""),
@@ -138,6 +206,7 @@ def predict_with_model_artifact(
 
     summary = {
         "status": "success",
+        "content_format": normalized_format,
         "suite_id": suite_manifest.get("suite_id"),
         "artifact_name": registry_manifest.get("artifact_name"),
         "workflow_run_id": registry_manifest.get("workflow_run_id"),

@@ -297,6 +297,14 @@ processes:
         type: json
         timestamp_field: generated_at
         required: true
+      - path: analytics/formats/shorts/latest/analytics_manifest.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: analytics/formats/videos/latest/analytics_manifest.json
+        type: json
+        timestamp_field: generated_at
+        required: false
     dashboard_tabs:
       - Overview
       - Videos
@@ -410,6 +418,14 @@ processes:
     secrets_required: []
     expected_artifacts:
       - path: model_intelligence/model_intelligence_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: model_intelligence/formats/shorts/model_intelligence_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: model_intelligence/formats/videos/model_intelligence_summary.json
         type: json
         timestamp_field: generated_at
         required: false
@@ -622,6 +638,14 @@ processes:
         type: json
         timestamp_field: generated_at
         required: false
+      - path: modeling/formats/shorts/model_readiness_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: modeling/formats/videos/model_readiness_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
     dashboard_tabs:
       - Models
       - Operations
@@ -646,6 +670,14 @@ processes:
         type: json
         timestamp_field: generated_at
         required: true
+      - path: modeling/formats/shorts/latest_model_readiness_diagnostics.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: modeling/formats/videos/latest_model_readiness_diagnostics.json
+        type: json
+        timestamp_field: generated_at
+        required: false
     dashboard_tabs:
       - Models
       - Operations
@@ -673,6 +705,12 @@ processes:
       - path: model_reports/latest_model_suite_report.html
         type: text
         required: false
+      - path: model_reports/formats/shorts/latest_model_leaderboard.csv
+        type: csv
+        required: false
+      - path: model_reports/formats/videos/latest_model_leaderboard.csv
+        type: csv
+        required: false
     dashboard_tabs:
       - Models
       - Operations
@@ -694,6 +732,14 @@ processes:
     secrets_required: []
     expected_artifacts:
       - path: predictions/prediction_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: predictions/formats/shorts/prediction_summary.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: predictions/formats/videos/prediction_summary.json
         type: json
         timestamp_field: generated_at
         required: false

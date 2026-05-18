@@ -82,6 +82,8 @@ class VideoSnapshot:
     views: int | None
     likes: int | None
     comments: int | None
+    content_format: str = "unknown"
+    content_format_reason: str = "not_classified"
 
     def to_dict(self) -> dict:
         data = asdict(self)

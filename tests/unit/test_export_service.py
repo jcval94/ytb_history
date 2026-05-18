@@ -166,6 +166,8 @@ def test_export_latest_run_generates_all_files_and_columns(tmp_path: Path) -> No
         "tags",
         "thumbnail_url",
         "duration_seconds",
+        "content_format",
+        "content_format_reason",
         "views",
         "likes",
         "comments",
@@ -197,6 +199,8 @@ def test_export_latest_run_generates_all_files_and_columns(tmp_path: Path) -> No
     assert snapshot_rows[1]["likes"] == ""
     assert snapshot_rows[1]["comments"] == ""
     assert snapshot_rows[0]["tags"] == json.dumps(["python", "datos"], ensure_ascii=False)
+    assert snapshot_rows[0]["content_format"] == "videos"
+    assert growth_rows[0]["content_format"] == "videos"
 
     export_summary_payload = json.loads(export_summary.read_text(encoding="utf-8"))
     assert export_summary_payload["snapshots_exported"] == 2

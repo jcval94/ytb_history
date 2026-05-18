@@ -8,7 +8,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS
+
 OUTPUT_COLUMNS = [
+    "content_format",
     "video_id",
     "hybrid_decision_score",
     "model_score_percentile",
@@ -66,24 +69,89 @@ def _percentiles(rows: list[dict[str, str]]) -> dict[str, float]:
     return result
 
 
-def build_model_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]:
+def build_model_intelligence(*, data_dir: str | Path = "data", content_format: str = "all") -> dict[str, Any]:
     """Build model-intelligence files without external API calls."""
-    data_root = Path(data_dir)
-    prediction_path = data_root / "predictions" / "latest_predictions.csv"
-    decision_path = data_root / "decision" / "latest_action_candidates.csv"
-    output_dir = data_root / "model_intelligence"
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    if normalized_format == "all":
+        data_root = Path(data_dir)
+        has_format_predictions = any(
+            (data_root / "predictions" / "formats" / fmt / "latest_predictions.csv").exists()
+            for fmt in CONTENT_FORMATS
+        )
+        if not has_format_predictions:
+            # Legacy root-only predictions/decisions: compute one root view. Once
+            # per-format predictions exist, the branch below keeps rankings split.
+            prediction_path = data_root / "predictions" / "latest_predictions.csv"
+            decision_path = data_root / "decision" / "latest_action_candidates.csv"
+            output_dir = data_root / "model_intelligence"
+            return _build_single_model_intelligence(
+                content_format="all",
+                prediction_path=prediction_path,
+                decision_path=decision_path,
+                output_dir=output_dir,
+            )
+        format_results = {fmt: build_model_intelligence(data_dir=data_root, content_format=fmt) for fmt in CONTENT_FORMATS}
+        output_dir = data_root / "model_intelligence"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        combined_rows: list[dict[str, str]] = []
+        for fmt in CONTENT_FORMATS:
+            path = data_root / "model_intelligence" / "formats" / fmt / "latest_hybrid_recommendations.csv"
+            if path.exists():
+                combined_rows.extend(_read_csv(path))
+        output_csv = output_dir / "latest_hybrid_recommendations.csv"
+        output_json = output_dir / "model_intelligence_summary.json"
+        _write_csv(output_csv, OUTPUT_COLUMNS, combined_rows)
+        warnings = [warning for result in format_results.values() for warning in result.get("warnings", [])]
+        summary = {
+            "status": "success",
+            "content_format": "all",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "format_results": format_results,
+            "hybrid_rows": len(combined_rows),
+            "warnings": warnings,
+            "files_written": [str(output_csv), str(output_json)],
+        }
+        _write_json(output_json, summary)
+        return summary
 
+    data_root = Path(data_dir)
+    prediction_path = data_root / "predictions" / "formats" / normalized_format / "latest_predictions.csv"
+    decision_path = data_root / "decision" / "latest_action_candidates.csv"
+    output_dir = data_root / "model_intelligence" / "formats" / normalized_format
+    return _build_single_model_intelligence(
+        content_format=normalized_format,
+        prediction_path=prediction_path,
+        decision_path=decision_path,
+        output_dir=output_dir,
+    )
+
+
+def _build_single_model_intelligence(
+    *,
+    content_format: str,
+    prediction_path: Path,
+    decision_path: Path,
+    output_dir: Path,
+) -> dict[str, Any]:
     warnings: list[str] = []
     predictions: list[dict[str, str]] = []
     decisions: list[dict[str, str]] = []
 
     if prediction_path.exists():
-        predictions = _read_csv(prediction_path)
+        predictions = [
+            row for row in _read_csv(prediction_path)
+            if content_format == "all" or str(row.get("content_format", "")).strip().lower() == content_format
+        ]
     else:
         warnings.append(f"Predictions file not found: {prediction_path}")
 
     if decision_path.exists():
-        decisions = _read_csv(decision_path)
+        decisions = [
+            row for row in _read_csv(decision_path)
+            if content_format == "all" or str(row.get("content_format", "")).strip().lower() == content_format
+        ]
     else:
         warnings.append(f"Decision file not found: {decision_path}")
 
@@ -112,6 +180,7 @@ def build_model_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
         hybrid_rows.append(
             {
                 "video_id": video_id,
+                "content_format": content_format,
                 "hybrid_decision_score": hybrid,
                 "model_score_percentile": round(_clamp(model_pct), 4),
                 "model_score": round(model_score, 8),
@@ -130,6 +199,7 @@ def build_model_intelligence(*, data_dir: str | Path = "data") -> dict[str, Any]
 
     summary: dict[str, Any] = {
         "status": "success",
+        "content_format": content_format,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "prediction_rows": len(predictions),
         "decision_rows": len(decisions),

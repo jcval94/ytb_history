@@ -140,6 +140,14 @@ def _prepare_model_reports(data_dir: Path) -> None:
             ensure_ascii=False,
         ),
     )
+    _write_text(
+        data_dir / "predictions" / "latest_predictions.csv",
+        "content_format,video_id,target,model_family,model_score,prediction_rank\nshorts,v1,is_top_growth_7d,linear_regularized,0.8,1\n",
+    )
+    _write_text(
+        data_dir / "model_intelligence" / "latest_hybrid_recommendations.csv",
+        "content_format,video_id,hybrid_decision_score,model_score_percentile,model_score,prediction_rank,decision_score,confidence_level\nshorts,v1,82,90,0.8,1,70,high\n",
+    )
 
 
 def _prepare_nlp_topic_artifacts(data_dir: Path) -> None:
@@ -213,6 +221,8 @@ def test_build_pages_dashboard_includes_model_reports(tmp_path: Path) -> None:
     assert (site_dir / "data" / "latest_model_leaderboard.json").exists()
     assert (site_dir / "data" / "latest_feature_importance.json").exists()
     assert (site_dir / "data" / "latest_feature_direction.json").exists()
+    assert (site_dir / "data" / "latest_predictions.json").exists()
+    assert (site_dir / "data" / "latest_hybrid_recommendations.json").exists()
     assert (site_dir / "data" / "latest_model_suite_report.html").exists()
 
 

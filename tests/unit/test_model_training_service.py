@@ -60,9 +60,9 @@ def _prepare_modeling_inputs(tmp_path: Path, *, not_ready: bool = False) -> tupl
     )
 
     _write_json(data_dir / "modeling" / "model_readiness_report.json", {"recommended_status": "not_ready" if not_ready else "ready_for_baseline"})
-    _write_json(data_dir / "modeling" / "feature_dictionary.json", {"features": [{"name": "views_delta"}, {"name": "alpha_score"}, {"name": "decision_score"}, {"name": "duration_bucket"}, {"name": "future_log_views_delta_7d"}, {"name": "is_top_growth_7d"}]})
+    _write_json(data_dir / "modeling" / "feature_dictionary.json", {"features": [{"name": "views_delta"}, {"name": "alpha_score"}, {"name": "decision_score"}, {"name": "duration_bucket"}, {"name": "is_short"}, {"name": "content_format"}, {"name": "future_log_views_delta_7d"}, {"name": "is_top_growth_7d"}]})
 
-    fieldnames = ["execution_date", "video_id", "views_delta", "alpha_score", "decision_score", "duration_bucket", "is_top_growth_7d", "future_log_views_delta_7d"]
+    fieldnames = ["execution_date", "video_id", "views_delta", "alpha_score", "decision_score", "duration_bucket", "is_short", "content_format", "is_top_growth_7d", "future_log_views_delta_7d"]
     rows: list[dict[str, object]] = []
     for idx in range(40):
         rows.append(
@@ -73,6 +73,8 @@ def _prepare_modeling_inputs(tmp_path: Path, *, not_ready: bool = False) -> tupl
                 "alpha_score": 10 + idx,
                 "decision_score": 20 + idx,
                 "duration_bucket": 1 if idx % 2 == 0 else 0,
+                "is_short": "True" if idx % 3 == 0 else "False",
+                "content_format": "shorts" if idx % 3 == 0 else "videos",
                 "is_top_growth_7d": "True" if idx >= 20 else "False",
                 "future_log_views_delta_7d": 0.2 * idx,
             }
@@ -112,10 +114,13 @@ def test_train_model_suite_generates_expected_files(tmp_path: Path) -> None:
     assert (artifact_dir / "model_leaderboard.csv").exists()
     assert (artifact_dir / "feature_importance_global.csv").exists()
     assert (artifact_dir / "feature_direction_global.csv").exists()
-    assert (artifact_dir / "models" / "linear_regularized" / "coefficients.csv").exists()
-    assert (artifact_dir / "models" / "random_forest" / "permutation_importance.csv").exists()
-    assert (artifact_dir / "models" / "random_forest" / "feature_direction.csv").exists()
-    assert (artifact_dir / "models" / "shallow_tree" / "tree_rules.txt").exists()
+    assert (artifact_dir / "models" / "is_top_growth_7d" / "linear_regularized" / "coefficients.csv").exists()
+    assert (artifact_dir / "models" / "is_top_growth_7d" / "random_forest" / "permutation_importance.csv").exists()
+    assert (artifact_dir / "models" / "is_top_growth_7d" / "random_forest" / "feature_direction.csv").exists()
+    assert (artifact_dir / "models" / "is_top_growth_7d" / "shallow_tree" / "tree_rules.txt").exists()
+    feature_list = json.loads((artifact_dir / "models" / "is_top_growth_7d" / "linear_regularized" / "feature_list.json").read_text(encoding="utf-8"))
+    assert "is_short" not in feature_list["features"]
+    assert "content_format" not in feature_list["features"]
 
 
 def test_coefficients_contains_direction(tmp_path: Path) -> None:
@@ -124,7 +129,7 @@ def test_coefficients_contains_direction(tmp_path: Path) -> None:
     if not (model_training_service._HAS_SKLEARN and model_training_service._HAS_JOBLIB):
         assert result["status"] == "failed_missing_ml_dependencies"
         return
-    rows = list(csv.DictReader((artifact_dir / "models" / "linear_regularized" / "coefficients.csv").open(encoding="utf-8")))
+    rows = list(csv.DictReader((artifact_dir / "models" / "is_top_growth_7d" / "linear_regularized" / "coefficients.csv").open(encoding="utf-8")))
     assert rows
     assert {row["direction"] for row in rows}.issubset({"positive", "negative"})
 
@@ -147,3 +152,33 @@ def test_leaderboard_and_registry_champions(tmp_path: Path) -> None:
     assert "champions" in manifest
     assert "is_top_growth_7d" in manifest["champions"]
     assert "future_log_views_delta_7d" in manifest["champions"]
+
+
+def _copy_root_modeling_to_formats(data_dir: Path) -> None:
+    root = data_dir / "modeling"
+    for fmt in ["shorts", "videos"]:
+        fmt_dir = root / "formats" / fmt
+        fmt_dir.mkdir(parents=True, exist_ok=True)
+        for filename in ["model_readiness_report.json", "feature_dictionary.json", "supervised_examples.csv"]:
+            (fmt_dir / filename).write_text((root / filename).read_text(encoding="utf-8"), encoding="utf-8")
+
+
+def test_train_model_suite_separates_artifacts_and_champions_by_format(tmp_path: Path) -> None:
+    data_dir, config_path, artifact_dir = _prepare_modeling_inputs(tmp_path)
+    _copy_root_modeling_to_formats(data_dir)
+
+    result = train_model_suite(data_dir=data_dir, modeling_config_path=config_path, artifact_dir=artifact_dir)
+
+    if not (model_training_service._HAS_SKLEARN and model_training_service._HAS_JOBLIB):
+        assert result["status"] == "failed_missing_ml_dependencies"
+        return
+
+    assert result["status"] == "success"
+    assert (artifact_dir / "formats" / "shorts" / "models" / "is_top_growth_7d" / "linear_regularized" / "model.joblib").exists()
+    assert (artifact_dir / "formats" / "videos" / "models" / "is_top_growth_7d" / "linear_regularized" / "model.joblib").exists()
+
+    manifest = json.loads((artifact_dir / "suite_manifest.json").read_text(encoding="utf-8"))
+    assert set(manifest["champions"]) == {"shorts", "videos"}
+    assert manifest["champions"]["shorts"]["is_top_growth_7d"]["model_id"].startswith("shorts-")
+    assert manifest["champions"]["videos"]["is_top_growth_7d"]["model_id"].startswith("videos-")
+    assert all(str(model["path"]).startswith(("formats/shorts/", "formats/videos/")) for model in manifest["models"])

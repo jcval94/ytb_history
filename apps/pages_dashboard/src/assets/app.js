@@ -26,6 +26,8 @@ const DATA_FILES = {
   latestModelLeaderboard: "./data/latest_model_leaderboard.json",
   latestFeatureImportance: "./data/latest_feature_importance.json",
   latestFeatureDirection: "./data/latest_feature_direction.json",
+  latestPredictions: "./data/latest_predictions.json",
+  latestHybridRecommendations: "./data/latest_hybrid_recommendations.json",
   latestModelSuiteReportHtml: "./data/latest_model_suite_report.html",
   latestModelReadinessDiagnostics: "./data/latest_model_readiness_diagnostics.json",
   latestTargetCoverageReport: "./data/latest_target_coverage_report.json",
@@ -69,6 +71,7 @@ const state = {
   filterText: "",
   channel: "",
   duration: "",
+  contentFormat: "",
   horizon: "all",
   renderedTabs: new Set()
 };
@@ -217,6 +220,7 @@ function bindFilters() {
   const filterInput = document.querySelector("#global-filter");
   const channelFilter = document.querySelector("#channel-filter");
   const durationFilter = document.querySelector("#duration-filter");
+  const contentFormatFilter = document.querySelector("#content-format-filter");
   const horizonFilter = document.querySelector("#horizon-filter");
   const resetButton = document.querySelector("#reset-filters");
 
@@ -232,6 +236,10 @@ function bindFilters() {
     state.duration = String(durationFilter.value || "");
     renderAfterGlobalFilterChange();
   });
+  contentFormatFilter?.addEventListener("change", () => {
+    state.contentFormat = String(contentFormatFilter.value || "");
+    renderAfterGlobalFilterChange();
+  });
   horizonFilter?.addEventListener("change", () => {
     state.horizon = String(horizonFilter.value || "all");
     renderAfterGlobalFilterChange();
@@ -240,10 +248,12 @@ function bindFilters() {
     state.filterText = "";
     state.channel = "";
     state.duration = "";
+    state.contentFormat = "";
     state.horizon = "all";
     if (filterInput) filterInput.value = "";
     if (channelFilter) channelFilter.value = "";
     if (durationFilter) durationFilter.value = "";
+    if (contentFormatFilter) contentFormatFilter.value = "";
     if (horizonFilter) horizonFilter.value = "all";
     renderAfterGlobalFilterChange();
   });
@@ -282,6 +292,7 @@ function applyFilters(rows, { skipDuration = false } = {}) {
   return rows.filter((row) => {
     if (state.channel && row.channel_name !== state.channel) return false;
     if (!skipDuration && state.duration && row.duration_bucket !== state.duration) return false;
+    if (state.contentFormat && row.content_format !== state.contentFormat) return false;
     if (state.filterText) {
       const haystack = `${row.title || ""} ${row.channel_name || ""} ${row.video_id || ""}`.toLowerCase();
       if (!haystack.includes(state.filterText)) return false;
@@ -296,6 +307,11 @@ function applyFilters(rows, { skipDuration = false } = {}) {
     }
     return true;
   });
+}
+
+function formatMatches(row, contentFormat) {
+  if (!contentFormat) return true;
+  return row?.content_format === contentFormat;
 }
 
 function renderHeader(videos, channels) {
@@ -1147,6 +1163,8 @@ function renderModels() {
   const leaderboard = tableRows("latestModelLeaderboard");
   const importanceRows = tableRows("latestFeatureImportance");
   const directionRows = tableRows("latestFeatureDirection");
+  const predictions = tableRows("latestPredictions");
+  const hybridRecommendations = tableRows("latestHybridRecommendations");
   const suiteReportHtml = typeof state.data.latestModelSuiteReportHtml === "string" ? state.data.latestModelSuiteReportHtml : "";
   const readiness = state.data.latestModelReadinessDiagnostics || {};
   const gap = state.data.latestTrainingGapReport || {};
@@ -1159,8 +1177,12 @@ function renderModels() {
     <h3 class="section-title">Leaderboard</h3>
     <div id="models-leaderboard"></div>
     <div id="models-leaderboard-visuals" class="chart-grid"></div>
+    <h3 class="section-title">Predictions</h3>
+    <div id="models-predictions"></div>
+    <div id="models-hybrid"></div>
     <h3 class="section-title">Feature Importance</h3>
     <div class="filters">
+      <select id="models-format-filter"><option value="">All formats</option><option value="shorts">Shorts</option><option value="videos">Videos</option></select>
       <select id="models-target-filter"><option value="">All targets</option></select>
       <select id="models-family-filter"><option value="">All families</option></select>
     </div>
@@ -1192,13 +1214,9 @@ function renderModels() {
   const status = panel.querySelector("#models-status");
   if (status) status.innerHTML = statusHtml;
 
-  renderTable(panel.querySelector("#models-leaderboard"), [
-    "model_family", "target", "champion_metric", "champion_metric_value", "selected_as_champion", "lift_vs_best_baseline"
-  ], leaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard", pageSize: 10 });
-  renderModelLeaderboardCharts(panel.querySelector("#models-leaderboard-visuals"), leaderboard);
-
   const targets = [...new Set(importanceRows.map((row) => row.target).filter(Boolean))].sort();
   const families = [...new Set(importanceRows.map((row) => row.model_family).filter(Boolean))].sort();
+  const formatFilter = panel.querySelector("#models-format-filter");
   const targetFilter = panel.querySelector("#models-target-filter");
   const familyFilter = panel.querySelector("#models-family-filter");
   if (targetFilter) {
@@ -1209,16 +1227,31 @@ function renderModels() {
   }
 
   const redrawImportance = () => {
+    const contentFormat = formatFilter?.value || "";
     const target = targetFilter?.value || "";
     const family = familyFilter?.value || "";
+    const filteredLeaderboard = leaderboard.filter((row) => formatMatches(row, contentFormat));
+    const filteredPredictions = predictions.filter((row) => formatMatches(row, contentFormat));
+    const filteredHybrid = hybridRecommendations.filter((row) => formatMatches(row, contentFormat));
     const filtered = importanceRows.filter((row) => {
+      if (!formatMatches(row, contentFormat)) return false;
       if (target && row.target !== target) return false;
       if (family && row.model_family !== family) return false;
       return true;
     });
+    renderTable(panel.querySelector("#models-leaderboard"), [
+      "content_format", "model_family", "target", "champion_metric", "champion_metric_value", "selected_as_champion", "lift_vs_best_baseline"
+    ], filteredLeaderboard, { initialSortKey: "champion_metric_value", title: "Model leaderboard", pageSize: 10 });
+    renderModelLeaderboardCharts(panel.querySelector("#models-leaderboard-visuals"), filteredLeaderboard);
+    renderTable(panel.querySelector("#models-predictions"), [
+      "content_format", "video_id", "target", "model_family", "model_score", "prediction_rank"
+    ], filteredPredictions, { initialSortKey: "prediction_rank", title: "Latest predictions", pageSize: 10 });
+    renderTable(panel.querySelector("#models-hybrid"), [
+      "content_format", "video_id", "hybrid_decision_score", "model_score_percentile", "model_score", "prediction_rank", "decision_score", "confidence_level"
+    ], filteredHybrid, { initialSortKey: "hybrid_decision_score", title: "Hybrid recommendations", pageSize: 10 });
     const topRows = sortRows(filtered, "importance_rank", "asc").slice(0, 20);
     renderTable(panel.querySelector("#models-importance"), [
-      "target", "model_family", "feature", "importance_type", "importance_value", "importance_rank", "direction"
+      "content_format", "target", "model_family", "feature", "importance_type", "importance_value", "importance_rank", "direction"
     ], topRows, { initialSortKey: "importance_rank", title: "Top variables", pageSize: 10 });
 
     const linearRows = sortRows(
@@ -1227,19 +1260,23 @@ function renderModels() {
       "asc"
     ).slice(0, 20);
     renderTable(panel.querySelector("#models-linear-coeff"), [
-      "feature", "standardized_coefficient", "direction", "importance_rank"
+      "content_format", "target", "feature", "standardized_coefficient", "direction", "importance_rank"
     ], linearRows, { initialSortKey: "importance_rank", title: "Linear coefficients", pageSize: 10 });
 
     const rfRows = sortRows(
-      directionRows.filter((row) => row.model_family === "random_forest").filter((row) => !target || row.target === target),
+      directionRows
+        .filter((row) => formatMatches(row, contentFormat))
+        .filter((row) => row.model_family === "random_forest")
+        .filter((row) => !target || row.target === target),
       "direction_score",
       "desc"
     ).slice(0, 20);
     renderTable(panel.querySelector("#models-rf"), [
-      "feature", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
+      "content_format", "target", "feature", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
     ], rfRows, { initialSortKey: "direction_score", title: "RF permutation importance & estimated direction", pageSize: 10 });
   };
 
+  formatFilter?.addEventListener("change", redrawImportance);
   targetFilter?.addEventListener("change", redrawImportance);
   familyFilter?.addEventListener("change", redrawImportance);
   redrawImportance();
@@ -1347,6 +1384,9 @@ function renderContentDrivers() {
   panel.innerHTML = `
     <h2>Content Drivers</h2>
     <p class="warning">Estas importancias son predictivas, no causales.</p>
+    <div class="filters">
+      <select id="cd-format-filter"><option value="">All formats</option><option value="shorts">Shorts</option><option value="videos">Videos</option></select>
+    </div>
     <div id="cd-visuals" class="chart-grid chart-grid-focus"></div>
     <div id="cd-leaderboard"></div>
     <div id="cd-importance"></div>
@@ -1356,19 +1396,29 @@ function renderContentDrivers() {
     <div id="cd-report"></div>
   `;
 
-  renderTable(panel.querySelector("#cd-leaderboard"), [
-    "target", "model_family", "mae_log", "rmse_log", "spearman_corr", "top_10_overlap_with_actual", "precision_at_top_decile_regression"
-  ], leaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target", pageSize: 10 });
-  renderContentDriverCharts(panel.querySelector("#cd-visuals"), leaderboard, importance, directions, groups);
-  renderTable(panel.querySelector("#cd-importance"), [
-    "target", "model_family", "feature", "feature_group", "importance_type", "importance_value", "importance_rank", "direction"
-  ], importance, { initialSortKey: "importance_rank", title: "Top features por target/model", pageSize: 25 });
-  renderTable(panel.querySelector("#cd-direction"), [
-    "target", "model_family", "feature", "feature_group", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
-  ], directions, { initialSortKey: "direction_score", title: "Feature directions", pageSize: 25 });
-  renderTable(panel.querySelector("#cd-groups"), [
-    "target", "model_family", "feature_group", "group_importance", "feature_count"
-  ], groups, { initialSortKey: "group_importance", title: "Group importance", pageSize: 10 });
+  const formatFilter = panel.querySelector("#cd-format-filter");
+  const redrawContentDrivers = () => {
+    const contentFormat = formatFilter?.value || "";
+    const filteredLeaderboard = leaderboard.filter((row) => formatMatches(row, contentFormat));
+    const filteredImportance = importance.filter((row) => formatMatches(row, contentFormat));
+    const filteredDirections = directions.filter((row) => formatMatches(row, contentFormat));
+    const filteredGroups = groups.filter((row) => formatMatches(row, contentFormat));
+    renderTable(panel.querySelector("#cd-leaderboard"), [
+      "content_format", "target", "model_family", "mae_log", "rmse_log", "spearman_corr", "top_10_overlap_with_actual", "precision_at_top_decile_regression"
+    ], filteredLeaderboard, { initialSortKey: "spearman_corr", title: "Leaderboard por target", pageSize: 10 });
+    renderContentDriverCharts(panel.querySelector("#cd-visuals"), filteredLeaderboard, filteredImportance, filteredDirections, filteredGroups);
+    renderTable(panel.querySelector("#cd-importance"), [
+      "content_format", "target", "model_family", "feature", "feature_group", "importance_type", "importance_value", "importance_rank", "direction"
+    ], filteredImportance, { initialSortKey: "importance_rank", title: "Top features por target/model", pageSize: 25 });
+    renderTable(panel.querySelector("#cd-direction"), [
+      "content_format", "target", "model_family", "feature", "feature_group", "direction", "direction_score", "direction_method", "low_bin_prediction", "high_bin_prediction"
+    ], filteredDirections, { initialSortKey: "direction_score", title: "Feature directions", pageSize: 25 });
+    renderTable(panel.querySelector("#cd-groups"), [
+      "content_format", "target", "model_family", "feature_group", "group_importance", "feature_count"
+    ], filteredGroups, { initialSortKey: "group_importance", title: "Group importance", pageSize: 10 });
+  };
+  formatFilter?.addEventListener("change", redrawContentDrivers);
+  redrawContentDrivers();
 
   const reportNode = panel.querySelector("#cd-report");
   if (reportNode) {
@@ -1845,7 +1895,7 @@ function renderModelLeaderboardCharts(container, leaderboard) {
     .concat(leaderboard.filter((row) => !leaderboard.some((candidate) => isTruthy(candidate.selected_as_champion))))
     .map((row) => ({
       ...row,
-      target_label: `${row.target || "--"} / ${row.model_family || "--"}`
+      target_label: `${row.content_format || "all"} / ${row.target || "--"} / ${row.model_family || "--"}`
     }));
   renderHorizontalBars(container.querySelector("#models-champion-bars"), championRows, {
     labelKey: "target_label",
@@ -1913,7 +1963,7 @@ function renderContentDriverCharts(container, leaderboard, importance, direction
 
   const topFeatures = sortRows(importance, "importance_rank", "asc").slice(0, 18).map((row) => ({
     ...row,
-    feature_label: `${row.target || "--"} / ${row.feature || "--"}`,
+    feature_label: `${row.content_format || "all"} / ${row.target || "--"} / ${row.feature || "--"}`,
     importance_magnitude: Math.abs(asNumber(row.importance_value))
   }));
   renderHorizontalBars(container.querySelector("#cd-top-features"), topFeatures, {
@@ -1943,7 +1993,7 @@ function renderContentDriverCharts(container, leaderboard, importance, direction
 
   const modelRows = leaderboard.map((row) => ({
     ...row,
-    model_label: `${row.target || "--"} / ${row.model_family || "--"}`
+    model_label: `${row.content_format || "all"} / ${row.target || "--"} / ${row.model_family || "--"}`
   }));
   renderHorizontalBars(container.querySelector("#cd-model-bars"), modelRows, {
     labelKey: "model_label",

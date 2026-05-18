@@ -10,6 +10,8 @@ from pathlib import Path
 from typing import Any
 
 
+CONTENT_FORMATS = ("shorts", "videos")
+
 INPUT_FILES = {
     "video_metrics": Path("analytics/latest/latest_video_metrics.csv"),
     "channel_advanced": Path("analytics/latest/latest_channel_advanced_metrics.csv"),
@@ -71,6 +73,32 @@ def _write_text(path: Path, content: str) -> None:
 
 def _sort_desc(rows: list[dict[str, Any]], key: str) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda row: (_safe_float(row.get(key)) is not None, _safe_float(row.get(key)) or 0.0), reverse=True)
+
+
+def _content_format(row: dict[str, Any]) -> str:
+    value = str(row.get("content_format", "") or "").strip().lower()
+    return value if value in CONTENT_FORMATS else "unknown"
+
+
+def _format_breakdown(
+    *,
+    period_videos: list[dict[str, Any]],
+    opportunities: list[dict[str, Any]],
+    model_recommendations: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    breakdown: dict[str, dict[str, Any]] = {}
+    for content_format in CONTENT_FORMATS:
+        videos = [row for row in period_videos if _content_format(row) == content_format]
+        opps = [row for row in opportunities if _content_format(row) == content_format]
+        recs = [row for row in model_recommendations if _content_format(row) == content_format]
+        breakdown[content_format] = {
+            "videos_in_period": len(videos),
+            "total_views_delta": int(sum(_safe_float(row.get("views_delta")) or 0.0 for row in videos)),
+            "topic_opportunities": len(opps),
+            "model_recommendations": len(recs),
+            "top_video_ids": [str(row.get("video_id", "")) for row in _sort_desc(videos, "views_delta")[:5] if row.get("video_id")],
+        }
+    return breakdown
 
 
 def _first_text(row: dict[str, Any], *keys: str, fallback: str = "Sin dato") -> str:
@@ -234,6 +262,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
     for row in _sort_desc(tables.get("topic_opportunities", []), "topic_opportunity_score")[:8]:
         top_opportunities.append(
             {
+                "content_format": _content_format(row),
                 "topic": _first_text(row, "topic", fallback=category_name),
                 "opportunity_type": row.get("opportunity_type", ""),
                 "score": _safe_float(row.get("topic_opportunity_score")) or 0.0,
@@ -246,6 +275,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
     for row in _sort_desc(period_videos, "views_delta")[:8]:
         accelerating_videos.append(
             {
+                "content_format": _content_format(row),
                 "video_id": row.get("video_id", ""),
                 "title": _first_text(row, "title", fallback="Video sin título"),
                 "channel_name": row.get("channel_name", ""),
@@ -271,6 +301,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
     for row in _sort_desc(tables.get("topic_metrics", []), "topic_velocity_score")[:8]:
         emerging_topics.append(
             {
+                "content_format": _content_format(row),
                 "topic": _first_text(row, "topic", fallback="Tema sin etiqueta"),
                 "velocity_score": _safe_float(row.get("topic_velocity_score")) or 0.0,
                 "opportunity_score": _safe_float(row.get("topic_opportunity_score")) or 0.0,
@@ -283,6 +314,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
         title_patterns.append(
             {
                 "pattern": _first_text(row, "title_pattern", fallback="Patrón sin etiqueta"),
+                "content_format": _content_format(row),
                 "success_score": _safe_float(row.get("title_pattern_success_score")) or 0.0,
                 "avg_views_delta": _safe_float(row.get("avg_views_delta")) or 0.0,
                 "examples": _short_text(row.get("example_titles", ""), limit=200),
@@ -294,6 +326,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
         details = video_lookup.get(row.get("video_id"), {})
         model_recommendations.append(
             {
+                "content_format": _content_format(row) if _content_format(row) != "unknown" else _content_format(details),
                 "video_id": row.get("video_id", ""),
                 "title": _first_text(details, "title", fallback="Video recomendado por modelo"),
                 "hybrid_decision_score": _safe_float(row.get("hybrid_decision_score")) or 0.0,
@@ -310,6 +343,11 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
 
     total_views_delta = sum(_safe_float(row.get("views_delta")) or 0.0 for row in period_videos)
     total_channels = len({row.get("channel_id") for row in period_videos if row.get("channel_id")})
+    format_breakdown = _format_breakdown(
+        period_videos=period_videos,
+        opportunities=top_opportunities,
+        model_recommendations=model_recommendations,
+    )
     status = "success_with_warnings" if warnings else "success"
 
     return {
@@ -326,6 +364,7 @@ def _build_summary(category_name: str, period_days: int, tables: dict[str, Any],
             "alerts_considered": len(alerts),
             "input_warnings": len(warnings),
         },
+        "format_breakdown": format_breakdown,
         "top_opportunities": top_opportunities,
         "accelerating_videos": accelerating_videos,
         "winning_channels": winning_channels,
@@ -380,8 +419,24 @@ def _build_markdown(summary: dict[str, Any]) -> str:
         "- La ventana se calcula desde las fechas disponibles en los artifacts locales; no se consultan APIs externas.",
         "- Se priorizan señales de crecimiento, momentum de canal, velocidad temática, patrones de título y recomendaciones híbridas.",
         "",
-        "## 3. Top oportunidades",
+        "## Shorts vs Videos",
     ]
+    lines.extend(
+        _tabulate(
+            ["content_format", "videos", "views_delta", "topic_opportunities", "model_recommendations"],
+            [
+                [
+                    content_format,
+                    str(values["videos_in_period"]),
+                    str(values["total_views_delta"]),
+                    str(values["topic_opportunities"]),
+                    str(values["model_recommendations"]),
+                ]
+                for content_format, values in summary["format_breakdown"].items()
+            ],
+        )
+    )
+    lines.extend(["", "## 3. Top oportunidades"])
     lines.extend(_tabulate(["Tema", "Tipo", "Score", "Acción"], [[i["topic"], i["opportunity_type"], f"{i['score']:.2f}", i["recommended_action"]] for i in summary["top_opportunities"][:5]]) if summary["top_opportunities"] else ["- Sin oportunidades disponibles."])
     lines.extend(["", "## 4. Videos acelerando"])
     lines.extend(_tabulate(["Video", "Canal", "Views delta", "Engagement"], [[_short_text(i["title"], limit=70), i["channel_name"], str(i["views_delta"]), f"{i['engagement_rate']:.4f}"] for i in summary["accelerating_videos"][:5]]) if summary["accelerating_videos"] else ["- Sin videos disponibles."])

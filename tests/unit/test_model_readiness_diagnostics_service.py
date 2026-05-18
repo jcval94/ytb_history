@@ -92,7 +92,7 @@ def test_writes_only_modeling_and_no_api_reference(tmp_path: Path) -> None:
     after = {p.relative_to(data_dir) for p in data_dir.rglob("*") if p.is_file()}
     created = after - before
     assert created
-    assert all(str(path).startswith("modeling/") for path in created)
+    assert all(path.parts[0] == "modeling" for path in created)
     source = Path("src/ytb_history/services/model_readiness_diagnostics_service.py").read_text(encoding="utf-8")
     assert "youtube_client" not in source
     assert "search.list" not in source
