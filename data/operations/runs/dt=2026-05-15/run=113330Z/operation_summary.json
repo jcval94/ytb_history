@@ -1,0 +1,75 @@
+{
+  "schema_version": "operations_summary_v1",
+  "generated_at": "2026-05-15T11:33:30.088370+00:00",
+  "processes_total": 31,
+  "status_counts": {
+    "unknown": 3,
+    "success_with_warnings": 6,
+    "not_initialized": 2,
+    "success": 17,
+    "skipped": 3
+  },
+  "domain_counts": {
+    "github": 5,
+    "ingestion": 2,
+    "validation": 1,
+    "analytics": 2,
+    "intelligence": 4,
+    "ml": 5,
+    "creative": 1,
+    "reporting": 2,
+    "publishing": 1,
+    "operations": 1,
+    "transcription": 4,
+    "local": 3
+  },
+  "dashboard_tabs": [
+    "Advanced",
+    "Alerts",
+    "Brief",
+    "Channels",
+    "Content Drivers",
+    "Creative",
+    "Data Quality",
+    "Models",
+    "NLP",
+    "Operations",
+    "Overview",
+    "Periods",
+    "Radar",
+    "Scores",
+    "Titles",
+    "Topics",
+    "Videos"
+  ],
+  "dashboard_impact_rows": 130,
+  "healthy_count": 17,
+  "warning_count": 6,
+  "stale_count": 0,
+  "failed_count": 0,
+  "not_initialized_count": 2,
+  "unknown_count": 3,
+  "action_required_count": 0,
+  "stale_processes": [],
+  "failed_processes": [],
+  "warning_processes": [
+    "github_monitor",
+    "cli_run",
+    "cli_build_nlp_features",
+    "cli_build_model_intelligence",
+    "cli_generate_creative_packages",
+    "cli_transcribe_selected_videos"
+  ],
+  "not_initialized_processes": [
+    "github_pages",
+    "cli_build_pages_dashboard"
+  ],
+  "unknown_processes": [
+    "github_ci",
+    "cli_dry_run",
+    "cli_validate_latest"
+  ],
+  "warnings": [
+    "not_initialized_processes:2"
+  ]
+}

@@ -10,102 +10,102 @@
 ## Key Metrics
 | metric | value |
 | --- | --- |
-| videos_total | 1914 |
-| channels_total | 129 |
-| total_views_delta | 28701163.0 |
-| total_likes_delta | 871036.0 |
-| total_comments_delta | 32401.0 |
-| avg_engagement_rate | 0.053252 |
-| total_alerts | 779 |
-| total_action_candidates | 779 |
+| videos_total | 2176 |
+| channels_total | 130 |
+| total_views_delta | 30751184.0 |
+| total_likes_delta | 994822.0 |
+| total_comments_delta | 22940.0 |
+| avg_engagement_rate | 0.052991 |
+| total_alerts | 775 |
+| total_action_candidates | 775 |
 | high_priority_actions | 10 |
 
 ## What Actions Should I Take This Week?
 | priority | action_type | recommendation | reason | confidence_level | decision_score | evidence | dashboard_tab |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 100.0 y confianza high. | high | 88.0 | {"adjusted_signal_score": 100.0, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunity_ | channel_benchmark |
-| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 100.0 y confianza high. | high | 88.0 | {"adjusted_signal_score": 100.0, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunity_ | watchlist |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 99.22 y confianza high. | high | 87.5694 | {"adjusted_signal_score": 99.2248, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 98.45 y confianza high. | high | 87.1388 | {"adjusted_signal_score": 98.4496, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 98.43 y confianza high. | high | 87.1253 | {"adjusted_signal_score": 98.4252, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 97.67 y confianza high. | high | 86.7083 | {"adjusted_signal_score": 97.6744, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
-| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 97.64 y confianza high. | high | 86.6879 | {"adjusted_signal_score": 97.6378, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
-| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 96.85 y confianza high. | high | 86.2506 | {"adjusted_signal_score": 96.8504, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 96.12 y confianza high. | high | 85.8471 | {"adjusted_signal_score": 96.124, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunity | channel_benchmark |
-| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 95.35 y confianza high. | high | 85.4165 | {"adjusted_signal_score": 95.3488, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 99.23 y confianza high. | high | 87.5727 | {"adjusted_signal_score": 99.2308, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 99.22 y confianza high. | high | 87.5694 | {"adjusted_signal_score": 99.2248, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 97.29 y confianza high. | high | 86.4929 | {"adjusted_signal_score": 97.2868, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 97.29 y confianza high. | high | 86.4929 | {"adjusted_signal_score": 97.2868, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 96.92 y confianza high. | high | 86.2909 | {"adjusted_signal_score": 96.9231, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 96.15 y confianza high. | high | 85.8636 | {"adjusted_signal_score": 96.1538, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 96.12 y confianza high. | high | 85.8471 | {"adjusted_signal_score": 96.124, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunity | watchlist |
+| high | monitor_next_run | Interpretar señales con cautela por volatilidad. | Señal channel_volatility_warning activada con score ajustado 95.35 y confianza high. | high | 85.4165 | {"adjusted_signal_score": 95.3488, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | watchlist |
+| high | benchmark_channel | Revisar canal dominante por crecimiento. | Señal channel_high_growth activada con score ajustado 94.62 y confianza high. | high | 85.0091 | {"adjusted_signal_score": 94.6154, "channel_relative_success_score": null, "metric_confidence_score": 100.0, "opportunit | channel_benchmark |
 
 ## Top Content Opportunities
 | content_strategy | source_title | why_it_matters | evidence_score | recommended_timeframe |
 | --- | --- | --- | --- | --- |
-| Evaluar crear contenido rápido sobre esta tendencia. | I Tested Every Zack D. Films Video (Again) | Señal trend_burst activada con score ajustado 79.18 y confianza high. | 76.9994 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | The Healthiest Unhealthiest Things | Señal trend_burst activada con score ajustado 73.45 y confianza high. | 74.9915 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Humans That Became Animals | Señal trend_burst activada con score ajustado 73.81 y confianza high. | 74.8092 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | "La Sociedad del Cansancio" de Byung-Chul Han | Club de Lectura #197 | Señal trend_burst activada con score ajustado 70.71 y confianza high. | 74.1779 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Humans That Defied Science | Señal trend_burst activada con score ajustado 71.62 y confianza high. | 73.642 | next_3_days |
-| Analizar como tema con interés pero baja distribución. | ¡Los 2 ÚNICOS ETFs que Necesitas para Hacerte Millonario!🤑💵 | Señal high_engagement_low_reach activada con score ajustado 89.48 y confianza high. | 73.0373 | this_week |
-| Evaluar crear contenido rápido sobre esta tendencia. | 10% of Her Money Goes To CHURCH | Señal trend_burst activada con score ajustado 76.8 y confianza high. | 72.8356 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | She Quit a $70,000 Personal Assistant Job | Señal trend_burst activada con score ajustado 73.32 y confianza high. | 72.6365 | next_3_days |
-| Evaluar crear contenido rápido sobre esta tendencia. | Mother Catches Son-in-Law Cheating on Wife | Señal trend_burst activada con score ajustado 74.05 y confianza high. | 72.5292 | next_3_days |
-| Analizar como tema con interés pero baja distribución. | Jaime Higuera tenía razón cuando dijo esto #shorts | Señal high_engagement_low_reach activada con score ajustado 87.88 y confianza high. | 72.2717 | this_week |
+| Analizar título, formato, duración y enfoque como referencia competitiva. | ¿Por qué internet premia al que "no hace nada"? | Señal alpha_breakout activada con score ajustado 78.71 y confianza high. | 80.7669 | this_week |
+| Evaluar crear contenido rápido sobre esta tendencia. | Así México enamora a BTS y estrellas de talla Mundial | Señal trend_burst activada con score ajustado 75.51 y confianza high. | 78.0536 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Estas son las personas más raras que existen #shorts | Señal trend_burst activada con score ajustado 76.67 y confianza high. | 77.9443 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Me cambió la vida cuando Jaime Higuera dijo esto #shorts | Señal trend_burst activada con score ajustado 74.45 y confianza high. | 77.3646 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Javier Milei se auto-usa de MAL ejemplo y aun así le sube el sueldo 123% a los funcionarios. | Señal trend_burst activada con score ajustado 76.29 y confianza high. | 77.0101 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Nadie Le Cree | Señal trend_burst activada con score ajustado 75.1 y confianza high. | 76.9557 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | The Saddest Moment in Financial Audit History | Señal trend_burst activada con score ajustado 76.16 y confianza high. | 76.498 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Weird Hobbies Of Celebrities | Señal trend_burst activada con score ajustado 74.98 y confianza high. | 75.7379 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Grown Man Spends 12 Hours On ROBLOX | Señal trend_burst activada con score ajustado 75.98 y confianza high. | 75.627 | next_3_days |
+| Evaluar crear contenido rápido sobre esta tendencia. | Most Expensive Commercials Ever | Señal trend_burst activada con score ajustado 74.96 y confianza high. | 75.5528 | next_3_days |
 
 ## Watchlist
 | entity_type | entity_id | title | reason | watch_priority |
 | --- | --- | --- | --- | --- |
-| channel | UCBBWpss2iXVXtTzl7-4eWbg | Buscar con tus PROPIAS MANOS a tu HERMANO en FOSAS CLANDESTINAS- Más allá del rosa con Jael Jacobo | Señal channel_volatility_warning activada con score ajustado 100.0 y confianza high. | high |
-| channel | UCjSVqRtdOsxQDss_pJpp_Yg | Experto en Inversión: Cómo Invertir y Hacer Crecer Tu Dinero (Guía Real de Inversiones) | EP. #67 | Señal channel_volatility_warning activada con score ajustado 98.43 y confianza high. | high |
-| channel | UCF0L4jd9LcSIxsj5gKITMqQ | Esta es una de las mayores señales de alta inteligencia emocional #shorts | Señal channel_volatility_warning activada con score ajustado 97.64 y confianza high. | high |
-| channel | UCbUYAYd1WUznxEEl498z7vA | EL NIETO DE CAPUILINA REGRESO PEOR QUE NUNCA | Señal channel_volatility_warning activada con score ajustado 96.85 y confianza high. | high |
-| channel | UCRDQzsHtx2cXvzEXnEhbxBg | BTS y la lucha libre superan la IA #méxico #btsarmy | Señal channel_volatility_warning activada con score ajustado 95.28 y confianza high. | high |
-| channel | UCxFACDJ98idvo9Gq9M9AQgg | El Estafador que Engañó a los Comediantes de México | Ft. Vero Monti | Dimes y Billetes #450 | Señal channel_volatility_warning activada con score ajustado 94.49 y confianza high. | high |
-| channel | UCiqJoWIT-vm-hJoXilFGiUQ | Acciones, ETFs, oro, petróleo ¡Todo en un solo lugar SIN COMISIONES! | BingX | Señal channel_volatility_warning activada con score ajustado 92.13 y confianza high. | high |
-| channel | UCl5-lvQyfILb-l2abPk4Ntg | Noticias IA | La Casa Blanca regula la IA | Señal channel_volatility_warning activada con score ajustado 91.34 y confianza high. | high |
-| channel | UC5mQQ4Ur6oA8lsGFkvH2lyg | ¡Me Prende El Tío De Mi Esposo! 🔥 Ft. @DiegoZanassi - T10E09 #podcast #chismes | Señal channel_volatility_warning activada con score ajustado 90.55 y confianza high. | high |
-| video | NdU6UdUKaYc | Scott Galloway: AI Wasn’t Built For You. The Rich Don’t Need You Anymore! | Señal accelerating_video activada con score ajustado 99.09 y confianza high. | high |
+| channel | UCBBWpss2iXVXtTzl7-4eWbg | Escúchalo completo en Más Allá del Rosa en YouTube | Señal channel_volatility_warning activada con score ajustado 99.22 y confianza high. | high |
+| channel | UCiqJoWIT-vm-hJoXilFGiUQ | ¡PROSOFIPO casi se queda SIN DINERO! ¿tu ahorro está seguro en Sofipos? | Señal channel_volatility_warning activada con score ajustado 97.29 y confianza high. | high |
+| channel | UCjSVqRtdOsxQDss_pJpp_Yg | Experto en Inversión: Cómo Invertir y Hacer Crecer Tu Dinero (Guía Real de Inversiones) | EP. #67 | Señal channel_volatility_warning activada con score ajustado 97.29 y confianza high. | high |
+| channel | UCF0L4jd9LcSIxsj5gKITMqQ | Estas son las personas más raras que existen #shorts | Señal channel_volatility_warning activada con score ajustado 96.12 y confianza high. | high |
+| channel | UCxFACDJ98idvo9Gq9M9AQgg | Me casé con un estafador | Señal channel_volatility_warning activada con score ajustado 95.35 y confianza high. | high |
+| channel | UCRDQzsHtx2cXvzEXnEhbxBg | Así México enamora a BTS y estrellas de talla Mundial | Señal channel_volatility_warning activada con score ajustado 94.57 y confianza high. | high |
+| channel | UCl5-lvQyfILb-l2abPk4Ntg | Así será el mundo cuando la IA lo controle todo | Señal channel_volatility_warning activada con score ajustado 93.8 y confianza high. | high |
+| channel | UCbUYAYd1WUznxEEl498z7vA | ESTE PODCAST ES TERRIBLE | Señal channel_volatility_warning activada con score ajustado 91.47 y confianza high. | high |
+| channel | UC5mQQ4Ur6oA8lsGFkvH2lyg | ¡Me enamoré de un DEALER! 😭 Ft. @Soyeljaro - T10E11 #chisme #amor #relacionestoxicas | Señal channel_volatility_warning activada con score ajustado 89.92 y confianza high. | high |
+| video | -0tv5_bKAaQ | Pranks That Are Disappearing | Señal accelerating_video activada con score ajustado 99.35 y confianza high. | high |
 
 ## Topic Opportunities
 | topic | opportunity_type | topic_opportunity_score | recommended_action |
 | --- | --- | --- | --- |
-| unknown | watch_topic | 73.03 | Monitorear señales y validar subtemas antes de escalar |
-| ai_tools | watch_topic | 57.9826 | Monitorear señales y validar subtemas antes de escalar |
-| news_trends | watch_topic | 47.9381 | Monitorear señales y validar subtemas antes de escalar |
-| finance_personal | low_priority | 47.8928 | Mantener en backlog y revisar siguiente ventana |
-| productivity | evergreen_angle | 31.542 | Escalar variante evergreen y reciclar mejores títulos |
-| tutorial | low_priority | 27.2868 | Mantener en backlog y revisar siguiente ventana |
+| unknown | watch_topic | 73.1 | Monitorear señales y validar subtemas antes de escalar |
+| ai_tools | watch_topic | 58.2167 | Monitorear señales y validar subtemas antes de escalar |
+| productivity | evergreen_angle | 57.2454 | Escalar variante evergreen y reciclar mejores títulos |
+| tutorial | low_priority | 35.4047 | Mantener en backlog y revisar siguiente ventana |
+| news_trends | low_priority | 34.3842 | Mantener en backlog y revisar siguiente ventana |
+| finance_personal | low_priority | 34.196 | Mantener en backlog y revisar siguiente ventana |
 
 ## Title Patterns That Worked
 | title_pattern | video_count | avg_views_delta | avg_engagement_rate | title_pattern_success_score |
 | --- | --- | --- | --- | --- |
-| comparison | 37 | 13590.3514 | 0.062566 | 20.3926 |
-| mistake | 22 | 240.1364 | 0.06973 | 15.8169 |
-| warning | 60 | 8746.0833 | 0.06601 | 15.4089 |
-| promise_save | 49 | 2728.7347 | 0.060491 | 15.3153 |
-| personal_experiment | 5 | 75380.2 | 0.046328 | 15.3084 |
-| contrarian | 37 | 3632.6757 | 0.069045 | 15.3072 |
-| news_update | 22 | 3138.9545 | 0.048411 | 14.2817 |
-| unknown | 734 | 16941.6567 | 0.053584 | 14.0555 |
-| numbered_list | 338 | 20893.4142 | 0.04904 | 13.9626 |
-| semantic_finance | 90 | 2916.3111 | 0.057643 | 13.6303 |
+| mistake | 21 | 503.9524 | 0.06798 | 19.3484 |
+| contrarian | 45 | 1547.2667 | 0.062524 | 18.479 |
+| warning | 63 | 6798.6508 | 0.065455 | 17.7591 |
+| personal_experiment | 4 | 50405.0 | 0.036768 | 15.7819 |
+| semantic_finance | 106 | 1087.3208 | 0.057725 | 15.6961 |
+| comparison | 40 | 47692.325 | 0.06044 | 15.5864 |
+| promise_save | 56 | 1455.8214 | 0.059269 | 15.4981 |
+| tutorial_how_to | 124 | 953.2903 | 0.05489 | 14.2876 |
+| promise_gain | 50 | 961.26 | 0.058143 | 14.1901 |
+| unknown | 838 | 16386.7446 | 0.053655 | 13.21 |
 
 ## Semantic Clusters to Watch
 | video_id | semantic_cluster_id | semantic_cluster_label | cluster_top_terms |
 | --- | --- | --- | --- |
-| tJH_gXK_WBM | 4 | que_shorts_el | que shorts el |
-| TIqrd6dCa8o | 4 | que_shorts_el | que shorts el |
-| kwEtOyaFhCA | 4 | que_shorts_el | que shorts el |
-| k8j-6Xvw_G4 | 4 | que_shorts_el | que shorts el |
-| Xq7pk4z4rlk | 4 | que_shorts_el | que shorts el |
-| 4m_M1Wpnr2Q | 4 | que_shorts_el | que shorts el |
-| 0idqiLonGYI | 4 | que_shorts_el | que shorts el |
-| 7S3LvDMxrxQ | 4 | que_shorts_el | que shorts el |
-| tT-5AciMHc8 | 4 | que_shorts_el | que shorts el |
-| hkTEFNz-CeU | 4 | que_shorts_el | que shorts el |
+| gNwzZxHjEOs | 3 | de_la_el | de la el |
+| -wOQ2QVol0U | 3 | de_la_el | de la el |
+| mkYeITacS2A | 3 | de_la_el | de la el |
+| V-z0k5xu1hM | 3 | de_la_el | de la el |
+| XfGEMCb6BQU | 3 | de_la_el | de la el |
+| 6Dj5ufzrZ78 | 3 | de_la_el | de la el |
+| tJH_gXK_WBM | 3 | de_la_el | de la el |
+| XxiYa7WM0fU | 3 | de_la_el | de la el |
+| rvVGTI7PFUQ | 3 | de_la_el | de la el |
+| iG9W1q7Gu8Y | 3 | de_la_el | de la el |
 
 ## Content Drivers
 ### Variables que maximizan future_log_views_delta_7d
 - topic_secondary__tutorial (random_forest_regressor)
 - topic_secondary__tutorial (random_forest_regressor)
 - topic_secondary__tutorial (random_forest_regressor)
-- title_has_currency (linear_regularized_regressor)
+- is_short (linear_regularized_regressor)
 - topic_secondary__unknown (shallow_tree_regressor)
 
 ### Variables que maximizan engagement
@@ -117,26 +117,26 @@
 
 ### Variables de dirección positiva
 - channel_relative_success_score (quantile_directional_analysis)
-- channel_relative_success_score (quantile_directional_analysis)
-- channel_relative_success_score (quantile_directional_analysis)
+- opportunity_score (quantile_directional_analysis)
 - alpha_score (quantile_directional_analysis)
-- opportunity_score (coefficient_sign)
+- channel_relative_success_score (quantile_directional_analysis)
+- channel_relative_success_score (quantile_directional_analysis)
 
 ### Variables de dirección negativa
 - decision_score (coefficient_sign)
 - alpha_score (coefficient_sign)
+- alpha_score (coefficient_sign)
 - decision_score (coefficient_sign)
-- topic_confidence (coefficient_sign)
-- curiosity_semantic_score (coefficient_sign)
+- tutorial_semantic_score (coefficient_sign)
 
 Advertencia: estas importancias son predictivas, no causales.
 
 ## Creative Packages to Execute
 | package_type | topic | creative_angle | recommended_format | creative_execution_score | recommended_next_step |
 | --- | --- | --- | --- | --- | --- |
-| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 76.5622 | iniciar_preproduccion |
-| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 75.9905 | mantener_watchlist |
-| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 75.9774 | mantener_watchlist |
+| fast_reaction_package | create_fast_reaction | Enfoque fast reaction para create_fast_reaction | video corto | 76.5859 | iniciar_preproduccion |
+| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 76.3374 | mantener_watchlist |
+| watchlist_package | tema clave | Enfoque watchlist para tema clave | video explicativo | 76.1367 | mantener_watchlist |
 
 ## Suggested Titles & Hooks
 ### Suggested Titles
@@ -150,7 +150,7 @@ Advertencia: estas importancias son predictivas, no causales.
 
 ## Model Readiness
 - status: ready
-- trainable_examples: 8158
+- trainable_examples: 12366
 - examples_missing_for_exploratory: 0
 - primary_blocker: None
 - next step: N/A
@@ -158,69 +158,69 @@ Advertencia: estas importancias son predictivas, no causales.
 ## Opportunity Matrix
 | action_type | candidates_count | avg_decision_score | recommended_focus |
 | --- | --- | --- | --- |
-| monitor_next_run | 218 | 69.6778 | Esperar confirmación de tendencia en próxima corrida. |
-| create_fast_reaction | 15 | 69.4081 | Priorizar ideas rápidas y publicar en ventana corta. |
-| benchmark_channel | 66 | 66.9493 | Documentar patrones replicables del canal referencia. |
-| repackage_idea | 480 | 58.4101 | Optimizar empaque de temas con potencial latente. |
+| create_fast_reaction | 28 | 72.2517 | Priorizar ideas rápidas y publicar en ventana corta. |
+| analyze_reference | 2 | 72.0603 | Extraer aprendizajes de formato y ángulo ganador. |
+| benchmark_channel | 64 | 69.4769 | Documentar patrones replicables del canal referencia. |
+| monitor_next_run | 184 | 67.7785 | Esperar confirmación de tendencia en próxima corrida. |
+| repackage_idea | 497 | 60.6909 | Optimizar empaque de temas con potencial latente. |
 | create_evergreen | 0 | 0.0 | Planificar piezas con valor sostenido en el tiempo. |
-| analyze_reference | 0 | 0.0 | Extraer aprendizajes de formato y ángulo ganador. |
 | wait_for_confidence | 0 | 0.0 | Acumular evidencia antes de una acción fuerte. |
 
 ## Top Videos by Growth
 | video_id | title | views_delta |
 | --- | --- | --- |
-| BTJGr78-zyw | Professor Jiang: World War 3 Is About To Begin, Let Me Explain! | 1238151 |
-| tJH_gXK_WBM | Memory Loss | 1163425 |
-| 8WaOsUdfi6c | This Military Chef Makes $2,000 Monthly FOREVER | 873711 |
-| uIcth4jt5yQ | This Civil Engineer Makes $150,000! | 575304 |
-| TIqrd6dCa8o | Dark Energy Is Getting Weaker? | 532720 |
-| kwEtOyaFhCA | Pulitzer Prize Historian: You Won't Notice Until It’s Too Late - Anne Applebaum | 486065 |
-| k8j-6Xvw_G4 | JYNXZI PEAK ELOOOOO | 437115 |
-| TNiqq4Uy7aY | I Went To School With Her Husband | 426910 |
-| PQZ2-kl18nY | EBT Final Boss | Financial Audit | 424921 |
-| ImG1BgHsqHk | Movie Scenes That Led To Lawsuits | 414865 |
+| gNwzZxHjEOs | I Tried Anti-Scream Devices | 3095583 |
+| -wOQ2QVol0U | Animals That Killed Their Owners | 2032528 |
+| Qqwn4rzZ-Dk | Is There Life on Venus? | 2005179 |
+| NnvIwG0S8WE | Tennis Ball Cannon vs Human Strength | 1721347 |
+| oGTO67JoZDQ | I Hired a Hood Translator For Financial Audit | 1660596 |
+| pag8Ncc7AwQ | What’s Really Inside The Earth? | 1172203 |
+| L8BkLkDtThU | The Saddest Moment in Financial Audit History | 812627 |
+| mkYeITacS2A | Grown Man Spends 12 Hours On ROBLOX | 756244 |
+| zXvygWE3Ess | How Alpha Particles Can Break Computer Chips | 713834 |
+| V-z0k5xu1hM | UFO Roundtable: CIA Physicist Proves Aliens Exist! | 588190 |
 
 ## Top Alpha Videos
 | video_id | title | alpha_score |
 | --- | --- | --- |
-| RvCT57c2Fdc | La decadencia del capitalismo vs. el futuro Chino floreciente. | 81.765101 |
-| 4LFP-oTXUN8 | Delfines Kamikaze ¿El arma secreta de Irán? | 80.657213 |
-| 5rTrRNntFTA | Cómo Hablar A Cualquier Persona (Una Vez Conoces Su Color) | 79.497646 |
-| 4xS5ctymXBs | Noticias IA | La Casa Blanca regula la IA | 79.12199 |
-| QHE2QO8peRA | high gas prices when a Democrat is president vs a Republican | 78.897632 |
-| g4Gb6viwsnQ | AI Music Scammer Gets Caught Then Hires Real Humans | 78.237974 |
-| Bj6MqL4pkXo | 2 artists 1 base #art #artist #draw #drawing | 76.744601 |
-| zoWYkJ4RTN0 | Dicen Que Sale Mañana | 76.729075 |
-| gV-VoaHsy-c | El hundimiento de CDMX no es como lo cuentan #cdmx | 76.164615 |
-| 3SFlwYVEubU | ¿De donde viene el símbolo de igual? | 75.996543 |
+| OtbHrLODinY | ¿Por qué internet premia al que "no hace nada"? | 91.525824 |
+| Xknz4LiogTQ | "NO es INFELICIDAD, es POBREZA" | 88.128989 |
+| 19DUtko6ngs | JESÚS MAESTRO, este domingo a las 6pm CEST aquí | 84.290158 |
+| QouigspVqvw | basically the WatchMojo crashout | 83.375386 |
+| kvTrRpeWW9s | Tienes que cambiar la forma en la que actúas #shorts | 81.235773 |
+| AiCdeZpXB9o | El respeto llega en este momento #shorts | 80.052249 |
+| sZShxatkcw8 | China rechaza a Zuckerberg (otra vez) | 79.939598 |
+| Izw3-5_orEc | Ofendieron a Internet y Lo Empezaron a Desinstalar | 79.710406 |
+| za3OH3SqdhA | Consecuencias Ocultas de Confiar en la Inteligencia Artificial | 79.575509 |
+| FUWx-9KF3M8 | Los efectos secundarios de las zanahorias | 79.500475 |
 
 ## Channel Momentum
 | channel_id | channel_name | channel_momentum_score |
 | --- | --- | --- |
-| UCSPLhwvj0gBufjDRzSQb3GQ | BobbyBroccoli | 98.828125 |
-| UCtscFf8VayggrDYjOwDke_Q | Angela Collier  | 98.828125 |
-| UCCApWEDxZLSe2u0BB-znodA | Don Canitro 👺 | 98.828125 |
-| UCL8w_A8p8P1HWI3k6PR5Z6w | Two Cents | 98.828125 |
-| UCDfbsXLRCyk_LIkrtaTmliQ | PlanetaJuan | 96.875 |
-| UC4mg-nKTVI9CWodPPqB5d3A | Luna Martínez  | 96.09375 |
-| UCV5G678sZwW5IcF3pCfRbHQ | La Hiperactina | 95.3125 |
-| UCRlBDnRQduDk4tmm1OtpSRg | UN POCO MEJOR | 94.53125 |
-| UCC552Sd-3nyi_tk2BudLUzA | AsapSCIENCE | 93.75 |
-| UCtT7zEoC9-HNyLYb8cYWoww | Ale Marin | 92.96875 |
+| UCSPLhwvj0gBufjDRzSQb3GQ | BobbyBroccoli | 98.837209 |
+| UCUHW94eEFW7hkUMVaZz4eDg | minutephysics | 98.837209 |
+| UCCApWEDxZLSe2u0BB-znodA | Don Canitro 👺 | 98.837209 |
+| UCBxr1muciHdRtlygUhruARw | Eduardo Rosas - Finanzas Personales | 98.837209 |
+| UCDfbsXLRCyk_LIkrtaTmliQ | PlanetaJuan | 96.899225 |
+| UC-bFpJCtP1lXn5vBxJ0b9dw | Diego Revuelta | 96.124031 |
+| UCWn_0MmgojB711LFX-jaCDQ | El Rincón Del Dev | 95.348837 |
+| UCL8w_A8p8P1HWI3k6PR5Z6w | Two Cents | 94.573643 |
+| UCY1kMZp36IQSyNx_9h4mpCg | Mark Rober | 93.79845 |
+| UCyJbb85EUgWjl38GcF236Jg | Eva Maria Beristain | 93.023256 |
 
 ## Alerts to Watch
 | severity | signal_type | entity_id | adjusted_signal_score |
 | --- | --- | --- | --- |
-| critical | metadata_change_watch | VVLYJf2t88c | 100.0 |
-| critical | channel_volatility_warning | UCBBWpss2iXVXtTzl7-4eWbg | 100.0 |
-| critical | channel_high_growth | UCLe_q9axMaeTbjN0hy1Z9xA | 100.0 |
-| critical | accelerating_video | T_LWKGJDKgo | 99.8182 |
-| critical | accelerating_video | qgzwtKsXCMo | 99.3333 |
-| critical | channel_high_growth | UCWBWgCD4oAqT3hUeq40SCUw | 99.2248 |
-| critical | accelerating_video | MjWI_rWQL68 | 99.1515 |
-| critical | accelerating_video | NdU6UdUKaYc | 99.0909 |
-| critical | accelerating_video | QPWScf-86po | 98.7879 |
-| critical | accelerating_video | jLFG_FZKbks | 98.5455 |
+| critical | channel_high_growth | UCWBWgCD4oAqT3hUeq40SCUw | 100.0 |
+| critical | accelerating_video | -0tv5_bKAaQ | 99.3536 |
+| critical | channel_high_growth | UCLe_q9axMaeTbjN0hy1Z9xA | 99.2308 |
+| critical | channel_volatility_warning | UCBBWpss2iXVXtTzl7-4eWbg | 99.2248 |
+| critical | high_engagement_low_reach | V4tlvp9IP_8 | 98.1427 |
+| critical | accelerating_video | fRjAMALJ0r0 | 97.9612 |
+| critical | high_engagement_low_reach | aYH-DvGfEVU | 97.844 |
+| critical | packaging_problem | V4tlvp9IP_8 | 97.629 |
+| critical | accelerating_video | ndkH5fZSIvs | 97.3148 |
+| critical | channel_volatility_warning | UCiqJoWIT-vm-hJoXilFGiUQ | 97.2868 |
 
 ## Title Pattern Snapshot
 - has_number: sample_size=, avg_views_delta=
