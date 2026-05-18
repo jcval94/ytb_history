@@ -67,6 +67,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     analytics_parser = sub.add_parser("build-analytics", help="Build latest analytics data mart")
     analytics_parser.add_argument("--data-dir", default="data")
+    analytics_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     pages_parser = sub.add_parser("build-pages-dashboard", help="Build static dashboard data for GitHub Pages")
     pages_parser.add_argument("--data-dir", default="data")
@@ -105,9 +106,11 @@ def build_parser() -> argparse.ArgumentParser:
 
     model_parser = sub.add_parser("build-model-dataset", help="Build supervised model-ready dataset and readiness report")
     model_parser.add_argument("--data-dir", default="data")
+    model_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     readiness_diag_parser = sub.add_parser("analyze-model-readiness", help="Analyze supervised model readiness diagnostics")
     readiness_diag_parser.add_argument("--data-dir", default="data")
+    readiness_diag_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     registry_parser = sub.add_parser("model-artifact-registry-report", help="Build artifact-based model registry readiness report")
     registry_parser.add_argument("--data-dir", default="data")
@@ -121,11 +124,13 @@ def build_parser() -> argparse.ArgumentParser:
     suite_parser.add_argument("--data-dir", default="data")
     suite_parser.add_argument("--modeling-config", default="config/modeling.yaml")
     suite_parser.add_argument("--artifact-dir", default="build/model_artifact")
+    suite_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     train_parser = sub.add_parser("train-baseline-model", help="Train baseline model (temporary alias) and write artifact directory")
     train_parser.add_argument("--data-dir", default="data")
     train_parser.add_argument("--modeling-config", default="config/modeling.yaml")
     train_parser.add_argument("--artifact-dir", default="build/model_artifact")
+    train_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     register_parser = sub.add_parser("register-trained-artifact", help="Register trained model artifact into model registry manifests")
     register_parser.add_argument("--artifact-name", required=True)
@@ -141,6 +146,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     model_int_parser = sub.add_parser("build-model-intelligence", help="Build hybrid model intelligence outputs from local prediction and decision artifacts")
     model_int_parser.add_argument("--data-dir", default="data")
+    model_int_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     creative_parser = sub.add_parser("generate-creative-packages", help="Generate deterministic creative execution packages from intelligence layers")
     creative_parser.add_argument("--data-dir", default="data")
@@ -148,6 +154,7 @@ def build_parser() -> argparse.ArgumentParser:
     content_driver_parser = sub.add_parser("train-content-driver-models", help="Train supervised content driver models with NLP/topic features")
     content_driver_parser.add_argument("--data-dir", default="data")
     content_driver_parser.add_argument("--artifact-dir", default="build/content_driver_artifact")
+    content_driver_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
 
     transcript_parser = sub.add_parser("select-transcription-candidates", help="Select daily high-value videos for transcription queue")
     transcript_parser.add_argument("--data-dir", default="data")
@@ -216,6 +223,7 @@ def build_parser() -> argparse.ArgumentParser:
     predict_parser.add_argument("--target", default="is_top_growth_7d")
     predict_parser.add_argument("--model-id")
     predict_parser.add_argument("--allow-historical-supervised-fallback", action="store_true")
+    predict_parser.add_argument("--content-format", choices=["all", "shorts", "videos"], default="all")
     return parser
 
 
@@ -246,7 +254,7 @@ def main() -> int:
         return 0
 
     if args.command == "build-analytics":
-        summary = build_analytics(data_dir=args.data_dir)
+        summary = build_analytics(data_dir=args.data_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -303,12 +311,12 @@ def main() -> int:
         return 0
 
     if args.command == "build-model-dataset":
-        summary = build_model_dataset(data_dir=args.data_dir)
+        summary = build_model_dataset(data_dir=args.data_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     if args.command == "analyze-model-readiness":
-        summary = analyze_model_readiness(data_dir=args.data_dir)
+        summary = analyze_model_readiness(data_dir=args.data_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -323,12 +331,12 @@ def main() -> int:
         return 0
 
     if args.command == "train-model-suite":
-        summary = train_model_suite(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir)
+        summary = train_model_suite(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     if args.command == "train-baseline-model":
-        summary = train_baseline_model(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir)
+        summary = train_baseline_model(data_dir=args.data_dir, modeling_config_path=args.modeling_config, artifact_dir=args.artifact_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -353,7 +361,7 @@ def main() -> int:
         return 0
 
     if args.command == "build-model-intelligence":
-        summary = build_model_intelligence(data_dir=args.data_dir)
+        summary = build_model_intelligence(data_dir=args.data_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -363,7 +371,7 @@ def main() -> int:
         return 0
 
     if args.command == "train-content-driver-models":
-        summary = train_content_driver_models(data_dir=args.data_dir, artifact_dir=args.artifact_dir)
+        summary = train_content_driver_models(data_dir=args.data_dir, artifact_dir=args.artifact_dir, content_format=args.content_format)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -470,6 +478,7 @@ def main() -> int:
             target=args.target,
             model_id=args.model_id,
             allow_historical_supervised_fallback=args.allow_historical_supervised_fallback,
+            content_format=args.content_format,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0

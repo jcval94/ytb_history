@@ -9,6 +9,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS, classify_content_format, resolve_content_format
+
 TARGET_COLUMNS = [
     "future_views_delta_7d",
     "future_log_views_delta_7d",
@@ -22,7 +24,6 @@ FEATURE_COLUMNS = [
     "comment_rate",
     "video_age_days",
     "duration_bucket",
-    "is_short",
     "alpha_score",
     "opportunity_score",
     "trend_burst_score",
@@ -101,9 +102,10 @@ def _build_latest_inference_examples(
     *,
     data_root: Path,
     allowed_features: list[str],
+    content_format: str = "all",
 ) -> tuple[list[dict[str, Any]], list[str]]:
     warnings: list[str] = []
-    analytics_latest = data_root / "analytics" / "latest"
+    analytics_latest = _analytics_latest_for_format(data_root, content_format)
     required_paths = {
         "video_metrics": analytics_latest / "latest_video_metrics.csv",
         "video_scores": analytics_latest / "latest_video_scores.csv",
@@ -154,6 +156,7 @@ def _build_latest_inference_examples(
             "channel_id": channel_id,
             "channel_name": merged.get("channel_name", ""),
             "title": merged.get("title", ""),
+            "content_format": _content_format_for_row(merged),
         }
         for feature in allowed_features:
             value = merged.get(feature)
@@ -184,9 +187,42 @@ def _rel(path: Path, root: Path) -> str:
         return str(path)
 
 
-def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: int = 7, tolerance_days: int = 2) -> dict[str, Any]:
+def _content_format_for_row(row: dict[str, Any]) -> str:
+    existing = resolve_content_format(row.get("content_format"))
+    if existing != "unknown":
+        return existing
+    return classify_content_format(
+        duration_seconds=row.get("duration_seconds"),
+        upload_date=row.get("upload_date"),
+        title=str(row.get("title", "") or ""),
+        tags=row.get("tags"),
+    ).content_format
+
+
+def _modeling_dir_for_format(data_root: Path, content_format: str) -> Path:
+    return data_root / "modeling" if content_format == "all" else data_root / "modeling" / "formats" / content_format
+
+
+def _analytics_latest_for_format(data_root: Path, content_format: str) -> Path:
+    format_latest = data_root / "analytics" / "formats" / content_format / "latest"
+    if content_format != "all" and format_latest.exists():
+        return format_latest
+    return data_root / "analytics" / "latest"
+
+
+def build_model_dataset(
+    *,
+    data_dir: str | Path = "data",
+    target_horizon_days: int = 7,
+    tolerance_days: int = 2,
+    content_format: str = "all",
+    build_format_splits: bool = True,
+) -> dict[str, Any]:
     data_root = Path(data_dir)
-    modeling_dir = data_root / "modeling"
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    modeling_dir = _modeling_dir_for_format(data_root, normalized_format)
     warnings: list[str] = []
 
     export_paths = _first_capture_growth_files_by_day(data_root / "exports")
@@ -212,7 +248,7 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
                     "comment_rate": _safe_float(row.get("comment_rate")),
                     "video_age_days": _safe_float(row.get("video_age_days")),
                     "duration_bucket": row.get("duration_bucket", ""),
-                    "is_short": _to_bool_str(row.get("is_short")),
+                    "content_format": _content_format_for_row(row),
                     "metadata_changed": _to_bool_str(
                         row.get("metadata_changed") or row.get("title_changed") or row.get("description_changed") or row.get("tags_changed")
                     ),
@@ -221,13 +257,15 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
             )
 
     observations.sort(key=lambda item: (str(item.get("video_id", "")), item["execution_date"]))
+    if normalized_format != "all":
+        observations = [item for item in observations if item.get("content_format") == normalized_format]
 
     latest_video_scores = {}
     latest_video_advanced = {}
     latest_channel_advanced = {}
     latest_title_metrics = {}
 
-    analytics_latest = data_root / "analytics" / "latest"
+    analytics_latest = _analytics_latest_for_format(data_root, normalized_format)
     file_map = {
         "video_scores": analytics_latest / "latest_video_scores.csv",
         "video_advanced": analytics_latest / "latest_video_advanced_metrics.csv",
@@ -296,7 +334,7 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
                 "comment_rate": current.get("comment_rate"),
                 "video_age_days": current.get("video_age_days"),
                 "duration_bucket": current.get("duration_bucket", ""),
-                "is_short": current.get("is_short", "False"),
+                "content_format": current.get("content_format", normalized_format),
                 "alpha_score": _safe_float(score_row.get("alpha_score")),
                 "opportunity_score": _safe_float(score_row.get("opportunity_score")),
                 "trend_burst_score": _safe_float(adv_row.get("trend_burst_score")),
@@ -343,6 +381,7 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
         "channel_name",
         "title",
         "source_export_path",
+        "content_format",
         *FEATURE_COLUMNS,
         *TARGET_COLUMNS,
     ]
@@ -394,7 +433,7 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
 
     feature_dictionary = {
         "features": [
-            {"name": feature, "type": "numeric" if feature not in {"duration_bucket", "is_short", "has_number", "has_question", "has_ai_word", "has_finance_word", "metadata_changed"} else "categorical_or_bool", "description": f"Feature {feature} available at time t."}
+            {"name": feature, "type": "numeric" if feature not in {"duration_bucket", "has_number", "has_question", "has_ai_word", "has_finance_word", "metadata_changed"} else "categorical_or_bool", "description": f"Feature {feature} available at time t."}
             for feature in allowed_features
         ],
         "excluded_by_leakage_policy": leakage_audit["excluded_feature_candidates"],
@@ -439,9 +478,17 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
         "latest_inference_examples": modeling_dir / "latest_inference_examples.csv",
     }
 
-    latest_inference_rows, inference_warnings = _build_latest_inference_examples(data_root=data_root, allowed_features=allowed_features)
+    latest_inference_rows, inference_warnings = _build_latest_inference_examples(
+        data_root=data_root,
+        allowed_features=allowed_features,
+        content_format=normalized_format,
+    )
+    if normalized_format != "all":
+        latest_inference_rows = [row for row in latest_inference_rows if _content_format_for_row(row) == normalized_format]
     warnings.extend(inference_warnings)
-    inference_columns = ["video_id", "execution_date", "channel_id", "channel_name", "title", *allowed_features]
+    inference_columns = ["video_id", "execution_date", "channel_id", "channel_name", "title", "content_format", *allowed_features]
+    for row in latest_inference_rows:
+        row["content_format"] = _content_format_for_row(row)
 
     _write_csv(outputs["supervised_examples"], all_columns, output_rows)
     _write_csv(outputs["latest_inference_examples"], inference_columns, latest_inference_rows)
@@ -452,9 +499,20 @@ def build_model_dataset(*, data_dir: str | Path = "data", target_horizon_days: i
 
     return {
         "status": "success_with_warnings" if warnings else "success",
+        "content_format": normalized_format,
         "modeling_dir": str(modeling_dir),
         "outputs": {key: _rel(path, data_root) for key, path in outputs.items()},
         "trainable_examples": trainable_examples,
         "recommended_status": recommended_status,
         "warnings": warnings,
+        "format_outputs": {
+            fmt: build_model_dataset(
+                data_dir=data_root,
+                target_horizon_days=target_horizon_days,
+                tolerance_days=tolerance_days,
+                content_format=fmt,
+                build_format_splits=False,
+            )
+            for fmt in CONTENT_FORMATS
+        } if normalized_format == "all" and build_format_splits else {},
     }

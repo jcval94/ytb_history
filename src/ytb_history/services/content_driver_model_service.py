@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS
+
 try:
     from sklearn.ensemble import RandomForestRegressor
     from sklearn.inspection import permutation_importance
@@ -31,6 +33,7 @@ TARGETS = [
 ]
 
 LEADERBOARD_COLUMNS = [
+    "content_format",
     "target",
     "model_family",
     "mae_log",
@@ -46,6 +49,7 @@ LEADERBOARD_COLUMNS = [
 ]
 
 FEATURE_IMPORTANCE_COLUMNS = [
+    "content_format",
     "target",
     "model_family",
     "feature",
@@ -58,6 +62,7 @@ FEATURE_IMPORTANCE_COLUMNS = [
 ]
 
 FEATURE_DIRECTION_COLUMNS = [
+    "content_format",
     "target",
     "model_family",
     "feature",
@@ -71,6 +76,7 @@ FEATURE_DIRECTION_COLUMNS = [
 ]
 
 GROUP_IMPORTANCE_COLUMNS = [
+    "content_format",
     "target",
     "model_family",
     "feature_group",
@@ -91,6 +97,30 @@ def _write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, Any]]) ->
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in fieldnames})
+
+
+def _write_combined_content_driver_reports(data_root: Path) -> None:
+    report_dir = data_root / "model_reports"
+    format_root = report_dir / "formats"
+    specs = [
+        ("latest_content_driver_leaderboard.csv", LEADERBOARD_COLUMNS),
+        ("latest_content_driver_feature_importance.csv", FEATURE_IMPORTANCE_COLUMNS),
+        ("latest_content_driver_feature_direction.csv", FEATURE_DIRECTION_COLUMNS),
+        ("latest_content_driver_group_importance.csv", GROUP_IMPORTANCE_COLUMNS),
+    ]
+    for filename, columns in specs:
+        rows: list[dict[str, Any]] = []
+        for fmt in CONTENT_FORMATS:
+            path = format_root / fmt / filename
+            if path.exists():
+                rows.extend(_read_csv(path))
+        _write_csv(report_dir / filename, columns, rows)
+
+    md_report = "# Content Driver Models Report\n\n"
+    md_report += "Separado por content_format: shorts y videos.\n"
+    html_report = "<html><body><pre>" + md_report.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;") + "</pre></body></html>"
+    (report_dir / "latest_content_driver_report.md").write_text(md_report, encoding="utf-8")
+    (report_dir / "latest_content_driver_report.html").write_text(html_report, encoding="utf-8")
 
 
 def _safe_float(value: Any) -> float:
@@ -189,8 +219,8 @@ def _feature_group(name: str) -> str:
     return "engagement_context"
 
 
-def _prepare_rows(data_dir: Path, warnings: list[str]) -> list[dict[str, Any]]:
-    modeling = data_dir / "modeling" / "supervised_examples.csv"
+def _prepare_rows(data_dir: Path, warnings: list[str], content_format: str) -> list[dict[str, Any]]:
+    modeling = data_dir / "modeling" / "supervised_examples.csv" if content_format == "all" else data_dir / "modeling" / "formats" / content_format / "supervised_examples.csv"
     if not modeling.exists():
         warnings.append(f"Missing required file: {modeling}")
         return []
@@ -210,7 +240,7 @@ def _prepare_rows(data_dir: Path, warnings: list[str]) -> list[dict[str, Any]]:
     merged: list[dict[str, Any]] = []
     for row in rows:
         video_id = str(row.get("video_id", ""))
-        merged.append({**row, **nlp_by_video.get(video_id, {}), **topic_by_video.get(video_id, {})})
+        merged.append({"content_format": content_format, **row, **nlp_by_video.get(video_id, {}), **topic_by_video.get(video_id, {})})
     return merged
 
 
@@ -263,7 +293,7 @@ def _derive_targets(rows: list[dict[str, Any]], warnings: list[str]) -> None:
 def _build_feature_space(rows: list[dict[str, Any]]) -> tuple[list[str], dict[str, list[str]]]:
     banned_exact = set(TARGETS) | {"future_views_delta_7d", "future_log_views_delta_7d", "is_top_growth_7d", "outperforms_channel_7d"}
     banned_prefix = ("future_",)
-    banned_cols = {"video_id", "title", "source_export_path", "target_date", "execution_date", "channel_name", "channel_id"}
+    banned_cols = {"video_id", "title", "source_export_path", "target_date", "execution_date", "channel_name", "channel_id", "content_format"}
 
     numeric_features: list[str] = []
     categorical_features: dict[str, list[str]] = {}
@@ -317,7 +347,42 @@ def train_content_driver_models(
     random_forest_n_estimators: int = 200,
     random_forest_max_depth: int = 8,
     random_forest_min_samples_leaf: int = 2,
+    content_format: str = "all",
 ) -> dict[str, Any]:
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    data_root = Path(data_dir)
+    artifact_root = Path(artifact_dir)
+    has_format_modeling = any(
+        (data_root / "modeling" / "formats" / fmt / "supervised_examples.csv").exists()
+        for fmt in CONTENT_FORMATS
+    )
+    if normalized_format == "all" and has_format_modeling:
+        format_results = {
+            fmt: train_content_driver_models(
+                data_dir=data_root,
+                artifact_dir=artifact_root / "formats" / fmt,
+                random_forest_n_estimators=random_forest_n_estimators,
+                random_forest_max_depth=random_forest_max_depth,
+                random_forest_min_samples_leaf=random_forest_min_samples_leaf,
+                content_format=fmt,
+            )
+            for fmt in CONTENT_FORMATS
+        }
+        _write_combined_content_driver_reports(data_root)
+        manifest = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "content_format": "all",
+            "content_formats": list(CONTENT_FORMATS),
+            "format_results": format_results,
+            "status": "success" if any(r.get("status") == "success" for r in format_results.values()) else "skipped_not_ready",
+            "warnings": [w for r in format_results.values() for w in r.get("warnings", [])],
+        }
+        Path(artifact_dir).mkdir(parents=True, exist_ok=True)
+        (Path(artifact_dir) / "suite_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        return manifest
+
     if not _HAS_SKLEARN:
         return {
             "status": "skipped_not_ready",
@@ -325,9 +390,8 @@ def train_content_driver_models(
             "warnings": ["scikit-learn is required for train-content-driver-models."],
         }
 
-    data_root = Path(data_dir)
     warnings: list[str] = []
-    rows = _prepare_rows(data_root, warnings)
+    rows = _prepare_rows(data_root, warnings, normalized_format)
     if len(rows) < 20:
         return {"status": "skipped_not_ready", "reason": "insufficient_examples", "total_rows": len(rows), "warnings": warnings}
 
@@ -345,7 +409,6 @@ def train_content_driver_models(
     x_train = _vectorize(train_rows, features, categorical_map)
     x_val = _vectorize(val_rows, features, categorical_map)
 
-    artifact_root = Path(artifact_dir)
     models_dir = artifact_root / "models"
     reports_dir = artifact_root / "reports"
     models_dir.mkdir(parents=True, exist_ok=True)
@@ -403,6 +466,7 @@ def train_content_driver_models(
 
             leaderboard_rows.append(
                 {
+                    "content_format": normalized_format,
                     "target": target,
                     "model_family": model_family,
                     "mae_log": round(mae, 6),
@@ -463,6 +527,7 @@ def train_content_driver_models(
                 importance_rows.append(
                     {
                         "target": target,
+                        "content_format": normalized_format,
                         "model_family": model_family,
                         "feature": feature,
                         "feature_group": group,
@@ -477,6 +542,7 @@ def train_content_driver_models(
                     direction_rows.append(
                         {
                             "target": target,
+                            "content_format": normalized_format,
                             "model_family": model_family,
                             "feature": feature,
                             "feature_group": group,
@@ -502,6 +568,7 @@ def train_content_driver_models(
                 group_rows.append(
                     {
                         "target": target,
+                        "content_format": normalized_format,
                         "model_family": model_family,
                         "feature_group": group,
                         "group_importance": round(value, 8),
@@ -512,7 +579,7 @@ def train_content_driver_models(
             with (models_dir / f"{target}_{model_family}.pkl").open("wb") as handle:
                 pickle.dump(model, handle)
 
-    reports_dir_data = data_root / "model_reports"
+    reports_dir_data = data_root / "model_reports" if normalized_format == "all" else data_root / "model_reports" / "formats" / normalized_format
     reports_dir_data.mkdir(parents=True, exist_ok=True)
     _write_csv(reports_dir_data / "latest_content_driver_leaderboard.csv", LEADERBOARD_COLUMNS, leaderboard_rows)
     _write_csv(reports_dir_data / "latest_content_driver_feature_importance.csv", FEATURE_IMPORTANCE_COLUMNS, importance_rows)
@@ -579,6 +646,7 @@ def train_content_driver_models(
 
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "content_format": normalized_format,
         "targets": TARGETS,
         "models": sorted({row.get("model_family") for row in leaderboard_rows}),
         "leaderboard_rows": len(leaderboard_rows),

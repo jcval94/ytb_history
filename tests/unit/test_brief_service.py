@@ -20,10 +20,10 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
 
     _write_csv(
         data_dir / "analytics" / "latest" / "latest_video_metrics.csv",
-        ["video_id", "title", "views_delta", "likes_delta", "comments_delta", "engagement_rate"],
+        ["video_id", "title", "content_format", "views_delta", "likes_delta", "comments_delta", "engagement_rate"],
         [
-            {"video_id": "v1", "title": "Video 1", "views_delta": 200, "likes_delta": 20, "comments_delta": 4, "engagement_rate": 0.11},
-            {"video_id": "v2", "title": "Video 2", "views_delta": 400, "likes_delta": 40, "comments_delta": 10, "engagement_rate": 0.14},
+            {"video_id": "v1", "title": "Video 1", "content_format": "shorts", "views_delta": 200, "likes_delta": 20, "comments_delta": 4, "engagement_rate": 0.11},
+            {"video_id": "v2", "title": "Video 2", "content_format": "videos", "views_delta": 400, "likes_delta": 40, "comments_delta": 10, "engagement_rate": 0.14},
         ],
     )
     _write_csv(
@@ -33,8 +33,8 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
     )
     _write_csv(
         data_dir / "analytics" / "latest" / "latest_video_scores.csv",
-        ["video_id", "title", "alpha_score"],
-        [{"video_id": "v1", "title": "Video 1", "alpha_score": 87}, {"video_id": "v2", "title": "Video 2", "alpha_score": 95}],
+        ["video_id", "title", "content_format", "alpha_score"],
+        [{"video_id": "v1", "title": "Video 1", "content_format": "shorts", "alpha_score": 87}, {"video_id": "v2", "title": "Video 2", "content_format": "videos", "alpha_score": 95}],
     )
     _write_csv(
         data_dir / "analytics" / "latest" / "latest_video_advanced_metrics.csv",
@@ -61,8 +61,8 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
     )
     _write_csv(
         data_dir / "topic_intelligence" / "latest_topic_opportunities.csv",
-        ["topic", "opportunity_type", "topic_opportunity_score", "recommended_action"],
-        [{"topic": "ai_tools", "opportunity_type": "emerging_topic", "topic_opportunity_score": 80, "recommended_action": "scale"}],
+        ["content_format", "topic", "opportunity_type", "topic_opportunity_score", "recommended_action"],
+        [{"content_format": "shorts", "topic": "ai_tools", "opportunity_type": "emerging_topic", "topic_opportunity_score": 80, "recommended_action": "scale"}],
     )
     _write_csv(
         data_dir / "topic_intelligence" / "latest_title_pattern_metrics.csv",
@@ -123,6 +123,7 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
             data_dir / "decision" / "latest_action_candidates.csv",
             [
                 "execution_date",
+                "content_format",
                 "priority",
                 "action_type",
                 "recommended_action",
@@ -135,6 +136,7 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
             [
                 {
                     "execution_date": "2026-04-28",
+                    "content_format": "shorts",
                     "priority": "high",
                     "action_type": "create_fast_reaction",
                     "recommended_action": "A1",
@@ -146,6 +148,7 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
                 },
                 {
                     "execution_date": "2026-04-28",
+                    "content_format": "videos",
                     "priority": "critical",
                     "action_type": "create_evergreen",
                     "recommended_action": "A2",
@@ -164,10 +167,10 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
         )
         _write_csv(
             data_dir / "decision" / "latest_content_opportunities.csv",
-            ["content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"],
+            ["content_format", "content_strategy", "source_title", "why_it_matters", "evidence_score", "recommended_timeframe"],
             [
-                {"content_strategy": "evergreen", "source_title": "S1", "why_it_matters": "W1", "evidence_score": 70, "recommended_timeframe": "this_month"},
-                {"content_strategy": "fast", "source_title": "S2", "why_it_matters": "W2", "evidence_score": 90, "recommended_timeframe": "next_3_days"},
+                {"content_format": "videos", "content_strategy": "evergreen", "source_title": "S1", "why_it_matters": "W1", "evidence_score": 70, "recommended_timeframe": "this_month"},
+                {"content_format": "shorts", "content_strategy": "fast", "source_title": "S2", "why_it_matters": "W2", "evidence_score": 90, "recommended_timeframe": "next_3_days"},
             ],
         )
         _write_csv(
@@ -183,10 +186,10 @@ def _prepare_data(tmp_path: Path, *, with_alerts: bool = True, with_decision: bo
 
     _write_csv(
         data_dir / "creative_packages" / "latest_creative_packages.csv",
-        ["creative_package_id", "package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
+        ["creative_package_id", "content_format", "package_type", "topic", "creative_angle", "recommended_format", "creative_execution_score", "recommended_next_step"],
         [
-            {"creative_package_id": "cp1", "package_type": "fast_reaction_package", "topic": "ai_tools", "creative_angle": "angulo 1", "recommended_format": "video corto", "creative_execution_score": 90, "recommended_next_step": "iniciar_preproduccion"},
-            {"creative_package_id": "cp2", "package_type": "evergreen_explainer_package", "topic": "finanzas", "creative_angle": "angulo 2", "recommended_format": "video explicativo", "creative_execution_score": 80, "recommended_next_step": "iniciar_preproduccion"},
+            {"creative_package_id": "cp1", "content_format": "shorts", "package_type": "fast_reaction_package", "topic": "ai_tools", "creative_angle": "angulo 1", "recommended_format": "video corto", "creative_execution_score": 90, "recommended_next_step": "iniciar_preproduccion"},
+            {"creative_package_id": "cp2", "content_format": "videos", "package_type": "evergreen_explainer_package", "topic": "finanzas", "creative_angle": "angulo 2", "recommended_format": "video explicativo", "creative_execution_score": 80, "recommended_next_step": "iniciar_preproduccion"},
         ],
     )
     _write_csv(
@@ -221,6 +224,7 @@ def test_generate_weekly_brief_generates_outputs_and_sections(tmp_path: Path) ->
     assert "## What Actions Should I Take This Week?" in markdown_text
     assert "## Top Content Opportunities" in markdown_text
     assert "## Watchlist" in markdown_text
+    assert "## Shorts vs Videos" in markdown_text
     assert "## Topic Opportunities" in markdown_text
     assert "## Content Drivers" in markdown_text
     assert "predictivas, no causales" in markdown_text
@@ -229,6 +233,10 @@ def test_generate_weekly_brief_generates_outputs_and_sections(tmp_path: Path) ->
 
     payload = json.loads((data_dir / "briefs" / "latest_weekly_brief.json").read_text(encoding="utf-8"))
     assert "top_actions_this_week" in payload
+    assert payload["format_breakdown"]["shorts"]["videos_total"] == 1
+    assert payload["format_breakdown"]["videos"]["videos_total"] == 1
+    assert payload["format_breakdown"]["shorts"]["top_actions"] == 1
+    assert payload["format_breakdown"]["videos"]["creative_packages"] == 1
     assert payload["top_actions_this_week"][0]["decision_score"] == "95"
     assert any("acciones prioritarias" in bullet for bullet in payload["executive_summary"])
 
@@ -266,7 +274,7 @@ def test_generate_weekly_brief_writes_only_inside_briefs(tmp_path: Path) -> None
     created = updated_files - existing_files
 
     assert created
-    assert all(str(path).startswith("briefs/") for path in created)
+    assert all(path.as_posix().startswith("briefs/") for path in created)
 
 
 def test_generate_weekly_brief_has_no_api_or_search_list_dependency() -> None:
@@ -327,5 +335,7 @@ def test_generate_client_brief_writes_client_outputs_and_sections(tmp_path: Path
 
     summary = json.loads((data_dir / "client_briefs" / "latest_client_brief_summary.json").read_text(encoding="utf-8"))
     assert summary["accelerating_videos"][0]["title"] == "Video 2"
+    assert summary["accelerating_videos"][0]["content_format"] == "videos"
+    assert summary["format_breakdown"]["shorts"]["videos_total"] == 1
     assert summary["publishing_recommendations"][0]["recommendation"] == "angulo 1"
     assert summary["emerging_topics"][0]["topic"] == "ai_tools"

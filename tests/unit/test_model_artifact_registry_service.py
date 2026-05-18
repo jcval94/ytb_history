@@ -44,7 +44,8 @@ def test_model_artifact_registry_generates_initial_manifests(tmp_path: Path) -> 
 
     assert report["status"] == "success"
     latest = json.loads((data_dir / "model_registry" / "latest_model_manifest.json").read_text(encoding="utf-8"))
-    assert latest["schema_version"] == "latest_model_manifest_v1"
+    assert latest["schema_version"] == "latest_model_manifest_v2"
+    assert latest["content_formats"] == ["shorts", "videos"]
 
     index_doc = json.loads((data_dir / "model_registry" / "training_runs_index.json").read_text(encoding="utf-8"))
     assert index_doc["schema_version"] == "training_runs_index_v1"
@@ -138,7 +139,7 @@ def test_model_artifact_registry_no_api_no_search_list_and_writes_only_registry(
     created = updated - existing
 
     assert created
-    assert all(str(path).startswith("model_registry/") for path in created)
+    assert all(path.as_posix().startswith("model_registry/") for path in created)
 
     source = Path("src/ytb_history/services/model_artifact_registry_service.py").read_text(encoding="utf-8")
     assert "search.list" not in source

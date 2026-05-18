@@ -21,7 +21,7 @@ def _write_csv(path: Path, headers: list[str], rows: list[dict[str, object]]) ->
 def _prepare_data(data_dir: Path) -> None:
     _write_csv(
         data_dir / "analytics" / "latest" / "latest_video_metrics.csv",
-        ["execution_date", "channel_id", "channel_name", "video_id", "title", "upload_date", "views_delta", "engagement_rate"],
+        ["execution_date", "channel_id", "channel_name", "video_id", "title", "upload_date", "content_format", "views_delta", "engagement_rate"],
         [
             {
                 "execution_date": "2026-05-12T00:00:00+00:00",
@@ -30,6 +30,7 @@ def _prepare_data(data_dir: Path) -> None:
                 "video_id": "v1",
                 "title": "Nuevo agente de IA",
                 "upload_date": "2026-05-10T00:00:00+00:00",
+                "content_format": "shorts",
                 "views_delta": 900,
                 "engagement_rate": 0.08,
             },
@@ -40,6 +41,7 @@ def _prepare_data(data_dir: Path) -> None:
                 "video_id": "v2",
                 "title": "Video anterior",
                 "upload_date": "2026-04-01T00:00:00+00:00",
+                "content_format": "videos",
                 "views_delta": 2000,
                 "engagement_rate": 0.02,
             },
@@ -53,17 +55,17 @@ def _prepare_data(data_dir: Path) -> None:
     _write_csv(data_dir / "analytics" / "latest" / "latest_title_metrics.csv", ["title_pattern", "video_count"], [])
     _write_csv(
         data_dir / "topic_intelligence" / "latest_topic_opportunities.csv",
-        ["topic", "opportunity_type", "topic_opportunity_score", "recommended_action", "why_it_matters"],
+        ["content_format", "topic", "opportunity_type", "topic_opportunity_score", "recommended_action", "why_it_matters"],
         [{"topic": "ai_tools", "opportunity_type": "watch_topic", "topic_opportunity_score": 77.5, "recommended_action": "Crear comparativa", "why_it_matters": "Alta tracción"}],
     )
     _write_csv(
         data_dir / "topic_intelligence" / "latest_topic_metrics.csv",
-        ["topic", "topic_velocity_score", "topic_opportunity_score", "video_count"],
+        ["content_format", "topic", "topic_velocity_score", "topic_opportunity_score", "video_count"],
         [{"topic": "ai_tools", "topic_velocity_score": 95, "topic_opportunity_score": 77.5, "video_count": 3}],
     )
     _write_csv(
         data_dir / "topic_intelligence" / "latest_title_pattern_metrics.csv",
-        ["title_pattern", "title_pattern_success_score", "avg_views_delta", "example_titles"],
+        ["content_format", "title_pattern", "title_pattern_success_score", "avg_views_delta", "example_titles"],
         [{"title_pattern": "warning", "title_pattern_success_score": 15.5, "avg_views_delta": 321, "example_titles": "No uses esta IA"}],
     )
     (data_dir / "topic_intelligence").mkdir(parents=True, exist_ok=True)
@@ -76,7 +78,7 @@ def _prepare_data(data_dir: Path) -> None:
     _write_csv(data_dir / "model_reports" / "latest_content_driver_feature_direction.csv", ["feature", "direction_score"], [{"feature": "title", "direction_score": 1}])
     _write_csv(
         data_dir / "model_intelligence" / "latest_hybrid_recommendations.csv",
-        ["video_id", "hybrid_decision_score", "confidence_level"],
+        ["content_format", "video_id", "hybrid_decision_score", "confidence_level"],
         [{"video_id": "v1", "hybrid_decision_score": 33, "confidence_level": "high"}],
     )
     (data_dir / "model_intelligence").mkdir(parents=True, exist_ok=True)
@@ -101,6 +103,7 @@ def test_generate_category_report_writes_md_html_and_summary(tmp_path: Path) -> 
 
     markdown = (output_dir / "latest_category_report.md").read_text(encoding="utf-8")
     assert "## 1. Portada" in markdown
+    assert "## Shorts vs Videos" in markdown
     assert "## 9. Limitaciones de datos" in markdown
     assert "Nuevo agente de IA" in markdown
     assert "Video anterior" not in markdown
@@ -108,6 +111,8 @@ def test_generate_category_report_writes_md_html_and_summary(tmp_path: Path) -> 
     summary = json.loads((output_dir / "category_report_summary.json").read_text(encoding="utf-8"))
     assert summary["category_name"] == "IA"
     assert summary["key_metrics"]["videos_in_period"] == 1
+    assert summary["format_breakdown"]["shorts"]["videos_in_period"] == 1
+    assert summary["format_breakdown"]["videos"]["videos_in_period"] == 0
 
 
 def test_generate_category_report_defaults_output_dir_to_data_dir(tmp_path: Path) -> None:

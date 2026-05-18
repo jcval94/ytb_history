@@ -22,6 +22,8 @@ def test_frontend_js_references_alerts_paths_and_hardening() -> None:
     assert "./data/latest_alerts.json" in app_js
     assert "./data/latest_model_leaderboard.json" in app_js
     assert "./data/latest_feature_importance.json" in app_js
+    assert "./data/latest_predictions.json" in app_js
+    assert "./data/latest_hybrid_recommendations.json" in app_js
     assert "./data/latest_weekly_brief.json" in app_js
     assert "./data/latest_opportunity_radar.json" in app_js
     assert "./data/latest_process_status.json" in app_js
@@ -63,6 +65,9 @@ def test_index_html_contains_models_tab() -> None:
     index_html = _read("apps/pages_dashboard/src/index.html")
     assert 'data-tab="models"' in index_html
     assert "Models" in index_html
+    assert 'id="content-format-filter"' in index_html
+    assert '<option value="shorts">Shorts</option>' in index_html
+    assert '<option value="videos">Videos</option>' in index_html
 
 
 def test_app_js_contains_render_brief() -> None:
@@ -87,6 +92,10 @@ def test_app_js_contains_render_operations() -> None:
 def test_app_js_contains_render_models() -> None:
     app_js = _read("apps/pages_dashboard/src/assets/app.js")
     assert "function renderModels()" in app_js
+    assert "models-format-filter" in app_js
+    assert "Latest predictions" in app_js
+    assert "Hybrid recommendations" in app_js
+    assert "function formatMatches(row, contentFormat)" in app_js
     assert "RF importance does not imply direction; direction is estimated with prediction-based directional analysis." in app_js
     assert "function setDataStatus(" in app_js
     assert "function setDomainStatus(" in app_js

@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import CONTENT_FORMATS
 from ytb_history.services.model_artifact_registry_service import _DEFAULT_MODELING_CONFIG
 
 
@@ -89,9 +90,20 @@ def _build_target_diagnostics(rows: list[dict[str, str]], targets: dict[str, Any
     return diagnostics
 
 
-def analyze_model_readiness(*, data_dir: str | Path = "data") -> dict[str, Any]:
+def analyze_model_readiness(*, data_dir: str | Path = "data", content_format: str = "all") -> dict[str, Any]:
     data_root = Path(data_dir)
-    modeling_dir = data_root / "modeling"
+    normalized_format = "all" if content_format in {"", "all", None} else str(content_format)
+    if normalized_format not in {"all", *CONTENT_FORMATS}:
+        raise ValueError("content_format must be one of: all, shorts, videos")
+    if normalized_format == "all" and any((data_root / "modeling" / "formats" / fmt).exists() for fmt in CONTENT_FORMATS):
+        format_results = {fmt: analyze_model_readiness(data_dir=data_root, content_format=fmt) for fmt in CONTENT_FORMATS}
+        return {
+            "status": "ready" if any(result.get("status") == "ready" for result in format_results.values()) else "not_ready",
+            "content_format": "all",
+            "format_results": format_results,
+            "warnings": [warning for result in format_results.values() for warning in result.get("warnings", [])],
+        }
+    modeling_dir = data_root / "modeling" if normalized_format == "all" else data_root / "modeling" / "formats" / normalized_format
     registry_dir = data_root / "model_registry"
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
@@ -197,6 +209,7 @@ def analyze_model_readiness(*, data_dir: str | Path = "data") -> dict[str, Any]:
 
     diagnostics = {
         "generated_at": now,
+        "content_format": normalized_format,
         "status": "not_ready" if blockers else "ready",
         "recommended_status": recommended_status,
         "can_train_now": recommended_status in {"exploratory_only", "ready_for_baseline"} and not blockers,
@@ -259,6 +272,7 @@ def analyze_model_readiness(*, data_dir: str | Path = "data") -> dict[str, Any]:
 
     return {
         "status": diagnostics["status"],
+        "content_format": normalized_format,
         "can_train_now": diagnostics["can_train_now"],
         "recommended_status": recommended_status,
         "diagnostics_path": str(modeling_dir / "latest_model_readiness_diagnostics.json"),

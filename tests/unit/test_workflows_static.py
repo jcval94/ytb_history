@@ -148,6 +148,7 @@ def test_train_model_workflow_contract() -> None:
     assert "retention-days: 30" in content
     assert "git add data/model_registry/ data/model_reports/" in content
     assert "data/modeling/latest_model_readiness_diagnostics.json" in content
+    assert "data/modeling/formats/" in content
     assert "data/modeling/latest_model_readiness_timeline.csv" in content
     assert "data/modeling/latest_target_coverage_report.csv" in content
     assert "data/modeling/latest_training_gap_report.json" in content
@@ -184,6 +185,7 @@ def test_predict_model_workflow_contract() -> None:
     assert "git add downloaded_model" not in content
     assert "git add build/model_artifact" not in content
     assert "git add data/predictions/latest_predictions.csv" not in content
+    assert "git add data/predictions/" in content
 
 
 def test_pages_workflow_does_not_run_smoke_test_training() -> None:

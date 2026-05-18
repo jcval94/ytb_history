@@ -282,6 +282,8 @@ Notas comerciales y de compliance:
 
 ```bash
 python -m ytb_history.cli build-model-dataset
+python -m ytb_history.cli build-model-dataset --content-format shorts
+python -m ytb_history.cli build-model-dataset --content-format videos
 ```
 
 Genera artefactos de preparación para modelado supervisado en `data/modeling/`:
@@ -290,15 +292,21 @@ Genera artefactos de preparación para modelado supervisado en `data/modeling/`:
 - `target_dictionary.json`
 - `leakage_audit.json`
 - `model_readiness_report.json`
+- `latest_inference_examples.csv`
 
 Este comando prepara dataset supervisado y auditorías de readiness, pero **no entrena** modelos productivos todavía.
 
 
 
+Por defecto tambien genera contratos separados en `data/modeling/formats/shorts/` y `data/modeling/formats/videos/`. `content_format` segmenta el dataset, no se usa como feature, y `is_short` queda excluido de ML.
+
+Regla conservadora: `shorts` si `duration_seconds <= 60`; `shorts` si `61..180`, `upload_date >= 2024-10-15` y metadata/titulo/tags indican Shorts; `videos` para el resto con duracion valida; `unknown` si falta duracion. Referencia: [YouTube Help sobre Shorts de 3 minutos](https://support.google.com/youtube/answer/15424877?hl=en).
+
 ## 12.3.1) Analizar model readiness diagnostics
 
 ```bash
 python -m ytb_history.cli analyze-model-readiness --data-dir data
+python -m ytb_history.cli analyze-model-readiness --data-dir data --content-format shorts
 ```
 
 Genera diagnóstico explícito de madurez de entrenamiento en `data/modeling/`:
@@ -310,6 +318,8 @@ Genera diagnóstico explícito de madurez de entrenamiento en `data/modeling/`:
 - `latest_model_readiness_report.html`
 
 Este comando **explica por qué el entrenamiento está bloqueado**, no llama YouTube API y **no entrena modelos**.
+
+Cuando existen splits, tambien escribe diagnosticos en `data/modeling/formats/shorts/` y `data/modeling/formats/videos/`.
 
 ## 12.4) Construir capa NLP liviana
 
@@ -346,11 +356,13 @@ Este comando no llama YouTube API, no usa `search.list`, no usa LLMs ni embeddin
 
 ## 12.6) Entrenar Content Driver Models supervisados
 
+Contrato Shorts/Videos: entrena desde `data/modeling/formats/shorts/` y `data/modeling/formats/videos/`; no mezcla formatos para entrenamiento, ranking predictivo ni explicabilidad.
+
 ```bash
 python -m ytb_history.cli train-content-driver-models
 ```
 
-Entrena modelos supervisados (Random Forest, lineal regularizado y árbol shallow) con split temporal usando `data/modeling/supervised_examples.csv` + features NLP/tópicas cuando existen.
+Entrena modelos supervisados (Random Forest, lineal regularizado y árbol shallow) con split temporal usando los datasets por formato + features NLP/tópicas cuando existen. El CSV raiz `data/modeling/supervised_examples.csv` queda como vista combinada/compatibilidad, no como entrada productiva para mezclar Shorts con videos.
 
 Genera reportes en `data/model_reports/`:
 - `latest_content_driver_leaderboard.csv`
@@ -359,6 +371,8 @@ Genera reportes en `data/model_reports/`:
 - `latest_content_driver_group_importance.csv`
 - `latest_content_driver_report.md`
 - `latest_content_driver_report.html`
+
+Los artefactos por formato viven en `build/content_driver_artifact/formats/shorts/` y `build/content_driver_artifact/formats/videos/`; los reportes raiz son vistas combinadas con columna `content_format`.
 
 Y artefactos fuera de `data/` en `build/content_driver_artifact/` (no se deben versionar modelos en Git).
 

@@ -14,14 +14,14 @@ from typing import Any
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 
 CREATIVE_PACKAGES_COLUMNS = [
-    "creative_package_id", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
+    "creative_package_id", "content_format", "generated_at", "source_action_id", "source_opportunity_id", "source_video_id", "source_channel_name", "source_title", "topic", "package_type", "creative_angle", "recommended_format", "recommended_timeframe", "source_decision_score", "topic_opportunity_score", "title_pattern_success_score", "originality_score", "copy_risk_score", "production_feasibility_score", "creative_execution_score", "confidence_score", "transcript_available", "transcript_insights_path", "transcript_summary", "transcript_hook_type", "transcript_narrative_structure", "transcript_reuse_opportunities", "transcript_risk_notes", "evidence_json", "dashboard_tab", "recommended_next_step",
 ]
-TITLE_COLUMNS = ["creative_package_id", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "originality_status", "estimated_strength", "notes"]
-HOOK_COLUMNS = ["creative_package_id", "hook_id", "hook_text", "hook_type", "expected_use", "risk"]
-THUMB_COLUMNS = ["creative_package_id", "thumbnail_brief_id", "main_text", "visual_metaphor", "emotion", "layout_suggestion", "risk_notes"]
-OUTLINE_COLUMNS = ["creative_package_id", "outline_id", "structure_type", "intro", "section_1", "section_2", "section_3", "closing", "cta"]
-ORIGINALITY_COLUMNS = ["creative_package_id", "source_title", "candidate_text", "candidate_type", "lexical_similarity", "token_overlap_ratio", "copy_risk_score", "originality_score", "originality_status"]
-CHECKLIST_COLUMNS = ["creative_package_id", "step_order", "production_step", "estimated_effort", "required_input", "done_default"]
+TITLE_COLUMNS = ["creative_package_id", "content_format", "title_candidate_id", "title_candidate", "title_pattern", "title_pattern_success_score", "copy_risk_score", "originality_score", "originality_status", "estimated_strength", "notes"]
+HOOK_COLUMNS = ["creative_package_id", "content_format", "hook_id", "hook_text", "hook_type", "expected_use", "risk"]
+THUMB_COLUMNS = ["creative_package_id", "content_format", "thumbnail_brief_id", "main_text", "visual_metaphor", "emotion", "layout_suggestion", "risk_notes"]
+OUTLINE_COLUMNS = ["creative_package_id", "content_format", "outline_id", "structure_type", "intro", "section_1", "section_2", "section_3", "closing", "cta"]
+ORIGINALITY_COLUMNS = ["creative_package_id", "content_format", "source_title", "candidate_text", "candidate_type", "lexical_similarity", "token_overlap_ratio", "copy_risk_score", "originality_score", "originality_status"]
+CHECKLIST_COLUMNS = ["creative_package_id", "content_format", "step_order", "production_step", "estimated_effort", "required_input", "done_default"]
 
 TITLE_TEMPLATES = {
     "fast_reaction_package": ["Lo que significa {topic} esta semana", "{topic}: la señal que conviene vigilar ahora", "Por qué {topic} está ganando atención"],
@@ -194,6 +194,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
         opp = opp_by_video.get(video_id, {})
         topic_row = topic_by_video.get(video_id, {})
         merged = {**action, **opp, **topic_row}
+        content_format = str(action.get("content_format") or opp.get("content_format") or topic_row.get("content_format") or "unknown")
         package_type = _package_type(merged)
         topic = topic_row.get("topic") or action.get("topic") or opp.get("opportunity_type") or "tema clave"
         source_title = action.get("title") or opp.get("source_title") or ""
@@ -232,6 +233,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
 
             title_rows.append({
                 "creative_package_id": creative_package_id,
+                "content_format": content_format,
                 "title_candidate_id": f"{creative_package_id}_t{title_idx}",
                 "title_candidate": candidate,
                 "title_pattern": package_type,
@@ -244,6 +246,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             })
             originality_rows.append({
                 "creative_package_id": creative_package_id,
+                "content_format": content_format,
                 "source_title": source_title,
                 "candidate_text": candidate,
                 "candidate_type": "title",
@@ -268,6 +271,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
 
         creative_rows.append({
             "creative_package_id": creative_package_id,
+            "content_format": content_format,
             "generated_at": now,
             "source_action_id": action.get("action_id", ""),
             "source_opportunity_id": opp.get("opportunity_id", ""),
@@ -294,7 +298,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
             "transcript_narrative_structure": json.dumps(transcript_narrative if isinstance(transcript_narrative, list) else [], ensure_ascii=False),
             "transcript_reuse_opportunities": json.dumps(transcript_reuse if isinstance(transcript_reuse, list) else [], ensure_ascii=False),
             "transcript_risk_notes": json.dumps(transcript_risk_notes if isinstance(transcript_risk_notes, list) else [], ensure_ascii=False),
-            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", ""), "transcript_available": bool(transcript_insights)}, ensure_ascii=False),
+            "evidence_json": json.dumps({"action_type": action.get("action_type", ""), "opportunity_type": opp.get("opportunity_type", ""), "content_format": content_format, "transcript_available": bool(transcript_insights)}, ensure_ascii=False),
             "dashboard_tab": "creative_execution",
             "recommended_next_step": "mantener_watchlist" if package_type == "watchlist_package" else "iniciar_preproduccion",
         })
@@ -316,10 +320,11 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
                 "low",
             )] + hooks
         for i, (hook_type, text, expected_use, risk) in enumerate(hooks, start=1):
-            hook_rows.append({"creative_package_id": creative_package_id, "hook_id": f"{creative_package_id}_h{i}", "hook_text": text, "hook_type": hook_type, "expected_use": expected_use, "risk": risk})
+            hook_rows.append({"creative_package_id": creative_package_id, "content_format": content_format, "hook_id": f"{creative_package_id}_h{i}", "hook_text": text, "hook_type": hook_type, "expected_use": expected_use, "risk": risk})
 
         thumb_rows.append({
             "creative_package_id": creative_package_id,
+            "content_format": content_format,
             "thumbnail_brief_id": f"{creative_package_id}_tb1",
             "main_text": (transcript_summary[:48] if transcript_summary else topic[:48]),
             "visual_metaphor": "señal vs ruido",
@@ -349,6 +354,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
                 narrative_section_3 = extracted[2]
         outline_rows.append({
             "creative_package_id": creative_package_id,
+            "content_format": content_format,
             "outline_id": f"{creative_package_id}_o1",
             "structure_type": structure,
             "intro": f"Por qué {topic} importa ahora",
@@ -362,6 +368,7 @@ def generate_creative_packages(*, data_dir: str | Path = "data") -> dict[str, An
         for step_order, step in enumerate(["revisar evidencia", "elegir título", "definir hook", "preparar guion", "preparar miniatura", "publicar/monitorear"], start=1):
             checklist_rows.append({
                 "creative_package_id": creative_package_id,
+                "content_format": content_format,
                 "step_order": step_order,
                 "production_step": step,
                 "estimated_effort": "bajo" if step_order <= 3 else "medio",

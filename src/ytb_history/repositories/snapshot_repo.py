@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
 
+from ytb_history.domain.content_format import classify_content_format, resolve_content_format
 from ytb_history.domain.models import VideoSnapshot
 from ytb_history.storage.jsonl import read_jsonl_gz, write_jsonl_gz
 from ytb_history.storage.partitioning import (
@@ -37,6 +38,16 @@ class SnapshotRepo:
 
             raw_tags = row.get("tags", [])
             tags = raw_tags if isinstance(raw_tags, list) else []
+            classification = classify_content_format(
+                duration_seconds=row.get("duration_seconds"),
+                upload_date=upload_date,
+                title=str(row.get("title", "")),
+                description=str(row.get("description", "")),
+                tags=tags,
+            )
+            content_format = resolve_content_format(row.get("content_format")) or classification.content_format
+            if content_format == "unknown":
+                content_format = classification.content_format
             snapshots.append(
                 VideoSnapshot(
                     execution_date=execution_date,
@@ -52,6 +63,8 @@ class SnapshotRepo:
                     views=self._safe_int_or_none(row.get("views")),
                     likes=self._safe_int_or_none(row.get("likes")),
                     comments=self._safe_int_or_none(row.get("comments")),
+                    content_format=content_format,
+                    content_format_reason=str(row.get("content_format_reason") or classification.reason),
                 )
             )
         return snapshots

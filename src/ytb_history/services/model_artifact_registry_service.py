@@ -10,8 +10,9 @@ from typing import Any
 import yaml
 
 _INITIAL_LATEST_MODEL_MANIFEST: dict[str, Any] = {
-    "schema_version": "latest_model_manifest_v1",
+    "schema_version": "latest_model_manifest_v2",
     "status": "none",
+    "content_formats": ["shorts", "videos"],
     "model_id": None,
     "artifact_name": None,
     "workflow_run_id": None,

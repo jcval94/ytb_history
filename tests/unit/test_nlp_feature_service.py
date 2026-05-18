@@ -147,7 +147,7 @@ def test_no_api_no_search_list_and_writes_only_nlp_features(tmp_path: Path) -> N
     updated = {path.relative_to(data_dir) for path in data_dir.rglob("*") if path.is_file()}
     created = updated - existing
     assert created
-    assert all(str(path).startswith("nlp_features/") for path in created)
+    assert all(path.as_posix().startswith("nlp_features/") for path in created)
 
 
 def test_cli_build_nlp_features_prints_json(monkeypatch, capsys, tmp_path: Path) -> None:

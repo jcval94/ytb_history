@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.domain.content_format import classify_content_format, resolve_content_format
 from ytb_history.storage.jsonl import read_jsonl_gz
 from ytb_history.storage.partitioning import (
     export_dir_for_run,
@@ -29,6 +30,8 @@ SNAPSHOT_COLUMNS = [
     "tags",
     "thumbnail_url",
     "duration_seconds",
+    "content_format",
+    "content_format_reason",
     "views",
     "likes",
     "comments",
@@ -60,6 +63,8 @@ GROWTH_COLUMNS = [
     "title",
     "upload_date",
     "duration_seconds",
+    "content_format",
+    "content_format_reason",
     "views",
     "likes",
     "comments",
@@ -110,6 +115,21 @@ def _tags_as_json_string(raw_tags: Any) -> str:
     return json.dumps([str(tag) for tag in raw_tags], ensure_ascii=False)
 
 
+def _classify_snapshot_row(row: dict[str, Any]) -> tuple[str, str]:
+    classification = classify_content_format(
+        duration_seconds=row.get("duration_seconds"),
+        upload_date=row.get("upload_date"),
+        title=str(row.get("title", "") or ""),
+        description=str(row.get("description", "") or ""),
+        tags=row.get("tags"),
+    )
+    content_format = resolve_content_format(row.get("content_format"))
+    if content_format == "unknown":
+        content_format = classification.content_format
+    reason = str(row.get("content_format_reason") or classification.reason)
+    return content_format, reason
+
+
 def _as_iso_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -126,6 +146,7 @@ def _safe_int(value: Any) -> int | None:
 def _build_snapshot_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     mapped: list[dict[str, Any]] = []
     for row in rows:
+        content_format, content_format_reason = _classify_snapshot_row(row)
         mapped.append(
             {
                 "execution_date": _empty_if_none(row.get("execution_date")),
@@ -138,6 +159,8 @@ def _build_snapshot_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "tags": _tags_as_json_string(row.get("tags")),
                 "thumbnail_url": _empty_if_none(row.get("thumbnail_url")),
                 "duration_seconds": _empty_if_none(row.get("duration_seconds")),
+                "content_format": content_format,
+                "content_format_reason": content_format_reason,
                 "views": _empty_if_none(row.get("views")),
                 "likes": _empty_if_none(row.get("likes")),
                 "comments": _empty_if_none(row.get("comments")),
@@ -190,6 +213,7 @@ def _build_growth_rows(
     for snapshot in snapshots:
         video_id = str(snapshot.get("video_id", ""))
         delta = delta_by_video.get(video_id, {})
+        content_format, content_format_reason = _classify_snapshot_row(snapshot)
         rows.append(
             {
                 "execution_date": _empty_if_none(snapshot.get("execution_date")),
@@ -199,6 +223,8 @@ def _build_growth_rows(
                 "title": _empty_if_none(snapshot.get("title")),
                 "upload_date": _empty_if_none(snapshot.get("upload_date")),
                 "duration_seconds": _empty_if_none(snapshot.get("duration_seconds")),
+                "content_format": content_format,
+                "content_format_reason": content_format_reason,
                 "views": _empty_if_none(snapshot.get("views")),
                 "likes": _empty_if_none(snapshot.get("likes")),
                 "comments": _empty_if_none(snapshot.get("comments")),
