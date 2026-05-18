@@ -1,0 +1,14 @@
+{
+  "video_id": "g6Cq3m3gq1g",
+  "channel_id": "UCPTlwyaEoJOVyvDLzHagzNQ",
+  "channel_name": "WATOP",
+  "title": "El Cártel Se Metió Con El Padre Equivocado",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\g6Cq3m3gq1g.mp3",
+  "transcribed_at": "2026-05-18T01:55:41.170419+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 24006,
+  "text_sha256": "1a2465dad89415802c0e9fd1dd8d4e219b021053e7d9f74b208fe16a22d6d907",
+  "repo_schema_version": "transcript_metadata_v1"
+}

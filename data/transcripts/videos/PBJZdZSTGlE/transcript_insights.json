@@ -1,0 +1,88 @@
+{
+  "video_id": "PBJZdZSTGlE",
+  "language": "es",
+  "summary": "El video explora cómo transformar la ansiedad en energía positiva para afrontar desafíos. Presenta un estudio de Harvard que muestra que cambiar la narrativa sobre la ansiedad ayuda a mejorar el rendimiento y resalta que los nervios son una señal de que estamos creciendo y enfrentando nuevos retos.",
+  "main_topics": [
+    "Ansiedad y rendimiento",
+    "Cambio de narrativa sobre los nervios",
+    "Síndrome del impostor",
+    "Crecimiento personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la ansiedad en situaciones de presión",
+      "purpose": "Presentar el contexto del estudio de Harvard",
+      "summary": "Inicia explicando el experimento con estudiantes bajo evaluación."
+    },
+    {
+      "section": "Resultados del estudio",
+      "purpose": "Mostrar la diferencia en percepción de nervios",
+      "summary": "Compara dos grupos, uno que intenta calmarse y otro que recontextualiza los nervios."
+    },
+    {
+      "section": "Interpretación de los nervios",
+      "purpose": "Resignificar la ansiedad como energía positiva",
+      "summary": "Explica que los nervios indican que algo importante está por suceder."
+    },
+    {
+      "section": "Síndrome del impostor",
+      "purpose": "Conectar la ansiedad con el crecimiento personal",
+      "summary": "Describe cómo el síndrome del impostor señala un progreso."
+    },
+    {
+      "section": "Cierre y motivación",
+      "purpose": "Incentivar a ver los nervios como un impulso",
+      "summary": "Finaliza alentando a enfrentar el miedo y salir de la zona de confort."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impactante inicio",
+    "hook_text": "En un estudio de la Universidad de Harvard...",
+    "why_it_works": "Capta la atención rápidamente al referirse a una institución reconocida y generar curiosidad sobre los resultados."
+  },
+  "claims": [
+    {
+      "claim": "Los nervios pueden ser transformados en energía positiva.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La ansiedad es una señal de crecimiento y retos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El síndrome del impostor indica que uno está haciendo algo importante.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Recontextualiza tus nervios como entusiasmo.",
+    "Cambia la narrativa mental sobre la ansiedad.",
+    "Lee sobre el síndrome del impostor y cómo superarlo."
+  ],
+  "audience": "Personas que se enfrentan a situaciones estresantes o desafiantes.",
+  "tone": "Motivador y reflexivo",
+  "content_style": "Informativo con elementos anecdóticos",
+  "retention_devices": [
+    "Historias personales",
+    "Datos de estudios",
+    "Repetición de conceptos clave"
+  ],
+  "title_supporting_quotes": [
+    "Los nervios que sentís no son debilidad, es biología pura.",
+    "Ese cosquilleo puede ser pánico o preparación."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre manejo de la ansiedad.",
+    "Videos motivacionales sobre el síndrome del impostor.",
+    "Talleres de desarrollo personal."
+  ],
+  "risk_notes": [
+    "Podría ser visto como simplista si no se aborda la ansiedad clínica.",
+    "Efecto contrario si las personas no logran superar su ansiedad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

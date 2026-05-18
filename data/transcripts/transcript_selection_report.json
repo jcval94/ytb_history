@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-15T01:22:14.997316+00:00",
+  "generated_at": "2026-05-18T01:54:22.926503+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
-  "expected_selected_count": 13,
+  "expected_selected_count": 11,
   "ranked_shortfall": 0,
   "candidates_considered": 1914,
-  "available_ranked_count": 1883,
+  "available_ranked_count": 1879,
   "source_artifacts": {
     "decision": {
       "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
@@ -44,8 +44,8 @@
       "modified_at": "2026-05-15T01:22:12.237804+00:00"
     }
   },
-  "selected_count": 13,
-  "selected_forced_count": 3,
+  "selected_count": 11,
+  "selected_forced_count": 1,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
@@ -60,31 +60,31 @@
     "https://www.youtube.com/veritasium": 5
   },
   "forced_candidate_pool_count": 24,
-  "available_forced_before_truncation": 3,
+  "available_forced_before_truncation": 1,
   "forced_window_cutoff_date": "2026-04-30",
   "latest_upload_date": "2026-05-14",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 21,
-  "persisted_transcript_success_count": 21,
+  "registry_existing_success_count": 33,
+  "persisted_transcript_success_count": 33,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 8,
-  "skipped_already_transcribed": 21,
+  "registry_existing_recent_failed_count": 1,
+  "skipped_already_transcribed": 33,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 7,
-  "skipped_forced_already_transcribed": 10,
+  "skipped_recent_failures": 1,
+  "skipped_forced_already_transcribed": 13,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 1,
+  "skipped_forced_recent_failures": 0,
   "skipped_forced_outside_window": 10,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "VEAic3PrzHM",
-    "rfRFwXnk660",
-    "ByJAH8vTgfw",
-    "4LFP-oTXUN8",
-    "QHE2QO8peRA"
+    "PBJZdZSTGlE",
+    "ImG1BgHsqHk",
+    "LLj-ledF9PI",
+    "Y_FN-dx8J2M",
+    "kKkiGPUnIds"
   ],
   "warnings": [
     "forced_channels_window_anchored_to_latest_upload_date"

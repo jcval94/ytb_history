@@ -1,0 +1,76 @@
+{
+  "video_id": "Y_FN-dx8J2M",
+  "language": "es",
+  "summary": "El vídeo reflexiona sobre la diferencia entre tener un amplio círculo de amigos superficiales y un pequeño grupo de amigos auténticos. Se enfatiza que la autenticidad puede resultar en menos relaciones, pero más significativas.",
+  "main_topics": [
+    "Autenticidad vs. falsedad",
+    "Círculos de amigos",
+    "Superficialidad en relaciones",
+    "Construcción de relaciones significativas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea principal sobre la autenticidad y las relaciones.",
+      "summary": "Cuanto más auténtico seas, menos amigos superficiales tendrás."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explorar la superficialidad de las relaciones modernas.",
+      "summary": "Las personas tienden a acumular amigos para satisfacer necesidades sociales, pero estas relaciones son vacías en momentos difíciles."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre el valor de las relaciones auténticas.",
+      "summary": "La autenticidad puede resultar en soledad, pero permite conexiones más profundas con quienes realmente conocen a la persona."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita Provocativa",
+    "hook_text": "Cuanto más falso seas, más grande será tu círculo de amigos.",
+    "why_it_works": "Provoca curiosidad y hace reflexionar sobre la calidad de las relaciones en nuestras vidas."
+  },
+  "claims": [
+    {
+      "claim": "La autenticidad reduce el número de amigos.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las relaciones superficiales se desvanecen en momentos difíciles.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Ser auténtico es caro en términos de relaciones.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre quiénes son tus verdaderos amigos.",
+    "Fomentar relaciones auténticas a través de la honestidad.",
+    "Evitar la acumulación de amistades superficiales."
+  ],
+  "audience": "Personas que buscan mejorar sus relaciones y valorar la autenticidad.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y personal",
+  "retention_devices": [
+    "Citas memorables",
+    "Ejemplos de la vida diaria",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Las relaciones reales no se precipitan, se construyen a lo largo de estaciones."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un artículo o ensayo sobre la autenticidad en las relaciones.",
+    "Hacer una serie de vídeos sobre cómo construir amistades significativas."
+  ],
+  "risk_notes": [
+    "Puede alienar a aquellos que valoran la aceptación social sobre la autenticidad.",
+    "El mensaje puede ser malinterpretado como un rechazo a la socialización."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
