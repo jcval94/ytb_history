@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "content_format": "shorts",
+  "suite_id": "suite-20260518T140919Z",
+  "artifact_name": "ytb-model-suite-26038624244",
+  "workflow_run_id": "26038624244",
+  "model_id": "shorts-linear_regularized-is_top_growth_7d-20260518T140905Z",
+  "model_family": "linear_regularized",
+  "target": "is_top_growth_7d",
+  "prediction_rows": 3875,
+  "generated_at": "2026-05-18T14:10:16.020646+00:00",
+  "warnings": []
+}

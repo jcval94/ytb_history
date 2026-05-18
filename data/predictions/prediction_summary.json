@@ -1,12 +1,21 @@
 {
   "status": "success",
-  "suite_id": "suite-20260514T121256Z",
-  "artifact_name": "ytb-model-suite-25859267955",
-  "workflow_run_id": "25859267955",
-  "model_id": "linear_regularized-future_log_views_delta_7d-20260514T121256Z",
-  "model_family": "linear_regularized",
-  "target": "is_top_growth_7d",
-  "prediction_rows": 1914,
-  "generated_at": "2026-05-14T12:13:46.020616+00:00",
+  "content_format": "all",
+  "format_results": {
+    "shorts": {
+      "status": "success",
+      "latest_predictions": "data/predictions/formats/shorts/latest_predictions.csv",
+      "prediction_rows": 3875,
+      "warnings": []
+    },
+    "videos": {
+      "status": "success",
+      "latest_predictions": "data/predictions/formats/videos/latest_predictions.csv",
+      "prediction_rows": 7710,
+      "warnings": []
+    }
+  },
+  "prediction_rows": 11585,
+  "generated_at": "2026-05-18T14:10:16.313732+00:00",
   "warnings": []
 }
