@@ -11,15 +11,3 @@ shorts,future_engagement_delta_7d,shallow_tree_regressor,0.0,0.0,1.0,1.0,1.0,0.0
 shorts,content_value_score_7d,random_forest_regressor,17.840797,21.315755,0.628753,0.6,0.437908,10.303978,27.010336,17.14308,6114,1529
 shorts,content_value_score_7d,linear_regularized_regressor,19.862462,24.492014,0.372891,0.0,0.366013,4.93164,21.637998,11.770742,6114,1529
 shorts,content_value_score_7d,shallow_tree_regressor,18.673837,22.775498,0.519762,0.2,0.379085,5.166888,21.873246,12.00599,6114,1529
-videos,future_log_views_delta_7d,random_forest_regressor,0.772065,1.037016,0.922754,0.5,0.765625,0.593179,5.607293,0.010502,7680,1920
-videos,future_log_views_delta_7d,linear_regularized_regressor,0.873088,1.125519,0.910535,0.5,0.604167,0.195712,5.209826,-0.386965,7680,1920
-videos,future_log_views_delta_7d,shallow_tree_regressor,0.78926,1.048478,0.915112,0.5,0.723958,0.507536,5.52165,-0.075141,7680,1920
-videos,future_relative_views_delta_7d,random_forest_regressor,26.038328,131.582288,0.472421,0.3,0.5,48.897214,162.025315,167.364533,7680,1920
-videos,future_relative_views_delta_7d,linear_regularized_regressor,73.838971,164.956743,0.339937,0.7,0.359375,13.307595,126.435696,131.774914,7680,1920
-videos,future_relative_views_delta_7d,shallow_tree_regressor,27.736066,138.285194,0.054789,0.3,0.401042,38.154721,151.282822,156.62204,7680,1920
-videos,future_engagement_delta_7d,random_forest_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,7680,1920
-videos,future_engagement_delta_7d,linear_regularized_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,7680,1920
-videos,future_engagement_delta_7d,shallow_tree_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,7680,1920
-videos,content_value_score_7d,random_forest_regressor,16.588764,20.804818,0.556463,0.0,0.489583,5.406602,17.611639,13.426135,7680,1920
-videos,content_value_score_7d,linear_regularized_regressor,17.185075,21.747373,0.53279,0.7,0.411458,5.264425,17.469462,13.283959,7680,1920
-videos,content_value_score_7d,shallow_tree_regressor,16.657101,21.269868,0.461523,0.0,0.46875,5.557163,17.7622,13.576696,7680,1920

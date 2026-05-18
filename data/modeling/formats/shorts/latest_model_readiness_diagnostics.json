@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-18T14:07:42+00:00",
+  "content_format": "shorts",
+  "status": "ready",
+  "recommended_status": "ready_for_baseline",
+  "can_train_now": true,
+  "can_predict_now": true,
+  "total_examples": 7643,
+  "trainable_examples": 7643,
+  "inference_examples": 3875,
+  "unique_videos": 765,
+  "unique_channels": 55,
+  "date_range": {
+    "start": "2026-04-27T23:50:18.831706+00:00",
+    "end": "2026-05-12T11:28:32.318099+00:00"
+  },
+  "min_trainable_examples_exploratory": 300,
+  "min_trainable_examples_baseline": 1000,
+  "examples_missing_for_exploratory": 0,
+  "examples_missing_for_baseline": 0,
+  "blockers": [],
+  "target_diagnostics": [],
+  "forecast": {
+    "status": "insufficient_history"
+  },
+  "recommended_next_steps": [],
+  "warnings": []
+}

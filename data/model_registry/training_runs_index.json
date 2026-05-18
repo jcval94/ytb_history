@@ -545,6 +545,246 @@
           "path": "models/shallow_tree"
         }
       ]
+    },
+    {
+      "suite_id": "suite-20260518T140919Z",
+      "created_at": "2026-05-18T14:09:19.293474+00:00",
+      "artifact_name": "ytb-model-suite-26038624244",
+      "workflow_run_id": "26038624244",
+      "content_formats": [
+        "shorts",
+        "videos"
+      ],
+      "champions": {
+        "shorts": {
+          "future_log_views_delta_7d": {
+            "model_id": "shorts-random_forest-future_log_views_delta_7d-20260518T140905Z",
+            "model_family": "random_forest",
+            "metric": "spearman_corr",
+            "metric_value": 0.937592
+          },
+          "is_top_growth_7d": {
+            "model_id": "shorts-linear_regularized-is_top_growth_7d-20260518T140905Z",
+            "model_family": "linear_regularized",
+            "metric": "precision_at_10",
+            "metric_value": 1.0
+          }
+        },
+        "videos": {
+          "future_log_views_delta_7d": {
+            "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260518T140911Z",
+            "model_family": "linear_regularized",
+            "metric": "spearman_corr",
+            "metric_value": 0.965496
+          },
+          "is_top_growth_7d": {
+            "model_id": "videos-linear_regularized-is_top_growth_7d-20260518T140911Z",
+            "model_family": "linear_regularized",
+            "metric": "precision_at_10",
+            "metric_value": 1.0
+          }
+        }
+      },
+      "models": [
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-linear_regularized-is_top_growth_7d-20260518T140905Z",
+          "model_family": "linear_regularized",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 1.0,
+            "recall_at_10": 0.02907,
+            "roc_auc": 0.99181,
+            "pr_auc": 0.972053,
+            "brier_score": 0.036617,
+            "lift_vs_baseline_alpha": 0.2,
+            "lift_vs_baseline_views_delta": 0.0
+          },
+          "path": "formats/shorts/models/is_top_growth_7d/linear_regularized"
+        },
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-random_forest-is_top_growth_7d-20260518T140905Z",
+          "model_family": "random_forest",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 1.0,
+            "recall_at_10": 0.02907,
+            "roc_auc": 0.990327,
+            "pr_auc": 0.95777,
+            "brier_score": 0.044018,
+            "lift_vs_baseline_alpha": 0.2,
+            "lift_vs_baseline_views_delta": 0.0
+          },
+          "path": "formats/shorts/models/is_top_growth_7d/random_forest"
+        },
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-shallow_tree-is_top_growth_7d-20260518T140905Z",
+          "model_family": "shallow_tree",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 0.7,
+            "recall_at_10": 0.020349,
+            "roc_auc": 0.970704,
+            "pr_auc": 0.805141,
+            "brier_score": 0.060323,
+            "lift_vs_baseline_alpha": -0.1,
+            "lift_vs_baseline_views_delta": -0.3
+          },
+          "path": "formats/shorts/models/is_top_growth_7d/shallow_tree"
+        },
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260518T140905Z",
+          "model_family": "linear_regularized",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 0.826268,
+            "rmse_log": 1.062061,
+            "spearman_corr": 0.91658,
+            "top_10_overlap_with_actual": 0.4,
+            "lift_vs_baseline_alpha": 0.110341,
+            "lift_vs_baseline_views_delta": 0.110965
+          },
+          "path": "formats/shorts/models/future_log_views_delta_7d/linear_regularized"
+        },
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-random_forest-future_log_views_delta_7d-20260518T140905Z",
+          "model_family": "random_forest",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 0.77553,
+            "rmse_log": 1.051868,
+            "spearman_corr": 0.937592,
+            "top_10_overlap_with_actual": 0.4,
+            "lift_vs_baseline_alpha": 0.131353,
+            "lift_vs_baseline_views_delta": 0.131977
+          },
+          "path": "formats/shorts/models/future_log_views_delta_7d/random_forest"
+        },
+        {
+          "content_format": "shorts",
+          "model_id": "shorts-shallow_tree-future_log_views_delta_7d-20260518T140905Z",
+          "model_family": "shallow_tree",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 0.954705,
+            "rmse_log": 1.26491,
+            "spearman_corr": 0.889478,
+            "top_10_overlap_with_actual": 0.2,
+            "lift_vs_baseline_alpha": 0.083239,
+            "lift_vs_baseline_views_delta": 0.083863
+          },
+          "path": "formats/shorts/models/future_log_views_delta_7d/shallow_tree"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-linear_regularized-is_top_growth_7d-20260518T140911Z",
+          "model_family": "linear_regularized",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 1.0,
+            "recall_at_10": 0.023148,
+            "roc_auc": 0.988684,
+            "pr_auc": 0.957006,
+            "brier_score": 0.051832,
+            "lift_vs_baseline_alpha": 0.0,
+            "lift_vs_baseline_views_delta": 0.0
+          },
+          "path": "formats/videos/models/is_top_growth_7d/linear_regularized"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-random_forest-is_top_growth_7d-20260518T140911Z",
+          "model_family": "random_forest",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 1.0,
+            "recall_at_10": 0.023148,
+            "roc_auc": 0.98747,
+            "pr_auc": 0.946183,
+            "brier_score": 0.059417,
+            "lift_vs_baseline_alpha": 0.0,
+            "lift_vs_baseline_views_delta": 0.0
+          },
+          "path": "formats/videos/models/is_top_growth_7d/random_forest"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-shallow_tree-is_top_growth_7d-20260518T140911Z",
+          "model_family": "shallow_tree",
+          "target": "is_top_growth_7d",
+          "task_type": "classification",
+          "metrics": {
+            "precision_at_10": 0.9,
+            "recall_at_10": 0.020833,
+            "roc_auc": 0.964079,
+            "pr_auc": 0.79596,
+            "brier_score": 0.075349,
+            "lift_vs_baseline_alpha": -0.1,
+            "lift_vs_baseline_views_delta": -0.1
+          },
+          "path": "formats/videos/models/is_top_growth_7d/shallow_tree"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260518T140911Z",
+          "model_family": "linear_regularized",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 0.961756,
+            "rmse_log": 1.172573,
+            "spearman_corr": 0.965496,
+            "top_10_overlap_with_actual": 0.6,
+            "lift_vs_baseline_alpha": 0.083768,
+            "lift_vs_baseline_views_delta": 0.190235
+          },
+          "path": "formats/videos/models/future_log_views_delta_7d/linear_regularized"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-random_forest-future_log_views_delta_7d-20260518T140911Z",
+          "model_family": "random_forest",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 0.91528,
+            "rmse_log": 1.145002,
+            "spearman_corr": 0.962877,
+            "top_10_overlap_with_actual": 0.6,
+            "lift_vs_baseline_alpha": 0.081149,
+            "lift_vs_baseline_views_delta": 0.187616
+          },
+          "path": "formats/videos/models/future_log_views_delta_7d/random_forest"
+        },
+        {
+          "content_format": "videos",
+          "model_id": "videos-shallow_tree-future_log_views_delta_7d-20260518T140911Z",
+          "model_family": "shallow_tree",
+          "target": "future_log_views_delta_7d",
+          "task_type": "regression",
+          "metrics": {
+            "mae_log": 1.127917,
+            "rmse_log": 1.453847,
+            "spearman_corr": 0.907508,
+            "top_10_overlap_with_actual": 0.2,
+            "lift_vs_baseline_alpha": 0.02578,
+            "lift_vs_baseline_views_delta": 0.132247
+          },
+          "path": "formats/videos/models/future_log_views_delta_7d/shallow_tree"
+        }
+      ]
     }
   ]
 }

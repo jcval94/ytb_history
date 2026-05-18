@@ -1,0 +1,100 @@
+{
+  "features": [
+    {
+      "name": "views_delta",
+      "type": "numeric",
+      "description": "Feature views_delta available at time t."
+    },
+    {
+      "name": "engagement_rate",
+      "type": "numeric",
+      "description": "Feature engagement_rate available at time t."
+    },
+    {
+      "name": "comment_rate",
+      "type": "numeric",
+      "description": "Feature comment_rate available at time t."
+    },
+    {
+      "name": "video_age_days",
+      "type": "numeric",
+      "description": "Feature video_age_days available at time t."
+    },
+    {
+      "name": "duration_bucket",
+      "type": "categorical_or_bool",
+      "description": "Feature duration_bucket available at time t."
+    },
+    {
+      "name": "alpha_score",
+      "type": "numeric",
+      "description": "Feature alpha_score available at time t."
+    },
+    {
+      "name": "opportunity_score",
+      "type": "numeric",
+      "description": "Feature opportunity_score available at time t."
+    },
+    {
+      "name": "trend_burst_score",
+      "type": "numeric",
+      "description": "Feature trend_burst_score available at time t."
+    },
+    {
+      "name": "evergreen_score",
+      "type": "numeric",
+      "description": "Feature evergreen_score available at time t."
+    },
+    {
+      "name": "packaging_problem_score",
+      "type": "numeric",
+      "description": "Feature packaging_problem_score available at time t."
+    },
+    {
+      "name": "metric_confidence_score",
+      "type": "numeric",
+      "description": "Feature metric_confidence_score available at time t."
+    },
+    {
+      "name": "channel_momentum_score",
+      "type": "numeric",
+      "description": "Feature channel_momentum_score available at time t."
+    },
+    {
+      "name": "channel_relative_success_score",
+      "type": "numeric",
+      "description": "Feature channel_relative_success_score available at time t."
+    },
+    {
+      "name": "title_length_chars",
+      "type": "numeric",
+      "description": "Feature title_length_chars available at time t."
+    },
+    {
+      "name": "has_number",
+      "type": "categorical_or_bool",
+      "description": "Feature has_number available at time t."
+    },
+    {
+      "name": "has_question",
+      "type": "categorical_or_bool",
+      "description": "Feature has_question available at time t."
+    },
+    {
+      "name": "has_ai_word",
+      "type": "categorical_or_bool",
+      "description": "Feature has_ai_word available at time t."
+    },
+    {
+      "name": "has_finance_word",
+      "type": "categorical_or_bool",
+      "description": "Feature has_finance_word available at time t."
+    },
+    {
+      "name": "metadata_changed",
+      "type": "categorical_or_bool",
+      "description": "Feature metadata_changed available at time t."
+    }
+  ],
+  "excluded_by_leakage_policy": []
+}

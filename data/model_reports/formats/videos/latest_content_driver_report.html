@@ -1,0 +1,45 @@
+<html><body><pre># Content Driver Models Report
+
+Generated at: 2026-05-18T14:09:02.779659+00:00
+
+## Targets evaluados
+- future_log_views_delta_7d
+- future_relative_views_delta_7d
+- future_engagement_delta_7d
+- content_value_score_7d
+
+## Modelos entrenados
+- random_forest_regressor
+- linear_regularized_regressor
+- shallow_tree_regressor
+
+## Mejor modelo por target
+- content_value_score_7d: random_forest_regressor (spearman=0.556463)
+- future_engagement_delta_7d: random_forest_regressor (spearman=1.0)
+- future_log_views_delta_7d: random_forest_regressor (spearman=0.922754)
+- future_relative_views_delta_7d: random_forest_regressor (spearman=0.472421)
+
+## Top variables por target
+- **content_value_score_7d**: topic_saturation_score, topic_primary__unknown, topic_primary__tutorial, hybrid_decision_score, topic_primary__finance_personal
+- **future_engagement_delta_7d**: ai_semantic_score, alpha_score, channel_momentum_score, channel_relative_success_score, curiosity_semantic_score
+- **future_log_views_delta_7d**: alpha_score, views_delta, hybrid_decision_score, decision_score, channel_relative_success_score
+- **future_relative_views_delta_7d**: topic_saturation_score, has_question, title_has_question, topic_primary__tutorial, topic_primary__finance_personal
+
+## Variables con dirección (positive/negative/mixed)
+Ver `latest_content_driver_feature_direction.csv` para detalle por feature.
+
+## Importancia por grupo
+- future_relative_views_delta_7d / linear_regularized_regressor / topic_metrics: 565.62438299
+- future_relative_views_delta_7d / linear_regularized_regressor / engagement_context: 240.27763636
+- future_relative_views_delta_7d / linear_regularized_regressor / title_style: 215.34704508
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_scores: 181.26417033
+- content_value_score_7d / linear_regularized_regressor / topic_metrics: 132.06838729
+- future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 123.73153434
+- content_value_score_7d / linear_regularized_regressor / engagement_context: 50.41865608
+- future_relative_views_delta_7d / linear_regularized_regressor / channel_context: 47.02686629
+- content_value_score_7d / linear_regularized_regressor / model_decision: 35.44002798
+- content_value_score_7d / linear_regularized_regressor / title_style: 30.22417552
+
+**Estas importancias son predictivas, no causales.**
+
+**En RF, la dirección se estima con directional analysis, no con impurity importance.**</pre></body></html>

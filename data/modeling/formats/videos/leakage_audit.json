@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "banned_rules": {
+    "prefixes": [
+      "future_"
+    ],
+    "targets": [
+      "future_views_delta_7d",
+      "future_log_views_delta_7d",
+      "is_top_growth_7d",
+      "outperforms_channel_7d"
+    ]
+  },
+  "leakage_found": [],
+  "allowed_features": [
+    "views_delta",
+    "engagement_rate",
+    "comment_rate",
+    "video_age_days",
+    "duration_bucket",
+    "alpha_score",
+    "opportunity_score",
+    "trend_burst_score",
+    "evergreen_score",
+    "packaging_problem_score",
+    "metric_confidence_score",
+    "channel_momentum_score",
+    "channel_relative_success_score",
+    "title_length_chars",
+    "has_number",
+    "has_question",
+    "has_ai_word",
+    "has_finance_word",
+    "metadata_changed"
+  ],
+  "excluded_feature_candidates": []
+}

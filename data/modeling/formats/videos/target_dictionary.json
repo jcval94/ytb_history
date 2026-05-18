@@ -1,0 +1,26 @@
+{
+  "targets": [
+    {
+      "name": "future_views_delta_7d",
+      "type": "regression",
+      "description": "Observed views_delta near t+7d."
+    },
+    {
+      "name": "future_log_views_delta_7d",
+      "type": "regression",
+      "description": "log1p of future_views_delta_7d."
+    },
+    {
+      "name": "is_top_growth_7d",
+      "type": "classification",
+      "description": "True if future growth is in top quantile."
+    },
+    {
+      "name": "outperforms_channel_7d",
+      "type": "classification",
+      "description": "True if video outperforms channel median at target date."
+    }
+  ],
+  "horizon_days": 7,
+  "tolerance_days": 2
+}

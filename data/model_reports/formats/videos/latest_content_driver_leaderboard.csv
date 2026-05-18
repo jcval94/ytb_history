@@ -1,16 +1,4 @@
 content_format,target,model_family,mae_log,rmse_log,spearman_corr,top_10_overlap_with_actual,precision_at_top_decile_regression,lift_vs_baseline_alpha,lift_vs_baseline_decision,lift_vs_baseline_views_delta,train_rows,valid_rows
-shorts,future_log_views_delta_7d,random_forest_regressor,0.838468,1.105298,0.88417,0.5,0.784314,0.14549,8.076766,0.018313,6114,1529
-shorts,future_log_views_delta_7d,linear_regularized_regressor,0.965996,1.234879,0.825743,0.5,0.816993,0.197661,8.128937,0.070484,6114,1529
-shorts,future_log_views_delta_7d,shallow_tree_regressor,0.940097,1.209348,0.811337,0.2,0.823529,0.205604,8.13688,0.078427,6114,1529
-shorts,future_relative_views_delta_7d,random_forest_regressor,18.379663,107.248537,0.485087,0.4,0.477124,58.942904,128.868533,142.953816,6114,1529
-shorts,future_relative_views_delta_7d,linear_regularized_regressor,38.684943,113.599911,0.229105,0.3,0.457516,55.219376,125.145006,139.230289,6114,1529
-shorts,future_relative_views_delta_7d,shallow_tree_regressor,19.277846,107.076338,0.475973,0.3,0.385621,51.926546,121.852175,135.937458,6114,1529
-shorts,future_engagement_delta_7d,random_forest_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,6114,1529
-shorts,future_engagement_delta_7d,linear_regularized_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,6114,1529
-shorts,future_engagement_delta_7d,shallow_tree_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,6114,1529
-shorts,content_value_score_7d,random_forest_regressor,17.840797,21.315755,0.628753,0.6,0.437908,10.303978,27.010336,17.14308,6114,1529
-shorts,content_value_score_7d,linear_regularized_regressor,19.862462,24.492014,0.372891,0.0,0.366013,4.93164,21.637998,11.770742,6114,1529
-shorts,content_value_score_7d,shallow_tree_regressor,18.673837,22.775498,0.519762,0.2,0.379085,5.166888,21.873246,12.00599,6114,1529
 videos,future_log_views_delta_7d,random_forest_regressor,0.772065,1.037016,0.922754,0.5,0.765625,0.593179,5.607293,0.010502,7680,1920
 videos,future_log_views_delta_7d,linear_regularized_regressor,0.873088,1.125519,0.910535,0.5,0.604167,0.195712,5.209826,-0.386965,7680,1920
 videos,future_log_views_delta_7d,shallow_tree_regressor,0.78926,1.048478,0.915112,0.5,0.723958,0.507536,5.52165,-0.075141,7680,1920
