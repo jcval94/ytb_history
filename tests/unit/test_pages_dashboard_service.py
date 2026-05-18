@@ -383,6 +383,20 @@ def test_build_pages_dashboard_missing_csv_generates_empty_table_and_warning(tmp
     assert any("latest_channel_metrics" in warning for warning in summary["warnings"])
 
 
+def test_build_pages_dashboard_treats_missing_predictions_as_optional_empty_table(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    site_dir = tmp_path / "site"
+    _prepare_minimal_analytics(data_dir)
+
+    summary = build_pages_dashboard(data_dir=data_dir, site_dir=site_dir)
+
+    predictions_payload = json.loads((site_dir / "data" / "latest_predictions.json").read_text(encoding="utf-8"))
+    assert predictions_payload["row_count"] == 0
+    assert predictions_payload["optional"] is True
+    assert predictions_payload["columns"][:2] == ["content_format", "video_id"]
+    assert not any("Missing CSV input for latest_predictions" in warning for warning in summary["warnings"])
+
+
 def test_build_pages_dashboard_copies_real_index_and_assets(tmp_path: Path) -> None:
     data_dir = tmp_path / "data"
     site_dir = tmp_path / "site"

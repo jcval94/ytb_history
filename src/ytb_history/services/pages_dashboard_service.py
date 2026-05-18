@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ytb_history.services.model_prediction_service import PREDICTION_COLUMNS
 from ytb_history.services.operations_service import build_operations
 
 CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
@@ -56,6 +57,10 @@ CSV_TABLE_SPECS: tuple[tuple[str, str], ...] = (
     ("latest_production_checklist", "creative_packages/latest_production_checklist.csv"),
     ("dashboard_impact_matrix", "operations/dashboard_impact_matrix.csv"),
 )
+
+OPTIONAL_EMPTY_CSV_COLUMNS: dict[str, list[str]] = {
+    "latest_predictions": PREDICTION_COLUMNS,
+}
 
 JSON_FILE_SPECS: tuple[tuple[str, str], ...] = (
     ("signal_summary", "signals/signal_summary.json"),
@@ -473,6 +478,17 @@ def _read_json_or_empty(path: Path, name: str, warnings: list[str]) -> dict[str,
 
 def _csv_to_table_json(*, table_name: str, csv_path: Path, generated_at: str, warnings: list[str]) -> dict[str, Any]:
     if not csv_path.exists():
+        optional_columns = OPTIONAL_EMPTY_CSV_COLUMNS.get(table_name)
+        if optional_columns is not None:
+            return {
+                "name": table_name,
+                "generated_at": generated_at,
+                "row_count": 0,
+                "columns": optional_columns,
+                "rows": [],
+                "optional": True,
+                "missing_source": str(csv_path),
+            }
         warnings.append(f"Missing CSV input for {table_name}: {csv_path}")
         return {
             "name": table_name,

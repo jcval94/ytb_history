@@ -252,3 +252,52 @@ def test_build_model_dataset_uses_first_intraday_capture_per_day(tmp_path: Path)
     rows = list(csv.DictReader((data_dir / "modeling" / "supervised_examples.csv").open("r", encoding="utf-8", newline="")))
     assert rows
     assert all(row["source_export_path"] != "exports/dt=2026-04-08/run=235959Z/video_growth_summary.csv" for row in rows)
+
+
+def test_build_model_dataset_keeps_new_videos_for_inference_only(tmp_path: Path) -> None:
+    data_dir = _prepare_dataset(tmp_path)
+    _write_csv(
+        data_dir / "analytics" / "latest" / "latest_video_metrics.csv",
+        ["video_id", "execution_date", "channel_id", "channel_name", "title", "views_delta", "engagement_rate", "comment_rate", "video_age_days", "duration_bucket", "is_short", "metadata_changed"],
+        [
+            {
+                "video_id": "v1",
+                "execution_date": "2026-04-08T00:00:00+00:00",
+                "channel_id": "c1",
+                "channel_name": "Canal 1",
+                "title": "AI 2026?",
+                "views_delta": 80,
+                "engagement_rate": 0.06,
+                "comment_rate": 0.012,
+                "video_age_days": 9,
+                "duration_bucket": "short",
+                "is_short": True,
+                "metadata_changed": False,
+            },
+            {
+                "video_id": "v-new",
+                "execution_date": "2026-04-08T00:00:00+00:00",
+                "channel_id": "c-new",
+                "channel_name": "Canal Nuevo",
+                "title": "Nuevo canal sin siete dias",
+                "views_delta": 12,
+                "engagement_rate": "",
+                "comment_rate": "",
+                "video_age_days": 1,
+                "duration_bucket": "",
+                "is_short": True,
+                "metadata_changed": False,
+            },
+        ],
+    )
+
+    build_model_dataset(data_dir=data_dir)
+
+    supervised_rows = list(csv.DictReader((data_dir / "modeling" / "supervised_examples.csv").open("r", encoding="utf-8", newline="")))
+    inference_rows = list(csv.DictReader((data_dir / "modeling" / "latest_inference_examples.csv").open("r", encoding="utf-8", newline="")))
+
+    assert {row["video_id"] for row in supervised_rows} == {"v1"}
+    assert {row["video_id"] for row in inference_rows} == {"v1", "v-new"}
+    new_row = next(row for row in inference_rows if row["video_id"] == "v-new")
+    assert new_row["channel_id"] == "c-new"
+    assert new_row["engagement_rate"] == ""

@@ -106,6 +106,11 @@ def test_predict_accepts_model_id(tmp_path: Path) -> None:
 def test_predict_fails_without_inference_data(tmp_path: Path) -> None:
     result = predict_with_model_artifact(model_dir=tmp_path / "missing", data_dir=tmp_path / "data", output_dir=tmp_path / "out")
     assert result["status"] == "failed_no_inference_rows"
+    pred_path = tmp_path / "out" / "latest_predictions.csv"
+    assert pred_path.exists()
+    rows = list(csv.DictReader(pred_path.open(encoding="utf-8")))
+    assert rows == []
+    assert (tmp_path / "out" / "prediction_summary.json").exists()
 
 
 def test_predict_routes_by_content_format_and_ranks_within_format(tmp_path: Path, monkeypatch) -> None:
@@ -155,3 +160,80 @@ def test_predict_routes_by_content_format_and_ranks_within_format(tmp_path: Path
     }
     assert by_format["shorts"] == {"s-high": "1", "s-low": "2"}
     assert by_format["videos"] == {"v-high": "1", "v-low": "2"}
+
+
+def test_predict_all_combines_available_format_predictions(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(model_prediction_service, "joblib", None)
+    data_dir = tmp_path / "data"
+    model_dir = tmp_path / "model"
+
+    _write_csv(
+        data_dir / "modeling" / "formats" / "shorts" / "latest_inference_examples.csv",
+        ["video_id", "execution_date", "views_delta"],
+        [
+            {"video_id": "s-low", "execution_date": "2026-04-01", "views_delta": 10},
+            {"video_id": "s-high", "execution_date": "2026-04-01", "views_delta": 90},
+        ],
+    )
+    model_path = model_dir / "formats" / "shorts" / "models" / "is_top_growth_7d" / "linear_regularized"
+    model_path.mkdir(parents=True, exist_ok=True)
+    payload = {"model": _ScoreModel(), "feature_list": ["views_delta"], "task_type": "classification", "model_family": "linear_regularized", "model_id": "shorts-model"}
+    with (model_path / "model.joblib").open("wb") as handle:
+        pickle.dump(payload, handle)
+    _write_json(
+        model_dir / "suite_manifest.json",
+        {
+            "suite_id": "suite-partial-format-test",
+            "champions": {"shorts": {"is_top_growth_7d": {"model_id": "shorts-model"}}},
+            "models": [
+                {"content_format": "shorts", "model_id": "shorts-model", "path": "formats/shorts/models/is_top_growth_7d/linear_regularized"},
+            ],
+        },
+    )
+
+    result = predict_with_model_artifact(model_dir=model_dir, data_dir=data_dir, output_dir=tmp_path / "out", target="is_top_growth_7d")
+
+    assert result["status"] == "success"
+    rows = list(csv.DictReader((tmp_path / "out" / "latest_predictions.csv").open(encoding="utf-8")))
+    assert {row["video_id"] for row in rows} == {"s-low", "s-high"}
+    assert {row["content_format"] for row in rows} == {"shorts"}
+    assert any("videos: failed_no_inference_rows" == warning for warning in result["warnings"])
+    videos_rows = list(csv.DictReader((tmp_path / "out" / "formats" / "videos" / "latest_predictions.csv").open(encoding="utf-8")))
+    assert videos_rows == []
+
+
+def test_predict_skips_incomplete_inference_rows_but_keeps_eligible_rows(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(model_prediction_service, "joblib", None)
+    data_dir = tmp_path / "data"
+    model_dir = tmp_path / "model"
+
+    _write_csv(
+        data_dir / "modeling" / "latest_inference_examples.csv",
+        ["video_id", "execution_date", "views_delta", "alpha_score"],
+        [
+            {"video_id": "ready", "execution_date": "2026-04-01", "views_delta": 80, "alpha_score": 90},
+            {"video_id": "new-incomplete", "execution_date": "2026-04-01", "views_delta": 20, "alpha_score": ""},
+        ],
+    )
+    model_path = model_dir / "models" / "is_top_growth_7d" / "linear_regularized"
+    model_path.mkdir(parents=True, exist_ok=True)
+    payload = {"model": _ScoreModel(), "feature_list": ["views_delta", "alpha_score"], "task_type": "classification", "model_family": "linear_regularized", "model_id": "root-model"}
+    with (model_path / "model.joblib").open("wb") as handle:
+        pickle.dump(payload, handle)
+    _write_json(
+        model_dir / "suite_manifest.json",
+        {
+            "suite_id": "suite-incomplete-test",
+            "champions": {"is_top_growth_7d": {"model_id": "root-model"}},
+            "models": [{"model_id": "root-model", "path": "models/is_top_growth_7d/linear_regularized"}],
+        },
+    )
+
+    result = predict_with_model_artifact(model_dir=model_dir, data_dir=data_dir, output_dir=tmp_path / "out", target="is_top_growth_7d")
+
+    assert result["status"] == "success"
+    assert result["prediction_rows"] == 1
+    assert result["skipped_incomplete_rows"] == 1
+    assert result["missing_feature_counts"] == {"alpha_score": 1}
+    rows = list(csv.DictReader((tmp_path / "out" / "latest_predictions.csv").open(encoding="utf-8")))
+    assert [row["video_id"] for row in rows] == ["ready"]

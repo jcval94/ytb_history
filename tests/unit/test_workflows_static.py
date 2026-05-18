@@ -179,7 +179,9 @@ def test_predict_model_workflow_contract() -> None:
     assert "run-id:" in content
     assert "github-token: ${{ github.token }}" in content
     assert "python -m ytb_history.cli predict-with-model-artifact" in content
-    assert "No valid model artifact registered; skipping predictions" in content
+    assert "No valid model artifact registered; writing empty prediction contract" in content
+    assert "steps.manifest.outputs.artifact_name == '' || steps.manifest.outputs.workflow_run_id == ''" in content
+    assert "--output-dir data/predictions" in content
     assert "YOUTUBE_API_KEY" not in content
     assert "search.list" not in content
     assert "git add downloaded_model" not in content

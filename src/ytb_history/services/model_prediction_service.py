@@ -11,6 +11,17 @@ from typing import Any
 
 from ytb_history.domain.content_format import CONTENT_FORMATS
 
+PREDICTION_COLUMNS = [
+    "content_format",
+    "video_id",
+    "execution_date",
+    "target",
+    "model_id",
+    "model_family",
+    "model_score",
+    "prediction_rank",
+]
+
 try:
     import joblib
 except Exception:  # pragma: no cover
@@ -32,6 +43,40 @@ def _read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def _write_predictions_csv(path: Path, rows: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=PREDICTION_COLUMNS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in PREDICTION_COLUMNS})
+
+
+def _write_empty_prediction_result(
+    *,
+    output_dir: Path,
+    status: str,
+    content_format: str,
+    warnings: list[str],
+    target: str,
+    extra_summary: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    pred_path = output_dir / "latest_predictions.csv"
+    _write_predictions_csv(pred_path, [])
+    summary: dict[str, Any] = {
+        "status": status,
+        "content_format": content_format,
+        "target": target,
+        "prediction_rows": 0,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "warnings": warnings,
+    }
+    if extra_summary:
+        summary.update(extra_summary)
+    _write_json(output_dir / "prediction_summary.json", summary)
+    return {"status": status, "latest_predictions": str(pred_path), "prediction_rows": 0, "warnings": warnings}
+
+
 def _safe_float(value: Any) -> float:
     if value in (None, ""):
         return 0.0
@@ -40,6 +85,26 @@ def _safe_float(value: Any) -> float:
     except (TypeError, ValueError):
         text = str(value).strip().lower()
         return 1.0 if text in {"true", "yes", "y"} else 0.0
+
+
+def _is_present_feature_value(value: Any) -> bool:
+    return value is not None and str(value).strip() != ""
+
+
+def _filter_eligible_inference_rows(
+    rows: list[dict[str, str]],
+    feature_list: list[str],
+) -> tuple[list[dict[str, str]], int, dict[str, int]]:
+    eligible: list[dict[str, str]] = []
+    missing_by_feature: dict[str, int] = {}
+    for row in rows:
+        missing = [feature for feature in feature_list if not _is_present_feature_value(row.get(feature))]
+        if missing:
+            for feature in missing:
+                missing_by_feature[feature] = missing_by_feature.get(feature, 0) + 1
+            continue
+        eligible.append(row)
+    return eligible, len(rows) - len(eligible), missing_by_feature
 
 
 def _resolve_model_choice(*, model_root: Path, target: str | None, model_id: str | None, registry_manifest: dict[str, Any], content_format: str = "all") -> tuple[Path | None, dict[str, Any], list[str]]:
@@ -118,7 +183,16 @@ def predict_with_model_artifact(
             output_root = Path(output_dir)
             output_root.mkdir(parents=True, exist_ok=True)
             combined_rows: list[dict[str, str]] = []
+            warnings: list[str] = []
+            skipped_incomplete_rows = 0
+            missing_feature_counts: dict[str, int] = {}
             for fmt, result in format_results.items():
+                fmt_status = str(result.get("status", "unknown"))
+                if fmt_status != "success":
+                    warnings.append(f"{fmt}: {fmt_status}")
+                skipped_incomplete_rows += int(result.get("skipped_incomplete_rows", 0) or 0)
+                for feature, count in (result.get("missing_feature_counts", {}) or {}).items():
+                    missing_feature_counts[str(feature)] = missing_feature_counts.get(str(feature), 0) + int(count)
                 latest_path = str(result.get("latest_predictions", "") or "")
                 if not latest_path:
                     continue
@@ -128,36 +202,60 @@ def predict_with_model_artifact(
                         row["content_format"] = fmt
                         combined_rows.append(row)
             combined_path = output_root / "latest_predictions.csv"
-            fields = ["content_format", "video_id", "execution_date", "target", "model_id", "model_family", "model_score", "prediction_rank"]
-            with combined_path.open("w", encoding="utf-8", newline="") as handle:
-                writer = csv.DictWriter(handle, fieldnames=fields)
-                writer.writeheader()
-                for row in combined_rows:
-                    writer.writerow({field: row.get(field, "") for field in fields})
+            _write_predictions_csv(combined_path, combined_rows)
+            warnings.extend(warning for result in format_results.values() for warning in result.get("warnings", []))
             summary = {
                 "status": "success" if combined_rows else "failed_no_predictions",
                 "content_format": "all",
                 "format_results": format_results,
                 "prediction_rows": len(combined_rows),
+                "skipped_incomplete_rows": skipped_incomplete_rows,
+                "missing_feature_counts": missing_feature_counts,
                 "generated_at": datetime.now(timezone.utc).isoformat(),
-                "warnings": [warning for result in format_results.values() for warning in result.get("warnings", [])],
+                "warnings": warnings,
             }
             _write_json(output_root / "prediction_summary.json", summary)
-            return {"status": summary["status"], "latest_predictions": str(combined_path), "prediction_rows": len(combined_rows), "warnings": summary["warnings"], "format_results": format_results}
+            return {
+                "status": summary["status"],
+                "latest_predictions": str(combined_path),
+                "prediction_rows": len(combined_rows),
+                "skipped_incomplete_rows": skipped_incomplete_rows,
+                "missing_feature_counts": missing_feature_counts,
+                "warnings": summary["warnings"],
+                "format_results": format_results,
+            }
 
     model_root = Path(model_dir)
     data_root = Path(data_dir)
     rows_path = data_root / "modeling" / "latest_inference_examples.csv" if normalized_format == "all" else data_root / "modeling" / "formats" / normalized_format / "latest_inference_examples.csv"
     if not rows_path.exists():
-        return {"status": "failed_no_inference_rows", "warnings": ["latest_inference_examples_missing_or_empty"], "prediction_rows": 0}
+        return _write_empty_prediction_result(
+            output_dir=Path(output_dir),
+            status="failed_no_inference_rows",
+            content_format=normalized_format,
+            warnings=["latest_inference_examples_missing_or_empty"],
+            target=target,
+        )
     rows = _read_csv(rows_path)
     if not rows:
-        return {"status": "failed_no_inference_rows", "warnings": ["latest_inference_examples_missing_or_empty"], "prediction_rows": 0}
+        return _write_empty_prediction_result(
+            output_dir=Path(output_dir),
+            status="failed_no_inference_rows",
+            content_format=normalized_format,
+            warnings=["latest_inference_examples_missing_or_empty"],
+            target=target,
+        )
 
     registry_manifest = _read_json(data_root / "model_registry" / "latest_model_manifest.json") if (data_root / "model_registry" / "latest_model_manifest.json").exists() else {}
     resolved_model_dir, suite_manifest, warnings = _resolve_model_choice(model_root=model_root, target=target, model_id=model_id, registry_manifest=registry_manifest, content_format=normalized_format)
     if resolved_model_dir is None:
-        return {"status": "failed_model_resolution", "warnings": warnings, "prediction_rows": 0}
+        return _write_empty_prediction_result(
+            output_dir=Path(output_dir),
+            status="failed_model_resolution",
+            content_format=normalized_format,
+            warnings=warnings,
+            target=target,
+        )
 
     if joblib is not None:
         payload = joblib.load(resolved_model_dir / "model.joblib")
@@ -165,6 +263,22 @@ def predict_with_model_artifact(
         with (resolved_model_dir / "model.joblib").open("rb") as handle:
             payload = pickle.load(handle)
     feature_list = payload.get("feature_list", [])
+    rows, skipped_incomplete_rows, missing_by_feature = _filter_eligible_inference_rows(rows, feature_list)
+    if skipped_incomplete_rows:
+        warnings.append(f"skipped_incomplete_inference_rows:{skipped_incomplete_rows}")
+    if not rows:
+        return _write_empty_prediction_result(
+            output_dir=Path(output_dir),
+            status="failed_no_eligible_inference_rows",
+            content_format=normalized_format,
+            warnings=warnings,
+            target=target,
+            extra_summary={
+                "input_rows": skipped_incomplete_rows,
+                "skipped_incomplete_rows": skipped_incomplete_rows,
+                "missing_feature_counts": missing_by_feature,
+            },
+        )
     features = [{feature: _safe_float(row.get(feature)) for feature in feature_list} for row in rows]
     matrix = [[feat.get(name, 0.0) for name in feature_list] for feat in features]
 
@@ -185,24 +299,21 @@ def predict_with_model_artifact(
     rank_map = {idx: rank + 1 for rank, idx in enumerate(ranked)}
 
     output_root = Path(output_dir)
-    output_root.mkdir(parents=True, exist_ok=True)
     pred_path = output_root / "latest_predictions.csv"
-    with pred_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["content_format", "video_id", "execution_date", "target", "model_id", "model_family", "model_score", "prediction_rank"])
-        writer.writeheader()
-        for idx, row in enumerate(rows):
-            writer.writerow(
-                {
-                    "video_id": row.get("video_id", f"row_{idx}"),
-                    "content_format": normalized_format,
-                    "execution_date": row.get("execution_date", ""),
-                    "target": target,
-                    "model_id": payload.get("model_id", ""),
-                    "model_family": payload.get("model_family", ""),
-                    "model_score": round(float(scores[idx]), 8),
-                    "prediction_rank": rank_map[idx],
-                }
-            )
+    prediction_rows = [
+        {
+            "video_id": row.get("video_id", f"row_{idx}"),
+            "content_format": normalized_format,
+            "execution_date": row.get("execution_date", ""),
+            "target": target,
+            "model_id": payload.get("model_id", ""),
+            "model_family": payload.get("model_family", ""),
+            "model_score": round(float(scores[idx]), 8),
+            "prediction_rank": rank_map[idx],
+        }
+        for idx, row in enumerate(rows)
+    ]
+    _write_predictions_csv(pred_path, prediction_rows)
 
     summary = {
         "status": "success",
@@ -214,8 +325,17 @@ def predict_with_model_artifact(
         "model_family": payload.get("model_family"),
         "target": target,
         "prediction_rows": len(rows),
+        "skipped_incomplete_rows": skipped_incomplete_rows,
+        "missing_feature_counts": missing_by_feature,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "warnings": warnings,
     }
     _write_json(output_root / "prediction_summary.json", summary)
-    return {"status": "success", "latest_predictions": str(pred_path), "prediction_rows": len(rows), "warnings": warnings}
+    return {
+        "status": "success",
+        "latest_predictions": str(pred_path),
+        "prediction_rows": len(rows),
+        "skipped_incomplete_rows": skipped_incomplete_rows,
+        "missing_feature_counts": missing_by_feature,
+        "warnings": warnings,
+    }
