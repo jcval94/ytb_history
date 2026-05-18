@@ -1,0 +1,14 @@
+{
+  "video_id": "zfNPPFcYi-A",
+  "channel_id": "UCaVPhFg-Ax873wvhbNitsrQ",
+  "channel_name": "El Robot de Platón",
+  "title": "¿Ahora Sí Aliens?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zfNPPFcYi-A.mp3",
+  "transcribed_at": "2026-05-18T01:55:47.797555+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1341,
+  "text_sha256": "a3a91a27857aa60001077236e104d5ec570aa5342809270c1da83db0734ed6ce",
+  "repo_schema_version": "transcript_metadata_v1"
+}

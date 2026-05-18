@@ -1,0 +1,106 @@
+{
+  "video_id": "g6Cq3m3gq1g",
+  "language": "es",
+  "summary": "El video narra la historia de Adrián LeBarón y su lucha contra el narcotráfico en México tras el secuestro de su sobrino. Destaca cómo la violencia de los cárteles ha afectado a comunidades que antes se mantenían al margen y cómo LeBarón se convierte en una figura de resistencia, llevando su lucha a un plano público y desafiando a los cárteles, lo que resulta en una tragedia personal y un cambio en la dinámica de poder.",
+  "main_topics": [
+    "Adrián LeBarón",
+    "Narcotráfico en México",
+    "Resistencia contra los cárteles",
+    "Violencia y secuestros",
+    "Impacto en comunidades aisladas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al contexto",
+      "purpose": "Establecer la situación del pueblo de Colonia LeBarón y la violencia de los cárteles en México.",
+      "summary": "Se describe el entorno de los cárteles y su interés en las comunidades ricas."
+    },
+    {
+      "section": "El secuestro y la decisión de Adrián",
+      "purpose": "Introducir la decisión crucial de Adrián de no pagar el rescate.",
+      "summary": "Adrián LeBarón se niega a ceder ante las demandas del cártel tras el secuestro de su sobrino."
+    },
+    {
+      "section": "Las repercusiones de la resistencia",
+      "purpose": "Analizar el impacto de la decisión de Adrián en la comunidad y en sí mismo.",
+      "summary": "Adrián se identifica como la voz de resistencia y denuncia la corrupción en el sistema."
+    },
+    {
+      "section": "El ataque a la familia LeBarón",
+      "purpose": "Narrar la tragedia del ataque cárteles a la familia de Adrián.",
+      "summary": "El cártel ataca una caravana familiar, resultando en la muerte de varios miembros."
+    },
+    {
+      "section": "Implicaciones y cambios en la comunidad",
+      "purpose": "Examinar las transformaciones en la comunidad tras la tragedia.",
+      "summary": "La comunidad se organiza y busca protegerse, surgiendo un nuevo nivel de participación política."
+    },
+    {
+      "section": "Conclusión sobre la lucha y el futuro",
+      "purpose": "Cerrar el relato con la reflexión sobre el impacto que puede tener la resistencia.",
+      "summary": "Se plantea la posibilidad de que la lucha de Adrián cambie la dinámica en la lucha contra el crimen organizado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impactante Testimonio",
+    "hook_text": "Adrián LeBarón se negó a pagar el rescate de su sobrino secuestrado.",
+    "why_it_works": "Genera intriga sobre las decisiones arriesgadas y la lucha contra el narcotráfico."
+  },
+  "claims": [
+    {
+      "claim": "La violencia de los cárteles ha aumentado en México desde 2006.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Las comunidades como LeBarón eran invisibles ante los cárteles hasta que la violencia aumentó.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La decisión de no pagar rescates puede llevar a represalias violentas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La visibilidad mediática puede ayudar a cambiar la dinámica de poder contra los cárteles.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La resistencia de Adrián LeBarón inspiró cambios en la percepción de la autoridad en su comunidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "El secuestro de su sobrino y su decisión de no pagar el rescate.",
+    "El ataque cárteles a la familia LeBarón resultando en la muerte de nueve personas."
+  ],
+  "actionable_ideas": [
+    "Promover la denuncia pública de injusticias.",
+    "Fortalecer la comunidad a través de la unidad.",
+    "Fomentar la participación política de las comunidades afectadas."
+  ],
+  "audience": "Personas interesadas en criminología, sociología, y política mexicana.",
+  "tone": "Serio y reflexivo",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Narrativa personal",
+    "Casos de secuestro",
+    "Impacto inmediato y consecuencias de decisiones valientes"
+  ],
+  "title_supporting_quotes": [
+    "\"Los cárteles se fijaron en pueblos pequeños en medio de la nada.\"",
+    "\"Adrián LeBarón se convirtió en un símbolo de la resistencia ante el narcotráfico.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Material para un documental sobre violencia en México.",
+    "Artículos de opinión en plataformas digitales."
+  ],
+  "risk_notes": [
+    "La violencia cártel puede aumentar contra aquellos que se resisten.",
+    "La cobertura mediática puede atraer más atención negativa."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

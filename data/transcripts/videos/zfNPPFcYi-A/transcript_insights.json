@@ -1,0 +1,79 @@
+{
+  "video_id": "zfNPPFcYi-A",
+  "language": "Spanish",
+  "summary": "Aldo discusses the ongoing debate about extraterrestrial life, expressing skepticism about recent claims and clarifying that the evidence presented has been known for some time. He announces a live stream for further discussion.",
+  "main_topics": [
+    "Extraterrestrial life",
+    "Debate on recent claims",
+    "NASA images",
+    "Live stream announcement"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Engage the audience and introduce the topic",
+      "summary": "Aldo addresses the rumors of alien existence and the reactions he's received."
+    },
+    {
+      "section": "Skepticism",
+      "purpose": "Challenge recent claims",
+      "summary": "He argues that no new evidence has been confirmed regarding extraterrestrials."
+    },
+    {
+      "section": "Discussion of evidence",
+      "purpose": "Provide context on previously released materials",
+      "summary": "Aldo explains that the images and memos presented are not new and that they have been available for years."
+    },
+    {
+      "section": "Live stream announcement",
+      "purpose": "Invite viewers for a more in-depth discussion",
+      "summary": "He announces a live broadcast to elaborate on the topic and review images."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "¿Por dónde?",
+    "why_it_works": "It provokes curiosity and invites the audience to consider the validity of claims regarding extraterrestrial life."
+  },
+  "claims": [
+    {
+      "claim": "No se ha confirmado la existencia de extraterrestres.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Las imágenes recientes de la NASA no son nuevas.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El Pentágono no confirma la existencia de extraterrestres.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre la historia de las imágenes de la NASA.",
+    "Unirse al directo del canal para profundizar en el tema.",
+    "Participar en el debate sobre la evidencia extraterrestre."
+  ],
+  "audience": "People interested in UFOs and extraterrestrial discussions",
+  "tone": "Skeptical yet engaging",
+  "content_style": "Conversational",
+  "retention_devices": [
+    "Direct interaction via live stream",
+    "Callbacks to previous claims",
+    "Personal anecdotes"
+  ],
+  "title_supporting_quotes": [
+    "No se ha confirmado nada.",
+    "Eso no es la gran revelación."
+  ],
+  "creative_reuse_opportunities": [
+    "Create a follow-up video analyzing viewer questions from the live stream.",
+    "Develop articles or blogs expanding on the themes discussed."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

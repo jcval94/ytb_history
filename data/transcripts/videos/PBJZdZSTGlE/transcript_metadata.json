@@ -1,0 +1,14 @@
+{
+  "video_id": "PBJZdZSTGlE",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El peligro de no sentir nervios",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\PBJZdZSTGlE.mp3",
+  "transcribed_at": "2026-05-18T01:54:28.485132+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1584,
+  "text_sha256": "1d064ab54b8bcc57fd81f566167aa4f9326477d8ee0e1b22d8412533bb5c59c6",
+  "repo_schema_version": "transcript_metadata_v1"
+}
