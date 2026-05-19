@@ -1,6 +1,6 @@
 {
   "schema_version": "commercial_opportunity_radar_v1",
-  "generated_at": "2026-05-18T12:57:30.180522+00:00",
+  "generated_at": "2026-05-19T12:31:02.430483+00:00",
   "status": "success",
   "profile": {
     "profile_name": "spanish_business_ai",
@@ -29,8 +29,8 @@
     "weekly_brief": "briefs/latest_weekly_brief.json"
   },
   "key_metrics": {
-    "videos_considered": 6186,
-    "channels_in_scope": 284,
+    "videos_considered": 7360,
+    "channels_in_scope": 291,
     "priority_opportunities": 10,
     "creative_packages": 5,
     "alerts_considered": 5,
@@ -40,7 +40,7 @@
   "executive_summary": [
     "Vender como Weekly YouTube Opportunity Radar para Negocios, finanzas e IA en espanol, no como dashboard generico.",
     "Oferta recomendada: Pilot Radar desde USD 750/mes para hasta 50 canales.",
-    "Esta corrida resume 6186 videos y 284 canales en el alcance comercial configurado.",
+    "Esta corrida resume 7360 videos y 291 canales en el alcance comercial configurado.",
     "El entregable muestra senales y oportunidades, no promesas de views ni causalidad.",
     "El dashboard queda como anexo de evidencia; la venta principal es claridad editorial semanal."
   ],
@@ -50,8 +50,19 @@
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 99.22 y confianza high.",
-      "score": 87.5694,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 99.72 y confianza high.",
+      "score": 87.8431,
+      "confidence": "high",
+      "timeframe": "next_run",
+      "dashboard_tab": "watchlist"
+    },
+    {
+      "source": "decision/latest_action_candidates.csv",
+      "opportunity_type": "monitor_next_run",
+      "priority": "high",
+      "recommendation": "Interpretar señales con cautela por volatilidad.",
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 99.15 y confianza high.",
+      "score": 87.5293,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
@@ -61,30 +72,8 @@
       "opportunity_type": "benchmark_channel",
       "priority": "high",
       "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 98.98 y confianza high.",
-      "score": 87.4361,
-      "confidence": "high",
-      "timeframe": "this_week",
-      "dashboard_tab": "channel_benchmark"
-    },
-    {
-      "source": "decision/latest_action_candidates.csv",
-      "opportunity_type": "benchmark_channel",
-      "priority": "high",
-      "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 98.73 y confianza high.",
-      "score": 87.2952,
-      "confidence": "high",
-      "timeframe": "this_week",
-      "dashboard_tab": "channel_benchmark"
-    },
-    {
-      "source": "decision/latest_action_candidates.csv",
-      "opportunity_type": "benchmark_channel",
-      "priority": "high",
-      "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 98.48 y confianza high.",
-      "score": 87.1541,
+      "evidence": "Señal channel_high_growth activada con score ajustado 98.75 y confianza high.",
+      "score": 87.3074,
       "confidence": "high",
       "timeframe": "this_week",
       "dashboard_tab": "channel_benchmark"
@@ -94,41 +83,30 @@
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 98.45 y confianza high.",
-      "score": 87.1388,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 98.59 y confianza high.",
+      "score": 87.2155,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
-    },
-    {
-      "source": "decision/latest_action_candidates.csv",
-      "opportunity_type": "benchmark_channel",
-      "priority": "high",
-      "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 98.22 y confianza high.",
-      "score": 87.0131,
-      "confidence": "high",
-      "timeframe": "this_week",
-      "dashboard_tab": "channel_benchmark"
-    },
-    {
-      "source": "decision/latest_action_candidates.csv",
-      "opportunity_type": "benchmark_channel",
-      "priority": "high",
-      "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 97.97 y confianza high.",
-      "score": 86.8722,
-      "confidence": "high",
-      "timeframe": "this_week",
-      "dashboard_tab": "channel_benchmark"
     },
     {
       "source": "decision/latest_action_candidates.csv",
       "opportunity_type": "monitor_next_run",
       "priority": "high",
       "recommendation": "Interpretar señales con cautela por volatilidad.",
-      "evidence": "Señal channel_volatility_warning activada con score ajustado 97.67 y confianza high.",
-      "score": 86.7083,
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 98.59 y confianza high.",
+      "score": 87.2155,
+      "confidence": "high",
+      "timeframe": "next_run",
+      "dashboard_tab": "watchlist"
+    },
+    {
+      "source": "decision/latest_action_candidates.csv",
+      "opportunity_type": "monitor_next_run",
+      "priority": "high",
+      "recommendation": "Interpretar señales con cautela por volatilidad.",
+      "evidence": "Señal channel_volatility_warning activada con score ajustado 98.59 y confianza high.",
+      "score": 87.2155,
       "confidence": "high",
       "timeframe": "next_run",
       "dashboard_tab": "watchlist"
@@ -138,8 +116,8 @@
       "opportunity_type": "benchmark_channel",
       "priority": "high",
       "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 97.46 y confianza high.",
-      "score": 86.5902,
+      "evidence": "Señal channel_high_growth activada con score ajustado 98.5 y confianza high.",
+      "score": 87.1688,
       "confidence": "high",
       "timeframe": "this_week",
       "dashboard_tab": "channel_benchmark"
@@ -149,8 +127,30 @@
       "opportunity_type": "benchmark_channel",
       "priority": "high",
       "recommendation": "Revisar canal dominante por crecimiento.",
-      "evidence": "Señal channel_high_growth activada con score ajustado 97.21 y confianza high.",
-      "score": 86.4492,
+      "evidence": "Señal channel_high_growth activada con score ajustado 98.25 y confianza high.",
+      "score": 87.0304,
+      "confidence": "high",
+      "timeframe": "this_week",
+      "dashboard_tab": "channel_benchmark"
+    },
+    {
+      "source": "decision/latest_action_candidates.csv",
+      "opportunity_type": "benchmark_channel",
+      "priority": "high",
+      "recommendation": "Revisar canal dominante por crecimiento.",
+      "evidence": "Señal channel_high_growth activada con score ajustado 97.76 y confianza high.",
+      "score": 86.7533,
+      "confidence": "high",
+      "timeframe": "this_week",
+      "dashboard_tab": "channel_benchmark"
+    },
+    {
+      "source": "decision/latest_action_candidates.csv",
+      "opportunity_type": "benchmark_channel",
+      "priority": "high",
+      "recommendation": "Revisar canal dominante por crecimiento.",
+      "evidence": "Señal channel_high_growth activada con score ajustado 97.51 y confianza high.",
+      "score": 86.6148,
       "confidence": "high",
       "timeframe": "this_week",
       "dashboard_tab": "channel_benchmark"
@@ -161,138 +161,138 @@
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Kai Cenat & Druski Thought They Would Win The MVP Award 😂",
       "channel_name": "Kai Cenat Live",
-      "views_delta": 2518206,
-      "engagement_rate": 0.012854,
+      "views_delta": 4179415,
+      "engagement_rate": 0.010468,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "KAAMIL (Official Music Video): Sachet-Parampara | Kausar Munir | Latest Hindi Song | Bhushan Kumar",
-      "channel_name": "T-Series",
-      "views_delta": 781685,
-      "engagement_rate": 0.001982,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Druski Is Shocked By How Much Kai Cenat Looks Like Diddy 😭",
-      "channel_name": "Kai Cenat Live",
-      "views_delta": 638671,
-      "engagement_rate": 0.016351,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Drake - Whisper My Name",
-      "channel_name": "DrakeVEVO",
-      "views_delta": 403628,
-      "engagement_rate": 0.040137,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Ed Sheeran Has Unlimited Aura 🔥",
-      "channel_name": "Kai Cenat Live",
-      "views_delta": 402453,
-      "engagement_rate": 0.01807,
+      "title": "ITZY \"Motto\" M/V",
+      "channel_name": "JYP Entertainment",
+      "views_delta": 3927379,
+      "engagement_rate": 0.053987,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Drake - Janice STFU",
       "channel_name": "DrakeVEVO",
-      "views_delta": 401651,
-      "engagement_rate": 0.038597,
+      "views_delta": 1109404,
+      "engagement_rate": 0.035143,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "NBC Nightly News Full Episode - May 17",
-      "channel_name": "NBC News",
-      "views_delta": 346844,
-      "engagement_rate": 0.008645,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",
-      "channel_name": "The Diary Of A CEO",
-      "views_delta": 334135,
-      "engagement_rate": 0.033305,
-      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
-    },
-    {
-      "source": "analytics/latest/latest_video_metrics.csv",
-      "title": "Drake - National Treasures",
+      "title": "Drake - Whisper My Name",
       "channel_name": "DrakeVEVO",
-      "views_delta": 310006,
-      "engagement_rate": 0.049533,
+      "views_delta": 996693,
+      "engagement_rate": 0.037003,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "PEDDI Official Trailer - Hindi | Ram Charan | Janhvi Kapoor | AR Rahman | Buchi Babu Sana | T-Series",
+      "channel_name": "T-Series",
+      "views_delta": 951321,
+      "engagement_rate": 0.043248,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     },
     {
       "source": "analytics/latest/latest_video_metrics.csv",
       "title": "Drake - Plot Twist",
       "channel_name": "DrakeVEVO",
-      "views_delta": 304879,
-      "engagement_rate": 0.047839,
+      "views_delta": 849783,
+      "engagement_rate": 0.043461,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "Drake - National Treasures",
+      "channel_name": "DrakeVEVO",
+      "views_delta": 844530,
+      "engagement_rate": 0.045168,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "Drake, Future, Molly Santana - Ran To Atlanta",
+      "channel_name": "DrakeVEVO",
+      "views_delta": 808150,
+      "engagement_rate": 0.036322,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "Cuando le COPIAS el OUTFIT a tu AMIGO en Brookhaven Roblox",
+      "channel_name": "Lyna",
+      "views_delta": 795364,
+      "engagement_rate": 0.008744,
+      "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
+    },
+    {
+      "source": "analytics/latest/latest_video_metrics.csv",
+      "title": "Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",
+      "channel_name": "The Diary Of A CEO",
+      "views_delta": 730837,
+      "engagement_rate": 0.033141,
       "evidence": "Crecimiento observado contra la ventana historica local; revisar angulo, empaque y timing."
     }
   ],
   "channels_to_watch": [
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Eduardo Rosas - Finanzas Personales",
-      "momentum_score": 99.745547,
-      "views_delta": 258,
+      "channel_name": "JYP Entertainment",
+      "momentum_score": 94.75,
+      "views_delta": 4227069,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "PlanetaJuan",
-      "momentum_score": 99.236641,
-      "views_delta": 180435,
+      "channel_name": "Joshua Weissman",
+      "momentum_score": 94.75,
+      "views_delta": 639078,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Eva Maria Beristain",
-      "momentum_score": 97.709924,
-      "views_delta": 282024,
+      "channel_name": "Ibai",
+      "momentum_score": 94.75,
+      "views_delta": 1875996,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Omar - Educación Financiera",
-      "momentum_score": 97.455471,
-      "views_delta": 34812,
+      "channel_name": "BBC News",
+      "momentum_score": 94.75,
+      "views_delta": 1796375,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Ale Marin",
-      "momentum_score": 97.201018,
-      "views_delta": 6861,
+      "channel_name": "Rubius Z",
+      "momentum_score": 94.75,
+      "views_delta": 799675,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Rob Paper Clips",
-      "momentum_score": 96.692112,
-      "views_delta": 3368,
+      "channel_name": "Azteca Noticias",
+      "momentum_score": 94.75,
+      "views_delta": 1203652,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Moris Dieck | Finanzas e Inversiones",
-      "momentum_score": 96.437659,
-      "views_delta": 32802,
+      "channel_name": "Aphmau",
+      "momentum_score": 94.75,
+      "views_delta": 541571,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     },
     {
       "source": "analytics/latest/latest_channel_advanced_metrics.csv",
-      "channel_name": "Lord Draugr",
-      "momentum_score": 95.928753,
-      "views_delta": 10078,
+      "channel_name": "Aristegui Noticias",
+      "momentum_score": 94.75,
+      "views_delta": 1699820,
       "recommended_watch": "Auditar frecuencia, formato, promesa editorial y cambios de metadata antes de copiar aprendizajes."
     }
   ],
@@ -301,42 +301,42 @@
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "ai_tools",
       "opportunity_type": "watch_topic",
-      "score": 66.9042,
+      "score": 71.0708,
       "recommended_action": "Monitorear señales y validar subtemas antes de escalar"
+    },
+    {
+      "source": "topic_intelligence/latest_topic_opportunities.csv",
+      "topic": "tutorial",
+      "opportunity_type": "low_priority",
+      "score": 68.3054,
+      "recommended_action": "Mantener en backlog y revisar siguiente ventana"
     },
     {
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "ai_tools",
       "opportunity_type": "watch_topic",
-      "score": 66.6981,
+      "score": 67.5622,
+      "recommended_action": "Monitorear señales y validar subtemas antes de escalar"
+    },
+    {
+      "source": "topic_intelligence/latest_topic_opportunities.csv",
+      "topic": "tutorial",
+      "opportunity_type": "watch_topic",
+      "score": 55.2532,
       "recommended_action": "Monitorear señales y validar subtemas antes de escalar"
     },
     {
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "unknown",
       "opportunity_type": "evergreen_angle",
-      "score": 61.2476,
+      "score": 46.5962,
       "recommended_action": "Escalar variante evergreen y reciclar mejores títulos"
-    },
-    {
-      "source": "topic_intelligence/latest_topic_opportunities.csv",
-      "topic": "tutorial",
-      "opportunity_type": "low_priority",
-      "score": 59.1149,
-      "recommended_action": "Mantener en backlog y revisar siguiente ventana"
-    },
-    {
-      "source": "topic_intelligence/latest_topic_opportunities.csv",
-      "topic": "tutorial",
-      "opportunity_type": "watch_topic",
-      "score": 48.2658,
-      "recommended_action": "Monitorear señales y validar subtemas antes de escalar"
     },
     {
       "source": "topic_intelligence/latest_topic_opportunities.csv",
       "topic": "ai_tools",
       "opportunity_type": "low_priority",
-      "score": 20.4627,
+      "score": 37.4923,
       "recommended_action": "Mantener en backlog y revisar siguiente ventana"
     }
   ],
@@ -344,58 +344,58 @@
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "contrarian",
-      "success_score": 44.3884,
-      "avg_views_delta": 114717.0,
-      "examples": "ANTES QUE NADIE con MICA VAZQUEZ, YOYI FRANCELLA, EL TRINCHE, GREGO ROSSELLO Y PAPRY | EN VIVO"
-    },
-    {
-      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "promise_save",
-      "success_score": 21.0273,
-      "avg_views_delta": 3160.6949,
-      "examples": "\"Invirtiendo\" Todo Mi Dinero HASTA HACERME MILLONARIO | DE SINALOA A LA CDMX | La ruta del dinero que salpica a los López Beltrán | Estos Hacks De Claude Te Harán Ganar Dinero T..."
+      "success_score": 36.864,
+      "avg_views_delta": 7759.9625,
+      "examples": "#ANTESQUENADIE | BUSCAMOS A LA MIMI: PREOCUPACIÓN EXTREMA Y ¿BARDEAMOS EL DELINEADO DE GREGO? | los memes de cabré #luzutv #nadiedicenada | #NADIEDICENADA | ¿CABRÉ VUELVE A LA T..."
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "semantic_finance",
-      "success_score": 20.6989,
-      "avg_views_delta": 1681.872,
+      "success_score": 34.737,
+      "avg_views_delta": 2887.391,
+      "examples": "\"Invirtiendo\" Todo Mi Dinero HASTA HACERME MILLONARIO | DE SINALOA A LA CDMX | La ruta del dinero que salpica a los López Beltrán | BIENVENIDOS AL TERREMOTO DE LA DEUDA: Venta m..."
+    },
+    {
+      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
+      "pattern": "promise_save",
+      "success_score": 34.7186,
+      "avg_views_delta": 4670.6094,
       "examples": "\"Invirtiendo\" Todo Mi Dinero HASTA HACERME MILLONARIO | DE SINALOA A LA CDMX | La ruta del dinero que salpica a los López Beltrán | Estos Hacks De Claude Te Harán Ganar Dinero T..."
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "mistake",
-      "success_score": 19.4076,
-      "avg_views_delta": 1305.3889,
-      "examples": "EE.UU. busca aplicar leyes de terrorismo a funcionarios mexicanos acusados por corrupción, según NYT | ‘If Pakistan Continues to Harbour Terrorists and Operate Against India...'..."
+      "success_score": 34.4799,
+      "avg_views_delta": 1996.8889,
+      "examples": "EE.UU. busca aplicar leyes de terrorismo a funcionarios mexicanos acusados por corrupción, según NYT | No hagas esto #shorts | ‘If Pakistan Continues to Harbour Terrorists and O..."
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "promise_save",
-      "success_score": 18.9877,
-      "avg_views_delta": 1457.4,
-      "examples": "¿El SAT te cobra impuestos por transferencias? #shorts #sat #dinero #finanzas | ¿Nu puede cerrarte cuentas? #shorts #nu #dinero #ahorros | ¿Puedes perder ahorros del banco? #ree..."
+      "pattern": "tutorial_how_to",
+      "success_score": 34.0829,
+      "avg_views_delta": 2978.6023,
+      "examples": "Comodidad y arrojo en la 4T. Por Alejandro Páez Varela | El momento más incómodo actuando de Soledad Villamil🫣😂 #elshowdelverano #luzutv | ¿Cómo se llevan Mirko y Pipe con sus h..."
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "contrarian",
-      "success_score": 17.6837,
-      "avg_views_delta": 3055.5672,
-      "examples": "los memes de cabré #luzutv #nadiedicenada | Nadie confiaba en Willy... | #PLP | COSAS QUE NO ENTIENDO DEL OTRO GÉNERO CON EL MITO + \"MI AMIGA LE TIRÓ ONDA A MI NOVIO\""
+      "pattern": "new_tool",
+      "success_score": 32.8401,
+      "avg_views_delta": 2431.375,
+      "examples": "⭐NUEVO⭐ Blippi y Elmo en la Estación de Bomberos 🚒👨‍🚒 Plaza Sésamo y Blippi | Estos Hacks De Claude Te Harán Ganar Dinero Tan Rápido Que Parece Ilegal | ALFREDO JALIFE: \"El nuev..."
+    },
+    {
+      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
+      "pattern": "comparison",
+      "success_score": 32.3983,
+      "avg_views_delta": 224205.075,
+      "examples": "$1 vs $50,000 Katana | Tennis Ball Cannon vs Human Strength | Human vs Computer"
     },
     {
       "source": "topic_intelligence/latest_title_pattern_metrics.csv",
       "pattern": "warning",
-      "success_score": 17.5436,
-      "avg_views_delta": 1279.88,
-      "examples": "EE.UU. busca aplicar leyes de terrorismo a funcionarios mexicanos acusados por corrupción, según NYT | El PC que nunca vio la luz 😢 | ¡MESSI ES INEVITABLE! 🔝⚽ El capitán abrió e..."
-    },
-    {
-      "source": "topic_intelligence/latest_title_pattern_metrics.csv",
-      "pattern": "semantic_finance",
-      "success_score": 17.4473,
-      "avg_views_delta": 1050.925,
-      "examples": "¿El SAT te cobra impuestos por transferencias? #shorts #sat #dinero #finanzas | ¿Nu puede cerrarte cuentas? #shorts #nu #dinero #ahorros | El secretario de Finanzas de Rocha Moy..."
+      "success_score": 32.1569,
+      "avg_views_delta": 4720.4672,
+      "examples": "UN OCEANO PRECIOSO Y PELIGROSO (Subnautica 2, Episodio 1) | 24 Horas en la ciudad Más Peligrosa del mundo 🇭🇹 | Explorando el barrio MÁS PELIGROSO de Haití 🇭🇹"
     }
   ],
   "creative_packages": [
@@ -404,50 +404,50 @@
       "package_type": "watchlist_package",
       "angle": "Enfoque watchlist para tema clave",
       "format": "video explicativo",
-      "score": 76.8792,
+      "score": 77.5147,
       "next_step": "mantener_watchlist",
       "title_candidate": "tema clave: lo que conviene observar antes de decidir",
       "hook": "¿Qué cambia realmente con tema clave?"
     },
     {
       "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "comparison_package",
-      "angle": "Enfoque comparison para analyze_reference",
-      "format": "video explicativo",
-      "score": 76.8071,
+      "package_type": "fast_reaction_package",
+      "angle": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "score": 77.4933,
       "next_step": "iniciar_preproduccion",
-      "title_candidate": "analyze_reference: comparación simple para decidir mejor",
-      "hook": "¿Qué cambia realmente con analyze_reference?"
+      "title_candidate": "Lo que significa create_fast_reaction esta semana",
+      "hook": "¿Qué cambia realmente con create_fast_reaction?"
     },
     {
       "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "watchlist_package",
-      "angle": "Enfoque watchlist para tema clave",
-      "format": "video explicativo",
-      "score": 76.6737,
-      "next_step": "mantener_watchlist",
-      "title_candidate": "tema clave: lo que conviene observar antes de decidir",
-      "hook": "¿Qué cambia realmente con tema clave?"
-    },
-    {
-      "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "watchlist_package",
-      "angle": "Enfoque watchlist para tema clave",
-      "format": "video explicativo",
-      "score": 76.5503,
-      "next_step": "mantener_watchlist",
-      "title_candidate": "tema clave: lo que conviene observar antes de decidir",
-      "hook": "¿Qué cambia realmente con tema clave?"
-    },
-    {
-      "source": "creative_packages/latest_creative_packages.csv",
-      "package_type": "repackage_package",
-      "angle": "Enfoque repackage para repackage_idea",
-      "format": "video explicativo",
-      "score": 75.419,
+      "package_type": "fast_reaction_package",
+      "angle": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "score": 77.3389,
       "next_step": "iniciar_preproduccion",
-      "title_candidate": "Una mejor forma de explicar repackage_idea",
-      "hook": "¿Qué cambia realmente con repackage_idea?"
+      "title_candidate": "Lo que significa create_fast_reaction esta semana",
+      "hook": "¿Qué cambia realmente con create_fast_reaction?"
+    },
+    {
+      "source": "creative_packages/latest_creative_packages.csv",
+      "package_type": "fast_reaction_package",
+      "angle": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "score": 77.1975,
+      "next_step": "iniciar_preproduccion",
+      "title_candidate": "Lo que significa create_fast_reaction esta semana",
+      "hook": "¿Qué cambia realmente con create_fast_reaction?"
+    },
+    {
+      "source": "creative_packages/latest_creative_packages.csv",
+      "package_type": "fast_reaction_package",
+      "angle": "Enfoque fast reaction para create_fast_reaction",
+      "format": "video corto",
+      "score": 77.1752,
+      "next_step": "iniciar_preproduccion",
+      "title_candidate": "Lo que significa create_fast_reaction esta semana",
+      "hook": "¿Qué cambia realmente con create_fast_reaction?"
     }
   ],
   "alerts_to_watch": [
@@ -455,62 +455,62 @@
       "source": "alerts/latest_alerts.json",
       "signal_type": "metadata_change_watch",
       "severity": "critical",
-      "entity": "Professor Jiang: World War 3 Is About To Begin, Let Me Explain!",
+      "entity": "Grandma Only Has $75,000 in Retirement",
       "score": 100.0,
       "recommended_action": "Vigilar lift posterior del cambio de metadata."
     },
     {
       "source": "alerts/latest_alerts.json",
-      "signal_type": "accelerating_video",
+      "signal_type": "metadata_change_watch",
       "severity": "critical",
-      "entity": "This New Day Trading Rule Will BANKRUPT People",
-      "score": 99.908,
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
+      "entity": "I Tested Every Zack D. Films Video (Again)",
+      "score": 100.0,
+      "recommended_action": "Vigilar lift posterior del cambio de metadata."
     },
     {
       "source": "alerts/latest_alerts.json",
-      "signal_type": "accelerating_video",
+      "signal_type": "metadata_change_watch",
       "severity": "critical",
-      "entity": "GPT 5.5 está al nivel de Mythos",
-      "score": 99.816,
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
-    },
-    {
-      "source": "alerts/latest_alerts.json",
-      "signal_type": "accelerating_video",
-      "severity": "critical",
-      "entity": "Si Quieres Construir Patrimonio, Saca tu Dinero del Banco y ¡Haz esto!",
-      "score": 99.494,
-      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
+      "entity": "Ex-Banquero: \"Así Invertiría 10 Millones de Pesos en Colombia para 2026\" | Diario del Banquero",
+      "score": 100.0,
+      "recommended_action": "Vigilar lift posterior del cambio de metadata."
     },
     {
       "source": "alerts/latest_alerts.json",
       "signal_type": "channel_volatility_warning",
       "severity": "critical",
-      "entity": "Inversión Inteligente - Alain Cortés",
-      "score": 99.2248,
+      "entity": "Jessica Fernández García",
+      "score": 99.7175,
       "recommended_action": "Interpretar señales del canal con cautela por alta volatilidad."
+    },
+    {
+      "source": "alerts/latest_alerts.json",
+      "signal_type": "accelerating_video",
+      "severity": "critical",
+      "entity": "1000 DAYS",
+      "score": 99.5398,
+      "recommended_action": "Monitorear próximas corridas; posible video en aceleración."
     }
   ],
   "quota_report": {
     "status": "ok",
-    "source_run": "data/reports/dt=2026-05-18/run=124930Z",
+    "source_run": "data/reports/dt=2026-05-19/run=122236Z",
     "method": "Proxy based on the latest run quota report and scoped channel share; not a billing meter.",
     "base_channels": 650,
-    "scoped_channels": 284,
-    "scoped_channel_share": 0.4369,
+    "scoped_channels": 291,
+    "scoped_channel_share": 0.4477,
     "estimated_units": {
-      "channels.list": 35.83,
-      "playlistItems.list": 1240.86,
-      "videos.list": 102.24
+      "channels.list": 36.71,
+      "playlistItems.list": 1271.45,
+      "videos.list": 122.67
     },
     "observed_units": {
-      "channels.list": 34.95,
-      "playlistItems.list": 450.47,
-      "videos.list": 102.24
+      "channels.list": 35.82,
+      "playlistItems.list": 462.91,
+      "videos.list": 122.67
     },
-    "total_estimated_units": 1378.93,
-    "total_observed_units": 587.66,
+    "total_estimated_units": 1430.82,
+    "total_observed_units": 621.4,
     "operational_limit": 7000,
     "limit_status": "soft_warning"
   },

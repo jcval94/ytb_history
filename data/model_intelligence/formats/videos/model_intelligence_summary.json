@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "content_format": "videos",
+  "generated_at": "2026-05-19T12:30:53.396951+00:00",
+  "prediction_rows": 7710,
+  "decision_rows": 2399,
+  "hybrid_rows": 8240,
+  "warnings": [],
+  "files_written": [
+    "data/model_intelligence/formats/videos/latest_hybrid_recommendations.csv",
+    "data/model_intelligence/formats/videos/model_intelligence_summary.json"
+  ]
+}

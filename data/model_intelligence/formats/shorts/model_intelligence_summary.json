@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "content_format": "shorts",
+  "generated_at": "2026-05-19T12:30:53.232869+00:00",
+  "prediction_rows": 3875,
+  "decision_rows": 1046,
+  "hybrid_rows": 4044,
+  "warnings": [],
+  "files_written": [
+    "data/model_intelligence/formats/shorts/latest_hybrid_recommendations.csv",
+    "data/model_intelligence/formats/shorts/model_intelligence_summary.json"
+  ]
+}
