@@ -1,0 +1,80 @@
+{
+  "video_id": "Izw3-5_orEc",
+  "language": "es",
+  "summary": "El video trata sobre la controversia generada por un concurso de vídeos con IA organizado por el juego Animal Party, que causó repudio en la comunidad por su enfoque en el uso de inteligencia artificial para la creación de contenido. Muchos jugadores desinstalaron el juego y expresaron su descontento con críticas negativas, lo que llevó a la empresa a disculparse e intentar enmendar la situación.",
+  "main_topics": [
+    "Controversia del uso de IA",
+    "Concurso de vídeos de Animal Party",
+    "Reacción de la comunidad",
+    "Desinstalaciones masivas",
+    "Disculpas de la empresa"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al concurso",
+      "purpose": "Presentar el concurso que se está analizando",
+      "summary": "Se presenta el concurso de vídeos con IA del juego Animal Party, que busca premiar a la comunidad por sus creaciones."
+    },
+    {
+      "section": "Reacción de la comunidad",
+      "purpose": "Describir la reacción negativa de los jugadores",
+      "summary": "El concurso fue mal recibido, generando críticas y desinstalaciones masivas del juego."
+    },
+    {
+      "section": "Respuesta de la empresa",
+      "purpose": "Mostrar la reacción de la empresa tras la controversia",
+      "summary": "La empresa se disculpó y comenzó a hacer encuestas para conocer la opinión de la comunidad sobre el concurso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Controversia",
+    "hook_text": "el peor concurso que se acaba de crear en la historia de concursos de videojuegos",
+    "why_it_works": "Capta la atención del espectador al prometer un análisis de un evento inusual y negativo en el mundo de los videojuegos."
+  },
+  "claims": [
+    {
+      "claim": "El concurso fue mal recibido por la comunidad.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La empresa se ha disculpado por generar malestar.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Se desinstalaron muchos juegos tras el anuncio del concurso.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Videos críticos en redes sociales",
+    "Comentarios negativos en plataformas de juego"
+  ],
+  "actionable_ideas": [
+    "Crear concursos que celebren el arte original",
+    "Incluir a la comunidad en decisiones importantes",
+    "Fomentar la transparencia en las estrategias de marketing"
+  ],
+  "audience": "Jugadores de videojuegos y creadores de contenido",
+  "tone": "Crítico",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Uso de cifras impactantes (4 millones de visitas, 600 likes)",
+    "Preguntas retóricas para involucrar al espectador"
+  ],
+  "title_supporting_quotes": [
+    "¿Qué ideas locas has tenido para Party Animals?",
+    "Nuestro objetivo original era facilitar la creación."
+  ],
+  "creative_reuse_opportunities": [
+    "Análisis detallado de la reacción del público en otros casos similares",
+    "Debate sobre la ética del uso de IA en la creación de contenido"
+  ],
+  "risk_notes": [
+    "Alto riesgo de descontento entre la comunidad de jugadores",
+    "Posible daño a la reputación del juego a largo plazo"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

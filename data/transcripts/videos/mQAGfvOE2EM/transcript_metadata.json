@@ -1,0 +1,14 @@
+{
+  "video_id": "mQAGfvOE2EM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El poder oculto de los influencers",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\mQAGfvOE2EM.mp3",
+  "transcribed_at": "2026-05-19T01:08:56.025892+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1216,
+  "text_sha256": "466614f743b4ab4e91a62ca7b185716cc0a0e070e9285f6844057ec867bcdb18",
+  "repo_schema_version": "transcript_metadata_v1"
+}

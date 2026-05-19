@@ -1,0 +1,73 @@
+{
+  "video_id": "DitWY_dIRLU",
+  "language": "spanish",
+  "summary": "El video presenta un ejercicio para encontrar tu propósito en la vida a través de la técnica de los círculos concéntricos, lo que puede llevar a un cambio significativo y al éxito personal y financiero.",
+  "main_topics": [
+    "Propósito de vida",
+    "Ejercicio de Ikigai",
+    "Cambio de mentalidad",
+    "Éxito personal y financiero"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el problema y la solución",
+      "summary": "El narrador comparte su experiencia de haber pasado de la depresión a ser multimillonario, introduciendo el ejercicio."
+    },
+    {
+      "section": "Descripción del ejercicio",
+      "purpose": "Instruir y guiar al espectador",
+      "summary": "Se explican los cuatro círculos concéntricos y lo que se debe escribir en cada uno."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Motivar y animar a la acción",
+      "summary": "Se invita a los espectadores a probar el ejercicio y a seguir el canal para más consejos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal Testimony",
+    "hook_text": "de ser un estudiante de ingeniería depresivo con 5.7 euros en mi cuenta bancaria a multimillonario en menos de 3 años",
+    "why_it_works": "Quebranta la barrera emocional al compartir un cambio de vida drástico, atrayendo a aquellos que buscan transformación."
+  },
+  "claims": [
+    {
+      "claim": "El ejercicio puede cambiar tu vida.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El propósito alineado es clave para el éxito.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Dibuja los cuatro círculos concéntricos.",
+    "Escribe tus pasiones, necesidades del mundo, habilidades bien pagadas y tus talentos.",
+    "Reflexiona sobre la intersección de estos elementos para encontrar tu Ikigai."
+  ],
+  "audience": "Personas que buscan dirección y propósito en la vida.",
+  "tone": "Motivacional y positivo",
+  "content_style": "Directo y práctico",
+  "retention_devices": [
+    "Ejercicio interactivo",
+    "Promesa de cambio de vida",
+    "Llamado a la acción para seguir el canal"
+  ],
+  "title_supporting_quotes": [
+    "los próximos 15 segundos te pueden cambiar la vida",
+    "la razón por la que actúas básicamente de tu propósito"
+  ],
+  "creative_reuse_opportunities": [
+    "Diseñar infografías sobre el ejercicio del Ikigai",
+    "Crear un curso o taller basado en el contenido",
+    "Escribir artículos de blog sobre el propósito y la motivación."
+  ],
+  "risk_notes": [
+    "El ejercicio puede no funcionar para todos.",
+    "El enfoque en el éxito financiero puede ser visto como superficial."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

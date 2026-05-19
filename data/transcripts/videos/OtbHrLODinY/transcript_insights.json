@@ -1,0 +1,84 @@
+{
+  "video_id": "OtbHrLODinY",
+  "language": "es",
+  "summary": "El video analiza la obsesión contemporánea con la fama y cómo esta ha cambiado a lo largo del tiempo. A través de ejemplos de la cultura popular, se discute el impacto de la fama en la percepción social y la forma en que los algoritmos de internet alimentan el interés por el chisme y la vida personal de los famosos.",
+  "main_topics": [
+    "La obsesión por la fama",
+    "Impacto de las redes sociales",
+    "Efecto halo",
+    "Chismes y morbo",
+    "Vínculos parasociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la obsesión actual con la fama.",
+      "summary": "Una encuesta revela que la fama es el principal deseo para los jóvenes, superando aspiraciones tradicionales."
+    },
+    {
+      "section": "Parte 1: El megáfono",
+      "purpose": "Explorar cómo la fama puede influir en la percepción social.",
+      "summary": "Ejemplos de cómo las acciones de celebridades pueden afectar el mercado y la importancia del efecto halo."
+    },
+    {
+      "section": "Parte 2: El irresistible encanto del morbo",
+      "purpose": "Analizar la fascinación por las vidas privadas de los famosos.",
+      "summary": "El chisme como una forma de información evolutiva y sus efectos en la percepción del público."
+    },
+    {
+      "section": "Parte 3: Somos el motor",
+      "purpose": "Ilustrar cómo los algoritmos de internet alimentan la cultura del morbo.",
+      "summary": "El impacto de las interacciones digitales en el contenido consumido y la priorización del escándalo sobre la profundidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocadora",
+    "hook_text": "¿Te gustaría ser famoso?",
+    "why_it_works": "Engancha al espectador al invitarlo a reflexionar sobre sus propios deseos y aspiraciones."
+  },
+  "claims": [
+    {
+      "claim": "La fama es ahora un objetivo en sí mismo, no una consecuencia de logros.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Los algoritmos de las redes sociales alimentan el interés por el chisme.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "La obsesión con la vida de las celebridades afecta nuestra percepción de relaciones humanas.",
+      "support_level": "implicit",
+      "risk": "moderate"
+    }
+  ],
+  "examples": [
+    "Cristiano Ronaldo y sus acciones en la conferencia de prensa.",
+    "El juicio de Johnny Depp y Amber Heard comparado con eventos significativos como la invasión de Ucrania."
+  ],
+  "actionable_ideas": [
+    "Fomentar discusiones sobre el valor de los logros en lugar de la fama.",
+    "Crear conciencia sobre los efectos de los medios sociales en nuestra percepción de la fama.",
+    "Promover la apreciación del contenido profundo y significativo."
+  ],
+  "audience": "Jóvenes adultos y personas interesadas en la cultura pop y las redes sociales.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Expositivo y analítico",
+  "retention_devices": [
+    "Ejemplos de celebridades",
+    "Datos estadísticos",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Artículos de blog sobre la cultura de la fama",
+    "Podcast sobre la influencia de la fama en la sociedad",
+    "Publicaciones en redes sociales que comparen la fama y los logros"
+  ],
+  "risk_notes": [
+    "La exposición a contenido superficial puede afectar la percepción de los jóvenes.",
+    "Exacerbación de ciclos de negatividad y morbo en los medios."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

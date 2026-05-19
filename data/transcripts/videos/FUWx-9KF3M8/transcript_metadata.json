@@ -1,0 +1,14 @@
+{
+  "video_id": "FUWx-9KF3M8",
+  "channel_id": "UC52hytXteCKmuOzMViTK8_w",
+  "channel_name": "CdeCiencia",
+  "title": "Los efectos secundarios de las zanahorias",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FUWx-9KF3M8.mp3",
+  "transcribed_at": "2026-05-19T01:11:29.680276+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 384,
+  "text_sha256": "a138d374fc46011b0ef3baaab0be925e0db9800f1dde512e53ab75743bf42aa8",
+  "repo_schema_version": "transcript_metadata_v1"
+}

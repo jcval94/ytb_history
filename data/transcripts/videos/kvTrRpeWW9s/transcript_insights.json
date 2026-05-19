@@ -1,0 +1,75 @@
+{
+  "video_id": "kvTrRpeWW9s",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre la tendencia a comportarnos mejor con extraños y descuidar a nuestros seres queridos, destacando la importancia de ofrecer nuestro verdadero yo a quienes realmente importan.",
+  "main_topics": [
+    "Comportamiento social",
+    "Relaciones familiares",
+    "Prioridades emocionales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de ser amable con extraños pero no con seres queridos.",
+      "summary": "El hablante plantea la paradoja de actuar mejor para desconocidos."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Ejemplificar el comportamiento mencionado con situaciones cotidianas.",
+      "summary": "Se describen situaciones en las que se da más esfuerzo a los extraños en lugar de a la familia."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reforzar la importancia de valorar a quienes realmente importan.",
+      "summary": "Se enfatiza que el verdadero apoyo proviene de quienes nos conocen mejor."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "reflexión personal",
+    "hook_text": "El mundo solo te quiere mientras estás actuando, pero las personas que realmente te quieren...",
+    "why_it_works": "Invita a la audiencia a reflexionar sobre sus propias relaciones y comportamientos."
+  },
+  "claims": [
+    {
+      "claim": "La gente actúa mejor para desconocidos que para seres queridos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Es común buscar validación en lugares equivocados.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Sonreír a compañeros de trabajo pero estar cansado con la familia",
+    "Escuchar problemas ajenos pero no tener paciencia con los cercanos"
+  ],
+  "actionable_ideas": [
+    "Dedica tiempo de calidad a tus seres queridos.",
+    "Practica la honestidad emocional con quienes amas.",
+    "Reconoce el valor de tus relaciones cercanas."
+  ],
+  "audience": "Personas que desean mejorar sus relaciones personales y familiares.",
+  "tone": "reflexivo",
+  "content_style": "conversacional",
+  "retention_devices": [
+    "historias personales",
+    "ejemplos cotidianos",
+    "apelo emocional"
+  ],
+  "title_supporting_quotes": [
+    "El mundo solo te quiere mientras estás actuando.",
+    "Las personas que son hogar son las únicas que se quedan cuando el espectáculo termina."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre relaciones personales",
+    "Charlas motivacionales",
+    "Publicaciones en redes sociales sobre empatía y amor familiar"
+  ],
+  "risk_notes": [
+    "La tendencia a descuidar a la familia puede generar conflictos emocionales.",
+    "Buscar validación fuera puede llevar a relaciones superficiales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

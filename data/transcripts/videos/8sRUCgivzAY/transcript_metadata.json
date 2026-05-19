@@ -1,0 +1,14 @@
+{
+  "video_id": "8sRUCgivzAY",
+  "channel_id": "UCEQXxiYxNZbym9Fad7-n2Lg",
+  "channel_name": "Doctor Fisión",
+  "title": "UCAM PAU Challenge ✍️",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\8sRUCgivzAY.mp3",
+  "transcribed_at": "2026-05-19T01:12:30.767773+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1257,
+  "text_sha256": "1cb1c3294045b8009b45866b235cd17f81d57188a74a4cbbbe7dea23ace68f7a",
+  "repo_schema_version": "transcript_metadata_v1"
+}

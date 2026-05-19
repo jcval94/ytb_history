@@ -1,0 +1,70 @@
+{
+  "video_id": "IGCKBKoplVE",
+  "language": "es",
+  "summary": "Se narra la historia de una joven que hizo un comentario insensible sobre el VIH en Twitter, originando un fenómeno viral que arruinó su vida profesional, resaltando el impacto de las redes sociales en las malas decisiones.",
+  "main_topics": [
+    "Comentarios insensibles en redes sociales",
+    "Impacto viral de las redes sociales",
+    "Race y salud pública"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso",
+      "purpose": "Describir la historia de una joven y su comentario",
+      "summary": "Una chica viaja a Sudáfrica y publica un comentario insensible en Twitter sobre el VIH."
+    },
+    {
+      "section": "Reacción viral",
+      "purpose": "Explicar cómo su comentario se volvió viral",
+      "summary": "El tuit se retuitea mientras ella está volando, llevando a manifestaciones de repudio."
+    },
+    {
+      "section": "Consecuencias",
+      "purpose": "Resaltar el impacto de su acción",
+      "summary": "Al aterrizar, se entera de que ha perdido su trabajo y su vida ha cambiado drásticamente."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Yo no puedo tener sida porque soy blanca.",
+    "why_it_works": "Captura la atención del público al presentar un comentario controvertido que lleva a un conflicto significativo."
+  },
+  "claims": [
+    {
+      "claim": "Los comentarios insensibles pueden arruinar vidas en la era digital.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las redes sociales amplifican las malas decisiones.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Caso de la joven que perdió su trabajo por un tuit insensible."
+  ],
+  "actionable_ideas": [
+    "Ser consciente del impacto de las palabras en redes sociales.",
+    "Reflexionar antes de publicar comentarios controvertidos."
+  ],
+  "audience": "jóvenes en redes sociales",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "anécdotas personales",
+    "preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "su vida se deshizo en esa decisión estúpida."
+  ],
+  "creative_reuse_opportunities": [
+    "Videos sobre el impacto de las redes sociales en la vida personal.",
+    "Charlas sobre la responsabilidad en el uso de redes sociales."
+  ],
+  "risk_notes": [
+    "Las redes sociales pueden difundir información rápidamente, tanto positiva como negativa.",
+    "La falta de una reflexión crítica puede llevar a consecuencias graves."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

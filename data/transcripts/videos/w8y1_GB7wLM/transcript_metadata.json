@@ -1,0 +1,14 @@
+{
+  "video_id": "w8y1_GB7wLM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El alivio de no encajar (según la ciencia)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\w8y1_GB7wLM.mp3",
+  "transcribed_at": "2026-05-19T01:10:22.493456+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1200,
+  "text_sha256": "28d55108d02fca21f153e0d5d4200482d26dff2982591793ca931d7b3f269ce5",
+  "repo_schema_version": "transcript_metadata_v1"
+}

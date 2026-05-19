@@ -1,0 +1,75 @@
+{
+  "video_id": "FUWx-9KF3M8",
+  "language": "español",
+  "summary": "El consumo excesivo de zanahorias puede provocar que la piel se torne anaranjada debido a la acumulación de betacaroteno. Esta coloración es más notoria en lugares como las palmas de las manos, pero se desvanece al disminuir la ingesta de zanahorias.",
+  "main_topics": [
+    "betacaroteno",
+    "efectos del consumo excesivo de zanahorias",
+    "cambio de color de la piel"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el fenómeno del cambio de color de la piel.",
+      "summary": "Cuando alguien consume muchas zanahorias, su piel puede adquirir un tono anaranjado debido al betacaroteno."
+    },
+    {
+      "section": "Causa",
+      "purpose": "Explicar la razón detrás del fenómeno.",
+      "summary": "El betacaroteno se acumula en la piel cuando se consume en exceso."
+    },
+    {
+      "section": "Efecto",
+      "purpose": "Describir cómo se manifiesta el fenómeno.",
+      "summary": "El cambio de color es visible, especialmente en las palmas de las manos."
+    },
+    {
+      "section": "Resolución",
+      "purpose": "Informar sobre cómo revertir el efecto.",
+      "summary": "La coloración desaparece al disminuir el consumo de zanahorias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Curiosidad",
+    "hook_text": "La piel puede volverse anaranjada.",
+    "why_it_works": "Atrae la atención al presentar un efecto inusual de un alimento común."
+  },
+  "claims": [
+    {
+      "claim": "El consumo excesivo de zanahorias puede causar que la piel se vuelva anaranjada.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La acumulación de betacaroteno es la causa del cambio de color en la piel.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La coloración de la piel desaparece al reducir el consumo de zanahorias.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reducir el consumo de zanahorias si observas un cambio de color en tu piel.",
+    "Consultar a un médico si los cambios en la piel son preocupantes."
+  ],
+  "audience": "Personas interesadas en la nutrición y la salud.",
+  "tone": "Informativo",
+  "content_style": "Educativo",
+  "retention_devices": [
+    "Ejemplos de efectos visibles",
+    "Consejos prácticos para revertir el cambio"
+  ],
+  "title_supporting_quotes": [
+    "Cuando alguien come muchas zanahorias, su piel puede volverse anaranjada."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre los efectos de otros alimentos en la piel.",
+    "Desarrollar infografías sobre el betacaroteno."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

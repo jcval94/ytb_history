@@ -1,0 +1,84 @@
+{
+  "video_id": "sZShxatkcw8",
+  "language": "es",
+  "summary": "El video discute los intentos fallidos de Mark Zuckerberg para ingresar al mercado chino, subrayando la influencia del Partido Comunista Chino y planteando preguntas sobre la percepción de China en el ámbito global.",
+  "main_topics": [
+    "Intentos de Zuckerberg en China",
+    "Influencia del Partido Comunista Chino",
+    "Percepción de China y su riesgo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del video",
+      "summary": "Zuckerberg es bloqueado en sus intentos de invertir y operar en China."
+    },
+    {
+      "section": "Intentos de Zuckerberg",
+      "purpose": "Describir las acciones de Zuckerberg hacia el mercado chino",
+      "summary": "Se detallan los esfuerzos de Zuckerberg por infiltrarse, incluyendo aprender mandarín y proponer proyectos."
+    },
+    {
+      "section": "Rechazos",
+      "purpose": "Ilustrar la resistencia de China",
+      "summary": "Cada intento de Zuckerberg resulta en rechazo por parte del gobierno chino."
+    },
+    {
+      "section": "Percepción de China",
+      "purpose": "Cuestionar la visión de China como amenaza",
+      "summary": "Se plantea la pregunta sobre si China es un país peligroso o un lugar de innovación."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a la reflexión",
+      "summary": "El video termina con una pregunta abierta al público sobre qué futuro desean para China."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntas retóricas",
+    "hook_text": "¿Qué va a hacer Juventud Global?",
+    "why_it_works": "Invita a la audiencia a reflexionar sobre su posición respecto a China y su futuro."
+  },
+  "claims": [
+    {
+      "claim": "El Partido Comunista Chino tiene control sobre el mercado.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Mark Zuckerberg ha intentado múltiples veces entrar a China.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La percepción negativa de China puede estar influenciada por campañas mediáticas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre la influencia política en los mercados tecnológicos.",
+    "Analizar la relación entre medios y percepción pública de países."
+  ],
+  "audience": "Juventud Global",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y confrontativo",
+  "retention_devices": [
+    "Preguntas intrigantes",
+    "Historias personales de Zuckerberg"
+  ],
+  "title_supporting_quotes": [
+    "China quien manda no es el mercado, es el Partido Comunista Chino.",
+    "¿China, así como paraíso utópico automatizado?"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un debate sobre la influencia de las redes sociales en la política global.",
+    "Producir contenido relacionado con el impacto de la inteligencia artificial en distintos países."
+  ],
+  "risk_notes": [
+    "Posible conflicto de intereses al hablar de tecnología y política.",
+    "Reacciones negativas de la audiencia que pueda identificarse con cualquiera de los polos discutidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

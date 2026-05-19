@@ -1,0 +1,14 @@
+{
+  "video_id": "AiCdeZpXB9o",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "El respeto llega en este momento #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\AiCdeZpXB9o.mp3",
+  "transcribed_at": "2026-05-19T01:10:54.303408+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 839,
+  "text_sha256": "5cedc2fdcb7ed01a4f008e30cf4b8a9c66ae28b651723d0479beb95dbab61465",
+  "repo_schema_version": "transcript_metadata_v1"
+}

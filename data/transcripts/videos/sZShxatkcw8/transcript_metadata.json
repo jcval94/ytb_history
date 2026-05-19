@@ -1,0 +1,14 @@
+{
+  "video_id": "sZShxatkcw8",
+  "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
+  "channel_name": "Diego Ruzzarin",
+  "title": "China rechaza a Zuckerberg (otra vez)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\sZShxatkcw8.mp3",
+  "transcribed_at": "2026-05-19T01:11:03.014770+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1759,
+  "text_sha256": "3ca200f7b5c4e21ff1f0e2c1d6756a5fe5ee304d556510d758977dd5369f89ff",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,80 @@
+{
+  "video_id": "8sRUCgivzAY",
+  "language": "es",
+  "summary": "El video presenta Pau Challenge, una plataforma con recursos para ayudar a los estudiantes a prepararse para la prueba de acceso a la universidad. Incluye un planificador de estudios, un test de detección profesional, y vídeos de embajadores y profesores que ofrecen consejos y ayuda.",
+  "main_topics": [
+    "Herramienta para PAU",
+    "Recursos educativos",
+    "Planificación de estudios",
+    "Test de carrera",
+    "Contenido exclusivo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la herramienta",
+      "summary": "Se introduce Pau Challenge como una herramienta útil para la PAU."
+    },
+    {
+      "section": "Características de la web",
+      "purpose": "Explicar los recursos disponibles",
+      "summary": "Se explican las diversas utilidades de la web, incluyendo el planificador de estudios y los tests."
+    },
+    {
+      "section": "Colaboración con embajadores",
+      "purpose": "Destacar el contenido exclusivo",
+      "summary": "Se mencionan a los embajadores y creadores de contenido que han colaborado en la creación de vídeos."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Motivar a compartir la información",
+      "summary": "Se anima a los espectadores a visitar la web y compartir el video con otros."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica y promesa",
+    "hook_text": "¿Listo? Hoy te voy a enseñar una herramienta increíble.",
+    "why_it_works": "Engancha al espectador desde el comienzo al prometer una herramienta que puede mejorar su rendimiento en la PAU."
+  },
+  "claims": [
+    {
+      "claim": "Pau Challenge ayuda a preparar la PAU.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La web ofrece recursos interesantes y útiles.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El acceso a la plataforma es gratuito.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Visitar la web Pau Challenge.",
+    "Utilizar el planificador de estudios.",
+    "Recomendar la plataforma a amigos."
+  ],
+  "audience": "Estudiantes que se preparan para la PAU.",
+  "tone": "Informativo y motivador",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Testimonios de otros embajadores",
+    "Promoción gratuita de herramientas",
+    "Uso de un lenguaje accesible"
+  ],
+  "title_supporting_quotes": [
+    "una herramienta increíble que te va a ayudar un montón"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear tutoriales adicionales sobre el uso de la web.",
+    "Generar contenido en redes sociales con testimonios de usuarios.",
+    "Producir vídeos de preguntas y respuestas sobre la PAU."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

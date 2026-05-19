@@ -1,0 +1,79 @@
+{
+  "video_id": "mQAGfvOE2EM",
+  "language": "es",
+  "summary": "El video discute el impacto de la fama en la percepción de autoridad, utilizando el ejemplo de Cristiano Ronaldo y su influencia en el mercado bursátil al mover botellas en una conferencia de prensa. Se explora el efecto halo en psicología, donde la fama puede dar un peso no merecido a las palabras de alguien, afectando la forma en que se reciben ideas en un contexto social.",
+  "main_topics": [
+    "Influencia de celebridades",
+    "Efecto halo",
+    "Percepción pública",
+    "Impacto en el mercado",
+    "Comunicación social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del tema",
+      "purpose": "Presentar el caso de Cristiano Ronaldo.",
+      "summary": "Se introducen las acciones de Ronaldo en una conferencia de prensa que impactaron la bolsa."
+    },
+    {
+      "section": "Análisis del efecto halo",
+      "purpose": "Explicar cómo la fama influye en nuestras percepciones.",
+      "summary": "Se detalla cómo atribuimos autoridad y conocimiento a celebridades basándonos en su fama."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la influencia de la fama.",
+      "summary": "Se concluye que la fama puede eclipsar ideas valiosas en la comunicación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Cristiano Ronaldo entró a una conferencia de prensa y movió botellas.",
+    "why_it_works": "Utiliza un ejemplo resonante y reconocible que capta la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "La influencia de un futbolista puede mover la bolsa.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Nosotros atribuimos un peso a las palabras de los famosos sin pensar.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El efecto halo influye en la percepción de ideas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Cristiano Ronaldo y el impacto en la bolsa.",
+    "La metáfora del megáfono en una fiesta."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre cómo la fama afecta nuestras decisiones.",
+    "Cuestionar la autoridad de las personas famosas en temas fuera de su expertise."
+  ],
+  "audience": "Personas interesadas en psicología, marketing y comunicación.",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "Uso de ejemplos reales",
+    "Metáforas ilustrativas",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Las acciones de la empresa caen y pierde 4.000 millones de dólares en la bolsa."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de contenido sobre el impacto de la fama en diferentes industrias.",
+    "Desarrollo de material educativo sobre psicología y percepción."
+  ],
+  "risk_notes": [
+    "Posibilidad de que algunos no se identifiquen con el tema",
+    "Riesgo de simplificar efectos psicológicos complejos"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

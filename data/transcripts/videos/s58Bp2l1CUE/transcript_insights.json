@@ -1,0 +1,89 @@
+{
+  "video_id": "s58Bp2l1CUE",
+  "language": "Spanish",
+  "summary": "Cerveza Tecate y Heineken México lanzan la iniciativa Welcome Back Paisano para contratar a mexicanos repatriados, transformando un desafío social en una oportunidad económica mediante capacitación y empleo.",
+  "main_topics": [
+    "Repatriación de mexicanos",
+    "Iniciativa Welcome Back Paisano",
+    "Oportunidades laborales",
+    "Emprendimiento",
+    "Impacto económico"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del problema",
+      "purpose": "Presentar la repatriación de mexicanos.",
+      "summary": "Más de 200,000 mexicanos han sido repatriados desde Estados Unidos entre 2025 y 2026."
+    },
+    {
+      "section": "Presentación de la iniciativa",
+      "purpose": "Mostrar la respuesta de empresas a este problema.",
+      "summary": "Bienvenida al programa Welcome Back Paisano de Tecate y Heineken, que busca emplear y capacitar a repatriados."
+    },
+    {
+      "section": "Beneficios del programa",
+      "purpose": "Explicar cómo la iniciativa no solo da empleo, sino también oportunidades de emprendimiento.",
+      "summary": "El programa ofrece capacitación y acompañamiento, convirtiendo repatriados en posibles dueños de negocios."
+    },
+    {
+      "section": "Cambio de perspectiva",
+      "purpose": "Resaltar el mensaje positivo de la campaña.",
+      "summary": "Se posiciona la repatriación como una ventaja competitiva, no como una crisis."
+    },
+    {
+      "section": "Llamada a la acción",
+      "purpose": "Invitar a la audiencia a reflexionar.",
+      "summary": "Se plantean preguntas sobre la efectividad del programa y sus implicaciones para México."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Tú crees que esto realmente pueda convertirse en una oportunidad para México?",
+    "why_it_works": "Provoca reflexión e invita a la participación en los comentarios."
+  },
+  "claims": [
+    {
+      "claim": "Los mexicanos repatriados poseen experiencia y habilidades valoradas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La repatriación puede transformar problemas sociales en oportunidades económicas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El programa de Tecate va más allá de dar empleo, fomentando el emprendimiento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover la iniciativa Welcome Back Paisano en otras empresas.",
+    "Crear programas de capacitación específicos para repatriados.",
+    "Facilitar el emprendimiento a través de mentoría y financiamiento."
+  ],
+  "audience": "Personas interesadas en temas de repatriación y empleo en México.",
+  "tone": "Optimista y reflexivo.",
+  "content_style": "Informativo y persuasivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Llamadas a la acción",
+    "Estadísticas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "Los mexicanos somos la mejor fuerza trabajadora del mundo.",
+    "La campaña juega con la idea de que Estados Unidos perdió a una de las mejores fuerzas laborales."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar infografías sobre el impacto de la repatriación.",
+    "Crear contenidos de video sobre testimonios de repatriados.",
+    "Llevar a cabo entrevistas con empresarios participantes del programa."
+  ],
+  "risk_notes": [
+    "La sostenibilidad del programa dependerá de su implementación efectiva.",
+    "Es importante manejar expectativas para evitar desilusión entre los repatriados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,77 @@
+{
+  "video_id": "AiCdeZpXB9o",
+  "language": "es",
+  "summary": "El respeto se gana cuando uno muestra que no está atrapado en una necesidad. Las personas perciben tu nivel de opciones y esto afecta cómo te tratan. Negociar desde la debilidad resulta en aceptar condiciones no deseadas. La clave es tener opciones para evitar ser controlado por otros.",
+  "main_topics": [
+    "Respeto",
+    "Percepción de opciones",
+    "Negociación",
+    "Fortaleza personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea de que el respeto se basa en la percepción de opciones.",
+      "summary": "La primera parte del discurso establece que el respeto se gana cuando se muestra que no se está atrapado."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar cómo la necesidad afecta la negociación.",
+      "summary": "Se detalla que al necesitar algo, se pierde la fortaleza en la negociación."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Presentar la solución para obtener respeto.",
+      "summary": "La conclusión enfatiza que tener opciones es la clave para no ser controlado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Interrogante retórica",
+    "hook_text": "¿Cómo se gana el respeto?",
+    "why_it_works": "Capta la atención al plantear un tema universal que todos experimentan."
+  },
+  "claims": [
+    {
+      "claim": "El respeto se basa en la percepción de opciones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Negociar desde la necesidad te pone en una posición débil.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Tener opciones es clave para evitar el control de otros.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Desarrollar múltiples opciones en la vida profesional.",
+    "Practicar la autoconfianza y el empoderamiento personal.",
+    "Reconocer y evitar situaciones de negociación donde se sienta debilidad."
+  ],
+  "audience": "Individuos buscando mejorar sus habilidades de negociación y autoconfianza.",
+  "tone": "Reflexivo y motivador",
+  "content_style": "Directo y persuasivo",
+  "retention_devices": [
+    "Repetición de conceptos clave",
+    "Historias sobre experiencias personales"
+  ],
+  "title_supporting_quotes": [
+    "El respeto llega cuando la gente siente que no estás atrapado.",
+    "La solución no es fingir confianza, es tener opciones."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre negociación",
+    "Charlas motivacionales",
+    "Cursos de desarrollo personal"
+  ],
+  "risk_notes": [
+    "Posibilidad de que la percepción de debilidad se malinterprete.",
+    "Dependencia en el contexto cultural sobre la negociación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

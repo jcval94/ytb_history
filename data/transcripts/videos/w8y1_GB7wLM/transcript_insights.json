@@ -1,0 +1,74 @@
+{
+  "video_id": "w8y1_GB7wLM",
+  "language": "es",
+  "summary": "El video explora la idea de que ser 'normal' es un malentendido. La norma puede ser vista desde dos perspectivas: moral/legal y estadística. Se discute cómo la mayoría de la gente tiene al menos una área en la que se considera anormal, lo que en última instancia sugiere que la variabilidad es la norma.",
+  "main_topics": [
+    "normalidad vs anormalidad",
+    "perspectivas de la norma",
+    "variabilidad humana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la noción de normalidad",
+      "purpose": "Definir lo que significa ser 'normal'.",
+      "summary": "Se introduce la distinción entre norma moral/legal y norma estadística."
+    },
+    {
+      "section": "Presentación de las dimensiones de la vida cotidiana",
+      "purpose": "Explorar diferentes áreas de la vida donde se puede ser 'anormal'.",
+      "summary": "Se mencionan dimensiones como puntualidad y sociabilidad, y cómo la evaluación revela variaciones."
+    },
+    {
+      "section": "Resultados de la evaluación",
+      "purpose": "Impactar la percepción personal sobre la normalidad.",
+      "summary": "Se revela que casi 9 de cada 10 personas son anormales en al menos un área."
+    },
+    {
+      "section": "Conclusiones sobre la anormalidad",
+      "purpose": "Proporcionar un mensaje reconfortante.",
+      "summary": "Se afirma que ser anormal es la norma y que la variabilidad es común en la humanidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "Lo normal es ser anormal.",
+    "why_it_works": "Desafía la percepción común de la normalidad y ofrece un alivio psicológico al público."
+  },
+  "claims": [
+    {
+      "claim": "Casi nueve de cada diez personas tiene al menos una área donde es anormal.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La anormalidad es la regla, no la excepción.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Aceptar la propia anormalidad como parte de la diversidad humana.",
+    "Fomentar un ambiente que celebre la variabilidad en lugar de la conformidad."
+  ],
+  "audience": "Personas que luchan con la percepción de normalidad y anormalidad.",
+  "tone": "Reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Estadísticas sorprendentes",
+    "Ejemplos de la vida diaria"
+  ],
+  "title_supporting_quotes": [
+    "Lo normal es ser anormal.",
+    "Nadie puede coincidir con el promedio en todas las variables."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido motivacional sobre la aceptación personal.",
+    "Crear talleres sobre diversidad y autoaceptación."
+  ],
+  "risk_notes": [
+    "Algunos pueden sentirse rechazados si se identifican con la anormalidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
