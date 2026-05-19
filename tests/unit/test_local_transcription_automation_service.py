@@ -76,6 +76,8 @@ def test_run_local_transcription_automation_commits_only_with_changes_after_succ
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
         commands.append(command)
+        if command == ["git", "branch", "--show-current"]:
+            return _completed(command, stdout="main\n")
         if command[:3] == ["git", "status", "--porcelain"]:
             return _completed(command, stdout="M  data/example.json\n")
         return _completed(command)
@@ -93,10 +95,11 @@ def test_run_local_transcription_automation_commits_only_with_changes_after_succ
 
     assert report["status"] == "success"
     assert commands == [
+        ["git", "branch", "--show-current"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
         ["git", "commit", "-m", "Run local transcription automation"],
-        ["git", "push"],
+        ["git", "push", "origin", "HEAD:main"],
     ]
     assert report["git"]["has_changes"] is True
     assert report["git"]["publishable_outputs"] is True
@@ -112,6 +115,8 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
         commands.append(command)
+        if command == ["git", "branch", "--show-current"]:
+            return _completed(command, stdout="main\n")
         return _completed(command, stdout="" if command[:3] == ["git", "status", "--porcelain"] else "")
 
     report = run_local_transcription_automation(
@@ -129,17 +134,55 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
     assert ["git", "push"] not in commands
     assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
     assert commands == [
+        ["git", "branch", "--show-current"],
         ["git", "add", "data/transcripts"],
         ["git", "status", "--porcelain", "--", "data/transcripts"],
     ]
 
 
-def test_run_local_transcription_automation_skips_git_sync_without_publishable_outputs(tmp_path: Path) -> None:
+def test_run_local_transcription_automation_publishes_existing_transcript_changes_without_new_outputs(tmp_path: Path) -> None:
     _write_sync_report(tmp_path)
     commands: list[list[str]] = []
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
         commands.append(command)
+        if command == ["git", "branch", "--show-current"]:
+            return _completed(command, stdout="main\n")
+        if command[:3] == ["git", "status", "--porcelain"]:
+            return _completed(command, stdout="A  data/transcripts/videos/v1/transcript.txt\n")
+        return _completed(command)
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        skip_youtube_refresh=True,
+        command_runner=_command_runner,
+        candidate_selector=lambda **_kwargs: {},
+        transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "failed_audio_download": 2},
+        insights_generator=lambda **_kwargs: {"generated": 0},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["git"]["publishable_outputs"] is False
+    assert report["git"]["has_changes"] is True
+    assert report["git"]["commit_attempted"] is True
+    assert report["warnings"] == []
+    assert commands == [
+        ["git", "branch", "--show-current"],
+        ["git", "add", "data/transcripts"],
+        ["git", "status", "--porcelain", "--", "data/transcripts"],
+        ["git", "commit", "-m", "Run local transcription automation"],
+        ["git", "push", "origin", "HEAD:main"],
+    ]
+
+
+def test_run_local_transcription_automation_checks_git_even_without_publishable_outputs(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
+    commands: list[list[str]] = []
+
+    def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
+        commands.append(command)
+        if command == ["git", "branch", "--show-current"]:
+            return _completed(command, stdout="main\n")
         return _completed(command)
 
     report = run_local_transcription_automation(
@@ -154,12 +197,14 @@ def test_run_local_transcription_automation_skips_git_sync_without_publishable_o
 
     assert report["git"]["publishable_outputs"] is False
     assert report["git"]["has_changes"] is False
-    assert report["warnings"] == ["git_sync_skipped_no_publishable_outputs"]
-    assert report["steps"]["git_add"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert report["steps"]["git_status"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert report["steps"]["git_push"] == {"skipped": True, "reason": "no_publishable_outputs"}
-    assert commands == []
+    assert report["warnings"] == ["git_no_changes_after_no_publishable_outputs"]
+    assert report["steps"]["git_commit"] == {"skipped": True, "reason": "no_changes"}
+    assert report["steps"]["git_push"] == {"skipped": True, "reason": "no_changes"}
+    assert commands == [
+        ["git", "branch", "--show-current"],
+        ["git", "add", "data/transcripts"],
+        ["git", "status", "--porcelain", "--", "data/transcripts"],
+    ]
 
 
 def test_run_local_transcription_automation_stops_when_sync_report_is_blocked(tmp_path: Path) -> None:
@@ -195,6 +240,28 @@ def test_run_local_transcription_automation_allows_stale_repo_when_explicit(tmp_
 
     assert report["status"] == "success"
     assert "stale_repo_allowed_after_sync_status:blocked_dirty_worktree" in report["warnings"]
+
+
+def test_run_local_transcription_automation_blocks_wrong_branch_with_dirty_worktree(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
+
+    def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
+        if command == ["git", "branch", "--show-current"]:
+            return _completed(command, stdout="feature/transcripts\n")
+        if command == ["git", "status", "--porcelain", "--untracked-files=no"]:
+            return _completed(command, stdout=" M data/transcripts/transcript_registry.jsonl\n")
+        raise AssertionError(command)
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        command_runner=_command_runner,
+        pipeline_runner=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("pipeline should not run")),
+    )
+
+    assert report["status"] == "blocked_wrong_branch_dirty_worktree"
+    assert report["git"]["dirty_tracked_files"] == [" M data/transcripts/transcript_registry.jsonl"]
+    assert report["steps"]["git_add"] == {"skipped": True, "reason": "branch_preflight_blocked"}
+    assert "wrong_branch_with_dirty_worktree_blocks_transcription" in report["warnings"]
 
 
 def test_run_local_transcription_automation_transcribes_all_selected_candidates(tmp_path: Path) -> None:

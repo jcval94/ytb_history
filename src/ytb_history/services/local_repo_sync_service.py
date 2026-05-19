@@ -103,6 +103,10 @@ def _parse_ahead_counts(report: JsonReport) -> tuple[int, int] | None:
     return upstream_only, local_only
 
 
+def _dirty_tracked_lines(report: JsonReport) -> list[str]:
+    return [line for line in str(report.get("stdout", "")).splitlines() if line.strip()]
+
+
 def sync_local_repo(
     *,
     repo_dir: str | Path,
@@ -139,10 +143,66 @@ def sync_local_repo(
         report["git"] = {
             "remote_sha": previous_report.get("git", {}).get("remote_sha"),
             "head_sha": previous_report.get("git", {}).get("head_sha"),
+            "branch": previous_report.get("git", {}).get("branch", branch),
             "action": "skipped_recent_success",
         }
         _write_report(effective_report_path, report)
         return report
+
+    current_branch = _run_command(["git", "branch", "--show-current"], cwd=repo_root, command_runner=command_runner)
+    report["steps"]["git_current_branch"] = current_branch
+    if not current_branch["ok"]:
+        report["status"] = "failed"
+        report["warnings"].append("git_current_branch_failed")
+        _write_report(effective_report_path, report)
+        return report
+    branch_before = str(current_branch.get("stdout", "")).strip()
+    report["git"]["branch_before"] = branch_before
+
+    if branch_before != branch:
+        dirty_before_switch = _run_command(
+            ["git", "status", "--porcelain", "--untracked-files=no"],
+            cwd=repo_root,
+            command_runner=command_runner,
+        )
+        report["steps"]["git_status_before_branch_switch"] = dirty_before_switch
+        if not dirty_before_switch["ok"]:
+            report["status"] = "failed"
+            report["warnings"].append("git_status_failed_before_branch_switch")
+            _write_report(effective_report_path, report)
+            return report
+        dirty_lines = _dirty_tracked_lines(dirty_before_switch)
+        report["git"]["dirty_tracked_files"] = dirty_lines
+        if dirty_lines:
+            report["status"] = "blocked_wrong_branch_dirty_worktree"
+            report["warnings"].append("wrong_branch_with_dirty_worktree_blocks_switch")
+            _write_report(effective_report_path, report)
+            return report
+
+        switch_branch = _run_command(["git", "switch", branch], cwd=repo_root, command_runner=command_runner)
+        report["steps"]["git_switch_branch"] = switch_branch
+        if not switch_branch["ok"]:
+            report["status"] = "blocked_wrong_branch"
+            report["warnings"].append("git_switch_branch_failed")
+            _write_report(effective_report_path, report)
+            return report
+        report["warnings"].append(f"switched_branch:{branch_before or 'detached'}->{branch}")
+
+        current_branch_after_switch = _run_command(
+            ["git", "branch", "--show-current"],
+            cwd=repo_root,
+            command_runner=command_runner,
+        )
+        report["steps"]["git_current_branch_after_switch"] = current_branch_after_switch
+        branch_after_switch = (
+            str(current_branch_after_switch.get("stdout", "")).strip() if current_branch_after_switch["ok"] else ""
+        )
+        report["git"]["branch_after_switch"] = branch_after_switch
+        if branch_after_switch != branch:
+            report["status"] = "blocked_wrong_branch"
+            report["warnings"].append("git_switch_branch_did_not_land_on_target")
+            _write_report(effective_report_path, report)
+            return report
 
     remote_ref = f"refs/heads/{branch}"
     ls_remote = _run_command(["git", "ls-remote", remote, remote_ref], cwd=repo_root, command_runner=command_runner)
@@ -168,6 +228,7 @@ def sync_local_repo(
     if remote_sha == head_sha:
         report["status"] = "up_to_date"
         report["last_success_at"] = report["generated_at"]
+        report["git"]["branch"] = branch
         report["git"]["action"] = "no_op"
         _write_report(effective_report_path, report)
         return report
@@ -179,7 +240,7 @@ def sync_local_repo(
         report["warnings"].append("git_status_failed")
         _write_report(effective_report_path, report)
         return report
-    dirty_lines = [line for line in str(dirty.get("stdout", "")).splitlines() if line.strip()]
+    dirty_lines = _dirty_tracked_lines(dirty)
     report["git"]["dirty_tracked_files"] = dirty_lines
     if dirty_lines:
         report["status"] = "blocked_dirty_worktree"
@@ -221,6 +282,7 @@ def sync_local_repo(
         report["git"]["head_sha_after_pull"] = str(new_head.get("stdout", "")).strip()
     report["status"] = "success"
     report["last_success_at"] = report["generated_at"]
+    report["git"]["branch"] = branch
     report["git"]["action"] = "pull_ff_only"
     _write_report(effective_report_path, report)
     return report

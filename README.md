@@ -620,7 +620,9 @@ Para revisar si hay commits nuevos de `origin/main` y hacer pull solo cuando sea
 python -m ytb_history.cli sync-local-repo --repo-dir .
 ```
 
-El sync ejecuta `git ls-remote origin refs/heads/main`, compara contra `HEAD`, bloquea si hay cambios tracked locales o commits locales no publicados, y solo usa `git pull --ff-only` cuando el worktree esta limpio. Nunca ejecuta `reset`, `clean`, `checkout` destructivo ni sobrescribe cambios locales. El reporte queda en `build/local_automation/latest_sync_report.json`.
+El sync verifica primero la rama local. Si no esta en `main` y el worktree tracked esta limpio, cambia automaticamente con `git switch main` antes de comparar contra `origin/main`. Si hay cambios tracked locales, bloquea la automatizacion para no mover cambios entre ramas sin decision humana.
+
+Despues ejecuta `git ls-remote origin refs/heads/main`, compara contra `HEAD`, bloquea si hay commits locales no publicados o divergencia, y solo usa `git pull --ff-only` cuando es seguro. Nunca ejecuta `reset`, `clean` ni comandos destructivos. El reporte queda en `build/local_automation/latest_sync_report.json` e incluye `branch_before`, `branch_after_switch`, SHA local/remoto y la accion tomada.
 
 Para encadenar seleccion, transcripcion, insights y publicacion de transcripciones desde tu entorno local:
 
@@ -632,9 +634,11 @@ python -m ytb_history.cli run-local-transcription-automation \
   --limit 10
 ```
 
-La transcripcion ya no hace pull directo. Primero lee `build/local_automation/latest_sync_report.json` y solo continua si el sync termino como `success`, `up_to_date` o `skipped_recent_success`. Si el sync quedo bloqueado por cambios locales, la transcripcion termina como `blocked_sync_dirty_worktree`; para una corrida manual consciente se puede usar `--allow-stale-repo`.
+La transcripcion ya no hace pull directo. Primero lee `build/local_automation/latest_sync_report.json` y solo continua si el sync termino como `success`, `up_to_date` o `skipped_recent_success`. Antes de generar artefactos vuelve a verificar la rama local; si no esta en `main` y no hay cambios tracked, cambia automaticamente a `main`. Si hay cambios tracked en otra rama, termina como `blocked_wrong_branch_dirty_worktree` para no mezclar artefactos entre ramas. Si el sync quedo bloqueado por cambios locales, la transcripcion termina como `blocked_sync_dirty_worktree`; para una corrida manual consciente se puede usar `--allow-stale-repo`.
 
-Solo se intenta `commit` + `push` cuando se generan resultados publicables nuevos dentro de `data/transcripts/`. Los audios descargados por `yt-dlp` y los videos locales se tratan como cache local en `data/audio_sources/` y `data/video_sources/`: no se versionan y el repo no depende de que existan.
+La publicacion revisa siempre cambios reales en Git bajo `data/transcripts/`, incluso si la corrida actual no genero transcripciones nuevas. Esto corrige el caso en el que una transcripcion quedaba escrita localmente en una corrida previa pero no se habia subido a `main`: antes se podia saltar Git por no detectar outputs nuevos; ahora se hace `git add data/transcripts`, `git status --porcelain -- data/transcripts`, y solo si hay cambios se ejecuta `commit` + `git push origin HEAD:main`.
+
+Los audios descargados por `yt-dlp` y los videos locales se tratan como cache local en `data/audio_sources/` y `data/video_sources/`: no se versionan y el repo no depende de que existan.
 
 La resolucion de media sigue esta cascada:
 
@@ -663,7 +667,7 @@ Esto crea un acceso directo en el Escritorio llamado `YTB History - Play Local A
 El modo "play" muestra progreso en espanol con porcentajes y no imprime el JSON tecnico completo en pantalla. Los JSON completos siguen disponibles para diagnostico:
 
 - `build/local_automation/latest_sync_report.json`: estado de sync y SHA local/remoto.
-- `build/local_automation/latest_run_report.json`: seleccion, transcripcion, insights y Git.
+- `build/local_automation/latest_run_report.json`: seleccion, transcripcion, insights y resultado final de Git, incluyendo `git_add`, `git_status`, `git_commit` y `git_push`.
 - `data/transcripts/transcript_selection_report.json`: por que la cola tuvo o no tuvo `10 + forzados`.
 - `data/transcripts/transcription_run_report.json`: por video, origen de audio y errores de `yt-dlp`/OpenAI.
 

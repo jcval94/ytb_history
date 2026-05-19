@@ -111,6 +111,64 @@ def _blocked_sync_status(sync_status: str) -> str:
     return f"blocked_sync_{sync_status}"
 
 
+def _dirty_tracked_lines(status_report: JsonReport) -> list[str]:
+    return [line for line in str(status_report.get("stdout", "")).splitlines() if line.strip()]
+
+
+def _ensure_main_branch(
+    *,
+    repo_root: Path,
+    report: JsonReport,
+    command_runner: CommandRunner,
+    branch: str = "main",
+) -> bool:
+    current_branch = _run_command(
+        ["git", "branch", "--show-current"],
+        cwd=repo_root,
+        command_runner=command_runner,
+    )
+    report["steps"]["git_current_branch_preflight"] = current_branch
+    if not current_branch["ok"]:
+        report["status"] = "failed"
+        report["warnings"].append("git_current_branch_preflight_failed")
+        return False
+
+    branch_before = str(current_branch.get("stdout", "")).strip()
+    report["git"]["branch_before"] = branch_before
+    if branch_before == branch:
+        report["git"]["branch"] = branch
+        return True
+
+    dirty = _run_command(
+        ["git", "status", "--porcelain", "--untracked-files=no"],
+        cwd=repo_root,
+        command_runner=command_runner,
+    )
+    report["steps"]["git_status_before_branch_switch"] = dirty
+    if not dirty["ok"]:
+        report["status"] = "failed"
+        report["warnings"].append("git_status_failed_before_branch_switch")
+        return False
+
+    dirty_lines = _dirty_tracked_lines(dirty)
+    report["git"]["dirty_tracked_files"] = dirty_lines
+    if dirty_lines:
+        report["status"] = "blocked_wrong_branch_dirty_worktree"
+        report["warnings"].append("wrong_branch_with_dirty_worktree_blocks_transcription")
+        return False
+
+    switch_branch = _run_command(["git", "switch", branch], cwd=repo_root, command_runner=command_runner)
+    report["steps"]["git_switch_branch"] = switch_branch
+    if not switch_branch["ok"]:
+        report["status"] = "blocked_wrong_branch"
+        report["warnings"].append("git_switch_branch_failed")
+        return False
+
+    report["warnings"].append(f"switched_branch:{branch_before or 'detached'}->{branch}")
+    report["git"]["branch"] = branch
+    return True
+
+
 def run_local_transcription_automation(
     *,
     repo_dir: str | Path,
@@ -195,6 +253,14 @@ def run_local_transcription_automation(
             return report
         if sync_status not in SYNC_SUCCESS_STATUSES:
             report["warnings"].append(f"stale_repo_allowed_after_sync_status:{sync_status}")
+        if not _ensure_main_branch(repo_root=repo_root, report=report, command_runner=command_runner):
+            report["steps"]["git_add"] = {"skipped": True, "reason": "branch_preflight_blocked"}
+            report["steps"]["git_status"] = {"skipped": True, "reason": "branch_preflight_blocked"}
+            report["steps"]["git_commit"] = {"skipped": True, "reason": "branch_preflight_blocked"}
+            report["steps"]["git_push"] = {"skipped": True, "reason": "branch_preflight_blocked"}
+            _write_report(report_path, report)
+            _emit_progress(progress_callback, 100, f"Proceso detenido: rama local no publicable ({report['status']}).")
+            return report
     else:
         report["steps"]["sync_preflight"] = {"skipped": True, "reason": "no_sync_git"}
 
@@ -245,17 +311,6 @@ def run_local_transcription_automation(
     if not no_sync_git:
         report["git"]["publishable_outputs"] = _has_publishable_transcription_outputs(report)
         _write_report(report_path, report)
-        if not report["git"]["publishable_outputs"]:
-            report["git"]["has_changes"] = False
-            report["git"]["commit_attempted"] = False
-            report["warnings"].append("git_sync_skipped_no_publishable_outputs")
-            report["steps"]["git_add"] = {"skipped": True, "reason": "no_publishable_outputs"}
-            report["steps"]["git_status"] = {"skipped": True, "reason": "no_publishable_outputs"}
-            report["steps"]["git_commit"] = {"skipped": True, "reason": "no_publishable_outputs"}
-            report["steps"]["git_push"] = {"skipped": True, "reason": "no_publishable_outputs"}
-            _write_report(report_path, report)
-            _emit_progress(progress_callback, 100, "Proceso terminado: no hubo transcripciones nuevas que publicar.")
-            return report
 
         _emit_progress(progress_callback, 92, "Preparando cambios de data/transcripts para Git.")
         add_report = _run_command(
@@ -301,24 +356,29 @@ def run_local_transcription_automation(
             if not commit_report["ok"]:
                 report["status"] = "failed"
                 report["warnings"].append("git_commit_failed")
+                _write_report(report_path, report)
                 return report
 
-            _emit_progress(progress_callback, 98, "Subiendo commit de transcripciones a GitHub.")
-            push_report = _run_command(["git", "push"], cwd=repo_root, command_runner=command_runner)
+            _emit_progress(progress_callback, 98, "Subiendo commit de transcripciones a origin/main.")
+            push_report = _run_command(["git", "push", "origin", "HEAD:main"], cwd=repo_root, command_runner=command_runner)
             report["git"]["commands"].append(push_report)
             report["steps"]["git_push"] = push_report
             if not push_report["ok"]:
                 report["status"] = "failed"
                 report["warnings"].append("git_push_failed")
+                _write_report(report_path, report)
+                return report
         else:
             report["steps"]["git_commit"] = {"skipped": True, "reason": "no_changes"}
             report["steps"]["git_push"] = {"skipped": True, "reason": "no_changes"}
+            if not report["git"]["publishable_outputs"]:
+                report["warnings"].append("git_no_changes_after_no_publishable_outputs")
     else:
         report["steps"]["git_add"] = {"skipped": True, "reason": "no_sync_git"}
         report["steps"]["git_status"] = {"skipped": True, "reason": "no_sync_git"}
         report["steps"]["git_commit"] = {"skipped": True, "reason": "no_sync_git"}
         report["steps"]["git_push"] = {"skipped": True, "reason": "no_sync_git"}
-        _write_report(report_path, report)
 
     _emit_progress(progress_callback, 100, f"Proceso terminado con estado: {report['status']}.")
+    _write_report(report_path, report)
     return report
