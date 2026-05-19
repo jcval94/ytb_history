@@ -1,0 +1,95 @@
+{
+  "video_id": "eMK36QZCpLY",
+  "language": "es",
+  "summary": "Bruno León comparte su experiencia como hombre trans embarazado, abordando temas emocionales, físicos y sociales relacionados con el embarazo. Discute sus decisiones sobre la hormonación, el impacto de la testosterona en su cuerpo y cómo se siente al confrontar la sociedad mientras vive su embarazo.",
+  "main_topics": [
+    "Experiencia de embarazo en hombres trans",
+    "Impactos emocionales y físicos del embarazo",
+    "Hormonación y decisiones sobre el cuerpo",
+    "Percepción social y estigmas",
+    "Empoderamiento y aceptación personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir a Bruno y el tema del embarazo en hombres trans.",
+      "summary": "Bruno León presenta su embarazo y comparte su alegría por ser padre asumiendo su identidad como hombre trans."
+    },
+    {
+      "section": "Decisión de ser padre",
+      "purpose": "Explorar el deseo de Bruno de ser padre y su relación.",
+      "summary": "Bruno comparte su conversación con su pareja sobre la paternidad y cómo llegaron a la decisión de que él sería el que se embarazara."
+    },
+    {
+      "section": "Experiencia de embarazo",
+      "purpose": "Describir cómo ha sido su experiencia emocional y física durante el embarazo.",
+      "summary": "Bruno habla sobre sus sentimientos al enterarse de su embarazo y las emociones que ha vivido, incluyendo miedo y alegría."
+    },
+    {
+      "section": "Desafíos y aceptación",
+      "purpose": "Reflejar los desafíos físicos y emocionales que enfrenta durante el embarazo.",
+      "summary": "Bruno menciona las limitaciones físicas y el cambio de su cuerpo, así como su aceptación y empoderamiento al generar vida."
+    },
+    {
+      "section": "Interacción con la sociedad",
+      "purpose": "Compartir cómo la sociedad percibe su embarazo.",
+      "summary": "Bruno discute su preocupación por los posibles comentarios negativos de la gente y cómo trata de manejar su vulnerabilidad."
+    },
+    {
+      "section": "Consejos y reflexiones",
+      "purpose": "Ofrecer consejos a otros hombres trans que consideren ser padres.",
+      "summary": "Bruno anima a otros a seguir su camino y expresar su paternidad, enfatizando que ser padre no es retroceder, sino avanzar."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Cómo es vivir un embarazo siendo un hombre trans?",
+    "why_it_works": "La pregunta atrae la atención al abordar un tema poco discutido y genera curiosidad sobre las experiencias personales y desafíos."
+  },
+  "claims": [
+    {
+      "claim": "Bruno se sintió emocionado y sorprendido al saber que estaba embarazado.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La testosterona no es un anticonceptivo y no impide el embarazo en hombres trans.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El embarazo puede traer sentimientos de vulnerabilidad y empoderamiento.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Bruno usó Instagram para documentar su experiencia.",
+    "Reacciones de la familia y amigos al embarazo."
+  ],
+  "actionable_ideas": [
+    "Fomentar la visibilidad de padres trans en redes sociales.",
+    "Iniciar diálogos en comunidades sobre la paternidad en hombres trans.",
+    "Crear espacios seguros para discutir experiencias de embarazo."
+  ],
+  "audience": "Personas interesadas en paternidad, cuestiones trans y diversidad.",
+  "tone": "Conversacional y reflexivo.",
+  "content_style": "Entrevista personal con toques de humor y sinceridad.",
+  "retention_devices": [
+    "Narración de experiencias personales.",
+    "Humor al abordar temas serios."
+  ],
+  "title_supporting_quotes": [
+    "‘Quedarte embarazado no es ir hacia atrás, sino ir hacia adelante.’",
+    "‘Lo que más me encanta es sentir que soy la casita de mi bebé.’"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear artículos relacionados sobre paternidad en hombres trans.",
+    "Desarrollar contenido educativo sobre la hormonación y la paternidad."
+  ],
+  "risk_notes": [
+    "Posible malinterpretación de sus palabras en redes.",
+    "Reacciones negativas de grupos opositores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

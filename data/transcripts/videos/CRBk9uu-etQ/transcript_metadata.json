@@ -1,0 +1,14 @@
+{
+  "video_id": "CRBk9uu-etQ",
+  "channel_id": "UCaVPhFg-Ax873wvhbNitsrQ",
+  "channel_name": "El Robot de Platón",
+  "title": "MÁS FRÍO que el CERO ABSOLUTO",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\CRBk9uu-etQ.mp3",
+  "transcribed_at": "2026-05-19T01:40:36.649323+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 625,
+  "text_sha256": "8653dbb3f8b858ed070a9c2fd2e1545039450bced34d4993b4bab63df0536e0a",
+  "repo_schema_version": "transcript_metadata_v1"
+}

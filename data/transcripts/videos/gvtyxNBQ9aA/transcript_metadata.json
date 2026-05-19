@@ -1,0 +1,14 @@
+{
+  "video_id": "gvtyxNBQ9aA",
+  "channel_id": "UCUP6qv-_EIL0hwTsJaKYnvw",
+  "channel_name": "Azteca Noticias",
+  "title": "Una perrita no pudo ocultar su emoción durante la fiesta de cumpleaños",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\gvtyxNBQ9aA.mp3",
+  "transcribed_at": "2026-05-19T01:43:26.211911+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 621,
+  "text_sha256": "a34b9d9d514660d7907dc8064eca052e4eb1cc53cd563b3c8cb7305e971dbaf7",
+  "repo_schema_version": "transcript_metadata_v1"
+}

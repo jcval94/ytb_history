@@ -1,0 +1,74 @@
+{
+  "video_id": "mQAGfvOE2EM",
+  "language": "spanish",
+  "summary": "El discurso trata sobre el impacto que tiene la fama de figuras como Cristiano Ronaldo en la percepción pública y el comportamiento del mercado. Se explora el efecto halo, donde la reputación en un área se extiende a otras, afectando decisiones y opiniones sin un pensamiento crítico.",
+  "main_topics": [
+    "Efecto halo",
+    "Influencia de la fama",
+    "Percepción pública",
+    "Impacto en el mercado",
+    "Psicología de la fama"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el caso de Cristiano Ronaldo y su influencia.",
+      "summary": "Se menciona un evento donde Ronaldo desplaza botellas de bebidas y provoca una caída en el valor de la empresa patrocinadora."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar el efecto halo y cómo afecta nuestras percepciones.",
+      "summary": "Se analiza cómo asumimos conocimiento en otras áreas debido al éxito en una sola, utilizando la metáfora de una fiesta."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la atribución de valor a la fama.",
+      "summary": "La charla finaliza diciendo que la fama puede silenciar voces más tranquilas y lógicas en la sociedad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anécdota",
+    "hook_text": "Cristiano Ronaldo entra a una conferencia de prensa y mueve botellas, provocando una caída en la bolsa.",
+    "why_it_works": "Captura la atención inmediata al conectar una figura famosa con un efecto económico significativo."
+  },
+  "claims": [
+    {
+      "claim": "La influencia de una figura famosa puede mover el mercado.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El efecto halo lleva a la gente a asumir que el éxito en un área se traduce a otras.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar el pensamiento crítico ante opiniones de figuras públicas.",
+    "Establecer un análisis más riguroso detrás de afirmaciones influyentes.",
+    "Reforzar la educación en psicología para comprender mejor los efectos de la fama."
+  ],
+  "audience": "Personas interesadas en psicología, marketing y comportamiento social.",
+  "tone": "Reflexivo",
+  "content_style": "Analítico",
+  "retention_devices": [
+    "Métodos de comparación",
+    "Anécdotas relevantes",
+    "Analogías efectivas"
+  ],
+  "title_supporting_quotes": [
+    "El brillo de la fama se derrama sobre todo lo que toca.",
+    "Imaginá una fiesta, gente conversando, y de repente entra alguien con un megáfono."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el efecto halo en marketing.",
+    "Ensayos sobre la influencia de personalidades en la toma de decisiones.",
+    "Videos explicativos sobre la psicología de la fama."
+  ],
+  "risk_notes": [
+    "Dependencia de la interpretación de la audiencia sobre la fama.",
+    "Posible resistencia de figuras influyentes a ser analizadas críticamente."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "OtbHrLODinY",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué internet premia al que \"no hace nada\"?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\OtbHrLODinY.mp3",
+  "transcribed_at": "2026-05-19T01:37:16.206987+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9008,
+  "text_sha256": "de8cfa6096b3efdefda6074b1f0c2cf69c281a483addfbe22a7d0fe8a956afa7",
+  "repo_schema_version": "transcript_metadata_v1"
+}

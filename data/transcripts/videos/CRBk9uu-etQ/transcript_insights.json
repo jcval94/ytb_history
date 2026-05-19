@@ -1,0 +1,79 @@
+{
+  "video_id": "CRBk9uu-etQ",
+  "language": "español",
+  "summary": "El video aborda el concepto del cero absoluto, la temperatura más baja posible donde las partículas de un objeto cesan su movimiento. Se exploran las implicaciones de esta temperatura en la energía cinética de las partículas.",
+  "main_topics": [
+    "Cero absoluto",
+    "Temperatura",
+    "Energía cinética",
+    "Movilidad de partículas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la pregunta central del video.",
+      "summary": "Aldo introduce el tema y la pregunta sobre qué hay más frío que el cero absoluto."
+    },
+    {
+      "section": "Explicación del cero absoluto",
+      "purpose": "Informar sobre las características del cero absoluto.",
+      "summary": "Se define el cero absoluto y se explica que es la temperatura más baja posible."
+    },
+    {
+      "section": "Relación entre temperatura y movimiento de partículas",
+      "purpose": "Explorar cómo la temperatura afecta el movimiento molecular.",
+      "summary": "Se detalla cómo la temperatura influye en la energía cinética de las partículas."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con un comentario humorístico.",
+      "summary": "Aldo finaliza con una broma que relaciona el frío emocional con el cero absoluto."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Hay algo más frío que el cero absoluto?",
+    "why_it_works": "Capta la atención al plantear una pregunta intrigante y desafiante."
+  },
+  "claims": [
+    {
+      "claim": "El cero absoluto es menos 273.15 grados Celsius.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Nada puede ser más frío que el cero absoluto.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La temperatura está relacionada con la energía cinética de las partículas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre el cero absoluto y sus implicaciones en la física.",
+    "Discutir cómo la temperatura afecta otras propiedades físicas.",
+    "Explorar el concepto de la energía cinética en experimentos sencillos."
+  ],
+  "audience": "Personas interesadas en la ciencia y la física.",
+  "tone": "Informal y humorístico.",
+  "content_style": "Educativo y entretenido.",
+  "retention_devices": [
+    "Humor",
+    "Preguntas retóricas",
+    "Definiciones claras"
+  ],
+  "title_supporting_quotes": [
+    "La temperatura más baja posible.",
+    "Las partículas dejan de moverse por completo."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre otras temperaturas extremas.",
+    "Realizar una serie de preguntas científicas intrigantes."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

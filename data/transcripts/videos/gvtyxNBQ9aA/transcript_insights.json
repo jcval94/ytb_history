@@ -1,0 +1,69 @@
+{
+  "video_id": "gvtyxNBQ9aA",
+  "language": "es",
+  "summary": "El video muestra la reacción emotiva de Argelia, una perrita que se emociona por su fiesta de cumpleaños, capturada en un momento viral que destaca su lugar como la favorita de la familia.",
+  "main_topics": [
+    "Reacción emocional de mascotas",
+    "Fiestas de cumpleaños para mascotas",
+    "Contenido viral en redes sociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar a la protagonista del video.",
+      "summary": "Se introduce a Argelia, la perrita que emocionó a las redes sociales."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Describir la reacción de Argelia.",
+      "summary": "Se detalla la felicidad de Argelia al recibir una fiesta sorpresa por su cumpleaños."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Resaltar la viralidad del contenido.",
+      "summary": "Se menciona que el video se ha vuelto viral, mostrando el cariño que se tiene hacia la perrita."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "La emoción de la perrita por su cumpleaños",
+    "why_it_works": "Apela a la empatía y al amor hacia las mascotas, lo que genera interés y compartición en redes."
+  },
+  "claims": [
+    {
+      "claim": "El video de Argelia es el más viral.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Argelia es la favorita de la casa.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Capturar momentos especiales de mascotas en video.",
+    "Crear contenido emocional que conecte con la audiencia."
+  ],
+  "audience": "Amantes de las mascotas y usuarios de redes sociales.",
+  "tone": "Emotivo y ligero.",
+  "content_style": "Conversacional y narrativo.",
+  "retention_devices": [
+    "Momentos emotivos",
+    "Reacciones sorprendentes"
+  ],
+  "title_supporting_quotes": [
+    "La reacción de Argelia fue cautivadora.",
+    "Es sin duda el video más viral."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear compilaciones de reacciones de mascotas.",
+    "Iniciar conversaciones sobre la importancia de las celebraciones para mascotas."
+  ],
+  "risk_notes": [
+    "Posible falta de credibilidad en claims si no se presenta evidencia.",
+    "Uso excesivo de emociones puede llegar a ser visto como manipulador."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

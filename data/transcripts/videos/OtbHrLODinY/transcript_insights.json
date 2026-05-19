@@ -1,0 +1,91 @@
+{
+  "video_id": "OtbHrLODinY",
+  "language": "es",
+  "summary": "El episodio analiza cómo la fama ha cambiado de ser una consecuencia del talento a convertirse en el objetivo mismo de muchas personas, especialmente jóvenes. La obsesión por los seguidores y la atención ha generado cambios en la admiración social y en la percepción de la fama. También se explora el morbo social relacionado con la vida privada de los famosos y cómo esto afecta nuestras interacciones y la producción de contenido en las redes sociales.",
+  "main_topics": [
+    "La búsqueda de la fama moderna",
+    "La influencia de las redes sociales",
+    "El morbo y el chisme en la cultura actual",
+    "Efecto halo de la fama",
+    "Vínculos parasociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la fama y su relevancia actual.",
+      "summary": "Se plantea la pregunta de por qué la fama se ha convertido en una obsesión, respaldada por datos de encuestas sobre las aspiraciones de los jóvenes."
+    },
+    {
+      "section": "Evolución de la fama",
+      "purpose": "Explorar cómo la fama ha cambiado de ser un resultado al objetivo en sí mismo.",
+      "summary": "Se discute cómo la sociedad evalúa a las personas en base a su número de seguidores y no por sus logros."
+    },
+    {
+      "section": "Impacto de la fama",
+      "purpose": "Analizar el efecto de la fama en la percepción de los famosos.",
+      "summary": "Ejemplos de cómo la fama influye en diferentes ámbitos, desde el deporte hasta la ciencia, ilustran su impacto desproporcionado."
+    },
+    {
+      "section": "Interés por chismes",
+      "purpose": "Examinar por qué estamos atraídos por la vida privada de los famosos.",
+      "summary": "Se presenta la idea del chisme como un mecanismo evolutivo y cómo surge el interés en las vidas personales de los famosos."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Reflexionar sobre el papel de la audiencia en la creación de contenido.",
+      "summary": "Se concluye que somos activos en la producción cultural al interactuar con el contenido que genera drama o escándalo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "Casi la mitad de los menores de 30 sueña con la fama.",
+    "why_it_works": "Captura la atención del espectador al presentar un dato sorprendente que refleja una tendencia cultural preocupante."
+  },
+  "claims": [
+    {
+      "claim": "La fama ha pasado de ser consecuencia de logros a ser el objetivo en sí mismo.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La atención en redes sociales es la moneda más valiosa del sistema actual.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El interés en los chismes nos deriva de un instinto de supervivencia social.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "El caso de Cristiano Ronaldo moviendo acciones de bolsa.",
+    "El juicio de Johnny Depp y Amber Heard generando más clics que noticias sobre la guerra en Ucrania."
+  ],
+  "actionable_ideas": [
+    "Fomentar la admiración por logros y talentos reales en lugar de la fama superficial.",
+    "Promover contenido educativo y significativo en redes sociales.",
+    "Crear conciencia sobre el efecto de los vínculos parasociales y su impacto emocional."
+  ],
+  "audience": "Adultos jóvenes interesados en la cultura de la fama y redes sociales.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Estadísticas intrigantes",
+    "Ejemplos actuales de famosos",
+    "Anécdotas personales"
+  ],
+  "title_supporting_quotes": [
+    "La fama dejó de ser la consecuencia de hacer algo destacado para convertirse en el objetivo mismo.",
+    "El brillo de la fama se derrama sobre todo lo que toca."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido que contraste aspiraciones de fama con logros personales.",
+    "Desarrollar artículos sobre el impacto emocional de los vínculos parasociales."
+  ],
+  "risk_notes": [
+    "El riesgo de trivializar logros por la atracción hacia el espectáculo.",
+    "Posible desensibilización de la audiencia hacia temas importantes debido al morbo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

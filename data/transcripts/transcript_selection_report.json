@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T12:57:31.217122+00:00",
+  "generated_at": "2026-05-19T01:36:24.383440+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
   "expected_selected_count": 16,
@@ -8,40 +8,40 @@
   "available_ranked_count": 11620,
   "source_artifacts": {
     "decision": {
-      "path": "data/decision/latest_action_candidates.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
       "exists": true,
       "row_count": 2682,
-      "modified_at": "2026-05-18T12:57:22.477713+00:00"
+      "modified_at": "2026-05-19T01:22:00.264173+00:00"
     },
     "model_intelligence": {
-      "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\model_intelligence\\latest_hybrid_recommendations.csv",
       "exists": true,
       "row_count": 1762,
-      "modified_at": "2026-05-18T12:57:23.596745+00:00"
+      "modified_at": "2026-05-19T01:22:00.513618+00:00"
     },
     "topic": {
-      "path": "data/topic_intelligence/latest_topic_opportunities.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\topic_intelligence\\latest_topic_opportunities.csv",
       "exists": true,
       "row_count": 16,
-      "modified_at": "2026-05-18T12:57:25.501801+00:00"
+      "modified_at": "2026-05-19T01:22:00.893383+00:00"
     },
     "creative": {
-      "path": "data/creative_packages/latest_creative_packages.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\creative_packages\\latest_creative_packages.csv",
       "exists": true,
       "row_count": 2451,
-      "modified_at": "2026-05-18T12:57:26.697835+00:00"
+      "modified_at": "2026-05-19T01:22:00.223316+00:00"
     },
     "analytics_scores": {
-      "path": "data/analytics/latest/latest_video_scores.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_scores.csv",
       "exists": true,
       "row_count": 11671,
-      "modified_at": "2026-05-18T12:56:44.531641+00:00"
+      "modified_at": "2026-05-19T01:22:00.145097+00:00"
     },
     "analytics_metrics": {
-      "path": "data/analytics/latest/latest_video_metrics.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_metrics.csv",
       "exists": true,
       "row_count": 11671,
-      "modified_at": "2026-05-18T12:56:44.337635+00:00"
+      "modified_at": "2026-05-19T01:22:00.136853+00:00"
     }
   },
   "selected_count": 16,
@@ -87,5 +87,7 @@
     "IGCKBKoplVE",
     "zXvygWE3Ess"
   ],
-  "warnings": []
+  "warnings": [
+    "forced_channels_window_anchored_to_latest_upload_date"
+  ]
 }

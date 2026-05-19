@@ -1,0 +1,78 @@
+{
+  "video_id": "zjMTViibNiE",
+  "language": "es",
+  "summary": "Un joven habla sobre su sueño de cortar el cabello a Julián Álvarez y cómo logró hacerlo después de prepararse durante meses, sintiendo nervios similares a su primer corte de cabello, realizado a su padre. Agradece a su amigo Nachano y a la organización PAX por ayudarle a cumplir su sueño.",
+  "main_topics": [
+    "Sueños y aspiraciones",
+    "Corte de cabello",
+    "Nervios y preparación",
+    "Apoyo familiar y de amigos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del sueño",
+      "purpose": "Presentar el sueño del protagonista",
+      "summary": "Comienza hablando de su mayor sueño en Telofuturo, que es cortarle el cabello a Julián Álvarez."
+    },
+    {
+      "section": "Preparativos para el corte",
+      "purpose": "Mostrar la preparación y el nerviosismo",
+      "summary": "Explica que ha estudiado la técnica de corte y describe su nerviosismo antes de comenzar."
+    },
+    {
+      "section": "El corte",
+      "purpose": "Describir el proceso del corte de cabello",
+      "summary": "Relata las etapas del corte, incluidos sus nervios y la experiencia de cortar el cabello de un famoso."
+    },
+    {
+      "section": "Agradecimientos",
+      "purpose": "Reconocer el apoyo recibido",
+      "summary": "Agradece a su amigo y menciona la importancia de su apoyo familiar."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la experiencia",
+      "summary": "Concluye expresando su felicidad por haber cumplido su sueño y la gratitud hacia Julián."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta inicial",
+    "hook_text": "¿Decime cuál es tu mayor sueño en Telofuturo?",
+    "why_it_works": "Engancha al espectador al plantear una pregunta personal que invita a la reflexión sobre sus propios sueños."
+  },
+  "claims": [
+    {
+      "claim": "Cortar el cabello a Julián Álvarez es un sueño cumplido.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El nerviosismo es una reacción natural ante situaciones de presión.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Aprovechar momentos únicos para cumplir sueños.",
+    "Buscar apoyo en amigos y familiares en momentos de nerviosismo."
+  ],
+  "audience": "Jóvenes aspirantes a profesionales en el ámbito del estilismo y cortes de cabello.",
+  "tone": "Entusiasta y reflexivo",
+  "content_style": "Narrativo y personal",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Diálogos entretenidos",
+    "Momentos de tensión emocional"
+  ],
+  "title_supporting_quotes": [
+    "Cortarle el pelo a Julián Álvarez fue mi sueño.",
+    "Me va a costar muchísimo volver al colegio después de esto."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video tutorial sobre técnicas de corte de cabello.",
+    "Collage de fotos y videos del proceso del corte."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

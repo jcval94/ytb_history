@@ -1,0 +1,14 @@
+{
+  "video_id": "U5Xpd8ja9bk",
+  "channel_id": "UC7_YxT-KID8kRbqZo7MyscQ",
+  "channel_name": "Markiplier",
+  "title": "Where the hell is Iron Lung...?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\U5Xpd8ja9bk.mp3",
+  "transcribed_at": "2026-05-19T01:38:12.167093+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8278,
+  "text_sha256": "ed6724a54e0e19b4da48db4281e4d0b1065bc0de7e9d72cd6404cd489bc3a0bb",
+  "repo_schema_version": "transcript_metadata_v1"
+}
