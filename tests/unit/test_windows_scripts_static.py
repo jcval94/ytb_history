@@ -23,6 +23,7 @@ def test_manual_play_script_runs_sync_before_transcription_and_writes_report() -
     assert "Inicio manual: sincronizar repo" in content
     assert "Cola seleccionada" in content
     assert "Resultado transcripcion" in content
+    assert "Timestamps:" in content
     assert "Presiona Enter para cerrar esta ventana" in content
 
 
@@ -52,6 +53,7 @@ def test_windows_transcription_runner_forwards_ytdlp_options() -> None:
     assert "--no-json-output" in content
     assert "Seleccion:" in content
     assert "Transcripcion:" in content
+    assert "Timestamps:" in content
 
 
 def test_task_registration_preserves_six_hour_windows_and_ytdlp_options() -> None:

@@ -32,6 +32,7 @@ from ytb_history.services.transcript_selection_service import select_transcripti
 from ytb_history.services.validation_service import validate_latest_run
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
+from ytb_history.services.transcript_timestamp_backfill_service import backfill_transcript_timestamps
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
 from ytb_history.services.local_repo_sync_service import sync_local_repo
@@ -175,6 +176,15 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--ytdlp-cookies-b64")
     transcribe_parser.add_argument("--progress-log", action="store_true")
     transcribe_parser.add_argument("--no-json-output", action="store_true")
+
+    timestamp_backfill_parser = sub.add_parser("backfill-transcript-timestamps", help="Backfill timestamp segments for existing local transcripts")
+    timestamp_backfill_parser.add_argument("--data-dir", default="data")
+    timestamp_backfill_parser.add_argument("--limit", default=10, type=int)
+    timestamp_backfill_parser.add_argument("--audio-source-dir", default="data/audio_sources")
+    timestamp_backfill_parser.add_argument("--model", default="whisper-1")
+    timestamp_backfill_parser.add_argument("--force", action="store_true")
+    timestamp_backfill_parser.add_argument("--progress-log", action="store_true")
+    timestamp_backfill_parser.add_argument("--no-json-output", action="store_true")
 
     insights_parser = sub.add_parser("generate-transcript-insights", help="Generate structured transcript insights from stored transcripts")
     insights_parser.add_argument("--data-dir", default="data")
@@ -401,6 +411,21 @@ def main() -> int:
         if args.progress_log:
             kwargs["progress_callback"] = _make_spanish_progress_printer(to_stdout=args.no_json_output)
         summary = transcribe_selected_videos(**kwargs)
+        if not args.no_json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "backfill-transcript-timestamps":
+        kwargs = {
+            "data_dir": args.data_dir,
+            "limit": args.limit,
+            "audio_source_dir": args.audio_source_dir,
+            "model": args.model,
+            "force": args.force,
+        }
+        if args.progress_log:
+            kwargs["progress_callback"] = _make_spanish_progress_printer(to_stdout=args.no_json_output)
+        summary = backfill_transcript_timestamps(**kwargs)
         if not args.no_json_output:
             print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0

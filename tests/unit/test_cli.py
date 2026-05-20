@@ -214,7 +214,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-opportunity-radar", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-opportunity-radar", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "backfill-transcript-timestamps", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -357,6 +357,47 @@ def test_cli_transcribe_selected_videos_forwards_ytdlp_options(monkeypatch, caps
             "ytdlp_browser": "firefox",
             "ytdlp_extra_args": ["--proxy", "http://localhost:8080"],
             "ytdlp_cookies_b64": None,
+        }
+    ]
+
+
+def test_cli_backfill_transcript_timestamps_forwards_options(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_backfill_transcript_timestamps(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "generated": 2}
+
+    monkeypatch.setattr(cli, "backfill_transcript_timestamps", _fake_backfill_transcript_timestamps)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "backfill-transcript-timestamps",
+            "--data-dir",
+            "custom/data",
+            "--limit",
+            "7",
+            "--audio-source-dir",
+            "custom/audio",
+            "--model",
+            "whisper-1",
+            "--force",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out) == {"status": "success", "generated": 2}
+    assert calls == [
+        {
+            "data_dir": "custom/data",
+            "limit": 7,
+            "audio_source_dir": "custom/audio",
+            "model": "whisper-1",
+            "force": True,
         }
     ]
 

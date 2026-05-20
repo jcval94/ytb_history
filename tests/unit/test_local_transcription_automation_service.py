@@ -44,6 +44,7 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
         pipeline_runner=_pipeline,
         candidate_selector=lambda **kwargs: _record("candidates", kwargs),
         transcription_runner=lambda **kwargs: _record("transcription", kwargs),
+        timestamp_backfill_runner=lambda **kwargs: _record("timestamps", kwargs),
         insights_generator=lambda **kwargs: _record("insights", kwargs),
         registry_report_builder=lambda **kwargs: _record("registry", kwargs),
     )
@@ -51,7 +52,7 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
     assert report["status"] == "success"
     assert report["steps"]["youtube_refresh"] == {"skipped": True, "reason": "skip_youtube_refresh"}
     assert report["steps"]["sync_preflight"] == {"skipped": True, "reason": "no_sync_git"}
-    assert [name for name, _ in calls] == ["candidates", "transcription", "insights", "registry"]
+    assert [name for name, _ in calls] == ["candidates", "transcription", "timestamps", "insights", "registry"]
     assert calls[0][1] == {"data_dir": str(tmp_path / "custom_data"), "limit": 3}
     assert calls[1][1] == {
         "data_dir": str(tmp_path / "custom_data"),
@@ -62,6 +63,11 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
         "ytdlp_browser": "firefox",
         "ytdlp_extra_args": ["--force-ipv4"],
         "ytdlp_cookies_b64": "cookie64",
+    }
+    assert calls[2][1] == {
+        "data_dir": str(tmp_path / "custom_data"),
+        "limit": 3,
+        "audio_source_dir": str(tmp_path / "custom_audio"),
     }
 
     report_path = tmp_path / "build" / "local_automation" / "latest_run_report.json"
@@ -89,6 +95,7 @@ def test_run_local_transcription_automation_commits_only_with_changes_after_succ
         pipeline_runner=lambda **kwargs: {"pipeline_kwargs": kwargs},
         candidate_selector=lambda **kwargs: {"candidate_kwargs": kwargs},
         transcription_runner=lambda **kwargs: {"transcribed_success": 1, "transcription_kwargs": kwargs},
+        timestamp_backfill_runner=lambda **kwargs: {"generated": 1, "timestamp_kwargs": kwargs},
         insights_generator=lambda **kwargs: {"insights_kwargs": kwargs},
         registry_report_builder=lambda **kwargs: {"registry_kwargs": kwargs},
     )
@@ -125,6 +132,7 @@ def test_run_local_transcription_automation_does_not_commit_without_changes(tmp_
         command_runner=_command_runner,
         candidate_selector=lambda **_kwargs: {},
         transcription_runner=lambda **_kwargs: {"transcribed_success": 1},
+        timestamp_backfill_runner=lambda **_kwargs: {"generated": 0},
         insights_generator=lambda **_kwargs: {},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -158,6 +166,7 @@ def test_run_local_transcription_automation_publishes_existing_transcript_change
         command_runner=_command_runner,
         candidate_selector=lambda **_kwargs: {},
         transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "failed_audio_download": 2},
+        timestamp_backfill_runner=lambda **_kwargs: {"generated": 0},
         insights_generator=lambda **_kwargs: {"generated": 0},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -191,6 +200,7 @@ def test_run_local_transcription_automation_checks_git_even_without_publishable_
         command_runner=_command_runner,
         candidate_selector=lambda **_kwargs: {},
         transcription_runner=lambda **_kwargs: {"transcribed_success": 0, "failed_audio_download": 2},
+        timestamp_backfill_runner=lambda **_kwargs: {"generated": 0},
         insights_generator=lambda **_kwargs: {"generated": 0},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -234,6 +244,7 @@ def test_run_local_transcription_automation_allows_stale_repo_when_explicit(tmp_
         command_runner=lambda command, **_kwargs: _completed(command),
         candidate_selector=lambda **_kwargs: {},
         transcription_runner=lambda **_kwargs: {"transcribed_success": 0},
+        timestamp_backfill_runner=lambda **_kwargs: {"generated": 0},
         insights_generator=lambda **_kwargs: {"generated": 0},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -283,6 +294,7 @@ def test_run_local_transcription_automation_transcribes_all_selected_candidates(
             "selected_forced_count": 2,
         },
         transcription_runner=_transcription_runner,
+        timestamp_backfill_runner=lambda **kwargs: {"generated": 12, "timestamp_kwargs": kwargs},
         insights_generator=lambda **_kwargs: {"generated": 12},
         registry_report_builder=lambda **_kwargs: {},
     )
@@ -290,6 +302,7 @@ def test_run_local_transcription_automation_transcribes_all_selected_candidates(
     assert report["ranked_limit"] == 10
     assert report["transcription_limit"] == 12
     assert calls[0]["limit"] == 12
+    assert report["steps"]["transcript_timestamps"]["timestamp_kwargs"]["limit"] == 12
 
 
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:

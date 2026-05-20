@@ -542,6 +542,13 @@ python -m ytb_history.cli generate-transcript-insights --data-dir data --limit 1
 python -m ytb_history.cli transcript-registry-report --data-dir data
 ```
 
+Para agregar timestamps por segmento a transcripciones ya existentes sin sobrescribir `transcript.txt`, ejecutar el backfill local por tandas. Este proceso usa solo audios locales ya presentes y no llama a YouTube ni a `yt-dlp`:
+```bash
+python -m ytb_history.cli backfill-transcript-timestamps --data-dir data --limit 10 --audio-source-dir data/audio_sources
+```
+
+El backfill escribe `data/transcripts/videos/<video_id>/transcript_segments.jsonl`, actualiza metadata/registro con `segments_path`, `segment_count`, `timestamp_granularity`, `timestamp_model` y `timestamps_generated_at`, y deja el resumen en `data/transcripts/transcript_timestamp_backfill_report.json`. Si un video ya tiene segmentos se omite; usar `--force` solo cuando se quiera regenerarlos.
+
 Si por alguna razÃ³n necesitas regenerar la cola manualmente fuera de Actions:
 ```bash
 python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10
@@ -637,6 +644,8 @@ python -m ytb_history.cli run-local-transcription-automation \
 La transcripcion ya no hace pull directo. Primero lee `build/local_automation/latest_sync_report.json` y solo continua si el sync termino como `success`, `up_to_date` o `skipped_recent_success`. Antes de generar artefactos vuelve a verificar la rama local; si no esta en `main` y no hay cambios tracked, cambia automaticamente a `main`. Si hay cambios tracked en otra rama, termina como `blocked_wrong_branch_dirty_worktree` para no mezclar artefactos entre ramas. Si el sync quedo bloqueado por cambios locales, la transcripcion termina como `blocked_sync_dirty_worktree`; para una corrida manual consciente se puede usar `--allow-stale-repo`.
 
 La publicacion revisa siempre cambios reales en Git bajo `data/transcripts/`, incluso si la corrida actual no genero transcripciones nuevas. Esto corrige el caso en el que una transcripcion quedaba escrita localmente en una corrida previa pero no se habia subido a `main`: antes se podia saltar Git por no detectar outputs nuevos; ahora se hace `git add data/transcripts`, `git status --porcelain -- data/transcripts`, y solo si hay cambios se ejecuta `commit` + `git push origin HEAD:main`.
+
+La automatizacion local tambien ejecuta `backfill-transcript-timestamps` despues de transcribir y antes de generar insights/reporte. Esto aplica tanto al acceso directo del Escritorio como a la tarea calendarizada, porque ambos llaman a `run-local-transcription-automation`. Los segmentos nuevos quedan bajo `data/transcripts/` y entran en la misma publicacion Git cuando hay cambios reales.
 
 Los audios descargados por `yt-dlp` y los videos locales se tratan como cache local en `data/audio_sources/` y `data/video_sources/`: no se versionan y el repo no depende de que existan.
 

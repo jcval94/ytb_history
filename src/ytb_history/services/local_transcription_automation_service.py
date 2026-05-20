@@ -13,6 +13,7 @@ from ytb_history.services.local_repo_sync_service import SYNC_SUCCESS_STATUSES
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
 from ytb_history.services.transcript_selection_service import select_transcription_candidates
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
+from ytb_history.services.transcript_timestamp_backfill_service import backfill_transcript_timestamps
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
 
 JsonReport = dict[str, Any]
@@ -99,9 +100,11 @@ def _has_publishable_transcription_outputs(report: JsonReport) -> bool:
     steps = report.get("steps", {})
     transcription_step = steps.get("transcription", {})
     insights_step = steps.get("transcript_insights", {})
+    timestamp_step = steps.get("transcript_timestamps", {})
     return (
         _count_step_items(transcription_step, "transcribed_success") > 0
         or _count_step_items(insights_step, "generated") > 0
+        or _count_step_items(timestamp_step, "generated") > 0
     )
 
 
@@ -190,6 +193,7 @@ def run_local_transcription_automation(
     pipeline_runner: Callable[..., JsonReport] = run_pipeline,
     candidate_selector: Callable[..., JsonReport] = select_transcription_candidates,
     transcription_runner: Callable[..., JsonReport] = transcribe_selected_videos,
+    timestamp_backfill_runner: Callable[..., JsonReport] = backfill_transcript_timestamps,
     insights_generator: Callable[..., JsonReport] = generate_transcript_insights,
     registry_report_builder: Callable[..., JsonReport] = build_transcript_registry_report,
 ) -> JsonReport:
@@ -303,6 +307,15 @@ def run_local_transcription_automation(
     if progress_callback is not None:
         transcription_kwargs["progress_callback"] = progress_callback
     report["steps"]["transcription"] = transcription_runner(**transcription_kwargs)
+    _emit_progress(progress_callback, 80, "Agregando timestamps por segmento a transcripciones locales.")
+    timestamp_kwargs: dict[str, Any] = {
+        "data_dir": str(effective_data_dir),
+        "limit": effective_transcription_limit,
+        "audio_source_dir": str(effective_audio_source_dir),
+    }
+    if progress_callback is not None:
+        timestamp_kwargs["progress_callback"] = progress_callback
+    report["steps"]["transcript_timestamps"] = timestamp_backfill_runner(**timestamp_kwargs)
     _emit_progress(progress_callback, 82, "Generando insights para las transcripciones disponibles.")
     report["steps"]["transcript_insights"] = insights_generator(data_dir=str(effective_data_dir), limit=effective_transcription_limit)
     _emit_progress(progress_callback, 88, "Actualizando reporte del registro de transcripciones.")

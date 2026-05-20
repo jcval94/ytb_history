@@ -8,7 +8,10 @@ from ytb_history.services.transcript_store_service import (
     build_transcript_registry_report,
     list_transcribed_video_ids,
     transcript_exists,
+    update_transcript_metadata_with_timestamps,
     update_transcript_registry,
+    update_transcript_registry_timestamp_metadata,
+    write_transcript_segments,
     write_transcript_artifacts,
 )
 
@@ -64,6 +67,60 @@ def test_transcript_store_writes_artifacts_and_registry(tmp_path: Path) -> None:
 
     report = build_transcript_registry_report(data_dir=tmp_path)
     assert report["success_count"] == 1
+
+
+def test_transcript_store_writes_segments_and_preserves_registry_fields(tmp_path: Path) -> None:
+    paths = write_transcript_artifacts(
+        video_id="abc123",
+        transcript_text="hola mundo",
+        metadata={"source_type": "manual", "transcription_model": "gpt-4o-mini-transcribe"},
+        data_dir=tmp_path,
+    )
+    update_transcript_registry(
+        data_dir=tmp_path,
+        entry={
+            "video_id": "abc123",
+            "status": "success",
+            "transcript_path": paths["transcript_path"],
+            "metadata_path": paths["metadata_path"],
+            "transcription_model": "gpt-4o-mini-transcribe",
+        },
+    )
+
+    segments_path = write_transcript_segments(
+        video_id="abc123",
+        segments=[
+            {"start_seconds": 0, "end_seconds": 1.5, "text": "hola", "transcription_model": "whisper-1"},
+        ],
+        data_dir=tmp_path,
+    )
+    metadata = update_transcript_metadata_with_timestamps(
+        video_id="abc123",
+        data_dir=tmp_path,
+        segments_path=segments_path,
+        segment_count=1,
+        timestamp_granularity="segment",
+        timestamp_model="whisper-1",
+        timestamps_generated_at="2026-05-20T00:00:00+00:00",
+        duration_seconds=1.5,
+    )
+    registry_row = update_transcript_registry_timestamp_metadata(
+        data_dir=tmp_path,
+        video_id="abc123",
+        segments_path=segments_path,
+        segment_count=1,
+        timestamp_granularity="segment",
+        timestamp_model="whisper-1",
+        timestamps_generated_at="2026-05-20T00:00:00+00:00",
+    )
+
+    segment_rows = [json.loads(line) for line in Path(segments_path).read_text(encoding="utf-8").splitlines()]
+    assert segment_rows[0]["start_seconds"] == 0.0
+    assert segment_rows[0]["end_seconds"] == 1.5
+    assert metadata["repo_schema_version"] == "transcript_metadata_v2"
+    assert metadata["duration_seconds"] == 1.5
+    assert registry_row["segments_path"] == segments_path
+    assert registry_row["transcription_model"] == "gpt-4o-mini-transcribe"
 
 
 def test_transcript_registry_report_counts_statuses(tmp_path: Path) -> None:

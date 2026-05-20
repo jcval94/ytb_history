@@ -11,6 +11,7 @@ from typing import Any
 REGISTRY_FILENAME = "transcript_registry.jsonl"
 TRANSCRIPTS_DIRNAME = "transcripts"
 VIDEOS_DIRNAME = "videos"
+TRANSCRIPT_SEGMENTS_FILENAME = "transcript_segments.jsonl"
 
 
 def _now_iso() -> str:
@@ -75,6 +76,69 @@ def list_transcribed_video_ids(*, data_dir: str | Path = "data") -> set[str]:
 
 def transcript_exists(video_id: str, *, data_dir: str | Path = "data") -> bool:
     return video_id.strip() in list_transcribed_video_ids(data_dir=data_dir)
+
+
+def _validate_video_id_for_storage(video_id: str) -> str:
+    safe_video_id = video_id.strip()
+    if not safe_video_id or "/" in safe_video_id or "\\" in safe_video_id or ".." in safe_video_id:
+        raise ValueError("video_id invalido para ruta de storage")
+    return safe_video_id
+
+
+def write_transcript_segments(
+    *,
+    video_id: str,
+    segments: list[dict[str, Any]],
+    data_dir: str | Path = "data",
+) -> str:
+    safe_video_id = _validate_video_id_for_storage(video_id)
+    segments_path = _video_dir(safe_video_id, data_dir=data_dir) / TRANSCRIPT_SEGMENTS_FILENAME
+    rows: list[dict[str, Any]] = []
+    for index, segment in enumerate(segments):
+        rows.append(
+            {
+                "video_id": safe_video_id,
+                "segment_index": index,
+                "start_seconds": float(segment.get("start_seconds", segment.get("start", 0.0)) or 0.0),
+                "end_seconds": float(segment.get("end_seconds", segment.get("end", 0.0)) or 0.0),
+                "text": str(segment.get("text", "") or ""),
+                "transcription_model": segment.get("transcription_model"),
+            }
+        )
+    _write_jsonl(segments_path, rows)
+    return str(segments_path)
+
+
+def update_transcript_metadata_with_timestamps(
+    *,
+    video_id: str,
+    data_dir: str | Path = "data",
+    segments_path: str,
+    segment_count: int,
+    timestamp_granularity: str,
+    timestamp_model: str,
+    timestamps_generated_at: str,
+    duration_seconds: float | None = None,
+) -> dict[str, Any]:
+    safe_video_id = _validate_video_id_for_storage(video_id)
+    metadata_path = _video_dir(safe_video_id, data_dir=data_dir) / "transcript_metadata.json"
+    metadata: dict[str, Any] = {}
+    if metadata_path.exists():
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    metadata.update(
+        {
+            "segments_path": segments_path,
+            "segment_count": int(segment_count),
+            "timestamp_granularity": timestamp_granularity,
+            "timestamp_model": timestamp_model,
+            "timestamps_generated_at": timestamps_generated_at,
+            "repo_schema_version": "transcript_metadata_v2",
+        }
+    )
+    if duration_seconds is not None:
+        metadata["duration_seconds"] = float(duration_seconds)
+    metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    return metadata
 
 
 def write_transcript_artifacts(
@@ -176,6 +240,52 @@ def update_transcript_registry(*, data_dir: str | Path = "data", entry: dict[str
     registry_path = _transcript_root(data_dir) / REGISTRY_FILENAME
     _write_jsonl(registry_path, registry)
     return normalized
+
+
+def update_transcript_registry_timestamp_metadata(
+    *,
+    data_dir: str | Path = "data",
+    video_id: str,
+    segments_path: str,
+    segment_count: int,
+    timestamp_granularity: str,
+    timestamp_model: str,
+    timestamps_generated_at: str,
+) -> dict[str, Any]:
+    safe_video_id = _validate_video_id_for_storage(video_id)
+    registry = load_transcript_registry(data_dir=data_dir)
+    updated_row: dict[str, Any] | None = None
+    for index, row in enumerate(registry):
+        if str(row.get("video_id", "")).strip() != safe_video_id:
+            continue
+        updated_row = dict(row)
+        updated_row.update(
+            {
+                "segments_path": segments_path,
+                "segment_count": int(segment_count),
+                "timestamp_granularity": timestamp_granularity,
+                "timestamp_model": timestamp_model,
+                "timestamps_generated_at": timestamps_generated_at,
+            }
+        )
+        registry[index] = updated_row
+        break
+
+    if updated_row is None:
+        updated_row = {
+            "video_id": safe_video_id,
+            "status": "success",
+            "segments_path": segments_path,
+            "segment_count": int(segment_count),
+            "timestamp_granularity": timestamp_granularity,
+            "timestamp_model": timestamp_model,
+            "timestamps_generated_at": timestamps_generated_at,
+        }
+        registry.append(updated_row)
+
+    registry_path = _transcript_root(data_dir) / REGISTRY_FILENAME
+    _write_jsonl(registry_path, registry)
+    return updated_row
 
 
 def build_transcript_registry_report(*, data_dir: str | Path = "data") -> dict[str, Any]:

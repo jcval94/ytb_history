@@ -78,6 +78,7 @@ function Write-RunSummary {
 
     $selection = $RunReport.steps.transcription_candidates
     $transcription = $RunReport.steps.transcription
+    $timestamps = $RunReport.steps.transcript_timestamps
     $insights = $RunReport.steps.transcript_insights
     $git = $RunReport.git
     if ($selection) {
@@ -99,6 +100,14 @@ function Write-RunSummary {
         $failedDownloads = Get-IntValue -Object $transcription -Name "failed_audio_download"
         $failed = Get-IntValue -Object $transcription -Name "failed"
         Write-StatusLine -Percent 88 -Message "Transcripcion: cola $queueTotal, procesados $processed, exitos $success, descargados con yt-dlp $downloaded, fallos audio $failedDownloads, fallos OpenAI $failed."
+    }
+    if ($timestamps) {
+        $processed = Get-IntValue -Object $timestamps -Name "processed"
+        $generated = Get-IntValue -Object $timestamps -Name "generated"
+        $skippedExisting = Get-IntValue -Object $timestamps -Name "skipped_existing_segments"
+        $missingAudio = Get-IntValue -Object $timestamps -Name "skipped_missing_audio"
+        $failed = Get-IntValue -Object $timestamps -Name "failed"
+        Write-StatusLine -Percent 90 -Message "Timestamps: procesados $processed, generados $generated, ya existentes $skippedExisting, sin audio $missingAudio, fallos $failed."
     }
     if ($insights) {
         $generated = Get-IntValue -Object $insights -Name "generated"

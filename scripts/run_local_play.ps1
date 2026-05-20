@@ -101,6 +101,7 @@ function Write-PlaySummary {
 
     $selection = $RunReport.steps.transcription_candidates
     $transcription = $RunReport.steps.transcription
+    $timestamps = $RunReport.steps.transcript_timestamps
     $insights = $RunReport.steps.transcript_insights
 
     if ($selection) {
@@ -123,6 +124,15 @@ function Write-PlaySummary {
         $failedDownloads = Get-IntValue -Object $transcription -Name "failed_audio_download"
         $failed = Get-IntValue -Object $transcription -Name "failed"
         Write-ProgressLog -Percent 94 -Path $Path -Message "Resultado transcripcion: cola $queueTotal, procesados $processed, exitos $success, yt-dlp $downloaded, fallos audio $failedDownloads, fallos OpenAI $failed."
+    }
+
+    if ($timestamps) {
+        $processed = Get-IntValue -Object $timestamps -Name "processed"
+        $generated = Get-IntValue -Object $timestamps -Name "generated"
+        $skippedExisting = Get-IntValue -Object $timestamps -Name "skipped_existing_segments"
+        $missingAudio = Get-IntValue -Object $timestamps -Name "skipped_missing_audio"
+        $failed = Get-IntValue -Object $timestamps -Name "failed"
+        Write-ProgressLog -Percent 95 -Path $Path -Message "Timestamps: procesados $processed, generados $generated, ya existentes $skippedExisting, sin audio $missingAudio, fallos $failed."
     }
 
     if ($insights) {
