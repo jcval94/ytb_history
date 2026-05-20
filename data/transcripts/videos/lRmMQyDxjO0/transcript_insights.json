@@ -1,0 +1,69 @@
+{
+  "video_id": "lRmMQyDxjO0",
+  "language": "spanish",
+  "summary": "El orador expresa su descontento y exige una renuncia, afirmando que no hay lugar para negociaciones. Se repite la idea de que no es beneficioso hacer concesiones y que el cambio debe ocurrir de manera decisiva.",
+  "main_topics": [
+    "Renuncia",
+    "Descontento social",
+    "Rechazo a negociaciones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la exigencia",
+      "summary": "El orador comienza con un mensaje claro y directo sobre la necesidad de renuncia."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Reforzar la idea de no negociar",
+      "summary": "Se enfatiza que no se considera útil buscar acuerdos y se critica a quienes lo hacen."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Determinar el camino a seguir",
+      "summary": "Se concluye con una reafirmación de que la única opción es la renuncia o la acción drástica."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "exhortativo",
+    "hook_text": "Renuncia o sacamos a patadas.",
+    "why_it_works": "Este mensaje directo y contundente capta la atención y expresa un ultimátum claro que provoca una reacción emocional."
+  },
+  "claims": [
+    {
+      "claim": "La renuncia es necesaria para el cambio.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las negociaciones no son efectivas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Organizar protestas pacíficas.",
+    "Crear una plataforma para demandas sociales."
+  ],
+  "audience": "Público general, activistas sociales",
+  "tone": "Enérgico",
+  "content_style": "Directo y confrontativo",
+  "retention_devices": [
+    "Repetición de frases clave",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Renuncia o sacamos a patadas.",
+    "Nada más."
+  ],
+  "creative_reuse_opportunities": [
+    "Usar extractos para campañas de concienciación social.",
+    "Crear contenido para redes sociales."
+  ],
+  "risk_notes": [
+    "El discurso puede polarizar la audiencia.",
+    "Puede desencadenar reacciones violentas en algunos sectores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

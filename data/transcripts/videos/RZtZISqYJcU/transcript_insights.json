@@ -1,0 +1,83 @@
+{
+  "video_id": "RZtZISqYJcU",
+  "language": "es",
+  "summary": "El video discute un proyecto de desarrollo en Majahual, Quintana Roo, que amenaza un ecosistema frágil a cambio de la construcción de un parque acuático, generando un conflicto entre el desarrollo turístico y la conservación del medio ambiente.",
+  "main_topics": [
+    "Ecosistemas en peligro",
+    "Desarrollo turístico",
+    "Impacto ecológico",
+    "Opinión sobre el futuro de Majahual"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del video y el contexto de Majahual.",
+      "summary": "Introducción a la belleza natural de Majahual y su importancia ecológica."
+    },
+    {
+      "section": "Descripción del proyecto",
+      "purpose": "Explicar el alcance y las implicaciones del proyecto turístico.",
+      "summary": "Detalles sobre la inversión en un parque acuático y sus potenciales efectos en la comunidad local."
+    },
+    {
+      "section": "Consecuencias y desafíos",
+      "purpose": "Destacar los posibles impactos negativos del desarrollo.",
+      "summary": "Reflexión sobre la saturación del pueblo y el daño a la ecología local."
+    },
+    {
+      "section": "Call to action",
+      "purpose": "Invitar a la audiencia a opinar.",
+      "summary": "Preguntar a los espectadores qué prefieren: desarrollo o conservación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿qué prefieren? ¿toboganes, tener un lugar donde pueda llegar muchísimo turismo o mantener uno de los lugares más bonitos que tiene el país?",
+    "why_it_works": "Provoca reflexión y activa la participación del espectador."
+  },
+  "claims": [
+    {
+      "claim": "El proyecto turístico dañará un ecosistema vital.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El desarrollo traerá empleos a la región.",
+      "support_level": "weak",
+      "risk": "medio"
+    },
+    {
+      "claim": "Majahual no tiene capacidad para recibir 20,000 turistas diarios.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover la conservación de ecosistemas locales.",
+    "Involucrar a la comunidad en decisiones sobre desarrollo.",
+    "Fomentar el turismo sostenible en lugar de masivo."
+  ],
+  "audience": "Personas interesadas en medio ambiente y turismo",
+  "tone": "persuasivo y reflexivo",
+  "content_style": "narrativo con un enfoque en el diálogo comunitario",
+  "retention_devices": [
+    "Preguntas abiertas",
+    "Descripciones vívidas del lugar",
+    "Uso de estadísticas"
+  ],
+  "title_supporting_quotes": [
+    "No queremos toboganes, queremos manglares.",
+    "¿Qué prefieren, desarrollo o conservación?"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre turismo sostenible",
+    "Charlas sobre conservación ecológica",
+    "Campañas de sensibilización ambiental"
+  ],
+  "risk_notes": [
+    "Posible resistencia de la comunidad a los cambios.",
+    "Conflictos entre desarrollo económico y sostenibilidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

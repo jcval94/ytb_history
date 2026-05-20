@@ -1,0 +1,14 @@
+{
+  "video_id": "lRmMQyDxjO0",
+  "channel_id": "UCS0lmlVIYVz2qeWlZ_ynIWg",
+  "channel_name": "AJ+ Español",
+  "title": "Manifestantes bolivianos paralizan el país",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lRmMQyDxjO0.mp3",
+  "transcribed_at": "2026-05-20T13:56:48.065365+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1050,
+  "text_sha256": "6c085eb000361d952ef8ca23bb226edcf7fb746223087536b2b7be5f4cd93fc2",
+  "repo_schema_version": "transcript_metadata_v1"
+}

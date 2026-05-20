@@ -1,0 +1,14 @@
+{
+  "video_id": "RZtZISqYJcU",
+  "channel_id": "UCRDQzsHtx2cXvzEXnEhbxBg",
+  "channel_name": "Mister Krax",
+  "title": "¿Manglares o toboganes en Mahahual? #mahahual #méxico",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\RZtZISqYJcU.mp3",
+  "transcribed_at": "2026-05-20T13:56:59.825778+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 3180,
+  "text_sha256": "04373dcea68a030db853a6e177568b175bdbe5b8f739922c0c28fdd907328b3c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

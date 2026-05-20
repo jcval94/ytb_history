@@ -1,0 +1,92 @@
+{
+  "video_id": "u5RQYDdil1w",
+  "language": "es",
+  "summary": "El video explora un experimento en el que un médico consume una dieta compuesta en un 80% por alimentos ultraprocesados durante un mes, lo que resulta en aumento de peso, cambios de humor y un impacto en los circuitos de recompensa del cerebro.",
+  "main_topics": [
+    "Impacto de los alimentos ultraprocesados",
+    "Efectos en el cerebro",
+    "Criterios de saciedad",
+    "Ingeniería de alimentos",
+    "Alternativas de la industria alimentaria"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el contexto del video.",
+      "summary": "Un médico británico realiza un experimento alimenticio extremo."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Describir los efectos fisicos y mentales de la dieta.",
+      "summary": "Aumento de peso y cambios en el humor y energía."
+    },
+    {
+      "section": "Impacto en el cerebro",
+      "purpose": "Explicar la reprogramación del cerebro.",
+      "summary": "Los ultraprocesados activan más los circuitos de recompensa."
+    },
+    {
+      "section": "La naturaleza de los alimentos reales vs. ultraprocesados",
+      "purpose": "Contrastar alimentos reales con ultraprocesados.",
+      "summary": "Los alimentos reales no generan el mismo deseo compulsivo de comer."
+    },
+    {
+      "section": "Alternativas de la industria alimentaria",
+      "purpose": "Criticar la respuesta de la industria a sus propios problemas.",
+      "summary": "La industria ofrece edulcorantes y alimentos light como solución."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "¿Te imaginás lo que pasa después de años?",
+    "why_it_works": "Invita a la reflexión sobre el impacto a largo plazo de los ultraprocesados."
+  },
+  "claims": [
+    {
+      "claim": "La dieta rica en ultraprocesados causa reprogramación cerebral.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Los alimentos reales satisfacen más que los ultraprocesados.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La industria alimentaria responde a problemas que ella misma genera.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Chris ganó 6.5 kg en un mes.",
+    "Su hormona del hambre aumentó un 30%."
+  ],
+  "actionable_ideas": [
+    "Elegir alimentos frescos y menos procesados.",
+    "Ser consciente del impacto de la dieta en la salud mental.",
+    "Evitar el consumo excesivo de azúcares y grasas."
+  ],
+  "audience": "Personas interesadas en nutrición y salud.",
+  "tone": "Informativo y crítico.",
+  "content_style": "Narrativo con enfoque en investigación.",
+  "retention_devices": [
+    "Estadísticas impactantes.",
+    "Historias personales.",
+    "Preguntas retóricas."
+  ],
+  "title_supporting_quotes": [
+    "Los ultraprocesados no solo le dieron calorías extra, reprogramaron su cerebro.",
+    "El alimento real te sacia, te llena, te nutre."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre nutrición balanceada.",
+    "Desarrollar infografías sobre el impacto de los ultraprocesados.",
+    "Realizar entrevistas con expertos en salud y nutrición."
+  ],
+  "risk_notes": [
+    "Al consumir ultraprocesados a largo plazo, puede haber riesgos severos para la salud.",
+    "Es importante verificar las afirmaciones de la industria alimentaria."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

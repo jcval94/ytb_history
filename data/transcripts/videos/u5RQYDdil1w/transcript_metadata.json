@@ -1,0 +1,14 @@
+{
+  "video_id": "u5RQYDdil1w",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El verdadero negocio de la comida chatarra",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\u5RQYDdil1w.mp3",
+  "transcribed_at": "2026-05-20T13:55:56.785633+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1403,
+  "text_sha256": "b0e16b727d0d53eb17c3ce2d09c4d55c018056e63498c9ebc38b5be35a382747",
+  "repo_schema_version": "transcript_metadata_v1"
+}

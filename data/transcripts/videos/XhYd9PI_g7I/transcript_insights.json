@@ -1,0 +1,79 @@
+{
+  "video_id": "XhYd9PI_g7I",
+  "language": "es",
+  "summary": "El video aborda la controversia en torno al gobernador con licencia Rubén Rocha y las acusaciones de vínculos con el narcotráfico, criticando a los miembros de Morena por pedir más pruebas para evitar que Rocha sea juzgado en México y potencialmente extraditado a Estados Unidos.",
+  "main_topics": [
+    "Extradición de Rubén Rocha",
+    "Vínculos con el narcotráfico",
+    "Críticas a Morena",
+    "Demandas de pruebas",
+    "Justicia en EE. UU."
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el contexto de la acusación",
+      "summary": "Se menciona la acusación de nexo con el narcotráfico hacia Rubén Rocha y la insistencia de Morena en la solicitud de pruebas."
+    },
+    {
+      "section": "Consideraciones legales",
+      "purpose": "Explicar el proceso de extradición",
+      "summary": "Describe que la revisión de pruebas es crítica en el proceso de extradición y que esto no se ha mencionado adecuadamente por los morenistas."
+    },
+    {
+      "section": "Reacción y consecuencias",
+      "purpose": "Discutir la insatisfacción de autoridades",
+      "summary": "Se señala que la campaña de Morena está causando malestar en autoridades estadounidenses, aunque no se sabe si tendrá repercusiones en México."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Controversial Statement",
+    "hook_text": "La necedad de morena de estar jugándole a una campaña para proteger al gobernador con licencia.",
+    "why_it_works": "Captura la atención al resaltar un conflicto entre política y justicia, generando curiosidad sobre las consecuencias de la situación."
+  },
+  "claims": [
+    {
+      "claim": "Rubén Rocha tiene vínculos con el narcotráfico.",
+      "support_level": "explicit",
+      "risk": "alta"
+    },
+    {
+      "claim": "Morena está pidiendo pruebas excesivas para proteger a Rocha.",
+      "support_level": "implicit",
+      "risk": "media"
+    },
+    {
+      "claim": "La campaña de Morena está molestando a la justicia estadounidense.",
+      "support_level": "weak",
+      "risk": "baja"
+    }
+  ],
+  "examples": [
+    "Funcionarios de Rubén Rocha se entregaron a la justicia en EE. UU.",
+    "Morenistas piden más pruebas en debates y entrevistas."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre el proceso de extradición y sus requisitos.",
+    "Analizar el papel de la política en la justicia en México",
+    "Considerar el impacto de estas acusaciones en la opinión pública"
+  ],
+  "audience": "Ciudadanos interesados en política y justicia en México",
+  "tone": "Crítico e informativo",
+  "content_style": "Analítico y directo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Citas de expertos",
+    "Datos sobre extradición"
+  ],
+  "title_supporting_quotes": [
+    "La verdad es que ya platicando con jueces en retiro...",
+    "Lo único que se revisa es la cantidad de pruebas..."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre la extradición",
+    "Segmentos en programas de análisis político",
+    "Debates públicos sobre justicia y política en México"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}
