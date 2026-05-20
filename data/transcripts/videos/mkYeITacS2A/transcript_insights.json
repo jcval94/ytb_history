@@ -1,0 +1,77 @@
+{
+  "video_id": "mkYeITacS2A",
+  "language": "English",
+  "summary": "A conversation revealing a person's extensive use of Discord and Roblox, raising suspicions about their online interactions.",
+  "main_topics": [
+    "Discord usage",
+    "Roblox interactions",
+    "Suspicion in online activities"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of the issue",
+      "purpose": "To highlight the excessive use of Discord and Roblox",
+      "summary": "The speaker questions another's online behavior."
+    },
+    {
+      "section": "Establishing evidence",
+      "purpose": "To provide data on the time spent on apps",
+      "summary": "Statistics on app usage are discussed."
+    },
+    {
+      "section": "Confrontation",
+      "purpose": "To challenge the respondant's hiding behavior",
+      "summary": "There is a challenge for the person to log in to Discord."
+    },
+    {
+      "section": "Speculation",
+      "purpose": "To express doubts about interactions",
+      "summary": "The speaker suggests possible inappropriate interactions on Roblox."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Rhetorical questions",
+    "hook_text": "Who the hell are you talking to on Discord?",
+    "why_it_works": "It creates immediate intrigue and engages the audience's curiosity regarding the relationship dynamics."
+  },
+  "claims": [
+    {
+      "claim": "The other person spends excessive time on Discord.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "There might be questionable interactions on Roblox.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "12 hours and 13 minutes on Discord over the last week.",
+    "Logged on before filming but refused to log in upon request."
+  ],
+  "actionable_ideas": [
+    "Monitor social media usage more closely.",
+    "Discuss online safety and privacy with younger users."
+  ],
+  "audience": "Parents concerned about children's online behavior",
+  "tone": "Confrontational",
+  "content_style": "Casual dialogue",
+  "retention_devices": [
+    "Statistics on app usage",
+    "Confrontational dialogue"
+  ],
+  "title_supporting_quotes": [
+    "Who the hell are you talking to on Discord?",
+    "You've been on for an hour and 37 minutes."
+  ],
+  "creative_reuse_opportunities": [
+    "Use in discussions about online behavior and safety.",
+    "Create awareness campaigns about app usage."
+  ],
+  "risk_notes": [
+    "Potential for miscommunication in family dynamics.",
+    "Dangers of overly suspicious behavior."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
