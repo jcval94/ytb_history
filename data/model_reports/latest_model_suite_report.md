@@ -1,9 +1,9 @@
 # Model Suite Report
 
 ## Champions by content format
-- shorts/is_top_growth_7d: shorts-linear_regularized-is_top_growth_7d-20260518T140905Z (precision_at_10=1.0)
-- shorts/future_log_views_delta_7d: shorts-random_forest-future_log_views_delta_7d-20260518T140905Z (spearman_corr=0.937592)
-- videos/is_top_growth_7d: videos-linear_regularized-is_top_growth_7d-20260518T140911Z (precision_at_10=1.0)
-- videos/future_log_views_delta_7d: videos-linear_regularized-future_log_views_delta_7d-20260518T140911Z (spearman_corr=0.965496)
+- shorts/is_top_growth_7d: shorts-linear_regularized-is_top_growth_7d-20260521T134723Z (precision_at_10=1.0)
+- shorts/future_log_views_delta_7d: shorts-linear_regularized-future_log_views_delta_7d-20260521T134723Z (spearman_corr=0.985138)
+- videos/is_top_growth_7d: videos-linear_regularized-is_top_growth_7d-20260521T134731Z (precision_at_10=1.0)
+- videos/future_log_views_delta_7d: videos-linear_regularized-future_log_views_delta_7d-20260521T134731Z (spearman_corr=0.987347)
 
 **Advertencia**: RF direction es estimada por directional analysis, no por impurity importance.

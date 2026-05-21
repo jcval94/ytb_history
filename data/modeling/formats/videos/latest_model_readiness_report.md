@@ -1,8 +1,8 @@
 # Model Readiness Report
 ## Current Status
-- status: ready
+- status: not_ready
 ## Why training is blocked
-- blockers: none
+- blockers: model_artifact_not_available
 ## Target Coverage
 - targets: 0
 ## Gap to Exploratory Training
@@ -10,5 +10,5 @@
 ## Gap to Baseline Training
 - missing: 0
 ## Forecast
-- insufficient_history
+- ok
 ## Recommended Next Steps

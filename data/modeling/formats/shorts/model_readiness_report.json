@@ -1,28 +1,28 @@
 {
-  "total_examples": 14994,
-  "trainable_examples": 7643,
-  "excluded_no_future": 7351,
-  "unique_videos": 765,
-  "unique_channels": 55,
+  "total_examples": 30278,
+  "trainable_examples": 10308,
+  "excluded_no_future": 19970,
+  "unique_videos": 931,
+  "unique_channels": 56,
   "date_range": {
     "min": "2026-04-27T23:50:18.831706+00:00",
-    "max": "2026-05-12T11:28:32.318099+00:00"
+    "max": "2026-05-16T10:40:00.917855+00:00"
   },
   "target_coverage": {
     "future_views_delta_7d": {
-      "non_null_rows": 7643,
+      "non_null_rows": 10308,
       "coverage_ratio": 1.0
     },
     "future_log_views_delta_7d": {
-      "non_null_rows": 7643,
+      "non_null_rows": 10308,
       "coverage_ratio": 1.0
     },
     "is_top_growth_7d": {
-      "non_null_rows": 7643,
+      "non_null_rows": 10308,
       "coverage_ratio": 1.0
     },
     "outperforms_channel_7d": {
-      "non_null_rows": 7643,
+      "non_null_rows": 10308,
       "coverage_ratio": 1.0
     }
   },

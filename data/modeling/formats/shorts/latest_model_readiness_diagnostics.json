@@ -1,27 +1,32 @@
 {
-  "generated_at": "2026-05-18T14:07:42+00:00",
+  "generated_at": "2026-05-21T13:45:44+00:00",
   "content_format": "shorts",
-  "status": "ready",
+  "status": "not_ready",
   "recommended_status": "ready_for_baseline",
-  "can_train_now": true,
-  "can_predict_now": true,
-  "total_examples": 7643,
-  "trainable_examples": 7643,
-  "inference_examples": 3875,
-  "unique_videos": 765,
-  "unique_channels": 55,
+  "can_train_now": false,
+  "can_predict_now": false,
+  "total_examples": 10308,
+  "trainable_examples": 10308,
+  "inference_examples": 5725,
+  "unique_videos": 931,
+  "unique_channels": 56,
   "date_range": {
     "start": "2026-04-27T23:50:18.831706+00:00",
-    "end": "2026-05-12T11:28:32.318099+00:00"
+    "end": "2026-05-16T10:40:00.917855+00:00"
   },
   "min_trainable_examples_exploratory": 300,
   "min_trainable_examples_baseline": 1000,
   "examples_missing_for_exploratory": 0,
   "examples_missing_for_baseline": 0,
-  "blockers": [],
+  "blockers": [
+    "model_artifact_not_available"
+  ],
   "target_diagnostics": [],
   "forecast": {
-    "status": "insufficient_history"
+    "status": "ok",
+    "daily_trainable_growth": 892.873484772105,
+    "estimated_days_to_exploratory": 0.0,
+    "estimated_days_to_baseline": 0.0
   },
   "recommended_next_steps": [],
   "warnings": []
