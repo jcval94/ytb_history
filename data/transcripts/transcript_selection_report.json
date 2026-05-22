@@ -1,77 +1,78 @@
 {
-  "generated_at": "2026-05-21T12:41:25.896426+00:00",
+  "generated_at": "2026-05-22T12:15:39.774755+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
-  "expected_selected_count": 11,
+  "expected_selected_count": 12,
   "ranked_shortfall": 0,
-  "candidates_considered": 17991,
-  "available_ranked_count": 17907,
+  "candidates_considered": 19969,
+  "available_ranked_count": 19885,
   "source_artifacts": {
     "decision": {
       "path": "data/decision/latest_action_candidates.csv",
       "exists": true,
-      "row_count": 5400,
-      "modified_at": "2026-05-21T12:41:11.984624+00:00"
+      "row_count": 5422,
+      "modified_at": "2026-05-22T12:15:27.019197+00:00"
     },
     "model_intelligence": {
       "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
       "exists": true,
-      "row_count": 12634,
-      "modified_at": "2026-05-21T12:41:13.804650+00:00"
+      "row_count": 18664,
+      "modified_at": "2026-05-22T12:15:28.743192+00:00"
     },
     "topic": {
       "path": "data/topic_intelligence/latest_topic_opportunities.csv",
       "exists": true,
       "row_count": 16,
-      "modified_at": "2026-05-21T12:41:16.836729+00:00"
+      "modified_at": "2026-05-22T12:15:31.614749+00:00"
     },
     "creative": {
       "path": "data/creative_packages/latest_creative_packages.csv",
       "exists": true,
-      "row_count": 5063,
-      "modified_at": "2026-05-21T12:41:18.668719+00:00"
+      "row_count": 5092,
+      "modified_at": "2026-05-22T12:15:33.275459+00:00"
     },
     "analytics_scores": {
       "path": "data/analytics/latest/latest_video_scores.csv",
       "exists": true,
-      "row_count": 17977,
-      "modified_at": "2026-05-21T12:39:36.352271+00:00"
+      "row_count": 19958,
+      "modified_at": "2026-05-22T12:13:35.131667+00:00"
     },
     "analytics_metrics": {
       "path": "data/analytics/latest/latest_video_metrics.csv",
       "exists": true,
-      "row_count": 17977,
-      "modified_at": "2026-05-21T12:39:36.016266+00:00"
+      "row_count": 19958,
+      "modified_at": "2026-05-22T12:13:34.800668+00:00"
     }
   },
-  "selected_count": 11,
-  "selected_forced_count": 1,
+  "selected_count": 12,
+  "selected_forced_count": 2,
   "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
   ],
   "forced_channels_matched": [
+    "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/veritasium"
   ],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
-    "https://www.youtube.com/@bilinkis": 26,
+    "https://www.youtube.com/@bilinkis": 27,
     "https://www.youtube.com/veritasium": 7
   },
-  "forced_candidate_pool_count": 33,
-  "available_forced_before_truncation": 1,
-  "forced_window_cutoff_date": "2026-05-07",
-  "latest_upload_date": "2026-05-21",
+  "forced_candidate_pool_count": 34,
+  "available_forced_before_truncation": 2,
+  "forced_window_cutoff_date": "2026-05-08",
+  "latest_upload_date": "2026-05-22",
   "forced_channels_max_per_run": 50,
   "registry_existing_success_count": 80,
   "persisted_transcript_success_count": 80,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 3,
+  "registry_existing_recent_failed_count": 2,
   "skipped_already_transcribed": 80,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 3,
+  "skipped_recent_failures": 2,
   "skipped_forced_already_transcribed": 22,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 0,
@@ -80,11 +81,11 @@
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
+    "rok3xsLD5ek",
     "Xr2yp8JA9LU",
-    "_9u2QFfVH-E",
-    "kaygsrAhOrQ",
-    "9V9VS7X4eoE",
-    "oWjI8hIKJ4A"
+    "tQ9UTi_EhNw",
+    "phIOo41hwKE",
+    "hhOvVT-a9rc"
   ],
   "warnings": []
 }

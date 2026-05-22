@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,68,71.5756,80.5056,75.8824,6tmBB5GcOLU,you only need a phone,Priorizar ideas rápidas y publicar en ventana corta.
-create_evergreen,create_evergreen,1,64.0754,64.0754,100.0,8QsAx7s9PmQ,Please stop,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,26,77.5675,82.2087,71.1154,BLQNNuH6pG8,Did Trump just save crypto banking?,Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,3828,55.2734,73.2015,78.3746,nx-wJiabIZ8,La Guía Real Para Empezar a Ganar Dinero Vendiendo en Amazon (2026),Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,216,62.4471,87.8629,72.559,UCK8sQmJBp8GCxrOtXWBpyEA,I/O '26 Recap: Everything You Need to Know,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,1261,63.7035,87.5844,82.7566,UCBBWpss2iXVXtTzl7-4eWbg,Escúchalo completo en Más Allá del Rosa en YouTube,Esperar confirmación de tendencia en próxima corrida.
+create_fast_reaction,create_fast_reaction,81,73.0621,80.6062,77.1667,4Yj1sSSnXnk,A pink Barbie cart is one man's solution to high gas prices,Priorizar ideas rápidas y publicar en ventana corta.
+create_evergreen,create_evergreen,7,66.8599,71.9773,96.1429,Cr7oGnSzmb4,What If Earth Was Hollow?,Planificar piezas con valor sostenido en el tiempo.
+analyze_reference,analyze_reference,30,75.0724,83.4859,69.7833,trEKyzhuq8M,"Entrevista con Iván Cepeda, Candidato a la presidencia de Colombia | Diego Ruzzarin.",Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,4118,55.679,73.1744,79.7968,nx-wJiabIZ8,La Guía Real Para Empezar a Ganar Dinero Vendiendo en Amazon (2026),Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,209,64.7923,87.5926,75.9677,UCK8sQmJBp8GCxrOtXWBpyEA,What is Gemini Omni?,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,977,66.1989,88.0,83.9046,UC_x5XG1OV2P6uZZ5FSM9Ttw,What’s new in Android (Google I/O 2026 recap),Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.

@@ -1,229 +1,236 @@
 execution_date,channel_id,channel_name,videos_tracked,new_videos,total_views,total_views_delta,total_likes_delta,total_comments_delta,avg_engagement_rate,median_views_delta,top_video_id,top_video_title,top_video_views_delta,shorts_count,mid_count,long_count
-2026-05-21T12:28:40.492262+00:00,UCX6OQ3DkcsbYNE6H8uQQuVA,MrBeast,4,0,378253518,58039253,422940,6052,0.015005,11807130,QAkEMtJpq3c,"Hit The Button, Win $1,000",29219043,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCGmnsW623G1r-Chmo5RB4Yw,KSI,4,1,64496392,9686681,127550,388,0.022442,138034,A_TI_Wct288,"$1 vs $50,000 Katana",9499865,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCRijo3ddMTht_IHyNSNXpNQ,Dude Perfect,2,0,32007941,2180165,27925,58,0.015076,1090082.5,fp77qbUJJbQ,"Break The Glass, YOU LOSE",2140025,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCY1kMZp36IQSyNx_9h4mpCg,Mark Rober,2,0,22301859,1661832,21934,20,0.019691,830916,NnvIwG0S8WE,Tennis Ball Cannon vs Human Strength,1587202,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCWsDFcIhY2DBi3GB5uykGXA,IShowSpeed,3,0,17401411,2007844,65791,564,0.040521,446775,KHooqK3Hijs,iShowSpeed vs Jamal Jump Challenge,1503358,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCK8sQmJBp8GCxrOtXWBpyEA,Google,8,1,1862415,1630555,2607,142,0.022684,25548,uW4B6ziQqvY,What is Gemini Omni?,1481579,7,1,0
-2026-05-21T12:28:40.492262+00:00,UCrPseYLGpNygVi34QpGNqpA,Ludwig,9,1,13561185,1952797,50023,81,0.028022,69904,_iQKpZvj7UQ,Maybe I shouldn't have lied to him...,1477486,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCvCfpQXRXdJdL07pzTIA6Cw,Kai Cenat Live,20,2,52262976,3930407,57536,249,0.022267,63124.5,t5BxJhllmi4,Fanum Can't Get Over How Tall Kai Cenat Is 😭,1289056,20,0,0
-2026-05-21T12:28:40.492262+00:00,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,6,0,2374872,1250310,34314,865,0.02856,19513,ImKo5rVlFfI,"🤖: ""Quiero más RAM.""",1179722,6,0,0
-2026-05-21T12:28:40.492262+00:00,UC_x5XG1OV2P6uZZ5FSM9Ttw,Google for Developers,7,0,4921166,2417833,5336,21,0.009438,556034,98bQUQUEEJs,"What’s new in Gemini API, Google AI Studio and Google Antigravity (Google I/O 2026 recap)",721084,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCE_M8A5yxnLfW0KghEeajjw,Apple,7,1,4651195,1317744,1440,0,0.015651,146334,jQK-S-HyHgc,Watch Annie Choi turn her sketch into a fashion film,519744,7,0,0
-2026-05-21T12:28:40.492262+00:00,UC415bOPUcGSamy543abLmRA,Cleo Abram,17,0,60400885,1837089,55483,509,0.043461,45571,VFdyFPbLHpk,What’s Really Inside The Sun?,516549,15,2,0
-2026-05-21T12:28:40.492262+00:00,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,62,2,99749383,2291029,257205,2724,0.04705,6499.5,V52uRy6jcLs,I Bought The World’s Itchiest Shirt,511986,62,0,0
-2026-05-21T12:28:40.492262+00:00,UCupvZG-5ko_eiXAupbDfxWw,CNN,122,13,15267382,1113051,17394,2918,0.022504,622,V_3edJ3u1O8,Vance won’t rule out compensating Jan. 6 defendants,480883,104,18,0
-2026-05-21T12:28:40.492262+00:00,UCJ5v_MCY6GNUBTO8-D3XoAg,WWE,113,6,52194362,5185065,89606,1260,0.028774,5844,LQarVC1PMN8,The Vision couldn't see Seth Rollins this time around 😏👀,456513,113,0,0
-2026-05-21T12:28:40.492262+00:00,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,30,2,58427317,1937575,32935,353,0.032388,28287.5,T1veaFx5yjE,KINGMAXXING,419915,30,0,0
-2026-05-21T12:28:40.492262+00:00,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,88,3,130578943,2265118,61311,1465,0.028938,6448,sUyOBppOtDs,Muslim Husband Wants 3 Wives,402683,88,0,0
-2026-05-21T12:28:40.492262+00:00,UCjiXtODGCCulmhwypZAWSag,Jynxzi,2,0,1508506,430332,13657,78,0.027339,215166,dOl-IZ7uzpY,Jynxzi Gets Trolled By FAN At R6 Major 😂,374924,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCz8QaiQxApLq8sLNcszYyJw,Firstpost,108,21,2749465,679669,7168,348,0.009748,525,8XfB9WzomJo,‘Need More Sambandh’ Iceland PM Praises PM Modi’s Hindi Word | Subscribe to Firstpost,308381,108,0,0
-2026-05-21T12:28:40.492262+00:00,UCbCmjCuTUZos6Inko4u57UQ,Cocomelon - Nursery Rhymes,6,0,6724555,940222,7649,0,0.00917,147324.5,S02qtzghgzg,Big Sister Helps Baby Brother Wash his Hands🧼🫧! Clean UP Together!,276196,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCiWLfSweyRNmLpgEHekhoAg,ESPN,266,43,7743510,806802,8370,453,0.015556,72,JrVxk9PZh_s,"No mercy 😂 (via @VVinzetta/X, Erin Bailey Carter)",253678,266,0,0
-2026-05-21T12:28:40.492262+00:00,UC3IZKseVpdzPSBaWxBxundA,HYBE LABELS,25,1,5058023,587069,19890,338,0.085712,8137.5,YqJTL5PxeTk,TWS (투어스) '너의 모든 가능성이 되어 줄게' Official MV,244212,25,0,0
-2026-05-21T12:28:40.492262+00:00,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,26,1,24893111,372510,12917,114,0.054849,2164,vYp1Gn5-VqE,El problema de los Carlinos,223695,26,0,0
-2026-05-21T12:28:40.492262+00:00,UC-cnbLlplnXA4oc7rR21qzg,Lyna,2,0,7033695,330595,2817,57,0.011537,165297.5,u97JbeRu8DU,Cuando le COPIAS el OUTFIT a tu AMIGO en Brookhaven Roblox,206837,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCaY_-ksFSQtTGk0y1HA_3YQ,Ibai,2,0,3668774,209931,9662,95,0.070258,104965.5,G-gtlAc65-A,A Roro se le ha ido la cabeza,204872,2,0,0
-2026-05-21T12:28:40.492262+00:00,UChBEbMKI1eCcejTtmI32UEw,Joshua Weissman,1,0,638180,203065,2374,56,0.017456,203065,JZy3yPf7dkc,Steak Sandwich w/@tomsegura,203065,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCqynl7rdtktKMQESdSBmE-g,Sapnap,2,0,1691619,188884,3201,5,0.039891,94442,aEqsCOxrQ3Y,Minecraft Arrow Toss...,183395,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCWJ2lWNubArHWmf3FIHbfcQ,NBA,193,21,17454906,1290616,15618,607,0.021188,253.5,KlYJ53QeFqM,SGA on gifting his team trench coats: “They all fit… except for Chet's 😅”,164142,193,0,0
-2026-05-21T12:28:40.492262+00:00,UCUP6qv-_EIL0hwTsJaKYnvw,Azteca Noticias,140,20,6551544,332228,10033,870,0.029204,150,oWjI8hIKJ4A,Julián LeBarón revienta contra protestas en Chihuahua y acusa uso político de la violencia,151817,140,0,0
-2026-05-21T12:28:40.492262+00:00,UCYiGq8XF7YQD00x7wAd62Zg,JuegaGerman,1,0,6253949,144843,2187,16,0.033356,144843,7lCBKAxPsfs,Cosas Que DEBES Buscar En GOOGLE,144843,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCK1i2UviaXLUNrZlAFpw_jA,El Reino Infantil,3,0,1037632,169881,1029,0,0.008607,19944,3UW3HIfih5Y,Familia Granja ¿Dónde estás?  #Shorts #LaGranjaDeZenon,140773,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCXuqSBlHAE6Xw-yeJA0Tunw,Linus Tech Tips,2,0,5730252,149379,2626,19,0.027207,74689.5,9uyS40FPbfs,Dropping the Steam Controller INTENTIONALLY,134799,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCurvRE5fGcdUgCYWgh-BDsg,DAZN Boxing,64,2,6720113,632442,6231,370,0.014036,699.5,sTifZjgwnfQ,Rico on facing off with Usyk on fight week 👀,133963,63,1,0
-2026-05-21T12:28:40.492262+00:00,UCUsm-fannqOY02PNN67C0KA,NMás,221,37,2690802,228975,2592,103,0.018119,62,zDpDYPUKnAk,Policía Alerta por Venado “Ebrio” en Francia | N+,109532,187,34,0
-2026-05-21T12:28:40.492262+00:00,UCvgfXK4nTYKudb0rFR6noLA,UFC,52,3,7383137,397028,6296,149,0.016487,1223,HCuOKoyUD8M,Are You Excited For International Fight Week?🫣 #ufc329,106871,48,4,0
-2026-05-21T12:28:40.492262+00:00,UCoz3Kpu5lv-ALhR4h9bDvcw,shroud,1,0,218735,106510,1299,68,0.014451,106510,N6jUOpkMCMg,cache turns me into a DEMON,106510,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCcdwLMPsaU2ezNSJU1nFoBQ,Baby Shark - Pinkfong Kids’ Songs & Stories,4,1,1077681,144338,1328,0,0.008029,20862,3UpRdYLWPbs,What's your favorite color? 💛💗💚💙💜 #art #viral #babyshark,104776,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCBYyJBCtCvgqA4NwtoPMwpQ,The Wild Project,6,1,2688088,115374,6466,33,0.026955,6050,WgvMTuBZ_34,Las secuelas físicas del boxeo…,94002,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCzYfz8uibvnB7Yc1LjePi4g,Aphmau,6,0,3640920,184792,3001,108,0.030719,21779.5,I8poL_Uxv8I,QUICK! HIDE!... Tutorial (Part 3),89392,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,192,5,12925093,486641,10295,110,0.033486,162,wg_iBTJqnN4,You Can Tell Within A Week,88474,192,0,0
-2026-05-21T12:28:40.492262+00:00,UClHVl2N3jPEbkNJVx-ItQIQ,HealthyGamerGG,16,2,1334569,143450,4763,175,0.047747,2154.5,8OJ1BlqSLFU,The Biggest Risk For Cheating,80074,6,10,0
-2026-05-21T12:28:40.492262+00:00,UCBi2mrWuNuyYy4gbM6fU18Q,ABC News,57,6,1774146,159127,1535,205,0.017768,288,YETk7y4e_tw,Woman dies after falling into NYC manhole,74933,57,0,0
-2026-05-21T12:28:40.492262+00:00,UCAOtE1V7Ots4DjM8JLlrYgg,Peppa Pig - Official Channel,6,1,1401981,188216,1780,0,0.011725,28187,c34GTI6p6Ik,Lucky Dip Prizes 🎁 #shorts #peppapig,66295,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCoLrcjPV5PbUrUyXq5mjc_A,MLB,112,12,8283752,373103,3816,76,0.020067,528.5,E8ygHD3wrkY,Corbin Carroll created a run with his speed ⚡,63660,112,0,0
-2026-05-21T12:28:40.492262+00:00,UCuFFtHWoLl5fauMMD5Ww2jA,CBC News,7,1,608586,74705,1300,0,0.016086,359.5,InDbkyr7qug,Carney responds to U.S. walking away from defence board with Canada,62966,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCq-Fj5jknLsUf-MWSy4_brA,T-Series,19,2,1630051,109177,1532,8,0.009746,1403,ybiXjkFVFcY,PEDDI: Ram Charan's Iconic Step😍✨- Chikiri Chikiri | Janhvi Kapoor | #YTShortsIndia,62901,19,0,0
-2026-05-21T12:28:40.492262+00:00,UCBJycsmduvYEL83R_U4JriQ,Marques Brownlee,1,0,2250685,62787,1410,11,0.029844,62787,VIE2Ri2DQJg,Why Fitbit Air Could Be Huge,62787,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCTv-XvfzLX3i4IGWAm4sbmA,LALIGA EA SPORTS,81,5,7225699,134372,3922,39,0.031999,207.5,r7ObXQijX0k,La falta de RAPHINHA 🫣,61581,81,0,0
-2026-05-21T12:28:40.492262+00:00,UCYQo8CdhXD22qfwUBUw591Q,El Payaso Plim Plim,5,0,1485902,161444,0,0,0,24322,L8FsRxiGg7c,"Soy Un Pequeño Constructor, En Mi Excavadora... ¡Aquí Voy! 👷🎵 #CancionesInfantiles #PlimPlim #Shorts",60840,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCRzPUBhXUZHclB7B5bURFXw,Eater,2,1,991359,54844,1669,25,0.031696,54844,v1HaeSCvIXw,It took 2 years to perfect the atta chicken at Ambassadors Clubhouse #shorts,54844,0,2,0
-2026-05-21T12:28:40.492262+00:00,UCNye-wNBqNL5ZzHSJj3l8Bg,Al Jazeera English,127,16,2691883,231939,9451,600,0.047405,153,yufQGuZJp9Y,Norway journalist calls out Modi over avoiding media questions | #ajshorts,54680,74,53,0
-2026-05-21T12:28:40.492262+00:00,UCey-eDTR5J6xU6pZ2f4guoA,Adin Live,10,1,690062,64932,2291,28,0.029654,1523,TYzl5hBIIA8,6ix9ine took Adins phone and called Lil Tjay 😭😭😭😭 #adinross #6ix9ine #liltjay #funny,52200,10,0,0
-2026-05-21T12:28:40.492262+00:00,UCYLNGLIzMhRTi6ZOLjAPSmw,Shakira,1,0,116394,47828,1357,31,0.056962,47828,QiTWdB3WNC0,@fifa World Cup vibes 🐺⚽️,47828,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC4PooiX37Pld1T8J5SYT-SQ,Good Mythical Morning,4,0,926026,71374,1370,7,0.023267,10608.5,_bQ_-bCrFj4,"Dear Diary, Rhett loves butter spaghetti",47795,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCi7TVXyvrIwqeS9tfYD8UDA,DjMaRiiO,17,2,2909014,124525,3518,50,0.030463,1598,HatYL1BTa0w,JUAN GARNIZO 😳 #djmariio #kingsleague,46587,17,0,0
-2026-05-21T12:28:40.492262+00:00,UCTHaNTsP7hsVgBxARZTuajw,LUZU TV,60,6,2080171,201407,4754,73,0.02507,186.5,HiYxWS3Z2XI,Alguien puede pensar en Juli? #nadiedicenada #luzutv,44943,60,0,0
-2026-05-21T12:28:40.492262+00:00,UChqUTb7kYRX8-EiaN3XFrSQ,Reuters,239,40,1952996,257292,2529,614,0.02011,42,W_Qn4wvLWu0,"China's Xi meets Putin, warns of return to 'law of the jungle'",44187,239,0,0
-2026-05-21T12:28:40.492262+00:00,UCFxHplbcoJK9m70c4VyTIxg,MILENIO,75,15,990262,106264,1673,258,0.016018,144,SEevRWzoC5E,Sergio Mayer renuncia a Morena por motivos personales,42094,72,3,0
-2026-05-21T12:28:40.492262+00:00,UCu59yAFE8fM0sVNTipR4edw,Masha and The Bear,4,1,676389,70339,726,0,0.011413,17561,DKi3HiBN3QM,No Paint! 🚱🎨 #Unfriended #MashaAndTheBear #Shorts #mashaandthebear #kids #cartoons #animation,41344,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,8,0,20472738,94863,3001,54,0.05951,7690,vmRbevilfpU,Números de la suerte 🍀,39821,8,0,0
-2026-05-21T12:28:40.492262+00:00,UCY30JRSgfhYXA6i6xX1erWg,Smosh,3,0,339352,42873,1536,18,0.05112,3514,4pfGAqt2A1U,Dude...WHAT??,37925,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCgFXm4TI8htWmCyJ6cVPG_A,Toys and Colors,1,0,326707,36961,503,0,0.010581,36961,s97mv7dh-xg,Ben Gets Saved by Spiderman!,36961,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCwd8Byi93KbnsYmCcKLExvQ,Negocios TV,114,26,2350160,197348,3136,143,0.019934,193,hqvh58WfUrs,ÚLTIMA HORA | PÁNICO EN LA OTAN: cierran el aeropuerto y evacuan al presidente tras detectar drones,35125,92,22,0
-2026-05-21T12:28:40.492262+00:00,UC5PYHgAzJ1wLEidB58SK6Xw,Blippi - Educational Videos for Kids,7,0,879115,137465,958,0,0.008668,17680,a5HY17U2VdQ,POP the Balloon 🎈 to reveal the DINOSAUR 🦖! Learn Dino Names!,34411,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCKAqou7V9FAWXpZd9xtOg3Q,Little Baby Bum - Nursery Rhymes & Kids Songs,7,1,960674,115838,581,0,0.006247,19800.5,-CyFgJiBKag,Go Round and Round! 🌳🎶 #LBB #Short #Round,34105,7,0,0
-2026-05-21T12:28:40.492262+00:00,UC3IEYr87JpgBeVbbc0gP9DA,Irene Albacete,2,1,186235,32825,1373,26,0.071717,32825,AubqxANZ9aI,Proteger tu mente de lo que ya no suma es la mejor decisión que puedes tomar. #inteligenciaemocional,32825,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCujyjxsq5FZNVnQro51zKSQ,fuslie,10,1,1048360,84028,1637,10,0.024064,4911,hLlyhGaw1Ns,Squeex Does A PERFECT SuperTF Impression!,31761,10,0,0
-2026-05-21T12:28:40.492262+00:00,UC9CoOnJkIBMdeijd9qYoT_g,Ariana Grande,2,1,324737,30772,3254,39,0.194808,30772,CmJaEi7orQ4,"May 18, 2026",30772,2,0,0
-2026-05-21T12:28:40.492262+00:00,UC3tNpTOHsTnkmbwztCs30sA,Northernlion,1,0,1021337,30741,768,5,0.031015,30741,Z1MoI-YdUOA,they cooked me with this one,30741,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC08mnbiC4FykqpHqbEWgFcg,ESPN Deportes,68,7,1250126,73994,2511,59,0.025577,79,fdT3ydTr32I,Lamine Yamal se está cuidando para llegar con todo al Mundial 😤⚽️🇪🇸 (Vía @kingsleague_es/ig) #shorts,29637,59,9,0
-2026-05-21T12:28:40.492262+00:00,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,5,0,1349074,50651,3043,200,0.093716,4626,akqLWdf8nVc,what watching shorts on desktop feels like.,28750,5,0,0
-2026-05-21T12:28:40.492262+00:00,UC2xjgvWb9cx5F637XjsUNxw,toycantando,5,1,501851,70865,566,0,0.009462,17513.5,jEBrYu09ta8,Mariposita 🦋 estaba en la cocina 💃🏼,28268,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCfyehHM_eo4g5JUyWmms2LA,Sorted Food,3,0,152088,30869,270,3,0.017146,2990,qpWF7JaHIbM,Epic Toaster Challenge - 350 Slices of Toast!,25914,3,0,0
-2026-05-21T12:28:40.492262+00:00,UC16niRr50-MSBwiO3YDb3RA,BBC News,115,7,7143505,291649,2958,335,0.01337,379,isfiv_9f_kk,UK citizens will soon need a visa to stay in Thailand for more than 30 days. #BBCNews,25432,115,0,0
-2026-05-21T12:28:40.492262+00:00,UCeY0bbntWzzVIaj2z3QigXg,NBC News,131,19,1663081,169866,1447,209,0.011441,122,TFoAg5gUbM4,NTSB released new video of deadly UPS plane crash,24164,131,0,0
-2026-05-21T12:28:40.492262+00:00,UCnsvJeZO4RigQ898WdDNoBw,EL PAÍS,160,19,1445873,80628,1259,134,0.020193,31,enC7Ooh8X_s,"RUFÍAN, sobre ZAPATERO: ""Si es verdad, es una MIERDA"" #shorts",22029,88,72,0
-2026-05-21T12:28:40.492262+00:00,UCafNntv_qTQB26AvbEQNHPw,Aristegui Noticias,56,4,3630596,102188,1502,108,0.025991,312,FW9n1DItPi8,Hombre agrede y amenaza de muerte a enfermera del IMSS en SLP,21256,56,0,0
-2026-05-21T12:28:40.492262+00:00,UCGXbLrVe8vnkiFv7q2vYv3w,El Mundo,338,46,3125668,219520,2198,454,0.018052,28.5,QtAtbT6hIRU,"Los Mossos detienen por homicidio a Jonathan Andic, hijo del fundador de Mango, Isak Andic #Mango",20304,326,12,0
-2026-05-21T12:28:40.492262+00:00,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,3,0,484790,24723,296,14,0.019002,4277,aJVHah_EAUs,MEN STRUGGLE WITH THIS,19934,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCoGDh1Xa3kUCpok24JN5DKA,enchufetv,8,1,1993216,63363,1588,12,0.045457,8772,Me7QhGJ3Hxs,Hombre con Dueña Sabe más Bueno,19596,8,0,0
-2026-05-21T12:28:40.492262+00:00,UCTkXRDQl0luXxVQrRQvWS6w,Dream,1,0,1031852,19097,712,22,0.05569,19097,G9I2qfuXIIg,Peaceful Mode...,19097,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,14,0,560202,45881,1106,14,0.026928,207,duDgVfn1lCk,Rating self-help & productivity books,18920,14,0,0
-2026-05-21T12:28:40.492262+00:00,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,298,10,3659447,110468,6886,143,0.078895,5,VhGLa0s_5MI,Me cambió la vida cuando Jaime Higuera dijo esto #shorts,18313,260,38,0
-2026-05-21T12:28:40.492262+00:00,UCWxlUwW9BgGISaakjGM37aw,Valkyrae,4,0,664686,32377,722,5,0.029924,6290.5,0rsfEoiDcZU,Rae Finds The Edge Of The Subnautica 2 Map..,18185,4,0,0
-2026-05-21T12:28:40.492262+00:00,UC0QHWhjbe5fGJEPz3sVb6nw,Doctor Mike,1,0,2153433,18095,462,12,0.044599,18095,xskMnb6Z9kY,The Problem With Donating A Kidney,18095,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCV6KDgJskWaEckne5aPA0aQ,Graham Stephan,8,1,481803,29115,493,28,0.017578,1416,y6qdHjPPMqc,Togi ROASTS Graham Stephan 🤣,17409,8,0,0
-2026-05-21T12:28:40.492262+00:00,UCUe6ZpY6TJ0no8jI4l2iLxw,Nick Jr.,3,0,117404,36562,560,0,0.014983,15265,As0Svf-ee5Y,TEENY MUTANT NINJA TURTLES Official Teaser | New Original TMNT Series | Premieres July 24th,17258,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,9,0,630772,24491,1187,104,0.053609,793,gSkkZFzUsBU,La Mentira Más Grande de la Luna,16750,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCTl3QQTvqHFjurroKxexy2Q,Olympics,33,3,2312441,87205,745,5,0.018148,720,9zD5AKmT_fw,A lineup for the ages. 🔥 The men's 100m final at #London2012 was one for the history books. ⚡️,16544,33,0,0
-2026-05-21T12:28:40.492262+00:00,UCtwslQPB_xJfaFuZv0OETNw,Kings League Spain,73,1,827891,77211,1280,23,0.023538,138,f_VISZWPXBA,DjMaRiiO se vuelve loco con la actuación de Esther Solà. #QueensLeague,16245,73,0,0
-2026-05-21T12:28:40.492262+00:00,UC4YImPQT-_0kCh5joATwyhw,Blippi en Español,2,0,103059,20530,128,0,0.009189,10265,EdBDy7csgQQ,A Blippi le gusta construir 🚧👷 #Videoseducativos #Blippi #Construcción,15993,2,0,0
-2026-05-21T12:28:40.492262+00:00,UC52X5wxOL_s5yw0dQk7NtgA,Associated Press,171,21,1786212,128002,1584,183,0.023485,63,-kNLXSVpoOU,"5.8 magnitude quake hits Peru's Pacific region, injuring dozens",15639,168,3,0
-2026-05-21T12:28:40.492262+00:00,UCM-GvgUy0EAZU7ZwXKLarkg,López-Dóriga,35,4,1921290,50808,980,15,0.029152,523,0SJK2TDbWQ0,García Harfuch salió de inmediato a desmentir una información de CNN,15437,35,0,0
-2026-05-21T12:28:40.492262+00:00,UCH3h4jRKn3lJo0uORqqESPg,Acenix,2,1,256752,14073,380,17,0.04338,14073,5RDweB6uipg,El MUNDO de Minecraft Rebota 💀💀,14073,2,0,0
-2026-05-21T12:28:40.492262+00:00,UC4NALVCmcmL5ntpV0thoH6w,LooLoo Kids - Nursery Rhymes and Children's Songs,1,0,225290,13991,131,0,0.008234,13991,OSH4jRJWVYs,Surprise Eggs with Yummy Fruits! 🍎🌈 Fun for Kids,13991,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCtoaZpBnrd0lhycxYJ4MNOQ,HasanAbi,1,0,406652,13646,332,3,0.035839,13646,Kl6kNj8smiM,Gabor Maté on Zohran Mamdani,13646,1,0,0
-2026-05-21T12:28:40.492262+00:00,UChGJGhZ9SOOHvBB0Y4DOO_w,Ryan's World,11,0,723335,68008,505,0,0.00791,4054,moGNRe1iiBo,We Try to SNEAK PASSED the World's STRICTEST Hall Monitor!,12755,11,0,0
-2026-05-21T12:28:40.492262+00:00,UCM55RjebjSevVWPnj2LEymw,viyaura,13,0,1978336,41170,1345,52,0.060675,1457,mo-wTwstyu4,Roblox Speed Draw but... #art #artist #draw #drawing,12546,13,0,0
-2026-05-21T12:28:40.492262+00:00,UCrsyfsHNdpB5U_FHENCuB2A,El Cubil de Peter,1,0,82166,12541,224,4,0.030341,12541,jZVixFS9WlM,Encuentran DIENTE de NEANDERTAL que deja DESCONCERTADOS a los arqueologos #shorts,12541,0,1,0
-2026-05-21T12:28:40.492262+00:00,UCUBIrDsIVzRpKsClMlSlTpQ,BBC News Mundo,19,3,1096415,42347,1233,49,0.031653,766,s7QlqwoZ2f4,Una orangután aprende a bañarse como un humano | BBC Mundo,12463,17,2,0
-2026-05-21T12:28:40.492262+00:00,UC52kszkc08-acFOuogFl5jw,Tibees,3,0,107742,13281,1175,72,0.066298,613,ms2TUal9xmI,New book alert 🚨,12408,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCcgVECVN4OKV6DH1jLkqmcA,Jake Paul,7,0,1324192,50307,874,36,0.021889,7615,Kn_9qBbOT4k,Generational anthem,12372,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCoookXUzPciGrEZEXmh4Jjg,Sesame Street,1,0,94064,11256,159,0,0.013703,11256,mpCvxdi-cKM,Do the Rock Rock Rock Rock Rocco and Roll! 🎸 #sesamestreet,11256,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCTrQ7HXWRRxr7OsOtodr2_w,Channel 4 News,64,8,1306105,61048,674,117,0.01556,139.5,4NdFpiQr2zw,Trump promises 'drone empire' on top of $1.4bn ballroom,11128,64,0,0
-2026-05-21T12:28:40.492262+00:00,UCcHtke0raf8vNYLM1Hbq3Jw,Imagen Noticias,124,29,568714,50639,1475,51,0.015745,34,s65SX8xJzfc,"Sepultaron a las víctimas de la masacre en Tehuitzingo, Puebla | #Shorts | Nacho Lozano",10818,93,31,0
-2026-05-21T12:28:40.492262+00:00,UCBHcMCGaiJhv-ESTcWGJPcw,NVIDIA Developer,1,0,16016,10358,141,3,0.014298,10358,pUo8RdgtYI0,Jensen Huang on What Makes NVIDIA's Architecture Unique,10358,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCoMdktPbSTixAyNGwb-UYkQ,Sky News,27,1,787477,39071,454,52,0.010761,137.5,G7CM6exqyn0,General Sir Richard Barrons defends calls to cut welfare for defence,9997,22,5,0
-2026-05-21T12:28:40.492262+00:00,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,9,0,454159,13013,367,19,0.041895,120,IGCKBKoplVE,Subió a un avión con trabajo y aterrizó cancelada mundialmente,9837,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCYVinkwSX7szARULgYpvhLw,Ali-A,9,1,598174,18271,274,5,0.020959,1038.5,XBdXWnZ59Wo,This Controller has BROKEN Fortnite! 😨,9638,9,0,0
-2026-05-21T12:28:40.492262+00:00,UC55-mxUj5Nj3niXFReG44OQ,Platzi,22,0,284337,15115,62,1,0.029931,21.5,WZ1AGTxFHgU,"Ya párenle a la AI, ¿no? A menos que...",9495,22,0,0
-2026-05-21T12:28:40.492262+00:00,UCucNB6GOncGkTMB55ZrjYvg,Recetas de Esbieta,3,1,33675,9472,325,10,0.03109,4736,mkUGesjgU8k,Cómo conservar el bizcocho para que no se seque,9201,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCVzLLZkDuFGAE2BGdBuBNBg,Bluey - Official Channel,1,0,102684,8993,150,0,0.016078,8993,uvvc3AlsV4Q,Unicorse LOVES heavy metal!🎸🦄🤘| Bluey,8993,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCMmaBzfCCwZ2KqaBJjkj0fw,Kings and Generals,1,0,78478,8435,197,21,0.032977,8435,9MF9mPaFTn0,Ukraine Under Mongol Control The Forgotten Century #history #ukraine #shorts,8435,0,1,0
-2026-05-21T12:28:40.492262+00:00,UCpcTrCXblq78GZrTUTLWeBw,FIFA,39,3,1808562,64052,930,27,0.029153,1123.5,G51P63WpweA,Michel's Marvelous 1990 Hat-Trick! #shots #michel #spain,8259,37,2,0
-2026-05-21T12:28:40.492262+00:00,UCpEhnqL0y41EpW2TvWAHD7Q,SET India,72,40,2060955,50374,301,8,0.009672,977,6u_-CElfcQM,Rajeev Ne Uthaya Kiska Ghoonghat?| Tum Ho Naa-Ghar Ki Superstar | #shorts #tumhona #rajeevkhandelwal,8248,58,14,0
-2026-05-21T12:28:40.492262+00:00,UCDVYQ4Zhbm3S2dlz7P1GBDg,NFL,6,1,215596,16478,261,6,0.019552,1567,LQjliIya77E,Get it together guys 😅,8240,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,6,0,110820,8437,287,7,0.052857,35.5,Rzj58_gC25s,FDE: el nuevo programador para la era de la IA,8157,4,2,0
-2026-05-21T12:28:40.492262+00:00,UCsN32BtMd0IoByjJRNF12cw,60 Minutes,52,0,753803,64629,1473,43,0.018922,151,E5XqKZq13zM,What makes Gout Gout so fast? #shorts,7953,20,32,0
-2026-05-21T12:28:40.492262+00:00,UCwd_qoS94df5orGoPLPnsxQ,Franco Pisso,9,0,286035,18174,1021,25,0.062191,1068,DVksAVsBzlc,"Si te molesta como a mí, poné el límite.",7936,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCYUQQgogVeQY8cMQamhHJcg,CinemaSins,12,1,312628,18261,305,6,0.013727,217,oM5A-h0jaIQ,Can Hollywood turn a video game into a good movie? #doom #cinemasins,7484,12,0,0
-2026-05-21T12:28:40.492262+00:00,UCknLrEdhRCp1aegoMqRaCZg,DW News,27,3,473149,24466,292,30,0.022856,300.5,dYaR7xMDU2g,"After Trump, Xi welcomes Putin | DW News",6295,27,0,0
-2026-05-21T12:28:40.492262+00:00,UCqLiW00gUvXG0J5vlZZNJ1g,FranqitoM,1,0,909042,6143,233,0,0.059513,6143,U5l0Z8T4tCk,Spotify ?,6143,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC0C-w0YjGpqDXGB8IHb662A,Ed Sheeran,5,0,1322165,19431,544,17,0.041064,4440,PnDTh-sbFVU,I told Martin if I get 3 pencils in we can release Repeat it for his birthday,6062,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,14,1,620087,19907,533,18,0.041619,1572,_mrzsPWx9yc,¿Debo vincular mi CURP a mi línea telefónica? #shorts #gobierno #curp,5719,6,8,0
-2026-05-21T12:28:40.492262+00:00,UCvksjnr7kInzcIjMpJpqF2A,Little Angel: Nursery Rhymes & Kids Songs,3,0,62529,7910,41,0,0.006085,1437,RdWzJ2MM6yo,Baby John Soccer Paper Crafting ⚽✂️ #littleangel,5509,3,0,0
-2026-05-21T12:28:40.492262+00:00,UClLLRs_mFTsNT5U-DqTYAGg,La Vanguardia,78,11,487245,14385,204,32,0.023641,22,KRt7k4NQ6RI,Abucheos al exdirector ejecutivo de Google durante un discurso sobre el impacto de la IA,4847,78,0,0
-2026-05-21T12:28:40.492262+00:00,UCaO6TYtlC8U5ttz62hTrZgg,JYP Entertainment,4,0,1011644,9368,479,24,0.109142,1784,KpUycVAiDSM,ITZY “Motto” M/V TEASER 2,4648,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCDK9qD5DAQML-pzrtA7A4oA,OfflineTV,2,0,714334,9050,56,0,0.028909,4525,KEp5oyeS6wA,The ultimate reaction speed test 😎🎈,4526,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCmE44gpkHmf5bKIVTPSwxnQ,Judith Tiral,4,0,71447,4496,46,7,0.024668,83.5,ipIOj3KS3JU,¿CLASES de PARTO estando EMBARAZADO?,4257,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCjgl7IsyBNE6bl7d5RnnFXg,Cocina con Coqui,1,0,35220,4248,207,7,0.06184,4248,5DHdqYjVQyY,El Plato de Snack PERFECTO!! 😍,4248,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCmObdAaNbtVVR1OkKUsdgqg,Las Recetas de MJ,2,0,60034,6391,161,1,0.040333,3195.5,_LCW_N8FwJg,10 comidas típicas de Irlanda #shorts,4197,0,2,0
-2026-05-21T12:28:40.492262+00:00,UCiMhD4jzUqG-IgPzUmmytRQ,Queen Official,4,0,246765,6727,328,37,0.064945,1051,rpLw85zyu4I,"You can only save one song from Hot Space, which ones are you letting go? 😬 #queen",4182,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCHnyfMqiRRG1u-2MsSQLbXA,Veritasium,1,0,1090085,4167,68,1,0.020118,4167,iRach9lpIlg,Wombats Poop Cubes,4167,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCXZCJLdBC09xxGZ6gcdrc6A,OpenAI,3,0,34157,4452,72,16,0.029787,295,_BY9YTTh6kE,Kunal vs Motorcycle | With ChatGPT,4018,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCPQ2dheMajZPnIleYZHzblg,Pablo Gil Trader,4,0,47899,5727,87,3,0.026162,836,hFbKN-PWjjI,¿Por qué es TAN INTERESANTE el Bitcoin?,3921,4,0,0
-2026-05-21T12:28:40.492262+00:00,UC6ZFN9Tx6xh-skXCuRHCDpQ,PBS NewsHour,18,1,190084,5712,193,0,0.024041,52,RJ2j-IqOod8,Navy investigating midair collision at Idaho airshow,3750,16,2,0
-2026-05-21T12:28:40.492262+00:00,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,1,0,320480,3567,139,5,0.070891,3567,ArA_8v8LTfY,"hay una CRISIS en China, ¡todo mundo tiene casa propia!",3567,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCA2tt9GSU2sl8rAqjlLR3mQ,GeorgeNotFound,1,0,799349,3541,-53,2,0.042283,3541,XZhtfrppsqo,Minecraft Arrow Toss...,3541,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC6RTPEfYFMcb0-HLLMEpLdw,Caja de Peliculas,1,0,15143,3411,147,7,0.066235,3411,SdCa5nTCtxw,Le PAGARON por CADA PIQUETE de ABEJA 🐝💸 #Shorts #Viral #Peliculas #Terror #Datos,3411,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC4JX40jDee_tINbkjycV4Sg,Tech With Tim,14,1,160654,5637,161,3,0.037665,104,rhoVcV26cxI,Stop jumping straight into building and spend 10 minutes planning first 🧠,3243,13,1,0
-2026-05-21T12:28:40.492262+00:00,UC8p1vwvWtl6T73JiExfWs1g,CBS News,29,4,796179,10675,99,38,0.01251,62,iiWT2zZhQGg,"Elon Musk seen with his son, X Æ A-Xii, at Great Hall of the People in Beijing #shorts",3004,13,16,0
-2026-05-21T12:28:40.492262+00:00,UCP7jMXSY2xbc3KCAE0MHQ-A,Google DeepMind,1,0,10262,2951,74,1,0.040928,2951,AEH6dBOnE_U,This is Gemini Omni ♾️ #GoogleIO,2951,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCJHA_jMfCvEnv-3kRjTCQXw,Binging with Babish,3,1,265150,5135,69,0,0.01922,2567.5,NjuU6sn9uCI,Pineapple shrimp ceviche for summer weather!,2741,3,0,0
-2026-05-21T12:28:40.492262+00:00,UC9vUu4vlIlMC0dHQCTvQPbg,The Money Guy Show,9,1,216778,10850,126,6,0.014784,1125,T47bQ-cMewM,This Decision Can Follow You for Life,2719,9,0,0
-2026-05-21T12:28:40.492262+00:00,UC-2hhqBG5Su7s91_HmhaODQ,Fox Deportes,97,10,514285,13266,133,5,0.014403,6,cvYc3-cpGr4,QUERÍA SU GOLAZO... ✋ Pero James Pantemis llegó a tiempo para detener a Lionel Messi. #MLSenFOX,2623,97,0,0
-2026-05-21T12:28:40.492262+00:00,UC7DdEm33SyaTDtWYGO2CwdA,Physics Girl,2,0,1669217,3462,50,3,0.035611,1731,4s9LuOSR3Q4,What would happen if the Sun dissapeared?,2581,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCUXLlsi8mQeP0TvGbmSn8iw,Sopitas,4,0,10897,2766,145,0,0.033519,103.5,oWNo9nE0dao,"Sopitas FC: futbol, Mundial y pasión sin filtro",2557,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCEAZeUIeJs0IjQiqTCdVSIg,Yahoo Finance,27,3,334747,5689,54,1,0.014189,38,-N1D1oYMCiE,"Why Nvidia's stock is mispriced, and Wall Street is underestimating its earnings power. 🧐",2257,27,0,0
-2026-05-21T12:28:40.492262+00:00,UChl76B7zqfMcNzfMi9vJruw,Mizkif,1,0,4104,2170,20,8,0.015351,2170,bmfQsc0ZOCQ,Do this to become a billionaire #mizkif #investing,2170,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCHhYXsLBEVVnbvsq57n1MTQ,The AI Advantage,2,1,13335,2038,32,1,0.018897,2038,dj4MPMizG8U,You Might Want to Re-Learn Prompting...,2038,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCIRYBXDze5krPDzAEOxFGVA,Guardian News,10,4,144020,3334,7,1,0.014044,197.5,Qkp7gsUed9U,Putin arrives in Beijing to meet with Xi just days after Trump,2015,10,0,0
-2026-05-21T12:28:40.492262+00:00,UCCEmjNPpJYhGDgaEqeeA4HA,TheGrefg,4,1,1174094,5438,115,0,0.033015,1930,Y0xLwBgodtk,Le pido la camiseta a Messi,1988,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCX16cLWl6dCjlZMgUBxgGkA,CuriosaMente,1,0,115336,1984,170,0,0.09918,1984,GhfJPapoAXQ,¿Justicia medieval?,1984,0,1,0
-2026-05-21T12:28:40.492262+00:00,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,82,5,874315,4876,84,0,0.028519,4,l0Mo8qX0Dyc,👉🏻 Te dejo el link para apuntarte al Curso GRATIS de IA fijado en los comentarios de este vídeo.,1810,82,0,0
-2026-05-21T12:28:40.492262+00:00,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,5,0,2820360,5618,142,5,0.051925,929,SRq2k75uLVo,Trump desclasifica informes del FBI sobre... extraterrestres,1768,0,5,0
-2026-05-21T12:28:40.492262+00:00,UCcyq283he07B7_KUX07mmtA,Business Insider,1,0,5620,1710,19,1,0.014057,1710,72c_czW-ISM,Ex-OpenAI #researcher warns against the risks of #superintelligence. #AI #FutureTech,1710,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC5rJaxmE3UyVz59OGxbPdAg,Noticias Robotitus ,1,0,148483,1663,28,3,0.041291,1663,BdOfmPe3j1s,Científicos Crean Engranajes Líquidos que Giran sin Contacto 🤯￼,1663,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCLXRGxAzeaLDGaOphqapzmg,codigofacilito,4,0,5349,1645,35,0,0.016866,3.5,WNyPFioUjhE,¿Ya conoces las Minimal API en .NET? 💻️,1638,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,50,6,129745,5959,259,4,0.032656,11,pADklWTqSLI,Milo J tomo la mejor desicion 😳,1620,49,1,0
-2026-05-21T12:28:40.492262+00:00,UC9MAhZQQd9egwWCxrwSIsJQ,HISTORY,12,2,157001,4722,106,2,0.024041,328,8cg7S9HqjwU,Alien Spacecraft Sighting | History's Greatest Mysteries | #Shorts,1600,3,9,0
-2026-05-21T12:28:40.492262+00:00,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,12,0,63813,2756,204,3,0.088763,55.5,TUUUOn3X7yQ,¿cuántas veces al día ves a esos pequeños “flotantes”?,1577,12,0,0
-2026-05-21T12:28:40.492262+00:00,UCGy7SkBjcIAgTiwkXEtPnYg,Andrei Jikh,3,2,52229,1558,39,0,0.024102,1558,BXU1TPC6MHs,The Digital Control Grid Problem,1558,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCddn8dUxYdgJz3Qr5mjADtA,NutritionFacts.org,5,1,21667,2703,123,7,0.090802,556,ChLG_PoHOJE,Skin Care Products,1522,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCvQECJukTDE2i6aCoMnS-Vg,Big Think,1,0,13337,1506,25,3,0.027592,1506,xitFlW5HhLM,How do I know if I have childhood trauma? | Nicole Lepera,1506,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,23,3,61427,3216,104,-15,0.039929,7,XYrOhOy6NTc,Mañana vamos a hacer la clase de inversiones más grande que hemos hecho,1416,23,0,0
-2026-05-21T12:28:40.492262+00:00,UC2iUwfYi_1FCGGqhOUNx-iA,ScreenRant,7,1,111452,2376,32,0,0.016167,253,vjdQjYLaGRo,The Backrooms Proves Internet Horror Is Taking Over 😳🎥 #backrooms,1292,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCFJJziTVsiIVSyRKvXHX37g,Canticos - Bilingual Nursery Rhymes & Kids Songs,8,2,48964,4010,27,0,0.008557,635,FDMd7r3ikB8,Brush Your Teeth! 🪥Good Hygiene Habits Nursery Rhymes & Kids Songs @canticosworld,1052,8,0,0
-2026-05-21T12:28:40.492262+00:00,UCTJXx9onKH6g4cWHS9pLqsQ,El HuffPost,19,5,257025,1870,29,1,0.028717,20.5,BpfCzvJAL8o,"Unos niños enseñan al papa León XIV a bailar el paso viral ""six-seven (6-7)""",1034,19,0,0
-2026-05-21T12:28:40.492262+00:00,UCeiYXex_fwgYDonaTcSIk6w,MinuteEarth,1,0,15024,999,7,0,0.052516,999,CpK4PxPOITQ,These bioluminescent creatures are giving ✨glow✨,999,1,0,0
-2026-05-21T12:28:40.492262+00:00,UChhw6DlKKTQ9mYSpTfXUYqA,Starter Story,7,0,168276,2225,38,-1,0.024571,92,O12RoSwTum4,Genius app store keyword trick that made him $50K per month,943,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCShHFwKyhcDo3g7hr4f1R8A,World Science Festival,3,0,38505,1168,4,2,0.013144,139,bY8RFbMbI4c,"Gary Marcus explains the “Eliza Effect."" #worldsciencefestival #briangreene #garymarcus",893,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCq2otJm7A6jGGcGFEks0HVw,Se Regalan Dudas Podcast,6,2,29136,1353,34,1,0.024911,187.5,y4Y4ZgJuTGQ,Conoce Nature's Heart: mx.naturesheart.com,850,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCS0lmlVIYVz2qeWlZ_ynIWg,AJ+ Español,5,0,77825,1044,78,8,0.108918,53,QdEIhiHbsSY,Conmemoran en México los 78 años de la Nakba,781,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCEf_Bc-KVd7onSeifS3py9g,SMTOWN,1,0,51833,753,36,-2,0.151081,753,294X5o83_Ic,TAEYONG 태용 'WYLD' MV Teaser,753,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCoXtmmnLCbXDiSo8GxsmOzA,La gata de Schrödinger,1,0,83999,747,27,2,0.040143,747,EJBfmLrc-iw,¿Esto es lo que ven los niños ahora?,747,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCBVjMGOIkavEAhyqpxJ73Dw,Maroon 5,1,0,21579,655,19,0,0.034524,655,FshjwEAJk88,Need tour right now…🎥 @bootswallace,655,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,4,0,178663,1127,44,0,0.064053,233,jFZPpkVszCg,ESTE ES EL MAPA 3D MÁS GRANDE DEL UNIVERSO 🌌,625,4,0,0
-2026-05-21T12:28:40.492262+00:00,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,6,0,128246,1129,33,-1,0.030344,117.5,5GXM6fB1ZV0,Top 1% of AI Users Use This Prompting Framework,619,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCyJbb85EUgWjl38GcF236Jg,Eva Maria Beristain,2,0,268152,669,10,3,0.026282,334.5,nZ4JI34_Q_g,Bts en México: de quién es culpa que haya sucedido esto?,573,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,1,0,76857,572,3,0,0.069974,572,6CyjL4X8e7g,Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS,572,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,10,1,50343,838,48,1,0.048493,34,0jsaz5KsYIg,Deja de ser el que lo hace todo con @verdent_ai ✌🏻 #desarrolloweb #programacion,551,10,0,0
-2026-05-21T12:28:40.492262+00:00,UC6n8I1UDTKP1IWjQMg6_TwA,The B1M,2,1,80886,549,-7,0,0.025589,549,CtAPK8WsUb8,Dubai Has a SEWAGE Problem,549,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCzKnSeOq30zVvgosDFlne5g,Finect - Invertir mejor,9,2,11547,1163,27,0,0.020138,18,VegyXgXUN80,Bolsa 📈 ¿donde están las OPORTUNIDADES? 🔎 #finect,523,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCeLHszkByNZtPKcaVXOCOQQ,Post Malone,1,0,50134,504,15,48,0.055631,504,c9m0zR0_h4k,I’m heading to Nashville on June 30th and I want to bring one of you with me 🍻 meetpostmalone.com,504,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,20,1,100707,1064,75,0,0.044026,0,ZEpGVJopXq4,¿Cómo Saber Si Tienes Un Buen Asesor? 📋 #Compuestos #AndresGarza #JuanCarlosHerrera #Asesor,485,20,0,0
-2026-05-21T12:28:40.492262+00:00,UCzR-rom72PHN9Zg7RML9EbA,PBS Eons,2,0,154254,608,22,0,0.037701,304,Re9uBHP_Aqo,Did this ancient mole go on an adventure?,482,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCok_yhjwg4WSx3s_2Yh8ZjQ,Topes de Gama,5,0,133900,1220,-16,3,0.070401,188,nxmAuqCYUBw,¿iPhone con Android o Samsung con iOS? El dilema que rompería el mercado,479,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCcAd5Np7fO8SeejB1FVKcYw,Best Ever Food Review Show,1,0,42641,435,3,0,0.018152,435,SOwAtRoJyAc,BEFRS Won A Webby Award!! 🏆,435,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCH4BNI0-FOK2dMXoFtViWHw,Be Smart,1,0,94703,423,-21,0,0.06739,423,s2XJAOs0n4U,What color are these dots?! 🤔,423,0,1,0
-2026-05-21T12:28:40.492262+00:00,UCt-k6JwNWHMXDBGm9IYHdsg,J Balvin,1,0,8942,403,15,1,0.027622,403,OI5z9S48LlI,OSCAR MAYDON en la casa #cdmx,403,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,9,1,54409,1344,9,0,0.010594,108.5,l0fEgTBT50M,Don't try to go it alone - build up a community of supporters. Life will be much easier.,392,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCMsgXPD3wzzt8RxHJmXH7hQ,Cartoon Network,1,0,11423,288,5,0,0.032653,288,NC_Eo4HEpC0,You know who else can build a hovercraft? 🐦🦝✈️,288,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCLXo7UDZvByw2ixzpQCufnA,Vox,3,1,135686,361,-9,0,0.037709,180.5,Eqe7f9tPtas,Hantavirus and misinformation,246,1,2,0
-2026-05-21T12:28:40.492262+00:00,UCLv7Gzc3VTO6ggFlXY0sOyw,Harvard University,1,0,11407,222,5,0,0.01052,222,00NnpBvip98,Goat Yoga at HMS,222,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC71VTsUKOsh6QEGnzaa2KuQ,Rankia,1,0,5321,175,2,0,0.021612,175,NFHfriGAHo8,"Trade Republic sube al 3,04% TAE",175,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,19,0,1008353,417,-2,0,0.02714,7,pwcrn5bdr9c,Se hizo millonaria reinventando la ropa de gimnasio,156,19,0,0
-2026-05-21T12:28:40.492262+00:00,UCqaOSuXiGdnuoqXBda-XD2A,Canal Once,4,0,5804,157,3,0,0.020355,4.5,8fEH7IlbD3Q,Brasil vs Francia [Francia 1998] - Contrincantes,145,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCC552Sd-3nyi_tk2BudLUzA,AsapSCIENCE,1,0,56248,132,0,0,0.033903,132,MKL0tk-3UM8,Send this to a dad you know,132,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCvPGx8qh8AkrFZW06tESvaA,Dot Dager,5,0,50287,288,2,0,0.051982,29,vtjFXdFGkBc,DE CHULO AL PROGRAMADOR #dev #programacion,130,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCt7k7y_xTkkc1Jeh7cdAjDQ,SinEmbargo Al Aire,1,0,12802,120,5,0,0.070145,120,mm4ASkDweTg,Detienen en EU a exsecretario de Seguridad de Sinaloa,120,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,7,0,82529,243,2,0,0.040622,35,Ocx5uE7vjIw,¿se puede programar con agentes con 32GB de RAM?,119,7,0,0
-2026-05-21T12:28:40.492262+00:00,UC04FyDIvYXNecpbG8gyOw4A,Meta,2,0,6425,181,1,0,0.022747,90.5,pUbyqNTt2AY,Flower or Weed,108,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCtu2BCnJoFGRBOuIh570QWw,Sodapoppin,1,0,18170,93,1,0,0.014034,93,3COUSQteLGE,Katchii Gives Poor People Advice,93,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCYZLVhSSwdBllvn4tw5a4uQ,Rob Paper Sheet,2,0,91223,144,5,0,0.051427,72,-6t20SnbOyc,"Un buen clasista no es aquel que juzga, es que el describe la realidad.",91,2,0,0
-2026-05-21T12:28:40.492262+00:00,UCK7tptUDHh-RYDsdxO1-5QQ,The Wall Street Journal,1,0,13435,91,1,0,0.012058,91,MrIW-XUFbjo,The Best Way to Pass Down Wealth to Your Kids,91,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCv85NiROLKddHa0fBATwTzw,Victor Robles WEB,4,1,24033,158,1,0,0.014023,45,yb3cxCJ4h4g,Cuando filtras el API KEY y haces que la empresa pierda 100.000 dólares #programadores #codigo #ia,89,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCW39zufHfsuGgpLviKh297Q,DW Documentary,1,0,4808,87,1,0,0.019967,87,5ryzfpKwm18,The impact of color | DW Documentary,87,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,9,0,146891,237,3,0,0.02906,14,iY0N2tAyDGU,Te mereces un martillazo #chisme #comedia #podcast,86,9,0,0
-2026-05-21T12:28:40.492262+00:00,UCsMica-v34Irf9KVTh6xx-g,Microsoft Developer,5,0,5987,238,1,0,0.017433,46,AjiBLSymCkk,What turns an AI agent into a real product? 🤖 #AzureCosmosDBConf,74,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCm5iBOcQ0GET_2FqFI61QDA,Cara Nicole,3,0,27018,113,3,1,0.051824,41,2MInIAO3bFA,Little changes can turn into big savings 💸,64,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,5,1,29504,69,1,0,0.038356,5.5,MyIJYM4kByU,¿Cómo la IA multiplica tu capacidad?,57,5,0,0
-2026-05-21T12:28:40.492262+00:00,UCHhfu5p0zydyM-_nw3IJvig,Urban Tecno,1,0,2645,57,0,0,0.035917,57,met02sYUMm8,FitBit Air Unboxing!! 📦,57,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCb8GKeOvI7WsFUkB4UVAeXA,Cordura Artificial,1,0,25143,41,3,0,0.078153,41,0SSctcuOy0o,Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia,41,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,1,0,5840,38,0,0,0.030822,38,sHXJob_Yxmw,Escúchalo completo en Más Allá del Rosa en YouTube,38,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCB34YbuG6ThXJzJsDAII5Dw,math2me,3,1,10245,57,1,1,0.025147,28.5,ckmwjwgSEuM,Hazlo más rápido cuando divides entre 5 #matematicas #math,30,3,0,0
-2026-05-21T12:28:40.492262+00:00,UCOvzFyIAr32yspwxx77BHcQ,Rob Paper Clips,1,0,14471,26,0,0,0.052035,26,3skIuC1lP00,"Las mujeres tienen pepino… y están guangas, según esta fan del temach",26,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCtoo4_P6ilCj7jwa4FmA5lQ,Soy Dalto,1,0,11844,26,4,0,0.062563,26,s2NSwy8xraQ,Con ESTO tu vida podria ser MÁS FÁCIL,26,1,0,0
-2026-05-21T12:28:40.492262+00:00,UChXKjLEzAB1K7EZQey7Fm1Q,Pokimane,1,0,32521,19,1,0,0.05787,19,embu3gLFECI,im flying my friends out for my birthday…,19,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC30ajuhy8cViP2DiM1QLjmg,98grados,6,1,101254,22,-1,0,0.071299,3,Lc4kaEMcYPQ,Por el mismo dinero: ¿Cuál es mejor? iPhone vs Cámara #iphone #apple #cinematic,12,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,7,1,27124,30,1,1,0.05003,4,tXgFifuwvno,Lo que nadie te enseña sobre dinero | Sofía Macías,11,7,0,0
-2026-05-21T12:28:40.492262+00:00,UCdfnfXWCGkBAx2cN2l-4u2w,Semo Historia,6,0,10982,13,0,0,0.050166,1.5,4LJ6dmvKxc8,100 Años Extrayendo Agua Rompió CDMX  #cdmx,6,6,0,0
-2026-05-21T12:28:40.492262+00:00,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,4,0,5649,10,0,0,0.042704,2,mbtA5CBh5qk,Estrategia gaps más velas de indecisión,4,4,0,0
-2026-05-21T12:28:40.492262+00:00,UCX9NJ471o7Wie1DQe94RVIg,Fazt,1,0,26580,2,0,0,0.034688,2,s23TO2BQBcU,El FIN de la IA barata ya comenzó 🚨,2,0,1,0
-2026-05-21T12:28:40.492262+00:00,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,15,0,11737,0,0,0,0.024784,0,tLlucpJbi5E,La retención de ISR en tus ganancias de Revolut,0,15,0,0
-2026-05-21T12:28:40.492262+00:00,UC9WGON3pXofvE958Uq3Lw3Q,Éxito Financiero — Finanzas Personales Y Educación,1,1,616,0,0,0,0.050325,,,,,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCkJEpR7JmS36tajD34Gp4VA,Psych2Go,1,1,509,0,0,0,0.074656,,,,,1,0,0
-2026-05-21T12:28:40.492262+00:00,UC3gWLlG7mTnOS5KW9aM9fZQ,Roier,1,1,3047,0,0,0,0.1362,,,,,1,0,0
-2026-05-21T12:28:40.492262+00:00,UCwIWAbIeu0xI0ReKWOcw3eg,Unspeakable,1,1,15257,0,0,0,0.048437,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCX6OQ3DkcsbYNE6H8uQQuVA,MrBeast,4,0,438358263,60104745,417383,5796,0.01363,12390174,QAkEMtJpq3c,"Hit The Button, Win $1,000",30713102,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCGmnsW623G1r-Chmo5RB4Yw,KSI,4,0,74275845,9779453,179607,467,0.021594,1037293,A_TI_Wct288,"$1 vs $50,000 Katana",7658687,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCK8sQmJBp8GCxrOtXWBpyEA,Google,8,0,8455206,6592791,1573,62,0.021361,10795,uW4B6ziQqvY,What is Gemini Omni?,6523153,7,1,0
+2026-05-22T12:02:39.617608+00:00,UCrPseYLGpNygVi34QpGNqpA,Ludwig,10,1,16447319,2827152,86247,184,0.028328,43237,_iQKpZvj7UQ,Maybe I shouldn't have lied to him...,2034465,10,0,0
+2026-05-22T12:02:39.617608+00:00,UCQHX6ViZmPsWiYSFAyS0a3Q,GothamChess,31,1,62295533,3850831,111994,915,0.028327,38503,0YW_Sct6bZM,VAR replay,1249753,31,0,0
+2026-05-22T12:02:39.617608+00:00,UCWsDFcIhY2DBi3GB5uykGXA,IShowSpeed,3,0,18838027,1436616,55999,439,0.04005,280568,KHooqK3Hijs,iShowSpeed vs Jamal Jump Challenge,1109520,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCvCfpQXRXdJdL07pzTIA6Cw,Kai Cenat Live,22,2,57103558,3079327,56276,171,0.022179,52479.5,t5BxJhllmi4,Fanum Can't Get Over How Tall Kai Cenat Is 😭,751544,22,0,0
+2026-05-22T12:02:39.617608+00:00,UCE_M8A5yxnLfW0KghEeajjw,Apple,7,0,6104115,1452920,1509,0,0.014498,134345,jQK-S-HyHgc,Watch Annie Choi turn her sketch into a fashion film,664312,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCRijo3ddMTht_IHyNSNXpNQ,Dude Perfect,2,0,32616297,608356,6799,13,0.014937,304178,fp77qbUJJbQ,"Break The Glass, YOU LOSE",570990,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCWBWgCD4oAqT3hUeq40SCUw,Sambucha,64,2,105273534,2767629,83587,774,0.046707,7205,gNwzZxHjEOs,I Tried Anti-Scream Devices,569262,64,0,0
+2026-05-22T12:02:39.617608+00:00,UC415bOPUcGSamy543abLmRA,Cleo Abram,18,1,64312243,1895271,65212,436,0.044079,58050,Qqwn4rzZ-Dk,Is There Life on Venus?,532554,16,2,0
+2026-05-22T12:02:39.617608+00:00,UC_x5XG1OV2P6uZZ5FSM9Ttw,Google for Developers,7,0,6412270,1491104,1843,8,0.009241,317433,s7ssP0U7QkQ,What’s new in Android (Google I/O 2026 recap),428058,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCY1kMZp36IQSyNx_9h4mpCg,Mark Rober,2,0,22811511,509652,5394,2,0.01955,254826,NnvIwG0S8WE,Tennis Ball Cannon vs Human Strength,427512,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC36xmz34q02JYaZYKrMwXng,Nate Gentile,6,0,2810731,435859,12569,248,0.028444,6473.5,ImKo5rVlFfI,"🤖: ""Quiero más RAM.""",411698,6,0,0
+2026-05-22T12:02:39.617608+00:00,UCTv-XvfzLX3i4IGWAm4sbmA,LALIGA EA SPORTS,85,4,7829472,555742,2984,35,0.031483,178,i4egKreJdd0,Los 3 jugadores españoles con mejor promedio goleador son...,409058,85,0,0
+2026-05-22T12:02:39.617608+00:00,UCLe_q9axMaeTbjN0hy1Z9xA,Caleb Hammer,91,3,134755267,2366146,70253,1648,0.028657,5894.5,sUyOBppOtDs,Muslim Husband Wants 3 Wives,365612,91,0,0
+2026-05-22T12:02:39.617608+00:00,UCvgfXK4nTYKudb0rFR6noLA,UFC,53,1,8210773,604588,9614,111,0.01627,950,bN78MvnoNxQ,Carlos Prates KO's Leon Edwards #ufc,340823,49,4,0
+2026-05-22T12:02:39.617608+00:00,UCpEhnqL0y41EpW2TvWAHD7Q,SET India,76,4,3147146,1077771,14835,63,0.008442,3060,_rP6bizVcKw,Anshika-Manraj Ne Gaya 'Koi Mil Gaya' | Indian Idol S16 | #indianidol #musicshow #shorts,326220,62,14,0
+2026-05-22T12:02:39.617608+00:00,UCupvZG-5ko_eiXAupbDfxWw,CNN,136,14,16362451,771831,12973,1652,0.022162,396,V_3edJ3u1O8,Vance won’t rule out compensating Jan. 6 defendants,314497,115,21,0
+2026-05-22T12:02:39.617608+00:00,UCJ5v_MCY6GNUBTO8-D3XoAg,WWE,120,7,57441328,3801637,61122,703,0.027991,4264,cXYZ70M33cE,"With every finisher used, Roman Reigns and Jacob Fatu gave us a #WWEBacklash classic! 🙌",285711,120,0,0
+2026-05-22T12:02:39.617608+00:00,UCbCmjCuTUZos6Inko4u57UQ,Cocomelon - Nursery Rhymes,7,1,7542840,815424,6175,0,0.009606,127810,dGlonEIK7Io,A is for Apple🍎! Learn ABCs with JJ!,269994,7,0,0
+2026-05-22T12:02:39.617608+00:00,UC3IZKseVpdzPSBaWxBxundA,HYBE LABELS,25,0,5766298,708275,20724,299,0.083287,6011,eY2JASSgF-s,LE SSERAFIM (르세라핌) 'BOOMPALA' MV TEASER 2,265167,25,0,0
+2026-05-22T12:02:39.617608+00:00,UCaY_-ksFSQtTGk0y1HA_3YQ,Ibai,2,0,3926309,257535,9231,71,0.069625,128767.5,G-gtlAc65-A,A Roro se le ha ido la cabeza,253479,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC52hytXteCKmuOzMViTK8_w,CdeCiencia,27,1,25469861,457998,12353,80,0.054142,2426,gM1DToU76x4,Misiles conducidos por PALOMAS,242418,27,0,0
+2026-05-22T12:02:39.617608+00:00,UChBEbMKI1eCcejTtmI32UEw,Joshua Weissman,1,0,852655,214475,2455,37,0.015988,214475,JZy3yPf7dkc,Steak Sandwich w/@tomsegura,214475,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCurvRE5fGcdUgCYWgh-BDsg,DAZN Boxing,79,15,8064789,788074,10413,493,0.014586,684,-vhmvlcRTXs,Yes or No with Rico Verhoeven 👀🍿,210920,77,2,0
+2026-05-22T12:02:39.617608+00:00,UCqynl7rdtktKMQESdSBmE-g,Sapnap,2,0,1903512,211893,3441,0,0.038892,105946.5,aEqsCOxrQ3Y,Minecraft Arrow Toss...,209063,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC55-mxUj5Nj3niXFReG44OQ,Platzi,23,1,493599,200592,87,1,0.029407,16,WZ1AGTxFHgU,"Ya párenle a la AI, ¿no? A menos que...",184985,23,0,0
+2026-05-22T12:02:39.617608+00:00,UCK1i2UviaXLUNrZlAFpw_jA,El Reino Infantil,4,1,1288941,215658,1069,0,0.008249,22485,3UW3HIfih5Y,Familia Granja ¿Dónde estás?  #Shorts #LaGranjaDeZenon,184170,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCM-GvgUy0EAZU7ZwXKLarkg,López-Dóriga,37,2,2321164,387073,4384,119,0.029365,445,Wy942KTM4pI,¡Aquí no estás en la casa de la risa! Así la entrevista con Sergio Mayer,172479,37,0,0
+2026-05-22T12:02:39.617608+00:00,UC-cnbLlplnXA4oc7rR21qzg,Lyna,2,0,7305616,271921,2504,49,0.011461,135960.5,u97JbeRu8DU,Cuando le COPIAS el OUTFIT a tu AMIGO en Brookhaven Roblox,160674,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCjiXtODGCCulmhwypZAWSag,Jynxzi,2,0,1690292,181786,6645,40,0.027534,90893,dOl-IZ7uzpY,Jynxzi Gets Trolled By FAN At R6 Major 😂,159994,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCUBIrDsIVzRpKsClMlSlTpQ,BBC News Mundo,20,1,1278631,157336,2249,170,0.02827,394,PMuja9qaKTs,Quiso probar su Tesla Cybertruck en un lago y terminó siendo detenido,134145,18,2,0
+2026-05-22T12:02:39.617608+00:00,UCoGDh1Xa3kUCpok24JN5DKA,enchufetv,9,1,2233240,177582,6966,28,0.049205,6395,qRKYM3C5kAc,Calentamiento Mortal,132414,9,0,0
+2026-05-22T12:02:39.617608+00:00,UCaO6TYtlC8U5ttz62hTrZgg,JYP Entertainment,4,0,1183443,171799,565,9,0.097607,19933,KpUycVAiDSM,ITZY “Motto” M/V TEASER 2,131132,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCi7TVXyvrIwqeS9tfYD8UDA,DjMaRiiO,18,1,3229588,233998,6904,73,0.030937,1399,-Z90xU_jaEg,EL GOLAZO DE KELVIN EN LA FINAL KINGS LEAGUE 😳 #djmariio #kingsleague,113752,18,0,0
+2026-05-22T12:02:39.617608+00:00,UCRzPUBhXUZHclB7B5bURFXw,Eater,2,0,1111745,120386,2433,22,0.027907,60193,v1HaeSCvIXw,It took 2 years to perfect the atta chicken at Ambassadors Clubhouse #shorts,105242,0,2,0
+2026-05-22T12:02:39.617608+00:00,UCcdwLMPsaU2ezNSJU1nFoBQ,Baby Shark - Pinkfong Kids’ Songs & Stories,4,0,1313165,235484,2069,0,0.008083,57554,8CpnQTibL10,Oh weeee #ninimo #orangecat,105066,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCujyjxsq5FZNVnQro51zKSQ,fuslie,11,1,1272619,170207,4556,17,0.025538,2131.5,sttEtFlVpvM,Squeex Fails The Friendship Test,103961,10,1,0
+2026-05-22T12:02:39.617608+00:00,UCUsm-fannqOY02PNN67C0KA,NMás,242,21,3156693,253051,3677,208,0.017807,40,zDpDYPUKnAk,Policía Alerta por Venado “Ebrio” en Francia | N+,94804,199,43,0
+2026-05-22T12:02:39.617608+00:00,UCiWLfSweyRNmLpgEHekhoAg,ESPN,308,42,8717639,480594,5177,370,0.015396,43.5,JrVxk9PZh_s,"No mercy 😂 (via @VVinzetta/X, Erin Bailey Carter)",94264,308,0,0
+2026-05-22T12:02:39.617608+00:00,UCBYyJBCtCvgqA4NwtoPMwpQ,The Wild Project,6,0,2801613,113525,7338,27,0.026825,3953,WgvMTuBZ_34,Las secuelas físicas del boxeo…,92808,6,0,0
+2026-05-22T12:02:39.617608+00:00,UCWJ2lWNubArHWmf3FIHbfcQ,NBA,205,12,18523735,840716,13696,688,0.020799,212,T6kbViiurM0,Stephon Castle with the mean poster 😤,92541,205,0,0
+2026-05-22T12:02:39.617608+00:00,UCXuqSBlHAE6Xw-yeJA0Tunw,Linus Tech Tips,2,0,5830747,100495,2668,17,0.027192,50247.5,9uyS40FPbfs,Dropping the Steam Controller INTENTIONALLY,90546,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCAOtE1V7Ots4DjM8JLlrYgg,Peppa Pig - Official Channel,7,1,1667093,212694,2042,0,0.011494,26161.5,pSlonWJbi2U,George’s Balloon 🎈 #shorts #peppapig,88921,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCUyDOdBWhC1MCxEjC46d-zw,Alex Hormozi,194,2,13423601,478193,11162,76,0.033034,141.5,nZ0flY52BCM,"""How Do I Raise My Prices?""",87518,194,0,0
+2026-05-22T12:02:39.617608+00:00,UCoLrcjPV5PbUrUyXq5mjc_A,MLB,119,7,9074310,426190,5925,100,0.019821,410,P1HnByWNyiI,Shohei Ohtani rounded the bases on one of the weirdest Little League homers you'll see! 😲,71583,119,0,0
+2026-05-22T12:02:39.617608+00:00,UCUP6qv-_EIL0hwTsJaKYnvw,Azteca Noticias,155,15,7032150,261332,5062,537,0.029781,92,UVcbYoaKP34,Momento de tensión en Michoacán: toro cae de una camioneta y provoca alarma entre habitantes,70304,155,0,0
+2026-05-22T12:02:39.617608+00:00,UCoz3Kpu5lv-ALhR4h9bDvcw,shroud,1,0,280391,61656,994,22,0.014897,61656,N6jUOpkMCMg,cache turns me into a DEMON,61656,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCu59yAFE8fM0sVNTipR4edw,Masha and The Bear,4,0,799544,123155,1216,0,0.010759,25559.5,DKi3HiBN3QM,No Paint! 🚱🎨 #Unfriended #MashaAndTheBear #Shorts #mashaandthebear #kids #cartoons #animation,60708,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCgFXm4TI8htWmCyJ6cVPG_A,Toys and Colors,1,0,386948,60241,918,0,0.011306,60241,s97mv7dh-xg,Ben Gets Saved by Spiderman!,60241,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCYQo8CdhXD22qfwUBUw591Q,El Payaso Plim Plim,6,1,1712091,161763,0,0,0,23526,L8FsRxiGg7c,"Soy Un Pequeño Constructor, En Mi Excavadora... ¡Aquí Voy! 👷🎵 #CancionesInfantiles #PlimPlim #Shorts",59692,6,0,0
+2026-05-22T12:02:39.617608+00:00,UCYiGq8XF7YQD00x7wAd62Zg,JuegaGerman,2,1,7436406,58566,1318,14,0.032472,58566,7lCBKAxPsfs,Cosas Que DEBES Buscar En GOOGLE,58566,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCpcTrCXblq78GZrTUTLWeBw,FIFA,41,2,1970614,128583,1695,32,0.029725,707,90snEm7abe0,When Pogba Scored In The FIFA World Cup Final #shorts #france #pogba,54809,39,2,0
+2026-05-22T12:02:39.617608+00:00,UCBJycsmduvYEL83R_U4JriQ,Marques Brownlee,1,0,2304635,53950,1232,18,0.029688,53950,VIE2Ri2DQJg,Why Fitbit Air Could Be Huge,53950,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCzYfz8uibvnB7Yc1LjePi4g,Aphmau,6,0,3778310,137390,2369,65,0.03001,18532,I8poL_Uxv8I,QUICK! HIDE!... Tutorial (Part 3),53011,6,0,0
+2026-05-22T12:02:39.617608+00:00,UC16niRr50-MSBwiO3YDb3RA,BBC News,124,9,7512729,267178,2322,235,0.013685,206,k-uwHunGzpM,How do Trump and Putin's China visits compare? Russia #China #US #News #BBCNews,51845,124,0,0
+2026-05-22T12:02:39.617608+00:00,UCTrQ7HXWRRxr7OsOtodr2_w,Channel 4 News,71,7,1499113,146341,1197,626,0.0144,104.5,JR2gjpDPcm4,‘Not very British’ - Chancellor responds to heckler,47653,71,0,0
+2026-05-22T12:02:39.617608+00:00,UC2xjgvWb9cx5F637XjsUNxw,toycantando,5,0,606402,104551,839,0,0.00943,14693,jEBrYu09ta8,Mariposita 🦋 estaba en la cocina 💃🏼,47028,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCOWFKaCN-rzmYk502JFWnqg,Eze Martínez,9,1,21061410,111093,4030,71,0.058845,7491.5,vmRbevilfpU,Números de la suerte 🍀,41720,9,0,0
+2026-05-22T12:02:39.617608+00:00,UCuFFtHWoLl5fauMMD5Ww2jA,CBC News,8,1,698512,56899,811,0,0.014401,349,InDbkyr7qug,Carney responds to U.S. walking away from defence board with Canada,38038,8,0,0
+2026-05-22T12:02:39.617608+00:00,UCq-Fj5jknLsUf-MWSy4_brA,T-Series,21,2,2076172,94073,1207,13,0.011309,1132,ybiXjkFVFcY,PEDDI: Ram Charan's Iconic Step😍✨- Chikiri Chikiri | Janhvi Kapoor | #YTShortsIndia,35671,21,0,0
+2026-05-22T12:02:39.617608+00:00,UCH3h4jRKn3lJo0uORqqESPg,Acenix,2,0,302531,45779,1601,87,0.041457,22889.5,ly36dHSv67k,Cuando estas enfermo y extrañas no estarlo,34818,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCKAqou7V9FAWXpZd9xtOg3Q,Little Baby Bum - Nursery Rhymes & Kids Songs,7,0,1086785,126111,622,0,0.005977,18873,ZrgPEkB1534,We Found A Lion! 🦁🏹 #LBB #Short #Lion,34313,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCBi2mrWuNuyYy4gbM6fU18Q,ABC News,64,7,1985785,107831,1131,178,0.017472,320,kGK8-g4iZLw,Texas man faces charges after driving Tesla Cybertruck into lake,34133,64,0,0
+2026-05-22T12:02:39.617608+00:00,UCYLNGLIzMhRTi6ZOLjAPSmw,Shakira,1,0,149074,32680,985,26,0.051256,32680,QiTWdB3WNC0,@fifa World Cup vibes 🐺⚽️,32680,1,0,0
+2026-05-22T12:02:39.617608+00:00,UChqUTb7kYRX8-EiaN3XFrSQ,Reuters,261,22,2155287,141848,1729,349,0.020058,30,WnZdJSl_6qg,"Fire guts 1,200-year-old Japanese temple for sacred 'eternal flame'",31071,261,0,0
+2026-05-22T12:02:39.617608+00:00,UCV6KDgJskWaEckne5aPA0aQ,Graham Stephan,9,1,553035,42021,948,14,0.017658,1537,y6qdHjPPMqc,Togi ROASTS Graham Stephan 🤣,30291,9,0,0
+2026-05-22T12:02:39.617608+00:00,UCz8QaiQxApLq8sLNcszYyJw,Firstpost,129,21,3074657,169427,1376,116,0.009735,220,8XfB9WzomJo,‘Need More Sambandh’ Iceland PM Praises PM Modi’s Hindi Word | Subscribe to Firstpost,30061,129,0,0
+2026-05-22T12:02:39.617608+00:00,UClHVl2N3jPEbkNJVx-ItQIQ,HealthyGamerGG,18,2,1473453,102413,3771,157,0.047808,1782.5,8OJ1BlqSLFU,The Biggest Risk For Cheating,29778,6,12,0
+2026-05-22T12:02:39.617608+00:00,UCTHaNTsP7hsVgBxARZTuajw,LUZU TV,67,7,2335623,173879,4450,70,0.024819,125.5,hrhGmoT5SIE,Papaaaaaaaaaaa #Aqn #antesquenadie #luzutv,29452,67,0,0
+2026-05-22T12:02:39.617608+00:00,UC4PooiX37Pld1T8J5SYT-SQ,Good Mythical Morning,5,1,1055671,44003,1115,9,0.027263,6820,_bQ_-bCrFj4,"Dear Diary, Rhett loves butter spaghetti",28121,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCGXbLrVe8vnkiFv7q2vYv3w,El Mundo,371,33,3449486,204412,2931,650,0.016786,23,08vAEVFBB7s,Aldama declara que Zapatero empleaba teléfonos desechables como los de la trama de las mascarillas,27716,359,12,0
+2026-05-22T12:02:39.617608+00:00,UC3tNpTOHsTnkmbwztCs30sA,Northernlion,1,0,1046659,25322,710,6,0.030949,25322,Z1MoI-YdUOA,they cooked me with this one,25322,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC5PYHgAzJ1wLEidB58SK6Xw,Blippi - Educational Videos for Kids,8,1,1007450,128098,924,0,0.010664,19095,Okv6wTeo-5E,Blippi Helps his Sad Puppy 🐶 🦴find BONES with his Excavator!,24383,8,0,0
+2026-05-22T12:02:39.617608+00:00,UCNye-wNBqNL5ZzHSJj3l8Bg,Al Jazeera English,134,7,2858011,138343,4944,556,0.047409,84,c1nkFsiGP4Y,Ben Gvir sparks outrage over video taunting abducted activists | AJ #shorts,24155,75,59,0
+2026-05-22T12:02:39.617608+00:00,UCJHA_jMfCvEnv-3kRjTCQXw,Binging with Babish,4,1,378797,26706,398,4,0.020887,2582,yceaDonIVEs,The iconic pasta all'amatriciana from Eat Pray Love,23358,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCTl3QQTvqHFjurroKxexy2Q,Olympics,37,4,2566890,95052,1157,24,0.017892,535,5ORoZzU9ZF8,How many tries did it take? BE HONEST 👀 🫵 (Admin got it after four attempts... 😆),22776,37,0,0
+2026-05-22T12:02:39.617608+00:00,UCwd8Byi93KbnsYmCcKLExvQ,Negocios TV,136,22,2900511,174856,3040,123,0.019813,178.5,7GXMpV77Egk,ÚLTIMA HORA | ¿Sin dinero para la guerra? Filtran cuándo podría EEUU colapsar militarmente ante Irán,21825,109,27,0
+2026-05-22T12:02:39.617608+00:00,UC9CoOnJkIBMdeijd9qYoT_g,Ariana Grande,2,0,367958,43221,5154,91,0.18438,21610.5,CmJaEi7orQ4,"May 18, 2026",21635,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCCEmjNPpJYhGDgaEqeeA4HA,TheGrefg,4,0,1199022,24928,879,20,0.031912,1317,Az7HwLCX_2o,?????,21108,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCnsvJeZO4RigQ898WdDNoBw,EL PAÍS,177,17,1576755,91572,1131,103,0.022271,26,COFXbLofKZ8,Récord de ascensiones al MONTE EVEREST en un mismo día por la ruta nepalí #shorts,20870,96,81,0
+2026-05-22T12:02:39.617608+00:00,UC3IEYr87JpgBeVbbc0gP9DA,Irene Albacete,2,0,216581,30346,1397,58,0.066396,15173,Iq1KIId4Xww,Necesitas reconocer lo lejos que has llegado.,20710,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCUe6ZpY6TJ0no8jI4l2iLxw,Nick Jr.,4,1,155127,37644,623,0,0.017528,13416,yL_IybiFmNU,MEET THE TEENY MUTANT NINJA TURTLES! | New Original TMNT Series | Premieres July 24th,20698,4,0,0
+2026-05-22T12:02:39.617608+00:00,UC8p1vwvWtl6T73JiExfWs1g,CBS News,35,6,892313,37698,298,139,0.01179,54,oPsdfz0O_7k,JD Vance defends the Trump administration’s proposed DOJ “anti-weaponization fund” #shorts,19920,15,20,0
+2026-05-22T12:02:39.617608+00:00,UC4YImPQT-_0kCh5joATwyhw,Blippi en Español,3,1,142993,24714,145,0,0.008279,12357,EdBDy7csgQQ,A Blippi le gusta construir 🚧👷 #Videoseducativos #Blippi #Construcción,18343,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCdNnEDbRWhanA1O8zhCn3ZA,Omar - Educación Financiera,15,1,658262,30451,807,21,0.042112,907,yIxDwpxwf5k,Ahorrar intereses en crédito hipotecario #shorts #credito #hipoteca,18343,6,9,0
+2026-05-22T12:02:39.617608+00:00,UCafNntv_qTQB26AvbEQNHPw,Aristegui Noticias,59,3,3739501,69641,1237,95,0.026559,174.5,KHPFfItKi2E,¿García Harfuch se negó a vincular a político detenido con Morena?,18145,59,0,0
+2026-05-22T12:02:39.617608+00:00,UCTkXRDQl0luXxVQrRQvWS6w,Dream,1,0,1049116,17264,744,18,0.0555,17264,G9I2qfuXIIg,Peaceful Mode...,17264,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCIRYBXDze5krPDzAEOxFGVA,Guardian News,12,2,171259,24387,144,71,0.0135,312,MCS3qEU7knE,Buddhist hall housing 'eternal flame' in Japan destroyed by fire,16330,12,0,0
+2026-05-22T12:02:39.617608+00:00,UClLLRs_mFTsNT5U-DqTYAGg,La Vanguardia,87,9,550591,48709,623,125,0.02108,18,Gl1Y694od0c,La fiesta privada del Barça se convierte en una emotiva despedida a Lewandowski,15693,87,0,0
+2026-05-22T12:02:39.617608+00:00,UCkJEpR7JmS36tajD34Gp4VA,Psych2Go,1,0,15695,15186,743,47,0.052756,15186,qzsdeNEMtFw,Why You Can't Stop Overthinking (Let's Figure It Out Together),15186,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC-2hhqBG5Su7s91_HmhaODQ,Fox Deportes,109,12,563762,22013,234,4,0.014321,4,M2BJaVKEiOc,CRUZ AZUL VS PUMAS. 🚂🐾🏆 ¿Habrá sorpresas en la final de ida? #PuntoFinal,14943,109,0,0
+2026-05-22T12:02:39.617608+00:00,UCknLrEdhRCp1aegoMqRaCZg,DW News,30,3,527200,31782,939,63,0.022046,117,GoLB3bdNmOs,Massive meth lab bust in Nigeria | DW News,14676,30,0,0
+2026-05-22T12:02:39.617608+00:00,UCoookXUzPciGrEZEXmh4Jjg,Sesame Street,2,1,119067,14451,139,0,0.013497,14451,mpCvxdi-cKM,Do the Rock Rock Rock Rock Rocco and Roll! 🎸 #sesamestreet,14451,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCtwslQPB_xJfaFuZv0OETNw,Kings League Spain,74,1,922900,47642,662,6,0.023106,66,f_VISZWPXBA,DjMaRiiO se vuelve loco con la actuación de Esther Solà. #QueensLeague,14104,74,0,0
+2026-05-22T12:02:39.617608+00:00,UCWxlUwW9BgGISaakjGM37aw,Valkyrae,5,1,713417,22533,531,0,0.036059,3584,0rsfEoiDcZU,Rae Finds The Edge Of The Subnautica 2 Map..,13999,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCtoaZpBnrd0lhycxYJ4MNOQ,HasanAbi,2,1,758996,13993,645,9,0.036255,13993,Kl6kNj8smiM,Gabor Maté on Zohran Mamdani,13993,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCYVinkwSX7szARULgYpvhLw,Ali-A,10,1,651969,31129,615,1,0.024142,1239,HCZSj22F734,This MISTAKE Cost Him Millions💰 ❌,13346,10,0,0
+2026-05-22T12:02:39.617608+00:00,UCeY0bbntWzzVIaj2z3QigXg,NBC News,151,20,2185845,122356,1485,106,0.012404,89,QyW0t8Ild0g,Vulnerable iguanas seized at an airport in Ecuador,13191,151,0,0
+2026-05-22T12:02:39.617608+00:00,UCFxHplbcoJK9m70c4VyTIxg,MILENIO,86,12,1098918,56298,703,65,0.015099,121,kE4tabx8nb4,¿Cómo influyó la estrategia de seguridad de Calderón en la relación México-Estados Unidos?,13085,83,3,0
+2026-05-22T12:02:39.617608+00:00,UC0QHWhjbe5fGJEPz3sVb6nw,Doctor Mike,1,0,2166142,12709,444,12,0.044548,12709,xskMnb6Z9kY,The Problem With Donating A Kidney,12709,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCsN32BtMd0IoByjJRNF12cw,60 Minutes,53,1,788562,31522,639,54,0.018991,74,JUgPbv7iQY4,$800 million oil bet raises insider trading questions #shorts,12173,21,32,0
+2026-05-22T12:02:39.617608+00:00,UCGy7SkBjcIAgTiwkXEtPnYg,Andrei Jikh,3,0,71417,19188,383,13,0.023612,4859,1nJ3Drn18BY,Palantir Is Building the World’s Data Grid,11861,3,0,0
+2026-05-22T12:02:39.617608+00:00,UC4NALVCmcmL5ntpV0thoH6w,LooLoo Kids - Nursery Rhymes and Children's Songs,1,0,236859,11569,125,0,0.008359,11569,OSH4jRJWVYs,Surprise Eggs with Yummy Fruits! 🍎🌈 Fun for Kids,11569,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCY30JRSgfhYXA6i6xX1erWg,Smosh,3,0,354725,15373,544,0,0.050428,3053,4pfGAqt2A1U,Dude...WHAT??,10942,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCPdaxSov0mgwh77JvjQO2jQ,Man Carrying Thing,5,0,1378779,29705,1988,136,0.092929,6847,akqLWdf8nVc,what watching shorts on desktop feels like.,10846,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCey-eDTR5J6xU6pZ2f4guoA,Adin Live,11,1,727875,32394,886,9,0.029797,1530.5,9HIjvL9dZYs,he really hates Drake 😳😳😳😳 #adinross #drake #bobmenery #johnnymanziel,10821,11,0,0
+2026-05-22T12:02:39.617608+00:00,UCF0L4jd9LcSIxsj5gKITMqQ,Jaime Higuera,307,9,3781300,89672,6221,105,0.079391,2,Hp8JePBP5QQ,La lealtad es más potente que el amor #shorts,9809,269,38,0
+2026-05-22T12:02:39.617608+00:00,UCoMdktPbSTixAyNGwb-UYkQ,Sky News,28,1,810594,17677,102,28,0.01077,89,q-gM6j5lczY,RAF aircraft dangerously intercepted by Russian jets,9678,23,5,0
+2026-05-22T12:02:39.617608+00:00,UCoOae5nYA7VqaXzerajD0lg,Ali Abdaal,15,1,584667,22841,470,7,0.029461,246,duDgVfn1lCk,Rating self-help & productivity books,9115,15,0,0
+2026-05-22T12:02:39.617608+00:00,UCM55RjebjSevVWPnj2LEymw,viyaura,14,1,2231822,29780,984,33,0.058869,1099,mo-wTwstyu4,Roblox Speed Draw but... #art #artist #draw #drawing,9038,14,0,0
+2026-05-22T12:02:39.617608+00:00,UCVzLLZkDuFGAE2BGdBuBNBg,Bluey - Official Channel,1,0,111695,9011,153,0,0.016151,9011,uvvc3AlsV4Q,Unicorse LOVES heavy metal!🎸🦄🤘| Bluey,9011,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCDVYQ4Zhbm3S2dlz7P1GBDg,NFL,7,1,258125,22360,420,14,0.020224,2818,6mawH6kI3u8,Last season for 8️⃣🖤,9008,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCLXo7UDZvByw2ixzpQCufnA,Vox,3,0,144845,9159,514,6,0.038183,199,cf48eRXPRYE,The Republican party and psychedelics,8899,1,2,0
+2026-05-22T12:02:39.617608+00:00,UCTJXx9onKH6g4cWHS9pLqsQ,El HuffPost,19,0,268690,11665,465,44,0.026213,41,BoLko7pEusk,Euprepio Padula se fija en lo que dicen del juez que ha imputado a Zapatero y repara en un detalle,8466,19,0,0
+2026-05-22T12:02:39.617608+00:00,UCcgVECVN4OKV6DH1jLkqmcA,Jake Paul,7,0,1357016,32824,656,10,0.021837,4362,irsWejGXJEk,It’s everyday bro,8441,7,0,0
+2026-05-22T12:02:39.617608+00:00,UChGJGhZ9SOOHvBB0Y4DOO_w,Ryan's World,13,2,797045,47504,343,0,0.008327,3336,IpExNoQRfqs,Emma and Mommy Play Viral Fishing Game!,7844,13,0,0
+2026-05-22T12:02:39.617608+00:00,UCGq-a57w-aPwyi3pW7XLiHw,The Diary Of A CEO,3,0,495939,11149,125,6,0.018885,3066,aJVHah_EAUs,MEN STRUGGLE WITH THIS,7690,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCfyehHM_eo4g5JUyWmms2LA,Sorted Food,4,1,170692,8193,113,2,0.02066,566,qpWF7JaHIbM,Epic Toaster Challenge - 350 Slices of Toast!,7618,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCcHtke0raf8vNYLM1Hbq3Jw,Imagen Noticias,147,23,663356,39480,1405,53,0.015813,25.5,i7rw0Yyg1HI,¡Caos por lluvias en la Zona Metropolitana del Valle de México! | #Shorts | Nacho Lozano,7609,110,37,0
+2026-05-22T12:02:39.617608+00:00,UC5PwIMtLiIBCBhsu8f_-6UQ,Santiago Bilinkis,10,1,475205,9729,256,7,0.043331,120,IGCKBKoplVE,Subió a un avión con trabajo y aterrizó cancelada mundialmente,7358,10,0,0
+2026-05-22T12:02:39.617608+00:00,UC52X5wxOL_s5yw0dQk7NtgA,Associated Press,186,15,1918892,72921,1054,163,0.02477,51,x07sYDEfGsA,"Mark Fuhrman, former detective convicted of lying at OJ Simpson trial, dies",6894,182,4,0
+2026-05-22T12:02:39.617608+00:00,UC08mnbiC4FykqpHqbEWgFcg,ESPN Deportes,77,9,1355410,32741,633,8,0.02635,41,fdT3ydTr32I,Lamine Yamal se está cuidando para llegar con todo al Mundial 😤⚽️🇪🇸 (Vía @kingsleague_es/ig) #shorts,6435,67,10,0
+2026-05-22T12:02:39.617608+00:00,UC6n8I1UDTKP1IWjQMg6_TwA,The B1M,2,0,87199,6313,101,3,0.024394,3156.5,GDKYXgIvsis,Toronto's $27BN Subway GAMBLE,5947,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCWn_0MmgojB711LFX-jaCDQ,El Rincón Del Dev,11,1,58317,6351,414,3,0.05042,22,UI29x4gJEKI,Resume todos tus proyectos para pasárselos a la IA 👀 #desarrolloweb #programacion,5739,11,0,0
+2026-05-22T12:02:39.617608+00:00,UCwIWAbIeu0xI0ReKWOcw3eg,Unspeakable,1,0,20908,5651,172,8,0.043954,5651,t3ftrRvYO8w,"We used @AdobeFirefly to plan, shoot, and finish this video faster! Check it out! #adobepartner",5651,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCucNB6GOncGkTMB55ZrjYvg,Recetas de Esbieta,3,0,42042,8367,178,4,0.028607,2594,45fcyJEjx1U,Bizcocho de zanahoria #bizcochodezanahoria #bizcocho #zanahoria # #receta #reposteria,5640,3,0,0
+2026-05-22T12:02:39.617608+00:00,UC9vUu4vlIlMC0dHQCTvQPbg,The Money Guy Show,10,1,255619,11892,131,29,0.014646,754,wrp-mZukHrc,Why Job Hopping Keeps Coming Up,5353,10,0,0
+2026-05-22T12:02:39.617608+00:00,UC0C-w0YjGpqDXGB8IHb662A,Ed Sheeran,5,0,1337175,15010,461,38,0.040757,3748,PnDTh-sbFVU,I told Martin if I get 3 pencils in we can release Repeat it for his birthday,5149,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCddn8dUxYdgJz3Qr5mjADtA,NutritionFacts.org,5,0,27779,6112,281,15,0.066418,478,LIrqDNMl4SE,Black Bean Burgers  #dailydozen #healthyfood #easyhealthymeals,4816,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCqLiW00gUvXG0J5vlZZNJ1g,FranqitoM,1,0,913630,4588,195,1,0.059429,4588,U5l0Z8T4tCk,Spotify ?,4588,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCjgl7IsyBNE6bl7d5RnnFXg,Cocina con Coqui,2,1,166727,4495,298,2,0.063899,4495,5DHdqYjVQyY,El Plato de Snack PERFECTO!! 😍,4495,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC9MAhZQQd9egwWCxrwSIsJQ,HISTORY,13,1,172157,11103,132,10,0.023711,241.5,h5J1sGmoSMA,"""Alone: World Championship"" Premieres Wednesday, June 17 on The HISTORY Channel",4337,4,9,0
+2026-05-22T12:02:39.617608+00:00,UCBHcMCGaiJhv-ESTcWGJPcw,NVIDIA Developer,1,0,20204,4188,41,1,0.013413,4188,pUo8RdgtYI0,Jensen Huang on What Makes NVIDIA's Architecture Unique,4188,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCA2tt9GSU2sl8rAqjlLR3mQ,GeorgeNotFound,1,0,803459,4110,125,0,0.042222,4110,XZhtfrppsqo,Minecraft Arrow Toss...,4110,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC2iUwfYi_1FCGGqhOUNx-iA,ScreenRant,7,0,116667,5215,77,7,0.016121,146,KJ2iNF4lAn8,The Batman 2 just got way more interesting after this cast reveal 🦇🎬 #thebatman2,4082,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCMmaBzfCCwZ2KqaBJjkj0fw,Kings and Generals,1,0,82439,3961,97,2,0.032594,3961,9MF9mPaFTn0,Ukraine Under Mongol Control The Forgotten Century #history #ukraine #shorts,3961,0,1,0
+2026-05-22T12:02:39.617608+00:00,UCaVPhFg-Ax873wvhbNitsrQ,El Robot de Platón,9,0,640891,10119,465,15,0.05327,810,gSkkZFzUsBU,La Mentira Más Grande de la Luna,3782,9,0,0
+2026-05-22T12:02:39.617608+00:00,UCq2otJm7A6jGGcGFEks0HVw,Se Regalan Dudas Podcast,7,1,38652,6519,126,3,0.027593,436,sAWPxzrfsz0,Cuando perdí mis piernas… el amor me sanó,3664,7,0,0
+2026-05-22T12:02:39.617608+00:00,UC52kszkc08-acFOuogFl5jw,Tibees,4,1,114191,4078,224,16,0.079076,385,ms2TUal9xmI,New book alert 🚨,3523,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCYUQQgogVeQY8cMQamhHJcg,CinemaSins,14,2,348832,7283,200,13,0.013899,76,oM5A-h0jaIQ,Can Hollywood turn a video game into a good movie? #doom #cinemasins,3417,14,0,0
+2026-05-22T12:02:39.617608+00:00,UCrsyfsHNdpB5U_FHENCuB2A,El Cubil de Peter,1,0,85413,3247,69,0,0.029995,3247,jZVixFS9WlM,Encuentran DIENTE de NEANDERTAL que deja DESCONCERTADOS a los arqueologos #shorts,3247,0,1,0
+2026-05-22T12:02:39.617608+00:00,UC1viRct91s1a3Z5yvk7FJXw,Diego Ruzzarin,1,0,323683,3203,153,6,0.07068,3203,ArA_8v8LTfY,"hay una CRISIS en China, ¡todo mundo tiene casa propia!",3203,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC4JX40jDee_tINbkjycV4Sg,Tech With Tim,15,1,170241,6144,320,2,0.038197,58.5,9_Pu40iSas0,Every great AI engineer is a software engineer first 💻,3146,14,1,0
+2026-05-22T12:02:39.617608+00:00,UCHhYXsLBEVVnbvsq57n1MTQ,The AI Advantage,3,1,25874,3497,60,0,0.018223,1748.5,bYyU7tpuVmY,Claude Code Agent View Explained,2959,3,0,0
+2026-05-22T12:02:39.617608+00:00,UC6ZFN9Tx6xh-skXCuRHCDpQ,PBS NewsHour,20,2,218652,4279,418,0,0.023433,38,xsZFnUxqpjQ,Judge bars ICE arrests at New York City immigration courts,2959,18,2,0
+2026-05-22T12:02:39.617608+00:00,UCvksjnr7kInzcIjMpJpqF2A,Little Angel: Nursery Rhymes & Kids Songs,3,0,67737,5208,27,0,0.006049,1308,RdWzJ2MM6yo,Baby John Soccer Paper Crafting ⚽✂️ #littleangel,2883,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCHnyfMqiRRG1u-2MsSQLbXA,Veritasium,1,0,1092832,2747,49,0,0.020112,2747,iRach9lpIlg,Wombats Poop Cubes,2747,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC7DdEm33SyaTDtWYGO2CwdA,Physics Girl,2,0,1672526,3309,73,0,0.035541,1654.5,4s9LuOSR3Q4,What would happen if the Sun dissapeared?,2614,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCP15FVAA2UL-QOcGhy7-ezA,EDteam,7,1,130716,2537,75,0,0.055669,30.5,Rzj58_gC25s,FDE: el nuevo programador para la era de la IA,2336,4,3,0
+2026-05-22T12:02:39.617608+00:00,UCwd_qoS94df5orGoPLPnsxQ,Franco Pisso,10,1,313847,8079,484,6,0.06421,692,DVksAVsBzlc,"Si te molesta como a mí, poné el límite.",2154,10,0,0
+2026-05-22T12:02:39.617608+00:00,UCPQ2dheMajZPnIleYZHzblg,Pablo Gil Trader,4,0,51116,3217,53,0,0.025601,518.5,hFbKN-PWjjI,¿Por qué es TAN INTERESANTE el Bitcoin?,2111,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCiMhD4jzUqG-IgPzUmmytRQ,Queen Official,5,1,268521,4458,262,20,0.068761,980.5,rpLw85zyu4I,"You can only save one song from Hot Space, which ones are you letting go? 😬 #queen",2101,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCmE44gpkHmf5bKIVTPSwxnQ,Judith Tiral,4,0,73566,2119,29,1,0.024537,64.5,ipIOj3KS3JU,¿CLASES de PARTO estando EMBARAZADO?,1938,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCxFACDJ98idvo9Gq9M9AQgg,Moris Dieck | Finanzas e Inversiones ,5,0,31462,1958,75,2,0.038263,7,Bk-kfubu_d0,¿El sistema educativo se queda atrás?,1876,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCX16cLWl6dCjlZMgUBxgGkA,CuriosaMente,2,1,125791,1772,141,1,0.1311,1772,GhfJPapoAXQ,¿Justicia medieval?,1772,0,2,0
+2026-05-22T12:02:39.617608+00:00,UCmObdAaNbtVVR1OkKUsdgqg,Las Recetas de MJ,3,1,62622,2424,72,0,0.040721,1212,_LCW_N8FwJg,10 comidas típicas de Irlanda #shorts,1738,1,2,0
+2026-05-22T12:02:39.617608+00:00,UCB34YbuG6ThXJzJsDAII5Dw,math2me,4,1,13063,1576,96,1,0.026515,16,IAzrBhNOARY,Binomio al cuadrado geométricamente #matematicas,1551,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCFJJziTVsiIVSyRKvXHX37g,Canticos - Bilingual Nursery Rhymes & Kids Songs,8,0,55169,6205,54,0,0.00846,608,3KH3_IDAFvw,Five Senses 🖐️👂👃🧠👀 Sensory Song @canticosworld #shortsforkids,1522,8,0,0
+2026-05-22T12:02:39.617608+00:00,UCQX_MZRCaluNKxkywkLEgfA,Date un Vlog,5,0,2825315,4955,214,5,0.051896,1023,SRq2k75uLVo,Trump desclasifica informes del FBI sobre... extraterrestres,1499,0,5,0
+2026-05-22T12:02:39.617608+00:00,UCl5-lvQyfILb-l2abPk4Ntg,Inteligencia Artificial,84,2,881539,5205,119,3,0.028233,7,wzOhP-YtO38,👉🏻 Te dejo el link para apuntarte al Curso GRATIS de IA fijado en los comentarios de este vídeo.,1373,84,0,0
+2026-05-22T12:02:39.617608+00:00,UCEK0oX3X2yK9y27khCsrNKg,Mis Propias Finanzas,24,1,65530,3800,115,-8,0.038342,9,Cpr-UTaCPIY,¡Hoy es el día! 🚨,1142,24,0,0
+2026-05-22T12:02:39.617608+00:00,UCP7jMXSY2xbc3KCAE0MHQ-A,Google DeepMind,1,0,11376,1114,29,1,0.039557,1114,AEH6dBOnE_U,This is Gemini Omni ♾️ #GoogleIO,1114,1,0,0
+2026-05-22T12:02:39.617608+00:00,UChl76B7zqfMcNzfMi9vJruw,Mizkif,1,0,5196,1092,10,5,0.015012,1092,bmfQsc0ZOCQ,Do this to become a billionaire #mizkif #investing,1092,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCeiYXex_fwgYDonaTcSIk6w,MinuteEarth,1,0,16008,984,1,0,0.04935,984,CpK4PxPOITQ,These bioluminescent creatures are giving ✨glow✨,984,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCok_yhjwg4WSx3s_2Yh8ZjQ,Topes de Gama,5,0,135474,1574,62,1,0.070134,83,nxmAuqCYUBw,¿iPhone con Android o Samsung con iOS? El dilema que rompería el mercado,971,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCzR-rom72PHN9Zg7RML9EbA,PBS Eons,2,0,155369,1115,38,0,0.037667,557.5,Re9uBHP_Aqo,Did this ancient mole go on an adventure?,946,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCoXtmmnLCbXDiSo8GxsmOzA,La gata de Schrödinger,1,0,84927,928,28,4,0.040081,928,EJBfmLrc-iw,¿Esto es lo que ven los niños ahora?,928,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCzKnSeOq30zVvgosDFlne5g,Finect - Invertir mejor,10,1,14522,2157,31,0,0.017165,59,UIuB4N9Sby8,¡Evita este ERROR de INVERSIÓN en CARTERAS CONSERVADORAS ❌📈 | Finect,889,10,0,0
+2026-05-22T12:02:39.617608+00:00,UC6RTPEfYFMcb0-HLLMEpLdw,Caja de Peliculas,1,0,15982,839,39,2,0.065323,839,SdCa5nTCtxw,Le PAGARON por CADA PIQUETE de ABEJA 🐝💸 #Shorts #Viral #Peliculas #Terror #Datos,839,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,9,0,56178,1769,21,0,0.010774,50,1SKV4B_WPkg,Why did the dev go broke?,775,9,0,0
+2026-05-22T12:02:39.617608+00:00,UC5rJaxmE3UyVz59OGxbPdAg,Noticias Robotitus ,1,0,149250,767,36,1,0.041327,767,BdOfmPe3j1s,Científicos Crean Engranajes Líquidos que Giran sin Contacto 🤯￼,767,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCvQECJukTDE2i6aCoMnS-Vg,Big Think,1,0,14099,762,19,0,0.027449,762,xitFlW5HhLM,How do I know if I have childhood trauma? | Nicole Lepera,762,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC3gWLlG7mTnOS5KW9aM9fZQ,Roier,1,0,3765,718,94,0,0.135193,718,z6w1FF4-Vho,Por qué los pingüinos NO deberían volar?...,718,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCEQXxiYxNZbym9Fad7-n2Lg,Doctor Fisión,4,0,179737,1074,36,1,0.063922,159,jFZPpkVszCg,ESTE ES EL MAPA 3D MÁS GRANDE DEL UNIVERSO 🌌,714,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCXZCJLdBC09xxGZ6gcdrc6A,OpenAI,5,2,57138,981,27,1,0.030765,158,_BY9YTTh6kE,Kunal vs Motorcycle | With ChatGPT,708,5,0,0
+2026-05-22T12:02:39.617608+00:00,UC30ajuhy8cViP2DiM1QLjmg,98grados,6,0,101972,718,62,3,0.073242,1.5,jMYbCJxA-x0,He automatizado mi trabajo. Es un camino de ida #ia #claude #make #ai,701,6,0,0
+2026-05-22T12:02:39.617608+00:00,UCtT7zEoC9-HNyLYb8cYWoww,Ale Marin,62,12,141007,2733,90,3,0.032086,5,nTmzrL56GyQ,IBAI hace los mejores regalos 👀,684,60,2,0
+2026-05-22T12:02:39.617608+00:00,UCEAZeUIeJs0IjQiqTCdVSIg,Yahoo Finance,32,5,352043,3629,43,5,0.014036,23,9FK2KoUtFek,Nvidia is still not including China in its revenue outlook.,681,32,0,0
+2026-05-22T12:02:39.617608+00:00,UCDK9qD5DAQML-pzrtA7A4oA,OfflineTV,2,0,715238,904,148,0,0.029145,452,KEp5oyeS6wA,The ultimate reaction speed test 😎🎈,619,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC9WGON3pXofvE958Uq3Lw3Q,Éxito Financiero — Finanzas Personales Y Educación,2,1,3451,544,18,0,0.046218,544,8uo964Je0T4,¿Qué Tanto Sabes De Inversiones? Pruébalo Aquí (Y Gana $100 USD),544,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC2UXDak6o7rBm23k3Vv5dww,Tina Huang,7,1,138118,1167,28,0,0.030904,148,5GXM6fB1ZV0,Top 1% of AI Users Use This Prompting Framework,533,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCH4BNI0-FOK2dMXoFtViWHw,Be Smart,2,1,194947,525,25,1,0.066458,525,s2XJAOs0n4U,What color are these dots?! 🤔,525,0,2,0
+2026-05-22T12:02:39.617608+00:00,UCBVjMGOIkavEAhyqpxJ73Dw,Maroon 5,1,0,22103,524,9,1,0.034158,524,FshjwEAJk88,Need tour right now…🎥 @bootswallace,524,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC9mrBfjgyOsqJ0J-zw7kZLQ,Atherion,12,0,65031,1218,104,1,0.088575,29,TUUUOn3X7yQ,¿cuántas veces al día ves a esos pequeños “flotantes”?,509,12,0,0
+2026-05-22T12:02:39.617608+00:00,UCcAd5Np7fO8SeejB1FVKcYw,Best Ever Food Review Show,1,0,43147,506,6,1,0.018101,506,SOwAtRoJyAc,BEFRS Won A Webby Award!! 🏆,506,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCeLHszkByNZtPKcaVXOCOQQ,Post Malone,1,0,50640,506,20,5,0.055569,506,c9m0zR0_h4k,I’m heading to Nashville on June 30th and I want to bring one of you with me 🍻 meetpostmalone.com,506,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCHMSzZaVrEjK35aYK3J7Htw,Pequeño Cerdo Capitalista,7,0,27638,514,28,4,0.047445,3,9k1kCrLQDG0,Evita estos desastres financieros antes de que sea tarde 📉 #finanzaspersonales #shorts,496,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCEf_Bc-KVd7onSeifS3py9g,SMTOWN,1,0,52311,478,35,1,0.150389,478,294X5o83_Ic,TAEYONG 태용 'WYLD' MV Teaser,478,1,0,0
+2026-05-22T12:02:39.617608+00:00,UChhw6DlKKTQ9mYSpTfXUYqA,Starter Story,7,0,169392,1116,33,0,0.024597,68,K5yJobNciYQ,"To the outside world, it's really boring... But it makes $60K a month 😳",464,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCv85NiROLKddHa0fBATwTzw,Victor Robles WEB,4,0,24616,583,3,0,0.013419,69.5,H2lWa_kj-z4,Dentro de un repositorio de Github #desarrolloweb #programar #github #copilot,438,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCUXLlsi8mQeP0TvGbmSn8iw,Sopitas,4,0,11408,511,21,0,0.033646,41,oWNo9nE0dao,"Sopitas FC: futbol, Mundial y pasión sin filtro",427,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCjSVqRtdOsxQDss_pJpp_Yg,COMPUESTOS Podcast,21,1,101529,660,57,1,0.043289,0,ImmxcdpyBUE,Checklist Para Invertir En 2026 📊 #Compuestos #AndresGarza #Cometa #Invertir,341,21,0,0
+2026-05-22T12:02:39.617608+00:00,UCcyq283he07B7_KUX07mmtA,Business Insider,1,0,5956,336,9,-12,0.01276,336,72c_czW-ISM,Ex-OpenAI #researcher warns against the risks of #superintelligence. #AI #FutureTech,336,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCt-k6JwNWHMXDBGm9IYHdsg,J Balvin,1,0,9270,328,14,0,0.028155,328,OI5z9S48LlI,OSCAR MAYDON en la casa #cdmx,328,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCC552Sd-3nyi_tk2BudLUzA,AsapSCIENCE,1,0,56543,295,10,0,0.033903,295,MKL0tk-3UM8,Send this to a dad you know,295,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCMsgXPD3wzzt8RxHJmXH7hQ,Cartoon Network,1,0,11694,271,9,0,0.032666,271,NC_Eo4HEpC0,You know who else can build a hovercraft? 🐦🦝✈️,271,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCLXRGxAzeaLDGaOphqapzmg,codigofacilito,5,1,6032,244,3,0,0.015453,7.5,WNyPFioUjhE,¿Ya conoces las Minimal API en .NET? 💻️,228,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCShHFwKyhcDo3g7hr4f1R8A,World Science Festival,3,0,38862,357,2,2,0.013086,72,bY8RFbMbI4c,"Gary Marcus explains the “Eliza Effect."" #worldsciencefestival #briangreene #garymarcus",226,3,0,0
+2026-05-22T12:02:39.617608+00:00,UCLv7Gzc3VTO6ggFlXY0sOyw,Harvard University,1,0,11592,185,4,0,0.010697,185,00NnpBvip98,Goat Yoga at HMS,185,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC71VTsUKOsh6QEGnzaa2KuQ,Rankia,1,0,5491,170,0,0,0.020943,170,NFHfriGAHo8,"Trade Republic sube al 3,04% TAE",170,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCyJbb85EUgWjl38GcF236Jg,Eva Maria Beristain,2,0,268369,217,5,1,0.026287,108.5,nZ4JI34_Q_g,Bts en México: de quién es culpa que haya sucedido esto?,149,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCvPGx8qh8AkrFZW06tESvaA,Dot Dager,5,0,50570,283,12,0,0.051932,32,vtjFXdFGkBc,DE CHULO AL PROGRAMADOR #dev #programacion,140,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCyM-2pRapEv6V2q7UNO9icg,Emprende Aprendiendo,19,0,1008750,397,11,0,0.02713,5,pwcrn5bdr9c,Se hizo millonaria reinventando la ropa de gimnasio,127,19,0,0
+2026-05-22T12:02:39.617608+00:00,UCYZLVhSSwdBllvn4tw5a4uQ,Rob Paper Sheet,2,0,91407,184,8,0,0.051395,92,-6t20SnbOyc,"Un buen clasista no es aquel que juzga, es que el describe la realidad.",124,2,0,0
+2026-05-22T12:02:39.617608+00:00,UCtu2BCnJoFGRBOuIh570QWw,Sodapoppin,1,0,18294,124,1,0,0.013994,124,3COUSQteLGE,Katchii Gives Poor People Advice,124,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCS0lmlVIYVz2qeWlZ_ynIWg,AJ+ Español,5,0,78181,356,26,8,0.10873,58,QdEIhiHbsSY,Conmemoran en México los 78 años de la Nakba,119,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCDOSaJ0pnglwzfkR6fYbisA,Luis Mi Negocios,1,0,76953,96,5,0,0.069952,96,6CyjL4X8e7g,Estas PALABRAS destruyen la MENTALIDAD FINANCIERA de tus HIJOS,96,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC04FyDIvYXNecpbG8gyOw4A,Meta,2,0,6605,180,2,0,0.022296,90,czS85XURnl4,Meta Connect - September 23-24,93,2,0,0
+2026-05-22T12:02:39.617608+00:00,UC4FHiPgS1KXkUMx3dxBUtPg,HolaMundo,7,0,82742,213,1,0,0.040505,22,Ocx5uE7vjIw,¿se puede programar con agentes con 32GB de RAM?,91,7,0,0
+2026-05-22T12:02:39.617608+00:00,UCW39zufHfsuGgpLviKh297Q,DW Documentary,1,0,4890,82,0,0,0.019632,82,5ryzfpKwm18,The impact of color | DW Documentary,82,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCt7k7y_xTkkc1Jeh7cdAjDQ,SinEmbargo Al Aire,1,0,12873,71,2,0,0.069914,71,mm4ASkDweTg,Detienen en EU a exsecretario de Seguridad de Sinaloa,71,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCm5iBOcQ0GET_2FqFI61QDA,Cara Nicole,3,0,27114,96,6,0,0.051876,28,2MInIAO3bFA,Little changes can turn into big savings 💸,58,3,0,0
+2026-05-22T12:02:39.617608+00:00,UC5mQQ4Ur6oA8lsGFkvH2lyg,Noche De Chicxs,9,0,147003,112,1,0,0.029038,7,iY0N2tAyDGU,Te mereces un martillazo #chisme #comedia #podcast,51,9,0,0
+2026-05-22T12:02:39.617608+00:00,UCK7tptUDHh-RYDsdxO1-5QQ,The Wall Street Journal,1,0,13484,49,-1,0,0.01194,49,MrIW-XUFbjo,The Best Way to Pass Down Wealth to Your Kids,49,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCqaOSuXiGdnuoqXBda-XD2A,Canal Once,4,0,5860,56,1,0,0.020895,3.5,8fEH7IlbD3Q,Brasil vs Francia [Francia 1998] - Contrincantes,47,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCsMica-v34Irf9KVTh6xx-g,Microsoft Developer,5,0,6122,135,2,0,0.01708,26,AX4Axl52uBQ,"Official trailer for POSETTE: An Event for Postgres 2026, a free & virtual developer conference",42,5,0,0
+2026-05-22T12:02:39.617608+00:00,UCBBWpss2iXVXtTzl7-4eWbg,Jessica Fernández García,1,0,5876,36,0,0,0.030633,36,sHXJob_Yxmw,Escúchalo completo en Más Allá del Rosa en YouTube,36,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCb8GKeOvI7WsFUkB4UVAeXA,Cordura Artificial,1,0,25177,34,2,0,0.078127,34,0SSctcuOy0o,Mi nuevo lector de E-books #productividad #libros #lectura #tecnologia,34,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCHhfu5p0zydyM-_nw3IJvig,Urban Tecno,1,0,2677,32,0,0,0.035487,32,met02sYUMm8,FitBit Air Unboxing!! 📦,32,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCOvzFyIAr32yspwxx77BHcQ,Rob Paper Clips,1,0,14497,26,1,0,0.052011,26,3skIuC1lP00,"Las mujeres tienen pepino… y están guangas, según esta fan del temach",26,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCtoo4_P6ilCj7jwa4FmA5lQ,Soy Dalto,1,0,11868,24,1,0,0.062521,24,s2NSwy8xraQ,Con ESTO tu vida podria ser MÁS FÁCIL,24,1,0,0
+2026-05-22T12:02:39.617608+00:00,UChXKjLEzAB1K7EZQey7Fm1Q,Pokimane,1,0,32538,17,2,0,0.057902,17,embu3gLFECI,im flying my friends out for my birthday…,17,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCdfnfXWCGkBAx2cN2l-4u2w,Semo Historia,6,0,10997,15,0,0,0.050099,2,ylIZ2D5Td4I,Ciudad Esponja en CDMX  ¿Se está haciendo algo?,5,6,0,0
+2026-05-22T12:02:39.617608+00:00,UCX9NJ471o7Wie1DQe94RVIg,Fazt,2,1,29979,3,0,0,0.04561,3,s23TO2BQBcU,El FIN de la IA barata ya comenzó 🚨,3,1,1,0
+2026-05-22T12:02:39.617608+00:00,UCiqJoWIT-vm-hJoXilFGiUQ,Inversión Inteligente - Alain Cortés,15,0,11748,11,0,0,0.024761,0,bbv1p_j1P8Y,¡Revolut vs Banco Plata! ¿Quién da más rendimiento?,3,15,0,0
+2026-05-22T12:02:39.617608+00:00,UCP7PV59jal4PobLeo5cSG_Q,Santiago Amat,4,0,5650,1,0,0,0.042701,0,sPHe-L95K0o,Estrategia Gaps Tesla,1,4,0,0
+2026-05-22T12:02:39.617608+00:00,UCx2Y_55MBCq3lkc3aOtmAiw,profesor10demates,1,1,1330,0,0,0,0.07594,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC06rPIABrthG0hwLTVhINLA,ElMariana,1,1,11038,0,0,0,0.188712,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCKqH_9mk1waLgBiL2vT5b9g,VanossGaming,1,1,51424,0,0,0,0.110921,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC2wKfjlioOCLP4xQMOWNcgg,Typical Gamer,1,1,97879,0,0,0,0.070996,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UC-J-KZfRV8c13fOCkhXdLiQ,Dua Lipa,1,1,108309,0,0,0,0.06824,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCbulh9WdLtEXiooRcYK7SWw,Metallica,1,1,46305,0,0,0,0.054271,,,,,1,0,0
+2026-05-22T12:02:39.617608+00:00,UCtqOng3GVhQVu1Gl-3UlyAQ,Christian Nodal,2,2,11535,0,0,0,0.063825,,,,,2,0,0

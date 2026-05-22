@@ -1,10 +1,10 @@
 {
   "status": "success",
   "content_format": "videos",
-  "generated_at": "2026-05-21T12:41:13.735305+00:00",
-  "prediction_rows": 7710,
-  "decision_rows": 3459,
-  "hybrid_rows": 8511,
+  "generated_at": "2026-05-22T12:15:28.645118+00:00",
+  "prediction_rows": 12133,
+  "decision_rows": 3578,
+  "hybrid_rows": 12766,
   "warnings": [],
   "files_written": [
     "data/model_intelligence/formats/videos/latest_hybrid_recommendations.csv",
