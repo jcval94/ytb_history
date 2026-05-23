@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-22T12:15:31.614774+00:00",
-  "total_videos": 19958,
-  "topics": 16,
-  "title_patterns": 39,
+  "generated_at": "2026-05-23T10:59:39.445215+00:00",
+  "total_videos": 21757,
+  "topics": 15,
+  "title_patterns": 38,
   "keywords": 120,
-  "opportunities": 16,
+  "opportunities": 15,
   "warnings": [],
   "mode": "topic_title_intelligence_v1",
   "status": "success"
