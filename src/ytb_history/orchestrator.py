@@ -105,11 +105,14 @@ def run_pipeline(
     execution_date: datetime | None = None,
     channel_urls: list[str] | None = None,
     settings_path: str | Path = "config/settings.yaml",
+    settings_overrides: dict[str, Any] | None = None,
     data_dir: str | Path = "data",
     youtube_client: YouTubeClient | None = None,
 ) -> dict[str, Any]:
     """Execute the complete daily pipeline."""
     settings = load_settings(settings_path)
+    if settings_overrides:
+        settings.update(settings_overrides)
     execution_date_value = _resolve_execution_date(execution_date, settings["execution_timezone"])
     urls = list(channel_urls or _load_default_channel_urls())
 

@@ -16,6 +16,10 @@ def test_monitor_workflow_exists() -> None:
     assert (REPO_ROOT / ".github/workflows/monitor.yml").exists()
 
 
+def test_heatmaps_workflow_exists() -> None:
+    assert (REPO_ROOT / ".github/workflows/heatmaps.yml").exists()
+
+
 def test_monitor_has_required_settings() -> None:
     content = _read(".github/workflows/monitor.yml")
     assert "contents: write" in content
@@ -102,14 +106,36 @@ def test_monitor_has_required_settings() -> None:
 def test_workflows_do_not_use_search_list() -> None:
     ci_content = _read(".github/workflows/ci.yml")
     monitor_content = _read(".github/workflows/monitor.yml")
+    heatmaps_content = _read(".github/workflows/heatmaps.yml")
     pages_content = _read(".github/workflows/pages.yml")
     train_model_content = _read(".github/workflows/train_model.yml")
     predict_model_content = _read(".github/workflows/predict_model.yml")
     assert "search.list" not in ci_content
     assert "search.list" not in monitor_content
+    assert "search.list" not in heatmaps_content
     assert "search.list" not in pages_content
     assert "search.list" not in train_model_content
     assert "search.list" not in predict_model_content
+
+
+def test_heatmaps_workflow_contract() -> None:
+    content = _read(".github/workflows/heatmaps.yml")
+    assert "workflow_dispatch:" in content
+    assert "schedule:" in content
+    assert "contents: write" in content
+    assert "group: youtube-heatmaps" in content
+    assert 'python -m pip install -e ".[heatmap]"' in content
+    assert "python -m compileall src tests" in content
+    assert "pytest -q" in content
+    assert "python -m ytb_history.cli extract-heatmaps --data-dir data --limit 50" in content
+    assert "python -m ytb_history.cli build-operations" in content
+    assert "git add data/heatmaps/ data/transcripts/ data/operations/ config/operations.yaml" in content
+    assert "git add ." not in content
+    assert "search.list" not in content
+    assert "YOUTUBE_API_KEY" not in content
+    assert "OPENAI_API_KEY" not in content
+    assert "cookies" not in content.lower()
+    assert "ffmpeg" not in content.lower()
 
 
 def test_monitor_and_pages_do_not_run_build_model_dataset_yet() -> None:

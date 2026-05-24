@@ -214,7 +214,7 @@ def test_build_parser_has_exact_subcommands() -> None:
             subcommands = set(action.choices.keys())
             break
 
-    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-opportunity-radar", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "backfill-transcript-timestamps", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
+    assert subcommands == {"run", "dry-run", "validate-latest", "export-latest", "build-analytics", "build-pages-dashboard", "build-operations", "generate-alerts", "build-decision-layer", "generate-weekly-brief", "generate-client-brief", "generate-opportunity-radar", "generate-category-report", "build-model-dataset", "model-artifact-registry-report", "train-model-suite", "train-baseline-model", "register-trained-artifact", "build-nlp-features", "build-topic-intelligence", "build-model-intelligence", "generate-creative-packages", "train-content-driver-models", "select-transcription-candidates", "transcript-registry-report", "transcribe-selected-videos", "backfill-transcript-timestamps", "generate-transcript-insights", "run-local-transcription-automation", "sync-local-repo", "diagnose-local-transcription", "extract-heatmaps", "predict-with-model-artifact", "analyze-model-readiness", "smoke-test-model-training"}
 
 
 def test_cli_build_pages_dashboard_prints_json(monkeypatch, capsys) -> None:
@@ -1014,6 +1014,12 @@ def test_cli_run_local_transcription_automation_forwards_options(monkeypatch, ca
             "audio_source_dir": "custom/audio",
             "video_source_dir": "custom/video",
             "sync_report_path": "custom/sync.json",
+            "forced_only": False,
+            "forced_channels_new_video_window_days": None,
+            "forced_channels_max_per_run": None,
+            "refresh_forced_channels": False,
+            "forced_refresh_window_days": 360,
+            "forced_refresh_max_pages_per_channel": 20,
             "ytdlp_cookies_file": "cookies.txt",
             "ytdlp_browser": "firefox",
             "ytdlp_extra_args": ["--force-ipv4", "--socket-timeout", "10"],
@@ -1099,5 +1105,45 @@ def test_cli_diagnose_local_transcription_prints_json(monkeypatch, capsys) -> No
             "data_dir": "custom/data",
             "audio_source_dir": "custom/audio",
             "video_source_dir": "custom/video",
+        }
+    ]
+
+
+def test_cli_extract_heatmaps_forwards_options(monkeypatch, capsys) -> None:
+    calls: list[dict] = []
+
+    def _fake_extract_heatmaps(**kwargs):
+        calls.append(kwargs)
+        return {"status": "success", "attempted_count": 1}
+
+    monkeypatch.setattr(cli, "extract_heatmaps", _fake_extract_heatmaps)
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "ytb_history",
+            "extract-heatmaps",
+            "--data-dir",
+            "custom/data",
+            "--limit",
+            "12",
+            "--bucket",
+            "4w",
+            "--force",
+            "--dry-run",
+        ],
+    )
+
+    code = cli.main()
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert json.loads(out)["attempted_count"] == 1
+    assert calls == [
+        {
+            "data_dir": "custom/data",
+            "limit": 12,
+            "bucket": "4w",
+            "force": True,
+            "dry_run": True,
         }
     ]

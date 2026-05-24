@@ -9,6 +9,12 @@ param(
     [switch]$Force,
     [switch]$NoSyncGit,
     [switch]$AllowStaleRepo,
+    [switch]$ForcedOnly,
+    [int]$ForcedWindowDays = 14,
+    [int]$ForcedMaxPerRun = 50,
+    [switch]$RefreshForcedChannels,
+    [int]$ForcedRefreshWindowDays = 360,
+    [int]$ForcedRefreshMaxPagesPerChannel = 20,
     [string]$YtdlpCookiesFile = "",
     [string]$YtdlpBrowser = "",
     [string]$YtdlpExtraArgs = "",
@@ -73,6 +79,15 @@ function Write-RunSummary {
 
     if (-not $RunReport) {
         Write-StatusLine -Percent 100 -Message "No se pudo leer latest_run_report.json para resumir la corrida."
+        return
+    }
+
+    $status = [string]$RunReport.status
+    if ($status -and $status -ne "success") {
+        Write-StatusLine -Percent 96 -Message "Estado tecnico de la corrida: $status."
+        if ($RunReport.steps.youtube_refresh -and $RunReport.steps.youtube_refresh.error) {
+            Write-StatusLine -Percent 96 -Message "Refresh de YouTube: $($RunReport.steps.youtube_refresh.error)"
+        }
         return
     }
 
@@ -185,6 +200,8 @@ if ((-not $Force) -and (-not (Test-WithinAllowedWindow -Now $now -Earliest $Earl
         repo_dir = $repoRoot
         limit = $Limit
         catch_up_only = [bool]$CatchUpOnly
+        forced_only = [bool]$ForcedOnly
+        forced_window_days = $ForcedWindowDays
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
     Write-StatusLine -Percent 100 -Message "Transcripcion omitida fuera del horario permitido ($($EarliestHour):00-$($LatestHour):00)."
@@ -209,6 +226,8 @@ if ((-not $Force) -and $CatchUpOnly -and (Test-RecentSuccess -State $state -Now 
         repo_dir = $repoRoot
         limit = $Limit
         catch_up_only = [bool]$CatchUpOnly
+        forced_only = [bool]$ForcedOnly
+        forced_window_days = $ForcedWindowDays
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
     Write-StatusLine -Percent 100 -Message "Transcripcion omitida: ya hubo una corrida exitosa recientemente."
@@ -240,6 +259,22 @@ try {
         "--progress-log",
         "--no-json-output"
     )
+    if ($ForcedOnly) {
+        $args += "--forced-only"
+    }
+    if ($ForcedWindowDays -gt 0) {
+        $args += @("--forced-window-days", [string]$ForcedWindowDays)
+    }
+    if ($ForcedMaxPerRun -gt 0) {
+        $args += @("--forced-max-per-run", [string]$ForcedMaxPerRun)
+    }
+    if ($RefreshForcedChannels) {
+        $args += @(
+            "--refresh-forced-channels",
+            "--forced-refresh-window-days", [string]$ForcedRefreshWindowDays,
+            "--forced-refresh-max-pages-per-channel", [string]$ForcedRefreshMaxPagesPerChannel
+        )
+    }
     if ($NoSyncGit) {
         $args += "--no-sync-git"
     }
@@ -262,8 +297,15 @@ try {
     Set-Location $repoRoot
     Write-StatusLine -Percent 0 -Message "Iniciando transcripcion local."
     Write-StatusLine -Percent 5 -Message "Log de transcripcion: $logPath"
-    & $PythonPath @args *>&1 | Tee-Object -FilePath $logPath
-    $exitCode = $LASTEXITCODE
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $PythonPath @args *>&1 | Tee-Object -FilePath $logPath
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorActionPreference
+    }
 
     $runReport = Read-JsonState -Path $latestRunReportPath
     $runStatus = if ($runReport) { [string]$runReport.status } else { "unknown" }
@@ -278,6 +320,8 @@ try {
         repo_dir = $repoRoot
         limit = $Limit
         catch_up_only = [bool]$CatchUpOnly
+        forced_only = [bool]$ForcedOnly
+        forced_window_days = $ForcedWindowDays
     }
     Write-JsonNoBom -Path $statePath -Payload $newState
     Write-RunSummary -RunReport $runReport

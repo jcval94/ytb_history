@@ -521,6 +521,32 @@ Configurar el secret en GitHub:
 3. Name: `YOUTUBE_API_KEY`
 4. Value: tu API key
 
+### Heatmaps (`.github/workflows/heatmaps.yml`)
+
+Extrae metadata publica de heatmap solo para videos que ya tienen transcripcion persistida. Este flujo usa `yt-dlp` en modo metadata (`skip_download=True`), no descarga audio/video, no usa cookies, no requiere secretos y no consume cuota de YouTube Data API.
+
+```bash
+python -m pip install -e ".[heatmap]"
+python -m ytb_history.cli extract-heatmaps --data-dir data --limit 50
+```
+
+La elegibilidad se calcula por edad del video desde `upload_date`: 1, 2, 4 y 8 semanas. Si el heatmap no aparece en una ventana, el registro guarda `next_retry_after` para intentar en la siguiente; si despues de 8 semanas sigue sin aparecer, queda como `exhausted_after_8w` hasta usar `--force`.
+
+Artefactos principales:
+
+- `data/heatmaps/heatmap_registry.jsonl`: catalogo actual por video con status, bucket, intentos, proxima fecha de retry y paths.
+- `data/heatmaps/videos/<video_id>/heatmap_segments.jsonl`: segmentos normalizados `start_seconds`, `end_seconds`, `value`.
+- `data/heatmaps/videos/<video_id>/heatmap_metadata.json`: metadata compacta del heatmap y hash.
+- `data/heatmaps/runs/dt=YYYY-MM-DD/run=HHMMSSZ/`: reportes append-only por corrida.
+- `data/transcripts/videos/<video_id>/transcript_metadata.json`: solo se agregan punteros ligeros cuando el heatmap existe (`heatmap_available`, `heatmap_segments_path`, `heatmap_sha256`, `heatmap_extracted_at`).
+
+Comandos utiles:
+
+```bash
+python -m ytb_history.cli extract-heatmaps --data-dir data --bucket 2w --dry-run
+python -m ytb_history.cli extract-heatmaps --data-dir data --bucket 8w --force
+```
+
 ### Transcripción local (responsabilidad del equipo)
 
 La transcripción ya no forma parte de `.github/workflows/monitor.yml`. Si el equipo necesita transcribir, generar insights o reconstruir el registro, debe ejecutar localmente los comandos correspondientes y gestionar de forma segura `OPENAI_API_KEY`, `yt-dlp`, `ffmpeg`, cookies y argumentos adicionales fuera de GitHub Actions.
@@ -672,6 +698,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_local_play_s
 ```
 
 Esto crea un acceso directo en el Escritorio llamado `YTB History - Play Local Automation`. Al abrirlo, ejecuta `scripts/run_local_play.ps1`, que fuerza una corrida manual fuera del horario programado: primero sincroniza el repo de forma segura y despues lanza la transcripcion/publicacion. La ventana queda abierta al final para revisar el resultado. El reporte queda en `build/local_automation/latest_play_report.json` y el log en `build/local_automation/logs/manual_play_*.log`.
+
+Para crear el segundo boton manual, solo para canales con transcripcion forzosa y videos subidos en los ultimos 360 dias:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_local_forced_transcription_shortcut.ps1
+```
+
+Esto crea `YTB History - Forced Transcription 360d` en el Escritorio. Hace el mismo flujo del boton anterior, pero antes refresca por YouTube Data API solo los canales de `config/transcription_channels.py`, revisa la ventana de 360 dias y arma la cola solo con videos de esos canales que todavia no tengan transcripcion. Este boton requiere `YOUTUBE_API_KEY` y `OPENAI_API_KEY` en el entorno local; tambien puede leerlas desde un `.env` local ignorado por git. Por defecto procesa hasta 50 videos por corrida para mantener el trabajo local controlado; puedes cambiarlo con `-Limit`.
 
 El modo "play" muestra progreso en espanol con porcentajes y no imprime el JSON tecnico completo en pantalla. Los JSON completos siguen disponibles para diagnostico:
 

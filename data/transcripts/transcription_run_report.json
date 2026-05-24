@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-20T13:57:38.409449+00:00",
-  "limit": 11,
-  "processed": 11,
-  "transcribed_success": 11,
+  "generated_at": "2026-05-21T13:55:26.453479+00:00",
+  "limit": 3,
+  "processed": 3,
+  "transcribed_success": 0,
   "skipped_no_audio_source": 0,
   "skipped_invalid_video_id": 0,
   "skipped_missing_ytdlp": 0,
-  "failed_audio_download": 0,
+  "failed_audio_download": 3,
   "skipped_already_transcribed": 0,
   "failed": 0,
-  "queue_total": 11,
-  "registry_success_before_run": 69,
-  "persisted_success_before_run": 69,
+  "queue_total": 3,
+  "registry_success_before_run": 80,
+  "persisted_success_before_run": 80,
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
   "audio_source_dir_exists": true,
   "audio_source_dir_is_dir": true,
@@ -41,16 +41,19 @@
     "CRBk9uu-etQ.mp3",
     "DitWY_dIRLU.mp3",
     "FUWx-9KF3M8.mp3",
+    "H0ymuKNn4GQ.mp3",
     "H57K_ZTfLK4.mp3",
     "HBezrmK2eEY.mp3",
     "HtyVLX7aLuk.mp3",
     "IGCKBKoplVE.mp3",
+    "INmSlU8iNGk.mp3",
     "ImG1BgHsqHk.mp3",
     "IunfWIOSzmU.mp3",
     "Izw3-5_orEc.mp3",
     "KGHb_XF0Z8M.mp3",
     "L8BkLkDtThU.mp3",
     "LLj-ledF9PI.mp3",
+    "Lq15JrYGH-s.mp3",
     "N8Bc_M2Ew2E.mp3",
     "NOv3U3ZUiro.mp3",
     "NlFAfAqX1zE.mp3",
@@ -59,13 +62,10 @@
     "QBLH2Q3K_aE.mp3",
     "QHE2QO8peRA.mp3",
     "R-dn3cfmBuU.mp3",
+    "RZtZISqYJcU.mp3",
     "SVTPv4sI_Jc.mp3",
     "T32B8W5B3XY.mp3",
-    "TkDWgKCjdtU.mp3",
-    "U5Xpd8ja9bk.mp3",
-    "VEAic3PrzHM.mp3",
-    "Y_FN-dx8J2M.mp3",
-    "Yo4aGwiAUBk.mp3"
+    "TkDWgKCjdtU.mp3"
   ],
   "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
   "video_source_dir_exists": false,
@@ -74,64 +74,27 @@
   "media_resolution_counts": {
     "existing_audio": 0,
     "extracted_from_video": 0,
-    "downloaded_ytdlp": 11,
-    "failed_media_resolution": 0
+    "downloaded_ytdlp": 0,
+    "failed_media_resolution": 3
   },
   "media_resolution_details": [
     {
-      "video_id": "u5RQYDdil1w",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\u5RQYDdil1w.mp3"
+      "video_id": "ksn5yrsC3Wg",
+      "source": "failed_media_resolution",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required"
     },
     {
-      "video_id": "lI3Kicj7b-8",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lI3Kicj7b-8.mp3"
+      "video_id": "n1G2FQ0UEqc",
+      "source": "failed_media_resolution",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required"
     },
     {
-      "video_id": "INmSlU8iNGk",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\INmSlU8iNGk.mp3"
-    },
-    {
-      "video_id": "Lq15JrYGH-s",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Lq15JrYGH-s.mp3"
-    },
-    {
-      "video_id": "H0ymuKNn4GQ",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\H0ymuKNn4GQ.mp3"
-    },
-    {
-      "video_id": "lRmMQyDxjO0",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lRmMQyDxjO0.mp3"
-    },
-    {
-      "video_id": "RZtZISqYJcU",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\RZtZISqYJcU.mp3"
-    },
-    {
-      "video_id": "UYFT0eC-g7E",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UYFT0eC-g7E.mp3"
-    },
-    {
-      "video_id": "iq7i3CINwNU",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\iq7i3CINwNU.mp3"
-    },
-    {
-      "video_id": "XhYd9PI_g7I",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\XhYd9PI_g7I.mp3"
-    },
-    {
-      "video_id": "uaWetguxPe0",
-      "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\uaWetguxPe0.mp3"
+      "video_id": "K38w2QlgHPQ",
+      "source": "failed_media_resolution",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required"
     }
   ],
   "segmented_transcriptions": 0,
@@ -141,8 +104,8 @@
     "used_browser_mode": false,
     "extra_args_count": 0
   },
-  "ytdlp_download_attempts": 11,
-  "ytdlp_download_success": 11,
+  "ytdlp_download_attempts": 3,
+  "ytdlp_download_success": 0,
   "ytdlp_auth_required_with_cookies_count": 0,
   "ytdlp_auth_required_with_cookies_abort_threshold": 3,
   "ytdlp_cookies_file_diagnostics": {
@@ -154,36 +117,127 @@
     "youtube_google_cookie_rows": 0,
     "expired_youtube_google_cookie_rows": 0
   },
-  "ytdlp_download_failures": [],
+  "ytdlp_download_failures": [
+    {
+      "video_id": "ksn5yrsC3Wg",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=ksn5yrsC3Wg"
+    },
+    {
+      "video_id": "n1G2FQ0UEqc",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=n1G2FQ0UEqc"
+    },
+    {
+      "video_id": "K38w2QlgHPQ",
+      "error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "error_category": "auth_required",
+      "video_url": "https://www.youtube.com/watch?v=K38w2QlgHPQ"
+    }
+  ],
   "processed_video_ids": [
-    "u5RQYDdil1w",
-    "lI3Kicj7b-8",
-    "INmSlU8iNGk",
-    "Lq15JrYGH-s",
-    "H0ymuKNn4GQ",
-    "lRmMQyDxjO0",
-    "RZtZISqYJcU",
-    "UYFT0eC-g7E",
-    "iq7i3CINwNU",
-    "XhYd9PI_g7I",
-    "uaWetguxPe0"
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ"
   ],
-  "success_video_ids": [
-    "u5RQYDdil1w",
-    "lI3Kicj7b-8",
-    "INmSlU8iNGk",
-    "Lq15JrYGH-s",
-    "H0ymuKNn4GQ",
-    "lRmMQyDxjO0",
-    "RZtZISqYJcU",
-    "UYFT0eC-g7E",
-    "iq7i3CINwNU",
-    "XhYd9PI_g7I",
-    "uaWetguxPe0"
-  ],
+  "success_video_ids": [],
   "already_transcribed_video_ids": [],
-  "missing_audio_video_ids": [],
-  "missing_audio_details": [],
+  "missing_audio_video_ids": [
+    "ksn5yrsC3Wg",
+    "n1G2FQ0UEqc",
+    "K38w2QlgHPQ"
+  ],
+  "missing_audio_details": [
+    {
+      "video_id": "ksn5yrsC3Wg",
+      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
+      "video_source_dir_exists": false,
+      "video_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=ksn5yrsC3Wg",
+      "attempted_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ksn5yrsC3Wg.mp3",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ksn5yrsC3Wg.m4a",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ksn5yrsC3Wg.wav",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ksn5yrsC3Wg.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ksn5yrsC3Wg.mp4"
+      ],
+      "attempted_video_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\ksn5yrsC3Wg.mp4",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\ksn5yrsC3Wg.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\ksn5yrsC3Wg.mkv",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\ksn5yrsC3Wg.mov",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\ksn5yrsC3Wg.m4v"
+      ],
+      "ytdlp_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required",
+      "media_resolution_source": "failed_media_resolution",
+      "media_resolution_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "media_resolution_error_category": "auth_required"
+    },
+    {
+      "video_id": "n1G2FQ0UEqc",
+      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
+      "video_source_dir_exists": false,
+      "video_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=n1G2FQ0UEqc",
+      "attempted_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.mp3",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.m4a",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.wav",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.mp4"
+      ],
+      "attempted_video_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\n1G2FQ0UEqc.mp4",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\n1G2FQ0UEqc.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\n1G2FQ0UEqc.mkv",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\n1G2FQ0UEqc.mov",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\n1G2FQ0UEqc.m4v"
+      ],
+      "ytdlp_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required",
+      "media_resolution_source": "failed_media_resolution",
+      "media_resolution_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "media_resolution_error_category": "auth_required"
+    },
+    {
+      "video_id": "K38w2QlgHPQ",
+      "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+      "audio_source_dir_exists": true,
+      "audio_source_dir_is_dir": true,
+      "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
+      "video_source_dir_exists": false,
+      "video_source_dir_is_dir": false,
+      "video_url": "https://www.youtube.com/watch?v=K38w2QlgHPQ",
+      "attempted_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.mp3",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.m4a",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.wav",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.mp4"
+      ],
+      "attempted_video_paths": [
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\K38w2QlgHPQ.mp4",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\K38w2QlgHPQ.webm",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\K38w2QlgHPQ.mkv",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\K38w2QlgHPQ.mov",
+        "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources\\K38w2QlgHPQ.m4v"
+      ],
+      "ytdlp_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "ytdlp_error_category": "auth_required",
+      "media_resolution_source": "failed_media_resolution",
+      "media_resolution_error": "yt_dlp_failed:strategy=default;code=1;stderr=-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "media_resolution_error_category": "auth_required"
+    }
+  ],
   "invalid_video_id_details": [],
   "failed_video_ids": [],
   "failed_details": [],

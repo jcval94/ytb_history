@@ -17,6 +17,9 @@ transcription = [
   "yt-dlp",
   "imageio-ffmpeg>=0.6",
 ]
+heatmap = [
+  "yt-dlp",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

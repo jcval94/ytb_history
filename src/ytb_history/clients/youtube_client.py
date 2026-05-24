@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 import random
 import time
 from typing import Any
@@ -15,6 +14,7 @@ from ytb_history.utils.errors import (
     YouTubeApiError,
     YouTubeRetryableApiError,
 )
+from ytb_history.utils.environment import resolve_environment_variable
 
 
 class YouTubeClient:
@@ -43,7 +43,7 @@ class YouTubeClient:
         backoff_base: float = 0.5,
         quota_meter: QuotaMeter | None = None,
     ) -> None:
-        resolved_key = api_key or os.getenv("YOUTUBE_API_KEY")
+        resolved_key = api_key or resolve_environment_variable("YOUTUBE_API_KEY")
         if not resolved_key:
             raise MissingYouTubeApiKeyError(
                 "YouTube API key is missing. Set YOUTUBE_API_KEY or pass api_key."

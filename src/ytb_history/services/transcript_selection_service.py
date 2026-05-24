@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from ytb_history.services.transcript_store_service import list_transcribed_video_ids
+from ytb_history.storage.jsonl import read_jsonl_gz
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
     "https://www.youtube.com/@bilinkis",
@@ -13,7 +14,7 @@ DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
 ]
 
 
-def _load_forced_urls() -> list[str]:
+def load_forced_transcription_channel_urls() -> list[str]:
     cfg = Path("config/transcription_channels.py")
     if not cfg.exists():
         return DEFAULT_TRANSCRIPTION_CHANNEL_URLS
@@ -21,6 +22,8 @@ def _load_forced_urls() -> list[str]:
     exec(cfg.read_text(encoding="utf-8"), namespace)  # controlled local config file
     urls = namespace.get("TRANSCRIPTION_CHANNEL_URLS", DEFAULT_TRANSCRIPTION_CHANNEL_URLS)
     return list(urls) if isinstance(urls, list) else DEFAULT_TRANSCRIPTION_CHANNEL_URLS
+
+_load_forced_urls = load_forced_transcription_channel_urls
 DEFAULT_LIMIT=10
 DEFAULT_COOLDOWN_DAYS=7
 DEFAULT_FORCED_MAX_PER_RUN=50
@@ -74,7 +77,25 @@ def _source_artifact_summary(root: Path) -> dict[str, dict[str, Any]]:
         if exists:
             item["modified_at"] = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat()
         summary[name] = item
+    latest_snapshot = _latest_snapshot_path(root)
+    summary["latest_snapshots"] = {
+        "path": str(latest_snapshot) if latest_snapshot else "",
+        "exists": latest_snapshot is not None,
+        "row_count": len(_read_latest_snapshot_rows(root)) if latest_snapshot else 0,
+        "modified_at": datetime.fromtimestamp(latest_snapshot.stat().st_mtime, tz=timezone.utc).isoformat() if latest_snapshot else None,
+    }
     return summary
+
+def _latest_snapshot_path(root: Path) -> Path | None:
+    snapshots_root = root / "snapshots"
+    if not snapshots_root.exists():
+        return None
+    candidates = [path for path in snapshots_root.rglob("snapshots.jsonl.gz") if path.is_file()]
+    return max(candidates, key=lambda path: (path.parent.parent.name, path.parent.name)) if candidates else None
+
+def _read_latest_snapshot_rows(root: Path)->list[dict[str,Any]]:
+    path = _latest_snapshot_path(root)
+    return read_jsonl_gz(path) if path else []
 
 def _safe_float(v:Any)->float|None:
     try: return None if v in (None,"") else float(str(v))
@@ -113,6 +134,18 @@ def _url_handle(url:str)->str:
     if '/@' in u: return u.split('/@',1)[1]
     return u.rsplit('/',1)[-1]
 
+def _forced_channel_ids(root:Path, forced_urls:list[str])->dict[str,str]:
+    handles={_url_handle(u):u for u in forced_urls}
+    out:dict[str,str]={}
+    for row in _read_jsonl(root/'state'/'channel_registry.jsonl'):
+        if str(row.get('resolver_status','ok'))!='ok': continue
+        cid=str(row.get('channel_id','')).strip()
+        if not cid: continue
+        row_handle=_url_handle(str(row.get('channel_url','')))
+        matched=handles.get(row_handle)
+        if matched: out[cid]=matched
+    return out
+
 def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT_LIMIT,cooldown_days:int=DEFAULT_COOLDOWN_DAYS,forced_channels_enabled:bool=True,forced_channels_max_per_run:int=DEFAULT_FORCED_MAX_PER_RUN,forced_channels_new_video_window_days:int=DEFAULT_FORCED_WINDOW_DAYS)->dict[str,Any]:
     root=Path(data_dir); tdir=root/'transcripts'; now=datetime.now(timezone.utc); now_iso=now.isoformat(); warnings=[]
     cands:dict[str,dict[str,Any]]={}
@@ -137,6 +170,9 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     for row in metrics:
         invalid_id=_merge(cands,row,{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","content_format":"content_format"},"analytics_metrics")
         if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"analytics_metrics"})
+    for row in _read_latest_snapshot_rows(root):
+        invalid_id=_merge(cands,{k:str(v) if v is not None else "" for k,v in row.items()},{"video_id":"video_id","channel_id":"channel_id","channel_name":"channel_name","title":"title","upload_date":"upload_date","content_format":"content_format"},"latest_snapshots")
+        if invalid_id: skipped_invalid_video_ids.append({"video_id":invalid_id,"source":"latest_snapshots"})
 
     reg=_read_jsonl(tdir/'transcript_registry.jsonl'); registry_success=set(); progress=set(); cool=set(); th=now-timedelta(days=cooldown_days)
     for e in reg:
@@ -151,6 +187,7 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
 
     forced_urls = _load_forced_urls()
     forced_handles={_url_handle(u):u for u in forced_urls}
+    forced_ids_by_channel=_forced_channel_ids(root, forced_urls)
     forced_rows=[]
     skipped_forced_success=skipped_forced_progress=skipped_forced_failed=0
     skipped_forced_outside_window=0
@@ -167,8 +204,9 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
     if forced_channels_enabled and forced_handles:
         for vid,item in cands.items():
             cname=str(item.get('channel_name','')).lower()
-            matched=None
+            matched=forced_ids_by_channel.get(str(item.get('channel_id','')).strip())
             for h,url in forced_handles.items():
+                if matched: break
                 if h and h in cname:
                     matched=url; break
             if not matched: continue

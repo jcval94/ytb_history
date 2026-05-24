@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-21T13:55:26.461061+00:00",
+  "status": "success",
+  "data_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data",
+  "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+  "model": "whisper-1",
+  "force": false,
+  "limit": 3,
+  "processed": 3,
+  "generated": 3,
+  "skipped_existing_segments": 0,
+  "skipped_missing_audio": 0,
+  "failed": 0,
+  "success_video_ids": [
+    "0QtQXR__SpY",
+    "2rXcq6fXpiM",
+    "3QLkDi3e9j4"
+  ],
+  "failed_details": [],
+  "warnings": []
+}

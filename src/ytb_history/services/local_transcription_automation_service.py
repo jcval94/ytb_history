@@ -11,7 +11,10 @@ from typing import Any, Callable, Sequence
 from ytb_history.orchestrator import run_pipeline
 from ytb_history.services.local_repo_sync_service import SYNC_SUCCESS_STATUSES
 from ytb_history.services.transcript_insights_service import generate_transcript_insights
-from ytb_history.services.transcript_selection_service import select_transcription_candidates
+from ytb_history.services.transcript_selection_service import (
+    load_forced_transcription_channel_urls,
+    select_transcription_candidates,
+)
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
 from ytb_history.services.transcript_timestamp_backfill_service import backfill_transcript_timestamps
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
@@ -184,6 +187,12 @@ def run_local_transcription_automation(
     audio_source_dir: str | Path = "data/audio_sources",
     video_source_dir: str | Path = "data/video_sources",
     sync_report_path: str | Path | None = None,
+    forced_only: bool = False,
+    forced_channels_new_video_window_days: int | None = None,
+    forced_channels_max_per_run: int | None = None,
+    refresh_forced_channels: bool = False,
+    forced_refresh_window_days: int = 360,
+    forced_refresh_max_pages_per_channel: int = 20,
     ytdlp_cookies_file: str | None = None,
     ytdlp_browser: str | None = None,
     ytdlp_extra_args: list[str] | None = None,
@@ -222,6 +231,12 @@ def run_local_transcription_automation(
         "settings_path": str(effective_settings_path),
         "limit": limit,
         "ranked_limit": limit,
+        "forced_only": forced_only,
+        "forced_channels_new_video_window_days": forced_channels_new_video_window_days,
+        "forced_channels_max_per_run": forced_channels_max_per_run,
+        "refresh_forced_channels": refresh_forced_channels,
+        "forced_refresh_window_days": forced_refresh_window_days,
+        "forced_refresh_max_pages_per_channel": forced_refresh_max_pages_per_channel,
         "transcribe_all_selected": True,
         "skip_youtube_refresh": skip_youtube_refresh,
         "no_sync_git": no_sync_git,
@@ -268,18 +283,70 @@ def run_local_transcription_automation(
     else:
         report["steps"]["sync_preflight"] = {"skipped": True, "reason": "no_sync_git"}
 
-    if skip_youtube_refresh:
+    if refresh_forced_channels:
+        forced_urls = load_forced_transcription_channel_urls()
+        _emit_progress(
+            progress_callback,
+            15,
+            f"Actualizando canales forzados para revisar los ultimos {forced_refresh_window_days} dias.",
+        )
+        try:
+            report["steps"]["youtube_refresh"] = pipeline_runner(
+                settings_path=str(effective_settings_path),
+                data_dir=str(effective_data_dir),
+                channel_urls=forced_urls,
+                settings_overrides={
+                    "discovery_window_days": forced_refresh_window_days,
+                    "tracking_window_days": max(360, forced_refresh_window_days),
+                    "max_pages_per_channel": forced_refresh_max_pages_per_channel,
+                },
+            )
+        except Exception as exc:
+            report["status"] = "failed_youtube_refresh"
+            report["warnings"].append("youtube_refresh_failed")
+            report["steps"]["youtube_refresh"] = {
+                "status": "failed",
+                "error": str(exc),
+                "exception_type": type(exc).__name__,
+            }
+            _write_report(report_path, report)
+            _emit_progress(progress_callback, 100, f"Refresh de YouTube fallo: {exc}")
+            return report
+    elif skip_youtube_refresh:
         report["steps"]["youtube_refresh"] = {"skipped": True, "reason": "skip_youtube_refresh"}
         _emit_progress(progress_callback, 20, "Refresh de YouTube omitido; se usaran artefactos locales ya sincronizados.")
     else:
         _emit_progress(progress_callback, 15, "Actualizando datos de YouTube antes de seleccionar candidatos.")
-        report["steps"]["youtube_refresh"] = pipeline_runner(
-            settings_path=str(effective_settings_path),
-            data_dir=str(effective_data_dir),
-        )
+        try:
+            report["steps"]["youtube_refresh"] = pipeline_runner(
+                settings_path=str(effective_settings_path),
+                data_dir=str(effective_data_dir),
+            )
+        except Exception as exc:
+            report["status"] = "failed_youtube_refresh"
+            report["warnings"].append("youtube_refresh_failed")
+            report["steps"]["youtube_refresh"] = {
+                "status": "failed",
+                "error": str(exc),
+                "exception_type": type(exc).__name__,
+            }
+            _write_report(report_path, report)
+            _emit_progress(progress_callback, 100, f"Refresh de YouTube fallo: {exc}")
+            return report
 
-    _emit_progress(progress_callback, 25, "Seleccionando candidatos: 10 del ranking mas videos de canales forzados.")
-    report["steps"]["transcription_candidates"] = candidate_selector(data_dir=str(effective_data_dir), limit=limit)
+    if forced_only:
+        _emit_progress(progress_callback, 25, "Seleccionando solo videos de canales forzados sin transcripcion.")
+    else:
+        _emit_progress(progress_callback, 25, "Seleccionando candidatos: 10 del ranking mas videos de canales forzados.")
+    selection_kwargs: dict[str, Any] = {
+        "data_dir": str(effective_data_dir),
+        "limit": 0 if forced_only else limit,
+    }
+    if forced_channels_new_video_window_days is not None:
+        selection_kwargs["forced_channels_new_video_window_days"] = forced_channels_new_video_window_days
+    if forced_channels_max_per_run is not None:
+        selection_kwargs["forced_channels_max_per_run"] = forced_channels_max_per_run
+    report["steps"]["transcription_candidates"] = candidate_selector(**selection_kwargs)
     candidates_step = report["steps"]["transcription_candidates"]
     selected_count = _count_step_items(candidates_step, "selected_count")
     selected_forced_count = _count_step_items(candidates_step, "selected_forced_count")

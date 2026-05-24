@@ -7,6 +7,12 @@ param(
     [string]$YtdlpBrowser = "",
     [string]$YtdlpExtraArgs = "",
     [string]$YtdlpCookiesB64 = "",
+    [switch]$ForcedOnly,
+    [int]$ForcedWindowDays = 14,
+    [int]$ForcedMaxPerRun = 50,
+    [switch]$RefreshForcedChannels,
+    [int]$ForcedRefreshWindowDays = 360,
+    [int]$ForcedRefreshMaxPagesPerChannel = 20,
     [switch]$PauseOnExit
 )
 
@@ -178,13 +184,22 @@ $report = [ordered]@{
     log_path = $logPath
     limit = $Limit
     allow_stale_repo = [bool]$AllowStaleRepo
+    forced_only = [bool]$ForcedOnly
+    forced_window_days = $ForcedWindowDays
+    forced_max_per_run = $ForcedMaxPerRun
+    refresh_forced_channels = [bool]$RefreshForcedChannels
     steps = [ordered]@{}
     warnings = @()
 }
 
 try {
     Set-Location $repoRoot
-    Write-ProgressLog -Percent 0 -Path $logPath -Message "Inicio manual: sincronizar repo, transcribir y publicar resultados."
+    if ($ForcedOnly) {
+        Write-ProgressLog -Percent 0 -Path $logPath -Message "Inicio manual forzado: sincronizar repo, revisar $ForcedWindowDays dias de canales forzados, transcribir y publicar resultados."
+    }
+    else {
+        Write-ProgressLog -Percent 0 -Path $logPath -Message "Inicio manual: sincronizar repo, transcribir y publicar resultados."
+    }
     Write-ProgressLog -Percent 5 -Path $logPath -Message "Log principal: $logPath"
     Write-ProgressLog -Percent 10 -Path $logPath -Message "Paso 1/2: sincronizacion segura del repo."
 
@@ -196,8 +211,15 @@ try {
         "-PythonPath", $PythonPath,
         "-Force"
     )
-    & powershell.exe @syncArgs *>&1 | Tee-Object -FilePath $logPath -Append
-    $syncExitCode = $LASTEXITCODE
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & powershell.exe @syncArgs *>&1 | Tee-Object -FilePath $logPath -Append
+        $syncExitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorActionPreference
+    }
     $syncReport = Read-JsonState -Path $syncReportPath
     $syncStatus = if ($syncReport) { [string]$syncReport.status } else { "missing_report" }
     $report["steps"]["sync"] = [ordered]@{
@@ -227,6 +249,22 @@ try {
         "-Limit", [string]$Limit,
         "-Force"
     )
+    if ($ForcedOnly) {
+        $transcriptionArgs += "-ForcedOnly"
+    }
+    if ($ForcedWindowDays -gt 0) {
+        $transcriptionArgs += @("-ForcedWindowDays", [string]$ForcedWindowDays)
+    }
+    if ($ForcedMaxPerRun -gt 0) {
+        $transcriptionArgs += @("-ForcedMaxPerRun", [string]$ForcedMaxPerRun)
+    }
+    if ($RefreshForcedChannels) {
+        $transcriptionArgs += @(
+            "-RefreshForcedChannels",
+            "-ForcedRefreshWindowDays", [string]$ForcedRefreshWindowDays,
+            "-ForcedRefreshMaxPagesPerChannel", [string]$ForcedRefreshMaxPagesPerChannel
+        )
+    }
     if ($AllowStaleRepo) {
         $transcriptionArgs += "-AllowStaleRepo"
     }
@@ -243,8 +281,15 @@ try {
         $transcriptionArgs += @("-YtdlpCookiesB64", $YtdlpCookiesB64)
     }
 
-    & powershell.exe @transcriptionArgs *>&1 | Tee-Object -FilePath $logPath -Append
-    $transcriptionExitCode = $LASTEXITCODE
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & powershell.exe @transcriptionArgs *>&1 | Tee-Object -FilePath $logPath -Append
+        $transcriptionExitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorActionPreference
+    }
     $runReport = Read-JsonState -Path $runReportPath
     $runStatus = if ($runReport) { [string]$runReport.status } else { "missing_report" }
     $report["steps"]["transcription"] = [ordered]@{

@@ -5,6 +5,7 @@ from pathlib import Path
 from ytb_history import cli
 from ytb_history.services.transcript_selection_service import select_transcription_candidates
 from ytb_history.services.transcript_store_service import write_transcript_artifacts
+from ytb_history.storage.jsonl import write_jsonl_gz
 
 
 def _write_csv(path: Path, header: list[str], rows: list[list[str]]) -> None:
@@ -181,3 +182,72 @@ def test_selection_skips_channel_ids_from_creative_packages(tmp_path: Path) -> N
     assert report["skipped_invalid_video_id_count"] == 1
     assert report["skipped_invalid_video_ids"] == [{"video_id": "UCWBWgCD4oAqT3hUeq40SCUw", "source": "creative"}]
     assert "invalid_video_ids_skipped" in report["warnings"]
+
+
+def test_forced_only_selection_uses_latest_snapshots_and_registry_channel_ids(tmp_path: Path) -> None:
+    snapshot_path = tmp_path / "snapshots" / "dt=2026-05-20" / "run=120000Z" / "snapshots.jsonl.gz"
+    write_jsonl_gz(
+        snapshot_path,
+        [
+            {
+                "execution_date": "2026-05-20T12:00:00+00:00",
+                "channel_id": "UC_bilinkis",
+                "channel_name": "Santiago Bilinkis",
+                "video_id": "snapVideo01",
+                "title": "Snapshot forced",
+                "description": "",
+                "upload_date": "2026-05-10T00:00:00+00:00",
+                "tags": [],
+                "thumbnail_url": "",
+                "duration_seconds": 600,
+                "views": 10,
+                "likes": 1,
+                "comments": 0,
+                "content_format": "videos",
+            },
+            {
+                "execution_date": "2026-05-20T12:00:00+00:00",
+                "channel_id": "UC_other",
+                "channel_name": "Other",
+                "video_id": "otherVideo1",
+                "title": "Other",
+                "description": "",
+                "upload_date": "2026-05-10T00:00:00+00:00",
+                "tags": [],
+                "thumbnail_url": "",
+                "duration_seconds": 600,
+                "views": 10,
+                "likes": 1,
+                "comments": 0,
+                "content_format": "videos",
+            },
+        ],
+    )
+    _write_jsonl(
+        tmp_path / "state" / "channel_registry.jsonl",
+        [
+            {
+                "channel_url": "https://www.youtube.com/@bilinkis",
+                "channel_id": "UC_bilinkis",
+                "channel_name": "Santiago Bilinkis",
+                "uploads_playlist_id": "UU_bilinkis",
+                "resolved_at": "2026-05-20T12:00:00+00:00",
+                "resolver_status": "ok",
+            }
+        ],
+    )
+
+    report = select_transcription_candidates(
+        data_dir=tmp_path,
+        limit=0,
+        forced_channels_new_video_window_days=360,
+        forced_channels_max_per_run=50,
+    )
+    queue = [json.loads(x) for x in (tmp_path / "transcripts/transcript_queue.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+
+    assert report["selected_count"] == 1
+    assert report["selected_forced_count"] == 1
+    assert report["selected_ranked_count"] == 0
+    assert report["source_artifacts"]["latest_snapshots"]["row_count"] == 2
+    assert queue[0]["video_id"] == "snapVideo01"
+    assert queue[0]["selection_source"] == "forced_channel_new_video"

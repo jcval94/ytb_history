@@ -69,6 +69,37 @@ processes:
       - Operations
     depends_on: []
 
+  - process_id: github_heatmaps
+    name: YouTube Heatmaps
+    domain: github
+    process_type: github_workflow
+    workflow_file: .github/workflows/heatmaps.yml
+    cadence: daily
+    sla_hours: 48
+    command: GitHub Actions workflow
+    inputs:
+      - data/transcripts/**
+      - data/analytics/**
+      - data/exports/**
+      - data/state/**
+    outputs:
+      - data/heatmaps/**
+      - data/operations/**
+    secrets_required: []
+    expected_artifacts:
+      - path: heatmaps/latest_heatmap_run_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: heatmaps/heatmap_registry.jsonl
+        type: text
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_select_transcription_candidates
+
   - process_id: github_pages
     name: Deploy Dashboard to GitHub Pages
     domain: github
@@ -774,6 +805,36 @@ processes:
     depends_on:
       - cli_build_analytics
 
+  - process_id: cli_extract_heatmaps
+    name: Extract public heatmaps
+    domain: transcription
+    process_type: cli
+    cadence: daily_after_transcripts
+    sla_hours: 48
+    command: python -m ytb_history.cli extract-heatmaps --data-dir data --limit 50
+    inputs:
+      - data/transcripts/**
+      - data/analytics/**
+      - data/exports/**
+      - data/state/**
+    outputs:
+      - data/heatmaps/**
+      - data/transcripts/videos/**/transcript_metadata.json
+    secrets_required: []
+    expected_artifacts:
+      - path: heatmaps/latest_heatmap_run_report.json
+        type: json
+        timestamp_field: generated_at
+        required: false
+      - path: heatmaps/heatmap_registry.jsonl
+        type: text
+        required: false
+    dashboard_tabs:
+      - Creative
+      - Operations
+    depends_on:
+      - cli_select_transcription_candidates
+
   - process_id: cli_transcribe_selected_videos
     name: Transcribe selected videos
     domain: transcription
@@ -936,6 +997,45 @@ processes:
       - build/local_automation/latest_run_report.json
     secrets_required:
       - OPENAI_API_KEY
+    expected_artifacts:
+      - path: build/local_automation/latest_play_report.json
+        base: repo
+        type: json
+        timestamp_field: generated_at
+        required: false
+    dashboard_tabs:
+      - Operations
+    depends_on:
+      - local_repo_sync
+      - local_transcription_automation
+
+  - process_id: local_forced_transcription_360d_play
+    name: Local forced transcription 360d play
+    domain: local
+    process_type: local_automation
+    observability_scope: local_only
+    cadence: manual_desktop_shortcut
+    sla_hours: 168
+    command: scripts/run_local_play.ps1 -ForcedOnly -ForcedWindowDays 360 -RefreshForcedChannels
+    inputs:
+      - origin/main
+      - local_git_worktree
+      - config/transcription_channels.py
+      - data/state/channel_registry.jsonl
+      - data/snapshots/**
+      - data/transcripts/**
+      - data/audio_sources/**
+      - data/video_sources/**
+      - OPENAI_API_KEY
+      - YOUTUBE_API_KEY
+    outputs:
+      - build/local_automation/latest_play_report.json
+      - build/local_automation/latest_sync_report.json
+      - build/local_automation/latest_run_report.json
+      - data/transcripts/**
+    secrets_required:
+      - OPENAI_API_KEY
+      - YOUTUBE_API_KEY
     expected_artifacts:
       - path: build/local_automation/latest_play_report.json
         base: repo

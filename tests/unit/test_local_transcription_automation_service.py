@@ -305,6 +305,72 @@ def test_run_local_transcription_automation_transcribes_all_selected_candidates(
     assert report["steps"]["transcript_timestamps"]["timestamp_kwargs"]["limit"] == 12
 
 
+def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selection(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
+    calls: dict[str, dict[str, Any]] = {}
+
+    def _pipeline(**kwargs: Any) -> dict[str, Any]:
+        calls["pipeline"] = kwargs
+        return {"status": "success", "videos_discovered": 2}
+
+    def _candidate_selector(**kwargs: Any) -> dict[str, Any]:
+        calls["selection"] = kwargs
+        return {"selected_count": 2, "selected_ranked_count": 0, "selected_forced_count": 2}
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        limit=50,
+        forced_only=True,
+        forced_channels_new_video_window_days=360,
+        forced_channels_max_per_run=50,
+        refresh_forced_channels=True,
+        forced_refresh_window_days=360,
+        forced_refresh_max_pages_per_channel=20,
+        command_runner=lambda command, **_kwargs: _completed(command),
+        pipeline_runner=_pipeline,
+        candidate_selector=_candidate_selector,
+        transcription_runner=lambda **kwargs: {"transcribed_success": 2, "transcription_kwargs": kwargs},
+        timestamp_backfill_runner=lambda **kwargs: {"generated": 2, "timestamp_kwargs": kwargs},
+        insights_generator=lambda **_kwargs: {"generated": 2},
+        registry_report_builder=lambda **_kwargs: {},
+    )
+
+    assert report["forced_only"] is True
+    assert report["selected_forced_count"] == 2
+    assert calls["pipeline"]["channel_urls"] == ["https://www.youtube.com/@bilinkis", "https://www.youtube.com/veritasium"]
+    assert calls["pipeline"]["settings_overrides"]["discovery_window_days"] == 360
+    assert calls["pipeline"]["settings_overrides"]["max_pages_per_channel"] == 20
+    assert calls["selection"] == {
+        "data_dir": str(tmp_path / "data"),
+        "limit": 0,
+        "forced_channels_new_video_window_days": 360,
+        "forced_channels_max_per_run": 50,
+    }
+    assert report["transcription_limit"] == 2
+
+
+def test_automation_reports_youtube_refresh_failure_without_traceback_crash(tmp_path: Path) -> None:
+    _write_sync_report(tmp_path)
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        refresh_forced_channels=True,
+        command_runner=lambda command, **_kwargs: _completed(command),
+        pipeline_runner=lambda **_kwargs: (_ for _ in ()).throw(RuntimeError("missing youtube key")),
+        candidate_selector=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("selection should not run")),
+    )
+
+    assert report["status"] == "failed_youtube_refresh"
+    assert report["steps"]["youtube_refresh"] == {
+        "status": "failed",
+        "error": "missing youtube key",
+        "exception_type": "RuntimeError",
+    }
+    assert "youtube_refresh_failed" in report["warnings"]
+    written = json.loads((tmp_path / "build" / "local_automation" / "latest_run_report.json").read_text(encoding="utf-8"))
+    assert written["status"] == "failed_youtube_refresh"
+
+
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:
     content = Path("scripts/run_local_transcription_automation.ps1").read_text(encoding="utf-8")
 

@@ -35,3 +35,10 @@ def test_pyproject_declares_transcription_optional_dependencies() -> None:
     assert any(dep.startswith("openai") for dep in transcription)
     assert any(dep.startswith("yt-dlp") for dep in transcription)
     assert any(dep.startswith("imageio-ffmpeg") for dep in transcription)
+
+
+def test_pyproject_declares_heatmap_optional_dependencies() -> None:
+    parsed = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    optional = parsed["project"].get("optional-dependencies", {})
+    heatmap = optional.get("heatmap", [])
+    assert any(dep.startswith("yt-dlp") for dep in heatmap)

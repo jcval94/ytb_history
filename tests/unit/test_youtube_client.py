@@ -58,6 +58,15 @@ def test_accepts_explicit_api_key(youtube_module, monkeypatch: pytest.MonkeyPatc
     assert client is not None
 
 
+def test_accepts_resolved_api_key(youtube_module, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("YOUTUBE_API_KEY", raising=False)
+    monkeypatch.setattr(youtube_module, "resolve_environment_variable", lambda name: "persisted-key" if name == "YOUTUBE_API_KEY" else "")
+
+    client = youtube_module.YouTubeClient()
+
+    assert client is not None
+
+
 def test_get_videos_by_ids_validates_upper_bound(youtube_module) -> None:
     client = youtube_module.YouTubeClient(api_key="test-key")
 

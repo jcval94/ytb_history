@@ -37,6 +37,7 @@ from ytb_history.services.transcript_insights_service import generate_transcript
 from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
 from ytb_history.services.local_repo_sync_service import sync_local_repo
 from ytb_history.services.local_transcription_diagnostics_service import diagnose_local_transcription
+from ytb_history.services.heatmap_service import extract_heatmaps
 
 
 def _make_spanish_progress_printer(*, to_stdout: bool = False):
@@ -160,6 +161,9 @@ def build_parser() -> argparse.ArgumentParser:
     transcript_parser = sub.add_parser("select-transcription-candidates", help="Select daily high-value videos for transcription queue")
     transcript_parser.add_argument("--data-dir", default="data")
     transcript_parser.add_argument("--limit", default=10, type=int)
+    transcript_parser.add_argument("--forced-window-days", type=int)
+    transcript_parser.add_argument("--forced-max-per-run", type=int)
+    transcript_parser.add_argument("--forced-only", action="store_true")
 
     transcript_report_parser = sub.add_parser("transcript-registry-report", help="Build transcript registry report from local transcript registry")
     transcript_report_parser.add_argument("--data-dir", default="data")
@@ -204,6 +208,12 @@ def build_parser() -> argparse.ArgumentParser:
     local_auto_parser.add_argument("--audio-source-dir", default="data/audio_sources")
     local_auto_parser.add_argument("--video-source-dir", default="data/video_sources")
     local_auto_parser.add_argument("--sync-report-path")
+    local_auto_parser.add_argument("--forced-only", action="store_true")
+    local_auto_parser.add_argument("--forced-window-days", type=int)
+    local_auto_parser.add_argument("--forced-max-per-run", type=int)
+    local_auto_parser.add_argument("--refresh-forced-channels", action="store_true")
+    local_auto_parser.add_argument("--forced-refresh-window-days", default=360, type=int)
+    local_auto_parser.add_argument("--forced-refresh-max-pages-per-channel", default=20, type=int)
     local_auto_parser.add_argument("--ytdlp-cookies-file")
     local_auto_parser.add_argument("--ytdlp-browser")
     local_auto_parser.add_argument("--ytdlp-extra-args")
@@ -225,6 +235,13 @@ def build_parser() -> argparse.ArgumentParser:
     diagnose_parser.add_argument("--data-dir", default="data")
     diagnose_parser.add_argument("--audio-source-dir", default="data/audio_sources")
     diagnose_parser.add_argument("--video-source-dir", default="data/video_sources")
+
+    heatmap_parser = sub.add_parser("extract-heatmaps", help="Extract public YouTube heatmaps for already-transcribed videos")
+    heatmap_parser.add_argument("--data-dir", default="data")
+    heatmap_parser.add_argument("--limit", default=50, type=int)
+    heatmap_parser.add_argument("--bucket", choices=["1w", "2w", "4w", "8w", "all"], default="all")
+    heatmap_parser.add_argument("--force", action="store_true")
+    heatmap_parser.add_argument("--dry-run", action="store_true")
 
     predict_parser = sub.add_parser("predict-with-model-artifact", help="Generate predictions using a downloaded model artifact directory")
     predict_parser.add_argument("--model-dir", required=True)
@@ -386,7 +403,15 @@ def main() -> int:
         return 0
 
     if args.command == "select-transcription-candidates":
-        summary = select_transcription_candidates(data_dir=args.data_dir, limit=args.limit)
+        kwargs = {
+            "data_dir": args.data_dir,
+            "limit": 0 if args.forced_only else args.limit,
+        }
+        if args.forced_window_days is not None:
+            kwargs["forced_channels_new_video_window_days"] = args.forced_window_days
+        if args.forced_max_per_run is not None:
+            kwargs["forced_channels_max_per_run"] = args.forced_max_per_run
+        summary = select_transcription_candidates(**kwargs)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
@@ -454,6 +479,12 @@ def main() -> int:
             "audio_source_dir": args.audio_source_dir,
             "video_source_dir": args.video_source_dir,
             "sync_report_path": args.sync_report_path,
+            "forced_only": args.forced_only,
+            "forced_channels_new_video_window_days": args.forced_window_days,
+            "forced_channels_max_per_run": args.forced_max_per_run,
+            "refresh_forced_channels": args.refresh_forced_channels,
+            "forced_refresh_window_days": args.forced_refresh_window_days,
+            "forced_refresh_max_pages_per_channel": args.forced_refresh_max_pages_per_channel,
             "ytdlp_cookies_file": args.ytdlp_cookies_file,
             "ytdlp_browser": args.ytdlp_browser,
             "ytdlp_extra_args": ytdlp_extra_args,
@@ -491,6 +522,17 @@ def main() -> int:
             data_dir=args.data_dir,
             audio_source_dir=args.audio_source_dir,
             video_source_dir=args.video_source_dir,
+        )
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.command == "extract-heatmaps":
+        summary = extract_heatmaps(
+            data_dir=args.data_dir,
+            limit=args.limit,
+            bucket=args.bucket,
+            force=args.force,
+            dry_run=args.dry_run,
         )
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0

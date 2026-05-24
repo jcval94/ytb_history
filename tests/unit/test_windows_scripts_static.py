@@ -38,6 +38,29 @@ def test_play_shortcut_installer_targets_desktop_shortcut() -> None:
     assert "latest_play_shortcut.json" in content
 
 
+def test_forced_transcription_shortcut_targets_forced_360_play() -> None:
+    content = _script("install_local_forced_transcription_shortcut.ps1")
+
+    assert 'ShortcutName = "YTB History - Forced Transcription 360d"' in content
+    assert "run_local_play.ps1" in content
+    assert "-ForcedOnly" in content
+    assert "-ForcedWindowDays {4}" in content
+    assert "-RefreshForcedChannels" in content
+    assert "latest_forced_transcription_shortcut.json" in content
+
+
+def test_manual_play_script_forwards_forced_360_options() -> None:
+    content = _script("run_local_play.ps1")
+
+    assert "[switch]$ForcedOnly" in content
+    assert "[int]$ForcedWindowDays = 14" in content
+    assert "[switch]$RefreshForcedChannels" in content
+    assert "-ForcedOnly" in content
+    assert "-ForcedWindowDays" in content
+    assert "-RefreshForcedChannels" in content
+    assert '$ErrorActionPreference = "Continue"' in content
+
+
 def test_windows_transcription_runner_forwards_ytdlp_options() -> None:
     content = _script("run_local_transcription_automation.ps1")
 
@@ -51,6 +74,10 @@ def test_windows_transcription_runner_forwards_ytdlp_options() -> None:
     assert "--ytdlp-cookies-b64" in content
     assert "--progress-log" in content
     assert "--no-json-output" in content
+    assert "--forced-only" in content
+    assert "--forced-window-days" in content
+    assert "--refresh-forced-channels" in content
+    assert '$ErrorActionPreference = "Continue"' in content
     assert "Seleccion:" in content
     assert "Transcripcion:" in content
     assert "Timestamps:" in content
