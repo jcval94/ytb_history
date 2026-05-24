@@ -1,0 +1,66 @@
+{
+  "video_id": "DkPe_1nckdA",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre sus cumpleaños pasados, compartiendo una anécdota de haber estado enfermo en todos sus cumpleaños de niño y cómo su percepción de la vida y la edad ha cambiado a lo largo del tiempo.",
+  "main_topics": [
+    "Reflexión sobre la infancia",
+    "Percepción de la edad",
+    "Crecimiento personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Infancia y cumpleaños",
+      "purpose": "Introducir la experiencia personal con los cumpleaños y la enfermedad",
+      "summary": "El hablante menciona que siempre estaba enfermo en sus cumpleaños de niño."
+    },
+    {
+      "section": "Cambio en la percepción de la edad",
+      "purpose": "Mostrar cómo ha cambiado su perspectiva a lo largo del tiempo",
+      "summary": "A pesar de su preocupación inicial por envejecer, descubre que cada etapa de su vida ha sido más gratificante de lo que esperaba."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa personal",
+    "hook_text": "todos mis primeros cumpleaños, desde tener uno, ya tenía fiebre.",
+    "why_it_works": "Capta la atención del espectador al presentar una experiencia emocional y relatable desde la infancia."
+  },
+  "claims": [
+    {
+      "claim": "La percepción de la edad puede cambiar positivamente con el tiempo.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las experiencias pasadas pueden influir en las expectativas futuras.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Recuerdos de cumpleaños enfermo",
+    "Reflexiones sobre la vida a los 55 años"
+  ],
+  "actionable_ideas": [
+    "Reevaluar la percepción personal sobre el envejecimiento.",
+    "Apreciar cada etapa de la vida con una mentalidad positiva."
+  ],
+  "audience": "Personas interesadas en reflexiones sobre la vida y el envejecimiento.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y personal",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Reflexiones profundas"
+  ],
+  "title_supporting_quotes": [
+    "cada edad que viví hasta ahora fue más linda de lo que pensaba."
+  ],
+  "creative_reuse_opportunities": [
+    "Convertir las reflexiones en un ensayo o artículo sobre el envejecimiento.",
+    "Crear contenido visual que represente las etapas de la vida."
+  ],
+  "risk_notes": [
+    "Los temas emocionales pueden no resonar con todos.",
+    "Dependencia de la experiencia personal puede limitar la universalidad del mensaje."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

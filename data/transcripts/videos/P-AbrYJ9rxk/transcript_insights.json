@@ -1,0 +1,94 @@
+{
+  "video_id": "P-AbrYJ9rxk",
+  "language": "es",
+  "summary": "El video explora la evolución de la relación entre humanos y lobos, que dio origen a los perros, enfatizando cómo esta relación se basa en la supervivencia, la confianza, y la comprensión emocional entre las dos especies.",
+  "main_topics": [
+    "Evolución de la relación humano-animal",
+    "Supervivencia y colaboración",
+    "Cambios físicos y mentales en los lobos",
+    "Creación de razas de perros",
+    "Comprensión emocional entre especies"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la historia",
+      "purpose": "Establecer el contexto histórico",
+      "summary": "Se narra el encuentro inicial entre un lobo y humanos en la prehistoria."
+    },
+    {
+      "section": "Desarrollo del vínculo",
+      "purpose": "Explicar cómo surgió la relación",
+      "summary": "Se describe el pacto de supervivencia que llevó a la confianza mutua entre lobos y humanos."
+    },
+    {
+      "section": "Transformaciones evolutivas",
+      "purpose": "Mostrar el cambio en los lobos",
+      "summary": "Los lobos cambiaron físicamente y desarrollaron la capacidad de interpretar emociones humanas."
+    },
+    {
+      "section": "Creación de razas",
+      "purpose": "Ilustrar la domesticación",
+      "summary": "Se discute cómo los humanos seleccionaron características específicas en los perros para diversas funciones."
+    },
+    {
+      "section": "El vínculo actual",
+      "purpose": "Reflejar la conexión emocional actual",
+      "summary": "Se habla de cómo los perros son considerados parte de la familia y se entienden a nivel emocional."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anécdota histórica",
+    "hook_text": "En la prehistoria, cuando los humanos todavía vivían en cuevas...",
+    "why_it_works": "Capta la atención al conectar con un evento fundacional en la historia de la humanidad y su relación con los animales."
+  },
+  "claims": [
+    {
+      "claim": "La relación entre humanos y lobos inició como un pacto de supervivencia.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los lobos desarrollaron la capacidad de leer emociones humanas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los humanos han creado razas de perros según sus necesidades.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Pastores crearon perros atentos y pacientes.",
+    "Cazadores buscaron perros veloces y con buen olfato.",
+    "Guardianes favorecieron perros leales y fuertes."
+  ],
+  "actionable_ideas": [
+    "Fomentar la comprensión emocional hacia las mascotas.",
+    "Investigar sobre la historia de la domesticación de los perros.",
+    "Promover la adopción de perros como parte de la familia."
+  ],
+  "audience": "Amantes de los animales y personas interesadas en la relaciones inter-especies.",
+  "tone": "Reflexivo y emocional",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Historias conmovedoras",
+    "Imágenes visuales de interacción humano-perro",
+    "Preguntas que invitan a la reflexión"
+  ],
+  "title_supporting_quotes": [
+    "Los lobos encontraron comida en nuestros restos.",
+    "Aprendieron a leernos, a interpretar nuestras emociones.",
+    "Hoy dormimos con ellos, les hablamos como si entendieran cada frase."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la evolución de la domesticación de animales.",
+    "Videos educativos sobre el comportamiento canino.",
+    "Charlas o talleres sobre la conexión emocional con mascotas."
+  ],
+  "risk_notes": [
+    "La falta de evidencia científica en algunas afirmaciones emocionales.",
+    "Potencial resistencia de personas que no ven valor en el vínculo humano-animal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

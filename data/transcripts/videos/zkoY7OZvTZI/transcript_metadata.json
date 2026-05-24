@@ -1,0 +1,14 @@
+{
+  "video_id": "zkoY7OZvTZI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Cómo tu perro se da cuenta de que estás por volver",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zkoY7OZvTZI.mp3",
+  "transcribed_at": "2026-05-24T19:59:16.894972+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 790,
+  "text_sha256": "5caac4d313cb9ca986f837f57a64e479de8822623f34c5b81483d3e1a3ef4bf9",
+  "repo_schema_version": "transcript_metadata_v1"
+}

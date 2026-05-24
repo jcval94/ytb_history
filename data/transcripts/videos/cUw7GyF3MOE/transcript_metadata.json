@@ -1,0 +1,20 @@
+{
+  "video_id": "cUw7GyF3MOE",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "No confíes en tus ojos: así se falsifica con IA",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cUw7GyF3MOE.mp3",
+  "transcribed_at": "2026-05-24T20:01:49.202711+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1051,
+  "text_sha256": "5a09b9eceb90f76d470f6130e8e95ad7f19245f6fe6613f0ca79cfe2430336cf",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\cUw7GyF3MOE\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:13:14.671017+00:00",
+  "duration_seconds": 52.540000915527344
+}

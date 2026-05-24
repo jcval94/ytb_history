@@ -1,0 +1,86 @@
+{
+  "video_id": "-oVY_xzW-no",
+  "language": "es",
+  "summary": "El video discute cómo nuestro cerebro tiene dos sistemas de decisión: uno emocional y rápido, y otro analítico y lento. Se explora cómo la impulsividad, a menudo confundida con valentía, puede llevarnos a malas decisiones. Se enfatiza la importancia del control emocional y la identificación de arrebatos impulsivos.",
+  "main_topics": [
+    "Sistemas de decisión del cerebro",
+    "Impulsividad vs. valentía",
+    "Control emocional",
+    "Equilibrio entre emoción y razón"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el tema de decisiones impulsivas.",
+      "summary": "Se plantea una pregunta sobre arrepentirse de un mensaje enviado."
+    },
+    {
+      "section": "Explicación de sistemas de decisión",
+      "purpose": "Explicar los dos sistemas de toma de decisiones.",
+      "summary": "El cerebro tiene un sistema emocional rápido y otro analítico lento."
+    },
+    {
+      "section": "Consecuencias de la impulsividad",
+      "purpose": "Describir cómo la impulsividad afecta las decisiones.",
+      "summary": "La impulsividad puede llevar a errores y mala toma de decisiones."
+    },
+    {
+      "section": "Comparación con la procrastinación",
+      "purpose": "Contrastar impulsividad y procrastinación.",
+      "summary": "Ambos impiden el control y la calidad de decisiones."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con recomendaciones sobre la gestión de impulsos.",
+      "summary": "La clave es identificar arrebatos impulsivos y tener control inhibitorio."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta retórica",
+    "hook_text": "¿Alguna vez mandaste un mensaje que no deberías haber mandado?",
+    "why_it_works": "Engancha a la audiencia al hacerla reflexionar sobre experiencias personales."
+  },
+  "claims": [
+    {
+      "claim": "El sistema emocional del cerebro reacciona antes que el analítico.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La impulsividad es muchas veces confundida con valentía.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La impulsividad y la procrastinación afectan la calidad de las decisiones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Identificar los arrebatos impulsivos.",
+    "Desarrollar control inhibitorio.",
+    "Reflexionar antes de actuar en situaciones emocionales."
+  ],
+  "audience": "Personas interesadas en la psicología del comportamiento y la toma de decisiones.",
+  "tone": "informativo y reflexivo",
+  "content_style": "exploratorio y accesible",
+  "retention_devices": [
+    "historias personales",
+    "análisis de comportamiento humano"
+  ],
+  "title_supporting_quotes": [
+    "No fuiste vos, fue tu amígdala.",
+    "El cementerio está lleno de valientes."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre psicología de decisiones",
+    "Charlas o talleres sobre control emocional"
+  ],
+  "risk_notes": [
+    "Riesgo de malinterpretación de la relación entre impulsividad y valentía.",
+    "Necesidad de contexto en ejemplos para evitar generalizaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

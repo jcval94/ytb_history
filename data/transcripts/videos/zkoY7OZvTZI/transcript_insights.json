@@ -1,0 +1,66 @@
+{
+  "video_id": "zkoY7OZvTZI",
+  "language": "es",
+  "summary": "El video explora cómo los perros perciben el tiempo a través de los olores, específicamente el rastro que dejan sus dueños al salir de casa. Se explica que los perros no solo pueden oler la ausencia de su dueño, sino que también pueden estimar cuánto tiempo ha pasado desde que se fue.",
+  "main_topics": [
+    "Percepción del tiempo en perros",
+    "Olfato canino",
+    "Vínculo entre mascotas y dueños"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación cotidiana de un dueño que regresa a casa y la reacción de su perro.",
+      "summary": "Se introduce la idea de cómo los perros esperan a sus dueños en la puerta."
+    },
+    {
+      "section": "Mecanismo del olfato canino",
+      "purpose": "Explicar cómo los perros perciben el tiempo y la ausencia de sus dueños.",
+      "summary": "Se detalla el proceso a través del cual los perros siguen el rastro del olor dejado por sus dueños."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Resumir la perspectiva canina respecto al tiempo y el vínculo afectivo.",
+      "summary": "Se concluye con la idea de que para los perros, el tiempo está ligado a su dueño y a los olores."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa emocional",
+    "hook_text": "Volvés a tu casa y ahí está, tu perro esperándote en la puerta.",
+    "why_it_works": "Invoca emociones relacionadas con la conexión afectiva entre humanos y mascotas, generando un interés inmediato."
+  },
+  "claims": [
+    {
+      "claim": "Los perros pueden percibir el tiempo a través de olores.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La percepción del tiempo en perros es diferente a la de los humanos.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Observar el comportamiento de tu perro al salir y volver a casa.",
+    "Investigar más sobre la percepción olfativa en animales."
+  ],
+  "audience": "Dueños de mascotas y amantes de los animales",
+  "tone": "Informativo y emotivo",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Descripción de situaciones cotidianas"
+  ],
+  "title_supporting_quotes": [
+    "¿Cómo lo hace?",
+    "No solo siente que te fuiste, siente hace cuánto que te fuiste."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la percepción sensorial en animales.",
+    "Videos educativos sobre el cuidado de mascotas."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

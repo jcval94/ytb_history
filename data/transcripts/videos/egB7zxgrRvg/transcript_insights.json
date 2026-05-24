@@ -1,0 +1,88 @@
+{
+  "video_id": "egB7zxgrRvg",
+  "language": "es",
+  "summary": "El video explora la idea de que aprender de los errores no es automático y que reflexionar sobre ellos es clave para mejorar. Se discute cómo la experiencia puede ser contraproducente si no se permite el desaprendizaje de viejas prácticas.",
+  "main_topics": [
+    "Aprender de los errores",
+    "Importancia de la reflexión",
+    "Peligros de la experiencia",
+    "Desaprender"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema",
+      "summary": "Introducción al concepto de aprender de los errores."
+    },
+    {
+      "section": "Estudio del MIT",
+      "purpose": "Aportar evidencia",
+      "summary": "Presenta un estudio del MIT que muestra que los fracasos anteriores no garantizan más éxito."
+    },
+    {
+      "section": "Reflexión sobre fracasos",
+      "purpose": "Aclarar la necesidad de reflexión",
+      "summary": "Destaca la importancia de reflexionar sobre los errores para mejorar."
+    },
+    {
+      "section": "Peligros de la experiencia",
+      "purpose": "Discutir un aspecto negativo",
+      "summary": "La experiencia puede llevar a la resistencia al cambio."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar el círculo",
+      "summary": "El verdadero error es no aprender y desaprender en el proceso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "La sabiduría popular dice que de los errores se aprende, pero esa lógica es engañosa.",
+    "why_it_works": "Desafia un concepto común, generando curiosidad sobre una nueva perspectiva."
+  },
+  "claims": [
+    {
+      "claim": "Aprender del error no es automático.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "La experiencia puede ser un arma de doble filo.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "El verdadero error es no aprovechar la oportunidad de aprender.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Realiza reflexiones después de cada fracaso.",
+    "Fomenta una cultura donde se valide el desaprendizaje.",
+    "Evalúa regularmente las prácticas y creencias establecidas."
+  ],
+  "audience": "Emprendedores y profesionales en desarrollo personal.",
+  "tone": "Reflexivo",
+  "content_style": "Didáctico",
+  "retention_devices": [
+    "Estudios estadísticos",
+    "Ejemplos de la vida real",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "Aprender del error no es automático.",
+    "La experiencia puede volverse un arma de doble filo."
+  ],
+  "creative_reuse_opportunities": [
+    "Blogs sobre fracaso y aprendizaje.",
+    "Charlas motivacionales.",
+    "Cursos sobre resiliencia y adaptación."
+  ],
+  "risk_notes": [
+    "La generalización sobre el aprendizaje de errores puede desincentivar la acción.",
+    "La resistencia al cambio podría ser un obstáculo en la implementación de nuevas ideas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

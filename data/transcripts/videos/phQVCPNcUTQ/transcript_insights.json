@@ -1,0 +1,93 @@
+{
+  "video_id": "phQVCPNcUTQ",
+  "language": "es",
+  "summary": "El video explora la complejidad de la memoria humana, comparándola con la memoria de una computadora y revelando cómo recordamos y olvidamos a través de ejemplos, investigaciones y casos extraordinarios, como el de Jill Price y Henry, lo que plantea preguntas sobre la importancia de olvidar.",
+  "main_topics": [
+    "Memoria perfecta",
+    "Olvido como mecanismo de supervivencia",
+    "Fallas de la memoria",
+    "Estudio de casos: Jill Price y Henry",
+    "Emoción y su impacto en la memoria"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la memoria y su peculiaridad.",
+      "summary": "Se plantea la pregunta sobre qué preferiríamos: recordar todo o nada, introduciendo a Jill Price como un caso extremo de memoria perfecta."
+    },
+    {
+      "section": "Las insólitas fallas de la memoria",
+      "purpose": "Explorar cómo y por qué la memoria humana es defectuosa.",
+      "summary": "Se presentan experimentos que ilustran cómo olvidamos cosas importantes y recordamos lo trivial, así como la distorsión de recuerdos."
+    },
+    {
+      "section": "Caso de Henry",
+      "purpose": "Analizar cómo un caso extraordinario ayuda a entender la memoria.",
+      "summary": "Henry, quien no puede formar nuevos recuerdos, revela que la memoria es un sistema complejo y no un simple almacenamiento."
+    },
+    {
+      "section": "Decisiones del cerebro about la memoria",
+      "purpose": "Describir cómo el cerebro decide qué recordar.",
+      "summary": "Se explican los procesos de codificación, la repetición y el impacto de las emociones en la memoria."
+    },
+    {
+      "section": "Conclusión y cierre",
+      "purpose": "Reflexionar sobre la naturaleza de los recuerdos.",
+      "summary": "Se plantea la pregunta sobre la veracidad de los recuerdos y cómo estos cambian con el tiempo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta provocativa",
+    "hook_text": "¿Qué preferirías, recordarlo absolutamente todo o no recordar nada?",
+    "why_it_works": "Engancha al público al plantear una elección que desafía la perspectiva común sobre la memoria."
+  },
+  "claims": [
+    {
+      "claim": "La memoria humana es defectuosa en comparación con la de una computadora.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Olvidar puede ser un mecanismo de supervivencia.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Las emociones impactan fuertemente en la formación de recuerdos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Caso de Jill Price",
+    "Experimentos sobre el aprendizaje bajo el agua",
+    "Caso de Henry"
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre qué recuerdos son realmente importantes.",
+    "Practicar la atención plena para mejorar la memoria.",
+    "Considerar cómo nuestras emociones afectan nuestra percepción de los recuerdos."
+  ],
+  "audience": "Personas interesadas en la psicología y la neurociencia.",
+  "tone": "informativo y reflexivo",
+  "content_style": "narrativo con elementos científicos",
+  "retention_devices": [
+    "historias de casos",
+    "experimentos ilustrativos",
+    "preguntas provocativas"
+  ],
+  "title_supporting_quotes": [
+    "La memoria guarda lo inútil y pierde lo importante.",
+    "La memoria no funciona como un disco duro, sino como una aduana."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un podcast sobre la memoria y sus fallas.",
+    "Desarrollar infografías sobre cómo funciona la memoria humana.",
+    "Realizar talleres sobre técnicas de memorización y gestión de recuerdos."
+  ],
+  "risk_notes": [
+    "Algunos conceptos pueden ser infravalorados si no se explican adecuadamente.",
+    "La comparación con computadoras puede simplificar en exceso la complejidad de la memoria humana."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

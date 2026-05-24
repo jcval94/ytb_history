@@ -1,0 +1,80 @@
+{
+  "video_id": "cUw7GyF3MOE",
+  "language": "es",
+  "summary": "El video aborda el peligro de las tecnologías de IA, específicamente en la clonación de voces para extorsionar, y plantea la desconfianza general que esto genera en la percepción de la verdad.",
+  "main_topics": [
+    "IA y clonación de voz",
+    "Extorsión a través de tecnología",
+    "Deepfakes y su impacto en la verdad",
+    "Desconfianza en la información",
+    "Amenazas a la democracia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al problema",
+      "purpose": "Presentar el tema de la clonación de voz y su uso en extorsiones.",
+      "summary": "Delincuentes utilizan tecnología para clonar la voz de hijos y extorsionar a padres."
+    },
+    {
+      "section": "Consecuencias y ejemplos",
+      "purpose": "Ilustrar cómo la tecnología puede ser utilizada de manera fraudulenta.",
+      "summary": "Ejemplo de Claudia Sheinbaum, cuyo deepfake fue utilizado para una estafa."
+    },
+    {
+      "section": "Reflexión sobre la confianza en la información",
+      "purpose": "Generar preocupación sobre la percepción de la verdad en la era de la IA.",
+      "summary": "La incapacidad de discernir entre lo real y lo fabricado crea desconfianza."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Imaginate el susto de una madre que escucha llorar a su hija por teléfono",
+    "why_it_works": "Genera una conexión inmediata y empática con la audiencia, al apelar a un temor cotidiano."
+  },
+  "claims": [
+    {
+      "claim": "La clonación de voz se utiliza para extorsionar a personas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las deepfakes pueden engañar a la población, haciendo que crean en información falsa.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La IA representa una amenaza para la democracia.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Caso de Claudia Sheinbaum con deepfake para promocionar inversión fraudulenta."
+  ],
+  "actionable_ideas": [
+    "Informar sobre las técnicas de clonación de voz y deepfakes.",
+    "Promover la educación mediática para discernir la autenticidad de la información.",
+    "Establecer normas para la regulación de tecnología de IA."
+  ],
+  "audience": "Público en general interesado en tecnología y sus implicaciones sociales",
+  "tone": "Urgente y preocupante",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Ejemplos impactantes",
+    "Conexiones emocionales",
+    "Citas de expertos como Yuval Harari"
+  ],
+  "title_supporting_quotes": [
+    "\"En la era de la IA, ver ya no es creer.\"",
+    "\"La IA es una amenaza para la democracia.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear documentales sobre el impacto de la IA en la sociedad.",
+    "Realizar campañas educativas sobre la desinformación."
+  ],
+  "risk_notes": [
+    "Los riesgos de extorsión y fraude son altos debido a la tecnología accesible.",
+    "La desconfianza en la información puede causar problemas sociales más amplios."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

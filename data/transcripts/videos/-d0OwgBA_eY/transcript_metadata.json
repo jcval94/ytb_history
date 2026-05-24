@@ -1,0 +1,20 @@
+{
+  "video_id": "-d0OwgBA_eY",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué me resistí tanto a hacer reels (y qué aprendí)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-d0OwgBA_eY.mp3",
+  "transcribed_at": "2026-05-24T19:56:34.713910+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1107,
+  "text_sha256": "fe3a8b6557ce3902ef33fa238d418c647da94af27f6f04655ad56d884c50d9d2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-d0OwgBA_eY\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:05:35.192114+00:00",
+  "duration_seconds": 51.31999969482422
+}

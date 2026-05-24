@@ -1,0 +1,82 @@
+{
+  "video_id": "q5jTySWr1Pg",
+  "language": "es",
+  "summary": "El discurso aborda la importancia de la inteligencia artificial (IA) en la vida profesional y personal, destacando su rapidez y facilidad de uso en comparación con tecnologías anteriores. Se enfatiza que la IA no es un simple buscador y que puede cometer errores, al igual que los humanos. Se invita a la audiencia a adaptarse rápidamente a estos nuevos avances para no quedarse atrás en un competitivo entorno laboral.",
+  "main_topics": [
+    "Importancia de la IA",
+    "Diferencias entre IA y buscadores",
+    "Errores de la IA",
+    "Adaptación a la digitalización"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la IA",
+      "purpose": "Establecer la relevancia de la IA en la actualidad.",
+      "summary": "La IA es considerada la tecnología más poderosa de la historia, con un impacto más profundo y rápido que internet."
+    },
+    {
+      "section": "Comparación con buscadores",
+      "purpose": "Clarificar cómo se debe utilizar la IA.",
+      "summary": "La IA no debe ser utilizada como un buscador tradicional, ya que su función es crear información nueva."
+    },
+    {
+      "section": "Limitaciones de la IA",
+      "purpose": "Advertir sobre la posibilidad de errores.",
+      "summary": "La IA puede equivocarse, y su información debe ser verificada en contextos inciertos."
+    },
+    {
+      "section": "Conclusión sobre la adaptación",
+      "purpose": "Impulsar a la acción.",
+      "summary": "Es crucial que las personas se adapten rápidamente a la IA para no enfrentarse a problemas competitivos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impacto inmediato",
+    "hook_text": "La IA es la tecnología más poderosa de la historia de la humanidad.",
+    "why_it_works": "Captura la atención al comparar la IA con innovaciones fundamentales y plantea urgencia en su adopción."
+  },
+  "claims": [
+    {
+      "claim": "La IA tendrá un impacto competitivo en los próximos 3 años.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La IA es más poderosa que el internet.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La IA puede cometer errores.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Incorporar la IA en prácticas profesionales.",
+    "No usar la IA solo como buscador.",
+    "Verificar la información proporcionada por la IA."
+  ],
+  "audience": "Profesionales y empresas en adaptación digital.",
+  "tone": "Urgente y educativo.",
+  "content_style": "Conversacional e informativo.",
+  "retention_devices": [
+    "Comparaciones históricas",
+    "Urgencia en la adopción",
+    "Ejemplos claros de uso de la IA"
+  ],
+  "title_supporting_quotes": [
+    "La IA es la tecnología más poderosa de la historia de la humanidad.",
+    "La IA crea cosas que no existen."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar cursos sobre el uso de IA en negocios.",
+    "Crear contenido sobre las diferencias entre IA y buscadores."
+  ],
+  "risk_notes": [
+    "Los errores de la IA pueden llevar a decisiones incorrectas.",
+    "La falta de adaptación puede resultar en desventajas competitivas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

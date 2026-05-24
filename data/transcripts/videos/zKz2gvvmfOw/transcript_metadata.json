@@ -1,0 +1,14 @@
+{
+  "video_id": "zKz2gvvmfOw",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La pobreza que nadie mide: cuando el tiempo no alcanza",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zKz2gvvmfOw.mp3",
+  "transcribed_at": "2026-05-24T19:58:01.062878+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1734,
+  "text_sha256": "f5aa84c5c66374a475c732e4254bd235b79821c3e4fcf8590a68598cb0027de4",
+  "repo_schema_version": "transcript_metadata_v1"
+}

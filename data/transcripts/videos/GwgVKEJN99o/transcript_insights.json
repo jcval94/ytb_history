@@ -1,0 +1,78 @@
+{
+  "video_id": "GwgVKEJN99o",
+  "language": "es",
+  "summary": "El video discute la importancia de adoptar un enfoque de 'fallar rápido y barato' en la toma de decisiones, especialmente en el mundo empresarial. Se enfatiza cómo se puede aprender más de pequeños experimentos en lugar de largas reuniones y análisis.",
+  "main_topics": [
+    "Fallar rápido y barato",
+    "Metodologías ágiles",
+    "Producto mínimo viable",
+    "Toma de decisiones",
+    "Aprendizaje a través de errores"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el concepto de fallo rápido",
+      "summary": "Introducción a la idea de que se puede determinar si un objeto flota con un simple experimento."
+    },
+    {
+      "section": "Desarrollo del concepto",
+      "purpose": "Explicar el enfoque 'fail fast, fail cheap'",
+      "summary": "Descripción de cómo este enfoque ayuda a tomar decisiones con incertidumbre de manera efectiva."
+    },
+    {
+      "section": "Ventajas del método",
+      "purpose": "Resaltar los beneficios de actuar rápidamente",
+      "summary": "Acelera el proceso de aprendizaje y minimiza el daño por errores."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Conclusión sobre la importancia del aprendizaje a través de la experiencia",
+      "summary": "Refuerzo de la idea de que la vida y los proyectos se construyen a través de pequeños ensayos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "Hay una manera correcta de hacer las cosas mal.",
+    "why_it_works": "Capta inmediatamente la atención del espectador al presentar un dilema común de forma intrigante."
+  },
+  "claims": [
+    {
+      "claim": "Fallar rápido y barato es esencial en la toma de decisiones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las metodologías ágiles mejoran la eficiencia en el trabajo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Ejemplo del objeto que flota."
+  ],
+  "actionable_ideas": [
+    "Implementar pruebas pequeñas antes de tomar decisiones grandes.",
+    "Adoptar un enfoque de decisiones reversibles."
+  ],
+  "audience": "Emprendedores, profesionales en la toma de decisiones",
+  "tone": "Instructivo y reflexivo",
+  "content_style": "Conversacional y motivacional",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Historias personales",
+    "Invitación a la reflexión"
+  ],
+  "title_supporting_quotes": [
+    "'La vida se construye más por pequeños ensayos y errores que por planes perfectos.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre errores comunes en la toma de decisiones.",
+    "Desarrollar talleres sobre metodologías ágiles."
+  ],
+  "risk_notes": [
+    "La estrategia podría fallar si no se aplica correctamente.",
+    "El enfoque podría ser malinterpretado como improvisación sin planificación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

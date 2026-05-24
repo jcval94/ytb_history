@@ -1,0 +1,14 @@
+{
+  "video_id": "qm5LFzrp7ms",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué la IA \"neutral\" es un mito (y cómo te afecta).",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\qm5LFzrp7ms.mp3",
+  "transcribed_at": "2026-05-24T19:52:41.384563+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 817,
+  "text_sha256": "f7083f6e548fd0e9d8baaa990d34d7862e363a22a019114752ba5fb4b19f90de",
+  "repo_schema_version": "transcript_metadata_v1"
+}

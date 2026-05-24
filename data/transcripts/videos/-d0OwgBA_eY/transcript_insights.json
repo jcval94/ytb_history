@@ -1,0 +1,87 @@
+{
+  "video_id": "-d0OwgBA_eY",
+  "language": "es",
+  "summary": "El narrador comparte su experiencia al probar con contenidos cortos para redes sociales, a pesar de sus dudas sobre la efectividad de descomponer narrativas complejas. Destaca el asombroso éxito que tuvo, a pesar de las dificultades iniciales y el esfuerzo detrás de cada vídeo.",
+  "main_topics": [
+    "Adaptación de contenido para redes sociales",
+    "Desafíos de narrar historias complejas",
+    "Esfuerzo detrás de la creación de contenido"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de la idea",
+      "purpose": "Presentar la decisión de probar con contenido en redes sociales",
+      "summary": "El narrador cuenta cómo decidió adaptar una columna de radio a formatos cortos."
+    },
+    {
+      "section": "Prejuicio inicial",
+      "purpose": "Explicar dudas sobre la efectividad del contenido fragmentado",
+      "summary": "Se expresa la preocupación de que el mensaje se pierda al cortar la narrativa."
+    },
+    {
+      "section": "Proceso de creación",
+      "purpose": "Describir cómo realizó los vídeos",
+      "summary": "El narrador relata el proceso de edición y preparación para subir el contenido."
+    },
+    {
+      "section": "Impacto inesperado",
+      "purpose": "Compartir el éxito y la reacción del público",
+      "summary": "El contenido tuvo un impacto mucho mayor del que anticipaba, sorprendiendo al narrador."
+    },
+    {
+      "section": "Reflexiones sobre el trabajo",
+      "purpose": "Concluir con la valoración del esfuerzo detrás de cada vídeo",
+      "summary": "Se menciona la dedicación y horas invertidas en crear cada pieza de contenido."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa personal",
+    "hook_text": "Hace un poquito más de dos años. Dije, voy a agarrar una de mis columnas...",
+    "why_it_works": "Engancha al espectador al compartir una experiencia personal y relatable sobre la creación de contenido."
+  },
+  "claims": [
+    {
+      "claim": "La narrativa compleja puede perderse al fragmentar contenido.",
+      "support_level": "explicit",
+      "risk": "Algunos datos pueden ser malinterpretados."
+    },
+    {
+      "claim": "El contenido corto puede ser exitoso en redes sociales.",
+      "support_level": "explicit",
+      "risk": "No todos los contenidos funcionan igual."
+    },
+    {
+      "claim": "Crear contenido requiere un esfuerzo significativo.",
+      "support_level": "explicit",
+      "risk": "Puede subestimar el trabajo de otros creadores."
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Probar adaptar formatos largos a cortos para redes sociales.",
+    "Invertir tiempo en la investigación y escritura para mejorar la calidad del contenido.",
+    "Escuchar la retroalimentación del público para ajustar el enfoque narrativo."
+  ],
+  "audience": "Creadores de contenido, comunicadores, y personas interesadas en redes sociales.",
+  "tone": "Reflexivo y personal",
+  "content_style": "Narrativa informal con detalles personales",
+  "retention_devices": [
+    "Narrativas emocionales",
+    "Anécdotas personales",
+    "Elementos de sorpresa"
+  ],
+  "title_supporting_quotes": [
+    "Cada vídeo mío tiene 40 horas entre investigación y escrituras.",
+    "Me senté en mi compo iMovie, corté pedacitos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear una serie sobre la adaptación de contenidos.",
+    "Desarrollar tutoriales de edición de vídeos.",
+    "Explorar el proceso de narrativa en distintos formatos."
+  ],
+  "risk_notes": [
+    "Al fragmentar narrativas, se podría perder el mensaje original.",
+    "El éxito en redes puede no ser replicable siempre."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

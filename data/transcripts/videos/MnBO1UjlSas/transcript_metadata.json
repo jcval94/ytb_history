@@ -1,0 +1,20 @@
+{
+  "video_id": "MnBO1UjlSas",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué ya no ves a tus amigos en redes?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\MnBO1UjlSas.mp3",
+  "transcribed_at": "2026-05-24T19:59:59.278693+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1435,
+  "text_sha256": "b620425dcaa540cfd4bd38f6d122049c5829888beb06a4d928b2a81917509eb7",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\MnBO1UjlSas\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:08:08.879197+00:00",
+  "duration_seconds": 68.06999969482422
+}

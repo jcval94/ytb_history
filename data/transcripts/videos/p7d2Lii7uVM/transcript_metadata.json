@@ -1,0 +1,14 @@
+{
+  "video_id": "p7d2Lii7uVM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Santiago Bilinkis con Pedro Rosemblat: cómo la IA está cambiando la humanidad",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\p7d2Lii7uVM.mp3",
+  "transcribed_at": "2026-05-24T20:01:36.291688+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 21698,
+  "text_sha256": "e736006518b4c67c04852cf4c249618c4a3f5763b7931e52cfca4dfa67c9f8eb",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,82 @@
+{
+  "video_id": "dCRyrGBcbkw",
+  "language": "es",
+  "summary": "El video aborda la presión y los estándares extremos que enfrentan los padres modernos al criar a sus hijos, comparando esto con la experiencia de generaciones anteriores.",
+  "main_topics": [
+    "Presión parental",
+    "Expectativas de crianza",
+    "Generaciones",
+    "Salud mental de padres"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea de obediencia generacional",
+      "summary": "Se establece que la generación actual de padres es más obediente y presionada que nunca."
+    },
+    {
+      "section": "Comparación de generaciones",
+      "purpose": "Contrastar expectativas de crianza entre padres de ayer y de hoy",
+      "summary": "Se describe cómo antes ser un buen padre era más sencillo que hoy en día."
+    },
+    {
+      "section": "Expectativas actuales",
+      "purpose": "Detallar las exigencias que enfrentan los padres hoy",
+      "summary": "Los padres deben cumplir con un extenso conjunto de logros y actividades de sus hijos para ser considerados buenos."
+    },
+    {
+      "section": "Consecuencias de las expectativas",
+      "purpose": "Explorar el impacto en la salud mental de los padres",
+      "summary": "Se discute el agotamiento que sienten los padres debido a las altas exigencias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Afirmación controvertida",
+    "hook_text": "Somos la generación más obediente de la historia",
+    "why_it_works": "Captura la atención al desafiar la percepción común sobre la crianza y centrarse en la obediencia parental."
+  },
+  "claims": [
+    {
+      "claim": "Los padres actuales enfrentan más presión que nunca.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La crianza se ha convertido en una 'olimpiada'.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Ser un buen padre es un trabajo descomunal en la actualidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover un enfoque equilibrado en la crianza.",
+    "Crear espacios de apoyo para padres.",
+    "Fomentar la comunicación abierta entre padres sobre desafíos."
+  ],
+  "audience": "Padres modernos y profesionales en el área de crianza.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Conversacional y anecdótico.",
+  "retention_devices": [
+    "Uso de humor",
+    "Referencias culturales",
+    "Empatía con la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "Ser un buen padre es un laburo descomunal."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la salud mental de los padres.",
+    "Charlas o talleres sobre crianza equilibrada.",
+    "Contenido en redes sociales que refleje experiencias de crianza."
+  ],
+  "risk_notes": [
+    "Posible alienación de padres que no cumplen con estas expectativas.",
+    "Ruido en la conversación sobre la crianza que puede desviar la atención de problemas reales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

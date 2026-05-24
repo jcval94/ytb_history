@@ -1,0 +1,20 @@
+{
+  "video_id": "DJWeEfL0AMo",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué la casa de tu infancia ya no se siente igual?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\DJWeEfL0AMo.mp3",
+  "transcribed_at": "2026-05-24T19:56:46.867877+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 828,
+  "text_sha256": "195889ccd75613fefce3912db4d062701a8e152b810ae7481d9dbc16014b55cb",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\DJWeEfL0AMo\\transcript_segments.jsonl",
+  "segment_count": 10,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:06:08.542119+00:00",
+  "duration_seconds": 41.869998931884766
+}

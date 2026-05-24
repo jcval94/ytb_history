@@ -1,0 +1,77 @@
+{
+  "video_id": "nkcDS9vRXJY",
+  "language": "es",
+  "summary": "El video analiza cómo la toxicidad en el liderazgo de figuras como Steve Jobs y Jeff Bezos puede ser justificable debido a su éxito. Se menciona el fenómeno del crédito idiosincrático, que permite que las conductas crueles sean toleradas y admiradas.",
+  "main_topics": [
+    "Toxicidad en el liderazgo",
+    "Credo idiosincrático",
+    "La relación entre éxito y comportamiento agresivo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la premisa sobre la toxicidad en líderes exitosos.",
+      "summary": "Se cuestiona cuánto mayor hubiera sido Apple bajo un liderazgo más humano."
+    },
+    {
+      "section": "Ejemplos de líderes",
+      "purpose": "Describir casos específicos de conducta tóxica.",
+      "summary": "Se mencionan a Steve Jobs y Jeff Bezos como ejemplos de líderes que manipulan y maltratan a sus empleados."
+    },
+    {
+      "section": "Análisis psicológico",
+      "purpose": "Explicar el fenómeno del crédito idiosincrático.",
+      "summary": "Se introduce el concepto que justifica el maltrato de líderes por su éxito."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reformular la pregunta sobre el éxito y el maltrato.",
+      "summary": "Se plantea que el éxito no es resultado del maltrato, sino que este es permitido por el éxito."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Cuánto más grande podría haber sido Apple si Jobs hubiera cuidado a la gente que lo ayudó?",
+    "why_it_works": "Invita a la reflexión sobre la cultura de liderazgo y la toxicidad en el éxito empresarial."
+  },
+  "claims": [
+    {
+      "claim": "La toxicidad en líderes exitosos es perdonada debido a su éxito.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "El crédito idiosincrático permite justificar conductas abusivas.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Frases tóxicas atribuidas a Jeff Bezos",
+    "Comportamiento manipulador de Steve Jobs"
+  ],
+  "actionable_ideas": [
+    "Promover un liderazgo empatía",
+    "Reconocer el impacto del éxito en el comportamiento de líderes"
+  ],
+  "audience": "Líderes empresariales, gerentes, psicólogos organizacionales",
+  "tone": "Reflexivo",
+  "content_style": "Analítico y crítico",
+  "retention_devices": [
+    "Casos de estudio",
+    "Análisis psicológico"
+  ],
+  "title_supporting_quotes": [
+    "¿sos vago o simplemente incompetente?",
+    "¿por qué estás desperdiciando mi vida?"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre liderazgo",
+    "Charlas sobre cultura organizacional"
+  ],
+  "risk_notes": [
+    "La controversia sobre la justificación de la toxicidad puede ofender a algunas audiencias.",
+    "Relaciones públicas delicadas si se malinterpreta el mensaje."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

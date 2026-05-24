@@ -1,0 +1,20 @@
+{
+  "video_id": "BTX7J2OtgQU",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La \"letra chica\" de la IA que nadie te cuenta",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BTX7J2OtgQU.mp3",
+  "transcribed_at": "2026-05-24T19:55:52.657661+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 947,
+  "text_sha256": "66eb21a3996fe22af7ca6fbcf5608e180063c903c75d4c7832306ef32b4c19c1",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BTX7J2OtgQU\\transcript_segments.jsonl",
+  "segment_count": 9,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:06:01.198193+00:00",
+  "duration_seconds": 47.18000030517578
+}

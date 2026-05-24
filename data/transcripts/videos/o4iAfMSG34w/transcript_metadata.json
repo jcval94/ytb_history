@@ -1,0 +1,14 @@
+{
+  "video_id": "o4iAfMSG34w",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Silenciar tu peor recuerdo?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\o4iAfMSG34w.mp3",
+  "transcribed_at": "2026-05-24T19:53:06.471070+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1295,
+  "text_sha256": "727b65c779462ccfafa24f79f78529a754b75d2297bdba553155544e83f5dd95",
+  "repo_schema_version": "transcript_metadata_v1"
+}

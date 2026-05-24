@@ -1,0 +1,14 @@
+{
+  "video_id": "qVhkPim95fY",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué te cuesta elegir qué pelicula mirar?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\qVhkPim95fY.mp3",
+  "transcribed_at": "2026-05-24T19:53:45.587097+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1243,
+  "text_sha256": "6c36812928c18772a6f11336b88b1b308f04f189163f8e5d4e1e315d719c0b0c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

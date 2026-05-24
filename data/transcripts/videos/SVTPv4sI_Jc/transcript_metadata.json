@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 10147,
   "text_sha256": "0a18e561c98bbbadc2dc32a4871b6c1436913e7b4846dd72970a74bdbb23f4d9",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\SVTPv4sI_Jc\\transcript_segments.jsonl",
+  "segment_count": 326,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:11:07.298827+00:00",
+  "duration_seconds": 1277.949951171875
 }

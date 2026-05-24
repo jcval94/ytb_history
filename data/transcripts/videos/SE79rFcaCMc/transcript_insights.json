@@ -1,0 +1,78 @@
+{
+  "video_id": "SE79rFcaCMc",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre su experiencia como emprendedor y diferencia entre pasión y propósito, sugiriendo que, aunque la pasión puede ser intensa, el propósito es más duradero y significativo. También enfatiza que no es necesario encontrar una pasión abrumadora para vivir una vida plena.",
+  "main_topics": [
+    "Experiencia de ser emprendedor",
+    "Diferencia entre pasión y propósito",
+    "Importancia de desarmar ideales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la experiencia personal del hablante",
+      "summary": "El hablante comparte su ilusión hacia el emprendimiento y su experiencia en la ceremonia de graduación."
+    },
+    {
+      "section": "Desarrollo de la experiencia",
+      "purpose": "Describir la realidad del emprendimiento",
+      "summary": "A pesar de la pasión, el día a día es complicado y agotador."
+    },
+    {
+      "section": "Diferenciación entre pasión y propósito",
+      "purpose": "Ofrecer una nueva perspectiva sobre la motivación.",
+      "summary": "La pasión es efímera, mientras que el propósito es más estable y significativo."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cierre reflexivo sobre expectativas",
+      "summary": "Invita a cuestionar la necesidad de encontrar una pasión desbordante en la vida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Esto es un garrón y me muero de ganas de hacerlo cada mañana.",
+    "why_it_works": "Engancha al público al compartir una emoción relatable y experiencias cotidianas."
+  },
+  "claims": [
+    {
+      "claim": "La pasión es un mandato falso.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El propósito es más estable que la pasión.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Emprendimiento como un desafío",
+    "La relación entre pasión y propósito en la vida diaria"
+  ],
+  "actionable_ideas": [
+    "Cuestionar expectativas sobre la pasión.",
+    "Buscar un propósito en lugar de una pasión intensa.",
+    "Valorar las experiencias cotidianas sin sobre-idealizarlas."
+  ],
+  "audience": "Graduados y jóvenes emprendedores",
+  "tone": "reflexivo",
+  "content_style": "conversacional",
+  "retention_devices": [
+    "Historias personales",
+    "Metáforas sobre pasión y propósito"
+  ],
+  "title_supporting_quotes": [
+    "La pasión es un amor de verano.",
+    "El propósito suena por ahí muy grande."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar talleres motivacionales sobre propósito.",
+    "Crear contenido sobre emprendimiento realista."
+  ],
+  "risk_notes": [
+    "Puede desanimar a quienes están buscando su pasión.",
+    "Posible crítica a la cultura emprendedora idealizada."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,97 @@
+{
+  "video_id": "ZAppBGaEGRE",
+  "language": "es",
+  "summary": "En el futuro, gran parte del contenido en internet será generado por algoritmos y bots, convirtiendo la red en un espacio vacío de humanidad. La mayoría del tráfico online ya no es de personas reales, y el contenido humano está desapareciendo.",
+  "main_topics": [
+    "Generación de contenido por IA",
+    "Impacto de los bots en internet",
+    "Deshumanización del contenido online",
+    "Teoría sobre el tráfico en internet"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al mundo de 2027",
+      "purpose": "Presentar la premisa de un futuro dominado por IA.",
+      "summary": "El contenido en internet será en su mayoría generado por algoritmos."
+    },
+    {
+      "section": "Teoría del tráfico en internet",
+      "purpose": "Explicar la evolución del tráfico online y la influencia de los bots.",
+      "summary": "La teoría sugiere que el tráfico proviene de bots y no de humanos."
+    },
+    {
+      "section": "Desaparición del contenido humano",
+      "purpose": "Destacar la reducción del contenido generado por personas.",
+      "summary": "Una gran cantidad de páginas creadas por humanos han desaparecido."
+    },
+    {
+      "section": "Cambios en las interacciones online",
+      "purpose": "Describir cómo las interacciones están mediadas por IA.",
+      "summary": "La comunicación se convierte en una coreografía absurda entre IAs."
+    },
+    {
+      "section": "Cierre reflexivo",
+      "purpose": "Reflexionar sobre la deshumanización de internet.",
+      "summary": "La experiencia humana se está borrando de la red."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Predicción futurista",
+    "hook_text": "En 2027, lo que leas, veas o escuchas en internet no lo habrá creado una persona.",
+    "why_it_works": "Captura la atención al presentar un futuro inquietante que desafía nuestras percepciones actuales."
+  },
+  "claims": [
+    {
+      "claim": "Gran parte del tráfico en internet proviene de bots.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El contenido humano está desapareciendo progresivamente.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Las interacciones en internet están siendo mediadas por IAs que generan contenido.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Internet se está vaciando de humanidad y conexión real.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Más de la mitad de las publicaciones largas en LinkedIn son generadas por IA.",
+    "El 38% de las páginas creadas por humanos hace 10 años ya no existe."
+  ],
+  "actionable_ideas": [
+    "Promover contenido humano auténtico en redes sociales.",
+    "Concienciar sobre el impacto de la IA en la generación de contenido.",
+    "Fomentar la interacción directa entre usuarios sin mediación de IA."
+  ],
+  "audience": "Personas interesadas en tecnología y el futuro de internet",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Cautivador y analítico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Datos estadísticos sorprendentes",
+    "Escenarios futuros hipotéticos"
+  ],
+  "title_supporting_quotes": [
+    "'La muerte de internet'",
+    "'Estamos pasando de ser autores a ser consumidores pasivos'",
+    "'Nadie puede distinguir qué escribió una persona y qué fabricó un algoritmo.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de la IA en la comunicación humana.",
+    "Videoclips reflexivos sobre el futuro de internet.",
+    "Infografías sobre la deshumanización de la red."
+  ],
+  "risk_notes": [
+    "La crítica a la IA puede ser polarizante.",
+    "El tema podría generar debate sobre la creatividad humana."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

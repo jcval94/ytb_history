@@ -1,0 +1,99 @@
+{
+  "video_id": "p7d2Lii7uVM",
+  "language": "es",
+  "summary": "Santiago Bilinqui, emprendedor y tecnólogo, reflexiona sobre el cambio en las redes sociales, el uso de herramientas tecnológicas y el impacto psicológico de plataformas como TikTok y ChatGPT. Discute la manipulación que ocurre a través de las tecnologías y la importancia del pensamiento crítico en la era digital.",
+  "main_topics": [
+    "Cambio en las redes sociales",
+    "Efecto psicológico de las plataformas",
+    "Manipulación tecnológica",
+    "Pensamiento crítico",
+    "Relación humano-máquina"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del invitado",
+      "purpose": "Presentar a Santiago Bilinqui y su background.",
+      "summary": "Se introduce a Santiago como emprendedor y tecnólogo, discutiendo su perspectiva sobre las redes sociales."
+    },
+    {
+      "section": "Análisis de las redes sociales",
+      "purpose": "Explorar cómo las redes han evolucionado y su impacto.",
+      "summary": "Bilinqui menciona que las redes sociales han dejado de ser 'sociales' y han cambiado drásticamente, enfatizando el papel de TikTok en esta transformación."
+    },
+    {
+      "section": "Reflexiones sobre el uso de tecnología",
+      "purpose": "Discutir la relación entre humanos y tecnología.",
+      "summary": "Se plantea cómo la tecnología, en especial el smartphone, manipula a los usuarios, contrastando su uso con otras herramientas."
+    },
+    {
+      "section": "Impacto psicológico y social",
+      "purpose": "Abordar las consecuencias de las redes sociales en la salud mental.",
+      "summary": "Se discuten temas como la ansiedad y el pánico en adolescentes, relacionado al uso de redes y smartphones."
+    },
+    {
+      "section": "Conclusiones y reflexiones finales",
+      "purpose": "Cerrar con una reflexión sobre el futuro de la humanidad y la tecnología.",
+      "summary": "Se concluye que un enfoque crítico es necesario en el uso de tecnología para evitar la manipulación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocación",
+    "hook_text": "Las redes han dejado de ser sociales.",
+    "why_it_works": "Engancha al espectador al presentar una afirmación controvertida que invita a la reflexión."
+  },
+  "claims": [
+    {
+      "claim": "Las redes sociales han dejado de ser sociales.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "El uso de tecnologías manipula a los usuarios.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "TikTok ha creado una experiencia más adictiva que otras redes.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Es necesario desarrollar el pensamiento crítico.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [
+    "Santiago menciona su disminución de uso de Twitter debido al aumento del odio.",
+    "Habla del impacto de TikTok en la curaduría del contenido.",
+    "Se refiere a su relación con ChatGPT como un vínculo cercano pero problemático."
+  ],
+  "actionable_ideas": [
+    "Fomentar el uso crítico de las redes sociales.",
+    "Promover la alfabetización digital y el pensamiento crítico.",
+    "Iniciar conversaciones sobre el impacto de la tecnología en la salud mental."
+  ],
+  "audience": "Adultos interesados en tecnología y sus implicaciones sociales.",
+  "tone": "Reflexivo, crítico",
+  "content_style": "Conversacional, informal",
+  "retention_devices": [
+    "Ejemplos personales de la vida del invitado",
+    "Interacciones dinámicas con el entrevistador",
+    "Preguntas provocadoras que invitan a la reflexión"
+  ],
+  "title_supporting_quotes": [
+    "El celular es la primera herramienta que en el momento que la agarrás, te empieza a usar a vos.",
+    "Las redes hacen o deshacen un presidente.",
+    "La verdad es que esto es una gigantesca herramienta de manipulación."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre el impacto de las redes sociales.",
+    "Desarrollar talleres sobre pensamiento crítico en el uso de tecnología.",
+    "Producción de artículos que analicen el vínculo humano-máquina."
+  ],
+  "risk_notes": [
+    "El contenido puede no ser bien recibido por quienes defienden las redes sociales.",
+    "Discusiones sobre la manipulación pueden causar resistencia en usuarios activos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

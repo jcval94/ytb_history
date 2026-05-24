@@ -1,0 +1,20 @@
+{
+  "video_id": "DkPe_1nckdA",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "No le tengas miedo a cumplir años",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\DkPe_1nckdA.mp3",
+  "transcribed_at": "2026-05-24T20:05:00.939570+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 850,
+  "text_sha256": "89399d68260e610b3b09c0dd3734f198d90497a0bede69bd25ad1722fbdac998",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\DkPe_1nckdA\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:06:12.057268+00:00",
+  "duration_seconds": 42.4900016784668
+}

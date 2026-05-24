@@ -1,0 +1,20 @@
+{
+  "video_id": "NImciu989dg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Podría la IA volverse víctima de su propio éxito?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NImciu989dg.mp3",
+  "transcribed_at": "2026-05-24T19:58:27.283158+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 993,
+  "text_sha256": "c179f0011043f508c3f2921055be3b326e6390cacbd11e23f2dc1215a8dfbbf8",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\NImciu989dg\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:08:12.579785+00:00",
+  "duration_seconds": 47.720001220703125
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "f2tWBYcouFw",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué algunas personas deciden en segundos (no es talento)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\f2tWBYcouFw.mp3",
+  "transcribed_at": "2026-05-24T20:03:10.221003+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 940,
+  "text_sha256": "feb74f5b92874daea53c838bcac2ec97a01dda4e27e6c4459007eb730c6741f6",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\f2tWBYcouFw\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:15:37.251913+00:00",
+  "duration_seconds": 45.439998626708984
+}

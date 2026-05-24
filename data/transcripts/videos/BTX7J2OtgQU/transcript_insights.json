@@ -1,0 +1,71 @@
+{
+  "video_id": "BTX7J2OtgQU",
+  "language": "es",
+  "summary": "Un experimento del MIT revela que utilizar inteligencia artificial para realizar tareas escolares reduce significativamente la actividad cerebral relacionada con el pensamiento y la generación de lenguaje, llevando a la falta de autoría y a la incapacidad de recordar lo aprendido.",
+  "main_topics": [
+    "Inteligencia Artificial",
+    "Cognición",
+    "Educación",
+    "Actividad cerebral"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el estudio realizado en el MIT.",
+      "summary": "Se hicieron dos grupos para realizar tareas escolares, uno con IA y otro sin ella."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Describir el resultado de la actividad cerebral de los participantes.",
+      "summary": "Los que usaron IA mostraron un 55% menos de actividad cerebral en pensamiento y lenguaje."
+    },
+    {
+      "section": "Consecuencias cognitivas",
+      "purpose": "Exponer las implicaciones de la reducción en la actividad cerebral.",
+      "summary": "Los participantes con IA no recordaban su ensayo cinco minutos después y mostraban secuelas cognitivas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistic/Fact",
+    "hook_text": "55% menos de actividad cerebral al usar IA.",
+    "why_it_works": "Proporciona un dato impactante que genera curiosidad sobre las implicaciones del uso de IA en la educación."
+  },
+  "claims": [
+    {
+      "claim": "El uso de IA reduce la actividad cerebral relacionada con el pensamiento.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Los estudiantes que usan IA tienen dificultades para recordar lo aprendido.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar el pensamiento crítico en educación.",
+    "Limitar el uso de IA en tareas que requieren comprensión profunda.",
+    "Desarrollar estrategias para complementar el uso de IA sin depender excesivamente de ella."
+  ],
+  "audience": "Educadores y formuladores de políticas en educación",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Conciso y directo",
+  "retention_devices": [
+    "Datos estadísticos",
+    "Consecuencias impactantes",
+    "Llamado a la reflexión"
+  ],
+  "title_supporting_quotes": [
+    "Ese apoyo excesivo en la inteligencia artificial tiene secuelas cognitivas importantes."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de la IA en la educación.",
+    "Charlas sobre cognición y tecnología."
+  ],
+  "risk_notes": [
+    "La dependencia de la IA puede afectar el aprendizaje y la memoria a largo plazo.",
+    "Posibles críticas sobre la generalización de los resultados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

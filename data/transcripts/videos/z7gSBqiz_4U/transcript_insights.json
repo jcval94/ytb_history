@@ -1,0 +1,86 @@
+{
+  "video_id": "z7gSBqiz_4U",
+  "language": "unknown",
+  "summary": "El video explora la diferencia entre 'maximizadores' y 'satisfactores' en la toma de decisiones. Los maximizadores buscan la mejor opción posible, lo que puede conducir a la parálisis y el arrepentimiento. Por otro lado, los satisfactores eligen opciones adecuadas que cumplen con sus necesidades, lo que les resulta en mayor felicidad y paz mental. Se menciona la 'paradoja de la elección' y se ofrecen consejos para mejorar la toma de decisiones.",
+  "main_topics": [
+    "Maximizadores vs Satisfactores",
+    "Paradoja de la elección",
+    "Toma de decisiones",
+    "Paz mental y felicidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar los dos tipos de personas en la toma de decisiones.",
+      "summary": "Se introducen los maximizadores y los satisfactores como conceptos clave."
+    },
+    {
+      "section": "Descripción de maximizadores",
+      "purpose": "Explicar las características y problemas de los maximizadores.",
+      "summary": "Los maximizadores buscan la mejor opción, lo que puede llevar a parálisis y arrepentimiento."
+    },
+    {
+      "section": "Descripción de satisfactores",
+      "purpose": "Contrastar con el enfoque de los satisfactores.",
+      "summary": "Los satisfactores eligen opciones adecuadas y son más felices por eso."
+    },
+    {
+      "section": "La paradoja de la elección",
+      "purpose": "Presentar estudios sobre los efectos de más opciones.",
+      "summary": "La investigación de Barry Schwartz muestra que menos opciones pueden llevar a más felicidad."
+    },
+    {
+      "section": "Consejos para decidir",
+      "purpose": "Ofrecer estrategias para mejorar la toma de decisiones.",
+      "summary": "Definir criterios y limitar alternativas para evitar la sobrecarga de opciones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Conversational",
+    "hook_text": "Hay dos tipos de personas, los maximizadores y los satisfactores.",
+    "why_it_works": "Inicia con una afirmación intrigante que establece un contraste claro y capta la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "Los maximizadores sufren de parálisis por análisis.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Los satisfactores son más felices y seguros.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Más opciones no siempre significan más libertad o satisfacción.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Define tus criterios mínimos antes de decidir.",
+    "Limita la cantidad de alternativas que consideras.",
+    "Enfócate en lo que verdaderamente importa para tomar decisiones más efectivas."
+  ],
+  "audience": "Personas interesadas en mejorar su proceso de toma de decisiones.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Conversacional y accesible",
+  "retention_devices": [
+    "Ejemplos claros de maximizadores y satisfactores.",
+    "Estudios de Barry Schwartz que respaldan los conceptos.",
+    "Consejos prácticos y fáciles de aplicar."
+  ],
+  "title_supporting_quotes": [
+    "La perfección no existe y perseguirla tiene un costo altísimo, la tranquilidad."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre toma de decisiones basados en la psicología.",
+    "Infografías que comparen maximizadores y satisfactores.",
+    "Videos cortos que expliquen la paradoja de la elección."
+  ],
+  "risk_notes": [
+    "El riesgo de simplificar demasiado la complejidad de la toma de decisiones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

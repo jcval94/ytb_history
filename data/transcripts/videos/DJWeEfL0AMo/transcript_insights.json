@@ -1,0 +1,78 @@
+{
+  "video_id": "DJWeEfL0AMo",
+  "language": "es",
+  "summary": "El video explora cómo los recuerdos son reescritos en nuestra mente cada vez que los evocamos, proponiendo que la nostalgia que sentimos al regresar a lugares de nuestra infancia no es simplemente un sentimiento, sino un proceso cognitivo que transforma nuestras experiencias pasadas.",
+  "main_topics": [
+    "Memoria",
+    "Experiencias pasadas",
+    "Nostalgia",
+    "Psicología"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la nostalgia",
+      "purpose": "Presentar la idea de que los recuerdos pueden sentirse diferentes al regresar a un lugar del pasado.",
+      "summary": "Se plantea una pregunta sobre la experiencia de regresar a un lugar querido y sentir que todo ha cambiado."
+    },
+    {
+      "section": "Explicación científica",
+      "purpose": "Introducir la teoría de Daniel Kahneman sobre dos yo.",
+      "summary": "Se explica que la memoria no es fija, sino que se reescribe con cada recuerdo."
+    },
+    {
+      "section": "Impacto de la narración",
+      "purpose": "Reflejar cómo la forma en que recordamos afecta nuestro presente.",
+      "summary": "Se discute que la memoria se enfoca en lo positivo y no en las quejas, lo que afecta nuestra experiencia actual."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Alguna vez te pasó que volviste al lugar donde creciste y sentiste que todo era distinto?",
+    "why_it_works": "Engancha al espectador al conectar una experiencia universal que invita a la reflexión personal."
+  },
+  "claims": [
+    {
+      "claim": "La memoria es reescrita cada vez que la recordamos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las quejas de la experiencia no se almacenan en la memoria.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El presente se siente diferente según la historia personal que contamos.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre cómo reescribimos nuestras propias memorias.",
+    "Practicar la reencuadre positivo de experiencias pasadas.",
+    "Explorar la conexión entre recuerdos y emociones en momentos significativos."
+  ],
+  "audience": "Personas interesadas en psicología y desarrollo personal.",
+  "tone": "Reflexivo",
+  "content_style": "Informativo y narrativo",
+  "retention_devices": [
+    "Historia personal",
+    "Referencias a expertos",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "No es solo nostalgia, tiene explicación científica.",
+    "No estamos reviviendo el pasado, lo estamos reescribiendo."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre cómo manejar la nostalgia de manera positiva.",
+    "Desarrollar un artículo sobre la psicología de la memoria.",
+    "Producir contenido que explore historias de memoria y identidad."
+  ],
+  "risk_notes": [
+    "Posible malentendido sobre la naturaleza de la memoria.",
+    "Interpretaciones erróneas de la teoría de Kahneman."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

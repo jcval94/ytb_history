@@ -1,0 +1,20 @@
+{
+  "video_id": "Gm59SVlO9SU",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El futuro de la tele ya llegó (y no es como imaginabas)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Gm59SVlO9SU.mp3",
+  "transcribed_at": "2026-05-24T19:54:46.668473+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8704,
+  "text_sha256": "4fe24b01a83a1f81c18f027aaa812fc9791f0b397eb78511c1af80769ab229ef",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Gm59SVlO9SU\\transcript_segments.jsonl",
+  "segment_count": 388,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:07:28.685497+00:00",
+  "duration_seconds": 953.9199829101562
+}

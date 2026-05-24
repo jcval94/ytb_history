@@ -1,0 +1,86 @@
+{
+  "video_id": "qVhkPim95fY",
+  "language": "es",
+  "summary": "El video explora la paradoja de la elección, donde más opciones pueden llevar a la indecisión y frustración en lugar de mayor satisfacción. Se ejemplifica a través de un experimento de Stanford y se sugiere cómo manejar mejor las decisiones limitando las opciones.",
+  "main_topics": [
+    "Paradoja de la elección",
+    "Efecto del exceso de opciones",
+    "Estrategias para tomar decisiones",
+    "Estudio de caso de Stanford",
+    "Impacto de la elección en la satisfacción"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el experimento de Stanford",
+      "summary": "Instituto de Stanford realiza un experimento con puestos de mermelada para estudiar el impacto de las opciones."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Mostrar la diferencia en comportamiento del consumidor",
+      "summary": "Más opciones atraen a más personas, pero las ventas disminuyen."
+    },
+    {
+      "section": "Presentación de la paradoja",
+      "purpose": "Explicar el concepto de la paradoja de la elección",
+      "summary": "Mayor número de opciones puede llevar a la indecisión y frustración."
+    },
+    {
+      "section": "Ejemplo cotidiano",
+      "purpose": "Ilustrar la paradoja en la vida diaria",
+      "summary": "Se compara con la experiencia de elegir un programa en Netflix."
+    },
+    {
+      "section": "Consejos para tomar decisiones",
+      "purpose": "Proporcionar soluciones a la paradoja",
+      "summary": "Sugerencias para definir criterios y limitar opciones al tomar decisiones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "El exceso de opciones no nos libera, nos bloquea.",
+    "why_it_works": "Plantea una idea contraria a la creencia común y despierta curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "Más opciones generan más cansancio y frustración.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Limitar opciones mejora la toma de decisiones.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Estudio de Stanford sobre mermeladas",
+    "Catálogo de Netflix"
+  ],
+  "actionable_ideas": [
+    "Definir criterios mínimos antes de decidir.",
+    "Acotar el número de alternativas a considerar.",
+    "Evitar la sobrecarga de opciones en decisiones cotidianas."
+  ],
+  "audience": "Personas interesadas en mejorar sus habilidades de toma de decisiones",
+  "tone": "reflexivo",
+  "content_style": "informativo",
+  "retention_devices": [
+    "Ejemplos claros",
+    "Estudios de caso",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "El exceso de opciones no nos libera, nos bloquea.",
+    "Más opciones no significan más libertad ni más satisfacción."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un artículo sobre la toma de decisiones.",
+    "Crear microcontenido en redes sociales sobre la paradoja de la elección."
+  ],
+  "risk_notes": [
+    "Las sugerencias pueden no aplicarse a todos los tipos de decisiones.",
+    "Puede causar resistencia en personas que valoran la libertad de elección."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

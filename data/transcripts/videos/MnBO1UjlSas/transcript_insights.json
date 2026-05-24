@@ -1,0 +1,84 @@
+{
+  "video_id": "MnBO1UjlSas",
+  "language": "es",
+  "summary": "El video analiza cómo TikTok ha revolucionado la forma en que consumimos contenido en comparación con las redes sociales anteriores, destacando la curaduría algorítmica del contenido que prioriza la adicción del usuario sobre sus conexiones sociales.",
+  "main_topics": [
+    "Evolución de las redes sociales",
+    "Contenidos desconectados",
+    "Curaduría algorítmica",
+    "Impacto de TikTok",
+    "Innovaciones tecnológicas en redes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el impacto de TikTok en la forma de consumir contenido.",
+      "summary": "Se establece que TikTok ha cambiado la narrativa de las redes sociales al introducir un enfoque distinto en la curaduría de contenido."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar cómo funciona la curaduría en TikTok.",
+      "summary": "Comparación entre el contenido cronológico de otras redes y el enfoque de TikTok que prioriza el contenido más adictivo."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Reflexionar sobre el futuro de otras plataformas si no imitan a TikTok.",
+      "summary": "Se plantea que otras plataformas, como Instagram, deben adaptarse a estas innovaciones o enfrentar el fracaso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "TikTok dice me importa un carajo quién seguís.",
+    "why_it_works": "Capta la atención al desafiar la norma social de la conexión personal en redes."
+  },
+  "claims": [
+    {
+      "claim": "TikTok ha cambiado la forma en que se consume contenido en línea.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Sólo el 5% del contenido que ves en TikTok proviene de personas que conoces.",
+      "support_level": "weak",
+      "risk": "medio"
+    },
+    {
+      "claim": "Instagram debe imitar a TikTok o enfrentará problemas.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Contenido desconectado",
+    "Curaduría algorítmica"
+  ],
+  "actionable_ideas": [
+    "Revisar cómo se consume contenido en redes",
+    "Considerar la influencia de la curaduría algorítmica en la atención",
+    "Explorar nuevas estrategias para conectar con audiencias"
+  ],
+  "audience": "Usuarios de redes sociales, creadores de contenido, especialistas en tecnología",
+  "tone": "Crítico",
+  "content_style": "Analítico",
+  "retention_devices": [
+    "Ejemplos concretos",
+    "Desafíos a la norma social",
+    "Estadísticas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "Cuando TikTok hace 5 años inventa el contenido desconectado.",
+    "Te voy a mostrar todo.",
+    "Si Instagram no imita, quiebra."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de TikTok",
+    "Debates sobre la evolución de las redes sociales",
+    "Estudios de caso sobre curaduría algorítmica"
+  ],
+  "risk_notes": [
+    "Riesgo de desinformación al generalizar estadísticas.",
+    "Posible controversia sobre el impacto de TikTok en la salud mental.",
+    "Es posible que el contenido exponga una visión sesgada de la realidad social."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

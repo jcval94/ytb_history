@@ -1,0 +1,86 @@
+{
+  "video_id": "UXEVurBYrhE",
+  "language": "es",
+  "summary": "El video explora el concepto del costo de oportunidad en la toma de decisiones, argumentando que cada elección conlleva renuncias y resultados no deseados. Barry Schwartz sugiere que más opciones pueden llevar a menor satisfacción. Se enfatiza que las decisiones tomadas para evitar arrepentimientos pueden resultar en una vida menos satisfactoria.",
+  "main_topics": [
+    "Costo de oportunidad",
+    "Toma de decisiones",
+    "Satisfacción y arrepentimiento",
+    "Información incompleta",
+    "Injusticia del arrepentimiento retroactivo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al costo de oportunidad",
+      "purpose": "Definir el concepto",
+      "summary": "Cada decisión implica renuncias, como elegir entre la playa y la montaña."
+    },
+    {
+      "section": "Satisfacción relacionada con las elecciones",
+      "purpose": "Explorar la idea de la satisfacción",
+      "summary": "Cuantas más opciones se consideran, mayor es la probabilidad de insatisfacción."
+    },
+    {
+      "section": "Decisiones desde el miedo vs. deseo",
+      "purpose": "Contrastar enfoques en la toma de decisiones",
+      "summary": "Elegir para evitar el dolor resulta en vidas menos satisfactorias."
+    },
+    {
+      "section": "Evaluación retrospectiva",
+      "purpose": "Advertir sobre el juicio erróneo de decisiones pasadas",
+      "summary": "Las decisiones deben ser evaluadas con el contexto del momento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Cada decisión, incluso una buena, implica una renuncia.",
+    "why_it_works": "Capta la atención al desafiar la percepción positiva de las decisiones."
+  },
+  "claims": [
+    {
+      "claim": "Más opciones disminuyen la satisfacción.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Las decisiones tomadas para evitar arrepentimientos son menos satisfactorias.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Una mala decisión no se convierte en mala solo por un mal resultado.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Eligiendo entre ir a la playa o la montaña.",
+    "Cruzar una avenida en rojo y llegar sano."
+  ],
+  "actionable_ideas": [
+    "Aceptar el costo de oportunidad en decisiones.",
+    "Evaluar decisiones con el conocimiento del contexto presente.",
+    "Elegir desde el deseo y no solo para evitar sufrimiento."
+  ],
+  "audience": "Personas interesadas en la psicología de la toma de decisiones.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Uso de ejemplos cotidianos",
+    "Contraste entre tipos de decisiones",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Aceptas el costo de oportunidad.",
+    "Las decisiones deberían hacerse desde el deseo, no solo por miedo."
+  ],
+  "creative_reuse_opportunities": [
+    "Escribir un artículo sobre decisiones y satisfacción.",
+    "Crear un taller sobre toma de decisiones efectivas."
+  ],
+  "risk_notes": [
+    "Sofisticación del tema que puede resultar denso para algunos",
+    "Posibilidad de malinterpretaciones en la idea del arrepentimiento"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

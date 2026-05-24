@@ -1,0 +1,73 @@
+{
+  "video_id": "zKz2gvvmfOw",
+  "language": "es",
+  "summary": "El video aborda la relación entre la riqueza, la pobreza y la escasez de tiempo. Se discute cómo tanto las personas pobres como las ricas pueden experimentar una falta de tiempo, resaltando la idea de que la solución no reside simplemente en acumular más dinero.",
+  "main_topics": [
+    "Pobreza económica",
+    "Pobreza del tiempo",
+    "Relatividad de la riqueza",
+    "Impacto del dinero en la vida",
+    "Estrés y bienestar"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la pobreza",
+      "purpose": "Establecer el contexto de la pobreza en América Latina.",
+      "summary": "Se introduce la estadística de la pobreza en América Latina y la idea de la pobreza del tiempo."
+    },
+    {
+      "section": "Comparación de la riqueza",
+      "purpose": "Comparar la vida de las personas ricas con las pobres en términos de tiempo.",
+      "summary": "Se explica cómo la falta de tiempo afecta a ambos grupos a pesar de su situación económica."
+    },
+    {
+      "section": "La búsqueda de más dinero",
+      "purpose": "Reflexionar sobre la percepción errónea de que más dinero resuelve la falta de tiempo.",
+      "summary": "Se discute cómo la búsqueda de riqueza puede llevar a un ciclo continuo de estrés."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Controversial statement",
+    "hook_text": "Las personas que tienen mucho dinero son tan pobres a nivel tiempo como las personas con mayores carencias.",
+    "why_it_works": "Este hook desafía las creencias comunes sobre la riqueza y capta la atención al mantener un contraste entre dos realidades aparentemente opuestas."
+  },
+  "claims": [
+    {
+      "claim": "La pobreza del tiempo afecta tanto a ricos como a pobres.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Acumular más dinero no garantiza menos estrés o más tiempo.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reevaluar las prioridades de tiempo en la vida diaria.",
+    "Buscar maneras de reducir el estrés sin necesariamente aumentar los ingresos.",
+    "Fomentar relaciones con personas que no solo se centran en la riqueza."
+  ],
+  "audience": "Personas interesadas en la economía, el bienestar personal y la psicología del tiempo.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Historias personales",
+    "Estadísticas sobre la pobreza",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "El dinero no siempre compra tiempo.",
+    "La riqueza relativa puede ser una fuente de estrés."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la gestión del tiempo en diferentes estratos sociales.",
+    "Desarrollar talleres sobre la pobreza del tiempo."
+  ],
+  "risk_notes": [
+    "Posibilidad de ofender a personas con altos ingresos al comparar su estrés con el de quienes tienen necesidades básicas insatisfechas.",
+    "Generalizaciones que pueden no aplicarse a todos los casos individuales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

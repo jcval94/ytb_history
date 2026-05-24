@@ -1,0 +1,20 @@
+{
+  "video_id": "-oVY_xzW-no",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué reaccionás sin pensar (y después te arrepentís)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-oVY_xzW-no.mp3",
+  "transcribed_at": "2026-05-24T20:02:33.439210+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1735,
+  "text_sha256": "6aa61ff5318a867bcd2cadd9674ca58b07e1c381ae458c8d29a6cff4863acfed",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-oVY_xzW-no\\transcript_segments.jsonl",
+  "segment_count": 40,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:05:41.787292+00:00",
+  "duration_seconds": 93.70999908447266
+}

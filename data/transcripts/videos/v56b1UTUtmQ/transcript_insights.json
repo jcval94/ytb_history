@@ -1,0 +1,94 @@
+{
+  "video_id": "v56b1UTUtmQ",
+  "language": "es",
+  "summary": "El video explora la forma en que los perros se comunican con sus dueños a través de su comportamiento y acciones, desmitificando algunas creencias populares.",
+  "main_topics": [
+    "Comunicación canina",
+    "Comportamiento de los perros",
+    "Relación humano-perro",
+    "Instinto animal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la comunicación entre perros y humanos.",
+      "summary": "Se plantea la pregunta sobre lo que realmente piensa un perro."
+    },
+    {
+      "section": "Comportamiento al dormir",
+      "purpose": "Explicar el instinto detrás del comportamiento de dormir juntos.",
+      "summary": "Los perros duermen con sus dueños como un acto instintivo de protección."
+    },
+    {
+      "section": "Mirar mientras hacen sus necesidades",
+      "purpose": "Desmitificar la percepción de vergüenza en los perros.",
+      "summary": "El perro busca protección y expresa confianza hacia su dueño."
+    },
+    {
+      "section": "Traer juguetes",
+      "purpose": "Definir el significado de este gesto.",
+      "summary": "A veces, traer un juguete es un regalo y no simplemente una invitación a jugar."
+    },
+    {
+      "section": "Alertarse ante la vulnerabilidad",
+      "purpose": "Explorar cómo los perros responden al estado emocional de sus dueños.",
+      "summary": "Los perros detectan vulnerabilidad y su instinto es cuidar."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Concluir el mensaje sobre la comunicación de los perros.",
+      "summary": "Los perros no hablan, pero comunican sus sentimientos y necesidades."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Alguna vez quisiste entender qué piensa tu perro?",
+    "why_it_works": "Capta la atención de los dueños de mascotas haciéndolos reflexionar sobre su relación con sus perros."
+  },
+  "claims": [
+    {
+      "claim": "Los perros duermen con sus dueños como un instinto de protección.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Cuando un perro te mira mientras hace sus necesidades, busca protección.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Traer un juguete puede ser un regalo, no solo una invitación a jugar.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los perros son sensibles a la vulnerabilidad de sus dueños.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Presta atención al lenguaje corporal de tu perro.",
+    "Interpreta las acciones de tu perro desde una perspectiva instintiva.",
+    "Fomenta la confianza mutua con tu mascota."
+  ],
+  "audience": "Dueños de perros y amantes de los animales",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Anécdotas sobre comportamiento canino",
+    "Conexión emocional con el público"
+  ],
+  "title_supporting_quotes": [
+    "Los perros no hablan, pero te dicen de todo."
+  ],
+  "creative_reuse_opportunities": [
+    "Material educativo sobre comportamiento animal",
+    "Contenido para redes sociales sobre mascotas"
+  ],
+  "risk_notes": [
+    "Confusión con interpretaciones erróneas del comportamiento canino."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

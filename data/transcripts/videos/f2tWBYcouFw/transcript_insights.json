@@ -1,0 +1,81 @@
+{
+  "video_id": "f2tWBYcouFw",
+  "language": "es",
+  "summary": "El video explora cómo los grandes maestros de ajedrez, como Magnus Carlsen, utilizan la intuición y patrones estratégicos en lugar de una simple memoria superior para tomar decisiones efectivas en el juego, evidenciado por un experimento con tableros de ajedrez.",
+  "main_topics": [
+    "Intuición en el ajedrez",
+    "Memoria de los grandes maestros",
+    "Experimento de psicología",
+    "Estrategias en ajedrez",
+    "Magnus Carlsen"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar los hallazgos sobre la memoria en ajedrez",
+      "summary": "Psicólogos muestran tableros a ajedrecistas para evaluar su memoria."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Comparar memoria de grandes maestros y principiantes",
+      "summary": "Los grandes maestros recuerdan más posiciones en contextos relevantes."
+    },
+    {
+      "section": "Conclusiones sobre la memoria",
+      "purpose": "Explicar que la memoria de ajedrecistas se basa en patrones, no en datos crudos.",
+      "summary": "La intuición se basa en la interpretación y comprensión de las posiciones."
+    },
+    {
+      "section": "Ejemplo de Magnus Carlsen",
+      "purpose": "Ilustrar el concepto de intuición en ajedrez.",
+      "summary": "Carlsen toma decisiones rápidas basadas en la experiencia y comprensiones estratégicas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Interesante experimento",
+    "hook_text": "Dos psicólogos mostraron a ajedrecistas tableros con posiciones reales.",
+    "why_it_works": "El contraste entre grandes maestros y principiantes genera curiosidad sobre la memoria y la intuición."
+  },
+  "claims": [
+    {
+      "claim": "Los grandes maestros tienen una memoria con sentido en ajedrez.",
+      "support_level": "explicit",
+      "risk": "None"
+    },
+    {
+      "claim": "La intuición en ajedrez se basa en patrones y estrategias.",
+      "support_level": "explicit",
+      "risk": "None"
+    },
+    {
+      "claim": "Magnus Carlsen utiliza su intuición para tomar decisiones rápidas en el juego.",
+      "support_level": "explicit",
+      "risk": "None"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Estudiar patrones en el ajedrez para mejorar la intuición.",
+    "Practicar jugando partidas rápidas para desarrollar respuestas inmediatas.",
+    "Analizar partidas de grandes maestros para aprender estrategias efectivas."
+  ],
+  "audience": "Aficionados al ajedrez, psicología, educación.",
+  "tone": "Informativo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Citas de expertos",
+    "Ejemplos concretos de jugadores famosos",
+    "Contrastes entre grupos"
+  ],
+  "title_supporting_quotes": [
+    "Los grandes maestros ven historias, estrategias, patrones.",
+    "Carlsen: 'mira el tablero y sabe al instante lo que tiene que hacer.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre la memoria en ajedrez.",
+    "Desarrollar talleres sobre intuición y estrategia en juegos.",
+    "Publicar artículos comparativos entre ajedrez y otras disciplinas que requieren intuición."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

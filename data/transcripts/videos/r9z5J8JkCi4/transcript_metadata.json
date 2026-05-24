@@ -1,0 +1,14 @@
+{
+  "video_id": "r9z5J8JkCi4",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Sacarte fotos te hace olvidar de las cosas?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\r9z5J8JkCi4.mp3",
+  "transcribed_at": "2026-05-24T19:52:28.380285+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2110,
+  "text_sha256": "e357469307b1cdf56affaedef2a63c3c008a6f9fb9a1eda0fdd6bc2903e098fa",
+  "repo_schema_version": "transcript_metadata_v1"
+}

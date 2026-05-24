@@ -1,0 +1,90 @@
+{
+  "video_id": "Gm59SVlO9SU",
+  "language": "es",
+  "summary": "En este episodio, el anfitrión conversa con Santiago Bilic sobre el impacto de la inteligencia artificial en la producción de televisión y el futuro de los medios de comunicación, destacando la velocidad del avance tecnológico y su adopción limitada por parte del público.",
+  "main_topics": [
+    "Inteligencia Artificial en televisión",
+    "Evolución de los medios",
+    "Cambio en el consumo de contenido",
+    "Streaming vs. televisión tradicional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar al invitado y el tema del programa.",
+      "summary": "El anfitrión presenta a Santiago Bilic, un experto en tecnología y entretenimiento."
+    },
+    {
+      "section": "Impacto de la IA en producción",
+      "purpose": "Explorar cómo la inteligencia artificial puede transformar la producción de televisión.",
+      "summary": "Bilic discute cómo la IA puede optimizar procesos creativos en televisión y el poder de la tecnología no aprovechada."
+    },
+    {
+      "section": "Evolución del consumo de medios",
+      "purpose": "Analizar el cambio en los hábitos de consumo de contenido.",
+      "summary": "Se discute el aumento del streaming sobre la televisión tradicional, con datos sobre su crecimiento."
+    },
+    {
+      "section": "La muerte de la televisión",
+      "purpose": "Desmentir el concepto de la muerte de la televisión.",
+      "summary": "Bilic argumenta que la televisión no está muerta, sino que se ha reinventado y está siendo consumida de nuevas formas."
+    },
+    {
+      "section": "Futuro de la tecnología musical",
+      "purpose": "Hablar sobre el futuro de la música generada por IA.",
+      "summary": "El potencial de Spotify para crear música personalizada es discutido, mostrando la dirección en la que se dirige la tecnología."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Cuánto va a poder hacer la inteligencia artificial?",
+    "why_it_works": "Invita a la reflexión sobre el impacto de la IA, generando interés inmediato en el tema."
+  },
+  "claims": [
+    {
+      "claim": "80% de la gente no utiliza inteligencia artificial.",
+      "support_level": "explicit",
+      "risk": "exageración"
+    },
+    {
+      "claim": "El streaming ha superado a la televisión abierta y cable en consumo.",
+      "support_level": "explicit",
+      "risk": "potencialmente desactualizado"
+    },
+    {
+      "claim": "La música personalizada será posible via plataformas como Spotify.",
+      "support_level": "implicit",
+      "risk": "alta especulación"
+    }
+  ],
+  "examples": [
+    "La aparición de explosiones realistas en televisión gracias a la IA.",
+    "El crecimiento de YouTube como canal principal de consumo en televisores."
+  ],
+  "actionable_ideas": [
+    "Explorar cómo implementar IA en la producción de contenidos.",
+    "Analizar las tendencias de consumo de medios para adaptarse al cambio.",
+    "Aprovechar plataformas de streaming para diversificar el público."
+  ],
+  "audience": "Personas interesadas en tecnología y medios de comunicación.",
+  "tone": "Conversacional e informativo",
+  "content_style": "Entrevista dinámica",
+  "retention_devices": [
+    "Datos impactantes",
+    "Anécdotas personales",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Hoy en día la tecnología puede hacer un montón de cosas que la gente no está aprovechando.",
+    "La televisión no se ha muerto, se ha mudado."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre IA en medios.",
+    "Desarrollar un webinar sobre el futuro de la producción audiovisual."
+  ],
+  "risk_notes": [
+    "Afirmaciones sobre el uso de IA pueden ser percibidas como infundadas.",
+    "Datos pueden quedar desactualizados rápidamente."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

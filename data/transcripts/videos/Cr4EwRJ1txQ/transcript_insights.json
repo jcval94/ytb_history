@@ -1,0 +1,69 @@
+{
+  "video_id": "Cr4EwRJ1txQ",
+  "language": "es",
+  "summary": "El video aborda la ineficacia de la memorización en la educación, criticando cómo los estudiantes aprenden a recordar información irrelevante solo para exámenes. Destaca la desconexión entre obtener buenas notas y realmente aprender, señalando que los métodos de evaluación actuales no fomentan un aprendizaje significativo.",
+  "main_topics": [
+    "Memorización en exámenes",
+    "Conexión entre aprender y evaluar",
+    "Trampas en la educación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la memorización",
+      "purpose": "Presentar el problema de la memorización en el contexto educativo.",
+      "summary": "Discutir cómo los estudiantes memorizan datos sin retención real."
+    },
+    {
+      "section": "Crítica a la evaluación",
+      "purpose": "Criticar los métodos de evaluación actuales.",
+      "summary": "Resaltar que obtener buenas notas no implica aprendizaje."
+    },
+    {
+      "section": "Reflexión sobre el futuro",
+      "purpose": "Instar a la reconsideración de los métodos de evaluación.",
+      "summary": "Dificultades para volver a unir aprender y evaluar."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿para qué memorizar y olvidar si puedo directamente hacer trampa?",
+    "why_it_works": "Engancha al público al plantear una cuestión común y provocativa sobre la ética en la educación."
+  },
+  "claims": [
+    {
+      "claim": "La memoria humana no es eficaz para recordar datos irrelevantes.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los métodos de evaluación actuales están desconectados del aprendizaje real.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Memorización de nombres y fechas para exámenes",
+    "Uso de 'machetes' para hacer trampa en el pasado"
+  ],
+  "actionable_ideas": [
+    "Revisar los métodos de evaluación para alinearlos con el aprendizaje",
+    "Fomentar técnicas de estudio que promuevan la retención"
+  ],
+  "audience": "Educadores y estudiantes",
+  "tone": "Crítico e informativo",
+  "content_style": "Reflexivo y narrativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos históricos"
+  ],
+  "title_supporting_quotes": [
+    "La memoria humana no es gran cosa.",
+    "La antigua disociación entre aprobar exámenes y aprender pasa por su peor momento."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre metodologías educativas",
+    "Charlas en conferencias de pedagogía"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

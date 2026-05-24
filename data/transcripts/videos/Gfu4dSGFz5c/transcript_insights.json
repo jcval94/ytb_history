@@ -1,0 +1,84 @@
+{
+  "video_id": "Gfu4dSGFz5c",
+  "language": "es",
+  "summary": "El caso de Henry, quien perdió la capacidad de crear nuevos recuerdos tras una operación de cerebro en 1953, revolucionó nuestra comprensión de la memoria. A pesar de olvidar hechos, su memoria procedural le permitió aprender habilidades motoras.",
+  "main_topics": [
+    "Memoria",
+    "Neurociencia",
+    "Caso de Henry",
+    "Aprendizaje",
+    "Identidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso de Henry",
+      "purpose": "Presentar el tema y la historia de Henry.",
+      "summary": "Se introduce la cirugía cerebral de Henry y sus consecuencias inmediatas."
+    },
+    {
+      "section": "Impacto de la cirugía en la memoria",
+      "purpose": "Explicar cómo la cirugía afectó la memoria de Henry.",
+      "summary": "Henry pierde su capacidad de almacenar nuevos recuerdos pero conserva su identidad y recuerdos del pasado."
+    },
+    {
+      "section": "Redes de memoria",
+      "purpose": "Profundizar en el descubrimiento sobre cómo funciona la memoria.",
+      "summary": "Se expone que la memoria incluye diferentes redes para distintos tipos de información."
+    },
+    {
+      "section": "Legado de Henry",
+      "purpose": "Conclusión sobre la historia y su impacto en la ciencia.",
+      "summary": "Henry fallece, pero su caso contribuye a la comprensión de la memoria y su complejidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anécdota impactante",
+    "hook_text": "El caso de Henry, quien no podía recordar nada nuevo.",
+    "why_it_works": "Captura la atención al presentar una situación extraordinaria y desafiante sobre la memoria humana."
+  },
+  "claims": [
+    {
+      "claim": "La memoria es un sistema complejo y multifacético.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los movimientos pueden ser aprendidos independientemente de la memoria verbal.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La cirugía de Henry contribuyó significativamente a la neurociencia.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre casos similares de amnesia.",
+    "Explorar la relación entre memoria emocional y procedural.",
+    "Profundizar en la neuroplasticidad y sus implicaciones."
+  ],
+  "audience": "Interesados en neurociencia y psicología.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y explicativo",
+  "retention_devices": [
+    "Historias personales",
+    "Datos científicos",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "La memoria no es solo un archivo, sino muchas redes trabajando a la vez.",
+    "Recordar no es apretar play a una película."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre neurociencia.",
+    "Artículos sobre memoria en revistas científicas.",
+    "Charlas TED sobre aprendizaje y memoria."
+  ],
+  "risk_notes": [
+    "Posible malentendido acerca de la función de la memoria.",
+    "Sensibilidades al tratar el tema de la amnesia y salud mental."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

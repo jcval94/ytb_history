@@ -1,0 +1,87 @@
+{
+  "video_id": "o4iAfMSG34w",
+  "language": "es",
+  "summary": "En 2024, científicos descubrieron cómo interactuar con recuerdos traumáticos en ratones, evitando que muestren miedo. A través de la optogenética, lograron desactivar el aprendizaje del miedo. También se menciona el uso de propranolol en humanos para debilitar la carga emocional de recuerdos traumáticos.",
+  "main_topics": [
+    "recuerdos traumáticos",
+    "optogenética",
+    "propranolol",
+    "ciencia del miedo",
+    "intervención emocional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el descubrimiento de los científicos",
+      "summary": "En 2024, se reescriben las reglas del juego sobre el manejo de recuerdos traumáticos."
+    },
+    {
+      "section": "Método y descubrimiento",
+      "purpose": "Explicar cómo se realizó el experimento con ratones",
+      "summary": "Los ratones aprendieron a evitar lugares asociados a experiencias malas, pero su miedo fue eliminado mediante optogenética."
+    },
+    {
+      "section": "Aplicación en humanos",
+      "purpose": "Relacionar el descubrimiento con su uso potencial en seres humanos",
+      "summary": "Se menciona el uso del propranolol para disminuir la carga emocional de recuerdos traumáticos en personas."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Desafiar al espectador a pensar",
+      "summary": "Pregunta retórica sobre la moralidad de eliminar recuerdos dolorosos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta retórica",
+    "hook_text": "¿Vos, si pudieras apagar un recuerdo doloroso con un botón, ¿lo harías?",
+    "why_it_works": "Capta la atención del espectador al hacerle considerar una decisión emocionalmente cargada."
+  },
+  "claims": [
+    {
+      "claim": "Los ratones pueden ser entrenados para evitar lugares asociados a recuerdos negativos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El propranolol puede debilitar la carga emocional de recuerdos traumáticos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La optogenética no borra recuerdos, sino que evita que sean formados.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Uso del propranolol en soldados que regresan de la guerra.",
+    "Pruebas en víctimas de violencia."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre el uso de propranolol en traumas.",
+    "Considerar las implicaciones éticas de eliminar recuerdos.",
+    "Explorar el impacto de la optogenética en otros tipos de memoria."
+  ],
+  "audience": "Personas interesadas en la neurociencia y la salud mental.",
+  "tone": "informativo y reflexivo",
+  "content_style": "científico y accesible",
+  "retention_devices": [
+    "preguntas retóricas",
+    "experimentos impactantes",
+    "aplicaciones reales en la vida"
+  ],
+  "title_supporting_quotes": [
+    "El recuerdo sigue ahí, pero su carga emocional se debilita.",
+    "¿Te preguntarías primero qué parte de tu historia se iría con él?"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de los recuerdos traumáticos.",
+    "Charlas sobre la ética en neurociencia.",
+    "Infografías sobre el proceso de consolidación de recuerdos."
+  ],
+  "risk_notes": [
+    "Posibles implicaciones éticas de 'apagar' recuerdos.",
+    "Necesidad de más investigación en humanos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "z7gSBqiz_4U",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Cuantas más opciones tenés… ¿más infeliz sos? Mirá esto.",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\z7gSBqiz_4U.mp3",
+  "transcribed_at": "2026-05-24T19:51:48.245685+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1747,
+  "text_sha256": "34a76f481d462bf6ee1bf1ba4f22add4aadbaed2179531856c27fb479fb87590",
+  "repo_schema_version": "transcript_metadata_v1"
+}

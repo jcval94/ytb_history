@@ -1,0 +1,20 @@
+{
+  "video_id": "X3hBGjhJb04",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Qué hacer cuando la IA nos supere",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\X3hBGjhJb04.mp3",
+  "transcribed_at": "2026-05-24T19:53:18.555959+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1211,
+  "text_sha256": "544a3afccc679399a2deb1669b949717b5e74201dab464c3ea254d1602f6dc18",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\X3hBGjhJb04\\transcript_segments.jsonl",
+  "segment_count": 26,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:12:19.377928+00:00",
+  "duration_seconds": 51.20000076293945
+}

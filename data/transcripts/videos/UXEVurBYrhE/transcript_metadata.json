@@ -1,0 +1,20 @@
+{
+  "video_id": "UXEVurBYrhE",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué cuesta tanto decidir bien",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UXEVurBYrhE.mp3",
+  "transcribed_at": "2026-05-24T19:58:52.742483+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1664,
+  "text_sha256": "e456b4d8012036e2c810ee7671a828f23c272c880e74e00ddf4eef22c339829f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\UXEVurBYrhE\\transcript_segments.jsonl",
+  "segment_count": 28,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:11:59.366834+00:00",
+  "duration_seconds": 83.94000244140625
+}

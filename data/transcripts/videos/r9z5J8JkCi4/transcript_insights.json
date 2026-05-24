@@ -1,0 +1,91 @@
+{
+  "video_id": "r9z5J8JkCi4",
+  "language": "es",
+  "summary": "El video explora cómo la tendencia de grabar momentos importantes con el celular puede afectar nuestra capacidad para recordar esos momentos de manera efectiva, ya que el cerebro registra menos recuerdos cuando se fotografía, en lugar de vivir plenamente la experiencia emocional.",
+  "main_topics": [
+    "Memoria y emociones",
+    "Impacto de la tecnología en la experiencia",
+    "Importancia de la presencia en momentos significativos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la problemática",
+      "purpose": "Presentar la tendencia de grabar momentos importantes con el celular.",
+      "summary": "Se introduce la idea de que grabar momentos puede llevar a olvidar la experiencia misma."
+    },
+    {
+      "section": "Experimento psicológico",
+      "purpose": "Demostrar el efecto de fotografiar en la memoria.",
+      "summary": "Un grupo de psicólogos descubrió que las personas recuerdan menos cuando toman fotos de obras de arte."
+    },
+    {
+      "section": "Conexión emocional",
+      "purpose": "Explicar cómo las emociones afectan nuestra memoria.",
+      "summary": "El cerebro registra recuerdos más fuertes durante momentos emocionalmente intensos."
+    },
+    {
+      "section": "Consecuencias de grabar momentos",
+      "purpose": "Analizar el impacto negativo de vivir para Instagram.",
+      "summary": "La tendencia de filmar momentos impide una conexión emocional genuina."
+    },
+    {
+      "section": "Recomendaciones",
+      "purpose": "Dar consejos sobre cómo disfrutar de los momentos significativos.",
+      "summary": "Se sugiere limitar el uso del celular para mejorar la experiencia emocional y la memoria."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anécdota",
+    "hook_text": "El último día de primaria de tu hijo...",
+    "why_it_works": "Inicia con ejemplos cotidianos que resuenan emocionalmente con el espectador, capturando su atención instantáneamente."
+  },
+  "claims": [
+    {
+      "claim": "Grabar una experiencia reduce la capacidad de recordarla.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las emociones intensas son cruciales para crear recuerdos duraderos.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Vivir en modo Instagram afecta nuestra conexión emocional.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Recital de música",
+    "Despedida de un amigo",
+    "Celebraciones familiares"
+  ],
+  "actionable_ideas": [
+    "Limitar la fotografía en eventos importantes.",
+    "Practicar la presencia plena después de experiencias significativas.",
+    "Reflexionar sobre las emociones sentidas en momentos clave."
+  ],
+  "audience": "Personas interesadas en mejorar su memoria y conexiones emocionales.",
+  "tone": "Reflexivo y didáctico",
+  "content_style": "Narrativo con ejemplos personales",
+  "retention_devices": [
+    "Ejemplos cotidianos",
+    "Anécdotas emocionales",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "Sin emoción genuina, no hay memoria duradera.",
+    "Vas a recordar mucho más que si hubieras filmado el concierto completo."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la memoria y la tecnología.",
+    "Talleres sobre fotografía consciente.",
+    "Charlas sobre la psicología de la memoria."
+  ],
+  "risk_notes": [
+    "Posibilidad de que algunos espectadores se resistan a dejar de grabar.",
+    "Riesgo de que el mensaje no resuene si se sienten atacados sobre el uso de la tecnología."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

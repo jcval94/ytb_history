@@ -1,0 +1,20 @@
+{
+  "video_id": "X7PXSU64qMo",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Olvidaba todo… y terminó ganando un campeonato de memoria",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\X7PXSU64qMo.mp3",
+  "transcribed_at": "2026-05-24T19:56:04.982654+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1047,
+  "text_sha256": "1cf2ca1e3650c1c1db991e021ff92e9d99c0fdf47898cde1eaf1b46fa7b5fedf",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\X7PXSU64qMo\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:12:26.328297+00:00",
+  "duration_seconds": 55.22999954223633
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "v56b1UTUtmQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El lenguaje secreto de los perros",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\v56b1UTUtmQ.mp3",
+  "transcribed_at": "2026-05-24T20:02:01.511821+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 787,
+  "text_sha256": "969624681dfb5de0e50ecab69a677acf1e0a88636683abee901656fff95cb32f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

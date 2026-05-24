@@ -1,0 +1,20 @@
+{
+  "video_id": "GwgVKEJN99o",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Pensar demasiado te está frenando",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\GwgVKEJN99o.mp3",
+  "transcribed_at": "2026-05-24T20:03:27.262675+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1936,
+  "text_sha256": "134e09748334403391973b5d695605e2c4c1dc5e735ebc235d0a4b8bd7e01201",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\GwgVKEJN99o\\transcript_segments.jsonl",
+  "segment_count": 33,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:07:38.237734+00:00",
+  "duration_seconds": 96.68000030517578
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "phQVCPNcUTQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Así tu cerebro te hace perder tiempo todos los días",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\phQVCPNcUTQ.mp3",
+  "transcribed_at": "2026-05-24T19:57:46.505503+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8962,
+  "text_sha256": "4821fccfc3077f9add13f94181473e8580d3a4e47825e0775db5fdd3cf531a58",
+  "repo_schema_version": "transcript_metadata_v1"
+}

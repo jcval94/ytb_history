@@ -1,0 +1,71 @@
+{
+  "video_id": "xu4qbqBucjY",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre la ansiedad que genera la necesidad de ir rápido en la carretera, comparando el estrés de la conducción apresurada con la tranquilidad de manejar a una velocidad moderada.",
+  "main_topics": [
+    "estrés en la conducción",
+    "comparación de velocidades",
+    "valor del tiempo",
+    "vida y salud"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación común en la conducción",
+      "summary": "Se describe cómo la mayoría corre al cohete en la carretera, buscando velocidad."
+    },
+    {
+      "section": "Comparativa de estilos de conducción",
+      "purpose": "Contrastar dos estilos de conducción",
+      "summary": "Se comparan conductores que manejan rápido con otros que lo hacen relajadamente."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Concluir con un mensaje sobre el tiempo y el estrés",
+      "summary": "Se destaca que ganar cuatro minutos no justifica el estrés y los riesgos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "La mayoría de las veces corremos al cohete.",
+    "why_it_works": "Capta la atención al tocar un comportamiento cotidiano que muchos pueden relacionar."
+  },
+  "claims": [
+    {
+      "claim": "La conducción apurada genera estrés innecesario.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Manejar a una velocidad moderada puede ser más beneficioso para la salud.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practicar la conducción relajada en lugar de apresurada.",
+    "Reflexionar sobre la real importancia de ganar tiempo en el tráfico."
+  ],
+  "audience": "conductores y personas interesadas en la salud mental.",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "historias personales",
+    "analogías",
+    "preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "¿cuál es la diferencia de tiempo entre ir a 130 haciendo luces e ir a 100 escuchando la radio?",
+    "nos jugamos la vida, el estrés, el cortisol, los nervios para ganar algo que se te escurre entre los dedos."
+  ],
+  "creative_reuse_opportunities": [
+    "blog sobre conducción consciente",
+    "video sobre el estrés y la salud mental en la conducción",
+    "podcast discutiendo estrategias para reducir el estrés al volante"
+  ],
+  "risk_notes": [
+    "El estrés al conducir puede tener consecuencias en la salud a largo plazo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

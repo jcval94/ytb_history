@@ -1,0 +1,93 @@
+{
+  "video_id": "p4QJkILQoqQ",
+  "language": "es",
+  "summary": "El video discute los riesgos de permitir que los niños accedan a internet, incluidas las apuestas y la pornografía, sin la supervisión y la educación adecuadas. Se compara este acceso a la experiencia de dejar que un niño salga solo a la calle, enfatizando la necesidad de preparar y educar a los niños sobre los peligros que pueden encontrar en línea.",
+  "main_topics": [
+    "Acceso infantil a internet",
+    "Riesgos en línea",
+    "Falta de supervisión parental",
+    "Educación sobre seguridad en internet",
+    "Comparación con la crianza tradicional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer la problemática del acceso infantil a internet",
+      "summary": "Se plantea la situación actual de los niños en internet sin supervisión."
+    },
+    {
+      "section": "Riesgos de acceso sin control",
+      "purpose": "Detallar los peligros en línea",
+      "summary": "Se mencionan los sitios de apuestas y pornografía como ejemplos de riesgos."
+    },
+    {
+      "section": "Comparación con el acompañamiento en la vida real",
+      "purpose": "Ilustrar la falta de preparación",
+      "summary": "Se compara la salida a la calle de un niño con su acceso a internet."
+    },
+    {
+      "section": "Consecuencias del uso excesivo de la tecnología",
+      "purpose": "Resaltar el efecto hipnótico de las pantallas",
+      "summary": "Se discute cómo las pantallas pueden ser una solución temporal para los padres."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Llamar a la reflexión",
+      "summary": "Se enfatiza la necesidad de acompañar y educar a los niños sobre el uso seguro de la tecnología."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Comparación",
+    "hook_text": "Hoy dejamos salir a los chicos a internet... sin ningún acompañamiento",
+    "why_it_works": "Capta la atención al contrastar la crianza tradicional con la nueva realidad digital, creando un sentido de urgencia."
+  },
+  "claims": [
+    {
+      "claim": "Los niños acceden a internet sin supervisión.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las pantallas son sedantes para los niños.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los padres no están informados sobre los riesgos de internet.",
+      "support_level": "weak",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Sitios de apuestas en línea",
+    "Pornografía accesible",
+    "Uso de tabletas como solución fácil para la crianza"
+  ],
+  "actionable_ideas": [
+    "Proporcionar educación a los padres sobre los riesgos en línea.",
+    "Establecer reglas claras sobre el uso de internet para los niños.",
+    "Promover el acompañamiento en la vida digital como en la vida real."
+  ],
+  "audience": "Padres y educadores",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Conversacional y directo",
+  "retention_devices": [
+    "Historias personales",
+    "Ejemplos concretos de riesgos",
+    "Metáforas relacionadas con la crianza"
+  ],
+  "title_supporting_quotes": [
+    "Hoy dejamos salir a los chicos a internet... sin ningún acompañamiento.",
+    "Dar una pantalla a un nene de 2 años es una solución mágica."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre educación digital",
+    "Charlas o talleres para padres",
+    "Videos explicativos sobre seguridad en línea"
+  ],
+  "risk_notes": [
+    "Posibles reacciones negativas de padres defensores de la tecnología.",
+    "Resistencia a cambiar hábitos de crianza establecidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "xu4qbqBucjY",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Desde cuándo \"vivir a mil\" es éxito?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xu4qbqBucjY.mp3",
+  "transcribed_at": "2026-05-24T19:59:04.579062+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 660,
+  "text_sha256": "241e5b7c2be4ac097df896192ee767fbb88001f7963abd8892133dd093518517",
+  "repo_schema_version": "transcript_metadata_v1"
+}

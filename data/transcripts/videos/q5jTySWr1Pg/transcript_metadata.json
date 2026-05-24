@@ -1,0 +1,14 @@
+{
+  "video_id": "q5jTySWr1Pg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La IA no te va a esperar 30 años como Internet",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\q5jTySWr1Pg.mp3",
+  "transcribed_at": "2026-05-24T20:03:02.529717+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1902,
+  "text_sha256": "08986c8a25d9c9b567704f3028c6b3bd245edbbf918179fc063aa82fe7c46852",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,71 @@
+{
+  "video_id": "Y5PczYKVYYo",
+  "language": "es",
+  "summary": "La narradora habla sobre su interés en la hipnosis y la meditación, compartiendo su experiencia de encontrar un estado de trance mientras acaricia a su gato.",
+  "main_topics": [
+    "hipnosis",
+    "meditación",
+    "conexión con mascotas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la hipnosis",
+      "purpose": "Introducir el deseo de experimentar hipnosis",
+      "summary": "La narradora expresa su deseo de ser hipnotizada pero reconoce que no es hipnotizable."
+    },
+    {
+      "section": "Experiencias con la meditación",
+      "purpose": "Comparar la hipnosis con la meditación",
+      "summary": "Describiendo cómo la meditación le resulta similar a la hipnosis."
+    },
+    {
+      "section": "Trance de acariciar al gato",
+      "purpose": "Revelar su manera de alcanzar un estado de meditación",
+      "summary": "Explica cómo acariciar a su gato la transporta a un estado de trance meditativo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "personal anecdote",
+    "hook_text": "Me encantaría que me hipnoticen.",
+    "why_it_works": "Capta la atención al expresar un deseo personal y genera curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "La narradora no es hipnotizable.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Acariciar al gato induce un estado de meditación.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Acariciar a su gato durante una hora y media."
+  ],
+  "actionable_ideas": [
+    "Explorar métodos alternativos de meditación.",
+    "Pasar tiempo con mascotas para mejorar el bienestar."
+  ],
+  "audience": "Personas interesadas en la meditación y la conexión con mascotas.",
+  "tone": "informal y reflexivo",
+  "content_style": "narrativo y personal",
+  "retention_devices": [
+    "anécdotas personales",
+    "humor sobre la meditación",
+    "descripciones vívidas del proceso"
+  ],
+  "title_supporting_quotes": [
+    "Me encantaría que me hipnoticen.",
+    "Acabo en un mundo paralelo."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre la importancia de las mascotas en la meditación.",
+    "Escribir un artículo sobre formas alternativas de alcanzar la meditación."
+  ],
+  "risk_notes": [
+    "Puede haber riesgo de que algunos no crean en la conexión entre mascotas y meditación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

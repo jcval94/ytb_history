@@ -1,0 +1,82 @@
+{
+  "video_id": "X7PXSU64qMo",
+  "language": "es",
+  "summary": "Joshua Foer, un periodista con mala memoria, participó en un campeonato nacional de memoria utilizando una técnica inusual: transformó las cartas de una baraja en escenas absurdas y emocionales. Esta estrategia lo llevó a memorizar la baraja completa rápidamente, demostrando que la memoria está más relacionada con las emociones y sensaciones que con la simple memorización de símbolos.",
+  "main_topics": [
+    "Memoria",
+    "Técnicas de memorización",
+    "Emociones y aprendizaje",
+    "Competencias mentales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al personaje",
+      "purpose": "Presentar a Joshua Foer y su situación",
+      "summary": "Se introduce a Joshua Foer, un periodista con mala memoria que decide competir en un campeonato de memoria."
+    },
+    {
+      "section": "Descripción de la técnica utilizada",
+      "purpose": "Explicar la estrategia de memorización",
+      "summary": "Foer transforma las cartas en escenas absurdas y dramáticas para ayudar a su memoria."
+    },
+    {
+      "section": "Resultado del campeonato",
+      "purpose": "Mostrar el éxito de Foer",
+      "summary": "Foer gana el campeonato memorizando una baraja en un tiempo increíblemente corto."
+    },
+    {
+      "section": "Conclusiones sobre la memoria",
+      "purpose": "Transmitir el mensaje central",
+      "summary": "La memoria se basa en las emociones, y recordar es más efectivo cuando se asocia con sensaciones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Un periodista con pésima memoria decidió competir en el campeonato nacional de memoria.",
+    "why_it_works": "Intriga al espectador al presentar una contradicción: un competidor con mala memoria participando en un evento donde la memoria es crucial."
+  },
+  "claims": [
+    {
+      "claim": "La memoria no es un don, es una habilidad que se puede mejorar.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Recordar es más efectivo cuando se asocia a emociones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las escenas absurdas y dramáticas ayudan a memorizar.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Usar imágenes absurdas para memorizar información.",
+    "Asociar emociones a lo que se quiere recordar.",
+    "Practicar técnicas de memorización emocional."
+  ],
+  "audience": "Personas interesadas en el aprendizaje y desarrollo personal",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Uso de imágenes vívidas",
+    "Técnicas de memorización inusuales",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "La memoria no es un don, es pensar menos en qué recordar y más en cómo nos hace sentir."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear material educativo sobre técnicas de memorización.",
+    "Desarrollar un curso sobre emociones y aprendizaje.",
+    "Realizar un taller práctico sobre memorización utilizando escenas absurdas."
+  ],
+  "risk_notes": [
+    "No todas las personas responden a las técnicas emocionales de la misma manera.",
+    "Puede haber un riesgo de sobrecargar la información emocional en algunos contextos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

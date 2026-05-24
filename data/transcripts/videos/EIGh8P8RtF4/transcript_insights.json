@@ -1,0 +1,76 @@
+{
+  "video_id": "EIGh8P8RtF4",
+  "language": "es",
+  "summary": "El relato de Charles Burden y su perro Old Drum, quien fue asesinado. La defensa de Burden en el tribunal se enfocó en la lealtad incondicional de los perros, contrastando esto con la ingratitud de los humanos. Burden ganó el juicio y se erigió una estatua en su honor.",
+  "main_topics": [
+    "lealtad",
+    "justicia",
+    "trato hacia los animales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir la historia de lealtad y traición",
+      "summary": "Un hijo puede ser ingrato, pero un perro nunca traiciona."
+    },
+    {
+      "section": "El caso de Charles Burden",
+      "purpose": "Describir el evento central de la historia",
+      "summary": "Charles Burden lleva a juicio a un vecino que mató a su perro."
+    },
+    {
+      "section": "El discurso del abogado",
+      "purpose": "Resaltar el argumento emocional en el juicio",
+      "summary": "El abogado apela a la lealtad de los perros."
+    },
+    {
+      "section": "El desenlace",
+      "purpose": "Concluir la historia con la victoria de Burden",
+      "summary": "Burden gana el juicio y se establece una estatua en su honor."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Resumir el significado del relato",
+      "summary": "La lealtad de los perros es incomparable."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Un hijo puede resultar ingrato, un ser amado puede traicionar, pero hay un ser que nunca abandona.",
+    "why_it_works": "Conecta emocionalmente al espectador desde el inicio, estableciendo un contraste poderoso."
+  },
+  "claims": [
+    {
+      "claim": "La lealtad de los perros es superior a la de los humanos.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "El caso de Charles Burden y su perro Old Drum",
+    "La estatua en el tribunal del condado de Johnson"
+  ],
+  "actionable_ideas": [
+    "Promover la adopción de mascotas brindando ejemplos de lealtad en perros.",
+    "Crear campañas sobre el trato justo hacia los animales."
+  ],
+  "audience": "Amantes de los animales y público en general",
+  "tone": "Emotivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Historias conmovedoras",
+    "Citas poderosas"
+  ],
+  "title_supporting_quotes": [
+    "El mejor amigo que una persona puede tener puede volverse en su contra.",
+    "El mejor amigo del hombre."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un documental sobre la lealtad animal",
+    "Escribir un libro basado en historias de perros leales."
+  ],
+  "risk_notes": [
+    "Puede ser visto como un argumento emocional exagerado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

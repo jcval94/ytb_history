@@ -1,0 +1,20 @@
+{
+  "video_id": "P-AbrYJ9rxk",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Tu perro no es “solo” un perro",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\P-AbrYJ9rxk.mp3",
+  "transcribed_at": "2026-05-24T19:56:21.268186+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2126,
+  "text_sha256": "7f496351bef77387ec539dd4aa4b3d261eb2e4dd9c94398af2e84c3e2f13111b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\P-AbrYJ9rxk\\transcript_segments.jsonl",
+  "segment_count": 24,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T20:08:22.263972+00:00",
+  "duration_seconds": 109.70999908447266
+}
