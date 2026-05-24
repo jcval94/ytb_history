@@ -1,47 +1,53 @@
 {
-  "generated_at": "2026-05-24T11:07:05.647171+00:00",
+  "generated_at": "2026-05-24T19:10:54.702715+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
   "expected_selected_count": 15,
   "ranked_shortfall": 0,
   "candidates_considered": 22943,
-  "available_ranked_count": 22856,
+  "available_ranked_count": 22853,
   "source_artifacts": {
     "decision": {
-      "path": "data/decision/latest_action_candidates.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
       "exists": true,
       "row_count": 6510,
-      "modified_at": "2026-05-24T11:06:50.406045+00:00"
+      "modified_at": "2026-05-24T19:08:06.891433+00:00"
     },
     "model_intelligence": {
-      "path": "data/model_intelligence/latest_hybrid_recommendations.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\model_intelligence\\latest_hybrid_recommendations.csv",
       "exists": true,
       "row_count": 18525,
-      "modified_at": "2026-05-24T11:06:52.367042+00:00"
+      "modified_at": "2026-05-24T19:08:07.817648+00:00"
     },
     "topic": {
-      "path": "data/topic_intelligence/latest_topic_opportunities.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\topic_intelligence\\latest_topic_opportunities.csv",
       "exists": true,
       "row_count": 15,
-      "modified_at": "2026-05-24T11:06:55.807657+00:00"
+      "modified_at": "2026-05-24T19:08:08.577525+00:00"
     },
     "creative": {
-      "path": "data/creative_packages/latest_creative_packages.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\creative_packages\\latest_creative_packages.csv",
       "exists": true,
       "row_count": 6172,
-      "modified_at": "2026-05-24T11:06:57.826032+00:00"
+      "modified_at": "2026-05-24T19:08:06.776284+00:00"
     },
     "analytics_scores": {
-      "path": "data/analytics/latest/latest_video_scores.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_scores.csv",
       "exists": true,
       "row_count": 22930,
-      "modified_at": "2026-05-24T11:04:00.345358+00:00"
+      "modified_at": "2026-05-24T19:08:06.598031+00:00"
     },
     "analytics_metrics": {
-      "path": "data/analytics/latest/latest_video_metrics.csv",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\analytics\\latest\\latest_video_metrics.csv",
       "exists": true,
       "row_count": 22930,
-      "modified_at": "2026-05-24T11:03:59.914360+00:00"
+      "modified_at": "2026-05-24T19:08:06.598031+00:00"
+    },
+    "latest_snapshots": {
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-24\\run=105156Z\\snapshots.jsonl.gz",
+      "exists": true,
+      "row_count": 22930,
+      "modified_at": "2026-05-24T19:08:08.542018+00:00"
     }
   },
   "selected_count": 15,
@@ -69,14 +75,14 @@
   "persisted_transcript_success_count": 80,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 2,
+  "registry_existing_recent_failed_count": 5,
   "skipped_already_transcribed": 80,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 2,
+  "skipped_recent_failures": 5,
   "skipped_forced_already_transcribed": 22,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 0,
-  "skipped_forced_outside_window": 10,
+  "skipped_forced_recent_failures": 3,
+  "skipped_forced_outside_window": 7,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
