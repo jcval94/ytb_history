@@ -1,15 +1,15 @@
 {
   "status": "success",
   "content_format": "all",
-  "generated_at": "2026-05-23T10:59:36.160121+00:00",
+  "generated_at": "2026-05-24T11:06:52.368600+00:00",
   "format_results": {
     "shorts": {
       "status": "success",
       "content_format": "shorts",
-      "generated_at": "2026-05-23T10:59:35.815056+00:00",
+      "generated_at": "2026-05-24T11:06:52.012392+00:00",
       "prediction_rows": 5725,
-      "decision_rows": 1596,
-      "hybrid_rows": 5880,
+      "decision_rows": 1925,
+      "hybrid_rows": 5911,
       "warnings": [],
       "files_written": [
         "data/model_intelligence/formats/shorts/latest_hybrid_recommendations.csv",
@@ -19,10 +19,10 @@
     "videos": {
       "status": "success",
       "content_format": "videos",
-      "generated_at": "2026-05-23T10:59:36.061437+00:00",
+      "generated_at": "2026-05-24T11:06:52.268244+00:00",
       "prediction_rows": 12133,
-      "decision_rows": 3771,
-      "hybrid_rows": 12738,
+      "decision_rows": 4233,
+      "hybrid_rows": 12614,
       "warnings": [],
       "files_written": [
         "data/model_intelligence/formats/videos/latest_hybrid_recommendations.csv",
@@ -30,7 +30,7 @@
       ]
     }
   },
-  "hybrid_rows": 18618,
+  "hybrid_rows": 18525,
   "warnings": [],
   "files_written": [
     "data/model_intelligence/latest_hybrid_recommendations.csv",

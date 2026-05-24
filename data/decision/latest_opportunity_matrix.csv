@@ -1,8 +1,8 @@
 opportunity_type,action_type,candidates_count,avg_decision_score,max_decision_score,avg_confidence_score,top_entity_id,top_title,recommended_focus
-create_fast_reaction,create_fast_reaction,106,73.3454,80.922,77.8538,QD0hGj-ioFU,Anderson Cooper's emotional farewell to 60 Minutes after 20 years,Priorizar ideas rápidas y publicar en ventana corta.
-create_evergreen,create_evergreen,14,67.0695,75.8881,97.7143,yIUDe9YH0ac,Dating As An  Entrepreneur,Planificar piezas con valor sostenido en el tiempo.
-analyze_reference,analyze_reference,35,75.0357,81.9301,69.8286,LzJSR7XsPmE,"Once Noticias a las Seis | Conferencia Matutina ""Las mañaneras del pueblo"" (22/05/2026)",Extraer aprendizajes de formato y ángulo ganador.
-repackage_idea,repackage_idea,4164,56.5057,72.6056,82.4238,cuAwxJwfm7Y,¿Por qué Argentina está tan CARA en Dólares? (La Verdadera Inflación de MILEI),Optimizar empaque de temas con potencial latente.
-benchmark_channel,benchmark_channel,223,65.317,87.8642,77.2298,UCK8sQmJBp8GCxrOtXWBpyEA,What is Gemini Omni?,Documentar patrones replicables del canal referencia.
-monitor_next_run,monitor_next_run,1188,65.817,88.0,85.8043,UC_x5XG1OV2P6uZZ5FSM9Ttw,Google I/O 2026 Developer Keynote Recap,Esperar confirmación de tendencia en próxima corrida.
+create_fast_reaction,create_fast_reaction,232,74.0899,81.129,78.5323,Wo6VcQNG050,Good News: Wrong number leads to unlikely friendship,Priorizar ideas rápidas y publicar en ventana corta.
+create_evergreen,create_evergreen,17,66.5123,72.5855,97.8824,yIUDe9YH0ac,Dating As An  Entrepreneur,Planificar piezas con valor sostenido en el tiempo.
+analyze_reference,analyze_reference,18,73.452,83.0379,68.1944,yV5ZOIunUiY,#UNSÁBADOMEJOR | CASAMIENTO EN LA TRIBUNA + EL AMOR DE TEFI Y EL POLLO + LOS ROZE ,Extraer aprendizajes de formato y ángulo ganador.
+repackage_idea,repackage_idea,4106,57.7976,72.6668,85.8488,cuAwxJwfm7Y,¿Por qué Argentina está tan CARA en Dólares? (La Verdadera Inflación de MILEI),Optimizar empaque de temas con potencial latente.
+benchmark_channel,benchmark_channel,215,66.2388,87.731,78.2965,UCK8sQmJBp8GCxrOtXWBpyEA,What is Gemini Omni?,Documentar patrones replicables del canal referencia.
+monitor_next_run,monitor_next_run,1922,64.0419,87.5916,88.1887,UCBBWpss2iXVXtTzl7-4eWbg,Escúchalo completo en Más Allá del Rosa en YouTube,Esperar confirmación de tendencia en próxima corrida.
 wait_for_confidence,wait_for_confidence,0,0.0,0.0,0.0,,,Acumular evidencia antes de una acción fuerte.
