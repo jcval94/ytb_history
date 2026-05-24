@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 1264,
   "text_sha256": "a104f10ca16713bff15ac0292358fdc5e582cf5b42367e67eb903ddfc64ebe52",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\N8Bc_M2Ew2E\\transcript_segments.jsonl",
+  "segment_count": 29,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T19:34:57.052912+00:00",
+  "duration_seconds": 60.20000076293945
 }

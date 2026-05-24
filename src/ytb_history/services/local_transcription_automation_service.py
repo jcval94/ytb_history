@@ -18,6 +18,7 @@ from ytb_history.services.transcript_selection_service import (
 from ytb_history.services.transcript_store_service import build_transcript_registry_report
 from ytb_history.services.transcript_timestamp_backfill_service import backfill_transcript_timestamps
 from ytb_history.services.transcription_runner_service import transcribe_selected_videos
+from ytb_history.utils.environment import resolve_environment_variable
 
 JsonReport = dict[str, Any]
 CommandRunner = Callable[..., subprocess.CompletedProcess[str]]
@@ -119,6 +120,10 @@ def _blocked_sync_status(sync_status: str) -> str:
 
 def _dirty_tracked_lines(status_report: JsonReport) -> list[str]:
     return [line for line in str(status_report.get("stdout", "")).splitlines() if line.strip()]
+
+
+def _youtube_refresh_requires_api_key(*, skip_youtube_refresh: bool, refresh_forced_channels: bool) -> bool:
+    return refresh_forced_channels or not skip_youtube_refresh
 
 
 def _ensure_main_branch(
@@ -282,6 +287,22 @@ def run_local_transcription_automation(
             return report
     else:
         report["steps"]["sync_preflight"] = {"skipped": True, "reason": "no_sync_git"}
+
+    if _youtube_refresh_requires_api_key(
+        skip_youtube_refresh=skip_youtube_refresh,
+        refresh_forced_channels=refresh_forced_channels,
+    ) and not resolve_environment_variable("YOUTUBE_API_KEY"):
+        error_message = "YouTube API key is missing. Set YOUTUBE_API_KEY or add it to a local .env."
+        report["status"] = "failed_youtube_refresh"
+        report["warnings"].extend(["youtube_api_key_missing", "youtube_refresh_failed"])
+        report["steps"]["youtube_refresh"] = {
+            "status": "failed",
+            "error": error_message,
+            "exception_type": "MissingEnvironmentVariable",
+        }
+        _write_report(report_path, report)
+        _emit_progress(progress_callback, 100, f"Refresh de YouTube fallo: {error_message}")
+        return report
 
     if refresh_forced_channels:
         forced_urls = load_forced_transcription_channel_urls()

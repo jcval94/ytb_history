@@ -381,8 +381,39 @@ def test_ytdlp_auth_required_with_cookies_exhausts_all_strategies(tmp_path: Path
     assert error_category == "auth_required"
 
 
-def test_ytdlp_auth_required_without_auth_context_stops_after_first_strategy(tmp_path: Path, monkeypatch) -> None:
+def test_ytdlp_auth_required_without_auth_context_tries_later_strategy(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
+    attempted_strategies: list[str] = []
+
+    def _fake_run(cmd: list[str], **_kwargs):
+        strategy_name = _strategy_name_from_ytdlp_cmd(cmd)
+        attempted_strategies.append(strategy_name)
+        if strategy_name == "android":
+            (tmp_path / "audio" / "v1.mp3").write_bytes(b"audio")
+            return subprocess.CompletedProcess(args=cmd, returncode=0, stderr="")
+        return subprocess.CompletedProcess(
+            args=cmd,
+            returncode=1,
+            stderr="ERROR: [youtube] v1: Sign in to confirm you're not a bot. Use --cookies",
+        )
+
+    monkeypatch.setattr(transcription_runner_service.subprocess, "run", _fake_run)
+
+    audio_path, error, error_category = transcription_runner_service._download_audio_with_ytdlp(
+        video_id="v1",
+        audio_source_dir=tmp_path / "audio",
+    )
+
+    assert attempted_strategies == ["default", "android"]
+    assert audio_path == tmp_path / "audio" / "v1.mp3"
+    assert error is None
+    assert error_category is None
+
+
+def test_ytdlp_auth_required_without_auth_context_exhausts_all_strategies(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(transcription_runner_service.shutil, "which", lambda name: "/usr/bin/yt-dlp" if name == "yt-dlp" else None)
+    monkeypatch.setattr(transcription_runner_service.time, "sleep", lambda _seconds: None)
     attempted_strategies: list[str] = []
 
     def _fake_run(cmd: list[str], **_kwargs):
@@ -400,9 +431,9 @@ def test_ytdlp_auth_required_without_auth_context_stops_after_first_strategy(tmp
         audio_source_dir=tmp_path / "audio",
     )
 
-    assert attempted_strategies == ["default"]
+    assert attempted_strategies == [name for name, _args in transcription_runner_service._ytdlp_download_strategies()]
     assert audio_path is None
-    assert error is not None and "strategy=default" in error
+    assert error is not None and "strategy=web" in error
     assert error_category == "auth_required"
 
 

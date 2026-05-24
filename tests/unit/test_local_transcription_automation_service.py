@@ -76,8 +76,12 @@ def test_run_local_transcription_automation_uses_stubs_and_skips_git_and_youtube
     assert written["steps"]["git_commit"] == {"skipped": True, "reason": "no_sync_git"}
 
 
-def test_run_local_transcription_automation_commits_only_with_changes_after_successful_sync(tmp_path: Path) -> None:
+def test_run_local_transcription_automation_commits_only_with_changes_after_successful_sync(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
     _write_sync_report(tmp_path)
+    monkeypatch.setenv("YOUTUBE_API_KEY", "test-key")
     commands: list[list[str]] = []
 
     def _command_runner(command: list[str], **_kwargs: Any) -> subprocess.CompletedProcess[str]:
@@ -305,8 +309,12 @@ def test_run_local_transcription_automation_transcribes_all_selected_candidates(
     assert report["steps"]["transcript_timestamps"]["timestamp_kwargs"]["limit"] == 12
 
 
-def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selection(tmp_path: Path) -> None:
+def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selection(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
     _write_sync_report(tmp_path)
+    monkeypatch.setenv("YOUTUBE_API_KEY", "test-key")
     calls: dict[str, dict[str, Any]] = {}
 
     def _pipeline(**kwargs: Any) -> dict[str, Any]:
@@ -349,8 +357,12 @@ def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selec
     assert report["transcription_limit"] == 2
 
 
-def test_automation_reports_youtube_refresh_failure_without_traceback_crash(tmp_path: Path) -> None:
+def test_automation_reports_youtube_refresh_failure_without_traceback_crash(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
     _write_sync_report(tmp_path)
+    monkeypatch.setenv("YOUTUBE_API_KEY", "test-key")
 
     report = run_local_transcription_automation(
         repo_dir=tmp_path,
@@ -369,6 +381,32 @@ def test_automation_reports_youtube_refresh_failure_without_traceback_crash(tmp_
     assert "youtube_refresh_failed" in report["warnings"]
     written = json.loads((tmp_path / "build" / "local_automation" / "latest_run_report.json").read_text(encoding="utf-8"))
     assert written["status"] == "failed_youtube_refresh"
+
+
+def test_automation_fails_fast_when_youtube_api_key_is_missing(tmp_path: Path, monkeypatch) -> None:
+    _write_sync_report(tmp_path)
+    monkeypatch.delenv("YOUTUBE_API_KEY", raising=False)
+    monkeypatch.setattr(
+        "ytb_history.services.local_transcription_automation_service.resolve_environment_variable",
+        lambda _name: "",
+    )
+
+    report = run_local_transcription_automation(
+        repo_dir=tmp_path,
+        refresh_forced_channels=True,
+        command_runner=lambda command, **_kwargs: _completed(command),
+        pipeline_runner=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("pipeline should not run")),
+        candidate_selector=lambda **_kwargs: (_ for _ in ()).throw(AssertionError("selection should not run")),
+    )
+
+    assert report["status"] == "failed_youtube_refresh"
+    assert report["steps"]["youtube_refresh"] == {
+        "status": "failed",
+        "error": "YouTube API key is missing. Set YOUTUBE_API_KEY or add it to a local .env.",
+        "exception_type": "MissingEnvironmentVariable",
+    }
+    assert "youtube_api_key_missing" in report["warnings"]
+    assert "youtube_refresh_failed" in report["warnings"]
 
 
 def test_runner_script_writes_schedule_state_without_utf8_bom() -> None:

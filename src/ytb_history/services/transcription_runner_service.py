@@ -338,7 +338,10 @@ def _should_stop_ytdlp_strategy_retries(*, error_category: str, has_auth_context
     if error_category == "video_unavailable":
         return True
     if error_category == "auth_required":
-        return not has_auth_context
+        # YouTube can require auth for yt-dlp's default/web client while mobile
+        # clients still expose a usable media URL, so keep trying the fallback
+        # client strategies before declaring the video blocked.
+        return False
     return False
 
 

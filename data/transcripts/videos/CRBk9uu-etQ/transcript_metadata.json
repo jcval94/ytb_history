@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 625,
   "text_sha256": "8653dbb3f8b858ed070a9c2fd2e1545039450bced34d4993b4bab63df0536e0a",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\CRBk9uu-etQ\\transcript_segments.jsonl",
+  "segment_count": 12,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-24T19:34:02.222477+00:00",
+  "duration_seconds": 38.81999969482422
 }
