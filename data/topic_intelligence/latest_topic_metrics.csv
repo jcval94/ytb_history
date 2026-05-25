@@ -1,16 +1,17 @@
 content_format,topic,video_count,channel_count,total_views_delta,avg_views_delta,avg_engagement_rate,avg_alpha_score,avg_decision_score,avg_hybrid_decision_score,avg_model_score_percentile,topic_velocity_score,topic_saturation_score,topic_opportunity_score,top_video_id,top_video_title,top_channel_name
-shorts,unknown,5004,228,112333572.0,22448.7554,0.025945,41.0941,11.9054,29.7028,41.3839,100.0,72.4387,81.5461,QAkEMtJpq3c,"Hit The Button, Win $1,000",ESPN
-videos,unknown,9793,369,80337819.0,8203.5963,0.026646,42.3594,11.52,28.8063,40.1637,85.7143,75.7942,78.8698,iB_GeSHg5U0,Nastya and DIY beauty salon with Friends,Firstpost
-shorts,ai_tools,1896,139,22312791.0,11768.3497,0.024984,40.4099,14.1896,27.9954,36.9833,92.8571,65.5756,73.2459,uW4B6ziQqvY,What is Gemini Omni?,El Mundo
-videos,ai_tools,4909,252,23433691.0,4773.618,0.025778,41.5219,11.9354,26.955,36.7789,57.1429,68.7849,63.0755,V1Lr-_AxeR8,LE SSERAFIM (르세라핌) 'BOOMPALA' OFFICIAL MV,Firstpost
-videos,news_trends,606,38,573893.0,947.0182,0.021865,37.0087,13.3367,24.1241,31.17,28.5714,54.8557,44.2356,Mj30PRb3r3I,⭐NUEVO⭐ Blippi y Elmo en la Estación de Bomberos 🚒👨‍🚒 Plaza Sésamo y Blippi,Imagen Noticias
-videos,productivity,32,19,163718.0,5116.1875,0.043709,47.3173,12.3559,41.1039,60.2065,71.4286,26.2203,68.4908,ffqFlTgFZLM,RESOLVIENDO un MURDOKU 🕵️🔎 #murdoku #pasatiempo #murdle #logica #juegosdemesa,Negocios TV
-unknown,unknown,64,26,340834.0,5325.5312,0.021692,9.3228,5.1987,0.0,0.0,78.5714,37.2656,43.975,XZwVNJRRCZE,Peppa Pig NEWEST Episodes 🐷 Best of Season 10! 🤩 Peppa's Summer Adventures 🗺️ | Full Episodes,Peppa Pig - Official Channel
-unknown,ai_tools,24,12,120874.0,5036.4167,0.128863,10.1459,10.2178,0.0,0.0,64.2857,20.7857,52.3011,erJI75y4N5s,"BREAKING LIVE: Toxic Chemical Leak From 34,000-Gallon Tank Triggers Evacuations in California | N18G",Firstpost
-videos,tutorial,193,61,386396.0,2002.0518,0.047241,45.711,21.5154,31.2489,37.2753,50.0,52.7787,65.8818,jmypdIt8Wh0,#NADIEDICENADA | ADRIÁN SUAR CUENTA LOS SECRETOS DE SUS ÉXITOS Y ¿NICO APRENDE INGLÉS BRITÁNICO?,MILENIO
-shorts,tutorial,85,29,109387.0,1286.9059,0.028476,33.1618,19.8807,29.2038,35.2119,42.8571,39.937,52.7459,I8poL_Uxv8I,QUICK! HIDE!... Tutorial (Part 3),Inteligencia Artificial
-videos,finance_personal,123,35,132186.0,1074.6829,0.04322,42.097,26.8696,32.8914,36.2129,35.7143,43.9199,55.0472,IeUqSXHpeYg,"""Invirtiendo"" Todo Mi Dinero HASTA HACERME MILLONARIO",Mis Propias Finanzas
-shorts,news_trends,133,22,96634.0,726.5714,0.017379,35.3417,6.9472,19.479,27.7424,14.2857,41.8609,30.9582,x39HsWaAPpM,Las 5 noticias del 22 de mayo de 2026,Imagen Noticias
-shorts,finance_personal,50,19,37075.0,741.5,0.04786,40.917,29.9744,34.1989,35.9486,21.4286,29.7381,50.1365,2ddZXIrkzb8,¿Conviene comprar un auto híbrido? #shorts #auto #finanzas #ahorro,Omar - Educación Financiera
-shorts,productivity,16,10,7368.0,460.5,0.048818,37.3377,26.8333,29.7815,30.5905,7.1429,18.8096,41.3303,p8AZ0BdZ_MQ,Este es el tiempo más peligroso #shorts,Jaime Higuera
-unknown,finance_personal,2,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,17.5,5.25,1sofoaFEV58,Los 3 primeros pasos para comenzar a invertir desde cero.,Pao Almontes
+shorts,unknown,5319,232,78242966.0,14710.0895,0.026118,41.2718,10.4062,27.64,38.9331,100.0,72.847,80.4662,QAkEMtJpq3c,"Hit The Button, Win $1,000",ESPN
+shorts,ai_tools,2046,145,15107153.0,7383.7502,0.025009,39.6277,12.3209,25.6221,34.2719,93.3333,66.4917,72.4433,uW4B6ziQqvY,What is Gemini Omni?,El Mundo
+videos,ai_tools,5280,265,22017932.0,4170.0629,0.02577,40.2343,10.1429,24.6768,34.1741,80.0,69.6043,69.9359,fcnDmrtj6Sk,"Shakira, Burna Boy - Dai Dai (Official Video)",Firstpost
+videos,unknown,10417,382,43988226.0,4222.7346,0.026853,41.5496,9.848,26.7117,37.7681,86.6667,76.1441,77.8615,iB_GeSHg5U0,Nastya and DIY beauty salon with Friends,Firstpost
+videos,news_trends,627,41,250310.0,399.2185,0.022511,35.5611,13.0428,23.4034,30.126,13.3333,58.7911,39.3314,Mj30PRb3r3I,⭐NUEVO⭐ Blippi y Elmo en la Estación de Bomberos 🚒👨‍🚒 Plaza Sésamo y Blippi,Imagen Noticias
+videos,productivity,37,19,96984.0,2621.1892,0.043658,46.9938,10.2074,35.4058,52.0705,66.6667,28.8649,64.6634,ffqFlTgFZLM,RESOLVIENDO un MURDOKU 🕵️🔎 #murdoku #pasatiempo #murdle #logica #juegosdemesa,Santiago Bilinkis
+unknown,unknown,60,30,78245.0,1304.0833,0.030772,8.1834,4.5988,0.0,0.0,53.3333,39.4167,44.6389,djmGXGbfD6I,🔴LIVE: Best of Bluey's Friends and Family ☺️ 💛 | 24 HOURS | Playtime Moments | Bluey,Peppa Pig - Official Channel
+unknown,ai_tools,26,12,94944.0,3651.6923,99.968014,10.7275,13.2815,0.0,0.0,73.3333,26.2308,57.8013,azE0NubZpzA,"DIRECTO: Euforia en Wall Street, se desploma el petróleo y ataque total de Rusia en Kiev",Firstpost
+videos,tutorial,205,62,291102.0,1420.0098,0.047684,47.7276,20.0236,29.158,34.7093,60.0,55.0488,69.9763,jmypdIt8Wh0,#NADIEDICENADA | ADRIÁN SUAR CUENTA LOS SECRETOS DE SUS ÉXITOS Y ¿NICO APRENDE INGLÉS BRITÁNICO?,MILENIO
+shorts,news_trends,140,23,68579.0,489.85,0.018507,35.5285,11.8457,20.6299,26.3553,20.0,44.1429,35.0003,b-r7G5-BFjg,Así ha sido el lanzamiento del nuevo Starship con el que SpaceX aspira a llegar a la Luna #shorts,Imagen Noticias
+shorts,tutorial,91,30,80107.0,880.2967,0.029406,32.9062,18.6884,27.3206,32.8902,46.6667,43.6117,53.7726,I8poL_Uxv8I,QUICK! HIDE!... Tutorial (Part 3),Inteligencia Artificial
+videos,finance_personal,132,36,90431.0,685.0833,0.045124,42.9648,26.4917,31.5623,34.3402,40.0,47.4318,59.0874,oKshQyGf-is,5 NEGOCIOS que GENERAN INGRESOS todos los DÍAS 💵,Mis Propias Finanzas
+shorts,finance_personal,53,21,30965.0,584.2453,0.047783,40.8014,24.9508,30.6988,33.9138,26.6667,32.5786,52.0916,gztlPinApRE,Esta es mi tarjeta de crédito,Omar - Educación Financiera
+shorts,productivity,17,11,2210.0,130.0,0.048595,37.4111,22.0666,26.425,28.7911,6.6667,22.3921,41.4934,p8AZ0BdZ_MQ,Este es el tiempo más peligroso #shorts,Jaime Higuera
+unknown,news_trends,2,2,1301.0,650.5,0.015932,39.9752,35.7064,0.0,0.0,33.3333,35.0,36.6376,5ZM2WNE_cZM,EN VIVO Imagen Noticias GDL con Erick Breguer | 25 de mayo de 2026,Imagen Noticias
+unknown,finance_personal,2,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,31.8334,9.55,1sofoaFEV58,Los 3 primeros pasos para comenzar a invertir desde cero.,Pao Almontes
