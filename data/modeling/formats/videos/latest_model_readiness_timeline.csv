@@ -1,3 +1,4 @@
 generated_at,total_examples,trainable_examples,inference_examples,unique_videos,unique_channels,recommended_status,can_train_now,examples_missing_for_exploratory,examples_missing_for_baseline
 2026-05-18T14:07:42+00:00,9600,9600,7710,964,123,ready_for_baseline,True,0,0
 2026-05-21T13:45:44+00:00,12914,12914,12133,1156,125,ready_for_baseline,True,0,0
+2026-05-25T13:47:58+00:00,41128,41128,16698,10596,387,ready_for_baseline,True,0,0
