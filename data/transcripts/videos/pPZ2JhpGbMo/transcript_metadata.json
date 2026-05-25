@@ -1,0 +1,14 @@
+{
+  "video_id": "pPZ2JhpGbMo",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Ebola outbreak disrupts life along the DRC-Uganda border",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\pPZ2JhpGbMo.mp3",
+  "transcribed_at": "2026-05-25T04:27:28.163109+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1586,
+  "text_sha256": "5e08d758087bb5e07a0e9bf63a49326fd7265ecb0b19b4e1f0eba938f799fc9c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

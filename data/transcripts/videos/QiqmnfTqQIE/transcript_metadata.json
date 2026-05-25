@@ -1,0 +1,20 @@
+{
+  "video_id": "QiqmnfTqQIE",
+  "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+  "channel_name": "Alex Hormozi",
+  "title": "“I’m afraid to quit my job..”",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\QiqmnfTqQIE.mp3",
+  "transcribed_at": "2026-05-25T04:28:07.015334+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1881,
+  "text_sha256": "e3dd66642f856c70261f33c1e7daa93173bcfd16358fa4c55ccc14c9f274d601",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\QiqmnfTqQIE\\transcript_segments.jsonl",
+  "segment_count": 51,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:30:45.670209+00:00",
+  "duration_seconds": 108.9000015258789
+}

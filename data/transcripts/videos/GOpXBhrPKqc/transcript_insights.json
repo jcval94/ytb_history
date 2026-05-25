@@ -1,0 +1,86 @@
+{
+  "video_id": "GOpXBhrPKqc",
+  "language": "Spanish",
+  "summary": "Marisol, una química de hospital, explica a los pacientes la situación de desabasto de materiales necesarios para realizar estudios médicos, aclarando que no es por falta de atención por su parte, sino por problemas organizacionales. Ofrece una opción temporal para comprar el material necesario.",
+  "main_topics": [
+    "Desabasto de materiales en hospitales",
+    "Derechos de los pacientes",
+    "Opciones para pacientes de bajos recursos",
+    "Impacto del desabasto en la atención médica"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar a la química y el tema del video",
+      "summary": "Marisol se presenta y menciona el desabasto de materiales."
+    },
+    {
+      "section": "Problema del desabasto",
+      "purpose": "Informar sobre la situación actual",
+      "summary": "Describe la falta de materiales y su impacto en la atención a los pacientes."
+    },
+    {
+      "section": "Opciones para los pacientes",
+      "purpose": "Ofrecer soluciones temporales",
+      "summary": "Informa sobre la opción de que los pacientes compren su material."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Conclusión y aclaraciones finales",
+      "summary": "Aclara que el desabasto no es culpa de los trabajadores del hospital."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Afirmación directa",
+    "hook_text": "Estamos en desabasto aquí en el hospital el día de hoy.",
+    "why_it_works": "Capta la atención al abordar un tema crítico que afecta a los pacientes directamente."
+  },
+  "claims": [
+    {
+      "claim": "El hospital está en desabasto de materiales.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Los trabajadores no están negando atención a los pacientes.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Los pacientes pueden comprar el material opcionalmente.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El desabasto afecta el desempeño laboral de los químicos.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Analizar las causas del desabasto en hospitales.",
+    "Proponer soluciones para mejorar el suministro de materiales.",
+    "Informar a los pacientes sobre sus derechos y opciones de atención."
+  ],
+  "audience": "Pacientes y familiares de pacientes en hospitales públicos.",
+  "tone": "Informativo y comprensivo.",
+  "content_style": "Conversacional y directo.",
+  "retention_devices": [
+    "Ejemplos prácticos de materiales faltantes.",
+    "Explicaciones sobre la importancia de los estudios de salud."
+  ],
+  "title_supporting_quotes": [
+    "La falta de este material me impide llevar a cabo mi labor.",
+    "No puedo recolectar la muestra porque no tengo aguja."
+  ],
+  "creative_reuse_opportunities": [
+    "Transformar la información en infografía sobre derechos de pacientes.",
+    "Crear un video breve sobre la importancia de suministros médicos."
+  ],
+  "risk_notes": [
+    "Las afirmaciones sobre desabasto pueden generar desconfianza en el sistema de salud.",
+    "La sugerencia de compra de materiales podría ser malinterpretada."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

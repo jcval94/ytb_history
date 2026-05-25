@@ -1,0 +1,20 @@
+{
+  "video_id": "brrzQDTF5G0",
+  "channel_id": "UCafNntv_qTQB26AvbEQNHPw",
+  "channel_name": "Aristegui Noticias",
+  "title": "Lydia Cacho vuelve a México y advierte sobre narcopolítica, memoria y democracia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\brrzQDTF5G0.mp3",
+  "transcribed_at": "2026-05-25T04:29:43.297145+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 27346,
+  "text_sha256": "aab035f75d274bac35bc74d735a5569e69b9004a498e9ada85e3e23eb69515ec",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\brrzQDTF5G0\\transcript_segments.jsonl",
+  "segment_count": 296,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:32:40.895832+00:00",
+  "duration_seconds": 1845.1500244140625
+}

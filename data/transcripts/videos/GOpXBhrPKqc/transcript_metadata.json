@@ -1,0 +1,20 @@
+{
+  "video_id": "GOpXBhrPKqc",
+  "channel_id": "UCUP6qv-_EIL0hwTsJaKYnvw",
+  "channel_name": "Azteca Noticias",
+  "title": "Grave crisis en hospital público: química expone falta de materiales para realizar estudios clínicos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\GOpXBhrPKqc.mp3",
+  "transcribed_at": "2026-05-25T04:29:58.356062+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2490,
+  "text_sha256": "6b7144cb154fdc264d3b8b0e2efcd7aff22015fd9fe77a770fafc9595fabb744",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\GOpXBhrPKqc\\transcript_segments.jsonl",
+  "segment_count": 47,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:30:31.739550+00:00",
+  "duration_seconds": 169.25
+}

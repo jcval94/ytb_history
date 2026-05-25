@@ -1,0 +1,87 @@
+{
+  "video_id": "_8G3HSTTMNs",
+  "language": "es",
+  "summary": "El video enfatiza la importancia del autocuidado como una forma esencial de amor propio y respeto. Asegura que cuidar de uno mismo es crucial porque la vida continúa sin nosotros y nuestra salud mental y física son fundamentales para cumplir nuestro propósito.",
+  "main_topics": [
+    "Autocuidado",
+    "Amor propio",
+    "Salud mental",
+    "Responsabilidad personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del autocuidado.",
+      "summary": "Se introduce la idea de que cuidarse a uno mismo es esencial."
+    },
+    {
+      "section": "La importancia del autocuidado",
+      "purpose": "Explicar cómo el autocuidado afecta a nuestra vida y relaciones.",
+      "summary": "Se discute la importancia de saber que la vida sigue sin nosotros y que nuestro bienestar es primordial."
+    },
+    {
+      "section": "Reflexión personal",
+      "purpose": "Invitar a la reflexión sobre las batallas internas.",
+      "summary": "Se menciona que solo uno conoce sus propias luchas y la importancia de reconocerlas."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con un mensaje motivacional.",
+      "summary": "Se reafirma que cuidarse a sí mismo es clave y que nadie lo hará por nosotros."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Afirmación impactante",
+    "hook_text": "Cuídate antes de cuidar de nadie más.",
+    "why_it_works": "Captura la atención al desafiar la noción común de poner a los demás primero."
+  },
+  "claims": [
+    {
+      "claim": "Cuidarse a uno mismo no es egoísmo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Si tú no estás bien, nada a tu alrededor puede estarlo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El autocuidado es la mayor expresión de amor propio.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Entrenar tu cuerpo",
+    "Alimentar tu alma",
+    "Cuidar tu mente"
+  ],
+  "actionable_ideas": [
+    "Dedica tiempo a actividades que te hagan feliz.",
+    "Practica la meditación o la atención plena.",
+    "Establece límites para cuidar tu salud mental."
+  ],
+  "audience": "Adultos que buscan mejorar su bienestar personal.",
+  "tone": "Motivador y reflexivo",
+  "content_style": "Conversacional y personal",
+  "retention_devices": [
+    "Citas inspiradoras",
+    "Reflexiones personales",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Solo tú conoces tus batallas privadas.",
+    "Cuidarte a ti mismo no es egoísmo, es respeto."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un podcast sobre autocuidado.",
+    "Desarrollar un taller sobre amor propio.",
+    "Escribir un artículo sobre la salud mental."
+  ],
+  "risk_notes": [
+    "Posible malentendido del mensaje de autocuidado como egoísmo.",
+    "Resistencia a la idea de priorizarse a uno mismo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

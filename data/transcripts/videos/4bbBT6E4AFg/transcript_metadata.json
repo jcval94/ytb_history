@@ -1,0 +1,20 @@
+{
+  "video_id": "4bbBT6E4AFg",
+  "channel_id": "UCRDQzsHtx2cXvzEXnEhbxBg",
+  "channel_name": "Mister Krax",
+  "title": "Para extranjeros México es un paraíso, pero para los mexicanos… no? #méxico",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\4bbBT6E4AFg.mp3",
+  "transcribed_at": "2026-05-25T04:27:43.694303+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 3256,
+  "text_sha256": "ae02da3a69f720742c1a4c126d47bd730d6533def57ae02e1cd7c79da3707bd8",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\4bbBT6E4AFg\\transcript_segments.jsonl",
+  "segment_count": 46,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:30:23.283811+00:00",
+  "duration_seconds": 178.3800048828125
+}

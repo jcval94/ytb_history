@@ -1,0 +1,74 @@
+{
+  "video_id": "4bbBT6E4AFg",
+  "language": "es",
+  "summary": "El video explora la diferencia en percepciones entre mexicanos y extranjeros sobre México, señalando cómo los extranjeros tienden a ver lo positivo debido a su poder adquisitivo y experiencias limitadas, mientras que los mexicanos son más críticos debido a su realidad diaria.",
+  "main_topics": [
+    "Percepción de México por extranjeros",
+    "Diferencias de poder adquisitivo",
+    "Realidad cotidiana de los mexicanos",
+    "Expectativas vs. realidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema",
+      "summary": "El presentador introduce la diferencia de perspectivas entre mexicanos y extranjeros acerca de México."
+    },
+    {
+      "section": "Diferencias de percepción",
+      "purpose": "Explicar las dos realidades",
+      "summary": "Se discute cómo los extranjeros a menudo ven un México idealizado mientras que los mexicanos enfrentan una realidad más dura."
+    },
+    {
+      "section": "Ejemplos de percepción",
+      "purpose": "Ilustrar la disparidad",
+      "summary": "Se ofrecen ejemplos relacionados con el uso del metro, seguridad y calidad de vida entre quienes tienen y no tienen un alto poder adquisitivo."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a la reflexión",
+      "summary": "Se cierra el video invitando a la audiencia a compartir su opinión sobre el tema."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Los extranjeros están enamorados de México, pero los mexicanos siempre le ven la piedrita en el arroz.",
+    "why_it_works": "Esta frase capta la atención al contrastar la percepción optimista de los extranjeros con el escepticismo de los mexicanos, planteando una discusión interesante."
+  },
+  "claims": [
+    {
+      "claim": "Los extranjeros ven un lado positivo de México debido a su mayor poder adquisitivo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los mexicanos ven lo negativo debido a su experiencia cotidiana.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar el diálogo entre mexicanos y extranjeros para compartir experiencias.",
+    "Crear contenido que muestre ambas caras de la realidad en México."
+  ],
+  "audience": "Personas interesadas en la cultura mexicana y en el turismo.",
+  "tone": "Reflexivo y provocador",
+  "content_style": "Conversacional y directo",
+  "retention_devices": [
+    "Preguntas abiertas al final",
+    "Comentarios invitando a la interacción"
+  ],
+  "title_supporting_quotes": [
+    "Siempre hay quejas y está bien.",
+    "¿Por qué entonces pasa que los extranjeros siempre ven el lado positivo de las cosas?"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear una serie de videos sobre percepciones culturales.",
+    "Reelaborar el contenido para un blog que explore la dualidad cultural."
+  ],
+  "risk_notes": [
+    "Potencial para polarizar opiniones entre la audiencia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

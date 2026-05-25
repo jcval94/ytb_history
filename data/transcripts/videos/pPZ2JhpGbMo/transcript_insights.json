@@ -1,0 +1,85 @@
+{
+  "video_id": "pPZ2JhpGbMo",
+  "language": "unknown",
+  "summary": "The report discusses health measures at the Mpondwe border crossing between Uganda and the DRC in response to recent Ebola cases. While Uganda is declared Ebola-free, there are concerns over movement restrictions affecting local economies and food supply.",
+  "main_topics": [
+    "Ebola response",
+    "border health measures",
+    "economic impact of health policies",
+    "local community concerns"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the border crossing",
+      "purpose": "Set the context of the location",
+      "summary": "Description of the Mpondwe border crossing and its significance."
+    },
+    {
+      "section": "Ebola situation",
+      "purpose": "Inform about the health status related to Ebola",
+      "summary": "Update on Uganda's status regarding Ebola and measures being taken."
+    },
+    {
+      "section": "Government measures",
+      "purpose": "Outline the precautions taken",
+      "summary": "Details about the suspension of flights and markets to prevent virus spread."
+    },
+    {
+      "section": "Community concerns",
+      "purpose": "Highlight local impact",
+      "summary": "Statements from residents about food scarcity and schooling issues."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Urgency",
+    "hook_text": "The government has declared that Uganda is now Ebola-free.",
+    "why_it_works": "This statement draws attention because it contrasts the ongoing concerns about Ebola in neighboring DRC, creating a sense of urgency for understanding health measures."
+  },
+  "claims": [
+    {
+      "claim": "Uganda is now Ebola-free.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Suspension of flights and markets is a precautionary measure.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Residents are worried about food supply due to market closures.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Suspension of flights.",
+    "Closure of local markets."
+  ],
+  "actionable_ideas": [
+    "Government to provide food assistance to affected families",
+    "Establish alternative supply routes",
+    "Implement health awareness programs in communities"
+  ],
+  "audience": "General public, health officials, and policy makers",
+  "tone": "Informative and Concerned",
+  "content_style": "Reportage",
+  "retention_devices": [
+    "Statistics (e.g., number of trucks passing daily)",
+    "Personal testimonials from residents"
+  ],
+  "title_supporting_quotes": [
+    "We are worried because we don't have food.",
+    "Without food we have children who are going to school."
+  ],
+  "creative_reuse_opportunities": [
+    "Infographics about border health protocols",
+    "Videos depicting the everyday life at the border",
+    "Podcasts discussing the impact of Ebola on local economies"
+  ],
+  "risk_notes": [
+    "Potential for increased public unrest due to food shortages.",
+    "Cross-border health risks still present despite Uganda's Ebola-free status."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

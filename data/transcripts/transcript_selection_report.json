@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-24T19:51:28.966257+00:00",
-  "limit": 0,
-  "expected_ranked_count": 0,
-  "expected_selected_count": 50,
+  "generated_at": "2026-05-25T04:24:33.528123+00:00",
+  "limit": 10,
+  "expected_ranked_count": 10,
+  "expected_selected_count": 10,
   "ranked_shortfall": 0,
   "candidates_considered": 23190,
   "available_ranked_count": 22990,
@@ -50,49 +50,47 @@
       "modified_at": "2026-05-24T19:51:27.951950+00:00"
     }
   },
-  "selected_count": 50,
-  "selected_forced_count": 50,
-  "selected_ranked_count": 0,
+  "selected_count": 10,
+  "selected_forced_count": 0,
+  "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
-    "https://www.youtube.com/veritasium"
+    "https://www.youtube.com/@Veritasium"
   ],
-  "forced_channels_matched": [
-    "https://www.youtube.com/@bilinkis"
-  ],
+  "forced_channels_matched": [],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
     "https://www.youtube.com/@bilinkis": 275,
-    "https://www.youtube.com/veritasium": 8
+    "https://www.youtube.com/@Veritasium": 8
   },
   "forced_candidate_pool_count": 283,
-  "available_forced_before_truncation": 203,
-  "forced_window_cutoff_date": "2025-05-29",
+  "available_forced_before_truncation": 0,
+  "forced_window_cutoff_date": "2026-05-10",
   "latest_upload_date": "2026-05-24",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 80,
-  "persisted_transcript_success_count": 80,
+  "registry_existing_success_count": 130,
+  "persisted_transcript_success_count": 130,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
   "registry_existing_recent_failed_count": 70,
-  "skipped_already_transcribed": 80,
+  "skipped_already_transcribed": 130,
   "skipped_in_progress": 0,
   "skipped_recent_failures": 70,
-  "skipped_forced_already_transcribed": 22,
+  "skipped_forced_already_transcribed": 72,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 58,
-  "skipped_forced_outside_window": 0,
+  "skipped_forced_outside_window": 153,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "z7gSBqiz_4U",
-    "k_SrEdupseg",
-    "Cr4EwRJ1txQ",
-    "r9z5J8JkCi4",
-    "qm5LFzrp7ms"
+    "m5fqDQMG_y0",
+    "xlnGHxZGRlE",
+    "WGh-qBaoZTU",
+    "pPZ2JhpGbMo",
+    "4bbBT6E4AFg"
   ],
   "warnings": [
-    "forced_channels_truncated_max_per_run"
+    "forced_channels_window_anchored_to_latest_upload_date"
   ]
 }

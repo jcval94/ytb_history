@@ -1,0 +1,14 @@
+{
+  "video_id": "xlnGHxZGRlE",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Escucha esto atentamente #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xlnGHxZGRlE.mp3",
+  "transcribed_at": "2026-05-25T04:26:59.606397+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1107,
+  "text_sha256": "63afc1a6d7f182398a279d9302574e81f56b873a52112133c9ea90590912c10b",
+  "repo_schema_version": "transcript_metadata_v1"
+}

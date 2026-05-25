@@ -1,0 +1,83 @@
+{
+  "video_id": "O4xalbhOVmQ",
+  "language": "es",
+  "summary": "El discurso examina el objetivo de la política, que debería ser el bienestar humano, pero critica cómo el neoliberalismo ha transformado la política en un negocio que favorece intereses particulares en lugar del bien común.",
+  "main_topics": [
+    "Objetivo de la política",
+    "Neoliberalismo",
+    "Bien común vs. intereses particulares",
+    "Impacto del neoliberalismo en la sociedad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al objetivo de la política",
+      "purpose": "Establecer el propósito fundamental de la política.",
+      "summary": "La política debería servir a los humanos y fomentar la felicidad y bienestar."
+    },
+    {
+      "section": "Crítica al neoliberalismo",
+      "purpose": "Analizar cómo el neoliberalismo ha distorsionado la política.",
+      "summary": "El neoliberalismo ha convertido la política en un negocio, alejándose del servicio público."
+    },
+    {
+      "section": "Definición del neoliberalismo",
+      "purpose": "Ofrecer una definición académica del neoliberalismo.",
+      "summary": "Es la instrumentalización del Estado para beneficiar al capital, posicionándose como un juego de lenguaje."
+    },
+    {
+      "section": "Consecuencias del neoliberalismo",
+      "purpose": "Resumir los efectos negativos del neoliberalismo.",
+      "summary": "Ha llevado a la pobreza, bancarrota y a la desaparición de la humanidad como forma de ver la realidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "La política se convirtió en un negocio.",
+    "why_it_works": "Atrapa la atención al contrastar el ideal de la política con su realidad distorsionada."
+  },
+  "claims": [
+    {
+      "claim": "La política debería servir al bien común.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El neoliberalismo ha pervertido la política.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El neoliberalismo se presenta como libertad y bienestar, pero lleva a la pobreza.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Re-evaluar el papel de la política en la sociedad.",
+    "Fomentar discusiones sobre el impacto del neoliberalismo.",
+    "Promover un enfoque en el bienestar común en la política."
+  ],
+  "audience": "Personas interesadas en política y economía.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Analítico y provocador",
+  "retention_devices": [
+    "Definiciones claras",
+    "Ejemplos de consecuencias del neoliberalismo",
+    "Cuestionamientos sobre el estado actual de la política"
+  ],
+  "title_supporting_quotes": [
+    "La política debería ser el servicio a los demás.",
+    "El neoliberalismo es la instrumentalización del Estado para los beneficios del capital."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre política y neoliberalismo.",
+    "Videos educativos sobre el impacto del neoliberalismo.",
+    "Debates públicos sobre el futuro de la política en la sociedad."
+  ],
+  "risk_notes": [
+    "El tema puede generar controversias.",
+    "Las afirmaciones sobre el neoliberalismo pueden ser cuestionadas por defensores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

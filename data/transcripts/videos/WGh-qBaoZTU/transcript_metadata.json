@@ -1,0 +1,20 @@
+{
+  "video_id": "WGh-qBaoZTU",
+  "channel_id": "UCUP6qv-_EIL0hwTsJaKYnvw",
+  "channel_name": "Azteca Noticias",
+  "title": "Vinculan a proceso a policía que abatió a asaltante en Iztapalapa | #voces",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\WGh-qBaoZTU.mp3",
+  "transcribed_at": "2026-05-25T04:27:14.430761+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2057,
+  "text_sha256": "bf5ce12e05d7ff61063daee1dac0890d89d6907e7077ac5e4d0bae9fc27098ba",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\WGh-qBaoZTU\\transcript_segments.jsonl",
+  "segment_count": 36,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:31:09.766722+00:00",
+  "duration_seconds": 133.8000030517578
+}

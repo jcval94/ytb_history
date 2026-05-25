@@ -1,0 +1,89 @@
+{
+  "video_id": "WGh-qBaoZTU",
+  "language": "es",
+  "summary": "El caso de Pedro Buendía ilustra la difícil situación de los policías en México, donde un oficial es juzgado por actuar en defensa de una trabajadora tras un intento de robo, lo que genera un ambiente de inseguridad y desconfianza entre las fuerzas del orden.",
+  "main_topics": [
+    "Justicia para policías",
+    "Inseguridad en México",
+    "Dilemas éticos de la policía",
+    "Caso Pedro Buendía"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso de Pedro Buendía",
+      "purpose": "Presentar el contexto y los eventos clave del caso.",
+      "summary": "Un policía dispara a un ladrón durante un intento de robo y es inicialmente aclamado como héroe."
+    },
+    {
+      "section": "Consecuencias legales",
+      "purpose": "Exponer la reacción de la justicia y sus implicaciones.",
+      "summary": "El policía es procesado por homicidio intencional, lo que genera un debate sobre la legítima defensa."
+    },
+    {
+      "section": "Impacto emocional y profesional",
+      "purpose": "Explorar el efecto en la vida del policía y su decisión de regresar al trabajo.",
+      "summary": "Pedro es reinstalado en su puesto, pero su motivación y seguridad para actuar se ven comprometidas."
+    },
+    {
+      "section": "Crítica al sistema",
+      "purpose": "Reflexionar sobre el sistema legal y la seguridad pública en el país.",
+      "summary": "Se cuestiona cómo las leyes afectan la capacidad de los policías para actuar contra el crimen."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impactante declaración",
+    "hook_text": "En México, si un policía dispara, lo enjuician. Si no dispara, lo sancionan.",
+    "why_it_works": "Capta la atención al plantear una contradicción sorprendente en el sistema judicial que afecta a la policía."
+  },
+  "claims": [
+    {
+      "claim": "La legalidad para actuar de un policía está en riesgo.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El sistema de justicia penal no apoya a los policías que hacen su trabajo.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La inseguridad aumentará si los policías no actúan.",
+      "support_level": "implicit",
+      "risk": "mediano"
+    },
+    {
+      "claim": "Los buenos policías son escasos y están desmotivados.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Aumentar el apoyo legal y psicológico para policías.",
+    "Revisar y reformar las leyes sobre el uso de la fuerza.",
+    "Crear programas de formación que fortalezcan la confianza de los policías."
+  ],
+  "audience": "Ciudadanos preocupados por la inseguridad y el estado de la justicia en México.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Citas impactantes",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "El daño que le hicieron a un buen policía es irreversible.",
+    "Si un policía ve que actuar puede resultarle años de prisión, pues lo va a pensar dos veces."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre la seguridad pública.",
+    "Debates en foros sobre el papel de la policía en la sociedad.",
+    "Documentales sobre la vida de los policías en México."
+  ],
+  "risk_notes": [
+    "Potencial desconfianza de la comunidad hacia la policía.",
+    "Efecto desmotivador para futuros oficiales.",
+    "Aumento en la criminalidad si los policías no actúan."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

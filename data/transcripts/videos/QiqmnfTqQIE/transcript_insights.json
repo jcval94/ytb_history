@@ -1,0 +1,79 @@
+{
+  "video_id": "QiqmnfTqQIE",
+  "language": "English",
+  "summary": "The conversation revolves around a franchise owner providing overnight care for babies who is juggling their business with a full-time job. They discuss the potential for growth and the challenges of balancing both responsibilities, especially fear holding them back from fully committing to the franchise.",
+  "main_topics": [
+    "Franchise business operations",
+    "Work-life balance",
+    "Fear of taking risks",
+    "Profitability and growth potential"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the franchise",
+      "purpose": "Present the business and financial context",
+      "summary": "The speaker introduces their franchise, mentioning revenue and territories."
+    },
+    {
+      "section": "Challenges faced",
+      "purpose": "Discuss personal barriers to business growth",
+      "summary": "The owner shares their challenge of balancing a full-time job with the franchise."
+    },
+    {
+      "section": "Potential for growth",
+      "purpose": "Encourage the owner to consider leaving their job",
+      "summary": "The coach expresses confidence in the owner's abilities and the potential profits of committing fully to the franchise."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "Does that pay better than the franchise?",
+    "why_it_works": "It engages the audience by challenging the owner's current situation and opening a dialogue about choices."
+  },
+  "claims": [
+    {
+      "claim": "The franchise can generate significant profit.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Fear of change is holding the owner back from success.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Committing full-time to the franchise could replace the owner's income.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "The franchise made a profit of $300,000 last year.",
+    "The owner has four territories and manages independent contractors."
+  ],
+  "actionable_ideas": [
+    "Full-time commitment to the franchise",
+    "Develop a marketing strategy to attract new clients",
+    "Hire more independent contractors to expand service capacity"
+  ],
+  "audience": "Entrepreneurs and business owners",
+  "tone": "Supportive and motivational",
+  "content_style": "Conversational and direct",
+  "retention_devices": [
+    "Personal anecdotes",
+    "Encouragement and positive reinforcement"
+  ],
+  "title_supporting_quotes": [
+    "Imagine how much better they'd do.",
+    "I just want you to have as much confidence in you as I do."
+  ],
+  "creative_reuse_opportunities": [
+    "Work-life balance tips for entrepreneurs",
+    "Strategies for overcoming fear in business decisions"
+  ],
+  "risk_notes": [
+    "Potential loss of income if the business doesn't succeed immediately after leaving the job",
+    "Dependency on independent contractors may affect quality of service"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

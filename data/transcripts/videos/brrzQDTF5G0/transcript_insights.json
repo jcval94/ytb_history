@@ -1,0 +1,88 @@
+{
+  "video_id": "brrzQDTF5G0",
+  "language": "es",
+  "summary": "Lidia Cacho presenta su libro 'Un halcón bajo mi ventana', una novela que explora el México de los años 60 a través de la vida de Julieta, una joven en medio de importantes movimientos sociales. Durante la entrevista, Cacho discute su experiencia como periodista que ha enfrentado persecución y amenazas por su trabajo y reflexiona sobre la situación política actual en México.",
+  "main_topics": [
+    "Presentación de 'Un halcón bajo mi ventana'",
+    "Contexto histórico de México en los años 60",
+    "Experiencia y persecución de Lidia Cacho",
+    "Reflexiones sobre la política actual en México",
+    "Lucha por los derechos de las mujeres"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del libro",
+      "purpose": "Presentar la obra y a la autora",
+      "summary": "Lidia Cacho introduce su libro, su protagonista Julieta y el contexto histórico en el que se desarrolla la novela."
+    },
+    {
+      "section": "Experiencia personal de Lidia Cacho",
+      "purpose": "Describir la persecución que ha enfrentado",
+      "summary": "Cacho narra las amenazas y persecuciones que ha sufrido tras publicar 'Los demonios del Edén' y cómo eso la llevó al exilio."
+    },
+    {
+      "section": "Reflexiones sobre el presente político",
+      "purpose": "Analizar la situación actual en México",
+      "summary": "Cacho discute la complicidad de la política actual con el crimen organizado y cuestiona la integridad de los líderes políticos."
+    },
+    {
+      "section": "Conclusiones sobre la sociedad",
+      "purpose": "Resaltar la importancia de la lucha y la memoria histórica",
+      "summary": "Se enfatiza la necesidad de la sociedad civil de seguir luchando por sus derechos y la memoria de lo vivido."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga personal",
+    "hook_text": "¿Por qué Lidia Cacho no puede vivir en México?",
+    "why_it_works": "Este hook genera curiosidad sobre la situación del exilio y la persecución, atrayendo al espectador a escuchar más sobre su historia."
+  },
+  "claims": [
+    {
+      "claim": "Lidia Cacho ha sido perseguida por sus escritos sobre la trata de personas.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "La novela presenta un reflejo de los movimientos sociales en los años 60.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "La situación actual en México ha empeorado debido a la narcopolítica.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Julieta, la protagonista, representa la juventud durante un periodo de cambio",
+    "La novela critica los patriarcas del 68 que minimizan la participación de mujeres",
+    "Refleja la conexión entre el pasado y los desafíos actuales en México"
+  ],
+  "actionable_ideas": [
+    "Fomentar la lectura de 'Un halcón bajo mi ventana'",
+    "Apoyar el periodismo de investigación",
+    "Crear espacios seguros para discutir sobre derechos humanos"
+  ],
+  "audience": "Lectores interesados en literatura contemporánea y temas de derechos humanos",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Conversacional y persuasivo",
+  "retention_devices": [
+    "Anécdotas personales de Cacho",
+    "Referencias históricas sobre el 68",
+    "Citas de personajes reconocidos"
+  ],
+  "title_supporting_quotes": [
+    "Una novela sobre el poder revolucionario de la ternura y la amistad.",
+    "La verdad, el amor, la memoria y la justicia."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un club de lectura sobre el libro",
+    "Desarrollar un documental sobre la vida de Lidia Cacho",
+    "Organizar conferencias sobre el impacto de los movimientos feministas en México"
+  ],
+  "risk_notes": [
+    "Cacho enfrenta amenazas y debe usar seguridad privada",
+    "Discutir la narcopolítica puede tener repercusiones legales"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,80 @@
+{
+  "video_id": "xlnGHxZGRlE",
+  "language": "es",
+  "summary": "El mensaje central del video es la importancia de mantenerse fiel a uno mismo y actuar con un buen corazón y buenas intenciones, a pesar de las dificultades y desventajas en un mundo que a menudo premia lo contrario.",
+  "main_topics": [
+    "Importancia de un buen corazón",
+    "Actuar con buenas intenciones",
+    "Desafíos en un mundo negativo",
+    "Recompensas de la bondad",
+    "Autenticidad y fidelidad personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el tono y la importancia del buen corazón.",
+      "summary": "Se introduce el tema de tener un buen corazón y buenas intenciones."
+    },
+    {
+      "section": "Desafíos",
+      "purpose": "Reconocer la dificultad de mantener la bondad en un mundo negativo.",
+      "summary": "Se habla sobre las desventajas y el ambiente hostil hacia la bondad."
+    },
+    {
+      "section": "Recompensa",
+      "purpose": "Dar esperanza y motivación sobre la verdad de la bondad.",
+      "summary": "Se asegura que las buenas acciones eventualmente serán retribuidas."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Reafirmar la importancia de la autenticidad.",
+      "summary": "Se insta a los escuchantes a no cambiar su esencia por las circunstancias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Nunca, nunca te arrepientas de tener un buen corazón.",
+    "why_it_works": "El uso de la repetición y un mensaje emocional fuerte captura la atención y establece la importancia del tema desde el principio."
+  },
+  "claims": [
+    {
+      "claim": "Actuar con buenas intenciones siempre trae recompensas.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "El mundo premia a quienes no tienen buenas intenciones.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Ejemplos de experiencias personales con bondad.",
+    "Referencias a situaciones cotidianas donde la bondad es desafiada."
+  ],
+  "actionable_ideas": [
+    "Mantenerse fiel a uno mismo.",
+    "Actuar siempre con buenas intenciones.",
+    "No dejarse influir por el comportamiento negativo de los demás."
+  ],
+  "audience": "Personas jóvenes y adultos que buscan motivación y autenticidad.",
+  "tone": "Motivacional y reflexivo",
+  "content_style": "Conversacional y directo",
+  "retention_devices": [
+    "Repetición de ideas clave.",
+    "Uso de anécdotas personales."
+  ],
+  "title_supporting_quotes": [
+    "Todo en tu vida se va a multiplicar.",
+    "Cuando tienes un buen corazón, siempre ganas."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido motivacional basado en la bondad.",
+    "Utilizar fragmentos para campañas de bienestar emocional."
+  ],
+  "risk_notes": [
+    "Posible desmotivación si las recompensas no son inmediatas.",
+    "La dependencia de la respuesta del entorno puede ser peligrosa."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

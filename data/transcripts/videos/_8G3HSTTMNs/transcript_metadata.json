@@ -1,0 +1,20 @@
+{
+  "video_id": "_8G3HSTTMNs",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Cuida de ti antes de cuidar de los demás #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_8G3HSTTMNs.mp3",
+  "transcribed_at": "2026-05-25T04:30:10.777469+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1173,
+  "text_sha256": "43edfc015c101878ead06e242a2f5b4b39f58f87b81e1daef8db9357c62c4017",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\_8G3HSTTMNs\\transcript_segments.jsonl",
+  "segment_count": 27,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:31:13.932738+00:00",
+  "duration_seconds": 58.40999984741211
+}

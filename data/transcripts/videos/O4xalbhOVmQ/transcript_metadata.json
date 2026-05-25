@@ -1,0 +1,20 @@
+{
+  "video_id": "O4xalbhOVmQ",
+  "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
+  "channel_name": "Diego Ruzzarin",
+  "title": "El objetivo de la política #ivancepeda #diegoruzzarin #colombia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\O4xalbhOVmQ.mp3",
+  "transcribed_at": "2026-05-25T04:27:53.936219+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1486,
+  "text_sha256": "0758525b6fcd8ebaf73318a7bcc7958f1a198337b3c130e53eebf70e9a1812a1",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\O4xalbhOVmQ\\transcript_segments.jsonl",
+  "segment_count": 32,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-25T04:30:37.953697+00:00",
+  "duration_seconds": 97.0999984741211
+}
