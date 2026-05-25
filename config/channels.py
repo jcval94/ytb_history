@@ -131,6 +131,9 @@ CHANNEL_URLS = [
 
     # --- Gaming, streaming y ajedrez (2) ---
     'https://www.youtube.com/@WoshingoStreams',
+    'https://www.youtube.com/@noesposible',
+    'https://www.youtube.com/@Alan-Flores',
+    'https://www.youtube.com/@MitosyMentes',
     'https://www.youtube.com/@GothamChess',
     'https://www.youtube.com/@BaityBait',
 
