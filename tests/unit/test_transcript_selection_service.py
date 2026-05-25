@@ -74,7 +74,9 @@ def test_transcript_selection_cli_prints_json(monkeypatch, capsys) -> None:
 
 def test_transcription_channels_config_exists() -> None:
     text = Path("config/transcription_channels.py").read_text(encoding="utf-8")
-    assert "@bilinkis" in text and "veritasium" in text
+    assert "https://www.youtube.com/@bilinkis" in text
+    assert "https://www.youtube.com/@Veritasium" in text
+    assert "https://www.youtube.com/veritasium" not in text
 
 
 def test_recent_auth_required_download_failure_enters_cooldown(tmp_path: Path) -> None:
@@ -164,7 +166,7 @@ def test_selection_reports_ranked_shortfall_and_forced_source_context(tmp_path: 
     assert "forced_channels_without_matches" in report["warnings"]
     assert report["forced_channels_without_matches"] == [
         "https://www.youtube.com/@bilinkis",
-        "https://www.youtube.com/veritasium",
+        "https://www.youtube.com/@Veritasium",
     ]
 
 

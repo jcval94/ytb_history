@@ -345,7 +345,7 @@ def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selec
 
     assert report["forced_only"] is True
     assert report["selected_forced_count"] == 2
-    assert calls["pipeline"]["channel_urls"] == ["https://www.youtube.com/@bilinkis", "https://www.youtube.com/veritasium"]
+    assert calls["pipeline"]["channel_urls"] == ["https://www.youtube.com/@bilinkis", "https://www.youtube.com/@Veritasium"]
     assert calls["pipeline"]["settings_overrides"]["discovery_window_days"] == 360
     assert calls["pipeline"]["settings_overrides"]["max_pages_per_channel"] == 20
     assert calls["selection"] == {

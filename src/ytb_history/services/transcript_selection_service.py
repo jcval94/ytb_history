@@ -10,7 +10,7 @@ from ytb_history.storage.jsonl import read_jsonl_gz
 from ytb_history.utils.video_ids import is_transcribable_video_id_candidate
 DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
     "https://www.youtube.com/@bilinkis",
-    "https://www.youtube.com/veritasium",
+    "https://www.youtube.com/@Veritasium",
 ]
 
 
