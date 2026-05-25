@@ -132,6 +132,7 @@ CHANNEL_URLS = [
     # --- Gaming, streaming y ajedrez (2) ---
     'https://www.youtube.com/@WoshingoStreams',
     'https://www.youtube.com/@GothamChess',
+    'https://www.youtube.com/@BaityBait',
 
     # --- Cultura, historia y videoensayo (37) ---
     'https://www.youtube.com/@Ter',
@@ -170,6 +171,41 @@ CHANNEL_URLS = [
     'https://www.youtube.com/@PolyMatter',
     'https://www.youtube.com/@ColdFusion',
     'https://www.youtube.com/@Nerdwriter1',
+    'https://www.youtube.com/@Subterraneo',
+    'https://www.youtube.com/@FoldingIdeas',
+    'https://www.youtube.com/@JacobGeller',
+    'https://www.youtube.com/@LindsayEllisVids',
+    'https://www.youtube.com/@TheCinemaCartography',
+    'https://www.youtube.com/@Nerdwriter',
+    'https://www.youtube.com/@hbomberguy',
+    'https://www.youtube.com/@cjthex',
+    'https://www.youtube.com/@LikeStoriesofOld',
+    'https://www.youtube.com/@PopCultureDetectiveAgency',
+    'https://www.youtube.com/@ContraPoints',
+    'https://www.youtube.com/@PhilosophyTube',
+    'https://www.youtube.com/@PutoMikel',
+    'https://www.youtube.com/@BeKindRewind',
+    'https://www.youtube.com/@ZoomF7',
+    'https://www.youtube.com/@KinoKarrete',
+    'https://www.youtube.com/@patrickhwillems',
+    'https://www.youtube.com/@JustWrite',
+    'https://www.youtube.com/@NowYouSeeIt',
+    'https://www.youtube.com/@CinemaStix',
+    'https://www.youtube.com/@AccentedCinema',
+    'https://www.youtube.com/@RoyalOceanFilmSociety',
+    'https://www.youtube.com/@InPraiseofShadows',
+    'https://www.youtube.com/@Sideways440',
+    'https://www.youtube.com/@LaFilmotecaMaldita',
+    'https://www.youtube.com/@AxlKss',
+    'https://www.youtube.com/@DayoScript',
+    'https://www.youtube.com/@PlanodeJuego',
+    'https://www.youtube.com/@Nerdstalgic',
+    'https://www.youtube.com/@Filmento',
+    'https://www.youtube.com/@AdoreRodriguez',
+    'https://www.youtube.com/@BlancaQuinonez',
+    'https://www.youtube.com/@JordiMaquiavello',
+    'https://www.youtube.com/@AntonioGarciaVillaran',
+    'https://www.youtube.com/@Teloresumoasinomas',
     'https://www.youtube.com/@BobbyBroccoli',
 
     # --- Productividad, lifestyle y creadores (33) ---
@@ -206,6 +242,7 @@ CHANNEL_URLS = [
     'https://www.youtube.com/@ClaraCarmona',
     'https://www.youtube.com/@jessicafernandezgarcia',
     'https://www.youtube.com/@DonCanitro',
+    'https://www.youtube.com/@LethalCrysis',
 
     # ============================================================
     # AMPLIACIÓN PREVIA
@@ -701,6 +738,7 @@ CHANNEL_URLS = [
     'https://www.youtube.com/@VladandNiki',
     'https://www.youtube.com/@LikeNastyaofficial',
     'https://www.youtube.com/@RyansWorld',
+    'https://www.youtube.com/@KidsDianaShow',
     'https://www.youtube.com/@DianaandRoma',
     'https://www.youtube.com/@ToysandColors',
     'https://www.youtube.com/@ChuChuTV',
@@ -731,6 +769,8 @@ CHANNEL_URLS = [
     'https://www.youtube.com/@NickJrLA',
     'https://www.youtube.com/@PeppaPigEspanol',
     'https://www.youtube.com/@BlippiEspanol',
+    'https://www.youtube.com/@BRIGHTSIDEOFFICIAL',
+    'https://www.youtube.com/@5MinuteCraftsYouTube',
 
     # --- Deportes y eventos en vivo (7) ---
     'https://www.youtube.com/@KingsLeagueOfficial',
@@ -921,12 +961,53 @@ ORIGINAL_CHANNEL_CATEGORIES = {
     'https://www.youtube.com/@eons': 'Ciencia, educación y divulgación',
     'https://www.youtube.com/@tibees': 'Ciencia, educación y divulgación',
     'https://www.youtube.com/@BobbyBroccoli': 'Cultura, historia y videoensayo',
+    # Canales agregados desde lista de afinidad (2026-05-25)
+    'https://www.youtube.com/@Subterraneo': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@FoldingIdeas': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@JacobGeller': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@LindsayEllisVids': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@TheCinemaCartography': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@Nerdwriter': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@hbomberguy': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@cjthex': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@LikeStoriesofOld': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@PopCultureDetectiveAgency': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@ContraPoints': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@PhilosophyTube': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@PutoMikel': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@BeKindRewind': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@ZoomF7': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@KinoKarrete': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@patrickhwillems': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@JustWrite': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@NowYouSeeIt': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@CinemaStix': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@AccentedCinema': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@RoyalOceanFilmSociety': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@InPraiseofShadows': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@Sideways440': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@LaFilmotecaMaldita': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@AxlKss': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@DayoScript': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@PlanodeJuego': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@BaityBait': 'Gaming, streaming y ajedrez',
+    'https://www.youtube.com/@Nerdstalgic': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@Filmento': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@AdoreRodriguez': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@BlancaQuinonez': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@JordiMaquiavello': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@LethalCrysis': 'Productividad, lifestyle y creadores',
+    'https://www.youtube.com/@AntonioGarciaVillaran': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@Teloresumoasinomas': 'Cultura, historia y videoensayo',
+    'https://www.youtube.com/@BRIGHTSIDEOFFICIAL': 'Productividad, lifestyle y creadores',
+    'https://www.youtube.com/@5MinuteCraftsYouTube': 'Productividad, lifestyle y creadores',
+    'https://www.youtube.com/@KidsDianaShow': 'Infantil y familiar',
 }
 
 ORIGINAL_CHANNELS_COUNT = 176
 PREVIOUS_ADDED_CHANNELS_COUNT = 250
-NEW_ADDED_CHANNELS_COUNT = 224
-TOTAL_CHANNELS_COUNT = 650
+NEW_ADDED_CHANNELS_COUNT = 264
+TOTAL_CHANNELS_COUNT = 690
 
 assert len(CHANNEL_URLS) == TOTAL_CHANNELS_COUNT
 assert len(CHANNEL_URLS) == len(set(url.lower().rstrip("/") for url in CHANNEL_URLS))
