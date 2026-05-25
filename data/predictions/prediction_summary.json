@@ -5,17 +5,17 @@
     "shorts": {
       "status": "success",
       "latest_predictions": "data/predictions/formats/shorts/latest_predictions.csv",
-      "prediction_rows": 5725,
+      "prediction_rows": 7666,
       "warnings": []
     },
     "videos": {
       "status": "success",
       "latest_predictions": "data/predictions/formats/videos/latest_predictions.csv",
-      "prediction_rows": 12133,
+      "prediction_rows": 16698,
       "warnings": []
     }
   },
-  "prediction_rows": 17858,
-  "generated_at": "2026-05-21T13:49:00.135959+00:00",
+  "prediction_rows": 24364,
+  "generated_at": "2026-05-25T13:54:45.627360+00:00",
   "warnings": []
 }
