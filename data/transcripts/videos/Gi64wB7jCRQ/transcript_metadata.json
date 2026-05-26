@@ -1,0 +1,20 @@
+{
+  "video_id": "Gi64wB7jCRQ",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "El Genio Matemático que Aterrorizó a Estados Unidos (y acabó MAL) | UNABOMBER",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Gi64wB7jCRQ.mp3",
+  "transcribed_at": "2026-05-26T04:27:40.674655+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9046,
+  "text_sha256": "982f6a85fa6f175d73282c64878f8a93496e9e3ac996a73cc8f90f8d41461bf4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Gi64wB7jCRQ\\transcript_segments.jsonl",
+  "segment_count": 390,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:41:59.226841+00:00",
+  "duration_seconds": 1412.699951171875
+}

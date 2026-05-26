@@ -1,0 +1,20 @@
+{
+  "video_id": "2GUah9xHVto",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Can something go faster than it’s pushed?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2GUah9xHVto.mp3",
+  "transcribed_at": "2026-05-26T04:07:33.402075+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 827,
+  "text_sha256": "fe084750c0f5c2084b7d5eb1eb43d04725c8752887cf73bb6b6537b85e4a58ae",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2GUah9xHVto\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:31:43.376345+00:00",
+  "duration_seconds": 61.310001373291016
+}

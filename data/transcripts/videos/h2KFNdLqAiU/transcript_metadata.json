@@ -1,0 +1,20 @@
+{
+  "video_id": "h2KFNdLqAiU",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Most Radioactive Place On Earth",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\h2KFNdLqAiU.mp3",
+  "transcribed_at": "2026-05-26T04:02:55.537053+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1571,
+  "text_sha256": "24ec2b1e392f8a8d1db390c8d2933c50e65f6f50de6dae18175de1425dffe789",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\h2KFNdLqAiU\\transcript_segments.jsonl",
+  "segment_count": 26,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:53:52.216157+00:00",
+  "duration_seconds": 92.08999633789062
+}

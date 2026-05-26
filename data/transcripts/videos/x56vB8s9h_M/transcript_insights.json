@@ -1,0 +1,89 @@
+{
+  "video_id": "x56vB8s9h_M",
+  "language": "es",
+  "summary": "El video analiza el sesgo del superviviente a través de la historia de Abraham Wald, un matemático que ayudó durante la Segunda Guerra Mundial. Wald desafió la lógica convencional al observar que los datos de los aviones bombardeados únicamente mostraban los impactos de aquellos que regresaron, ignorando los que no volvieron. Este análisis resultó en una mejor estrategia para reforzar los aviones, lo que salvó muchas vidas.",
+  "main_topics": [
+    "Sesgo del superviviente",
+    "Abraham Wald",
+    "Decisiones militares",
+    "Análisis de datos",
+    "Cognición humana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del sesgo del superviviente.",
+      "summary": "Se establece la importancia de los datos en la toma de decisiones, pero se señala que estos pueden llevar a errores graves."
+    },
+    {
+      "section": "Contexto histórico",
+      "purpose": "Proporcionar el contexto de la Segunda Guerra Mundial y el papel de Wald.",
+      "summary": "Se explica la urgencia de mejorar la supervivencia de los bombarderos americanos y la aportación de Wald."
+    },
+    {
+      "section": "El problema del análisis de datos",
+      "purpose": "Detallar cómo se analizó incorrectamente la información.",
+      "summary": "Los expertos creían que los impactos visibles eran el foco, mientras que Wald destacó la importancia de lo que no se veía."
+    },
+    {
+      "section": "Revelación de Wald",
+      "purpose": "Describir el cambio de perspectiva que Wald propuso.",
+      "summary": "Wald sugirió que se debía reforzar las áreas del avión que no mostraban impactos, ya que estas eran las vulnerables."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Reflexionar sobre el impacto de la historia.",
+      "summary": "Se enfatiza que el sesgo del superviviente puede llevar a errores sistemáticos en la toma de decisiones, afectando a expertos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Rhetorical Question",
+    "hook_text": "Y sin embargo, si confías en ellos, estás a punto de cometer un error sistémico fatal.",
+    "why_it_works": "Despierta la curiosidad del espectador al plantear un posible error grave a partir de datos que consideramos seguros."
+  },
+  "claims": [
+    {
+      "claim": "Los datos analizados por el ejército estaban incompletos.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "El sesgo del superviviente afecta incluso a los más experimentados.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Wald salvó miles de vidas con su análisis.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Cuestionar las fuentes de datos utilizadas en decisiones críticas.",
+    "Buscar información que normalmente se omite o ignora.",
+    "Ser consciente de los sesgos cognitivos al analizar datos."
+  ],
+  "audience": "Interesados en la toma de decisiones, la psicología y la historia.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativa con enfoque histórico y analítico",
+  "retention_devices": [
+    "Uso de historias personales",
+    "Preguntas retóricas",
+    "Datos históricos complementarios"
+  ],
+  "title_supporting_quotes": [
+    "What you see is all there is.",
+    "Los impactos que no vemos son precisamente los que derriban los aviones."
+  ],
+  "creative_reuse_opportunities": [
+    "Material para cursos de toma de decisiones.",
+    "Contenido para talleres de análisis crítico.",
+    "Artículos sobre sesgos cognitivos en la toma de decisiones."
+  ],
+  "risk_notes": [
+    "Al ignorar evidencia no visible, se pueden tomar decisiones erróneas.",
+    "El sesgo del superviviente podría llevar a conclusiones engañosas en otras áreas como negocios o investigación."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

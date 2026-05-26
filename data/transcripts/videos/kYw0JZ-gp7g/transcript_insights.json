@@ -1,0 +1,89 @@
+{
+  "video_id": "kYw0JZ-gp7g",
+  "language": "es",
+  "summary": "Este video explora la vida de Alan Turing, un genio matemático cuyo trabajo fue clave en la Segunda Guerra Mundial, pero que fue traicionado por su propio país. Se analizan sus innovaciones, su lucha con la conformidad social, y su relación con Christopher Morcom.",
+  "main_topics": [
+    "Vida de Alan Turing",
+    "Contribuciones matemáticas",
+    "Relación con Christopher Morcom",
+    "Impacto en la Segunda Guerra Mundial",
+    "Incomprensión y traición"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al billete de 50 libras",
+      "purpose": "Presentar el tema central relacionado con Turing.",
+      "summary": "El billete simboliza la historia de Alan Turing y su contribución al mundo."
+    },
+    {
+      "section": "Infancia y educación de Turing",
+      "purpose": "Establecer el contexto de su juventud y sus desafíos.",
+      "summary": "Se detalla su vida en una Inglaterra rígida y su lucha con el sistema educativo."
+    },
+    {
+      "section": "La relación con Christopher Morcom",
+      "purpose": "Profundizar en un aspecto emocional de la vida de Turing.",
+      "summary": "La amistad con Christopher Morcom le proporcionó comprensión y apoyo."
+    },
+    {
+      "section": "Contribuciones académicas",
+      "purpose": "Destacar sus logros en matemáticas y computación.",
+      "summary": "Desarrolló la máquina de Turing, sentando las bases para los ordenadores."
+    },
+    {
+      "section": "Trabajo en Bletchley Park",
+      "purpose": "Mostrar su papel crucial en la guerra.",
+      "summary": "Turing y su equipo trabajaron para descifrar códigos enemigos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga histórica",
+    "hook_text": "Este es el billete de 50 libras del Reino Unido, el de mayor valor.",
+    "why_it_works": "Captura la atención al vincular un objeto cotidiano con una historia rica y significativa."
+  },
+  "claims": [
+    {
+      "claim": "Turing acortó la guerra y salvó millones de vidas.",
+      "support_level": "explicit",
+      "risk": "alta"
+    },
+    {
+      "claim": "Britania lo traicionó tras la guerra.",
+      "support_level": "explicit",
+      "risk": "media"
+    },
+    {
+      "claim": "Turing cambió el concepto de computación.",
+      "support_level": "explicit",
+      "risk": "baja"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la vida de Alan Turing.",
+    "Reflexionar sobre la importancia de reconocer a quienes han hecho contribuciones significativas.",
+    "Explorar el impacto de la historia en la sociedad actual."
+  ],
+  "audience": "Personas interesadas en historia, matemáticas y biografías.",
+  "tone": "Reflexivo y narrativo.",
+  "content_style": "Documental con énfasis en storytelling.",
+  "retention_devices": [
+    "Narración personal de Turing",
+    "Elementos visuales de sus contribuciones",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Esto es sólo un anticipo de lo que vendrá.",
+    "La soledad de un genio incomprendido es un peso que pocos pueden soportar."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre Turing.",
+    "Desarrollar materiales inspirados en la historia de Turing.",
+    "Hacer un análisis crítico sobre la aceptación social de genios."
+  ],
+  "risk_notes": [
+    "Sujeto a controversias sobre la historia personal de Turing.",
+    "Puede requerir un manejo delicado de los temas sensibles relacionados con su vida."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

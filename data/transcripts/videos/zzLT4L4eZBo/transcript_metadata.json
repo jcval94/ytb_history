@@ -1,0 +1,14 @@
+{
+  "video_id": "zzLT4L4eZBo",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "El Estafador Que Casi Destruye Las Vegas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zzLT4L4eZBo.mp3",
+  "transcribed_at": "2026-05-26T04:23:02.202998+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 25809,
+  "text_sha256": "f46013bc8f9d65d205ecd302a567904089862cf5c550f2635810c17966a8f18f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

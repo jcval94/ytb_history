@@ -1,0 +1,78 @@
+{
+  "video_id": "Ql9yohBk7d4",
+  "language": "es",
+  "summary": "El video explora la relevancia continua de la novela '1984' de George Orwell, destacando cómo a lo largo de los años ha resurgido en momentos de crisis y su capacidad de reflejar la manipulación de la verdad en la actualidad. Se analiza la vida de Orwell, sus experiencias formativas y cómo estas influyeron en su escritura.",
+  "main_topics": [
+    "Relevancia de '1984'",
+    "Manipulación de la verdad",
+    "Vida y experiencias de George Orwell",
+    "Influencia histórica de la obra"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción sobre '1984'",
+      "purpose": "Presentar la novela y su impacto en la sociedad a lo largo de los años.",
+      "summary": "Destaca cómo '1984' sigue siendo un espejo ante crisis globales, reflejando la manipulación de la verdad."
+    },
+    {
+      "section": "Historia de George Orwell",
+      "purpose": "Explorar la vida de Orwell para entender su escritura.",
+      "summary": "Detalla la infancia de Orwell, su educación y experiencias que moldearon su pensamiento."
+    },
+    {
+      "section": "Experiencia en la Policía Imperial y en la Pobreza",
+      "purpose": "Describir las experiencias que formaron el pensamiento político de Orwell.",
+      "summary": "Comenta su tiempo en Birmania y su elección de vivir en la pobreza para entenderla."
+    },
+    {
+      "section": "Participación en la Guerra Civil Española",
+      "purpose": "Mostrar la implicación activa de Orwell en la lucha política.",
+      "summary": "Relata su decisión de pelear en la Guerra Civil y las realidades que encontró en el conflicto."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga histórica",
+    "hook_text": "Este libro tiene 75 años y sin embargo, hay algo extraño en él.",
+    "why_it_works": "Genera curiosidad sobre la conexión entre la historia de la novela y la actualidad."
+  },
+  "claims": [
+    {
+      "claim": "La relevancia de '1984' está relacionada con situaciones actuales de manipulación de la verdad.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "George Orwell tuvo experiencias que le permitieron entender el poder y la opresión.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Aumento de ventas de '1984' durante crisis políticas.",
+    "Experiencias personales de Orwell en Birmania y París."
+  ],
+  "actionable_ideas": [
+    "Leer '1984' en el contexto de eventos actuales.",
+    "Reflexionar sobre la percepción de la verdad en los medios de comunicación."
+  ],
+  "audience": "Lectores interesados en la literatura, historia y política.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Historias personales de Orwell",
+    "Conexiones con el presente"
+  ],
+  "title_supporting_quotes": [
+    "¿Qué le ocurre a una sociedad cuando la mentira deja de esconderse y empieza a exigir que la llamemos verdad?",
+    "La miseria no es un accidente, es un sistema."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un análisis comparativo entre '1984' y eventos actuales.",
+    "Desarrollar debates sobre la manipulación de la verdad en los medios."
+  ],
+  "risk_notes": [
+    "Posibles malentendidos sobre la interpretación política de Orwell.",
+    "Reacciones encontradas sobre la relevancia de la obra."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

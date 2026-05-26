@@ -1,0 +1,85 @@
+{
+  "video_id": "kkYyFDbacYo",
+  "language": "es",
+  "summary": "El video cuestiona la creencia popular basada en la obra de William Golding que sugiere que sin civilización, los humanos se convierten en salvajes, utilizando el ejemplo real de seis adolescentes que sobrevivieron en una isla desierta para argumentar que la realidad es diferente.",
+  "main_topics": [
+    "Crítica a la obra de William Golding",
+    "Realidad de los adolescentes naufragos",
+    "Naturaleza humana",
+    "Creencias sociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la obra de Golding",
+      "purpose": "Presentar la idea central que critica",
+      "summary": "Se introduce la noción de que los humanos son inherentemente salvajes sin civilización."
+    },
+    {
+      "section": "Ejemplo de los adolescentes naufragos",
+      "purpose": "Contrarrestar la idea de Golding con evidencia real",
+      "summary": "Se narra cómo seis chicos sobrevivieron sin convertirse en salvajes, creando una comunidad unida en la isla."
+    },
+    {
+      "section": "Reflexión sobre creencias sociales",
+      "purpose": "Invitar a cuestionar las creencias populares",
+      "summary": "Se plantea la pregunta de por qué se prefiere la ficción de Golding sobre la realidad."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Motivar a la audiencia a explorar más sobre el tema",
+      "summary": "Se menciona un documental que analiza estos temas y se invita a verlo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Esta novela te mintió, y lo peor es que probablemente sigas creyendo la mentira.",
+    "why_it_works": "Captura la atención al desafiar directamente una creencia común y establece un sentido de urgencia."
+  },
+  "claims": [
+    {
+      "claim": "La idea de que los humanos se convierten en salvajes sin reglas es una mentira.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La experiencia de los adolescentes naufragos demuestra que la realidad es diferente.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La creencia en la violencia inherente está sustentada por intereses sociales y culturales.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [
+    "Los adolescentes crearon un huerto y se cuidaron mutuamente.",
+    "No hubo asesinatos ni conflictos entre ellos."
+  ],
+  "actionable_ideas": [
+    "Cuestionar las creencias preconcebidas sobre la naturaleza humana.",
+    "Ver el documental mencionado para obtener una visión más matizada.",
+    "Discutir en grupo sobre la obra de Golding y su relevancia actual."
+  ],
+  "audience": "Personas interesadas en la psicología, la historia y la crítica cultural.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Narrativo y persuasivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Llamado a la acción para suscribirse",
+    "Recomendación de contenido adicional"
+  ],
+  "title_supporting_quotes": [
+    "La mentira más peligrosa puede ser la que llevas creyendo toda la vida."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un análisis más profundo sobre la naturaleza humana.",
+    "Crear contenido sobre otros ejemplos de resistencia a ideas preconcebidas.",
+    "Hacer un debate sobre la ficción vs. la realidad en la literatura."
+  ],
+  "risk_notes": [
+    "Puede generar controversia entre quienes defienden la visión de Golding.",
+    "Algunos podrían rechazar la crítica a las creencias arraigadas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

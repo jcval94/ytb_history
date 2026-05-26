@@ -1,0 +1,74 @@
+{
+  "video_id": "BU5HwNyE4mk",
+  "language": "english",
+  "summary": "The video explains the Janibekov effect, observed by cosmonaut Vladimir Janibekov during a mission in 1985, describing how a wingnut flips in a surprising manner and connects it to the tennis racket theorem.",
+  "main_topics": [
+    "Janibekov effect",
+    "Tennis racket theorem",
+    "Intermediate axis theorem",
+    "1985 Salyut 7 mission"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the Janibekov effect",
+      "purpose": "To introduce the concept and its significance",
+      "summary": "The clip showcases a phenomenon called the Janibekov effect, along with its other names."
+    },
+    {
+      "section": "Vladimir Janibekov's observation",
+      "purpose": "To provide context and real-life example",
+      "summary": "Details Janibekov's experience during a mission where he observed the unusual behavior of a wingnut."
+    },
+    {
+      "section": "Academic reference",
+      "purpose": "To bridge historical events and scientific theory",
+      "summary": "Mentions a related 1991 paper that explains the tennis racket theorem without referencing the Janibekov effect."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing anecdote",
+    "hook_text": "In 1985, cosmonaut Vladimir Janibekov was tasked with saving the Soviet space station Salyut 7...",
+    "why_it_works": "It grabs attention by introducing a real-life mystery and a historical connection to space exploration."
+  },
+  "claims": [
+    {
+      "claim": "The wingnut flips orientation unexpectedly due to the Janibekov effect.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The Janibekov effect is related to the tennis racket theorem.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Demonstration of tennis racket flipping in air.",
+    "Janibekov's observation of the wingnut during a mission."
+  ],
+  "actionable_ideas": [
+    "Explore more on the physics behind rotational dynamics.",
+    "Investigate other real-life examples of the intermediate axis theorem."
+  ],
+  "audience": "Viewers interested in physics and space exploration.",
+  "tone": "Informative and engaging.",
+  "content_style": "Descriptive with a storytelling approach.",
+  "retention_devices": [
+    "Historical context",
+    "Real-life examples",
+    "Scientific references"
+  ],
+  "title_supporting_quotes": [
+    "What you were looking at is known as the Janibekov effect...",
+    "It was a strange and counterintuitive phenomenon..."
+  ],
+  "creative_reuse_opportunities": [
+    "Educational content for physics classes.",
+    "Engaging science videos for online platforms."
+  ],
+  "risk_notes": [
+    "Audience may not understand complex physics concepts.",
+    "Need to balance technical terms with accessibility."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

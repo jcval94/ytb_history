@@ -1,0 +1,83 @@
+{
+  "video_id": "-KdTWtuWMas",
+  "language": "es",
+  "summary": "El video presenta un análisis sobre un reality show que sigue a parejas mormonas donde uno de los esposos es gay pero está casado con una mujer. Se discuten temas de identidad, atracción y la complejidad de las relaciones en el contexto de la comunidad mormona, combinando humor y crítica a las normas sociales.",
+  "main_topics": [
+    "Identidad sexual",
+    "Relaciones matrimoniales",
+    "Realidad mormona",
+    "Atracción homosexual",
+    "Expectativas sociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el concepto del reality show y las diferencias en las parejas",
+      "summary": "El presentador plantea la pregunta de cómo un hombre gay puede estar casado con una mujer y ser mormón."
+    },
+    {
+      "section": "Análisis de la atracción",
+      "purpose": "Explorar la complejidad de la atracción del hombre hacia otros hombres a pesar de su matrimonio.",
+      "summary": "Se discute la dinámica de atracción y las confesiones del esposo sobre sus sentimientos."
+    },
+    {
+      "section": "Reacciones humorísticas",
+      "purpose": "Añadir un tono ligero y cómico mientras se debate sobre el comportamiento masculinidad.",
+      "summary": "El presentador comparte sus pensamientos humorísticos sobre lo que consideran comportamientos 'gays'."
+    },
+    {
+      "section": "Reflexiones finales",
+      "purpose": "Cerrar el video con comentarios sobre la situación actual de las parejas.",
+      "summary": "Se mencionan los desarrollos recientes de las parejas para ofrecer un cierre al análisis."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Cómo puede alguien ser un hombre gay, un devoto mormón y estar felizmente casado con una mujer?",
+    "why_it_works": "Genera curiosidad y provoca un debate sobre identidad y relaciones ambiguas."
+  },
+  "claims": [
+    {
+      "claim": "El esposo es mayormente atraído por hombres.",
+      "support_level": "explicit",
+      "risk": "potencialmente controversial"
+    },
+    {
+      "claim": "La estructura de la religión mormona perpetúa tensiones sobre la sexualidad.",
+      "support_level": "implicit",
+      "risk": "socialmente sensible"
+    }
+  ],
+  "examples": [
+    "Citas ciegas organizadas por las esposas",
+    "Escala de peligro de impulsos homosexuales",
+    "Encuentros en el gimnasio con viejos amigos",
+    "Análisis sobre la percepción de ser gay"
+  ],
+  "actionable_ideas": [
+    "Promover la aceptación y el entendimiento en relaciones complejas.",
+    "Fomentar discusiones sobre sexualidad en un contexto religioso.",
+    "Crear espacios seguros para las parejas con identidades diversas."
+  ],
+  "audience": "Espectadores interesados en temas de identidad sexual y relaciones.",
+  "tone": "Informal y humorístico.",
+  "content_style": "Narrativo y crítico.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Humor",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "¿Cuántas veces has visto Shrek?",
+    "El gimnasio es bastante gay."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de contenido basado en reacciones similares a otros reality shows.",
+    "Exploración de relaciones heteronormativas vs. LGBTQ+ en un formato de comedia."
+  ],
+  "risk_notes": [
+    "Posibles reacciones negativas de la comunidad mormona",
+    "Sensibilidad sobre temas de sexualidad y religión"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

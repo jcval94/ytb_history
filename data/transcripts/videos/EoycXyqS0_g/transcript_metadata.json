@@ -1,0 +1,20 @@
+{
+  "video_id": "EoycXyqS0_g",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Tu cerebro tiene un FALLO de fábrica 🧠",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\EoycXyqS0_g.mp3",
+  "transcribed_at": "2026-05-26T04:20:38.592776+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1805,
+  "text_sha256": "b3265f5f72d7c6af21203db02e8be82260f26584c86896be830c198418c03c74",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\EoycXyqS0_g\\transcript_segments.jsonl",
+  "segment_count": 31,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:38:32.514390+00:00",
+  "duration_seconds": 92.73999786376953
+}

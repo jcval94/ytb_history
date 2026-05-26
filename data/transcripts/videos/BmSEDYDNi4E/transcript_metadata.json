@@ -1,0 +1,20 @@
+{
+  "video_id": "BmSEDYDNi4E",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¡100% REBELIÓN! 🚫 El dato que Milgram ocultó",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BmSEDYDNi4E.mp3",
+  "transcribed_at": "2026-05-26T04:26:44.259840+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1489,
+  "text_sha256": "0384a3a1e3e761f3583dfb5af7c68e2363b8a18813bf67e7afb56124d79f2555",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BmSEDYDNi4E\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:36:54.787967+00:00",
+  "duration_seconds": 90.08999633789062
+}

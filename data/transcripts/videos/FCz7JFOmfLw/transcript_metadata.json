@@ -1,0 +1,20 @@
+{
+  "video_id": "FCz7JFOmfLw",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "Fahrenheit 451 ya está ARDIENDO",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FCz7JFOmfLw.mp3",
+  "transcribed_at": "2026-05-26T03:53:31.934722+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 24071,
+  "text_sha256": "12195df3dd9061fc257f05d416fdcb23254280b7f5ab53cfb3135dd7b69d769b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\FCz7JFOmfLw\\transcript_segments.jsonl",
+  "segment_count": 580,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:39:58.295633+00:00",
+  "duration_seconds": 1563.18994140625
+}

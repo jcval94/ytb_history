@@ -1,0 +1,14 @@
+{
+  "video_id": "qtPPfM7Tz1o",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Crazy Physics of Jet Engines",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\qtPPfM7Tz1o.mp3",
+  "transcribed_at": "2026-05-26T04:21:37.947595+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 3002,
+  "text_sha256": "f732d30fbfa945b311c8619d9dfb84c4d2bc1dce738aa428fc52a8c81510d3a2",
+  "repo_schema_version": "transcript_metadata_v1"
+}

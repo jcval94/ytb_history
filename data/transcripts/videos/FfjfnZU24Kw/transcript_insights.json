@@ -1,0 +1,76 @@
+{
+  "video_id": "FfjfnZU24Kw",
+  "language": "es",
+  "summary": "La historia de Fritz Haber, un químico que salvó a la humanidad de la hambruna al inventar un método para producir fertilizantes, y su transformación en el creador de armas químicas, ilustra la dualidad entre el bien y el mal en la ciencia y la moralidad.",
+  "main_topics": [
+    "Fritz Haber",
+    "Producción de fertilizantes",
+    "Guerra química",
+    "Moralidad en la ciencia",
+    "Historia del siglo XX"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Fritz Haber",
+      "purpose": "Presentar a Haber y su impacto en la humanidad.",
+      "summary": "Fritz Haber salvó a miles de millones de personas al inventar fertilizantes, pero también se convirtió en el padre de la guerra química."
+    },
+    {
+      "section": "El problema del nitrógeno",
+      "purpose": "Explicar la crisis alimentaria del siglo XIX.",
+      "summary": "La humanidad estaba al borde del colapso por la escasez de nitrógeno esencial para la agricultura."
+    },
+    {
+      "section": "El descubrimiento de Haber",
+      "purpose": "Narrar el proceso de Haber para sintetizar nitrógeno.",
+      "summary": "Haber logró extraer nitrógeno del aire, revolucionando la agricultura con fertilizantes artificiales."
+    },
+    {
+      "section": "Cambio a la guerra",
+      "purpose": "Mostrar la transformación de Haber durante la Primera Guerra Mundial.",
+      "summary": "Haber se convirtió en un patriota y utilizó su conocimiento para crear armas químicas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "Mira la persona que tienes a tu lado o piensa en tu mejor amigo. Según las estadísticas, uno de los dos no debería existir.",
+    "why_it_works": "Captura la atención del espectador al plantear una idea impactante sobre la supervivencia humana."
+  },
+  "claims": [
+    {
+      "claim": "Haber salvó a miles de millones de personas.",
+      "support_level": "explicit",
+      "risk": "impacto positivo en la humanidad"
+    },
+    {
+      "claim": "Haber es responsable de la guerra química.",
+      "support_level": "explicit",
+      "risk": "impacto negativo en la humanidad"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre la dualidad en el uso de la ciencia.",
+    "Considerar el impacto social de los descubrimientos científicos."
+  ],
+  "audience": "Interesados en historia, ciencia y ética.",
+  "tone": "Reflexivo y dramático",
+  "content_style": "Narrativo e informativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Narraciones impactantes",
+    "Contrastación de logros y fracasos"
+  ],
+  "title_supporting_quotes": [
+    "El hombre que salvó a la humanidad de morir de hambre mientras calculaba con la misma precisión el veneno que acabaría destruyendo su propio legado."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre ética en la ciencia.",
+    "Documentales sobre grandes descubrimientos y sus repercusiones."
+  ],
+  "risk_notes": [
+    "Se puede malinterpretar la figura de Haber como un simple villano o héroe.",
+    "El contenido puede generar debate sobre la responsabilidad de los científicos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

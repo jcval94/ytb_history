@@ -1,0 +1,88 @@
+{
+  "video_id": "Dy_CuOlqaxQ",
+  "language": "es",
+  "summary": "El video explora por qué los sistemas pueden premiar comportamientos destructivos, a través del experimento de William Moore con gallinas y su descubrimiento sobre la importancia de la cooperación en colectivos. A través de ejemplos, se muestra cómo la competencia individual a menudo fracasa en beneficio del grupo.",
+  "main_topics": [
+    "Paradoja de las supergallinas",
+    "Psicología evolutiva",
+    "Impacto de la competencia en los sistemas",
+    "Fracaso de sistemas por falta de cooperación",
+    "Ejemplo de los galácticos del Real Madrid"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la pregunta central sobre el éxito de las malas conductas",
+      "summary": "Se plantean interrogantes sobre por qué las peores personas parecen tener éxito en diferentes ámbitos."
+    },
+    {
+      "section": "El experimento de William Moore",
+      "purpose": "Explicar el experimento y sus resultados",
+      "summary": "Moore seleccionó gallinas por su producción y descubrió que esto llevaba a la violencia y el colapso del sistema."
+    },
+    {
+      "section": "Consecuencias del experimento",
+      "purpose": "Discutir las lecciones del experimento",
+      "summary": "Se concluye que la selección individual puede dañar al sistema y que la cooperación es esencial."
+    },
+    {
+      "section": "Ejemplos en la sociedad",
+      "purpose": "Aplicar los hallazgos a casos reales",
+      "summary": "Se analiza el caso de los galácticos del Real Madrid como una ilustración del mismo fenómeno."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Por qué los sistemas premian a los peores?",
+    "why_it_works": "Engancha al espectador cuestionando una percepción común y creando curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "La buena conducta es penalizada en sistemas competitivos.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    },
+    {
+      "claim": "La cooperación resulta ser más productiva que la competencia individual.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "Los sistemas pueden colapsar al premiar comportamientos destructivos.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [
+    "Caso de las gallinas de William Moore",
+    "Los galácticos del Real Madrid"
+  ],
+  "actionable_ideas": [
+    "Fomentar la cooperación en equipos y organizaciones.",
+    "Evaluar el impacto de las decisiones en el sistema colectivamente.",
+    "Desarrollar métricas que incluyan la colaboración en lugar de solo el rendimiento individual."
+  ],
+  "audience": "Interesados en psicología, gestión y dinámicas sociales.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo con ejemplos concretos.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos sorprendentes",
+    "Contraste entre teoría y práctica"
+  ],
+  "title_supporting_quotes": [
+    "\"Cuando seleccionas por rendimiento individual, destruyes el sistema desde dentro.\"",
+    "\"La cooperación había resultado ser la estrategia de producción más eficiente.\"",
+    "\"La lógica de sumar estrellas al sistema puede ser una falacia de composición.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de blog sobre psicología y liderazgo.",
+    "Seminarios sobre trabajo en equipo y colaboración.",
+    "Proyectos educativos sobre dinámicas grupales."
+  ],
+  "risk_notes": [
+    "Algunos pueden rechazar la idea de que la competencia es perjudicial.",
+    "Los ejemplos pueden ser vistos como simplificaciones de problemas complejos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

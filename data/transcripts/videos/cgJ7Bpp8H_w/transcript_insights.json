@@ -1,0 +1,95 @@
+{
+  "video_id": "cgJ7Bpp8H_w",
+  "language": "es",
+  "summary": "El video explora la evolución de la militarización del espacio, desde el tratado de 1967 que prohibía la guerra en el espacio hasta cómo las grandes potencias han empezado a verlo como un nuevo campo de batalla. La importancia estratégica del espacio en guerras modernas es discutida, resaltando la dependencia de tecnologías espaciales para la guerra en tierra, mar y aire.",
+  "main_topics": [
+    "Tratado del Espacio Exterior",
+    "Militarización del espacio",
+    "Historia de la carrera espacial",
+    "Tecnología espacial y militar",
+    "Impacto del espacio en la guerra moderna"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción histórica",
+      "purpose": "Presentar el trato de 1967 y su relevancia",
+      "summary": "En 1967 se firmó un pacto que declaraba el espacio como neutral y fuera de la guerra."
+    },
+    {
+      "section": "Cambio en la percepción del espacio",
+      "purpose": "Mostrar cómo el espacio pasó de ser un símbolo de progreso a un campo de batalla",
+      "summary": "El espacio ha dejado de ser un área de exploración para convertirse en un campo estratégico."
+    },
+    {
+      "section": "Desafío de la guerra moderna",
+      "purpose": "Explorar el impacto de las tecnologías espaciales en la guerra",
+      "summary": "La guerra moderna depende del dominio del espacio para funcionar eficazmente."
+    },
+    {
+      "section": "Avance militar y presupuesto",
+      "purpose": "Ilustrar la importancia creciente del espacio en las políticas militares",
+      "summary": "El establecimiento de la Space Force y el presupuesto asignado muestran la relevancia del espacio."
+    },
+    {
+      "section": "Riesgos futuros",
+      "purpose": "Advertir sobre las consecuencias de la carrera armamentista en el espacio",
+      "summary": "El desarrollo de armas en el espacio plantea riesgos serios para la seguridad global."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga histórica",
+    "hook_text": "El espacio quedaba fuera de la guerra, neutral, intocable, para siempre.",
+    "why_it_works": "Genera curiosidad sobre la contradicción entre el tratado de paz y la militarización actual."
+  },
+  "claims": [
+    {
+      "claim": "El espacio ha sido militarizado por grandes potencias.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La tecnología espacial es crucial para las guerras modernas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El Tratado del Espacio Exterior no prohíbe el uso estratégico del espacio.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Las guerras futuras se librarán mucho más en el espacio.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar la cooperación internacional en el espacio.",
+    "Evaluar los límites de la militarización del espacio.",
+    "Aumentar la transparencia sobre las actividades en el espacio."
+  ],
+  "audience": "Interesados en la historia militar y espacial, académicos, y público general.",
+  "tone": "Reflexivo y alarmante.",
+  "content_style": "Informativo y analítico.",
+  "retention_devices": [
+    "Uso de citas históricas",
+    "Narrativa cautivadora",
+    "Enfoque en el futuro del espacio militar"
+  ],
+  "title_supporting_quotes": [
+    "\"El espacio debía explorarse y utilizarse en beneficio de todos los países.\"",
+    "\"Si la Unión Soviética podía colocar un satélite sobre nuestras cabezas, también podía llevar su poder militar mucho más lejos.\"",
+    "\"Hoy las grandes potencias lo están tratando como lo que de verdad es, el sistema nervioso de la guerra moderna.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la historia de la carrera espacial.",
+    "Documentales sobre la militarización del espacio.",
+    "Debates sobre el futuro del derecho espacial."
+  ],
+  "risk_notes": [
+    "El tratado de 1967 está siendo desafiado.",
+    "Desarrollo de armas nucleares en el espacio podría provocar escaladas de conflicto."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

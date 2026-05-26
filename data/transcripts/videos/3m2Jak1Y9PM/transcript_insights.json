@@ -1,0 +1,77 @@
+{
+  "video_id": "3m2Jak1Y9PM",
+  "language": "es",
+  "summary": "El video analiza el control de la libertad a través del placer y entretenimiento, tomando como referencia las obras de Aldous Huxley y George Orwell. Discute cómo Huxley anticipó que las futuras dictaduras no solo usarían violencia, sino que moldearían a las sociedades a través de la distracción y la seducción, creando un mundo donde la felicidad impide cuestionar la libertad.",
+  "main_topics": [
+    "Control de la libertad",
+    "Comparación entre Huxley y Orwell",
+    "Influencia del entretenimiento en la sociedad",
+    "La seducción del poder",
+    "Consecuencias de un mundo sin conflictos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al control de la libertad",
+      "purpose": "Presentar dos maneras de quitar la libertad a alguien.",
+      "summary": "Se introducen las ideas de control a través del miedo y el control a través del placer."
+    },
+    {
+      "section": "Análisis de las obras de Huxley y Orwell",
+      "purpose": "Explorar las diferencias en la visión de la libertad y el control.",
+      "summary": "Se comparan las advertencias que hacen ambos autores sobre el poder y la libertad."
+    },
+    {
+      "section": "Contexto de Huxley y su obra",
+      "purpose": "Entender a Huxley como autor y su influencia.",
+      "summary": "Se cuenta la historia familiar de Huxley y cómo eso influyó en su perspectiva sobre el progreso y el control."
+    },
+    {
+      "section": "El mundo que imaginó Huxley",
+      "purpose": "Describir el mundo presentado en 'Un mundo feliz'.",
+      "summary": "Un mundo aparentemente perfecto sin conflicto, pero que al mismo tiempo es profundamente inhumano."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "La segunda, no necesita barrotes, solo necesita placer.",
+    "why_it_works": "Atrapa la atención al plantear una forma insidiosa de control que muchos no considerarían."
+  },
+  "claims": [
+    {
+      "claim": "La felicidad puede ser una forma de control más efectiva que la represión.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las sociedades pueden llegar a aceptar su servidumbre sin cuestionar.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Despertar la conciencia crítica sobre el entretenimiento masivo.",
+    "Promover el diálogo sobre la libertad y el control en la sociedad moderna."
+  ],
+  "audience": "Personas interesadas en filosofía, literatura y sociología.",
+  "tone": "Reflexivo y serio.",
+  "content_style": "Analítico y profundo.",
+  "retention_devices": [
+    "Preguntas provocadoras",
+    "Referencias culturales",
+    "Conexiones históricas"
+  ],
+  "title_supporting_quotes": [
+    "Una sociedad donde nadie sufre, nadie se rebela y nadie se hace preguntas.",
+    "Olvidamos que el poder no solo aplasta, también seduce."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear una serie de videos sobre literatura y política.",
+    "Desarrollar un podcast profundizando en la obra de Huxley y Orwell."
+  ],
+  "risk_notes": [
+    "El contenido puede ser percibido como alarmista.",
+    "Riesgo de ser malinterpretado como anti-tecnología."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

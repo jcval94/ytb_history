@@ -1,0 +1,84 @@
+{
+  "video_id": "Gi64wB7jCRQ",
+  "language": "es",
+  "summary": "La historia de Theodor Kaczynski, un genio matemático que se convirtió en el terrorista conocido como 'Unabomber', revela cómo vivió traumas y humillaciones desde joven que lo llevaron a rechazar la civilización y llevar a cabo actos violentos. Kaczynski, que tenía un cociente intelectual extremadamente alto, fue víctima de un experimento psicológico brutal en Harvard dirigido por el psicólogo Henry Murray, lo que agravó su aislamiento social y su descontento con la sociedad.",
+  "main_topics": [
+    "La infancia de Ted Kaczynski",
+    "Los experimentos de Henry Murray",
+    "El impacto de la violencia psicológica",
+    "La conversión en Unabomber",
+    "El contexto histórico de Estados Unidos en su niñez"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Ted Kaczynski",
+      "purpose": "Presentar al protagonista y su inteligencia excepcional.",
+      "summary": "Ted Kaczynski fue un niño prodigio, con un IQ de 167, que enfrentó humillaciones y aislamiento social que marcaron su vida."
+    },
+    {
+      "section": "El experimento de Harvard",
+      "purpose": "Describir las condiciones del experimento y su impacto.",
+      "summary": "El experimento de Henry Murray sometió a Ted a humillaciones que desestabilizaron su salud mental."
+    },
+    {
+      "section": "Consecuciones académicas y conversión",
+      "purpose": "Ilustrar el contraste entre su éxito académico y su vida personal.",
+      "summary": "Aunque fue un académico excepcional, su vida social se deterioró, lo que lo llevó a alejarse de la sociedad."
+    },
+    {
+      "section": "Convocatoria de un cambio",
+      "purpose": "Mostrar el descontento que lo llevó a convertirse en Unabomber.",
+      "summary": "Desilusionado por la sociedad, optó por el terror para expresar su rechazo a la civilización moderna."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "No, no todos los genios hacen el bien.",
+    "why_it_works": "Provoca curiosidad sobre cómo un genio puede llegar a hacer daño."
+  },
+  "claims": [
+    {
+      "claim": "El experimento de Murray resultó traumático para Kaczynski.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su alto IQ lo hizo un blanco de aislamiento social.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La sociedad y su rechazo contribuyeron a su radicalización.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Revisar la ética en experimentos psicológicos.",
+    "Conectar con jóvenes en riesgo de aislamiento.",
+    "Fomentar la conversación sobre el bullying en ambientes académicos."
+  ],
+  "audience": "Interesados en criminología, psicología y biografías de figuras controvertidas.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Preguntas provocativas",
+    "Descripciones vívidas de experiencias traumáticas",
+    "Referencias históricas"
+  ],
+  "title_supporting_quotes": [
+    "¿Qué le ocurre a un genio matemático para convertirse en el terror de todo un país?",
+    "Ted ya era vulnerable."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto psicológico de la violencia.",
+    "Documentales sobre el MKUltra y sus efectos en los individuos.",
+    "Análisis sobre la radicalización de individuos brillantes."
+  ],
+  "risk_notes": [
+    "El contenido aborda temas sensibles como el suicidio y la violencia.",
+    "Al tocar la historia de un terrorista, se debe manejar con cuidado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

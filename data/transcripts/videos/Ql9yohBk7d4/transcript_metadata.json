@@ -1,0 +1,20 @@
+{
+  "video_id": "Ql9yohBk7d4",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "‘1984’ sigue dando miedo | George Orwell",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Ql9yohBk7d4.mp3",
+  "transcribed_at": "2026-05-26T04:07:23.090296+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8813,
+  "text_sha256": "cff8d1ccbbee269789d18274cabd4b246fd5317f4fb10d4363270158a91f190d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Ql9yohBk7d4\\transcript_segments.jsonl",
+  "segment_count": 264,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:48:24.415839+00:00",
+  "duration_seconds": 1318.52001953125
+}

@@ -1,0 +1,98 @@
+{
+  "video_id": "h2KFNdLqAiU",
+  "language": "unknown",
+  "summary": "The video discusses radiation exposure from various sources, using bananas as a relatable unit of measurement due to their natural radioactivity. It highlights the relative radiation doses from bananas, background radiation, flying, spending time in Chernobyl, and smoking, concluding with a warning about smoking's long-term effects.",
+  "main_topics": [
+    "Radioactivity of bananas",
+    "Background radiation exposure",
+    "Radiation during flight",
+    "Radiation in Chernobyl",
+    "Smoking and radiation"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Engage audience with a question",
+      "summary": "The video starts by asking viewers to guess the most radioactive place on Earth."
+    },
+    {
+      "section": "Bananas and radioactivity",
+      "purpose": "Explain natural radioactivity in an accessible way",
+      "summary": "Bananas are used to explain the concept of radioactivity, highlighting how safe they are in comparison to dangerous doses."
+    },
+    {
+      "section": "Comparative radiation exposure",
+      "purpose": "Provide context for radiation levels",
+      "summary": "It compares background radiation from various activities to help viewers understand exposure levels."
+    },
+    {
+      "section": "Chernobyl exposure",
+      "purpose": "Illustrate high radiation areas",
+      "summary": "Chernobyl exposure is quantified using bananas, emphasizing how dangerous environments compare."
+    },
+    {
+      "section": "Smoking's risks",
+      "purpose": "Caution against smoking",
+      "summary": "Final warning about smoking and its daily radiation exposure, drawing a parallel to astronaut radiation."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Encourage ongoing learning",
+      "summary": "Encourages viewers to subscribe for more educational content."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "If you had to guess the most radioactive place on Earth, where would you pick?",
+    "why_it_works": "It invites curiosity and engages the audience right from the beginning."
+  },
+  "claims": [
+    {
+      "claim": "Bananas contain a small amount of radioactive potassium.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Spending 24 hours in Chernobyl is equivalent to eating 1200 bananas.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Smokers receive radiation doses comparable to astronauts on the ISS.",
+      "support_level": "implicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "65 bananas worth of background radiation in a park.",
+    "150 bananas worth of radiation during a flight from New York to LA.",
+    "4300 bananas worth of radiation daily for astronauts."
+  ],
+  "actionable_ideas": [
+    "Reduce smoking to lower exposure to radioactive substances.",
+    "Increase awareness of background radiation levels.",
+    "Consider safer alternatives to smoking."
+  ],
+  "audience": "General public, particularly those interested in science and health.",
+  "tone": "Informative and slightly humorous",
+  "content_style": "Conversational, engaging, and educational",
+  "retention_devices": [
+    "Relatable analogies (bananas for scale)",
+    "Visual comparisons of radiation levels",
+    "Engaging language and humor"
+  ],
+  "title_supporting_quotes": [
+    "You would need to eat around 20 million bananas all at once to get a lethal dose.",
+    "Astronauts are blasted with over 4300 bananas worth of radiation every single day."
+  ],
+  "creative_reuse_opportunities": [
+    "Infographics on radiation exposure from different sources.",
+    "Social media snippets discussing smoking risks.",
+    "Educational content about natural radioactivity."
+  ],
+  "risk_notes": [
+    "Possible alarm against smoking may be perceived as fear-mongering.",
+    "Simplifying complex scientific data may lead to misunderstandings."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

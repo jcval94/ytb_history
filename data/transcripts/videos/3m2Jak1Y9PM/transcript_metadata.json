@@ -1,0 +1,20 @@
+{
+  "video_id": "3m2Jak1Y9PM",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "‘Un Mundo Feliz’ YA está Aquí | Aldous Huxley",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\3m2Jak1Y9PM.mp3",
+  "transcribed_at": "2026-05-26T04:01:19.450527+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9065,
+  "text_sha256": "c9143ba7c84bb7467096670bb5f253fd7058317a776e8fab13a7371018c850f9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\3m2Jak1Y9PM\\transcript_segments.jsonl",
+  "segment_count": 569,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:32:58.147892+00:00",
+  "duration_seconds": 1292.3499755859375
+}

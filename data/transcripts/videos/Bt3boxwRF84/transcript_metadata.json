@@ -1,0 +1,20 @@
+{
+  "video_id": "Bt3boxwRF84",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "World’s Largest Spiderweb",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Bt3boxwRF84.mp3",
+  "transcribed_at": "2026-05-26T04:27:46.529127+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1408,
+  "text_sha256": "6d5483acbc91bd095d987caff47631b33857d2720f03b679dc7f7f21d905d7e5",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Bt3boxwRF84\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:37:01.117413+00:00",
+  "duration_seconds": 79.37999725341797
+}

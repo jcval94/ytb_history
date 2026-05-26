@@ -1,0 +1,20 @@
+{
+  "video_id": "0Fw1V0jr7gc",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "NUREMBERG: La verdad que la película no cuenta ⚖️",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0Fw1V0jr7gc.mp3",
+  "transcribed_at": "2026-05-26T04:26:34.010740+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1124,
+  "text_sha256": "156eb1e34fe0ae3805a3121b0e52ea3bf96d2f34eed4d546d3741f7b6cf97b8f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0Fw1V0jr7gc\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:30:26.795534+00:00",
+  "duration_seconds": 75.08999633789062
+}

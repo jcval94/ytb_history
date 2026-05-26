@@ -1,0 +1,20 @@
+{
+  "video_id": "YSJY3DvnybE",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Secret Spy Tech Inside Every Credit Card",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\YSJY3DvnybE.mp3",
+  "transcribed_at": "2026-05-26T04:12:10.872369+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 28535,
+  "text_sha256": "6c591702c6fda95509101ceb8e11b055fd79bffe7a22f8fd21f2dd6ee4e3b2db",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\YSJY3DvnybE\\transcript_segments.jsonl",
+  "segment_count": 712,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:51:23.273362+00:00",
+  "duration_seconds": 1722.449951171875
+}

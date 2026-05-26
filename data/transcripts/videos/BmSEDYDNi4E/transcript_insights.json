@@ -1,0 +1,78 @@
+{
+  "video_id": "BmSEDYDNi4E",
+  "language": "es",
+  "summary": "El video explora el experimento de Milgram y cómo las interpretaciones sobre la obediencia y la moralidad han sido influenciadas por el engaño en la investigación. Se enfatiza que la gente puede creer que actúa por una buena causa, lo que puede llevar al mal.",
+  "main_topics": [
+    "Experimento de Milgram",
+    "Obediencia ciega",
+    "Ética en la investigación",
+    "Perspectiva psicológica",
+    "Manipulación y engaño"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el contexto histórico y la premisa del experimento.",
+      "summary": "Se plantea una pregunta provocativa sobre la moralidad y el experimento de Milgram."
+    },
+    {
+      "section": "Descubrimientos de Gina Perry",
+      "purpose": "Revelar la verdad detrás del experimento.",
+      "summary": "Perry accede a archivos originales y descubre el engaño detrás del experimento."
+    },
+    {
+      "section": "Reflexión personal",
+      "purpose": "Ofrecer una perspectiva crítica sobre el experimento.",
+      "summary": "El narrador comparte cómo su visión ha cambiado tras los hallazgos de Perry."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Motivar a la audiencia a explorar más sobre el tema.",
+      "summary": "Se invita a los espectadores a ver el documental sobre el fraude del experimento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Matarías a un desconocido por una buena causa?",
+    "why_it_works": "Engancha rápidamente a la audiencia al presentar un dilema moral que despierta curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "El experimento de Milgram fue construido sobre una arquitectura del engaño.",
+      "support_level": "explicit",
+      "risk": "careful interpretation needed to avoid misrepresentation"
+    },
+    {
+      "claim": "Las personas creían que estaban ayudando a la ciencia, no obedeciendo ciegamente.",
+      "support_level": "implicit",
+      "risk": "potential misinterpretation of human behavior"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Ver el documental sobre el experimento de Milgram.",
+    "Reflexionar sobre la ética en la investigación psicológica.",
+    "Cuestionar las propias creencias sobre la obediencia y la moralidad."
+  ],
+  "audience": "Personas interesadas en psicología, ética y estudios sobre comportamiento humano.",
+  "tone": "Provocador y reflexivo",
+  "content_style": "Educativo y crítico",
+  "retention_devices": [
+    "Llamados a la acción claros",
+    "Uso de una pregunta intrigante al inicio",
+    "Narrativa basada en descubrimientos personales"
+  ],
+  "title_supporting_quotes": [
+    "El mal casi nunca se presenta como lo que es."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido sobre ética en la investigación.",
+    "Creación de debates sobre obediencia y moralidad en la sociedad actual.",
+    "Producción de material educativo sobre la psicología del mal."
+  ],
+  "risk_notes": [
+    "La interpretación del experimento puede ser malentendida.",
+    "Es importante distinguir entre la obediencia y la ilusión de ayudar."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,83 @@
+{
+  "video_id": "y-Tf047YOJ0",
+  "language": "es",
+  "summary": "El video explora la figura de Eichmann y la naturaleza de la obediencia humana, revelando cómo manipula la percepción de responsabilidad individual.",
+  "main_topics": [
+    "Obediencia humana",
+    "Responsabilidad individual",
+    "Eichmann",
+    "Manipulación de la percepción"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y atraer la atención",
+      "summary": "Se menciona la expectativa de ver al diablo en Jerusalén, pero se presenta a Eichmann como un hombre trivial."
+    },
+    {
+      "section": "Revelaciones sobre Eichmann",
+      "purpose": "Describir la verdadera naturaleza de Eichmann",
+      "summary": "Las grabaciones secretas muestran su orgullo por sus acciones y su estrategia manipulativa."
+    },
+    {
+      "section": "Reflexión sobre la obediencia",
+      "purpose": "Invitar a la reflexión sobre la responsabilidad individual",
+      "summary": "Cuestiona la idea de que la obediencia ciega es inevitable y enfatiza nuestra capacidad de elección."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a la acción",
+      "summary": "Se anima a los espectadores a hacer clic para más contenido o suscribirse."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Más de 700 periodistas esperaban ver al diablo en persona en Jerusalén...",
+    "why_it_works": "Genera curiosidad sobre la verdadera naturaleza de Eichmann y su contexto histórico."
+  },
+  "claims": [
+    {
+      "claim": "La obediencia ciega no es inevitable.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Eichmann manipuló la percepción de su propio papel en los crímenes.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Nuestra capacidad de decidir es fundamental.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre las decisiones personales en situaciones de autoridad.",
+    "Estudiar la historia de Eichmann para entender las dinámicas de poder.",
+    "Fomentar el pensamiento crítico sobre la obediencia a la autoridad."
+  ],
+  "audience": "Interesados en historia, psicología, y ética.",
+  "tone": "Reflexivo",
+  "content_style": "Analítico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Llamadas a la acción",
+    "Revelaciones sorprendentes"
+  ],
+  "title_supporting_quotes": [
+    "Descubre la verdadera cara de la obediencia humana.",
+    "La obediencia ciega no es inevitable."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de blog sobre psicología de la obediencia.",
+    "Podcasts sobre ética y responsabilidad.",
+    "Videos educativos sobre Eichmann y la historia del Holocausto."
+  ],
+  "risk_notes": [
+    "Posible controversia por la interpretación histórica.",
+    "Desafíos en la representación de figuras históricas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

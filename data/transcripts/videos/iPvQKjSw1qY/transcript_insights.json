@@ -1,0 +1,83 @@
+{
+  "video_id": "iPvQKjSw1qY",
+  "language": "español",
+  "summary": "El video explica cómo funcionan los sistemas de pensamiento del cerebro humano según Kahneman, enfocándose en la lucha entre el sistema 1 (rápido e intuitivo) y el sistema 2 (más analítico). Se discute cómo las plataformas y las industrias secuestran nuestra atención, destacando la importancia de recuperar el foco.",
+  "main_topics": [
+    "Sistemas de pensamiento del cerebro",
+    "Kahneman",
+    "Sistema 1 y Sistema 2",
+    "Atención como activo",
+    "Recuperación del foco"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los sistemas de pensamiento",
+      "purpose": "Explicar la teoría de Kahneman",
+      "summary": "Se introduce la diferencia entre el sistema 1, que actúa automáticamente, y el sistema 2, que requiere reflexión."
+    },
+    {
+      "section": "Cómo las plataformas afectan nuestra atención",
+      "purpose": "Ilustrar el impacto de las industrias en nuestra atención",
+      "summary": "Se discute cómo las plataformas optan por estímulos que capturan fácilmente la atención."
+    },
+    {
+      "section": "Importancia de la atención en la actualidad",
+      "purpose": "Resaltar el valor de la atención en la economía moderna",
+      "summary": "Se establece que la atención es un recurso valioso y que la desatención beneficia a las plataformas."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Motivar a los espectadores a recuperar su foco",
+      "summary": "Se invita a los espectadores a ver más contenido sobre cómo hackean su atención y cómo pueden mejorar su enfoque."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Atractivo emocional",
+    "hook_text": "Tu atención se ha convertido en el activo más valioso del siglo XXI.",
+    "why_it_works": "Captura la esencia de un problema contemporáneo que afecta a todos, generando interés inmediato en la audiencia."
+  },
+  "claims": [
+    {
+      "claim": "El sistema 1 es perezoso y evita decisiones que consumen energía.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las plataformas secuestran la atención del usuario.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La atención es el activo más valioso del siglo XXI.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Identificar cuando el sistema 1 está tomando decisiones automáticamente.",
+    "Desarrollar técnicas para activar el sistema 2 cuando sea necesario.",
+    "Desconectarse periódicamente de plataformas que afectan la atención."
+  ],
+  "audience": "Personas interesadas en la psicología del comportamiento y el manejo de la atención",
+  "tone": "Informativo y motivacional",
+  "content_style": "Educativo y persuasivo",
+  "retention_devices": [
+    "Llamadas a la acción",
+    "Referencias a contenido adicional",
+    "Establecimiento de la relevancia personal"
+  ],
+  "title_supporting_quotes": [
+    "La atención se ha convertido en el activo más valioso del siglo XXI."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un curso sobre manejo de la atención.",
+    "Crear infografías explicando los sistemas de pensamiento.",
+    "Realizar una serie de videos sobre técnicas de prevención de la distracción."
+  ],
+  "risk_notes": [
+    "Los oyentes pueden no estar dispuestos a reflexionar sobre su propio comportamiento.",
+    "Es posible que algunos rechacen la idea de un sistema automático que guía sus decisiones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

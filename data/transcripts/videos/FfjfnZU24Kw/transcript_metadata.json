@@ -1,0 +1,20 @@
+{
+  "video_id": "FfjfnZU24Kw",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "El Genio que ENVENENÓ al mundo... y ganó un Nobel | Fritz Haber",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FfjfnZU24Kw.mp3",
+  "transcribed_at": "2026-05-26T04:23:39.985529+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8821,
+  "text_sha256": "e0afa2c676af62b500a48914a7454051b59cc753c683a9ab039f6a05fd8eed73",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\FfjfnZU24Kw\\transcript_segments.jsonl",
+  "segment_count": 318,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:40:44.377562+00:00",
+  "duration_seconds": 1009.1300048828125
+}

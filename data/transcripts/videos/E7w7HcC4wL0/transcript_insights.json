@@ -1,0 +1,75 @@
+{
+  "video_id": "E7w7HcC4wL0",
+  "language": "es",
+  "summary": "La historia de Ricardo Clement, un criminal nazi que vivió en Buenos Aires, Argentina, hasta su captura por el Mossad en 1960, presenta un contraste entre las expectativas del mundo y la realidad de su apariencia.",
+  "main_topics": [
+    "Criminales nazis",
+    "Captura del Mossad",
+    "Historia en Argentina"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Generar interés",
+      "summary": "Presentar a Ricardo Clement como un criminal nazi escondido en Argentina."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Contar la historia",
+      "summary": "Describir la vida cotidiana de Clement y su trabajo en Mercedes-Benz."
+    },
+    {
+      "section": "Clímax",
+      "purpose": "Aumentar tensión",
+      "summary": "Revelar la captura de Clement por el Mossad y la diferencia entre expectativas y realidad."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a la acción",
+      "summary": "Pedir al espectador que haga clic para más información o que se suscriba."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "El mayor criminal nazi vivía en una casa sencilla de San Fernando.",
+    "why_it_works": "Genera curiosidad sobre cómo un criminal del calibre de Clement podría llevar una vida tan normal."
+  },
+  "claims": [
+    {
+      "claim": "Ricardo Clement era un criminal nazi.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Fue capturado por el Mossad en 1960.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su apariencia contrastaba con las expectativas del mundo.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia de criminales nazis en Argentina.",
+    "Ver el vídeo completo sobre la captura y juicio de Clement."
+  ],
+  "audience": "Interesados en historia, crímenes nazis y documentales.",
+  "tone": "Informativo y intrigante",
+  "content_style": "Narrativo con invitación a la acción",
+  "retention_devices": [
+    "Invitación a suscribirse al canal",
+    "Llamado a ver el vídeo completo"
+  ],
+  "title_supporting_quotes": [
+    "El mayor criminal nazi vivía en una casa sencilla."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la vida de criminales nazis en América del Sur.",
+    "Desarrollar un artículo sobre la historia del Mossad en América Latina."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

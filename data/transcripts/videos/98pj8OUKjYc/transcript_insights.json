@@ -1,0 +1,54 @@
+{
+  "video_id": "98pj8OUKjYc",
+  "language": "es",
+  "summary": "El video analiza el experimento de Milgram sobre la obediencia a la autoridad, explorando la dificultad de resistir la presión de la autoridad a través de un análisis profundo.",
+  "main_topics": [
+    "obediencia",
+    "autoridad",
+    "experimento de Milgram",
+    "psicología humana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la temática del video",
+      "summary": "Se plantea la pregunta sobre la posibilidad de desobedecer a la autoridad."
+    },
+    {
+      "section": "Análisis del experimento de Milgram",
+      "purpose": "Explicar el contenido y hallazgos del experimento",
+      "summary": "Se discuten los resultados y la interpretación de la obediencia humana."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta provocativa",
+    "hook_text": "¿Crees que es posible decir no a la autoridad?",
+    "why_it_works": "Invita a la reflexión personal y genera curiosidad sobre el tema."
+  },
+  "claims": [
+    {
+      "claim": "Solo unos pocos resistieron a la autoridad en el experimento de Milgram.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre situaciones en las que se ha desobedecido a la autoridad.",
+    "Explorar otros estudios sobre obediencia y autoridad."
+  ],
+  "audience": "personas interesadas en psicología y comportamiento humano",
+  "tone": "analítico",
+  "content_style": "informativo",
+  "retention_devices": [
+    "preguntas abiertas",
+    "análisis profundo"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "pódcast sobre obediencia y autoridad",
+    "artículo de blog sobre el experimento de Milgram"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

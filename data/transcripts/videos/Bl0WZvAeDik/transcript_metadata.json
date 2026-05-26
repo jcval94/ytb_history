@@ -1,0 +1,20 @@
+{
+  "video_id": "Bl0WZvAeDik",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Rubber used to be useless…",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Bl0WZvAeDik.mp3",
+  "transcribed_at": "2026-05-26T04:26:23.223113+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1555,
+  "text_sha256": "94759480ed9ed4cd0698658d507890501b9fb41022d9dcaffdc1983ce3397f49",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Bl0WZvAeDik\\transcript_segments.jsonl",
+  "segment_count": 42,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:36:49.653152+00:00",
+  "duration_seconds": 97.37999725341797
+}

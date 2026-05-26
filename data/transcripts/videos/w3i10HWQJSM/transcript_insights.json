@@ -1,0 +1,96 @@
+{
+  "video_id": "w3i10HWQJSM",
+  "language": "Spanish",
+  "summary": "El video explora la idea de que muchas veces atribuimos maldad donde solo hay incompetencia. A través de ejemplos históricos y experimentos psicológicos, se ilustra cómo nuestro cerebro tiende a interpretar las acciones de los demás desde una perspectiva negativa, lo que puede conducir a fallos sistémicos y a la creación de enemigos imaginarios. Se destaca la importancia de entender la diferencia entre la maldad intencionada y los errores humanos, y cómo un enfoque en la incompetencia puede permitir optimizar sistemas fallidos.",
+  "main_topics": [
+    "Incompetencia humana",
+    "Error fundamental de atribución",
+    "Percepción de maldad",
+    "Impacto de errores en sistemas",
+    "Importancia de la navaja de Hanlon"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la problemática",
+      "purpose": "Presentar ejemplos cotidianos de incompetencia malinterpretada",
+      "summary": "Se enuncia la tendencia de ver maldad en los errores de otros."
+    },
+    {
+      "section": "Teoría de Robert J. Hanlon",
+      "purpose": "Introducir la navaja de Hanlon",
+      "summary": "Explicar que muchos comportamientos erróneos son producto de la incompetencia y no de malicia."
+    },
+    {
+      "section": "Experimento de los ensayos de Castro",
+      "purpose": "Ilustrar el error fundamental de atribución",
+      "summary": "El experimento muestra cómo las posturas asignadas afectan nuestras percepciones de intenciones."
+    },
+    {
+      "section": "Mecanismo de la sospecha",
+      "purpose": "Entender la evolución de la percepción humana",
+      "summary": "El ser humano tiende a asumir hostilidad ante errores por instinto de supervivencia."
+    },
+    {
+      "section": "Caso de la sonda Mars Climate Orbiter",
+      "purpose": "Mostrar las consecuencias de simplificar la incompetencia a malicia",
+      "summary": "Un simple error humano causó pérdidas millonarias y un fallo técnico dentro de la NASA."
+    },
+    {
+      "section": "Consecuencias de malinterpretar errores",
+      "purpose": "Reflexionar sobre la búsqueda de culpables vs. entender fallos estructurales",
+      "summary": "Se enfatiza la necesidad de ajustar sistemas en lugar de buscar responsables en errores."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntas retóricas",
+    "hook_text": "¿No te parece curioso?",
+    "why_it_works": "Insta a la reflexión y conexión emocional con el contenido."
+  },
+  "claims": [
+    {
+      "claim": "La gente tiende a atribuir maldad en lugar de incompetencia.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El error fundamental de atribución afecta nuestra percepción de acciones ajenas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La incompetencia humana es a menudo la raíz de problemas sistémicos.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Caso de la sonda Mars Climate Orbiter",
+    "Experimento de los ensayos de Castro"
+  ],
+  "actionable_ideas": [
+    "Fomentar la verificación de hechos antes de asumir intenciones maliciosas.",
+    "Crear sistemas que minimicen errores humanos a través de un diseño adecuado.",
+    "Implementar formaciones sobre sesgos de atribución en ambientes laborales."
+  ],
+  "audience": "Personas interesadas en psicología y comportamiento humano",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Conversacional e informativo",
+  "retention_devices": [
+    "Ejemplos prácticos y conocidos",
+    "Estadísticas y datos relevantes",
+    "Cierres con moralejas o lecciones aplicables"
+  ],
+  "title_supporting_quotes": [
+    "Nunca atribuyas a la maldad lo que puedes explicar por mera incompetencia."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de un artículo que explore aplicaciones prácticas de la navaja de Hanlon.",
+    "Desarrollo de talleres sobre manejo de conflictos en el ámbito laboral.",
+    "Producción de podcasts que analicen errores históricos por atribuciones erróneas."
+  ],
+  "risk_notes": [
+    "Posibilidad de simplificar problemas complejos a meros errores humanos.",
+    "Interpretaciones erróneas podrían llevar a desconfianza en organizaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

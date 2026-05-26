@@ -1,0 +1,70 @@
+{
+  "video_id": "EoycXyqS0_g",
+  "language": "es",
+  "summary": "El video explora cómo las decisiones humanas son influenciadas por factores inconscientes y el diseño de formularios. Se compara la tasa de donación de órganos en Austria y Alemania para ilustrar cómo una simple diferencia en el formulario puede afectar decisiones críticas.",
+  "main_topics": [
+    "Decisiones inconscientes",
+    "Influencias en el comportamiento humano",
+    "Caso de donación de órganos en Europa",
+    "Psicología de la toma de decisiones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Captar la atención del espectador",
+      "summary": "Se plantea la premisa de que las decisiones son menos racionales de lo que se cree."
+    },
+    {
+      "section": "Descripción de la investigación",
+      "purpose": "Presentar evidencia del argumento",
+      "summary": "Se narra la diferencia en tasas de donación entre Austria y Alemania basada en el diseño de formularios."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Incentivar a la audiencia a ver otro video",
+      "summary": "Se menciona un video adicional que profundiza en el tema."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocadora",
+    "hook_text": "¿De verdad crees que eliges libremente lo que miras?",
+    "why_it_works": "Invita a la audiencia a cuestionar su propia percepción de libertad y decisiones, creando curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "No somos tan racionales como pensamos al tomar decisiones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El diseño de formularios puede influenciar decisiones vitales, como la donación de órganos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "El caso de donación de órganos en Austria y Alemania."
+  ],
+  "actionable_ideas": [
+    "Revisar el diseño de formularios utilizados en decisiones críticas.",
+    "Conocer más sobre cómo funcionan nuestras decisiones para tomar más control."
+  ],
+  "audience": "Personas interesadas en psicología y comportamiento humano.",
+  "tone": "Informativo y persuasivo.",
+  "content_style": "Exploratorio y reflexivo.",
+  "retention_devices": [
+    "Llamado a la acción para ver más contenido relacionado.",
+    "Uso de historias para ilustrar puntos complejos."
+  ],
+  "title_supporting_quotes": [
+    "Kahneman lo explicó así: 'Hacemos lo que hacemos por razones de las que no somos completamente conscientes.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre decisiones inconscientes.",
+    "Desarrollar material educativo sobre el impacto del diseño en decisiones."
+  ],
+  "risk_notes": [
+    "La simplificación de conceptos complejos puede llevar a malentendidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

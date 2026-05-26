@@ -1,0 +1,93 @@
+{
+  "video_id": "TK-u4W0D62k",
+  "language": "es",
+  "summary": "El video explora la evolución del trabajo y su impacto en la identidad humana, comenzando con la obra de Karel Čapek, quien introdujo el término 'robot'. Se discuten las transformaciones de la percepción del trabajo desde la antigüedad hasta la revolución industrial y la actualidad, resaltando cómo la mecanización y la inteligencia artificial están reemplazando trabajos humanos. El narrador plantea la pregunta de quiénes seremos cuando el trabajo deje de ser una necesidad y cuáles son las implicaciones de esta transición para la sociedad.",
+  "main_topics": [
+    "Origen de la palabra 'robot'",
+    "Historia del trabajo",
+    "Relación entre trabajo y identidad",
+    "Impacto de la revolución industrial",
+    "Automatización y futuro del trabajo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el concepto del trabajo y su evolución.",
+      "summary": "Presenta la obra de Karel Čapek y el origen de la palabra 'robot', planteando la advertencia sobre el futuro del trabajo."
+    },
+    {
+      "section": "Historia del trabajo",
+      "purpose": "Explorar la transformación de la percepción del trabajo a lo largo de la historia.",
+      "summary": "Describe cómo el trabajo fue visto como una obligación y no una identidad en diferentes culturas y épocas."
+    },
+    {
+      "section": "La revolución industrial",
+      "purpose": "Analizar el impacto de la revolución industrial en la relación con el trabajo.",
+      "summary": "Explica cómo la mecanización cambió la forma en que trabajamos y vivimos, y presentó la idea de una nueva relación con el tiempo."
+    },
+    {
+      "section": "El futuro del trabajo",
+      "purpose": "Proponer reflexiones sobre la automatización y su efecto en el empleo humano.",
+      "summary": "Plantea preguntas sobre la identidad y el valor humano en un mundo donde las máquinas están asumiendo más tareas."
+    },
+    {
+      "section": "Visiones sobre el futuro",
+      "purpose": "Presentar diferentes perspectivas sobre el futuro del trabajo y la automatización.",
+      "summary": "Compara optimismo y pesimismo en torno a la automatización, concluyendo que el futuro depende de decisiones sociales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita impactante",
+    "hook_text": "¿Quiénes seremos cuando el trabajo deje de necesitarnos?",
+    "why_it_works": "Provoca la reflexión sobre la identidad humana y su relación con el trabajo, captando la atención del público desde el inicio."
+  },
+  "claims": [
+    {
+      "claim": "La mecanización ha cambiado nuestra relación con el trabajo.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "El trabajo no define nuestra identidad como comunidad.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Muchas de las tareas humanas serán automatizadas en el futuro.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Karel Čapek y el trabajo forzado.",
+    "La visión de Aristóteles sobre el trabajo manual y los ciudadanos libres.",
+    "Frederick Winslow Taylor y la organización científica del trabajo."
+  ],
+  "actionable_ideas": [
+    "Reevaluar la relación con el trabajo en la sociedad moderna.",
+    "Investigar políticas de renta universal y su viabilidad.",
+    "Fomentar un diálogo social sobre el futuro del trabajo y la automatización."
+  ],
+  "audience": "Personas interesadas en la historia laboral, la economía y la filosofía del trabajo.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Preguntas provocadoras",
+    "Ejemplos históricos",
+    "Citas de expertos"
+  ],
+  "title_supporting_quotes": [
+    "La palabra robota significa trabajo forzado.",
+    "La modernidad estaba creando una sociedad de trabajadores justo cuando la tecnología podría liberar."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre la evolución del trabajo.",
+    "Producción de contenido de video sobre la automatización y su efecto social.",
+    "Desarrollo de un podcast sobre la historia del trabajo."
+  ],
+  "risk_notes": [
+    "La automatización puede aumentar la desigualdad social.",
+    "Si no se gestionan adecuadamente, estas transformaciones pueden llevar a una crisis de identidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

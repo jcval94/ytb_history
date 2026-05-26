@@ -1,0 +1,20 @@
+{
+  "video_id": "E7w7HcC4wL0",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¡EL DIABLO EN ARGENTINA! 🇦🇷 El secreto de Ricardo Klement El Hombre Gris",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\E7w7HcC4wL0.mp3",
+  "transcribed_at": "2026-05-26T04:29:21.322409+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 554,
+  "text_sha256": "cd540b2217e84edd47c1300447eed0fb05a740a76a5cdfef4ae4794684b318b8",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\E7w7HcC4wL0\\transcript_segments.jsonl",
+  "segment_count": 9,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:38:23.703680+00:00",
+  "duration_seconds": 38.0099983215332
+}

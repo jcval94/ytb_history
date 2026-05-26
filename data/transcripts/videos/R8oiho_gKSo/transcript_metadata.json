@@ -1,0 +1,20 @@
+{
+  "video_id": "R8oiho_gKSo",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Shadow Illusion",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\R8oiho_gKSo.mp3",
+  "transcribed_at": "2026-05-26T04:15:22.319822+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1067,
+  "text_sha256": "5cacbcc505044774d9e7ed1564055b4a48e3185fcbfe5d2f673d756a59f5e7cb",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\R8oiho_gKSo\\transcript_segments.jsonl",
+  "segment_count": 21,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:48:28.984558+00:00",
+  "duration_seconds": 57.939998626708984
+}

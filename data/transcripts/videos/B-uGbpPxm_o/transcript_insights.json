@@ -1,0 +1,91 @@
+{
+  "video_id": "B-uGbpPxm_o",
+  "language": "es",
+  "summary": "El video explora el caso de Kitty Genovese, cuyo asesinato en 1964 se convirtió en símbolo del 'efecto espectador', donde testigos no ayudaron a la víctima. Se debate si esta narrativa es correcta, presentando investigaciones recientes que indican que la mayoría de las personas sí ayudan en emergencias. Se analiza cómo el contexto social y la percepción de la situación influyen en la intervención de los espectadores.",
+  "main_topics": [
+    "Kitty Genovese",
+    "Efecto espectador",
+    "Psicología social",
+    "Responsabilidad compartida",
+    "Periodismo y narrativas",
+    "Intervención en emergencias"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso de Kitty Genovese",
+      "purpose": "Presentar el contexto y la tragedia del asesinato",
+      "summary": "Se detalla cómo Kitty Genovese fue asesinada mientras múltiples testigos ignoraron su clamor de ayuda."
+    },
+    {
+      "section": "Reacción mediática y su impacto",
+      "purpose": "Explorar cómo los medios amplificaron el caso",
+      "summary": "Se describe cómo el caso se hizo famoso y cómo fue interpretado negativamente sobre la naturaleza humana."
+    },
+    {
+      "section": "Estudios psicológicos posteriores",
+      "purpose": "Revisar investigaciones sobre el comportamiento en emergencias",
+      "summary": "Se presentan estudios que revelan que en situaciones reales, la mayoría de las personas sí actúan para ayudar."
+    },
+    {
+      "section": "Crítica a la narrativa tradicional",
+      "purpose": "Cuestionar la interpretación común del caso",
+      "summary": "Se argumenta que muchas conclusiones sobre el caso de Genovese no son precisas y se discute el miedo y la falta de acción."
+    },
+    {
+      "section": "Reflexiones finales y lecciones aprendidas",
+      "purpose": "Ofrecer un cierre y proponer acciones concretas para situaciones de emergencia",
+      "summary": "Se sugieren maneras de mejorar la intervención en emergencias, enfatizando la importancia de individualizar el llamado a la ayuda."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga narrativa",
+    "hook_text": "¿Por qué 38 vecinos presenciaron un asesinato y no hicieron nada?",
+    "why_it_works": "Genera curiosidad sobre la naturaleza humana y el comportamiento social en situaciones críticas."
+  },
+  "claims": [
+    {
+      "claim": "El efecto espectador enseña que a más testigos, menos probabilidad de ayudar.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "En emergencias reales, el 90% de las personas interviene.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "La narrativa sobre la indiferencia humana es incorrecta.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [
+    "La historia de Sofi, quien sí ayudó a Kitty.",
+    "El caso de los hombres que rescataron a la madre y su bebé en Ámsterdam."
+  ],
+  "actionable_ideas": [
+    "Llama la atención de un individuo específico si necesitas ayuda.",
+    "Educación sobre el deber de socorro y cómo actuar en emergencias."
+  ],
+  "audience": "Personas interesadas en psicología, comportamiento social y estudios de casos criminales.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo e informativo, con un enfoque en el análisis histórico y psicológico.",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Estadísticas impactantes",
+    "Citas de expertos"
+  ],
+  "title_supporting_quotes": [
+    "El efecto espectador o síndrome Genovés.",
+    "La narrativa de que estamos solos en momentos difíciles."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido educativo sobre psicología social.",
+    "Crear talleres sobre intervención en emergencias."
+  ],
+  "risk_notes": [
+    "Posible controversia sobre las conclusiones sobre comportamiento humano.",
+    "El riesgo de simplificar narrativas complejas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

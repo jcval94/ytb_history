@@ -1,0 +1,20 @@
+{
+  "video_id": "kYw0JZ-gp7g",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "Turing: El genio que descifró Enigma y pagó un precio terrible",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\kYw0JZ-gp7g.mp3",
+  "transcribed_at": "2026-05-26T04:12:54.937002+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8915,
+  "text_sha256": "f862fdab2ef35110d968e00380451971ff9c632fe09373c00ad11862547a6476",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\kYw0JZ-gp7g\\transcript_segments.jsonl",
+  "segment_count": 369,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:55:45.829934+00:00",
+  "duration_seconds": 1330.5
+}

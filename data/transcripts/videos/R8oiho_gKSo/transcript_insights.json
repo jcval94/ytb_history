@@ -1,0 +1,72 @@
+{
+  "video_id": "R8oiho_gKSo",
+  "language": "english",
+  "summary": "The video illustrates how different shapes of holes can produce a circular projection of light when viewed at a certain height, demonstrating the principles of a pinhole camera using sunlight as the light source.",
+  "main_topics": [
+    "Pinhole camera principle",
+    "Light projection",
+    "Shape and light interaction",
+    "Optics and geometry"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the experiment",
+      "purpose": "To capture viewer interest and present the experiment.",
+      "summary": "The video begins with a demonstration of how lifting cardboard reveals the projection of different shaped holes."
+    },
+    {
+      "section": "Explanation of the phenomenon",
+      "purpose": "To provide scientific insight into why different shapes yield circular projections.",
+      "summary": "It explains the concept of looking at the light source's projection, leading to a circular outcome regardless of the hole's shape."
+    },
+    {
+      "section": "Conclusion and invitation to subscribe",
+      "purpose": "To encourage further engagement with the content.",
+      "summary": "The video ends with a call to subscribe for more related content."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Demonstration",
+    "hook_text": "Watch what happens if I slowly lift up the cardboard.",
+    "why_it_works": "It piques curiosity and engages viewers by promising a visual transformation."
+  },
+  "claims": [
+    {
+      "claim": "Different shaped holes produce a circular light projection.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The cardboard acts as a pinhole camera.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The projection of the sun is always round.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Experiment with various shapes of holes and a light source.",
+    "Create a simple pinhole camera using cardboard and sunlight."
+  ],
+  "audience": "Individuals interested in science, specifically optics and visual phenomena.",
+  "tone": "Informative and engaging",
+  "content_style": "Demonstrative and educational",
+  "retention_devices": [
+    "Visual experiment demonstration",
+    "Engaging questions posed to the viewer"
+  ],
+  "title_supporting_quotes": [
+    "The cardboard has become the simplest kind of camera.",
+    "You can try this with any shape."
+  ],
+  "creative_reuse_opportunities": [
+    "Educational videos on optics and light behavior.",
+    "Content for science demonstrations in classrooms."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

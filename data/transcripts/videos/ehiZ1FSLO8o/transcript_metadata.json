@@ -1,0 +1,20 @@
+{
+  "video_id": "ehiZ1FSLO8o",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Vas directo hacia el muro (y no puedes evitarlo)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ehiZ1FSLO8o.mp3",
+  "transcribed_at": "2026-05-26T04:21:22.123130+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9133,
+  "text_sha256": "4afe095046726a63b1da6c18f86c56ce70dd6034d8386fccc453f03db25f9295",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\ehiZ1FSLO8o\\transcript_segments.jsonl",
+  "segment_count": 517,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:53:47.072066+00:00",
+  "duration_seconds": 1240.1700439453125
+}

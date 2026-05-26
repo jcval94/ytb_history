@@ -1,0 +1,98 @@
+{
+  "video_id": "ehiZ1FSLO8o",
+  "language": "es",
+  "summary": "El video explora cómo la atención humana es manipulada y dirigida, utilizando ejemplos del comportamiento humano y descubrimientos del psicólogo Daniel Kahneman sobre los sistemas de pensamiento. Se discute cómo la atención se ha convertido en un producto comercial a través de medios como la radio y la televisión.",
+  "main_topics": [
+    "Atención humana",
+    "Kahneman y Tversky",
+    "Sistema 1 y Sistema 2",
+    "Manipulación de la atención",
+    "Impacto de los medios en el pensamiento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la velocidad y atención en situaciones críticas",
+      "purpose": "Captar la atención del espectador y establecer el tema de la atención en la toma de decisiones",
+      "summary": "Se inicia con una descripción de un piloto de carreras que ilustra cómo la atención dirige el comportamiento y las decisiones."
+    },
+    {
+      "section": "Presentación de Daniel Kahneman",
+      "purpose": "Introducir la figura de Kahneman y su trabajo",
+      "summary": "Se explica que Kahneman, un psicólogo, hizo importantes descubrimientos sobre la atención y la toma de decisiones."
+    },
+    {
+      "section": "Modelo de Sistema 1 y Sistema 2",
+      "purpose": "Educar sobre el modelo de pensamiento de Kahneman",
+      "summary": "Se describen los dos sistemas de pensamiento y cómo afectan nuestras decisiones."
+    },
+    {
+      "section": "Historia de la radio y la atención",
+      "purpose": "Explicar cómo la publicidad comenzó con la radio y cómo se comercializa la atención",
+      "summary": "Se narra cómo la creación de la radio permitió vender la atención humana."
+    },
+    {
+      "section": "Evolución a la televisión",
+      "purpose": "Mostrar cómo la televisión intensificó la manipulación de la atención",
+      "summary": "Se discute cómo la televisión añade imágenes y cambia la forma en que procesamos información."
+    },
+    {
+      "section": "Consecuencias y reflexiones finales",
+      "purpose": "Reflexionar sobre el impacto de la manipulación de la atención en la era moderna",
+      "summary": "Se concluye que la atención ha sido un producto explotado a lo largo de la historia, evolucionando con la tecnología."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "Un coche de carreras va a una velocidad de 300 kilómetros por hora.",
+    "why_it_works": "Capta la atención inmediatamente y establece un paralelismo con la toma de decisiones en situaciones de alta presión."
+  },
+  "claims": [
+    {
+      "claim": "La atención humana no es completamente controlada por el individuo.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    },
+    {
+      "claim": "La atención se puede comercializar.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "El Sistema 1 se activa más que el Sistema 2 en la toma de decisiones.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [
+    "El piloto de carreras que sigue su mirada.",
+    "Los esquiadores que miran entre los árboles en vez de a los árboles mismos.",
+    "El primer anuncio radiofónico de 1922."
+  ],
+  "actionable_ideas": [
+    "Ser consciente de cómo los estímulos externos pueden dirigir tu atención.",
+    "Modificar tu entorno para favorecer el enfoque consciente.",
+    "Practicar el análisis crítico antes de tomar decisiones."
+  ],
+  "audience": "Personas interesadas en psicología, toma de decisiones y marketing.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Historias impactantes",
+    "Referencias a figuras reconocidas"
+  ],
+  "title_supporting_quotes": [
+    "\"No somos los dueños de nuestra atención, somos sus víctimas.\"",
+    "\"La televisión no sólo cambió cómo nos informamos, cambió cómo pensamos.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de contenido sobre atención y marketing en redes sociales.",
+    "Artículos sobre psicología de la atención.",
+    "Videos educativos sobre toma de decisiones."
+  ],
+  "risk_notes": [
+    "La manipulación de la atención puede llevar a decisiones impulsivas.",
+    "El desconocimiento de estos mecanismos puede resultar en manipulaciones efectivas por terceros."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

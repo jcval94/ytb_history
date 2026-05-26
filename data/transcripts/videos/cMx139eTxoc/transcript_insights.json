@@ -1,0 +1,93 @@
+{
+  "video_id": "cMx139eTxoc",
+  "language": "English",
+  "summary": "The video explores the dangers of asbestos, detailing its widespread use, health risks, and the industry's cover-up of its dangers, particularly following significant events like the World Trade Center collapse. It highlights the complexities of asbestos regulation, ongoing health crises, and negligence in public safety measures.",
+  "main_topics": [
+    "Asbestos health risks",
+    "Historical use of asbestos",
+    "Legal and regulatory challenges",
+    "Public health impacts",
+    "Industry cover-ups"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to asbestos and its historical context",
+      "purpose": "To introduce the topic and its significance regarding health risks and public awareness.",
+      "summary": "Asbestos was widely used for its fire-resistant properties, leading to severe health issues without adequate warnings."
+    },
+    {
+      "section": "The historical discovery and use of asbestos",
+      "purpose": "To explain how asbestos was discovered and integrated into various materials.",
+      "summary": "Asbestos's unique properties led to its adoption in construction and everyday products despite its health risks."
+    },
+    {
+      "section": "Health effects and industry negligence",
+      "purpose": "Highlight the dangers associated with asbestos exposure and the industry's response.",
+      "summary": "Despite acknowledgment of its risks, companies delayed warnings and regulations, resulting in widespread health issues."
+    },
+    {
+      "section": "Contemporary relevance and ongoing risks",
+      "purpose": "To discuss current asbestos presence in products and the legal landscape.",
+      "summary": "Asbestos continues to pose risks in various consumer products while regulation remains a complex issue."
+    },
+    {
+      "section": "Conclusion and call to action",
+      "purpose": "Encourage viewers to raise awareness and take action regarding asbestos exposure.",
+      "summary": "Reflects on personal stories related to asbestos exposure and urges viewers to educate themselves."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anecdote",
+    "hook_text": "This same kind of material was used in the construction of the World Trade Center buildings.",
+    "why_it_works": "It connects a well-known event to the dangerous nature of asbestos, drawing in viewers who may not know about its insidious presence."
+  },
+  "claims": [
+    {
+      "claim": "Asbestos exposure has killed more people than the 9/11 attacks.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Asbestos fibers easily migrate into various consumer products, causing widespread exposure.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "The industry knew about asbestos dangers but hid information.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Children's toys and cosmetics containing asbestos",
+    "Contaminated vermiculite mined in Libby, Montana",
+    "Asbestos in World Trade Center dust"
+  ],
+  "actionable_ideas": [
+    "Educate others on the risks of asbestos exposure.",
+    "Advocate for stronger regulations on asbestos use.",
+    "Support organizations that research and combat asbestos-related diseases."
+  ],
+  "audience": "General public, particularly those interested in health and safety issues.",
+  "tone": "Serious and informative",
+  "content_style": "Narrative-driven exploration of facts and personal stories related to asbestos.",
+  "retention_devices": [
+    "Personal anecdotes",
+    "Visual examples of asbestos products",
+    "Historical context and data"
+  ],
+  "title_supporting_quotes": [
+    "We've known for decades that these particles are extremely dangerous.",
+    "More than twice as many people as the attacks themselves."
+  ],
+  "creative_reuse_opportunities": [
+    "Create infographics summarizing asbestos risks.",
+    "Develop educational content for schools about hazardous materials.",
+    "Host discussions or webinars on public health safety regarding asbestos."
+  ],
+  "risk_notes": [
+    "Continued exposure risks in older buildings and products.",
+    "Legal loopholes allowing ongoing importation of asbestos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

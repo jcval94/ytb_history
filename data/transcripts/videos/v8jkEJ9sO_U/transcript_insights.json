@@ -1,0 +1,82 @@
+{
+  "video_id": "v8jkEJ9sO_U",
+  "language": "es",
+  "summary": "El video analiza el experimento de las descargas de Milgram, destacando la controversia sobre su veracidad y revelando que la mayoría de los participantes abandonaron antes de comenzar. Se menciona un documental más extenso disponible en YouTube.",
+  "main_topics": [
+    "Experimento de Milgram",
+    "Comportamiento humano",
+    "Controversias sobre la investigación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el tema y su relevancia",
+      "summary": "Se menciona el experimento de las descargas como famoso, pero controversial."
+    },
+    {
+      "section": "Revelación sobre la veracidad",
+      "purpose": "Informar sobre los aspectos ocultos del estudio",
+      "summary": "Se discute la falta de autenticidad de las descargas y el papel del alumno como actor."
+    },
+    {
+      "section": "Datos sobre la participación",
+      "purpose": "Sorpresa y análisis de los datos",
+      "summary": "Se revela que muchos participantes abandonaron el estudio antes de comenzar."
+    },
+    {
+      "section": "Invitación a ver el documental",
+      "purpose": "Promocionar contenido adicional",
+      "summary": "Se invita a los espectadores a suscribirse y ver el documental en YouTube."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "El experimento de las descargas de Milgram es uno de los más famosos del mundo.",
+    "why_it_works": "Genera curiosidad sobre un experimento conocido y controvertido, captando la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "El alumno que gritaba era un actor.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las descargas eran falsas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La mayoría de los que creían en la realidad de las descargas abandonaron el estudio.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Milgram ocultó un dato revelador.",
+      "support_level": "weak",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre el experimento de Milgram.",
+    "Ver el documental para obtener información detallada.",
+    "Reflexionar sobre el comportamiento humano en situaciones de autoridad."
+  ],
+  "audience": "Interesados en psicología y comportamiento humano.",
+  "tone": "Informativo y provocador.",
+  "content_style": "Directo y atractivo.",
+  "retention_devices": [
+    "Llamada a la acción para suscribirse.",
+    "Promesa de contenido adicional."
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear un video explicando los hallazgos del experimento de Milgram.",
+    "Desarrollar contenido sobre la ética en investigaciones psicológicas."
+  ],
+  "risk_notes": [
+    "Algunos reclamos son controvertidos y pueden necesitar respaldo adicional.",
+    "El uso de información del documental puede causar debates sobre su credibilidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

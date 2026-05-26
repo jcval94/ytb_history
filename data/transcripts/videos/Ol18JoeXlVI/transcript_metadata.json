@@ -1,0 +1,20 @@
+{
+  "video_id": "Ol18JoeXlVI",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "This Paradox Splits Smart People 50/50",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Ol18JoeXlVI.mp3",
+  "transcribed_at": "2026-05-26T04:16:38.222294+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 24341,
+  "text_sha256": "5e7693664ec754ca57542d3c2539371da173dfd08979544d2e536434ff1d4f5d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Ol18JoeXlVI\\transcript_segments.jsonl",
+  "segment_count": 509,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:44:29.889285+00:00",
+  "duration_seconds": 1540.06005859375
+}

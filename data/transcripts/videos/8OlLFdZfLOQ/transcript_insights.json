@@ -1,0 +1,89 @@
+{
+  "video_id": "8OlLFdZfLOQ",
+  "language": "es",
+  "summary": "El documental de Netflix sobre Judith Polgar, la mejor ajedrecista de la historia, ha sido aclamado pero también criticado. Aborda su vida y el experimento de su padre, Laszlo Polgar, que diseñó un plan para educar a sus hijas en ajedrez. La historia revela temas de presión, éxito y el costo de la educación extrema.",
+  "main_topics": [
+    "Documental sobre Judith Polgar",
+    "La teoría de Laszlo Polgar",
+    "Educación en casa",
+    "Éxito y sacrificio",
+    "Desigualdad en el ajedrez"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto del documental.",
+      "summary": "Se destaca el estreno del documental de Netflix y las opiniones mixtas que ha generado."
+    },
+    {
+      "section": "La teoría de Laszlo Polgar",
+      "purpose": "Establecer el origen de la educación de Judith.",
+      "summary": "Laszlo Polgar desarrolló una teoría sobre la crianza de genios y aplicó un experimento educativo en sus hijas."
+    },
+    {
+      "section": "El experimento",
+      "purpose": "Describir la metodología de la educación de las hijas Polgar.",
+      "summary": "Las hijas fueron educadas en casa, enfocándose intensamente en ajedrez, desafiando el sistema educativo de su tiempo."
+    },
+    {
+      "section": "Los obstáculos",
+      "purpose": "Destacar las dificultades enfrentadas por la familia Polgar.",
+      "summary": "Las autoridades húngaras intentaron detener el experimento por razones políticas y de educación clandestina."
+    },
+    {
+      "section": "El éxito en la Olimpiada",
+      "purpose": "Mostrar el triunfo de las hermanas Polgar.",
+      "summary": "Judith brilló en la Olimpiada de ajedrez, llevando a la familia de ser perseguidos a ser celebrados."
+    },
+    {
+      "section": "Reflexiones sobre el éxito",
+      "purpose": "Plantear preguntas sobre el costo del éxito.",
+      "summary": "Se cuestiona si las hijas tuvieron libertad de elección y cómo se sienten sobre el plan de su padre."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta controversial",
+    "hook_text": "¿Vale la pena fabricar un éxito mundial si el precio es una infancia diseñada en un laboratorio?",
+    "why_it_works": "Provoca reflexión y emoción en el espectador acerca de los sacrificios en busca del éxito."
+  },
+  "claims": [
+    {
+      "claim": "Laszlo Polgar creó un experimento educativo para formar a sus hijas como genios del ajedrez.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La crítica al documental sugiere que no se abordan suficientemente las consecuencias del experimento.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover discusiones sobre la educación alternativa.",
+    "Investigar sobre la crianza de talentos y su impacto emocional.",
+    "Examinar la desigualdad en el ajedrez y otras disciplinas."
+  ],
+  "audience": "Personas interesadas en el ajedrez, padres sobre crianza y educación.",
+  "tone": "Crítico e informativo",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Preguntas provocativas",
+    "Historias personales de éxito",
+    "Datos impactantes sobre la desigualdad en el ajedrez"
+  ],
+  "title_supporting_quotes": [
+    "Laszlo había estudiado a los grandes genios de la historia.",
+    "Judith no muestra el menor rencor hacia su progenitor."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un artículo sobre educación alternativa.",
+    "Desarrollar un podcast sobre historias de éxito en el ajedrez.",
+    "Hacer un video análisis crítico del documental."
+  ],
+  "risk_notes": [
+    "Posible controversia sobre la crianza extrema.",
+    "Sensibilidad emocional al discutir la vida personal de las personas involucradas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

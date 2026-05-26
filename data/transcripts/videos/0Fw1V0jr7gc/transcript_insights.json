@@ -1,0 +1,77 @@
+{
+  "video_id": "0Fw1V0jr7gc",
+  "language": "es",
+  "summary": "El video analiza cómo la obediencia humana puede llevar al mal, utilizando casos históricos como los juicios de Nuremberg y la captura de Adolf Eichmann para ilustrar que las condiciones sociales, más que la maldad inherente, permiten que actos monstruosos sean cometidos por personas comunes.",
+  "main_topics": [
+    "Juicios de Nuremberg",
+    "Captura de Adolf Eichmann",
+    "Obediencia y maldad",
+    "Responsabilidad ante la ley"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de Hermann Göring",
+      "purpose": "Captar la atención del espectador",
+      "summary": "Presenta la captura de Göring para establecer el contexto de la lucha contra la tiranía."
+    },
+    {
+      "section": "Presentación de Eichmann",
+      "purpose": "Ilustrar la normalidad del mal",
+      "summary": "Eichmann es descrito como un 'hombre gris', enfatizando que el mal puede ser perpetrado por cualquier persona."
+    },
+    {
+      "section": "Cita de Hannah Arendt",
+      "purpose": "Establecer el enfoque filosófico",
+      "summary": "Se exploran las ideas de Arendt sobre cómo el mal no siempre requiere odio."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Invitar a la audiencia a reflexionar",
+      "summary": "Se anima a la audiencia a comprender la obediencia humana antes de ver el análisis más profundo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Podremos acabar con la tiranía?",
+    "why_it_works": "Provoca curiosidad sobre la capacidad humana de detener el mal."
+  },
+  "claims": [
+    {
+      "claim": "El mal puede ser cometido por cualquier persona.",
+      "support_level": "explicit",
+      "risk": "La generalización puede minimizar la responsabilidad personal."
+    },
+    {
+      "claim": "La obediência humana puede llevar al mal.",
+      "support_level": "implicit",
+      "risk": "Podría ser interpretado como una justificación del comportamiento inadecuado."
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre la obediencia en situaciones cotidianas.",
+    "Investigar más sobre los juicios de Nuremberg.",
+    "Analizar cómo sistemas pueden deshumanizar a los individuos."
+  ],
+  "audience": "Personas interesadas en historia y psicología del comportamiento humano.",
+  "tone": "Reflexivo y serio",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Citas memorables",
+    "Ejemplos históricos significativos",
+    "Llamados a la acción para reflexionar"
+  ],
+  "title_supporting_quotes": [
+    "El mal más grande del mundo puede ser cometido por cualquiera.",
+    "Basta simplemente con negarse a ser persona."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar artículos sobre la obediencia y el mal en la sociedad moderna.",
+    "Crear material educativo sobre los juicios de Nuremberg."
+  ],
+  "risk_notes": [
+    "La interpretación del mensaje puede variar entre los espectadores.",
+    "Es importante considerar el contexto histórico al discutir estos eventos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

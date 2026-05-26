@@ -1,0 +1,82 @@
+{
+  "video_id": "sjrpG_tcstk",
+  "language": "es",
+  "summary": "El video explora el famoso experimento de Milgram sobre la obediencia a la autoridad, destacando que aunque el 65% de los participantes obedeció la orden de aplicar descargas eléctricas, el 100% desobedeció cuando la orden era explícita. Este fenómeno se discute a través de la perspectiva de los psicólogos Alex Aslam y Steve Ritcher, enfatizando que la obediencia se basa en la creencia en la causa detrás de la orden.",
+  "main_topics": [
+    "Experimento de Milgram",
+    "Obediencia a la autoridad",
+    "Desobediencia explícita",
+    "Psicología de la obediencia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al Experimento de Milgram",
+      "purpose": "Presentar el contexto del experimento y su relevancia",
+      "summary": "Se describe la situación del experimento y los resultados obtenidos sobre la obediencia."
+    },
+    {
+      "section": "Desarrollo de la desobediencia",
+      "purpose": "Explicar cómo las órdenes explícitas afectan la obediencia",
+      "summary": "Se analiza el fenómeno donde el 100% de los participantes desobedecieron una orden directa."
+    },
+    {
+      "section": "Perspectiva de los psicólogos",
+      "purpose": "Introducir la interpretación de Aslam y Ritcher sobre la obediencia",
+      "summary": "Se presenta la idea de que la obediencia depende de la creencia en la causa positiva de las órdenes."
+    },
+    {
+      "section": "Conclusiones y llamada a la acción",
+      "purpose": "Invitar al espectador a profundizar en el análisis y a interactuar",
+      "summary": "Se cierra el video animando a subscribirse y a descubrir más."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Bajo qué condiciones obedecería una persona a una autoridad que ordena acciones que van en contra de su conciencia?",
+    "why_it_works": "Intriga al espectador al plantear un dilema moral que invita a la reflexión."
+  },
+  "claims": [
+    {
+      "claim": "El 65% obedeció las órdenes de Milgram",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El 100% desobedeció órdenes cuando eran explícitas",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La obediencia se basa en la creencia en la causa positiva de las órdenes",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre situaciones de obediencia en la vida diaria.",
+    "Evaluar nuestras creencias al seguir órdenes.",
+    "Estudiar más sobre psicología de la obediencia y sus implicaciones sociales."
+  ],
+  "audience": "Interesados en psicología, ética y comportamiento humano",
+  "tone": "reflexivo",
+  "content_style": "analítico",
+  "retention_devices": [
+    "Preguntas provocativas",
+    "Referencias a estudios psicológicos",
+    "Llamada a la acción para suscribirse"
+  ],
+  "title_supporting_quotes": [
+    "La obediencia ciega no existe.",
+    "No somos robots."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre obediencia y ética.",
+    "Desarrollar materiales de discusión basados en el experimento de Milgram."
+  ],
+  "risk_notes": [
+    "La interpretación de los resultados puede ser debatible.",
+    "Es importante considerar el contexto del experimento."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

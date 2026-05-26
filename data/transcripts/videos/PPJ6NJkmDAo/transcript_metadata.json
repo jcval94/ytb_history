@@ -1,0 +1,20 @@
+{
+  "video_id": "PPJ6NJkmDAo",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "How easy is it to steal $10,000 from a locked phone?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\PPJ6NJkmDAo.mp3",
+  "transcribed_at": "2026-05-26T04:04:15.558703+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 24440,
+  "text_sha256": "edd33d79aa449fd0aa75dd548b000076d78eb62ef24a12b1bd13862fd7d35fb9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\PPJ6NJkmDAo\\transcript_segments.jsonl",
+  "segment_count": 735,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:46:10.471498+00:00",
+  "duration_seconds": 1543.6099853515625
+}

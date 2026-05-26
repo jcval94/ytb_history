@@ -1,0 +1,20 @@
+{
+  "video_id": "cgJ7Bpp8H_w",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "La próxima Gran Guerra NO será en la Tierra",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cgJ7Bpp8H_w.mp3",
+  "transcribed_at": "2026-05-26T04:02:45.330773+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9329,
+  "text_sha256": "974c44838e1655f7fdeac7eb6f5776f4f8861b30fbdb0cdd2c3370a211a40e1b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\cgJ7Bpp8H_w\\transcript_segments.jsonl",
+  "segment_count": 270,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:52:37.077688+00:00",
+  "duration_seconds": 1094.3299560546875
+}

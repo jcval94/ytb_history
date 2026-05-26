@@ -1,0 +1,20 @@
+{
+  "video_id": "Dy_CuOlqaxQ",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Por qué el sistema prefiere a los psicópatas | La arquitectura del éxito",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Dy_CuOlqaxQ.mp3",
+  "transcribed_at": "2026-05-26T03:56:36.756547+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9127,
+  "text_sha256": "b282f8bb26bc45a95263b8dd4773a26244313702fa60a6b6d72b572f84560e44",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Dy_CuOlqaxQ\\transcript_segments.jsonl",
+  "segment_count": 252,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:38:20.219525+00:00",
+  "duration_seconds": 1425.75
+}

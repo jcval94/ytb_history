@@ -1,0 +1,72 @@
+{
+  "video_id": "DJ_5_JS9_Rs",
+  "language": "unknown",
+  "summary": "The video explains the perception of wetness and how temperature influences this sensation. It contrasts human and insect experiences with water's properties.",
+  "main_topics": [
+    "Perception of Wetness",
+    "Temperature and Sensation",
+    "Insect Adaptations"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to Wetness",
+      "purpose": "Introduce the concept of wetness perception",
+      "summary": "Demonstrates an experiment with a latex glove to illustrate the perception of wetness despite impermeability."
+    },
+    {
+      "section": "The Science Behind Wetness",
+      "purpose": "Explain how wetness is perceived",
+      "summary": "Details how temperature changes and heat conduction from water to skin create the sensation of wetness."
+    },
+    {
+      "section": "Comparison to Insects",
+      "purpose": "Highlight differences in perception between humans and insects",
+      "summary": "Discusses how insects have adapted to directly detect moisture, unlike humans."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Engaging Experiment",
+    "hook_text": "Put on a latex glove and put your hand in ice-cold water.",
+    "why_it_works": "Captivates attention by presenting a hands-on experiment that leads to a surprising revelation."
+  },
+  "claims": [
+    {
+      "claim": "Humans perceive wetness through temperature changes rather than direct contact with water.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Insects use microscopic adaptations to detect moisture directly.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Experiment with a latex glove and cold water",
+    "Insect adaptations such as microscopic hairs to detect water"
+  ],
+  "actionable_ideas": [
+    "Try the latex glove experiment yourself to experience the sensation of wetness",
+    "Research more about insect adaptations to environmental changes"
+  ],
+  "audience": "General public interested in science",
+  "tone": "Informative and engaging",
+  "content_style": "Conversational with experimental demonstration",
+  "retention_devices": [
+    "Visual demonstrations",
+    "Surprising facts about water and insect adaptations"
+  ],
+  "title_supporting_quotes": [
+    "\"We actually don't have a way to directly measure wetness.\"",
+    "\"Flies actually know something we don't, whether water really is wet.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Science education videos",
+    "Insect behavior documentaries",
+    "Explainer content on sensory perception"
+  ],
+  "risk_notes": [
+    "The claim about human perception may be oversimplified; further scientific context may be needed."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

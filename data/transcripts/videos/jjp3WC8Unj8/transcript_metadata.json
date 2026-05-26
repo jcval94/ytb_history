@@ -1,0 +1,14 @@
+{
+  "video_id": "jjp3WC8Unj8",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "What happens if you drop 0.125 grams of antimatter?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\jjp3WC8Unj8.mp3",
+  "transcribed_at": "2026-05-26T04:10:22.715390+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 52948,
+  "text_sha256": "3af0e6963ecbd190ed4341308009d5d54f804a37a5536f704e7cc6556bebc510",
+  "repo_schema_version": "transcript_metadata_v1"
+}

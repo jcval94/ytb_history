@@ -1,0 +1,20 @@
+{
+  "video_id": "BU5HwNyE4mk",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Bizarre Behaviour Of Rotating Bodies",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BU5HwNyE4mk.mp3",
+  "transcribed_at": "2026-05-26T04:10:35.347806+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1422,
+  "text_sha256": "cf1e71da5102732fa6cf450ab87eff935a9f358730b212ba9df2928d22b6b62b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BU5HwNyE4mk\\transcript_segments.jsonl",
+  "segment_count": 34,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:36:42.330268+00:00",
+  "duration_seconds": 92.54000091552734
+}

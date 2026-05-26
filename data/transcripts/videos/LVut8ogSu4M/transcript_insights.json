@@ -1,0 +1,79 @@
+{
+  "video_id": "LVut8ogSu4M",
+  "language": "español",
+  "summary": "Este video analiza el asesinato de Catherine Genovese en 1964, un caso que dio origen al concepto del 'efecto espectador' en psicología social, destacando la indiferencia de los testigos durante el crimen y la posterior cobertura mediática que enfatizó la apatía de los vecinos. Se cuestiona la verdad detrás de esta narrativa y su impacto en la percepción de la condición humana.",
+  "main_topics": [
+    "Efecto espectador",
+    "Catherine Genovese",
+    "Indiferencia social",
+    "Psicología social",
+    "Narrativa mediática"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al crimen",
+      "purpose": "Presentar el caso de Catherine Genovese y su relevancia",
+      "summary": "Se describe el contexto del asesinato de Kitty Genovese y la falta de respuesta de los testigos."
+    },
+    {
+      "section": "Cobertura mediática",
+      "purpose": "Explicar cómo el asesinato fue reportado inicialmente y su posterior relevancia",
+      "summary": "Se relata cómo el caso tomó protagonismo en los medios, destacando la apatía de los 38 testigos."
+    },
+    {
+      "section": "Análisis del efecto espectador",
+      "purpose": "Discutir la teoría detrás de la indiferencia de los testigos",
+      "summary": "Se aborda la idea de que cuantos más testigos hay, menos probable es que alguien intervenga."
+    },
+    {
+      "section": "Crítica a la narrativa",
+      "purpose": "Cuestionar la verdad detrás del relato del caso",
+      "summary": "Se analizan las falacias en la narrativa convencional y la influencia de los medios en la percepción social."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa impactante",
+    "hook_text": "El nacimiento del modelo mental más pesimista del siglo XX.",
+    "why_it_works": "Capta la atención al referirse a un evento trágico y su impacto duradero en la psicología social."
+  },
+  "claims": [
+    {
+      "claim": "La indiferencia de los testigos durante el asesinato de Genovese es un reflejo de una verdad más amplia sobre la naturaleza humana.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "La narrativa del efecto espectador ha sido simplificada y en algunos casos distorsionada por los medios de comunicación.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover una cultura de intervención en situaciones de emergencia.",
+    "Fomentar la conciencia crítica hacia la cobertura mediática.",
+    "Investigar casos de ayuda comunitaria para entender mejor el comportamiento humano en crisis."
+  ],
+  "audience": "Curiosos, estudiantes de psicología, y público en general interesado en temas sociales.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Narrativa informativa con elementos de análisis crítico",
+  "retention_devices": [
+    "Historias de crímenes reales",
+    "Citas impactantes de personajes influyentes",
+    "Cuestionamientos sobre el comportamiento humano"
+  ],
+  "title_supporting_quotes": [
+    "Durante más de media hora 38 ciudadanos respetables observaron como un asesino perseguía y apuñalaba a una mujer hasta en tres ocasiones y ninguno intervino.",
+    "Cuando la cosa se pone difícil, estamos solos."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre el efecto espectador",
+    "Artículos sobre la psicología de la intervención",
+    "Debates en redes sociales sobre la ética del testigo"
+  ],
+  "risk_notes": [
+    "Posibilidad de revivir traumas históricos en la audiencia.",
+    "Cuestionar las verdades establecidas puede generar desconfianza hacia los medios."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

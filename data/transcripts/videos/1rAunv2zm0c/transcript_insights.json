@@ -1,0 +1,88 @@
+{
+  "video_id": "1rAunv2zm0c",
+  "language": "es",
+  "summary": "Este videoensayo revisa el famoso caso de Kitty Genovese, en el cual se afirma que 38 testigos presenciaron su asesinato sin intervenir. Sin embargo, se revela que la historia contada por el New York Times estaba llena de exageraciones y omisiones. A través de testimonios recientes y un análisis más profundo, se aclara que la verdad es más compleja, mostrando que algunos vecinos intentaron ayudar, pero la respuesta del sistema policial fue deficiente y cargada de prejuicios.",
+  "main_topics": [
+    "Caso Kitty Genovese",
+    "Apatía en la sociedad",
+    "Erros en la cobertura periodística",
+    "Condición humana y miedo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto del caso Kitty Genovese.",
+      "summary": "Revisión del primer video y la historia famosa sobre el asesinato, introduciendo la premisa de soledad en situaciones de crisis."
+    },
+    {
+      "section": "Revelación de hechos",
+      "purpose": "Desmentir la narrativa simplista del evento.",
+      "summary": "Se presentan hallazgos que contradicen la cantidad de testigos y su grado de intervención durante el ataque."
+    },
+    {
+      "section": "Testimonios de vecinos",
+      "purpose": "Añadir matices a la historia mediante testimonios de quienes intentaron ayudar.",
+      "summary": "Algunos vecinos hicieron llamadas a la policía, contradiciendo la idea de una total desatención."
+    },
+    {
+      "section": "Contexto social",
+      "purpose": "Explicar el trasfondo del miedo a implicarse.",
+      "summary": "Los prejuicios sociales y experiencias pasadas influenciaron la inacción de algunos testigos."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflejar la verdad sobre la condición humana.",
+      "summary": "Kitty Genovese no murió sola; su vecina, Sofía, la sostuvo en sus últimos momentos, sugiriendo que la empatía existe, pese a la narrativa mediática."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿No te parece?",
+    "why_it_works": "Invita a la reflexión y crea interés en la contradicción de la historia conocida."
+  },
+  "claims": [
+    {
+      "claim": "Kitty Genovese fue asesinada ante la mirada indiferente de 38 testigos.",
+      "support_level": "weak",
+      "risk": "La percepción pública negativa sobre la inacción de los testigos."
+    },
+    {
+      "claim": "La narrativa del New York Times exageró la cantidad de testigos y su inacción.",
+      "support_level": "explicit",
+      "risk": "Cuestionar la credibilidad de los medios de comunicación."
+    },
+    {
+      "claim": "El miedo y las circunstancias sociales influenciaron el comportamiento de los vecinos.",
+      "support_level": "explicit",
+      "risk": "Entender la complejidad del comportamiento humano en situaciones de crisis."
+    }
+  ],
+  "examples": [
+    "Declaraciones de Hattie Grant y otros vecinos que intentaron llamar a la policía.",
+    "El contexto histórico y social de los habitantes del barrio en los años 60."
+  ],
+  "actionable_ideas": [
+    "Investigar más allá de las narrativas mediáticas.",
+    "Fomentar la empatía y la acción comunitaria en situaciones de emergencia."
+  ],
+  "audience": "Interesados en la sociología, estudios de crimen y análisis crítico de medios.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo con análisis profundo.",
+  "retention_devices": [
+    "Narración de eventos desconcertantes.",
+    "Uso de testimonios personales.",
+    "Estructuración en secciones para mantener el interés."
+  ],
+  "title_supporting_quotes": [
+    "La historia era correcta en términos generales, pero en muchos de los detalles más importantes estaba groseramente exagerada."
+  ],
+  "creative_reuse_opportunities": [
+    "Series sobre errores mediáticos en el pasado.",
+    "Documentales sobre la condición humana en situaciones de crisis."
+  ],
+  "risk_notes": [
+    "La exposición de errores mediáticos podría llevar a la desconfianza en la prensa.",
+    "Revisar las implicaciones psicológicas en el comportamiento humano."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

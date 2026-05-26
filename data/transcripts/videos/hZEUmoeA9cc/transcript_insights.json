@@ -1,0 +1,74 @@
+{
+  "video_id": "hZEUmoeA9cc",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre la serie 'American Horror Story', especialmente la temporada ambientada en un circo. Comenta sobre los personajes considerados 'mutantes' y sus luchas contra la sociedad. Aunque muestra empatía, también critica a ciertos personajes por no cuidarse.",
+  "main_topics": [
+    "American Horror Story",
+    "Temporada del circo",
+    "Personajes mutantes",
+    "Solidaridad entre extraños",
+    "Expectativas de la apariencia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a American Horror Story",
+      "purpose": "Presentar la serie y capturar el interés del público",
+      "summary": "El hablante empieza a ver la serie y expresa que es entretenida."
+    },
+    {
+      "section": "Descripción de la temporada del circo",
+      "purpose": "Detallar la trama y los personajes",
+      "summary": "Menciona a los mutantes y la dinámica de solidaridad entre ellos."
+    },
+    {
+      "section": "Críticas a los personajes",
+      "purpose": "Ofrecer una opinión sobre las elecciones de los personajes",
+      "summary": "Critica a una mujer con barba, sugiriendo que debería atender su apariencia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal Anecdote",
+    "hook_text": "que viera American Horror Story y la empecé a ver",
+    "why_it_works": "Conecta rápidamente con la audiencia al compartir una experiencia común de ver una serie popular."
+  },
+  "claims": [
+    {
+      "claim": "Los mutantes generan solidaridad entre ellos",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "No está mal tener barba, pero las personas deben cuidarse",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [
+    "Los personajes mutantes enfrentan discriminación",
+    "La mujer con barba que critican puede mejorar su apariencia"
+  ],
+  "actionable_ideas": [
+    "Alentar la aceptación de las diferencias",
+    "Fomentar el autocuidado y la autoestima"
+  ],
+  "audience": "Espectadores de American Horror Story y discusiones sobre la diversidad",
+  "tone": "Informal y crítico",
+  "content_style": "Conversacional y fangirl",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Anécdotas personales"
+  ],
+  "title_supporting_quotes": [
+    "ah, verga, ok, generan solidaridad entre ellos porque dicen no somos normales",
+    "Nada más es sacas. Bueno, no, a ver, con todo respeto a la señora."
+  ],
+  "creative_reuse_opportunities": [
+    "Revisar otros personajes de series con temáticas similares",
+    "Discutir la representación de la diversidad en el cine y la televisión"
+  ],
+  "risk_notes": [
+    "Posible ofensa a grupos representados",
+    "Malentendidos sobre el autocuidado y la autoaceptación"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

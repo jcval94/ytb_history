@@ -1,0 +1,20 @@
+{
+  "video_id": "LVut8ogSu4M",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "38 personas la vieron morir y nadie hizo nada: La Gran Mentira del Caso Kitty Genovese (1/2)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\LVut8ogSu4M.mp3",
+  "transcribed_at": "2026-05-26T04:05:16.191544+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9268,
+  "text_sha256": "033f90168ec0952db482be506d0ff36111e2b881b3687a088830432d51d65f3b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\LVut8ogSu4M\\transcript_segments.jsonl",
+  "segment_count": 239,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:43:10.633919+00:00",
+  "duration_seconds": 1391.52001953125
+}

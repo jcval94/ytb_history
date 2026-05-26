@@ -1,0 +1,20 @@
+{
+  "video_id": "01zfn9FFx7k",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El secreto mental detrás del éxito del Dibu Martínez",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\01zfn9FFx7k.mp3",
+  "transcribed_at": "2026-05-26T03:52:07.517560+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1320,
+  "text_sha256": "2c5887b0cdd54b07c30c33f062c5e088a70e981fd35614dac738845cbba9e105",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\01zfn9FFx7k\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:30:22.941263+00:00",
+  "duration_seconds": 61.18000030517578
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "DJ_5_JS9_Rs",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "You Can't Feel Wet",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\DJ_5_JS9_Rs.mp3",
+  "transcribed_at": "2026-05-26T04:17:54.950354+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 953,
+  "text_sha256": "45aa3b84b93ac5acc69d25071a7d8cb80b7bebbf966c0f9d051d5695d5ac6565",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\DJ_5_JS9_Rs\\transcript_segments.jsonl",
+  "segment_count": 18,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:37:06.229907+00:00",
+  "duration_seconds": 53.349998474121094
+}

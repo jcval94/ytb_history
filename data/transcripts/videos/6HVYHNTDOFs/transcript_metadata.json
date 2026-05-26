@@ -1,0 +1,20 @@
+{
+  "video_id": "6HVYHNTDOFs",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Why Cold Drinks Were Deadly Before 1914",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\6HVYHNTDOFs.mp3",
+  "transcribed_at": "2026-05-26T04:29:16.849943+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 28807,
+  "text_sha256": "288d5cb352269103420e7fd3455737c048eabbd78397d3a4b7cb25a1855996a2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\6HVYHNTDOFs\\transcript_segments.jsonl",
+  "segment_count": 307,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:34:30.510281+00:00",
+  "duration_seconds": 1816.8399658203125
+}

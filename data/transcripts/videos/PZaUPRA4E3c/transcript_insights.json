@@ -1,0 +1,88 @@
+{
+  "video_id": "PZaUPRA4E3c",
+  "language": "es",
+  "summary": "El video narra la vida y hazañas de Nigel Richards, considerado el mejor jugador de Scrabble del mundo, quien ha ganado múltiples campeonatos en inglés y ha hecho historia en el juego sin hablar los idiomas en los que compite. La narración combina humor, anécdotas y reflexiones sobre su proceso mental y su acercamiento poco convencional al juego.",
+  "main_topics": [
+    "Nigel Richards como jugador de Scrabble",
+    "Competitividad en Scrabble",
+    "Estilo de vida de Nigel",
+    "Memorization and strategy in Scrabble",
+    "Percepción pública de Nigel"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Nigel Richards",
+      "purpose": "Presentar al protagonista y su estatus en el mundo del Scrabble.",
+      "summary": "Se habla sobre la grandeza de Nigel en diversos idiomas del Scrabble, enfatizando que no habla esos idiomas."
+    },
+    {
+      "section": "Historia personal de Nigel",
+      "purpose": "Proporcionar contexto sobre la vida y los inicios de Nigel como jugador.",
+      "summary": "Desde su infancia en Nueva Zelanda hasta su descubrimiento del Scrabble."
+    },
+    {
+      "section": "Competencias y logros",
+      "purpose": "Detallar los récords y campeonatos ganados por Nigel.",
+      "summary": "Se mencionan sus victorias en campeonatos mundiales y su inigualable habilidad."
+    },
+    {
+      "section": "Mentalidad y estrategias",
+      "purpose": "Explicar el enfoque y la estrategia que usa Nigel en el juego.",
+      "summary": "Surge la importancia de la memoria y la estrategia más que el mero conocimiento de palabras."
+    },
+    {
+      "section": "Conclusiones y reflexiones",
+      "purpose": "Reflexionar sobre la percepción de Nigel en la cultura del Scrabble.",
+      "summary": "Se concluye con opiniones sobre la vida de Nigel fuera del deporte y su próximo desafío en español."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa intrigante",
+    "hook_text": "Él es Nigel Richards, una eminencia dentro del mundo del Scrabble...",
+    "why_it_works": "Capta el interés al presentar a un personaje extraordinario en un contexto inesperado, generando curiosidad sobre su historia."
+  },
+  "claims": [
+    {
+      "claim": "Nigel Richards es el mejor jugador de Scrabble del mundo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Nigel ha ganado múltiples campeonatos en idiomas que no habla.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La mayoría de los jugadores profesionales de Scrabble no saben el significado de las palabras que usan.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover el Scrabble como una actividad más accesible.",
+    "Incentivar a nuevos jugadores a participar en torneos.",
+    "Desarrollar recursos para aprender estrategias matemáticas aplicadas a Scrabble."
+  ],
+  "audience": "Aficionados al Scrabble y a la cultura de los juegos de mesa.",
+  "tone": "Informal y humorístico.",
+  "content_style": "Narrativa personal con anécdotas humorísticas.",
+  "retention_devices": [
+    "Anécdotas divertidas",
+    "Preguntas retóricas",
+    "Repetición de cifras impresionantes"
+  ],
+  "title_supporting_quotes": [
+    "Es un juego de matemáticas que usa letras.",
+    "Las palabras son cadenas de letras, posibilidades matemáticas."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre técnicas de memorización en juegos.",
+    "Desarrollar una serie sobre figuras icónicas en juegos de mesa."
+  ],
+  "risk_notes": [
+    "El uso de lenguaje potencialmente ofensivo puede alienar a ciertos espectadores.",
+    "El enfoque humorístico puede no resonar con todos los públicos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

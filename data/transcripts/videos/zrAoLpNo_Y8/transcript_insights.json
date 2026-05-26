@@ -1,0 +1,81 @@
+{
+  "video_id": "zrAoLpNo_Y8",
+  "language": "es",
+  "summary": "El video trata sobre cómo la atención humana es manipulada a través de estímulos diseñados para dirigir el comportamiento antes de que la racionalidad intervenga. Utiliza la metáfora de los pilotos de Fórmula 1 y esquiadores de élite para ilustrar cómo es vital enfocarse en lo que realmente importa y no en distracciones que pueden conducir a decisiones perjudiciales.",
+  "main_topics": [
+    "Manipulación de la atención",
+    "Psicología del comportamiento",
+    "Estrategias de enfoque",
+    "Impacto de las distracciones",
+    "Decisiones inconscientes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema principal sobre la atención y su manipulación.",
+      "summary": "Se hace una analogía con pilotos de Fórmula 1 y esquiadores para ilustrar cómo la atención influye en las decisiones."
+    },
+    {
+      "section": "Desarrollo del argumento",
+      "purpose": "Explicar cómo las distracciones están diseñadas para robar nuestra atención.",
+      "summary": "Se describe cómo notificaciones y algoritmos secuestran la atención humana, dirigido por miedos e inseguridades."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a los espectadores a reflexionar sobre sus decisiones.",
+      "summary": "Se plantea la idea que nuestras decisiones a menudo son inconscientes y se invita a ver el video completo para entender mejor."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Hacia dónde estás mirando tú cada día?",
+    "why_it_works": "Invita a la reflexión personal y promueve la curiosidad sobre el impacto del enfoque diario."
+  },
+  "claims": [
+    {
+      "claim": "La atención humana es manipulada por estímulos externos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La mayoría de las decisiones son inconscientes.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Entender estas manipulaciones es crucial para el control personal.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Pilotos de Fórmula 1",
+    "Esquiadores de élite"
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre las distracciones diarias.",
+    "Desarrollar un enfoque consciente en la toma de decisiones.",
+    "Identificar y minimizar las fuentes de manipulación en el entorno."
+  ],
+  "audience": "Personas interesadas en psicología y auto-mejoramiento.",
+  "tone": "Reflexivo y persuasivo.",
+  "content_style": "Educativo y provocativo.",
+  "retention_devices": [
+    "Historias personales",
+    "Analogías",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Tu atención dirige tu destino.",
+    "Si alguien más está hackeando tu atención, entonces alguien está dirigiendo tu vida."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre la manipulación de la atención.",
+    "Diseño de talleres sobre toma de decisiones conscientes."
+  ],
+  "risk_notes": [
+    "Posibilidad de incrementar la ansiedad sobre el control personal.",
+    "Requiere auto-reflexión que puede ser incómoda."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

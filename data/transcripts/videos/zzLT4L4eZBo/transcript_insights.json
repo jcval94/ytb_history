@@ -1,0 +1,91 @@
+{
+  "video_id": "zzLT4L4eZBo",
+  "language": "es",
+  "summary": "La historia de Tommy Carmichael, quien se convirtió en un experto estafador de máquinas tragamonedas en Las Vegas. A pesar de sus inicios humildes y problemas personales, desarrolló dispositivos para engañar a los casinos, ganando miles de dólares hasta ser finalmente capturado por las autoridades. Al final, fue condenado, se declaró culpable y fue puesto en el libro negro de Nevada, encontrando un final trágico en 2019.",
+  "main_topics": [
+    "Estafas en casinos",
+    "Desarrollo de dispositivos de trampa",
+    "Vida de Tommy Carmichael",
+    "Consecuencias legales",
+    "Evolución de las máquinas tragamonedas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de Tommy",
+      "purpose": "Presentar al personaje principal y su contexto",
+      "summary": "Tommy Carmichael se encuentra en Las Vegas en el Día de la Independencia de 1985, donde es arrestado por hacer trampa en una máquina tragamonedas."
+    },
+    {
+      "section": "Orígenes de Tommy",
+      "purpose": "Explorar su pasado y motivaciones",
+      "summary": "Tommy era un hombre normal con aspiraciones fracasadas en su negocio de reparación de televisores, enfrentando una crisis personal."
+    },
+    {
+      "section": "El primer engaño",
+      "purpose": "Mostrar cómo comienza a hacer trampa",
+      "summary": "Influenciado por un amigo, Tommy descubre un dispositivo que le permite hacer trampa en tragamonedas."
+    },
+    {
+      "section": "Crecimiento de la estafa",
+      "purpose": "Destacar su éxito y los riesgos",
+      "summary": "Tommy gana miles de dólares, establece un equipo de estafadores, y disfruta de una vida de lujo."
+    },
+    {
+      "section": "Caída de Tommy",
+      "purpose": "Describir su arresto y consecuencias",
+      "summary": "Finalmente, es atrapado por las autoridades y enfrentado con los cambios tecnológicos en casinos."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflejar el desenlace de su vida",
+      "summary": "A pesar de sus esfuerzos por reformarse, Carmichael terminó viviendo en el anonimato y falleció en 2019."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativo personal",
+    "hook_text": "Tommy Carmichael está viviendo el pic de la experiencia humana.",
+    "why_it_works": "Engancha al espectador al presentar una experiencia vibrante en un contexto de celebración y riesgo."
+  },
+  "claims": [
+    {
+      "claim": "Tommy usaba dispositivos para hacer trampa en máquinas tragamonedas.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Los casinos perdieron millones debido a las estafas de Tommy.",
+      "support_level": "implicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Desarrollo del dispositivo para engañar a las máquinas.",
+    "Describiendo sus lujosas fiestas y estilo de vida."
+  ],
+  "actionable_ideas": [
+    "Analizar el impacto de la tecnología en el juego.",
+    "Revisar la ética de las prácticas comerciales en la industria del juego.",
+    "Examinar las medidas de seguridad y cómo evolucionan en respuesta a las estafas."
+  ],
+  "audience": "Interesados en historias de crimen y casino.",
+  "tone": "Narrativo y reflexivo",
+  "content_style": "Estilo de documentario con elementos humorísticos.",
+  "retention_devices": [
+    "Uso de anécdotas personales.",
+    "Narración emocionante de eventos.",
+    "Desarrollo de personajes con profundidad emocional."
+  ],
+  "title_supporting_quotes": [
+    "‘No hay mejor manera de celebrar el 4 de julio en Las Vegas que estar en un Denny's jugando una máquina tragamonedas.’",
+    "‘Tommy Carmichael era una persona bastante normal.’"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre estafas en casinos.",
+    "Desarrollar un podcast sobre historias de crimen real y tecnología."
+  ],
+  "risk_notes": [
+    "Relatar actividades ilegales puede generar críticas.",
+    "El enfoque en un criminal puede percibirse como glamorizar el crimen."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

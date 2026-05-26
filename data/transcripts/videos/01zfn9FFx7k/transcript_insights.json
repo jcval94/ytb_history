@@ -1,0 +1,79 @@
+{
+  "video_id": "01zfn9FFx7k",
+  "language": "es",
+  "summary": "El video narra la historia de un portero cuyo inicio en el fútbol fue difícil. A pesar de sus desafíos y préstamos en diversos equipos, se visualizó jugando en el siguiente Mundial y, con confianza en su talento, logró convertirse en el mejor arquero del torneo y campeón del mundo.",
+  "main_topics": [
+    "Superación personal",
+    "Visualización en el deporte",
+    "Fútbol y carrera profesional",
+    "Éxito y talento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la situación del jugador",
+      "purpose": "Presentar las dificultades iniciales del protagonista.",
+      "summary": "El jugador ha tenido una carrera difícil con muchos préstamos y falta de oportunidades."
+    },
+    {
+      "section": "Momento en el Mundial 2018",
+      "purpose": "Mostrar el punto de inflexión en su carrera.",
+      "summary": "El jugador, al estar en el Mundial como espectador, expresa su deseo de ser el arquero en el siguiente Mundial."
+    },
+    {
+      "section": "Retorno al Arsenal y desarrollo de su carrera",
+      "purpose": "Narrar el camino hacia el éxito del protagonista.",
+      "summary": "Después de regresar al Arsenal, el jugador muestra su talento y se convierte en el arquero del Aston Villa."
+    },
+    {
+      "section": "Logro y reconocimiento",
+      "purpose": "Resaltar el éxito del jugador.",
+      "summary": "El arquero se convierte en el mejor arquero del Mundial y campeón."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Inspiracional",
+    "hook_text": "El próximo mundial atajo yo.",
+    "why_it_works": "La declaración audaz y la visualización del éxito inspiran y muestran la determinación del protagonista."
+  },
+  "claims": [
+    {
+      "claim": "El éxito se basa en la visualización y la confianza personal.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las oportunidades en la carrera pueden cambiar drásticamente con esfuerzo y perseverancia.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [
+    "El jugador logró visualizar su éxito y trabajó para alcanzarlo.",
+    "Pasó de ser un portero prestado a campeón del mundo."
+  ],
+  "actionable_ideas": [
+    "Visualizar metas y objetivos en la vida.",
+    "Mantener la confianza en las propias habilidades a pesar de los fracasos."
+  ],
+  "audience": "Aficionados al fútbol y personas interesadas en historias de superación.",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Historias de éxito",
+    "Desarrollo emocional del protagonista",
+    "Tensión dramática sobre el futuro incierto"
+  ],
+  "title_supporting_quotes": [
+    "El próximo mundial atajo yo.",
+    "Tenía cuatro años para hacer lo que tengo que hacer."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la trayectoria de futbolistas exitosos.",
+    "Usar la historia como ejemplo en charlas motivacionales."
+  ],
+  "risk_notes": [
+    "Posible idealización de la perseverancia sin considerar otros factores como oportunidades.",
+    "Riesgo de que la narrativa pueda parecer inalcanzable para algunos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

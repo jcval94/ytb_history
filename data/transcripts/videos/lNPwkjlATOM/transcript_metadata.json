@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 1074,
   "text_sha256": "1029cf7c45e430a4f118265f391baec648e055d001a60634dd496c15e67b770e",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\lNPwkjlATOM\\transcript_segments.jsonl",
+  "segment_count": 20,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:56:29.708795+00:00",
+  "duration_seconds": 49.470001220703125
 }

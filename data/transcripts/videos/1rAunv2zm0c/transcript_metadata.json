@@ -1,0 +1,20 @@
+{
+  "video_id": "1rAunv2zm0c",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Psicología del Efecto Espectador: La verdad que los medios ocultaron | Caso Kitty Genovese (2/2)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\1rAunv2zm0c.mp3",
+  "transcribed_at": "2026-05-26T04:02:06.003652+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8823,
+  "text_sha256": "d9a71a8804bf662840d2320e02105a2b4cf05d7ea05f334fb404e85611624146",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\1rAunv2zm0c\\transcript_segments.jsonl",
+  "segment_count": 242,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:31:39.716645+00:00",
+  "duration_seconds": 1354.6700439453125
+}

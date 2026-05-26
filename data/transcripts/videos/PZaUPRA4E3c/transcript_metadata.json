@@ -1,0 +1,20 @@
+{
+  "video_id": "PZaUPRA4E3c",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "El Campeón De Scrabble En Español NO Habla Español",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\PZaUPRA4E3c.mp3",
+  "transcribed_at": "2026-05-26T04:06:26.651877+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 20179,
+  "text_sha256": "9c99c517d646477dfffcb66c25c47bca57bbdf0cc622ced2cbbec8574eb71393",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\PZaUPRA4E3c\\transcript_segments.jsonl",
+  "segment_count": 355,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:47:29.415090+00:00",
+  "duration_seconds": 1445.47998046875
+}

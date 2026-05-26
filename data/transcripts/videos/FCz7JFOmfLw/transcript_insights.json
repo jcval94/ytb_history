@@ -1,0 +1,97 @@
+{
+  "video_id": "FCz7JFOmfLw",
+  "language": "es",
+  "summary": "El video explora las advertencias de Ray Bradbury en 'Fahrenheit 451' sobre el peligro de la distracción y la falta de pensamiento crítico en la sociedad moderna, contrastando su obra con las visiones de Huxley y Orwell.",
+  "main_topics": [
+    "Censura",
+    "Distracción en la sociedad moderna",
+    "Libros y educación",
+    "Libertad de pensamiento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a las distopías",
+      "purpose": "Presentar las visiones de Huxley, Orwell y Bradbury",
+      "summary": "Se introducen las obras de Huxley y Orwell como ejemplos de distopías, y se plantea a Bradbury como un autor que muestra un peligro más sutil."
+    },
+    {
+      "section": "Fahrenheit 451",
+      "purpose": "Explicar el trasfondo y la crítica de la novela",
+      "summary": "Se describe la obra de Bradbury, enfatizando que la sociedad está más dañada por la falta de lectura que por represiones externas."
+    },
+    {
+      "section": "Historia de Bradbury y su obra",
+      "purpose": "Contextualizar la creación de Fahrenheit 451",
+      "summary": "Se narra cómo y dónde Bradbury escribió la novela, sus experiencias personales y el contexto social de su época."
+    },
+    {
+      "section": "Temas clave en Fahrenheit 451",
+      "purpose": "Analizar las lecciones de la novela",
+      "summary": "Se identifican las tres ideas principales de la novela sobre la censura, la distracción y el impacto del entretenimiento en el pensamiento."
+    },
+    {
+      "section": "Paralelismos con la actualidad",
+      "purpose": "Conectar los temas de la novela con la situación actual",
+      "summary": "Se establece un paralelismo entre los temas de la novela y la realidad actual de distracción y falta de comprensión lectora."
+    },
+    {
+      "section": "Cierre reflexivo",
+      "purpose": "Invitar a la reflexión sobre el futuro",
+      "summary": "Se plantea una pregunta inquietante sobre si la sociedad contemporánea está alimentando su propia hoguera de distracción."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Introducción provocadora",
+    "hook_text": "Aldous Huxley nos advirtió en un mundo feliz de los peligros de una sociedad anestesiada por el placer.",
+    "why_it_works": "Atrapa la atención del espectador al hacer referencia a conceptos conocidos de distopías y resaltar el peligro de la complacencia en la sociedad."
+  },
+  "claims": [
+    {
+      "claim": "La falta de lectura es una forma de censura más peligrosa que la represión directa.",
+      "support_level": "explicit",
+      "risk": "mediocre"
+    },
+    {
+      "claim": "La distracción a través de medios digitales está erosionando la capacidad de pensar críticamente.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La sociedad moderna elige desconectarse de lo profundo a lo superficial.",
+      "support_level": "explicit",
+      "risk": "alta"
+    }
+  ],
+  "examples": [
+    "Rechazos de editoriales a Fahrenheit 451",
+    "Estadísticas sobre comprensión lectora y distracción moderna"
+  ],
+  "actionable_ideas": [
+    "Fomentar la lectura crítica en la educación",
+    "Realizar actividades sin distracciones como caminatas o conversaciones profundas",
+    "Promover el acceso a libros y discusión sobre su contenido"
+  ],
+  "audience": "Personas interesadas en literatura, educación y temas sociales",
+  "tone": "Reflexivo e informativo",
+  "content_style": "Analítico y narrativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Conexiones con la actualidad",
+    "Uso de anécdotas personales"
+  ],
+  "title_supporting_quotes": [
+    "No escribí sobre el futuro, escribí para evitarlo.",
+    "El incendio comienza cuando la gente deja de leer."
+  ],
+  "creative_reuse_opportunities": [
+    "Realizar un análisis literario de Fahrenheit 451",
+    "Crear contenidos sobre la evolución de la educación y la lectura",
+    "Elaborar material educativo basado en las lecciones de la novela"
+  ],
+  "risk_notes": [
+    "El contenido puede ser percibido como alarmista",
+    "La comparación con el presente puede desatar reacciones",
+    "Puede generar resistencia en quienes no ven relevancia en el tema"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

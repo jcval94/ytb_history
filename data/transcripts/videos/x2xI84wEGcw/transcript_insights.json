@@ -1,0 +1,100 @@
+{
+  "video_id": "x2xI84wEGcw",
+  "language": "es",
+  "summary": "El video analiza la creciente polarización en la política moderna, explorando cómo la manipulación emocional ha transformado el debate público y facilitado la división en la sociedad. A través de ejemplos históricos y contemporáneos, se muestra cómo la polarización beneficia a quienes buscan poder al crear enemigos y transformar el diálogo en confrontación.",
+  "main_topics": [
+    "Polarización política",
+    "Manipulación emocional",
+    "Historia de la propaganda",
+    "División social",
+    "Impacto en la democracia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la polarización",
+      "purpose": "Presentar el tema y las preguntas centrales.",
+      "summary": "Introducción a la polarización en debates familiares y políticos, planteando preguntas sobre su origen y consecuencias."
+    },
+    {
+      "section": "Historia del control de masas",
+      "purpose": "Explicar cómo se ha utilizado la manipulación en la política.",
+      "summary": "Descripción de cómo la psicología de las masas ha sido utilizada desde Gustave Lebon hasta el Comité Creel para manipular la opinión pública."
+    },
+    {
+      "section": "Impacto de la propaganda en guerras",
+      "purpose": "Demostrar el uso de la propaganda durante conflictos.",
+      "summary": "Ejemplos del uso de la propaganda para movilizar a la sociedad americana durante la Primera Guerra Mundial."
+    },
+    {
+      "section": "Desarrollo de la propaganda como industria",
+      "purpose": "Mostrar cómo la propaganda se ha convertido en un negocio.",
+      "summary": "Presentación de Edward Bernays y su influencia en la propaganda moderna, así como su uso en la política."
+    },
+    {
+      "section": "Polarización en democracias modernas",
+      "purpose": "Examinar ejemplos contemporáneos.",
+      "summary": "Análisis de cómo diferentes líderes políticos han utilizado la polarización para ganar elecciones y mantener el poder."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre los efectos de la polarización.",
+      "summary": "Discusión sobre las consecuencias de la polarización en la sociedad moderna y la importancia de pensar críticamente."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta provocativa",
+    "hook_text": "¿Por qué vivimos tan enfrentados?",
+    "why_it_works": "Este tipo de pregunta invita a la reflexión y la curiosidad, animando al espectador a involucrarse en el contenido para encontrar respuestas."
+  },
+  "claims": [
+    {
+      "claim": "La polarización política ha aumentado en la sociedad moderna.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La manipulación emocional es una estrategia utilizada por políticos para ganar poder.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La historia ha demostrado que unir a la sociedad no siempre es el objetivo de los líderes políticos.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Uso de la propaganda en la Primera Guerra Mundial",
+    "Estrategias políticas de Richard Nixon",
+    "Acciones de François Mitterrand en Francia"
+  ],
+  "actionable_ideas": [
+    "Fomentar el diálogo abierto en espacios familiares y comunitarios.",
+    "Investigar y cuestionar la información consumida.",
+    "Identificar y desafiar las divisiones impuestas en la política."
+  ],
+  "audience": "Interesados en política y comunicación, con un enfoque en la psicología social.",
+  "tone": "informativo y reflexivo",
+  "content_style": "narrativo y analítico",
+  "retention_devices": [
+    "Ejemplos históricos",
+    "Estadísticas impactantes",
+    "Cuestionamientos directos"
+  ],
+  "title_supporting_quotes": [
+    "La manipulación consciente e inteligente de los hábitos y opiniones de las masas es un elemento de importancia en la sociedad democrática.",
+    "Un pueblo dividido, no.",
+    "La polarización tiene un precio y no es metafórico."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre polarización política.",
+    "Charlas o foros de discusión sobre manipulación en los medios.",
+    "Cursos sobre psicología social aplicada a la política."
+  ],
+  "risk_notes": [
+    "La polarización puede llevar a la radicalización de opiniones.",
+    "Manipulación mediática puede erosionar la confianza en la democracia.",
+    "Relaciones personales pueden verse afectadas por diferencias políticas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "TK-u4W0D62k",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "El FIN del Trabajo: La Gran Desvinculación",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\TK-u4W0D62k.mp3",
+  "transcribed_at": "2026-05-26T03:55:47.882559+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 25021,
+  "text_sha256": "0cb6ed1868b0f40fb87f3efe5ed3af72236daa7a435cef711f9ae2d7f5ea6f64",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\TK-u4W0D62k\\transcript_segments.jsonl",
+  "segment_count": 143,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T04:49:43.415463+00:00",
+  "duration_seconds": 1567.989990234375
+}
