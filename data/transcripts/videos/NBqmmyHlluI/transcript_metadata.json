@@ -1,0 +1,20 @@
+{
+  "video_id": "NBqmmyHlluI",
+  "channel_id": "UCPdaxSov0mgwh77JvjQO2jQ",
+  "channel_name": "Man Carrying Thing",
+  "title": "those graduation speakers getting booed right now",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NBqmmyHlluI.mp3",
+  "transcribed_at": "2026-05-26T15:06:25.093598+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1344,
+  "text_sha256": "4fff340a9c731ac14d1da708c8fdfee8f8fde44198d120c5d02b59295b6ce568",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\NBqmmyHlluI\\transcript_segments.jsonl",
+  "segment_count": 27,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T15:08:37.543832+00:00",
+  "duration_seconds": 77.8499984741211
+}

@@ -1,0 +1,72 @@
+{
+  "video_id": "AKQF9NTu_J8",
+  "language": "spanish",
+  "summary": "La gobernadora del estado de Chihuahua se prepara para comparecer ante la Fiscalía General de la República debido a un citatorio, expresando su descontento por las malas noticias que afectan a su estado.",
+  "main_topics": [
+    "citatorio ante la Fiscalía General",
+    "institucionalidad",
+    "governanza en Chihuahua"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Bienvenida y presentación",
+      "purpose": "Introducir el tema y a los involucrados.",
+      "summary": "La gobernadora saluda y establece que está recibiendo una noticia importante."
+    },
+    {
+      "section": "Expresión de descontento",
+      "purpose": "Manifestar su desacuerdo con la situación.",
+      "summary": "La gobernadora expresa tristeza por recibir malas noticias que impactan negativamente a Chihuahua."
+    },
+    {
+      "section": "Detalles del citatorio",
+      "purpose": "Informar sobre el citatorio de comparecencia.",
+      "summary": "Se menciona la fecha y el lugar de la comparecencia ante la Fiscalía General de la República."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "controversial statement",
+    "hook_text": "lamento, con todo respeto, que sean ustedes los portadores de estas malas noticias",
+    "why_it_works": "Captura la atención al introducir un conflicto emocional y la idea de injusticia hacia la gobernadora y su estado."
+  },
+  "claims": [
+    {
+      "claim": "La gobernadora debe comparecer ante la Fiscalía.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El citatorio representa un daño a la institucionalidad.",
+      "support_level": "implicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Daño a la institucionalidad en Chihuahua",
+    "Comparación con otros gobernadores"
+  ],
+  "actionable_ideas": [
+    "Realizar un análisis sobre los antecedentes de citatorios similares en otros estados.",
+    "Explorar la percepción pública sobre el impacto de estos citatorios en la gobernanza local."
+  ],
+  "audience": "Ciudadanos de Chihuahua y seguidores de la política local.",
+  "tone": "serio y reflexivo",
+  "content_style": "informativo",
+  "retention_devices": [
+    "mencionar la fecha del citatorio",
+    "hicieron preguntas retóricas sobre la institucionalidad"
+  ],
+  "title_supporting_quotes": [
+    "lo único es que lamento, con todo respeto, que sean ustedes los portadores de estas malas noticias",
+    "la gobernadora del estado de Chihuahua tendrá que comparecer ante la Fiscalía"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un artículo de análisis sobre las implicaciones de la comparecencia de la gobernadora.",
+    "Producción de un podcast discutiendo la respuesta ciudadana a estas noticias."
+  ],
+  "risk_notes": [
+    "El tema puede polarizar la opinión pública.",
+    "La gobernadora podría enfrentar presiones políticas adicionales después de la comparecencia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

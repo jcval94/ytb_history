@@ -1,0 +1,20 @@
+{
+  "video_id": "34618ZnE5HE",
+  "channel_id": "UCq6VFHwMzcMXbuKyG7SQYIg",
+  "channel_name": "penguinz0",
+  "title": "The Amazing Digital Circus Situation is Crazy",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\34618ZnE5HE.mp3",
+  "transcribed_at": "2026-05-26T15:06:18.436447+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8908,
+  "text_sha256": "0cc43c2b2dc12853af4c1a9ce686e42aaf4cc280d71507f4e366a08ba55fffa6",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\34618ZnE5HE\\transcript_segments.jsonl",
+  "segment_count": 238,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T15:08:10.721789+00:00",
+  "duration_seconds": 938.010009765625
+}

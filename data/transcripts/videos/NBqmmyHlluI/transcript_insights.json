@@ -1,0 +1,87 @@
+{
+  "video_id": "NBqmmyHlluI",
+  "language": "unknown",
+  "summary": "A speaker addresses the graduating Class of 2026, discussing the opportunities and challenges presented by artificial intelligence, while highlighting the contrast between past and present entrepreneurial landscapes.",
+  "main_topics": [
+    "Opportunities for graduates",
+    "Impact of artificial intelligence",
+    "Changing job market",
+    "Perception of college education"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "To congratulate the graduates and set the tone for the speech.",
+      "summary": "The speaker celebrates the Class of 2026 and introduces the theme of opportunity."
+    },
+    {
+      "section": "Comparison of past and present",
+      "purpose": "To illustrate how entrepreneurship has evolved.",
+      "summary": "The speaker contrasts their experiences with technology to the current ease of starting a business."
+    },
+    {
+      "section": "AI Commentary",
+      "purpose": "To highlight the implications of AI on jobs and education.",
+      "summary": "The speaker discusses how AI is changing the landscape for entrepreneurs and the workforce."
+    },
+    {
+      "section": "Audience Interaction",
+      "purpose": "To engage with the audience's reactions.",
+      "summary": "The speaker acknowledges audience discontent about AI's impact."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "To emphasize the inevitability of change and reflect on the future.",
+      "summary": "Concludes with a reflection on the potential obsolescence of traditional education."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anecdote",
+    "hook_text": "When I was your age, things were different.",
+    "why_it_works": "It establishes a relatable context that contrasts the past with the present."
+  },
+  "claims": [
+    {
+      "claim": "AI will create a frictionless paradise for entrepreneurs.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "College education will become useless.",
+      "support_level": "implicit",
+      "risk": "high"
+    },
+    {
+      "claim": "AI will eventually do every job.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Embrace AI tools to enhance your business capabilities.",
+    "Adapt to the changing job market by acquiring new skills.",
+    "Reevaluate the value of traditional education in light of AI advancements."
+  ],
+  "audience": "Graduating students of 2026",
+  "tone": "Conversational and challenging",
+  "content_style": "Informal and engaging",
+  "retention_devices": [
+    "Humor",
+    "Relatable anecdotes",
+    "Direct audience engagement"
+  ],
+  "title_supporting_quotes": [
+    "You can start a business with the snap of your fingers.",
+    "Your dreams of upward mobility have perished."
+  ],
+  "creative_reuse_opportunities": [
+    "Create a video clip discussing the role of AI in entrepreneurship.",
+    "Develop a blog post addressing education's value in the AI era."
+  ],
+  "risk_notes": [
+    "The speaker's perspective may provoke strong reactions from the audience.",
+    "Claims about the future of jobs and education could be controversial."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

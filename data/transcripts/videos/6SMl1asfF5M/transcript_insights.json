@@ -1,0 +1,67 @@
+{
+  "video_id": "6SMl1asfF5M",
+  "language": "es",
+  "summary": "El video discute la falta del botón para el piso 13 en ascensores, explicando que esto se debe a la triscaidecafobia, el miedo al número 13, asociado a la mala suerte en varios países.",
+  "main_topics": [
+    "Triscaidecafobia",
+    "Número 13",
+    "Supersticiones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el fenómeno observado en los ascensores",
+      "summary": "Los botones de los ascensores pasan del 12 al 14."
+    },
+    {
+      "section": "Explicación de la ausencia del piso 13",
+      "purpose": "Informar sobre la triscaidecafobia",
+      "summary": "El número 13 es evitado debido a las creencias de mala suerte."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Curiosidad",
+    "hook_text": "Los botones pasaban del 12 al 14.",
+    "why_it_works": "Despierta el interés del espectador sobre una anomalía común en la vida cotidiana."
+  },
+  "claims": [
+    {
+      "claim": "El número 13 está asociado a la mala suerte en algunos países.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La triscaidecafobia influye en decisiones de diseño en edificios.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "En edificios, se omite el piso 13 en los ascensores.",
+    "Propietarios evitan usar el número 13 en sus planes."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre supersticiones culturales.",
+    "Reflexionar sobre la influencia de creencias en decisiones cotidianas."
+  ],
+  "audience": "Personas interesadas en curiosidades y supersticiones.",
+  "tone": "Informativo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Uso de una anécdota",
+    "Preguntas que estimulan la curiosidad"
+  ],
+  "title_supporting_quotes": [
+    "Los botones pasaban del 12 al 14.",
+    "La triscaidecafobia es el miedo al número 13."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre otros números supersticiosos.",
+    "Desarrollar una serie sobre creencias culturales."
+  ],
+  "risk_notes": [
+    "Algunas personas pueden ver esto como trivial.",
+    "Importancia de tratar supersticiones con respeto."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

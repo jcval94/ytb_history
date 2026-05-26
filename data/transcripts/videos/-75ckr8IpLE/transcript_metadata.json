@@ -1,0 +1,20 @@
+{
+  "video_id": "-75ckr8IpLE",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Rubio says ‘significant progress’ made in US-Iran negotiations | AJ#shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-75ckr8IpLE.mp3",
+  "transcribed_at": "2026-05-26T15:05:22.719496+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1455,
+  "text_sha256": "fe21070579657cbd99b8776cfdc97437db41b2dd6fdcf59cd2847b32cdd4a6f5",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-75ckr8IpLE\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T15:07:07.341522+00:00",
+  "duration_seconds": 86.61000061035156
+}

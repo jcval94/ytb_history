@@ -1,0 +1,14 @@
+{
+  "video_id": "vifpBK5WI4E",
+  "channel_id": "UC1yNl2E66ZzKApQdRuTQ4tw",
+  "channel_name": "Sabine Hossenfelder",
+  "title": "I Looked at the New Cold Fusion Breakthroughs. It's Complicated.",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\vifpBK5WI4E.mp3",
+  "transcribed_at": "2026-05-26T15:06:50.754299+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 6551,
+  "text_sha256": "038133c0439c17dc7e877b6544ae109af8fbf64dff7e3525b50f3b23503406db",
+  "repo_schema_version": "transcript_metadata_v1"
+}

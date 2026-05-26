@@ -1,0 +1,20 @@
+{
+  "video_id": "-X3X4mpNx04",
+  "channel_id": "UCTv-XvfzLX3i4IGWAm4sbmA",
+  "channel_name": "LALIGA EA SPORTS",
+  "title": "REAL MADRID 4 - 2 ATHLETIC CLUB | RESUMEN LALIGA EA SPORTS",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-X3X4mpNx04.mp3",
+  "transcribed_at": "2026-05-26T15:05:14.514846+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1,
+  "text_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-X3X4mpNx04\\transcript_segments.jsonl",
+  "segment_count": 3,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T15:07:23.689499+00:00",
+  "duration_seconds": 170.30999755859375
+}

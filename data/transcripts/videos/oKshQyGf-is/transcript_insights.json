@@ -1,0 +1,97 @@
+{
+  "video_id": "oKshQyGf-is",
+  "language": "es",
+  "summary": "El video presenta cinco negocios rentables con baja inversión, destacando que las oportunidades están en satisfacer necesidades diarias de las personas. Los ejemplos incluyen un carrito de comida rápida, repostería desde casa, lavado de autos a domicilio, venta de agua purificada y renta de herramientas o mobiliario. El mensaje central es ver oportunidades en lo cotidiano.",
+  "main_topics": [
+    "Negocios rentables",
+    "Baja inversión",
+    "Necesidades del consumidor",
+    "Oportunidades de negocio",
+    "Flexibilidad y comodidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los negocios rentables",
+      "purpose": "Introducir la idea de que no se necesita una gran inversión para iniciar un negocio.",
+      "summary": "Contrarresta la creencia de que solo los negocios grandes son rentables."
+    },
+    {
+      "section": "Lista de negocios",
+      "purpose": "Presentar ejemplos concretos de negocios que requieren poca inversión.",
+      "summary": "Explica cinco modelos de negocio viables y accesibles para comenzar a generar ingresos."
+    },
+    {
+      "section": "Conclusión y reflexión",
+      "purpose": "Invitar al espectador a considerar qué negocio podría empezar.",
+      "summary": "Motiva a la audiencia a reflexionar sobre sus opciones y eliminar excusas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿y si te dijera que hay negocios que pueden generarte dinero todos los días?",
+    "why_it_works": "Genera curiosidad al desafiar la creencia común de que se necesita mucho capital para iniciar un negocio."
+  },
+  "claims": [
+    {
+      "claim": "Hay negocios que pueden generar dinero diariamente sin gran inversión.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La comida rápida en carrito es rentable por la necesidad inmediata de los consumidores.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El lavado de autos a domicilio ofrece comodidad y está dispuesto a pagar más por eso.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El negocio del agua purificada depende del volumen, no de una sola venta.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La renta de herramientas o mobiliario permite generar ingresos repetidos de un solo activo.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Food trucks",
+    "Repostería desde casa",
+    "Lavado de autos a domicilio",
+    "Agua purificada",
+    "Renta de herramientas"
+  ],
+  "actionable_ideas": [
+    "Investigar sobre permisos necesarios para iniciar un food truck.",
+    "Ofrecer productos personalizados en repostería.",
+    "Establecer un servicio a domicilio para lavado de autos.",
+    "Buscar proveedores de agua purificada.",
+    "Crear un catálogo de herramientas para rentar."
+  ],
+  "audience": "Emprendedores potenciales",
+  "tone": "Motivacional y práctico",
+  "content_style": "Informativo y directo",
+  "retention_devices": [
+    "Preguntas abiertas",
+    "Ejemplos concretos",
+    "Desafíos"
+  ],
+  "title_supporting_quotes": [
+    "El dinero está en el volumen, no en una sola venta.",
+    "Estás vendiendo momentos, cumpleaños, celebraciones."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un blog sobre negocios con baja inversión.",
+    "Desarrollar una serie de videos sobre cada negocio mencionado.",
+    "Escribir un ebook detallando cómo iniciar estos negocios."
+  ],
+  "risk_notes": [
+    "Los negocios pueden requerir licencias y permisos específicos.",
+    "La competencia puede ser intensa en ciertos sectores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

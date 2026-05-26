@@ -1,0 +1,71 @@
+{
+  "video_id": "blesyDX6uTY",
+  "language": "es",
+  "summary": "El hablante expresa indignación por la falta de acción ante el secuestro de ciudadanos europeos por parte de Israel, comparando la situación con lo que harían otros países como Irán o Rusia.",
+  "main_topics": [
+    "indignación por la inacción",
+    "derechos humanos",
+    "comparación entre países",
+    "responsabilidad europea"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y expresar indignación",
+      "summary": "El hablante plantea una serie de preguntas retóricas acerca de la responsabilidad ante el secuestro de ciudadanos europeos."
+    },
+    {
+      "section": "Comparación",
+      "purpose": "Comparar la reacción con otros países",
+      "summary": "Se plantea cómo reaccionarían las autoridades si el agresor fuese Irán o Rusia."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Demandar acción y responsabilidad",
+      "summary": "Se exige disculpas y se critica fuertemente la inacción."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "retórica emocional",
+    "hook_text": "¿No se le cae a usted la cara de vergüenza?",
+    "why_it_works": "Invita al espectador a reflexionar sobre su propia moralidad y responsabilidad."
+  },
+  "claims": [
+    {
+      "claim": "Israel debe ser responsabilizado por el secuestro de ciudadanos europeos.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La inacción de Europa es condenable.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Aumentar la presión sobre gobiernos europeos para actuar.",
+    "Crear campañas de concienciación sobre derechos humanos."
+  ],
+  "audience": "ciudadanos interesados en derechos humanos y política internacional",
+  "tone": "indignado",
+  "content_style": "emocional y directo",
+  "retention_devices": [
+    "preguntas retóricas",
+    "apelos a la vergüenza moral",
+    "insinuaciones sobre complicidad"
+  ],
+  "title_supporting_quotes": [
+    "Exijo disculpas por...",
+    "¿Qué haría usted si fuese Irán?"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre derechos humanos en conflictos internacionales.",
+    "Usar extractos en documentales sobre la inacción política."
+  ],
+  "risk_notes": [
+    "El tono confrontacional puede alienar a algunos espectadores.",
+    "La comparación con otros países puede generar debates polarizados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

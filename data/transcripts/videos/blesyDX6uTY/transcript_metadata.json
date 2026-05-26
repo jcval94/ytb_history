@@ -1,0 +1,20 @@
+{
+  "video_id": "blesyDX6uTY",
+  "channel_id": "UCS0lmlVIYVz2qeWlZ_ynIWg",
+  "channel_name": "AJ+ Español",
+  "title": "\"Vergüenza para usted\"",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\blesyDX6uTY.mp3",
+  "transcribed_at": "2026-05-26T15:06:32.466768+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 408,
+  "text_sha256": "bd8f8ba974d337abc81356876e3703e167606fc345045459e4b3117a5735530d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\blesyDX6uTY\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T15:09:02.577632+00:00",
+  "duration_seconds": 67.7300033569336
+}
