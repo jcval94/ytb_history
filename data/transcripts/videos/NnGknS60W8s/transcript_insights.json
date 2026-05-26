@@ -1,0 +1,69 @@
+{
+  "video_id": "NnGknS60W8s",
+  "language": "es",
+  "summary": "El video aborda la importancia de estar solo para el desarrollo personal, argumentando que el aislamiento es una etapa necesaria para convertirse en la mejor versión de uno mismo.",
+  "main_topics": [
+    "Aislamiento",
+    "Desarrollo Personal",
+    "Soledad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la soledad",
+      "summary": "Introducción a la idea de que estar solo es beneficioso."
+    },
+    {
+      "section": "Beneficios de la Soledad",
+      "purpose": "Argumentar por qué el aislamiento es positivo",
+      "summary": "El aislamiento es vital para el desarrollo y crecimiento personal."
+    },
+    {
+      "section": "Consecuencias de Evitar la Soledad",
+      "purpose": "Reflexionar sobre cómo la distracción perjudica",
+      "summary": "Distracciones como redes sociales no ayudan al crecimiento personal."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Esta podría ser la última vez que estés solo en tu vida.",
+    "why_it_works": "Genera curiosidad y reflexión sobre la soledad como una oportunidad única."
+  },
+  "claims": [
+    {
+      "claim": "Estar solo es vital para el desarrollo personal.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Distracciones perjudican a largo plazo.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Dedica tiempo a la reflexión personal.",
+    "Evita distracciones innecesarias.",
+    "Acepta y abraza el aislamiento temporal."
+  ],
+  "audience": "Personas interesadas en el crecimiento personal",
+  "tone": "Reflexivo",
+  "content_style": "Motivacional",
+  "retention_devices": [
+    "Frases impactantes",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "\"Es probablemente el periodo más importante de tu vida.\"",
+    "\"Si quieres ser la mejor versión de ti mismo, tienes que pasar por una etapa de estar solo.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre desarrollo personal",
+    "Podcasts sobre la soledad"
+  ],
+  "risk_notes": [
+    "La soledad puede ser incómoda pero necesaria."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

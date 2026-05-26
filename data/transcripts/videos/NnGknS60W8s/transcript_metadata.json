@@ -1,0 +1,20 @@
+{
+  "video_id": "NnGknS60W8s",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Me cambió la vida cuando Jaime Higuera dijo esto #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NnGknS60W8s.mp3",
+  "transcribed_at": "2026-05-26T03:37:50.681110+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 781,
+  "text_sha256": "1df45861656e98f258bd2d5ad846225abb3ffe706af880dd5a5f05ff8caa8922",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\NnGknS60W8s\\transcript_segments.jsonl",
+  "segment_count": 9,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T03:38:53.015629+00:00",
+  "duration_seconds": 40.86000061035156
+}

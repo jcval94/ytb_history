@@ -1,0 +1,91 @@
+{
+  "video_id": "sny6zdDsQSE",
+  "language": "unknown",
+  "summary": "The video discusses the negotiations between the U.S. and Iran regarding a potential deal to end ongoing conflicts, focusing on key issues and recent developments including a shooting incident at the White House.",
+  "main_topics": [
+    "U.S.-Iran negotiations",
+    "Strait of Hormuz",
+    "Middle East tensions",
+    "Recent shooting at the White House",
+    "Political implications"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Introduce the topic of U.S.-Iran negotiations and recent events.",
+      "summary": "Trump mentions that a potential deal with Iran is largely negotiated but still has unresolved issues."
+    },
+    {
+      "section": "Iran's Stance",
+      "purpose": "Discuss Iran's reaction to the proposed deal.",
+      "summary": "Iran states that the management of the Strait of Hormuz will not revert to pre-war conditions."
+    },
+    {
+      "section": "Details of the Deal",
+      "purpose": "Outline what the deal may entail.",
+      "summary": "The proposed agreement includes ending conflicts, financial concessions, and U.S. troop withdrawals."
+    },
+    {
+      "section": "Shooting Incident",
+      "purpose": "Report on the shooting incident at the White House.",
+      "summary": "A gunman fired towards the White House, leading to chaos and a firefight."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Wrap up with a reminder for further updates.",
+      "summary": "Encourages viewers to stay tuned for updates from Al Jazeera."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "Could this deal mean an end to the war is in sight?",
+    "why_it_works": "It captures the audience's curiosity about the implications of the deal."
+  },
+  "claims": [
+    {
+      "claim": "A deal between the U.S. and Iran has been largely negotiated.",
+      "support_level": "implicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Iran's management of the Strait of Hormuz is non-negotiable.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "The U.S. naval blockade will end as part of the agreement.",
+      "support_level": "weak",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Iran submitting a revised proposal through Pakistani mediators.",
+    "Statements from Iranian officials referencing historical attempts at invasion."
+  ],
+  "actionable_ideas": [
+    "Stay informed about Middle East political developments.",
+    "Follow updates on the U.S.-Iran negotiations.",
+    "Monitor the situation regarding the White House shooting."
+  ],
+  "audience": "General public",
+  "tone": "Informative",
+  "content_style": "News report",
+  "retention_devices": [
+    "Use of recent events",
+    "Engaging questions",
+    "Direct quotes from officials"
+  ],
+  "title_supporting_quotes": [
+    "A deal has been largely negotiated.",
+    "The Strait of Hormuz won't be reopened the same way."
+  ],
+  "creative_reuse_opportunities": [
+    "Breaking down complex issues related to international relations.",
+    "In-depth analysis of U.S.-Iran dynamics."
+  ],
+  "risk_notes": [
+    "Potential escalation of conflicts in the region.",
+    "Political backlash from various factions regarding negotiations."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

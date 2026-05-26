@@ -1,0 +1,20 @@
+{
+  "video_id": "_VYDhtF-eWg",
+  "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+  "channel_name": "Alex Hormozi",
+  "title": "My Founder Story",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_VYDhtF-eWg.mp3",
+  "transcribed_at": "2026-05-26T03:35:41.142324+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2898,
+  "text_sha256": "4ee2ca447f3b7ec98680161bd4b489c39b5d4a98c873688d85c04643160e8f1a",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\_VYDhtF-eWg\\transcript_segments.jsonl",
+  "segment_count": 30,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T03:39:16.052713+00:00",
+  "duration_seconds": 141.89999389648438
+}

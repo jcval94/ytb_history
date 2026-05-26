@@ -1,0 +1,79 @@
+{
+  "video_id": "OHMjihc3DmY",
+  "language": "es",
+  "summary": "El poder del silencio y la libertad que proporciona al dejar de intentar convencer a los demás sobre tu valía.",
+  "main_topics": [
+    "Poder del silencio",
+    "Libertad personal",
+    "Percepción de los demás",
+    "Autovaloración",
+    "Paz interior"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del silencio",
+      "summary": "La importancia del silencio en la toma de decisiones."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar los beneficios del silencio",
+      "summary": "El silencio permite avanzar sin la presión de la opinión ajena."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la elección personal",
+      "summary": "Elegir la paz propia sobre la validación externa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión personal",
+    "hook_text": "La mejor decisión que he tomado en los últimos años es mantenerme en silencio",
+    "why_it_works": "Capta la atención al presentar un cambio significativo y positivo en la vida del hablante."
+  },
+  "claims": [
+    {
+      "claim": "El silencio te da libertad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "No necesitas demostrar tu valía a los demás.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La percepción de los demás no afecta tu camino personal.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practicar el silencio en situaciones de conflicto",
+    "Reflexionar sobre lo que realmente importa",
+    "Dejar de buscar la validación externa"
+  ],
+  "audience": "Personas que luchan con la auto-valorización y la presión social.",
+  "tone": "Reflexivo y motivador",
+  "content_style": "Inspiracional",
+  "retention_devices": [
+    "Historias personales",
+    "Preguntas retóricas",
+    "Metáforas sobre paz y avance"
+  ],
+  "title_supporting_quotes": [
+    "\"El silencio te da libertad.\"",
+    "\"Elige tu paz.\"",
+    "\"Camina hacia adelante, en silencio.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Frases motivacionales en redes sociales",
+    "Artículos sobre crecimiento personal",
+    "Charlas sobre la importancia del silencio"
+  ],
+  "risk_notes": [
+    "Posible desconexión con quienes valoran la comunicación constante."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

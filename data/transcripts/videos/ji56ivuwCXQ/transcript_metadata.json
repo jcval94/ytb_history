@@ -1,0 +1,14 @@
+{
+  "video_id": "ji56ivuwCXQ",
+  "channel_id": "UCtoaZpBnrd0lhycxYJ4MNOQ",
+  "channel_name": "HasanAbi",
+  "title": "Ashley St. Clair shows me her texts with Elon Musk",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ji56ivuwCXQ.mp3",
+  "transcribed_at": "2026-05-26T03:36:14.825998+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2822,
+  "text_sha256": "a299488a77af28ec12d08585f04f55d6310119b8e85908285e17001351616756",
+  "repo_schema_version": "transcript_metadata_v1"
+}

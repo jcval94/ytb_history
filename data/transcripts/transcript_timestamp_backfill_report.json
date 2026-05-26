@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T04:30:10.836327+00:00",
+  "generated_at": "2026-05-26T03:38:06.650785+00:00",
   "status": "partial_success",
   "data_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data",
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
@@ -8,26 +8,26 @@
   "limit": 10,
   "processed": 10,
   "generated": 9,
-  "skipped_existing_segments": 85,
+  "skipped_existing_segments": 94,
   "skipped_missing_audio": 0,
   "failed": 1,
   "success_video_ids": [
-    "4bbBT6E4AFg",
-    "GOpXBhrPKqc",
-    "O4xalbhOVmQ",
-    "QiqmnfTqQIE",
-    "WGh-qBaoZTU",
-    "_8G3HSTTMNs",
-    "brrzQDTF5G0",
-    "gV-VoaHsy-c",
-    "gvtyxNBQ9aA"
+    "CVN2X-Zx_Bc",
+    "IHuyq75-kVY",
+    "JxlaMfJeO3s",
+    "NnGknS60W8s",
+    "OHMjihc3DmY",
+    "_VYDhtF-eWg",
+    "iDaAkeF_-cQ",
+    "iNuSrPJlZjU",
+    "iShwCkbqWyY"
   ],
   "failed_details": [
     {
       "video_id": "TkDWgKCjdtU",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\TkDWgKCjdtU.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26312980 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26241600 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     }
   ],
   "warnings": []

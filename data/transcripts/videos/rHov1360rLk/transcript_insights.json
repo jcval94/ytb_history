@@ -1,0 +1,86 @@
+{
+  "video_id": "rHov1360rLk",
+  "language": "es",
+  "summary": "La persona habla sobre el peligro de regresar a México debido a amenazas de grupos vinculados al gobierno, explicando que sería preferible para ellos que sea vista como mártir en lugar de testigo. También menciona la falta de protección adecuada a pesar de la advertencia de que un grupo grande de seguridad privada es necesario para su regreso.",
+  "main_topics": [
+    "Seguridad personal",
+    "Amenazas políticas",
+    "Corrupción en México",
+    "Protección de testigos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la amenaza",
+      "purpose": "Presentar el peligro de regresar a México.",
+      "summary": "Detalla cómo ciertos personajes políticos prefieren que ella esté muerta."
+    },
+    {
+      "section": "Conversación con experto",
+      "purpose": "Informar sobre la realidad del riesgo.",
+      "summary": "Menciona una conversación con un experto de Interpol acerca de la situación."
+    },
+    {
+      "section": "Experiencia de protección",
+      "purpose": "Mostrar la falta de confianza en las fuerzas de seguridad.",
+      "summary": "Describe cómo la Guardia Nacional falló en protegerla en el pasado."
+    },
+    {
+      "section": "Decisión de regresar",
+      "purpose": "Explicar los motivos y condiciones para regresar.",
+      "summary": "Habla sobre su deseo de regresar y las condiciones impuestas por las autoridades."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "Necesitan que yo esté muerta.",
+    "why_it_works": "Despierta la atención inmediata del público sobre el grave tema de amenazas y seguridad."
+  },
+  "claims": [
+    {
+      "claim": "El estado mexicano es responsable de la seguridad de la persona.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Los políticos prefieren que las víctimas sean mártires en lugar de testigos.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La Guardia Nacional no proporciona seguridad efectiva.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Mención de las amenazas por parte de grupos ligados al gobierno.",
+    "Referencia a la falla de la Guardia Nacional en momentos críticos."
+  ],
+  "actionable_ideas": [
+    "Aumentar medidas de seguridad para activistas.",
+    "Fomentar mecanismos de protección para testigos en casos de corrupción.",
+    "Crear conciencia sobre el peligro que enfrentan los periodistas y defensores de derechos humanos."
+  ],
+  "audience": "Activistas, defensores de derechos humanos, y público general interesado en temas de seguridad y política en México.",
+  "tone": "Serio y alarmante",
+  "content_style": "Narrativa personal y reflexiva",
+  "retention_devices": [
+    "Narrativa provocativa",
+    "Ejemplos de experiencias personales",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Yo estaba hablando con un experto de Interpol hace un año.",
+    "Es preferible que seas una mártir muerta a que seas una testiga viva."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la seguridad de activistas en México.",
+    "Documentales sobre corrupción y protección de testigos.",
+    "Charlas o conferencias sobre derechos humanos y la situación actual en México."
+  ],
+  "risk_notes": [
+    "El testigo está en un alto riesgo por sus declaraciones.",
+    "La falta de confianza en las fuerzas de seguridad puede afectar la cooperación con las autoridades."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

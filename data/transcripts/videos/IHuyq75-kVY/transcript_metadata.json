@@ -1,0 +1,20 @@
+{
+  "video_id": "IHuyq75-kVY",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Toxic gases hinder rescue efforts inside deadly China mine",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\IHuyq75-kVY.mp3",
+  "transcribed_at": "2026-05-26T03:37:19.238631+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1285,
+  "text_sha256": "39d55d045b3b9d056ebf73f09a13cb2bdbef16203d4e525128ecbd72aa75a8ef",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\IHuyq75-kVY\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T03:38:37.100705+00:00",
+  "duration_seconds": 78.88999938964844
+}

@@ -1,0 +1,85 @@
+{
+  "video_id": "CVN2X-Zx_Bc",
+  "language": "es",
+  "summary": "El gobierno de Estados Unidos ha publicado un segundo lote de archivos desclasificados sobre ovnis, generando especulaciones sobre su veracidad y posible ocultamiento de otros temas como el caso Epstein. Se discuten avistamientos recientes, con descripciones de objetos y seres llamativos que han capturado la atención del público.",
+  "main_topics": [
+    "desclasificación de ovnis",
+    "teorías de conspiración",
+    "impacto mediático",
+    "especulación sobre extraterrestres",
+    "comparación con otros eventos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la noticia de la desclasificación",
+      "summary": "El gobierno de EE. UU. lanza nuevos archivos sobre ovnis."
+    },
+    {
+      "section": "Controversias",
+      "purpose": "Discutir teorías sobre la desclasificación",
+      "summary": "Se insinuó que es una cortina de humo para desviar la atención de otros temas."
+    },
+    {
+      "section": "Descripción de avistamientos",
+      "purpose": "Describir los objetos voladores no identificados",
+      "summary": "Detalles sobre el comportamiento de los ovnis y sus características inusuales."
+    },
+    {
+      "section": "Reacción pública",
+      "purpose": "Explorar la respuesta de la gente",
+      "summary": "La publicación generó teorías y comparaciones en redes sociales."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cierre reflexivo",
+      "summary": "Invitar a la audiencia a considerar su opinión sobre los avistamientos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "controversial statement",
+    "hook_text": "¿Cortina de humo para ocultar archivos de Epstein?",
+    "why_it_works": "Provoca curiosidad y es un punto de conexión relevante socialmente."
+  },
+  "claims": [
+    {
+      "claim": "La desclasificación de archivos es una distracción.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Los avistamientos recientes son genuinos y extraños.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Los nuevos videos muestran un objeto luminoso humanoide.",
+    "Se comparan avistamientos recientes con otros anteriores."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la desclasificación de archivosOVNIs.",
+    "Sigue las publicaciones oficiales del gobierno sobre el tema.",
+    "Participa en foros de discusión sobre teorías de conspiración."
+  ],
+  "audience": "Interesados en fenómenos OVNI y teorías de conspiración.",
+  "tone": "informal y especulativo",
+  "content_style": "narrativo y reflexivo",
+  "retention_devices": [
+    "preguntas retóricas",
+    "anécdotas sobre avistamientos",
+    "referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "El simple todo lo cree, más el prudente mira bien sus pasos."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un video explicativo sobre teorías de conspiración.",
+    "Crear una serie de podcasts sobre el tema de ovnis."
+  ],
+  "risk_notes": [
+    "Posible desinformación si no se verifica la autenticidad de los archivos.",
+    "Pueden generar más teorías de conspiración sin base."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
