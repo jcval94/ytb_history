@@ -1,0 +1,20 @@
+{
+  "video_id": "1KGNpqOc_eQ",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Tu límite es físico o es psicológico?EL CASO BANNISTER",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\1KGNpqOc_eQ.mp3",
+  "transcribed_at": "2026-05-26T15:55:33.913018+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1092,
+  "text_sha256": "0b4ea3da02e6879b6d5bc0489d6d2b467f8d1fb6da7e4e09291cce0e5c93ae54",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\1KGNpqOc_eQ\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:03:02.280700+00:00",
+  "duration_seconds": 61.900001525878906
+}

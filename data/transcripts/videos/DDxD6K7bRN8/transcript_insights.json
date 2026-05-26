@@ -1,0 +1,77 @@
+{
+  "video_id": "DDxD6K7bRN8",
+  "language": "es",
+  "summary": "El video trata sobre el secuestro de Adolf Eichmann por el Mossad en Argentina y su juicio en Jerusalén, cuestionando la idea de que él actuaba solo por órdenes. También menciona un experimento de Yale que supuestamente apoya su defensa, pero el narrador sugiere que se ha ocultado la verdad sobre este experimento durante décadas.",
+  "main_topics": [
+    "Secuestro de Eichmann",
+    "Juicio de Eichmann",
+    "Experimento de Milgram",
+    "Ética y obediencia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del video.",
+      "summary": "Se presenta a Eichmann como un burócrata nazi responsable de la muerte de millones."
+    },
+    {
+      "section": "El juicio",
+      "purpose": "Describir la defensa de Eichmann.",
+      "summary": "Eichmann se presenta como alguien que solo seguía órdenes, lo cual es cuestionado."
+    },
+    {
+      "section": "El experimento de Yale",
+      "purpose": "Desmentir el experimento que valida a Eichmann.",
+      "summary": "Se menciona cómo un famoso experimento de obediencia ha ocultado la verdad."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a los espectadores a reflexionar.",
+      "summary": "Se invita a ver el análisis del narrador sobre Eichmann y el experimento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Desafiante",
+    "hook_text": "un experimento en Yale intentó demostrar que tú también harías lo mismo",
+    "why_it_works": "El uso de un experimento conocido provoca curiosidad y cuestionamiento sobre la naturaleza humana."
+  },
+  "claims": [
+    {
+      "claim": "Eichmann no era solo un obediente, sino un culpable consciente.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El experimento de Milgram ha sido malinterpretado durante años.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar la historia de Eichmann.",
+    "Leer sobre el experimento de Milgram.",
+    "Reflexionar sobre la obediencia y la ética en la sociedad."
+  ],
+  "audience": "Interesados en historia, psicología y ética.",
+  "tone": "Crítico e informativo.",
+  "content_style": "Narrativo con un enfoque reflexivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Referencias a experimentos conocidos",
+    "Llamados a la acción para ver el análisis completo"
+  ],
+  "title_supporting_quotes": [
+    "Eichmann trató de hacer creer al mundo que era un robot que sólo seguía órdenes.",
+    "Todo era una gran mentira."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear debates sobre ética en la obediencia.",
+    "Desarrollar contenido educativo sobre Eichmann y la historia del Holocausto."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones pueden generar controversia.",
+    "Es importante contar con fuentes confiables al abordar temas sensibles."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

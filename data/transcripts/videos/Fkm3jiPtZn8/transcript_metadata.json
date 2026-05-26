@@ -1,0 +1,20 @@
+{
+  "video_id": "Fkm3jiPtZn8",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Grigori perelman Short- PREMIO DEL MILENIO",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Fkm3jiPtZn8.mp3",
+  "transcribed_at": "2026-05-26T16:00:44.963653+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1320,
+  "text_sha256": "ad3e908c803527034baf1f5290d2c7d77395d1a1165f0cd0dd38238cd5e17624",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Fkm3jiPtZn8\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:22.633373+00:00",
+  "duration_seconds": 81.94000244140625
+}

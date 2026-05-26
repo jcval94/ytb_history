@@ -1,0 +1,20 @@
+{
+  "video_id": "LuRmhc9oru4",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Por qué nadie podía correr una milla en 4 minutos?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\LuRmhc9oru4.mp3",
+  "transcribed_at": "2026-05-26T15:55:42.005742+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1311,
+  "text_sha256": "5b462999685a838ac52d676167415295401ed96b4a0d08f6a7797f04a2283171",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\LuRmhc9oru4\\transcript_segments.jsonl",
+  "segment_count": 23,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:44.347691+00:00",
+  "duration_seconds": 72.08999633789062
+}

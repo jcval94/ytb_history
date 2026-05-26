@@ -1,0 +1,84 @@
+{
+  "video_id": "5GcBePdpqto",
+  "language": "es",
+  "summary": "El video aborda la sensibilidad y emociones de los animales, contrastando su capacidad de sentir con la falta de autenticidad de herramientas como ChatGPT en el contexto de compañía y terapia.",
+  "main_topics": [
+    "Sentiencia de los animales",
+    "Inteligencia en animales",
+    "Comparación entre compañía real y tecnología",
+    "Emociones y sentimientos de los seres vivos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la sentiencia animal",
+      "purpose": "Establecer la base de que los animales sienten como los humanos",
+      "summary": "Los animales son seres sintientes que experimentan diversas emociones y sufrimientos."
+    },
+    {
+      "section": "Comparación de inteligencia y sentiencia",
+      "purpose": "Distinguir entre las capacidades intelectuales y emocionales de los animales",
+      "summary": "La inteligencia se observa en el comportamiento, pero los animales también tienen sentimientos."
+    },
+    {
+      "section": "Crítica a ChatGPT como compañía",
+      "purpose": "Desafiar la idea de que la inteligencia artificial puede proporcionar compañía verdadera",
+      "summary": "El uso de ChatGPT no puede sustituir la compañía humana genuina."
+    },
+    {
+      "section": "Reflexión y provocación",
+      "purpose": "Invitar a la audiencia a cuestionar sus creencias sobre compañía y sentiencia",
+      "summary": "Se plantea una pregunta retórica sobre la comparación entre perros y ChatGPT."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "¡Pero chicos, es mentira! ¡No es una compañía real!",
+    "why_it_works": "Genera inquietud y lleva al espectador a cuestionar sus ideas preconcebidas sobre la compañía de la IA."
+  },
+  "claims": [
+    {
+      "claim": "Los animales son seres sintientes que sufren como los humanos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "ChatGPT no puede ofrecer compañía auténtica.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La inteligencia en animales se evalúa a través de su comportamiento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Los animales pasan hambre y frío",
+    "Un perro siente cuando está triste su dueño"
+  ],
+  "actionable_ideas": [
+    "Promover la investigación sobre la sentiencia animal.",
+    "Fomentar la adopción de animales en lugar de depender de tecnología para compañía."
+  ],
+  "audience": "Personas interesadas en la ética animal, tecnología y la interacción humano-animal.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Conversacional y provocador",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Contraste entre la realidad y la tecnología",
+    "Casos personales y cercanos"
+  ],
+  "title_supporting_quotes": [
+    "\"Los animales son seres sintientes, sufren igual que vos\"",
+    "\"Tu tía Cuki lo que quiere de compañía es alguien que le importe cómo está\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre la sentiencia animal",
+    "Desarrollar una campaña de concienciación sobre la adopción de mascotas"
+  ],
+  "risk_notes": [
+    "Podría ser interpretado como una crítica a la IA en situaciones de salud mental.",
+    "Algunos individuos pueden defender el uso de IA como compañía."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

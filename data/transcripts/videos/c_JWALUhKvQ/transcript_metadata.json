@@ -1,0 +1,20 @@
+{
+  "video_id": "c_JWALUhKvQ",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "ESTE HOMBRE RECHAZÓ UN MILLÓN",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\c_JWALUhKvQ.mp3",
+  "transcribed_at": "2026-05-26T15:55:57.092870+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1171,
+  "text_sha256": "8961070f6e585d65d3882c749d32e759ea92dad5d3e532977df1770b3fa9420d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\c_JWALUhKvQ\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:10:26.894840+00:00",
+  "duration_seconds": 70.02999877929688
+}

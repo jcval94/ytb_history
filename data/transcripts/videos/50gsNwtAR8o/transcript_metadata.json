@@ -1,0 +1,20 @@
+{
+  "video_id": "50gsNwtAR8o",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Grigori perelman Short2- EL GENIO QUE RECHAZÓ UN MILLON DE DÓLARES",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\50gsNwtAR8o.mp3",
+  "transcribed_at": "2026-05-26T16:00:29.354926+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1295,
+  "text_sha256": "5853a92a97a190a729cf57e56441320e4ce2785d01cab41ca60ca7be723b6a9c",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\50gsNwtAR8o\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:03:12.572315+00:00",
+  "duration_seconds": 72.7699966430664
+}

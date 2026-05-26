@@ -1,0 +1,20 @@
+{
+  "video_id": "SFbU9PRFgCA",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Cómo empezaron a hablar los enemigos? 🗣️🇬🇧🇩🇪",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\SFbU9PRFgCA.mp3",
+  "transcribed_at": "2026-05-26T15:50:42.227382+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 401,
+  "text_sha256": "b3788a97147b73b7316f3d141d1ef704acd7dae3c53fa57084f2425c7978bfe1",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\SFbU9PRFgCA\\transcript_segments.jsonl",
+  "segment_count": 7,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:07:36.950002+00:00",
+  "duration_seconds": 25.049999237060547
+}

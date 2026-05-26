@@ -1,0 +1,83 @@
+{
+  "video_id": "THqUgv0VmZU",
+  "language": "es",
+  "summary": "La historia cuenta cómo el capitán Peter Warner descubrió a seis adolescentes náufragos en Tonga en 1966, quienes habían estado perdidos en una isla durante un año y medio. Su rescate se convirtió en un milagro celebrado en su comunidad.",
+  "main_topics": [
+    "rescate de náufragos",
+    "aventura marítima",
+    "historias de supervivencia",
+    "recepción de héroes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del rescate",
+      "purpose": "Establecer el contexto del descubrimiento",
+      "summary": "Narrar cómo el capitán Warner encontró a los náufragos por casualidad."
+    },
+    {
+      "section": "Encuentro con los náufragos",
+      "purpose": "Describir la interacción inicial",
+      "summary": "Los adolescentes se acercan al barco y explican su situación."
+    },
+    {
+      "section": "Reacción en Tonga",
+      "purpose": "Mostrar el impacto del rescate",
+      "summary": "La comunidad celebra el regreso de los jóvenes como un milagro."
+    },
+    {
+      "section": "Suspenso final",
+      "purpose": "Crear expectativa",
+      "summary": "Se menciona un giro sorprendente en la historia, animando a ver el video completo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "intriga",
+    "hook_text": "Y esta historia tiene un último giro que a mí me dejó con la boca abierta.",
+    "why_it_works": "Genera curiosidad en el espectador, incentivándolo a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "El capitán Warner encontró a los náufragos por casualidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los náufragos habían estado perdidos durante un año y medio.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La comunidad celebró el regreso como un milagro.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Crear un documental sobre historias de supervivencia",
+    "Realizar una serie de entrevistas con sobrevivientes de naufragios",
+    "Desarrollar un libro basado en hechos reales sobre rescates marítimos"
+  ],
+  "audience": "personas interesadas en historias de supervivencia y aventura",
+  "tone": "dramático",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "suspenso",
+    "curiosidad",
+    "elementos emocionales"
+  ],
+  "title_supporting_quotes": [
+    "«Soy uno de seis náufragos. Creemos que hemos estado aquí durante un año y medio»",
+    "«Cuando Warner contactó por radio con Tonga, la respuesta fue una sorpresa total»"
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar la historia en una novela",
+    "Crear un podcast sobre el evento",
+    "Desarrollar una serie de televisión basada en la historia"
+  ],
+  "risk_notes": [
+    "Posible controversia al dramatizar eventos reales",
+    "Necesidad de validar hechos históricos para mantener credibilidad"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

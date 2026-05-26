@@ -1,0 +1,73 @@
+{
+  "video_id": "1KGNpqOc_eQ",
+  "language": "es",
+  "summary": "El relato se centra en Roger Bannister, un estudiante de medicina que desafió las creencias comunes sobre los límites físicos del cuerpo humano al intentar correr una milla en menos de cuatro minutos, a pesar de las dudas de médicos y entrenadores.",
+  "main_topics": [
+    "Roger Bannister",
+    "Límites del cuerpo humano",
+    "Superación personal",
+    "Creencias y dudas",
+    "Logros deportivos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la historia de Roger Bannister",
+      "purpose": "Presentar al protagonista y el desafío que enfrenta",
+      "summary": "Se describe cómo Bannister desafiaba las creencias sobre la capacidad del cuerpo humano."
+    },
+    {
+      "section": "Dudas de su entorno",
+      "purpose": "Mostrar la presión y escepticismo que enfrentó",
+      "summary": "Otros creían que era imposible, pero Bannister mantenía su fe en el reto."
+    },
+    {
+      "section": "La resolución de Bannister",
+      "purpose": "Concretar la determinación del protagonista",
+      "summary": "A pesar de las críticas, Bannister estaba decidido a demostrar que era posible."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Incertidumbre",
+    "hook_text": "Los médicos, los entrenadores, todos creían que no era posible.",
+    "why_it_works": "Genera interés al presentar un desafío enorme que contradice las expectativas comunes."
+  },
+  "claims": [
+    {
+      "claim": "Roger Bannister creía que correr una milla en menos de cuatro minutos era posible.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El entorno de Bannister lo consideraba poco probable debido a limitaciones físicas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Bannister no era un atleta profesional, pero creía en sus capacidades.",
+    "Enfrentó el escepticismo de médicos y entrenadores."
+  ],
+  "actionable_ideas": [
+    "Desafiar las condiciones estándar en cualquier campo.",
+    "Mantener la motivación a pesar de las críticas.",
+    "Buscar alternativas donde otros vieron imposibilidades."
+  ],
+  "audience": "Personas interesadas en historias de superación y deporte",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Citas motivacionales",
+    "Intriga sobre el resultado de la historia"
+  ],
+  "title_supporting_quotes": [
+    "Si otros lo han intentado y no lo han conseguido, no significa que sea imposible."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar una serie sobre historias de logros deportivos",
+    "Crear material motivacional y de superación personal"
+  ],
+  "risk_notes": [
+    "Requiere sensibilidad al presentar límites físicos y mentales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

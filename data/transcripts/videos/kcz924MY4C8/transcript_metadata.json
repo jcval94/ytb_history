@@ -1,0 +1,20 @@
+{
+  "video_id": "kcz924MY4C8",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Quién era \"El Hombre Gris\" de Argentina? 🇦🇷 El SECRETO de Ricardo Klement",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\kcz924MY4C8.mp3",
+  "transcribed_at": "2026-05-26T15:45:12.477059+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 595,
+  "text_sha256": "9249a1048af5af4f7ea692cd764dec552a9d57b213f4b1f089ceb5f312dd6509",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\kcz924MY4C8\\transcript_segments.jsonl",
+  "segment_count": 8,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:11:21.093329+00:00",
+  "duration_seconds": 40.099998474121094
+}

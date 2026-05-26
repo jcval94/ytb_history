@@ -1,0 +1,79 @@
+{
+  "video_id": "Vj3V06vpbLs",
+  "language": "español",
+  "summary": "El episodio narra la vida de Grigory Perelman, un prodigio de las matemáticas nacido en Leningrado. Se examinan sus orígenes familiares, su talento en matemáticas desde joven y su relación con un profesor que moldeó su pasión por esta disciplina. A pesar de algunos fracasos iniciales en competencias, su ambición lo llevó a grandes logros en el campo.",
+  "main_topics": [
+    "Biografía de Grigory Perelman",
+    "Talento en matemáticas",
+    "Influencia familiar",
+    "Competencias matemáticas",
+    "Logros académicos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Grigory Perelman",
+      "purpose": "Presentar al protagonista y su entorno familiar",
+      "summary": "Grigory nació en 1966 en una familia judía en Leningrado, donde sus padres fomentaron su interés por las matemáticas."
+    },
+    {
+      "section": "Desarrollo de su talento",
+      "purpose": "Describir cómo se descubrió y desarrolló su habilidad matemática",
+      "summary": "Desde niño, Perelman mostró un carácter solitario y una pasión por los números, asistiendo a un programa para jóvenes talentosos."
+    },
+    {
+      "section": "Competencias y ambiciones",
+      "purpose": "Ilustrar su viaje en competencias matemáticas",
+      "summary": "A pesar de un par de fracasos, su ambición nunca flaqueó y comenzó a destacar en competiciones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga",
+    "why_it_works": "Invita al espectador a descubrir más sobre la interesante historia de Perelman."
+  },
+  "claims": [
+    {
+      "claim": "Perelman tuvo una infancia solitaria pero dedicada a las matemáticas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Fue influenciado positivamente por su madre y un famoso profesor.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su ambición fue despertada por las competiciones que perdió.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Creció en un entorno que valoraba la educación matemática.",
+    "Participó y destacó en olimpiadas matemáticas desde joven."
+  ],
+  "actionable_ideas": [
+    "Explorar más sobre la vida de Grigory Perelman",
+    "Investigar la importancia de la educación y mentoría en el desarrollo del talento"
+  ],
+  "audience": "Interesados en matemáticas y biografías inspiradoras",
+  "tone": "Informativo",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Intriga narrativa",
+    "Promesas de más contenido",
+    "Conexión emocional con el protagonista"
+  ],
+  "title_supporting_quotes": [
+    "\"Desde niño, Grigory mostraba un carácter solitario, meticuloso y obsesionado con la perfección.\"",
+    "\"El joven Grigory empezó a ver las matemáticas no como una asignatura, sino como un lenguaje para entender el mundo.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollo de un documental sobre Perelman",
+    "Artículos sobre su metodología de enseñanza"
+  ],
+  "risk_notes": [
+    "Posible falta de verificación en algunas afirmaciones biográficas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

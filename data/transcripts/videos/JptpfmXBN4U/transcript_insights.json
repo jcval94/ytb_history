@@ -1,0 +1,82 @@
+{
+  "video_id": "JptpfmXBN4U",
+  "language": "es",
+  "summary": "El orador reflexiona sobre la incertidumbre que muchos sienten acerca de su vocación en la vida, citando estadísticas de Stanford que indican que una gran parte de los jóvenes y adultos aún busca su camino. Destaca la presión que sienten las personas para encontrar una dirección clara, y cómo a menudo esta búsqueda no tiene respuesta definitiva.",
+  "main_topics": [
+    "incertidumbre vocacional",
+    "presión social",
+    "estudios sobre dirección en la vida",
+    "desarrollo personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la vocación",
+      "purpose": "Plantear la pregunta sobre cuándo se descubre lo que se quiere hacer en la vida.",
+      "summary": "El orador reconoce su propia falta de claridad respecto a su vocación."
+    },
+    {
+      "section": "Estadísticas de Stanford",
+      "purpose": "Apoyar el argumento sobre la búsqueda vocacional con datos.",
+      "summary": "Se menciona un estudio que revela que 80% de los jóvenes y 70% de los adultos no saben qué quieren hacer."
+    },
+    {
+      "section": "Reflexión personal",
+      "purpose": "Conectar con la audiencia a través de experiencias compartidas.",
+      "summary": "El orador comparte que muchos se sienten agradecidos al saber que no están solos en esta incertidumbre."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Ofrecer un mensaje positivo sobre la exploración continua.",
+      "summary": "Se enfatiza que no hay un mapa definido y que la vida es un proceso de descubrimiento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta intrigante",
+    "hook_text": "¿Cuándo descubrieron qué querían hacer en la vida?",
+    "why_it_works": "Invita a la reflexión personal y conecta inmediatamente con la audiencia, creando curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "La mayoría de las personas no sabe qué quiere hacer en la vida.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La presión social para encontrar una vocación clara es alta.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La búsqueda vocacional es un proceso continuo, no siempre definido.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexiona sobre tus propios intereses y habilidades.",
+    "Acepta que la búsqueda de vocación puede ser un proceso largo.",
+    "Involúcrate en diferentes experiencias para ir descubriendo tu camino."
+  ],
+  "audience": "jóvenes y adultos en búsqueda de su vocación",
+  "tone": "reflexivo",
+  "content_style": "conversacional",
+  "retention_devices": [
+    "preguntas personales",
+    "anécdotas",
+    "estadísticas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "80% de los jóvenes no sabe qué quiere hacer.",
+    "La mayoría no venimos al mundo con una hoja de ruta definida."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido sobre cómo encontrar pasión en la vida.",
+    "Crear talleres sobre autodescubrimiento vocacional."
+  ],
+  "risk_notes": [
+    "La falta de claridad puede causar ansiedad en los oyentes.",
+    "Abordar la incertidumbre debe hacerse con sensibilidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

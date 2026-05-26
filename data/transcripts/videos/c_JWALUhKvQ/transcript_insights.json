@@ -1,0 +1,74 @@
+{
+  "video_id": "c_JWALUhKvQ",
+  "language": "es",
+  "summary": "Este segmento cuenta la colaboración entre Perelman y Hamilton en la resolución de la conjetura de Poincaré, destacando la importancia del flujo de Ricci y el aporte de Hamilton.",
+  "main_topics": [
+    "Conjetura de Poincaré",
+    "Flujo de Ricci",
+    "Colaboración entre matemáticos",
+    "Singularidades"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Perelman y Hamilton",
+      "purpose": "Presentar a los protagonistas y su relevancia en el contexto matemático.",
+      "summary": "Se menciona el significativo encuentro entre Perelman y Hamilton en Princeton."
+    },
+    {
+      "section": "Trabajo conjunto",
+      "purpose": "Hacer hincapié en la colaboración y el desarrollo de ideas entre Perelman y Hamilton.",
+      "summary": "Perelman desarrolla ideas sobre el flujo de Ricci, mientras Hamilton enfrenta desafíos."
+    },
+    {
+      "section": "Decisión de Perelman",
+      "purpose": "Reflejar la prudencia de Perelman en su enfoque.",
+      "summary": "Perelman intuye la solución pero elige no interferir en el trabajo de Hamilton."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad sobre la solución a la conjetura y motiva a los espectadores a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "Perelman construyó sobre el trabajo de Hamilton.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Hamilton enfrentó bloqueos en su trabajo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La mención del encuentro en Princeton",
+    "La descripción de singularidades",
+    "La colaboración en el flujo de Ricci"
+  ],
+  "actionable_ideas": [
+    "Explorar más sobre la conjetura de Poincaré.",
+    "Investigar el flujo de Ricci.",
+    "Analizar la importancia de la colaboración en matemáticas."
+  ],
+  "audience": "Estudiantes y entusiastas de las matemáticas",
+  "tone": "Informativo y cautivador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Intriga sobre la solución de Poincaré",
+    "Referencias a matemáticos legendarios"
+  ],
+  "title_supporting_quotes": [
+    "Perelman no partió de cero sus investigaciones.",
+    "Hamilton le confesó que estaba bloqueado."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear videos sobre colaboraciones históricas en matemáticas.",
+    "Desarrollar contenido educativo sobre el flujo de Ricci."
+  ],
+  "risk_notes": [
+    "Dependencia en la interpretación de conceptos complejos como singularidades."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

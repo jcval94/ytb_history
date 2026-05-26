@@ -1,0 +1,14 @@
+{
+  "video_id": "z3D4VghlYNM",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Roger Bannister El hombre que rompió un muro mental",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\z3D4VghlYNM.mp3",
+  "transcribed_at": "2026-05-26T15:54:24.579608+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 928,
+  "text_sha256": "9200ed6bd2eed309465a8643c1e67458f6ff4b59f09c0a177121aafb9f19e3da",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "MiUHjLxm3V0",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The World's Most Important Machine",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\MiUHjLxm3V0.mp3",
+  "transcribed_at": "2026-05-26T15:58:23.728379+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 51108,
+  "text_sha256": "15ac98678ab9ac8187f439d92f33378ece95529bef0e8a09ac1cde19ada58333",
+  "repo_schema_version": "transcript_metadata_v1"
+}

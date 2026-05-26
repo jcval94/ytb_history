@@ -1,0 +1,89 @@
+{
+  "video_id": "50gsNwtAR8o",
+  "language": "es",
+  "summary": "La historia de Grigory Perelman, un genio matemático que rechazó un premio de un millón de dólares por resolver la conjetura de Poincaré y vive en la pobreza con su madre en un modesto apartamento.",
+  "main_topics": [
+    "Matemáticas",
+    "Genios",
+    "Pobreza",
+    "Rechazo de premios",
+    "Conjetura de Poincaré"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Grigory Perelman",
+      "purpose": "Presentar al protagonista y su situación actual",
+      "summary": "Se describe a Perelman como un matemático que vive en condiciones humildes."
+    },
+    {
+      "section": "Logros de Perelman",
+      "purpose": "Destacar su contribución a las matemáticas",
+      "summary": "Perelman resolvió la conjetura de Poincaré, un logro monumental."
+    },
+    {
+      "section": "Rechazo del premio",
+      "purpose": "Plantear el misterio de su decisión",
+      "summary": "Se cuestiona por qué rechazó un premio de un millón de dólares."
+    },
+    {
+      "section": "Vida actual",
+      "purpose": "Describir su estilo de vida",
+      "summary": "Perelman vive apartado y en pobreza, con su madre."
+    },
+    {
+      "section": "Cierre e invitación al video completo",
+      "purpose": "Invitar a la audiencia a conocer más",
+      "summary": "Se sugiere ver el video completo para entender su historia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿Pero por qué alguien rechazaría semejante fortuna?",
+    "why_it_works": "Genera curiosidad sobre las motivaciones de Perelman y capta la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "Grigory Perelman tiene un coeficiente intelectual estimado de 180.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Perelman resolvió la conjetura de Poincaré, uno de los problemas más difíciles de las matemáticas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Rechazó un premio de un millón de dólares.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La vida de Grigory Perelman como un matemático brillante pero solitario."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la conjetura de Poincaré.",
+    "Explorar la vida de otros genios matemáticos.",
+    "Reflexionar sobre la relación entre éxito y felicidad."
+  ],
+  "audience": "Interesados en matemáticas y biografías de genios.",
+  "tone": "Intrigante y reflexivo.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Suspenso sobre el rechazo del premio",
+    "Introducción de datos impresionantes sobre Perelman",
+    "Invitación a ver el video completo"
+  ],
+  "title_supporting_quotes": [
+    "\"Rechazo un premio de un millón de dólares\"",
+    "\"Un coeficiente intelectual extraordinario\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre genios matemáticos en la historia.",
+    "Realizar entrevistas a matemáticos sobre su perspectiva de Perelman."
+  ],
+  "risk_notes": [
+    "El riesgo de presentar información no verificada sobre su vida personal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

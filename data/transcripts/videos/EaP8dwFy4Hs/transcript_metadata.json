@@ -1,0 +1,20 @@
+{
+  "video_id": "EaP8dwFy4Hs",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "EL HOMBRE QUE DEMOSTRÓ QUE SÍ EREA POSIBLE",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\EaP8dwFy4Hs.mp3",
+  "transcribed_at": "2026-05-26T15:55:12.100360+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 850,
+  "text_sha256": "d6f28461923c90d3967e322db219dcee8977eed9773b99bc5daddb645ed974b2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\EaP8dwFy4Hs\\transcript_segments.jsonl",
+  "segment_count": 12,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:09.616970+00:00",
+  "duration_seconds": 49.040000915527344
+}

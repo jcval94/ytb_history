@@ -1,0 +1,75 @@
+{
+  "video_id": "SpfzFLpTRzg",
+  "language": "es",
+  "summary": "El video relata cómo, tras la hazaña de romper la barrera de los cuatro minutos en la carrera de la milla, muchos corredores comenzaron a hacerlo en poco tiempo, destacando la evolución en las marcas y el impacto de este logro en el atletismo.",
+  "main_topics": [
+    "Ruptura de la barrera de los cuatro minutos",
+    "Logros de corredores",
+    "Impacto en el atletismo",
+    "Evolución de récords"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del tema",
+      "purpose": "Introducir la hazaña de romper la barrera de los cuatro minutos.",
+      "summary": "Se menciona que tras un corredor establecer un nuevo récord, varios otros lograron romperlo rápidamente."
+    },
+    {
+      "section": "Ejemplos de corredores",
+      "purpose": "Proveer ejemplos específicos de atletas que rompieron el récord.",
+      "summary": "Se nombran a John Landy y se mencionan cuatro corredores que rompieron la barrera en una misma carrera."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre el impacto del logro en el mundo del atletismo.",
+      "summary": "Se destaca que más de mil corredores lograron realizar lo que antes era considerado imposible."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Lo más curioso de todo es que...",
+    "why_it_works": "Atrae la atención del espectador al presentar un hecho sorprendente que despierta curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "Durante los años siguientes, más de mil corredores rompieron la barrera de los cuatro minutos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "John Landy recorrió la milla en 3:58.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Se estableció un récord mundial en 1999 de 3:43:13.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre los corredores mencionados",
+    "Ver el video enlazado para más detalles",
+    "Analizar cómo romper barreras puede motivar a otros en diferentes disciplinas"
+  ],
+  "audience": "Aficionados al atletismo y al deporte en general",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Datos sorprendentes",
+    "Anécdotas de corredores históricos",
+    "Promesa de más contenido en el video enlazado"
+  ],
+  "title_supporting_quotes": [
+    "Algunos corredores rompieron el tiempo de los cuatro minutos como si nada.",
+    "Más de mil corredores habían conquistado lo que antes se creía imposible."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido relacionado con la historia del atletismo",
+    "Desarrollar infografías sobre récords en el deporte",
+    "Producción de podcasts sobre inspiración en el deporte"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "0GLRgPfmnTc",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Fin de año, la misma promesa, el mismo fracaso",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0GLRgPfmnTc.mp3",
+  "transcribed_at": "2026-05-26T15:59:52.012266+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1313,
+  "text_sha256": "2566b1f91dfb0d78aa99ab22ff9dbeba126d4c5660698282550a05439f832614",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0GLRgPfmnTc\\transcript_segments.jsonl",
+  "segment_count": 21,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:01:33.754597+00:00",
+  "duration_seconds": 66.30999755859375
+}

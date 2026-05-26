@@ -1,0 +1,109 @@
+{
+  "video_id": "A_X1nz0I7mw",
+  "language": "es",
+  "summary": "El video explora los experimentos de obediencia de Stanley Milgram, que revelan cómo personas comunes pueden cometer actos atroces bajo la presión de una figura de autoridad, conectando estos hallazgos con la historia de Adolf Eichmann y la banalidad del mal.",
+  "main_topics": [
+    "Stanley Milgram",
+    "Experimentos de obediencia",
+    "Adolf Eichmann",
+    "Banalidad del mal",
+    "Psicología social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso Eichmann",
+      "purpose": "Despertar la curiosidad sobre cómo el mal puede ser banal y cometidos por personas normales.",
+      "summary": "Se presenta a Adolf Eichmann como un burócrata que organizaba la logística del Holocausto sin odio."
+    },
+    {
+      "section": "El juicio de Eichmann",
+      "purpose": "Establecer el contexto histórico y la percepción pública del mal en Eichmann.",
+      "summary": "Eichmann fue juzgado y presentado como el símbolo del mal que cumple órdenes."
+    },
+    {
+      "section": "El experimento de Milgram",
+      "purpose": "Ilustrar la naturaleza de la obediencia a la autoridad.",
+      "summary": "Se describe el experimento que pidió a personas comunes infligir descargas eléctricas a otros, revelando hasta dónde obedecen órdenes."
+    },
+    {
+      "section": "Los hallazgos del experimento",
+      "purpose": "Comparar las expectativas iniciales con los resultados obtenidos.",
+      "summary": "Mucho más del 65% de los participantes obedecieron hasta el final, desafiando expectativas."
+    },
+    {
+      "section": "Críticas al experimento y descubrimientos",
+      "purpose": "Ofrecer una perspectiva crítica sobre la metodología de Milgram.",
+      "summary": "Gina Perry revisa los archivos y cuestiona la interpretación de los resultados."
+    },
+    {
+      "section": "Diferenciando obediencia y manipulación",
+      "purpose": "Reflexionar sobre la naturaleza de la obediencia.",
+      "summary": "Los sujetos no solo obedecían, eran manipulados y motivados por su deseo de ayudar."
+    },
+    {
+      "section": "Paralelismos con Eichmann",
+      "purpose": "Relacionar el comportamiento del experimento con el régimen nazi.",
+      "summary": "Eichmann y los participantes del experimento actuaban creyendo en la justicia de sus acciones."
+    },
+    {
+      "section": "Conclusión sobre el mal y la obediencia",
+      "purpose": "Resumir los principales hallazgos e implicaciones.",
+      "summary": "El mal no es solo obediencia sino también manipulación de creencias sobre actuar por el bien."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Qué crees que tendría que pasar para que tú, sentado en una oficina, organizaras trenes llenos de hombres, mujeres y niños...?",
+    "why_it_works": "Provoca reflexión y conexión personal con el tema del mal y la obediencia."
+  },
+  "claims": [
+    {
+      "claim": "El mal puede ser cometido por personas normales bajo órdenes de autoridad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las personas obedecen más cuando creen estar haciendo un bien.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La interpretación del experimento de Milgram ha sido simplificada y puede ser incorrecta.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [
+    "La frase de Hannah Arendt: 'El mal no siempre grita, a veces rellena formularios'.",
+    "El comportamiento de Eichmann durante su juicio como un burócrata normal."
+  ],
+  "actionable_ideas": [
+    "Fomentar la reflexión crítica ante autoridades y órdenes.",
+    "Estudiar y discutir sobre la ética y la obediencia en contextos históricos.",
+    "Promover el pensamiento crítico y la duda como herramienta de resistencia."
+  ],
+  "audience": "Personas interesadas en psicología, historia y ética",
+  "tone": "reflexivo",
+  "content_style": "narrativa mezcla de análisis y anécdota",
+  "retention_devices": [
+    "Citas impactantes",
+    "Conexiones históricas",
+    "Preguntas provocativas",
+    "Narrativas personales"
+  ],
+  "title_supporting_quotes": [
+    "'El mal no siempre grita, a veces rellena formularios y firma albaranes.'",
+    "'Todos llevamos un asesino dentro.'",
+    "'El experimento requiere que continúe.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Videos educativos sobre historia y psicología",
+    "Artículos de opinión sobre la ética de la obediencia",
+    "Documentales que exploren la banalidad del mal."
+  ],
+  "risk_notes": [
+    "Interpretaciones mal entendidas de los experimentos de Milgram pueden llevar a una visión pesimista de la naturaleza humana.",
+    "Explotación del tema del Holocausto puede resultar en discusiones dolorosas y difíciles."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "w2TLv30F6UU",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "How They Prevented The Citicorp Disaster",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\w2TLv30F6UU.mp3",
+  "transcribed_at": "2026-05-26T15:50:33.397763+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1507,
+  "text_sha256": "237acc83f8ee8d41434b3ddf684baafbdff95ee35c9f22bc9a0e0101e3a0cddb",
+  "repo_schema_version": "transcript_metadata_v1"
+}

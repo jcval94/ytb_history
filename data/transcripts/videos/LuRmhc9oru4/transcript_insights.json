@@ -1,0 +1,75 @@
+{
+  "video_id": "LuRmhc9oru4",
+  "language": "es",
+  "summary": "El video narra la historia de Roger Bannister y cómo rompió la barrera de los cuatro minutos en la milla, destacando su mentalidad y la forma en que inspiró a otros corredores a superar sus propios límites.",
+  "main_topics": [
+    "Roger Bannister",
+    "La milla de milagro",
+    "Mentalidad y superación",
+    "Impacto en el atletismo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir la historia de Roger Bannister",
+      "summary": "Se presenta a Roger Bannister y su logro en la carrera de la milla."
+    },
+    {
+      "section": "El logro de Bannister",
+      "purpose": "Resaltar la importancia del tiempo logrado",
+      "summary": "Bannister rompió el récord y cambió la percepción sobre lo que es posible."
+    },
+    {
+      "section": "Impacto posterior",
+      "purpose": "Demostrar la influencia de Bannister en otros corredores",
+      "summary": "Otros corredores superaron el tiempo récord poco después del logro de Bannister."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Reflexionar sobre la lección aprendida",
+      "summary": "La historia de Bannister como una motivación para superar límites personales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "Ese día Roger Bannister no solo corrió 1.600 metros en un tiempo récord.",
+    "why_it_works": "Capta la atención al mencionar un logro notable y establece la base para una lección más profunda."
+  },
+  "claims": [
+    {
+      "claim": "La mentalidad de Bannister fue clave para su éxito.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El récord de la milla se volvió más accesible tras su logro.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "John Landy corrió la milla en 3'48.",
+    "En 1957, cuatro corredores rompieron la barrera de los cuatro minutos en una misma carrera."
+  ],
+  "actionable_ideas": [
+    "Superar tus propios límites mentales.",
+    "Inspirarte en historias de éxito para lograr tus metas."
+  ],
+  "audience": "Personas interesadas en el deporte y la superación personal.",
+  "tone": "Inspirador",
+  "content_style": "Narrativo y motivacional",
+  "retention_devices": [
+    "Técnicas de narración",
+    "Estadísticas sorprendentes",
+    "Referencias históricas"
+  ],
+  "title_supporting_quotes": [
+    "La milla de milagro de Roger Bannister es una patada en el culo a todos esos límites."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido basado en historias de superación personal.",
+    "Desarrollar un análisis sobre cómo la mentalidad afecta el rendimiento deportivo."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

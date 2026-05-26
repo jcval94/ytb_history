@@ -1,0 +1,74 @@
+{
+  "video_id": "Vx0PQKb7UHE",
+  "language": "es",
+  "summary": "Michael Marin, un millonario aventurero, se enfrenta a un incendio en su casa el 5 de julio de 2009. A pesar de la situación crítica, logró escapar y explicó a los bomberos que era el único en la casa. Su experiencia de vida incluye haber escalado montañas, volar aviones y colaborar en inversiones complejas.",
+  "main_topics": [
+    "Incendio en la casa de Michael Marin",
+    "Experiencia de vida de un millonario aventurero",
+    "Superación en situaciones de vida o muerte"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del conflicto",
+      "purpose": "Presentar el incendio y la situación crítica de Marin",
+      "summary": "El 5 de julio de 2009, la casa de Michael Marin se incendia y él lucha por sobrevivir."
+    },
+    {
+      "section": "Descripción del personaje",
+      "purpose": "Profundizar en la vida y personalidad de Michael Marin",
+      "summary": "Michael Marin, aventurero millonario, ha vivido diversas experiencias y enfrentado la muerte."
+    },
+    {
+      "section": "Resolución",
+      "purpose": "Mostrar el desenlace del incendio y la intervención de los bomberos",
+      "summary": "Los bomberos controlan el fuego y Michael Marin escapa exitosamente."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga de sobrevivencia",
+    "hook_text": "La casa de Michael Marin se encontraba en llamas.",
+    "why_it_works": "Capta inmediatamente la atención del espectador al presentarlo en una situación de peligro."
+  },
+  "claims": [
+    {
+      "claim": "Michael Marin era un millonario aventurero.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Marin ha enfrentado la muerte en varias ocasiones.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los bomberos llegaron a tiempo para controlar las llamas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Incorporar más historias de sobrevivencia en narrativas similares.",
+    "Explorar la vida de personas aventureras y sus desafíos.",
+    "Crear contenido que hable sobre la resiliencia en situaciones extremas."
+  ],
+  "audience": "Personas interesadas en historias de supervivencia y aventura.",
+  "tone": "Narrativo, informativo.",
+  "content_style": "Documental.",
+  "retention_devices": [
+    "Repetición de ideas clave sobre la vida de Marin.",
+    "Citas impactantes para mantener el interés."
+  ],
+  "title_supporting_quotes": [
+    "El tiempo se me hace lento en este tipo de situaciones."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un documental sobre la vida de Michael Marin.",
+    "Escribir un libro basado en sus experiencias."
+  ],
+  "risk_notes": [
+    "El uso excesivo de detalles repetitivos puede afectar el interés.",
+    "La narrativa debe mantener un balance entre lo dramático y lo informativo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

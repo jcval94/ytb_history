@@ -1,0 +1,74 @@
+{
+  "video_id": "5KrdJ4xoY5U",
+  "language": "es",
+  "summary": "El video discute la interpretación del 'Señor de las Moscas' como un reflejo negativo de la naturaleza humana, contrastándolo con una historia real de amistad y cooperación entre jóvenes en un contexto desafiante.",
+  "main_topics": [
+    "Naturaleza humana",
+    "Cooperación",
+    "Percepción negativa",
+    "Historia real",
+    "Amistad en situaciones difíciles"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del 'Señor de las Moscas'.",
+      "summary": "Se introduce la noción de que esta obra representa una visión pesimista de la humanidad."
+    },
+    {
+      "section": "Argumento central",
+      "purpose": "Contrastar la ficción con la realidad.",
+      "summary": "Se relatan las experiencias positivas de un grupo de chicos en circunstancias adversas."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Resaltar el mensaje de esperanza.",
+      "summary": "Se apela a la idea de que la verdadera humanidad puede brillar en momentos oscuros."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Durante décadas, el Señor de las Moscas ha sido presentado como un espejo de la verdadera naturaleza humana.",
+    "why_it_works": "Provoca curiosidad y desafía creencias comunes sobre la naturaleza humana."
+  },
+  "claims": [
+    {
+      "claim": "La cooperación es la herramienta de supervivencia más poderosa.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las historias negativas moldean nuestra percepción de la bondad.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Un huerto, un corral de gallinas y una cancha de bádminton.",
+    "La relación de amistad entre los chicos."
+  ],
+  "actionable_ideas": [
+    "Fomentar la cooperación en comunidades.",
+    "Revisar narrativas culturales sobre la naturaleza humana.",
+    "Crear contenido positivo basado en historias reales."
+  ],
+  "audience": "Personas interesadas en la psicología y la naturaleza humana.",
+  "tone": "Reflexivo y esperanzador.",
+  "content_style": "Narrativo y persuasivo.",
+  "retention_devices": [
+    "Un cliffhanger sobre el contenido completo en el video enlazado.",
+    "Uso de anécdotas personales y testimonios."
+  ],
+  "title_supporting_quotes": [
+    "La cooperación es la herramienta de supervivencia más poderosa que tenemos como especie."
+  ],
+  "creative_reuse_opportunities": [
+    "Transformar la narrativa en un podcast.",
+    "Crear una serie de videos sobre historias de cooperación."
+  ],
+  "risk_notes": [
+    "Empatizar con el público sobre relatos negativos puede tener un efecto desmoralizador.",
+    "Mala interpretación de las historias puede reforzar estigmas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

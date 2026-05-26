@@ -1,0 +1,74 @@
+{
+  "video_id": "Fkm3jiPtZn8",
+  "language": "es",
+  "summary": "El video detalla la historia de Grigori Perelman, quien recibió el premio del milenio por resolver el conjetura de Poincaré, pero decidió no aceptarlo debido a su desacuerdo con el reconocimiento de la comunidad matemática.",
+  "main_topics": [
+    "Premio del milenio",
+    "Grigori Perelman",
+    "Conjetura de Poincaré",
+    "Comunidad matemática",
+    "Principios éticos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al premio del milenio",
+      "purpose": "Presentar el contexto del premio otorgado a Perelman.",
+      "summary": "En 2010, el Instituto Clay de Matemáticas reconoció el logro de Perelman."
+    },
+    {
+      "section": "Decisión de Perelman",
+      "purpose": "Explicar la postura de Perelman respecto al premio.",
+      "summary": "Perelman decidió no aceptar el premio debido a diferencias con la comunidad matemática."
+    },
+    {
+      "section": "Ceremonia del premio",
+      "purpose": "Describir la ceremonia donde se otorgó el premio sin la presencia de Perelman.",
+      "summary": "La ceremonia se llevó a cabo en París, y Perelman no asistió, subrayando su desacuerdo con el sistema."
+    },
+    {
+      "section": "Conclusión sobre principios",
+      "purpose": "Reflexionar sobre lo que representaron los principios de Perelman.",
+      "summary": "Perelman priorizó sus convicciones sobre el reconocimiento y el premio."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Crea expectación por la historia completa, incentivando a los espectadores a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "Perelman decidió no aceptar el premio del milenio.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Perelman consideraba injusto el reconocimiento de la comunidad matemática.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia de Grigori Perelman.",
+    "Estudiar el impacto de la decisión de Perelman en la comunidad matemática."
+  ],
+  "audience": "Interesados en matemáticas y ética en la ciencia.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Intriga",
+    "Citas de Perelman",
+    "Referencias a la ceremonia"
+  ],
+  "title_supporting_quotes": [
+    "Estoy en desacuerdo con la decisión de la comunidad matemática.",
+    "Aceptar el premio significaba validar un sistema que ignoraba contribuciones fundamentales."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre matemáticas.",
+    "Artículos sobre ética en la ciencia."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

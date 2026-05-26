@@ -1,0 +1,87 @@
+{
+  "video_id": "SnkoIuizyRE",
+  "language": "es",
+  "summary": "El video cuestiona la interpretación del famoso experimento de Stanley Milgram, sugiriendo que los datos han sido manipulados y que la mayoría de personas no obedecen órdenes dañinas como se había creído. Se revela que en situaciones de orden directo, los participantes desobedecen, lo que destaca la bondad inherente de la humanidad.",
+  "main_topics": [
+    "Experimento de Milgram",
+    "Naturaleza humana",
+    "Desobediencia a la autoridad",
+    "Manipulación de datos",
+    "Verdad oculta"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el experimento de Milgram como un tema central",
+      "summary": "Se plantea que el experimento ha sido malinterpretado durante años."
+    },
+    {
+      "section": "Revelaciones recientes",
+      "purpose": "Introducir nueva información sobre el experimento",
+      "summary": "Se mencionan archivos secretos que contradicen las creencias comunes."
+    },
+    {
+      "section": "Visión alternativa de la humanidad",
+      "purpose": "Exponer la perspectiva positiva sobre las acciones humanas",
+      "summary": "Se argumenta que las personas tienden a hacer el bien en lugar de actuar como 'robots'."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Invitar a los espectadores a informarse más",
+      "summary": "Se anima a ver el documental completo para obtener más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Stanley Milgram nos mintió.",
+    "why_it_works": "Capta la atención al desafiar un concepto bien establecido y genera curiosidad sobre la verdad detrás del experimento."
+  },
+  "claims": [
+    {
+      "claim": "El 100% de los participantes desobedecía en órdenes directas.",
+      "support_level": "implicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las personas quieren hacer el bien.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La interpretación de Milgram sobre el comportamiento humano es errónea.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "grabaciones originales de Milgram",
+    "archivos secretos de Yale"
+  ],
+  "actionable_ideas": [
+    "Ver el documental completo",
+    "Investigar sobre el experimento de Milgram",
+    "Cuestionar la autoridad y las órdenes recibidas"
+  ],
+  "audience": "Personas interesadas en psicología y ética",
+  "tone": "Crítico y revelador",
+  "content_style": "Informativo y provocador",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Datos sorprendentes",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "El 65% de nosotros mataría a un desconocido...",
+    "Si el investigador daba una orden directa, el 100% desobedecía."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre ética en psicología",
+    "Podcasts sobre manipulación y autoridad",
+    "Infografías comparando experimentos psicológicos"
+  ],
+  "risk_notes": [
+    "Rechazo de la información por parte de los escépticos",
+    "Posibles repercusiones en la percepción de la psicología"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

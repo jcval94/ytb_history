@@ -1,0 +1,87 @@
+{
+  "video_id": "FNg5_5cXGmw",
+  "language": "spanish",
+  "summary": "El 11 de noviembre de 2002, Perelman publicó su demostración de la conjetura de Poincaré en arxiv.org en lugar de utilizar canales académicos tradicionales. Su trabajo fue inicialmente recibido con escepticismo, pero tras una revisión exhaustiva, se confirmó que tenía razón.",
+  "main_topics": [
+    "Grigori Perelman",
+    "Conjetura de Poincaré",
+    "Publicación en arxiv.org",
+    "Revisión por pares",
+    "Premios de matemáticas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Perelman",
+      "purpose": "Contextualizar quién es Perelman y su decisión de publicar.",
+      "summary": "Perelman desafió las normas publicando en un sitio de acceso abierto."
+    },
+    {
+      "section": "Reacción de la comunidad matemática",
+      "purpose": "Describir la reacción inicial al trabajo de Perelman.",
+      "summary": "La comunidad recibió el trabajo con escepticismo debido a su estatus."
+    },
+    {
+      "section": "Validación por la Fundación Clay",
+      "purpose": "Explicar el proceso de validación realizado por expertos.",
+      "summary": "Un equipo internacional revisó la demostración durante tres años."
+    },
+    {
+      "section": "Confirmación del teorema",
+      "purpose": "Anunciar la confirmación del trabajo de Perelman.",
+      "summary": "En 2006, se confirmó que Perelman había resuelto la conjetura."
+    },
+    {
+      "section": "Cierre e invitación",
+      "purpose": "Invitar a los espectadores a ver el video completo.",
+      "summary": "Se invita a ver el video enlazado para más información."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga",
+    "why_it_works": "Crea curiosidad en el espectador, motivando a ver más."
+  },
+  "claims": [
+    {
+      "claim": "Perelman publicó su demostración en arxiv.org",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La comunidad matemática recibió su trabajo con escepticismo",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Perelman resolvió la conjetura de Poincaré",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre la conjetura de Poincaré",
+    "Explorar el sitio arxiv.org para más trabajos académicos",
+    "Considerar formas no convencionales de publicar investigaciones"
+  ],
+  "audience": "Interesados en matemáticas y divulgación científica",
+  "tone": "Informativo y emocionante",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Intriga inicial",
+    "Datos históricos",
+    "Desarrollo del proceso de validación"
+  ],
+  "title_supporting_quotes": [
+    "La fórmula de la entropía para el flujo de Ricci y sus aplicaciones geométricas"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre otros problemas del milenio",
+    "Desarrollar contenido sobre la historia de las matemáticas",
+    "Explorar el impacto de publicaciones no convencionales"
+  ],
+  "risk_notes": [
+    "Posible desinformación si no se verifica el contexto del trabajo de Perelman"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "cRysLiGTacY",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿LOS SOLDADOS SON FORZADOS A COMPETIR Y PELEAR?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\cRysLiGTacY.mp3",
+  "transcribed_at": "2026-05-26T15:50:25.227844+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1232,
+  "text_sha256": "9d5b415d58bdc0ca81f61f8f7802ef3a5c334dcc8fa811dd5813f176741f4e75",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\cRysLiGTacY\\transcript_segments.jsonl",
+  "segment_count": 8,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:10:19.934569+00:00",
+  "duration_seconds": 77.0199966430664
+}

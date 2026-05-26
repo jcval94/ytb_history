@@ -1,0 +1,72 @@
+{
+  "video_id": "EaP8dwFy4Hs",
+  "language": "es",
+  "summary": "Roger Bannister se prepara para intentar romper el récord de velocidad al recorrer una milla en menos de 4 minutos, desafiando la creencia de que es imposible para el cuerpo humano.",
+  "main_topics": [
+    "Récord de velocidad",
+    "Desafío a lo imposible",
+    "Roger Bannister",
+    "Historia del deporte"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del escenario",
+      "purpose": "Presentar la situación y los espectadores",
+      "summary": "El road está lleno con 3,000 espectadores listos para el intento de Bannister."
+    },
+    {
+      "section": "Descripción del desafío",
+      "purpose": "Enfatizar la dificultad del logro",
+      "summary": "Bannister intenta recorrer una milla en menos de 4 minutos, un reto considerado imposible."
+    },
+    {
+      "section": "Presentación de Bannister",
+      "purpose": "Introducir al protagonista",
+      "summary": "Describen a Bannister como un estudiante de medicina con poca preparación atlética."
+    },
+    {
+      "section": "Cliffhanger",
+      "purpose": "Dejar a la audiencia intrigada",
+      "summary": "Se menciona que hay un vídeo completo de su historia vinculado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Crea curiosidad, incitando al espectador a querer ver más."
+  },
+  "claims": [
+    {
+      "claim": "El cuerpo humano no puede aguantar recorrer una milla en menos de 4 minutos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Roger Bannister está listo para desafiar lo que todos creen imposible.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre Roger Bannister",
+    "Ver el vídeo completo para conocer la historia",
+    "Reflexionar sobre los límites humanos"
+  ],
+  "audience": "Aficionados al deporte y la historia",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Suspenso",
+    "Interés en el desenlace",
+    "Uso de estadísticas"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre récords deportivos",
+    "Realizar un análisis sobre los límites humanos",
+    "Hacer un documental sobre deportes y superación"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

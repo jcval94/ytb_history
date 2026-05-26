@@ -1,0 +1,20 @@
+{
+  "video_id": "FNg5_5cXGmw",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Perelman rechazó un millon Nadie sabe Por qué lo hizo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FNg5_5cXGmw.mp3",
+  "transcribed_at": "2026-05-26T15:58:32.023402+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1536,
+  "text_sha256": "7f351dc73c20cc74ad98a4ebb571120d465e054f5b0651c54617d1c7a2fac8fb",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\FNg5_5cXGmw\\transcript_segments.jsonl",
+  "segment_count": 24,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:17.410985+00:00",
+  "duration_seconds": 93.11000061035156
+}

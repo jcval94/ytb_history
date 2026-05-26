@@ -1,0 +1,91 @@
+{
+  "video_id": "r7f1lmV8SYc",
+  "language": "unknown",
+  "summary": "The video discusses the world's largest water slide, Veruuk, highlighting its extreme speed, ambitious creation process, and the safety concerns that have led to repeated delays in its opening.",
+  "main_topics": [
+    "World's Largest Water Slide",
+    "Speed and Design",
+    "Safety Concerns",
+    "Ambition and Innovation",
+    "Tragic Outcomes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to Veruuk",
+      "purpose": "Present the water slide and its features",
+      "summary": "Introduces Veruuk as an insane water slide that reaches speeds of 60 mph."
+    },
+    {
+      "section": "Ambition and Vision",
+      "purpose": "Highlight the creator's ambition",
+      "summary": "Discusses the creator's drive to innovate and surpass limits in water park attractions."
+    },
+    {
+      "section": "Technical Challenges",
+      "purpose": "Present challenges faced in construction",
+      "summary": "Outlines the technological difficulties in creating the slide, specifically the second hill."
+    },
+    {
+      "section": "Delays and Safety Questions",
+      "purpose": "Address the recurring delays",
+      "summary": "Covers the repeated delays in the opening date and raises safety concerns about the attraction."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize the current status",
+      "summary": "Ends with uncertainty around safety and the future intro of the ride."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Rhetorical Question",
+    "hook_text": "The big question, of course, is it safe?",
+    "why_it_works": "It engages the audience's concern for safety and highlights the gravity of the situation."
+  },
+  "claims": [
+    {
+      "claim": "Veruuk can reach speeds up to 60 miles per hour.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The slide has faced multiple delays due to safety concerns.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "The creator's ambition led to innovative but risky design choices.",
+      "support_level": "implicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "The ambition of creating a world's tallest ride.",
+    "The need for new technology to construct the slide."
+  ],
+  "actionable_ideas": [
+    "Address safety concerns transparently to regain public trust.",
+    "Communicate delays clearly to stakeholders and customers.",
+    "Invest in advanced technology to ensure safety of the ride."
+  ],
+  "audience": "Adventurers, theme park enthusiasts, industry professionals",
+  "tone": "Cautionary and reflective",
+  "content_style": "Informal, conversational",
+  "retention_devices": [
+    "Rhetorical questions to provoke thought",
+    "Engaging anecdotes about the creator's ambition",
+    "Visual descriptions of the slide's challenges"
+  ],
+  "title_supporting_quotes": [
+    "\"Nobody's ever built anything like this.\"",
+    "\"The opening has just been delayed, though, for a third time.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Behind-the-scenes footage of the construction process.",
+    "Safety testing and technology explanations.",
+    "Interviews with the creator about challenges faced."
+  ],
+  "risk_notes": [
+    "High ambitions can lead to tragic outcomes if safety is compromised."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "iRvvPjEsTFU",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "TREGUA DE NAVIDAD- Cómo la prensa convierte al enemigo en una bestia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\iRvvPjEsTFU.mp3",
+  "transcribed_at": "2026-05-26T15:52:21.888093+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1459,
+  "text_sha256": "3930100a2b4c28ff65aa2ef18fc746391b37aed929b332c4530f4972d1f61b5c",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\iRvvPjEsTFU\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:11:05.308183+00:00",
+  "duration_seconds": 93.12999725341797
+}

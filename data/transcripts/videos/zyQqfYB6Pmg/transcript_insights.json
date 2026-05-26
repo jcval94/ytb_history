@@ -1,0 +1,80 @@
+{
+  "video_id": "zyQqfYB6Pmg",
+  "language": "es",
+  "summary": "El video narra la historia de Katherine Johnson, una matemática afroamericana que jugó un papel crucial en la carrera espacial de Estados Unidos al verificar manualmente cálculos vitales antes del vuelo de John Glenn. A través de su historia, se evidencia la lucha contra el racismo y el sexismo en la época, así como el impacto de la tecnología actual en la gestión de información compleja.",
+  "main_topics": [
+    "Katherine Johnson",
+    "Carrera espacial",
+    "Matemáticas",
+    "Racismo",
+    "Sexismo",
+    "Tecnología"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto histórico de la carrera espacial y la importancia de Katherine Johnson.",
+      "summary": "Se describe la presión sobre Estados Unidos para lanzar un astronauta al espacio después de los logros soviéticos."
+    },
+    {
+      "section": "Katherine Johnson",
+      "purpose": "Detallar la vida y logros de Katherine Johnson.",
+      "summary": "Se narra la trayectoria de Katherine, su educación, y cómo se convirtió en un recurso valioso en NASA."
+    },
+    {
+      "section": "Impacto y legado",
+      "purpose": "Reflejar la importancia del trabajo de Katherine y su influencia en la historia.",
+      "summary": "Se discute su contribución a la NASA y cómo supera las barreras raciales y de género."
+    },
+    {
+      "section": "Tecnología moderna",
+      "purpose": "Vincular el pasado con el presente usando la tecnología actual.",
+      "summary": "Se presenta UPDF como una herramienta moderna para manejar información compleja."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa inspiradora",
+    "hook_text": "Esta es la historia de Katherine Johnson, la calculadora humana que llevó a la humanidad hasta la luna.",
+    "why_it_works": "Captura la atención al resaltar un personaje poco reconocido que desempeñó un papel vital en la historia."
+  },
+  "claims": [
+    {
+      "claim": "Katherine Johnson verificó manualmente cálculos críticos para la NASA.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La NASA ignoró a muchas mujeres matemáticas por problemas de racismo y sexismo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "El lanzamiento de Sputnik y la reacción de Estados Unidos.",
+    "El aislamiento y las condiciones de trabajo de las matemáticas afroamericanas en la NACA."
+  ],
+  "actionable_ideas": [
+    "Incluir más historias de mujeres en STEM en la educación.",
+    "Reforzar políticas de igualdad en el lugar de trabajo."
+  ],
+  "audience": "Personas interesadas en la historia, tecnología y derechos humanos.",
+  "tone": "Informativo y inspirador",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Imágenes históricas de Katherine Johnson",
+    "Testimonios de su impacto en la NASA"
+  ],
+  "title_supporting_quotes": [
+    "Katherine fue uno de los tres estudiantes negros seleccionados por la universidad y la única mujer entre ellos.",
+    "Debes convertirte en investigadora matemática."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre la historia de mujeres en ciencia.",
+    "Desarrollar una serie sobre pioneras en diferentes campos."
+  ],
+  "risk_notes": [
+    "Potencial resistencia de audiencias que minimizan el impacto del racismo o sexismo.",
+    "Sensibilidad al abordar temas de historia racial."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

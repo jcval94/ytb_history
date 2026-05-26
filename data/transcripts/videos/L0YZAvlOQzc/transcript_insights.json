@@ -1,0 +1,85 @@
+{
+  "video_id": "L0YZAvlOQzc",
+  "language": "es",
+  "summary": "El video discute la creación de amantes artificiales que pueden personalizarse según las preferencias del usuario, similar a un episodio de Black Mirror sobre revivir a seres queridos a través de tecnología. Explora la angustia ética y emocional de tal tecnología.",
+  "main_topics": [
+    "Amantes artificiales",
+    "Tecnología y relaciones",
+    "Ética de la inteligencia artificial",
+    "Influencia de Black Mirror"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los amantes artificiales",
+      "purpose": "Presentar el tema",
+      "summary": "Se menciona la aparición de páginas para crear amantes virtuales personalizados."
+    },
+    {
+      "section": "Referencia a Black Mirror",
+      "purpose": "Establecer conexión cultural",
+      "summary": "Se compara con un capítulo de Black Mirror donde se revive a un ser querido fallecido."
+    },
+    {
+      "section": "Descripción de las posibilidades",
+      "purpose": "Detallar las características del amante artificial",
+      "summary": "Se enumeran las opciones de personalización, como el género, apariencia y personalidad."
+    },
+    {
+      "section": "Reflexión ética",
+      "purpose": "Generar discusión sobre implicaciones",
+      "summary": "Se plantea una crítica hacia la idea de sustituir a personas fallecidas con robots."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Referencia cultural",
+    "hook_text": "Sí, como el capítulo de Black Mirror...",
+    "why_it_works": "Engancha a la audiencia al evocar una serie popular que trata temas oscuros de la tecnología."
+  },
+  "claims": [
+    {
+      "claim": "Es posible crear amantes artificiales personalizados",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La tecnología puede revivir seres queridos de manera digital",
+      "support_level": "implicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El uso de robots como reemplazo emocional es éticamente problemático",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Personalización de apariencia",
+    "Creación de personalidad basada en redes sociales"
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la ética de los amantes virtuales",
+    "Explorar tecnologías que permiten la personalización de la IA",
+    "Analizar el impacto psicológico de interactuar con seres artificiales"
+  ],
+  "audience": "Personas interesadas en tecnología y relaciones",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y crítico",
+  "retention_devices": [
+    "Referencias a series populares",
+    "Preguntas retóricas sobre la ética"
+  ],
+  "title_supporting_quotes": [
+    "Es fogoso, es atractivo.",
+    "Una persona nueva mejorada."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre tecnología y relaciones",
+    "Debates sobre la ética de la IA",
+    "Vídeos de análisis de Black Mirror"
+  ],
+  "risk_notes": [
+    "Potencial desensibilización emocional",
+    "Posibles problemas de relación en la vida real"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

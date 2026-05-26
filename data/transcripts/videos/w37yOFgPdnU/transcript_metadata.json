@@ -1,0 +1,14 @@
+{
+  "video_id": "w37yOFgPdnU",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "La ÚLTIMA Lección de la Reina de las Matemáticas | Maryam Mirzakhani",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\w37yOFgPdnU.mp3",
+  "transcribed_at": "2026-05-26T15:50:17.752664+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9333,
+  "text_sha256": "1f94a2ab45dc0623868f2728fef2b56e6456cb8bd621a6b6d00feba54c47a970",
+  "repo_schema_version": "transcript_metadata_v1"
+}

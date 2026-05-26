@@ -1,0 +1,14 @@
+{
+  "video_id": "XKSjCOKDtpk",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Tiny Donut That Proved We Still Don't Understand Magnetism",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\XKSjCOKDtpk.mp3",
+  "transcribed_at": "2026-05-26T15:47:11.373894+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 34972,
+  "text_sha256": "0da0dd090ef1c60504464e7997fcc035dc87d12ead6898d91e97ec3e71bc79a8",
+  "repo_schema_version": "transcript_metadata_v1"
+}

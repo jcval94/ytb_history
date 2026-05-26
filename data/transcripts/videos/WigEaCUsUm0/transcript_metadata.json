@@ -1,0 +1,20 @@
+{
+  "video_id": "WigEaCUsUm0",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "LOS 6 DE TONGA  - El Señor de las Moscas Real",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\WigEaCUsUm0.mp3",
+  "transcribed_at": "2026-05-26T15:53:44.435154+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1815,
+  "text_sha256": "c786486c787389d3f1a8a45ec4a7f44d481cadda9591f4ffdea5a16c14836655",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\WigEaCUsUm0\\transcript_segments.jsonl",
+  "segment_count": 26,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:09:42.235684+00:00",
+  "duration_seconds": 97.26000213623047
+}

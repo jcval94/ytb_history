@@ -1,0 +1,83 @@
+{
+  "video_id": "5t-FXARR8_4",
+  "language": "es",
+  "summary": "El relato contrasta la experiencia de un grupo de chicos varones en una isla con la novela 'El Señor de las Moscas' de Golding, destacando su capacidad de organización, resolución de conflictos y supervivencia mediante el trabajo en equipo y el uso ingenioso de los recursos naturales.",
+  "main_topics": [
+    "Supervivencia en la isla",
+    "Organización del grupo",
+    "Resolución de conflictos",
+    "Comparación con 'El Señor de las Moscas'"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción y contexto",
+      "purpose": "Establecer la conexión con la novela y la realidad.",
+      "summary": "Se inicia comparando la búsqueda de fuego de los chicos en la isla con la novela de Golding."
+    },
+    {
+      "section": "Logros y organización",
+      "purpose": "Detallar cómo los chicos sobrevivieron y se organizaron.",
+      "summary": "Se describe la organización en tareas rotativas y la búsqueda de recursos en la isla."
+    },
+    {
+      "section": "Resolución de conflictos",
+      "purpose": "Mostrar la estrategia utilizada para manejar desavenencias.",
+      "summary": "Se explica cómo los conflictos se resolvían mediante el distanciamiento y la reconciliación."
+    },
+    {
+      "section": "Conclusión y invitación",
+      "purpose": "Promover el contenido adicional.",
+      "summary": "Se finaliza invitando a los espectadores a ver el vídeo completo para más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Comparación literaria",
+    "hook_text": "Y como en la novela de Golding, su primer impulso fue conseguir fuego.",
+    "why_it_works": "Establece un paralelismo intrigante que capta la atención del público desde el inicio."
+  },
+  "claims": [
+    {
+      "claim": "Los chicos lograron mantener el fuego encendido durante 15 meses.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La organización en parejas y rotación de roles contribuyó a evitar conflictos.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Resolvieron conflictos alejándose y volviendo a reconciliarse.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Creación de un huerto improvisado.",
+    "Recolección de agua de lluvia de cierto tipo de árbol."
+  ],
+  "actionable_ideas": [
+    "Implementar rotaciones en trabajos en grupo.",
+    "Desarrollar técnicas de resolución de conflictos pacificas."
+  ],
+  "audience": "Jóvenes interesados en historias de supervivencia y liderazgo.",
+  "tone": "Reflexivo y educativo.",
+  "content_style": "Narrativo con elementos de comparación.",
+  "retention_devices": [
+    "Uso de la novela como referencia",
+    "Narración de logros y desafíos",
+    "Invitación a seguir aprendiendo"
+  ],
+  "title_supporting_quotes": [
+    "Les costó horas conseguir una llama, pero una vez encendido el fuego, lo cuidaron con devoción."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollo de un podcast sobre supervivencia.",
+    "Creación de una serie de videos educativos sobre resolución de conflictos."
+  ],
+  "risk_notes": [
+    "Dependencia de las experiencias de los chicos, sin verificación externa.",
+    "Posible romanticismo de la experiencia comparada con la novela."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

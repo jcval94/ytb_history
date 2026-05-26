@@ -1,0 +1,67 @@
+{
+  "video_id": "aweBfQVk73I",
+  "language": "spanish",
+  "summary": "El video narra la desobediencia de soldados que, a pesar de órdenes de ataque, optaron por mantener la paz comunicándose y salvaguardando a sus compañeros.",
+  "main_topics": [
+    "Desobediencia militar",
+    "Intentos de mantener la paz",
+    "Comunicación entre ejércitos",
+    "Humanidad en el conflicto"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación de desobediencia",
+      "summary": "A pesar de órdenes, algunos soldados buscan la paz."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Describir las acciones de los soldados",
+      "summary": "Los soldados intercambian información para evitar ataques."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a ver el video completo",
+      "summary": "Se deja un cliffhanger sobre la historia completa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga...",
+    "why_it_works": "Crea curiosidad en el espectador sobre la historia completa."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados desobedecieron órdenes para evitar el conflicto.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Se comunicaron entre ejércitos para prevenir ataques.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar la comunicación pacífica entre rivales.",
+    "Reflexionar sobre la moralidad en tiempos de conflicto."
+  ],
+  "audience": "Jóvenes interesados en historia y conflictos bélicos",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Cliffhanger",
+    "Narrativa conmovedora"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre desobediencia militar.",
+    "Desarrollar un corto dramatizado sobre la historia."
+  ],
+  "risk_notes": [
+    "El tema puede ser sensible dependiendo de la audiencia.",
+    "Describir conflictos bélicos requiere cuidado en la narrativa."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

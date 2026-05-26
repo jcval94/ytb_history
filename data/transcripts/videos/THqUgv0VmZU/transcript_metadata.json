@@ -1,0 +1,20 @@
+{
+  "video_id": "THqUgv0VmZU",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Los 6 de Tonga El Señor de las Moscas - Short",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\THqUgv0VmZU.mp3",
+  "transcribed_at": "2026-05-26T15:53:53.140091+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1636,
+  "text_sha256": "a5f9e1fb4d8f2917250d45650d208edbe4206df1fd681c5701c369a56e89a5dd",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\THqUgv0VmZU\\transcript_segments.jsonl",
+  "segment_count": 25,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:07:54.536065+00:00",
+  "duration_seconds": 100.81999969482422
+}

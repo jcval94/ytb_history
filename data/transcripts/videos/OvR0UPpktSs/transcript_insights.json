@@ -1,0 +1,82 @@
+{
+  "video_id": "OvR0UPpktSs",
+  "language": "es",
+  "summary": "El video explora el atletismo en los años 50, destacando las diferencias en la tecnología y las condiciones de las pistas en comparación con hoy en día, así como la dificultad de romper la barrera de los cuatro minutos en 1,600 metros.",
+  "main_topics": [
+    "Atletismo en los años 50",
+    "Condiciones de las pistas",
+    "Zapatillas de carrera",
+    "Barreras de tiempos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la época",
+      "purpose": "Contextualizar el atletismo en los años 50",
+      "summary": "Presenta el contexto post Segunda Guerra Mundial y las condiciones del atletismo de la época."
+    },
+    {
+      "section": "Tecnología de las zapatillas",
+      "purpose": "Comparar la tecnología de calzado",
+      "summary": "Describe las limitaciones de las zapatillas de cuero de la época."
+    },
+    {
+      "section": "Condiciones de las pistas",
+      "purpose": "Ilustrar el entorno competitivo",
+      "summary": "Explica cómo las pistas afectaban el rendimiento de los corredores."
+    },
+    {
+      "section": "Barrera de los cuatro minutos",
+      "purpose": "Subrayar un logro significativo",
+      "summary": "Menciona la dificultad de correr 1,600 metros en menos de cuatro minutos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Crea curiosidad y motiva a la audiencia a buscar más información sobre el desafío del atletismo en esa época."
+  },
+  "claims": [
+    {
+      "claim": "El atletismo era muy diferente en los años 50.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las zapatillas de cuero eran pesadas y poco eficientes.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las pistas de atletismo eran más lentas y más difíciles de correr.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Correr 1,600 metros en menos de cuatro minutos era una barrera insuperable.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia del atletismo.",
+    "Comparar la evolución de la tecnología en zapatillas.",
+    "Analizar los récords de atletismo antiguos versus actuales."
+  ],
+  "audience": "Entusiastas del deporte y de la historia del atletismo.",
+  "tone": "Informativo y nostálgico.",
+  "content_style": "Narrativo, descriptivo.",
+  "retention_devices": [
+    "Uso de historia",
+    "Detalles técnicos",
+    "Citas intrigantes"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Creación de un video comparativo sobre la evolución del atletismo.",
+    "Artículos sobre la historia de los récords de carrera.",
+    "Infografías sobre la evolución de las zapatillas de atletismo."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

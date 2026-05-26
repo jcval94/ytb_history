@@ -1,0 +1,72 @@
+{
+  "video_id": "5o8AWzSajs0",
+  "language": "es",
+  "summary": "El video menciona 'El señor de las moscas', un libro sobre un grupo de chicos que naufragan y viven en una isla sin adultos, lo que revela su naturaleza salvaje.",
+  "main_topics": [
+    "El señor de las moscas",
+    "Naufragio",
+    "Naturaleza humana",
+    "Soledad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema",
+      "summary": "Se introduce el libro 'El señor de las moscas' como fuente de reflexión sobre la naturaleza humana."
+    },
+    {
+      "section": "Contexto del libro",
+      "purpose": "Proporcionar contexto histórico",
+      "summary": "Se explica la trama del libro donde unos chicos naufragan en una isla desierta y pasan tiempo sin adultos."
+    },
+    {
+      "section": "Desenlace",
+      "purpose": "Crear curiosidad sobre la historia",
+      "summary": "Se sugiere que lo sucedido en la isla es sorprendente y diferente a lo que se creía."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Si todo esto te ha hecho pensar y quieres seguir tirando del hilo",
+    "why_it_works": "Invita al espectador a profundizar en un tema relevante de manera atractiva."
+  },
+  "claims": [
+    {
+      "claim": "Los humanos tienen una naturaleza salvaje.",
+      "support_level": "explicit",
+      "risk": "interpretación subjetiva"
+    },
+    {
+      "claim": "La historia de 'El señor de las moscas' demuestra esto.",
+      "support_level": "implicit",
+      "risk": "generalización excesiva"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Leer 'El señor de las moscas' para entender la naturaleza humana.",
+    "Reflexionar sobre la influencia de la sociedad en el comportamiento.",
+    "Explorar temas de soledad y supervivencia en la literatura."
+  ],
+  "audience": "Lectores interesados en la naturaleza humana y la literatura",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Citas del libro",
+    "Preguntas provocativas",
+    "Referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "el libro que lleva décadas diciéndonos que somos salvajes"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video analizando 'El señor de las moscas'.",
+    "Desarrollar un podcast sobre naturaleza humana y literatura.",
+    "Escribir un artículo sobre la educación y el comportamiento en sociedades."
+  ],
+  "risk_notes": [
+    "Puede ser interpretado de diversas maneras.",
+    "Dependencia de una trama ficticia para hacer afirmaciones sobre la realidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

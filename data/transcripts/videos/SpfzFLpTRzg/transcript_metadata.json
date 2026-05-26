@@ -1,0 +1,20 @@
+{
+  "video_id": "SpfzFLpTRzg",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Los tres segundos que cambiaron el deporte para siempre",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\SpfzFLpTRzg.mp3",
+  "transcribed_at": "2026-05-26T15:55:06.288585+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 675,
+  "text_sha256": "7735db358582029ba227fb99e2d84fd5bd0d07991d614b9f4212466e96f05357",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\SpfzFLpTRzg\\transcript_segments.jsonl",
+  "segment_count": 10,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:07:45.011633+00:00",
+  "duration_seconds": 37.939998626708984
+}

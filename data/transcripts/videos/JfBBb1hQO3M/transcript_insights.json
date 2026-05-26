@@ -1,0 +1,65 @@
+{
+  "video_id": "JfBBb1hQO3M",
+  "language": "es",
+  "summary": "El video explora el experimento de Milgram, destacando que la mayoría de los participantes querían detenerse al administrar descargas, pero solo unos pocos lo lograron. Se presentan tres tácticas que utilizaron los que resistieron: hablar con la víctima, culpar al investigador y decir 'no' de manera insistente. Además, se enfatiza que resistir el mal es una habilidad que se puede aprender y entrenar.",
+  "main_topics": [
+    "Experimento de Milgram",
+    "Resistencia ética",
+    "Tácticas de oposición al mal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento de Milgram",
+      "purpose": "Introducir el tema del experimento y su relevancia",
+      "summary": "Se menciona que casi todos los participantes del experimento querían parar, pero pocos lo lograron."
+    },
+    {
+      "section": "Descripción de tácticas efectivas",
+      "purpose": "Detallar las tácticas que ayudaron a algunos a resistir",
+      "summary": "Se enumeran tres tácticas que los resistentes usaron."
+    },
+    {
+      "section": "Conclusión sobre la resistencia ética",
+      "purpose": "Reflexionar sobre la capacidad de resistir el mal",
+      "summary": "Se plantea que resistir es una habilidad que se puede aprender."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntativa",
+    "hook_text": "¿Qué tenían ellos que no tuvieran los demás?",
+    "why_it_works": "Provoca curiosidad y reflexión sobre la resistencia ética."
+  },
+  "claims": [
+    {
+      "claim": "Resistir al mal disfrazado de bien es una habilidad que se puede aprender.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Hablar con la víctima y culpar al investigador son tácticas efectivas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practicar las tácticas de resistencia en situaciones cotidianas",
+    "Seguir el documental mencionado para profundizar en el tema"
+  ],
+  "audience": "Personas interesadas en la ética y psicología social",
+  "tone": "reflexivo",
+  "content_style": "informativo y educativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Enlaces a otros contenidos"
+  ],
+  "title_supporting_quotes": [
+    "Resistir al mal disfrazado de bien no es un rasgo de personalidad, es una habilidad."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar talleres sobre resistencia ética",
+    "Crear contenido complementario sobre el experimento de Milgram"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

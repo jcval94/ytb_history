@@ -1,0 +1,74 @@
+{
+  "video_id": "7JFANlQqTO0",
+  "language": "es",
+  "summary": "El video explora la analogía entre la novela 'El señor de las moscas' de William Golding y una verdadera historia de seis adolescentes que escaparon de un internado en Tonga, mientras reflexiona sobre la naturaleza humana, específicamente la cooperación frente a la violencia.",
+  "main_topics": [
+    "Cooperación vs. Violencia",
+    "Escape de un internado",
+    "Aventura en el océano",
+    "Supervivencia",
+    "Analogía con 'El señor de las moscas'"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Plantear la pregunta sobre la naturaleza humana.",
+      "summary": "Cuestiona la visión de Golding sobre la violencia inherente al ser humano."
+    },
+    {
+      "section": "Narración de la historia real",
+      "purpose": "Contar la historia de los adolescentes que escaparon.",
+      "summary": "Se narra cómo seis adolescentes robaron un barco para escapar, enfrentándose a un desafío inesperado en el mar."
+    },
+    {
+      "section": "Desenlace",
+      "purpose": "Crear intriga sobre el destino de los adolescentes.",
+      "summary": "Menciona que los jóvenes quedaron a la deriva durante ocho días sin comida ni agua."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Y si Golding se equivocaba?",
+    "why_it_works": "Suscita curiosidad y reflexiona sobre la naturaleza humana, atrayendo la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "La cooperación es un instinto humano más fuerte que la violencia.",
+      "support_level": "implicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "La historia de los adolescentes refleja una aventura inesperada y peligrosa.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre las propias experiencias de cooperación y conflicto.",
+    "Investigar sobre la historia de los adolescentes en Tonga.",
+    "Ver la historia completa en el video enlazado."
+  ],
+  "audience": "Interesados en la psicología humana y la teoría social.",
+  "tone": "Reflexivo y cautivador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Intriga sobre la historia",
+    "Conexión emocional con los adolescentes",
+    "Referencia a una obra literaria conocida"
+  ],
+  "title_supporting_quotes": [
+    "¿Y si nuestro instinto más profundo no es la violencia, sino la cooperación?",
+    "Durante ocho días vagaron a la deriva, sin agua y sin comida."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la naturaleza humana en la literatura.",
+    "Documentales sobre historias de supervivencia.",
+    "Talleres sobre psicología y comportamiento humano."
+  ],
+  "risk_notes": [
+    "El tema de la violencia puede ser sensible para algunas audiencias.",
+    "La representación de la historia real debe ser delicada para respetar a los involucrados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

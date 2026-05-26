@@ -1,0 +1,79 @@
+{
+  "video_id": "fkHIe8HVAsM",
+  "language": "es",
+  "summary": "El video detalla la historia del matemático Grigori Perelman, quien es recordado por haber rechazado la Medalla Fields, el más alto honor en matemáticas, en una ceremonia presidida por el rey de España. A pesar de los intentos de la Unión Matemática Internacional por convencerlo, Perelman mantuvo su decisión, expresando su deseo de no convertirse en 'un animal de zoológico'.",
+  "main_topics": [
+    "Grigori Perelman",
+    "Medalla Fields",
+    "Ética en las matemáticas",
+    "Premios y reconocimientos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Contextualizar el evento de la entrega de la Medalla Fields.",
+      "summary": "Más de 3.000 matemáticos se reunieron en Madrid para la ceremonia."
+    },
+    {
+      "section": "Anuncio del premio",
+      "purpose": "Presentar a Grigori Perelman y su rechazo.",
+      "summary": "Se anuncia que Perelman ganaría la medalla, pero no se presenta."
+    },
+    {
+      "section": "Intento de convencimiento",
+      "purpose": "Mostrar la importancia de la medalla y la postura de Perelman.",
+      "summary": "El presidente de la Unión viajó a San Petersburgo para convencer a Perelman."
+    },
+    {
+      "section": "Rechazo del premio",
+      "purpose": "Explicar la decisión de Perelman y su significado.",
+      "summary": "Perelman rechazó la medalla, estableciendo un precedente histórico."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a la audiencia a conocer más sobre la historia.",
+      "summary": "Se ofrece un enlace para obtener más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿Por qué rechazar la Medalla Fields?",
+    "why_it_works": "Genera curiosidad y motiva a la audiencia a querer conocer más sobre la decisión y el contexto."
+  },
+  "claims": [
+    {
+      "claim": "Perelman es el primer matemático en rechazar la Medalla Fields.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su decisión refleja normas éticas personales en lugar de deseos de reconocimiento.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre las normas éticas en diferentes profesiones.",
+    "Reflexionar sobre la importancia del reconocimiento en el trabajo académico."
+  ],
+  "audience": "Interesados en matemáticas y premios académicos",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Llamado a la acción para ver el video completo.",
+    "Frase impactante de Perelman sobre el zoológico."
+  ],
+  "title_supporting_quotes": [
+    "'No quiero convertirme en un animal de zoológico.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un artículo sobre ética en la ciencia.",
+    "Desarrollar un video sobre personalidades que han rechazado premios."
+  ],
+  "risk_notes": [
+    "La afirmación sobre la norma puede ser objeto de debate.",
+    "El rechazo puede generar opiniones encontradas sobre la validez de premios."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

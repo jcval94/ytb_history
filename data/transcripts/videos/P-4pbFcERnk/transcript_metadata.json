@@ -1,0 +1,20 @@
+{
+  "video_id": "P-4pbFcERnk",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "What Happens If You Keep Slowing Down?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\P-4pbFcERnk.mp3",
+  "transcribed_at": "2026-05-26T15:52:13.591296+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 28265,
+  "text_sha256": "fb744373674507c6372d8e9842fd00dad6203e4f785df31fd34781dd8aee8a00",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\P-4pbFcERnk\\transcript_segments.jsonl",
+  "segment_count": 420,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:07:34.689465+00:00",
+  "duration_seconds": 1808.6199951171875
+}

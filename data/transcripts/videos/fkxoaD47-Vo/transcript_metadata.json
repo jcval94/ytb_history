@@ -1,0 +1,20 @@
+{
+  "video_id": "fkxoaD47-Vo",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "You're Only 6 Steps Away From Anyone On Earth",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\fkxoaD47-Vo.mp3",
+  "transcribed_at": "2026-05-26T15:54:17.415941+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1158,
+  "text_sha256": "09722282f1b999b2e6552aac966ade92a5fede1e871223e1295f6abcaf8ce949",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\fkxoaD47-Vo\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:10:58.453020+00:00",
+  "duration_seconds": 74.04000091552734
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "fkHIe8HVAsM",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿POR QUÉ LO HIZO? Perelman El hombre que rechazo un millón",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\fkHIe8HVAsM.mp3",
+  "transcribed_at": "2026-05-26T15:59:59.309284+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1131,
+  "text_sha256": "cf0e10ace8a36f69ef1a10413b65bfe4ab2c19714536de1ff13a9c4d4134fa10",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\fkHIe8HVAsM\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:10:53.273634+00:00",
+  "duration_seconds": 69.33000183105469
+}

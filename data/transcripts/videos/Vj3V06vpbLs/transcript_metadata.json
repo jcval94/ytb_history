@@ -1,0 +1,20 @@
+{
+  "video_id": "Vj3V06vpbLs",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "La historia de Grigori Perelman Short",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Vj3V06vpbLs.mp3",
+  "transcribed_at": "2026-05-26T16:00:15.262335+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1501,
+  "text_sha256": "1c03f08799063c3e60401354531db6942bce11467f0a1a1910a35ad82b55e7e9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Vj3V06vpbLs\\transcript_segments.jsonl",
+  "segment_count": 26,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:08:05.088540+00:00",
+  "duration_seconds": 88.3499984741211
+}

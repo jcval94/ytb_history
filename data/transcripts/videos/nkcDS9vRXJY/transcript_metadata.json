@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 1201,
   "text_sha256": "8675cbd268ec2accfcc3508158a52da63d52b07d9139f03deff4a459a18815d5",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\nkcDS9vRXJY\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:11:39.947950+00:00",
+  "duration_seconds": 62.13999938964844
 }

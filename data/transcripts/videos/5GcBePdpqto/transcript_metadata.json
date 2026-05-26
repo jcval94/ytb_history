@@ -1,0 +1,20 @@
+{
+  "video_id": "5GcBePdpqto",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿La IA es buena compañia?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5GcBePdpqto.mp3",
+  "transcribed_at": "2026-05-26T16:00:36.654436+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1306,
+  "text_sha256": "82b79b1d631c5e0b69b093f2dedbb324427a655276c0970c93e69320fa106b30",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5GcBePdpqto\\transcript_segments.jsonl",
+  "segment_count": 28,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:03:19.485379+00:00",
+  "duration_seconds": 75.80999755859375
+}

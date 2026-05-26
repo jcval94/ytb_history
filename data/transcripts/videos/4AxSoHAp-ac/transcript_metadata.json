@@ -1,0 +1,20 @@
+{
+  "video_id": "4AxSoHAp-ac",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "El milagro de la milla De 0 a 37 personas en un año",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\4AxSoHAp-ac.mp3",
+  "transcribed_at": "2026-05-26T15:55:25.719890+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1148,
+  "text_sha256": "ac66f0fd74db7edf3c6a2d2fcdd5886189a942dbb823c79fcd8035789c036782",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\4AxSoHAp-ac\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:03:07.641092+00:00",
+  "duration_seconds": 61.369998931884766
+}

@@ -1,0 +1,73 @@
+{
+  "video_id": "itSkBESLZeY",
+  "language": "unknown",
+  "summary": "The video discusses the effects of cutting a green rope connected to a weight and a spring system, exploring whether the weight will go up, down, or remain the same after the cut.",
+  "main_topics": [
+    "Physics of tension",
+    "Effects of cutting rope",
+    "Spring mechanics"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Set up the problem",
+      "summary": "The narrator poses questions about the outcome of cutting the green rope."
+    },
+    {
+      "section": "Expectations",
+      "purpose": "Gather audience's predictions",
+      "summary": "Participants share their thoughts on whether the weight will go up, down, or stay the same."
+    },
+    {
+      "section": "Explanation",
+      "purpose": "Explain the setup",
+      "summary": "Detailed description of the spring and weight arrangement, identifying slack ropes."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Reveal outcome",
+      "summary": "The unexpected outcome of the weight moving up after cutting the green rope."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "What will happen to this weight if you cut the green rope?",
+    "why_it_works": "Engages viewers by prompting curiosity and encouraging them to think about the physics involved."
+  },
+  "claims": [
+    {
+      "claim": "The weight will drop if the green rope is cut.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The weight may go up after cutting the green rope.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Conduct the experiment safely to visualize principles of physics.",
+    "Use similar setups to explain concepts of tension and springs."
+  ],
+  "audience": "Students of physics or anyone interested in basic mechanics",
+  "tone": "Inquisitive and educational",
+  "content_style": "Conversational",
+  "retention_devices": [
+    "Questions posed to the audience",
+    "Real-life application of physics concepts"
+  ],
+  "title_supporting_quotes": [
+    "If you cut the green rope, this is gonna come down."
+  ],
+  "creative_reuse_opportunities": [
+    "Explaining other physics experiments involving tension and force.",
+    "Creating more engaging content around spring mechanics."
+  ],
+  "risk_notes": [
+    "Ensure that physical demonstrations are performed safely.",
+    "Clarify that the outcome may be counterintuitive to some viewers."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

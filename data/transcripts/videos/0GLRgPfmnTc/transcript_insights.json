@@ -1,0 +1,84 @@
+{
+  "video_id": "0GLRgPfmnTc",
+  "language": "es",
+  "summary": "El narrador reflexiona sobre sus deseos de vivir una vida más tranquila y la contradicción entre sus deseos y acciones. Menciona una encuesta que muestra que la mayoría de las personas sienten que viven demasiado rápido y presenta un estudio del MIT que revela que la velocidad de caminata ha aumentado sin que la gente se dé cuenta.",
+  "main_topics": [
+    "reflexión personal",
+    "deseos de tranquilidad",
+    "contradicciones en la vida",
+    "velocidad de vida moderna",
+    "encuestas de percepción de vida"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de la tradición familiar",
+      "purpose": "Contextualizar la reflexión sobre el año anterior",
+      "summary": "El narrador describe una tradición de Año Nuevo con su familia sobre reflexionar lo que quieren mantener o cambiar."
+    },
+    {
+      "section": "Reflexión sobre el deseo de vivir tranquilo",
+      "purpose": "Presentar la contradicción personal del narrador",
+      "summary": "El narrador menciona su deseo sostenido de vivir más tranquilo y la respuesta de su hija que le hace cuestionar su consistencia."
+    },
+    {
+      "section": "Datos sobre la velocidad de vida",
+      "purpose": "Ilustrar el fenómeno de vivir aceleradamente",
+      "summary": "Se menciona la encuesta sobre la percepción de la velocidad de vida y un estudio del MIT sobre el aumento en la velocidad de caminata."
+    },
+    {
+      "section": "Conclusión personal",
+      "purpose": "Inducir a la reflexión",
+      "summary": "El narrador plantea la pregunta: '¿qué quiero de verdad?', invitando a la audiencia a reflexionar sobre sus propios deseos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "reflexión personal",
+    "hook_text": "mi hija me miró y me dijo, ¿de verdad, papá? Dijiste lo mismo los últimos cuatro años.",
+    "why_it_works": "Evoca una conexión emocional y familiar, haciendo que el espectador se identifique con la lucha interna del narrador."
+  },
+  "claims": [
+    {
+      "claim": "El 70% de la gente siente que vive acelerada.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El 90% de la gente quiere vivir más tranquila.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La velocidad promedio de caminata ha aumentado un 15% en 30 años.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "estudio del MIT sobre velocidad de caminata",
+    "resultados de la encuesta sobre la vida acelerada"
+  ],
+  "actionable_ideas": [
+    "Practicar la meditación o técnicas de relajación.",
+    "Establecer límites de tiempo para el uso de tecnología.",
+    "Hacer pausas regulares durante el día para respirar y reflexionar."
+  ],
+  "audience": "personas interesadas en el bienestar personal y la reflexión sobre la vida moderna",
+  "tone": "reflexivo y personal",
+  "content_style": "narrativo y anecdótico",
+  "retention_devices": [
+    "historias personales",
+    "preguntas retóricas",
+    "datos sorprendentes"
+  ],
+  "title_supporting_quotes": [
+    "¿qué quiero de verdad?",
+    "la velocidad promedio de caminata ha aumentado un 15%."
+  ],
+  "creative_reuse_opportunities": [
+    "crear contenido sobre la importancia de desacelerar en la vida moderna",
+    "desarrollar talleres sobre el manejo del tiempo",
+    "escribir artículos sobre bienestar personal y mindfulness"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "DDxD6K7bRN8",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "El SECRETO de Ricardo Klement: EL HOMBRE GRIS 🇦🇷",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\DDxD6K7bRN8.mp3",
+  "transcribed_at": "2026-05-26T15:45:06.329835+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 678,
+  "text_sha256": "e29aa1522ccc2422115390cec46b12019b48ff046e64b852557975b392ce836c",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\DDxD6K7bRN8\\transcript_segments.jsonl",
+  "segment_count": 11,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:06.455257+00:00",
+  "duration_seconds": 43.279998779296875
+}

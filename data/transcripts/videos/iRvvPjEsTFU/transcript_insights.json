@@ -1,0 +1,73 @@
+{
+  "video_id": "iRvvPjEsTFU",
+  "language": "es",
+  "summary": "El vídeo explora cómo jóvenes de 20 años se unieron a la guerra con ilusiones de heroísmo, engañados por la propaganda que los deshumanizaba y los presentaba como héroes.",
+  "main_topics": [
+    "propaganda en la guerra",
+    "percepción de la guerra en la juventud",
+    "deshumanización del enemigo",
+    "impacto de los medios en la opinión pública"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la guerra",
+      "purpose": "Presentar la perspectiva inicial de los jóvenes",
+      "summary": "Los jóvenes ven la guerra como una aventura y un rito de paso."
+    },
+    {
+      "section": "Influencia de la propaganda",
+      "purpose": "Mostrar cómo los medios influyeron en la percepción",
+      "summary": "Los periódicos y carteles glorificaron la guerra y deshumanizaron al enemigo."
+    },
+    {
+      "section": "Desenlace",
+      "purpose": "Indicar que la guerra no terminó como esperaban",
+      "summary": "La Navidad llegó y la guerra continuó, rompiendo las expectativas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Invita al espectador a buscar más información, aumentando el interés."
+  },
+  "claims": [
+    {
+      "claim": "La guerra fue vista como una aventura por los jóvenes.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La propaganda deshumanizó al enemigo.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Testimonios de jóvenes enlistados.",
+    "Artículos de prensa de la época que retrataban al enemigo."
+  ],
+  "actionable_ideas": [
+    "Investigar sobre la propaganda en conflictos históricos.",
+    "Reflexionar sobre cómo los medios pueden influir en la percepción pública."
+  ],
+  "audience": "Jóvenes interesados en historia y guerra",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "pregunta abierta al final",
+    "enlace a contenido relacionado"
+  ],
+  "title_supporting_quotes": [
+    "\"En ese época no teníamos el cerebro...\"",
+    "\"La prensa y la propaganda alimentaron ese relato de héroes...\""
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre la propaganda en la guerra.",
+    "Artículos de opinión sobre la percepción de la guerra en la juventud actual."
+  ],
+  "risk_notes": [
+    "Referencias a eventos históricos delicados.",
+    "Posible controversia sobre la representación de los enemigos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

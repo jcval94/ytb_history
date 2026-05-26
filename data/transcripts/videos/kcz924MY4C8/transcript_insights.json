@@ -1,0 +1,70 @@
+{
+  "video_id": "kcz924MY4C8",
+  "language": "es",
+  "summary": "El video explora la historia de Ricardo Clement, un alto organizador del holocausto que se escondió en Argentina bajo una nueva identidad. A través de la narrativa, se analiza cómo una persona aparentemente normal pudo cometer atrocidades, abordando el experimento de Milgram y los factores que permiten la obediencia ciega a la autoridad.",
+  "main_topics": [
+    "Holocausto",
+    "Ricardo Clement",
+    "Experimento de Milgram",
+    "Obediencia a la autoridad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al personaje",
+      "purpose": "Presentar a Ricardo Clement y su historia oculta.",
+      "summary": "Se introduce a Clement como un supuesto abuelo inofensivo trabajando en Mercedes-Benz en Argentina, lo que establece el contraste con sus acciones pasadas."
+    },
+    {
+      "section": "La investigación psicológica",
+      "purpose": "Establecer el contexto del experimento de Milgram y su relación con la obediencia.",
+      "summary": "Un psicólogo de Yale investiga cómo es posible que individuos normales sigan órdenes que contradicen su moralidad."
+    },
+    {
+      "section": "Desmontando mitos",
+      "purpose": "Desafiar las percepciones previas sobre la obediencia y la culpabilidad.",
+      "summary": "Se presenta un enfoque crítico sobre la narrativa del experimento de Milgram y su aplicación a la vida real."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Bajo qué condiciones obedecería una persona a una autoridad que ordena acciones que van en contra de su conciencia?",
+    "why_it_works": "Engancha al espectador invitándolo a reflexionar sobre su propia capacidad de obedecer a la autoridad, lo que despierta interés y curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "Ricardo Clement fue un organizador clave en el holocausto.",
+      "support_level": "explicit",
+      "risk": "mínimo"
+    },
+    {
+      "claim": "El experimento de Milgram revela verdades sobre la obediencia humana.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexiona sobre tú respuesta a la autoridad en situaciones conflictivas.",
+    "Investiga la historia de otros criminales de guerra ocultos."
+  ],
+  "audience": "Personas interesadas en la historia y psicología del comportamiento humano.",
+  "tone": "Intrigante y crítico",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Intriga inicial sobre la vida de Clement",
+    "Referencias a experimentos psicológicos famosos",
+    "Promesa de revelaciones sorprendentes"
+  ],
+  "title_supporting_quotes": [
+    "Bajo qué condiciones obedecería una persona a una autoridad que ordena acciones que van en contra de su conciencia."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos en blogs sobre psicología y obediencia.",
+    "Documentales sobre el holocausto y sus figuras clave."
+  ],
+  "risk_notes": [
+    "Podría generar controversia por la temática del holocausto.",
+    "La discusión sobre la obediencia a la autoridad puede ser sensible."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

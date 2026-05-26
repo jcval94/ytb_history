@@ -1,0 +1,72 @@
+{
+  "video_id": "oLCFrvCXIkE",
+  "language": "Spanish",
+  "summary": "En este relato, se reflexiona sobre la importancia de mostrar nuestra vulnerabilidad en lugar de aparentar fortaleza. A través de la experiencia del ponente al escuchar a un compañero de colegio compartir sus inseguridades, se enfatiza que la vulnerabilidad es un medio para conectar con los demás y reconocer que no estamos solos en nuestras luchas.",
+  "main_topics": [
+    "Vulnerabilidad",
+    "Conexión emocional",
+    "Inseguridades personales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la necesidad de mostrar vulnerabilidad",
+      "summary": "Se plantea la idea de que mostrar fragilidad es esencial para la conexión."
+    },
+    {
+      "section": "Anécdota",
+      "purpose": "Ilustrar el mensaje con una historia personal",
+      "summary": "Relata una experiencia de la juventud al escuchar a un compañero compartir sus inseguridades."
+    },
+    {
+      "section": "Reflexión",
+      "purpose": "Extraer una lección de la anécdota",
+      "summary": "Se enfatiza que la vulnerabilidad no es debilidad y que compartiendo nuestras inseguridades, conectamos mejor."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal anecdote",
+    "hook_text": "La historia de Juan Taratuto y su discurso sobre inseguridades",
+    "why_it_works": "Engancha al público al ofrecer una experiencia relatable y emocional."
+  },
+  "claims": [
+    {
+      "claim": "La vulnerabilidad es el lenguaje que permite la conexión emocional.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Mostrar fragilidad puede aliviar el sufrimiento personal.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Experiencia de Juan Taratuto compartiendo su adolescencia.",
+    "Reconocer que muchos otros enfrentan inseguridades similares."
+  ],
+  "actionable_ideas": [
+    "Animarse a compartir inseguridades con otros.",
+    "Fomentar espacios seguros para la vulnerabilidad."
+  ],
+  "audience": "Personas que buscan mejorar sus conexiones interpersonales.",
+  "tone": "Reflexivo y emocional.",
+  "content_style": "Narrativo y personal.",
+  "retention_devices": [
+    "Uso de anécdotas personales",
+    "Reflexiones profundas"
+  ],
+  "title_supporting_quotes": [
+    "'La vulnerabilidad no es debilidad.'",
+    "'La conexión verdadera se logra mostrando fragilidad.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre vulnerabilidad y salud emocional",
+    "Charlas motivacionales sobre la conexión humana."
+  ],
+  "risk_notes": [
+    "El mensaje puede ser malinterpretado como una justificación para la debilidad.",
+    "Probabilidad de que algunos se sientan incómodos al mostrar vulnerabilidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

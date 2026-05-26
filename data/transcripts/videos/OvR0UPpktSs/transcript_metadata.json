@@ -1,0 +1,20 @@
+{
+  "video_id": "OvR0UPpktSs",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "La carrera más importante del siglo XX y no fue un maratón",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\OvR0UPpktSs.mp3",
+  "transcribed_at": "2026-05-26T15:55:18.251946+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 725,
+  "text_sha256": "e576c52f1987c99aa368b9ae0d077a6eafbd0fa43fe9a1f693b811ac5c66d335",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\OvR0UPpktSs\\transcript_segments.jsonl",
+  "segment_count": 12,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:06:02.883054+00:00",
+  "duration_seconds": 38.93000030517578
+}

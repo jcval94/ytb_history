@@ -1,0 +1,73 @@
+{
+  "video_id": "z3D4VghlYNM",
+  "language": "es",
+  "summary": "El relato se centra en Roger Bannister y su mentalidad antes de intentar romper el récord de correr una milla en 1954, destacando los desafíos y la presión de las expectativas externas e internas.",
+  "main_topics": [
+    "Roger Bannister",
+    "Ruptura de récord",
+    "Mentalidad y resiliencia",
+    "Apoyo entre corredores"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al contexto",
+      "purpose": "Establecer el ambiente y las dificultades del día del récord.",
+      "summary": "El clima no era ideal, presentando un desafío físico y psicológico."
+    },
+    {
+      "section": "Motivación de Roger Bannister",
+      "purpose": "Resaltar su determinación y el significado detrás de su intento.",
+      "summary": "Bannister lucha contra las dudas y expectativas limitantes, optando por correr a pesar de las circunstancias."
+    },
+    {
+      "section": "Apoyo de amigos",
+      "purpose": "Mostrar la importancia del apoyo social en su intento.",
+      "summary": "Los amigos y otros corredores le acompañan, proporcionando respaldo emocional."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativo",
+    "hook_text": "Esa era el tipo de mentalidad que necesitaría para enfrentarse a algo así.",
+    "why_it_works": "Engancha al público al presentar un desafío personal y la importancia de la mentalidad en el éxito."
+  },
+  "claims": [
+    {
+      "claim": "Roger Bannister necesitaba una mentalidad fuerte para triunfar.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "El clima no era propicio para batir récords.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "El apoyo de amigos es clave en momentos de desafío.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar una mentalidad resiliente ante los desafíos.",
+    "Buscar apoyo de amigos en momentos difíciles.",
+    "No dejar que las condiciones externas dictaminen tus decisiones."
+  ],
+  "audience": "Personas interesadas en el deporte y la superación personal.",
+  "tone": "Inspirador y reflexivo.",
+  "content_style": "Narrativo con énfasis en la historia personal.",
+  "retention_devices": [
+    "Intriga por la historia de Bannister.",
+    "Relatos sobre el clima y sus efectos.",
+    "Mención de amigos y su apoyo."
+  ],
+  "title_supporting_quotes": [
+    "Él sabía que no se trataba solo de una carrera contra el cronómetro, sino contra la historia."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video motivacional basado en la historia de Bannister.",
+    "Escribir un artículo sobre la mentalidad en el deporte."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

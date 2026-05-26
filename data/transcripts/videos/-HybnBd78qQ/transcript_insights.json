@@ -1,0 +1,81 @@
+{
+  "video_id": "-HybnBd78qQ",
+  "language": "es",
+  "summary": "El video compara dos grupos en situaciones adversas: los marineros del Bounty, quienes fracasaron en su intento de crear una nueva sociedad por falta de cooperación y por la imposición del poder, y seis chicos de Tonga que sobrevivieron al elegir la empatía y la cooperación.",
+  "main_topics": [
+    "Amotinamiento del Bounty",
+    "Consecuencias de la jerarquía",
+    "Cooperación vs. competencia",
+    "Supervivencia en grupos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la comparación entre dos grupos en situaciones difíciles.",
+      "summary": "Se introduce la historia de los marineros del Bounty y su intento fallido de crear una nueva sociedad."
+    },
+    {
+      "section": "Desarrollo del conflicto",
+      "purpose": "Describir el fracaso del grupo del Bounty.",
+      "summary": "Los marineros, tras amotinarse y quemar su barco, establecieron jerarquías que llevaron al caos y a la muerte."
+    },
+    {
+      "section": "Contraste con el grupo de Tonga",
+      "purpose": "Mostrar cómo la cooperación lleva a la supervivencia.",
+      "summary": "A diferencia del Bounty, los chicos de Tonga trabajaron juntos sin líderes y sobrevivieron."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a reflexionar sobre los temas presentados.",
+      "summary": "Se concluye con la lección de que la empatía y el propósito compartido son claves para la supervivencia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Comparativa impactante",
+    "hook_text": "donde seis chicos sin armas, sin jerarquías, eligieron cooperar y sobrevivieron juntos",
+    "why_it_works": "Captura el interés al contrastar dos resultados opuestos en situaciones similares, destacando la importancia de la cooperación."
+  },
+  "claims": [
+    {
+      "claim": "La jerarquía destruye grupos en situaciones de crisis.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La cooperación sin líderes puede llevar al éxito en situaciones difíciles.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Los marineros del Bounty fracasaron debido a la imposición de poder.",
+    "Los seis chicos de Tonga sobrevivieron al elegir la cooperación."
+  ],
+  "actionable_ideas": [
+    "Fomentar la empatía en grupos.",
+    "Establecer metas compartidas para mejorar la cooperación.",
+    "Evitar estructuras jerárquicas en situaciones de crisis."
+  ],
+  "audience": "Personas interesadas en liderazgo, psicología social y supervivencia.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo e informativo.",
+  "retention_devices": [
+    "Preguntas provocativas sobre la jerarquía.",
+    "Visuales del contraste entre ambos grupos.",
+    "Conexión emocional con las historias de supervivencia."
+  ],
+  "title_supporting_quotes": [
+    "La libertad termina en caos sin cooperación.",
+    "La ley del más fuerte no garantiza la supervivencia."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre liderazgo y cooperación.",
+    "Podcasts discutiendo casos de supervivencia.",
+    "Videos educativos sobre dinámicas de grupo."
+  ],
+  "risk_notes": [
+    "Algunos podrían cuestionar la validez histórica de las afirmaciones.",
+    "Puede generar polémica sobre el liderazgo y su efectividad en crisis."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

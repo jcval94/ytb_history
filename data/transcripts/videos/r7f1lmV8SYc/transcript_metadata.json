@@ -1,0 +1,14 @@
+{
+  "video_id": "r7f1lmV8SYc",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "El Tobogán Más Alto Del Mundo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\r7f1lmV8SYc.mp3",
+  "transcribed_at": "2026-05-26T15:47:18.807800+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1185,
+  "text_sha256": "4da18013e6d7f556c64417e3d6c520b463efa7e511106b16d6cbc4cf1dcb7a04",
+  "repo_schema_version": "transcript_metadata_v1"
+}

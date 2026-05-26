@@ -1,0 +1,20 @@
+{
+  "video_id": "MZYFAgyThsM",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Roger Bannister El límite que la medicina creía IMPOSIBLE",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\MZYFAgyThsM.mp3",
+  "transcribed_at": "2026-05-26T15:54:09.525720+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 800,
+  "text_sha256": "1d97324edc6fb0f5363fd970788713c45a2499bbf7efa31f14019590e3d9f95e",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\MZYFAgyThsM\\transcript_segments.jsonl",
+  "segment_count": 8,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:48.105387+00:00",
+  "duration_seconds": 49.27000045776367
+}

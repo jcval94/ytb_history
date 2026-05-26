@@ -1,0 +1,71 @@
+{
+  "video_id": "4AxSoHAp-ac",
+  "language": "es",
+  "summary": "La historia de Roger Bannister, quien rompió la barrera de los 4 minutos en la milla, inspira a ver oportunidades donde otros ven límites. Su logro motivó a muchos otros corredores a desafiar lo que se creía imposible.",
+  "main_topics": [
+    "Mentalidad y superación de límites",
+    "Logros en el atletismo",
+    "Influencia de Bannister en otros corredores"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al logro de Bannister",
+      "purpose": "Presentar el contexto y la relevancia histórica de la carrera",
+      "summary": "Se introduce la idea de que la diferencia fue la mentalidad de Bannister."
+    },
+    {
+      "section": "Impacto de la carrera",
+      "purpose": "Demostrar cómo el logro inspiró a otros",
+      "summary": "Otros corredores comenzaron a romper la barrera tras la hazaña de Bannister."
+    },
+    {
+      "section": "El mensaje principal",
+      "purpose": "Transmitir la lección que se puede aprender de la historia",
+      "summary": "Subrayar que los límites son autoimpuestos y que la mentalidad puede cambiar resultados."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Inspiracional",
+    "hook_text": "Lo que lo hizo diferente fue su cabeza, fue su mentalidad.",
+    "why_it_works": "Atrapa la atención al enfatizar la importancia de la mentalidad en el logro personal."
+  },
+  "claims": [
+    {
+      "claim": "Roger Bannister rompió la barrera de los 4 minutos en la milla.",
+      "support_level": "explicit",
+      "risk": "afirmación respaldada por hechos históricos"
+    },
+    {
+      "claim": "Su logro motivó a más de 1000 corredores a lograr la misma hazaña.",
+      "support_level": "implicit",
+      "risk": "puede requerir más evidencia pero es respaldado por el contexto."
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "No te limites por lo que otros consideran posible.",
+    "Utiliza la mentalidad positiva para enfrentar desafíos.",
+    "Inspírate en historias de superación para motivarte."
+  ],
+  "audience": "Personas interesadas en la superación personal y el atletismo.",
+  "tone": "Motivacional y reflexivo",
+  "content_style": "Narrativo y anecdótico",
+  "retention_devices": [
+    "Uso de anécdotas inspiradoras",
+    "Conexión emocional con la historia",
+    "Promesa de más contenido en el video enlazado"
+  ],
+  "title_supporting_quotes": [
+    "La milla del milagro de Roger Bannister es una patada en el culo a todos esos límites que nos ponemos nosotros solos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre mentalidad y superación personal.",
+    "Desarrollar un artículo sobre la historia de Bannister.",
+    "Hacer un podcast sobre récords deportivos y sus impactos."
+  ],
+  "risk_notes": [
+    "Requiere atención al contexto histórico para no parecer exagerado.",
+    "Posibles críticas por falta de evidencia en ciertas afirmaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

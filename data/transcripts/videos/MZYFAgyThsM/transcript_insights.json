@@ -1,0 +1,72 @@
+{
+  "video_id": "MZYFAgyThsM",
+  "language": "es",
+  "summary": "El video narra la emocionante carrera en la que Roger logra romper una barrera histórica en el atletismo, convirtiéndose en el primer hombre en correr una milla en menos de cuatro minutos. La atmósfera es tensa mientras enfrenta el desafío junto a la multitud que lo apoya.",
+  "main_topics": [
+    "Rendimiento atlético",
+    "Superación personal",
+    "Eventos deportivos",
+    "Tensión y emoción en competencias"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la carrera",
+      "purpose": "Establecer el contexto y la tensión del evento.",
+      "summary": "El ambiente es tenso mientras Roger inicia su carrera rodeado de silencio y expectación."
+    },
+    {
+      "section": "Desarrollo de la carrera",
+      "purpose": "Mostrar el progreso de Roger y el desafío que enfrenta.",
+      "summary": "Roger mantiene el ritmo mientras sus amigos lo apoyan, pero la presión aumenta a medida que avanza."
+    },
+    {
+      "section": "Clímax de la competencia",
+      "purpose": "Construir tensión hacia el desenlace.",
+      "summary": "Roger se queda sólo en la última vuelta, enfrentándose al cronómetro y a las condiciones adversas."
+    },
+    {
+      "section": "Desenlace",
+      "purpose": "Revelar el logro y el impacto emocional del momento.",
+      "summary": "Roger cruza la meta, marcando un tiempo histórico y desatando la euforia en el estadio."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y anima a los espectadores a buscar más detalles sobre la historia."
+  },
+  "claims": [
+    {
+      "claim": "Roger ha logrado correr una milla en menos de cuatro minutos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La atmósfera del estadio contribuyó a la presión del momento.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Incluir relatos de otros atletas que han roto récords.",
+    "Analizar el impacto psicológico del rendimiento bajo presión."
+  ],
+  "audience": "Amantes del deporte y aficionados al atletismo",
+  "tone": "Emocionante y motivacional",
+  "content_style": "Narrativo e inspirador",
+  "retention_devices": [
+    "Suspenso",
+    "Clímax emocional",
+    "Desarrollo de personajes"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear un resumen visual de logros deportivos",
+    "Usar la historia de Roger como inspiración en charlas motivacionales"
+  ],
+  "risk_notes": [
+    "La declaración de logros deportivos debe ser precisa para evitar malentendidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

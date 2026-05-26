@@ -1,0 +1,76 @@
+{
+  "video_id": "tPnrACI0KPw",
+  "language": "es",
+  "summary": "El discurso aborda cómo la guerra y el odio son alimentados por políticos, medios y otros agentes, recordando que en esencia todos son seres humanos con vínculos y emociones similares.",
+  "main_topics": [
+    "Guerra",
+    "Paz",
+    "Propaganda",
+    "Humanidad",
+    "Relaciones personales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la guerra y la paz",
+      "purpose": "Establecer el contexto del conflicto",
+      "summary": "Se menciona cómo la guerra y la paz son manipuladas por diversos actores."
+    },
+    {
+      "section": "Reflexión sobre la humanidad",
+      "purpose": "Recordar la conexión humana",
+      "summary": "Se enfatiza que todos somos personas con vínculos y emociones, capaces de ser amigos o familiares."
+    },
+    {
+      "section": "Cierre y llamada a la acción",
+      "purpose": "Invitar a profundizar en la historia",
+      "summary": "Se invita a los oyentes a ver el vídeo completo para entender mejor la perspectiva."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión humana",
+    "hook_text": "Porque la guerra sencillamente no forma parte de nuestra naturaleza.",
+    "why_it_works": "Este enfoque apela a la empatía del oyente, recordando la conexión humana detrás de los conflictos."
+  },
+  "claims": [
+    {
+      "claim": "La guerra es alimentada por actores externos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El odio es instigado a través de propaganda y violencia.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Todos somos humanos con relaciones y conexiones.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar diálogos sobre la paz en comunidades.",
+    "Crear campañas que resalten la humanidad compartida.",
+    "Desarrollar programas educativos sobre los efectos de la guerra."
+  ],
+  "audience": "Personas interesadas en la paz y resolución de conflictos.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Historias personales",
+    "Invitación a seguir el contenido",
+    "Conexión emocional"
+  ],
+  "title_supporting_quotes": [
+    "Los demás son gente como nosotros.",
+    "En la guerra, la paz siempre está al acecho."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre la naturaleza humana.",
+    "Producir material audiovisual sobre la historia y la paz.",
+    "Realizar talleres sobre empatía y resolución de conflictos."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "aweBfQVk73I",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿MANIPULACIÓN PARA HACERNOS ODIAR AL PRÓJIMO?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\aweBfQVk73I.mp3",
+  "transcribed_at": "2026-05-26T15:52:27.827427+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 490,
+  "text_sha256": "4ebf0b26b96117fe033bd67984d65996f37f555854c95a05a181f5b9b8d80d83",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\aweBfQVk73I\\transcript_segments.jsonl",
+  "segment_count": 7,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:09:57.186400+00:00",
+  "duration_seconds": 27.8799991607666
+}

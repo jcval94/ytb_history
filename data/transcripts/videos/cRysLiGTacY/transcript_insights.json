@@ -1,0 +1,72 @@
+{
+  "video_id": "cRysLiGTacY",
+  "language": "es",
+  "summary": "El trancript aborda la supresión de la tregua navideña de 1914 en la Primera Guerra Mundial, donde se impusieron rotaciones y una atmósfera de odio para prevenir contagios pacifistas entre los soldados. A pesar de intentos de ocultar la tregua, cada vez más testimonios la han corroborado.",
+  "main_topics": [
+    "Tregua de Navidad 1914",
+    "Represión militar",
+    "Impacto emocional en los soldados",
+    "Testimonios históricos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la tregua",
+      "purpose": "Presentar el contexto de la tregua navideña de 1914",
+      "summary": "Se introducen las condiciones que llevaron a los altos mandos a suprimir el espíritu de paz."
+    },
+    {
+      "section": "Reacción militar en 1915",
+      "purpose": "Describir las medidas tomadas para evitar la paz",
+      "summary": "Se detallan los bombardeos continuos y la presión sobre los soldados para mantener el odio."
+    },
+    {
+      "section": "Ocultamiento de la tregua",
+      "purpose": "Abordar cómo la historia ha tratado la tregua",
+      "summary": "Se menciona cómo se despreciaba la tregua como mito, a pesar de los testimonios personales."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar al espectador a explorar más a fondo",
+      "summary": "Se sugiere mirar el video para conocer la historia completa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y motiva al espectador a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "Los altos mandos suprimieron la tregua navideña mediante rotaciones forzadas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La historia intentó negar la tregua como un mito o traición.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la tregua de Navidad de 1914.",
+    "Reflexionar sobre las implicaciones emocionales de la guerra.",
+    "Examinar cómo se registra la historia militar."
+  ],
+  "audience": "Personas interesadas en la historia de la Primera Guerra Mundial.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo, con elementos de análisis histórico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Citas de testimonios",
+    "Referencias a eventos históricos"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la tregua navideña.",
+    "Desarrollar un artículo en un blog sobre el impacto de la guerra en las emociones humanas.",
+    "Producción de contenido audiovisual sobre testimonios de guerra."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

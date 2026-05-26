@@ -1,0 +1,86 @@
+{
+  "video_id": "w37yOFgPdnU",
+  "language": "es",
+  "summary": "El video narra la vida y legado de Maryam Mirzajani, la primera mujer en recibir la medalla Fields en matemáticas. Se destaca su enfoque pacífico y profundo hacia las matemáticas, su trayectoria académica, sus logros y su impacto en la comunidad matemática, así como su personalidad humilde y metódica.",
+  "main_topics": [
+    "Maryam Mirzajani",
+    "Medalla Fields",
+    "Matemáticas",
+    "Historia personal",
+    "Impacto en la comunidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Maryam Mirzajani",
+      "purpose": "Presentar a la protagonista y sus logros",
+      "summary": "Se introduce a Maryam Mirzajani, su emotiva frase sobre las matemáticas y su trágica muerte."
+    },
+    {
+      "section": "Primeros años y educación",
+      "purpose": "Contextualizar su desarrollo inicial",
+      "summary": "Se describe su infancia en Irán y cómo destacó en matemáticas, eventualmente ganando una medalla de oro en la Olimpiada Internacional."
+    },
+    {
+      "section": "Desarrollo académico",
+      "purpose": "Explicar su trayecto educativo y logros",
+      "summary": "Maryam se muda a EE.UU., donde realiza su doctorado en Harvard y comienza a hacer conexiones entre diferentes campos matemáticos."
+    },
+    {
+      "section": "Reconocimiento y legado",
+      "purpose": "Describir su impacto y los reconocimientos recibidos",
+      "summary": "Se cuenta cómo ganó la medalla Fields y su influencia duradera en el campo de las matemáticas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "personal anecdote",
+    "hook_text": "Maryam Mirzajani publicó en sus redes sociales una foto frente a una pizarra llena de fórmulas.",
+    "why_it_works": "Captura la atención al presentar un momento personal y emocional, presentando a Mirzajani como una figura relatable y apasionada."
+  },
+  "claims": [
+    {
+      "claim": "Maryam Mirzajani fue la primera mujer en ganar la medalla Fields.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Su trabajo es fundamental para entender el universo.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Su enfoque era slow and steady en el aprendizaje y la investigación.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Maryam utilizó su tiempo para comprender las matemáticas en lugar de memorizar.",
+    "Sus colaboradores y profesores la describe como metódica y persistente."
+  ],
+  "actionable_ideas": [
+    "Fomentar un enfoque más reflexivo y menos apresurado en la educación matemática.",
+    "Promover la diversidad en campos STEM y visibilizar logros femeninos."
+  ],
+  "audience": "Personas interesadas en matemáticas, educación y biografías inspiradoras",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Citas de Maryam Mirzajani",
+    "Entrevistas con colegas",
+    "Ejemplos de su trabajo"
+  ],
+  "title_supporting_quotes": [
+    "\"Cuanto más tiempo pasaba con las matemáticas, más me emocionaban.\"",
+    "\"La belleza de las matemáticas solo se muestra a sus seguidores más pacientes.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre educación matemática",
+    "Documentales sobre la historia de mujeres en ciencia",
+    "Talleres inspirados en la vida de Mirzajani"
+  ],
+  "risk_notes": [
+    "El enfoque en la vida personal puede restar relevancia a sus logros profesionales.",
+    "Es posible que no todos los aspectos de su trabajo sean comprendidos por personas ajenas a las matemáticas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

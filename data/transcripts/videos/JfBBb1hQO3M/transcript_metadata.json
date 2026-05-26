@@ -1,0 +1,20 @@
+{
+  "video_id": "JfBBb1hQO3M",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Eres un rebelde o un borrego? 🧠 LA VIRTUD DE DESOBEDECER",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\JfBBb1hQO3M.mp3",
+  "transcribed_at": "2026-05-26T15:44:51.788531+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 675,
+  "text_sha256": "5ff7f0a85f449ebdbc7a66da316d8120e753dbd90c53177c15dec63d5846f7f4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\JfBBb1hQO3M\\transcript_segments.jsonl",
+  "segment_count": 8,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:05:25.886100+00:00",
+  "duration_seconds": 41.93000030517578
+}

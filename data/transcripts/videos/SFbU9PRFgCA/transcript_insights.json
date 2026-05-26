@@ -1,0 +1,68 @@
+{
+  "video_id": "SFbU9PRFgCA",
+  "language": "es",
+  "summary": "El discurso reflexiona sobre la importancia de no aislarnos en nuestras opiniones y de cómo la desobediencia puede ser heroica frente a la obediencia ciega. Se plantea la necesidad de conectar con la realidad y no dejarse llevar por la minoría negativa.",
+  "main_topics": [
+    "Desobediencia vs. obediencia",
+    "Percepción de la realidad",
+    "Heroísmo en tiempos difíciles"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el dilema de la percepción de la realidad y el heroísmo",
+      "summary": "Se establece que aislarnos en nuestro pensamiento puede llevarnos a creernos una narrativa distorsionada."
+    },
+    {
+      "section": "Cuerpo del mensaje",
+      "purpose": "Explorar el concepto de heroísmo",
+      "summary": "Se argumenta que los verdaderos héroes son aquellos que desafían las órdenes por una causa justa."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a la audiencia a explorar más",
+      "summary": "El mensaje concluye con una invitación a ver el vídeo completo para entender la historia detrás."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga...",
+    "why_it_works": "Crea curiosidad en la audiencia, incentivando a ver el contenido completo."
+  },
+  "claims": [
+    {
+      "claim": "La desobediencia puede ser heroica.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Aislarse afecta nuestra percepción de la realidad.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre nuestras propias percepciones y creencias.",
+    "Buscar historias de desobediencia que se consideran heroicas."
+  ],
+  "audience": "Personas interesadas en la reflexión social y el heroísmo.",
+  "tone": "Reflexivo y provocativo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Conexiones emocionales"
+  ],
+  "title_supporting_quotes": [
+    "Aquellos soldados no fueron héroes porque obedecieron órdenes, fueron héroes porque desobedecieron."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un ensayito sobre heroísmo y la desobediencia.",
+    "Desarrollar un podcast basado en el concepto de percepción de la realidad."
+  ],
+  "risk_notes": [
+    "Al mencionar la desobediencia, puede generar controversia.",
+    "La idea de que una minoría envenenada no representa a toda la humanidad puede ser malinterpretada."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

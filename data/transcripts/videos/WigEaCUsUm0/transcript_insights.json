@@ -1,0 +1,72 @@
+{
+  "video_id": "WigEaCUsUm0",
+  "language": "es",
+  "summary": "El video explora la novela 'El Señor de las Moscas' de William Golding y cuestiona la supuesta naturaleza salvaje del ser humano cuando se encuentra sin autoridad. A través de un caso real de supervivencia de adolescentes en una isla desierta, se propone una visión alternativa sobre la humanidad.",
+  "main_topics": [
+    "Naturaleza humana",
+    "Autoridad y control",
+    "Supervivencia",
+    "Literatura y análisis social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el escenario de la historia.",
+      "summary": "Un grupo de chicos queda atrapado en una isla desierta, lo que se convierte en una aventura que revela la violencia inherente al ser humano."
+    },
+    {
+      "section": "Reflexión sobre la novela",
+      "purpose": "Conectar la historia ficticia con reflexiones sobre la humanidad.",
+      "summary": "La novela propone que sin leyes, la humanidad vuelve a la barbarie, sugiriendo que necesitamos una autoridad."
+    },
+    {
+      "section": "Caso real",
+      "purpose": "Introducir un ejemplo que desafía las ideas de Golding.",
+      "summary": "Se presenta la verdadera historia de seis adolescentes que sobrevivieron 15 meses en una isla, lo cual contradice la visión de la novela."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "una historia que desafía lo que creíamos saber sobre nosotros mismos",
+    "why_it_works": "Crea curiosidad y promete una perspectiva única sobre un tema conocido."
+  },
+  "claims": [
+    {
+      "claim": "La humanidad no es inherentemente violenta.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Necesitamos autoridad para evitar la barbarie.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Caso real de supervivencia de adolescentes.",
+    "Contradicciones en la interpretación de la novela."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la historia real de los adolescentes.",
+    "Reflexionar sobre la necesidad de autoridad en la sociedad."
+  ],
+  "audience": "Personas interesadas en literatura, psicología social y análisis crítico.",
+  "tone": "Reflexivo y provocador.",
+  "content_style": "Narrativo con un enfoque analítico.",
+  "retention_devices": [
+    "Cliffhanger al final",
+    "Promesas de descubrimientos sorprendentes"
+  ],
+  "title_supporting_quotes": [
+    "¿Es el ser humano salvaje por naturaleza?",
+    "Una historia que nos lanza una perturbadora pregunta."
+  ],
+  "creative_reuse_opportunities": [
+    "Análisis en profundidad sobre 'El Señor de las Moscas'.",
+    "Documentales sobre la supervivencia en islas desiertas."
+  ],
+  "risk_notes": [
+    "Interpretaciones polarizadas sobre la naturaleza humana pueden generar controversia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

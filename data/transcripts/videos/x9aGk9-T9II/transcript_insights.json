@@ -1,0 +1,80 @@
+{
+  "video_id": "x9aGk9-T9II",
+  "language": "es",
+  "summary": "El discurso reflexiona sobre la naturaleza humana frente a la guerra, subrayando que la paz es un objetivo más natural que la violencia. Se menciona la manipulación a través de distintos actores sociales para fomentar el odio y la guerra, resaltando la humanidad compartida entre los enemigos. Se concluye mencionando a soldados que desobedecieron órdenes por principios morales.",
+  "main_topics": [
+    "Naturaleza humana y guerra",
+    "Manipulación social",
+    "Desobediencia y moralidad en el contexto bélico",
+    "Humanidad compartida entre opuestos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la carta",
+      "purpose": "Presentar un punto de vista de un comandante sobre la guerra.",
+      "summary": "Un comandante británico refleja sobre cómo la guerra podría evitarse."
+    },
+    {
+      "section": "Análisis de la guerra",
+      "purpose": "Explorar los mecanismos que llevan a la guerra.",
+      "summary": "Se discute la intervención de diversos actores que alimentan conflictos."
+    },
+    {
+      "section": "Reflexión sobre la humanidad",
+      "purpose": "Recordar la humanidad compartida en situaciones de conflicto.",
+      "summary": "Se menciona que los soldados del enemigo también tienen seres queridos."
+    },
+    {
+      "section": "Ejemplo de desobediencia",
+      "purpose": "Ilustrar la desobediencia moral como un acto heroico.",
+      "summary": "Cita un ejemplo de un piloto en 2009 que desobedeció órdenes."
+    },
+    {
+      "section": "Cierre e invitación",
+      "purpose": "Invitar a la audiencia a explorar más sobre el tema.",
+      "summary": "Invita a ver un video relacionado para conocer más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con intriga tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y motivación para que la audiencia busque más información."
+  },
+  "claims": [
+    {
+      "claim": "La guerra no es parte de nuestra naturaleza.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los soldados que desobedecieron órdenes fueron héroes.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Reflexiones de un comandante y un soldado británico."
+  ],
+  "actionable_ideas": [
+    "Fomentar el entendimiento y la paz entre las naciones.",
+    "Desarrollar iniciativas que reflejen la humanidad compartida."
+  ],
+  "audience": "Personas interesadas en temas de paz y conflictos bélicos.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo y persuasivo.",
+  "retention_devices": [
+    "Llamado a la acción al final del video.",
+    "Uso de ejemplos históricos."
+  ],
+  "title_supporting_quotes": [
+    "Aquellos soldados no fueron héroes porque obedecieron órdenes, fueron héroes porque desobedecieron."
+  ],
+  "creative_reuse_opportunities": [
+    "Análisis de la guerra y la humanidad en otros formatos.",
+    "Desarrollo de contenido en redes sociales sobre desobediencia ética."
+  ],
+  "risk_notes": [
+    "Posible controversia sobre la interpretación de la desobediencia en contextos bélicos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

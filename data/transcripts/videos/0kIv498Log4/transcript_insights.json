@@ -1,0 +1,88 @@
+{
+  "video_id": "0kIv498Log4",
+  "language": "es",
+  "summary": "El video relata la historia del tobogán Verruckt, el más alto del mundo, diseñado por Jeff Henry. A pesar de su ambición y creatividad, la atracción se enfrentó a múltiples problemas de seguridad que llevaron a una tragedia y a su posterior cierre.",
+  "main_topics": [
+    "Diseño del tobogán Verruckt",
+    "Ambición de Jeff Henry",
+    "Problemas de seguridad",
+    "Tragedia y consecuencias legales",
+    "Fallecimientos y demandas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tobogán Verruckt",
+      "purpose": "Presentar la atracción y su creador.",
+      "summary": "Se introduce a Jeff Henry y su visión de crear el tobogán más grande y rápido del mundo."
+    },
+    {
+      "section": "Desarrollo y construcción",
+      "purpose": "Detallar el proceso de diseño y los desafíos enfrentados.",
+      "summary": "Se describe la creación de Verruckt y las innovaciones necesarias para su construcción."
+    },
+    {
+      "section": "Problemas de seguridad",
+      "purpose": "Ilustrar las fallas y el riesgo que representaba.",
+      "summary": "A medida que avanzaba la construcción, comenzaron a surgir serios problemas de seguridad."
+    },
+    {
+      "section": "Tragedia y consecuencias",
+      "purpose": "Relatar el accidente fatal y sus repercusiones legales.",
+      "summary": "Un accidente fatal llevó a cargos contra Jeff Henry y otros, así como a demandas y el cierre del parque."
+    },
+    {
+      "section": "Cierre del parque",
+      "purpose": "Concluir la historia de Schlitterbahn y el tobogán.",
+      "summary": "El parque cerró en 2018 tras la tragedia, y el destino de Jeff Henry se complica."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga/Misterio",
+    "hook_text": "El tobogán más grande del mundo... ¿y también el más peligroso?",
+    "why_it_works": "Despierta curiosidad sobre la magnitud y los peligros asociados con la atracción."
+  },
+  "claims": [
+    {
+      "claim": "Verruckt fue diseñado sin cumplir normas de seguridad adecuadas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Jeff Henry ignoró advertencias sobre la atracción.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La atracción estaba destinada para un programa de televisión.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Revisar regulaciones de seguridad en nuevas atracciones.",
+    "Considerar la seguridad como prioridad en el diseño de parques.",
+    "Capacitar adecuadamente al personal de atracciones."
+  ],
+  "audience": "Espectadores interesados en parques de diversiones y casos de tragedia relacionados.",
+  "tone": "Informativo y crítico",
+  "content_style": "Narrativo y de investigación",
+  "retention_devices": [
+    "Anécdotas personales de Jeff Henry",
+    "Descripciones gráficas de la atracción",
+    "Referencias a la cultura popular"
+  ],
+  "title_supporting_quotes": [
+    "Siempre me propongo romper todos los récords.",
+    "Nadie ha construido algo así."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre seguridad en parques de atracciones.",
+    "Estudios de caso sobre el diseño de atracciones."
+  ],
+  "risk_notes": [
+    "Ignorar advertencias de expertos puede tener consecuencias fatales.",
+    "La presión mediática puede comprometer la seguridad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

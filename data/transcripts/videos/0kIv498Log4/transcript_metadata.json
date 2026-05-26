@@ -1,0 +1,20 @@
+{
+  "video_id": "0kIv498Log4",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "La Trágica Historia Del Tobogán Más Alto Del Mundo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0kIv498Log4.mp3",
+  "transcribed_at": "2026-05-26T15:49:23.071817+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 18963,
+  "text_sha256": "1cd6053903e3be6a2044dd8ce58c257ed0f901bce142218c90ae429d2bcaece8",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0kIv498Log4\\transcript_segments.jsonl",
+  "segment_count": 539,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-26T16:02:58.368076+00:00",
+  "duration_seconds": 1465.3800048828125
+}

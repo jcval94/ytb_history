@@ -1,0 +1,107 @@
+{
+  "video_id": "noGt4HtYQho",
+  "language": "es",
+  "summary": "La historia de John Nash, un brillante matemático conocido por sus aportes a la teoría de juegos y su lucha personal contra enfermedades mentales, explorando su genio académico y sus problemas sociales y psicológicos.",
+  "main_topics": [
+    "John Nash",
+    "Teoría de juegos",
+    "Equilibrio de Nash",
+    "Enfermedad mental",
+    "Vida personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar a John Nash y su impacto en la economía y las matemáticas.",
+      "summary": "Un hombre solitario en Princeton que revolucionó la economía a pesar de su lucha con la enfermedad mental."
+    },
+    {
+      "section": "Infancia y juventud",
+      "purpose": "Contextualizar la vida temprana de Nash.",
+      "summary": "Criado en un hogar educado, sobresale en matemáticas desde joven pero sufre problemas sociales."
+    },
+    {
+      "section": "Educación y carrera",
+      "purpose": "Detallar su formación académica y descubrimientos en matemáticas.",
+      "summary": "Completa su tesis doctoral en dos años, introduciendo conceptos críticos en economía."
+    },
+    {
+      "section": "Contribuciones",
+      "purpose": "Explicar la teoría de juegos y el equilibrio de Nash.",
+      "summary": "Desarrolla el concepto que revolucionaría la economía."
+    },
+    {
+      "section": "Vida personal",
+      "purpose": "Describir sus relaciones personales y fracaso social.",
+      "summary": "Sus decisiones personales lo llevan a rupturas y problemas familiares."
+    },
+    {
+      "section": "Enfermedad",
+      "purpose": "Explorar la evolución de la enfermedad mental de Nash.",
+      "summary": "Comienza a tener alucinaciones y desarrolla paranoia."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre el legado de Nash y sus luchas.",
+      "summary": "Un genio en las matemáticas con una vida marcada por la tragedia personal."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga personal",
+    "hook_text": "¿Cómo alguien puede tener razón sobre el mundo y estar completamente equivocado sobre su propia realidad?",
+    "why_it_works": "Engancha al espectador al plantear una contradicción fascinante en la vida de Nash."
+  },
+  "claims": [
+    {
+      "claim": "John Nash cambió la forma en que entendemos la economía y las decisiones estratégicas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su tesis doctoral es un pilar de la teoría de juegos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Sufrió de enfermedad mental que afectó su vida personal y profesional.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El equilibrio de Nash se refleja en muchos aspectos de la vida cotidiana.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Dilema del prisionero como ejemplo del equilibrio de Nash.",
+    "Impacto de la teoría en conflictos modernos y decisiones empresariales."
+  ],
+  "actionable_ideas": [
+    "Fomentar la comprensión de la teoría de juegos en decisiones cotidianas.",
+    "Abordar el estigma asociado a la enfermedad mental mediante la educación.",
+    "Promover el interés en matemáticas y economía desde una edad temprana."
+  ],
+  "audience": "Personas interesadas en historia, matemáticas, economía y salud mental.",
+  "tone": "Narrativo e informativo",
+  "content_style": "Estructurado y reflexivo",
+  "retention_devices": [
+    "Historias personales",
+    "Explicaciones visuales de teorías",
+    "Citas inspiradoras"
+  ],
+  "title_supporting_quotes": [
+    "\"Es un genio matemático\" - carta de recomendación de Richard Duffin.",
+    "\"Una ley invisible que gobierna los conflictos humanos\"."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales educativos sobre John Nash.",
+    "Artículos sobre la relación entre matemáticas y decisiones en la vida diaria.",
+    "Ensayos sobre cómo la salud mental afecta la vida profesional."
+  ],
+  "risk_notes": [
+    "Al abordar la enfermedad mental, se debe hacerlo con sensibilidad.",
+    "El impacto social de sus decisiones puede ser malinterpretado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
