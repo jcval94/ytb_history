@@ -1,0 +1,85 @@
+{
+  "video_id": "6oHtkd4FQKI",
+  "language": "es",
+  "summary": "El video explora el tema del arrepentimiento, destacando que las personas tienden a arrepentirse más de las acciones no realizadas que de las decisiones equivocadas. Los psicólogos Dan Gilbert y Thomas Gilovich llevaron a cabo un experimento que mostró cómo los arrepentimientos por omisión perduran a lo largo del tiempo, a diferencia de los arrepentimientos por acción.",
+  "main_topics": [
+    "Arrepentimiento",
+    "Decisiones de vida",
+    "Errores por acción vs. omisión",
+    "Psicología del arrepentimiento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el tema del arrepentimiento y su relevancia en la vida de las personas.",
+      "summary": "Se plantea la pregunta sobre qué tipo de decisiones generan más arrepentimiento."
+    },
+    {
+      "section": "Experimento de Gilbert y Gilovich",
+      "purpose": "Describir el estudio realizado sobre el arrepentimiento.",
+      "summary": "Los psicólogos preguntaron a personas sobre sus arrepentimientos, dividiéndolos entre acciones realizadas y no realizadas."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Explicar los hallazgos del estudio.",
+      "summary": "Los arrepentimientos por acción disminuyen con el tiempo, mientras que los de omisión persisten y aumentan."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Resumir la lección sobre el arrepentimiento.",
+      "summary": "Se enfatiza que las personas se arrepienten más de lo que no hicieron y cómo esto afecta su vida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocadora",
+    "hook_text": "¿De qué tipo de decisiones nos arrepentimos más?",
+    "why_it_works": "Engancha a la audiencia al tocar un tema universal y relevante que invita a la reflexión personal."
+  },
+  "claims": [
+    {
+      "claim": "Los arrepentimientos por acción disminuyen con el tiempo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los arrepentimientos por omisión crecen con el tiempo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Nos arrepentimos más de lo que no hicimos que de lo que hicimos mal.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Casarse con la persona equivocada",
+    "No declarar un amor",
+    "No perseguir un sueño"
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre decisiones no tomadas",
+    "Fomentar un estilo de vida que minimice el arrepentimiento por omisión",
+    "Animarse a perseguir sueños y objetivos"
+  ],
+  "audience": "Personas interesadas en el crecimiento personal y la psicología.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo e informativo",
+  "retention_devices": [
+    "Historias personales",
+    "Estadísticas sobre el arrepentimiento"
+  ],
+  "title_supporting_quotes": [
+    "No cargamos tanto con los errores que cometimos, sino con las vidas que no nos animamos a vivir."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un artículo sobre decisiones y arrepentimientos",
+    "Crear un podcast sobre crecimiento personal",
+    "Incluir el tema en una charla motivacional"
+  ],
+  "risk_notes": [
+    "Generalización de los resultados del estudio a todos los individuos",
+    "Interpretaciones erróneas sobre las decisiones a tomar"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

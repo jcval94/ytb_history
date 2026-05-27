@@ -1,0 +1,85 @@
+{
+  "video_id": "s2FP3uPm1uQ",
+  "language": "es",
+  "summary": "El video discute el impacto de la pornografía y las redes sociales en la percepción de la sexualidad y la imagen corporal, enfatizando la desconexión entre la realidad y las expectativas que se generan en los jóvenes.",
+  "main_topics": [
+    "Impacto de la pornografía en la sexualidad",
+    "Influencia de las redes sociales en la imagen corporal",
+    "Conversaciones sobre sexualidad con los hijos",
+    "Inhibición respecto al cuerpo",
+    "Cambio en el interés por las relaciones sexuales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la influencia mediática",
+      "purpose": "Contextualizar el cambio en la percepción sexual tras el fin del proceso militar.",
+      "summary": "Menciona cómo las revistas eróticas de la adolescencia contrastan con la abundante pornografía actual."
+    },
+    {
+      "section": "Impacto en los jóvenes",
+      "purpose": "Resaltar la necesidad de educar sobre la sexualidad real.",
+      "summary": "El autor comparte la conversación que tuvo con sus hijos sobre la fake realidad de la pornografía."
+    },
+    {
+      "section": "Efectos de las redes sociales",
+      "purpose": "Discutir la inhibición corporal generada por las redes.",
+      "summary": "Habla sobre cómo las expectativas distorsionadas afectan la autopercepción y las relaciones."
+    },
+    {
+      "section": "Conclusión sobre la sexualidad moderna",
+      "purpose": "Reflexionar sobre la extinción de la sexualidad natural.",
+      "summary": "El autor concluye con una fuerte afirmación sobre el impacto negativo de estos cambios."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Decir, no vamos a querer tener más sexo es la vía más inesperada de la extinción.",
+    "why_it_works": "Atrae la atención destacando una consecuencia extrema y poco convencional de la influencia moderna sobre la sexualidad."
+  },
+  "claims": [
+    {
+      "claim": "La pornografía establece parámetros dañinos sobre la sexualidad.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La influencia de las redes sociales causa inhibición respecto a la desnudez.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El interés en las relaciones sexuales y reproducción está en declive.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar conversaciones abiertas sobre sexualidad con los jóvenes.",
+    "Educar sobre la diferencia entre pornografía y realidad.",
+    "Promover una imagen corporal positiva sin filtros."
+  ],
+  "audience": "Padres, educadores, jóvenes",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Estadísticas sobre la pornografía",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Hoy, con la absurda sobreoferta de pornografía de toda índole...",
+    "Los cuerpos mostrados en la pornografía están retocados.",
+    "El interés por las relaciones sexuales está cayendo."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un taller sobre educación sexual.",
+    "Crear contenido digital que aborde la realidad de la sexualidad.",
+    "Escribir un artículo sobre la evolución de la percepción sexual."
+  ],
+  "risk_notes": [
+    "La información puede llevar a encuentros incómodos entre padres e hijos.",
+    "Se debe manejar con cuidado el tema de la inhibición corporal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

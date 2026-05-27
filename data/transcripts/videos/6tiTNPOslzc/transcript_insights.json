@@ -1,0 +1,74 @@
+{
+  "video_id": "6tiTNPOslzc",
+  "language": "es",
+  "summary": "El video describe cómo durante la Primera Guerra Mundial, soldados británicos y alemanes intercambiaron regalos y celebraron juntos, incluyendo partidos de fútbol.",
+  "main_topics": [
+    "Intercambio de regalos en la guerra",
+    "Celebraciones entre soldados",
+    "Partidos de fútbol en el frente",
+    "Relaciones entre británicos y alemanes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto de la celebración peculiar en medio de la guerra",
+      "summary": "Los soldados intercambian regalos entre sí."
+    },
+    {
+      "section": "Descripción de las festividades",
+      "purpose": "Detallar los tipos de regalos y actividades que los soldados compartieron",
+      "summary": "Británicos traen dulces y los alemanes traen comida típica."
+    },
+    {
+      "section": "Partidos de fútbol",
+      "purpose": "Mencionar eventos específicos que ocurrieron durante este tiempo de tregua",
+      "summary": "Se organizaron partidos de fútbol que los soldados disfrutaron pese a la guerra."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a conocer más sobre el tema",
+      "summary": "Se sugiere ver el video completo para más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Probablemente una de las pocas veces en la historia en que Inglaterra pudo presumir de ganarle a Alemania.",
+    "why_it_works": "Crea curiosidad sobre un evento histórico inesperado y poco común."
+  },
+  "claims": [
+    {
+      "claim": "Soldados británicos y alemanes celebraron juntos durante la guerra.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Se jugaron partidos de fútbol en el frente.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la tregua de Navidad durante la Primera Guerra Mundial.",
+    "Ver documentales que profundicen en este evento histórico."
+  ],
+  "audience": "Interesados en historia militar y eventos extraordinarios en tiempos de guerra",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo con elementos descriptivos",
+  "retention_devices": [
+    "Detalles históricos",
+    "Citas intrigantes",
+    "Preguntas abiertas al final"
+  ],
+  "title_supporting_quotes": [
+    "los británicos reparten chocolate, té y pudding, y los alemanes puros, chucrut y su clásico licor de manzana."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre otros eventos de tregua en conflictos bélicos.",
+    "Desarrollar narrativas en torno a la vida cotidiana de los soldados en la guerra."
+  ],
+  "risk_notes": [
+    "Poca información puede llevar a malinterpretaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "jZGCQFKqFOI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Sirve hacerle caso a la intuición?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\jZGCQFKqFOI.mp3",
+  "transcribed_at": "2026-05-27T03:13:44.714263+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1413,
+  "text_sha256": "7e585d5f22b9667ed5080dcf9cc7a8c4bd32d790a73b40739fe9ef965242b4d3",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\jZGCQFKqFOI\\transcript_segments.jsonl",
+  "segment_count": 29,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:29:30.941826+00:00",
+  "duration_seconds": 72.13999938964844
+}

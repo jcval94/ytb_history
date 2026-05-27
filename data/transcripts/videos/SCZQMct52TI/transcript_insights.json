@@ -1,0 +1,72 @@
+{
+  "video_id": "SCZQMct52TI",
+  "language": "español",
+  "summary": "La historia de cómo Sylvester Stallone rechazó una oferta considerable por el guión de Rocky para poder interpretar el papel principal, apostando por sí mismo y su sueño de ser un actor. Su determinación y convicción lo llevaron a crear un personaje icónico y a transformarse en una mejor versión de sí mismo.",
+  "main_topics": [
+    "Determinación de Stallone",
+    "Rechazo a la oferta",
+    "Superación personal",
+    "Creación de Rocky"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la oferta",
+      "purpose": "Presentar el dilema de Stallone",
+      "summary": "Se revela la oferta de 350,000 dólares y la condición de no interpretar a Rocky."
+    },
+    {
+      "section": "Decisión de Stallone",
+      "purpose": "Destacar la determinación personal",
+      "summary": "Stallone decide rechazar la oferta a pesar de su situación financiera."
+    },
+    {
+      "section": "Consecuencias de su decisión",
+      "purpose": "Resaltar la transformación personal",
+      "summary": "La decisión de Stallone dio lugar a la creación de Rocky y su desarrollo como persona."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa inspiradora",
+    "hook_text": "Apostó por sí mismo y ese riesgo cambió su vida para siempre.",
+    "why_it_works": "Captura la atención al mostrar una decisión valiente que tuvo un impacto significativo en su vida."
+  },
+  "claims": [
+    {
+      "claim": "Stallone rechazó una oferta significativa por el guión de Rocky.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Su decisión lo llevó a convertirse en un actor exitoso.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Creer en uno mismo.",
+    "No vender tus sueños a cambio de dinero rápido.",
+    "Superar adversidades para alcanzar tus objetivos."
+  ],
+  "audience": "Personas interesadas en historias de superación y motivación personal.",
+  "tone": "Inspirador",
+  "content_style": "Narrativa autobiográfica",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Cliffhangers sobre el futuro de Stallone",
+    "Referencias culturales sobre Rocky"
+  ],
+  "title_supporting_quotes": [
+    "Su sueño era más grande que cualquier cifra.",
+    "Quería interpretar a Rocky, un personaje inspirado en su propia vida."
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar la historia a un formato de podcast.",
+    "Crear contenido visual en redes sociales sobre la perseverancia."
+  ],
+  "risk_notes": [
+    "La historia puede resonar solo con un público específico.",
+    "Algunas personas pueden no conocer el trasfondo de Rocky."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

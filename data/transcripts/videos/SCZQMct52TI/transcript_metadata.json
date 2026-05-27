@@ -1,0 +1,20 @@
+{
+  "video_id": "SCZQMct52TI",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "RECHAZÓ $350,000 ESTANDO ARRUINADO | Rocky Balboa Motivación",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\SCZQMct52TI.mp3",
+  "transcribed_at": "2026-05-27T03:17:49.315034+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1087,
+  "text_sha256": "bfb2baf58a9a7c18ff7a53cfc2af55cb8f1143316ec50d72a41a664df1900f99",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\SCZQMct52TI\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:25:36.876882+00:00",
+  "duration_seconds": 60.06999969482422
+}

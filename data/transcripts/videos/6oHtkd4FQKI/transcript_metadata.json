@@ -1,0 +1,20 @@
+{
+  "video_id": "6oHtkd4FQKI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Este es el arrepentimiento que más duele",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\6oHtkd4FQKI.mp3",
+  "transcribed_at": "2026-05-27T03:12:05.331866+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 862,
+  "text_sha256": "68c3e3d2f24e053a9a5a5b5cc77f722235b2754b4e099a89955851f8c0012027",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\6oHtkd4FQKI\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:29.351168+00:00",
+  "duration_seconds": 45.439998626708984
+}

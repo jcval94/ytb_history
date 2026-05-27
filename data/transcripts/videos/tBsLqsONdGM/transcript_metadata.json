@@ -1,0 +1,14 @@
+{
+  "video_id": "tBsLqsONdGM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Vendimos lo más valioso que tenemos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\tBsLqsONdGM.mp3",
+  "transcribed_at": "2026-05-27T03:18:44.944937+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1453,
+  "text_sha256": "deaba81051efe1640172d3c3ef35249be52c3d7b7f9b57e19d434d18d0d01830",
+  "repo_schema_version": "transcript_metadata_v1"
+}

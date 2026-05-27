@@ -1,0 +1,93 @@
+{
+  "video_id": "lwJZv2OB90k",
+  "language": "es",
+  "summary": "La historia de Chuck Webner, el verdadero hombre en quien se inspiró la película \"Rocky\", es una narrativa de fracasos y resiliencia. A pesar de ser considerado un perdedor y enfrentarse a numerosas adversidades, Webner logró un hito al derribar a Muhammad Ali en 1975. Su vida, marcada por errores y enfrentamientos con la ley, ha sido eclipsada por el éxito de Stallone, quien se basa en su historia para crear el icónico personaje de Rocky Balboa.",
+  "main_topics": [
+    "Impacto de la resiliencia",
+    "La verdadera historia de Chuck Webner",
+    "Comparación entre la ficción y la realidad",
+    "El proceso de creación de 'Rocky'",
+    "Los desafíos de la vida de un boxeador"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Rocky Balboa",
+      "purpose": "Presentar la figura icónica de Rocky Balboa y establecer una comparación con Chuck Webner.",
+      "summary": "Introducción a Rocky Balboa como símbolo de superación, contrastando con la dura realidad de Chuck Webner."
+    },
+    {
+      "section": "La vida de Chuck Webner",
+      "purpose": "Explorar la verdadera historia de Webner y sus luchas personales.",
+      "summary": "Describir cómo la vida de Webner se asemeja a la de Rocky, pero con un enfoque más realista y trágico."
+    },
+    {
+      "section": "El combate con Muhammad Ali",
+      "purpose": "Narrar el clímax de la vida de Webner, su enfrentamiento con Ali.",
+      "summary": "Detalles del combate donde Webner logra derribar a Ali, un momento significativo que cambia su vida."
+    },
+    {
+      "section": "El impacto en Stallone",
+      "purpose": "Mostrar cómo el combate de Webner inspiró a Stallone a escribir 'Rocky'.",
+      "summary": "Detallar cómo el desamparado Stallone se conectó emocionalmente con la historia de Webner."
+    },
+    {
+      "section": "La demanda de Webner",
+      "purpose": "Presentar el conflicto legal entre Webner y Stallone.",
+      "summary": "Explicar cómo Webner reclama reconocimiento por su historia y el impacto que tuvo en la franquicia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativo",
+    "hook_text": "Todos conocemos a este hombre de aquí. Es Rocky Balboa...",
+    "why_it_works": "Comienza con un personaje icónico que captura la atención del público, generando curiosidad sobre la conexión entre la historia de Rocky y la vida real de Chuck Webner."
+  },
+  "claims": [
+    {
+      "claim": "La vida real de Chuck Webner fue más difícil que la de Rocky Balboa.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Stallone se inspiró directamente en Webner para crear Rocky.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "Webner ha luchado contra la falta de reconocimiento de su historia.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "El combate donde Webner derriba a Ali.",
+    "Las condiciones de vida de Stallone antes de su éxito.",
+    "La serie de fracasos personales de Webner."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre figuras olvidadas en la historia del deporte.",
+    "Examinar cómo inspiraciones reales pueden ser transformadas en narrativas cinematográficas.",
+    "Reflexionar sobre la resiliencia personal ante la adversidad."
+  ],
+  "audience": "Interesados en biografías, deportes, y narrativas de superación.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo, con toques dramáticos.",
+  "retention_devices": [
+    "Historias personales conmovedoras",
+    "Comparaciones de vida y ficción",
+    "Revelaciones impactantes sobre la creación de Rocky"
+  ],
+  "title_supporting_quotes": [
+    "Su vida fue un constante vaivén de errores, fracasos y caídas.",
+    "La historia del verdadero Rocky, alguien al que quisieron borrar de su propia leyenda."
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar la historia de Chuck Webner en un documental.",
+    "Crear contenido para redes sociales sobre héroes poco reconocidos.",
+    "Publicar artículos sobre la influencia de la vida real en Hollywood."
+  ],
+  "risk_notes": [
+    "La demanda puede generar tensión entre los fanáticos de ambos.",
+    "La relación entre nostalgia y reconocimiento de las influencias creativas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,63 @@
+{
+  "video_id": "glHxA2u_S_E",
+  "language": "es",
+  "summary": "El video aborda la historia de Roger Bannister, subrayando que las verdaderas carreras son aquellas contra las adversidades de la vida, más que meramente temporales o por premios.",
+  "main_topics": [
+    "Roger Bannister",
+    "Superación personal",
+    "Carreras contra la adversidad",
+    "Legado"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de Roger Bannister",
+      "purpose": "Presentar al protagonista y su legado.",
+      "summary": "Se menciona que Bannister falleció en 2018 y se destaca su historia inspiradora."
+    },
+    {
+      "section": "Reflexión sobre el verdadero significado de una carrera",
+      "purpose": "Profundizar en el mensaje central.",
+      "summary": "Se concluye que las carreras son más que cronómetros o medallas, son batallas contra obstáculos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Crea curiosidad y motiva a la audiencia a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "La verdadera carrera es contra las adversidades.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Roger Bannister es un ejemplo de superación.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre mis propias adversidades.",
+    "Encontrar inspiración en historias de superación.",
+    "Compartir la historia de Roger Bannister con otros."
+  ],
+  "audience": "Personas interesadas en historias de superación y motivación.",
+  "tone": "Inspirador",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Preguntas reflexivas",
+    "Referencias a historias reales",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "La verdadera carrera no siempre es contra un cronómetro ni para conseguir una medalla."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre historias de superación y resiliencia.",
+    "Desarrollar un podcast o blog sobre figuras inspiradoras."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,123 @@
+{
+  "video_id": "ef6zSLS9IJQ",
+  "language": "es",
+  "summary": "Santiago Bilinkis cuestiona consejos célebres sobre la toma de decisiones, basándose en el discurso de Steve Jobs. Explica cómo tomar buenas decisiones en un mundo lleno de incertidumbres, errores y una sobreabundancia de opciones. La reflexión se centra en aprender de los errores, minimizar la parálisis por análisis, y cómo decidir de manera más efectiva. El episodio cierra con la importancia de no aferrarse al arrepentimiento de las decisiones no tomadas.",
+  "main_topics": [
+    "Consejos de Steve Jobs",
+    "Toma de decisiones",
+    "Incertidumbre",
+    "Errores comunes",
+    "Paradoja de la elección",
+    "Aprender del fracaso",
+    "Importancia del arrepentimiento"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema",
+      "summary": "Introducción al enfoque crítico sobre un consejo de Steve Jobs relacionado con la toma de decisiones."
+    },
+    {
+      "section": "Parte 1: No le hagas caso a Steve Jobs",
+      "purpose": "Criticar el consejo de Jobs",
+      "summary": "Argumenta que confiar en la conexión de los puntos retrospectivamente puede llevar a decisiones erróneas."
+    },
+    {
+      "section": "Parte 2: El vértigo de no saber",
+      "purpose": "Explicar la aversión a la incertidumbre",
+      "summary": "Discute cómo la necesidad de certeza puede llevar a decisiones menos efectivas."
+    },
+    {
+      "section": "Parte 3: Errar es humano",
+      "purpose": "Promover la aceptación del error",
+      "summary": "Explica que errar es parte del proceso de aprendizaje y cómo manejarlo."
+    },
+    {
+      "section": "Parte 4: El pantano de la abundancia",
+      "purpose": "Hablar sobre exceso de opciones",
+      "summary": "Describe los efectos negativos de tener demasiadas opciones al decidir."
+    },
+    {
+      "section": "Parte 5: El estúpido que todos llevamos dentro",
+      "purpose": "Identificar los extremos en toma de decisiones",
+      "summary": "Explora la impulsividad y la indecisión como enemigos de decisiones efectivas."
+    },
+    {
+      "section": "Parte 6: El secreto de saber soltar a tiempo",
+      "purpose": "Mencionar la importancia de soltar cuando es necesario",
+      "summary": "Habla de la falacia del costo hundido y la importancia de saber cuándo cambiar de rumbo."
+    },
+    {
+      "section": "Parte 7: ¿Del error se aprende?",
+      "purpose": "Reflexionar sobre el aprendizaje del error",
+      "summary": "Discute cómo la reflexión sobre errores previene su repetición."
+    },
+    {
+      "section": "Parte 8: La trampa de lo que pudo ser",
+      "purpose": "Hacer frente al arrepentimiento",
+      "summary": "Concluye sobre el costo de oportunidad y el arrepentimiento por decisiones no tomadas."
+    },
+    {
+      "section": "Parte final: El poder acumulativo de las decisiones",
+      "purpose": "Cerrar con un ejemplo inspirador",
+      "summary": "Presenta cómo las decisiones acumulativas pueden llevar al éxito o al fracaso."
+    },
+    {
+      "section": "Bonus Track: Las vidas que no vivimos",
+      "purpose": "Reflexionar sobre omisiones",
+      "summary": "Habla sobre los arrepentimientos por no haber tomado riesgos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "Hay consejos que suenan brillantes hasta que los seguís y arruinan tu vida.",
+    "why_it_works": "Captura la atención planteando un conflicto entre la sabiduría común y una perspectiva crítica."
+  },
+  "claims": [
+    {
+      "claim": "El consejo de Steve Jobs sobre conectar los puntos es peligroso.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La incertidumbre puede ser manejada y no evitada.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los maximizadores son menos felices que los satisfactores.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "El experimento con las mermeladas y su impacto en la compra.",
+    "Los estudios que comparan maximizadores vs. satisfactores."
+  ],
+  "actionable_ideas": [
+    "Minimizar opciones antes de decidir.",
+    "Aceptar la incertidumbre como parte del proceso.",
+    "Reflexionar sobre errores para mejorar futuros resultados."
+  ],
+  "audience": "Personas interesadas en el desarrollo personal y la toma de decisiones efectivas",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y educativo",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Preguntas retóricas",
+    "Estudios de caso"
+  ],
+  "title_supporting_quotes": [
+    "\"Elegir no es sumar, es aprender a descartar.\"",
+    "\"El error se acepta como parte del proceso.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre toma de decisiones basados en el contenido.",
+    "Charlas o talleres sobre aprendizaje a partir de errores."
+  ],
+  "risk_notes": [
+    "Posible resistencia a cambiar creencias previas sobre decisiones.",
+    "La sugerencia de manejar la incertidumbre puede ser desafiante para algunos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

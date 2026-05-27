@@ -1,0 +1,77 @@
+{
+  "video_id": "aC8aW-1PJNU",
+  "language": "es",
+  "summary": "El video reflexiona sobre el paso del tiempo, la toma de decisiones y las oportunidades que se presentan en el futuro. Se enfatiza que, a pesar de las decisiones pasadas, siempre hay opciones por delante y la importancia de avanzar con intención.",
+  "main_topics": [
+    "Toma de decisiones",
+    "Reflexión sobre el pasado",
+    "Oportunidades futuras",
+    "Vida presente"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la vida y decisiones",
+      "purpose": "Presentar el concepto de elecciones y su impacto en la vida.",
+      "summary": "El individuo comienza su vida desde un punto inicial sin decisiones."
+    },
+    {
+      "section": "Pasados no vividos",
+      "purpose": "Visualizar las decisiones que no se tomaron.",
+      "summary": "Las decisiones no tomadas se representan como ramas negras, simbolizando lo que no será."
+    },
+    {
+      "section": "El presente y el futuro",
+      "purpose": "Enfatizar la importancia de vivir en el presente y mirar hacia adelante.",
+      "summary": "El presente es donde se encuentran las oportunidades y las decisiones futuras."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Motivar al espectador a actuar.",
+      "summary": "La vida es un continuo de nuevas elecciones, donde cada paso puede abrir nuevas trayectorias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Ahora qué sigue?",
+    "why_it_works": "Provoca introspección y conexión personal, llevando al espectador a reflexionar sobre su propia vida."
+  },
+  "claims": [
+    {
+      "claim": "Siempre hay opciones futuras disponibles.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El tiempo y las decisiones pasadas no deben limitar nuestro futuro.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre decisiones pasadas sin arrepentimiento.",
+    "Identificar nuevas oportunidades en la vida actual.",
+    "Dar un paso hacia adelante con intención."
+  ],
+  "audience": "Personas en búsqueda de motivación y reflexión personal.",
+  "tone": "Inspirador",
+  "content_style": "Reflexivo y motivacional.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Metáforas visuales",
+    "Posibilidades futuras"
+  ],
+  "title_supporting_quotes": [
+    "\"Hay quien se queda mirando solo el lado izquierdo\"",
+    "\"Cada uno de esos pasos que das abre nuevos caminos.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Generar un taller sobre toma de decisiones.",
+    "Crear contenido visual sobre la metáfora de las ramas.",
+    "Desarrollar un podcast sobre el manejo del tiempo y decisiones."
+  ],
+  "risk_notes": [
+    "Posibilidad de que algunos espectadores sientan culpa sobre decisiones pasadas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

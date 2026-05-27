@@ -1,0 +1,74 @@
+{
+  "video_id": "2ae1lbhFVGM",
+  "language": "es",
+  "summary": "El video explora la conjetura de Poincaré y cómo un matemático en San Petersburgo se inspiró en el flujo de Ricci y el trabajo de Hamilton para abordar uno de los mayores retos matemáticos, lo que eventualmente cambiaría su vida.",
+  "main_topics": [
+    "Conjetura de Poincaré",
+    "Flujo de Ricci",
+    "Henri Poincaré",
+    "Richard Hamilton",
+    "Geometría del universo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del tema",
+      "purpose": "Presentar el desafío matemático",
+      "summary": "Se introduce la conjetura de Poincaré y su relevancia en la matemática."
+    },
+    {
+      "section": "Desarrollo histórico",
+      "purpose": "Contextualizar el problema",
+      "summary": "Se habla sobre Henri Poincaré y su propuesta relacionada con formas tridimensionales."
+    },
+    {
+      "section": "El flujo de Ricci",
+      "purpose": "Introducir herramientas matemáticas",
+      "summary": "Se menciona cómo Richard Hamilton desarrolló el flujo de Ricci como posible solución."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con un cliffhanger",
+      "summary": "Invita a la audiencia a ver el video completo para entender la historia detrás del matemático y su trabajo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad sobre el desenlace de la historia del matemático y su relación con la conjetura."
+  },
+  "claims": [
+    {
+      "claim": "La conjetura de Poincaré es uno de los mayores desafíos matemáticos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El flujo de Ricci fue ideado por Richard Hamilton como potencial herramienta.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Resolver la conjetura de Poincaré requiere entender la geometría del universo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [],
+  "audience": "Entusiastas de las matemáticas y la ciencia.",
+  "tone": "Intrigante y educativo.",
+  "content_style": "Narrativo y explicativo.",
+  "retention_devices": [
+    "Cliffhanger",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "¿Sigue siendo una esfera, matemáticamente hablando?"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video educativo sobre la geometría del universo.",
+    "Desarrollo de un artículo sobre la historia de la matemática y sus grandes desafíos."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

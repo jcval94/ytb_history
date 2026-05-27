@@ -1,0 +1,92 @@
+{
+  "video_id": "0keaf0tvCOg",
+  "language": "es",
+  "summary": "El video narra la intensa rivalidad entre Garry Kasparov y Anatoly Karpov en el contexto de la Guerra Fría, explorando la historia personal de Kasparov, su ascenso en el mundo del ajedrez, y cómo su confrontación con Karpov trascendió el juego para convertirse en un símbolo de resistencia y rebelión contra el régimen soviético.",
+  "main_topics": [
+    "Garry Kasparov",
+    "Anatoly Karpov",
+    "Historia del ajedrez",
+    "Guerra Fría",
+    "Rivalidad deportiva"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el contexto histórico y emocional de la rivalidad entre Kasparov y Karpov.",
+      "summary": "Presenta a los dos personajes principales en un tablero de ajedrez, simbolizando la lucha ideológica."
+    },
+    {
+      "section": "Infancia de Kasparov",
+      "purpose": "Explorar los orígenes de Garry Kasparov y su relación con el ajedrez.",
+      "summary": "Describe la vida temprana de Kasparov y los eventos que moldearon su carrera."
+    },
+    {
+      "section": "Entrenamiento y ascenso",
+      "purpose": "Detallar la formación de Kasparov y su lógica de juego",
+      "summary": "Explica su entrenamiento con Botvinnik y su rápida ascensión en el ajedrez soviético."
+    },
+    {
+      "section": "Rivalidad con Karpov",
+      "purpose": "Construir la tensión entre el joven Kasparov y el veterano Karpov.",
+      "summary": "Base de la rivalidad que abarca no solo el deporte, sino también la política."
+    },
+    {
+      "section": "El match",
+      "purpose": "Narrar el desarrollo del increíble match entre Kasparov y Karpov.",
+      "summary": "Describir la intensidad del juego y los momentos clave que definen el enfrentamiento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativo",
+    "hook_text": "Moscú, 1984. Dos hombres se sientan frente a un tablero de ajedrez...",
+    "why_it_works": "Establece un fuerte contraste entre los personajes, capturando la atención del espectador de inmediato."
+  },
+  "claims": [
+    {
+      "claim": "El ajedrez se convirtió en un asunto de Estado en la Unión Soviética.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Kasparov desafió las normas establecidas por el régimen soviético.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La rivalidad entre Kasparov y Karpov simboliza una lucha ideológica.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La decisión de Clara Kasparov de cambiar el apellido de su hijo para evitar prejuicios.",
+    "La formación rigurosa de Kasparov bajo Mikhail Botvinnik."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la historia del ajedrez en la Guerra Fría.",
+    "Explorar biografías de Garry Kasparov y Anatoly Karpov.",
+    "Analizar cómo el ajedrez puede reflejar conflictos sociales y políticos."
+  ],
+  "audience": "Interesados en ajedrez, historia reciente, y psicología del deporte.",
+  "tone": "Narrativo e informativo.",
+  "content_style": "Documental.",
+  "retention_devices": [
+    "Imágenes de partidas de ajedrez",
+    "Entrevistas con expertos",
+    "Recreaciones dramatizadas"
+  ],
+  "title_supporting_quotes": [
+    "'El ajedrez no era un simple juego, era un proyecto de estado.'",
+    "'Las 64 casillas del tablero se convirtieron entonces en su único refugio.'"
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales educativos sobre la Guerra Fría.",
+    "Artículos en blogs sobre rivalidades en deportes.",
+    "Material didáctico sobre la historia del ajedrez."
+  ],
+  "risk_notes": [
+    "Es posible que algunos detalles sobre la política soviética sean controversiales.",
+    "El enfoque en la rivalidad personal puede ser simplista."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

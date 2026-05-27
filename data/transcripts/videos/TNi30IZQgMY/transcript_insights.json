@@ -1,0 +1,81 @@
+{
+  "video_id": "TNi30IZQgMY",
+  "language": "es",
+  "summary": "El narrador comparte la historia de su primer amor en la infancia, desde su enamoramiento a los 7 años hasta su matrimonio a los 12, mostrando la evolución de su relación y la conexión emocional con su esposa.",
+  "main_topics": [
+    "Primer amor",
+    "Relaciones infantiles",
+    "Evolución de relaciones",
+    "Compromiso a largo plazo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al enamoramiento",
+      "purpose": "Presentar la historia personal del narrador",
+      "summary": "El narrador se enamora de una chica en segundo grado."
+    },
+    {
+      "section": "Desarrollo de la relación",
+      "purpose": "Describir los desafíos y momentos clave",
+      "summary": "Después de cinco años, el narrador finalmente confiesa su amor."
+    },
+    {
+      "section": "Obstáculos familiares",
+      "purpose": "Mostrar los retos que enfrentaron",
+      "summary": "La chica necesita el permiso de su padre para dar un beso."
+    },
+    {
+      "section": "Resolución",
+      "purpose": "Cerrar la historia con un impacto emocional",
+      "summary": "Finalmente, se dan su primer beso y han estado juntos por 42 años."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal historia",
+    "hook_text": "Yo me enamoré de una chica cuando yo tenía 7",
+    "why_it_works": "Genera curiosidad y conexión emocional al hablar de experiencias universales como el primer amor."
+  },
+  "claims": [
+    {
+      "claim": "El primer amor puede perdurar toda la vida.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Los obstáculos familiares pueden influir en relaciones infantiles.",
+      "support_level": "weak",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [
+    "Ejemplo de enamoramiento infantil",
+    "Desafío de los permisos parentales"
+  ],
+  "actionable_ideas": [
+    "Valorar las relaciones desde una edad temprana",
+    "Superar obstáculos en las relaciones",
+    "Fomentar la comunicación abierta con los padres sobre relaciones"
+  ],
+  "audience": "Adultos que valoran las relaciones a largo plazo",
+  "tone": "Nostálgico y romántico",
+  "content_style": "Narrativo y anecdótico",
+  "retention_devices": [
+    "Uso de anécdotas personales",
+    "Suspenso en la narrativa",
+    "Conexión emocional a través de la historia"
+  ],
+  "title_supporting_quotes": [
+    "\"Esa chica de la que me enamoré a los 7 es mi esposa.\"",
+    "\"Estamos juntos desde los 12, o sea, estamos juntos desde hace 42 años.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Blogs sobre relaciones a largo plazo",
+    "Contenido sobre el primer amor en redes sociales",
+    "Historias inspiradoras para podcast"
+  ],
+  "risk_notes": [
+    "La historia podría considerarse muy personal para un público amplio.",
+    "Es posible que algunos no se identifiquen con experiencias de amor infantil."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

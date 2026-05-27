@@ -1,0 +1,78 @@
+{
+  "video_id": "h04aNLxkbHc",
+  "language": "es",
+  "summary": "Una carta escrita en 1914 describe una tregua de Navidad entre soldados británicos y alemanes, donde dejaron de disparar y compartieron momentos de camaradería, reflejando que incluso en tiempos de guerra, la humanidad puede prevalecer.",
+  "main_topics": [
+    "Tregua de Navidad 1914",
+    "Humanidad en tiempos de guerra",
+    "Relaciones entre soldados enemigos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la carta y su contexto histórico",
+      "summary": "Se introduce la carta escrita después de Navidad de 1914."
+    },
+    {
+      "section": "Descripción de la tregua",
+      "purpose": "Narrar los eventos de la tregua de Navidad",
+      "summary": "Se describe cómo los soldados británicos y alemanes dejaron de pelear y socializaron."
+    },
+    {
+      "section": "Reflexión",
+      "purpose": "Ofrecer una perspectiva sobre la tregua",
+      "summary": "Se reflexiona sobre el impacto de un simple gesto de paz en un contexto bélico."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Invitar a profundizar en la historia",
+      "summary": "Se menciona un video donde se puede encontrar más información sobre la tregua."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga histórica",
+    "hook_text": "¿Os lo podéis creer?",
+    "why_it_works": "Genera curiosidad sobre un evento inusual durante la guerra."
+  },
+  "claims": [
+    {
+      "claim": "Más de 100.000 soldados depusieron las armas durante la tregua.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La tregua de Navidad ocurrió en gran parte del frente británico.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Un simple gesto puede parar incluso una guerra.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la tregua de Navidad de 1914.",
+    "Reflexionar sobre la importancia de la paz en conflictos actuales."
+  ],
+  "audience": "Personas interesadas en historia y conflictos bélicos.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y personal",
+  "retention_devices": [
+    "Citar eventos históricos",
+    "Usar anécdotas personales"
+  ],
+  "title_supporting_quotes": [
+    "Demostrando que un simple gesto podía parar incluso la madre de todas las guerras."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre treguas históricas en guerras.",
+    "Explorar la humanidad en situaciones extremas."
+  ],
+  "risk_notes": [
+    "La interpretación de eventos bélicos puede ser polémica.",
+    "Es importante verificar la veracidad de las cifras históricas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

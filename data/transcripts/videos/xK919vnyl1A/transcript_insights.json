@@ -1,0 +1,85 @@
+{
+  "video_id": "xK919vnyl1A",
+  "language": "es",
+  "summary": "El video explora la falacia del costo hundido y cómo afecta la toma de decisiones, enfatizando la importancia de reconocer errores y cortar pérdidas para preservar felicidad y recursos.",
+  "main_topics": [
+    "Falacia del costo hundido",
+    "Escalar el compromiso",
+    "Reconocimiento de errores",
+    "La importancia de soltar",
+    "Ego y decisiones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la falacia del costo hundido",
+      "purpose": "Presentar un fenómeno psicológico en la toma de decisiones.",
+      "summary": "Se introduce la idea de que las personas a menudo continúan en un camino no deseado por miedo a perder lo invertido."
+    },
+    {
+      "section": "Escalar el compromiso",
+      "purpose": "Explicar cómo las personas intensifican su esfuerzo en decisiones fallidas.",
+      "summary": "Se menciona cómo el ego influye en mantener inversiones en proyectos fallidos."
+    },
+    {
+      "section": "Estudio de caso",
+      "purpose": "Ilustrar el impacto del apego personal en decisiones financieras.",
+      "summary": "Caso de bancos donde ejecutivos resistieron pérdidas debido a su conexión emocional con las decisiones."
+    },
+    {
+      "section": "Conclusiones y consejos",
+      "purpose": "Ofrecer una reflexión sobre la importancia de reconocer y corregir errores.",
+      "summary": "Se destaca que soltar y cortar a tiempo es clave para un futuro exitoso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Análisis de comportamiento",
+    "hook_text": "Pensá en alguien que empezó una carrera universitaria, cursó dos años y descubre que no le gusta.",
+    "why_it_works": "Engancha al espectador al presentar una situación relatable y desafiante que muchos enfrentan."
+  },
+  "claims": [
+    {
+      "claim": "La falacia del costo hundido lleva a decisiones erradas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El ego influye en mantener inversiones en decisiones fallidas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Cortar pérdidas a tiempo es esencial para el éxito futuro.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practica la autoconciencia para identificar errores pronto.",
+    "Reduce el apego emocional a decisiones pasadas.",
+    "Establece puntos de revisión para evaluar decisiones importantes.",
+    "Aprende a soltar proyectos que no funcionan."
+  ],
+  "audience": "Adultos interesados en desarrollo personal y toma de decisiones.",
+  "tone": "Reflexivo y motivador",
+  "content_style": "Educativo y persuasivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Estudios de caso",
+    "Ejemplos personales"
+  ],
+  "title_supporting_quotes": [
+    "Saber cuándo insistir y cuándo soltar es uno de los mayores desafíos de la vida.",
+    "Cortar a tiempo no es de cobardes."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre toma de decisiones en contextos laborales.",
+    "Desarrollar talleres sobre reconocimiento de errores personales.",
+    "Producir un podcast sobre el impacto del ego en la toma de decisiones."
+  ],
+  "risk_notes": [
+    "El riesgo de no cortar pérdidas puede llevar a la insatisfacción a largo plazo.",
+    "El rechazo a reconocer errores puede afectar la salud mental."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

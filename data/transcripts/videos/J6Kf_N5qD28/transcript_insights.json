@@ -1,0 +1,82 @@
+{
+  "video_id": "J6Kf_N5qD28",
+  "language": "es",
+  "summary": "El discurso destaca la importancia de reconocer que la democracia es frágil y no debe darse por garantizada. Se pone énfasis en la responsabilidad de cada ciudadano en mantenerla, resistiendo el fanatismo y promoviendo la tolerancia.",
+  "main_topics": [
+    "Importancia de la democracia",
+    "Responsabilidad ciudadana",
+    "Consecuencias del fanatismo",
+    "Fragilidad de los acuerdos democráticos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea central sobre la fragilidad de la democracia.",
+      "summary": "La democracia es una excepción histórica, no una norma."
+    },
+    {
+      "section": "Responsabilidades ciudadanas",
+      "purpose": "Llamar a la acción individual en la defensa de la democracia.",
+      "summary": "Cada ciudadano debe decidir cuándo apoyar o rechazar el extremismo."
+    },
+    {
+      "section": "Consecuencias del fanatismo",
+      "purpose": "Describir los efectos negativos del extremismo y la intolerancia.",
+      "summary": "El fanatismo es dañino independientemente de la ideología que lo soporte."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reforzar el papel activo necesario de los ciudadanos mediante el pensamiento crítico.",
+      "summary": "La democracia se mantiene con el esfuerzo de todos, no se sostiene sola."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita de autoridad",
+    "hook_text": "Uval Harari lo dijo con brutal sencillez.",
+    "why_it_works": "Atrae la atención al citar a un pensador reconocido, estableciendo credibilidad en el argumento."
+  },
+  "claims": [
+    {
+      "claim": "La democracia es una excepción histórica.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La democracia se defiende con acciones individuales.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El fanatismo es perjudicial sin importar la ideología.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover el pensamiento crítico en el día a día.",
+    "Resistir el extremismo en todas sus formas.",
+    "Fomentar el respeto y la confianza en el debate democrático."
+  ],
+  "audience": "Ciudadanos preocupados por la democracia",
+  "tone": "Reflexivo",
+  "content_style": "Persuasivo y crítico",
+  "retention_devices": [
+    "Citas de pensadores reconocidos",
+    "Preguntas retóricas",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "La democracia es un acuerdo frágil que requiere de gestos cotidianos de respeto y confianza.",
+    "La tentación del fanatismo es cómoda, da certezas, pero el precio de esa comodidad es altísimo."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollo de contenido sobre la importancia del pensamiento crítico.",
+    "Creación de campañas sobre la tolerancia y la diversidad en la política."
+  ],
+  "risk_notes": [
+    "El mensaje puede polarizar aún más a quienes se sienten atacados por el fanatismo.",
+    "Posibilidad de resistencia en aquellos que favorecen ideologías extremas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

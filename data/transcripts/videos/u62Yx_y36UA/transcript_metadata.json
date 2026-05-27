@@ -1,0 +1,14 @@
+{
+  "video_id": "u62Yx_y36UA",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Tu próxima pareja podría ser una IA?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\u62Yx_y36UA.mp3",
+  "transcribed_at": "2026-05-27T03:08:20.751330+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1182,
+  "text_sha256": "03b4cffaa4f6f8071b96f1233d7ec37635dc1bcdac2b46daf0aa50cb4e32524a",
+  "repo_schema_version": "transcript_metadata_v1"
+}

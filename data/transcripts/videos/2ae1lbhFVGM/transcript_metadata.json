@@ -1,0 +1,20 @@
+{
+  "video_id": "2ae1lbhFVGM",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Grigori Perelman Y LA CONJETURA DE POINTCARE",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2ae1lbhFVGM.mp3",
+  "transcribed_at": "2026-05-27T03:05:13.443496+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1128,
+  "text_sha256": "348b2ab986b096c624880d05be61e326eee550c78282e4440d9ee00a9d8f1d31",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2ae1lbhFVGM\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:15.007647+00:00",
+  "duration_seconds": 71.86000061035156
+}

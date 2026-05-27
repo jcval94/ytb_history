@@ -1,0 +1,69 @@
+{
+  "video_id": "at2LbwtQn6Q",
+  "language": "es",
+  "summary": "El relato describe una situación extraordinaria donde soldados de bandos enemigos se unen durante la Navidad gracias al fútbol, lo que desafía la noción de conflicto armado.",
+  "main_topics": [
+    "Navidad en tiempos de guerra",
+    "Fútbol como unión",
+    "Historias de soldados",
+    "Conflictos bélicos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la anécdota",
+      "summary": "Un relato sorprendente de cómo soldados se unieron durante la Navidad."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Consumir el interés",
+      "summary": "Describir el encuentro entre soldados enemigos."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Promover el video completo",
+      "summary": "Invitar a la audiencia a ver más detalles de la historia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿Os lo podéis imaginar?",
+    "why_it_works": "Invita a la curiosidad y engancha al espectador."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados se hicieron amigos durante la guerra gracias al fútbol",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La Navidad puede unir a enemigos",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia del fútbol en la guerra",
+    "Explorar historias similares de reconciliación"
+  ],
+  "audience": "Personas interesadas en historias de guerra y reconciliación",
+  "tone": "Narrativo y reflexivo",
+  "content_style": "Informal y cercano",
+  "retention_devices": [
+    "Invitación a otro video",
+    "Uso de preguntas reflexivas"
+  ],
+  "title_supporting_quotes": [
+    "\"Gracias al fútbol y la Navidad se junten como amigos\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre reconciliación en conflictos",
+    "Documentales sobre la Navidad en guerras"
+  ],
+  "risk_notes": [
+    "Menor interés si el tema no se presenta de forma atractiva",
+    "Posibilidad de desinterés de ciertos públicos no relacionados con la guerra"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

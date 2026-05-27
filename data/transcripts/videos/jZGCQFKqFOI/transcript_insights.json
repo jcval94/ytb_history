@@ -1,0 +1,79 @@
+{
+  "video_id": "jZGCQFKqFOI",
+  "language": "es",
+  "summary": "El video explora cómo las emociones pueden guiar decisiones a través de tres señales clave: entusiasmo, miedo productivo y vacío. Se enfatiza la importancia de prestar atención a estas emociones al tomar decisiones importantes.",
+  "main_topics": [
+    "neurociencia afectiva",
+    "señales emocionales",
+    "toma de decisiones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a las emociones en la toma de decisiones",
+      "purpose": "Introducir el tema de cómo las emociones afectan las decisiones.",
+      "summary": "Se plantea que las emociones son significativas al anticipar la satisfacción futura."
+    },
+    {
+      "section": "Señales emocionales",
+      "purpose": "Detallar las tres señales clave propuestas por Arthur Brooks.",
+      "summary": "Se explican el entusiasmo, el miedo productivo y el vacío como indicadores de decisiones."
+    },
+    {
+      "section": "Aplicación práctica",
+      "purpose": "Proporcionar una guía sobre cómo aplicar estas señales a decisiones importantes.",
+      "summary": "Se sugiere hacer un análisis más allá de lo racional y considerar las emociones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "No sabes explicar por qué, pero algo no te cuadra.",
+    "why_it_works": "Engancha al espectador al hacerle reflexionar sobre su propia experiencia emocional."
+  },
+  "claims": [
+    {
+      "claim": "Las emociones funcionan como atajos para anticipar la satisfacción futura.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El entusiasmo es una señal positiva en la toma de decisiones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El miedo productivo puede guiar decisiones efectivas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El vacío es una señal para desconfiar de una decisión.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Haz un análisis de pros y contras antes de decidir.",
+    "Imagina cómo sería tu vida después de hacer esa elección.",
+    "Escucha y considera tus emociones al tomar decisiones."
+  ],
+  "audience": "Personas que enfrentan decisiones importantes",
+  "tone": "reflexivo y motivacional",
+  "content_style": "informal y accesible",
+  "retention_devices": [
+    "uso de ejemplos emocionales",
+    "técnicas de visualización",
+    "preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Las emociones funcionan como atajos robustos.",
+    "Escuchar tus emociones no es sólo seguir al corazón."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre toma de decisiones basados en emociones",
+    "Talleres sobre inteligencia emocional",
+    "Podcasts o videos cortos sobre neurociencia afectiva"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

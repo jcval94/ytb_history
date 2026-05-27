@@ -1,0 +1,20 @@
+{
+  "video_id": "C_zOGusDv6k",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "De las balas a la amistad en 24 horas 🎶💥",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\C_zOGusDv6k.mp3",
+  "transcribed_at": "2026-05-27T03:07:27.085881+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1095,
+  "text_sha256": "aa7820ad321a3fdeb84e367975015268770cd15f76df18d8ad46a1510352d173",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\C_zOGusDv6k\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:46.802588+00:00",
+  "duration_seconds": 71.69999694824219
+}

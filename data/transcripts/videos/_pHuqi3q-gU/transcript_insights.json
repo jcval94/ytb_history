@@ -1,0 +1,78 @@
+{
+  "video_id": "_pHuqi3q-gU",
+  "language": "es",
+  "summary": "El 29 de diciembre de 1914, altas autoridades alemanas y británicas prohibieron cualquier gesto amistoso entre sus tropas en el frente, recordando que las hostilidades debían continuar con intensidad.",
+  "main_topics": [
+    "Prohibición de fraternización durante la guerra",
+    "Órdenes de altos mandos militares",
+    "Consecuencias de desobediencia",
+    "Historia de la Primera Guerra Mundial"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la orden militar",
+      "purpose": "Presentar el contexto histórico",
+      "summary": "Se menciona la fecha y el contexto de la guerra, así como la emisión de órdenes claras contra la fraternización."
+    },
+    {
+      "section": "Detalles de las órdenes",
+      "purpose": "Especificar las prohibiciones",
+      "summary": "Se detalla lo que está prohibido e implica severas consecuencias para quienes desobedezcan."
+    },
+    {
+      "section": "Consecuencias de desobediencia",
+      "purpose": "Advertir sobre las repercusiones",
+      "summary": "Se mencionan las consecuencias legales y disciplinarias para quienes interactúen amistosamente con el enemigo."
+    },
+    {
+      "section": "Cierre y llamada a la acción",
+      "purpose": "Invitar a ver el video completo",
+      "summary": "Se cierra con un recordatorio de que se puede conocer más a fondo la historia en el video enlazado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y motiva a la audiencia a buscar más información sobre el tema."
+  },
+  "claims": [
+    {
+      "claim": "Las órdenes contra la fraternización fueron estrictas y severas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las consecuencias por desobediencia eran severas, incluyendo fusilamiento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Explorar más sobre la historia de la Primera Guerra Mundial",
+    "Investigar sobre la relación entre soldados de diferentes bandos",
+    "Analizar cómo se gestionaban las relaciones militares durante la guerra"
+  ],
+  "audience": "Interesados en la historia militar, la Primera Guerra Mundial y eventos históricos significativos.",
+  "tone": "Informativo y serio",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Llamadas a la acción",
+    "Intriga sobre la historia",
+    "Detalles de la vida en el frente"
+  ],
+  "title_supporting_quotes": [
+    "Las hostilidades deben reanudarse sin demora y con la máxima intensidad.",
+    "Cualquier intento del enemigo de entablar relaciones amistosas deberá ser rechazado."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre la Primera Guerra Mundial",
+    "Desarrollar análisis comparativos de cartas y documentos de la época",
+    "Realizar un podcast sobre los eventos y decisiones tomadas en la guerra"
+  ],
+  "risk_notes": [
+    "La interpretación de las órdenes puede ser sensible debido a su contexto bélico.",
+    "La narración de eventos trágicos puede afectar sensibilidades."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

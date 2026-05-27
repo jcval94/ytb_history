@@ -1,0 +1,88 @@
+{
+  "video_id": "Xf-KkC6U6x4",
+  "language": "es",
+  "summary": "El liderazgo efectivo no se basa en el control o el miedo, sino en el respeto, la confianza y la humanidad. Un verdadero líder debe cuidar de sus seguidores y promover un ambiente en el que todos puedan crecer.",
+  "main_topics": [
+    "Características del liderazgo",
+    "Respeto y humanidad en el liderazgo",
+    "Diferencia entre jefe y líder",
+    "Impacto del liderazgo en el crecimiento de las personas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Plantear la pregunta sobre las cualidades del liderazgo",
+      "summary": "Se introduce el tema de las cualidades deseables en un líder."
+    },
+    {
+      "section": "Control vs. Respeto",
+      "purpose": "Contrastar diferentes estilos de liderazgo",
+      "summary": "Se discute la diferencia entre liderar a través del miedo y a través del respeto."
+    },
+    {
+      "section": "Elección del liderazgo",
+      "purpose": "Destacar la importancia de elegir ser un líder humano",
+      "summary": "Se enfatiza que ser un líder es una elección que va más allá de cumplir funciones."
+    },
+    {
+      "section": "Rebelión del respeto",
+      "purpose": "Presentar el liderazgo respetuoso como un acto valiente",
+      "summary": "Se describe el liderazgo basado en la humanidad como una forma de rebelión."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflejar el verdadero significado del liderazgo",
+      "summary": "Se concluye que el impacto de un líder se mide por el crecimiento de los demás."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión",
+    "hook_text": "¿Qué cualidades priorizamos cuando nos toca elegir a alguien que nos lidere?",
+    "why_it_works": "Inicia con una pregunta provocadora que invita a la audiencia a reflexionar sobre sus propias experiencias y expectativas del liderazgo."
+  },
+  "claims": [
+    {
+      "claim": "El miedo puede obligar a las personas a obedecer, pero no a seguir con ganas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El respeto y la consideración no son debilidades.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El verdadero liderazgo se mide en el crecimiento de las personas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover un ambiente de respeto y confianza en el trabajo.",
+    "Animar a los líderes a valorar el desarrollo personal de sus seguidores.",
+    "Fomentar la comunicación abierta y la expresión de ideas."
+  ],
+  "audience": "Líderes, jefes de equipo, gerentes, y cualquier persona interesada en el desarrollo del liderazgo.",
+  "tone": "Inspiracional y reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Historias de ejemplo",
+    "Reiteración de conceptos clave"
+  ],
+  "title_supporting_quotes": [
+    "El respeto trabaja en silencio y sin imponerse, pero deja huella.",
+    "Ser un líder humano es una elección."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre liderazgo humano",
+    "Talleres sobre desarrollo de habilidades de liderazgo",
+    "Charlas motivacionales sobre el impacto del liderazgo en el personal"
+  ],
+  "risk_notes": [
+    "Algunos podrían interpretar el mensaje como un ataque a estilos de liderazgo más tradicionales.",
+    "El cambio hacia un liderazgo más humano puede ser difícil de implementar en sistemas rígidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

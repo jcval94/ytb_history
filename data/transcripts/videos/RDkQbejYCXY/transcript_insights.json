@@ -1,0 +1,68 @@
+{
+  "video_id": "RDkQbejYCXY",
+  "language": "es",
+  "summary": "El mariscal de campo británico impone severas prohibiciones a sus tropas sobre cualquier forma de contacto amistoso con el enemigo, estableciendo consecuencias graves como el consejo de guerra y fusilamiento para quienes desobedezcan.",
+  "main_topics": [
+    "militarismo",
+    "conducta en guerra",
+    "relaciones con el enemigo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a las órdenes del mariscal",
+      "purpose": "Establecer el tono y la gravedad de las restricciones",
+      "summary": "Se ordena terminantemente a las tropas no acercarse al enemigo."
+    },
+    {
+      "section": "Consecuencias de la desobediencia",
+      "purpose": "Advertir sobre la severidad de las penas",
+      "summary": "Desobedecer puede resultar en un consejo de guerra y fusilamiento."
+    },
+    {
+      "section": "Normas de conducta",
+      "purpose": "Detallar lo que está prohibido",
+      "summary": "Cualquier intento de contacto amistoso debe ser rechazado."
+    },
+    {
+      "section": "Cierre y llamada a la acción",
+      "purpose": "Invitar a conocer más sobre el tema",
+      "summary": "Dirigir al espectador al vídeo completo para más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y motiva a la audiencia a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "Está prohibido el contacto amistoso con el enemigo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las consecuencias por desobediencia son severas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia de la guerra mencionada.",
+    "Reflexionar sobre las normas de conducta en situaciones de conflicto."
+  ],
+  "audience": "Espectadores interesados en historia militar y conductas en guerra.",
+  "tone": "Serio y autoritario.",
+  "content_style": "Formal y narrativo.",
+  "retention_devices": [
+    "Intriga",
+    "Advertencias fuertes sobre consecuencias"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la ética militar en diferentes conflictos.",
+    "Analizar otras órdenes similares en la historia."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

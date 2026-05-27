@@ -1,0 +1,69 @@
+{
+  "video_id": "mghEcKp5qpg",
+  "language": "español",
+  "summary": "El transcript describe un evento inusual durante la guerra, donde soldados británicos y alemanes comenzaron a cantar villancicos juntos en la noche de Navidad, rompiendo el silencio de guerra.",
+  "main_topics": [
+    "Navidad en tiempos de guerra",
+    "El valor de la paz",
+    "Cantos de guerra y unidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al silencio inusual",
+      "purpose": "Establecer el ambiente tenso en el campo de batalla",
+      "summary": "Describe la desconfianza de los soldados que enfrentan un silencio extraño."
+    },
+    {
+      "section": "Aparición de luces alemanas",
+      "purpose": "Introducir la sorpresa de la escena",
+      "summary": "Las luces comienzan a aparecer en el lado alemán, sugiriendo algo inusual."
+    },
+    {
+      "section": "Canto de 'Noche de Paz'",
+      "purpose": "Clímax emocional de la historia",
+      "summary": "Un soldado alemán inicia el canto, invitando a los británicos a unirse."
+    },
+    {
+      "section": "Cierre y llamado a la acción",
+      "purpose": "Invitar al espectador a profundizar en la historia",
+      "summary": "Sugiere que hay más detalles en un video enlazado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa evocadora",
+    "hook_text": "Un silencio inusual, casi violento...",
+    "why_it_works": "Genera curiosidad y establece un ambiente tenso."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados cantaron juntos durante la Navidad en medio de la guerra.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre eventos históricos similares.",
+    "Considerar el impacto emocional de la música en situaciones de conflicto."
+  ],
+  "audience": "Interesados en la historia y eventos históricos significativos.",
+  "tone": "Evasivo y reflexivo",
+  "content_style": "Narrativa descriptiva y emocional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Historias emocionales",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "\"Un silencio inusual, casi violento\"",
+    "\"Algo que jamás esperarías oír en un campo de batalla\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la paz en tiempos de guerra.",
+    "Desarrollar una obra de teatro basada en este evento."
+  ],
+  "risk_notes": [
+    "El evento podría ser romantizado en exceso."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

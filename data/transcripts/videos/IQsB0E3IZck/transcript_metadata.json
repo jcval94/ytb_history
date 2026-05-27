@@ -1,0 +1,20 @@
+{
+  "video_id": "IQsB0E3IZck",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "TREGUA en Navidad -DESPUÉS DE LOS VILLANCICOS",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\IQsB0E3IZck.mp3",
+  "transcribed_at": "2026-05-27T03:05:35.636716+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 373,
+  "text_sha256": "599f9731a5b0917293d58ccbbcc3ed73a8c25e5bb05e0ef876462a082438e0cf",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\IQsB0E3IZck\\transcript_segments.jsonl",
+  "segment_count": 6,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:24:20.539626+00:00",
+  "duration_seconds": 23.450000762939453
+}

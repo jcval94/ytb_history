@@ -1,0 +1,73 @@
+{
+  "video_id": "R1wlpkvWFLc",
+  "language": "es",
+  "summary": "El video explica cómo Instagram selecciona el contenido que muestra a sus usuarios, comparando su algoritmo con el mecanismo de las máquinas tragamonedas, particularmente enfatizando el uso de recompensas variables intermitentes para aumentar la adicción.",
+  "main_topics": [
+    "Algoritmo de Instagram",
+    "Recompensas variables",
+    "Mecanismo de adicción"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar cómo Instagram elige contenido.",
+      "summary": "Se introduce la idea de que Instagram utiliza un sistema similar al de las máquinas tragamonedas."
+    },
+    {
+      "section": "Explicación del mecanismo",
+      "purpose": "Describir el funcionamiento de las máquinas tragamonedas.",
+      "summary": "Se menciona que las máquinas tragamonedas utilizan recompensas variables intermitentes para enganchar a los jugadores."
+    },
+    {
+      "section": "Transición a Instagram",
+      "purpose": "Conectar el mecanismo de adicción con Instagram.",
+      "summary": "Se explica cómo Instagram ha cambiado su presentación de contenido para aumentar la adicción."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Resumir el impacto del algoritmo en la experiencia del usuario.",
+      "summary": "Se concluye que Instagram muestra contenido aleatorio entre lo interesante y lo no interesante, lo que genera mayor atracción."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Comparación",
+    "hook_text": "El mecanismo más adictivo que se conoce hasta acá es este que usan las máquinas de tragamonedas.",
+    "why_it_works": "Captura la atención al conectar un concepto familiar (tragamonedas) con el comportamiento en redes sociales, intrigando al espectador."
+  },
+  "claims": [
+    {
+      "claim": "Instagram utiliza un algoritmo que incrementa la adicción.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las recompensas variables generan una experiencia más atractiva.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre cómo las redes sociales influyen en nuestra atención.",
+    "Considerar el tiempo que pasamos en plataformas como Instagram."
+  ],
+  "audience": "Usuarios de redes sociales, especialmente de Instagram.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Análisis de comportamiento adictivo",
+    "Comparaciones con situaciones cotidianas"
+  ],
+  "title_supporting_quotes": [
+    "Cada vez que vos haces refrescar, no es que te muestra las mejores fotos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre el impacto de las redes sociales en la salud mental.",
+    "Producir videos sobre el diseño de algoritmos en aplicaciones populares."
+  ],
+  "risk_notes": [
+    "Posible crítica del uso adictivo de las redes sociales.",
+    "Requiere una reflexión crítica sobre el consumo de contenido."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

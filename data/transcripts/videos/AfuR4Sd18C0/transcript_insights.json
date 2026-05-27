@@ -1,0 +1,61 @@
+{
+  "video_id": "AfuR4Sd18C0",
+  "language": "es",
+  "summary": "El transcriptor relata un evento dramático en el que un piloto de avión decide aterrizar en el río Hudson en lugar de seguir las órdenes de la torre de control debido a un fallo en los motores.",
+  "main_topics": [
+    "ataque a la autoridad",
+    "decisiones críticas",
+    "sucesos históricos",
+    "aviación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la historia",
+      "purpose": "Captar la atención del espectador",
+      "summary": "Presenta un hecho sorprendente relacionado con un piloto en situaciones de emergencia."
+    },
+    {
+      "section": "Desarrollo del evento",
+      "purpose": "Explicar el contexto y la decisión del piloto",
+      "summary": "Detalla la situación del vuelo, donde el piloto tenía que tomar una decisión crucial."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Invitar al espectador a aprender más",
+      "summary": "Menciona un video relacionado para conocer la historia completa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "intriga",
+    "hook_text": "Y si crees que esto solo pasaba en las trincheras de 1914, te equivocas.",
+    "why_it_works": "Genera curiosidad al relacionar un evento del pasado con una situación contemporánea impactante."
+  },
+  "claims": [
+    {
+      "claim": "Un piloto desobedeció órdenes de la torre de control para aterrizar en el río Hudson.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre decisiones críticas en situaciones de crisis",
+    "Analizar la importancia de la autoridad en el contexto de la aviación",
+    "Visualizar el video para entender la historia en profundidad"
+  ],
+  "audience": "personas interesadas en la aviación y en historias de decisiones críticas",
+  "tone": "intrigante",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "suspenso",
+    "intriga",
+    "llamada a la acción"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear un video educativo sobre toma de decisiones en situaciones de emergencia",
+    "Preparar un artículo sobre la historia de la aviación y casos famosos de desobediencia de órdenes"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

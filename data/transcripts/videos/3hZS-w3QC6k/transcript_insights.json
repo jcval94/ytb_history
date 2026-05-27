@@ -1,0 +1,67 @@
+{
+  "video_id": "3hZS-w3QC6k",
+  "language": "es",
+  "summary": "El narrador cuestiona la narrativa oficial sobre un conflicto, sugiriendo que los soldados de a pie, motivados por la miseria y el miedo, tomaron la iniciativa, contrariamente a lo que dicen los medios y las autoridades.",
+  "main_topics": [
+    "narrativa de los medios",
+    "iniciativa de los soldados",
+    "crítica a la política bélica"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar una perspectiva diferente sobre la guerra.",
+      "summary": "El narrador destaca que lo que se dice en los periódicos es exagerado."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Profundizar en el papel de los soldados.",
+      "summary": "Los soldados de a pie toman la iniciativa, desobedeciendo a sus mandos."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a ver el vídeo completo.",
+      "summary": "Se sugiere que hay una historia más completa que merece ser vista."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Todo lo que les habían contado era mentira.",
+    "why_it_works": "Capta la atención al romper la expectativa sobre la verdad de los hechos."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados de a pie tomaron la iniciativa en lugar de los oficiales.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Los medios exageran la situación bélica.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre las iniciativas de los soldados en conflictos.",
+    "Cuestionar la veracidad de las narrativas mediáticas sobre guerras."
+  ],
+  "audience": "Personas interesadas en la guerra y la representación mediática.",
+  "tone": "Crítico",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Enlaces a contenido adicional"
+  ],
+  "title_supporting_quotes": [
+    "Hace falta escuchar la verdadera historia."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre soldados en conflictos.",
+    "Escribir un artículo analizando la cobertura mediática de guerras."
+  ],
+  "risk_notes": [
+    "Posible descontento entre quienes defienden la narrativa oficial de la guerra."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

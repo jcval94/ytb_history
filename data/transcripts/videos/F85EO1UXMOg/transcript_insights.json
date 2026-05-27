@@ -1,0 +1,99 @@
+{
+  "video_id": "F85EO1UXMOg",
+  "language": "es",
+  "summary": "El video relata la inesperada tregua de Navidad de 1914 durante la Primera Guerra Mundial, donde soldados británicos y alemanes dejaron de lado sus armas para cantar villancicos y compartir momentos de paz en medio de la guerra.",
+  "main_topics": [
+    "Primera Guerra Mundial",
+    "Tregua de Navidad",
+    "Desobediencia",
+    "Guerra de trincheras",
+    "Humanidad en tiempos de guerra"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la desobediencia en la guerra",
+      "purpose": "Presentar la idea de desobediencia en un contexto de guerra.",
+      "summary": "Se plantea la pregunta sobre qué sucede cuando se decide desobedecer a las órdenes en el contexto bélico."
+    },
+    {
+      "section": "Descripción de la guerra de trincheras",
+      "purpose": "Establecer el escenario de la Primera Guerra Mundial y la vida de los soldados en las trincheras.",
+      "summary": "Se describe la situación de los soldados británicos y alemanes en las trincheras y el ambiente en que se encontraban."
+    },
+    {
+      "section": "El silencio de la mañana de Navidad",
+      "purpose": "Narrar el evento central de la tregua.",
+      "summary": "Se detalla el momento en que los soldados comenzaron a cantar villancicos durante la mañana de Navidad."
+    },
+    {
+      "section": "El encuentro entre soldados",
+      "purpose": "Ilustrar la conexión humana en medio del conflicto.",
+      "summary": "Relata cómo los soldados comenzaron a cruzar la tierra de nadie, dándose la mano y compartiendo un momento de paz."
+    },
+    {
+      "section": "El contexto antecedentes de la guerra",
+      "purpose": "Proporcionar el contexto histórico previo al estallido del conflicto.",
+      "summary": "Se explica la tensión previa a la guerra, incluyendo el asesinato de Francisco Fernando y su repercusión."
+    },
+    {
+      "section": "Conclusión sobre la naturaleza humana",
+      "purpose": "Reflexionar sobre la capacidad de desobediencia y humanidad en la guerra.",
+      "summary": "Se concluye enfatizando la capacidad de conexión entre los soldados a pesar del contexto de guerra."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta provocativa",
+    "hook_text": "¿Qué pasa cuando quienes deberían obedecer deciden no hacerlo?",
+    "why_it_works": "Invita a la reflexión sobre la naturaleza de la obediencia y la desobediencia en conflictos."
+  },
+  "claims": [
+    {
+      "claim": "La tregua de Navidad fue un acto de desobediencia espontáneo de los soldados.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La propaganda de la época deshumanizaba al enemigo.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La guerra transforma a jóvenes llenos de expectativas en víctimas de una carnicería.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "El canto de villancicos por ambos bandos.",
+    "La decisión de los soldados de cruzar la tierra de nadie.",
+    "Las cartas de soldados describiendo la tregua."
+  ],
+  "actionable_ideas": [
+    "Fomentar el diálogo y la paz entre naciones en conflicto.",
+    "Recoger historias de soldados para recordar la humanidad en la guerra.",
+    "La reflexión sobre la obediencia ciega en tiempos de crisis."
+  ],
+  "audience": "Personas interesadas en historia y conflictos bélicos",
+  "tone": "Reflexivo y emotivo",
+  "content_style": "Narrativo, descriptivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Descripciones vívidas",
+    "Narración en primera persona"
+  ],
+  "title_supporting_quotes": [
+    "\"Noche de Paz en plena guerra\"",
+    "\"Un silencio inusual, casi violento\"",
+    "\"Pensé que estaba loco, pero... algo dentro de mí me dijo que tenía que salir.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre la tregua de Navidad.",
+    "Hacer un documental sobre la Primera Guerra Mundial y la humanidad en el conflicto.",
+    "Desarrollar un podcast explorando episodios de desobediencia en la guerra."
+  ],
+  "risk_notes": [
+    "La deshumanización del enemigo puede perpetuar el ciclo de violencia.",
+    "Interpretaciones erróneas de la tregua pueden llevar a glorificar la guerra."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

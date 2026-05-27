@@ -1,0 +1,56 @@
+{
+  "video_id": "IQsB0E3IZck",
+  "language": "es",
+  "summary": "El vídeo narra un evento histórico donde dos soldados alemanes se acercan a la zona neutral con las manos levantadas, tras la calma que sigue a los villancicos.",
+  "main_topics": [
+    "Villancicos",
+    "Tensión bélica",
+    "Soldados en guerra",
+    "Historia militar"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el contexto",
+      "summary": "Se menciona el final de los villancicos y el silencio que lo sigue."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Crear tensión",
+      "summary": "Dos soldados alemanes emergen de su trinchera y avanzan hacia la zona neutral."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Crea curiosidad y motiva al espectador a ver el contenido completo."
+  },
+  "claims": [
+    {
+      "claim": "Los villancicos pueden interrumpir la tensión en un conflicto bélico.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre el evento histórico mencionado.",
+    "Explorar la influencia de la cultura en tiempos de guerra."
+  ],
+  "audience": "Espectadores interesados en historia y conflictos bélicos.",
+  "tone": "Narrativo",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Curiosidad sobre la historia",
+    "Enlace a contenido adicional"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Desarrollar un documental sobre eventos similares.",
+    "Crear un podcast sobre momentos significativos en la historia militar."
+  ],
+  "risk_notes": [
+    "Puede no ser atractivo para una audiencia no interesada en la historia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

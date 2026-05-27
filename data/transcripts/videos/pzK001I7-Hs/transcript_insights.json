@@ -1,0 +1,87 @@
+{
+  "video_id": "pzK001I7-Hs",
+  "language": "es",
+  "summary": "El video aborda cómo la tecnología ha aumentado la carga de trabajo, provocando un fenómeno de pseudoproductividad, donde la actividad visible no resulta en resultados significativos. Se mencionan los efectos negativos del trabajo prolongado y el multitasking en la productividad y bienestar personal.",
+  "main_topics": [
+    "Pseudoproductividad",
+    "Impacto de la tecnología en el trabajo",
+    "Efectos negativos del multitasking",
+    "Carga de trabajo excesiva"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el concepto de herramientas que aumentan la productividad.",
+      "summary": "Se plantea el dilema de si realmente somos más productivos gracias a la tecnología."
+    },
+    {
+      "section": "El problema de la pseudoproductividad",
+      "purpose": "Explicar cómo la tecnología ha llevado a trabajar más sin resultados reales.",
+      "summary": "El aumento de actividades visibles no se traduce en efectividad real."
+    },
+    {
+      "section": "Estadísticas de trabajo",
+      "purpose": "Presentar datos sobre el tiempo de trabajo y su impacto en la productividad.",
+      "summary": "Más de 50 horas semanales tienen un rendimiento decreciente."
+    },
+    {
+      "section": "Efectos del multitasking",
+      "purpose": "Detallar cómo el multitasking afecta la productividad.",
+      "summary": "Se menciona el impacto negativo del multitasking en la capacidad cognitiva y satisfacción laboral."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Invitar al cambio y la reflexión sobre el ritmo de trabajo.",
+      "summary": "Se cuestiona si debemos resignarnos al estado actual o cambiar nuestra forma de trabajar."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Retórica provocativa",
+    "hook_text": "Imaginate que te diera herramientas que te permitan hacer todo el doble de rápido.",
+    "why_it_works": "Atrapa la atención al apelar a una necesidad común de eficiencia y productividad."
+  },
+  "claims": [
+    {
+      "claim": "La pseudoproductividad nos atrapa en actividades sin resultados reales.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "Trabajar más de 50 horas semanales reduce el rendimiento.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "El multitasking reduce la productividad hasta un 40%.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [
+    "Aumento de correos electrónicos y reuniones",
+    "Multitasking con varias pestañas abiertas"
+  ],
+  "actionable_ideas": [
+    "Revisar y reducir el número de reuniones innecesarias.",
+    "Implementar bloques de tiempo para tareas específicas sin interrupciones.",
+    "Fomentar un ambiente laboral que apoye la concentración."
+  ],
+  "audience": "Profesionales que buscan mejorar su productividad.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Conversacional y persuasivo",
+  "retention_devices": [
+    "Datos estadísticos impactantes",
+    "Llamadas a la acción reflexivas"
+  ],
+  "title_supporting_quotes": [
+    "La opción por hacer más nos tiene atrapados en lo que los expertos llaman pseudoproductividad."
+  ],
+  "creative_reuse_opportunities": [
+    "Infografías sobre productividad y multitasking",
+    "Artículos sobre gestión del tiempo en el trabajo"
+  ],
+  "risk_notes": [
+    "Dependencia de datos que pueden no aplicarse a todas las industrias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

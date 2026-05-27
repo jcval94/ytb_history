@@ -1,0 +1,20 @@
+{
+  "video_id": "FhT8nxot2Es",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La Trampa De Los Politicos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FhT8nxot2Es.mp3",
+  "transcribed_at": "2026-05-27T03:13:33.915851+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1469,
+  "text_sha256": "b40514b08f01f0b29ebca8f7c0f0c9430ea5c19df521e845cc960cfd282fb473",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\FhT8nxot2Es\\transcript_segments.jsonl",
+  "segment_count": 24,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:24:16.847129+00:00",
+  "duration_seconds": 76.66999816894531
+}

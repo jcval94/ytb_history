@@ -1,0 +1,14 @@
+{
+  "video_id": "xK919vnyl1A",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El costo de reconocer tarde los errores",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xK919vnyl1A.mp3",
+  "transcribed_at": "2026-05-27T03:16:10.148208+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2195,
+  "text_sha256": "3bf6285bcdc373478faaa03df367af4295a64a7a36a2191cf38c5e229e5d65ae",
+  "repo_schema_version": "transcript_metadata_v1"
+}

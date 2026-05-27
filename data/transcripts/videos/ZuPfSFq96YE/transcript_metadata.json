@@ -1,0 +1,20 @@
+{
+  "video_id": "ZuPfSFq96YE",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "También en Navidad... SIEMBRAN ODIO",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ZuPfSFq96YE.mp3",
+  "transcribed_at": "2026-05-27T03:07:04.656152+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1259,
+  "text_sha256": "fa78aee92f0f727d36fdb14f63e1bf6e3e9a1458e64d20574543a23b166a1269",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\ZuPfSFq96YE\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:27:22.069181+00:00",
+  "duration_seconds": 78.76000213623047
+}

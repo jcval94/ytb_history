@@ -1,0 +1,79 @@
+{
+  "video_id": "21NpurLl5PY",
+  "language": "es",
+  "summary": "El video aborda la búsqueda de la longevidad en China, destacando la conversación entre Xi Jinping y Vladimir Putin sobre la posibilidad de vida prolongada hasta los 150 años. Se exploran los avances científicos en biotecnología, incluyendo la empresa Lonvi Biosciences y su producto PCCE1, que ha demostrado alargar la vida de ratones en un 64%. Además, se discute la estrategia nacional de China para enfrentar su crisis demográfica mediante la prolongación saludable de la vida.",
+  "main_topics": [
+    "Longevidad y biotecnología",
+    "Censura y propagando en China",
+    "Crisis demográfica en China",
+    "Avances científicos en medicina",
+    "Impacto económico de la longevidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto y la situación actual en relación a la longevidad",
+      "summary": "Se capta una conversación entre líderes sobre la longevidad, desencadenando el interés global."
+    },
+    {
+      "section": "Desarrollo de la biotecnología",
+      "purpose": "Explorar los avances científicos en la búsqueda de la longevidad",
+      "summary": "Se discuten investigaciones y productos innovadores de empresas chinas dedicadas a alargar la vida."
+    },
+    {
+      "section": "Crisis demográfica en China",
+      "purpose": "Conectar la longevidad con la necesidad económica de China",
+      "summary": "Se analiza la relación entre el envejecimiento poblacional y los desafíos socioeconómicos que enfrenta el país."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta intrigante",
+    "hook_text": "¿Por qué dos de los líderes más poderosos del mundo están discutiendo precisamente sobre cómo vivir más años?",
+    "why_it_works": "Genera curiosidad sobre el contexto de la conversación y sobre el tema crucial de la longevidad."
+  },
+  "claims": [
+    {
+      "claim": "La esperanza de vida media de los líderes chinos alcanza los 88 años.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La biotecnología de Lonvi puede extender la vida humana hasta 150 años.",
+      "support_level": "implicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "En 5 a 10 años, nadie padecerá cáncer.",
+      "support_level": "weak",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la biotecnología en longevidad.",
+    "Analizar el impacto de la regulación en el desarrollo bioético.",
+    "Seguir los avances científicos relacionados con la salud y longevidad."
+  ],
+  "audience": "Público general interesado en ciencia y política.",
+  "tone": "informativo y crítico",
+  "content_style": "narrativo y reflexivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Datos impactantes",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "Vivir hasta los 150 años es totalmente realista.",
+    "Este es el santo grial."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre biotecnología y envejecimiento.",
+    "Charlas o podcasts sobre el futuro de la longevidad.",
+    "Infografías sobre la crisis demográfica en China."
+  ],
+  "risk_notes": [
+    "Cuidado con las afirmaciones no verificadas de milagros médicos.",
+    "Necesidad de análisis crítico sobre la información presentada."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

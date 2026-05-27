@@ -1,0 +1,79 @@
+{
+  "video_id": "oSk63oEW3Ww",
+  "language": "es",
+  "summary": "El video explora la conciencia y la emocionalidad en el mundo animal, destacando ejemplos de delfines, primates y elefantes que muestran señales de inteligencia y sentimientos, como el duelo por la pérdida de seres queridos.",
+  "main_topics": [
+    "conciencia animal",
+    "emoción en animales",
+    "comportamiento de delfines",
+    "duelo en elefantes",
+    "inteligencia en primates"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los comportamientos de los delfines",
+      "purpose": "Presentar la diversión y los juegos de los delfines como evidencia de su conciencia.",
+      "summary": "Se describen los delfines jugando en las olas y la percepción de su capacidad de divertirse sin un propósito evidente."
+    },
+    {
+      "section": "Evidencias de conciencia en animales",
+      "purpose": "Mostrar ejemplos de inteligencia en diferentes especies.",
+      "summary": "Se menciona cómo algunos animales se reconocen en espejos y demuestran conciencia sobre su condición."
+    },
+    {
+      "section": "Duelo y emoción en elefantes",
+      "purpose": "Explorar el comportamiento emocional de los elefantes ante la muerte.",
+      "summary": "Los elefantes lloran y rinden homenaje a sus compañeros fallecidos, mostrando una capacidad emocional profunda."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "observación anecdótica",
+    "hook_text": "tiene unos videos hermosos de delfines jugando",
+    "why_it_works": "Atrapa la atención del espectador al presentar un momento visualmente atractivo y emocional."
+  },
+  "claims": [
+    {
+      "claim": "Los delfines juegan por diversión y tienen conciencia.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los elefantes muestran duelo por sus seres queridos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los primates se reconocen a sí mismos en un espejo.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Delfines jugando y saltando.",
+    "Primates reconociéndose en un espejo.",
+    "Elefantes recordando a sus seres queridos fallecidos."
+  ],
+  "actionable_ideas": [
+    "Fomentar el respeto y la protección de la vida animal.",
+    "Investigar más sobre la inteligencia emocional en otros animales.",
+    "Crear conciencia sobre la empatía hacia seres no humanos."
+  ],
+  "audience": "Personas interesadas en la psicología animal y la conciencia.",
+  "tone": "reflexivo e informativo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "ejemplos visuales",
+    "anécdotas conmovedoras",
+    "uso de datos científicos"
+  ],
+  "title_supporting_quotes": [
+    "Está lleno de muestras de inteligencia, de conciencia y de emoción en el mundo animal."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear documentales sobre la vida animal.",
+    "Escribir artículos sobre la conciencia animal.",
+    "Desarrollar campañas de sensibilización sobre el respeto hacia los animales."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

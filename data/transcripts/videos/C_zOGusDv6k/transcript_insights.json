@@ -1,0 +1,84 @@
+{
+  "video_id": "C_zOGusDv6k",
+  "language": "es",
+  "summary": "El relato describe un momento festivo durante la Primera Guerra Mundial, cuando soldados británicos y alemanes se reunieron en los campos de batalla para intercambiar regalos, jugar al fútbol y celebrar la Navidad juntos, a pesar de ser enemigos.",
+  "main_topics": [
+    "Navidad en la trinchera",
+    "Intercambio de regalos",
+    "Partidos de fútbol entre soldados",
+    "Momentos de fraternidad en guerra"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la celebración",
+      "purpose": "Establecer el contexto del evento festivo",
+      "summary": "Los soldados cruzan la frontera entre enemigos para celebrar juntos."
+    },
+    {
+      "section": "Intercambio de regalos",
+      "purpose": "Mostrar la humanización en el conflicto",
+      "summary": "Intercambian alimentos y risas, rompiendo la barrera entre ellos."
+    },
+    {
+      "section": "Partidos de fútbol",
+      "purpose": "Resaltar la camaradería",
+      "summary": "Se organizan partidos amistosos que reflejan la unión más allá del conflicto."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a explorar más del tema",
+      "summary": "Se menciona la disponibilidad del video completo para más detalles."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad y motiva a la audiencia a buscar más información sobre la historia."
+  },
+  "claims": [
+    {
+      "claim": "Soldados británicos y alemanes celebraron juntos en la Navidad de 1914.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Se organizaron partidos de fútbol entre ellos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los soldados intercambiaron regalos durante el encuentro.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Intercambio de chocolate y licor entre soldados.",
+    "Partidos de fútbol que reflejan unión durante la guerra."
+  ],
+  "actionable_ideas": [
+    "Investigar sobre la Historia de la Guerra Mundial.",
+    "Ver el video completo enlazado.",
+    "Reflexionar sobre la humanidad en tiempos de guerra."
+  ],
+  "audience": "Interesados en la historia, la guerra y la Navidad.",
+  "tone": "Nostálgico y reflexivo.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Historias emotivas",
+    "Detalles visuales de la celebración",
+    "Datos curiosos sobre los soldados."
+  ],
+  "title_supporting_quotes": [
+    "\"como una turba de forofos futboleros\"",
+    "\"una de las pocas veces en la historia en que Inglaterra pudo presumir de ganarle a Alemania\""
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de contenido sobre la historia de la Navidad en las guerras.",
+    "Documentales sobre la humanización en conflictos bélicos."
+  ],
+  "risk_notes": [
+    "Asegurar la representación precisa del evento para evitar malinterpretaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

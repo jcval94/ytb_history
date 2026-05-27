@@ -1,0 +1,20 @@
+{
+  "video_id": "aC8aW-1PJNU",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Y si tu vida fuera un árbol?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\aC8aW-1PJNU.mp3",
+  "transcribed_at": "2026-05-27T03:13:07.328278+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1199,
+  "text_sha256": "b607b051dfe5af5e42ab7b2f47658284629cdc8122aa21c69c6295376aeff37d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\aC8aW-1PJNU\\transcript_segments.jsonl",
+  "segment_count": 20,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:27:35.175601+00:00",
+  "duration_seconds": 64.37999725341797
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "R1wlpkvWFLc",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La verdad del algoritmo de las redes",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\R1wlpkvWFLc.mp3",
+  "transcribed_at": "2026-05-27T03:14:01.166523+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1371,
+  "text_sha256": "958b9e2f79bf7160f018426018d12997d533bada3cd4522d4ab9c468c0553994",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\R1wlpkvWFLc\\transcript_segments.jsonl",
+  "segment_count": 21,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:25:28.064801+00:00",
+  "duration_seconds": 60.7599983215332
+}

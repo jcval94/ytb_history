@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-26T15:44:40.687741+00:00",
+  "generated_at": "2026-05-27T03:04:38.479672+00:00",
   "limit": 0,
   "expected_ranked_count": 0,
   "expected_selected_count": 50,
   "ranked_shortfall": 0,
-  "candidates_considered": 24653,
-  "available_ranked_count": 24324,
+  "candidates_considered": 24654,
+  "available_ranked_count": 24275,
   "source_artifacts": {
     "decision": {
       "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
@@ -44,10 +44,10 @@
       "modified_at": "2026-05-26T03:35:05.042860+00:00"
     },
     "latest_snapshots": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-26\\run=093802-0600\\snapshots.jsonl.gz",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-26\\run=205744-0600\\snapshots.jsonl.gz",
       "exists": true,
-      "row_count": 24626,
-      "modified_at": "2026-05-26T15:44:39.650066+00:00"
+      "row_count": 24624,
+      "modified_at": "2026-05-27T03:04:35.945991+00:00"
     }
   },
   "selected_count": 50,
@@ -71,36 +71,36 @@
   "forced_match_counts": {
     "https://www.youtube.com/@bilinkis": 276,
     "https://www.youtube.com/@Veritasium": 65,
-    "https://www.youtube.com/@noesposible": 87,
+    "https://www.youtube.com/@noesposible": 88,
     "https://www.youtube.com/@Alan-Flores": 15,
     "https://www.youtube.com/@MitosyMentes": 26
   },
-  "forced_candidate_pool_count": 469,
-  "available_forced_before_truncation": 289,
-  "forced_window_cutoff_date": "2025-05-30",
-  "latest_upload_date": "2026-05-25",
+  "forced_candidate_pool_count": 470,
+  "available_forced_before_truncation": 239,
+  "forced_window_cutoff_date": "2025-05-31",
+  "latest_upload_date": "2026-05-26",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 209,
-  "persisted_transcript_success_count": 209,
+  "registry_existing_success_count": 259,
+  "persisted_transcript_success_count": 259,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
   "registry_existing_recent_failed_count": 70,
-  "skipped_already_transcribed": 209,
+  "skipped_already_transcribed": 259,
   "skipped_in_progress": 0,
   "skipped_recent_failures": 70,
-  "skipped_forced_already_transcribed": 122,
+  "skipped_forced_already_transcribed": 172,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 58,
-  "skipped_forced_outside_window": 0,
+  "skipped_forced_outside_window": 1,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "JfBBb1hQO3M",
-    "SnkoIuizyRE",
-    "DDxD6K7bRN8",
-    "kcz924MY4C8",
-    "XKSjCOKDtpk"
+    "D3xxNB-xdrA",
+    "glHxA2u_S_E",
+    "2ae1lbhFVGM",
+    "JqDv9N1su5M",
+    "3hZS-w3QC6k"
   ],
   "warnings": [
     "forced_channels_window_anchored_to_latest_upload_date",

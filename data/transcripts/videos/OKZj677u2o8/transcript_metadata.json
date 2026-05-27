@@ -1,0 +1,20 @@
+{
+  "video_id": "OKZj677u2o8",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Lo que los generales NO querían que vieras 🚫📸",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\OKZj677u2o8.mp3",
+  "transcribed_at": "2026-05-27T03:07:43.372247+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1099,
+  "text_sha256": "c4e7aa7fbe0b46a57bf0ca8bbfe9ef20bdd932f17cd7d31443fe577eebeb1452",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\OKZj677u2o8\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:25:17.510073+00:00",
+  "duration_seconds": 85.20999908447266
+}

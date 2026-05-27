@@ -1,0 +1,20 @@
+{
+  "video_id": "at2LbwtQn6Q",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "NAVIDAD MÁGICA-Una tregua en medio de la peor guerra de todas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\at2LbwtQn6Q.mp3",
+  "transcribed_at": "2026-05-27T03:05:43.551039+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 511,
+  "text_sha256": "fd28fd33d87f824f0750a75878be39c1216613211260b26473f8dac167ae5765",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\at2LbwtQn6Q\\transcript_segments.jsonl",
+  "segment_count": 8,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:27:49.367874+00:00",
+  "duration_seconds": 40.58000183105469
+}

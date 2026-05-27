@@ -1,0 +1,92 @@
+{
+  "video_id": "tBsLqsONdGM",
+  "language": "es",
+  "summary": "El video aborda la obsesión contemporánea con la productividad y la percepción del tiempo como una mercancía, contrastando esta realidad con la forma en que se vivía antes de la revolución industrial.",
+  "main_topics": [
+    "Funerales express",
+    "Obsesión por la productividad",
+    "Impacto de la revolución industrial",
+    "Sociedad de consumo",
+    "Cambio en la percepción del tiempo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el concepto de funerales express como un símbolo de la rapidez de la vida moderna",
+      "summary": "Se menciona la existencia de funerales express en EE.UU. y la percepción de que estar ocupado es sinónimo de éxito."
+    },
+    {
+      "section": "Historia del tiempo",
+      "purpose": "Contextualizar cómo ha cambiado la percepción del tiempo a lo largo de la historia",
+      "summary": "Antiguamente, el tiempo estaba marcado por elementos naturales, no era visto como una mercancía."
+    },
+    {
+      "section": "Revolución industrial",
+      "purpose": "Explicar el impacto de la revolución industrial en la percepción del tiempo",
+      "summary": "El concepto de 'Time is money' cambió la relación de las personas con el tiempo."
+    },
+    {
+      "section": "Condiciones laborales actuales",
+      "purpose": "Exponer la situación laboral actual y cómo se ha intensificado la carga de trabajo",
+      "summary": "Se destaca que muchas personas en América Latina trabajan en condiciones de dependencia, vendiendo su tiempo."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Invitar a la reflexión sobre la normalización de vivir a un ritmo acelerado",
+      "summary": "Se pregunta por qué se ha normalizado vivir de esta manera y el impacto en la calidad de vida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing statement",
+    "hook_text": "¿Sabías que en Estados Unidos existen los funerales express?",
+    "why_it_works": "Captura la atención del espectador al presentar un concepto inusual que plantea preguntas sobre la cultura de la rapidez."
+  },
+  "claims": [
+    {
+      "claim": "La revolución industrial cambió nuestra relación con el tiempo.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "Hoy en día trabajamos 200 horas más al año que en 1970.",
+      "support_level": "explicit",
+      "risk": "some"
+    },
+    {
+      "claim": "La búsqueda de felicidad a través de bienes materiales ha acelerado la vida.",
+      "support_level": "implicit",
+      "risk": "moderate"
+    }
+  ],
+  "examples": [
+    "Cultura de los funerales express que refleja la rapidez de la vida actual.",
+    "El cambio en la percepción del tiempo desde la antigüedad hasta ahora."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre la propia relación con el tiempo y el trabajo.",
+    "Buscar formas de desacelerar y disfrutar momentos de calidad.",
+    "Cuestionar la norma de estar siempre ocupado."
+  ],
+  "audience": "Adultos interesados en temas de productividad y bienestar.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Informal y provocador",
+  "retention_devices": [
+    "Pregunta intrigante al inicio",
+    "Datos estadísticos impactantes",
+    "Referencias a la historia"
+  ],
+  "title_supporting_quotes": [
+    "Time is money",
+    "7 de cada 10 personas dicen que su vida es mucho más acelerada que la de sus padres."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la historia del tiempo",
+    "Podcasts reflexionando sobre el estrés moderno",
+    "Infografías sobre el impacto de la revolución industrial en la vida actual"
+  ],
+  "risk_notes": [
+    "Algunos datos pueden no estar actualizados.",
+    "La afirmación sobre horas trabajadas puede variar según regiones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

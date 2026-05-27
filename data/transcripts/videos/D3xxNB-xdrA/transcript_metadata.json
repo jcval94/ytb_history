@@ -1,0 +1,20 @@
+{
+  "video_id": "D3xxNB-xdrA",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Por esto fallaron los Galácticos ⚽️ #realmadrid #futbol #curiosidades",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\D3xxNB-xdrA.mp3",
+  "transcribed_at": "2026-05-27T03:04:58.057550+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2838,
+  "text_sha256": "8e0fdd8d1a34fd3681bb157b80147e08770b02a281b7b4438e6bcba621fd9356",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\D3xxNB-xdrA\\transcript_segments.jsonl",
+  "segment_count": 41,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:59.581506+00:00",
+  "duration_seconds": 168.36000061035156
+}

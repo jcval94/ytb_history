@@ -1,0 +1,76 @@
+{
+  "video_id": "r524fj8tZkY",
+  "language": "es",
+  "summary": "El video narra la historia de Nick Leeson, quien a través de una serie de malas decisiones en su carrera como trader, provocó la quiebra del Barings Bank. Comenzó con un error menor en trading, pero en su afán por ocultarlo tomó decisiones cada vez más riesgosas que lo llevaron a perder más de mil millones de dólares.",
+  "main_topics": [
+    "Malas decisiones en finanzas",
+    "Historia de Nick Leeson",
+    "Consecuencias de ocultar errores",
+    "Impacto de las decisiones en cadena"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al problema",
+      "purpose": "Presentar el caso de Nick Leeson y su trabajo en Barings Bank.",
+      "summary": "En 1995, un joven trader comete un pequeño error de trading."
+    },
+    {
+      "section": "Desarrollo de las malas decisiones",
+      "purpose": "Ilustrar cómo la necesidad de cubrir un error lo llevó a más problemas.",
+      "summary": "Leeson abre una cuenta secreta y comete fraude para ocultar pérdidas."
+    },
+    {
+      "section": "Clímax y consecuencias",
+      "purpose": "Mostrar el desenlace trágico a raíz de sus decisiones.",
+      "summary": "Un gran terremoto provoca pérdidas millonarias y la quiebra del banco."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Aprender la lección sobre las decisiones encadenadas.",
+      "summary": "Una serie de malas decisiones llevó a la ruina de Leeson y a su arrepentimiento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante narrativa",
+    "hook_text": "En un solo instante perdió más de mil millones de dólares.",
+    "why_it_works": "Captura la atención al presentar una pérdida impactante y despierta curiosidad sobre cómo ocurrió."
+  },
+  "claims": [
+    {
+      "claim": "Las malas decisiones en cadena son destructivas.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Ocultar errores lleva a consecuencias mayores.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reportar errores rápidamente.",
+    "Evitar decisiones impulsivas bajo presión.",
+    "Reflexionar sobre las consecuencias a largo plazo."
+  ],
+  "audience": "Personas interesadas en finanzas y toma de decisiones.",
+  "tone": "Reflexivo y advertente.",
+  "content_style": "Narrativa educativa con tono cautelar.",
+  "retention_devices": [
+    "Ejemplos concretos de decisiones fallidas",
+    "Un final impactante sobre la quiebra",
+    "Lecciones aprendidas sobre errores"
+  ],
+  "title_supporting_quotes": [
+    "Cada una parecía la forma más rápida, aunque no la más sensata."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear material educativo sobre la gestión de riesgos en finanzas.",
+    "Desarrollar un podcast sobre errores en el trading."
+  ],
+  "risk_notes": [
+    "El tema puede desmotivar a quienes inician en el trading.",
+    "Puede generar ansiedad al reflexionar sobre decisiones financieras."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

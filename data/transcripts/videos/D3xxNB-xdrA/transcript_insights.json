@@ -1,0 +1,81 @@
+{
+  "video_id": "D3xxNB-xdrA",
+  "language": "es",
+  "summary": "El video explora por qué las personas con malas intenciones pueden tener éxito en sistemas que parecen premiar el comportamiento despreciable, cuestionando lo que nos han enseñado sobre la bondad y la moralidad. Analiza la paradoja de las 'super gallinas' de William Moore para ilustrar cómo los sistemas pueden fallar al favorecer comportamientos destructivos.",
+  "main_topics": [
+    "Paradoja de las super gallinas",
+    "Psicología evolutiva",
+    "Teoría de sistemas",
+    "Ética y moralidad en el éxito"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la pregunta central",
+      "purpose": "Plantear el dilema sobre el éxito de las malas personas",
+      "summary": "Se cuestiona por qué las personas corruptas a menudo tienen éxito."
+    },
+    {
+      "section": "Ejemplo de las super gallinas",
+      "purpose": "Ilustrar la problemática con un estudio",
+      "summary": "William Moore investigó la productividad en gallinas seleccionando a las mejores, pero resultó en un sistema que se destruyó a sí mismo."
+    },
+    {
+      "section": "Reflexiones finales sobre los sistemas",
+      "purpose": "Sacar conclusiones sobre el comportamiento sistemático",
+      "summary": "Se plantea que los sistemas premian comportamientos destructivos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Por qué los sistemas premian a los peores?",
+    "why_it_works": "Invita a la reflexión personal y crea curiosidad sobre el contenido."
+  },
+  "claims": [
+    {
+      "claim": "Las malas personas parecen tener éxito en la vida.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Los sistemas pueden colapsar premian comportamientos destructivos.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Lo que nos enseñaron sobre la bondad podría ser erróneo.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Estudio de las 'super gallinas'",
+    "Fraudes en la política y empresas corruptas"
+  ],
+  "actionable_ideas": [
+    "Cuestionar nuestras creencias sobre el éxito y la moralidad.",
+    "Investigar más sobre teorías de sistemas en biología y sociedad.",
+    "Fomentar ambientes colaborativos en lugar de competitivos."
+  ],
+  "audience": "Personas interesadas en psicología, sociología y ética.",
+  "tone": "Reflexivo y provocador.",
+  "content_style": "Educativo y analítico.",
+  "retention_devices": [
+    "Ejemplos impactantes",
+    "Preguntas retóricas",
+    "Estudios de caso"
+  ],
+  "title_supporting_quotes": [
+    "\"¿Por qué los sistemas premian a los peores?\"",
+    "\"Es como si estuviéramos viviendo en medio de una carrera de ratas.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre psicología y comportamiento humano.",
+    "Podcasts sobre ética y moralidad.",
+    "Charlas educativas sobre sistemas complejos."
+  ],
+  "risk_notes": [
+    "El contenido puede ser controversial.",
+    "Responsabilidad al interpretar las implicaciones éticas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

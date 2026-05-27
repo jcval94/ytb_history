@@ -1,0 +1,14 @@
+{
+  "video_id": "ef6zSLS9IJQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El video que me llevó 50 años hacer",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ef6zSLS9IJQ.mp3",
+  "transcribed_at": "2026-05-27T03:17:41.745858+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 27487,
+  "text_sha256": "90d2df70ddf05c0b0c12a2dd48db7d22d91c85506cdacd7491f0062a20808fe4",
+  "repo_schema_version": "transcript_metadata_v1"
+}

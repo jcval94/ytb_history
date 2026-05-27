@@ -1,0 +1,20 @@
+{
+  "video_id": "AfuR4Sd18C0",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Tregua de Navidad Short  Heroismo o carnicería",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\AfuR4Sd18C0.mp3",
+  "transcribed_at": "2026-05-27T03:07:11.517123+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 422,
+  "text_sha256": "77c53a438f8ed19133519e875d723f29ec9d5c0db21c7e916982f06b89ab525f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\AfuR4Sd18C0\\transcript_segments.jsonl",
+  "segment_count": 5,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:35.933208+00:00",
+  "duration_seconds": 26.209999084472656
+}

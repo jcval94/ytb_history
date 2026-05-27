@@ -1,0 +1,72 @@
+{
+  "video_id": "0-8fb8aQIIM",
+  "language": "es",
+  "summary": "El orador discute las imprecisiones de la inteligencia artificial (IA) al responder preguntas sobre personas, señalando que a menudo confunde información y atribuye logros falsos a individuos sin una fuerte base documental.",
+  "main_topics": [
+    "Errores de la inteligencia artificial",
+    "Confusión de identidades",
+    "Fuentes de información en internet"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la problemática",
+      "purpose": "Presentar el tema de los errores de la IA",
+      "summary": "El orador menciona los errores groseros que la IA comete al identificar personas."
+    },
+    {
+      "section": "Ejemplos de errores",
+      "purpose": "Ilustrar cómo la IA confunde información",
+      "summary": "Se dan ejemplos de atribuciones erróneas de logros a personas, como la confusión entre el orador y conocidos emprendedores de Argentina."
+    },
+    {
+      "section": "Conclusión sobre la veracidad",
+      "purpose": "Reflexionar sobre la fiabilidad de la IA",
+      "summary": "Se enfatiza que lo verosímil no siempre es verdadero, especialmente en casos donde hay una respuesta única correcta."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "La IA se equivoca de manera muy grosera en ciertos terrenos.",
+    "why_it_works": "Capta la atención al presentar una experiencia personal relevante que ilustra un problema significativo."
+  },
+  "claims": [
+    {
+      "claim": "La IA comete errores atribuibles a confusiones en datos.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Lo verosímil no siempre es verdadero.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Confusión entre el orador y fundadores de compañías como Mercado Libre y Globant.",
+    "Atribuciones erróneas sobre la educación del orador."
+  ],
+  "actionable_ideas": [
+    "Verificar la información antes de confiar en fuentes de IA.",
+    "Usar la IA como complemento, no como única fuente de verdad."
+  ],
+  "audience": "Personas interesadas en tecnología y sus implicaciones",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Lo verosímil no coincide con lo verdadero.",
+    "La IA a veces te manda groseras frutas."
+  ],
+  "creative_reuse_opportunities": [
+    "Aplicar las lecciones aprendidas a la educación sobre IA.",
+    "Crear contenido sobre las limitaciones de la IA en la verificación de datos."
+  ],
+  "risk_notes": [
+    "El uso indebido de la IA puede llevar a desinformación.",
+    "La confusión en atribuciones puede afectar la reputación personal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

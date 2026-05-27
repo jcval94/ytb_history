@@ -1,0 +1,73 @@
+{
+  "video_id": "dNN7pklvIDI",
+  "language": "spanish",
+  "summary": "El video discute cómo un creador de ChatGPT fue falsamente retratado como un ladrón gracias a nuevas tecnologías de IA, destacando la proliferación de contenido engañoso hacia el futuro.",
+  "main_topics": [
+    "Desinformación generada por IA",
+    "Impacto de la IA en la percepción",
+    "Contenido basura en internet"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso gráfico",
+      "purpose": "Presentar una situación ficticia",
+      "summary": "Un creador de ChatGPT es mostrado robando, lo que resulta ser falso."
+    },
+    {
+      "section": "Explicación de la tecnología",
+      "purpose": "Informar sobre el uso de la tecnología en la creación del video",
+      "summary": "El video fue creado usando una nueva herramienta de OpenAI, Sora 2."
+    },
+    {
+      "section": "Implicaciones de la IA",
+      "purpose": "Explorar los efectos potenciales en la sociedad",
+      "summary": "La tecnología podría inundar internet con contenido engañoso y difícil de distinguir de la realidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "El creador de ChatGPT aparece robando en un supermercado y siendo arrestado.",
+    "why_it_works": "Capta la atención inmediatamente y provoca curiosidad sobre la realidad de la situación."
+  },
+  "claims": [
+    {
+      "claim": "La tecnología de IA puede crear contenido visualmente creíble pero engañoso.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La inundación de contenido basura dificultará distinguir entre lo real y lo falso.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Slope como término representativo de contenido negativo generado por IA.",
+    "Incremento de videos falsos a bajo costo."
+  ],
+  "actionable_ideas": [
+    "Fomentar la alfabetización mediática entre los usuarios de internet.",
+    "Desarrollar herramientas para detectar contenido generado por IA.",
+    "Crear regulaciones sobre el uso de tecnología de IA para evitar la desinformación."
+  ],
+  "audience": "Usuarios de internet, creadores de contenido, especialistas en tecnología",
+  "tone": "alarma",
+  "content_style": "informativo y crítico",
+  "retention_devices": [
+    "Estadísticas sobre desinformación",
+    "Ejemplos de contenido generado por IA"
+  ],
+  "title_supporting_quotes": [
+    "\"El contenido basura hecho con IA está en aumento.\"",
+    "\"Pronto, será difícil saber qué es real y qué no.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la evolución de la desinformación en internet.",
+    "Organizar un webinar sobre el impacto de la IA en los medios."
+  ],
+  "risk_notes": [
+    "La desinformación puede afectar procesos democráticos.",
+    "El contenido engañoso puede tener repercusiones sociales graves."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

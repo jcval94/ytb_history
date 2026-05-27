@@ -1,0 +1,95 @@
+{
+  "video_id": "imBshgQ4VFE",
+  "language": "es",
+  "summary": "La historia de Mike Malloy, un vagabundo irlandés en Nueva York durante la Gran Depresión, quien se convierte en el objetivo de un plan criminal para cobrar un seguro de vida, revela las extremas y peligrosas decisiones tomadas por sus conspiradores ante la desesperación económica.",
+  "main_topics": [
+    "Michael Malloy",
+    "Gran Depresión",
+    "Fraude de seguro de vida",
+    "Bares clandestinos",
+    "Alcohólicos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de Mike Malloy",
+      "purpose": "Presentar al protagonista y su situación",
+      "summary": "Mike Malloy vive en la pobreza y es un alcohólico en el contexto de la Gran Depresión."
+    },
+    {
+      "section": "Contexto histórico",
+      "purpose": "Explicar la situación social de la época",
+      "summary": "La Gran Depresión y la prohibición en EE.UU. llevaron a la proliferación de bares clandestinos."
+    },
+    {
+      "section": "La idea del fraude",
+      "purpose": "Introducir la conspiración contra Malloy",
+      "summary": "Amigos de Malloy discuten la posibilidad de asesinarlo para cobrar un seguro de vida."
+    },
+    {
+      "section": "Creación de la póliza de seguro",
+      "purpose": "Ilustrar el plan criminal",
+      "summary": "Malloy obtiene un seguro de vida a través de una identidad falsa."
+    },
+    {
+      "section": "Intentos de asesinato",
+      "purpose": "Describir los métodos de asesinatos fallidos",
+      "summary": "Los conspiradores intentan matar a Malloy usando metanol y ostiones."
+    },
+    {
+      "section": "Desesperación de los conspiradores",
+      "purpose": "Mostrar la frustración de los planificadores",
+      "summary": "Después de varios intentos fallidos, la desesperación aumenta entre los conspiradores."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "\"Esta es la historia de Mike, el indestructible.\"",
+    "why_it_works": "Genera curiosidad sobre cómo un personaje en tan mala situación puede ser catalogado como indestructible."
+  },
+  "claims": [
+    {
+      "claim": "Michael Malloy tenía una resistencia inusual al alcohol.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los conspiradores intentaron múltiples métodos para asesinarlo.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La Gran Depresión llevó a decisiones desesperadas entre los ciudadanos.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La resistencia de Malloy al metanol a pesar de los intentos de asesinato.",
+    "El contraste entre la vida en barrios de clase alta y los bares del Bronx."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre el impacto de la Gran Depresión en la moralidad y la criminalidad de la época.",
+    "Examinar cómo el contexto social puede influir en decisiones extremas."
+  ],
+  "audience": "Personas interesadas en historias criminales y contextos históricos.",
+  "tone": "Narrativo e informativo",
+  "content_style": "Conversacional y directo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Narraciones de eventos intrigantes",
+    "Personajes carismáticos"
+  ],
+  "title_supporting_quotes": [
+    "\"Es la Gran Depresión, al bar no le está yendo tan chido.\"",
+    "\"Nunca me he sentido tan querido como en este momento.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar la historia en formato de podcast.",
+    "Crear una serie de videos cortos sobre diferentes aspectos de la Gran Depresión."
+  ],
+  "risk_notes": [
+    "El contenido puede glorificar el fraude y el panhandling.",
+    "Sensibilizar sobre el efecto del alcoholismo y la pobreza."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "RDkQbejYCXY",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "El día que EL ODIO SE TOMÓ UN DESCANSO",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\RDkQbejYCXY.mp3",
+  "transcribed_at": "2026-05-27T03:06:56.565530+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 551,
+  "text_sha256": "53d9e381c84ac3ac3dce77584ebdd7b5ebb8a50dcb473c56369926d824827ee6",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\RDkQbejYCXY\\transcript_segments.jsonl",
+  "segment_count": 6,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:25:30.610659+00:00",
+  "duration_seconds": 34.59000015258789
+}

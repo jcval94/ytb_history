@@ -1,0 +1,20 @@
+{
+  "video_id": "QAeJSmuGu9E",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Cuando la IA te baja linea",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\QAeJSmuGu9E.mp3",
+  "transcribed_at": "2026-05-27T03:12:58.478510+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1113,
+  "text_sha256": "6d4197702dc5fd7890f20ea7ed3e71d3539e282c302477bb7488587c92f237e4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\QAeJSmuGu9E\\transcript_segments.jsonl",
+  "segment_count": 17,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:25:21.812587+00:00",
+  "duration_seconds": 52.56999969482422
+}

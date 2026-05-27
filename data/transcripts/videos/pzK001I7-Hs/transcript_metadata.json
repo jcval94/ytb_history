@@ -1,0 +1,14 @@
+{
+  "video_id": "pzK001I7-Hs",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La mentira de la productividad moderna",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\pzK001I7-Hs.mp3",
+  "transcribed_at": "2026-05-27T03:20:07.005532+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1500,
+  "text_sha256": "7500c96a4a1a042bd79e4bbc1270b7803fe1ece701703fabedb7f85c4bc48c7f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,84 @@
+{
+  "video_id": "ZuPfSFq96YE",
+  "language": "es",
+  "summary": "El video analiza la propaganda que rodeó la percepción de la guerra en Inglaterra y Alemania, contrastando la glorificación de la guerra en los medios con la cruda realidad en las trincheras, describiendo cómo la guerra se convirtió en una experiencia desoladora y devastadora.",
+  "main_topics": [
+    "propaganda de guerra",
+    "percepción pública",
+    "realidad de la guerra",
+    "impacto en generaciones",
+    "contraste entre imagen y realidad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la propaganda en Inglaterra y Alemania",
+      "purpose": "Presentar el contexto histórico y mediático de la guerra",
+      "summary": "Los periódicos de ambos países influían en la opinión pública de manera extrema, demonizando al enemigo."
+    },
+    {
+      "section": "Representación gloriosa de la guerra",
+      "purpose": "Destacar cómo la guerra era presentada como heroica",
+      "summary": "Se usaron imágenes y mensajes que promovían un ideal de heroísmo."
+    },
+    {
+      "section": "Realidad en las trincheras",
+      "purpose": "Mostrar el contraste entre la percepción y la realidad",
+      "summary": "El video revela la dura vida de los soldados en el frente."
+    },
+    {
+      "section": "Cierre y conclusión",
+      "purpose": "Invitar a la audiencia a profundizar en el tema",
+      "summary": "Anima a los espectadores a ver el video completo para más información."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Provoca curiosidad y motiva a los espectadores a buscar más información."
+  },
+  "claims": [
+    {
+      "claim": "Los medios presentaron a los alemanes como monstruos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La guerra era glorificada como un deber heroico.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La vida en las trincheras era horrenda y desilusionante.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La promesa de fama y respeto en los carteles.",
+    "El himno de odio que los niños alemanes aprendían."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la propaganda de la Primera Guerra Mundial.",
+    "Comparar la percepción de la guerra en diferentes países.",
+    "Reflexionar sobre el impacto de la guerra en generaciones futuras."
+  ],
+  "audience": "Estudiantes de historia, interesados en la guerra y la propaganda",
+  "tone": "crítico",
+  "content_style": "informativo",
+  "retention_devices": [
+    "invitación a ver el video completo",
+    "uso de ejemplos impactantes",
+    "contraste entre glorificación y realidad"
+  ],
+  "title_supporting_quotes": [
+    "La guerra es glorificada en los medios pero es una carnicería sin sentido."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un documental sobre propaganda de guerra.",
+    "Crear un artículo comparativo sobre percepción histórica. "
+  ],
+  "risk_notes": [
+    "Se debe manejar con cuidado la representación de la violencia y la brutalidad de la guerra."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

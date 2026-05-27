@@ -1,0 +1,20 @@
+{
+  "video_id": "3hZS-w3QC6k",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Esta Tregua de Navidad DESESPERÓ a los altos mandos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\3hZS-w3QC6k.mp3",
+  "transcribed_at": "2026-05-27T03:05:27.573348+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 541,
+  "text_sha256": "6987e8274fee7f8a03cc677a06b8cc456736d61d051be4cb3b6f480cc5533434",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\3hZS-w3QC6k\\transcript_segments.jsonl",
+  "segment_count": 12,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:19.411223+00:00",
+  "duration_seconds": 30.899999618530273
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "piHGnG4LsmQ",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Future of Veritasium",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\piHGnG4LsmQ.mp3",
+  "transcribed_at": "2026-05-27T03:06:42.251481+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9051,
+  "text_sha256": "1610796dcedb22f3329740fc43f6400ac7529e067a0db5e45ce67a0e549b75e1",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,67 @@
+{
+  "video_id": "KzE4l3W1p-A",
+  "language": "es",
+  "summary": "El video describe un momento tenso durante la guerra, donde dos alemanes se acercan desarmados hacia el territorio británico, generando dudas sobre sus intenciones.",
+  "main_topics": [
+    "guerra",
+    "conflicto",
+    "tensión entre soldados",
+    "actos de desarme"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación",
+      "summary": "Dos soldados alemanes desarmados se acercan a los británicos."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Crear tensión",
+      "summary": "Los británicos no están seguros de si es una trampa o un gesto genuino."
+    },
+    {
+      "section": "Clímax",
+      "purpose": "Iniciar la incertidumbre",
+      "summary": "El momento culminante sucede cuando los británicos levantan sus armas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "intriga",
+    "hook_text": "Vale, si te he dejado con la intriga, tienes la historia completa en el vídeo que está enlazado aquí debajo.",
+    "why_it_works": "Genera curiosidad sobre el desenlace de la situación presentada."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados se acercan desarmados.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los británicos dudan de las intenciones de los alemanes.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Ver el video completo para entender la historia.",
+    "Reflexionar sobre la naturaleza de la guerra y el desarme."
+  ],
+  "audience": "Interesados en historia militar y conflictos bélicos",
+  "tone": "tenso",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "pregunta retórica",
+    "suspenso sobre el desenlace"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Crear un análisis sobre la guerra y la confianza entre enemigos.",
+    "Desarrollar un video sobre tácticas de guerra y desarme."
+  ],
+  "risk_notes": [
+    "El tema es sensible y podría no ser adecuado para todas las audiencias.",
+    "Manejo cuidadoso del contenido para evitar glorificación de la guerra."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

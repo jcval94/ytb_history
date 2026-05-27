@@ -1,0 +1,71 @@
+{
+  "video_id": "OKZj677u2o8",
+  "language": "es",
+  "summary": "Se narra un evento histórico en la Nochebuena de 1914, donde soldados británicos y alemanes interrumpieron la guerra en el frente occidental para cantar villancicos juntos, simbolizando un momento de paz en medio del conflicto.",
+  "main_topics": [
+    "Navidad en la guerra",
+    "La tregua de Nochebuena",
+    "Cultura y guerra"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto del evento histórico",
+      "summary": "Descripción de la mañana de Nochebuena de 1914, marcado por un silencio inusual en el campo de batalla."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Relatar el inicio de la interacción entre soldados",
+      "summary": "Aparecen luces alemanas y se inicia un canto de villancicos, iniciando un intercambio musical entre los dos bandos."
+    },
+    {
+      "section": "Clímax",
+      "purpose": "Describir el culmen de la tregua",
+      "summary": "Los soldados británicos responden al canto alemán, creando una atmósfera de unidad momentánea."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Invitar a los espectadores a aprender más",
+      "summary": "Se ofrece un enlace al vídeo para conocer la historia completa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa emocional",
+    "hook_text": "En lugar del habitual desayuno de disparos, llegó el silencio.",
+    "why_it_works": "Crea interés al contrastar la violencia de la guerra con un momento de paz inesperado."
+  },
+  "claims": [
+    {
+      "claim": "Los soldados británicos y alemanes cantaron villancicos juntos en Nochebuena de 1914.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La tregua de Nochebuena muestra un momento de humanidad en medio de la guerra.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Explorar más sobre treguas en conflictos bélicos.",
+    "Investigar el impacto de la cultura en situaciones de guerra."
+  ],
+  "audience": "Interesados en historia, guerra y cultura.",
+  "tone": "Nostálgico",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Emociones humanas",
+    "Momentos históricos",
+    "Relación entre opuestos"
+  ],
+  "title_supporting_quotes": [
+    "Noche de Paz en plena guerra."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre la Primera Guerra Mundial",
+    "Artículos sobre el impacto de la Navidad en conflictos"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

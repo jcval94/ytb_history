@@ -1,0 +1,20 @@
+{
+  "video_id": "JqDv9N1su5M",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿OpenAI perdió el rumbo?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\JqDv9N1su5M.mp3",
+  "transcribed_at": "2026-05-27T03:05:20.359439+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1339,
+  "text_sha256": "038c3e8a833345732bc003fd2a5662b0e49d14a579cb411475e5838ea843c449",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\JqDv9N1su5M\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:24:35.085590+00:00",
+  "duration_seconds": 76.0199966430664
+}

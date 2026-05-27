@@ -1,0 +1,20 @@
+{
+  "video_id": "KzE4l3W1p-A",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "El villancico que detuvo una guerra 🎶❄️ ¿Dispararías a quien canta contigo? 🎄",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\KzE4l3W1p-A.mp3",
+  "transcribed_at": "2026-05-27T03:05:57.757355+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 386,
+  "text_sha256": "88bfc73b15dcabc4bbc6f93c4b3c42d827bc48da13b228446378d251ef848d97",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\KzE4l3W1p-A\\transcript_segments.jsonl",
+  "segment_count": 3,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:24:38.158707+00:00",
+  "duration_seconds": 29.299999237060547
+}

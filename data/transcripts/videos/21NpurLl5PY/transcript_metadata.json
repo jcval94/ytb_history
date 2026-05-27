@@ -1,0 +1,20 @@
+{
+  "video_id": "21NpurLl5PY",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "La Píldora China que promete 150 Años de Vida",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\21NpurLl5PY.mp3",
+  "transcribed_at": "2026-05-27T03:19:52.051120+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9094,
+  "text_sha256": "5d61c9a5dcfb0d5d5f36e804f429e50e63122f78c8491db205bfdfade2a7b50f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\21NpurLl5PY\\transcript_segments.jsonl",
+  "segment_count": 249,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:22:07.523653+00:00",
+  "duration_seconds": 1052.9300537109375
+}

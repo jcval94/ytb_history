@@ -1,0 +1,20 @@
+{
+  "video_id": "mghEcKp5qpg",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "¿Quién es realmente tu enemigo? 🤨🌍",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\mghEcKp5qpg.mp3",
+  "transcribed_at": "2026-05-27T03:06:49.616695+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 990,
+  "text_sha256": "b6d4fdfe26af635d34379acb019ae57e715882d1c33c9291ca1369c0477313a4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\mghEcKp5qpg\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:30:59.958323+00:00",
+  "duration_seconds": 77.97000122070312
+}

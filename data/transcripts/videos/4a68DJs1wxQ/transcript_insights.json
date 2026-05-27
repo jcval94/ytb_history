@@ -1,0 +1,76 @@
+{
+  "video_id": "4a68DJs1wxQ",
+  "language": "es",
+  "summary": "El video describe la dura realidad de la guerra, contrastando la imagen heroica que se espera de los combates con la experiencia traumática y desoladora de los soldados en las trincheras, especialmente durante la Nochebuena de 1914.",
+  "main_topics": [
+    "Realidad de la guerra",
+    "Experiencia del soldado",
+    "Contraste entre ideal y realidad",
+    "La Nochebuena de 1914"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la guerra",
+      "purpose": "Establecer el tema principal de la guerra y la heroica expectativa",
+      "summary": "Se presenta lo que se espera de un soldado en tiempo de guerra."
+    },
+    {
+      "section": "La cruda realidad",
+      "purpose": "Describir la experiencia vivida en las trincheras",
+      "summary": "Se narra la transformación de un combate heroico a una experiencia de sufrimiento y desesperanza."
+    },
+    {
+      "section": "Descripción de soldados",
+      "purpose": "Humanizar a los soldados",
+      "summary": "Se menciona que los soldados son jóvenes de orígenes humildes disparando entre ellos."
+    },
+    {
+      "section": "Enfoque en la Nochebuena de 1914",
+      "purpose": "Intrigar al espectador",
+      "summary": "Termina sugiriendo una historia intrigante relacionada con la Nochebuena que invita a ver el video completo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Pero volvamos a la Nochebuena de 1914.",
+    "why_it_works": "Genera curiosidad sobre un evento significativo, animando a la audiencia a querer descubrir más."
+  },
+  "claims": [
+    {
+      "claim": "La guerra se convirtió en una carnicería sin sentido.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los soldados eran jóvenes campesinos, mineros y obreros.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia de la Nochebuena de 1914.",
+    "Reflexionar sobre las realidades de la guerra y su impacto en la juventud."
+  ],
+  "audience": "Cualquier persona interesada en la historia militar y el impacto emocional de la guerra.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y descriptivo",
+  "retention_devices": [
+    "Preguntas intrigantes",
+    "Descripciones vívidas",
+    "Referencia a eventos históricos"
+  ],
+  "title_supporting_quotes": [
+    "Heroico combate con caballos, tambores y trompetas...",
+    "La aventura heroica se convirtió en barro, ratas, piojos..."
+  ],
+  "creative_reuse_opportunities": [
+    "Producción de un video complementario sobre la vida en las trincheras.",
+    "Artículos sobre testimonios de soldados de esa época."
+  ],
+  "risk_notes": [
+    "Posible controversia en la representación de la guerra.",
+    "Reacción emocional de los espectadores sensibles al tema."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

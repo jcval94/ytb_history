@@ -1,0 +1,14 @@
+{
+  "video_id": "NIk_0AW5hFU",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "There Is Something Faster Than Light",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NIk_0AW5hFU.mp3",
+  "transcribed_at": "2026-05-27T03:11:08.900769+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 43041,
+  "text_sha256": "106bc06214cccef7a2c5ca58cab519db54e528489385ea2838bc353b5ec34800",
+  "repo_schema_version": "transcript_metadata_v1"
+}

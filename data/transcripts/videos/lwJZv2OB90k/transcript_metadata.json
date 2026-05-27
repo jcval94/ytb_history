@@ -1,0 +1,20 @@
+{
+  "video_id": "lwJZv2OB90k",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Stallone te robó su historia | La arquitectura invisible de la propiedad intelectual",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lwJZv2OB90k.mp3",
+  "transcribed_at": "2026-05-27T03:18:36.537727+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8776,
+  "text_sha256": "250f5ee98264aac975b79b3fb66ef71b2b78d2ce52d4b5b3fde746960ff0a90e",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\lwJZv2OB90k\\transcript_segments.jsonl",
+  "segment_count": 347,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:30:55.679288+00:00",
+  "duration_seconds": 1369.969970703125
+}

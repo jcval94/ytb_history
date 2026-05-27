@@ -1,0 +1,103 @@
+{
+  "video_id": "SFAzkUfK4OY",
+  "language": "es",
+  "summary": "El video explora la transformación del contenido en redes sociales, destacando cómo la IA ha comenzado a generar una gran cantidad de contenido 'basura' que socava la percepción de la realidad. Santiago Bilinkis argumenta que esta evolución puede llevar a una disminución en la capacidad de discernir la realidad y plantea preocupaciones sobre la influencia de este contenido en la sociedad y en la inteligencia artificial misma.",
+  "main_topics": [
+    "Evolución del contenido en redes sociales",
+    "Impacto de la IA en la creación de videos",
+    "Contenido 'basura' generado por máquinas",
+    "Percepción de la realidad",
+    "Influencia negativa en la sociedad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y captar la atención.",
+      "summary": "Bilinkis introduce la drástica reducción del contenido social en redes, alertando sobre el predominio del contenido generado por IA."
+    },
+    {
+      "section": "Parte 1: La fábrica de contenido basura",
+      "purpose": "Exponer el fenómeno de creación de contenido por IA.",
+      "summary": "Se discute un viral de un video falso creado por IA, y se alerta sobre el riesgo de permitir que se fabriquen mentiras creíbles."
+    },
+    {
+      "section": "Parte 2: Cuando los ojos mienten",
+      "purpose": "Ilustrar el poder de la desinformación generada por IA.",
+      "summary": "Se presentan herramientas como Sora 2 de OpenAI que permiten crear contenidos audiovisuales realistas, cuestionando nuestras creencias sobre lo que es real."
+    },
+    {
+      "section": "Parte 3: Cerebros en descomposición",
+      "purpose": "Demostrar el impacto de este contenido en la salud mental.",
+      "summary": "Se analiza cómo las plataformas de redes sociales están construyendo una nueva era de hiperpersonalización que afecta negativamente a los usuarios."
+    },
+    {
+      "section": "Parte 4: Probando tu propio veneno",
+      "purpose": "Explorar el impacto del contenido viral en IA misma.",
+      "summary": "Se plantea un experimento que muestra que la IA deteriora su capacidad al alimentarse de contenido de baja calidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "¿Te acordás cuando las redes sociales eran sociales?",
+    "why_it_works": "Genera nostalgia y curiosidad sobre la evolución de las redes sociales."
+  },
+  "claims": [
+    {
+      "claim": "Hoy solo 5% de lo que vemos es contenido subido por amigos o familiares.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "IA genera contenido 'basura' a escala industrial.",
+      "support_level": "explicit",
+      "risk": "Medio"
+    },
+    {
+      "claim": "La percepción de la realidad se ve afectada por la desinformación generada por IA.",
+      "support_level": "implicit",
+      "risk": "Alto"
+    },
+    {
+      "claim": "La creación de contenido artificial está en aumento.",
+      "support_level": "explicit",
+      "risk": "Medio"
+    },
+    {
+      "claim": "La salud mental está en riesgo debido a la hiperpersonalización de contenidos.",
+      "support_level": "weak",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [
+    "Video de Sam Altman robando en un supermercado falso.",
+    "Viralización de contenido falso sobre el cartel de Hollywood.",
+    "Testeo de IA con contenido viral que afecta su rendimiento."
+  ],
+  "actionable_ideas": [
+    "Fomentar el consumo crítico de contenido en redes.",
+    "Desarrollar herramientas que ayuden a discernir contenido generado por IA.",
+    "Promover educación sobre la desinformación en medios digitales."
+  ],
+  "audience": "Personas interesadas en tecnología, redes sociales y su impacto en la sociedad.",
+  "tone": "Informativo y cautivador.",
+  "content_style": "Narrativo y analítico.",
+  "retention_devices": [
+    "Preguntas provocadoras",
+    "Estadísticas impactantes",
+    "Ejemplos concretos"
+  ],
+  "title_supporting_quotes": [
+    "Estamos entrando en zona de turbulencia.",
+    "El daño no termina ahí. También invade la intimidad."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión en blogs sobre redes sociales",
+    "Videos explicativos sobre IA y desinformación",
+    "Charlas o conferencias en universidades"
+  ],
+  "risk_notes": [
+    "El contenido generado por IA puede llevar a decisiones informadas erróneas.",
+    "El uso malintencionado de tecnología puede tener consecuencias graves."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

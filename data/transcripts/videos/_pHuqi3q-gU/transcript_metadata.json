@@ -1,0 +1,20 @@
+{
+  "video_id": "_pHuqi3q-gU",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "La tregua de navidad de 1914. INCREIBLE! #historia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_pHuqi3q-gU.mp3",
+  "transcribed_at": "2026-05-27T03:05:51.739823+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1624,
+  "text_sha256": "6ec75cf5cfa4b636af7b489ca2686a445ed9864072e6058b3c866b4ceaaeb310",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\_pHuqi3q-gU\\transcript_segments.jsonl",
+  "segment_count": 23,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:27:29.904042+00:00",
+  "duration_seconds": 97.5
+}

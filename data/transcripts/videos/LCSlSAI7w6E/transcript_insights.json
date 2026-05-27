@@ -1,0 +1,87 @@
+{
+  "video_id": "LCSlSAI7w6E",
+  "language": "es",
+  "summary": "El video examina cómo las redes sociales priorizan el contenido polarizador, generando desinformación y polarización en la conversación pública. Se enfatiza que el enojo y la agresividad dominan las interacciones, debilitando los fundamentos de la democracia.",
+  "main_topics": [
+    "Polarización en redes sociales",
+    "Impacto de la desinformación",
+    "Retos para la democracia",
+    "Comportamiento de usuarios y algoritmos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al problema de la polarización en redes",
+      "purpose": "Presentar el fenómeno de la viralización de contenido polarizador.",
+      "summary": "Las emociones intensas son claves en el compartido de contenido en redes sociales."
+    },
+    {
+      "section": "El papel de los algoritmos en la propagación de desinformación",
+      "purpose": "Explicar cómo los algoritmos alimentan la desinformación.",
+      "summary": "Los algoritmos favorecen el enojo y la agresividad, aumentando la viralidad de noticias falsas."
+    },
+    {
+      "section": "Consecuencias de la desinformación y la polarización",
+      "purpose": "Discutir los efectos de estas dinámicas en la conversación pública.",
+      "summary": "La mayoría moderada opta por no participar, lo que deja el espacio a voces extremas."
+    },
+    {
+      "section": "Implicaciones para la democracia",
+      "purpose": "Resaltar la importancia del diálogo y la moderación para una convivencia democrática.",
+      "summary": "La democracia depende de consensos, pero la polarización socava estos pilares."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadísticas impactantes",
+    "hook_text": "Un 70% más de probabilidad de viralización para noticias falsas.",
+    "why_it_works": "Las estadísticas asumen un peso fuerte y preocupante, capturando la atención y destacando la gravedad del problema."
+  },
+  "claims": [
+    {
+      "claim": "Las noticias falsas son más virales que las verdaderas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La mayoría moderada se siente silenciada.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los algoritmos alimentan la polarización.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Estadísticas sobre el impacto emocional en el compartido de contenido.",
+    "Referencias de creadores de algoritmos y su comparación con un niño con un arma.",
+    "Descripción de la dinámica de las discusiones online y su impacto social."
+  ],
+  "actionable_ideas": [
+    "Fomentar el diálogo saludable en redes sociales.",
+    "Promover contenido que valore la moderación y la diversidad de opiniones.",
+    "Crear campañas educativas sobre el impacto de la desinformación."
+  ],
+  "audience": "Usuarios de redes sociales, creadores de contenido, educadores y responsables de políticas.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y persuasivo",
+  "retention_devices": [
+    "Estadísticas preocupantes",
+    "Comparaciones impactantes",
+    "Historias que resuenan emocionalmente"
+  ],
+  "title_supporting_quotes": [
+    "Las discusiones en redes dejaron de ser un intercambio de ideas y se convirtieron en batallas.",
+    "La democracia necesita consensos y matices."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de infografías con estadísticas sobre polarización.",
+    "Realización de episodios de podcast sobre desinformación en redes.",
+    "Desarrollo de talleres prácticos sobre comunicación en línea."
+  ],
+  "risk_notes": [
+    "Al abordar la desinformación, se corre el riesgo de desinformar aún más si no se manejan correctamente las fuentes.",
+    "El enfoque en la polarización puede alienar a ciertos grupos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

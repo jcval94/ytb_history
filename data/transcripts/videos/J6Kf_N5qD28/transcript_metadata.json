@@ -1,0 +1,20 @@
+{
+  "video_id": "J6Kf_N5qD28",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Tu fanatismo destruye la democracia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\J6Kf_N5qD28.mp3",
+  "transcribed_at": "2026-05-27T03:13:52.146781+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1385,
+  "text_sha256": "454c1eefc93cd7ced656b56b8848629944a890a735408aee766e2994aa073f0a",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\J6Kf_N5qD28\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:24:28.015130+00:00",
+  "duration_seconds": 75.98999786376953
+}

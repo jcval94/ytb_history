@@ -1,0 +1,20 @@
+{
+  "video_id": "dNN7pklvIDI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Podremos distinguir videos falsos?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\dNN7pklvIDI.mp3",
+  "transcribed_at": "2026-05-27T03:07:51.053848+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1147,
+  "text_sha256": "7ef2eca67ca8ca4d8277bb3accae71f5c8a75f165c9f08f48cc8cec791024a14",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\dNN7pklvIDI\\transcript_segments.jsonl",
+  "segment_count": 18,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:28:10.782765+00:00",
+  "duration_seconds": 63.72999954223633
+}

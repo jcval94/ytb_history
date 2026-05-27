@@ -1,0 +1,78 @@
+{
+  "video_id": "u62Yx_y36UA",
+  "language": "spanish",
+  "summary": "El video presenta una reflexión sobre el avance de la inteligencia artificial en nuestras relaciones, comparando la película 'Her' con la realidad actual, donde las personas están cada vez más satisfechas con compañías virtuales que simulan relaciones humanas.",
+  "main_topics": [
+    "Inteligencia Artificial",
+    "Relaciones Virtuales",
+    "Impacto en la Sociedad",
+    "Adolescencia y Tecnología"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la comparación entre la película y la realidad.",
+      "summary": "La película 'Her' es vista como un anticipo de las interacciones actuales con la inteligencia artificial."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explorar el impacto de las relaciones virtuales.",
+      "summary": "Los usuarios interactúan con parejas virtuales que imitan relaciones humanas, aumentando su tiempo de uso."
+    },
+    {
+      "section": "Reflexión Final",
+      "purpose": "Invitar a la audiencia a reflexionar sobre su propia vida.",
+      "summary": "Se plantea la pregunta sobre cómo queremos que se desarrollen nuestras relaciones en el futuro."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativo",
+    "hook_text": "La inteligencia artificial está aprendiendo a ser compañía.",
+    "why_it_works": "Capta la atención al señalar un cambio significativo en cómo las tecnologías están moldeando las relaciones humanas."
+  },
+  "claims": [
+    {
+      "claim": "La inteligencia artificial está siendo utilizada para crear parejas virtuales.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El uso de estas plataformas crece rápidamente entre los adolescentes.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La experiencia artificial puede preferirse sobre la humana.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre nuestras interacciones con la tecnología.",
+    "Considerar la calidad de las relaciones humanas frente a las virtuales.",
+    "Establecer límites en el uso de plataformas de inteligencia artificial."
+  ],
+  "audience": "Personas interesadas en la tecnología y sus efectos en las relaciones sociales.",
+  "tone": "Reflexivo",
+  "content_style": "Informativo",
+  "retention_devices": [
+    "Citas de movies",
+    "Estadísticas",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "La inteligencia artificial está aprendiendo a ser compañía.",
+    "Hoy parece un anticipo realista e inmediato."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre el impacto de la tecnología en las relaciones.",
+    "Debates sobre ética en inteligencia artificial.",
+    "Documentales sobre la evolución de las relaciones humanas y tecnológicas."
+  ],
+  "risk_notes": [
+    "El desarrollo de relaciones virtuales puede alienar a las personas.",
+    "El uso excesivo de la inteligencia artificial puede conducir a una disminución de interacciones humanas reales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

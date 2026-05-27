@@ -1,0 +1,20 @@
+{
+  "video_id": "Xf-KkC6U6x4",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Los secretos de un buen líder",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Xf-KkC6U6x4.mp3",
+  "transcribed_at": "2026-05-27T03:13:14.557086+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1132,
+  "text_sha256": "b71c02a7994b7df1225bf447a213c54646e7faf7be2972557bcc0da314c7aeef",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Xf-KkC6U6x4\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:27:04.804934+00:00",
+  "duration_seconds": 54.13999938964844
+}

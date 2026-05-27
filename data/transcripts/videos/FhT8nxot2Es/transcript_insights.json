@@ -1,0 +1,79 @@
+{
+  "video_id": "FhT8nxot2Es",
+  "language": "es",
+  "summary": "El discurso aborda cómo la polarización ideológica en la política implica que las personas identifican su ideología como parte integral de su identidad. Esta polarización limita el pensamiento crítico, haciendo que se supporten automáticamente las ideas de líderes políticos, independientemente de su validez.",
+  "main_topics": [
+    "Polarización política",
+    "Identidad ideológica",
+    "Pensamiento crítico",
+    "Lealtad a líderes",
+    "División social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la polarización",
+      "purpose": "Presentar el fenómeno de la polarización en varias ideologías.",
+      "summary": "Se menciona cómo diferentes movimientos políticos aplican tácticas polarizadoras."
+    },
+    {
+      "section": "Identidad e ideología",
+      "purpose": "Explicar cómo se fusiona la ideología con la identidad personal.",
+      "summary": "Se alerta que caer en esta trampa es formar parte de una manipulación."
+    },
+    {
+      "section": "Ejemplo de Estados Unidos",
+      "purpose": "Ilustrar la polarización con un ejemplo claro.",
+      "summary": "Se presenta un experimento sobre cómo la aceptación de ideas varía según su autor político."
+    },
+    {
+      "section": "Consecuencias de la polarización",
+      "purpose": "Discutir el impacto de la polarización en las relaciones políticas.",
+      "summary": "Se argumenta que la polarización anula el pensamiento crítico y convierte a los rivales políticos en enemigos."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativa",
+    "hook_text": "si lograron que tu ideología se vuelva tu identidad, caíste en la trampa de esos líderes que admirás.",
+    "why_it_works": "Invita a la autorreflexión sobre la identidad y la ideología, creando curiosidad sobre las implicaciones de la polarización."
+  },
+  "claims": [
+    {
+      "claim": "La polarización anula el pensamiento crítico.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los polarizados de izquierda y derecha son más similares entre sí que con moderados.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar el pensamiento crítico en debates políticos.",
+    "Promover la empatía entre diferentes ideologías.",
+    "Desafiar la identificación excesiva con líderes políticos."
+  ],
+  "audience": "Personas interesadas en política y psicología social.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Analítico y persuasivo",
+  "retention_devices": [
+    "Ejemplos anecdóticos",
+    "Preguntas retóricas",
+    "Citas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "La polarización anula el pensamiento crítico.",
+    "Los del otro lado piensan lo mismo."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre pensamiento crítico.",
+    "Debates sobre la identidad política.",
+    "Charlas sobre polarización en redes sociales."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones podrían ser divisivas entre el público.",
+    "El tema puede generar defensividad en oyentes con fuertes creencias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "imBshgQ4VFE",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "El Hombre Que No Podían Matar | Mike El Indestructible",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\imBshgQ4VFE.mp3",
+  "transcribed_at": "2026-05-27T03:19:18.715660+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 7863,
+  "text_sha256": "f32daf1d48c387df9487639081e38fce4972c76c7f3be5f222cb85879b040d59",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\imBshgQ4VFE\\transcript_segments.jsonl",
+  "segment_count": 177,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-27T03:29:25.535551+00:00",
+  "duration_seconds": 955.5900268554688
+}
