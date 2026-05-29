@@ -1,0 +1,86 @@
+{
+  "video_id": "AJdiXIiYMYY",
+  "language": "es",
+  "summary": "El video presenta un jugador que intenta escapar de 'spawn traps' en Minecraft utilizando semillas (seeds) complicadas, cada una más difícil que la anterior. A medida que avanza, se va enfrentando a diversos retos y desafíos en la supervivencia, destacando sus estrategias y la experiencia de resolver estos puzles.",
+  "main_topics": [
+    "Minecraft",
+    "Spawn traps",
+    "Seeds complicadas",
+    "Supervivencia",
+    "Estrategias de juego"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el video y el objetivo",
+      "summary": "El jugador introduce el concepto de jugar con semillas imposibles y la importancia del apoyo de la audiencia."
+    },
+    {
+      "section": "Primeras spawn traps",
+      "purpose": "Demostrar habilidades de supervivencia",
+      "summary": "El jugador enfrenta varias spawn traps, describiendo cada situación y cómo logra resolverlas."
+    },
+    {
+      "section": "Dificultad creciente",
+      "purpose": "Incrementar la tensión del juego",
+      "summary": "A medida que avanzan las seeds, el jugador se encuentra con situaciones más complejas y emocionantes."
+    },
+    {
+      "section": "Reflexiones sobre el juego",
+      "purpose": "Compartir sentimientos sobre los desafíos",
+      "summary": "El jugador habla sobre la experiencia de redescubrir Minecraft a través de estas spawn traps."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Concluir el video y animar a los espectadores",
+      "summary": "El jugador anima a la audiencia a compartir y comentar el video, destacando sus logros en el juego."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "intentar escapar de seeds imposibles",
+    "why_it_works": "Despierta la curiosidad de los jugadores sobre los desafíos que enfrentará."
+  },
+  "claims": [
+    {
+      "claim": "Las seeds son únicas y difíciles.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Resolver spawn traps es comparable a resolver puzles.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "La spawn trap inicial fue la más fácil.",
+    "Con cada nueva seed, la situación se vuelve más complicada.",
+    "El jugador reflexiona sobre la dificultad de ciertas situaciones."
+  ],
+  "actionable_ideas": [
+    "Probar las seeds compartidas en el video.",
+    "Practicar parkour en Minecraft.",
+    "Compartir el video con amigos para retarlos con las spawn traps."
+  ],
+  "audience": "Jugadores de Minecraft interesados en retos y estrategias",
+  "tone": "Entusiasta y reflexivo",
+  "content_style": "Didáctico y entretenido",
+  "retention_devices": [
+    "Promesas de nuevos videos similares",
+    "Interacción constante con la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "Espero que lo disfrutéis, es un vídeo que he llevado mucho trabajo.",
+    "Me gusta resolverla hasta la primera, honestamente."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un tutorial basado en las estrategias mostradas.",
+    "Desarrollar un siguiente video con nuevas spawn traps."
+  ],
+  "risk_notes": [
+    "Algunas estrategias pueden ser arriesgadas e implicar perder recursos.",
+    "El RNG puede influir en las experiencias de los jugadores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

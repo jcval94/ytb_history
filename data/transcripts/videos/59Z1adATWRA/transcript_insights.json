@@ -1,0 +1,75 @@
+{
+  "video_id": "59Z1adATWRA",
+  "language": "es",
+  "summary": "Este video muestra a dos amigos jugando un videojuego de bajo costo basado en la popular temática de los Backrooms, intentando sobrevivir a diversos monstruos mientras se divierten y comentan sobre su experiencia.",
+  "main_topics": [
+    "Gaming",
+    "Backrooms",
+    "Reacciones de horror",
+    "Interacción entre jugadores",
+    "Humor"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto y a los jugadores.",
+      "summary": "Los presentadores inician el juego y hablan sobre las expectativas del mismo."
+    },
+    {
+      "section": "Jugando el Juego",
+      "purpose": "Mostrar la dinámica del juego y las interacciones entre los jugadores.",
+      "summary": "Los jugadores tratan de avanzar en el juego mientras comentan sus experiencias, estrategias y reacciones a los monstruos."
+    },
+    {
+      "section": "Clímax y Desenlace",
+      "purpose": "Concluir la experiencia y dar un resumen.",
+      "summary": "Los jugadores logran pasar por varios niveles del juego y despiden el video animadamente."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Cómo están, amigos?",
+    "why_it_works": "Engancha a la audiencia al establecer un tono amistoso y accesible desde el principio."
+  },
+  "claims": [
+    {
+      "claim": "El juego es entretenido y vale los 2 dólares.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los monstruos son sorpresivos y añaden dificultad.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "El costo bajo del juego se menciona como un atractivo.",
+    "Las reacciones de los jugadores al perder dan un matiz cómico."
+  ],
+  "actionable_ideas": [
+    "Probar el juego y compartir experiencias.",
+    "Interactuar con la audiencia pidiéndoles que comenten sobre el video.",
+    "Promocionar más contenido relacionado con los videojuegos."
+  ],
+  "audience": "Jugadores de videojuegos casuales, fanáticos del contenido de humor y horror.",
+  "tone": "Divertido y amistoso.",
+  "content_style": "Informal y casi tipo vlog.",
+  "retention_devices": [
+    "Preguntas a la audiencia en el transcurso del video.",
+    "Uso de humor para mantener el interés.",
+    "Animar a la suscripción en momentos clave."
+  ],
+  "title_supporting_quotes": [
+    "¡Estamos a punto de llegar a los 60 millones!",
+    "Gracias por ver el video."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear clips cortos de las reacciones en momentos divertidos.",
+    "Hacer un video de resumen de los mejores momentos del gameplay."
+  ],
+  "risk_notes": [
+    "Contenido puede no ser apropiado para todas las edades debido a referencias a horror."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-29T05:37:03.552529+00:00",
-  "limit": 0,
-  "expected_ranked_count": 0,
-  "expected_selected_count": 50,
+  "generated_at": "2026-05-29T22:48:23.277279+00:00",
+  "limit": 10,
+  "expected_ranked_count": 10,
+  "expected_selected_count": 10,
   "ranked_shortfall": 0,
   "candidates_considered": 24659,
   "available_ranked_count": 24224,
@@ -50,9 +50,9 @@
       "modified_at": "2026-05-29T05:37:00.933320+00:00"
     }
   },
-  "selected_count": 50,
-  "selected_forced_count": 50,
-  "selected_ranked_count": 0,
+  "selected_count": 10,
+  "selected_forced_count": 0,
+  "selected_ranked_count": 10,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/@Veritasium",
@@ -60,12 +60,7 @@
     "https://www.youtube.com/@Alan-Flores",
     "https://www.youtube.com/@MitosyMentes"
   ],
-  "forced_channels_matched": [
-    "https://www.youtube.com/@MitosyMentes",
-    "https://www.youtube.com/@Veritasium",
-    "https://www.youtube.com/@bilinkis",
-    "https://www.youtube.com/@noesposible"
-  ],
+  "forced_channels_matched": [],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
     "https://www.youtube.com/@bilinkis": 278,
@@ -75,34 +70,33 @@
     "https://www.youtube.com/@MitosyMentes": 27
   },
   "forced_candidate_pool_count": 475,
-  "available_forced_before_truncation": 196,
-  "forced_window_cutoff_date": "2025-06-02",
+  "available_forced_before_truncation": 0,
+  "forced_window_cutoff_date": "2026-05-14",
   "latest_upload_date": "2026-05-28",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 318,
-  "persisted_transcript_success_count": 318,
+  "registry_existing_success_count": 367,
+  "persisted_transcript_success_count": 367,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 67,
-  "skipped_already_transcribed": 318,
+  "registry_existing_recent_failed_count": 68,
+  "skipped_already_transcribed": 367,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 67,
-  "skipped_forced_already_transcribed": 222,
+  "skipped_recent_failures": 68,
+  "skipped_forced_already_transcribed": 271,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 55,
-  "skipped_forced_outside_window": 2,
+  "skipped_forced_recent_failures": 56,
+  "skipped_forced_outside_window": 148,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "cI7ZnKW2-6E",
-    "izmBccL0O48",
-    "OgFf_J1CP0g",
-    "xoZlPwksaWw",
-    "4GtWgxIcMmQ"
+    "WyUB1zUtWk0",
+    "5sJp-TuRtUw",
+    "AJdiXIiYMYY",
+    "May87SVpcwQ",
+    "qFKbw8DPjpo"
   ],
   "warnings": [
-    "forced_channels_window_anchored_to_latest_upload_date",
-    "forced_channels_truncated_max_per_run"
+    "forced_channels_window_anchored_to_latest_upload_date"
   ]
 }

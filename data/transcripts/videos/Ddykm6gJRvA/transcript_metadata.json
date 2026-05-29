@@ -1,0 +1,20 @@
+{
+  "video_id": "Ddykm6gJRvA",
+  "channel_id": "UCM55RjebjSevVWPnj2LEymw",
+  "channel_name": "viyaura",
+  "title": "I Mastered Pixel Art Animation",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Ddykm6gJRvA.mp3",
+  "transcribed_at": "2026-05-29T22:55:17.648872+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 24397,
+  "text_sha256": "67326909b09cfebde84c645edc9e0673173a688a8f6c3ee747a5e8f5695c6aca",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Ddykm6gJRvA\\transcript_segments.jsonl",
+  "segment_count": 587,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T22:57:35.225635+00:00",
+  "duration_seconds": 1569.3900146484375
+}

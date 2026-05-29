@@ -1,0 +1,20 @@
+{
+  "video_id": "5sJp-TuRtUw",
+  "channel_id": "UCafNntv_qTQB26AvbEQNHPw",
+  "channel_name": "Aristegui Noticias",
+  "title": "Por agredir a psicóloga del DIF, exalcaldesa es sentenciada a 5 años de cárcel",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5sJp-TuRtUw.mp3",
+  "transcribed_at": "2026-05-29T22:48:42.577632+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1328,
+  "text_sha256": "3bc57e65872513d25d4e3997c47a83b608f0c0f95f7575bb0ee746b94b937a45",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5sJp-TuRtUw\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T22:55:35.989611+00:00",
+  "duration_seconds": 73.5999984741211
+}

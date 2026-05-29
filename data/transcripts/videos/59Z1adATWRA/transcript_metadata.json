@@ -1,0 +1,14 @@
+{
+  "video_id": "59Z1adATWRA",
+  "channel_id": "UCYiGq8XF7YQD00x7wAd62Zg",
+  "channel_name": "JuegaGerman",
+  "title": "Encadenado 24 Horas con El Mariana",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\59Z1adATWRA.mp3",
+  "transcribed_at": "2026-05-29T22:54:00.882100+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 26051,
+  "text_sha256": "9d27fe709b0df133c45b2bfbeecb1047e4b808673dbcd0c0224f95ea03a89d9d",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,73 @@
+{
+  "video_id": "5sJp-TuRtUw",
+  "language": "Spanish",
+  "summary": "Selene Hernández Herrera, exalcaldesa de Capulhuac, es condenada a cinco años y cinco meses de prisión por abuso de autoridad tras agredir a una psicóloga del DIF. La agresión ocurrió en una reunión supuestamente laboral, donde también se involucraron su hija y una policía municipal.",
+  "main_topics": [
+    "Sentencia contra exalcaldesa",
+    "Agresión física y abuso de autoridad",
+    "Violencia en el ámbito laboral"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del caso",
+      "purpose": "Presentar la noticia.",
+      "summary": "Una exalcaldesa de México es sentenciada por agredir a una psicóloga."
+    },
+    {
+      "section": "Detalles del delito",
+      "purpose": "Describir cómo ocurrió la agresión y quiénes estuvieron involucrados.",
+      "summary": "Se detalla el contexto y los hechos de la agresión en el DIF municipal."
+    },
+    {
+      "section": "Consecuencias legales",
+      "purpose": "Informar sobre las sentencias de las personas involucradas.",
+      "summary": "Las sentencias impuestas a Selene y su hija, así como a la policía municipal."
+    },
+    {
+      "section": "Denuncia pública",
+      "purpose": "Resaltar la importancia de la denuncia.",
+      "summary": "El caso se hizo público tras un video de la víctima en redes sociales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Noticia de interés público",
+    "hook_text": "Por agredir a psicóloga del DIF, exalcaldesa es sentenciada a cinco años de cárcel.",
+    "why_it_works": "Captura la atención al hablar de una figura pública involucrada en un crimen serio."
+  },
+  "claims": [
+    {
+      "claim": "Selene Hernández Herrera fue condenada a cinco años de prisión.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Se documentó abuso de autoridad y agresión física.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar campañas de denuncia de abusos laborales.",
+    "Impulsar la capacitación en derechos laborales para trabajadores."
+  ],
+  "audience": "Público interesado en temas legales y de justicia social",
+  "tone": "Informativo y serio",
+  "content_style": "Periodístico",
+  "retention_devices": [
+    "Citas impactantes de la sentencia",
+    "Detalles escalofriantes de la agresión"
+  ],
+  "title_supporting_quotes": [
+    "La Fiscalía General de Justicia del Estado de México informó sobre la sentencia.",
+    "Miriam N, la víctima, denunció la agresión en redes sociales."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre el abuso de poder en la política local.",
+    "Desarrollar contenido educativo sobre derechos de los trabajadores."
+  ],
+  "risk_notes": [
+    "La exposición de figuras públicas puede provocar reacciones adversas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

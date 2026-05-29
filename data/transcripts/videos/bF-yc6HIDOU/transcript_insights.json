@@ -1,0 +1,83 @@
+{
+  "video_id": "bF-yc6HIDOU",
+  "language": "unknown",
+  "summary": "The video discusses the complexities of treating anorexia and body dysmorphia, highlighting that individuals with these conditions often do not perceive them as negative. It explains the compensatory behavior of hyper-control in anorexia, where individuals feel empowered by their starvation and maintain control over their bodies amid external chaos.",
+  "main_topics": [
+    "Anorexia treatment challenges",
+    "Body dysmorphia perception",
+    "Hyper-control in eating disorders",
+    "Impact of external chaos on self-control"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Introduce the topic of anorexia and its treatment challenges.",
+      "summary": "Anorexia and similar disorders are difficult to treat because sufferers often do not view their condition as a problem."
+    },
+    {
+      "section": "Understanding Anorexia",
+      "purpose": "Explain why anorexia is unique in its perception.",
+      "summary": "Unlike other mental health issues, anorexics often derive a sense of control from their disorder."
+    },
+    {
+      "section": "The Cycle of Control",
+      "purpose": "Discuss the compensatory behavior in those with anorexia.",
+      "summary": "A chaotic external world leads individuals to exert harsh control over their bodies."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize insights about anorexia and body dysmorphia.",
+      "summary": "The struggle with anorexia is deeply tied to a person's desire for control in an uncontrollable world."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocative statement",
+    "hook_text": "The problem with anorexia is they don't want it to be different.",
+    "why_it_works": "It challenges preconceived notions about the desire for change in those suffering from anorexia."
+  },
+  "claims": [
+    {
+      "claim": "Individuals with anorexia see their condition as a source of control.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The pain from starvation is perceived positively by those with anorexia.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "There is a correlation between external chaos and self-control in anorexia sufferers.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Increase awareness about the misconceptions of anorexia treatment.",
+    "Educate families about the internal motivations of individuals with eating disorders.",
+    "Develop strategies for therapists to help clients recognize their need for change."
+  ],
+  "audience": "Mental health professionals, families of individuals with eating disorders, general public interested in mental health.",
+  "tone": "Informative and empathetic",
+  "content_style": "Analytical and reflective",
+  "retention_devices": [
+    "Personal anecdotes",
+    "Statistic references",
+    "Emotional appeal"
+  ],
+  "title_supporting_quotes": [
+    "\"The more out of control we feel, the more brutal you will be with yourself.\"",
+    "\"The pain that you feel from starvation feels good. That means you are strong.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Workshops for mental health practitioners on anorexia treatment.",
+    "Awareness campaigns targeted at families of individuals with eating disorders.",
+    "Informational articles for mental health blogs."
+  ],
+  "risk_notes": [
+    "The risk of misinterpretation of treatment approaches for anorexia.",
+    "Sensitivity required when discussing the pain and control relationship in eating disorders."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

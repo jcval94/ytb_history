@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 872,
   "text_sha256": "604889b269e83d0831697c4db1a496cd440ec516a981e6242a87bc3cc5df4efa",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Mcqapl6aGEM\\transcript_segments.jsonl",
+  "segment_count": 10,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T23:00:30.298751+00:00",
+  "duration_seconds": 45.09000015258789
 }

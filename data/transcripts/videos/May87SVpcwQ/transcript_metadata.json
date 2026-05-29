@@ -1,0 +1,20 @@
+{
+  "video_id": "May87SVpcwQ",
+  "channel_id": "UCaVPhFg-Ax873wvhbNitsrQ",
+  "channel_name": "El Robot de Platón",
+  "title": "Y Si Encontramos Vida Extraterrestre...¿Y No nos Damos Cuenta?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\May87SVpcwQ.mp3",
+  "transcribed_at": "2026-05-29T22:51:44.033283+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 23344,
+  "text_sha256": "ac3200f58bee2842e11bcb02674970c45a2d31bb5eefdf45203534264ad7aad4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\May87SVpcwQ\\transcript_segments.jsonl",
+  "segment_count": 350,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T23:00:24.184926+00:00",
+  "duration_seconds": 1472.3299560546875
+}

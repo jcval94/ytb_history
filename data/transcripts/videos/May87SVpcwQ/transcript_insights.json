@@ -1,0 +1,101 @@
+{
+  "video_id": "May87SVpcwQ",
+  "language": "español",
+  "summary": "En este video, Aldo discute la complejidad de reconocer vida extraterrestre, enfatizando que nuestras concepciones de vida están limitadas por nuestra experiencia terrestre. Se exploran conceptos como biofirmas, astrobiología, y la posibilidad de que la vida pueda existir en formas muy distintas a las que conocemos.",
+  "main_topics": [
+    "Definición de vida",
+    "Astrobiología",
+    "Biofirmas",
+    "Limitaciones en la búsqueda de vida extraterrestre",
+    "Evolución y vida en otros mundos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y la problemática de buscar vida extraterrestre.",
+      "summary": "Aldo introduce el tema del video y la dificultad de encontrar vida simple en comparación con la vida inteligente."
+    },
+    {
+      "section": "La dificultad de definir vida",
+      "purpose": "Explorar cómo nuestras definiciones de vida se ven limitadas por nuestra experiencia.",
+      "summary": "Se discute la influencia de nuestro origen común en la percepción de lo que constituye la vida."
+    },
+    {
+      "section": "Astrobiología y biofirmas",
+      "purpose": "Explicar conceptos clave en la búsqueda de vida en el universo.",
+      "summary": "Se define la astrobiología y se introduce el concepto de biofirmas como señales que podrían indicar la presencia de vida."
+    },
+    {
+      "section": "Desafíos en Marte",
+      "purpose": "Ilustrar las complicaciones en la búsqueda de vida con ejemplos históricos.",
+      "summary": "Se detalla el caso de los experimentos de las sondas Viking y la interpretación de sus resultados."
+    },
+    {
+      "section": "La búsqueda en otros cuerpos celestes",
+      "purpose": "Explicar cómo se busca vida en lugares como Europa o exoplanetas.",
+      "summary": "Se detallan métodos como la espectroscopía de tránsito y los desafíos asociados."
+    },
+    {
+      "section": "La naturaleza de la evolución",
+      "purpose": "Analizar cómo la evolución puede manifestarse de maneras inesperadas.",
+      "summary": "Se discuten conceptos como la convergencia evolutiva y la variabilidad de la inteligencia."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Proseguir a un cierre reflexivo sobre el reconocimiento de vida.",
+      "summary": "Aldo destaca la importancia de ampliar nuestra perspectiva sobre lo que podemos considerar vida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Por qué es tan difícil encontrar vida simple en otros mundos?",
+    "why_it_works": "Captura la curiosidad del espectador al plantear una pregunta sobre un tema que fascina a muchos."
+  },
+  "claims": [
+    {
+      "claim": "Reconocer vida extraterrestre es complicado debido a nuestros prejuicios.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La búsqueda de vida debería estar basada en definiciones que no se limiten a la vida terrestre.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La vida puede existir en formas totalmente diferentes a las que conocemos.",
+      "support_level": "implicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Las sondas Viking de la NASA y sus resultados ambiguos en Marte.",
+    "Métodos de espectroscopía de tránsito para detectar gases en exoplanetas."
+  ],
+  "actionable_ideas": [
+    "Ampliar nuestras definiciones de vida en la búsqueda astrobiológica.",
+    "Investigar ambientes extremos en la Tierra como analogías para otros planetas.",
+    "Fomentar un enfoque agnóstico en la detección de vida extraterrestre."
+  ],
+  "audience": "Personas interesadas en astrobiología y ciencia en general.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Conversacional y accesible",
+  "retention_devices": [
+    "Narraciones históricas",
+    "Preguntas retóricas",
+    "Referencias a otras áreas científicas"
+  ],
+  "title_supporting_quotes": [
+    "La astrobiología no es solamente buscar aliens, es una forma de preguntarnos ¿Qué es la vida?",
+    "Podríamos no reconocer algunas formas de vida."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de material educativo sobre astrobiología.",
+    "Desarrollo de contenido sobre la historia de la exploración espacial."
+  ],
+  "risk_notes": [
+    "Es difícil establecer pruebas definitivas de vida extraterrestre.",
+    "Las expectativas sobre la vida extraterrestre pueden ser engañosas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

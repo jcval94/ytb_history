@@ -1,0 +1,14 @@
+{
+  "video_id": "UX_-CePQ8a4",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Russia pounds Ukraine’s capital with hypersonic missile",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\UX_-CePQ8a4.mp3",
+  "transcribed_at": "2026-05-29T22:52:02.466371+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 234,
+  "text_sha256": "ef4c2c5d06d83cbb9ec154c6c7d0a6eb8896003c0319b8c8d6bfdc3c306dd404",
+  "repo_schema_version": "transcript_metadata_v1"
+}

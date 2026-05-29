@@ -1,0 +1,86 @@
+{
+  "video_id": "qFKbw8DPjpo",
+  "language": "es",
+  "summary": "El video explora la disminución del consumo de alcohol en las generaciones más jóvenes, destacando un cambio cultural y social en relación con el consumo de bebidas alcohólicas y sus implicaciones para la industria de la fiesta.",
+  "main_topics": [
+    "disminución del consumo de alcohol",
+    "comportamiento generacional",
+    "cultura del control",
+    "impacto de las redes sociales",
+    "nuevas formas de socialización"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la problemática del consumo de alcohol.",
+      "summary": "Se plantea la pregunta sobre la razón detrás de la disminución del consumo de alcohol a nivel mundial."
+    },
+    {
+      "section": "Datos sobre el consumo",
+      "purpose": "Ofrecer evidencias del cambio en el consumo de alcohol.",
+      "summary": "Se presentan estadísticas de la OMS y consultoras sobre la caída del consumo de alcohol y el análisis por generaciones."
+    },
+    {
+      "section": "Generaciones y consumo",
+      "purpose": "Analizar el comportamiento específico de cada generación.",
+      "summary": "Se explican las diferencias de consumo entre la generación X, millennials y centennials, destacando a estos últimos como los que menos alcohol consumen."
+    },
+    {
+      "section": "Cultura del control",
+      "purpose": "Relacionar el comportamiento del consumidor actual con las redes sociales.",
+      "summary": "Se discute cómo la generación actual está influenciada por la presencia constante en redes sociales y la necesidad de controlar su imagen."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a la reflexión sobre el futuro de la industria.",
+      "summary": "Se cuestiona si estamos viendo el fin de la industria de la fiesta tradicional o el surgimiento de nuevas formas de socialización."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta provocativa",
+    "hook_text": "¿por qué el alcohol está perdiendo terreno en todo el mundo?",
+    "why_it_works": "Capta la atención del espectador al plantear una cuestión relevante y actual que invita a la reflexión."
+  },
+  "claims": [
+    {
+      "claim": "El consumo mundial de alcohol ha caído aproximadamente un 12% desde 2010.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los centennials son la generación que menos alcohol consume en la historia moderna.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La cultura del control está influyendo en las decisiones de consumo de la generación actual.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Considerar el impacto de las redes sociales en el comportamiento de consumo.",
+    "Explorar nuevas oportunidades en el mercado de bebidas no alcohólicas.",
+    "Fomentar espacios de socialización sin necesidad de alcohol."
+  ],
+  "audience": "jóvenes adultos y profesionales de la industria de bebidas.",
+  "tone": "informativo y reflexivo",
+  "content_style": "analítico y conversacional",
+  "retention_devices": [
+    "preguntas directas",
+    "datos estadísticos",
+    "análisis comparativo entre generaciones"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Artículos sobre tendencias de consumo.",
+    "Discusiones en redes sociales sobre el impacto cultural de las bebidas alcohólicas.",
+    "Infografías sobre el cambio en el consumo de alcohol por generaciones."
+  ],
+  "risk_notes": [
+    "Posible resistencia de sectores industriales establecidos.",
+    "Interpretaciones erróneas de la disminución del consumo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
