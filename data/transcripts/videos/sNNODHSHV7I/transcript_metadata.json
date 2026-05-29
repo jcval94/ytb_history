@@ -1,0 +1,14 @@
+{
+  "video_id": "sNNODHSHV7I",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La prueba de que juzgamos por prejuicios",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\sNNODHSHV7I.mp3",
+  "transcribed_at": "2026-05-29T06:04:58.440888+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 814,
+  "text_sha256": "203f8e4203301c6f21e8e9d497c3274cbc6902b452f69338801b62cf313def6e",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "9kFajdCW32Y",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La peor herramienta de manipulación masiva",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\9kFajdCW32Y.mp3",
+  "transcribed_at": "2026-05-29T05:47:50.393292+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1320,
+  "text_sha256": "344f40b2dc4218ac5c0582ea336a401216a06348730eb2133668bb7e15c58de2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\9kFajdCW32Y\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:18:23.984916+00:00",
+  "duration_seconds": 71.48999786376953
+}

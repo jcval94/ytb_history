@@ -1,0 +1,14 @@
+{
+  "video_id": "XX7PdJIGiCw",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Most Controversial Idea in Biology",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\XX7PdJIGiCw.mp3",
+  "transcribed_at": "2026-05-29T06:08:47.990553+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 28574,
+  "text_sha256": "ad4a5d85453785f71f9b856c0d494e24b23d5e456c3b9bb7bac4ecfe9a45bccb",
+  "repo_schema_version": "transcript_metadata_v1"
+}

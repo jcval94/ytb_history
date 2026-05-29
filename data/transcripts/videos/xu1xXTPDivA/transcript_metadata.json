@@ -1,0 +1,14 @@
+{
+  "video_id": "xu1xXTPDivA",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Tenemos que seguir o no nuestra intuición?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xu1xXTPDivA.mp3",
+  "transcribed_at": "2026-05-29T06:09:09.133292+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2027,
+  "text_sha256": "37aeacc4d43d171effe9bf9696e4e5f83525f9f57995eae24f4ba51d3161685b",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,93 @@
+{
+  "video_id": "n1G2FQ0UEqc",
+  "language": "es",
+  "summary": "El video analiza el impacto de la inteligencia artificial (IA) en el mercado laboral y el valor de las empresas. Se observa una desconexión entre el crecimiento del valor empresarial y la creación de nuevos empleos desde 2022. Se menciona una ola de despidos en empresas como Amazon y se cita un estudio del MIT sobre la reemplazabilidad de empleos por IA.",
+  "main_topics": [
+    "Impacto de la IA en el empleo",
+    "Desigualdad entre valor empresarial y creación de empleos",
+    "Desempleo y despidos masivos",
+    "Uso de IA en procesos de contratación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto sobre la relación entre el valor empresarial y la creación de empleo.",
+      "summary": "La línea naranja representa el valor de las empresas y la azul la creación de nuevos empleos, mostrando que tradicionalmente se movieron juntas."
+    },
+    {
+      "section": "Cambio a partir de 2022",
+      "purpose": "Destacar la ruptura de la relación tradicional entre el crecimiento empresarial y la creación de empleo.",
+      "summary": "Desde 2022, el valor empresarial se disparó mientras que la creación de empleos cayó drásticamente."
+    },
+    {
+      "section": "Caso de Amazon",
+      "purpose": "Ilustrar el impacto en empresas específicas.",
+      "summary": "Amazon anuncia la mayor ola de despidos en su historia, con planes de eliminar más de medio millón de empleos."
+    },
+    {
+      "section": "Índice Iceberg y estadísticas",
+      "purpose": "Presentar datos que apoyen el argumento.",
+      "summary": "El MIT estima que el 12% de los empleos en EE. UU. podrían ser reemplazados por IA."
+    },
+    {
+      "section": "Efecto en contrataciones",
+      "purpose": "Mostrar la disminución de contrataciones en empresas tecnológicas.",
+      "summary": "Compañías como Meta y Microsoft reducen sus contrataciones en un 25% respecto al año anterior."
+    },
+    {
+      "section": "Encuesta sobre percepción de la IA",
+      "purpose": "Explorar cómo las personas ven el cambio potencial en sus trabajos debido a la IA.",
+      "summary": "La mayoría de las personas cree que la IA cambiará sus trabajos, pero pocos saben usarla de manera eficaz."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Interrogante predictivo",
+    "hook_text": "¿Cómo la IA cambiará el empleo?",
+    "why_it_works": "Provoca curiosidad y hace que los espectadores reflexionen sobre su propio futuro laboral."
+  },
+  "claims": [
+    {
+      "claim": "El valor de las empresas ha aumentado mientras que la creación de empleo ha disminuido significativamente desde 2022.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Una gran proporción de empleos en EE. UU. podría ser reemplazada por IA.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El uso de IA en procesos de contratación está en aumento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Despedidos en Amazon",
+    "Reducción de contrataciones en Meta y Microsoft"
+  ],
+  "actionable_ideas": [
+    "Aprender a utilizar herramientas de IA para mejorar la empleabilidad.",
+    "Impulsar políticas que protejan a los trabajadores en la era de la IA."
+  ],
+  "audience": "Profesionales y estudiantes preocupados por el futuro del empleo en el contexto de la IA.",
+  "tone": "informativo y reflexivo",
+  "content_style": "analítico",
+  "retention_devices": [
+    "Estadísticas impactantes",
+    "Estudios de caso",
+    "Citas de expertos"
+  ],
+  "title_supporting_quotes": [
+    "El valor de las empresas se disparó y la creación de empleo se desplomó."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre el impacto de la IA en el empleo.",
+    "Desarrollar artículos sobre cómo adaptarse a la era de la IA."
+  ],
+  "risk_notes": [
+    "La obsolescencia laboral puede conducir a una crisis económica.",
+    "La falta de preparación en habilidades digitales puede agravar el desempleo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

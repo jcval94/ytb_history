@@ -1,0 +1,82 @@
+{
+  "video_id": "QMNsnB1z9CQ",
+  "language": "es",
+  "summary": "La crisis de la mediana edad no siempre ocurre en la mitad de la vida y puede ser un impulso para el crecimiento personal y profesional, indicando que es vital replantear nuestra trayectoria y adaptarse a los cambios.",
+  "main_topics": [
+    "Crisis de la mediana edad",
+    "Cambio personal y profesional",
+    "Replanteamiento de la vida",
+    "Expectativas de carrera"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la crisis",
+      "purpose": "Presentar el concepto de crisis de la mediana edad.",
+      "summary": "Se describe la sensación de vacío en diversas áreas de la vida."
+    },
+    {
+      "section": "Desmitificación de la carrera lineal",
+      "purpose": "Contrastar la antigua concepción de carreras.",
+      "summary": "Se argumenta que las carreras ya no son lineales debido a los cambios personales y en el mundo laboral."
+    },
+    {
+      "section": "El cambio como oportunidad",
+      "purpose": "Enfocar en el crecimiento personal.",
+      "summary": "El replanteamiento de la vida es presentado como una señal de crecimiento más que un fracaso."
+    },
+    {
+      "section": "Cierre y reflexión",
+      "purpose": "Invitar a la introspección sobre la dirección de la vida.",
+      "summary": "Se alienta a recalibrar las expectativas y el sentido de éxito."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión personal",
+    "hook_text": "No te echaron, pero el trabajo te empieza a parecer vacío.",
+    "why_it_works": "Captura la atención al conectar con emociones comunes y experiencias universales."
+  },
+  "claims": [
+    {
+      "claim": "La crisis de la mediana edad puede ocurrir en cualquier momento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Replantearse la vida es un signo de crecimiento.",
+      "support_level": "weak",
+      "risk": "medio"
+    },
+    {
+      "claim": "El futuro laboral requerirá habilidades que aún no tenemos.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reevaluar tus metas y objetivos personales.",
+    "Investigar nuevas áreas profesionales potenciales.",
+    "Practicar la autocompasión durante el proceso de cambio."
+  ],
+  "audience": "Adultos que se sienten insatisfechos con su vida laboral o personal.",
+  "tone": "Reflexivo y motivacional",
+  "content_style": "Conversacional y accesible",
+  "retention_devices": [
+    "Ejemplos de crisis habituales",
+    "Citas inspiradoras de expertos",
+    "Interacción emocional con la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "Replantearte la vida no es un fracaso, es una señal de que estás creciendo."
+  ],
+  "creative_reuse_opportunities": [
+    "Construir un taller sobre la gestión de crisis de mediana edad.",
+    "Escribir un artículo sobre el cambio profesional en adultos.",
+    "Crear un podcast sobre adaptaciones en la vida personal y profesional."
+  ],
+  "risk_notes": [
+    "El contenido puede ser sensible y provocar reflexión profunda.",
+    "Las afirmaciones sobre el crecimiento personal pueden ser interpretadas de manera negativa por algunos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

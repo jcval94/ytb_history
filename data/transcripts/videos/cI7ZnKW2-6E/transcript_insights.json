@@ -1,0 +1,76 @@
+{
+  "video_id": "cI7ZnKW2-6E",
+  "language": "es",
+  "summary": "El experimento de Muir con gallinas muestra que la competencia agresiva no siempre lleva al éxito; en cambio, la cooperación puede resultar en una producción más eficiente. Mientras las 'super gallinas' se autodestruían, las gallinas del grupo de control prosperaron al colaborar.",
+  "main_topics": [
+    "Experimento de Muir con gallinas",
+    "Efectos de la jerarquía en grupos",
+    "Cooperación vs. competencia",
+    "Producción eficiente en la naturaleza"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduce el experimento",
+      "purpose": "Presentar la premisa de selección de gallinas",
+      "summary": "Muir selecciona gallinas de alto rendimiento para maximizar la producción de huevos."
+    },
+    {
+      "section": "Desarrollo del experimento",
+      "purpose": "Demostrar el efecto de la competencia en el grupo de super gallinas",
+      "summary": "Las gallinas en el grupo A se vuelven agresivas y su producción disminuye."
+    },
+    {
+      "section": "Resultados del grupo de control",
+      "purpose": "Contrastar con el grupo de gallinas normales",
+      "summary": "Las gallinas mediocres cooperan y aumentan su producción sin violencia."
+    },
+    {
+      "section": "Conclusión del experimento",
+      "purpose": "Resumir las enseñanzas sobre competencia y cooperación",
+      "summary": "La cooperación resulta ser una estrategia más efectiva que la dominancia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿Qué podía fallar?",
+    "why_it_works": "Genera curiosidad sobre el experimento y sus implicaciones."
+  },
+  "claims": [
+    {
+      "claim": "La competencia agresiva no es efectiva para maximizar la producción.",
+      "support_level": "explicit",
+      "risk": "alta"
+    },
+    {
+      "claim": "La cooperación entre gallinas lleva a una mayor productividad.",
+      "support_level": "explicit",
+      "risk": "baja"
+    }
+  ],
+  "examples": [
+    "Las 'super gallinas' se vuelven agresivas.",
+    "El grupo de control produce un 160% más que al inicio."
+  ],
+  "actionable_ideas": [
+    "Fomentar la cooperación en equipos de trabajo.",
+    "Evitar la competencia desmedida en entornos laborales."
+  ],
+  "audience": "Curiosos interesados en la biología y la psicología social.",
+  "tone": "Reflexivo y educativo",
+  "content_style": "Narrativo y analítico",
+  "retention_devices": [
+    "Historias de éxito y fracaso",
+    "Comparaciones entre dos grupos"
+  ],
+  "title_supporting_quotes": [
+    "La cooperación había resultado ser la estrategia de producción más eficiente."
+  ],
+  "creative_reuse_opportunities": [
+    "Uso del experimento en presentaciones sobre trabajo en equipo.",
+    "Artículos sobre colaboración en entornos laborales."
+  ],
+  "risk_notes": [
+    "Posible malentendido sobre la competencia como única vía al éxito."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

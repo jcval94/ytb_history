@@ -1,0 +1,88 @@
+{
+  "video_id": "5eNB9Fm-KKI",
+  "language": "es",
+  "summary": "El video explora el concepto de 'bondad aleatoria y actos de belleza sin sentido' como un acto transformador tanto para el que lo realiza como para el que lo recibe, basado en la frase grabada por Anne Herbert en 1982.",
+  "main_topics": [
+    "Bondad aleatoria",
+    "Actos de belleza",
+    "Impacto emocional",
+    "Estudios científicos",
+    "Revolución personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del concepto",
+      "purpose": "Introducir la frase y el origen de la idea.",
+      "summary": "Se presenta la frase de Anne Herbert sobre la bondad aleatoria."
+    },
+    {
+      "section": "Ejemplos de actos de bondad",
+      "purpose": "Ilustrar cómo se pueden llevar a cabo estos actos.",
+      "summary": "Se describen ejemplos concretos de bondades inesperadas."
+    },
+    {
+      "section": "Beneficios de los actos",
+      "purpose": "Explicar los beneficios psicológicos de la bondad.",
+      "summary": "Se mencionan los estudios científicos que demuestran el impacto positivo en el ánimo."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con una reflexión sobre la necesidad de estos actos en el mundo actual.",
+      "summary": "Se resalta la importancia de la bondad en un mundo utilitarista."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita inspiradora",
+    "hook_text": "Practicá bondad aleatoria y actos de belleza sin sentido",
+    "why_it_works": "Captura la atención del espectador al proponer una idea contraria a las normas sociales habituales."
+  },
+  "claims": [
+    {
+      "claim": "Los actos de bondad aleatoria mejoran el ánimo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Realizar estos actos beneficia a ambos, al que da y al que recibe.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La bondad aleatoria es revolucionaria en un mundo utilitarista.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Escribir una nota anónima con un mensaje lindo y esconderla en un libro.",
+    "Dejar una flor en un escritorio sin firmar.",
+    "Pagar el café de un extraño en un bar."
+  ],
+  "actionable_ideas": [
+    "Realiza un acto de bondad inesperado esta semana.",
+    "Escribe notas de aliento y déjalas en lugares públicos.",
+    "Comparte tu experiencia de bondad aleatoria en redes sociales."
+  ],
+  "audience": "Personas interesadas en mejorar su bienestar emocional y fomentar una sociedad más amable.",
+  "tone": "Inspirador y positivo",
+  "content_style": "Narrativo y reflexivo",
+  "retention_devices": [
+    "Historias personales",
+    "Citas inspiradoras",
+    "Estadísticas positivas"
+  ],
+  "title_supporting_quotes": [
+    "Practicá bondad aleatoria y actos de belleza sin sentido.",
+    "Es un hecho simple y profundamente revolucionario."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenidos de motivación en redes sociales.",
+    "Desarrollar talleres sobre bondad y bienestar emocional.",
+    "Publicar un blog sobre actos de bondad cotidiana."
+  ],
+  "risk_notes": [
+    "Algunos actos de bondad pueden ser malinterpretados.",
+    "Es importante ser consciente del contexto social y cultural."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

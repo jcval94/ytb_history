@@ -1,0 +1,20 @@
+{
+  "video_id": "4GtWgxIcMmQ",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "El ORO nos está avisando de algo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\4GtWgxIcMmQ.mp3",
+  "transcribed_at": "2026-05-29T05:40:23.561068+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 23997,
+  "text_sha256": "5a28218806cebfa5d01e4b1d124edc02e7b4ea04785cbbad8baf253d37b9e4ef",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\4GtWgxIcMmQ\\transcript_segments.jsonl",
+  "segment_count": 333,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:13:38.340995+00:00",
+  "duration_seconds": 1577.1400146484375
+}

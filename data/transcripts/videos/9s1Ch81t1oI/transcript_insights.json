@@ -1,0 +1,74 @@
+{
+  "video_id": "9s1Ch81t1oI",
+  "language": "es",
+  "summary": "La historia de Grigory Perelman, un matemático que rechazó un premio de un millón de dólares tras resolver la conjetura de Poincaré, mientras vive en condiciones humildes y evita el contacto social.",
+  "main_topics": [
+    "Grigory Perelman",
+    "Conjetura de Poincaré",
+    "Inteligencia matemática",
+    "Rechazo de premios",
+    "Vida humilde"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Grigory Perelman",
+      "purpose": "Presentar al protagonista y su hazaña matemática.",
+      "summary": "Se introduce a Perelman, su elección de vida y sus logros."
+    },
+    {
+      "section": "Su rechazo al premio",
+      "purpose": "Explorar las razones detrás de su decisión.",
+      "summary": "Se plantea la pregunta sobre por qué rechazó un premio significativo."
+    },
+    {
+      "section": "Conclusión y llamada a la acción",
+      "purpose": "Invitar al espectador a conocer más sobre su historia.",
+      "summary": "Se anima al espectador a ver el vídeo completo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿por qué alguien rechazaría semejante fortuna viviendo al límite de la pobreza?",
+    "why_it_works": "Genera curiosidad sobre las motivaciones de Perelman."
+  },
+  "claims": [
+    {
+      "claim": "Perelman tiene un coeficiente intelectual extraordinario, posiblemente alrededor de 180.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Resolvío la conjetura de Poincaré, un problema del milenio.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Rechazó un premio de un millón de dólares por su aportación.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [],
+  "audience": "Personas interesadas en la matemática y biografías de genios.",
+  "tone": "Reflexivo y intrigante.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Preguntas intrigantes",
+    "Detalles sobre la vida de Perelman",
+    "Conexiones emocionales con el personaje"
+  ],
+  "title_supporting_quotes": [
+    "Grigory Perelman, uno de los genios matemáticos más brillantes de todos los tiempos.",
+    "Se estima que tiene un coeficiente intelectual extraordinario, posiblemente alrededor de 180."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la vida de Perelman",
+    "Documentales sobre matemáticos",
+    "Entradas en blogs sobre genialidad y vida sencilla."
+  ],
+  "risk_notes": [
+    "Pueden existir cuestionamientos sobre la precisión de su coeficiente intelectual."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

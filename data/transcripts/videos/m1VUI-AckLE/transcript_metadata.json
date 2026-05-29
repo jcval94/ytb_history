@@ -1,0 +1,20 @@
+{
+  "video_id": "m1VUI-AckLE",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué nos incomoda lo que es diferente?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\m1VUI-AckLE.mp3",
+  "transcribed_at": "2026-05-29T05:47:57.959491+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 695,
+  "text_sha256": "35deb864b9c4e16f94a8c01cd81583c406c685ed5e55f6ea7a7ae5958131932e",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\m1VUI-AckLE\\transcript_segments.jsonl",
+  "segment_count": 7,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:22:00.121316+00:00",
+  "duration_seconds": 34.849998474121094
+}

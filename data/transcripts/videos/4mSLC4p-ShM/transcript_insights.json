@@ -1,0 +1,95 @@
+{
+  "video_id": "4mSLC4p-ShM",
+  "language": "es",
+  "summary": "La historia de Grigory Perelman, un genio matemático que rechazó un millón de dólares por resolver la conjetura de Poincaré y se aisló del reconocimiento y la fama.",
+  "main_topics": [
+    "Grigory Perelman",
+    "Conjetura de Poincaré",
+    "Rechazo de premios",
+    "Historia matemática",
+    "Desarrollo personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Perelman",
+      "purpose": "Establecer quién es Perelman y su decisión de rechazar un premio",
+      "summary": "Presentación de Grigory Perelman como un matemático único que rechazó el reconocimiento y el dinero."
+    },
+    {
+      "section": "Infancia y educación",
+      "purpose": "Contextualizar el desarrollo de Perelman",
+      "summary": "Describir su niñez, la influencia de su familia y su precoz talento en matemáticas."
+    },
+    {
+      "section": "Carrera en matemáticas",
+      "purpose": "Detallar sus logros académicos y su importancia en el ámbito matemático",
+      "summary": "Desde sus competencias juveniles hasta su doctorado y la búsqueda de resolver problemas complejos."
+    },
+    {
+      "section": "La Conjetura de Poincaré",
+      "purpose": "Explicar la relevancia del problema que resolvió",
+      "summary": "Describir el impacto de Poincaré en la comunidad matemática y su historia."
+    },
+    {
+      "section": "Su vida en EE.UU.",
+      "purpose": "Mostrar su paso por América y el contraste con su regreso a Rusia",
+      "summary": "Perelman en universidades prestigiosas y su decisión de volver a su país."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre su legado y decisiones",
+      "summary": "La contradicción entre su éxito académico y su vida personal alejada del reconocimiento."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta retórica",
+    "hook_text": "¿Por qué alguien rechazaría semejante fortuna viviendo al límite de la pobreza?",
+    "why_it_works": "Invita a la curiosidad y al interés del público por descubrir motivaciones ocultas."
+  },
+  "claims": [
+    {
+      "claim": "Perelman tiene un coeficiente intelectual de aproximadamente 180.",
+      "support_level": "implicit",
+      "risk": "no hay datos concretos"
+    },
+    {
+      "claim": "Resolvió la conjetura de Poincaré, el único de los siete problemas del milenio resuelto hasta ahora.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Su rechazo a premios y fama es inusual en el contexto de los matemáticos exitosos.",
+      "support_level": "weak",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    ""
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre Grigory Perelman y sus contribuciones a la matemática.",
+    "Reflexionar sobre el impacto del reconocimiento en la vida de las personas.",
+    "Explorar la importancia de la soledad en la creatividad y el pensamiento profundo."
+  ],
+  "audience": "Curiosos de la matemática y la ciencia",
+  "tone": "reflexivo",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Citas inspiradoras",
+    "Flashbacks a la infancia"
+  ],
+  "title_supporting_quotes": [
+    "\"Grigory Perelman vive apartado junto a su madre en el mismo y modesto apartamento donde desentrañó uno de los enigmas más complejos\".",
+    "\"Las matemáticas eran un símbolo de orgullo nacional, como el ajedrez o la carrera espacial\"."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear videos educativos sobre la conjetura de Poincaré.",
+    "Desarrollar contenido en formato podcast sobre la vida de genios matemáticos."
+  ],
+  "risk_notes": [
+    "La falta de veracidad en las afirmaciones sobre su coeficiente intelectual.",
+    "Los temas abordados pueden resultar sensibles debido a su contexto histórico."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "tWRyiCP17do",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Why didn't this skateboard stunt start from the top?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\tWRyiCP17do.mp3",
+  "transcribed_at": "2026-05-29T06:11:26.142176+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1269,
+  "text_sha256": "30a9699907d7589b2247eb5a5b37dd85c71be324fb1e9769aec7a03c4a9ece4d",
+  "repo_schema_version": "transcript_metadata_v1"
+}

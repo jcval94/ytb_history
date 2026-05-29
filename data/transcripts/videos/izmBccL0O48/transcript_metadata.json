@@ -1,0 +1,20 @@
+{
+  "video_id": "izmBccL0O48",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El test mental que puede cambiar cómo decidís",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\izmBccL0O48.mp3",
+  "transcribed_at": "2026-05-29T05:37:39.602293+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1784,
+  "text_sha256": "99177bc366702604afd8ea7bcb8a8a9c74898fe3317c16f8b064a5c6e86f3a4d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\izmBccL0O48\\transcript_segments.jsonl",
+  "segment_count": 32,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:20:27.510802+00:00",
+  "duration_seconds": 90.31999969482422
+}

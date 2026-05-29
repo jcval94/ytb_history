@@ -1,0 +1,14 @@
+{
+  "video_id": "voh3RzOr9_M",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La única regla para que tu intuición no te arruine",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\voh3RzOr9_M.mp3",
+  "transcribed_at": "2026-05-29T05:48:23.151673+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 822,
+  "text_sha256": "255b09b1c3cc35ecd63276f18a94869cf7afe9daaf74d65885778e11efdb5cbd",
+  "repo_schema_version": "transcript_metadata_v1"
+}

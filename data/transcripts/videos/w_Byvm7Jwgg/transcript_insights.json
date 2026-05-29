@@ -1,0 +1,85 @@
+{
+  "video_id": "w_Byvm7Jwgg",
+  "language": "es",
+  "summary": "La historia de Sylvester Stallone, quien, a pesar de estar en una situación crítica, luchó por alcanzar su sueño y recuperó a su perro en el proceso.",
+  "main_topics": [
+    "Dificultades financieras de Stallone",
+    "Creación del guion de Rocky",
+    "Recuperación del perro"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación inicial de Stallone.",
+      "summary": "Se menciona cómo Stallone estaba tan arruinado que vendió a su perro para sobrevivir."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Destacar la lucha y dedicación de Stallone.",
+      "summary": "Stallone vivía en una estación de autobuses mientras escribía el guion de Rocky."
+    },
+    {
+      "section": "Clímax",
+      "purpose": "Revelar el sacrificio personal de Stallone.",
+      "summary": "Una vez vendido el guion, Stallone intenta recuperar a su perro, enfrentándose a un costo elevado."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a conocer más sobre la vida de Stallone.",
+      "summary": "El relato de Stallone es solo el inicio y se invita a los espectadores a seguir su historia en YouTube."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Sylvester Stallone estaba tan arruinado que tuvo que vender a su propio perro",
+    "why_it_works": "Crea empatía y curiosidad acerca de la situación desesperada de Stallone."
+  },
+  "claims": [
+    {
+      "claim": "Stallone vendió a su perro por 60 dólares.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Stallone escribió el guion de Rocky en una libreta vieja.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Stallone pagó 15,000 dólares para recuperar a su perro.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El perro aparece en la película Rocky.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "El impacto emocional de la historia de Stallone.",
+    "Historias de superación personal y perseverancia."
+  ],
+  "actionable_ideas": [
+    "Explorar la historia completa de Stallone en YouTube.",
+    "Investigar sobre otros personajes que superaron adversidades."
+  ],
+  "audience": "Personas interesadas en historias de superación y cine.",
+  "tone": "Inspirador",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Anécdotas impactantes",
+    "Emociones fuertes"
+  ],
+  "title_supporting_quotes": [
+    "El sacrificio y la lucha por los sueños."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido inspirador sobre historias similares.",
+    "Realizar un documental sobre la perseverancia en el cine."
+  ],
+  "risk_notes": [
+    "Posible escepticismo sobre la veracidad de algunos detalles."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

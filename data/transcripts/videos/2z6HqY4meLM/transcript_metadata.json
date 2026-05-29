@@ -1,0 +1,20 @@
+{
+  "video_id": "2z6HqY4meLM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El otro tipo de pobreza que tenés y no sabés",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2z6HqY4meLM.mp3",
+  "transcribed_at": "2026-05-29T05:51:08.498559+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1073,
+  "text_sha256": "40be39f527139302c8fc01d9eac438492dfc177e5e8fd1538defd89f5496a041",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2z6HqY4meLM\\transcript_segments.jsonl",
+  "segment_count": 18,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:11:51.641923+00:00",
+  "duration_seconds": 55.029998779296875
+}

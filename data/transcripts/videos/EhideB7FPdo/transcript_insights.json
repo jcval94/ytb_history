@@ -1,0 +1,86 @@
+{
+  "video_id": "EhideB7FPdo",
+  "language": "es",
+  "summary": "El video expone los efectos del ritmo acelerado de vida en ciudades como Madrid, Ciudad de México y Buenos Aires, resaltando la comparación de la velocidad al caminar y el impacto en la calidad de vida.",
+  "main_topics": [
+    "Estudio del MIT",
+    "Aumento de la velocidad al caminar",
+    "Impacto del ritmo de vida en la sociedad",
+    "Tecnología y su influencia en la percepción del tiempo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al estudio del MIT",
+      "purpose": "Presentar el contexto y los datos iniciales",
+      "summary": "Un análisis revela el cambio en la velocidad de caminata y el tiempo de interacción social en ciudades."
+    },
+    {
+      "section": "Descripción del estilo de vida actual",
+      "purpose": "Contrastación entre oportunidades y la falta de tiempo",
+      "summary": "Se explora cómo las grandes ciudades ofrecen oportunidades a costa del tiempo personal."
+    },
+    {
+      "section": "Impacto social de la vida acelerada",
+      "purpose": "Discutir la percepción social del tiempo y el trabajo",
+      "summary": "Se analiza cómo la cultura de la ocupación ha generado una especie de prestigio social."
+    },
+    {
+      "section": "Consecuencias del ritmo acelerado",
+      "purpose": "Advertir sobre los efectos negativos",
+      "summary": "Se menciona cómo el ritmo forzado afecta la salud física y mental."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Data-driven insight",
+    "hook_text": "Aumento del 15% en la velocidad al caminar",
+    "why_it_works": "Proporciona un dato impactante que genera curiosidad sobre el cambio en la sociedad."
+  },
+  "claims": [
+    {
+      "claim": "La velocidad al caminar ha aumentado un 15% desde 1980.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Vivir en grandes ciudades reduce el tiempo de descanso y socialización.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La adicción al trabajo es ahora socialmente reconocida como prestigiosa.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "En Madrid, muchos caminan apurados en las calles.",
+    "En la autopista, los conductores utilizan luces para presionar a otros."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre el uso del tiempo personal.",
+    "Priorizar momentos de tranquilidad en la rutina diaria.",
+    "Fomentar espacios de interacción social sin prisa."
+  ],
+  "audience": "Personas que viven en grandes ciudades o sufren del síndrome del estrés por tiempo.",
+  "tone": "Analítico y reflexivo",
+  "content_style": "Informativo y persuasivo",
+  "retention_devices": [
+    "Datos estadísticos impactantes",
+    "Ejemplos cotidianos",
+    "Preguntas provocativas"
+  ],
+  "title_supporting_quotes": [
+    "\"Hoy presumir de no tener tiempo se volvió una medalla de honor.\"",
+    "\"Forzar el cuerpo y el cerebro a un ritmo que no fueron diseñados para soportar, la factura siempre llega.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la calidad de vida en ciudades",
+    "Charlas sobre el tema de la productividad y el bienestar",
+    "Infografías sobre el ritmo de vida y el tiempo libre"
+  ],
+  "risk_notes": [
+    "Posible resistencia a aceptar la necesidad de desacelerar.",
+    "Algunas audiencias pueden no verse reflejadas en el mensaje."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

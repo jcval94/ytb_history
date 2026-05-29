@@ -1,0 +1,83 @@
+{
+  "video_id": "71qdA37nOT0",
+  "language": "es",
+  "summary": "El video discute la desigualdad potencial en la expectativa de vida que podría surgir con avances en tratamientos de longevidad, donde un grupo selecto podría vivir mucho más tiempo mientras que otros no. También plantea la necesidad de repensar estructuras sociales y económicas ante el aumento de la longevidad.",
+  "main_topics": [
+    "Desigualdad en la expectativa de vida",
+    "Impacto de la longevidad en la sociedad",
+    "Acceso a tratamientos de envejecimiento",
+    "Reformas sociales necesarias"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la desigualdad en la esperanza de vida",
+      "purpose": "Presentar el problema de la desigualdad en la expectativa de vida entre diferentes barrios.",
+      "summary": "Se menciona que la expectativa de vida varía significativamente entre barrios en ciudades como Buenos Aires y Ciudad de México."
+    },
+    {
+      "section": "Avances en la longevidad",
+      "purpose": "Introducir la idea de que la longevidad podría duplicarse en el futuro cercano.",
+      "summary": "Dario Amodei sugiere que podríamos duplicar la expectativa de vida en los próximos años gracias a nuevos tratamientos."
+    },
+    {
+      "section": "Consecuencias sociales de la longevidad",
+      "purpose": "Explorar las implicaciones de una vida más larga en la estructura social.",
+      "summary": "Se cuestiona cómo se manejarán recursos como pensiones y salud pública si la expectativa de vida se extiende significativamente."
+    },
+    {
+      "section": "Ética y acceso a la longevidad",
+      "purpose": "Discutir la ética del acceso a tratamientos que aumentan la vida.",
+      "summary": "Se plantea que si el aumento de vida se convierte en un privilegio, podría generar una traición éticamente cuestionable a la sociedad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "En Buenos Aires, los de Recoleta viven siete años más que los de Villa Lugano.",
+    "why_it_works": "Captura la atención del espectador al revelar inequidades en la sociedad que podrían ser desconocidas o sorprendentes."
+  },
+  "claims": [
+    {
+      "claim": "La esperanza de vida puede variar más de diez años entre barrios de una misma ciudad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Podríamos doblar la expectativa de vida en solo cinco años.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La desigualdad ante la muerte podría aumentar con la posibilidad de vivir más.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover el acceso equitativo a tratamientos de longevidad.",
+    "Reformular políticas públicas para adaptarse a una población que vive más tiempo.",
+    "Fomentar un debate ético sobre la longevidad y su impacto en la sociedad."
+  ],
+  "audience": "Público general interesado en temas de salud, longevidad y desigualdad social.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Informativo y provocativo",
+  "retention_devices": [
+    "Estadísticas impactantes",
+    "Preguntas provocativas",
+    "Narrativas sobre el futuro"
+  ],
+  "title_supporting_quotes": [
+    "Si vivir más se vuelve posible, la primera pregunta no es cómo, es quién.",
+    "Si vivir más es el privilegio supremo, dejar que sea exclusivo sería la traición más grande."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre la ética de la longevidad.",
+    "Charlas y conferencias sobre políticas de salud pública.",
+    "Documentales que exploren el impacto social de la longevidad."
+  ],
+  "risk_notes": [
+    "El aumento de desigualdades podría generar tensiones sociales.",
+    "Reformas necesarias podrían ser difíciles de implementar debido a la resistencia política."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

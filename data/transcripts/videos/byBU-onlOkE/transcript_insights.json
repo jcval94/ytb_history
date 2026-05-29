@@ -1,0 +1,97 @@
+{
+  "video_id": "byBU-onlOkE",
+  "language": "es",
+  "summary": "Este episodio analiza cómo la aceleración del ritmo de vida en la sociedad moderna ha transformado nuestras prioridades, salud, y relaciones, impulsados por una cultura que premia la ocupación constante como símbolo de éxito. Se enfatiza la necesidad de recuperar el control y buscar una vida más tranquila.",
+  "main_topics": [
+    "La invención del apuro",
+    "La velocidad es contagiosa",
+    "El precio de vivir corriendo",
+    "La mentira de la productividad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el tema y conectar emocionalmente con la audiencia.",
+      "summary": "Se presenta el problema del ritmo acelerado de la vida moderna y se plantea la posibilidad de recuperar el control."
+    },
+    {
+      "section": "Parte 1: La invención del apuro",
+      "purpose": "Explorar cómo la percepción del tiempo cambió a lo largo de la historia.",
+      "summary": "Se explica cómo la revolución industrial introdujo la idea de que el tiempo es dinero, incrementando la obsesión por la productividad."
+    },
+    {
+      "section": "Parte 2: La velocidad es contagiosa",
+      "purpose": "Demostrar cómo la prisa se propaga en la sociedad.",
+      "summary": "Se discute cómo el apuro de las personas influye en el comportamiento social, afectando la calidad de las interacciones."
+    },
+    {
+      "section": "Parte 3: El precio de vivir corriendo",
+      "purpose": "Analizar las consecuencias del estrés crónico en la salud mental y física.",
+      "summary": "Se presenta el costo del ritmo acelerado en la salud, la mente y las relaciones personales."
+    },
+    {
+      "section": "Parte 4: La mentira de la productividad",
+      "purpose": "Desmitificar la noción de que la tecnología facilita más tiempo para uno mismo.",
+      "summary": "Se argumenta que, a pesar de los avances tecnológicos, la carga de trabajo ha aumentado, borrando fronteras entre vida laboral y personal."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar con un mensaje sobre la necesidad de cambiar la perspectiva sobre el tiempo.",
+      "summary": "Se insta a la audiencia a reconsiderar su relación con el tiempo y la productividad en busca de una vida más equilibrada."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Si sentís que tu vida es una película en cámara rápida y el tiempo se te escurre entre los dedos, no estás solo.",
+    "why_it_works": "Conecta directamente con la experiencia común de la audiencia sobre la sensación de prisa, haciéndolos cuestionar su propia situación."
+  },
+  "claims": [
+    {
+      "claim": "7 de cada 10 personas viven a mil.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El estrés es la epidemia del siglo XXI.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Vivir apurados nos roba humanidad.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "La comparación de la velocidad caminando en ciudades entre 1980 y 2010.",
+    "Estudio de Harvard sobre la cultura de la agenda llena.",
+    "Experimento de empatía entre estudiantes."
+  ],
+  "actionable_ideas": [
+    "Establecer límites claros entre trabajo y vida personal.",
+    "Practicar la atención plena para reducir la sensación de prisa.",
+    "Fomentar pausas regulares en el día."
+  ],
+  "audience": "Personas adultas que sienten que su vida es demasiado acelerada.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo y persuasivo.",
+  "retention_devices": [
+    "Historias personales",
+    "Estadísticas impactantes",
+    "Experimentos sociales"
+  ],
+  "title_supporting_quotes": [
+    "Nos vendieron la estafa de que estar siempre ocupados es sinónimo de éxito.",
+    "La prisa nos roba salud, nos roba paz mental y peor aún, nos roba humanidad."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre manejo del tiempo y productividad.",
+    "Charlas y talleres sobre desaceleración y mindfulness.",
+    "Creación de una serie de videos enfocados en el bienestar mental."
+  ],
+  "risk_notes": [
+    "Los mensajes sobre el estrés pueden causar ansiedad en la audiencia.",
+    "La crítica a la cultura laboral podría no resonar con todos los sectores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

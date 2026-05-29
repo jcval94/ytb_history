@@ -1,0 +1,70 @@
+{
+  "video_id": "voh3RzOr9_M",
+  "language": "es",
+  "summary": "El video explora cómo la intuición puede ser una herramienta útil en la toma de decisiones, pero advierte sobre su uso cuando falta experiencia en el ámbito correspondiente.",
+  "main_topics": [
+    "Intuición",
+    "Toma de decisiones",
+    "Experiencia",
+    "Riesgos de la intuición"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Enganchar al espectador",
+      "summary": "Plantea la idea de que las decisiones pueden ser erróneas a pesar de la confianza en la intuición."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explicar el funcionamiento de la intuición",
+      "summary": "Explica cómo la experiencia influye en la eficacia de la intuición y cuándo se debe confiar en ella."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Advertir sobre riesgos",
+      "summary": "Aconseja no confiar ciegamente en la intuición si se carece de experiencia."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Les pasó alguna vez tomar una decisión muy convencido y irse al pasto mal?",
+    "why_it_works": "Invita a la reflexión personal, creando una conexión emocional con la audiencia."
+  },
+  "claims": [
+    {
+      "claim": "La intuición puede guiar decisiones correctas cuando hay experiencia.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Falta de experiencia puede llevar a decisiones erradas basadas en la intuición.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Refuerza tu experiencia en el área para mejorar tu intuición.",
+    "No te apresures a confiar en tu intuición en campos donde no tienes experiencia."
+  ],
+  "audience": "Personas interesadas en autoayuda y toma de decisiones.",
+  "tone": "Reflexivo y educativo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos de situaciones cotidianas",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "La intuición no es magia, las personas tenemos intuición.",
+    "El cerebro ya te tira lo que tenés que hacer, porque te dedicaste un montón de tiempo a eso."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre intuición y experiencia.",
+    "Desarrollar contenido en redes sociales sobre la toma de decisiones."
+  ],
+  "risk_notes": [
+    "Confiar en la intuición sin experiencia puede llevar a errores significativos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

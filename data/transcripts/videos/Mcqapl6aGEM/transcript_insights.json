@@ -1,0 +1,73 @@
+{
+  "video_id": "Mcqapl6aGEM",
+  "language": "es",
+  "summary": "El video narra la historia de Stallone, quien superó múltiples rechazos en Hollywood debido a sus dificultades físicas y logró crear el personaje de Rocky, que refleja su propia lucha y perseverancia.",
+  "main_topics": [
+    "Superación personal",
+    "Historia de Stallone",
+    "Creación de Rocky"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la vida de Stallone",
+      "purpose": "Presentar el contexto de las dificultades de Stallone al nacer y crecer.",
+      "summary": "Stallone nació con complicaciones que afectaron su desarrollo y su imagen en audiciones."
+    },
+    {
+      "section": "Desafíos en Hollywood",
+      "purpose": "Ilustrar los rechazos que enfrentó Stallone en su carrera.",
+      "summary": "Stallone fue rechazado numerosas veces por no cumplir con el perfil esperado de héroe."
+    },
+    {
+      "section": "Creación del personaje de Rocky",
+      "purpose": "Mostrar el giro en la historia de Stallone.",
+      "summary": "Stallone decide crear el personaje de Rocky, quien refleja su propia lucha."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Motivar al espectador a seguir la historia.",
+      "summary": "Invita a la audiencia a descubrir más sobre otras historias en su canal."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal Anecdote",
+    "hook_text": "Stallone casi no tendría que haber nacido.",
+    "why_it_works": "Captura la atención al presentar un hecho impactante sobre el famoso actor, generando curiosidad."
+  },
+  "claims": [
+    {
+      "claim": "Stallone enfrentó rechazos en Hollywood por su forma de hablar.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Rocky es un reflejo de la vida de Stallone.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Crear contenido sobre historias de superación personal.",
+    "Incorporar anécdotas inspiradoras en videos motivacionales.",
+    "Fomentar la creación de personajes únicos basados en experiencias personales."
+  ],
+  "audience": "Interesados en historias de superación y cine",
+  "tone": "Inspirador",
+  "content_style": "Narrativo y emotivo",
+  "retention_devices": [
+    "Uso de anécdotas personales",
+    "Desenlace intrigante"
+  ],
+  "title_supporting_quotes": [
+    "Stallone hizo lo único que podía hacer. Escribir un personaje a su medida."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear mini-documentales sobre figuras emblemáticas de Hollywood.",
+    "Hacer series sobre la creación de personajes inspiradores en el cine."
+  ],
+  "risk_notes": [
+    "La historia podría no resonar con quienes no conocen a Stallone."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

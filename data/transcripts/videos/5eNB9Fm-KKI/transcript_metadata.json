@@ -1,0 +1,20 @@
+{
+  "video_id": "5eNB9Fm-KKI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Un simple acto puede cambiarte el día",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5eNB9Fm-KKI.mp3",
+  "transcribed_at": "2026-05-29T06:05:07.953730+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1072,
+  "text_sha256": "5f43724a44247909aa0b7bf86e042d5ec36348801b941176cdb793a889f79f4b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5eNB9Fm-KKI\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:15:08.889956+00:00",
+  "duration_seconds": 58.4900016784668
+}

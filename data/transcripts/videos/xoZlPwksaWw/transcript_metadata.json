@@ -1,0 +1,14 @@
+{
+  "video_id": "xoZlPwksaWw",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El lado oscuro de la fama",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xoZlPwksaWw.mp3",
+  "transcribed_at": "2026-05-29T05:38:07.357587+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 860,
+  "text_sha256": "fa34459fac34fd68a4af4913267d5dc3abb33ee314f7874457e3f1e962842b25",
+  "repo_schema_version": "transcript_metadata_v1"
+}

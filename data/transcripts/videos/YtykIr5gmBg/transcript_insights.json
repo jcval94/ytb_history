@@ -1,0 +1,77 @@
+{
+  "video_id": "YtykIr5gmBg",
+  "language": "es",
+  "summary": "El video aborda cómo la exposición constante a imágenes retocadas y estándares imposibles de belleza afecta negativamente la autoestima y la intimidad, afectando tanto a hombres como a mujeres.",
+  "main_topics": [
+    "Cuerpos retocados",
+    "Impacto del Photoshop",
+    "Superestímulos sexuales",
+    "Autoestima",
+    "Cosificación de mujeres",
+    "Inseguridades masculinas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la problemática de los cuerpos retocados.",
+      "summary": "La introducción expone cómo el entorno visual actual está saturado de imágenes de belleza inalcanzables."
+    },
+    {
+      "section": "Impacto en la autoestima",
+      "purpose": "Analizar las consecuencias de los estándares de belleza.",
+      "summary": "Se discute cómo la comparación con estos ideales genera vergüenza y pérdida de deseo."
+    },
+    {
+      "section": "Consecuencias para hombres y mujeres",
+      "purpose": "Resaltar la afectación en ambos géneros.",
+      "summary": "Se menciona que tanto mujeres como hombres sufren presiones de imagen que afectan su bienestar psicológico."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "4 de cada 10 se sienten incómodos con su peso y 8 de cada 10 con su musculatura.",
+    "why_it_works": "Estas cifras impactan y hacen relatable el tema al público, generando empatía."
+  },
+  "claims": [
+    {
+      "claim": "Los estándares de belleza modernos afectan la autoestima.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Tanto hombres como mujeres sufren por la cosificación.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Presión de redes sociales en la imagen corporal",
+    "Impacto del Photoshop en la percepción de belleza"
+  ],
+  "actionable_ideas": [
+    "Fomentar la aceptación del cuerpo real.",
+    "Reducir el consumo de contenido editado.",
+    "Promover imágenes que celebren la diversidad corporal."
+  ],
+  "audience": "Personas interesadas en la salud mental y la body positivity.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y persuasivo",
+  "retention_devices": [
+    "Citas impactantes",
+    "Datos estadísticos",
+    "Ejemplos de la vida real"
+  ],
+  "title_supporting_quotes": [
+    "Hoy vivimos rodeados de cuerpos retocados que convierten a cualquiera en un modelo imposible.",
+    "Los superestímulos sexuales nos prometen deseo, pero dinamitan la autoestima."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear material educativo sobre imagen corporal.",
+    "Desarrollar campañas de concienciación sobre la aceptación personal."
+  ],
+  "risk_notes": [
+    "El tema puede ser desencadenante para algunas personas.",
+    "El enfoque crítico puede causar resistencia en quienes defienden los estándares actuales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

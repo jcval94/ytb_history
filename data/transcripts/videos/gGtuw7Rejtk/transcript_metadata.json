@@ -1,0 +1,20 @@
+{
+  "video_id": "gGtuw7Rejtk",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "How Strong Is Super Glue?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\gGtuw7Rejtk.mp3",
+  "transcribed_at": "2026-05-29T05:48:36.912270+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 538,
+  "text_sha256": "6064836e028b679faae6d7dca5bc9cc7bc2c7d61bfe903040e27ef04125bfbfb",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\gGtuw7Rejtk\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:20:20.431889+00:00",
+  "duration_seconds": 43.22999954223633
+}

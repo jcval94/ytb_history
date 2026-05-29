@@ -1,0 +1,14 @@
+{
+  "video_id": "xG9zu5Iv6Lg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La IA puede APAGARTE el cerebro",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\xG9zu5Iv6Lg.mp3",
+  "transcribed_at": "2026-05-29T05:59:18.295027+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1402,
+  "text_sha256": "1ea11c1e2249d4c042c58f525632c2d50bb109d6215e4ce156497a7cf56323e8",
+  "repo_schema_version": "transcript_metadata_v1"
+}

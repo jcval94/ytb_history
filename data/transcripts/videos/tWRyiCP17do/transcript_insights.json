@@ -1,0 +1,84 @@
+{
+  "video_id": "tWRyiCP17do",
+  "language": "unknown",
+  "summary": "Sandro Diaz is preparing to drop from the world's largest quarter pipe, revealing the challenges of high-speed skating and the physics behind it. He discusses the impossibility of dropping from the very top due to a 10-meter freefall and the complications of speed wobbles at high speeds.",
+  "main_topics": [
+    "Sandro Diaz's skateboarding feat",
+    "Physics of high-speed skating",
+    "Challenges of speed wobbles",
+    "Shock absorbers in skateboarding"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to Sandro Diaz",
+      "purpose": "Introduce the subject and scenario",
+      "summary": "Presenting Sandro as a skateboarder about to attempt a significant drop."
+    },
+    {
+      "section": "Discussion of the drop height",
+      "purpose": "Explain the reasoning behind not dropping from the top",
+      "summary": "Sandro explains the dangers of a 10-meter freefall."
+    },
+    {
+      "section": "Physics explanation",
+      "purpose": "Detail the science behind skating at high speeds",
+      "summary": "The impact of speed on board stability and the risk of speed wobbles."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize the challenges faced by Sandro",
+      "summary": "Highlighting the equipment used to mitigate risks and the reality of falls during training."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing scenario",
+    "hook_text": "Sandro Diaz about to drop in from the world's largest quarter pipe.",
+    "why_it_works": "Captivates the audience's attention due to the extreme nature of the stunt."
+  },
+  "claims": [
+    {
+      "claim": "Dropping from the top would be virtually impossible.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Speed wobbles worsen at high speeds due to vibrations.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Sandro reached a top speed of 104 km/h.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "High speed needing super firm shock absorbers",
+    "The distinct challenge of balancing at over 30 km/h"
+  ],
+  "actionable_ideas": [
+    "Adapt skateboarding gear to handle high speeds",
+    "Educate skaters about the physics of speed for safer practices",
+    "Implement better shock absorption technologies in skateboards"
+  ],
+  "audience": "Skateboarding enthusiasts, sports science students, adventure sports fans",
+  "tone": "Informative and thrilling",
+  "content_style": "Narrative, with a focus on physics and personal experience",
+  "retention_devices": [
+    "Real-life application of physics to skateboarding",
+    "Personal anecdotes from Sandro"
+  ],
+  "title_supporting_quotes": [
+    "It would have been virtually impossible.",
+    "The board starts to shake violently underneath your feet."
+  ],
+  "creative_reuse_opportunities": [
+    "Educational content about physics in sports",
+    "Motivational stories of overcoming challenges in extreme sports"
+  ],
+  "risk_notes": [
+    "High-speed risks involved in skateboarding",
+    "Falls during training can lead to serious injuries"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

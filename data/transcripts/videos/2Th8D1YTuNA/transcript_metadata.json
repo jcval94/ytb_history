@@ -1,0 +1,20 @@
+{
+  "video_id": "2Th8D1YTuNA",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El miedo a la IA que esta frenando a las empresas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2Th8D1YTuNA.mp3",
+  "transcribed_at": "2026-05-29T06:11:17.262592+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1110,
+  "text_sha256": "dd869a01a2e29eb55649ff25d0f06b4547e533b5c05d4714b6447cb4bef32ec9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2Th8D1YTuNA\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:11:46.982944+00:00",
+  "duration_seconds": 54.04999923706055
+}

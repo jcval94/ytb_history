@@ -1,0 +1,20 @@
+{
+  "video_id": "9s1Ch81t1oI",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "RECHAZÓ $1.000.000: La Historia Más LOCA de un Genio Matemático 🤪",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\9s1Ch81t1oI.mp3",
+  "transcribed_at": "2026-05-29T06:05:24.518895+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 976,
+  "text_sha256": "5e4c4a22d53ea776b8eebadf0eee73c15530bc1cbb651c1e90b609421b7c5ec1",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\9s1Ch81t1oI\\transcript_segments.jsonl",
+  "segment_count": 13,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:18:29.407895+00:00",
+  "duration_seconds": 60.06999969482422
+}

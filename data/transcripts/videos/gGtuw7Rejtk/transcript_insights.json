@@ -1,0 +1,87 @@
+{
+  "video_id": "gGtuw7Rejtk",
+  "language": "unknown",
+  "summary": "The video explores the strength of superglue, explaining its quick setting properties, adhesion to skin, life-saving uses, and potential in addressing plastic pollution, while posing a question about its perceived weakness in certain situations.",
+  "main_topics": [
+    "Strength of superglue",
+    "Quick setting properties",
+    "Adhesion to skin",
+    "Life-saving applications",
+    "Plastic pollution"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Introduce superglue and its capabilities.",
+      "summary": "Demonstrates the strength of superglue using metal cylinders."
+    },
+    {
+      "section": "Exploration of properties",
+      "purpose": "Examine why superglue is strong and how it works.",
+      "summary": "Discusses superglue's fast setting time and effective adhesion."
+    },
+    {
+      "section": "Applications",
+      "purpose": "Highlight real-world applications.",
+      "summary": "Explains how superglue saves lives and addresses plastic pollution."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize findings and leave questions.",
+      "summary": "Questions about inconsistencies in strength."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Surprising Fact",
+    "hook_text": "One single drop can easily lift over three tons.",
+    "why_it_works": "Challenges the viewer's perception of adhesive strength, encouraging curiosity."
+  },
+  "claims": [
+    {
+      "claim": "Superglue can lift over three tons.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Superglue sets quickly.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Superglue sticks well to skin.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Superglue saves lives.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Superglue can help solve plastic pollution.",
+      "support_level": "weak",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Consider using superglue as a quick fix for emergencies.",
+    "Explore alternatives for environmentally friendly adhesives.",
+    "Research safe uses of adhesives in first-aid scenarios."
+  ],
+  "audience": "General public, science enthusiasts",
+  "tone": "Engaging, curious",
+  "content_style": "Informative with a touch of humor",
+  "retention_devices": [
+    "Exciting demonstration",
+    "Rhetorical questions",
+    "Surprising facts"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [],
+  "risk_notes": [
+    "Potential overstatement of adhesive strength.",
+    "Need for context in claims about environmental benefits."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,102 @@
+{
+  "video_id": "BtnHHWgzRxg",
+  "language": "es",
+  "summary": "El video aborda la relación entre la IA y los humanos, la desconfianza hacia estas tecnologías, y los cambios laborales que traerá la automatización. Se discuten los riesgos y beneficios de la IA, así como conceptos de cambio social y la necesidad de un nuevo pacto en el ámbito laboral.",
+  "main_topics": [
+    "Relación entre IA y humanos",
+    "Desconfianza hacia la IA",
+    "Impacto de la IA en el empleo",
+    "Cambio social y pacto laboral",
+    "Toma de decisiones y aversión al riesgo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la IA",
+      "purpose": "Establecer el contexto",
+      "summary": "Se menciona la creciente similitud entre la IA y los humanos, y la expectativa de perfección en la IA."
+    },
+    {
+      "section": "Desconfianza y cautela hacia la IA",
+      "purpose": "Describir la percepción pública",
+      "summary": "Se presenta la inquietud de las personas hacia la IA y sus implicaciones."
+    },
+    {
+      "section": "Ejemplos de mal uso de la IA",
+      "purpose": "Ilustrar riesgos",
+      "summary": "Se discuten casos de vídeos manipulados y estafas derivadas del uso de la IA."
+    },
+    {
+      "section": "Impacto de la IA en el empleo",
+      "purpose": "Analizar consecuencias laborales",
+      "summary": "Se debate sobre la destrucción de empleos por la automatización y la creación de nuevas dinámicas laborales."
+    },
+    {
+      "section": "Propuestas para el futuro laboral",
+      "purpose": "Presentar soluciones",
+      "summary": "Se menciona la posibilidad de un ingreso universal y la necesidad de redefinir el trabajo en la sociedad."
+    },
+    {
+      "section": "Reflexiones finales",
+      "purpose": "Cerrar el discurso",
+      "summary": "Se enfatiza la urgencia de adaptarse a los cambios impulsados por la IA y las consecuencias para la humanidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿A qué le creo que no?",
+    "why_it_works": "Genera curiosidad y conexión emocional, llevando al público a reflexionar sobre su propio juicio frente a la IA."
+  },
+  "claims": [
+    {
+      "claim": "La IA puede tanto ayudar como perjudicar a las personas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La automatización llevará a la pérdida significativa de empleos.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La sociedad necesita un nuevo pacto social en relación al trabajo y el ingreso.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La capacidad de ahorro permite a las personas arriesgarse más.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Ejemplo de un video manipulador que usa IA.",
+    "Caso de un médico cuya imagen fue clonada para estafas."
+  ],
+  "actionable_ideas": [
+    "Educarse sobre el uso y limitaciones de la IA.",
+    "Explorar el uso de IA para optimizar pequeñas empresas.",
+    "Desarrollar una capacidad crítica hacia la información generada por IA."
+  ],
+  "audience": "Personas interesadas en tecnología, empleo y cambio social.",
+  "tone": "Reflexivo e inquietante.",
+  "content_style": "Conversacional y analítico.",
+  "retention_devices": [
+    "Uso de anécdotas personales.",
+    "Preguntas retóricas para involucrar al público.",
+    "Ejemplos concretos y realistas."
+  ],
+  "title_supporting_quotes": [
+    "La IA se parece mucho a nosotros.",
+    "Los únicos videos editados de mí falsos los hice yo."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar un artículo sobre la IA y el empleo.",
+    "Crear un video explicativo sobre los riesgos de la IA.",
+    "Organizar un panel de discusión sobre el futuro del trabajo."
+  ],
+  "risk_notes": [
+    "El uso irresponsable de IA puede llevar a desinformación.",
+    "La automatización puede aumentar la desigualdad si no se regula."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

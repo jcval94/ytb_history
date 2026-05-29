@@ -1,0 +1,90 @@
+{
+  "video_id": "4GtWgxIcMmQ",
+  "language": "es",
+  "summary": "Este video analiza el resurgimiento del interés de los bancos centrales por el oro, argumentando que esto refleja una crisis de confianza en el sistema monetario actual y una búsqueda de seguridad ante la volatilidad económica y política global.",
+  "main_topics": [
+    "Acumulación de oro por bancos centrales",
+    "Crisis de confianza en el sistema monetario",
+    "Historia y valor del oro",
+    "Desdolarización y nuevas alianzas económicas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la inquietud sobre la inversión en oro por parte de los bancos centrales.",
+      "summary": "Introducción a la paradoja del dinero digital y la creciente demanda de oro por parte de los estados."
+    },
+    {
+      "section": "Historia del oro",
+      "purpose": "Contextualizar la fascinación por el oro a lo largo de la historia.",
+      "summary": "Exploración de la importancia histórica del oro y su simbolismo en diversas civilizaciones."
+    },
+    {
+      "section": "Cambio en la percepción",
+      "purpose": "Discernir las razones detrás del interés actual en el oro.",
+      "summary": "Contraste entre el valor tradicional del oro y su relevancia en tiempos de incertidumbre."
+    },
+    {
+      "section": "Situación actual",
+      "purpose": "Analizar el contexto financiero actual y el papel del oro.",
+      "summary": "Discusión sobre el impacto de las decisiones políticas recientes y la acumulación de oro en respuesta a la desconfianza en el sistema."
+    },
+    {
+      "section": "Proyecciones futuras",
+      "purpose": "Concluir sobre el futuro del sistema monetario y la relevancia del oro.",
+      "summary": "Implicaciones de la acumulación de oro y la fragmentación del sistema financiero global."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Por qué se ha desatado esta nueva fiebre del oro?",
+    "why_it_works": "Invita a la curiosidad sobre un tema financiero relevante y contemporáneo."
+  },
+  "claims": [
+    {
+      "claim": "Los bancos centrales están acumulando oro como una respuesta a la desconfianza en el sistema financiero.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El oro representa una forma física de confianza en la economía.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La desdolarización está conduciendo a una nueva carrera por el oro entre naciones.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Invasión de Crimea como un punto de inflexión para la acumulación de oro.",
+    "Polonia acumulando oro para proteger su economía tras la invasión de Ucrania."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la historia y el valor del oro.",
+    "Analizar el impacto de las decisiones políticas en la economía global.",
+    "Considerar la diversificación de inversiones hacia activos físicos como el oro."
+  ],
+  "audience": "Personas interesadas en economía y finanzas.",
+  "tone": "Informativo y analítico.",
+  "content_style": "Narrativo y persuasivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Estadísticas impactantes",
+    "Casos históricos"
+  ],
+  "title_supporting_quotes": [
+    "Los bancos centrales están comprando más oro que nunca.",
+    "El oro es la única garantía de soberanía."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre inversión en oro.",
+    "Presentaciones educativas sobre historia económica."
+  ],
+  "risk_notes": [
+    "Podría ser visto como alarmista en el contexto de la economía global.",
+    "La interpretación de datos económicos es subjetiva."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

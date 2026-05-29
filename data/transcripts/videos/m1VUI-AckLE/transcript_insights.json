@@ -1,0 +1,71 @@
+{
+  "video_id": "m1VUI-AckLE",
+  "language": "es",
+  "summary": "El hablante reflexiona sobre su reacción inicial ante el deseo de una mujer de no ser madre, revelando sus propios prejuicios y la presión social sobre la maternidad. Comparte su experiencia personal al sentir que necesita justificar su decisión de no tener hijos.",
+  "main_topics": [
+    "Maternidad",
+    "Prejuicio social",
+    "Decisiones personales",
+    "Aceptación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la experiencia inicial",
+      "summary": "El hablante presenta la llegada de una mujer que desea hablar sobre no ser madre."
+    },
+    {
+      "section": "Conflicto interno",
+      "purpose": "Mostrar la lucha del hablante con sus propios prejuicios",
+      "summary": "Describe su incapacidad para aceptar el deseo ajeno y reflexiona sobre su propia decisión de no tener hijos."
+    },
+    {
+      "section": "Reflexión personal",
+      "purpose": "Conectar con la audiencia",
+      "summary": "El hablante comparte su sorpresa ante su reacción y cómo ha ido cambiando su percepción con el tiempo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal anecdote",
+    "hook_text": "Hace unos años, organizando TEDx Río de la Plata, vino una mujer a proponer una charla sobre su deseo de no ser madre.",
+    "why_it_works": "Capta la atención al presentar una situación emocional y controvertida que invita a la reflexión personal del público."
+  },
+  "claims": [
+    {
+      "claim": "Las decisiones sobre maternidad son personales y deben ser respetadas.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Existen prejuicios sociales fuertes en torno a la maternidad.",
+      "support_level": "implicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover el respeto hacia las decisiones personales sobre maternidad.",
+    "Reflexionar sobre propios prejuicios y estigmas sociales.",
+    "Fomentar conversaciones abiertas sobre la elección de no ser madre."
+  ],
+  "audience": "Adultos interesados en temas de maternidad y expectativas sociales.",
+  "tone": "Reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Narración personal",
+    "Reflexiones profundas",
+    "Cuestionamiento de normas sociales"
+  ],
+  "title_supporting_quotes": [
+    "¿Cómo puede ser que una cuestión tan personal y tan humana, yo tenga un prejuicio tan fuerte?"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un artículo reflexionando sobre la maternidad y las elecciones personales.",
+    "Desarrollar una charla TEDx sobre la aceptación de diversas formas de vida y decisiones."
+  ],
+  "risk_notes": [
+    "Posible resistencia por parte de quienes defienden la maternidad tradicional.",
+    "Necesidad de abordar el tema con sensibilidad para evitar ofender a diferentes perspectivas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,100 @@
+{
+  "video_id": "cptv9X6OpvE",
+  "language": "es",
+  "summary": "La historia de Srivinasa Ramanujan, un autodidacta indio que, a pesar de no tener una formación universitaria formal, hizo descubrimientos matemáticos revolucionarios. Su vida refleja la lucha entre su genialidad y la adversidad que enfrentó debido a su entorno socioeconómico y cultural.",
+  "main_topics": [
+    "Vida de Srivinasa Ramanujan",
+    "Matemáticas y descubrimientos",
+    "Adversidad social y cultural",
+    "Interacción con matemáticos británicos",
+    "Impacto de Ramanujan en las matemáticas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Ramanujan",
+      "purpose": "Presentar la vida y logros de Ramanujan",
+      "summary": "Se introduce la figura de Ramanujan y su misteriosa carta enviada a Harold Hardy."
+    },
+    {
+      "section": "Infancia y primeros años",
+      "purpose": "Contextualizar el talento de Ramanujan",
+      "summary": "Se describe la infancia de Ramanujan en India y su temprano interés por las matemáticas."
+    },
+    {
+      "section": "Educación y fracasos académicos",
+      "purpose": "Describir los desafíos que enfrentó en su educación",
+      "summary": "Detalla el rechazo de Ramanujan por parte de las instituciones académicas."
+    },
+    {
+      "section": "Descubrimiento por matemáticos indios",
+      "purpose": "Explicar cómo fue reconocido por su trabajo",
+      "summary": "Muestra el apoyo de Ramaswamy Iyengar y la búsqueda de reconocimiento por parte de Ramanujan."
+    },
+    {
+      "section": "Correspondencia con Hardy",
+      "purpose": "Explicar el impacto de la carta a Hardy",
+      "summary": "Detalla la carta que Ramanujan envió a Hardy y su efecto en la comunidad matemática."
+    },
+    {
+      "section": "Desafíos en Cambridge",
+      "purpose": "Describir las dificultades que enfrentó en Inglaterra",
+      "summary": "Analiza los problemas de integración cultural y salud que sufrió Ramanujan."
+    },
+    {
+      "section": "Legado de Ramanujan",
+      "purpose": "Reflexionar sobre el impacto de sus descubrimientos",
+      "summary": "Se concluye con la repercusión de su trabajo en las matemáticas actuales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "¿Quién fue realmente este autodidacta sin formación universitaria formal que demostró al mundo algo mucho más importante que cualquier ecuación?",
+    "why_it_works": "Captura la curiosidad del espectador, invitándolo a descubrir la verdad detrás de un genio matemático."
+  },
+  "claims": [
+    {
+      "claim": "Ramanujan es un genio matemático autodidacta.",
+      "support_level": "explicit",
+      "risk": "Ninguno."
+    },
+    {
+      "claim": "Su vida y trabajo desafían las normas académicas convencionales.",
+      "support_level": "explicit",
+      "risk": "Incomprensión por parte del sistema educativo."
+    },
+    {
+      "claim": "Sus descubrimientos siguen siendo relevantes en matemáticas hoy en día.",
+      "support_level": "explicit",
+      "risk": "Ninguno."
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Valorar el talento fuera del sistema académico tradicional.",
+    "Apoyar a jóvenes con pasión en áreas no convencionales.",
+    "Promover la inclusión y diversidad en el ámbito académico."
+  ],
+  "audience": "Personas interesadas en matemáticas, educación y biografías de genios.",
+  "tone": "Inspirador y reflexivo.",
+  "content_style": "Narrativo y biográfico.",
+  "retention_devices": [
+    "Historias personales",
+    "Datos intrigantes sobre matemáticas",
+    "Descripciones vívidas de contextos culturales."
+  ],
+  "title_supporting_quotes": [
+    "\"La carta va dirigida a Harold Hardy, uno de los más prestigiosos matemáticos británicos de la época.\"",
+    "\"Esto no puede ser real, pero lo era.\"",
+    "\"Que en cualquier rincón del planeta puede haber una mente brillante esperando a que alguien la escuche.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Documentales sobre matemáticos desconocidos.",
+    "Biografías centradas en autodidactas.",
+    "Charlas TED sobre inclusión en ciencia."
+  ],
+  "risk_notes": [
+    "El riesgo de ignorar el contexto cultural al presentar historias de matemáticos no occidentales.",
+    "Posibilidad de simplificación excesiva de su vida y legado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "QMNsnB1z9CQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Cambiar de rumbo es normal",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\QMNsnB1z9CQ.mp3",
+  "transcribed_at": "2026-05-29T05:51:18.697673+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1109,
+  "text_sha256": "505ab8d15984f5c16ca0b4d87eaa61e53cd2f856a2308d6b1eef3efb2f89c2ee",
+  "repo_schema_version": "transcript_metadata_v1"
+}

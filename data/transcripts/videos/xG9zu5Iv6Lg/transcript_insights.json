@@ -1,0 +1,72 @@
+{
+  "video_id": "xG9zu5Iv6Lg",
+  "language": "Spanish",
+  "summary": "Un estudio del MIT sobre el uso de IA en la escritura muestra que su uso puede disminuir la actividad cerebral relacionada con la creatividad y el lenguaje, lo que podría debilitar nuestra capacidad de pensar por nosotros mismos.",
+  "main_topics": [
+    "Uso de IA en la educación",
+    "Impacto en la creatividad",
+    "Consecuencias de la dependencia tecnológica",
+    "Recuerdo y retención de información"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del experimento",
+      "purpose": "Presentar el estudio del MIT.",
+      "summary": "Se reunió a 54 estudiantes para escribir ensayos usando diferentes métodos."
+    },
+    {
+      "section": "Resultados del experimento",
+      "purpose": "Mostrar el impacto del uso de IA.",
+      "summary": "Los estudiantes que usaron IA mostraron menor actividad cerebral relacionada con la creatividad."
+    },
+    {
+      "section": "Consecuencias del uso de IA",
+      "purpose": "Reflexionar sobre los hallazgos.",
+      "summary": "El uso excesivo de IA puede debilitar la capacidad de pensar y recordar."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Impactante dato científico",
+    "hook_text": "Los que usaron IA mostraron un 55% menos de actividad en las áreas vinculadas a la creatividad",
+    "why_it_works": "Captura la atención al presentar un resultado sorprendente y relevante sobre el impacto de la IA en la cognición humana."
+  },
+  "claims": [
+    {
+      "claim": "La IA debilita la capacidad de pensar de manera independiente.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El uso de IA hace recordar menos lo aprendido.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Limitar el uso de IA en procesos creativos.",
+    "Fomentar la reflexión y el pensamiento crítico en la educación.",
+    "Practicar la escritura y el análisis sin tecnología."
+  ],
+  "audience": "Profesionales de la educación y tecnología, estudiantes.",
+  "tone": "Advertencia reflexiva",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Datos científicos intrigantes",
+    "Preguntas retóricas sobre el futuro de la educación",
+    "Implicaciones prácticas del uso de IA"
+  ],
+  "title_supporting_quotes": [
+    "El riesgo no es solo perder lo que sabemos, es dejar de entrenar cómo pensamos."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre educación y tecnología",
+    "Charlas sobre el futuro de la inteligencia artificial",
+    "Seminarios sobre métodos de enseñanza"
+  ],
+  "risk_notes": [
+    "Dependencia de la tecnología en el aprendizaje.",
+    "Potencial falta de habilidades críticas a largo plazo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "BqHGtSVMUWw",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Podemos crear una superinteligencia?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BqHGtSVMUWw.mp3",
+  "transcribed_at": "2026-05-29T06:02:32.706015+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1625,
+  "text_sha256": "0e829c964a0050542eea5aa74bd169e9fef77a3200b570acc33b59c2fcee85f7",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BqHGtSVMUWw\\transcript_segments.jsonl",
+  "segment_count": 35,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:19:27.871511+00:00",
+  "duration_seconds": 81.8499984741211
+}

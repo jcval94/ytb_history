@@ -1,0 +1,83 @@
+{
+  "video_id": "wfpyJ5p9p4o",
+  "language": "es",
+  "summary": "El video aborda la tensión y el estrés relacionados con la vida moderna, destacando la importancia de encontrar un equilibrio entre la presión y el rendimiento. Se fundamenta en estudios psicológicos que sugieren que un estrés moderado mejora el rendimiento, mientras que la sobrecarga puede ser contraproducente. Se enfatiza la necesidad de desacelerar para mejorar la calidad de vida y el enfoque.",
+  "main_topics": [
+    "Estrés y rendimiento",
+    "Importancia de la pausa",
+    "Cambiar la percepción de la velocidad",
+    "Zona ideal de tensión"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al problema del estrés en la vida moderna",
+      "purpose": "Presentar la situación común de tensión al conducir",
+      "summary": "El narrador describe la frustración de estar atrapado en el tráfico mientras otros parecen relajados."
+    },
+    {
+      "section": "Evidencia científica sobre el rendimiento",
+      "purpose": "Expandir sobre la relación entre estrés y rendimiento",
+      "summary": "Se citan estudios de psicólogos que explican cómo un cierto nivel de presión puede ser beneficioso."
+    },
+    {
+      "section": "Replantear la velocidad y la intensidad",
+      "purpose": "Proporcionar una nueva perspectiva sobre cómo abordar tareas",
+      "summary": "Se propone que la calidad del enfoque es más importante que la cantidad de tareas realizadas rápidamente."
+    },
+    {
+      "section": "Conclusión y llamado a la acción",
+      "purpose": "Animar a la audiencia a desacelerar",
+      "summary": "El narrador invita a aprender a pausar y encontrar momentos de tranquilidad en la vida diaria."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Vas manejando por la autopista 130, tenso...",
+    "why_it_works": "Capta la atención al describir una situación relatable y frustrante que muchos experimentan diariamente."
+  },
+  "claims": [
+    {
+      "claim": "El tiempo perdido en el tráfico es mínimo comparado con el estrés causado.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La presión moderada mejora nuestro rendimiento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La velocidad no equivale a eficiencia.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practicar pausas regulares durante el día.",
+    "Realizar actividades que fomenten la relajación, como pasear o ducharse.",
+    "Reflexionar sobre la calidad de atención en las tareas diarias."
+  ],
+  "audience": "adultos que enfrentan estrés en la vida diaria",
+  "tone": "reflexivo y motivacional",
+  "content_style": "informativo y persuasivo",
+  "retention_devices": [
+    "anécdotas personales",
+    "citas de estudios científicos",
+    "llamado a la acción"
+  ],
+  "title_supporting_quotes": [
+    "La ciencia nos marca otro camino.",
+    "Las grandes ideas no aparecen cuando estás corriendo entre reuniones."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre manejo del estrés",
+    "Videos sobre productividad y bienestar",
+    "Charlas motivacionales sobre equilibrio de vida"
+  ],
+  "risk_notes": [
+    "El contenido puede ser percibido como trivial por algunos receptores.",
+    "Algunas audiencias pueden rechazar la idea de desacelerar en un mundo que promueve la velocidad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

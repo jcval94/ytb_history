@@ -1,0 +1,70 @@
+{
+  "video_id": "ZB9uydZG8sY",
+  "language": "es",
+  "summary": "El orador critica la producción masiva de videos en redes sociales, abogando en su lugar por un enfoque en la calidad y la influencia positiva que se puede ejercer a través de estas plataformas.",
+  "main_topics": [
+    "Producción de videos en redes sociales",
+    "Influencia positiva",
+    "Calidad de contenido"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea de producción de videos.",
+      "summary": "El orador compara su enfoque en la creación de contenido con estrategias de producción masiva."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Discutir la influencia de los creadores de contenido.",
+      "summary": "Analiza el significado de ser un influencer en el contexto actual."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Proponer un enfoque reflexivo hacia el uso de redes sociales.",
+      "summary": "Propone que la audiencia debe ser guiada hacia un pensamiento crítico en lugar de contenido superficial."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Polémico",
+    "hook_text": "Ser influencer es una mala palabra hoy.",
+    "why_it_works": "Provoca interés y cuestiona percepciones comunes sobre la influencia en las redes sociales."
+  },
+  "claims": [
+    {
+      "claim": "La producción masiva de videos no es efectiva.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Se puede ejercer una influencia positiva en la audiencia.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Carlitos Bala como un influencer positivo."
+  ],
+  "actionable_ideas": [
+    "Crear contenido de calidad en lugar de cantidad.",
+    "Usar redes sociales para fomentar el pensamiento crítico."
+  ],
+  "audience": "Creadores de contenido y usuarios de redes sociales",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Narrativo y persuasivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "Cada video tiene que tener un contenido, tiene que transmitir algo importante."
+  ],
+  "creative_reuse_opportunities": [
+    "Transformar el contenido en un curso sobre redes sociales.",
+    "Desarrollar un podcast sobre la influencia en redes."
+  ],
+  "risk_notes": [
+    "Puede alienar a aquellos que prefieren la producción masiva de contenido.",
+    "Desafío de promover contenido reflexivo en una cultura de inmediatez."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "I_KGgQAM1iU",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Así logran que odies a quien piensa distinto",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\I_KGgQAM1iU.mp3",
+  "transcribed_at": "2026-05-29T05:50:59.355701+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 21086,
+  "text_sha256": "9c6a76fbb3b3ba9fb7d016085ac0e462060dd6f473142f7cf81177ff33d9d5ad",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "oRV5imUliSs",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "A los 40 no se acaba, recién empieza",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\oRV5imUliSs.mp3",
+  "transcribed_at": "2026-05-29T05:43:29.916264+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1985,
+  "text_sha256": "9cf9ab82b578fd64960ca824c6c9576d114c71b88b8a761c7ddd37636b595b44",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\oRV5imUliSs\\transcript_segments.jsonl",
+  "segment_count": 33,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:22:34.531165+00:00",
+  "duration_seconds": 104.66999816894531
+}

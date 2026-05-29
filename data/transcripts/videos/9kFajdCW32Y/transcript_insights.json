@@ -1,0 +1,83 @@
+{
+  "video_id": "9kFajdCW32Y",
+  "language": "es",
+  "summary": "El video analiza el experimento de Muzaffar Sherif sobre tribalismo y cómo esta tendencia innata afecta la política contemporánea, llevando a la polarización y manipulaciones masivas.",
+  "main_topics": [
+    "Experimento de Sherif",
+    "Tribalismo",
+    "Polarización política",
+    "Manipulación masiva"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al experimento",
+      "purpose": "Presentar el contexto histórico y el experimento de Sherif.",
+      "summary": "Se describe cómo Sherif organizó un campamento de verano y dividió a los participantes para observar el surgimiento del tribalismo."
+    },
+    {
+      "section": "Desarrollo del tribalismo",
+      "purpose": "Analizar la naturaleza humana y el tribalismo.",
+      "summary": "Se explica cómo la identificación con un grupo genera hostilidad hacia otros y cómo esto se manifiesta en la política actual."
+    },
+    {
+      "section": "Impacto en la política",
+      "purpose": "Relación entre tribalismo y política.",
+      "summary": "Se aborda cómo el tribalismo distorsiona el juicio político y contribuye a la polarización."
+    },
+    {
+      "section": "Manipulaciones contemporáneas",
+      "purpose": "Conclusión sobre el uso del tribalismo.",
+      "summary": "Se menciona cómo políticos y consultores utilizan el tribalismo como herramienta de manipulación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística histórica",
+    "hook_text": "En los años 50, el psicólogo Muzaffar Sherif organizó un campamento de verano...",
+    "why_it_works": "Genera interés al vincular un experimento histórico con problemas actuales, estableciendo relevancia inmediata."
+  },
+  "claims": [
+    {
+      "claim": "El tribalismo es una parte intrínseca de la naturaleza humana.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "El tribalismo en la política lleva a la polarización.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    },
+    {
+      "claim": "Los políticos manipulan el tribalismo para su beneficio.",
+      "support_level": "implicit",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar el diálogo entre diferentes grupos.",
+    "Promover la empatía y la comprensión entre facciones opuestas.",
+    "Educar sobre los riesgos del tribalismo en la política."
+  ],
+  "audience": "Personas interesadas en psicología, política y sociología.",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Expositivo y analítico",
+  "retention_devices": [
+    "Narrativa histórica",
+    "Ejemplos de estudios de caso",
+    "Llamado a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Basta una camiseta o cualquier elemento de cohesión para que aparezca la división.",
+    "La semilla del tribalismo anida en cada uno de nosotros."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre tribalismo en política.",
+    "Charlas sobre dinámica de grupos.",
+    "Debates sobre manipulación mediática."
+  ],
+  "risk_notes": [
+    "La simplificación de situaciones complejas puede llevar a soluciones erróneas.",
+    "Potencial polarización del público por el enfoque tribal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

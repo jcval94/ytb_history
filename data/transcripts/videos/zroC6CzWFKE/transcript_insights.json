@@ -1,0 +1,75 @@
+{
+  "video_id": "zroC6CzWFKE",
+  "language": "spanish",
+  "summary": "La historia de Stallone, quien aceptó actuar en una película pornográfica de bajo presupuesto antes de alcanzar la fama con Rocky, resalta el sacrificio necesario para alcanzar el éxito.",
+  "main_topics": [
+    "Historias de sacrificio",
+    "Éxito en Hollywood",
+    "Creación de Rocky Balboa"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de Stallone",
+      "purpose": "Presentar el contexto de la vida de Stallone antes de Rocky.",
+      "summary": "Stallone estaba desesperado y aceptó un trabajo en una película pornográfica."
+    },
+    {
+      "section": "Lecciones aprendidas",
+      "purpose": "Reflejar el aprendizaje de experiencias difíciles.",
+      "summary": "El dolor y sacrificio fueron esenciales para su desarrollo como actor."
+    },
+    {
+      "section": "Creación de Rocky",
+      "purpose": "Conectar el sacrificio con su éxito en la creación de un personaje icónico.",
+      "summary": "Todo ese sufrimiento lo llevó a crear a Rocky Balboa."
+    },
+    {
+      "section": "Cierre y llamado a la acción",
+      "purpose": "Invitar al espectador a seguir explorando historias similares.",
+      "summary": "Un anuncio para buscar más contenido en el canal de YouTube."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdote",
+    "hook_text": "Stallone estaba tan desesperado que sólo cinco años antes de que Rocky lo lanzara a la fama aceptó actuar en Italian Stallion.",
+    "why_it_works": "La anécdota personal crea empatía y atención, mostrando la lucha real detrás del éxito."
+  },
+  "claims": [
+    {
+      "claim": "El éxito no llega fácil.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El sacrificio es necesario para alcanzar el sueño.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Examinar otros ejemplos de personajes que superaron dificultades.",
+    "Crear contenido sobre las lecciones de perseverancia."
+  ],
+  "audience": "Personas interesadas en historias de éxito y motivación.",
+  "tone": "inspirador",
+  "content_style": "narrativo",
+  "retention_devices": [
+    "Contenido relacionado en el canal",
+    "Anuncios para suscribirse",
+    "Promociones de historias similares"
+  ],
+  "title_supporting_quotes": [
+    "El éxito no suele llegar fácil.",
+    "Ese dolor y sacrificio lo llevó a crear un personaje inolvidable."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear una serie sobre historias de celebridades.",
+    "Realizar entrevistas sobre sacrificios en la industria del entretenimiento."
+  ],
+  "risk_notes": [
+    "Riesgo de no resonar con una audiencia específica.",
+    "Posible controversia por abordar temas delicados como la pornografía."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "w_Byvm7Jwgg",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Rocky Balboa Motivación | La historia del hombre que inspiró  Rocky",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\w_Byvm7Jwgg.mp3",
+  "transcribed_at": "2026-05-29T05:48:55.340174+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 632,
+  "text_sha256": "d7a081ea3cf7d488c176365dcb37143e292d7946f2b3f7f3b2c8adbed98462c3",
+  "repo_schema_version": "transcript_metadata_v1"
+}

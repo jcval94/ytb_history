@@ -1,0 +1,85 @@
+{
+  "video_id": "bwhu8CU-L4U",
+  "language": "es",
+  "summary": "El video presenta reflexiones sobre la búsqueda de propósito en la vida, sugiriendo que, en vez de enfocarse únicamente en pasión, es clave identificar las propias fortalezas y evitar caminos que no sumen. También destaca la importancia de la constancia y la resistencia ante los desafíos.",
+  "main_topics": [
+    "Identificación de fortalezas",
+    "Importancia de saber qué no se quiere",
+    "Valor de la constancia en los procesos",
+    "Evitar cambios impulsivos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la reflexión",
+      "purpose": "Presentar la pregunta sobre el propósito en la vida",
+      "summary": "Preguntar qué se quiere hacer vs. en qué se es bueno."
+    },
+    {
+      "section": "Identificación de fortalezas",
+      "purpose": "Guiar en la búsqueda personal",
+      "summary": "Identificar lo que se hace naturalmente mejor."
+    },
+    {
+      "section": "Herramienta del contras",
+      "purpose": "Sugerir una estrategia alternativa",
+      "summary": "Considerar lo que no gusta para descartar opciones."
+    },
+    {
+      "section": "Valor de la constancia",
+      "purpose": "Destacar la importancia del compromiso",
+      "summary": "Resaltar que los procesos requieren tiempo y no saltar por novedades."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta reflexiva",
+    "hook_text": "¿Ya sabés qué querés hacer con tu vida?",
+    "why_it_works": "Engancha al espectador al hacerles cuestionar su situación actual."
+  },
+  "claims": [
+    {
+      "claim": "Es mejor enfocarse en las fortalezas que en las pasiones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Descartar lo que no se quiere es una herramienta poderosa.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La constancia es clave en el proceso de alcanzar metas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Comunicador social",
+    "Emprendedor"
+  ],
+  "actionable_ideas": [
+    "Hacer una lista de fortalezas personales.",
+    "Identificar y anotar lo que no gusta.",
+    "Establecer rutinas para cultivar habilidades en lugar de cambiar constantemente."
+  ],
+  "audience": "Personas en búsqueda de propósito o cambio profesional.",
+  "tone": "Reflexivo y motivacional",
+  "content_style": "Conversacional y directo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Historias personales",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "Identificar tus fortalezas es un gran punto de partida.",
+    "Saber a dónde no querés ir ya descarta un montón de caminos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un taller sobre autoconocimiento.",
+    "Desarrollar un libro de actividades de reflexión personal."
+  ],
+  "risk_notes": [
+    "Maestros de la autoayuda pueden ser cuestionados por dar consejos sin evidencia.",
+    "Consecuencias emocionales al confrontar lo que no se quiere."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,84 @@
+{
+  "video_id": "Eb2jkJLo3D0",
+  "language": "es",
+  "summary": "El video destaca los efectos negativos de un ambiente laboral tóxico en la salud mental y la productividad de los empleados. Se comparte un estudio que indica un alto porcentaje de trabajadores que se ven afectados y que incluso han dejado trabajos debido a jefes tóxicos.",
+  "main_topics": [
+    "Salud mental en el trabajo",
+    "Ambiente laboral tóxico",
+    "Impacto de jefes tóxicos",
+    "Desmotivación laboral"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la toxicidad en el ambiente laboral.",
+      "summary": "Se introducen estadísticas sobre el impacto de un ambiente laboral tóxico."
+    },
+    {
+      "section": "Consecuencias",
+      "purpose": "Explicar las consecuencias de tener un jefe tóxico.",
+      "summary": "Se describen cómo los empleados se afectan mental y emocionalmente, terminando desmotivados."
+    },
+    {
+      "section": "Estadísticas",
+      "purpose": "Ofrecer evidencia sobre la problemática.",
+      "summary": "Se menciona un estudio de 2024 que respalda la información presentada."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Conclusión sobre la importancia de un buen liderazgo.",
+      "summary": "Se resalta que los jefes tóxicos no solo afectan la salud mental, sino también la productividad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistical Insight",
+    "hook_text": "47% más probabilidad de reportar problemas de salud mental.",
+    "why_it_works": "Estadísticas impactantes generan interés y relevancia en el tema tratado."
+  },
+  "claims": [
+    {
+      "claim": "Los ambientes laborales tóxicos afectan la salud mental",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "La mayoría de los trabajadores se sienten desmotivados",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Los jefes tóxicos son costosos por el daño que generan",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Las personas dejan de proponer ideas.",
+    "Empleados marcan tarjeta sin motivación."
+  ],
+  "actionable_ideas": [
+    "Fomentar un ambiente laboral saludable.",
+    "Capacitar a los jefes en liderazgo positivo.",
+    "Realizar encuestas periódicas sobre el clima laboral."
+  ],
+  "audience": "Profesionales y líderes empresariales",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Analítico y basado en datos",
+  "retention_devices": [
+    "Estadísticas impactantes",
+    "Testimonios de empleados",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "Cuerpos presentes y cerebros ausentes."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre liderazgo y bienestar emocional.",
+    "Seminarios o talleres sobre ambiente laboral."
+  ],
+  "risk_notes": [
+    "Los datos pueden variar según la industria.",
+    "Reacciones negativas de jefes tóxicos ante críticas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

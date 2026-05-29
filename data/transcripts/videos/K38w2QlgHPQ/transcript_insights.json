@@ -1,0 +1,87 @@
+{
+  "video_id": "K38w2QlgHPQ",
+  "language": "Spanish",
+  "summary": "El hablante comparte sus características personales que afectan su vida cotidiana, particularmente su capacidad de concentración extrema, que a veces resulta problemática pero también beneficiosa en contextos como exámenes o tareas complejas. Invita a los oyentes a reflexionar sobre sus propias peculiaridades.",
+  "main_topics": [
+    "Características personales",
+    "Concentración extrema",
+    "Impacto en la vida diaria",
+    "Autoconocimiento",
+    "Interacción social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de las características personales",
+      "summary": "El hablante introduce la idea de tener rasgos propios que complican y facilitan la vida."
+    },
+    {
+      "section": "Ejemplo personal",
+      "purpose": "Ilustrar cómo su concentración afecta su vida",
+      "summary": "Relata experiencias donde su enfoque le causa problemas en interacciones cotidianas."
+    },
+    {
+      "section": "Dualidad de rasgos",
+      "purpose": "Mostrar el lado positivo de la característica",
+      "summary": "Se menciona cómo esta misma capacidad de concentración ayuda en situaciones de alto rendimiento."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a la reflexión y participación del público",
+      "summary": "Invita a los oyentes a compartir sus propias características en los comentarios."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "Seguro vos también tenés características propias que a veces te complican la vida.",
+    "why_it_works": "Capta la atención del público al hacer sentir que todos pueden relacionarse con la experiencia."
+  },
+  "claims": [
+    {
+      "claim": "El hablante tiene una capacidad de concentración extrema.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Esta capacidad puede ser problemática en interacciones sociales.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La misma característica puede ser beneficiosa en situaciones de rendimiento alto.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "No registrar que alguien está hablando mientras trabaja.",
+    "Estar trabajando en oscuras sin notar el ambiente."
+  ],
+  "actionable_ideas": [
+    "Reflexiona sobre tus propias características personales.",
+    "Escribe sobre cómo te afectan en la vida diaria.",
+    "Comparte tus experiencias en un espacio de conversación."
+  ],
+  "audience": "Personas interesadas en la autoconciencia y desarrollo personal.",
+  "tone": "Conversacional y reflexivo",
+  "content_style": "Personal y anecdótico",
+  "retention_devices": [
+    "Ejemplos personales",
+    "Preguntas retóricas",
+    "Invitación a participar"
+  ],
+  "title_supporting_quotes": [
+    "Características propias que a veces te complican la vida.",
+    "Cuando tenía un examen, entro en un estado de foco total."
+  ],
+  "creative_reuse_opportunities": [
+    "Contenido para un blog sobre autoconocimiento.",
+    "Publicación en redes sociales sobre experiencias personales.",
+    "Podcast sobre habilidades y desafíos personales."
+  ],
+  "risk_notes": [
+    "Posibilidad de que algunos no se identifiquen con la experiencia.",
+    "Riesgo de malinterpretar la concentración extrema como desinterés."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

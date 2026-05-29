@@ -1,0 +1,78 @@
+{
+  "video_id": "taBh4nKB-gg",
+  "language": "es",
+  "summary": "El video explora la premisa del libro 'El Señor de las Moscas' de William Golding, planteando la noción de que sin autoridad, el ser humano puede caer en la barbarie. A través de un análisis, se propone que la humanidad no es necesariamente salvaje por naturaleza y se presenta la historia real de seis adolescentes en Tonga que sobrevivieron en una isla desierta, desafiando esta visión.",
+  "main_topics": [
+    "El Señor de las Moscas",
+    "Naturaleza humana",
+    "Autoridad y control",
+    "Historia real de Tonga",
+    "Violencia y salvajismo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la temática del video.",
+      "summary": "Los personajes del libro enfrentan la barbarie sin autoridad."
+    },
+    {
+      "section": "Resumen de 'El Señor de las Moscas'",
+      "purpose": "Explicar la trama y la evolución de los personajes.",
+      "summary": "Un grupo de niños intenta sobrevivir y organizarse en una isla desierta."
+    },
+    {
+      "section": "Análisis de la historia real",
+      "purpose": "Contrastar la ficción con la realidad.",
+      "summary": "La historia de los seis de Tonga desafía las ideas preconcebidas sobre la naturaleza humana."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Síntesis del mensaje",
+      "summary": "La necesidad de autoridad es discutible y se presentan ejemplos de cooperación real entre los adolescentes."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Es el ser humano salvaje por naturaleza?",
+    "why_it_works": "Despierta el interés del espectador al poner en duda sus creencias sobre la humanidad."
+  },
+  "claims": [
+    {
+      "claim": "Sin leyes y autoridad, la humanidad degenere hacia la barbarie.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "La historia de los seis de Tonga demuestra que la cooperación es posible sin autoridad.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Historia de sobrevivencia de seis adolescentes en Tonga."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre la naturaleza de la autoridad.",
+    "Explorar historias menos conocidas que desafían narrativas populares.",
+    "Promover el pensamiento crítico sobre la naturaleza humana."
+  ],
+  "audience": "Personas interesadas en psicología, literatura y filosofía.",
+  "tone": "Reflexivo y provocador.",
+  "content_style": "Narrativo y analítico.",
+  "retention_devices": [
+    "Preguntas provocativas",
+    "Referencias a obras literarias conocidas",
+    "Dramatización de contrastes entre ficción y realidad"
+  ],
+  "title_supporting_quotes": [
+    "Necesitamos una autoridad que nos controle y nos castigue."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre otras obras literarias y sus implicaciones en la psicología humana.",
+    "Desarrollar una serie sobre historias de sobrevivencia desconocidas."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones pueden ser controvertidas y generar debate."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "9M_QK4stCJU",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Why People Are So Confident When They're Wrong",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\9M_QK4stCJU.mp3",
+  "transcribed_at": "2026-05-29T06:01:59.821356+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 23065,
+  "text_sha256": "95dc7f9fe8a1ec61c1bffa6b793b8ced1516ed235a9ff47c1254ec334d0fbee9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\9M_QK4stCJU\\transcript_segments.jsonl",
+  "segment_count": 600,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:18:16.502421+00:00",
+  "duration_seconds": 1441.1199951171875
+}

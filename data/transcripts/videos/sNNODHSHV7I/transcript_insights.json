@@ -1,0 +1,69 @@
+{
+  "video_id": "sNNODHSHV7I",
+  "language": "es",
+  "summary": "El video explora cómo la percepción de atractivo físico influye en las decisiones judiciales, mostrando que las personas consideradas más atractivas reciben penas más leves por delitos similares.",
+  "main_topics": [
+    "Atractivo físico",
+    "Percepción y prejuicios",
+    "Decisiones judiciales",
+    "Influencias sociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar la conexión entre atractivo y condenas",
+      "summary": "Introducción a la idea de que el atractivo puede influir en la justicia."
+    },
+    {
+      "section": "Ejemplo de estudio",
+      "purpose": "Ilustrar el efecto del atractivo",
+      "summary": "Un estudio muestra que convictos considerados más atractivos reciben penas más cortas."
+    },
+    {
+      "section": "Implicaciones del estudio",
+      "purpose": "Reflexionar sobre los prejuicios sociales",
+      "summary": "La justicia puede ser influenciada por factores no relacionados con el delito."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Encuesta impactante",
+    "hook_text": "Las personas ranqueadas como más atractivas tenían menos probabilidad de ser condenados a muerte.",
+    "why_it_works": "Despierta curiosidad e interés en un tema controversial."
+  },
+  "claims": [
+    {
+      "claim": "Las personas más atractivas reciben menos tiempo en prisión por delitos.",
+      "support_level": "explicit",
+      "risk": "mantiene respaldo en estudios relevantes."
+    },
+    {
+      "claim": "El prejuicio por atractivo afecta decisiones judiciales.",
+      "support_level": "implicit",
+      "risk": "requiere más evidencia para generalizaciones."
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover la conciencia sobre prejuicios en el sistema judicial.",
+    "Implementar entrenamiento sobre sesgos para jueces y jurados."
+  ],
+  "audience": "Personas interesadas en psicología social y justicia",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Académico pero accesible",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Estadísticas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "\"Las personas ranqueadas como más atractivas tenían menos probabilidad de ser condenados a muerte.\"",
+    "\"Los condenados fueron evaluados solo por su atractivo sin saber que eran criminales.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre prejuicios en la justicia.",
+    "Discusiones sobre justicia social y percepción."
+  ],
+  "risk_notes": [
+    "Necesidad de usar fuentes confiables para respaldar afirmaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "n1G2FQ0UEqc",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué saber usar IA ya no es opcional.",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\n1G2FQ0UEqc.mp3",
+  "transcribed_at": "2026-05-29T05:43:05.873639+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1520,
+  "text_sha256": "3cdc6bf1f0b9aeadc265acc077cc261cd2ab42ace5891f3ac2ca9028bb17b1fa",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\n1G2FQ0UEqc\\transcript_segments.jsonl",
+  "segment_count": 36,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:22:08.053120+00:00",
+  "duration_seconds": 82.5199966430664
+}

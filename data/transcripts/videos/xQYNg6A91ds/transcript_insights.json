@@ -1,0 +1,62 @@
+{
+  "video_id": "xQYNg6A91ds",
+  "language": "es",
+  "summary": "Un hombre rechazó un premio de un millón de dólares por sus contribuciones a las matemáticas, a pesar de vivir en condiciones de pobreza. El video detalla las razones detrás de su decisión.",
+  "main_topics": [
+    "Rechazo de premios",
+    "Contribuciones a las matemáticas",
+    "Pobreza y ética"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al tema",
+      "purpose": "Presentar el contexto del rechazo del premio",
+      "summary": "Se introduce al protagonista y se menciona el evento significativo de su rechazo."
+    },
+    {
+      "section": "Motivación detrás del rechazo",
+      "purpose": "Explicar las razones personales y éticas",
+      "summary": "Se plantea la pregunta sobre por qué alguien en su situación actuaría de esa manera."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "¿Pero por qué alguien rechazaría semejante fortuna viviendo al límite de la pobreza?",
+    "why_it_works": "Genera curiosidad sobre las motivaciones del protagonista y sugiere una historia profunda detrás de una decisión inesperada."
+  },
+  "claims": [
+    {
+      "claim": "El hombre vive al límite de la pobreza.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Rechazó un premio de un millón de dólares.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la ética en la ciencia.",
+    "Reflexionar sobre decisiones personales frente a la riqueza."
+  ],
+  "audience": "Personas interesadas en matemáticas y relatos inspiradores.",
+  "tone": "Intrigante y reflexivo.",
+  "content_style": "Narrativo y informativo.",
+  "retention_devices": [
+    "Pregunta provocadora al inicio",
+    "Referencias a situaciones extremas"
+  ],
+  "title_supporting_quotes": [
+    "el 1 de julio de 2010, este hombre de aquí, con pinta de vagabundo que huye de las cámaras"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos en blogs sobre ética en las decisiones científicas.",
+    "Documentales sobre matemáticos inusuales."
+  ],
+  "risk_notes": [
+    "El enfoque en la pobreza podría ser sensible para algunos espectadores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

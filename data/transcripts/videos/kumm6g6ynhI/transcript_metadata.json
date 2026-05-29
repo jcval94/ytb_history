@@ -1,0 +1,20 @@
+{
+  "video_id": "kumm6g6ynhI",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El sistema está roto",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\kumm6g6ynhI.mp3",
+  "transcribed_at": "2026-05-29T05:49:05.170003+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1156,
+  "text_sha256": "f5b6c86f6430caf4f74af4e22bc11757bd0e0acfa28fa53b54f5fdfee254e07f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\kumm6g6ynhI\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T14:21:56.024876+00:00",
+  "duration_seconds": 63.040000915527344
+}

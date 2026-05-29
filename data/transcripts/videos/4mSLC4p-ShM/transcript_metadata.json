@@ -1,0 +1,20 @@
+{
+  "video_id": "4mSLC4p-ShM",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "Por qué rechazar un millón de dólares es la decisión más lógica del mundo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\4mSLC4p-ShM.mp3",
+  "transcribed_at": "2026-05-29T06:06:30.911084+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9279,
+  "text_sha256": "55ced375e17cdc79cbeca93e73df6e6dc605607d5dec42f16ac09c836582fb33",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\4mSLC4p-ShM\\transcript_segments.jsonl",
+  "segment_count": 299,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:15:04.316593+00:00",
+  "duration_seconds": 1188.9300537109375
+}

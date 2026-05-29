@@ -1,0 +1,14 @@
+{
+  "video_id": "taBh4nKB-gg",
+  "channel_id": "UC_JilJOwGV6UBVyj2s_iZHg",
+  "channel_name": "NO Es Posible ",
+  "title": "NOS MINTIERON | La historia real que demuestra que NO somos monstruos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\taBh4nKB-gg.mp3",
+  "transcribed_at": "2026-05-29T05:53:21.862981+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8834,
+  "text_sha256": "e928e875762507c8ca5330e0de1c2c1ee0d327c3bbf30ff1917a8c8c7b88d034",
+  "repo_schema_version": "transcript_metadata_v1"
+}

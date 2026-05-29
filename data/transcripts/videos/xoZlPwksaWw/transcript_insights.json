@@ -1,0 +1,88 @@
+{
+  "video_id": "xoZlPwksaWw",
+  "language": "es",
+  "summary": "Jim Carrey plantea que ser rico y famoso no es la clave para la felicidad. Un estudio muestra que los cantantes famosos tienen un mayor riesgo de muerte en comparación con aquellos menos conocidos, debido al estrés y la falta de privacidad asociados a la fama.",
+  "main_topics": [
+    "Fama y felicidad",
+    "Riesgos de la fama",
+    "Impacto del estrés",
+    "Vida privada y relaciones",
+    "Promesa de la fama"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea central sobre la fama y su desventaja.",
+      "summary": "Jim Carrey expone su opinión sobre la fama como un objetivo poco satisfactorio."
+    },
+    {
+      "section": "Estudio comparativo",
+      "purpose": "Ilustrar con datos la problemática de la fama.",
+      "summary": "Un estudio muestra que la fama aumenta el riesgo de muerte."
+    },
+    {
+      "section": "Consecuencias de la fama",
+      "purpose": "Destacar cómo la fama afecta la salud mental y social.",
+      "summary": "Las personas famosas enfrentan estrés y falta de relaciones genuinas."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Cierre con una crítica a la promesa de la fama.",
+      "summary": "La fama no garantiza felicidad ni el sentido de haber 'llegado'."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita impactante",
+    "hook_text": "Me gustaría que todos pudieran ser ricos y famosos para que vean que esa no es la respuesta.",
+    "why_it_works": "Provoca curiosidad y reflexión inmediatamente sobre la noción común de que la riqueza y la fama conducen a la felicidad."
+  },
+  "claims": [
+    {
+      "claim": "La fama no lleva a la felicidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los famosos tienen un riesgo de muerte mayor.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La vida privada se ve comprometida por la fama.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El estrés crónico es un efecto de la fama.",
+      "support_level": "weak",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Evaluar las verdaderas fuentes de felicidad en la vida personal.",
+    "Fomentar relaciones auténticas y significativas.",
+    "Conocer y reflexionar sobre los riesgos asociados a la búsqueda de la fama."
+  ],
+  "audience": "Personas interesadas en el impacto de la fama y la felicidad",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y crítico",
+  "retention_devices": [
+    "Citas provocativas",
+    "Estadísticas sorprendentes",
+    "Reflexiones personales"
+  ],
+  "title_supporting_quotes": [
+    "La fama promete que cuando suficiente gente te mire vas a sentir que llegaste. Pero esa promesa es mentira."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre los efectos psicológicos de la fama",
+    "Videos de testimonios de famosos sobre su vida",
+    "Debates sobre la percepción pública de la fama"
+  ],
+  "risk_notes": [
+    "La fama puede llevar a problemas de salud mental.",
+    "La presión pública puede afectar la calidad de las relaciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

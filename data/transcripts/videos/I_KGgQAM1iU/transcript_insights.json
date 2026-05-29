@@ -1,0 +1,92 @@
+{
+  "video_id": "I_KGgQAM1iU",
+  "language": "es",
+  "summary": "El episodio aborda la fragilidad de la democracia contemporánea, analizando su declive y los factores que contribuyen a ello, incluido el tribalismo y la manipulación mediática. Se destaca la importancia de la moderación y el pensamiento crítico para preservar las instituciones democráticas.",
+  "main_topics": [
+    "Crisis de la democracia",
+    "Desencanto político en jóvenes",
+    "Tribalismo y polarización",
+    "Manipulación mediática",
+    "Importancia de la moderación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la vulnerabilidad de la democracia",
+      "summary": "La democracia es un invento humano que puede desaparecer y es necesario entender cómo se muere hoy."
+    },
+    {
+      "section": "Crisis de las democracias",
+      "purpose": "Describir el desencanto político",
+      "summary": "La insatisfacción con la democracia crece, especialmente entre los jóvenes que ven la democracia como un sistema roto."
+    },
+    {
+      "section": "El tribalismo en política",
+      "purpose": "Explicar cómo el tribalismo afecta la política",
+      "summary": "El tribalismo distorsiona el debate político, elevando la lealtad al grupo sobre la crítica constructiva."
+    },
+    {
+      "section": "Manipulación mediática",
+      "purpose": "Ilustrar cómo se manipula la opinión pública",
+      "summary": "Técnicas de manipulación como repetición de ideas simplificadas y apelaciones emocionales son utilizadas para polarizar a la sociedad."
+    },
+    {
+      "section": "Cómo cuidar la democracia",
+      "purpose": "Ofrecer soluciones para evitar la pérdida de la democracia",
+      "summary": "La moderación y el pensamiento crítico son esenciales para salvaguardar la democracia de la polarización y el extremismo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "A casi 90% de nosotros, los menores de 60, nunca nos pasó que un régimen totalitario nos impidiera votar.",
+    "why_it_works": "Genera un sentido de urgencia mostrando la fragilidad de la democracia actual frente a la experiencia histórica de otros."
+  },
+  "claims": [
+    {
+      "claim": "La democracia es un acuerdo frágil que puede desaparecer.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La polarización anula el pensamiento crítico.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Menos del 7% de la población mundial vive en democracias plenas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Una encuesta muestra que más de la mitad de la gente está insatisfecha con la democracia.",
+    "El aumento del apoyo a líderes autoritarios sin contrapesos entre los jóvenes."
+  ],
+  "actionable_ideas": [
+    "Fomentar el pensamiento crítico en discusiones políticas.",
+    "Promover la moderación en lugar de la polarización.",
+    "Apoyar el diálogo en lugar de ataques a otros grupos."
+  ],
+  "audience": "Adultos jóvenes y personas interesadas en la política.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo y analítico.",
+  "retention_devices": [
+    "Preguntas provocadoras",
+    "Estadísticas impactantes",
+    "Analogías claras"
+  ],
+  "title_supporting_quotes": [
+    "La democracia no es como el ciclo del día y la noche.",
+    "La normalidad es la tiranía, la democracia es la excepción."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la importancia de la participación democrática.",
+    "Tertulias sobre la polarización en redes sociales.",
+    "Charlas educativas sobre el pensamiento crítico."
+  ],
+  "risk_notes": [
+    "El riesgo de caer en la radicalización por el tribalismo.",
+    "El peligro de la desinformación en redes sociales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

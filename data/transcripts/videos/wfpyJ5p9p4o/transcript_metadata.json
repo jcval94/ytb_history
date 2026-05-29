@@ -1,0 +1,14 @@
+{
+  "video_id": "wfpyJ5p9p4o",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La locura de vivir apurados",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\wfpyJ5p9p4o.mp3",
+  "transcribed_at": "2026-05-29T06:02:44.172431+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1458,
+  "text_sha256": "18d8250b167303a45feb2607203a5f2043d3c47280f316fc3bc5e64df5cce0c2",
+  "repo_schema_version": "transcript_metadata_v1"
+}

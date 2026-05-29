@@ -1,0 +1,98 @@
+{
+  "video_id": "8miwOSHvU4o",
+  "language": "es",
+  "summary": "La historia de Thomas Midley Jr., ingeniero estadounidense, responsable de la invención de la gasolina con plomo, que revolucionó la industria automotriz pero causó graves problemas de salud.",
+  "main_topics": [
+    "Thomas Midley Jr.",
+    "Gasolina con plomo",
+    "Impacto ambiental",
+    "Salud pública",
+    "Historia de la industria automotriz"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar al protagonista y el contexto histórico.",
+      "summary": "Se introduce a Thomas Midley Jr. como un inventor que causó un daño significativo al planeta."
+    },
+    {
+      "section": "Fondo Familiar",
+      "purpose": "Establecer el trasfondo de Midley como innovador.",
+      "summary": "Se menciona su familia de inventores y sus inicios en la industria."
+    },
+    {
+      "section": "Desarrollo en General Motors",
+      "purpose": "Describir cómo Midley llegó a General Motors.",
+      "summary": "Midley se une a GM para encontrar soluciones a problemas de ruido en motores."
+    },
+    {
+      "section": "Invención del Tetraetilo de Plomo",
+      "purpose": "Narrar el descubrimiento del compuesto problemático.",
+      "summary": "Midley encuentra que el tetraetilo de plomo elimina el ruido en los motores."
+    },
+    {
+      "section": "Consecuencias del Plomo",
+      "purpose": "Explicar el peligro del plomo en la gasolina.",
+      "summary": "Se discute el riesgo conocido del plomo y la decisión de comercializarlo."
+    },
+    {
+      "section": "Campaña Publicitaria",
+      "purpose": "Destacar cómo se promovió la gasolina con plomo.",
+      "summary": "Se detallan las estrategias publicitarias utilizadas para vender la gasolina."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante pregunta",
+    "hook_text": "¿quién demonios puede merecer semejante título?",
+    "why_it_works": "Genera curiosidad sobre la identidad del protagonista y su impacto."
+  },
+  "claims": [
+    {
+      "claim": "Thomas Midley Jr. causó un daño significativo al planeta.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La gasolina con plomo mejoró el funcionamiento de los motores.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Los efectos del plomo en la salud eran conocidos pero ignorados.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Familias utilizando gasolina con plomo por mejoras en sus vehículos.",
+    "Científicos advirtiendo sobre los peligros del plomo antes del lanzamiento."
+  ],
+  "actionable_ideas": [
+    "Investigar alternativas más seguras a la gasolina con plomo.",
+    "Promover el uso de combustibles limpios en la actualidad.",
+    "Educar sobre los efectos a largo plazo de tóxicos en la industria."
+  ],
+  "audience": "Personas interesadas en la historia del medio ambiente y la industria automotriz.",
+  "tone": "Informativo y crítico.",
+  "content_style": "Narrativo y reflexivo.",
+  "retention_devices": [
+    "Anécdotas históricas",
+    "Datos sorprendentes sobre la salud y el plomo",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "\"fue la persona que más daño ha hecho al planeta\"",
+    "\"obviaron todas las advertencias de salud\"",
+    "\"Ethyl controla el poder de la gasolina\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la historia de inventos peligrosos.",
+    "Realizar un documental sobre el impacto del plomo en la salud.",
+    "Desarrollar un podcast sobre decisiones éticas en la industria."
+  ],
+  "risk_notes": [
+    "El plomo es un veneno conocido desde la antigüedad.",
+    "La industrialización priorizó el beneficio económico sobre la salud pública."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

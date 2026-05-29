@@ -1,0 +1,84 @@
+{
+  "video_id": "izmBccL0O48",
+  "language": "es",
+  "summary": "El video aborda el síndrome del impostor y el exceso de confianza, sugiriendo que ambos son resultado de una mala autoevaluación. Propone estrategias para calibrar la confianza y gestionar la duda, enfatizando la importancia de buscar retroalimentación y cuestionar nuestras creencias.",
+  "main_topics": [
+    "Síndrome del impostor",
+    "Exceso de confianza",
+    "Gestión de la confianza",
+    "Retroalimentación",
+    "Autoevaluación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del síndrome del impostor y la sobreconfianza.",
+      "summary": "Se describe cómo ambos son fallas en la autoevaluación."
+    },
+    {
+      "section": "Diferencias entre impostor y exceso de confianza",
+      "purpose": "Explicar las similitudes y diferencias entre ambas actitudes.",
+      "summary": "Ambas conducen a tomar decisiones erróneas."
+    },
+    {
+      "section": "Estrategias para calibrar la confianza",
+      "purpose": "Ofrecer soluciones prácticas.",
+      "summary": "Se presentan tres estrategias para manejar la confianza y la duda."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reforzar la idea principal.",
+      "summary": "Recordar que todos enfrentamos dudas y que hay formas de manejar esas emociones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión personal",
+    "hook_text": "Todos alguna vez nos sentimos pequeños y todos alguna vez hablamos con demasiada seguridad.",
+    "why_it_works": "Genera conexión emocional con la audiencia, ya que todos han experimentado estas sensaciones."
+  },
+  "claims": [
+    {
+      "claim": "El síndrome del impostor y el exceso de confianza son dos caras de la misma moneda.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La autoevaluación inadecuada conduce a decisiones basadas en miedos.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La retroalimentación es crucial para calibrar nuestra confianza.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Identificar los límites de tu zona de confort.",
+    "Hacer la pregunta '¿Qué evidencia me haría cambiar de opinión?'",
+    "Buscar a un mentor o colega que ofrezca feedback."
+  ],
+  "audience": "Personas que luchan con la confianza en sí mismas y el síndrome del impostor.",
+  "tone": "Reflexivo y motivacional",
+  "content_style": "Conversacional y accesible",
+  "retention_devices": [
+    "Historias personales",
+    "Preguntas retóricas",
+    "Repetición de ideas claves"
+  ],
+  "title_supporting_quotes": [
+    "Las dudas y la soberbia pueden volverse manejables.",
+    "Todos estamos improvisando un poco."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre autoconfianza.",
+    "Talleres sobre gestión emocional.",
+    "Contenido para redes sociales sobre el síndrome del impostor."
+  ],
+  "risk_notes": [
+    "Pueden surgir defensas en personas con demasiada confianza.",
+    "Es posible que algunos no acepten la necesidad de feedback."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

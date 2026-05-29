@@ -1,0 +1,89 @@
+{
+  "video_id": "xu1xXTPDivA",
+  "language": "es",
+  "summary": "El video aborda la importancia de la intuición en la toma de decisiones, explicando que esta es el resultado del reconocimiento de patrones basado en la experiencia acumulada, la claridad de las reglas y el estado emocional de la persona. Se enfatiza que la intuición debe ser utilizada con juicio y no como una excusa para evitar un análisis profundo.",
+  "main_topics": [
+    "Intuición humana",
+    "Reconocimiento de patrones",
+    "Experiencia",
+    "Reglas claras",
+    "Estado emocional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la intuición",
+      "purpose": "Presentar el concepto de intuición y su relevancia en situaciones críticas.",
+      "summary": "Un bombero utiliza su intuición para actuar rápidamente en una situación peligrosa."
+    },
+    {
+      "section": "Condiciones de una intuición confiable",
+      "purpose": "Explicar las tres condiciones necesarias para que la intuición sea válida.",
+      "summary": "Se discuten la experiencia previa, reglas claras y el estado emocional como pilares de la intuición confiable."
+    },
+    {
+      "section": "Preguntas reflexivas",
+      "purpose": "Hacer que el espectador reflexione sobre el uso de su intuición.",
+      "summary": "Se proponen preguntas a considerar antes de confiar en la intuición."
+    },
+    {
+      "section": "Precauciones",
+      "purpose": "Advertir contra el uso irresponsable de la intuición.",
+      "summary": "Se desaconseja usar la intuición como justificación para la falta de análisis."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa impactante",
+    "hook_text": "Un bombero entra a una casa en llamas, da un paso, dos y de golpe grita ¡Salgan ya!",
+    "why_it_works": "Capta la atención inmediatamente al presentar una situación de vida o muerte, instando al espectador a reflexionar sobre la intuición en contextos críticos."
+  },
+  "claims": [
+    {
+      "claim": "La intuición se basa en el reconocimiento de patrones.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La experiencia es clave para una intuición confiable.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El estado emocional afecta la claridad de la intuición.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La intuición no debe usarse como excusa para evitar análisis.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Médica que intuye que algo no anda bien al entrar al consultorio.",
+    "Ajedrez como un área donde la intuición se entrena."
+  ],
+  "actionable_ideas": [
+    "Reflexiona sobre tus experiencias previas antes de confiar en tu intuición.",
+    "Asegúrate de entender bien las reglas del contexto en el que actúas.",
+    "Evalúa tu estado emocional antes de tomar decisiones basadas en corazonadas."
+  ],
+  "audience": "Personas interesadas en la toma de decisiones y el desarrollo personal.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Narrativo con ejemplos prácticos",
+  "retention_devices": [
+    "Historia de un bombero",
+    "Pregunta reflexiva sobre la intuición"
+  ],
+  "title_supporting_quotes": [
+    "Una voz interna le dijo que algo no cerraba.",
+    "Si estás enojado, ansioso o eufórico, lo que sentís no es sabiduría del inconsciente."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la psicología de la intuición.",
+    "Seminarios sobre toma de decisiones."
+  ],
+  "risk_notes": [
+    "La intuición puede llevar a errores si no se evalúan las condiciones adecuadas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

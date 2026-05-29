@@ -1,0 +1,68 @@
+{
+  "video_id": "24ino8aOK8c",
+  "language": "es",
+  "summary": "El video aborda la sorprendente disminución en las relaciones sexuales entre adultos a pesar de vivir en una época con mayor libertad sexual. Destaca estadísticas globales que reflejan la caída de encuentros íntimos y la dificultad para formar vínculos significativos.",
+  "main_topics": [
+    "Disminución de relaciones sexuales",
+    "Liberación sexual",
+    "La soledad entre jóvenes"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la disminución de sexo",
+      "purpose": "Presentar el tema principal",
+      "summary": "Se menciona que solo el 37% de los adultos tiene sexo semanalmente, comparado con el 60% en 1990."
+    },
+    {
+      "section": "Contexto global",
+      "purpose": "Ilustrar que el fenómeno es mundial",
+      "summary": "Se citan ejemplos de Francia y Japón para mostrar la tendencia global de la caída de encuentros sexuales."
+    },
+    {
+      "section": "Impacto en las relaciones",
+      "purpose": "Destacar las consecuencias de la disminución de sexo",
+      "summary": "Se habla sobre el aumento de soltería y la falta de interés en tener pareja entre los jóvenes."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistic",
+    "hook_text": "Solo el 37% de los adultos tiene sexo al menos una vez por semana.",
+    "why_it_works": "Las estadísticas impactantes generan sorpresa y atrapan la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "La disminución en las relaciones sexuales es un fenómeno global.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "La intimidad real es más difícil de construir en la actualidad.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Iniciar conversaciones sobre la intimidad emocional entre jóvenes.",
+    "Promover el bienestar sexual y emocional en campañas educativas."
+  ],
+  "audience": "Adultos interesados en temas de sexualidad y relaciones.",
+  "tone": "Informativo y reflexivo.",
+  "content_style": "Analítico y persuasivo.",
+  "retention_devices": [
+    "Estadísticas sorprendentes",
+    "Ejemplos de diferentes culturas"
+  ],
+  "title_supporting_quotes": [
+    "Vivimos en la época de mayor libertad sexual de la historia."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la sexualidad moderna.",
+    "Discusiones en podcast sobre intimidad y relaciones."
+  ],
+  "risk_notes": [
+    "El tema de la sexualidad puede provocar reacciones diversas en la audiencia.",
+    "Posibles malentendidos sobre el contexto cultural de ciertos países."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

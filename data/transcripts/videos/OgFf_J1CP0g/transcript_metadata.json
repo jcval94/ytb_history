@@ -1,0 +1,14 @@
+{
+  "video_id": "OgFf_J1CP0g",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "How An Infinite Hotel Ran Out Of Room",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\OgFf_J1CP0g.mp3",
+  "transcribed_at": "2026-05-29T05:37:54.359357+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2505,
+  "text_sha256": "03374c1f7ae7b87f4a778070016b8bac55d1c9aec8d2f34bf5d6cc0ac268b10f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

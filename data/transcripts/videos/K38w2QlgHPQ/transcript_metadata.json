@@ -1,0 +1,14 @@
+{
+  "video_id": "K38w2QlgHPQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué tardás en responder cuando te hablan?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\K38w2QlgHPQ.mp3",
+  "transcribed_at": "2026-05-29T05:43:15.599047+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1343,
+  "text_sha256": "6981627f3ce66542a62bb31945887169977a4e42a1e19e50fe79d9f52df503e8",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,79 @@
+{
+  "video_id": "kumm6g6ynhI",
+  "language": "es",
+  "summary": "El discurso aborda la crisis de la democracia a nivel global, destacando la insatisfacción de los jóvenes y el riesgo de que busquen soluciones en líderes autoritarios ante la falta de resultados positivos en el sistema democrático.",
+  "main_topics": [
+    "Crisis de la democracia",
+    "Insatisfacción ciudadana",
+    "Riesgo de autoritarismo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la problemática de la insatisfacción con la democracia",
+      "summary": "Se plantea la pregunta sobre la utilidad del voto en un contexto de descontento global."
+    },
+    {
+      "section": "Datos y estadísticas",
+      "purpose": "Proporcionar evidencia sobre el debilitamiento de las democracias",
+      "summary": "Se citan estadísticas de The Economist sobre la reducción de democracias plenas y la insatisfacción global."
+    },
+    {
+      "section": "Perspectiva juvenil",
+      "purpose": "Examinar la percepción de la democracia en jóvenes",
+      "summary": "Los jóvenes, al no haber vivido la fragilidad de la democracia, tienden a valorarla menos que las generaciones mayores."
+    },
+    {
+      "section": "Riesgos asociados",
+      "purpose": "Alertar sobre las consecuencias de la desconfianza en la democracia",
+      "summary": "Se advierte que el abuso de poder podría surgir de elecciones populares en lugar de golpes de Estado."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta",
+    "hook_text": "¿Para qué sirve votar si nada cambia?",
+    "why_it_works": "Engancha la audiencia al plantear una inquietud común sobre la efectividad del sistema democrático."
+  },
+  "claims": [
+    {
+      "claim": "Menos del 7% de la población mundial vive en democracias plenas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La juventud valora menos la democracia que las generaciones mayores.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "El peligro es que la desilusión con la democracia lleve a elegir líderes autoritarios.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar la educación cívica entre los jóvenes.",
+    "Promover la participación ciudadana activa en la democracia.",
+    "Crear espacios de diálogo sobre los beneficios de la democracia."
+  ],
+  "audience": "Jóvenes adultos interesados en política y democracia.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Conversacional y persuasivo.",
+  "retention_devices": [
+    "Citas de expertos",
+    "Estadísticas impactantes",
+    "Preguntas retóricas"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la crisis democrática.",
+    "Debates públicos sobre el futuro de la democracia.",
+    "Material educativo enfocado en la historia de la democracia."
+  ],
+  "risk_notes": [
+    "El riesgo de desconfianza en la democracia puede llevar a movimientos autoritarios.",
+    "Es necesaria una renovación en la política para recuperar la fe pública."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

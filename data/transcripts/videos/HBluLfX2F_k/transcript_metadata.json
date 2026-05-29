@@ -1,0 +1,14 @@
+{
+  "video_id": "HBluLfX2F_k",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "You've (Likely) Been Playing The Game of Life Wrong",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\HBluLfX2F_k.mp3",
+  "transcribed_at": "2026-05-29T05:47:18.650402+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 43506,
+  "text_sha256": "671d664ac7b82e1199b11c0beaf2257e04e865ea1cfc593d1f46fcc250480fb1",
+  "repo_schema_version": "transcript_metadata_v1"
+}

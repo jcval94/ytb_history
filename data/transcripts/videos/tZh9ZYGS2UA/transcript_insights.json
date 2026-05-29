@@ -1,0 +1,77 @@
+{
+  "video_id": "tZh9ZYGS2UA",
+  "language": "es",
+  "summary": "El video discute la importancia creciente de la inteligencia artificial (IA) en el mercado laboral y cómo está transformando la manera en que se realiza el trabajo, especialmente en la búsqueda de información.",
+  "main_topics": [
+    "Importancia de la IA en el futuro laboral",
+    "Diferencias entre Google e IA",
+    "Eficiencia en el trabajo gracias a la IA"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la IA",
+      "purpose": "Presentar la relevancia de la IA en el trabajo futuro.",
+      "summary": "Se menciona que quienes no sepan usar IA tendrán dificultades laborales en el futuro cercano."
+    },
+    {
+      "section": "Comparación Google vs IA",
+      "purpose": "Explicar la diferencia fundamental entre usar un buscador y una inteligencia artificial.",
+      "summary": "La IA permite buscar información que no existe actualmente, en contraste con la búsqueda de datos existentes en Google."
+    },
+    {
+      "section": "Eficiencia Laboral",
+      "purpose": "Mostrar cómo la IA puede mejorar la productividad.",
+      "summary": "Usar IA puede reducir significativamente el tiempo necesario para concluir tareas complejas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistic",
+    "hook_text": "70 y 80% de la gente casi no lo sabe usar o hace un uso muy básico.",
+    "why_it_works": "Provee un contexto alarmante que subraya la necesidad de adaptarse a la IA para no quedar rezagados."
+  },
+  "claims": [
+    {
+      "claim": "El que no sepa usar bien IA no va a poder laburar.",
+      "support_level": "explicit",
+      "risk": "High"
+    },
+    {
+      "claim": "La IA permite crear información que no existía antes.",
+      "support_level": "explicit",
+      "risk": "Medium"
+    },
+    {
+      "claim": "Usar IA puede reducir el tiempo de trabajo significativamente.",
+      "support_level": "implicit",
+      "risk": "Low"
+    }
+  ],
+  "examples": [
+    "Vinculando la historia de la televisión argentina con fenómenos políticos para generar nuevos contenidos."
+  ],
+  "actionable_ideas": [
+    "Aprender a usar herramientas de inteligencia artificial.",
+    "Buscar aplicaciones de IA en áreas laborales específicas.",
+    "Experimentar con diferentes prompts para maximizar la productividad."
+  ],
+  "audience": "Profesionales y estudiantes interesados en el uso de la inteligencia artificial.",
+  "tone": "Informativo y persuasivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Ejemplos prácticos del uso de IA.",
+    "Comparaciones directas que facilitan la comprensión."
+  ],
+  "title_supporting_quotes": [
+    "El que no sepa usar bien IA no va a poder laburar.",
+    "La IA te va a generar un laburo espectacular."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear cursos sobre el uso de IA en el trabajo.",
+    "Realizar talleres prácticos de adaptación a herramientas de IA."
+  ],
+  "risk_notes": [
+    "No adaptarse a la IA podría dejar a muchas personas fuera del mercado laboral.",
+    "El temor a la automatización puede generar resistencia al cambio."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

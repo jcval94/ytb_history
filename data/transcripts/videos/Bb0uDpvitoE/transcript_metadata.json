@@ -1,0 +1,20 @@
+{
+  "video_id": "Bb0uDpvitoE",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "I Turned My Phone Into A Microscope",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Bb0uDpvitoE.mp3",
+  "transcribed_at": "2026-05-29T05:43:40.708028+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1573,
+  "text_sha256": "61e54bb46e2d6e94931800a358dd0d5ebb412332edc4a5bd81cf38f091e8cad9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Bb0uDpvitoE\\transcript_segments.jsonl",
+  "segment_count": 28,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:19:19.591881+00:00",
+  "duration_seconds": 101.72000122070312
+}

@@ -1,0 +1,89 @@
+{
+  "video_id": "oRV5imUliSs",
+  "language": "es",
+  "summary": "El video reflexiona sobre el valor de la experiencia y la madurez en los emprendimientos, resaltando que muchas personas logran el éxito en fases posteriores de su vida, contrarrestando la creencia de que la juventud es un requisito para el éxito.",
+  "main_topics": [
+    "Éxito en la madurez",
+    "Estudio de Harvard sobre emprendimientos",
+    "Inteligencia cristalizada",
+    "Estabilidad emocional en mayores",
+    "Percepción cultural sobre la juventud y el éxito"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la idea central sobre el éxito en la madurez",
+      "summary": "Se cuestiona la idea de que la juventud es el único camino hacia el éxito."
+    },
+    {
+      "section": "Datos sobre emprendimientos",
+      "purpose": "Proveer evidencia científica",
+      "summary": "Un estudio indica que los fundadores exitosos suelen tener una edad promedio de 45 años."
+    },
+    {
+      "section": "Contraste cultural",
+      "purpose": "Criticar la idolatría hacia la juventud",
+      "summary": "Se mencionan los estereotipos culturales que valoran más a los jóvenes emprendedores que a aquellos con más experiencia."
+    },
+    {
+      "section": "Beneficios de la edad",
+      "purpose": "Resaltar las ventajas de la madurez",
+      "summary": "Se argumenta que las habilidades como la perspectiva y la visión estratégica mejoran con la edad."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Inspirar a una audiencia mayor",
+      "summary": "Cierra con una analogía sobre conocimiento y sabiduría, alentando a valorar las experiencias acumuladas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística interesante",
+    "hook_text": "la edad promedio de quienes los fundaron no era 25, era 45.",
+    "why_it_works": "Ofrece un dato sorprendente que desafía la percepción común sobre la juventud y el éxito, captando la atención del espectador."
+  },
+  "claims": [
+    {
+      "claim": "Los fundadores exitosos de empresas tienen una edad promedio de 45 años.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las personas mayores tienen más estabilidad emocional y autocontrol.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La inteligencia cristalizada mejora con la edad.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Valorar la experiencia en el emprendimiento.",
+    "Realizar un cambio de perspectiva sobre la relación entre la edad y el éxito.",
+    "Fomentar la estabilidad emocional como componente del éxito personal y profesional."
+  ],
+  "audience": "Adultos mayores de 30 años interesados en emprendimiento.",
+  "tone": "Inspirador y empoderador",
+  "content_style": "Conversacional y reflexivo",
+  "retention_devices": [
+    "Estadísticas sorprendentes",
+    "Analogías claras",
+    "Desafío a creencias comunes"
+  ],
+  "title_supporting_quotes": [
+    "No hay una edad mágica para brillar.",
+    "Cuando cambias la manera de medir la capacidad, cambia el podio."
+  ],
+  "creative_reuse_opportunities": [
+    "Blogs sobre emprendimiento y madurez.",
+    "Charlas motivacionales sobre la experiencia en los negocios.",
+    "Infografías que comparen habilidades a lo largo de la vida."
+  ],
+  "risk_notes": [
+    "Posible rechazo a la idea por parte de una audiencia más joven.",
+    "Limitaciones en la generalización de datos sobre emprendimiento."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

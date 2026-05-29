@@ -1,0 +1,20 @@
+{
+  "video_id": "BtnHHWgzRxg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "30 minutos para pensar la IA: sus aciertos, sus delirios y el futuro del trabajo",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BtnHHWgzRxg.mp3",
+  "transcribed_at": "2026-05-29T06:11:09.272928+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 17555,
+  "text_sha256": "77132700beff2089ad4094e9b184b164967ae064730d1f5eb6447697183a2448",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BtnHHWgzRxg\\transcript_segments.jsonl",
+  "segment_count": 311,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:21:16.163185+00:00",
+  "duration_seconds": 1668.7900390625
+}

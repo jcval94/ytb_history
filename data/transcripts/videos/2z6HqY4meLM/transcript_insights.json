@@ -1,0 +1,83 @@
+{
+  "video_id": "2z6HqY4meLM",
+  "language": "es",
+  "summary": "El video aborda el concepto de 'pobreza del tiempo', donde individuos, a pesar de no ser materialmente pobres, viven con la constante sensación de falta de tiempo. Se discute cómo el aumento de ingresos puede llevar a más ansiedad por el tiempo y se sugiere que la clave es abandonar el consumismo para recuperar el tiempo como recurso valioso.",
+  "main_topics": [
+    "pobreza del tiempo",
+    "consumismo",
+    "gestión del tiempo",
+    "ansiedad por la falta de tiempo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción del problema",
+      "purpose": "Presentar la sensación de falta de tiempo",
+      "summary": "Se introduce la idea de que muchas personas sienten que no tienen tiempo suficiente en sus vidas."
+    },
+    {
+      "section": "Definición del concepto",
+      "purpose": "Definir 'pobreza del tiempo'",
+      "summary": "Se explica cómo este término se refiere a la angustia que siente la gente por no tener tiempo, independientemente de su situación económica."
+    },
+    {
+      "section": "Estadísticas y estudios",
+      "purpose": "Sustentar el concepto con datos",
+      "summary": "Los estudios indican que incluso quienes tienen altos ingresos pueden experimentar la pobreza del tiempo."
+    },
+    {
+      "section": "Soluciones proactivas",
+      "purpose": "Proponer un cambio",
+      "summary": "Se sugiere que, al superar las necesidades básicas, las personas deben enfocarse en recuperar su tiempo dejando de lado el consumismo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntando a la audiencia",
+    "hook_text": "Si sentís que tu vida es una película en cámara rápida y el tiempo se te escurre entre los dedos, no estás solo.",
+    "why_it_works": "Conecta emocionalmente con el público al validar sus sentimientos y experiencias, creando interés en el tema."
+  },
+  "claims": [
+    {
+      "claim": "La pobreza del tiempo afecta a todos, incluso a los ricos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Más ingresos no siempre reducen la ansiedad por el tiempo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Abandonar el consumismo ayuda a recuperar tiempo.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Enfocar esfuerzos en la gestión del tiempo.",
+    "Reducir el consumismo y priorizar lo que realmente importa.",
+    "Evaluar el uso del tiempo y hacer ajustes según las prioridades."
+  ],
+  "audience": "Personas que sienten que no tienen suficiente tiempo en sus vidas.",
+  "tone": "reflexivo",
+  "content_style": "conversacional",
+  "retention_devices": [
+    "Estadísticas impactantes",
+    "Conexión emocional",
+    "Consejos prácticos"
+  ],
+  "title_supporting_quotes": [
+    "La pobreza del tiempo es un fenómeno común entre quienes viven estresados por la falta de tiempo.",
+    "Recuperar el tiempo es más valioso que acumular riqueza material."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre gestión del tiempo.",
+    "Charlas o talleres sobre minimalismo y consumo responsable.",
+    "Contenidos en redes sociales sobre bienestar y calidad de vida."
+  ],
+  "risk_notes": [
+    "El concepto puede ser malinterpretado como un llamado al ascetismo extremo.",
+    "Puede subestimar la importancia de la seguridad financiera."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

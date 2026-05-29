@@ -1,0 +1,20 @@
+{
+  "video_id": "8miwOSHvU4o",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "DESTROZÓ el Mundo 2 Veces y le Dieron Medallas | Thomas Midgley",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\8miwOSHvU4o.mp3",
+  "transcribed_at": "2026-05-29T06:04:51.013618+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9155,
+  "text_sha256": "b8502d69d7d10a1c8b17235bc65739833715ccfc6026a685fbadb2ca7b6a57fd",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\8miwOSHvU4o\\transcript_segments.jsonl",
+  "segment_count": 342,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:16:42.229056+00:00",
+  "duration_seconds": 1268.68994140625
+}

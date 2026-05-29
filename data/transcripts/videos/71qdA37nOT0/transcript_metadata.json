@@ -1,0 +1,20 @@
+{
+  "video_id": "71qdA37nOT0",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Qué harías si pudieras vivir 120 años?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\71qdA37nOT0.mp3",
+  "transcribed_at": "2026-05-29T06:11:35.780641+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1558,
+  "text_sha256": "d8ccbbc1f5b9460da252e3f8ef5bdba12d7e7de16262afb36c477c7617ee6e24",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\71qdA37nOT0\\transcript_segments.jsonl",
+  "segment_count": 20,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T06:15:16.057807+00:00",
+  "duration_seconds": 83.87000274658203
+}
