@@ -1,0 +1,14 @@
+{
+  "video_id": "yrnML0SXwYo",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Israel’s government in damage control mode | The Listening Post",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\yrnML0SXwYo.mp3",
+  "transcribed_at": "2026-05-29T05:15:33.808872+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1317,
+  "text_sha256": "7bcad76512b9934d144962378d798f45381075f651cf382e0748576069739079",
+  "repo_schema_version": "transcript_metadata_v1"
+}

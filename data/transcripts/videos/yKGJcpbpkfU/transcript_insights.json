@@ -1,0 +1,84 @@
+{
+  "video_id": "yKGJcpbpkfU",
+  "language": "es",
+  "summary": "El video es una conversación humorística entre dos personajes, donde se discuten las aspiraciones y realidades de la vida a través de ejemplos cómicos. Se abordan temas como la presión social, la búsqueda de la identidad y la crítica a las expectativas familiares.",
+  "main_topics": [
+    "Expectativas familiares",
+    "Futuro personal",
+    "Realidades económicas",
+    "Identidad y vocación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la dinámica entre los personajes.",
+      "summary": "Se introduce a los personajes y se establece un tono de broma."
+    },
+    {
+      "section": "Expectativas de futuro",
+      "purpose": "Explorar las aspiraciones del personaje más joven.",
+      "summary": "El personaje menciona sus sueños de éxito y premios, lo que provoca risas."
+    },
+    {
+      "section": "Realidad económica",
+      "purpose": "Contrastar aspiraciones con las realidades del mundo.",
+      "summary": "Se discuten problemas económicos que minan las expectativas optimistas."
+    },
+    {
+      "section": "Ejercicio de asociación",
+      "purpose": "Reflejar la desconexión entre sueños y realidad.",
+      "summary": "Se hace un juego de palabras que muestra respuestas inesperadas y cómicas."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Concluir la sesión de manera ligera.",
+      "summary": "Se deja el tono humorístico y desenfadado con un último comentario."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "humorístico",
+    "hook_text": "¿No voy a ganar mejor beso? ¡Con esa cara lo dudo mucho, mejor amigo!",
+    "why_it_works": "Establece inmediatamente un tono cómico y crea una conexión emocional a través de la risa."
+  },
+  "claims": [
+    {
+      "claim": "Las expectativas familiares pueden ser irreales.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La realidad económica afecta los sueños.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "El juego de palabras como herramienta de humor.",
+    "La crítica a las expectativas familiares a través del sarcasmo."
+  ],
+  "actionable_ideas": [
+    "Usar el humor para abordar temas serios.",
+    "Realizar ejercicios de introspección sobre las aspiraciones personales."
+  ],
+  "audience": "Jóvenes adultos y adultos",
+  "tone": "humorístico y sarcástico",
+  "content_style": "conversacional y ligero",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Comentarios cómicos",
+    "Interacción entre personajes"
+  ],
+  "title_supporting_quotes": [
+    "¡Falso! ¡Ay, Lucho, mi niño!",
+    "¡Divorcio! ¡Ayuda!"
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar el guion para un sketch cómico.",
+    "Crear memes a partir de las frases más graciosas."
+  ],
+  "risk_notes": [
+    "El uso excesivo de sátira puede no ser bien comprendido por todos.",
+    "Las críticas a las expectativas familiares podrían ofender a algunos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

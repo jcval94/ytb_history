@@ -1,0 +1,74 @@
+{
+  "video_id": "BthdLfKm2eA",
+  "language": "es",
+  "summary": "Un entrenador se despide del Real Madrid, reflexionando sobre su tiempo en el club y su futuro profesional. Expresa su aprecio por el equipo y el cuerpo técnico que lo sucederá. También menciona su crecimiento personal y profesional en los últimos meses.",
+  "main_topics": [
+    "Despedida del Real Madrid",
+    "Reflexiones sobre el tiempo en el club",
+    "Futuro profesional",
+    "Cuerpo técnico del nuevo entrenador",
+    "Crecimiento personal y profesional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el tono de la despedida",
+      "summary": "El entrenador considera al Real Madrid como su casa y se despide tras 20 años."
+    },
+    {
+      "section": "Desarrollo de la reflexión",
+      "purpose": "Compartir la evolución personal y profesional",
+      "summary": "Habla sobre su crecimiento y preparación para nuevos retos."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Mirada hacia el futuro",
+      "summary": "Menciona que a partir de ahora pensará en lo que es mejor para él."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Esta siempre la he considerado mi casa.",
+    "why_it_works": "Conecta con la audiencia al evocar un sentido de pertenencia y nostalgia."
+  },
+  "claims": [
+    {
+      "claim": "Este será mi último partido como entrenador del Real Madrid.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Me veo preparado para nuevos retos.",
+      "support_level": "implicit",
+      "risk": "Medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Considerar la importancia de la pertenencia en el deporte",
+    "Reflexionar sobre el crecimiento personal tras una larga carrera",
+    "Evaluar cómo prepararse para el cambio de carrera"
+  ],
+  "audience": "Aficionados al fútbol, seguidores del Real Madrid, entrenadores y jugadores.",
+  "tone": "Reflexivo y nostálgico",
+  "content_style": "Conversacional y emocional",
+  "retention_devices": [
+    "Emoción personal",
+    "Narrativa de crecimiento",
+    "Reconocimiento del equipo"
+  ],
+  "title_supporting_quotes": [
+    "Esta siempre la he considerado mi casa.",
+    "Me veo preparado para nuevos retos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la importancia de la despedida en el deporte",
+    "Realizar un video sobre el crecimiento personal de entrenadores",
+    "Hacer un artículo sobre la transición profesional en el fútbol"
+  ],
+  "risk_notes": [
+    "Puede generar expectativas sobre su futuro manejo como entrenador.",
+    "La despedida puede afectar emocionalmente a los fans."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

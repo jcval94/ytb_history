@@ -1,0 +1,14 @@
+{
+  "video_id": "yKGJcpbpkfU",
+  "channel_id": "UCoGDh1Xa3kUCpok24JN5DKA",
+  "channel_name": "enchufetv",
+  "title": "Sicóloga de Colegio",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\yKGJcpbpkfU.mp3",
+  "transcribed_at": "2026-05-29T05:00:42.297582+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1519,
+  "text_sha256": "57f6037f800b96c9cf7bae2eb3f88810b55c4bc3a198f3227553fdde1304e001",
+  "repo_schema_version": "transcript_metadata_v1"
+}

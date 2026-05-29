@@ -1,0 +1,89 @@
+{
+  "video_id": "I4gzl1Tu4oM",
+  "language": "es",
+  "summary": "Carlos Rucóf discute las tense relaciones entre Estados Unidos y Cuba, señalando un posible ataque militar inminente y analizando las implicaciones políticas de las declaraciones de figuras como Marco Rubio. También reflexiona sobre la estrategia del gobierno de Trump en relación con América Latina y Europa.",
+  "main_topics": [
+    "Relaciones Estados Unidos - Cuba",
+    "Implicaciones políticas de Marco Rubio",
+    "Situación de Raúl Castro",
+    "Estrategia electoral de Donald Trump",
+    "Tensión global con Irán y Rusia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar al invitado y el tema central",
+      "summary": "Carlos Rucóf es presentado y se plantea el inminente ataque a Cuba."
+    },
+    {
+      "section": "Análisis de la situación en Cuba",
+      "purpose": "Desglosar la dinámica política actual",
+      "summary": "Rucóf explica la situación de Raúl Castro y las amenazas de la política estadounidense hacia Cuba."
+    },
+    {
+      "section": "Implicaciones político-electorales",
+      "purpose": "Relacionar la política de Trump con su agenda electoral",
+      "summary": "Se analiza cómo las acciones del presidente Trump se relacionan con las elecciones del 3 de noviembre."
+    },
+    {
+      "section": "Comparativa geopolítica",
+      "purpose": "Establecer paralelismos con otras naciones",
+      "summary": "Rucóf compara la situación de Cuba con la de Venezuela e Irán en el contexto de la política estadounidense."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Sintetizar la conversación",
+      "summary": "Se concluye con un análisis de la estrategia de tropas de Trump y su relación con Europa."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Declaración impactante",
+    "hook_text": "el ataque militar norteamericano a Cuba es inminente",
+    "why_it_works": "Genera intriga y urgencia, captando la atención del espectador sobre un tema sensible."
+  },
+  "claims": [
+    {
+      "claim": "El ataque militar norteamericano a Cuba es inminente.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La dictadura cubana se niega a la negociación.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Las sanciones son culpa de la gestión de Raúl Castro.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Mantenerse informado sobre la situación en Cuba.",
+    "Analizar las declaraciones políticas en el contexto electoral.",
+    "Seguir la relación geopolítica entre Estados Unidos, Cuba e Irán."
+  ],
+  "audience": "Interesados en política internacional y relaciones internacionales.",
+  "tone": "Analítico y serio",
+  "content_style": "Entrevista formal y profunda",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Comparaciones históricas",
+    "Citas de figuras públicas"
+  ],
+  "title_supporting_quotes": [
+    "el ataque militar norteamericano a Cuba es inminente",
+    "esta dictadura no les permite a ustedes que lleguen ni los medicamentos, ni la medicina"
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido en video sobre relaciones internacionales.",
+    "Artículos sobre la historia de la política cubana.",
+    "Podcast analizando estrategias políticas de distintas administraciones."
+  ],
+  "risk_notes": [
+    "Las afirmaciones sobre un ataque inminente pueden causar pánico o desinformación.",
+    "Las comparaciones con Venezuela e Irán podrían ser malinterpretadas por algunas audiencias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

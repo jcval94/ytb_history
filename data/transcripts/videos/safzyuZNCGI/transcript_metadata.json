@@ -1,0 +1,14 @@
+{
+  "video_id": "safzyuZNCGI",
+  "channel_id": "UCpcTrCXblq78GZrTUTLWeBw",
+  "channel_name": "FIFA",
+  "title": "LISA, Anitta, Rema, FIFA Sound - Goals (FIFA World Cup 2026™) [Official Music Video]",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\safzyuZNCGI.mp3",
+  "transcribed_at": "2026-05-29T05:00:15.889704+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 210,
+  "text_sha256": "063d74afbc495f8190d914db3c75b292b09c2c8f84f62934b61d1bb4d80930a8",
+  "repo_schema_version": "transcript_metadata_v1"
+}

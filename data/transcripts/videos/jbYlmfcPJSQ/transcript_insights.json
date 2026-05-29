@@ -1,8 +1,78 @@
 {
-  "schema_version": "transcript_insights_v1",
-  "status": "not_generated",
   "video_id": "jbYlmfcPJSQ",
-  "summary": null,
-  "main_topics": [],
-  "warnings": []
+  "language": "es",
+  "summary": "El video detalla cómo una simulación de un desastre en Los Ángeles, generada por inteligencia artificial, causa pánico y confusión, resaltando la problemática de los deepfakes a raíz del lanzamiento de Sora por OpenAI, un servicio que permite la creación y manipulación de videos con la imagen de personas.",
+  "main_topics": [
+    "Deepfakes",
+    "IA generativa",
+    "Desinformación",
+    "Impacto social",
+    "Leyes y ética"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar un evento ficticio generado por IA",
+      "summary": "Se describe un video falso de Los Ángeles durante un incendio forestal."
+    },
+    {
+      "section": "Descripción de Sora",
+      "purpose": "Explicar cómo funciona la nueva herramienta de OpenAI",
+      "summary": "Sora permite a los usuarios crear videos usando su propia imagen, generando una mezcla de emoción y preocupación."
+    },
+    {
+      "section": "Consecuencias y reflexiones",
+      "purpose": "Plantear el problema de la desconfianza en los medios",
+      "summary": "Se discute cómo la percepción de la realidad se ve amenazada por deepfakes y desinformación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa alarmante",
+    "hook_text": "En enero de 2025, mientras la gente evacuaba Los Ángeles en pánico por los incendios forestales...",
+    "why_it_works": "Crea un sentido inmediato de urgencia y preocupación al presentar un escenario apocalíptico."
+  },
+  "claims": [
+    {
+      "claim": "Los deepfakes generan pánico y confusión.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Sora de OpenAI permite manipular la imagen de las personas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La percepción de la realidad está en peligro.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fomentar la educación sobre deepfakes y sus implicaciones.",
+    "Promover la legislación que proteja los derechos de imagen.",
+    "Desarrollar herramientas de verificación de información visual."
+  ],
+  "audience": "Interesados en tecnología, ética y medios de comunicación.",
+  "tone": "Preocupante y crítico",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos extremos",
+    "Datos alarmantes"
+  ],
+  "title_supporting_quotes": [
+    "Si alguien lo vio o un video lo muestra, debe ser cierto.",
+    "Hasta hace poco, a eso lo llamábamos deepfake y nos parecía inaceptable."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido educativo sobre la desinformación.",
+    "Desarrollar campañas para informar sobre las consecuencias de los deepfakes."
+  ],
+  "risk_notes": [
+    "La manipulación de imágenes puede causar daños irreparables.",
+    "El aumento de la desconfianza en los medios podría tener consecuencias sociales graves."
+  ],
+  "schema_version": "transcript_insights_v1"
 }

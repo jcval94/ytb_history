@@ -1,0 +1,20 @@
+{
+  "video_id": "I4gzl1Tu4oM",
+  "channel_id": "UCwd8Byi93KbnsYmCcKLExvQ",
+  "channel_name": "Negocios TV",
+  "title": "\"Trump amaga por un lado y pega en otro: El ataque de EEUU a Cuba es inminente\". Ruckauf",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\I4gzl1Tu4oM.mp3",
+  "transcribed_at": "2026-05-29T05:16:39.392897+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9259,
+  "text_sha256": "d85c1ee448b7a2b8a5939bed90599a76d39599bdb8459bf297a780724891d027",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\I4gzl1Tu4oM\\transcript_segments.jsonl",
+  "segment_count": 404,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T05:21:53.241502+00:00",
+  "duration_seconds": 1370.760009765625
+}

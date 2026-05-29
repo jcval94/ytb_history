@@ -1,0 +1,20 @@
+{
+  "video_id": "ARr156XvmVI",
+  "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
+  "channel_name": "Diego Ruzzarin",
+  "title": "¿Impuestos al agua? otra trampa del capitalismo. #diegoruzzarin",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ARr156XvmVI.mp3",
+  "transcribed_at": "2026-05-29T05:00:31.026738+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1782,
+  "text_sha256": "3540077ae547d61993efcc84df75cec567e86d0792e5329b00c87e07216330df",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\ARr156XvmVI\\transcript_segments.jsonl",
+  "segment_count": 22,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-29T05:19:32.373669+00:00",
+  "duration_seconds": 103.6500015258789
+}

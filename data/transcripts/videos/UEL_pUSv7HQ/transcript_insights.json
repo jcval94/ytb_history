@@ -1,0 +1,77 @@
+{
+  "video_id": "UEL_pUSv7HQ",
+  "language": "es",
+  "summary": "El orador expresa su descontento con la iniquidad en el sistema judicial, denunciando la persecución política que enfrenta y reafirmando su compromiso de luchar por su familia, su estado y su país.",
+  "main_topics": [
+    "persecución política",
+    "compromiso con el deber",
+    "defensa de la libertad",
+    "justicia en México"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el tema de la persecución política",
+      "summary": "El orador inicia expresando su descontento con la protección que se brinda a los delincuentes frente a la persecución de quienes cumplen con su deber."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Resaltar el compromiso personal",
+      "summary": "Se enfatiza la lucha personal por la familia, el estado y el país, manifestando un claro compromiso a continuar peleando a pesar de la adversidad."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Llamado a la acción y afirmación de firmeza",
+      "summary": "El orador cierra con una declaración de que continuará luchando por la libertad y los derechos en México."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "emotivo",
+    "hook_text": "dando la cara y dando la lucha por tu familia",
+    "why_it_works": "Conecta emocionalmente con la audiencia al hacer referencia a la protección de las familias y la lucha por un bien mayor."
+  },
+  "claims": [
+    {
+      "claim": "La persecución política es un problema en México.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Se protege a los delincuentes en el sistema judicial.",
+      "support_level": "implicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El orador está comprometido a luchar por la libertad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "descripción de la lucha política",
+    "referencias a la libertad y justicia"
+  ],
+  "actionable_ideas": [
+    "Crear conciencia sobre la situación de persecución política en México.",
+    "Fomentar la unidad en la lucha por la justicia."
+  ],
+  "audience": "ciudadanos interesados en la política y la justicia en México",
+  "tone": "emotivo y comprometido",
+  "content_style": "directo y apasionado",
+  "retention_devices": [
+    "repetición de compromiso",
+    "enfoque en la emocionalidad",
+    "llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Protegen a los delincuentes y persiguen a los que tratamos de cumplir con nuestro deber.",
+    "seguiré dando la cara y dando la lucha por tu familia."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video explicando la persecución política en México.",
+    "Desarrollar una serie de charlas sobre el compromiso cívico.],",
+    "risk_notes:["
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

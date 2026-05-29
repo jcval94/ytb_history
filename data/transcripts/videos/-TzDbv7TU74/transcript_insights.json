@@ -1,0 +1,97 @@
+{
+  "video_id": "-TzDbv7TU74",
+  "language": "es",
+  "summary": "Alfredo Jarife analiza la renuncia de Tulsi Gabbard y su impacto en la política de EE. UU., la posibilidad de un acuerdo entre EE. UU. e Irán y el papel de China y Rusia en Cuba. También aborda la situación geopolítica global y las relaciones entre las grandes potencias.",
+  "main_topics": [
+    "Renuncia de Tulsi Gabbard",
+    "Acuerdo entre EE. UU. e Irán",
+    "Espionaje de China y Rusia en Cuba",
+    "Relaciones geopolíticas entre potencias",
+    "Inflación y economía en EE. UU."
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar al experto y los temas a discutir.",
+      "summary": "Alfredo Jarife es presentado y se inicia la conversación sobre la renuncia de Tulsi Gabbard."
+    },
+    {
+      "section": "Renuncia de Tulsi Gabbard",
+      "purpose": "Analizar el impacto de la renuncia en la política estadounidense.",
+      "summary": "Jarife explica las implicaciones de la renuncia de Gabbard en el contexto del gabinete de Trump."
+    },
+    {
+      "section": "Relaciones EE. UU. e Irán",
+      "purpose": "Discutir la posibilidad de un acuerdo entre ambos países.",
+      "summary": "Se exploran los escollos sobre el enriquecimiento de uranio y la soberanía en el estrecho de Hormuz."
+    },
+    {
+      "section": "Espionaje en Cuba",
+      "purpose": "Abordar las acciones de China y Rusia en la región.",
+      "summary": "Jarife menciona el aumento de operaciones de espionaje en Cuba y su relevancia para la seguridad de EE. UU."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Resumir la conversación y anticipar futuros eventos geopolíticos.",
+      "summary": "Se concluye analizando el clima geopolítico actual y la importancia de las próximas cumbres internacionales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Introducción provocativa",
+    "hook_text": "La renuncia de Tulsi Gabbard y sus implicaciones en la política de EE. UU.",
+    "why_it_works": "Genera interés sobre un evento reciente y su impacto potencial en la política nacional."
+  },
+  "claims": [
+    {
+      "claim": "La renuncia de Tulsi Gabbard era previsible.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Un acuerdo entre EE. UU. e Irán podría ser beneficioso.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "China y Rusia están intensificando el espionaje en Cuba.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Hay un riesgo de conflicto en el estrecho de Ormuz.",
+      "support_level": "weak",
+      "risk": "alto"
+    }
+  ],
+  "examples": [
+    "Estados Unidos depende de los acuerdos en el estrecho de Ormuz para su economía.",
+    "Las visitas recientes de líderes internacionales marcan cambios estratégicos en la región."
+  ],
+  "actionable_ideas": [
+    "Seguir de cerca las dinámicas políticas en EE. UU. y su impacto en la política exterior.",
+    "Analizar las implicaciones del espionaje chino y ruso para la seguridad nacional.",
+    "Prepararse para cambios en el mercado energético y financiero debido a la situación en Irán."
+  ],
+  "audience": "Individuos interesados en geopolítica, economía y relaciones internacionales.",
+  "tone": "Analítico e informativo",
+  "content_style": "Conversacional y experto",
+  "retention_devices": [
+    "Citas de expertos",
+    "Estadísticas sobre economía",
+    "Comparaciones históricas"
+  ],
+  "title_supporting_quotes": [
+    "Tulsi Gabbard ha hecho un trabajo increíble y la echaremos de menos.",
+    "Estamos en un momento decisivo con Irán."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre geopolítica basada en las discusiones del video.",
+    "Podcasts desglosando las implicaciones de las renuncias políticas.",
+    "Gráficos informativos sobre las relaciones internacionales comentadas."
+  ],
+  "risk_notes": [
+    "Las noticias sobre espionaje podrían desestabilizar relaciones diplomáticas.",
+    "La inflación actual podría influir en las decisiones políticas de Trump."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

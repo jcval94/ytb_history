@@ -1,12 +1,10 @@
 {
-  "generated_at": "2026-05-27T04:15:45.298853+00:00",
-  "limit": 50,
-  "processed": 50,
-  "generated": 49,
-  "cached": 259,
-  "failed": 1,
-  "warnings": [
-    "insights_failed:jbYlmfcPJSQ"
-  ],
+  "generated_at": "2026-05-29T05:27:07.075428+00:00",
+  "limit": 10,
+  "processed": 10,
+  "generated": 10,
+  "cached": 308,
+  "failed": 0,
+  "warnings": [],
   "dry_run": false
 }

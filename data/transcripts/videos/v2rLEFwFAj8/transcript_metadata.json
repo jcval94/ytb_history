@@ -1,0 +1,14 @@
+{
+  "video_id": "v2rLEFwFAj8",
+  "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+  "channel_name": "Alex Hormozi",
+  "title": "\"Don't change the business\"",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\v2rLEFwFAj8.mp3",
+  "transcribed_at": "2026-05-29T05:00:51.396621+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2346,
+  "text_sha256": "2aaad76d7824540eb2150dca60a1d755eace0f33b16bc124f6b2dde4d09f7ea2",
+  "repo_schema_version": "transcript_metadata_v1"
+}
