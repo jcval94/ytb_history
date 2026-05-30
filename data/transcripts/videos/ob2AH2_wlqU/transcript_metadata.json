@@ -1,0 +1,14 @@
+{
+  "video_id": "ob2AH2_wlqU",
+  "channel_id": "UCLe_q9axMaeTbjN0hy1Z9xA",
+  "channel_name": "Caleb Hammer",
+  "title": "Military Veteran Escaping American Debt",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ob2AH2_wlqU.mp3",
+  "transcribed_at": "2026-05-30T16:02:53.073158+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 822,
+  "text_sha256": "fb41294d3d1bfff9e3ac948c12dfbe61b362da3e6bdd58b928dcde623e7e2af3",
+  "repo_schema_version": "transcript_metadata_v1"
+}

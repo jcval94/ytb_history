@@ -1,0 +1,14 @@
+{
+  "video_id": "yIAwuNqUifU",
+  "channel_id": "UCtoaZpBnrd0lhycxYJ4MNOQ",
+  "channel_name": "HasanAbi",
+  "title": "Ashley St. Clair got me a hoodie",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\yIAwuNqUifU.mp3",
+  "transcribed_at": "2026-05-30T16:04:31.711674+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 364,
+  "text_sha256": "b593feb85a741640ab16e831af921066a680f199656957df2dfc94d11399b00f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

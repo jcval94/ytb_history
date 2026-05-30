@@ -1,0 +1,83 @@
+{
+  "video_id": "Ro7Vy0I29gM",
+  "language": "es",
+  "summary": "El vídeo presenta tres libros que son considerados esenciales para los hombres, destacando su potencial transformador y la importancia de leerlos antes de fin de año.",
+  "main_topics": [
+    "Importancia de la lectura",
+    "Desarrollo personal",
+    "Psicología de las relaciones"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del vídeo.",
+      "summary": "El narrador establece que ha leído 344 libros y que compartirá tres específicos que pueden cambiar vidas."
+    },
+    {
+      "section": "Libro 1",
+      "purpose": "Recomendar el primer libro.",
+      "summary": "Destaca 'El camino del hombre superior' y cómo ayuda a gestionar la vida alineada con un propósito."
+    },
+    {
+      "section": "Libro 2",
+      "purpose": "Recomendar el segundo libro.",
+      "summary": "'Los hombres son de Marte, las mujeres son de Venus' ayuda a entender las diferencias psicológicas entre géneros."
+    },
+    {
+      "section": "Libro 3",
+      "purpose": "Recomendar el tercer libro.",
+      "summary": "'Psicocibernética' de Maxwell Maltz se centra en cómo la autoimagen afecta la realidad y los resultados en la vida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Estadística impactante",
+    "hook_text": "El 90% de gente se saltará este vídeo.",
+    "why_it_works": "Provoca curiosidad y refuerza la importancia de los libros al señalar que muchos podrían perderse la oportunidad de cambio."
+  },
+  "claims": [
+    {
+      "claim": "Los libros pueden cambiar la vida.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "La autoimagen impacta los resultados de la vida.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Entender las diferencias de género mejora las relaciones.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "La gestión de vida con un propósito definido.",
+    "La importancia de la comunicación en las relaciones."
+  ],
+  "actionable_ideas": [
+    "Leer los libros recomendados.",
+    "Reflexionar sobre la propia autoimagen.",
+    "Comprender y aplicar la psicología de las relaciones."
+  ],
+  "audience": "Hombres interesados en desarrollo personal.",
+  "tone": "Motivacional e informativo.",
+  "content_style": "Directo y persuasivo.",
+  "retention_devices": [
+    "Estadísticas sorprendentes",
+    "Llamado a la acción inmediato",
+    "Recomendaciones personales"
+  ],
+  "title_supporting_quotes": [
+    "Estos libros literalmente te pueden cambiar la vida."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un resumen de cada libro.",
+    "Desarrollar un grupo de lectura basado en los libros recomendados."
+  ],
+  "risk_notes": [
+    "La recomendación puede no resonar con todos.",
+    "El cambio transformador depende del compromiso personal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

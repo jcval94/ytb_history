@@ -1,0 +1,20 @@
+{
+  "video_id": "AfTkeVQ00i0",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Me voló la cabeza cuando Nietzsche dijo esto #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\AfTkeVQ00i0.mp3",
+  "transcribed_at": "2026-05-30T16:02:29.372359+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1127,
+  "text_sha256": "11cdd0eee615fb65f7a937b2d90fd50a209830b519e476432ef9917d3fba9e52",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\AfTkeVQ00i0\\transcript_segments.jsonl",
+  "segment_count": 27,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-05-30T16:05:09.021067+00:00",
+  "duration_seconds": 57.189998626708984
+}

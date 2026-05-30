@@ -1,0 +1,81 @@
+{
+  "video_id": "ob2AH2_wlqU",
+  "language": "unknown",
+  "summary": "The conversation revolves around a man expressing his frustrations about debt and his relationship with a girlfriend who has specific limitations regarding intimacy. He contemplates moving to the Philippines in hopes of finding a partner who meets his desires.",
+  "main_topics": [
+    "Debt issues",
+    "Relationship difficulties",
+    "Cultural perceptions of intimacy",
+    "Seeking alternatives in dating"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Present the main character's dilemma about debt and relationship issues.",
+      "summary": "The protagonist expresses dissatisfaction with their current financial situation and relationship."
+    },
+    {
+      "section": "Discussion of Relationships",
+      "purpose": "Highlight the protagonist's concerns about intimacy with his girlfriend.",
+      "summary": "The protagonist discusses limits imposed by his girlfriend about their physical relationship."
+    },
+    {
+      "section": "Consideration of Moving",
+      "purpose": "Introduce the idea of relocating for better relationship prospects.",
+      "summary": "The protagonist contemplates moving to the Philippines in search of a partner who aligns more with his wants."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing Question",
+    "hook_text": "Why are we going to the Philippines?",
+    "why_it_works": "It raises immediate curiosity about the character's motivations and experiences regarding relationships and culture."
+  },
+  "claims": [
+    {
+      "claim": "The protagonist is unhappy with his current relationship.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Cultural differences impact relationships.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Moving geographically can change romantic outcomes.",
+      "support_level": "weak",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Protagonist mentions feeling blue-balled by his girlfriend.",
+    "He considers looking for more fulfilling relationships abroad."
+  ],
+  "actionable_ideas": [
+    "Evaluate personal relationship expectations.",
+    "Consider communication improvements with partners.",
+    "Research cultural norms before relocating for relationships."
+  ],
+  "audience": "Individuals interested in relationship dynamics and cultural differences.",
+  "tone": "Conversational and casual.",
+  "content_style": "Informal dialogue.",
+  "retention_devices": [
+    "Relatable relationship struggles.",
+    "The allure of cultural differences.",
+    "Humorous elements in discussing intimacy."
+  ],
+  "title_supporting_quotes": [
+    "You can only thrust twice.",
+    "Nah, I’m being told she doesn’t put out the way you want her to."
+  ],
+  "creative_reuse_opportunities": [
+    "Social media posts on relationship dynamics.",
+    "Blog articles about cultural perceptions of intimacy.",
+    "Podcast discussions about dating across cultures."
+  ],
+  "risk_notes": [
+    "Discussion may oversimplify cultural experiences.",
+    "Potential misinterpretations of intimate relations."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

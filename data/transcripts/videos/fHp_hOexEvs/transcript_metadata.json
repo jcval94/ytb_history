@@ -1,0 +1,14 @@
+{
+  "video_id": "fHp_hOexEvs",
+  "channel_id": "UCtoaZpBnrd0lhycxYJ4MNOQ",
+  "channel_name": "HasanAbi",
+  "title": "Ashley St. Clair on having a baby with Elon Musk",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\fHp_hOexEvs.mp3",
+  "transcribed_at": "2026-05-30T16:02:48.438453+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2460,
+  "text_sha256": "2638f63580749141f8c8fe7caa41facddc57023a9f1ff8268b85cda2c72ee123",
+  "repo_schema_version": "transcript_metadata_v1"
+}

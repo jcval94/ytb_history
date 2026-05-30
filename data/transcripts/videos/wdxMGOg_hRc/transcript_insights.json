@@ -1,0 +1,85 @@
+{
+  "video_id": "wdxMGOg_hRc",
+  "language": "es",
+  "summary": "Fabricio MG Madrid critica la fiabilidad de encuestas sobre la intervención militar estadounidense en México. Argumenta que el tamaño de la muestra y sesgos en las encuestas la hacen inadecuada. Además, expone la manipulación mediática y política en torno a la percepción de la intervención extranjera, enfatizando la defensa de la soberanía nacional.",
+  "main_topics": [
+    "Fiabilidad de encuestas",
+    "Intervención militar estadounidense",
+    "Manipulación mediática",
+    "Soberanía nacional"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y la crítica a las encuestas.",
+      "summary": "Fabricio se presenta y expone su tema sobre la encuestación y la intervención militar."
+    },
+    {
+      "section": "Análisis de la encuesta",
+      "purpose": "Descomponer la validación de la encuesta mencionada.",
+      "summary": "Explica por qué la encuesta es poco confiable y sus implicaciones."
+    },
+    {
+      "section": "Manipulación mediática",
+      "purpose": "Enfocar la atención en el papel de los medios.",
+      "summary": "Critica cómo los medios han utilizado los resultados y la narrativa en torno a la intervención."
+    },
+    {
+      "section": "Soberanía y política",
+      "purpose": "Reflexionar sobre la importancia de la soberanía nacional.",
+      "summary": "Discute la relación histórica entre México y EUA, enfatizando la defensa de la soberanía."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Está usted de acuerdo o en desacuerdo con que el ejército de Estados Unidos intervenga en territorio mexicano?",
+    "why_it_works": "Engancha al espectador al invitarlo a reflexionar sobre un tema sensible y polémico."
+  },
+  "claims": [
+    {
+      "claim": "Las encuestas de 400 personas no son representativas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La manipulación mediática puede cambiar la percepción pública.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La soberanía nacional es un tema crucial en la política mexicana.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "El cambio en la formulación de las preguntas de la encuesta.",
+    "El uso estratégico de encuestas en medios para justificar intervenciones."
+  ],
+  "actionable_ideas": [
+    "Promover un análisis crítico de encuestas en medios.",
+    "Fortalecer la educación sobre la soberanía nacional en la sociedad.",
+    "Fomentar diálogos sobre la intervención extranjera en política."
+  ],
+  "audience": "Ciudadanos interesados en política y medios de comunicación.",
+  "tone": "Crítico e informativo.",
+  "content_style": "Analítico y persuasivo.",
+  "retention_devices": [
+    "Citas impactantes.",
+    "Preguntas retóricas.",
+    "Referencias históricas."
+  ],
+  "title_supporting_quotes": [
+    "Una encuesta telefónica de 400 personas jamás puede ser considerada como confiable.",
+    "La soberanía implica control sobre el territorio contra invasiones."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre encuestas y políticas públicas.",
+    "Videos explicativos sobre la soberanía nacional."
+  ],
+  "risk_notes": [
+    "Posible desinformación si se utilizan encuestas poco confiables.",
+    "Consecuencias políticas ante la aceptación de intervenciones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

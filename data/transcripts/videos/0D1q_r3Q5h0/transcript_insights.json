@@ -1,0 +1,84 @@
+{
+  "video_id": "0D1q_r3Q5h0",
+  "language": "unknown",
+  "summary": "The video discusses recent developments regarding U.S.-Iran relations, including the resignation of U.S. Director of National Intelligence Tulsi Gabbard, continuing claims about Iran's nuclear threat, the use of new weapons on Iran by the U.S., and deep differences in ongoing peace talks.",
+  "main_topics": [
+    "Resignation of Tulsi Gabbard",
+    "U.S. nuclear claims against Iran",
+    "Use of new weapons on Iran",
+    "Peace talks and negotiations"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Provide a summary of the recent events.",
+      "summary": "The U.S. intelligence chief resigned amidst ongoing tensions with Iran."
+    },
+    {
+      "section": "Claims of Iran's nuclear threat",
+      "purpose": "Highlight contradictory statements regarding Iran's nuclear capabilities.",
+      "summary": "Tulsi Gabbard contradicted claims about an imminent nuclear threat from Iran."
+    },
+    {
+      "section": "Use of new weapons",
+      "purpose": "Discuss the implications of new U.S. weaponry used against Iran.",
+      "summary": "New missiles were reported to be used in Iran, resulting in civilian casualties."
+    },
+    {
+      "section": "Peace talks",
+      "purpose": "Update on the status of negotiations between Iran and U.S. intermediaries.",
+      "summary": "Officials indicated deep differences in the positions of Iran and the U.S."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Newsworthy Claim",
+    "hook_text": "U.S.'s top intelligence chief quit as Trump repeats nuclear claims against Iran.",
+    "why_it_works": "It highlights a significant change in leadership coupled with urgent geopolitical concerns."
+  },
+  "claims": [
+    {
+      "claim": "Iran is not building a nuclear weapon.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Tulsi Gabbard resigned to support her husband.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "New U.S. weapons caused civilian casualties in Iran.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Stay informed about U.S.-Iran relations.",
+    "Critically evaluate claims of nuclear threats.",
+    "Advocate for humanitarian considerations in military operations."
+  ],
+  "audience": "General public interested in international relations and current events.",
+  "tone": "Informative",
+  "content_style": "News report",
+  "retention_devices": [
+    "Direct quotes from officials",
+    "Urgent tone regarding nuclear threats",
+    "Details on weaponry effects"
+  ],
+  "title_supporting_quotes": [
+    "The only person who can determine what is and is not an imminent threat is the president.",
+    "The IC continues to assess that Iran is not building a nuclear weapon."
+  ],
+  "creative_reuse_opportunities": [
+    "Clip segments for social media news updates.",
+    "Create infographics on U.S.-Iran relations.",
+    "Develop podcasts discussing implications of military actions."
+  ],
+  "risk_notes": [
+    "Potential escalation in military conflict.",
+    "Impacts on U.S. public opinion regarding foreign policy.",
+    "Humanitarian concerns regarding civilian casualties."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

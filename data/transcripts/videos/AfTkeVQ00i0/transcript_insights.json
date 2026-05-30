@@ -1,0 +1,77 @@
+{
+  "video_id": "AfTkeVQ00i0",
+  "language": "es",
+  "summary": "El video reflexiona sobre la naturaleza de la conciencia y la percepción de la realidad, citando a Nietzsche para expresar cómo el entendimiento profundo puede llevar al aislamiento social. A medida que uno comienza a ver más allá de las apariencias, se da cuenta de las mentiras y las máscaras que la sociedad presenta, lo que puede resultar en ser percibido como pesimista o loco por quienes aún están en la ignorancia.",
+  "main_topics": [
+    "Conciencia",
+    "Aislamiento social",
+    "Percepción de la realidad",
+    "Citas de Nietzsche",
+    "Naturaleza humana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la cita de Nietzsche",
+      "purpose": "Establecer el tema del video",
+      "summary": "Presenta la idea de que una visión profunda puede llevar al aislamiento."
+    },
+    {
+      "section": "Exploración de la percepción del mundo",
+      "purpose": "Desarrollar la idea de la conciencia",
+      "summary": "Explica cómo al observar la verdad detrás de la superficie, se descubre la complejidad y los engaños dentro de la sociedad."
+    },
+    {
+      "section": "Consecuencias del entendimiento profundo",
+      "purpose": "Resaltar el costo de la claridad",
+      "summary": "Aborda cómo la claridad puede llevar a la alienación del colectivo, pero también a un mejor conocimiento de uno mismo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita impactante",
+    "hook_text": "el que ve demasiado, acaba no encajando en ningún sitio",
+    "why_it_works": "Provoca curiosidad sobre las implicaciones de la conciencia y el entendimiento."
+  },
+  "claims": [
+    {
+      "claim": "La conciencia te aísla del colectivo.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "Ver más allá de la superficie es incómodo.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "La sociedad está compuesta de mentiras y máscaras.",
+      "support_level": "weak",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre las propias creencias y percepciones.",
+    "Desarrollar la autoconciencia y la observación.",
+    "Aceptar el aislamiento como parte del crecimiento personal."
+  ],
+  "audience": "Personas interesadas en filosofía y desarrollo personal",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo y filosófico",
+  "retention_devices": [
+    "Citas relevantes",
+    "Preguntas retóricas",
+    "Ejemplos de la vida real"
+  ],
+  "title_supporting_quotes": [
+    "\"La conciencia te aísla, pero ese es justamente el precio de la claridad.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido sobre la influencia de la filosofía en la vida cotidiana.",
+    "Crear discusiones sobre la percepción social y el individualismo."
+  ],
+  "risk_notes": [
+    "La interpretación de la realidad puede ser subjetiva y variar entre las personas.",
+    "Promover el aislamiento social puede ser perjudicial si no se aborda con cuidado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

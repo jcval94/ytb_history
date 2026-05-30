@@ -1,0 +1,90 @@
+{
+  "video_id": "qe_uPqM40nM",
+  "language": "es",
+  "summary": "En la discusión se abordan las implicaciones de la imputación de José Luis Rodríguez Zapatero y su vínculo con un caso de corrupción que afecta al Partido Socialista y a Pedro Sánchez. También se analiza la situación electoral del PSOE, la posible nacionalización de exiliados, y las dificultades políticas que enfrenta el partido.",
+  "main_topics": [
+    "Imputación de Zapatero",
+    "Corrupción en el PSOE",
+    "Situación electoral de Pedro Sánchez",
+    "Nacionalización de exiliados",
+    "Influencia de la extrema izquierda"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar al invitado y el tema del día.",
+      "summary": "Introducción a la imputación de Zapatero y su impacto político."
+    },
+    {
+      "section": "Análisis de la imputación",
+      "purpose": "Profundizar en las implicaciones de la corrupción.",
+      "summary": "Discutir la gravedad de la imputación y el impacto en la familia de Zapatero."
+    },
+    {
+      "section": "Situación del PSOE",
+      "purpose": "Evaluar las posibilidades electorales del partido.",
+      "summary": "Exploración de los retos que enfrenta Pedro Sánchez en sus futuras elecciones."
+    },
+    {
+      "section": "Nacionalización de exiliados",
+      "purpose": "Discutir la estrategia política del PSOE.",
+      "summary": "Mención de las nacionalizaciones y su posible influencia en elecciones."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre el futuro político.",
+      "summary": "Un resumen de las implicaciones de la corrupción y la supervivencia política."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Controversial Statement",
+    "hook_text": "El Partido Socialista se ha convertido en una organización criminal.",
+    "why_it_works": "Provoca un fuerte impacto emocional y promueve el interés para saber más sobre la situación política."
+  },
+  "claims": [
+    {
+      "claim": "Zapatero incurrió en comisiones ilegales.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "El PSOE puede ser considerado una organización criminal.",
+      "support_level": "weak",
+      "risk": "very high"
+    },
+    {
+      "claim": "Sánchez enfrenta una situación electoral crítica.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Comisiones a través de testaferros.",
+    "Resultados electorales en Andalucía."
+  ],
+  "actionable_ideas": [
+    "Reforzar la transparencia en políticas.",
+    "Monitorear el impacto de la nacionalización en el censo electoral.",
+    "Establecer protocolos claros para la lucha contra la corrupción."
+  ],
+  "audience": "Espectadores interesados en política española.",
+  "tone": "Crítico y analítico.",
+  "content_style": "Conversacional y persuasivo.",
+  "retention_devices": [
+    "Preguntas abiertas al espectador.",
+    "Uso de estadísticas sobre el censo electoral."
+  ],
+  "title_supporting_quotes": [
+    "El PSOE se ha convertido en una organización criminal.",
+    "Pedro Sánchez sigue conservando un caudal electoral importante."
+  ],
+  "creative_reuse_opportunities": [
+    "Análisis de casos de corrupción en otros países.",
+    "Comparación de estrategias electorales en distintos contextos."
+  ],
+  "risk_notes": [
+    "Afirmaciones controvertidas pueden afectar la credibilidad.",
+    "Posibles repercusiones legales por acusaciones de corrupción."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "u7COn-_TH4E",
+  "channel_id": "UCupvZG-5ko_eiXAupbDfxWw",
+  "channel_name": "CNN",
+  "title": "'Sold his soul': Former WH lawyer eviscerates Todd Blanche",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\u7COn-_TH4E.mp3",
+  "transcribed_at": "2026-05-30T16:03:33.087772+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1153,
+  "text_sha256": "667e61c4ba3e552e49ee0c4ebbf8b380432f7b32159c0e49a8156e09c225a57e",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "wdxMGOg_hRc",
+  "channel_id": "UCt7k7y_xTkkc1Jeh7cdAjDQ",
+  "channel_name": "SinEmbargo Al Aire",
+  "title": "El Plan contra México. Por Fabrizio Mejía",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\wdxMGOg_hRc.mp3",
+  "transcribed_at": "2026-05-30T16:03:27.044119+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8771,
+  "text_sha256": "16f6485213c330b3167b95f6921e75435749e5632c333aebbd913877848c76f2",
+  "repo_schema_version": "transcript_metadata_v1"
+}
