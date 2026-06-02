@@ -1,0 +1,71 @@
+{
+  "video_id": "C1VYaTHozLc",
+  "language": "es",
+  "summary": "El mensaje central del video es sobre la importancia de valorar las relaciones que realmente importan y no forzar conexiones con quienes no están interesados.",
+  "main_topics": [
+    "Importancia de las relaciones auténticas",
+    "Valorar el apoyo",
+    "Ignorar a quienes no muestran interés"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de las relaciones y la importancia de enfocarse en quienes nos valoran.",
+      "summary": "Se establece la premisa de que debemos rodearnos de personas que realmente se preocupan por nosotros."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Profundizar en la idea de la reciprocidad en las relaciones.",
+      "summary": "Se enfatiza que si alguien realmente desea estar en contacto, hará el esfuerzo necesario."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reforzar el mensaje del valor personal y la independencia emocional.",
+      "summary": "Se concluye aconsejando no perseguir a quienes no están interesados."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Frase motivacional",
+    "hook_text": "Llama a quien te llama, quiere a quien te quiere...",
+    "why_it_works": "Captura la atención al apelar a la lógica emocional sobre las relaciones interpersonales."
+  },
+  "claims": [
+    {
+      "claim": "Las personas son adultas y saben lo que hacen.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Debemos enfocarnos en quienes nos apoyan y quieren.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "No debemos perseguir a quienes no muestran interés.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Centrarse en amistades recíprocas.",
+    "Establecer límites con personas que no valoran la relación.",
+    "Fomentar el amor propio y la autoestima."
+  ],
+  "audience": "Personas que buscan mejorar sus relaciones interpersonales.",
+  "tone": "Motivacional y reflexivo",
+  "content_style": "Directo y claro",
+  "retention_devices": [
+    "Repetición de ideas clave",
+    "Frases impactantes"
+  ],
+  "title_supporting_quotes": [
+    "Apoya a quien te apoya, ignora a quien te ignora."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre salud emocional.",
+    "Desarrollar talleres sobre relaciones personales."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

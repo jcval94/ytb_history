@@ -1,0 +1,92 @@
+{
+  "video_id": "x68OZHpWxAw",
+  "language": "es",
+  "summary": "El video aborda la compleja situación social y política en Bolivia, destacando que la narrativa simplificada de un conflicto entre Evo Morales y Rodrigo Paz ignora las múltiples luchas sociales que los bolivianos enfrentan, como la crisis económica y las demandas de diferentes sectores.",
+  "main_topics": [
+    "Protestas en Bolivia",
+    "Crisis económica",
+    "Inflación",
+    "Narrativas políticas",
+    "Movimientos sociales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la problemática",
+      "summary": "La percepción externa de Bolivia se simplifica a un conflicto entre dos políticos, ignorando las realidades de la población."
+    },
+    {
+      "section": "Contexto actual",
+      "purpose": "Describir la situación económica",
+      "summary": "Bolivia enfrenta una severa crisis económica que afecta a las clases trabajadoras."
+    },
+    {
+      "section": "Testimonios de movimientos sociales",
+      "purpose": "Mostrar las demandas de diferentes sectores",
+      "summary": "Maestros y transportistas luchan por mejoras en sus condiciones laborales y acceso a recursos."
+    },
+    {
+      "section": "Deslegitimación de protestas",
+      "purpose": "Analizar la manipulación de la narrativa",
+      "summary": "Se menciona cómo el gobierno utiliza narrativas para deslegitimar las protestas populares."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexión sobre el futuro político",
+      "summary": "La conciencia social en Bolivia ha crecido, y se exige que cualquier gobierno escuche las demandas populares."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocativa",
+    "hook_text": "La narrativa simplista sobre Bolivia",
+    "why_it_works": "Capta la atención al desafiar una percepción común y abrir un debate sobre la complejidad de la situación."
+  },
+  "claims": [
+    {
+      "claim": "El descontento social en Bolivia no se reduce a la figura de Evo Morales.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El gobierno utiliza una narrativa para deslegitimar movimientos progresistas.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La crisis económica afecta severamente a la clase trabajadora.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Protestas de maestros por salarios bajos.",
+    "Reclamos de transportistas por escasez de combustible."
+  ],
+  "actionable_ideas": [
+    "Fomentar el diálogo entre sectores",
+    "Promover una narrativa más inclusiva sobre Bolivia",
+    "Apoyar la autoorganización de sectores vulnerables"
+  ],
+  "audience": "Personas interesadas en política y sociedad boliviana",
+  "tone": "Crítico e informativo",
+  "content_style": "Analítico y reflexivo",
+  "retention_devices": [
+    "Citas de expertos",
+    "Estadísticas sobre la crisis económica",
+    "Historias personales de afectados"
+  ],
+  "title_supporting_quotes": [
+    "\"El descontento no es abstracto, el descontento es que ya no nos alcanzan los salarios para comprar los alimentos del mes.\"",
+    "\"Nadie va a poder gobernar sin escuchar a los sectores populares.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre movimientos sociales en Bolivia",
+    "Documentales sobre la crisis económica boliviana",
+    "Podcast sobre la historia política de Bolivia"
+  ],
+  "risk_notes": [
+    "Las afirmaciones sobre manipulación de narrativas pueden ser controvertidas y necesitan respaldo.",
+    "Es posible que algunos sectores vean la crítica como un ataque a la política actual."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

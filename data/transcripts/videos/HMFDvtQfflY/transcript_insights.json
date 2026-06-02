@@ -1,0 +1,80 @@
+{
+  "video_id": "HMFDvtQfflY",
+  "language": "es",
+  "summary": "El video explica cómo Tinder utilizaba un sistema de puntajes para clasificar a los usuarios y mostrarles personas similares en base a su atractivo, generando un sistema de castas. También menciona que desde 2019, la app cambió su enfoque, buscando que los usuarios no conecten en lugar de promover coincidencias.",
+  "main_topics": [
+    "Sistema de puntajes en Tinder",
+    "Clasificación de usuarios",
+    "Impacto en las conexiones",
+    "Cambio de algoritmo en 2019"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al funcionamiento de Tinder",
+      "purpose": "Explicar cómo funciona la selección de usuarios en la aplicación.",
+      "summary": "Se describe el proceso inicial de mostrar fotos y cómo se determinan las puntuaciones."
+    },
+    {
+      "section": "Sistema de castas",
+      "purpose": "Discutir las implicaciones sociales de la clasificación.",
+      "summary": "El sistema crea grupos donde los 'lindos' interactúan solo con 'lindos' y los 'feos' solo con 'feos'."
+    },
+    {
+      "section": "Anuncio de cambio en 2019",
+      "purpose": "Informar sobre la evolución de la estrategia de Tinder.",
+      "summary": "Se menciona que Tinder dejó de usar el sistema de castas en 2019 para enfocarse en otro método."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocativa",
+    "hook_text": "¿Ustedes saben cómo elige Tinder a quién mostrarte?",
+    "why_it_works": "Capta la atención del espectador al plantear una duda común y curiosa sobre la aplicación."
+  },
+  "claims": [
+    {
+      "claim": "Tinder usaba un sistema de puntajes para mostrar usuarios.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El sistema de Tinder genera un sistema de castas.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Tinder cambió su algoritmo en 2019.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Sistema de 'lindos' y 'feos'",
+    "Alto puntaje significa más coincidencias atractivas",
+    "Impacto en la autoestima de los usuarios"
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre el impacto de las aplicaciones de citas en la percepción de uno mismo.",
+    "Investigar otras aplicaciones de citas y sus métodos de funcionamiento."
+  ],
+  "audience": "Usuarios de aplicaciones de citas y personas interesadas en la tecnología social.",
+  "tone": "Informativo y reflexivo",
+  "content_style": "Explicativo y analítico",
+  "retention_devices": [
+    "Pregunta inicial",
+    "Ejemplos claros",
+    "Cambio de estrategia sorprendente"
+  ],
+  "title_supporting_quotes": [
+    "El sistema de castas genera un entorno donde solo los atractivos interactúan con otros atractivos.",
+    "Tinder dejó de usar el sistema porque encontraron algo mejor."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la cultura de las citas en línea.",
+    "Podcast sobre tecnología y relaciones sociales."
+  ],
+  "risk_notes": [
+    "El concepto de 'castas' puede generar debate sobre superficialidad.",
+    "Potenciales reacciones negativas de usuarios que se identifiquen como 'feos'."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

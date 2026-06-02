@@ -1,0 +1,14 @@
+{
+  "video_id": "izQM8fsWNgQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por esta razón, las series de hoy son adictivas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\izQM8fsWNgQ.mp3",
+  "transcribed_at": "2026-06-02T14:58:38.392296+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1645,
+  "text_sha256": "9de4aad95356d45c8ce9fbd964240b2ef2c51315384c9bcc4004bc31879ec897",
+  "repo_schema_version": "transcript_metadata_v1"
+}

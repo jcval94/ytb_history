@@ -1,0 +1,14 @@
+{
+  "video_id": "fF32B_sOVHA",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Can you solve the hat riddle?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\fF32B_sOVHA.mp3",
+  "transcribed_at": "2026-06-02T14:58:30.330672+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1576,
+  "text_sha256": "50a7bcae3060c91e9ef28dc9345fa67146f25d9217faec2cb1dad65dbb948222",
+  "repo_schema_version": "transcript_metadata_v1"
+}

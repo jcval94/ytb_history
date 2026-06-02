@@ -1,0 +1,71 @@
+{
+  "video_id": "BU_wBfdQPnM",
+  "language": "es",
+  "summary": "El video explora cómo el chisme, que era vital para la supervivencia en comunidades pequeñas hace miles de años, sigue siendo relevante en la actualidad debido a la curiosidad humana sobre la vida de los famosos. Se menciona que esta curiosidad se ha amplificado en la era moderna, provocando una fascinación por los escándalos personales más que por los logros profesionales.",
+  "main_topics": [
+    "Chisme como sistema de reputación",
+    "Evolución del chisme en la sociedad",
+    "Interés por la vida de los famosos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al chisme en comunidades antiguas",
+      "purpose": "Establecer la importancia del chisme para la supervivencia",
+      "summary": "Hace 100.000 años, el chisme era crucial para conocer la confiabilidad de los integrantes de la tribu."
+    },
+    {
+      "section": "Comparación con la actualidad",
+      "purpose": "Ilustrar cómo este mecanismo evolutivo se aplica hoy",
+      "summary": "El mismo circuito de chisme se activa con millones en la sociedad moderna."
+    },
+    {
+      "section": "Interés en los famosos",
+      "purpose": "Reflexionar sobre por qué seguimos a celebridades más por escándalos que por logros",
+      "summary": "El interés por la vida personal de los famosos es una extensión de nuestra historia evolutiva."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Por qué nos interesan tanto estos personajes?",
+    "why_it_works": "Engancha al espectador al hacerle cuestionar sus propios hábitos de consumo de información sobre celebridades."
+  },
+  "claims": [
+    {
+      "claim": "El chisme era crucial para la supervivencia en comunidades pequeñas.",
+      "support_level": "explicit",
+      "risk": "underlying societal behavior"
+    },
+    {
+      "claim": "La fascinación actual por el chisme refleja un circuito evolutivo heredado.",
+      "support_level": "implicit",
+      "risk": "cultural obsession"
+    }
+  ],
+  "examples": [
+    "Dedicamos tiempo a leer sobre escándalos de famosos.",
+    "La vida privada de los famosos genera mucho contenido en redes sociales."
+  ],
+  "actionable_ideas": [
+    "Reflexionar sobre nuestro consumo de chismes.",
+    "Considerar la relevancia de la reputación en el ámbito digital."
+  ],
+  "audience": "Personas interesadas en la psicología social y cultura pop.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo e informativo",
+  "retention_devices": [
+    "Estadísticas históricas",
+    "Referencias a figuras públicas"
+  ],
+  "title_supporting_quotes": [
+    "La capacidad de chismear nos dio una ventaja evolutiva como especie."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollo de contenido en redes sobre la evolución del chisme.",
+    "Análisis de la cultura de los chismes en programas de entretenimiento."
+  ],
+  "risk_notes": [
+    "Podría incentivar la superficialidad en la percepción de lo que es relevante.",
+    "Exacerbación de la cultura de la fama y sus efectos negativos en la sociedad."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

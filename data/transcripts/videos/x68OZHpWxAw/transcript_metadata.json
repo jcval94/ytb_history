@@ -1,0 +1,14 @@
+{
+  "video_id": "x68OZHpWxAw",
+  "channel_id": "UCS0lmlVIYVz2qeWlZ_ynIWg",
+  "channel_name": "AJ+ Español",
+  "title": "¿Qué demandan las movilizaciones en Bolivia?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\x68OZHpWxAw.mp3",
+  "transcribed_at": "2026-06-02T14:59:24.863531+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2360,
+  "text_sha256": "7dcad30e827edd5d19a48733f8da6a2a6787ce4ce15b286d189299c39d3760af",
+  "repo_schema_version": "transcript_metadata_v1"
+}

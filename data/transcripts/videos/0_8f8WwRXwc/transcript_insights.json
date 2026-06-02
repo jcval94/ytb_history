@@ -1,0 +1,73 @@
+{
+  "video_id": "0_8f8WwRXwc",
+  "language": "unknown",
+  "summary": "The speaker reflects on a violent incident reminiscent of George Floyd's death, expressing disbelief and concern over the use of excessive force and societal issues in Ireland.",
+  "main_topics": [
+    "Excessive Force",
+    "George Floyd Comparison",
+    "Public Reaction",
+    "Government Responsibility"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the Incident",
+      "purpose": "Set the emotional tone and background.",
+      "summary": "The speaker describes their shock and inability to sleep after witnessing a violent act."
+    },
+    {
+      "section": "Comparative Analysis",
+      "purpose": "Draw parallels with a notable event.",
+      "summary": "The incident in Ireland is compared to George Floyd's death, highlighting similarities."
+    },
+    {
+      "section": "Criticism of Authorities",
+      "purpose": "Express disillusionment with government response.",
+      "summary": "There is a call for accountability and a criticism of the government's handling of the situation."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emotional Appeal",
+    "hook_text": "I couldn't believe it. It's just like a nightmare.",
+    "why_it_works": "It captures the audience's attention by evoking strong emotions and a sense of disbelief."
+  },
+  "claims": [
+    {
+      "claim": "The incident in Ireland parallels George Floyd's death.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The government’s response has been inadequate.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promote awareness about the issue.",
+    "Encourage accountability from officials.",
+    "Foster community discussions about violence."
+  ],
+  "audience": "General public interested in social justice issues.",
+  "tone": "Serious and reflective.",
+  "content_style": "Conversational and emotive.",
+  "retention_devices": [
+    "Anecdotal storytelling",
+    "Emotional language",
+    "Comparative references"
+  ],
+  "title_supporting_quotes": [
+    "We call this a George Floyd moment.",
+    "The behavior of the government ministry has been absolutely shocking."
+  ],
+  "creative_reuse_opportunities": [
+    "Documentary segments on social justice.",
+    "Articles addressing police brutality.",
+    "Social media campaigns about accountability."
+  ],
+  "risk_notes": [
+    "Potential backlash from different political groups.",
+    "Emotional responses from audiences."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

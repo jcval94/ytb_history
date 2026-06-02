@@ -1,0 +1,103 @@
+{
+  "video_id": "Dm6Vnl4pZjk",
+  "language": "es",
+  "summary": "Este video explora la posibilidad de la existencia de seres interdimensionales a través de una mirada científica. Se discute la diferencia entre dimensiones adicionales y la idea de seres inteligentes viviendo en ellas, enfatizando que la ciencia no apoya la existencia de tales seres sin evidencia sustancial. Se menciona cómo la física moderna, incluida la teoría de cuerdas, plantea la existencia de dimensiones adicionales, pero no implica la presencia de seres en esas dimensiones.",
+  "main_topics": [
+    "Seres interdimensionales",
+    "Dimensiones adicionales",
+    "Teoría de cuerdas",
+    "Física y cosmología",
+    "Evidencia científica"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del video.",
+      "summary": "Se introducen los seres interdimensionales y su relación con los ovnis."
+    },
+    {
+      "section": "Contexto científico",
+      "purpose": "Proporcionar información sobre dimensiones en física.",
+      "summary": "Se explica qué son las dimensiones desde la perspectiva de la física."
+    },
+    {
+      "section": "Concepto de dimensiones",
+      "purpose": "Aclarar malentendidos sobre dimensiones.",
+      "summary": "La diferencia entre dimensiones espaciales y temporales, y cómo se vinculan."
+    },
+    {
+      "section": "Teorías que implican dimensiones adicionales",
+      "purpose": "Explorar teorías físicas relevantes.",
+      "summary": "Se discuten la teoría de cuerdas y otros modelos que sugieren dimensiones extra."
+    },
+    {
+      "section": "Problema de los seres interdimensionales",
+      "purpose": "Desmentir la idea de seres en otras dimensiones.",
+      "summary": "Se argumenta que no hay evidencia de seres viviendo en dimensiones adicionales."
+    },
+    {
+      "section": "Las limitaciones de la ciencia",
+      "purpose": "Enfatizar la necesidad de evidencia.",
+      "summary": "Se resalta que la ciencia no acepta especulaciones sin pruebas."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Finalizar el video y resumir.",
+      "summary": "Reiterar que la existencia de seres interdimensionales carece de evidencia y que la ciencia exige pruebas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga científica",
+    "hook_text": "¿Podrían existir seres de otras dimensiones?",
+    "why_it_works": "La pregunta despierta curiosidad sobre un tema misterioso y poco comprendido."
+  },
+  "claims": [
+    {
+      "claim": "La física habla de dimensiones extra.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "No hay evidencia de seres interdimensionales.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La teoría de cuerdas requiere más dimensiones para funcionar.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "La analogía de Flatland para ilustrar interacciones entre dimensiones.",
+    "La manguera como representación de dimensiones compactificadas."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la teoría de cuerdas.",
+    "Leer sobre investigación en física de partículas.",
+    "Explorar la relación entre dimensiones y fuerzas de la naturaleza."
+  ],
+  "audience": "Personas interesadas en ciencia, ovnis y teorías sobre dimensiones.",
+  "tone": "informativo",
+  "content_style": "educativo",
+  "retention_devices": [
+    "Visualizaciones de conceptos físicos",
+    "Ejemplos claros y accesibles",
+    "Analogías simples para explicaciones complejas"
+  ],
+  "title_supporting_quotes": [
+    "\"La física sí habla de dimensiones extra, pero eso no implica seres.\"",
+    "\"Una dimensión extra no es un mundo paralelo.\"",
+    "\"La ciencia requiere evidencia para aceptar teorías.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías educativas sobre dimensiones adicionales.",
+    "Desarrollar un podcast basado en el contenido del video.",
+    "Escribir artículos sobre la intersección entre física y ciencia ficción."
+  ],
+  "risk_notes": [
+    "Posibilidad de desinformación si se interpretan incorrectamente conceptos científicos.",
+    "Riesgo de que la audiencia confunda ciencia con especulación o creencias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

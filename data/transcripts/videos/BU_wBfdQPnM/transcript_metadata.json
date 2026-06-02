@@ -1,0 +1,20 @@
+{
+  "video_id": "BU_wBfdQPnM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Por qué el chisme nos salvó de la extinción (Según Harari)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BU_wBfdQPnM.mp3",
+  "transcribed_at": "2026-06-02T14:58:23.294959+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1068,
+  "text_sha256": "f96459f9eae1bc3c96f2ff3c27aa0067b7fb6651d37c3870243d8d6c65c5cf59",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BU_wBfdQPnM\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-02T15:11:54.782248+00:00",
+  "duration_seconds": 50.61000061035156
+}

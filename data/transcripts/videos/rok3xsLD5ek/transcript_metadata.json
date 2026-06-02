@@ -1,0 +1,14 @@
+{
+  "video_id": "rok3xsLD5ek",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Tu cerebro cree que conoce a los famosos",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\rok3xsLD5ek.mp3",
+  "transcribed_at": "2026-06-02T14:58:45.233308+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1216,
+  "text_sha256": "bc3fb29b4e8092c6f9da34ad9d91c7cdb13563ea752a755382dd6d69959d7e84",
+  "repo_schema_version": "transcript_metadata_v1"
+}

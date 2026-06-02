@@ -1,0 +1,14 @@
+{
+  "video_id": "k6TIRPG72ug",
+  "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
+  "channel_name": "Diego Ruzzarin",
+  "title": "Mi experiencia entrevistando a #IvanCepeda #diegoruzzarin #colombia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\k6TIRPG72ug.mp3",
+  "transcribed_at": "2026-06-02T14:59:16.350511+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2448,
+  "text_sha256": "cd152f29ebc5105f9c4e48046681ebbde6bb058828a7a51577d7bae02aed244f",
+  "repo_schema_version": "transcript_metadata_v1"
+}

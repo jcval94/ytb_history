@@ -1,0 +1,90 @@
+{
+  "video_id": "ZbHPGHtsDhE",
+  "language": "Spanish",
+  "summary": "Lidia Cacho explica por qué no puede vivir en México después de enfrentar persecuciones por su trabajo periodístico. Tras publicar 'Los Demonios del Edén', sufrió amenazas y ataques por parte de grupos políticos y criminales relacionados con la trata de personas. A pesar de conseguir justicia contra algunos de sus torturadores, continuó siendo un blanco, lo que la forzó a salir del país.",
+  "main_topics": [
+    "Lidia Cacho",
+    "persecución",
+    "trata de personas",
+    "justicia",
+    "censura",
+    "política en México"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la persecución de Lidia Cacho.",
+      "summary": "Se plantea la pregunta sobre por qué Lidia Cacho no vive en México."
+    },
+    {
+      "section": "Causas de la persecución",
+      "purpose": "Explicar las razones detrás de la persecución judicial.",
+      "summary": "Discusses the backlash from powerful figures after her publication on human trafficking."
+    },
+    {
+      "section": "Consecuencias de la investigación",
+      "purpose": "Describir las repercusiones de su trabajo periodístico.",
+      "summary": "Cacho narra las torturas, amenazas y ataques que ha sufrido."
+    },
+    {
+      "section": "Decisión de salir del país",
+      "purpose": "Explicar la razón de su exilio.",
+      "summary": "Se explica la decisión de salir de México tras un ataque directo."
+    },
+    {
+      "section": "Testimonios aún pendientes",
+      "purpose": "Indicar que hay testimonios contra políticos actuales.",
+      "summary": "Menciona que aún hay investigaciones en curso contra figuras políticas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntas retóricas",
+    "hook_text": "Por qué Lidia Cacho no puede vivir en México?",
+    "why_it_works": "Capta la atención del espectador al plantear un misterio sobre la seguridad de Lidia Cacho."
+  },
+  "claims": [
+    {
+      "claim": "Lidia Cacho sufre persecución por su trabajo periodístico.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Los poderes políticos están involucrados en la trata de personas.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Existen testimonios contra figuras de Morena.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar sobre la situación de los periodistas en México.",
+    "Apoyar organizaciones que luchan contra la trata de personas.",
+    "Promover la protección a los periodistas en riesgo."
+  ],
+  "audience": "Personas interesadas en derechos humanos y periodismo.",
+  "tone": "Serio y reflexivo",
+  "content_style": "Narrativa personal y testimonial",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Narrativa de superación",
+    "Elementos emocionales"
+  ],
+  "title_supporting_quotes": [
+    "la persecución, la represión, la persecución en mi contra llegó hasta torturarme.",
+    "la Interpol y los expertos me dijeron, te sales porque ahora sí ya no quieren que sigas testificando."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la vida de Lidia Cacho.",
+    "Desarrollar un podcast sobre casos de persecutación de periodistas.",
+    "Escribir artículos sobre la situación de la libertad de expresión en México."
+  ],
+  "risk_notes": [
+    "Algunos claims pueden representar riesgos legales para el creador de contenido.",
+    "Es importante verificar la información sobre figuras políticas mencionadas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

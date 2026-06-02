@@ -1,0 +1,20 @@
+{
+  "video_id": "Dm6Vnl4pZjk",
+  "channel_id": "UCaVPhFg-Ax873wvhbNitsrQ",
+  "channel_name": "El Robot de Platón",
+  "title": "¿Podrían Existir Seres en Otra Dimensión?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Dm6Vnl4pZjk.mp3",
+  "transcribed_at": "2026-06-02T15:00:28.970524+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 22776,
+  "text_sha256": "4dcaa58c9e268348d8f13420235135fe50025a14bf3453fb99bc355484cea1e2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Dm6Vnl4pZjk\\transcript_segments.jsonl",
+  "segment_count": 258,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-02T15:13:19.765070+00:00",
+  "duration_seconds": 1440.1199951171875
+}

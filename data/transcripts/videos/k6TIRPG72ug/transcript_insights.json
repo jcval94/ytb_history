@@ -1,0 +1,98 @@
+{
+  "video_id": "k6TIRPG72ug",
+  "language": "es",
+  "summary": "La entrevista con Iván Cepeda destaca su calidad humana, su enfoque en el colectivo sobre el individuo, y su propuesta de una 'revolución ética' en la política colombiana, lo que lo posiciona como una opción valiosa para la presidencia.",
+  "main_topics": [
+    "Calidad humana de Iván Cepeda",
+    "Enfoque en el colectivo",
+    "Revolución ética en política",
+    "Oportunidad histórica para Colombia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la entrevista",
+      "purpose": "Introducir al personaje y tema de la charla.",
+      "summary": "Reflexiones sobre la charla con el senador y candidato a la presidencia, Iván Cepeda."
+    },
+    {
+      "section": "Calidad humana y preparación",
+      "purpose": "Destacar las cualidades personales y profesionales de Cepeda.",
+      "summary": "La calidad humana y la preparación académica de Cepeda son impresionantes y generan optimismo."
+    },
+    {
+      "section": "Enfoque colectivo",
+      "purpose": "Contrastar la ideología de Cepeda con el individualismo tradicional.",
+      "summary": "Cepeda enfatiza el enfoque en el pueblo y el colectivo en lugar del individualismo político."
+    },
+    {
+      "section": "Revolución ética",
+      "purpose": "Presentar la propuesta de verdad en política.",
+      "summary": "Cepeda propone una revolución ética basada en la verdad, contrastando con los políticos típicos."
+    },
+    {
+      "section": "Necesidad histórica",
+      "purpose": "Argumentar la relevancia de Cepeda en el contexto colombiano.",
+      "summary": "La historia de violencia y los desafíos actuales indican que Cepeda es una opción crucial para el cambio."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reafirmar la importancia de Cepeda como candidato.",
+      "summary": "Colombia tiene la oportunidad de elegir a un presidente bien preparado que podría transformar el país."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión personal",
+    "hook_text": "La verdad es que me impactó bastante la charla con él.",
+    "why_it_works": "Capta la atención al establecer una conexión emocional y personal con el entrevistado desde el principio."
+  },
+  "claims": [
+    {
+      "claim": "Iván Cepeda tiene una calidad humana excepcional.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Cepeda se enfoca en el colectivo sobre el individuo.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La revolución ética en política es necesaria.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Colombia necesita un cambio político significativo.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover la participación ciudadana en el proceso electoral.",
+    "Fomentar el uso de la verdad en el discurso político.",
+    "Apoyar candidatos con visión colectiva."
+  ],
+  "audience": "Ciudadanos colombianos y público interesado en política.",
+  "tone": "Reflexivo y optimista.",
+  "content_style": "Análisis crítico y personal.",
+  "retention_devices": [
+    "Conexiones emocionales",
+    "Historias personales",
+    "Contrastes ideológicos"
+  ],
+  "title_supporting_quotes": [
+    "Es esperanzador y me da un aire de optimismo platicar con un político tan preparado.",
+    "Para Iván Cepeda el colectivo es mucho más importante."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos analíticos sobre el discurso político actual.",
+    "Videos de entrevistas con otros candidatos para comparar enfoques.",
+    "Podcasts sobre la ética en la política."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones pueden ser vistas como optimistas sin suficiente crítica.",
+    "La comparación con el populismo puede ser polarizadora."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

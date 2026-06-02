@@ -1,0 +1,20 @@
+{
+  "video_id": "0_8f8WwRXwc",
+  "channel_id": "UCS0lmlVIYVz2qeWlZ_ynIWg",
+  "channel_name": "AJ+ Español",
+  "title": "“Creo que somos realmente r*cistas”.",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0_8f8WwRXwc.mp3",
+  "transcribed_at": "2026-06-02T14:58:59.161662+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 847,
+  "text_sha256": "891205bdbb7440ab1f6782994a3f5667e75c3e8780566d6557e07dd04602dc09",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0_8f8WwRXwc\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-02T15:11:06.360010+00:00",
+  "duration_seconds": 110.7300033569336
+}

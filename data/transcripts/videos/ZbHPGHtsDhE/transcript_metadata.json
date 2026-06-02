@@ -1,0 +1,14 @@
+{
+  "video_id": "ZbHPGHtsDhE",
+  "channel_id": "UCafNntv_qTQB26AvbEQNHPw",
+  "channel_name": "Aristegui Noticias",
+  "title": "“Mejor mártir muerta que testiga viva”: Lydia Cacho relata advertencia de Interpol",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ZbHPGHtsDhE.mp3",
+  "transcribed_at": "2026-06-02T15:00:36.042244+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1728,
+  "text_sha256": "7db66b741f874f9531c6fc934c88f58c8385bfd4eaf2952b205d39cc4fea49b1",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,76 @@
+{
+  "video_id": "rok3xsLD5ek",
+  "language": "es",
+  "summary": "El video aborda el concepto de vínculos parasociales, donde los humanos desarrollan conexiones emocionales con figuras públicas, al compararlo con la relación que se tiene con amigos cercanos, aunque estas figuras no sean conscientes de tal relación. Este fenómeno se ha intensificado con las redes sociales, donde la audiencia siente una cercanía con celebridades que comparten sus vidas diariamente.",
+  "main_topics": [
+    "Vínculos parasociales",
+    "Impacto de las redes sociales",
+    "Relaciones con figuras públicas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al concepto",
+      "purpose": "Presentar el descubrimiento de los vínculos parasociales",
+      "summary": "Hace 70 años, dos psicólogos definieron cómo las personas desarrollan conexiones emocionales a través de la exposición constante."
+    },
+    {
+      "section": "Evolución de los vínculos",
+      "purpose": "Ilustrar cómo estos vínculos han evolucionado en la era digital",
+      "summary": "Antes, había pocas oportunidades de ver a celebridades, pero hoy están presentes en las redes sociales."
+    },
+    {
+      "section": "Ejemplo contemporáneo",
+      "purpose": "Demostrar el impacto de los vínculos parasociales con un ejemplo reciente",
+      "summary": "El caso de Shakira y Bizarrap muestra cómo la audiencia siente que conoce la relación personal de las celebridades a través de las redes."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga emocional",
+    "hook_text": "El cerebro no distingue entre un amigo y alguien a quien ves todos los días en una pantalla.",
+    "why_it_works": "Provoca curiosidad sobre cómo las relaciones modernas afectan nuestras emociones respecto a las celebridades."
+  },
+  "claims": [
+    {
+      "claim": "Los vínculos parasociales causan que la gente sienta dolor por separaciones de figuras públicas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El cerebro procesa a las celebridades como amigos debido a la exposición constante.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La música de Shakira y Bizarrap alcanzó un récord de reproducciones por los vínculos emocionales con la audiencia.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Canción de Shakira y Bizarrap rompiendo récords en YouTube."
+  ],
+  "actionable_ideas": [
+    "Explorar más sobre cómo funcionan los vínculos parasociales.",
+    "Analizar el impacto emocional de las redes sociales en la percepción de las celebridades.",
+    "Estudiar casos de figuras públicas y su relación con la audiencia a través de las plataformas digitales."
+  ],
+  "audience": "Personas interesadas en psicología, redes sociales y cultura pop.",
+  "tone": "Reflexivo",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Ejemplos contemporáneos",
+    "Datos anecdóticos",
+    "Conexiones emocionales"
+  ],
+  "title_supporting_quotes": [
+    "El cerebro no distingue entre un amigo y alguien a quien ves todos los días en una pantalla."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos académicos sobre vínculos parasociales.",
+    "Contenido en redes sobre la relación entre consumidores y celebridades."
+  ],
+  "risk_notes": [
+    "La afirmación sobre el dolor emocional puede no ser aceptada por todos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

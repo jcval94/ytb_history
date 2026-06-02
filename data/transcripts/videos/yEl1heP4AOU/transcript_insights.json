@@ -1,0 +1,86 @@
+{
+  "video_id": "yEl1heP4AOU",
+  "language": "es",
+  "summary": "El video analiza la crisis energética y humanitaria en Cuba, destacando el colapso del sistema energético y la economía del país debido a sanciones estadounidenses, la falta de suministros y la dependencia de importaciones. Se presentan cuatro posibles escenarios futuros para Cuba: una continuidad del régimen, una transición pactada desde arriba, un estallido social violento, y una intervención exterior directa de Estados Unidos.",
+  "main_topics": [
+    "Crisis energética en Cuba",
+    "Sanciones estadounidenses",
+    "Estado fallido",
+    "Posibles futuros de Cuba"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación actual en Cuba.",
+      "summary": "La crisis energética y humanitaria en Cuba ha alcanzado un colapso absoluto."
+    },
+    {
+      "section": "Contexto Histórico",
+      "purpose": "Explicar la relación entre Cuba y Venezuela y cómo ha afectado esto a la crisis actual.",
+      "summary": "El bloqueo energético de EE.UU. interrumpió el suministro de combustible desde Venezuela."
+    },
+    {
+      "section": "Impacto Actual",
+      "purpose": "Detallar las consecuencias del colapso en la vida cotidiana de los cubanos.",
+      "summary": "Apagones masivos y crisis en sanidad y economía muestran un estado de colapso."
+    },
+    {
+      "section": "Análisis de Escenarios Futuros",
+      "purpose": "Explorar diferentes posibles desenlaces para la situación cubana.",
+      "summary": "Se discuten cuatro escenarios: continuidad del régimen, transición pactada, estallido social y posible intervención externa."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Finalizar el análisis y plantear preguntas al público.",
+      "summary": "Se invita a reflexionar sobre el futuro de Cuba y los posibles desenlaces."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Declaración impactante",
+    "hook_text": "Es oficial, Cuba ha colapsado.",
+    "why_it_works": "Captura inmediatamente la atención del espectador al presentar una situación grave y alarmante."
+  },
+  "claims": [
+    {
+      "claim": "Cuba enfrenta una crisis humanitaria debido a un colapso energético.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El régimen cubano podría sobrevivir a pesar de la crisis.",
+      "support_level": "implicit",
+      "risk": "high"
+    },
+    {
+      "claim": "La intervención militar de EE.UU. es un escenario poco probable.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Invesión en ahorro para mitigar tiempos de crisis.",
+    "Explorar opciones de inversión y crecimiento personal en tiempos de crisis."
+  ],
+  "audience": "Espectadores interesados en la política cubana y la geopolítica estadounidense.",
+  "tone": "Analítico y crítico.",
+  "content_style": "Informativo con análisis detallado.",
+  "retention_devices": [
+    "Estadísticas impactantes",
+    "Escenarios futuros discutidos",
+    "Preguntas al público para promover el debate"
+  ],
+  "title_supporting_quotes": [
+    "La ONU califica la situación actual en Cuba como una auténtica crisis humanitaria.",
+    "Cuba no solamente se enfrenta a una crisis sino a una caída estructural."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar artículos sobre la crisis cubana y sus repercusiones.",
+    "Crear infografías sobre los escenarios futuros de Cuba."
+  ],
+  "risk_notes": [
+    "La situación puede cambiar rápidamente debido a factores internos y externos.",
+    "Algunos escenarios propuestos pueden subestimar la resiliencia del régimen."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
