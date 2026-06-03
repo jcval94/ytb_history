@@ -21,6 +21,7 @@ py_chmod_dir/
 pytest_min_tmp/
 build/pytest-*/
 build/pytest*/
+build/codex_pytest_basetemp/
 pytest_one_tmp/
 pytest_project*_subset_tmp/
 test_tmp_ops_fix/
