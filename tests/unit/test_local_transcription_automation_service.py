@@ -8,6 +8,12 @@ from typing import Any
 from ytb_history.services.local_transcription_automation_service import run_local_transcription_automation
 
 
+def _write_transcription_channel_config(root: Path, urls: list[str]) -> None:
+    path = root / "config" / "transcription_channels.py"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"TRANSCRIPTION_CHANNEL_URLS = {urls!r}\n", encoding="utf-8")
+
+
 def _completed(command: list[str], *, stdout: str = "", returncode: int = 0) -> subprocess.CompletedProcess[str]:
     return subprocess.CompletedProcess(command, returncode, stdout=stdout, stderr="")
 
@@ -314,6 +320,15 @@ def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selec
     monkeypatch,
 ) -> None:
     _write_sync_report(tmp_path)
+    forced_urls = [
+        "https://www.youtube.com/@bilinkis",
+        "https://www.youtube.com/@Veritasium",
+        "https://www.youtube.com/@noesposible",
+        "https://www.youtube.com/@Alan-Flores",
+        "https://www.youtube.com/@MitosyMentes",
+        "https://www.youtube.com/@FutureChannel",
+    ]
+    _write_transcription_channel_config(tmp_path, forced_urls)
     monkeypatch.setenv("YOUTUBE_API_KEY", "test-key")
     calls: dict[str, dict[str, Any]] = {}
 
@@ -345,7 +360,7 @@ def test_forced_only_automation_refreshes_forced_channels_and_uses_360_day_selec
 
     assert report["forced_only"] is True
     assert report["selected_forced_count"] == 2
-    assert calls["pipeline"]["channel_urls"] == ["https://www.youtube.com/@bilinkis", "https://www.youtube.com/@Veritasium"]
+    assert calls["pipeline"]["channel_urls"] == forced_urls
     assert calls["pipeline"]["settings_overrides"]["discovery_window_days"] == 360
     assert calls["pipeline"]["settings_overrides"]["max_pages_per_channel"] == 20
     assert calls["selection"] == {

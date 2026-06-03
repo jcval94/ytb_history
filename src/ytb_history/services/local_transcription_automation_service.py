@@ -305,7 +305,7 @@ def run_local_transcription_automation(
         return report
 
     if refresh_forced_channels:
-        forced_urls = load_forced_transcription_channel_urls()
+        forced_urls = load_forced_transcription_channel_urls(repo_root / "config" / "transcription_channels.py")
         _emit_progress(
             progress_callback,
             15,
