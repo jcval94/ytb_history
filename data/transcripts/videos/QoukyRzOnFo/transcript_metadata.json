@@ -1,0 +1,14 @@
+{
+  "video_id": "QoukyRzOnFo",
+  "channel_id": "UCtinbF-Q-fVthA0qrFQTgXQ",
+  "channel_name": "CaseyNeistat",
+  "title": "Never Ever Surf in New York City's East River",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\QoukyRzOnFo.mp3",
+  "transcribed_at": "2026-06-03T04:50:42.220739+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 6136,
+  "text_sha256": "15710e15b2f373a2af5f3238f077f8d92d927765b77b907f06e6c651cf8b1d16",
+  "repo_schema_version": "transcript_metadata_v1"
+}

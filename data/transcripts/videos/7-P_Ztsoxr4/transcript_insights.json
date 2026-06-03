@@ -1,0 +1,78 @@
+{
+  "video_id": "7-P_Ztsoxr4",
+  "language": "es",
+  "summary": "El fragmento analiza un presunto autogolpe de Estado, donde se alega que un grupo en el poder controla las instituciones, incluyendo los tribunales electorales y la Suprema Corte, lo que dificulta cualquier cambio político en el país. Se menciona la gravedad de esta situación y se hace un llamado a prestar atención a una iniciativa reciente.",
+  "main_topics": [
+    "autogolpe de Estado",
+    "control institucional",
+    "influencia sobre los tribunales",
+    "situación política actual"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Presentación del problema",
+      "purpose": "Contextualizar la situación política",
+      "summary": "Se menciona que no habrá otro partido que gane a menos que se reconozca su victoria."
+    },
+    {
+      "section": "Descripción del control",
+      "purpose": "Detallar las instituciones bajo control",
+      "summary": "Se enumera el control sobre tribunales electorales y la Suprema Corte."
+    },
+    {
+      "section": "Reflexión personal",
+      "purpose": "Expresar una opinión sobre la gravedad de la situación",
+      "summary": "Se considera grotesca la operación y se hace énfasis en la resistencia a cambios desde el poder."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Frase impactante",
+    "hook_text": "De aquí no nos saca nadie",
+    "why_it_works": "Esta frase resuena con el sentimiento de desesperanza y resistencia ante la situación política."
+  },
+  "claims": [
+    {
+      "claim": "Hay un control total sobre las elecciones y los tribunales.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Se está perpetrando un autogolpe de Estado.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La situación política es grotesca y alarmante.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Control del INE",
+    "Hechos reportados por periodistas"
+  ],
+  "actionable_ideas": [
+    "Realizar un análisis exhaustivo sobre la situación política actual.",
+    "Fomentar el debate público sobre las reformas necesarias.",
+    "Crear campañas informativas sobre el control de instituciones."
+  ],
+  "audience": "ciudadanos interesados en política",
+  "tone": "grave",
+  "content_style": "informativo",
+  "retention_devices": [
+    "frases memorables",
+    "hechos impactantes",
+    "preguntas retóricas"
+  ],
+  "title_supporting_quotes": [
+    "De aquí no nos saca nadie"
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre el autogolpe",
+    "Documentales sobre control institucional"
+  ],
+  "risk_notes": [
+    "Potenciales repercusiones políticas de abordar el tema."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

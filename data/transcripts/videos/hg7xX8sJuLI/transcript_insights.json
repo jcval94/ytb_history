@@ -1,0 +1,84 @@
+{
+  "video_id": "hg7xX8sJuLI",
+  "language": "es",
+  "summary": "La Fiscalía General de la República ha llamado a comparecer a varios políticos, incluida la gobernadora Maru Campos, en una investigación sobre un operativo que desmanteló un narcolaboratorio en la sierra tarahumara, con posibles implicaciones internacionales. La gobernadora acusó una utilización política de la Fiscalía, mientras otros políticos de Sinaloa enfrentan acusaciones por vínculos con el cártel de Sinaloa.",
+  "main_topics": [
+    "Llamado a comparecer por la Fiscalía",
+    "Operativo en la sierra tarahumara",
+    "Implicaciones políticas",
+    "Vínculos con el cártel de Sinaloa"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema principal de las comparecencias.",
+      "summary": "La Fiscalía llama a comparecer a varios políticos en una investigación."
+    },
+    {
+      "section": "Detalles del operativo",
+      "purpose": "Explicar el contexto del llamado a comparecer.",
+      "summary": "Se desmanteló un narcolaboratorio con la participación de la CIA."
+    },
+    {
+      "section": "Reacciones políticas",
+      "purpose": "Mostrar la reacción de los involucrados ante las acusaciones.",
+      "summary": "Maru Campos acusa uso político de la Fiscalía, defendiendo la soberanía de Chihuahua."
+    },
+    {
+      "section": "Implicaciones adicionales",
+      "purpose": "Informar sobre otros políticos implicados.",
+      "summary": "Otros políticos de Sinaloa son citados por investigaciones de vínculos con el cártel."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Noticia de actualidad",
+    "hook_text": "La Fiscalía General de la República llama a comparecer a Rocha Moya, Maru Campos y Enrique Inzunza.",
+    "why_it_works": "Genera interés inmediato por las altas figuras públicas involucradas y el potencial escándalo político."
+  },
+  "claims": [
+    {
+      "claim": "Maru Campos ha sido llamada a comparecer por la Fiscalía.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La Fiscalía es utilizada con fines políticos por el gobierno federal.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Rubén Rocha Moya y otros políticos están implicados en vínculos con el cártel de Sinaloa.",
+      "support_level": "explicit",
+      "risk": "alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Mantener un seguimiento de las investigaciones de la FGR.",
+    "Fomentar debates sobre el uso político de las instituciones gubernamentales.",
+    "Informar sobre los derechos y responsabilidades de los llamados a comparecer."
+  ],
+  "audience": "Ciudadanos interesados en la política y la justicia en México.",
+  "tone": "Informativo y crítico.",
+  "content_style": "Periodístico.",
+  "retention_devices": [
+    "Cuestionamiento sobre la imparcialidad de la FGR.",
+    "Referencias a figuras públicas.",
+    "Implicaciones internacionales en la investigación."
+  ],
+  "title_supporting_quotes": [
+    "La FGR informó que tanto la mandataria estatal como el exfiscal César Jauregui fueron llamados...",
+    "Acusó a Morena y al gobierno federal de utilizar a la Fiscalía con fines políticos."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos de opinión sobre el uso de la Fiscalía en la política.",
+    "Discusiones en redes sociales sobre el impacto de estas comparecencias.",
+    "Reportajes sobre la crisis de seguridad y el narcotráfico en México."
+  ],
+  "risk_notes": [
+    "Posibles repercusiones políticas para los involucrados.",
+    "Impacto en la percepción pública sobre la Fiscalía.",
+    "Desafíos legales derivados de las comparecencias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

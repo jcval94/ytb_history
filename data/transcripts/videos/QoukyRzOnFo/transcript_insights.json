@@ -1,0 +1,90 @@
+{
+  "video_id": "QoukyRzOnFo",
+  "language": "English",
+  "summary": "The video features a host sharing personal anecdotes about surfing in Brooklyn and the impact of social media on creativity. It discusses the philosophy of enjoying life, the balance of fun versus skill in surfing, and critiques the overwhelming nature of social media that detracts from meaningful engagement.",
+  "main_topics": [
+    "Surfing culture",
+    "Personal anecdotes",
+    "Social media critique",
+    "Creativity and focus"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction and storm description",
+      "purpose": "Set the scene and provide context about current weather and location.",
+      "summary": "The host describes a recent storm and travels to Brooklyn, hinting at fun plans with friends."
+    },
+    {
+      "section": "Surfing reflection",
+      "purpose": "Introduce surfing and its culture",
+      "summary": "Discusses their history with surfing and introduces Ben Gravy, a surfer who emphasizes joy over skill."
+    },
+    {
+      "section": "Ben Gravy's philosophy",
+      "purpose": "Highlight Ben's approach to surfing and YouTube",
+      "summary": "Ben shares that his YouTube channel began as a means for accountability and has evolved into a passion."
+    },
+    {
+      "section": "The impact of social media",
+      "purpose": "Critique social media's role in creativity and focus",
+      "summary": "The host uses a potato chip analogy to explain how social media can distract and provide empty satisfaction."
+    },
+    {
+      "section": "Personal reflections and changes",
+      "purpose": "Convey personal strategies for improved focus",
+      "summary": "The host shares their decision to remove social media from their phone to enhance focus and creativity."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anecdote",
+    "hook_text": "Still raining out. We had a pretty crazy storm last night that came out of nowhere.",
+    "why_it_works": "It creates immediate engagement by painting a vivid picture of the current scene, drawing viewers into the narrative."
+  },
+  "claims": [
+    {
+      "claim": "Social media detracts from meaningful engagement.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Having too many options leads to boredom.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Ben Gravy's approach to surfing emphasizes joy over skill.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Potato chips analogy",
+    "Ben Gravy's YouTube journey"
+  ],
+  "actionable_ideas": [
+    "Limit social media usage to boost creativity.",
+    "Focus on one task at a time rather than multitasking.",
+    "Engage in activities that bring genuine joy."
+  ],
+  "audience": "Individuals interested in surfing, personal development, and social media impacts.",
+  "tone": "Casual and reflective",
+  "content_style": "Vlog-style, personal narrative",
+  "retention_devices": [
+    "Personal anecdotes",
+    "Humorous analogies",
+    "Relatable experiences"
+  ],
+  "title_supporting_quotes": [
+    "Whoever is having the most fun wins.",
+    "Digital shackles."
+  ],
+  "creative_reuse_opportunities": [
+    "Clips discussing social media impacts can be extracted for educational content.",
+    "A montage of surfing clips for a dedicated surf channel."
+  ],
+  "risk_notes": [
+    "Claims about social media impacts may be controversial.",
+    "Personal anecdotes should be relatable to a wide audience."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

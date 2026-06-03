@@ -1,0 +1,95 @@
+{
+  "video_id": "y9uEeFcNT3Q",
+  "language": "unknown",
+  "summary": "The review of the horror movie 'Passenger' critiques its clichéd narrative and execution, comparing it unfavorably to the film 'Obsession.' The reviewer describes the plot as standard for the horror genre, filled with tired tropes and ineffective jump scares, leading to a disappointing experience overall.",
+  "main_topics": [
+    "Movie Reviews",
+    "Horror Genre Critique",
+    "Clichéd Tropes",
+    "Comparative Analysis of Films"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Set the stage for the review and share initial thoughts.",
+      "summary": "The reviewer expresses disbelief that they even care to review 'Passenger' given its poor quality."
+    },
+    {
+      "section": "Initial Reaction",
+      "purpose": "Describe the hype and expectations versus reality.",
+      "summary": "The review contrasts 'Passenger' with 'Obsession,' indicating that the former failed to meet the hype."
+    },
+    {
+      "section": "Plot Summary",
+      "purpose": "Summarize the main plot points.",
+      "summary": "A couple on the road encounter a demonic entity called the Passenger, leading to clichéd events as they try to survive."
+    },
+    {
+      "section": "Character Analysis",
+      "purpose": "Discuss character roles and their impacts on the narrative.",
+      "summary": "Highlights generic character traits and poor design choices, diminishing the horror experience."
+    },
+    {
+      "section": "Tropes and Execution",
+      "purpose": "Critique the use of horror tropes and jump scares.",
+      "summary": "Identifies the over-reliance on clichés, ineffective jump scares, and formulaic plot points."
+    },
+    {
+      "section": "Climactic Analysis",
+      "purpose": "Evaluate the film's climax and resolution.",
+      "summary": "Describes the finale as disappointing, filled with illogical decisions by characters."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Rhetorical Question",
+    "hook_text": "You wanna fight about it?",
+    "why_it_works": "Engages viewers directly, setting a confrontational tone that invites them into the review."
+  },
+  "claims": [
+    {
+      "claim": "'Passenger' is a clichéd horror film with nothing new to offer.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The film relies on ineffective jump scares and tropes.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Comparatively, 'Obsession' is a superior horror film.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "The couple makes poor choices leading to predictable outcomes.",
+    "The horror tropes used are all too familiar and poorly executed."
+  ],
+  "actionable_ideas": [
+    "Avoid watching 'Passenger' if you seek originality in horror films.",
+    "Consider checking out 'Obsession' for a stronger horror experience."
+  ],
+  "audience": "Horror film enthusiasts and potential moviegoers",
+  "tone": "Confrontational and critical",
+  "content_style": "Conversational and informal",
+  "retention_devices": [
+    "Rhetorical questions",
+    "Bold statements about the film's quality",
+    "Comparative analysis with a well-received film"
+  ],
+  "title_supporting_quotes": [
+    "\"It was big booty.\"",
+    "\"Everything that happens in this film is just the standard cliché horror movie checklist.\"",
+    "\"It doesn't do anything well, nor does it try to do anything well.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Extract quotes for social media posts critiquing the film.",
+    "Use elements of the review for a podcast discussion on horror films."
+  ],
+  "risk_notes": [
+    "Stating the film is a disappointment may alienate fans of 'Passenger.'",
+    "Strong critiques might lead to backlash from those who enjoyed the film."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

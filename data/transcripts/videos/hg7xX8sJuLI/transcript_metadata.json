@@ -1,0 +1,14 @@
+{
+  "video_id": "hg7xX8sJuLI",
+  "channel_id": "UCafNntv_qTQB26AvbEQNHPw",
+  "channel_name": "Aristegui Noticias",
+  "title": "FGR llama a comparecer a Rocha Moya, Maru Campos y Enrique Inzunza",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\hg7xX8sJuLI.mp3",
+  "transcribed_at": "2026-06-03T04:50:23.019471+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1442,
+  "text_sha256": "43b082de592455b5688b9ccf5f419b3d6c400c78a03775bc5eb151531b9c007d",
+  "repo_schema_version": "transcript_metadata_v1"
+}

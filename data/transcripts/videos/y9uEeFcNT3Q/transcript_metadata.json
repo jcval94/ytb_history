@@ -1,0 +1,14 @@
+{
+  "video_id": "y9uEeFcNT3Q",
+  "channel_id": "UCq6VFHwMzcMXbuKyG7SQYIg",
+  "channel_name": "penguinz0",
+  "title": "I Know You Don't Care About This",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\y9uEeFcNT3Q.mp3",
+  "transcribed_at": "2026-06-03T04:51:22.830416+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9252,
+  "text_sha256": "e7df530af9441425d414b6d846ffaf40c5fcf3f0df5f4fa042134b404ee6c649",
+  "repo_schema_version": "transcript_metadata_v1"
+}

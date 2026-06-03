@@ -1,0 +1,78 @@
+{
+  "video_id": "7295XICQ5dQ",
+  "language": "English",
+  "summary": "The video discusses a dramatic day at the U.S. Capitol where Senate Republicans decided not to pass a key funding bill for ICE and Customs and Border Protection, primarily due to objections about funding linked to President Trump's renovations and a proposed weaponization fund. After discussions with Attorney General Todd Blanche, Senate Republicans felt the bill lacked sufficient oversight and chose to leave for Memorial Day instead of voting.",
+  "main_topics": [
+    "Funding for ICE and Customs and Border Protection",
+    "Republican objections to Trump's proposals",
+    "Weaponization fund concerns",
+    "Senate Republicans' decision to not vote",
+    "Impact of the funding bill on Americans"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Set the scene and describe the urgency",
+      "summary": "The speaker rushes to the newsroom to report on the dramatic events at the Capitol."
+    },
+    {
+      "section": "Key Issues",
+      "purpose": "Explain the contested elements of the funding bill",
+      "summary": "The bill's connection to Trump's funding requests and concerns from Republican senators."
+    },
+    {
+      "section": "Republican Response",
+      "purpose": "Detail the Republican senators’ concerns and discussions",
+      "summary": "Senate Republicans, after engaging with the Attorney General, express their discomfort with the bill's lack of oversight."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize the outcome of the discussions",
+      "summary": "Senate Republicans decide to leave for Memorial Day and postpone the bill."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Dramatic revelation",
+    "hook_text": "incredibly dramatic and rare day, especially during the Trump era",
+    "why_it_works": "It intrigues viewers by highlighting the unusual nature of the event and its implications during a politically charged time."
+  },
+  "claims": [
+    {
+      "claim": "Senate Republicans will not pass a key bill due to concerns about Trump’s funding requests.",
+      "support_level": "explicit",
+      "risk": "political fallout"
+    },
+    {
+      "claim": "The weaponization fund lacked sufficient guardrails as perceived by Senate Republicans.",
+      "support_level": "implicit",
+      "risk": "public criticism"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Encourage community discussions on government funding",
+    "Stay informed about legislative decisions",
+    "Support organizations that provide trusted news coverage"
+  ],
+  "audience": "General public and political followers",
+  "tone": "Informative",
+  "content_style": "News report",
+  "retention_devices": [
+    "Urgency of the moment",
+    "Use of specific financial figures",
+    "Quoting officials for credibility"
+  ],
+  "title_supporting_quotes": [
+    "Senate Republicans decided there were not enough guardrails.",
+    "Senators had major problems with the so-called weaponization fund."
+  ],
+  "creative_reuse_opportunities": [
+    "Create a follow-up segment discussing the implications of this funding decision.",
+    "Develop a graphic explaining the funding process for ICE and Customs and Border Protection."
+  ],
+  "risk_notes": [
+    "Potential backlash from constituents regarding funding decisions.",
+    "Ongoing tension between Senate Republicans and Trump’s administration."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

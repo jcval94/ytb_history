@@ -1,0 +1,20 @@
+{
+  "video_id": "PyUSzzfqWTw",
+  "channel_id": "UC1viRct91s1a3Z5yvk7FJXw",
+  "channel_name": "Diego Ruzzarin",
+  "title": "¿Qué es la justicia para el candidato a la presidencia de #Colombia?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\PyUSzzfqWTw.mp3",
+  "transcribed_at": "2026-06-03T04:50:49.237895+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1254,
+  "text_sha256": "242fe444ac643faeeb6bb26e91f942c3d5d2aebe48144685661ba9649ca4b4e3",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\PyUSzzfqWTw\\transcript_segments.jsonl",
+  "segment_count": 20,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-03T04:52:50.499447+00:00",
+  "duration_seconds": 104.27999877929688
+}

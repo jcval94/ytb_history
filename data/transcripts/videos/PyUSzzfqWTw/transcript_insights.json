@@ -1,0 +1,82 @@
+{
+  "video_id": "PyUSzzfqWTw",
+  "language": "es",
+  "summary": "La justicia debe ser entendida no solo como un castigo retributivo, sino también como una forma de reparación que busca recuperar tanto a las víctimas como a los perpetradores del delito. El equilibrio social se logra al reconocer el daño y buscar la restauración en lugar de solo la retribución.",
+  "main_topics": [
+    "Definición de justicia",
+    "Justicia retributiva",
+    "Justicia restaurativa",
+    "Equilibrio social"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la justicia",
+      "purpose": "Explicar la necesidad de redefinir el concepto de justicia",
+      "summary": "El orador introduce la noción de justicia más allá del castigo."
+    },
+    {
+      "section": "Justicia retributiva",
+      "purpose": "Definir la justicia retributiva",
+      "summary": "Se menciona la justicia como un mecanismo de castigo y su importancia inicial."
+    },
+    {
+      "section": "Justicia restaurativa",
+      "purpose": "Discutir la justicia restaurativa",
+      "summary": "Se enfatiza la importancia de reparar a las víctimas y trabajar en la recuperación de los perpetradores."
+    },
+    {
+      "section": "Equilibrio en la sociedad",
+      "purpose": "Conectar la justicia con el equilibrio social",
+      "summary": "La necesidad de destruir el poder perverso y restaurar la cohesión social es mencionada."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta",
+    "hook_text": "Ahora me gustaría preguntarte sobre su definición de justicia.",
+    "why_it_works": "Establece un contexto para el discurso y capta la atención del oyente al explorar un concepto fundamental."
+  },
+  "claims": [
+    {
+      "claim": "La justicia debe ser reparadora y restauradora.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Es necesario un castigo retributivo inicial.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La justicia genera un equilibrio social.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover un enfoque de justicia restaurativa en casos criminales.",
+    "Incluir a las víctimas en procesos de justicia.",
+    "Desarrollar programas de rehabilitación para quienes han causado daño."
+  ],
+  "audience": "Personas interesadas en justicia y criminología",
+  "tone": "Reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos de justicia en la sociedad",
+    "Referencias a la importancia del equilibrio social"
+  ],
+  "title_supporting_quotes": [
+    "La posibilidad de restaurar la sociedad pasa por el reconocer a las víctimas."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre justicia restaurativa",
+    "Podcast sobre criminología y justicia",
+    "Material educativo en escuelas sobre conceptos de justicia"
+  ],
+  "risk_notes": [
+    "El concepto de justicia restaurativa puede ser malinterpretado.",
+    "El enfoque inicial en la retribución puede ser visto como contradictorio."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

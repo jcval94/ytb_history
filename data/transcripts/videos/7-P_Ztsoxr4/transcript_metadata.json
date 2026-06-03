@@ -1,0 +1,20 @@
+{
+  "video_id": "7-P_Ztsoxr4",
+  "channel_id": "UCafNntv_qTQB26AvbEQNHPw",
+  "channel_name": "Aristegui Noticias",
+  "title": "Anabel Hernández advierte “una especie de autogolpe de Estado” por iniciativa electoral de Morena",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\7-P_Ztsoxr4.mp3",
+  "transcribed_at": "2026-06-03T04:46:29.368922+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 759,
+  "text_sha256": "dd200bcff8e9344c0621e4f50fd5c59fc5b549ff2063879d4c41add1e4e55515",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\7-P_Ztsoxr4\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-03T04:51:35.944161+00:00",
+  "duration_seconds": 56.439998626708984
+}

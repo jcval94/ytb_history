@@ -1,0 +1,82 @@
+{
+  "video_id": "mND94XVXe-c",
+  "language": "es",
+  "summary": "En una rueda de prensa, los entrenadores Diego y Marcelino analizan la temporada de sus equipos, el Atlético de Madrid y el Villarreal, respectivamente. Discuten el rendimiento, las metas alcanzadas y la importancia de ciertos jugadores. Marcelino se despide tras siete temporadas en el Villarreal con un balance positivo.",
+  "main_topics": [
+    "evaluación de la temporada",
+    "rendimiento del equipo",
+    "importancia de jugadores clave",
+    "despedida de Marcelino"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el contexto de la rueda de prensa.",
+      "summary": "Se da la bienvenida a los entrenadores y se inicia la sesión de preguntas."
+    },
+    {
+      "section": "Evaluación del Atlético de Madrid",
+      "purpose": "Analizar el rendimiento y resultados de la temporada.",
+      "summary": "Diego habla sobre el desempeño del equipo, señalando la necesidad de mejorar defensivamente."
+    },
+    {
+      "section": "Desempeño de Marcelino en el Villarreal",
+      "purpose": "Reflejar la experiencia de Marcelino en el club.",
+      "summary": "Marcelino analiza su trayectoria y se muestra nostálgico en su despedida."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Cerrar la rueda de prensa.",
+      "summary": "Los entrenadores expresan agradecimientos y reflexionan sobre el futuro."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta inicial",
+    "hook_text": "No es un resultado normal...",
+    "why_it_works": "Engancha al espectador al comentar un hecho inesperado sobre el equipo."
+  },
+  "claims": [
+    {
+      "claim": "El Atlético de Madrid tuvo una temporada de buena a muy buena.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Marcelino ha tenido una trayectoria exitosa en el Villarreal.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El equipo necesita mejorar defensivamente.",
+      "support_level": "explicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Mejorar la defensa del equipo.",
+    "Consolidar la química en el vestuario para la próxima temporada.",
+    "Analizar el rendimiento de jugadores clave para la continuidad."
+  ],
+  "audience": "aficionados al fútbol y seguidores de los equipos mencionados.",
+  "tone": "reflexivo y nostálgico.",
+  "content_style": "informal y conversacional.",
+  "retention_devices": [
+    "preguntas directas",
+    "anécdotas personales",
+    "momentos emocionantes"
+  ],
+  "title_supporting_quotes": [
+    "Hemos tenido una temporada histórica.",
+    "El fútbol es un trabajo en equipo, todos tienen un papel."
+  ],
+  "creative_reuse_opportunities": [
+    "Resumir la temporada en un artículo.",
+    "Crear un video destacando los mejores momentos de Marcelino."
+  ],
+  "risk_notes": [
+    "La evaluación negativa de la defensa puede crear presión.",
+    "La inestabilidad en el puesto de entrenador puede impactar en el equipo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
