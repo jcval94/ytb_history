@@ -3,9 +3,18 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from ytb_history import cli
-from ytb_history.services.transcript_selection_service import select_transcription_candidates
+from ytb_history.services.transcript_selection_service import (
+    load_forced_transcription_channel_urls,
+    select_transcription_candidates,
+)
 from ytb_history.services.transcript_store_service import write_transcript_artifacts
 from ytb_history.storage.jsonl import write_jsonl_gz
+
+
+def _write_transcription_channel_config(root: Path, urls: list[str]) -> None:
+    path = root / "config" / "transcription_channels.py"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"TRANSCRIPTION_CHANNEL_URLS = {urls!r}\n", encoding="utf-8")
 
 
 def _write_csv(path: Path, header: list[str], rows: list[list[str]]) -> None:
@@ -77,6 +86,59 @@ def test_transcription_channels_config_exists() -> None:
     assert "https://www.youtube.com/@bilinkis" in text
     assert "https://www.youtube.com/@Veritasium" in text
     assert "https://www.youtube.com/veritasium" not in text
+
+
+def test_load_forced_channels_preserves_arbitrary_configured_url_count(tmp_path: Path) -> None:
+    forced_urls = [
+        "https://www.youtube.com/@bilinkis",
+        "https://www.youtube.com/@Veritasium",
+        "https://www.youtube.com/@noesposible",
+        "https://www.youtube.com/@Alan-Flores",
+        "https://www.youtube.com/@MitosyMentes",
+        "https://www.youtube.com/@FutureChannel",
+    ]
+    _write_transcription_channel_config(tmp_path, forced_urls)
+
+    assert load_forced_transcription_channel_urls(tmp_path / "config" / "transcription_channels.py") == forced_urls
+
+
+def test_load_forced_channels_normalizes_blanks_and_duplicates(tmp_path: Path) -> None:
+    path = tmp_path / "config" / "transcription_channels.py"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        "TRANSCRIPTION_CHANNEL_URLS = "
+        "['https://www.youtube.com/@custom', '', ' https://www.youtube.com/@custom ', 'https://www.youtube.com/@another']\n",
+        encoding="utf-8",
+    )
+
+    assert load_forced_transcription_channel_urls(path) == [
+        "https://www.youtube.com/@custom",
+        "https://www.youtube.com/@another",
+    ]
+
+
+def test_selection_loads_forced_channels_from_data_dir_repo(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    forced_urls = [
+        "https://www.youtube.com/@custom",
+        "https://www.youtube.com/@another",
+        "https://www.youtube.com/@third",
+        "https://www.youtube.com/@fourth",
+        "https://www.youtube.com/@fifth",
+        "https://www.youtube.com/@sixth",
+    ]
+    _write_transcription_channel_config(tmp_path, forced_urls)
+    _write_csv(
+        data_dir / "decision/latest_action_candidates.csv",
+        ["video_id", "channel_id", "channel_name", "title", "upload_date", "decision_score"],
+        [["v1", "c1", "custom", "T1", "2026-04-20T00:00:00+00:00", "80"]],
+    )
+
+    report = select_transcription_candidates(data_dir=data_dir, limit=0, forced_channels_max_per_run=50)
+
+    assert report["forced_channels_configured"] == forced_urls
+    assert report["forced_channels_without_matches"] == forced_urls[1:]
+    assert report["selected_forced_count"] == 1
 
 
 def test_recent_auth_required_download_failure_enters_cooldown(tmp_path: Path) -> None:

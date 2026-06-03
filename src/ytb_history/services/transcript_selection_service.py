@@ -1,6 +1,7 @@
 """Deterministic daily selection of transcription candidates."""
 from __future__ import annotations
 import csv, json
+from collections.abc import Iterable
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -14,14 +15,35 @@ DEFAULT_TRANSCRIPTION_CHANNEL_URLS = [
 ]
 
 
-def load_forced_transcription_channel_urls() -> list[str]:
-    cfg = Path("config/transcription_channels.py")
+def _normalize_forced_transcription_channel_urls(urls: Any, *, fallback: Iterable[str]) -> list[str]:
+    if isinstance(urls, str) or not isinstance(urls, Iterable):
+        urls = fallback
+    normalized: list[str] = []
+    seen: set[str] = set()
+    for raw_url in urls:
+        url = str(raw_url).strip()
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        normalized.append(url)
+    return normalized
+
+
+def load_forced_transcription_channel_urls(config_path: str | Path | None = None) -> list[str]:
+    cfg = Path(config_path) if config_path is not None else Path("config/transcription_channels.py")
     if not cfg.exists():
-        return DEFAULT_TRANSCRIPTION_CHANNEL_URLS
+        return list(DEFAULT_TRANSCRIPTION_CHANNEL_URLS)
     namespace: dict[str, Any] = {}
     exec(cfg.read_text(encoding="utf-8"), namespace)  # controlled local config file
-    urls = namespace.get("TRANSCRIPTION_CHANNEL_URLS", DEFAULT_TRANSCRIPTION_CHANNEL_URLS)
-    return list(urls) if isinstance(urls, list) else DEFAULT_TRANSCRIPTION_CHANNEL_URLS
+    return _normalize_forced_transcription_channel_urls(
+        namespace.get("TRANSCRIPTION_CHANNEL_URLS", DEFAULT_TRANSCRIPTION_CHANNEL_URLS),
+        fallback=DEFAULT_TRANSCRIPTION_CHANNEL_URLS,
+    )
+
+
+def _forced_transcription_config_path(data_dir: str | Path) -> Path:
+    root = Path(data_dir)
+    return root.parent / "config" / "transcription_channels.py"
 
 _load_forced_urls = load_forced_transcription_channel_urls
 DEFAULT_LIMIT=10
@@ -146,7 +168,7 @@ def _forced_channel_ids(root:Path, forced_urls:list[str])->dict[str,str]:
         if matched: out[cid]=matched
     return out
 
-def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT_LIMIT,cooldown_days:int=DEFAULT_COOLDOWN_DAYS,forced_channels_enabled:bool=True,forced_channels_max_per_run:int=DEFAULT_FORCED_MAX_PER_RUN,forced_channels_new_video_window_days:int=DEFAULT_FORCED_WINDOW_DAYS)->dict[str,Any]:
+def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT_LIMIT,cooldown_days:int=DEFAULT_COOLDOWN_DAYS,forced_channels_enabled:bool=True,forced_channels_max_per_run:int=DEFAULT_FORCED_MAX_PER_RUN,forced_channels_new_video_window_days:int=DEFAULT_FORCED_WINDOW_DAYS,forced_channel_urls:Iterable[str]|None=None)->dict[str,Any]:
     root=Path(data_dir); tdir=root/'transcripts'; now=datetime.now(timezone.utc); now_iso=now.isoformat(); warnings=[]
     cands:dict[str,dict[str,Any]]={}
     skipped_invalid_video_ids: list[dict[str,str]]=[]
@@ -185,7 +207,11 @@ def select_transcription_candidates(*,data_dir:str|Path='data',limit:int=DEFAULT
             if fa and fa>=th: cool.add(vid)
     success=list_transcribed_video_ids(data_dir=root)
 
-    forced_urls = _load_forced_urls()
+    forced_urls = (
+        _normalize_forced_transcription_channel_urls(forced_channel_urls, fallback=[])
+        if forced_channel_urls is not None
+        else _load_forced_urls(_forced_transcription_config_path(root))
+    )
     forced_handles={_url_handle(u):u for u in forced_urls}
     forced_ids_by_channel=_forced_channel_ids(root, forced_urls)
     forced_rows=[]
