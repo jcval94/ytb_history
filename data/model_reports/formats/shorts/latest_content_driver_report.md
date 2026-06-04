@@ -1,6 +1,6 @@
 # Content Driver Models Report
 
-Generated at: 2026-05-25T13:49:48.035680+00:00
+Generated at: 2026-06-04T13:44:21.176062+00:00
 
 ## Targets evaluados
 - future_log_views_delta_7d
@@ -14,10 +14,10 @@ Generated at: 2026-05-25T13:49:48.035680+00:00
 - shallow_tree_regressor
 
 ## Mejor modelo por target
-- content_value_score_7d: random_forest_regressor (spearman=0.703554)
+- content_value_score_7d: random_forest_regressor (spearman=0.703803)
 - future_engagement_delta_7d: random_forest_regressor (spearman=1.0)
-- future_log_views_delta_7d: random_forest_regressor (spearman=0.93343)
-- future_relative_views_delta_7d: random_forest_regressor (spearman=0.591961)
+- future_log_views_delta_7d: random_forest_regressor (spearman=0.933388)
+- future_relative_views_delta_7d: random_forest_regressor (spearman=0.591953)
 
 ## Top variables por target
 - **content_value_score_7d**: opportunity_score, alpha_score, channel_relative_success_score, topic_confidence, ai_semantic_score
@@ -37,7 +37,7 @@ Ver `latest_content_driver_feature_direction.csv` para detalle por feature.
 - content_value_score_7d / linear_regularized_regressor / engagement_context: 30.21346516
 - future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 19.84066128
 - content_value_score_7d / linear_regularized_regressor / topic_metrics: 17.90842764
-- future_relative_views_delta_7d / linear_regularized_regressor / semantic_cluster: 14.13504758
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_cluster: 14.13504757
 - content_value_score_7d / linear_regularized_regressor / channel_context: 9.81527546
 
 **Estas importancias son predictivas, no causales.**

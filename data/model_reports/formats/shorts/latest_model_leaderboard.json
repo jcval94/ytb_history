@@ -2,7 +2,7 @@
   "rows": [
     {
       "content_format": "shorts",
-      "model_id": "shorts-linear_regularized-is_top_growth_7d-20260525T135216Z",
+      "model_id": "shorts-linear_regularized-is_top_growth_7d-20260604T134635Z",
       "model_family": "linear_regularized",
       "task_type": "classification",
       "target": "is_top_growth_7d",
@@ -25,11 +25,11 @@
       "interpretability_level": "high",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-random_forest-is_top_growth_7d-20260525T135216Z",
+      "model_id": "shorts-random_forest-is_top_growth_7d-20260604T134635Z",
       "model_family": "random_forest",
       "task_type": "classification",
       "target": "is_top_growth_7d",
@@ -52,11 +52,11 @@
       "interpretability_level": "medium",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-shallow_tree-is_top_growth_7d-20260525T135216Z",
+      "model_id": "shorts-shallow_tree-is_top_growth_7d-20260604T134635Z",
       "model_family": "shallow_tree",
       "task_type": "classification",
       "target": "is_top_growth_7d",
@@ -79,11 +79,11 @@
       "interpretability_level": "high",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260525T135216Z",
+      "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260604T134635Z",
       "model_family": "linear_regularized",
       "task_type": "regression",
       "target": "future_log_views_delta_7d",
@@ -106,11 +106,11 @@
       "interpretability_level": "high",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-random_forest-future_log_views_delta_7d-20260525T135216Z",
+      "model_id": "shorts-random_forest-future_log_views_delta_7d-20260604T134635Z",
       "model_family": "random_forest",
       "task_type": "regression",
       "target": "future_log_views_delta_7d",
@@ -122,22 +122,22 @@
       "roc_auc": null,
       "pr_auc": null,
       "brier_score": null,
-      "mae_log": 0.682801,
-      "rmse_log": 0.887977,
-      "spearman_corr": 0.958705,
+      "mae_log": 0.682798,
+      "rmse_log": 0.887975,
+      "spearman_corr": 0.958704,
       "champion_metric": "spearman_corr",
-      "champion_metric_value": 0.958705,
-      "baseline_metric_value": 0.370316,
-      "lift_vs_best_baseline": 0.370316,
+      "champion_metric_value": 0.958704,
+      "baseline_metric_value": 0.370315,
+      "lift_vs_best_baseline": 0.370315,
       "selected_as_champion": false,
       "interpretability_level": "medium",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-shallow_tree-future_log_views_delta_7d-20260525T135216Z",
+      "model_id": "shorts-shallow_tree-future_log_views_delta_7d-20260604T134635Z",
       "model_family": "shallow_tree",
       "task_type": "regression",
       "target": "future_log_views_delta_7d",
@@ -160,7 +160,7 @@
       "interpretability_level": "high",
       "artifact_name": null,
       "workflow_run_id": null,
-      "created_at": "2026-05-25T13:52:16.068598+00:00"
+      "created_at": "2026-06-04T13:46:35.714522+00:00"
     }
   ]
 }
