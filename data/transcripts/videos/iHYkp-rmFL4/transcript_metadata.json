@@ -1,0 +1,14 @@
+{
+  "video_id": "iHYkp-rmFL4",
+  "channel_id": "UCknLrEdhRCp1aegoMqRaCZg",
+  "channel_name": "DW News",
+  "title": "The most polluting World Cup ever? | DW News",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\iHYkp-rmFL4.mp3",
+  "transcribed_at": "2026-06-04T05:03:42.569174+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1259,
+  "text_sha256": "308074c7596b1a296f75eef712e705e7ae45c4696cd73c5e68781149f14d9eb2",
+  "repo_schema_version": "transcript_metadata_v1"
+}

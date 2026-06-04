@@ -1,0 +1,102 @@
+{
+  "video_id": "MjzrJ6S5t4E",
+  "language": "es",
+  "summary": "El video analiza el megafraude a Segalmex en México y las conexiones del gobierno de Morena con el narcotráfico. Se mencionan las advertencias del secretario del Tesoro de EE.UU. sobre los cárteles y la corrupción que permea en la política mexicana, incluyendo acusaciones que involucran a políticos, especialmente a quienes están relacionados con el actual gobierno. También se destaca el impacto del crimen organizado en la economía y la seguridad alimentaria del país.",
+  "main_topics": [
+    "Corrupción en Segalmex",
+    "Conexiones políticas con el narcotráfico",
+    "Intervención de EE.UU. en la política mexicana",
+    "Impacto de la inseguridad en la economía",
+    "Investigaciones sobre políticos mexicanos corruptos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso de Segalmex",
+      "purpose": "Presentar el contexto del fraude y su relación con el narcotráfico",
+      "summary": "Se expone el esquema de corrupción asociado a Segalmex y su conexión con el crimen organizado."
+    },
+    {
+      "section": "Advertencias del secretario del Tesoro de EE.UU.",
+      "purpose": "Destacar la postura internacional sobre la situación en México",
+      "summary": "Scott Bessett advierte sobre las conexiones entre el narcotráfico y la política mexicana."
+    },
+    {
+      "section": "Implicaciones para el gobierno de Morena",
+      "purpose": "Examinar las consecuencias políticas y sociales",
+      "summary": "Se enumeran los posibles alcances de la corrupción en los niveles de gobierno."
+    },
+    {
+      "section": "Análisis de la situación económica",
+      "purpose": "Mostrar el impacto del crimen en la economía",
+      "summary": "El crimen organizado está afectando la producción y distribución de alimentos en México."
+    },
+    {
+      "section": "Caso de José Luis Rodríguez Zapatero",
+      "purpose": "Relatar el impacto de la corrupción en figuras políticas",
+      "summary": "Zapatero es implicado en un escándalo de corrupción vinculado a la dictadura venezolana."
+    },
+    {
+      "section": "Conclusión sobre la narcopolítica",
+      "purpose": "Reflexionar sobre el futuro político en México",
+      "summary": "Se alerta sobre el riesgo de que el crimen organice el proceso electoral."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta provocadora",
+    "hook_text": "¿Sabe mucho de ese megafraude a Segalmex en México?",
+    "why_it_works": "Capta la atención del espectador al plantear un tema de corrupción relevante y controvertido."
+  },
+  "claims": [
+    {
+      "claim": "Morena ha usado fondos del narcotráfico para financiar campañas políticas.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "El secretario del Tesoro de EE.UU. considera a los cárteles como terroristas.",
+      "support_level": "explicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "La corrupción en la política mexicana ha permitido el desvío de fondos públicos.",
+      "support_level": "implicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Los cárteles están influyendo en la economía agrícola de México.",
+      "support_level": "weak",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "José Luis Rodríguez Zapatero implicado en corrupción.",
+    "Aumento de precios de alimentos por impuesto criminal de la inseguridad."
+  ],
+  "actionable_ideas": [
+    "Establecer regulaciones más estrictas para la financiación de campañas políticas.",
+    "Aumentar la transparencia y la rendición de cuentas en las instituciones públicas.",
+    "Fortalecer los mecanismos para combatir la corrupción en el gobierno."
+  ],
+  "audience": "Ciudadanos interesados en la política y la economía en México",
+  "tone": "Crítico, informativo",
+  "content_style": "Analítico, directo",
+  "retention_devices": [
+    "Uso de testimonios",
+    "Cifras y estadísticas",
+    "Declaraciones de figuras relevantes"
+  ],
+  "title_supporting_quotes": [
+    "\"Las autoridades de Estados Unidos investigan este esquema\"",
+    "\"La corrupción es inaceptable y debe ser enfrentada\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un vlog explicando la corrupción en México",
+    "Desarrollar infografías sobre el impacto del narcotráfico en la economía",
+    "Realizar entrevistas con expertos en ética y política"
+  ],
+  "risk_notes": [
+    "El enfoque crítico puede polarizar la audiencia.",
+    "Algunos detalles pueden ser sensibles y atraer posibles repercusiones."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

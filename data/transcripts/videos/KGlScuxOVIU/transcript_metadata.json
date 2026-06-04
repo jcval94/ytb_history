@@ -1,0 +1,20 @@
+{
+  "video_id": "KGlScuxOVIU",
+  "channel_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+  "channel_name": "Sambucha",
+  "title": "Craziest Death Rituals Around The World",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\KGlScuxOVIU.mp3",
+  "transcribed_at": "2026-06-04T05:03:34.914849+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1199,
+  "text_sha256": "39cca25f3fc507989d79f454a3e3b3049a879c06077b7eb3756a773973c8367d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\KGlScuxOVIU\\transcript_segments.jsonl",
+  "segment_count": 16,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-04T05:10:48.308348+00:00",
+  "duration_seconds": 50.27000045776367
+}

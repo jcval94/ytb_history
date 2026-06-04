@@ -1,0 +1,117 @@
+{
+  "video_id": "jZqtu8G29TE",
+  "language": "unknown",
+  "summary": "The video discusses various emergency numbers that everyone should be aware of, including text-based counseling, location-based responses in buildings, and specific emergency contacts for different scenarios.",
+  "main_topics": [
+    "Emergency contact numbers",
+    "Text-based counseling",
+    "Location awareness in emergencies",
+    "Global emergency numbers",
+    "Specific emergency protocols"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to emergency numbers",
+      "purpose": "To inform viewers about important emergency contacts.",
+      "summary": "Introduction highlighting the importance of knowing various emergency numbers."
+    },
+    {
+      "section": "Texting for counseling",
+      "purpose": "To provide a non-verbal option for those in distress.",
+      "summary": "741-741 as a texting alternative to ensure mental health support."
+    },
+    {
+      "section": "Location-based dialing",
+      "purpose": "To ensure precise location tracking in emergencies.",
+      "summary": "Explaining how dialing 933 can provide exact location in buildings."
+    },
+    {
+      "section": "Encouragement hotline",
+      "purpose": "To lift spirits during tough times.",
+      "summary": "Introduction of a pep talk number for emotional support."
+    },
+    {
+      "section": "Caller ID checks",
+      "purpose": "To verify caller information.",
+      "summary": "Using an AI service to repeat one's phone number for assurance."
+    },
+    {
+      "section": "Emergency at sea",
+      "purpose": "To provide a maritime emergency contact.",
+      "summary": "VHF channel 16 as the maritime equivalent of 911."
+    },
+    {
+      "section": "Global emergency numbers",
+      "purpose": "To inform about international emergency codes.",
+      "summary": "112 and its importance outside the Americas."
+    },
+    {
+      "section": "Railroad track safety",
+      "purpose": "To highlight correct actions if stranded on tracks.",
+      "summary": "Using specific railroad ID numbers instead of 911 for safety."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "To reinforce the importance of these numbers.",
+      "summary": "Closing statement to emphasize knowing these emergency contacts."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Fact-based urgency",
+    "hook_text": "These are emergency numbers that everybody should know.",
+    "why_it_works": "It creates an immediate sense of necessity and importance, compelling the audience to pay attention."
+  },
+  "claims": [
+    {
+      "claim": "741-741 is the texting version of 911 for counseling.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Dialing 933 provides your exact location in buildings.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "VHF channel 16 is the distress frequency at sea.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "112 is the global emergency number outside the Americas.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Railroad ID numbers are crucial when stranded on tracks.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Memorize key emergency numbers for different situations.",
+    "Use texting services for support if uncomfortable speaking.",
+    "Learn your building's emergency protocols."
+  ],
+  "audience": "General public, especially those looking for emergency preparedness.",
+  "tone": "Informative and urgent.",
+  "content_style": "Straightforward and practical.",
+  "retention_devices": [
+    "Clear examples of each emergency number",
+    "Emphasis on real-life scenarios",
+    "Call-to-action for memorization"
+  ],
+  "title_supporting_quotes": [
+    "These are emergency numbers that everybody should know."
+  ],
+  "creative_reuse_opportunities": [
+    "Create infographics of emergency numbers for distribution.",
+    "Develop a mobile application with quick-access emergency contacts."
+  ],
+  "risk_notes": [
+    "Not all emergency numbers may apply internationally.",
+    "Misuse of emergency services could lead to legal issues."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

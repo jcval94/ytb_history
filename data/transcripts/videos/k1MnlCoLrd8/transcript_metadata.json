@@ -1,0 +1,14 @@
+{
+  "video_id": "k1MnlCoLrd8",
+  "channel_id": "UCuFFtHWoLl5fauMMD5Ww2jA",
+  "channel_name": "CBC News",
+  "title": "The curtain closes on Colbert",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\k1MnlCoLrd8.mp3",
+  "transcribed_at": "2026-06-04T05:03:29.389036+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1669,
+  "text_sha256": "783e5ad9cb0bbdf896a68e05334fd23f686d75d14b0b77653ca5e3b3ae491d99",
+  "repo_schema_version": "transcript_metadata_v1"
+}

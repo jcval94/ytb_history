@@ -1,0 +1,14 @@
+{
+  "video_id": "jZqtu8G29TE",
+  "channel_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+  "channel_name": "Sambucha",
+  "title": "Emergency Numbers Everybody Should Know",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\jZqtu8G29TE.mp3",
+  "transcribed_at": "2026-06-04T05:03:52.185548+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1328,
+  "text_sha256": "3c629c70fdc494df449530312198fc0402df39b4757aa9c48318591fe67e2455",
+  "repo_schema_version": "transcript_metadata_v1"
+}

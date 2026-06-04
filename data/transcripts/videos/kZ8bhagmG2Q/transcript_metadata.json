@@ -1,0 +1,14 @@
+{
+  "video_id": "kZ8bhagmG2Q",
+  "channel_id": "UCtoaZpBnrd0lhycxYJ4MNOQ",
+  "channel_name": "HasanAbi",
+  "title": "AI is doing all the things we were supposed to do",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\kZ8bhagmG2Q.mp3",
+  "transcribed_at": "2026-06-04T05:06:32.908858+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1565,
+  "text_sha256": "06fc5e5e67d835c72754eb8f045e2e4ad3007618bde46c2f364fe34a1e76ad38",
+  "repo_schema_version": "transcript_metadata_v1"
+}

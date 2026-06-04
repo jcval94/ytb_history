@@ -1,0 +1,20 @@
+{
+  "video_id": "BL7hEPguCx0",
+  "channel_id": "UCBi2mrWuNuyYy4gbM6fU18Q",
+  "channel_name": "ABC News",
+  "title": "This museum exhibit features Pokémon and real fossils",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BL7hEPguCx0.mp3",
+  "transcribed_at": "2026-06-04T05:06:24.297204+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1043,
+  "text_sha256": "8645b2f39b6d96325b6b123f7a60c9a6e763e89cefdf752b51603b8c2bb87cfc",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BL7hEPguCx0\\transcript_segments.jsonl",
+  "segment_count": 14,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-04T05:09:00.232284+00:00",
+  "duration_seconds": 68.3499984741211
+}

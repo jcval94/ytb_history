@@ -1,0 +1,14 @@
+{
+  "video_id": "_UQZzRBh_t4",
+  "channel_id": "UC9CoOnJkIBMdeijd9qYoT_g",
+  "channel_name": "Ariana Grande",
+  "title": "May 23, 2026",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_UQZzRBh_t4.mp3",
+  "transcribed_at": "2026-06-04T05:03:45.925488+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1,
+  "text_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "DGw2KKyXuYQ",
+  "channel_id": "UCqcbQf6yw5KzRoDDcZ_wBSw",
+  "channel_name": "Wes Roth",
+  "title": "The REAL Reason Andrej Karpathy Joined Anthropic",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\DGw2KKyXuYQ.mp3",
+  "transcribed_at": "2026-06-04T05:01:06.564057+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 23210,
+  "text_sha256": "a3f3296cc30a8aa46b457d682847d59064b7fcca1f7afe70f1716dddfaaed21d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\DGw2KKyXuYQ\\transcript_segments.jsonl",
+  "segment_count": 244,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-04T05:10:07.402445+00:00",
+  "duration_seconds": 1520.7900390625
+}

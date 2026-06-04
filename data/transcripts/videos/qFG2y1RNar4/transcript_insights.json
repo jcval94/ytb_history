@@ -1,0 +1,86 @@
+{
+  "video_id": "qFG2y1RNar4",
+  "language": "Spanish",
+  "summary": "Este video documenta la firma de un acuerdo entre México y la Unión Europea que elimina aranceles en productos agrícolas y promueve el comercio, la inversión y la cooperación en diversas áreas, destacando la importancia geopolítica y económica de la alianza. Los líderes resaltan el potencial para crear empleos y prosperidad a través de esta modernización de la relación comercial.",
+  "main_topics": [
+    "Firma de acuerdo México-Unión Europea",
+    "Eliminación de aranceles",
+    "Cooperación en inversión y tecnología",
+    "Impacto económico y geopolítico",
+    "Beneficios para productores mexicanos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto del acuerdo.",
+      "summary": "Se anuncia la firma del acuerdo entre México y la UE, destacando la presencia de líderes clave."
+    },
+    {
+      "section": "Detalles del acuerdo",
+      "purpose": "Explicar los beneficios y elementos del acuerdo.",
+      "summary": "El acuerdo eliminará aranceles sobre un amplio rango de productos y fomentará la inversión en diversas áreas."
+    },
+    {
+      "section": "Declaraciones de líderes",
+      "purpose": "Compartir las perspectivas de líderes sobre el acuerdo.",
+      "summary": "Ambos líderes expresan su optimismo sobre el potencial del acuerdo para generar empleo y cooperación."
+    },
+    {
+      "section": "Impactos y futuro",
+      "purpose": "Discutir la relevancia a largo plazo del acuerdo.",
+      "summary": "Se enfatiza cómo este acuerdo será crucial para diversificar y fortalecer la economía mexicana."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita inspiradora",
+    "hook_text": "Este acuerdo abre enormes oportunidades para ambas regiones.",
+    "why_it_works": "La promesa de nuevas oportunidades atrae la atención del público y genera interés en los resultados positivos del acuerdo."
+  },
+  "claims": [
+    {
+      "claim": "El acuerdo eliminará aranceles sobre el 99% de los productos.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Creará millones de empleos y aumentará la inversión.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Fortalecerá la cooperación en ciencia y tecnología.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Se mencionan impactos positivos como la creación de cinco millones de empleos.",
+    "El acuerdo protege denominaciones geográficas como el cacao y el tequila."
+  ],
+  "actionable_ideas": [
+    "Aprovechar el acuerdo para diversificar exportaciones.",
+    "Fomentar inversiones en energías renovables y tecnología.",
+    "Fortalecer la cooperación en sectores estratégicos."
+  ],
+  "audience": "Empresarios, políticos, y ciudadanos interesados en comercio exterior.",
+  "tone": "Optimista y diplomático",
+  "content_style": "Informativo con énfasis en la colaboración internacional.",
+  "retention_devices": [
+    "Citas de líderes internacionales",
+    "Datos sobre empleo y economía",
+    "Visuales de la firma en contexto"
+  ],
+  "title_supporting_quotes": [
+    "Queremos crear más empleos y más valor a ambos lados del Atlántico.",
+    "Este acuerdo es una auténtica declaración geopolítica."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos analíticos sobre relaciones internacionales.",
+    "Infografías sobre el impacto económico del acuerdo."
+  ],
+  "risk_notes": [
+    "Implica dependencia económica de un solo socio.",
+    "Las condiciones del acuerdo podrían cambiar con cambios políticos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
