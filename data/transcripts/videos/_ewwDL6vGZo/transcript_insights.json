@@ -1,0 +1,119 @@
+{
+  "video_id": "_ewwDL6vGZo",
+  "language": "unknown",
+  "summary": "The video discusses the funniest movies of all time based on various criteria including AFI polls, Rotten Tomatoes scores, quotability, rewatchability, and joke density.",
+  "main_topics": [
+    "Funniest movie according to AFI",
+    "Highest rated comedy films",
+    "Most quotable movies",
+    "Movies with rewatchability",
+    "Joke density in comedy films"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "To introduce the topic of the funniest movies.",
+      "summary": "The video opens by asking which movie is considered the funniest of all time."
+    },
+    {
+      "section": "AFI Poll Result",
+      "purpose": "To present the funniest movie as per an authoritative source.",
+      "summary": "Some Like It Hot is named the funniest movie based on an AFI poll."
+    },
+    {
+      "section": "Critic & Audience Ratings",
+      "purpose": "To compare movies based on critic and audience ratings.",
+      "summary": "Monty Python and the Holy Grail receives top scores on Rotten Tomatoes and IMDb."
+    },
+    {
+      "section": "Quotability",
+      "purpose": "To identify movies known for memorable quotes.",
+      "summary": "Anchorman and Mean Girls are tied for having the most quotable lines."
+    },
+    {
+      "section": "Rewatchability",
+      "purpose": "To determine which movie remains funny upon multiple viewings.",
+      "summary": "Superbad is recognized for its rewatchability, while The Hangover is noted for a strong first-time viewing experience."
+    },
+    {
+      "section": "Joke Density",
+      "purpose": "To highlight which movie is filled with the most jokes.",
+      "summary": "Airplane is credited with the highest joke density, offering multiple gags per minute."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "To provide a personal opinion on the funniest movie mentioned.",
+      "summary": "The speaker concludes that Airplane is highly entertaining."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "What is the funniest movie of all time?",
+    "why_it_works": "It engages viewers by prompting them to think about their own opinions on a universally relatable topic."
+  },
+  "claims": [
+    {
+      "claim": "Some Like It Hot is the funniest movie according to AFI.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Monty Python and the Holy Grail has the highest critic and audience scores.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Anchorman and Mean Girls are the most quotable movies.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Superbad is the funniest movie upon rewatch.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Airplane has the highest joke density.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Some Like It Hot",
+    "Monty Python and the Holy Grail",
+    "Anchorman",
+    "Mean Girls",
+    "Superbad",
+    "The Hangover",
+    "Airplane"
+  ],
+  "actionable_ideas": [
+    "Watch Some Like It Hot for a classic comedic experience.",
+    "Check out Monty Python and the Holy Grail for high critiqued comedy.",
+    "Explore quotable lines from Anchorman and Mean Girls for humor.",
+    "Rewatch Superbad for consistent laughs.",
+    "Experience the rapid-fire humor in Airplane."
+  ],
+  "audience": "Comedy enthusiasts and moviegoers",
+  "tone": "Informative and engaging",
+  "content_style": "Conversational",
+  "retention_devices": [
+    "Engaging questions",
+    "Statistical references",
+    "Comparative analysis"
+  ],
+  "title_supporting_quotes": [
+    "The funniest movie is Some Like It Hot.",
+    "Monty Python and the Holy Grail has the highest critic score."
+  ],
+  "creative_reuse_opportunities": [
+    "Compile a list of top comedies for social media.",
+    "Create meme content using quotes from mentioned films.",
+    "Craft blog posts on the evolution of comedy films."
+  ],
+  "risk_notes": [
+    "Subjective nature of humor may lead to differing opinions.",
+    "Critic scores may vary over time."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,88 @@
+{
+  "video_id": "i5854WN0Q_w",
+  "language": "es",
+  "summary": "Un estudiante de medicina comparte su experiencia aterradora con un profesor que se aprovechó de su relación académica para involucrarlo en rituales de brujería y manipulación emocional.",
+  "main_topics": [
+    "Abuso de poder en el ámbito educativo",
+    "Manipulación emocional",
+    "Rituales de brujería",
+    "Consecuencias del miedo y la soledad"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción y presentación del narrador",
+      "purpose": "Contextualizar la historia",
+      "summary": "El narrador se presenta y solicita que se use un nombre ficticio debido a la naturaleza delicada de su historia."
+    },
+    {
+      "section": "Inicio de la relación con el profesor",
+      "purpose": "Establecer el conflicto principal",
+      "summary": "El narrador cuenta cómo conoció a su estricto profesor de metodología de la investigación y cómo se volvieron más cercanos."
+    },
+    {
+      "section": "Desarrollo de la manipulación",
+      "purpose": "Mostrar el giro hacia lo paranormal y lo abusivo",
+      "summary": "El profesor invita al narrador a su casa para asesorías que eventualmente se convierten en rituales de brujería."
+    },
+    {
+      "section": "La experiencia del ritual",
+      "purpose": "Describir el abuso sufrido",
+      "summary": "El narrador relata el ritual incómodo y perturbador que involucra actos sexuales que no deseaba."
+    },
+    {
+      "section": "La lucha interna y la presión social",
+      "purpose": "Representar los dilemas éticos y emocionales",
+      "summary": "El narrador se siente atrapado entre su miedo al profesor y la presión de pasar el año."
+    },
+    {
+      "section": "Revelación y posible salida",
+      "purpose": "Presentar la esperanza de la comunidad",
+      "summary": "Un compañero del narrador expone públicamente lo que el profesor estaba haciendo, ofreciendo una posible salida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga personal",
+    "hook_text": "La historia de un profesor que se convierte en un monstruo",
+    "why_it_works": "Invita a la empatía y a la curiosidad sobre el desarrollo de la relación."
+  },
+  "claims": [
+    {
+      "claim": "El profesor manipulaba emocionalmente a sus estudiantes.",
+      "support_level": "explicit",
+      "risk": "Alto, puede dañar la reputación del profesor e impactar emocionalmente a las víctimas."
+    },
+    {
+      "claim": "El abuso se daba bajo el contexto de rituales de brujería.",
+      "support_level": "implicit",
+      "risk": "Moderado, necesita validación externa para confirmarse."
+    }
+  ],
+  "examples": [
+    "El narrador se sintió obligado a aceptar rituales del profesor por temor a no pasar la materia.",
+    "El profesor utilizó tácticas de manipulación emocional para acercarse al narrador."
+  ],
+  "actionable_ideas": [
+    "Crear conciencia sobre el abuso de poder en entornos académicos.",
+    "Fomentar un espacio seguro para que los estudiantes hablen sobre sus experiencias."
+  ],
+  "audience": "Estudiantes universitarios y personas interesadas en relatos de experiencias personales y paranormales.",
+  "tone": "Tenso y reflexivo.",
+  "content_style": "Narración en primera persona con un enfoque en la vulnerabilidad.",
+  "retention_devices": [
+    "Suspenso al relatar la conexión con el profesor.",
+    "Descripciones vívidas de las experiencias incómodas."
+  ],
+  "title_supporting_quotes": [
+    "\"Todo comenzó en mi primer año de medicina...\"",
+    "\"Me dijo que era santero y brujo...\""
+  ],
+  "creative_reuse_opportunities": [
+    "Adaptar la historia en un formato de podcast.",
+    "Crear debates en redes sociales sobre el abuso en la educación."
+  ],
+  "risk_notes": [
+    "Posibilidad de represalias contra el narrador.",
+    "Impacto emocional en la comunidad estudiantil."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

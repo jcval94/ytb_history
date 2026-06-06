@@ -1,0 +1,14 @@
+{
+  "video_id": "WRuG_llZ4go",
+  "channel_id": "UCupvZG-5ko_eiXAupbDfxWw",
+  "channel_name": "CNN",
+  "title": "This Inca citadel in Peru could surpass Machu Picchu",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\WRuG_llZ4go.mp3",
+  "transcribed_at": "2026-06-06T21:29:22.914797+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 725,
+  "text_sha256": "87f1eaffb7eb568a76c304f62a023cb8e59111286395d9ef199fff989439a131",
+  "repo_schema_version": "transcript_metadata_v1"
+}

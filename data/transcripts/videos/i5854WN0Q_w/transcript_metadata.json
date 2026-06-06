@@ -1,0 +1,14 @@
+{
+  "video_id": "i5854WN0Q_w",
+  "channel_id": "UCNYW2vfGrUE6R5mIJYzkRyQ",
+  "channel_name": "DrossRotzank",
+  "title": "Querido Dross, profesor brujo abusador",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\i5854WN0Q_w.mp3",
+  "transcribed_at": "2026-06-06T21:28:30.351197+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8424,
+  "text_sha256": "7e1e6d7f2bef7e57dd99288257c1222c6be32dcf129933a9b72e73a24698f145",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "gSCo1cy3FCc",
+  "channel_id": "UCEAZeUIeJs0IjQiqTCdVSIg",
+  "channel_name": "Yahoo Finance",
+  "title": "Why Wall Street is panicking about tokenized stocks",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\gSCo1cy3FCc.mp3",
+  "transcribed_at": "2026-06-06T21:29:17.796758+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9823,
+  "text_sha256": "bd741218597267fed2afff389f1a9ec3fd2d9c0914a3f676cf0fa0cecfd1d8cc",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": "dXngdYHnbuc",
+  "language": "es",
+  "summary": "El mensaje central es la importancia de creer en uno mismo y dejar atrás las dudas para alcanzar la vida que se desea. Se enfatiza que lo que uno visualiza y desea ya pertenece a su futuro.",
+  "main_topics": [
+    "auto-confianza",
+    "visualización positiva",
+    "superación personal"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer la importancia de la auto-creencia.",
+      "summary": "Se introduce la idea de que creer en uno mismo es fundamental para alcanzar los sueños."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explorar el impacto de la duda en el futuro.",
+      "summary": "Se discute cómo las dudas pueden perjudicar el desarrollo personal y el logro de objetivos."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Motivar a los oyentes a adoptar una mentalidad positiva.",
+      "summary": "Se anima a dejar las dudas atrás y permitir que lo bueno llegue a la vida de uno."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "inspiracional",
+    "hook_text": "Cree en ti, cree en ti más que nadie",
+    "why_it_works": "Captura la atención del oyente al apelar a su deseo de auto-mejoramiento y auto-creencia."
+  },
+  "claims": [
+    {
+      "claim": "Todo lo que vive dentro de ti se refleja afuera.",
+      "support_level": "implicit",
+      "risk": "moderado"
+    },
+    {
+      "claim": "Visualizar la vida que quieres significa que ya es tuya en el futuro.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Practica la visualización diaria de tus metas.",
+    "Haz ejercicios de afirmaciones positivas para aumentar la confianza.",
+    "Identifica y elimina pensamientos negativos."
+  ],
+  "audience": "Personas en busca de motivación y autoayuda.",
+  "tone": "inspirador",
+  "content_style": "conversacional",
+  "retention_devices": [
+    "repetición de ideas clave",
+    "uso de lenguaje emocional"
+  ],
+  "title_supporting_quotes": [
+    "Deja las dudas atrás.",
+    "Lo único que hace eso es atormentar tu futuro."
+  ],
+  "creative_reuse_opportunities": [
+    "Extracto para un artículo motivacional.",
+    "Contenido para redes sociales sobre auto-confianza."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones pueden no ser universalmente aplicables.",
+    "Puede haber un riesgo de desmotivación si no se ven resultados inmediatos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-04T04:59:31.868833+00:00",
+  "generated_at": "2026-06-06T21:27:22.137027+00:00",
   "limit": 10,
   "expected_ranked_count": 10,
   "expected_selected_count": 10,
   "ranked_shortfall": 0,
   "candidates_considered": 24659,
-  "available_ranked_count": 24244,
+  "available_ranked_count": 24236,
   "source_artifacts": {
     "decision": {
       "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
@@ -74,27 +74,27 @@
   "forced_window_cutoff_date": "2026-05-14",
   "latest_upload_date": "2026-05-28",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 410,
-  "persisted_transcript_success_count": 410,
+  "registry_existing_success_count": 420,
+  "persisted_transcript_success_count": 420,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
-  "registry_existing_recent_failed_count": 5,
-  "skipped_already_transcribed": 410,
+  "registry_existing_recent_failed_count": 3,
+  "skipped_already_transcribed": 420,
   "skipped_in_progress": 0,
-  "skipped_recent_failures": 5,
+  "skipped_recent_failures": 3,
   "skipped_forced_already_transcribed": 277,
   "skipped_forced_in_progress": 0,
-  "skipped_forced_recent_failures": 1,
-  "skipped_forced_outside_window": 197,
+  "skipped_forced_recent_failures": 0,
+  "skipped_forced_outside_window": 198,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "DGw2KKyXuYQ",
-    "qFG2y1RNar4",
-    "k1MnlCoLrd8",
-    "KGlScuxOVIU",
-    "iHYkp-rmFL4"
+    "49VXwE9HrPo",
+    "W_6hvAdfi8k",
+    "_ewwDL6vGZo",
+    "i5854WN0Q_w",
+    "2xhn2kVdZXM"
   ],
   "warnings": [
     "forced_channels_window_anchored_to_latest_upload_date"

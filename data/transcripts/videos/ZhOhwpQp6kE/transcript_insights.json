@@ -1,0 +1,65 @@
+{
+  "video_id": "ZhOhwpQp6kE",
+  "language": "es",
+  "summary": "El secretario de Educación Pública, Amario Hitos Delgado, pierde popularidad debido a los escándalos de su partido, y es parodiado por intentar relacionarse con un robot que lo ignora.",
+  "main_topics": [
+    "Popularidad de Amario Hitos Delgado",
+    "Escándalos políticos",
+    "Relación con tecnología",
+    "Metáfora de la fábula"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación del secretario de Educación Pública.",
+      "summary": "Se menciona que Amario Hitos Delgado está perdiendo popularidad por los escándalos."
+    },
+    {
+      "section": "Análisis de la situación",
+      "purpose": "Ilustrar la percepción pública sobre Delgado.",
+      "summary": "Se compara su situación con una fábula, bromeando sobre su interacción con un robot que lo rechaza."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Humorístico",
+    "hook_text": "Ya ni las máquinas lo quieren.",
+    "why_it_works": "Genera simpatía y provee un enfoque ligero hacia el tema serio de la política."
+  },
+  "claims": [
+    {
+      "claim": "Amario Hitos Delgado está perdiendo popularidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los escándalos de su partido afectan su imagen.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Mejorar la comunicación de los funcionarios políticos.",
+    "Utilizar metáforas en la educación para conectar mejor con el público."
+  ],
+  "audience": "Público interesado en política y educación.",
+  "tone": "Irónico",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Uso de humor",
+    "Referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "Ya ni las máquinas lo quieren.",
+    "Esto parece una fábula de Esopo."
+  ],
+  "creative_reuse_opportunities": [
+    "Uso del humor en otros contextos políticos.",
+    "Adaptación de fábulas para comentarios sociales."
+  ],
+  "risk_notes": [
+    "Potencial para malinterpretaciones debido al humor.",
+    "Pueden ofender a ciertos grupos que se identifiquen con los personajes."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

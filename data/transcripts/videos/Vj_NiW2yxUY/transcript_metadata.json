@@ -1,0 +1,20 @@
+{
+  "video_id": "Vj_NiW2yxUY",
+  "channel_id": "UC52hytXteCKmuOzMViTK8_w",
+  "channel_name": "CdeCiencia",
+  "title": "¿Qué pasa si te da la rabia?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Vj_NiW2yxUY.mp3",
+  "transcribed_at": "2026-06-06T21:28:52.304310+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 514,
+  "text_sha256": "dbf8a87d710f27f6231262e89820aecd0c5eede8a2a107364b74934f28f64111",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Vj_NiW2yxUY\\transcript_segments.jsonl",
+  "segment_count": 6,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-06T21:30:50.203001+00:00",
+  "duration_seconds": 28.489999771118164
+}

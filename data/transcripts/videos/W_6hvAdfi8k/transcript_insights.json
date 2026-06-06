@@ -1,0 +1,68 @@
+{
+  "video_id": "W_6hvAdfi8k",
+  "language": "es",
+  "summary": "El video aborda la importancia de la distancia emocional en las relaciones, sugiriendo que la ausencia de sentimientos y la falta de reacción de una persona son indicativos de una separación profunda que ya ha ocurrido, aunque físicamente la persona aún esté presente.",
+  "main_topics": [
+    "distancia emocional",
+    "relaciones",
+    "punto de no retorno",
+    "ausencia de sentimientos"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de la distancia emocional.",
+      "summary": "La distancia emocional se presenta como más peligrosa que la distancia física."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Explorar las señales de que alguien se ha distanciado emocionalmente.",
+      "summary": "Se habla de los signos de una relación deteriorada, donde la persona ya no reacciona ni pelea."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la pérdida emocional.",
+      "summary": "Se concluye que la persona se fue antes de que se perciba su ausencia física."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión profunda",
+    "hook_text": "La distancia más peligrosa no es la física, es la emocional.",
+    "why_it_works": "Capta la atención al contrastar dos tipos de distancia y hacer que el espectador piense en su propia vida emocional."
+  },
+  "claims": [
+    {
+      "claim": "La distancia emocional es más peligrosa que la distancia física.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Una persona puede estar presente físicamente pero ausente emocionalmente.",
+      "support_level": "implicit",
+      "risk": "mediano"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Reflexionar sobre las relaciones personales y la comunicación emocional.",
+    "Identificar señales de distancia emocional en seres queridos."
+  ],
+  "audience": "Personas interesadas en relaciones y emociones humanas.",
+  "tone": "Reflexivo",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "La distancia más peligrosa no es la física, es la emocional."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar talleres sobre comunicación emocional.",
+    "Crear artículos sobre relaciones y conexión emocional."
+  ],
+  "risk_notes": [
+    "El tema puede resonar negativamente con personas que han experimentado rupturas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

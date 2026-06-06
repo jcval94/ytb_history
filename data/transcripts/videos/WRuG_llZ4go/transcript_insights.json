@@ -1,0 +1,88 @@
+{
+  "video_id": "WRuG_llZ4go",
+  "language": "unknown",
+  "summary": "New archaeological discoveries suggest a significant Inca site known as Taqrachullo, potentially larger than Machu Picchu, featuring numerous structures and valuable artifacts.",
+  "main_topics": [
+    "Taqrachullo site",
+    "Inca civilization",
+    "Archaeological discoveries",
+    "Peru's cultural heritage"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of Taqrachullo",
+      "purpose": "To introduce the new archaeological site of Taqrachullo.",
+      "summary": "Taqrachullo is proposed to be a major Inca site that may surpass Machu Picchu in significance."
+    },
+    {
+      "section": "Description of the site",
+      "purpose": "To provide details on the structures and size of Taqrachullo.",
+      "summary": "The site consists of 700 stone structures and is three times larger than Machu Picchu."
+    },
+    {
+      "section": "Research background",
+      "purpose": "To explain the ongoing research and discovery efforts.",
+      "summary": "Research at Taqrachullo began in 2019, led by Peruvian archaeologists under the Ministry of Culture."
+    },
+    {
+      "section": "Artifact findings",
+      "purpose": "To highlight the significant discoveries at the site.",
+      "summary": "Nearly 3,000 gold, silver, and copper sequins have been unearthed, indicating the site's historical value."
+    },
+    {
+      "section": "Contextual information",
+      "purpose": "To provide context on Peru's archaeological richness.",
+      "summary": "Peru holds numerous archaeological sites from before and during the Inca Empire."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing fact",
+    "hook_text": "A site more significant than the ruins of Machu Picchu",
+    "why_it_works": "It captures attention by challenging a well-known landmark and piquing curiosity about this new discovery."
+  },
+  "claims": [
+    {
+      "claim": "Taqrachullo could be more significant than Machu Picchu",
+      "support_level": "implicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "The site features 700 structures and vast size",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "3,000 artifacts found at the site",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promote awareness of Taqrachullo among tourists and researchers",
+    "Invest in further archaeological research and preservation efforts",
+    "Incorporate findings into educational programs about Inca culture"
+  ],
+  "audience": "Historians, archaeologists, cultural enthusiasts, and tourists",
+  "tone": "Informative and intriguing",
+  "content_style": "Educational and exploratory",
+  "retention_devices": [
+    "Use of vivid descriptions",
+    "Highlighting significant archaeological finds"
+  ],
+  "title_supporting_quotes": [
+    "could very well be known as Taqrachullo",
+    "features 700 structures, mostly made of stone",
+    "nearly 3,000 gold, silver and copper sequins have been found"
+  ],
+  "creative_reuse_opportunities": [
+    "Create an educational documentary about Taqrachullo",
+    "Develop articles for cultural heritage websites",
+    "Organize guided tours focusing on newly discovered sites"
+  ],
+  "risk_notes": [
+    "Claims of significance may attract skepticism without extensive research",
+    "Potential for misinterpretation of the site's historical context"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

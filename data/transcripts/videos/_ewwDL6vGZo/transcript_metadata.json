@@ -1,0 +1,14 @@
+{
+  "video_id": "_ewwDL6vGZo",
+  "channel_id": "UCWBWgCD4oAqT3hUeq40SCUw",
+  "channel_name": "Sambucha",
+  "title": "What Is The Funniest Movie Of All Time?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_ewwDL6vGZo.mp3",
+  "transcribed_at": "2026-06-06T21:27:52.293579+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1226,
+  "text_sha256": "87d40a84c89befc0564ca9dbf48635ff27a87c39a35dfc4d1a8f3c70bbe6d7f6",
+  "repo_schema_version": "transcript_metadata_v1"
+}

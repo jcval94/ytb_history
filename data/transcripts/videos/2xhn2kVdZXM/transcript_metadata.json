@@ -1,0 +1,20 @@
+{
+  "video_id": "2xhn2kVdZXM",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Thousands attend funeral prayers for San Diego mosque attack victims",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2xhn2kVdZXM.mp3",
+  "transcribed_at": "2026-06-06T21:28:36.179876+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 873,
+  "text_sha256": "81813eb13754c60e6b50a4a2ac5a8c3d814e2be90ea1e4101483f57d82fc7e8f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2xhn2kVdZXM\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-06T21:29:29.238828+00:00",
+  "duration_seconds": 120.08999633789062
+}
