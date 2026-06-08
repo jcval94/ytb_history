@@ -1,0 +1,75 @@
+{
+  "video_id": "ewTVlT82r14",
+  "language": "es",
+  "summary": "Un equipo internacional de astrónomos confirma la ley de la gravitación universal de Newton en escalas cósmicas mediante el análisis de datos galácticos. Los resultados apoyan la teoría newtoniana frente a teorías de gravedad modificadas y la energía oscura.",
+  "main_topics": [
+    "Ley de gravitación universal de Newton",
+    "Astronomía",
+    "Energía oscura",
+    "Gravedad modificada"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la ley de gravitación",
+      "purpose": "Presentar el tema y su relevancia histórica.",
+      "summary": "Se menciona que la ley de Newton ha sido efectiva en el sistema solar."
+    },
+    {
+      "section": "Prueba reciente",
+      "purpose": "Describir la prueba realizada por astrónomos.",
+      "summary": "Un equipo analiza la gravedad a grandes distancias usando datos de cartografía galáctica."
+    },
+    {
+      "section": "Resultados",
+      "purpose": "Exponer los hallazgos de la investigación.",
+      "summary": "Los resultados confirman la precisión de la ley de Newton en la organización de la materia en el universo."
+    },
+    {
+      "section": "Implicaciones",
+      "purpose": "Analizar el impacto de los hallazgos.",
+      "summary": "Contrasta teorías sobre la energía oscura y la caída de la gravedad newtoniana a escalas cósmicas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Te lo cuento.",
+    "why_it_works": "Capta la atención al prometer una información sorprendente sobre un tema conocido."
+  },
+  "claims": [
+    {
+      "claim": "La ley de gravitación universal de Newton es válida en escalas cósmicas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La teoría de la gravedad modificada es menos precisa que la teoría de Newton.",
+      "support_level": "explicit",
+      "risk": "moderado"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Investigar más sobre la historia de la ley de gravitación de Newton.",
+    "Estudiar conceptos de energía oscura y teorías alternativas de la gravedad."
+  ],
+  "audience": "Estudiantes y entusiastas de la ciencia",
+  "tone": "Informativo y entusiasta",
+  "content_style": "Científico y accesible",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Uso de datos sorprendentes",
+    "Narrativas históricas"
+  ],
+  "title_supporting_quotes": [
+    "La forma en la que la materia se organiza en la red cósmica coincide con una precisión asombrosa con lo que Newton predijo."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos educativos sobre leyes físicas",
+    "Videos sobre astronomía y cosmología"
+  ],
+  "risk_notes": [
+    "El tema puede ser técnicamente complejo para algunos espectadores.",
+    "Las teorías alternativas son objeto de debate académico."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

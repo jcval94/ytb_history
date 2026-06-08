@@ -1,0 +1,99 @@
+{
+  "video_id": "b2dj9OWfe7s",
+  "language": "English",
+  "summary": "The DRC faces repeated Ebola outbreaks due to its geographical location, conflict, a fragile health system, and close contact with wildlife and bushmeat, all creating conditions favorable for disease spread.",
+  "main_topics": [
+    "Ebola outbreak declaration",
+    "Geographical factors",
+    "Impact of conflict",
+    "Fragile health system",
+    "Biodiversity and disease transmission"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Introduce the topic of the Ebola outbreak.",
+      "summary": "The WHO declared the Ebola outbreak a global emergency."
+    },
+    {
+      "section": "Geographical Factors",
+      "purpose": "Explain how the DRC's location affects disease spread.",
+      "summary": "Borders and movement facilitate rapid disease transmission."
+    },
+    {
+      "section": "Impact of Conflict",
+      "purpose": "Address how ongoing violence contributes to outbreaks.",
+      "summary": "Displacement and informal living conditions favor disease spread."
+    },
+    {
+      "section": "Health System Issues",
+      "purpose": "Discuss the impact of a weak health system.",
+      "summary": "A fragile system complicates disease identification and control."
+    },
+    {
+      "section": "Biodiversity Considerations",
+      "purpose": "Highlight the role of wildlife in disease transmission.",
+      "summary": "Close contact with animals increases spillover risks."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Summarize the vulnerability of the DRC.",
+      "summary": "Multiple factors contribute to the DRC's risk of Ebola outbreaks."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Question",
+    "hook_text": "Why does it feel like the DRC keeps facing outbreak after outbreak?",
+    "why_it_works": "It engages the viewer’s curiosity and prompts them to seek an explanation."
+  },
+  "claims": [
+    {
+      "claim": "The DRC's geographical location facilitates disease spread.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Conflict contributes to the fragility of the health system.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Biodiversity increases the chances of diseases jumping to humans.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Bushmeat consumption increases the risk of disease transmission.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Strengthen the DRC's health infrastructure.",
+    "Implement community education on disease prevention.",
+    "Improve monitoring of wildlife interactions."
+  ],
+  "audience": "General public interested in health and global issues.",
+  "tone": "Informative",
+  "content_style": "Analytical",
+  "retention_devices": [
+    "Rhetorical questions",
+    "Descriptive imagery",
+    "Real-world connections"
+  ],
+  "title_supporting_quotes": [
+    "The World Health Organization has declared the Ebola outbreak a global health emergency.",
+    "The DRC is like a giant crossroads in the middle of Africa."
+  ],
+  "creative_reuse_opportunities": [
+    "Educational programs on disease prevention.",
+    "Media campaigns on the importance of healthcare in conflict zones.",
+    "Research articles on biodiversity and health risks."
+  ],
+  "risk_notes": [
+    "Some claims are based on emerging research.",
+    "Public perception may vary regarding the health system's state."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

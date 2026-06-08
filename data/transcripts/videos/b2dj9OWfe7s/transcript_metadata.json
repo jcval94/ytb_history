@@ -1,0 +1,14 @@
+{
+  "video_id": "b2dj9OWfe7s",
+  "channel_id": "UC16niRr50-MSBwiO3YDb3RA",
+  "channel_name": "BBC News",
+  "title": "Why does Ebola keep on occurring in DR Congo? #Ebola #DRCongo #BBCNews",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\b2dj9OWfe7s.mp3",
+  "transcribed_at": "2026-06-08T05:26:03.246977+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1913,
+  "text_sha256": "0c6e044ff8146bf801606c6daaf032570509749e8a5f11d66319a52a979d82ca",
+  "repo_schema_version": "transcript_metadata_v1"
+}

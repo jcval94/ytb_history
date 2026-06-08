@@ -1,0 +1,20 @@
+{
+  "video_id": "R-QYL7UZYQo",
+  "channel_id": "UCJ5v_MCY6GNUBTO8-D3XoAg",
+  "channel_name": "WWE",
+  "title": "Sol Ruca is goin CRAZY on #SNME",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\R-QYL7UZYQo.mp3",
+  "transcribed_at": "2026-06-08T05:28:43.795063+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 744,
+  "text_sha256": "8095cba16d1030944d86fd5a87cd4d96e1d95205208a0f70b546d6d4be223d11",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\R-QYL7UZYQo\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-08T05:29:49.038015+00:00",
+  "duration_seconds": 53.59000015258789
+}

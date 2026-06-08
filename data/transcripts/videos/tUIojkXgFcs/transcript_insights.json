@@ -1,0 +1,74 @@
+{
+  "video_id": "tUIojkXgFcs",
+  "language": "unknown",
+  "summary": "The segment discusses Charlotte Flair's recent successes, her partnership with Alexa Bliss, and the complexities of teaming with Rhea Ripley despite their rivalry.",
+  "main_topics": [
+    "Charlotte Flair's success",
+    "Partnership with Alexa Bliss",
+    "Team dynamics with Rhea Ripley"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of Charlotte Flair",
+      "purpose": "To set the stage for discussing her recent achievements.",
+      "summary": "Charlotte Flair has had an impressive year and has overcome difficulties."
+    },
+    {
+      "section": "Partnership Analysis",
+      "purpose": "To explore the nature of the relationship with Alexa Bliss.",
+      "summary": "Initially allies for convenience, their bond has grown into a genuine friendship."
+    },
+    {
+      "section": "Team Dynamics",
+      "purpose": "To highlight the challenges of teaming with Rhea Ripley.",
+      "summary": "Despite their rivalry, Flair and Ripley must collaborate effectively."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing relationship dynamics",
+    "hook_text": "Charlotte Flair's gear tonight, Wade, adorned with all these friendship bracelets.",
+    "why_it_works": "It captures attention by linking Flair's personal style to her relationships in wrestling."
+  },
+  "claims": [
+    {
+      "claim": "Charlotte Flair has emerged from a career low point.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The relationship between Flair and Bliss is genuine.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Flair and Ripley can collaborate despite their rivalry.",
+      "support_level": "weak",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Highlight the evolution of wrestling partnerships in storytelling.",
+    "Analyze the impact of personal dynamics on team performance."
+  ],
+  "audience": "Wrestling fans and sports entertainment enthusiasts",
+  "tone": "Conversational",
+  "content_style": "Informative",
+  "retention_devices": [
+    "Use of personal anecdotes",
+    "Highlighting emotional connections"
+  ],
+  "title_supporting_quotes": [
+    "It's been an incredible 12 months for Charlotte Flair.",
+    "Allies of convenience initially, but that has turned into a huge friendship."
+  ],
+  "creative_reuse_opportunities": [
+    "Breakdown video on friendship dynamics in wrestling.",
+    "Exploration of Charlotte Flair's character development over the past year."
+  ],
+  "risk_notes": [
+    "Potential backlash from fans regarding implied rivalries.",
+    "Risk of oversimplifying complex character relationships."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,105 @@
+{
+  "video_id": "altEWHTfZo0",
+  "language": "es",
+  "summary": "El video presenta una discusión sobre la aparición mediática de Maru Campos y sus declaraciones acerca de la participación de agencias de Estados Unidos en operaciones en Chihuahua. Se revisa la relación de la gobernadora con diversos medios de comunicación, los montos pagados por el gobierno a estos medios y las implicaciones legales de sus declaraciones acerca de la soberanía y la participación de agentes extranjeros.",
+  "main_topics": [
+    "Media Influence",
+    "Political Accountability",
+    "Government Spending on Media",
+    "U.S. Agencies in Mexico",
+    "Legal Implications of Statements"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el tema de la discusión.",
+      "summary": "Se menciona el contexto reciente sobre Maru Campos y su aparición en medios."
+    },
+    {
+      "section": "Análisis de la cobertura mediática",
+      "purpose": "Evaluar la relación entre los medios y el gobierno.",
+      "summary": "Se enumeran los medios a los que Maru Campos dio entrevistas y se discute la influencia del PRIAN en la cobertura."
+    },
+    {
+      "section": "Declaraciones de Maru Campos",
+      "purpose": "Exponer las declaraciones y su potencial implicación legal.",
+      "summary": "Se analizan las respuestas de Maru Campos sobre la participación de agentes estadounidenses en operaciones en Chihuahua."
+    },
+    {
+      "section": "Críticas y reacciones",
+      "purpose": "Presentar opiniones sobre la estrategia mediática de Maru Campos.",
+      "summary": "Se habla sobre la reacción crítica a la gestión comunicativa de Campos, incluyendo acusaciones de narcotráfico."
+    },
+    {
+      "section": "Implicaciones legales",
+      "purpose": "Discutir las consecuencias legales de las declaraciones de Campos.",
+      "summary": "Se abordan las posibles violaciones a la Constitución y la Ley de Seguridad Nacional."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar la discusión con reflexiones finales.",
+      "summary": "Se plantea la falta de resultados en la seguridad en Chihuahua a pesar de la colaboración con agencias extranjeras."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriga",
+    "hook_text": "Es interesante lo que ha pasado en las últimas horas.",
+    "why_it_works": "Genera curiosidad sobre recientes acontecimientos en el ámbito político."
+  },
+  "claims": [
+    {
+      "claim": "Maru Campos ha dado entrevistas a los principales medios de comunicación en México.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Los medios de comunicación reciben grandes cantidades de dinero del gobierno de Maru Campos.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Maru Campos confirmó la participación de agentes estadounidenses en operativo en Chihuahua.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Sus declaraciones podrían implicar violaciones legales y constitucionales.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Maru Campos se enreda en sus respuestas durante entrevistas",
+    "El gobierno de Chihuahua sigue colaborando con agencias como la DEA y el FBI",
+    "Se discute la falta de resultados en términos de seguridad a pesar de la colaboración con agencias extranjeras."
+  ],
+  "actionable_ideas": [
+    "Examinar la relación entre financiamiento público y medios de comunicación",
+    "Investigar las implicaciones legales de las declaraciones de funcionarios públicos",
+    "Promover la transparencia en gastos del gobierno hacia medios"
+  ],
+  "audience": "Personas interesadas en política mexicana y medios de comunicación",
+  "tone": "Informativo y crítico",
+  "content_style": "Conversacional, analítico",
+  "retention_devices": [
+    "Enumerar datos económicos",
+    "Incluir ejemplos de declaraciones",
+    "Presentar opiniones contrastantes"
+  ],
+  "title_supporting_quotes": [
+    "\"La prensa sigue siendo exactamente la misma que recibió Andrés Manuel López Obrador\"",
+    "\"Maru Campos ha dado entrevistas a los principales medios de comunicación en México\"",
+    "\"Hay una invasión de competencias del Gobierno de Chihuahua\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear artículos de opinión sobre medios y política",
+    "Desarrollar infografías sobre el gasto en medios",
+    "Producir un video explicativo sobre la Ley de Seguridad Nacional y su aplicación"
+  ],
+  "risk_notes": [
+    "Alto riesgo legal por las declaraciones de Maru Campos sobre agentes extranjeros",
+    "El tema de narcotráfico puede generar controversia y reacciones negativas",
+    "Posibilidad de demandas por difamación debido a acusaciones lanzadas durante las entrevistas"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

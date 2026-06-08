@@ -1,0 +1,14 @@
+{
+  "video_id": "tTi2uZQsmlo",
+  "channel_id": "UC3IZKseVpdzPSBaWxBxundA",
+  "channel_name": "HYBE LABELS",
+  "title": "TWS (투어스) '너의 모든 가능성이 되어 줄게' Official MV",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\tTi2uZQsmlo.mp3",
+  "transcribed_at": "2026-06-08T05:28:21.661596+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 808,
+  "text_sha256": "19a74839c16efcc919f2673cac1a41bb40933ab0579c01e0572d044fe6b1acc5",
+  "repo_schema_version": "transcript_metadata_v1"
+}

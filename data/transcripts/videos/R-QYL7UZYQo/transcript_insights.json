@@ -1,0 +1,82 @@
+{
+  "video_id": "R-QYL7UZYQo",
+  "language": "unknown",
+  "summary": "The video highlights an intense wrestling match featuring Sol Rucca showcasing her agility and skills, particularly emphasizing her acrobatic background from the University of Oregon.",
+  "main_topics": [
+    "Sol Rucca's agility in wrestling",
+    "Wrestling strategy and veteran experience",
+    "Acrobatics in professional wrestling"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of Sol Rucca",
+      "purpose": "To establish Rucca's credentials and set the stage for her performance.",
+      "summary": "Four years in the business, showcasing her unique skill set."
+    },
+    {
+      "section": "Display of skill",
+      "purpose": "To highlight Rucca's athleticism during the match.",
+      "summary": "Rucca performs a springboard corkscrew crossbody and a swift clothesline."
+    },
+    {
+      "section": "Becky Lynch's reaction",
+      "purpose": "To show the contrast between a newcomer and a veteran's strategy.",
+      "summary": "Lynch rolls out of the ring to regroup, indicating Rucca's impact."
+    },
+    {
+      "section": "Rucca's background",
+      "purpose": "To provide context on Rucca's abilities.",
+      "summary": "She is an acrobatics and tumbling expert from the University of Oregon."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Action Highlight",
+    "hook_text": "That springboard corkscrew crossbody.",
+    "why_it_works": "It captures attention by showcasing an impressive and dynamic move that highlights Rucca's skills."
+  },
+  "claims": [
+    {
+      "claim": "Sol Rucca is exceptionally agile and skilled.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Becky Lynch is a seasoned veteran.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Rucca's acrobatic background enhances her wrestling ability.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Rucca's kamikaze style attack showcases her bravery and skill."
+  ],
+  "actionable_ideas": [
+    "Explore more matches featuring Sol Rucca to analyze her techniques.",
+    "Investigate the impact of acrobatics training on wrestling performance.",
+    "Discuss the strategies of veteran wrestlers like Becky Lynch."
+  ],
+  "audience": "Wrestling fans and sports enthusiasts.",
+  "tone": "Excited and energetic.",
+  "content_style": "Vivid and descriptive.",
+  "retention_devices": [
+    "Highlight reels of key moves.",
+    "Slow-motion replays of Rucca's techniques."
+  ],
+  "title_supporting_quotes": [
+    "Incredibly impressive.",
+    "Big trouble in the early going."
+  ],
+  "creative_reuse_opportunities": [
+    "Create a highlight montage of Sol Rucca's best moves.",
+    "Compile a comparison video of new wrestlers vs. veterans."
+  ],
+  "risk_notes": [
+    "Overemphasis on one wrestler may alienate fans of others.",
+    "Potential for speculative claims about wrestling techniques."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
