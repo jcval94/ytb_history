@@ -1,0 +1,89 @@
+{
+  "schema_version": "operations_summary_v1",
+  "generated_at": "2026-06-10T14:06:28.540151+00:00",
+  "processes_total": 34,
+  "status_counts": {
+    "unknown": 3,
+    "stale": 13,
+    "success_with_warnings": 4,
+    "not_initialized": 2,
+    "success": 8,
+    "skipped": 4
+  },
+  "domain_counts": {
+    "github": 6,
+    "ingestion": 2,
+    "validation": 1,
+    "analytics": 2,
+    "intelligence": 4,
+    "ml": 5,
+    "creative": 1,
+    "reporting": 2,
+    "publishing": 1,
+    "operations": 1,
+    "transcription": 5,
+    "local": 4
+  },
+  "dashboard_tabs": [
+    "Advanced",
+    "Alerts",
+    "Brief",
+    "Channels",
+    "Content Drivers",
+    "Creative",
+    "Data Quality",
+    "Models",
+    "NLP",
+    "Operations",
+    "Overview",
+    "Periods",
+    "Radar",
+    "Scores",
+    "Titles",
+    "Topics",
+    "Videos"
+  ],
+  "dashboard_impact_rows": 135,
+  "healthy_count": 8,
+  "warning_count": 4,
+  "stale_count": 13,
+  "failed_count": 0,
+  "not_initialized_count": 2,
+  "unknown_count": 3,
+  "action_required_count": 13,
+  "stale_processes": [
+    "github_monitor",
+    "cli_run",
+    "cli_export_latest",
+    "cli_build_analytics",
+    "cli_build_nlp_features",
+    "cli_generate_alerts",
+    "cli_build_decision_layer",
+    "cli_build_model_intelligence",
+    "cli_build_topic_intelligence",
+    "cli_generate_creative_packages",
+    "cli_generate_weekly_brief",
+    "cli_generate_opportunity_radar",
+    "cli_select_transcription_candidates"
+  ],
+  "failed_processes": [],
+  "warning_processes": [
+    "github_heatmaps",
+    "cli_analyze_model_readiness",
+    "cli_extract_heatmaps",
+    "cli_transcribe_selected_videos"
+  ],
+  "not_initialized_processes": [
+    "github_pages",
+    "cli_build_pages_dashboard"
+  ],
+  "unknown_processes": [
+    "github_ci",
+    "cli_dry_run",
+    "cli_validate_latest"
+  ],
+  "warnings": [
+    "stale_processes:13",
+    "not_initialized_processes:2"
+  ]
+}

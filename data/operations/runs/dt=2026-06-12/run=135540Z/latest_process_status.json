@@ -1,0 +1,3349 @@
+{
+  "schema_version": "operations_process_status_v1",
+  "generated_at": "2026-06-12T13:55:40.599517+00:00",
+  "source_registry": "config/operations.yaml",
+  "processes": [
+    {
+      "process_id": "github_ci",
+      "name": "CI",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "push_or_pull_request",
+      "sla_hours": 168,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/ci.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "unknown",
+      "base_status": "unknown",
+      "status_detail": "Configured but no durable execution artifact is available yet.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 0,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "src/**",
+        "tests/**",
+        "apps/pages_dashboard/**"
+      ],
+      "outputs": [],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "github_monitor",
+      "name": "YouTube Monitor",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "daily",
+      "sla_hours": 36,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/monitor.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success_with_warnings",
+      "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
+      "last_run_at": "2026-05-29T05:27:54.491409+00:00",
+      "age_hours": 344.46,
+      "is_stale": true,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "reports/dt=2026-05-28/run=232754-0600/run_summary.json",
+          "observed_at": "2026-05-29T05:27:54.491409+00:00",
+          "observed_at_iso": "2026-05-29T05:27:54.491409+00:00",
+          "age_hours": 344.46,
+          "status": "success_with_warnings",
+          "summary": {
+            "execution_date": "2026-05-28T23:27:54.491409-06:00",
+            "status": "success_with_warnings",
+            "channels_total": 5,
+            "channels_ok": 5,
+            "channels_failed": 0,
+            "videos_discovered": 471,
+            "videos_tracked": 24729,
+            "videos_snapshotted": 24622,
+            "videos_unavailable": 107,
+            "snapshot_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-28\\run=232754-0600\\snapshots.jsonl.gz",
+            "delta_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\deltas\\dt=2026-05-28\\run=232754-0600\\deltas.jsonl.gz",
+            "quota_status": "ok",
+            "estimated_quota_units": 595,
+            "observed_quota_units": 511,
+            "errors_count": 107
+          },
+          "warnings_count": 0,
+          "errors_count": 107,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable"
+          ],
+          "path": "reports/dt=*/run=*/run_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 51
+        },
+        {
+          "resolved_path": "reports/dt=2026-05-28/run=232754-0600/quota_report.json",
+          "observed_at": "2026-05-29T05:27:54.491409+00:00",
+          "observed_at_iso": "2026-05-29T05:27:54.491409+00:00",
+          "age_hours": 344.46,
+          "status": "success",
+          "summary": {
+            "execution_date": "2026-05-28T23:27:54.491409-06:00",
+            "estimated_units": {
+              "channels.list": 0,
+              "playlistItems.list": 100,
+              "videos.list": 495
+            },
+            "total_estimated_units": 595,
+            "operational_limit": 7000,
+            "warning_limit": 5000,
+            "soft_warning_limit": 1000,
+            "limit_status": "ok",
+            "observed_units": {
+              "playlistItems.list": 16,
+              "videos.list": 495
+            },
+            "total_observed_units": 511,
+            "should_abort": false
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "reports/dt=*/run=*/quota_report.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 51
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 107,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable"
+      ],
+      "inputs": [
+        "config/channels.py",
+        "config/settings.yaml"
+      ],
+      "outputs": [
+        "data/reports/**",
+        "data/snapshots/**",
+        "data/deltas/**",
+        "data/analytics/**",
+        "data/operations/**"
+      ],
+      "secrets_required": [
+        "YOUTUBE_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Overview",
+        "Videos",
+        "Channels",
+        "Scores",
+        "Advanced",
+        "Titles",
+        "Periods",
+        "Alerts",
+        "Data Quality",
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "github_heatmaps",
+      "name": "YouTube Heatmaps",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "daily",
+      "sla_hours": 48,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/heatmaps.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success_with_warnings",
+      "base_status": "success_with_warnings",
+      "status_detail": "Latest artifact exists but reports warnings, errors, or partial failures.",
+      "last_run_at": "2026-06-12T13:55:39.222807+00:00",
+      "age_hours": 0.0,
+      "is_stale": false,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "heatmaps/latest_heatmap_run_report.json",
+          "observed_at": "2026-06-12T13:54:45.229194+00:00",
+          "observed_at_iso": "2026-06-12T13:54:45.229194+00:00",
+          "age_hours": 0.02,
+          "status": "success_with_warnings",
+          "summary": {
+            "status": "success",
+            "schema_version": "heatmap_run_report_v1",
+            "generated_at": "2026-06-12T13:54:45.229194+00:00",
+            "mode": "extract",
+            "data_dir": "data",
+            "bucket": "all",
+            "force": false,
+            "limit": 50,
+            "eligible_candidates": 79,
+            "attempted_count": 50,
+            "status_counts": {
+              "extractor_error": 48,
+              "video_unavailable": 1,
+              "success": 1
+            },
+            "selection_counters_keys_count": 9,
+            "run_dir": "data/heatmaps/runs/dt=2026-06-12/run=135445Z",
+            "registry_path": "data/heatmaps/heatmap_registry.jsonl",
+            "warnings_count": 1,
+            "errors_count": 0
+          },
+          "warnings_count": 1,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [
+            "candidate_limit_applied"
+          ],
+          "error_samples": [],
+          "path": "heatmaps/latest_heatmap_run_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "heatmaps/heatmap_registry.jsonl",
+          "observed_at": "2026-06-12T13:55:39.222807+00:00",
+          "observed_at_iso": "2026-06-12T13:55:39.222807+00:00",
+          "age_hours": 0.0,
+          "status": "success",
+          "summary": {
+            "size_bytes": 382532,
+            "line_count": 400
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "heatmaps/heatmap_registry.jsonl",
+          "base": "data",
+          "type": "text",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 1,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [
+        "candidate_limit_applied"
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/**",
+        "data/analytics/**",
+        "data/exports/**",
+        "data/state/**"
+      ],
+      "outputs": [
+        "data/heatmaps/**",
+        "data/operations/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_select_transcription_candidates"
+      ]
+    },
+    {
+      "process_id": "github_pages",
+      "name": "Deploy Dashboard to GitHub Pages",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "daily_or_on_data_change",
+      "sla_hours": 36,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/pages.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "not_initialized",
+      "base_status": "not_initialized",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "site/data/site_manifest.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/**",
+        "apps/pages_dashboard/**"
+      ],
+      "outputs": [
+        "site/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Videos",
+        "Channels",
+        "Scores",
+        "Advanced",
+        "Titles",
+        "Periods",
+        "Alerts",
+        "Data Quality",
+        "Models",
+        "Topics",
+        "NLP",
+        "Content Drivers",
+        "Creative",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_pages_dashboard"
+      ]
+    },
+    {
+      "process_id": "github_train_model",
+      "name": "Train Model Suite",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "twice_weekly",
+      "sla_hours": 120,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/train_model.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-08T14:41:12.947729+00:00",
+      "age_hours": 95.24,
+      "is_stale": false,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "model_registry/latest_model_manifest.json",
+          "observed_at": "2026-06-08T14:41:12.947729+00:00",
+          "observed_at_iso": "2026-06-08T14:41:12.947729+00:00",
+          "age_hours": 95.24,
+          "status": "success",
+          "summary": {
+            "schema_version": "latest_model_manifest_v2",
+            "status": "success",
+            "suite_id": "suite-20260608T144112Z",
+            "content_format": null,
+            "content_formats_count": 2,
+            "artifact_name": "ytb-model-suite-27145037528",
+            "workflow_run_id": "27145037528",
+            "created_at": "2026-06-08T14:41:12.947729+00:00",
+            "expires_at_estimate": null,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_registry/latest_model_manifest.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "modeling/latest_model_readiness_diagnostics.json",
+          "observed_at": "2026-05-14T12:12:01+00:00",
+          "observed_at_iso": "2026-05-14T12:12:01+00:00",
+          "age_hours": 697.73,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-14T12:12:01+00:00",
+            "status": "ready",
+            "recommended_status": "ready_for_baseline",
+            "can_train_now": true,
+            "can_predict_now": true,
+            "total_examples": 12366,
+            "trainable_examples": 12366,
+            "inference_examples": 1914,
+            "unique_videos": 1497,
+            "unique_channels": 126,
+            "date_range": {
+              "start": "2026-04-27T23:50:18.831706+00:00",
+              "end": "2026-05-09T05:05:36.079326+00:00"
+            },
+            "min_trainable_examples_exploratory": 300,
+            "min_trainable_examples_baseline": 1000,
+            "examples_missing_for_exploratory": 0,
+            "examples_missing_for_baseline": 0,
+            "blockers_count": 0,
+            "target_diagnostics_count": 0,
+            "forecast": {
+              "status": "ok",
+              "daily_trainable_growth": 1019.2766429363575,
+              "estimated_days_to_exploratory": 0.0,
+              "estimated_days_to_baseline": 0.0
+            },
+            "recommended_next_steps_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/latest_model_readiness_diagnostics.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/modeling/**",
+        "data/analytics/**",
+        "data/nlp_features/**",
+        "data/topic_intelligence/**"
+      ],
+      "outputs": [
+        "data/model_registry/**",
+        "data/model_reports/**",
+        "data/modeling/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Content Drivers",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_model_dataset",
+        "cli_analyze_model_readiness",
+        "cli_build_nlp_features",
+        "cli_build_topic_intelligence"
+      ]
+    },
+    {
+      "process_id": "github_predict_model",
+      "name": "Predict With Model Artifact",
+      "domain": "github",
+      "process_type": "github_workflow",
+      "cadence": "after_model_training",
+      "sla_hours": 120,
+      "command": "GitHub Actions workflow",
+      "workflow_file": ".github/workflows/predict_model.yml",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-08T14:43:00.744885+00:00",
+      "age_hours": 95.21,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "predictions/prediction_summary.json",
+          "observed_at": "2026-06-08T14:43:00.744885+00:00",
+          "observed_at_iso": "2026-06-08T14:43:00.744885+00:00",
+          "age_hours": 95.21,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "all",
+            "format_results_keys_count": 2,
+            "prediction_rows": 24364,
+            "generated_at": "2026-06-08T14:43:00.744885+00:00",
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "predictions/prediction_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/model_registry/latest_model_manifest.json",
+        "data/modeling/**"
+      ],
+      "outputs": [
+        "data/predictions/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Operations"
+      ],
+      "depends_on": [
+        "github_train_model"
+      ]
+    },
+    {
+      "process_id": "cli_run",
+      "name": "Daily YouTube pipeline",
+      "domain": "ingestion",
+      "process_type": "cli",
+      "cadence": "daily",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli run",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success_with_warnings",
+      "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
+      "last_run_at": "2026-05-29T05:27:54.491409+00:00",
+      "age_hours": 344.46,
+      "is_stale": true,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "reports/dt=2026-05-28/run=232754-0600/run_summary.json",
+          "observed_at": "2026-05-29T05:27:54.491409+00:00",
+          "observed_at_iso": "2026-05-29T05:27:54.491409+00:00",
+          "age_hours": 344.46,
+          "status": "success_with_warnings",
+          "summary": {
+            "execution_date": "2026-05-28T23:27:54.491409-06:00",
+            "status": "success_with_warnings",
+            "channels_total": 5,
+            "channels_ok": 5,
+            "channels_failed": 0,
+            "videos_discovered": 471,
+            "videos_tracked": 24729,
+            "videos_snapshotted": 24622,
+            "videos_unavailable": 107,
+            "snapshot_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-28\\run=232754-0600\\snapshots.jsonl.gz",
+            "delta_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\deltas\\dt=2026-05-28\\run=232754-0600\\deltas.jsonl.gz",
+            "quota_status": "ok",
+            "estimated_quota_units": 595,
+            "observed_quota_units": 511,
+            "errors_count": 107
+          },
+          "warnings_count": 0,
+          "errors_count": 107,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable",
+            "video_unavailable"
+          ],
+          "path": "reports/dt=*/run=*/run_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 51
+        },
+        {
+          "resolved_path": "reports/dt=2026-05-28/run=232754-0600/quota_report.json",
+          "observed_at": "2026-05-29T05:27:54.491409+00:00",
+          "observed_at_iso": "2026-05-29T05:27:54.491409+00:00",
+          "age_hours": 344.46,
+          "status": "success",
+          "summary": {
+            "execution_date": "2026-05-28T23:27:54.491409-06:00",
+            "estimated_units": {
+              "channels.list": 0,
+              "playlistItems.list": 100,
+              "videos.list": 495
+            },
+            "total_estimated_units": 595,
+            "operational_limit": 7000,
+            "warning_limit": 5000,
+            "soft_warning_limit": 1000,
+            "limit_status": "ok",
+            "observed_units": {
+              "playlistItems.list": 16,
+              "videos.list": 495
+            },
+            "total_observed_units": 511,
+            "should_abort": false
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "reports/dt=*/run=*/quota_report.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 51
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 107,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable",
+        "video_unavailable"
+      ],
+      "inputs": [
+        "config/channels.py",
+        "config/settings.yaml",
+        "YOUTUBE_API_KEY"
+      ],
+      "outputs": [
+        "data/reports/**",
+        "data/snapshots/**",
+        "data/deltas/**",
+        "data/state/**"
+      ],
+      "secrets_required": [
+        "YOUTUBE_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Overview",
+        "Videos",
+        "Channels",
+        "Scores",
+        "Advanced",
+        "Titles",
+        "Periods",
+        "Alerts",
+        "Data Quality",
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "cli_dry_run",
+      "name": "Quota dry run",
+      "domain": "ingestion",
+      "process_type": "cli",
+      "cadence": "before_monitor_run",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli dry-run",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "unknown",
+      "base_status": "unknown",
+      "status_detail": "Configured but no durable execution artifact is available yet.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 0,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "config/settings.yaml",
+        "data/state/tracked_videos_catalog.jsonl"
+      ],
+      "outputs": [],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "cli_validate_latest",
+      "name": "Validate latest run",
+      "domain": "validation",
+      "process_type": "cli",
+      "cadence": "after_monitor_run",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli validate-latest",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "unknown",
+      "base_status": "unknown",
+      "status_detail": "Configured but no durable execution artifact is available yet.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 0,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/reports/**",
+        "data/snapshots/**",
+        "data/deltas/**"
+      ],
+      "outputs": [],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Data Quality",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_run"
+      ]
+    },
+    {
+      "process_id": "cli_export_latest",
+      "name": "Export latest run",
+      "domain": "analytics",
+      "process_type": "cli",
+      "cadence": "after_monitor_run",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli export-latest",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T12:54:00.716806+00:00",
+      "age_hours": 433.03,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "exports/dt=2026-05-25/run=124656Z/export_summary.json",
+          "observed_at": "2026-05-25T12:54:00.716806+00:00",
+          "observed_at_iso": "2026-05-25T12:54:00.716806+00:00",
+          "age_hours": 433.03,
+          "status": "success",
+          "summary": {
+            "execution_date": "2026-05-25T12:46:56.763303+00:00",
+            "source_run_summary_path": "data/reports/dt=2026-05-25/run=124656Z/run_summary.json",
+            "source_quota_report_path": "data/reports/dt=2026-05-25/run=124656Z/quota_report.json",
+            "source_snapshot_path": "data/snapshots/dt=2026-05-25/run=124656Z/snapshots.jsonl.gz",
+            "source_delta_path": "data/deltas/dt=2026-05-25/run=124656Z/deltas.jsonl.gz",
+            "export_dir": "data/exports/dt=2026-05-25/run=124656Z",
+            "snapshots_exported": 24454,
+            "deltas_exported": 24454,
+            "growth_rows_exported": 24454,
+            "generated_at": "2026-05-25T12:54:00.716806+00:00",
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "exports/dt=*/run=*/export_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 45
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/reports/**",
+        "data/snapshots/**",
+        "data/deltas/**"
+      ],
+      "outputs": [
+        "data/exports/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Videos",
+        "Channels",
+        "Periods",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_run"
+      ]
+    },
+    {
+      "process_id": "cli_build_analytics",
+      "name": "Build analytics data mart",
+      "domain": "analytics",
+      "process_type": "cli",
+      "cadence": "after_export",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-analytics",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:00:45.170160+00:00",
+      "age_hours": 432.92,
+      "is_stale": true,
+      "expected_artifacts_count": 4,
+      "existing_artifacts_count": 4,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "analytics/latest/analytics_manifest.json",
+          "observed_at": "2026-05-25T12:58:11.528023+00:00",
+          "observed_at_iso": "2026-05-25T12:58:11.528023+00:00",
+          "age_hours": 432.96,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T12:58:11.528023+00:00",
+            "source_export_dir": "data/exports/dt=2026-05-25/run=124656Z",
+            "content_format": "all",
+            "outputs_count": 18,
+            "row_counts_keys_count": 18,
+            "schema_version": "analytics_v1",
+            "dashboard_ready": true,
+            "dashboard_index_path": "data/analytics/latest/dashboard_index.json",
+            "dashboard_recommended_entrypoint": "data/analytics/latest/dashboard_index.json",
+            "scoring_version": "scoring_v1",
+            "advanced_metrics_version": "advanced_metrics_v1",
+            "success_horizons": {
+              "short_term": "0-3 days",
+              "mid_term": "4-30 days",
+              "long_term": "31-180 days"
+            },
+            "standardization_methods_count": 5,
+            "anomaly_method": "robust_z",
+            "isolation_forest_ready": false,
+            "isolation_forest_reason": "requires larger historical sample and optional sklearn dependency",
+            "channel_momentum_note": "temporarily equals channel_growth_percentile; evolve to 7d_vs_30d when period history grows",
+            "future_feature_inputs_checked_count": 3,
+            "future_feature_inputs_found_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "analytics/latest/analytics_manifest.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "analytics/latest/dashboard_index.json",
+          "observed_at": "2026-05-25T12:58:11.527892+00:00",
+          "observed_at_iso": "2026-05-25T12:58:11.527892+00:00",
+          "age_hours": 432.96,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T12:58:11.527892+00:00",
+            "source_export_dir": "data/exports/dt=2026-05-25/run=124656Z",
+            "analytics_manifest_path": "data/analytics/latest/analytics_manifest.json",
+            "schema_version": "analytics_v1",
+            "dashboard_ready": true,
+            "primary_tables_keys_count": 15,
+            "recommended_dashboard_views_count": 10,
+            "recommended_view_default_sorts_keys_count": 9,
+            "dashboard_kpis_count": 10
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "analytics/latest/dashboard_index.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "analytics/formats/shorts/latest/analytics_manifest.json",
+          "observed_at": "2026-05-25T12:58:43.918960+00:00",
+          "observed_at_iso": "2026-05-25T12:58:43.918960+00:00",
+          "age_hours": 432.95,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T12:58:43.918960+00:00",
+            "source_export_dir": "data/exports/dt=2026-05-25/run=124656Z",
+            "content_format": "shorts",
+            "outputs_count": 18,
+            "row_counts_keys_count": 18,
+            "schema_version": "analytics_v1",
+            "dashboard_ready": true,
+            "dashboard_index_path": "data/analytics/latest/dashboard_index.json",
+            "dashboard_recommended_entrypoint": "data/analytics/latest/dashboard_index.json",
+            "scoring_version": "scoring_v1",
+            "advanced_metrics_version": "advanced_metrics_v1",
+            "success_horizons": {
+              "short_term": "0-3 days",
+              "mid_term": "4-30 days",
+              "long_term": "31-180 days"
+            },
+            "standardization_methods_count": 5,
+            "anomaly_method": "robust_z",
+            "isolation_forest_ready": false,
+            "isolation_forest_reason": "requires larger historical sample and optional sklearn dependency",
+            "channel_momentum_note": "temporarily equals channel_growth_percentile; evolve to 7d_vs_30d when period history grows",
+            "future_feature_inputs_checked_count": 3,
+            "future_feature_inputs_found_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "analytics/formats/shorts/latest/analytics_manifest.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "analytics/formats/videos/latest/analytics_manifest.json",
+          "observed_at": "2026-05-25T13:00:45.170160+00:00",
+          "observed_at_iso": "2026-05-25T13:00:45.170160+00:00",
+          "age_hours": 432.92,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:00:45.170160+00:00",
+            "source_export_dir": "data/exports/dt=2026-05-25/run=124656Z",
+            "content_format": "videos",
+            "outputs_count": 18,
+            "row_counts_keys_count": 18,
+            "schema_version": "analytics_v1",
+            "dashboard_ready": true,
+            "dashboard_index_path": "data/analytics/latest/dashboard_index.json",
+            "dashboard_recommended_entrypoint": "data/analytics/latest/dashboard_index.json",
+            "scoring_version": "scoring_v1",
+            "advanced_metrics_version": "advanced_metrics_v1",
+            "success_horizons": {
+              "short_term": "0-3 days",
+              "mid_term": "4-30 days",
+              "long_term": "31-180 days"
+            },
+            "standardization_methods_count": 5,
+            "anomaly_method": "robust_z",
+            "isolation_forest_ready": false,
+            "isolation_forest_reason": "requires larger historical sample and optional sklearn dependency",
+            "channel_momentum_note": "temporarily equals channel_growth_percentile; evolve to 7d_vs_30d when period history grows",
+            "future_feature_inputs_checked_count": 3,
+            "future_feature_inputs_found_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "analytics/formats/videos/latest/analytics_manifest.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/exports/**"
+      ],
+      "outputs": [
+        "data/analytics/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Videos",
+        "Channels",
+        "Scores",
+        "Advanced",
+        "Titles",
+        "Periods",
+        "Data Quality",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_export_latest"
+      ]
+    },
+    {
+      "process_id": "cli_build_nlp_features",
+      "name": "Build NLP feature layer",
+      "domain": "intelligence",
+      "process_type": "cli",
+      "cadence": "after_analytics",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-nlp-features",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success_with_warnings",
+      "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
+      "last_run_at": "2026-05-25T13:01:03.529440+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "nlp_features/nlp_feature_summary.json",
+          "observed_at": "2026-05-25T13:01:03.529440+00:00",
+          "observed_at_iso": "2026-05-25T13:01:03.529440+00:00",
+          "age_hours": 432.91,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:03.529440+00:00",
+            "total_videos": 24454,
+            "lsa_components": 20,
+            "clusters": 8,
+            "top_cluster_labels_count": 5,
+            "warnings_count": 24454,
+            "nlp_mode": "tfidf_lsa_dictionary_v1",
+            "output_dir": "data/nlp_features"
+          },
+          "warnings_count": 24454,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [
+            "Description missing for video_id=QAkEMtJpq3c; using title as fallback text.",
+            "Description missing for video_id=SllXaJiQjBA; using title as fallback text.",
+            "Description missing for video_id=hYahU_Cqwp8; using title as fallback text.",
+            "Description missing for video_id=dqpCvSU-ECE; using title as fallback text.",
+            "Description missing for video_id=uW4B6ziQqvY; using title as fallback text."
+          ],
+          "error_samples": [],
+          "path": "nlp_features/nlp_feature_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 24454,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [
+        "Description missing for video_id=QAkEMtJpq3c; using title as fallback text.",
+        "Description missing for video_id=SllXaJiQjBA; using title as fallback text.",
+        "Description missing for video_id=hYahU_Cqwp8; using title as fallback text.",
+        "Description missing for video_id=dqpCvSU-ECE; using title as fallback text.",
+        "Description missing for video_id=uW4B6ziQqvY; using title as fallback text."
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**"
+      ],
+      "outputs": [
+        "data/nlp_features/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "NLP",
+        "Topics",
+        "Content Drivers",
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_analytics"
+      ]
+    },
+    {
+      "process_id": "cli_generate_alerts",
+      "name": "Generate alerts and signals",
+      "domain": "intelligence",
+      "process_type": "cli",
+      "cadence": "after_analytics",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli generate-alerts",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:05.319304+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "alerts/alert_summary.json",
+          "observed_at": "2026-05-25T13:01:05.319304+00:00",
+          "observed_at_iso": "2026-05-25T13:01:05.319304+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:05.319304+00:00",
+            "total_alerts": 6215,
+            "severity_counts": {
+              "critical": 772,
+              "high": 3228,
+              "medium": 2209,
+              "low": 6
+            },
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "alerts/alert_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "signals/signal_summary.json",
+          "observed_at": "2026-05-25T13:01:05.319304+00:00",
+          "observed_at_iso": "2026-05-25T13:01:05.319304+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:05.319304+00:00",
+            "video_alerts": 5862,
+            "channel_alerts": 353,
+            "data_quality_alerts": 0,
+            "total_alerts": 6215,
+            "severity_counts": {
+              "critical": 772,
+              "high": 3228,
+              "medium": 2209,
+              "low": 6
+            },
+            "signal_type_counts_keys_count": 11,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "signals/signal_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**"
+      ],
+      "outputs": [
+        "data/signals/**",
+        "data/alerts/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Alerts",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_analytics"
+      ]
+    },
+    {
+      "process_id": "cli_build_decision_layer",
+      "name": "Build decision intelligence layer",
+      "domain": "intelligence",
+      "process_type": "cli",
+      "cadence": "after_alerts",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-decision-layer",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:09.791227+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "decision/decision_summary.json",
+          "observed_at": "2026-05-25T13:01:09.791227+00:00",
+          "observed_at_iso": "2026-05-25T13:01:09.791227+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:09.791227+00:00",
+            "total_action_candidates": 6215,
+            "priority_counts": {
+              "high": 348,
+              "low": 1546,
+              "medium": 4321
+            },
+            "action_type_counts": {
+              "analyze_reference": 14,
+              "benchmark_channel": 230,
+              "create_evergreen": 14,
+              "create_fast_reaction": 110,
+              "monitor_next_run": 1359,
+              "repackage_idea": 4488
+            },
+            "watchlist_count": 1359,
+            "ignored_signal_candidates": 191133,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "decision/decision_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/alerts/**",
+        "data/signals/**",
+        "data/analytics/**"
+      ],
+      "outputs": [
+        "data/decision/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Alerts",
+        "Brief",
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_generate_alerts"
+      ]
+    },
+    {
+      "process_id": "cli_build_model_intelligence",
+      "name": "Build model intelligence",
+      "domain": "ml",
+      "process_type": "cli",
+      "cadence": "after_decision_layer",
+      "sla_hours": 120,
+      "command": "python -m ytb_history.cli build-model-intelligence",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:14.006379+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 3,
+      "existing_artifacts_count": 3,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "model_intelligence/model_intelligence_summary.json",
+          "observed_at": "2026-05-25T13:01:14.006379+00:00",
+          "observed_at_iso": "2026-05-25T13:01:14.006379+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "all",
+            "generated_at": "2026-05-25T13:01:14.006379+00:00",
+            "format_results_keys_count": 2,
+            "hybrid_rows": 18848,
+            "warnings_count": 0,
+            "files_written_count": 2
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_intelligence/model_intelligence_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "model_intelligence/formats/shorts/model_intelligence_summary.json",
+          "observed_at": "2026-05-25T13:01:13.638058+00:00",
+          "observed_at_iso": "2026-05-25T13:01:13.638058+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "shorts",
+            "generated_at": "2026-05-25T13:01:13.638058+00:00",
+            "prediction_rows": 5725,
+            "decision_rows": 1835,
+            "hybrid_rows": 6011,
+            "warnings_count": 0,
+            "files_written_count": 2
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_intelligence/formats/shorts/model_intelligence_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "model_intelligence/formats/videos/model_intelligence_summary.json",
+          "observed_at": "2026-05-25T13:01:13.905239+00:00",
+          "observed_at_iso": "2026-05-25T13:01:13.905239+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "videos",
+            "generated_at": "2026-05-25T13:01:13.905239+00:00",
+            "prediction_rows": 12133,
+            "decision_rows": 4009,
+            "hybrid_rows": 12837,
+            "warnings_count": 0,
+            "files_written_count": 2
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_intelligence/formats/videos/model_intelligence_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/model_registry/**",
+        "data/predictions/**",
+        "data/decision/**"
+      ],
+      "outputs": [
+        "data/model_intelligence/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Content Drivers",
+        "Creative",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_decision_layer"
+      ]
+    },
+    {
+      "process_id": "cli_build_topic_intelligence",
+      "name": "Build topic intelligence",
+      "domain": "intelligence",
+      "process_type": "cli",
+      "cadence": "after_nlp_features",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-topic-intelligence",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:17.636326+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "topic_intelligence/topic_intelligence_summary.json",
+          "observed_at": "2026-05-25T13:01:17.636326+00:00",
+          "observed_at_iso": "2026-05-25T13:01:17.636326+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:17.636326+00:00",
+            "total_videos": 24454,
+            "topics": 16,
+            "title_patterns": 40,
+            "keywords": 120,
+            "opportunities": 16,
+            "warnings_count": 0,
+            "mode": "topic_title_intelligence_v1",
+            "status": "success"
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "topic_intelligence/topic_intelligence_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/nlp_features/**",
+        "data/analytics/**"
+      ],
+      "outputs": [
+        "data/topic_intelligence/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Topics",
+        "Content Drivers",
+        "Creative",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_nlp_features"
+      ]
+    },
+    {
+      "process_id": "cli_generate_creative_packages",
+      "name": "Generate creative packages",
+      "domain": "creative",
+      "process_type": "cli",
+      "cadence": "after_intelligence_layers",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli generate-creative-packages",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success_with_warnings",
+      "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
+      "last_run_at": "2026-05-25T13:01:18.910935+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "creative_packages/creative_packages_summary.json",
+          "observed_at": "2026-05-25T13:01:18.910935+00:00",
+          "observed_at_iso": "2026-05-25T13:01:18.910935+00:00",
+          "age_hours": 432.91,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:18.910935+00:00",
+            "total_packages": 5862,
+            "skipped_invalid_source_video_id_count": 353,
+            "package_type_counts": {
+              "comparison_package": 14,
+              "fast_reaction_package": 110,
+              "watchlist_package": 1236,
+              "repackage_package": 4488,
+              "evergreen_explainer_package": 14
+            },
+            "top_packages_count": 5,
+            "avg_originality_score": 98.1004,
+            "high_copy_risk_count": 0,
+            "warnings_count": 1
+          },
+          "warnings_count": 1,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [
+            "skipped_invalid_source_video_ids:353"
+          ],
+          "error_samples": [],
+          "path": "creative_packages/creative_packages_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 1,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [
+        "skipped_invalid_source_video_ids:353"
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/decision/**",
+        "data/topic_intelligence/**",
+        "data/model_intelligence/**",
+        "data/transcripts/**"
+      ],
+      "outputs": [
+        "data/creative_packages/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Creative",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_decision_layer",
+        "cli_build_topic_intelligence"
+      ]
+    },
+    {
+      "process_id": "cli_generate_weekly_brief",
+      "name": "Generate weekly brief",
+      "domain": "reporting",
+      "process_type": "cli",
+      "cadence": "after_intelligence_layers",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli generate-weekly-brief",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:21.340601+00:00",
+      "age_hours": 432.91,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "briefs/latest_weekly_brief.json",
+          "observed_at": "2026-05-25T13:01:21.340601+00:00",
+          "observed_at_iso": "2026-05-25T13:01:21.340601+00:00",
+          "age_hours": 432.91,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-25T13:01:21.340601+00:00",
+            "week": "2026-22",
+            "period_start": "2026-05-25",
+            "period_end": "2026-05-25",
+            "status": "success",
+            "executive_summary_count": 5,
+            "key_metrics_keys_count": 9,
+            "format_breakdown_keys_count": 2,
+            "watchlist_recommendations_count": 10,
+            "opportunity_matrix_count": 7,
+            "top_videos_by_growth_count": 10,
+            "top_alpha_videos_count": 10,
+            "top_channels_by_momentum_count": 10,
+            "topic_opportunities_count": 10,
+            "topic_metrics_count": 10,
+            "semantic_clusters_to_watch_count": 10,
+            "content_driver_leaderboard_count": 24,
+            "content_driver_feature_importance_count": 2540,
+            "content_driver_feature_direction_count": 1524,
+            "title_pattern_snapshot_keys_count": 4,
+            "data_quality_notes_count": 0,
+            "warnings_count": 0,
+            "model_readiness_keys_count": 20
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "briefs/latest_weekly_brief.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**",
+        "data/alerts/**",
+        "data/decision/**",
+        "data/creative_packages/**"
+      ],
+      "outputs": [
+        "data/briefs/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_generate_creative_packages"
+      ]
+    },
+    {
+      "process_id": "cli_generate_opportunity_radar",
+      "name": "Generate commercial Opportunity Radar",
+      "domain": "reporting",
+      "process_type": "cli",
+      "cadence": "after_weekly_brief",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli generate-opportunity-radar",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success",
+      "status_detail": "Last successful artifact is older than SLA; base status was success.",
+      "last_run_at": "2026-05-25T13:01:26.240692+00:00",
+      "age_hours": 432.9,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "commercial_radar/spanish-business-ai/latest_opportunity_radar.json",
+          "observed_at": "2026-05-25T13:01:26.240692+00:00",
+          "observed_at_iso": "2026-05-25T13:01:26.240692+00:00",
+          "age_hours": 432.9,
+          "status": "success",
+          "summary": {
+            "schema_version": "commercial_opportunity_radar_v1",
+            "generated_at": "2026-05-25T13:01:26.240692+00:00",
+            "status": "success",
+            "profile_keys_count": 9,
+            "source_files_keys_count": 13,
+            "key_metrics": {
+              "videos_considered": 13668,
+              "channels_in_scope": 333,
+              "priority_opportunities": 10,
+              "creative_packages": 5,
+              "alerts_considered": 5,
+              "max_channels_for_offer": 50,
+              "monthly_price_usd": 750
+            },
+            "executive_summary_count": 5,
+            "priority_opportunities_count": 10,
+            "accelerating_videos_count": 10,
+            "channels_to_watch_count": 8,
+            "emerging_topics_count": 5,
+            "title_patterns_count": 8,
+            "creative_packages_count": 5,
+            "alerts_to_watch_count": 5,
+            "quota_report_keys_count": 12,
+            "commercial_next_actions_count": 4,
+            "data_policy_notes_count": 4,
+            "warnings_count": 0,
+            "radar_dir": "data/commercial_radar/spanish-business-ai",
+            "markdown_path": "data/commercial_radar/spanish-business-ai/latest_opportunity_radar.md",
+            "html_path": "data/commercial_radar/spanish-business-ai/latest_opportunity_radar.html",
+            "summary_path": "data/commercial_radar/spanish-business-ai/latest_opportunity_radar.json",
+            "files_written_count": 3
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "commercial_radar/*/latest_opportunity_radar.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "config/commercial_radar.yaml",
+        "data/analytics/**",
+        "data/alerts/**",
+        "data/decision/**",
+        "data/topic_intelligence/**",
+        "data/creative_packages/**",
+        "data/briefs/**",
+        "data/reports/**"
+      ],
+      "outputs": [
+        "data/commercial_radar/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Radar",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_generate_weekly_brief"
+      ]
+    },
+    {
+      "process_id": "cli_build_pages_dashboard",
+      "name": "Build pages dashboard",
+      "domain": "publishing",
+      "process_type": "cli",
+      "cadence": "after_operations",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-pages-dashboard",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "not_initialized",
+      "base_status": "not_initialized",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "site/data/site_manifest.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**",
+        "data/alerts/**",
+        "data/briefs/**",
+        "data/commercial_radar/**",
+        "data/operations/**",
+        "apps/pages_dashboard/**"
+      ],
+      "outputs": [
+        "site/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Overview",
+        "Radar",
+        "Videos",
+        "Channels",
+        "Scores",
+        "Advanced",
+        "Titles",
+        "Periods",
+        "Alerts",
+        "Data Quality",
+        "Models",
+        "Topics",
+        "NLP",
+        "Content Drivers",
+        "Creative",
+        "Brief",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_operations"
+      ]
+    },
+    {
+      "process_id": "cli_build_operations",
+      "name": "Build operations telemetry",
+      "domain": "operations",
+      "process_type": "cli",
+      "cadence": "after_pipeline_or_before_pages",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli build-operations",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-12T13:55:40.599517+00:00",
+      "age_hours": 0.0,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "operations/latest_process_status.json",
+          "observed_at": "2026-06-11T14:28:39.705164+00:00",
+          "observed_at_iso": "2026-06-11T14:28:39.705164+00:00",
+          "age_hours": 23.45,
+          "status": "success",
+          "summary": {
+            "schema_version": "operations_process_status_v1",
+            "generated_at": "2026-06-11T14:28:39.705164+00:00",
+            "source_registry": "config/operations.yaml",
+            "processes_count": 34
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "operations/latest_process_status.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "config/operations.yaml",
+        ".github/workflows/**",
+        "data/**"
+      ],
+      "outputs": [
+        "data/operations/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "cli_build_model_dataset",
+      "name": "Build model dataset",
+      "domain": "ml",
+      "process_type": "cli",
+      "cadence": "before_model_training",
+      "sla_hours": 120,
+      "command": "python -m ytb_history.cli build-model-dataset",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-12T13:53:46.476999+00:00",
+      "age_hours": 0.03,
+      "is_stale": false,
+      "expected_artifacts_count": 3,
+      "existing_artifacts_count": 3,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "modeling/latest_training_gap_report.json",
+          "observed_at": "2026-06-12T13:53:46.476999+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.476999+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "current_trainable_examples": 12366,
+            "needed_for_exploratory": 300,
+            "needed_for_baseline": 1000,
+            "examples_missing_for_exploratory": 0,
+            "examples_missing_for_baseline": 0,
+            "primary_blocker": null,
+            "secondary_blockers_count": 0,
+            "recommended_actions_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/latest_training_gap_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "modeling/formats/shorts/model_readiness_report.json",
+          "observed_at": "2026-06-12T13:53:46.445999+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.445999+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "total_examples": 58128,
+            "trainable_examples": 24543,
+            "excluded_no_future": 33585,
+            "unique_videos": 5076,
+            "unique_channels": 224,
+            "date_range": {
+              "min": "2026-04-27T23:50:18.831706+00:00",
+              "max": "2026-05-20T12:05:48.986097+00:00"
+            },
+            "target_coverage_keys_count": 4,
+            "minimum_recommended_examples": 300,
+            "recommended_status": "ready_for_baseline",
+            "recommended_models_count": 4,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/formats/shorts/model_readiness_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "modeling/formats/videos/model_readiness_report.json",
+          "observed_at": "2026-06-12T13:53:46.466999+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.466999+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "total_examples": 114183,
+            "trainable_examples": 41128,
+            "excluded_no_future": 73055,
+            "unique_videos": 10596,
+            "unique_channels": 387,
+            "date_range": {
+              "min": "2026-04-27T23:50:18.831706+00:00",
+              "max": "2026-05-20T12:05:48.986097+00:00"
+            },
+            "target_coverage_keys_count": 4,
+            "minimum_recommended_examples": 300,
+            "recommended_status": "ready_for_baseline",
+            "recommended_models_count": 4,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/formats/videos/model_readiness_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**",
+        "data/nlp_features/**",
+        "data/topic_intelligence/**"
+      ],
+      "outputs": [
+        "data/modeling/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_analytics"
+      ]
+    },
+    {
+      "process_id": "cli_analyze_model_readiness",
+      "name": "Analyze model readiness",
+      "domain": "ml",
+      "process_type": "cli",
+      "cadence": "before_model_training",
+      "sla_hours": 120,
+      "command": "python -m ytb_history.cli analyze-model-readiness",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success_with_warnings",
+      "base_status": "success_with_warnings",
+      "status_detail": "Latest artifact exists but reports warnings, errors, or partial failures.",
+      "last_run_at": "2026-06-08T14:36:40+00:00",
+      "age_hours": 95.32,
+      "is_stale": false,
+      "expected_artifacts_count": 3,
+      "existing_artifacts_count": 3,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "modeling/latest_model_readiness_diagnostics.json",
+          "observed_at": "2026-05-14T12:12:01+00:00",
+          "observed_at_iso": "2026-05-14T12:12:01+00:00",
+          "age_hours": 697.73,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-05-14T12:12:01+00:00",
+            "status": "ready",
+            "recommended_status": "ready_for_baseline",
+            "can_train_now": true,
+            "can_predict_now": true,
+            "total_examples": 12366,
+            "trainable_examples": 12366,
+            "inference_examples": 1914,
+            "unique_videos": 1497,
+            "unique_channels": 126,
+            "date_range": {
+              "start": "2026-04-27T23:50:18.831706+00:00",
+              "end": "2026-05-09T05:05:36.079326+00:00"
+            },
+            "min_trainable_examples_exploratory": 300,
+            "min_trainable_examples_baseline": 1000,
+            "examples_missing_for_exploratory": 0,
+            "examples_missing_for_baseline": 0,
+            "blockers_count": 0,
+            "target_diagnostics_count": 0,
+            "forecast": {
+              "status": "ok",
+              "daily_trainable_growth": 1019.2766429363575,
+              "estimated_days_to_exploratory": 0.0,
+              "estimated_days_to_baseline": 0.0
+            },
+            "recommended_next_steps_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/latest_model_readiness_diagnostics.json",
+          "base": "data",
+          "type": "json",
+          "required": true,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "modeling/formats/shorts/latest_model_readiness_diagnostics.json",
+          "observed_at": "2026-06-08T14:36:39+00:00",
+          "observed_at_iso": "2026-06-08T14:36:39+00:00",
+          "age_hours": 95.32,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-06-08T14:36:39+00:00",
+            "content_format": "shorts",
+            "status": "not_ready",
+            "recommended_status": "ready_for_baseline",
+            "can_train_now": false,
+            "can_predict_now": false,
+            "total_examples": 24543,
+            "trainable_examples": 24543,
+            "inference_examples": 7666,
+            "unique_videos": 5076,
+            "unique_channels": 224,
+            "date_range": {
+              "start": "2026-04-27T23:50:18.831706+00:00",
+              "end": "2026-05-20T12:05:48.986097+00:00"
+            },
+            "min_trainable_examples_exploratory": 300,
+            "min_trainable_examples_baseline": 1000,
+            "examples_missing_for_exploratory": 0,
+            "examples_missing_for_baseline": 0,
+            "blockers_count": 1,
+            "target_diagnostics_count": 0,
+            "forecast": {
+              "status": "ok",
+              "daily_trainable_growth": 803.9922098387952,
+              "estimated_days_to_exploratory": 0.0,
+              "estimated_days_to_baseline": 0.0
+            },
+            "recommended_next_steps_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/formats/shorts/latest_model_readiness_diagnostics.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "modeling/formats/videos/latest_model_readiness_diagnostics.json",
+          "observed_at": "2026-06-08T14:36:40+00:00",
+          "observed_at_iso": "2026-06-08T14:36:40+00:00",
+          "age_hours": 95.32,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-06-08T14:36:40+00:00",
+            "content_format": "videos",
+            "status": "not_ready",
+            "recommended_status": "ready_for_baseline",
+            "can_train_now": false,
+            "can_predict_now": false,
+            "total_examples": 41128,
+            "trainable_examples": 41128,
+            "inference_examples": 16698,
+            "unique_videos": 10596,
+            "unique_channels": 387,
+            "date_range": {
+              "start": "2026-04-27T23:50:18.831706+00:00",
+              "end": "2026-05-20T12:05:48.986097+00:00"
+            },
+            "min_trainable_examples_exploratory": 300,
+            "min_trainable_examples_baseline": 1000,
+            "examples_missing_for_exploratory": 0,
+            "examples_missing_for_baseline": 0,
+            "blockers_count": 1,
+            "target_diagnostics_count": 0,
+            "forecast": {
+              "status": "ok",
+              "daily_trainable_growth": 1499.8965937610467,
+              "estimated_days_to_exploratory": 0.0,
+              "estimated_days_to_baseline": 0.0
+            },
+            "recommended_next_steps_count": 0,
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "modeling/formats/videos/latest_model_readiness_diagnostics.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/modeling/**"
+      ],
+      "outputs": [
+        "data/modeling/latest_model_readiness_diagnostics.json",
+        "data/modeling/latest_target_coverage_report.csv"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_model_dataset"
+      ]
+    },
+    {
+      "process_id": "cli_train_model_suite",
+      "name": "Train model suite",
+      "domain": "ml",
+      "process_type": "cli",
+      "cadence": "twice_weekly",
+      "sla_hours": 120,
+      "command": "python -m ytb_history.cli train-model-suite",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-12T13:53:46.395583+00:00",
+      "age_hours": 0.03,
+      "is_stale": false,
+      "expected_artifacts_count": 4,
+      "existing_artifacts_count": 4,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "model_reports/latest_model_leaderboard.csv",
+          "observed_at": "2026-06-12T13:53:46.395583+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.395583+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "size_bytes": 3400,
+            "row_count": 12
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_reports/latest_model_leaderboard.csv",
+          "base": "data",
+          "type": "csv",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "model_reports/latest_model_suite_report.html",
+          "observed_at": "2026-06-12T13:53:46.395583+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.395583+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "size_bytes": 665,
+            "line_count": 10
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_reports/latest_model_suite_report.html",
+          "base": "data",
+          "type": "text",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "model_reports/formats/shorts/latest_model_leaderboard.csv",
+          "observed_at": "2026-06-12T13:53:46.394223+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.394223+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "size_bytes": 1871,
+            "row_count": 6
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_reports/formats/shorts/latest_model_leaderboard.csv",
+          "base": "data",
+          "type": "csv",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "model_reports/formats/videos/latest_model_leaderboard.csv",
+          "observed_at": "2026-06-12T13:53:46.395583+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.395583+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "size_bytes": 1881,
+            "row_count": 6
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "model_reports/formats/videos/latest_model_leaderboard.csv",
+          "base": "data",
+          "type": "csv",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/modeling/**",
+        "config/modeling.yaml"
+      ],
+      "outputs": [
+        "build/model_artifact/**",
+        "data/model_reports/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_analyze_model_readiness"
+      ]
+    },
+    {
+      "process_id": "cli_predict_with_model_artifact",
+      "name": "Predict with model artifact",
+      "domain": "ml",
+      "process_type": "cli",
+      "cadence": "after_model_training",
+      "sla_hours": 120,
+      "command": "python -m ytb_history.cli predict-with-model-artifact",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-08T14:43:00.744885+00:00",
+      "age_hours": 95.21,
+      "is_stale": false,
+      "expected_artifacts_count": 3,
+      "existing_artifacts_count": 3,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "predictions/prediction_summary.json",
+          "observed_at": "2026-06-08T14:43:00.744885+00:00",
+          "observed_at_iso": "2026-06-08T14:43:00.744885+00:00",
+          "age_hours": 95.21,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "all",
+            "format_results_keys_count": 2,
+            "prediction_rows": 24364,
+            "generated_at": "2026-06-08T14:43:00.744885+00:00",
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "predictions/prediction_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "predictions/formats/shorts/prediction_summary.json",
+          "observed_at": "2026-06-08T14:43:00.074670+00:00",
+          "observed_at_iso": "2026-06-08T14:43:00.074670+00:00",
+          "age_hours": 95.21,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "shorts",
+            "suite_id": "suite-20260608T144112Z",
+            "artifact_name": "ytb-model-suite-27145037528",
+            "workflow_run_id": "27145037528",
+            "model_id": "shorts-linear_regularized-is_top_growth_7d-20260608T144032Z",
+            "model_family": "linear_regularized",
+            "target": "is_top_growth_7d",
+            "prediction_rows": 7666,
+            "generated_at": "2026-06-08T14:43:00.074670+00:00",
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "predictions/formats/shorts/prediction_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "predictions/formats/videos/prediction_summary.json",
+          "observed_at": "2026-06-08T14:43:00.533005+00:00",
+          "observed_at_iso": "2026-06-08T14:43:00.533005+00:00",
+          "age_hours": 95.21,
+          "status": "success",
+          "summary": {
+            "status": "success",
+            "content_format": "videos",
+            "suite_id": "suite-20260608T144112Z",
+            "artifact_name": "ytb-model-suite-27145037528",
+            "workflow_run_id": "27145037528",
+            "model_id": "videos-linear_regularized-is_top_growth_7d-20260608T144047Z",
+            "model_family": "linear_regularized",
+            "target": "is_top_growth_7d",
+            "prediction_rows": 16698,
+            "generated_at": "2026-06-08T14:43:00.533005+00:00",
+            "warnings_count": 0
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "predictions/formats/videos/prediction_summary.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/model_registry/latest_model_manifest.json",
+        "downloaded_model/**"
+      ],
+      "outputs": [
+        "data/predictions/**"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Models",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_train_model_suite"
+      ]
+    },
+    {
+      "process_id": "cli_select_transcription_candidates",
+      "name": "Select transcription candidates",
+      "domain": "transcription",
+      "process_type": "cli",
+      "cadence": "daily_after_monitor",
+      "sla_hours": 36,
+      "command": "python -m ytb_history.cli select-transcription-candidates --data-dir data --limit 10",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "stale",
+      "base_status": "success_with_warnings",
+      "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
+      "last_run_at": "2026-06-06T21:27:22.137027+00:00",
+      "age_hours": 136.47,
+      "is_stale": true,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "transcripts/transcript_selection_report.json",
+          "observed_at": "2026-06-06T21:27:22.137027+00:00",
+          "observed_at_iso": "2026-06-06T21:27:22.137027+00:00",
+          "age_hours": 136.47,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-06-06T21:27:22.137027+00:00",
+            "limit": 10,
+            "expected_ranked_count": 10,
+            "expected_selected_count": 10,
+            "ranked_shortfall": 0,
+            "candidates_considered": 24659,
+            "available_ranked_count": 24236,
+            "source_artifacts_keys_count": 7,
+            "selected_count": 10,
+            "selected_forced_count": 0,
+            "selected_ranked_count": 10,
+            "forced_channels_configured_count": 5,
+            "forced_channels_matched_count": 0,
+            "forced_channels_without_matches_count": 0,
+            "forced_match_counts": {
+              "https://www.youtube.com/@bilinkis": 278,
+              "https://www.youtube.com/@Veritasium": 66,
+              "https://www.youtube.com/@noesposible": 89,
+              "https://www.youtube.com/@Alan-Flores": 15,
+              "https://www.youtube.com/@MitosyMentes": 27
+            },
+            "forced_candidate_pool_count": 475,
+            "available_forced_before_truncation": 0,
+            "forced_window_cutoff_date": "2026-05-14",
+            "latest_upload_date": "2026-05-28",
+            "forced_channels_max_per_run": 50,
+            "registry_existing_success_count": 420,
+            "persisted_transcript_success_count": 420,
+            "artifact_only_success_count": 0,
+            "registry_existing_in_progress_count": 0,
+            "registry_existing_recent_failed_count": 3,
+            "skipped_already_transcribed": 420,
+            "skipped_in_progress": 0,
+            "skipped_recent_failures": 3,
+            "skipped_forced_already_transcribed": 277,
+            "skipped_forced_in_progress": 0,
+            "skipped_forced_recent_failures": 0,
+            "skipped_forced_outside_window": 198,
+            "skipped_duplicate_selected": 0,
+            "skipped_invalid_video_id_count": 0,
+            "skipped_invalid_video_ids_count": 0,
+            "top_selected_count": 5,
+            "warnings_count": 1
+          },
+          "warnings_count": 1,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [
+            "forced_channels_window_anchored_to_latest_upload_date"
+          ],
+          "error_samples": [],
+          "path": "transcripts/transcript_selection_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 1,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [
+        "forced_channels_window_anchored_to_latest_upload_date"
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/analytics/**",
+        "data/transcripts/transcript_registry.jsonl"
+      ],
+      "outputs": [
+        "data/transcripts/transcript_queue.jsonl",
+        "data/transcripts/transcript_selection_report.json"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_build_analytics"
+      ]
+    },
+    {
+      "process_id": "cli_extract_heatmaps",
+      "name": "Extract public heatmaps",
+      "domain": "transcription",
+      "process_type": "cli",
+      "cadence": "daily_after_transcripts",
+      "sla_hours": 48,
+      "command": "python -m ytb_history.cli extract-heatmaps --data-dir data --limit 50",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success_with_warnings",
+      "base_status": "success_with_warnings",
+      "status_detail": "Latest artifact exists but reports warnings, errors, or partial failures.",
+      "last_run_at": "2026-06-12T13:55:39.222807+00:00",
+      "age_hours": 0.0,
+      "is_stale": false,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 2,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "heatmaps/latest_heatmap_run_report.json",
+          "observed_at": "2026-06-12T13:54:45.229194+00:00",
+          "observed_at_iso": "2026-06-12T13:54:45.229194+00:00",
+          "age_hours": 0.02,
+          "status": "success_with_warnings",
+          "summary": {
+            "status": "success",
+            "schema_version": "heatmap_run_report_v1",
+            "generated_at": "2026-06-12T13:54:45.229194+00:00",
+            "mode": "extract",
+            "data_dir": "data",
+            "bucket": "all",
+            "force": false,
+            "limit": 50,
+            "eligible_candidates": 79,
+            "attempted_count": 50,
+            "status_counts": {
+              "extractor_error": 48,
+              "video_unavailable": 1,
+              "success": 1
+            },
+            "selection_counters_keys_count": 9,
+            "run_dir": "data/heatmaps/runs/dt=2026-06-12/run=135445Z",
+            "registry_path": "data/heatmaps/heatmap_registry.jsonl",
+            "warnings_count": 1,
+            "errors_count": 0
+          },
+          "warnings_count": 1,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [
+            "candidate_limit_applied"
+          ],
+          "error_samples": [],
+          "path": "heatmaps/latest_heatmap_run_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        },
+        {
+          "resolved_path": "heatmaps/heatmap_registry.jsonl",
+          "observed_at": "2026-06-12T13:55:39.222807+00:00",
+          "observed_at_iso": "2026-06-12T13:55:39.222807+00:00",
+          "age_hours": 0.0,
+          "status": "success",
+          "summary": {
+            "size_bytes": 382532,
+            "line_count": 400
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "heatmaps/heatmap_registry.jsonl",
+          "base": "data",
+          "type": "text",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 1,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [
+        "candidate_limit_applied"
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/**",
+        "data/analytics/**",
+        "data/exports/**",
+        "data/state/**"
+      ],
+      "outputs": [
+        "data/heatmaps/**",
+        "data/transcripts/videos/**/transcript_metadata.json"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_select_transcription_candidates"
+      ]
+    },
+    {
+      "process_id": "cli_transcribe_selected_videos",
+      "name": "Transcribe selected videos",
+      "domain": "transcription",
+      "process_type": "cli",
+      "cadence": "local_manual_or_scheduled",
+      "sla_hours": 168,
+      "command": "python -m ytb_history.cli transcribe-selected-videos",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success_with_warnings",
+      "base_status": "success_with_warnings",
+      "status_detail": "Latest artifact exists but reports warnings, errors, or partial failures.",
+      "last_run_at": "2026-06-06T21:29:22.937504+00:00",
+      "age_hours": 136.44,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "transcripts/transcription_run_report.json",
+          "observed_at": "2026-06-06T21:29:22.937504+00:00",
+          "observed_at_iso": "2026-06-06T21:29:22.937504+00:00",
+          "age_hours": 136.44,
+          "status": "success_with_warnings",
+          "summary": {
+            "generated_at": "2026-06-06T21:29:22.937504+00:00",
+            "limit": 10,
+            "processed": 10,
+            "transcribed_success": 9,
+            "skipped_no_audio_source": 0,
+            "skipped_invalid_video_id": 0,
+            "skipped_missing_ytdlp": 0,
+            "failed_audio_download": 0,
+            "skipped_already_transcribed": 0,
+            "failed": 1,
+            "queue_total": 10,
+            "registry_success_before_run": 420,
+            "persisted_success_before_run": 420,
+            "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
+            "audio_source_dir_exists": true,
+            "audio_source_dir_is_dir": true,
+            "audio_source_files_sample_count": 50,
+            "video_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\video_sources",
+            "video_source_dir_exists": false,
+            "video_source_dir_is_dir": false,
+            "video_source_files_sample_count": 0,
+            "media_resolution_counts": {
+              "existing_audio": 1,
+              "extracted_from_video": 0,
+              "downloaded_ytdlp": 9,
+              "failed_media_resolution": 0
+            },
+            "media_resolution_details_count": 10,
+            "segmented_transcriptions": 0,
+            "allow_ytdlp_fallback": true,
+            "ytdlp_runtime_options": {
+              "used_cookies_file": false,
+              "used_browser_mode": false,
+              "extra_args_count": 0
+            },
+            "ytdlp_download_attempts": 9,
+            "ytdlp_download_success": 9,
+            "ytdlp_auth_required_with_cookies_count": 0,
+            "ytdlp_auth_required_with_cookies_abort_threshold": 3,
+            "ytdlp_cookies_file_diagnostics": {
+              "path_provided": false,
+              "exists": false,
+              "is_file": false,
+              "size_bytes": 0,
+              "non_comment_cookie_rows": 0,
+              "youtube_google_cookie_rows": 0,
+              "expired_youtube_google_cookie_rows": 0
+            },
+            "ytdlp_download_failures_count": 0,
+            "processed_video_ids_count": 10,
+            "success_video_ids_count": 9,
+            "already_transcribed_video_ids_count": 0,
+            "missing_audio_video_ids_count": 0,
+            "missing_audio_details_count": 0,
+            "invalid_video_id_details_count": 0,
+            "failed_video_ids_count": 1,
+            "failed_details_count": 1,
+            "warnings_count": 1
+          },
+          "warnings_count": 1,
+          "errors_count": 0,
+          "failure_count": 2,
+          "warning_samples": [
+            "transcription_failed:49VXwE9HrPo:BadRequestError"
+          ],
+          "error_samples": [],
+          "path": "transcripts/transcription_run_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 1,
+      "errors_count": 0,
+      "failure_count": 2,
+      "warning_samples": [
+        "transcription_failed:49VXwE9HrPo:BadRequestError"
+      ],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/transcript_queue.jsonl",
+        "data/audio_sources/**",
+        "data/video_sources/**",
+        "OPENAI_API_KEY"
+      ],
+      "outputs": [
+        "data/transcripts/**"
+      ],
+      "secrets_required": [
+        "OPENAI_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_select_transcription_candidates"
+      ]
+    },
+    {
+      "process_id": "cli_generate_transcript_insights",
+      "name": "Generate transcript insights",
+      "domain": "transcription",
+      "process_type": "cli",
+      "cadence": "local_manual_or_scheduled",
+      "sla_hours": 168,
+      "command": "python -m ytb_history.cli generate-transcript-insights",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-06T21:32:27.317227+00:00",
+      "age_hours": 136.39,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "transcripts/transcript_insights_run_report.json",
+          "observed_at": "2026-06-06T21:32:27.317227+00:00",
+          "observed_at_iso": "2026-06-06T21:32:27.317227+00:00",
+          "age_hours": 136.39,
+          "status": "success",
+          "summary": {
+            "generated_at": "2026-06-06T21:32:27.317227+00:00",
+            "limit": 10,
+            "processed": 9,
+            "generated": 9,
+            "cached": 420,
+            "failed": 0,
+            "warnings_count": 0,
+            "dry_run": false
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "transcripts/transcript_insights_run_report.json",
+          "base": "data",
+          "type": "json",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/videos/**",
+        "OPENAI_API_KEY"
+      ],
+      "outputs": [
+        "data/transcripts/transcript_insights_run_report.json",
+        "data/transcripts/transcript_insights_index.jsonl"
+      ],
+      "secrets_required": [
+        "OPENAI_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_transcribe_selected_videos"
+      ]
+    },
+    {
+      "process_id": "cli_transcript_registry_report",
+      "name": "Transcript registry report",
+      "domain": "transcription",
+      "process_type": "cli",
+      "cadence": "local_manual_or_scheduled",
+      "sla_hours": 168,
+      "command": "python -m ytb_history.cli transcript-registry-report",
+      "workflow_file": "",
+      "observability_scope": "",
+      "configured": true,
+      "status": "success",
+      "base_status": "success",
+      "status_detail": "Latest durable artifact is within expected state.",
+      "last_run_at": "2026-06-12T13:53:46.836004+00:00",
+      "age_hours": 0.03,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 1,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "resolved_path": "transcripts/transcript_registry.jsonl",
+          "observed_at": "2026-06-12T13:53:46.836004+00:00",
+          "observed_at_iso": "2026-06-12T13:53:46.836004+00:00",
+          "age_hours": 0.03,
+          "status": "success",
+          "summary": {
+            "size_bytes": 639945,
+            "line_count": 568
+          },
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": [],
+          "path": "transcripts/transcript_registry.jsonl",
+          "base": "data",
+          "type": "text",
+          "required": false,
+          "exists": true,
+          "matched_count": 1
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/transcript_registry.jsonl"
+      ],
+      "outputs": [
+        "stdout_json"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": [
+        "cli_transcribe_selected_videos"
+      ]
+    },
+    {
+      "process_id": "local_transcription_automation",
+      "name": "Local transcription automation",
+      "domain": "local",
+      "process_type": "local_automation",
+      "cadence": "every_6_hours_0920_1520_2120_with_logon_catchup",
+      "sla_hours": 48,
+      "command": "scripts/run_local_transcription_automation.ps1",
+      "workflow_file": "",
+      "observability_scope": "local_only",
+      "configured": true,
+      "status": "skipped",
+      "base_status": "skipped",
+      "status_detail": "Local-only artifacts are unavailable in this environment; process is skipped for remote observability.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "build/local_automation/latest_run_report.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        },
+        {
+          "path": "build/local_automation/schedule_state.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "data/transcripts/**",
+        "data/audio_sources/**",
+        "data/video_sources/**",
+        "build/local_automation/latest_sync_report.json",
+        "OPENAI_API_KEY"
+      ],
+      "outputs": [
+        "build/local_automation/latest_run_report.json",
+        "build/local_automation/schedule_state.json"
+      ],
+      "secrets_required": [
+        "OPENAI_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Creative",
+        "Operations"
+      ],
+      "depends_on": [
+        "local_repo_sync",
+        "cli_select_transcription_candidates"
+      ]
+    },
+    {
+      "process_id": "local_repo_sync",
+      "name": "Local repo sync",
+      "domain": "local",
+      "process_type": "local_automation",
+      "cadence": "every_6_hours_0900_1500_2100_with_logon_catchup",
+      "sla_hours": 24,
+      "command": "scripts/run_local_repo_sync.ps1",
+      "workflow_file": "",
+      "observability_scope": "local_only",
+      "configured": true,
+      "status": "skipped",
+      "base_status": "skipped",
+      "status_detail": "Local-only artifacts are unavailable in this environment; process is skipped for remote observability.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 2,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "build/local_automation/latest_sync_report.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        },
+        {
+          "path": "build/local_automation/sync_state.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "origin/main",
+        "local_git_worktree"
+      ],
+      "outputs": [
+        "build/local_automation/latest_sync_report.json",
+        "build/local_automation/sync_state.json"
+      ],
+      "secrets_required": [],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": []
+    },
+    {
+      "process_id": "local_play_automation",
+      "name": "Local manual play automation",
+      "domain": "local",
+      "process_type": "local_automation",
+      "cadence": "manual_desktop_shortcut",
+      "sla_hours": 168,
+      "command": "scripts/run_local_play.ps1",
+      "workflow_file": "",
+      "observability_scope": "local_only",
+      "configured": true,
+      "status": "skipped",
+      "base_status": "skipped",
+      "status_detail": "Local-only artifacts are unavailable in this environment; process is skipped for remote observability.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "build/local_automation/latest_play_report.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "origin/main",
+        "local_git_worktree",
+        "data/transcripts/**",
+        "data/audio_sources/**",
+        "data/video_sources/**",
+        "OPENAI_API_KEY"
+      ],
+      "outputs": [
+        "build/local_automation/latest_play_report.json",
+        "build/local_automation/latest_sync_report.json",
+        "build/local_automation/latest_run_report.json"
+      ],
+      "secrets_required": [
+        "OPENAI_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": [
+        "local_repo_sync",
+        "local_transcription_automation"
+      ]
+    },
+    {
+      "process_id": "local_forced_transcription_360d_play",
+      "name": "Local forced transcription 360d play",
+      "domain": "local",
+      "process_type": "local_automation",
+      "cadence": "manual_desktop_shortcut",
+      "sla_hours": 168,
+      "command": "scripts/run_local_play.ps1 -ForcedOnly -ForcedWindowDays 360 -RefreshForcedChannels",
+      "workflow_file": "",
+      "observability_scope": "local_only",
+      "configured": true,
+      "status": "skipped",
+      "base_status": "skipped",
+      "status_detail": "Local-only artifacts are unavailable in this environment; process is skipped for remote observability.",
+      "last_run_at": null,
+      "age_hours": null,
+      "is_stale": false,
+      "expected_artifacts_count": 1,
+      "existing_artifacts_count": 0,
+      "missing_required_artifacts": [],
+      "artifacts": [
+        {
+          "path": "build/local_automation/latest_play_report.json",
+          "base": "repo",
+          "type": "json",
+          "required": false,
+          "exists": false,
+          "matched_count": 0,
+          "observed_at": null,
+          "status": "not_initialized",
+          "summary": {},
+          "warnings_count": 0,
+          "errors_count": 0,
+          "failure_count": 0,
+          "warning_samples": [],
+          "error_samples": []
+        }
+      ],
+      "warnings_count": 0,
+      "errors_count": 0,
+      "failure_count": 0,
+      "warning_samples": [],
+      "error_samples": [],
+      "inputs": [
+        "origin/main",
+        "local_git_worktree",
+        "config/transcription_channels.py",
+        "data/state/channel_registry.jsonl",
+        "data/snapshots/**",
+        "data/transcripts/**",
+        "data/audio_sources/**",
+        "data/video_sources/**",
+        "OPENAI_API_KEY",
+        "YOUTUBE_API_KEY"
+      ],
+      "outputs": [
+        "build/local_automation/latest_play_report.json",
+        "build/local_automation/latest_sync_report.json",
+        "build/local_automation/latest_run_report.json",
+        "data/transcripts/**"
+      ],
+      "secrets_required": [
+        "OPENAI_API_KEY",
+        "YOUTUBE_API_KEY"
+      ],
+      "dashboard_tabs": [
+        "Operations"
+      ],
+      "depends_on": [
+        "local_repo_sync",
+        "local_transcription_automation"
+      ]
+    }
+  ]
+}

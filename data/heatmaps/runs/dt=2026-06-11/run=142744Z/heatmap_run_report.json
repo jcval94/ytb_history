@@ -1,0 +1,32 @@
+{
+  "status": "success",
+  "schema_version": "heatmap_run_report_v1",
+  "generated_at": "2026-06-11T14:27:44.272883+00:00",
+  "mode": "extract",
+  "data_dir": "data",
+  "bucket": "all",
+  "force": false,
+  "limit": 50,
+  "eligible_candidates": 129,
+  "attempted_count": 50,
+  "status_counts": {
+    "extractor_error": 50
+  },
+  "selection_counters": {
+    "transcribed_videos": 429,
+    "skipped_not_transcribed": 24300,
+    "skipped_missing_metadata": 0,
+    "skipped_missing_upload_date": 0,
+    "skipped_too_young": 0,
+    "skipped_bucket_filter": 0,
+    "skipped_already_success": 0,
+    "skipped_waiting_next_bucket": 300,
+    "skipped_exhausted_after_8w": 0
+  },
+  "run_dir": "data/heatmaps/runs/dt=2026-06-11/run=142744Z",
+  "registry_path": "data/heatmaps/heatmap_registry.jsonl",
+  "warnings": [
+    "candidate_limit_applied"
+  ],
+  "errors": []
+}

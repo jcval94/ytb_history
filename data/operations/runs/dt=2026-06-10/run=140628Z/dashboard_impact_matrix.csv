@@ -1,0 +1,136 @@
+process_id,name,domain,process_type,cadence,dashboard_tab,impact_type,status,last_run_at,is_stale
+github_ci,CI,github,github_workflow,push_or_pull_request,Operations,observability,unknown,,False
+github_monitor,YouTube Monitor,github,github_workflow,daily,Overview,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Videos,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Channels,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Scores,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Advanced,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Titles,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Periods,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Alerts,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Data Quality,workflow,stale,2026-05-29T05:27:54.491409+00:00,True
+github_monitor,YouTube Monitor,github,github_workflow,daily,Operations,observability,stale,2026-05-29T05:27:54.491409+00:00,True
+github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Creative,workflow,success_with_warnings,2026-06-10T14:06:27.139683+00:00,False
+github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Operations,observability,success_with_warnings,2026-06-10T14:06:27.139683+00:00,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Overview,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Videos,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Channels,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Scores,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Advanced,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Titles,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Periods,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Alerts,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Data Quality,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Models,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Topics,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,NLP,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Content Drivers,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Creative,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Brief,workflow,not_initialized,,False
+github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Operations,observability,not_initialized,,False
+github_train_model,Train Model Suite,github,github_workflow,twice_weekly,Models,workflow,success,2026-06-08T14:41:12.947729+00:00,False
+github_train_model,Train Model Suite,github,github_workflow,twice_weekly,Content Drivers,workflow,success,2026-06-08T14:41:12.947729+00:00,False
+github_train_model,Train Model Suite,github,github_workflow,twice_weekly,Operations,observability,success,2026-06-08T14:41:12.947729+00:00,False
+github_predict_model,Predict With Model Artifact,github,github_workflow,after_model_training,Models,workflow,success,2026-06-08T14:43:00.744885+00:00,False
+github_predict_model,Predict With Model Artifact,github,github_workflow,after_model_training,Operations,observability,success,2026-06-08T14:43:00.744885+00:00,False
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Overview,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Videos,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Channels,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Scores,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Advanced,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Titles,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Periods,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Alerts,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Data Quality,data_source,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_run,Daily YouTube pipeline,ingestion,cli,daily,Operations,observability,stale,2026-05-29T05:27:54.491409+00:00,True
+cli_dry_run,Quota dry run,ingestion,cli,before_monitor_run,Operations,observability,unknown,,False
+cli_validate_latest,Validate latest run,validation,cli,after_monitor_run,Data Quality,data_source,unknown,,False
+cli_validate_latest,Validate latest run,validation,cli,after_monitor_run,Operations,observability,unknown,,False
+cli_export_latest,Export latest run,analytics,cli,after_monitor_run,Overview,data_source,stale,2026-05-25T12:54:00.716806+00:00,True
+cli_export_latest,Export latest run,analytics,cli,after_monitor_run,Videos,data_source,stale,2026-05-25T12:54:00.716806+00:00,True
+cli_export_latest,Export latest run,analytics,cli,after_monitor_run,Channels,data_source,stale,2026-05-25T12:54:00.716806+00:00,True
+cli_export_latest,Export latest run,analytics,cli,after_monitor_run,Periods,data_source,stale,2026-05-25T12:54:00.716806+00:00,True
+cli_export_latest,Export latest run,analytics,cli,after_monitor_run,Operations,observability,stale,2026-05-25T12:54:00.716806+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Overview,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Videos,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Channels,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Scores,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Advanced,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Titles,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Periods,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Data Quality,data_source,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_analytics,Build analytics data mart,analytics,cli,after_export,Operations,observability,stale,2026-05-25T13:00:45.170160+00:00,True
+cli_build_nlp_features,Build NLP feature layer,intelligence,cli,after_analytics,NLP,derived_signal,stale,2026-05-25T13:01:03.529440+00:00,True
+cli_build_nlp_features,Build NLP feature layer,intelligence,cli,after_analytics,Topics,derived_signal,stale,2026-05-25T13:01:03.529440+00:00,True
+cli_build_nlp_features,Build NLP feature layer,intelligence,cli,after_analytics,Content Drivers,derived_signal,stale,2026-05-25T13:01:03.529440+00:00,True
+cli_build_nlp_features,Build NLP feature layer,intelligence,cli,after_analytics,Creative,derived_signal,stale,2026-05-25T13:01:03.529440+00:00,True
+cli_build_nlp_features,Build NLP feature layer,intelligence,cli,after_analytics,Operations,observability,stale,2026-05-25T13:01:03.529440+00:00,True
+cli_generate_alerts,Generate alerts and signals,intelligence,cli,after_analytics,Overview,derived_signal,stale,2026-05-25T13:01:05.319304+00:00,True
+cli_generate_alerts,Generate alerts and signals,intelligence,cli,after_analytics,Alerts,derived_signal,stale,2026-05-25T13:01:05.319304+00:00,True
+cli_generate_alerts,Generate alerts and signals,intelligence,cli,after_analytics,Brief,derived_signal,stale,2026-05-25T13:01:05.319304+00:00,True
+cli_generate_alerts,Generate alerts and signals,intelligence,cli,after_analytics,Operations,observability,stale,2026-05-25T13:01:05.319304+00:00,True
+cli_build_decision_layer,Build decision intelligence layer,intelligence,cli,after_alerts,Overview,derived_signal,stale,2026-05-25T13:01:09.791227+00:00,True
+cli_build_decision_layer,Build decision intelligence layer,intelligence,cli,after_alerts,Alerts,derived_signal,stale,2026-05-25T13:01:09.791227+00:00,True
+cli_build_decision_layer,Build decision intelligence layer,intelligence,cli,after_alerts,Brief,derived_signal,stale,2026-05-25T13:01:09.791227+00:00,True
+cli_build_decision_layer,Build decision intelligence layer,intelligence,cli,after_alerts,Creative,derived_signal,stale,2026-05-25T13:01:09.791227+00:00,True
+cli_build_decision_layer,Build decision intelligence layer,intelligence,cli,after_alerts,Operations,observability,stale,2026-05-25T13:01:09.791227+00:00,True
+cli_build_model_intelligence,Build model intelligence,ml,cli,after_decision_layer,Models,derived_signal,stale,2026-05-25T13:01:14.006379+00:00,True
+cli_build_model_intelligence,Build model intelligence,ml,cli,after_decision_layer,Content Drivers,derived_signal,stale,2026-05-25T13:01:14.006379+00:00,True
+cli_build_model_intelligence,Build model intelligence,ml,cli,after_decision_layer,Creative,derived_signal,stale,2026-05-25T13:01:14.006379+00:00,True
+cli_build_model_intelligence,Build model intelligence,ml,cli,after_decision_layer,Brief,derived_signal,stale,2026-05-25T13:01:14.006379+00:00,True
+cli_build_model_intelligence,Build model intelligence,ml,cli,after_decision_layer,Operations,observability,stale,2026-05-25T13:01:14.006379+00:00,True
+cli_build_topic_intelligence,Build topic intelligence,intelligence,cli,after_nlp_features,Topics,derived_signal,stale,2026-05-25T13:01:17.636326+00:00,True
+cli_build_topic_intelligence,Build topic intelligence,intelligence,cli,after_nlp_features,Content Drivers,derived_signal,stale,2026-05-25T13:01:17.636326+00:00,True
+cli_build_topic_intelligence,Build topic intelligence,intelligence,cli,after_nlp_features,Creative,derived_signal,stale,2026-05-25T13:01:17.636326+00:00,True
+cli_build_topic_intelligence,Build topic intelligence,intelligence,cli,after_nlp_features,Brief,derived_signal,stale,2026-05-25T13:01:17.636326+00:00,True
+cli_build_topic_intelligence,Build topic intelligence,intelligence,cli,after_nlp_features,Operations,observability,stale,2026-05-25T13:01:17.636326+00:00,True
+cli_generate_creative_packages,Generate creative packages,creative,cli,after_intelligence_layers,Overview,derived_signal,stale,2026-05-25T13:01:18.910935+00:00,True
+cli_generate_creative_packages,Generate creative packages,creative,cli,after_intelligence_layers,Creative,derived_signal,stale,2026-05-25T13:01:18.910935+00:00,True
+cli_generate_creative_packages,Generate creative packages,creative,cli,after_intelligence_layers,Brief,derived_signal,stale,2026-05-25T13:01:18.910935+00:00,True
+cli_generate_creative_packages,Generate creative packages,creative,cli,after_intelligence_layers,Operations,observability,stale,2026-05-25T13:01:18.910935+00:00,True
+cli_generate_weekly_brief,Generate weekly brief,reporting,cli,after_intelligence_layers,Overview,derived_signal,stale,2026-05-25T13:01:21.340601+00:00,True
+cli_generate_weekly_brief,Generate weekly brief,reporting,cli,after_intelligence_layers,Brief,derived_signal,stale,2026-05-25T13:01:21.340601+00:00,True
+cli_generate_weekly_brief,Generate weekly brief,reporting,cli,after_intelligence_layers,Operations,observability,stale,2026-05-25T13:01:21.340601+00:00,True
+cli_generate_opportunity_radar,Generate commercial Opportunity Radar,reporting,cli,after_weekly_brief,Radar,derived_signal,stale,2026-05-25T13:01:26.240692+00:00,True
+cli_generate_opportunity_radar,Generate commercial Opportunity Radar,reporting,cli,after_weekly_brief,Brief,derived_signal,stale,2026-05-25T13:01:26.240692+00:00,True
+cli_generate_opportunity_radar,Generate commercial Opportunity Radar,reporting,cli,after_weekly_brief,Operations,observability,stale,2026-05-25T13:01:26.240692+00:00,True
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Overview,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Radar,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Videos,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Channels,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Scores,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Advanced,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Titles,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Periods,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Alerts,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Data Quality,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Models,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Topics,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,NLP,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Content Drivers,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Creative,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Brief,publication,not_initialized,,False
+cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Operations,observability,not_initialized,,False
+cli_build_operations,Build operations telemetry,operations,cli,after_pipeline_or_before_pages,Operations,observability,success,2026-06-10T14:06:28.540151+00:00,False
+cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Models,derived_signal,success,2026-06-10T14:04:31.292633+00:00,False
+cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Operations,observability,success,2026-06-10T14:04:31.292633+00:00,False
+cli_analyze_model_readiness,Analyze model readiness,ml,cli,before_model_training,Models,derived_signal,success_with_warnings,2026-06-08T14:36:40+00:00,False
+cli_analyze_model_readiness,Analyze model readiness,ml,cli,before_model_training,Operations,observability,success_with_warnings,2026-06-08T14:36:40+00:00,False
+cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Models,derived_signal,success,2026-06-10T14:04:31.210632+00:00,False
+cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Operations,observability,success,2026-06-10T14:04:31.210632+00:00,False
+cli_predict_with_model_artifact,Predict with model artifact,ml,cli,after_model_training,Models,derived_signal,success,2026-06-08T14:43:00.744885+00:00,False
+cli_predict_with_model_artifact,Predict with model artifact,ml,cli,after_model_training,Operations,observability,success,2026-06-08T14:43:00.744885+00:00,False
+cli_select_transcription_candidates,Select transcription candidates,transcription,cli,daily_after_monitor,Creative,derived_signal,stale,2026-06-06T21:27:22.137027+00:00,True
+cli_select_transcription_candidates,Select transcription candidates,transcription,cli,daily_after_monitor,Operations,observability,stale,2026-06-06T21:27:22.137027+00:00,True
+cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Creative,derived_signal,success_with_warnings,2026-06-10T14:06:27.139683+00:00,False
+cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Operations,observability,success_with_warnings,2026-06-10T14:06:27.139683+00:00,False
+cli_transcribe_selected_videos,Transcribe selected videos,transcription,cli,local_manual_or_scheduled,Creative,derived_signal,success_with_warnings,2026-06-06T21:29:22.937504+00:00,False
+cli_transcribe_selected_videos,Transcribe selected videos,transcription,cli,local_manual_or_scheduled,Operations,observability,success_with_warnings,2026-06-06T21:29:22.937504+00:00,False
+cli_generate_transcript_insights,Generate transcript insights,transcription,cli,local_manual_or_scheduled,Creative,derived_signal,success,2026-06-06T21:32:27.317227+00:00,False
+cli_generate_transcript_insights,Generate transcript insights,transcription,cli,local_manual_or_scheduled,Operations,observability,success,2026-06-06T21:32:27.317227+00:00,False
+cli_transcript_registry_report,Transcript registry report,transcription,cli,local_manual_or_scheduled,Operations,observability,success,2026-06-10T14:04:31.660169+00:00,False
+local_transcription_automation,Local transcription automation,local,local_automation,every_6_hours_0920_1520_2120_with_logon_catchup,Creative,workflow,skipped,,False
+local_transcription_automation,Local transcription automation,local,local_automation,every_6_hours_0920_1520_2120_with_logon_catchup,Operations,observability,skipped,,False
+local_repo_sync,Local repo sync,local,local_automation,every_6_hours_0900_1500_2100_with_logon_catchup,Operations,observability,skipped,,False
+local_play_automation,Local manual play automation,local,local_automation,manual_desktop_shortcut,Operations,observability,skipped,,False
+local_forced_transcription_360d_play,Local forced transcription 360d play,local,local_automation,manual_desktop_shortcut,Operations,observability,skipped,,False

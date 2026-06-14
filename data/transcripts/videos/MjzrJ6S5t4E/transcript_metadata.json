@@ -16,5 +16,9 @@
   "timestamp_granularity": "segment",
   "timestamp_model": "whisper-1",
   "timestamps_generated_at": "2026-06-04T05:14:19.745719+00:00",
-  "duration_seconds": 2775.06005859375
+  "duration_seconds": 2775.06005859375,
+  "heatmap_available": true,
+  "heatmap_segments_path": "data/heatmaps/videos/MjzrJ6S5t4E/heatmap_segments.jsonl",
+  "heatmap_sha256": "8a529b5fa0b06d188eb1e91f3b5ea2ca45299d35e7fbf2f29957b80065e70930",
+  "heatmap_extracted_at": "2026-06-12T13:55:36.878272+00:00"
 }

@@ -1,0 +1,15 @@
+{
+  "schema_version": "heatmap_metadata_v1",
+  "video_id": "MjzrJ6S5t4E",
+  "channel_id": "UCUP6qv-_EIL0hwTsJaKYnvw",
+  "channel_name": "Azteca Noticias",
+  "title": "#Hechos |  Golpe de tres bandas afecta a la 4T: narcotráfico, lavado y el caso Segalmex  (19/05/26)",
+  "upload_date": "2026-05-20T05:54:52+00:00",
+  "duration_seconds": "2775",
+  "bucket": "2w",
+  "extracted_at": "2026-06-12T13:55:36.878272+00:00",
+  "source": "yt_dlp_public_metadata",
+  "segment_count": 100,
+  "heatmap_sha256": "8a529b5fa0b06d188eb1e91f3b5ea2ca45299d35e7fbf2f29957b80065e70930",
+  "segments_path": "data/heatmaps/videos/MjzrJ6S5t4E/heatmap_segments.jsonl"
+}
