@@ -1,0 +1,20 @@
+{
+  "video_id": "CaWRkltc8tM",
+  "channel_id": "UCok_yhjwg4WSx3s_2Yh8ZjQ",
+  "channel_name": "Topes de Gama",
+  "title": "NO tires tu DINERO: Compra estos móviles | EL RECOMENDADOR",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\CaWRkltc8tM.mp3",
+  "transcribed_at": "2026-06-14T01:09:11.673513+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8837,
+  "text_sha256": "864e7219faa912057bf8591b60bd642deadba52abc32704d86315440ce022239",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\CaWRkltc8tM\\transcript_segments.jsonl",
+  "segment_count": 303,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T01:11:39.159241+00:00",
+  "duration_seconds": 1228.8900146484375
+}

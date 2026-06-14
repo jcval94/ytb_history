@@ -1,0 +1,20 @@
+{
+  "video_id": "0Wxl11jy39w",
+  "channel_id": "UCPgVPrgqpALC1s2e63fgKyg",
+  "channel_name": "elWacky",
+  "title": "Empeoró",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0Wxl11jy39w.mp3",
+  "transcribed_at": "2026-06-14T01:08:15.572024+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 7661,
+  "text_sha256": "c638279f31941db8df9851a096e5877481f1e75cd0ec99989859fc9220a9f723",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0Wxl11jy39w\\transcript_segments.jsonl",
+  "segment_count": 77,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T01:10:00.041368+00:00",
+  "duration_seconds": 420.0400085449219
+}

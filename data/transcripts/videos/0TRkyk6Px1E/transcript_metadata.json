@@ -1,0 +1,20 @@
+{
+  "video_id": "0TRkyk6Px1E",
+  "channel_id": "UCiWLfSweyRNmLpgEHekhoAg",
+  "channel_name": "ESPN",
+  "title": "THE NEW YORK KNICKS ARE ONE WIN AWAY FROM THE NBA FINALS 🔥",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0TRkyk6Px1E.mp3",
+  "transcribed_at": "2026-06-14T01:08:21.143844+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 73,
+  "text_sha256": "4704dda2b961066e32823abe1e77361b52b51cc34817dba29121499ad658069d",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0TRkyk6Px1E\\transcript_segments.jsonl",
+  "segment_count": 4,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T01:09:34.000419+00:00",
+  "duration_seconds": 12.1899995803833
+}

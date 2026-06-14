@@ -1,0 +1,74 @@
+{
+  "video_id": "tYhJPwe4lXM",
+  "language": "es",
+  "summary": "El video explora la esencia de una relación auténtica, destacando que no se basa en momentos dramáticos o espectaculares, sino en la elección mutua y en los pequeños momentos cotidianos compartidos.",
+  "main_topics": [
+    "Relaciones auténticas",
+    "Cotidianeidad en el amor",
+    "Elección mutua"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la relación",
+      "purpose": "Presentar la temática de las relaciones modernas",
+      "summary": "Se establece que las relaciones buenas son escasas y complicadas por las expectativas sociales."
+    },
+    {
+      "section": "Definición del amor real",
+      "purpose": "Reforzar la idea de que el amor no se mide por estándares superficiales",
+      "summary": "Se contradicen los mitos del amor idealizado, enfatizando momentos cotidianos."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Resumir el mensaje",
+      "summary": "El amor verdadero es una elección constante y se da en la simplicidad de la vida diaria."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Reflexión",
+    "hook_text": "Una buena relación es de las que son muy escasas hoy en día.",
+    "why_it_works": "Captura la atención al hablar de una realidad común que resuena con muchas personas, creando curiosidad sobre qué constituye una buena relación."
+  },
+  "claims": [
+    {
+      "claim": "El amor real no se mide por redes sociales.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las relaciones exitosas se basan en la elección mutua y la cotidianidad.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Paseos al atardecer",
+    "Ver una serie juntos",
+    "Conversaciones profundas"
+  ],
+  "actionable_ideas": [
+    "Concentrarse en los momentos cotidianos para fortalecer la relación.",
+    "Valorar la comunicación abierta y honesta.",
+    "Aceptar que el amor se construye día a día."
+  ],
+  "audience": "Personas interesadas en mejorar sus relaciones personales.",
+  "tone": "Reflexivo y sincero",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Testimonios sobre relaciones",
+    "Preguntas retóricas",
+    "Historias de vida"
+  ],
+  "title_supporting_quotes": [
+    "El amor real es elegir a la otra persona una y otra vez."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollar contenido sobre relaciones reales vs ideales.",
+    "Crear talleres sobre comunicación en pareja."
+  ],
+  "risk_notes": [
+    "El mensaje puede ser visto como simplista por algunos.",
+    "Podría no resonar con quienes tienen expectativas románticas altas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

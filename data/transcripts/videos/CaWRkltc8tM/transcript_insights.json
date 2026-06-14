@@ -1,0 +1,110 @@
+{
+  "video_id": "CaWRkltc8tM",
+  "language": "es",
+  "summary": "El creador de contenido responde preguntas de los seguidores sobre smartphones de gama alta, haciendo un énfasis en la relación calidad-precio y recomendaciones específicas de modelos adecuados para diversos usuarios.",
+  "main_topics": [
+    "Recomendaciones de smartphones",
+    "Relación calidad-precio en móviles",
+    "Características de cámaras en smartphones",
+    "Opciones económicas para usuarios mayores"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la sección de preguntas y respuestas.",
+      "summary": "El presentador da la bienvenida y explica el propósito de la sección."
+    },
+    {
+      "section": "Top 5 de smartphones de gama alta",
+      "purpose": "Proveer recomendaciones de teléfonos.",
+      "summary": "Se discuten cinco smartphones de gama alta con buena relación calidad-precio."
+    },
+    {
+      "section": "Comparación entre modelos",
+      "purpose": "Ayudar en la elección de un smartphone específico.",
+      "summary": "Comparativa entre Vivo y Pixel en cuanto a características y rendimiento."
+    },
+    {
+      "section": "Recomendaciones para grabar videos",
+      "purpose": "Identificar smartphones adecuados para grabación profesional.",
+      "summary": "Se mencionan teléfonos sobresalientes para la grabación de videos."
+    },
+    {
+      "section": "Recomendación sobre el iPhone 17",
+      "purpose": "Valorar la compra del iPhone 17.",
+      "summary": "Se recomienda el iPhone 17, señalando sus mejoras."
+    },
+    {
+      "section": "Auriculares de formato abierto",
+      "purpose": "Sugerir auriculares económicos.",
+      "summary": "Recomendaciones de auriculares de formato abierto."
+    },
+    {
+      "section": "Móviles de gama alta para fotografía",
+      "purpose": "Sugerir modelos destacados en fotografía.",
+      "summary": "Tres alternativas de móviles por 800 euros con buenas cámaras."
+    },
+    {
+      "section": "Recomendación para un usuario mayor",
+      "purpose": "Sugerir un smartphone para una persona de 70 años.",
+      "summary": "Recomienda un Motorola G56 por su fácil uso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta interactiva",
+    "hook_text": "¡tú preguntas, nosotros contestamos!",
+    "why_it_works": "Involucra directamente a la audiencia y establece un tono accesible."
+  },
+  "claims": [
+    {
+      "claim": "No es necesario gastar 1,500 euros para tener un buen teléfono.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "El iPhone 17 ofrece buenas características y ha mejorado respecto a modelos anteriores.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "Los teléfonos de Realme y OnePlus son comparables.",
+      "support_level": "implicit",
+      "risk": "none"
+    }
+  ],
+  "examples": [
+    "iPhone 17",
+    "Pixel 10",
+    "OnePlus 15",
+    "POCO F8 Ultra",
+    "Oppo Find X9"
+  ],
+  "actionable_ideas": [
+    "Considera teléfonos de gama alta usados o anteriores para ahorrar dinero.",
+    "Evalúa las necesidades específicas (cámara, batería, uso) antes de decidir.",
+    "Lee comparativas y análisis de usuarios antes de comprar un nuevo smartphone."
+  ],
+  "audience": "Usuarios de tecnología interesados en smartphones.",
+  "tone": "Informativo y accesible.",
+  "content_style": "Conversacional.",
+  "retention_devices": [
+    "Ejemplos concretos",
+    "Comparaciones directas",
+    "Inclusión de la audiencia"
+  ],
+  "title_supporting_quotes": [
+    "No tiene que gastarte 1,500 euros para tener un teléfono que sea fantástico.",
+    "El iPhone 17 es un teléfono muy balanceado.",
+    "Motorola tiene una experiencia bastante pura de Android."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear clips cortos sobre cada smartphone mencionado.",
+    "Desarrollar infografías comparativas.",
+    "Hacer un artículo de blog sobre las mejores opciones económicas."
+  ],
+  "risk_notes": [
+    "Las recomendaciones pueden no aplicar a todos los usuarios.",
+    "Cambios en la disponibilidad de modelos mencionados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

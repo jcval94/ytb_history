@@ -1,0 +1,90 @@
+{
+  "video_id": "0Wxl11jy39w",
+  "language": "es",
+  "summary": "El video analiza la controversia que enfrenta el youtuber Tyler Oliveira tras publicar contenido sobre la comunidad judía, lo que resultó en su prohibición de entrada a Israel tras ser identificado en un vuelo. La narrativa explora las implicaciones de su contenido y la reacción de la comunidad judía frente a sus preguntas y afirmaciones.",
+  "main_topics": [
+    "Censura en redes sociales",
+    "Libertad de expresión",
+    "Reacción de comunidades a críticas",
+    "Controversia sobre contenido antisemita"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al caso de Tyler Oliveira",
+      "purpose": "Presentar la situación y captar la atención del espectador.",
+      "summary": "Se introduce el contexto de la controvertida situación de un youtuber que enfrentó reacciones hostiles tras cuestionar aspectos de la comunidad judía."
+    },
+    {
+      "section": "Desarrollo del viaje a Israel",
+      "purpose": "Describir el viaje de Oliveira y su experiencia al llegar a Israel.",
+      "summary": "Tyler es deportado a Estados Unidos al llegar a Israel debido a su contenido en YouTube, que fue considerado antisemita."
+    },
+    {
+      "section": "Exploración del contenido del youtuber",
+      "purpose": "Analizar el contenido y las preguntas planteadas por Oliveira.",
+      "summary": "Se discuten los temas y preguntas que Oliveira abordó en sus videos, y cómo estos generaron reacciones adversas de la comunidad judía."
+    },
+    {
+      "section": "Consecuencias de la denuncia y la respuesta pública",
+      "purpose": "Informar sobre la reacción de la comunidad y las repercusiones mediáticas.",
+      "summary": "Las reacciones de la comunidad judía y las respuestas políticas a la situación de Oliveira, así como su decisión de seguir creando contenido."
+    },
+    {
+      "section": "Cierre y reflexión",
+      "purpose": "Dejar al espectador con una impresión reflexiva sobre el tema.",
+      "summary": "Se invita a reflexionar sobre las implicaciones de la censura y la libertad de expresión en el contexto de conflictos culturales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Narrativa impactante",
+    "hook_text": "Imagínate por un momento que alguien suba dos vídeos a YouTube sobre una comunidad y que esta lo odie tanto que lo empiecen a seguir a donde sea que va.",
+    "why_it_works": "Genera curiosidad y empatía al presentar una situación extraordinaria que invita a explorar las dinámicas de conflicto social."
+  },
+  "claims": [
+    {
+      "claim": "Tyler Oliveira fue deportado de Israel por contenido considerado antisemita.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "Las preguntas de Oliveira sobre la comunidad judía fueron malinterpretadas como antisemitas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Las comunidades judías se organizaron para identificar y seguir a Oliveira.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Entrevistas de Oliveira con judíos en las que se plantean temas polémicos.",
+    "Interacción de la comunidad judía en redes sociales sobre su situación."
+  ],
+  "actionable_ideas": [
+    "Fomentar debates sobre la libertad de expresión en redes sociales.",
+    "Establecer diálogos entre comunidades para abordar malentendidos culturales.",
+    "Crear contenido que informe sobre la diversidad de opiniones dentro de comunidades."
+  ],
+  "audience": "Espectadores interesados en temas sociales y culturales, así como en la libertad de expresión.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Narrativa informativa y analítica con elementos de denuncia.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Referencias a eventos actuales",
+    "Narrativas personales de experiencias"
+  ],
+  "title_supporting_quotes": [
+    "Me prohibieron la entrada a Israel y me deportaron a Estados Unidos por contenido antisemita.",
+    "No me molestan porque no trato con ellos."
+  ],
+  "creative_reuse_opportunities": [
+    "Resúmenes y análisis de otros controversiales casos de censura en redes sociales.",
+    "Discusiones en plataformas de podcast sobre la libertad de expresión."
+  ],
+  "risk_notes": [
+    "Posible controversia al discutir temas sensibles sobre comunidades.",
+    "Riesgo de mala interpretación de intenciones en el contenido."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
