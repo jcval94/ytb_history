@@ -1,0 +1,99 @@
+{
+  "video_id": "5n3yAxHpehk",
+  "language": "es",
+  "summary": "El video presenta un análisis sobre la valuación de SpaceX, su posible salida a bolsa y la dominación en la industria aeroespacial, así como su enfoque en inteligencia artificial. Se discuten sus finanzas, el control que Elon Musk tiene sobre la empresa y la competencia en el sector.",
+  "main_topics": [
+    "Valuación de SpaceX",
+    "Salida a bolsa",
+    "Dominio de la industria aeroespacial",
+    "Inteligencia artificial",
+    "Control accionarial de Elon Musk"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la valuación de SpaceX",
+      "purpose": "Presentar la cifra de 1.75 trillón de dólares.",
+      "summary": "SpaceX es valorada en más que toda la economía de España."
+    },
+    {
+      "section": "Salida a bolsa de SpaceX",
+      "purpose": "Detallar la magnitud de la IPO prevista.",
+      "summary": "Será la salida a bolsa más grande de la historia."
+    },
+    {
+      "section": "Dominio en la industria aeroespacial",
+      "purpose": "Mostrar la superioridad de SpaceX en lanzamientos.",
+      "summary": "SpaceX lanza el 84% del total de cargas al espacio."
+    },
+    {
+      "section": "Starlink y finanzas",
+      "purpose": "Discutir la parte de ingresos de Starlink y sus proyecciones.",
+      "summary": "Starlink es el proveedor de internet satelital de mayor despliegue."
+    },
+    {
+      "section": "Control de Elon Musk",
+      "purpose": "Analizar el control que Musk tiene sobre SpaceX.",
+      "summary": "Musk busca control del 85% y 50% de propiedad en la empresa."
+    },
+    {
+      "section": "Inversiones y competencia",
+      "purpose": "Comparar fuerza financiera y tecnológica con otras empresas.",
+      "summary": "SpaceX quiere competir en inteligencia artificial a gran escala."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "estadística impactante",
+    "hook_text": "SpaceX se valora en 1.75 trillion dollars.",
+    "why_it_works": "Captura la atención al comparar con la economía de España, generando curiosidad sobre la magnitud de la compañía."
+  },
+  "claims": [
+    {
+      "claim": "SpaceX lanza el 84% de la carga enviada al espacio.",
+      "support_level": "explicit",
+      "risk": "poca evidencia directa"
+    },
+    {
+      "claim": "SpaceX es la compañía de internet satelital de mayor despliegue.",
+      "support_level": "explicit",
+      "risk": "poca evidencia directa"
+    },
+    {
+      "claim": "Elon Musk busca controlar el 85% del voto en SpaceX.",
+      "support_level": "explicit",
+      "risk": "poca evidencia directa"
+    },
+    {
+      "claim": "La valuación de SpaceX ha crecido de 10 mil millones a 1.75 trillón.",
+      "support_level": "explicit",
+      "risk": "poca evidencia directa"
+    }
+  ],
+  "examples": [
+    "Comparaciones con otras IPOs como Snapchat y Facebook.",
+    "Inversión en inteligencia artificial comparada con gigantes como Microsoft."
+  ],
+  "actionable_ideas": [
+    "Invertir en comprensión del análisis financiero.",
+    "Explorar oportunidades en tecnologías emergentes como inteligencia artificial."
+  ],
+  "audience": "Inversores, entusiastas de la tecnología, y analistas de mercado.",
+  "tone": "informativo y analítico",
+  "content_style": "narrativo y explicativo",
+  "retention_devices": [
+    "Uso de estadísticas y comparaciones.",
+    "Historias sobre la misión de SpaceX y el liderazgo de Musk."
+  ],
+  "title_supporting_quotes": [
+    "Nuestra misión es construir sistemas para hacer la vida multiplanetaria.",
+    "SpaceX no es solo aeroespacial, también es inteligencia artificial."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear infografías sobre el mercado total direccionable de SpaceX.",
+    "Producción de un video comparativo sobre IPOs históricas."
+  ],
+  "risk_notes": [
+    "Las afirmaciones sobre ingresos futuros dependen de múltiples variables.",
+    "El control de Musk puede generar preocupación entre los inversores."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

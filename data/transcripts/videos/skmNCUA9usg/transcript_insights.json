@@ -1,0 +1,92 @@
+{
+  "video_id": "skmNCUA9usg",
+  "language": "es",
+  "summary": "En este video, se presentan entrevistas con Marcelino García Toral, técnico del Villarreal, y Diego Simeone, técnico del Atlético de Madrid, antes de un partido crucial que podría definir la clasificación a la tercera posición en la liga. Marcelino habla de su despedida y el reconocimiento recibido del club, mientras que Simeone se enfoca en la importancia del partido y en cómo su equipo ha realizado un buen trabajo durante la temporada.",
+  "main_topics": [
+    "Despedida de Marcelino García Toral",
+    "Importancia del partido para la tercera posición",
+    "Estado de ánimo de los jugadores",
+    "Estilo de juego del Villarreal y Atlético de Madrid"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Marcelino García Toral",
+      "purpose": "Presentar al técnico del Villarreal",
+      "summary": "Marcelino habla sobre sus emociones antes de su último partido y el impacto de su tiempo en el club."
+    },
+    {
+      "section": "Reconocimiento recibido",
+      "purpose": "Resaltar el homenaje hecho hacia Marcelino",
+      "summary": "Marcelino expresa su agradecimiento por el reconocimiento recibido del club."
+    },
+    {
+      "section": "Importancia del partido",
+      "purpose": "Discutir la relevancia del partido en la clasificación",
+      "summary": "Se analiza el rendimiento y la mentalidad de los jugadores ante la culminación de la temporada."
+    },
+    {
+      "section": "Introducción a Diego Simeone",
+      "purpose": "Presentar al técnico del Atlético de Madrid",
+      "summary": "Simeone comparte su experiencia en la liga y el objetivo del equipo."
+    },
+    {
+      "section": "Expectativas del partido",
+      "purpose": "Definir las expectativas y análisis del juego",
+      "summary": "Simeone comenta sobre el estilo de juego del Villarreal y la estrategia del Atlético."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntas iniciales",
+    "hook_text": "¿Qué tal, Marcelino? Muy buenas.",
+    "why_it_works": "Engancha al espectador al presentar a un personaje conocido y establecer una conversación directa."
+  },
+  "claims": [
+    {
+      "claim": "Marcelino ha dejado una huella en el Villarreal.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "La tercera posición es crucial para clubes e instituciones.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "Los jugadores pueden perder enfoque al cumplir objetivos.",
+      "support_level": "implicit",
+      "risk": "moderate"
+    }
+  ],
+  "examples": [
+    "Marcelino agradece la ovación del público en su despedida.",
+    "Simeone resalta la importancia del partido en el contexto de la clasificación.",
+    "Análisis del estilo de juego de ambos equipos."
+  ],
+  "actionable_ideas": [
+    "Fomentar el reconocimiento de los técnicos en el fútbol.",
+    "Analizar cómo los objetivos afectan la mentalidad de los jugadores.",
+    "Discutir estrategias para mantener la competitividad tras lograr metas."
+  ],
+  "audience": "Aficionados al fútbol y seguidores de la liga española.",
+  "tone": "Reflexivo y deportivo.",
+  "content_style": "Entrevista y análisis.",
+  "retention_devices": [
+    "Preguntas abiertas a los entrevistados",
+    "Reconocimientos emotivos",
+    "Interacciones directas con el público"
+  ],
+  "title_supporting_quotes": [
+    "Es mi último partido aquí y como tal, pues es una mezcla de sensaciones.",
+    "Siempre mejor ser tercero que cuarto."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un documental sobre la carrera de Marcelino.",
+    "Análisis táctico de los estilos de juego de ambos equipos.",
+    "Encuestas a los aficionados sobre su opinión del reconocimiento a los técnicos."
+  ],
+  "risk_notes": [
+    "El enfoque positivo puede no resonar con los aficionados que prefieren resultados inmediatos.",
+    "El tema de la mentalidad de los jugadores podría ser interpretado negativamente."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

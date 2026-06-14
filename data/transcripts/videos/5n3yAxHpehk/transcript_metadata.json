@@ -1,0 +1,20 @@
+{
+  "video_id": "5n3yAxHpehk",
+  "channel_id": "UC55-mxUj5Nj3niXFReG44OQ",
+  "channel_name": "Platzi",
+  "title": "Qué hay detrás de la salida a la bolsa de SpaceX",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5n3yAxHpehk.mp3",
+  "transcribed_at": "2026-06-14T16:17:04.765615+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8831,
+  "text_sha256": "e1f2ce9e1644b4f972e2c1f103e6c7e26ae2dd4182f46923c244dabfbbe3b5db",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5n3yAxHpehk\\transcript_segments.jsonl",
+  "segment_count": 298,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T16:21:06.139808+00:00",
+  "duration_seconds": 850.52001953125
+}

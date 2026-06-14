@@ -1,0 +1,84 @@
+{
+  "video_id": "Ok5257sn5M0",
+  "language": "unknown",
+  "summary": "The speaker discusses the distressing case of Lucinda Ritchie, who was moved from a hospital to a nursing home against her will. Despite her being an adult with mental capacity, the NHS has not clarified the legality of her move. The speaker highlights Lucinda's need for support to regain her independence and return to her life.",
+  "main_topics": [
+    "Patient rights",
+    "NHS care policy",
+    "Mental health capacity",
+    "Independence in care",
+    "Lucinda's personal story"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to Lucinda's situation",
+      "purpose": "Set the story",
+      "summary": "Introduce Lucinda's plight and the issue at hand."
+    },
+    {
+      "section": "Investigation into the move",
+      "purpose": "Raise questions",
+      "summary": "Detail the speaker's inquiries about the legality and decision-making around Lucinda's move."
+    },
+    {
+      "section": "Lucinda's experience and needs",
+      "purpose": "Humanize the issue",
+      "summary": "Describe Lucinda's personal circumstances and her desire for independence."
+    },
+    {
+      "section": "NHS response",
+      "purpose": "Provide official context",
+      "summary": "Share what the NHS Sussex and Surrey Integrated Care Board has communicated regarding Lucinda's case."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emotional appeal",
+    "hook_text": "This is my life.",
+    "why_it_works": "Engages the audience by personalizing the issue and emphasizing urgency."
+  },
+  "claims": [
+    {
+      "claim": "Lucinda was moved to a nursing home against her will.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "NHS policies prioritize patient-focused care.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Lucinda requires 24-hour support to return home.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Advocate for better communication from healthcare authorities.",
+    "Push for patient rights and legal clarity regarding involuntary moves.",
+    "Support initiatives that focus on patient-centered care."
+  ],
+  "audience": "Healthcare advocates, general public, policy makers",
+  "tone": "Urgent, concerned",
+  "content_style": "Narrative, emotional appeal",
+  "retention_devices": [
+    "Personal anecdotes",
+    "Direct quotes from Lucinda",
+    "Urgent call for action"
+  ],
+  "title_supporting_quotes": [
+    "Please make my freedom independence free and we'll have it done."
+  ],
+  "creative_reuse_opportunities": [
+    "Articles about patient rights and autonomy",
+    "Social media campaigns for healthcare reforms",
+    "Podcasts discussing healthcare system failures"
+  ],
+  "risk_notes": [
+    "Potential backlash from healthcare providers",
+    "Challenge of public perception regarding NHS",
+    "Sensitive nature of discussing mental capacity and care"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

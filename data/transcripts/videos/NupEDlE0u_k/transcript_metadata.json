@@ -1,0 +1,20 @@
+{
+  "video_id": "NupEDlE0u_k",
+  "channel_id": "UCUsm-fannqOY02PNN67C0KA",
+  "channel_name": "NMás",
+  "title": "El Ingeniero que volvió a la Tierra",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NupEDlE0u_k.mp3",
+  "transcribed_at": "2026-06-14T16:18:50.703936+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2454,
+  "text_sha256": "de8cc271c263fc2d738e46185bbbd388fee4658ef7c1f98ffaab647ef9fc1df8",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\NupEDlE0u_k\\transcript_segments.jsonl",
+  "segment_count": 34,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T16:22:06.515072+00:00",
+  "duration_seconds": 159.72999572753906
+}

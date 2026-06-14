@@ -1,0 +1,87 @@
+{
+  "video_id": "Q8b0HOGijSY",
+  "language": "es",
+  "summary": "En este video, los anfitriones exploran la mística y escalofriante Isla de las Muñecas en Xochimilco, Ciudad de México. Se presentan historias sobre el origen de la isla, la vida de Don Julián y las muñecas que supuestamente están conectadas con lo paranormal. A lo largo de su recorrido, se comparten experiencias de miedo y se discuten las creencias relacionadas con las muñecas.",
+  "main_topics": [
+    "La Isla de las Muñecas",
+    "Historia de Don Julián",
+    "Paranormalidad y experiencias",
+    "Cultura y tradiciones locales"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la Isla de las Muñecas",
+      "purpose": "Presentar el lugar y su significado cultural.",
+      "summary": "Los anfitriones llegan a la Isla de las Muñecas y explican su historia y curiosidades."
+    },
+    {
+      "section": "Recorrido por la isla",
+      "purpose": "Explorar y reaccionar ante el ambiente.",
+      "summary": "Mientras recorren la isla, comparten experiencias y testimonios sobre lo paranormal."
+    },
+    {
+      "section": "Interacciones con muñecas",
+      "purpose": "Comentar sobre las experiencias de los visitantes con las muñecas.",
+      "summary": "Los anfitriones discuten la influencia de las muñecas y la historia de Don Julián."
+    },
+    {
+      "section": "Reflexiones finales",
+      "purpose": "Concluir el video y reflexionar sobre la experiencia.",
+      "summary": "Invitan a la audiencia a reflexionar sobre el contexto y a considerar un posible regreso."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intriguing Setting",
+    "hook_text": "Hoy nos encontramos en uno de los lugares más místicos y escalofriantes de la ciudad de México, la Isla de las Muñecas.",
+    "why_it_works": "Apela a la curiosidad del espectador al mencionar un lugar famoso por su misterio y lo paranormal."
+  },
+  "claims": [
+    {
+      "claim": "La Isla de las Muñecas está habitada por espíritus.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Las muñecas pueden moverse por sí solas.",
+      "support_level": "weak",
+      "risk": "medium"
+    },
+    {
+      "claim": "Don Julián colocó las muñecas para ahuyentar espíritus.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Historias de turistas que experimentan fenómenos extraños.",
+    "Testimonios de los anfitriones sobre la atmósfera de la isla.",
+    "Descripción de las muñecas y su estado deteriorado."
+  ],
+  "actionable_ideas": [
+    "Visitar la Isla de las Muñecas en horario nocturno.",
+    "Investigar más sobre la historia de Don Julián y la isla.",
+    "Participar en un tour paranormal en lugares similares."
+  ],
+  "audience": "Personas interesadas en lo paranormal y en viajes turísticos.",
+  "tone": "Conversational y exploratorio.",
+  "content_style": "Narrativo y descriptivo.",
+  "retention_devices": [
+    "Preguntas retóricas durante el recorrido.",
+    "Relatos escalofriantes que generan suspenso.",
+    "Llamados finales a la acción e invitaciones a suscribirse."
+  ],
+  "title_supporting_quotes": [
+    "Yo creo que hay que decir algo, ¿no? Como con respeto.",
+    "La isla se caracteriza por tener más de 1,500 muñecas deterioradas."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un podcast sobre leyendas urbanas en lugares turísticos.",
+    "Realizar un mini-documental sobre la cultura de las muñecas en México.",
+    "Desarrollar un blog de viajes centrado en sitios paranormales."
+  ],
+  "risk_notes": [
+    "Algunas afirmaciones sobre fenómenos paranormales pueden ser consideradas controversiales.",
+    "Interacción con el tema puede atraer críticas de escepticismo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

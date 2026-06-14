@@ -1,0 +1,89 @@
+{
+  "video_id": "NupEDlE0u_k",
+  "language": "Spanish",
+  "summary": "Eduardo Horcacitas, ingeniero ambiental, regresa a Tlayacapan, Morelos, para trabajar la tierra y cultivar nopales. A pesar de las duras condiciones del campo, destaca la importancia de la agricultura y la conexión entre la ciudad y el campo.",
+  "main_topics": [
+    "Retorno al campo",
+    "Agricultura y cultivos",
+    "Impacto social",
+    "Vida en el campo",
+    "Desconexión urbana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Eduardo",
+      "purpose": "Presentar al protagonista y su decisión de regresar al campo.",
+      "summary": "Eduardo, un ingeniero ambiental, decide dejar la Ciudad de México para trabajar la tierra en Tlayacapan."
+    },
+    {
+      "section": "Trabajo en el campo",
+      "purpose": "Describir la dureza del trabajo agrícola.",
+      "summary": "Eduardo comparte sus experiencias duras de trabajar la tierra, exponiéndose a riesgos y problemas de salud."
+    },
+    {
+      "section": "Valor del nopal",
+      "purpose": "Resaltar la producción de nopales.",
+      "summary": "Explica la abundancia y el precio del nopal, así como la generosidad del campo."
+    },
+    {
+      "section": "Conexión con los compradores",
+      "purpose": "Agradecer el apoyo de la comunidad.",
+      "summary": "Eduardo expresa gratitud hacia quienes le compran y apoyan su labor."
+    },
+    {
+      "section": "Reflexión sobre la agricultura",
+      "purpose": "Concluir con una crítica a la desconexión entre la ciudad y el campo.",
+      "summary": "Eduardo enfatiza la importancia de recordar el origen de los alimentos y la fragilidad del sistema agrícola."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal Anecdote",
+    "hook_text": "A lo mejor mucha gente ha de decir como, no, tiene carrera y anda trabajando vendiendo nopales.",
+    "why_it_works": "Capta la atención al desafiar las percepciones comunes sobre el trabajo agrícola y la carrera profesional."
+  },
+  "claims": [
+    {
+      "claim": "La agricultura es una necesidad fundamental.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "El trabajo en el campo es extremadamente duro.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La desconexión con el campo es perjudicial para la sociedad.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover la valorización de productos agrícolas locales.",
+    "Fomentar el trabajo agrícola y el retorno a la tierra.",
+    "Crear conciencia sobre el origen de nuestros alimentos."
+  ],
+  "audience": "Personas interesadas en la agricultura, sostenibilidad y el impacto social.",
+  "tone": "Reflexivo y crítico.",
+  "content_style": "Narrativo y personal.",
+  "retention_devices": [
+    "Anécdotas personales",
+    "Reflexiones profundas",
+    "Datos sobre la agricultura"
+  ],
+  "title_supporting_quotes": [
+    "La peor chingada así de mi vida que había de tener a mis 17 años.",
+    "Si el campo un día se olvida de la gente, todo se cae."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre la importancia de los alimentos locales.",
+    "Documentaciones visuales del trabajo agrícola.",
+    "Entrevistas con productores locales."
+  ],
+  "risk_notes": [
+    "La crítica social puede ser polarizante.",
+    "El enfoque en duras condiciones laborales puede ser percibido negativamente por algunas audiencias."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Ok5257sn5M0",
+  "channel_id": "UC16niRr50-MSBwiO3YDb3RA",
+  "channel_name": "BBC News",
+  "title": "Disabled woman put in nursing home against her will. #UK #Disability #BBCNews",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Ok5257sn5M0.mp3",
+  "transcribed_at": "2026-06-14T16:13:10.632570+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1459,
+  "text_sha256": "30d6c9c5f4185e622edd329e9a053285a04a4d040000c2de78256cf8c2d3b8dd",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Ok5257sn5M0\\transcript_segments.jsonl",
+  "segment_count": 25,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-14T16:23:40.552032+00:00",
+  "duration_seconds": 117.37000274658203
+}

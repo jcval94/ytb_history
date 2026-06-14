@@ -1,0 +1,98 @@
+{
+  "video_id": "OU2k-zqqxJU",
+  "language": "es",
+  "summary": "El video explora cómo el entorno urbano y las decisiones de planificación afectan la salud física y mental de los individuos. Destaca la influencia de la contaminación, la organización de espacios públicos y la movilidad en el bienestar general, argumentando que nuestra calidad de vida puede mejorar al reconsiderar nuestro entorno habitacional y urbano.",
+  "main_topics": [
+    "Impacto del entorno urbano en la salud mental y física",
+    "Caminabilidad y su conexión con la salud",
+    "Relación entre áreas verdes y bienestar",
+    "Contaminación y sus efectos en la vida urbana",
+    "Desigualdad en la planificación urbana"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el tema y captar la atención del espectador.",
+      "summary": "Se plantea que a veces una mejor vida está a sólo unas cuadras de distancia y que la salud puede verse afectada por el entorno."
+    },
+    {
+      "section": "Problemas del entorno urbano",
+      "purpose": "Exponer cómo las condiciones de vida influyen en la calidad de vida.",
+      "summary": "Se analizan los problemas de vivir en espacios insalubres y la normalización de condiciones perjudiciales."
+    },
+    {
+      "section": "Caminabilidad y salud",
+      "purpose": "Discutir la importancia de la caminabilidad en las ciudades.",
+      "summary": "Se argumenta cómo vivir en barrios caminables reduce el riesgo de enfermedades."
+    },
+    {
+      "section": "Desigualdad en el acceso a áreas verdes",
+      "purpose": "Explorar cómo la falta de áreas verdes afecta a comunidades marginadas.",
+      "summary": "Se menciona que los barrios pobres tienen menos áreas verdes, lo que impacta negativamente en la salud."
+    },
+    {
+      "section": "Política y diseño urbano",
+      "purpose": "Examinar el papel de las políticas en la planificación urbana.",
+      "summary": "Se discute cómo las decisiones políticas impactan la calidad de vida a través del diseño urbano y el uso del espacio."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Cerrar el video proponiendo reflexiones sobre el tema.",
+      "summary": "Se invita a reflexionar sobre cómo el entorno puede cambiar la calidad de vida y se anima a realizar un pequeño test de caminabilidad."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "A veces una mejor vida no está a 10 hábitos financieros o a un cambio de mentalidad de distancia.",
+    "why_it_works": "Despierta la curiosidad al sugerir que el cambio hacia una mejor vida puede ser más simple y cercano de lo que se piensa."
+  },
+  "claims": [
+    {
+      "claim": "El entorno urbano puede afectar negativamente la salud mental y física.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Los barrios con más áreas verdes tienen mejor salud entre sus habitantes.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las decisiones políticas influyen en la caminabilidad y accesibilidad de un barrio.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    }
+  ],
+  "examples": [
+    "Reubicar a personas de barrios poco saludables a otros más caminables y con más áreas verdes.",
+    "Implementar políticas que fomenten la creación de espacios públicos con árboles y áreas verdes."
+  ],
+  "actionable_ideas": [
+    "Evalúa la caminabilidad de tu barrio realizando una caminata de 30 minutos.",
+    "Propón a las autoridades locales la mejora de espacios públicos y la inclusión de más áreas verdes.",
+    "Participa en iniciativas comunitarias que busquen mejorar la calidad de vida urbana."
+  ],
+  "audience": "Personas interesadas en urbanismo, salud pública, y calidad de vida.",
+  "tone": "Reflexivo y argumentativo.",
+  "content_style": "Narrativo y persuasivo.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Estadísticas impactantes",
+    "Historias personales"
+  ],
+  "title_supporting_quotes": [
+    "\"Las ciudades son como grandes organismos vivos...\"",
+    "\"Vivimos rodeados de elementos que, aunque normalizamos, nos están dañando.\"",
+    "\"La caminabilidad no es solo tener banquetas, sino que la calle te llame a usarla.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Resúmenes breves para redes sociales",
+    "Mesas redondas sobre urbanismo y salud pública",
+    "Infografías sobre los efectos del diseño urbano en la salud"
+  ],
+  "risk_notes": [
+    "Cualquier cambio en políticas urbanas puede resultar en oposiciones políticas.",
+    "Simplificar el mensaje puede perder la complejidad del problema tratado."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
