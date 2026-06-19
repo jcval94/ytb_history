@@ -1,0 +1,14 @@
+{
+  "video_id": "G3Txqm5PVho",
+  "channel_id": "UCwd8Byi93KbnsYmCcKLExvQ",
+  "channel_name": "Negocios TV",
+  "title": "¿ESTÁ TRUMP PREPARANDO LAS MALETAS DE LA CASA BLANCA?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\G3Txqm5PVho.mp3",
+  "transcribed_at": "2026-06-19T21:34:33.412726+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8640,
+  "text_sha256": "68f7a9dc361e5335a2c35d7ee27f662f57d0570f7c920f693c9ee94921fd216c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

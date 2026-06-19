@@ -1,0 +1,93 @@
+{
+  "video_id": "0zjVtyt_pYY",
+  "language": "spanish",
+  "summary": "Raúl Castro ha sido acusado formalmente por la justicia de Estados Unidos por conspiración para asesinar a ciudadanos estadounidenses, entre otros cargos. Esta acusación coincide con el 30 aniversario de un incidente en 1996 donde cazas cubanos derribaron avionetas civiles. Marco Rubio también está procesando a personas vinculadas al régimen cubano en EE.UU., lo que señala un cambio de enfoque en las políticas hacia Cuba.",
+  "main_topics": [
+    "Raúl Castro acusado",
+    "Incidente de 1996",
+    "Marco Rubio y deportaciones",
+    "Cambio de políticas hacia Cuba",
+    "GAESA y régimen cubano"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la noticia sobre Raúl Castro",
+      "summary": "Raúl Castro es oficialmente un fugitivo debido a una orden de arresto emitida por la justicia estadounidense por su papel en asesinar ciudadanos estadounidenses."
+    },
+    {
+      "section": "Detalles de la acusación",
+      "purpose": "Explicar los cargos específicos",
+      "summary": "La fiscalía ha imputado a Castro con siete cargos, incluyendo cuatro por asesinato y dos por destrucción de aeronaves."
+    },
+    {
+      "section": "Historia del evento",
+      "purpose": "Contextualizar la acusación dentro de un evento histórico",
+      "summary": "Los cargos se refieren a un ataque en 1996 en el que fueron derribadas avionetas civiles, resultando en varias muertes."
+    },
+    {
+      "section": "Implicaciones políticas actuales",
+      "purpose": "Analizar el impacto de las acusaciones en la política cubana",
+      "summary": "Las acusaciones contra Castro y las deportaciones de personas relacionadas con el régimen indican un endurecimiento de las políticas estadounidenses hacia Cuba."
+    },
+    {
+      "section": "Cierre y reflexiones",
+      "purpose": "Concluir y plantear preguntas sobre el futuro",
+      "summary": "Se plantea la interrogante de cómo estas acciones podrían llevar a un cambio significativo en el gobierno cubano."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Por qué vuelve a surgir este tema justo ahora?",
+    "why_it_works": "Invita a la curiosidad y a la reflexión sobre las implicaciones actuales de un evento histórico."
+  },
+  "claims": [
+    {
+      "claim": "Raúl Castro ha sido acusado de conspiración para asesinar a ciudadanos estadounidenses.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La imputación es estratégica y busca presionar al régimen cubano.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Marco Rubio está deportando a personas con nexos al régimen cubano.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Raúl Castro como fugitivo",
+    "La historia de los Hermanos al Rescate",
+    "Operaciones de GAESA"
+  ],
+  "actionable_ideas": [
+    "Seguir de cerca las políticas de EE.UU. hacia Cuba",
+    "Monitorear las deportaciones relacionadas con el régimen cubano",
+    "Investigar sobre GAESA y su influencia económica en Cuba"
+  ],
+  "audience": "Interesados en política cubana y relaciones internacionales",
+  "tone": "Informativo y analítico",
+  "content_style": "Periodístico",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Contexto histórico",
+    "Cifras y datos impactantes"
+  ],
+  "title_supporting_quotes": [
+    "\"Raúl Castro ya oficialmente un fugitivo de la justicia de Estados Unidos.\"",
+    "\"La imputación de Raúl Castro por la justicia de Estados Unidos ya supone un misilazo contra la...\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la historia de las relaciones Cuba-EE.UU.",
+    "Desarrollar un análisis sobre las implicaciones económicas de GAESA.",
+    "Producir un documental sobre Raúl Castro y su legado."
+  ],
+  "risk_notes": [
+    "Las acusaciones podrían ser vistas como una excusa para intervención militar por parte de EE.UU.",
+    "Las deportaciones podrían afectar a familias cubanas en EE.UU."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

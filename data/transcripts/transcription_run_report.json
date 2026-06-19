@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-14T16:20:19.296949+00:00",
+  "generated_at": "2026-06-19T21:36:55.833390+00:00",
   "limit": 10,
   "processed": 10,
-  "transcribed_success": 8,
+  "transcribed_success": 10,
   "skipped_no_audio_source": 0,
   "skipped_invalid_video_id": 0,
   "skipped_missing_ytdlp": 0,
   "failed_audio_download": 0,
   "skipped_already_transcribed": 0,
-  "failed": 2,
+  "failed": 0,
   "queue_total": 10,
-  "registry_success_before_run": 445,
-  "persisted_success_before_run": 445,
+  "registry_success_before_run": 453,
+  "persisted_success_before_run": 453,
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
   "audio_source_dir_exists": true,
   "audio_source_dir_is_dir": true,
@@ -79,57 +79,57 @@
   },
   "media_resolution_details": [
     {
-      "video_id": "7MbAaYCR5nU",
+      "video_id": "P2R9tA0eBCU",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\7MbAaYCR5nU.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\P2R9tA0eBCU.mp3"
     },
     {
-      "video_id": "Ok5257sn5M0",
+      "video_id": "j25SiS1Dsn8",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Ok5257sn5M0.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\j25SiS1Dsn8.mp3"
     },
     {
-      "video_id": "Q8b0HOGijSY",
+      "video_id": "G3Txqm5PVho",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Q8b0HOGijSY.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\G3Txqm5PVho.mp3"
     },
     {
-      "video_id": "skmNCUA9usg",
+      "video_id": "0me3wqJCBq4",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\skmNCUA9usg.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0me3wqJCBq4.mp3"
     },
     {
-      "video_id": "5n3yAxHpehk",
+      "video_id": "bGyG1eczk1s",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5n3yAxHpehk.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\bGyG1eczk1s.mp3"
     },
     {
-      "video_id": "s0cwLxJeA_M",
+      "video_id": "jXsHFSZwyds",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\s0cwLxJeA_M.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\jXsHFSZwyds.mp3"
     },
     {
-      "video_id": "Px-Zr1lrtNA",
+      "video_id": "0zjVtyt_pYY",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Px-Zr1lrtNA.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0zjVtyt_pYY.mp3"
     },
     {
-      "video_id": "NupEDlE0u_k",
+      "video_id": "zTw73hPpgE0",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NupEDlE0u_k.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zTw73hPpgE0.mp3"
     },
     {
-      "video_id": "rVDyluU8B_w",
+      "video_id": "h25rgJFC9r0",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\rVDyluU8B_w.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\h25rgJFC9r0.mp3"
     },
     {
-      "video_id": "OU2k-zqqxJU",
+      "video_id": "T41pOww9TFw",
       "source": "downloaded_ytdlp",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\OU2k-zqqxJU.mp3"
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\T41pOww9TFw.mp3"
     }
   ],
-  "segmented_transcriptions": 3,
+  "segmented_transcriptions": 0,
   "allow_ytdlp_fallback": true,
   "ytdlp_runtime_options": {
     "used_cookies_file": false,
@@ -151,51 +151,34 @@
   },
   "ytdlp_download_failures": [],
   "processed_video_ids": [
-    "Ok5257sn5M0",
-    "Q8b0HOGijSY",
-    "skmNCUA9usg",
-    "5n3yAxHpehk",
-    "Px-Zr1lrtNA",
-    "NupEDlE0u_k",
-    "rVDyluU8B_w",
-    "OU2k-zqqxJU",
-    "7MbAaYCR5nU",
-    "s0cwLxJeA_M"
+    "P2R9tA0eBCU",
+    "j25SiS1Dsn8",
+    "G3Txqm5PVho",
+    "0me3wqJCBq4",
+    "bGyG1eczk1s",
+    "jXsHFSZwyds",
+    "0zjVtyt_pYY",
+    "zTw73hPpgE0",
+    "h25rgJFC9r0",
+    "T41pOww9TFw"
   ],
   "success_video_ids": [
-    "Ok5257sn5M0",
-    "Q8b0HOGijSY",
-    "skmNCUA9usg",
-    "5n3yAxHpehk",
-    "Px-Zr1lrtNA",
-    "NupEDlE0u_k",
-    "rVDyluU8B_w",
-    "OU2k-zqqxJU"
+    "P2R9tA0eBCU",
+    "j25SiS1Dsn8",
+    "G3Txqm5PVho",
+    "0me3wqJCBq4",
+    "bGyG1eczk1s",
+    "jXsHFSZwyds",
+    "0zjVtyt_pYY",
+    "zTw73hPpgE0",
+    "h25rgJFC9r0",
+    "T41pOww9TFw"
   ],
   "already_transcribed_video_ids": [],
   "missing_audio_video_ids": [],
   "missing_audio_details": [],
   "invalid_video_id_details": [],
-  "failed_video_ids": [
-    "7MbAaYCR5nU",
-    "s0cwLxJeA_M"
-  ],
-  "failed_details": [
-    {
-      "video_id": "7MbAaYCR5nU",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\7MbAaYCR5nU.mp3",
-      "error_type": "BadRequestError",
-      "error_message": "Error code: 400 - {'error': {'message': 'Audio file might be corrupted or unsupported', 'type': 'invalid_request_error', 'param': 'file', 'code': 'invalid_value'}}"
-    },
-    {
-      "video_id": "s0cwLxJeA_M",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\s0cwLxJeA_M.mp3",
-      "error_type": "BadRequestError",
-      "error_message": "Error code: 400 - {'error': {'message': 'Audio file might be corrupted or unsupported', 'type': 'invalid_request_error', 'param': 'file', 'code': 'invalid_value'}}"
-    }
-  ],
-  "warnings": [
-    "transcription_failed:7MbAaYCR5nU:BadRequestError",
-    "transcription_failed:s0cwLxJeA_M:BadRequestError"
-  ]
+  "failed_video_ids": [],
+  "failed_details": [],
+  "warnings": []
 }

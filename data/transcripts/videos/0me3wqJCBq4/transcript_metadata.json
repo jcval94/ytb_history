@@ -1,0 +1,20 @@
+{
+  "video_id": "0me3wqJCBq4",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Trump says US and Iran deal to end war is ‘largely negotiated’ | AJ #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\0me3wqJCBq4.mp3",
+  "transcribed_at": "2026-06-19T21:34:43.128958+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1074,
+  "text_sha256": "d093b51e56ddd9b6fd75022c448d52b672032c14db3d902729258d80c9315244",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\0me3wqJCBq4\\transcript_segments.jsonl",
+  "segment_count": 6,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-19T21:36:59.103117+00:00",
+  "duration_seconds": 145.88999938964844
+}

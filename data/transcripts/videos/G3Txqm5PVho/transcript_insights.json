@@ -1,0 +1,94 @@
+{
+  "video_id": "G3Txqm5PVho",
+  "language": "es",
+  "summary": "El video analiza la influencia de Benjamín Netanyahu en la política energética y militar de Oriente Medio, especialmente en relación con Irán y el papel de Estados Unidos bajo Trump. Se discuten las implicaciones de la guerra y los movimientos económicos que favorecen al yuan chino.",
+  "main_topics": [
+    "Influencia de Netanyahu",
+    "Conflicto entre Irán e Israel",
+    "Política de Trump",
+    "Energía y economía",
+    "Impacto en el yuan chino"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción sobre fotografía y contexto político",
+      "purpose": "Presentar la complejidad de la situación y el enfoque en Netanyahu",
+      "summary": "El narrador introduce la idea de que la política y la fotografía son complicadas, señalando el papel de Netanyahu en las elecciones de Israel."
+    },
+    {
+      "section": "Análisis de Newsweek sobre Netanyahu",
+      "purpose": "Describir cómo Netanyahu se presenta en medios internacionales",
+      "summary": "Se refiere a un artículo de Newsweek que destaca la figura de Netanyahu como un constructor del nuevo orden energético."
+    },
+    {
+      "section": "Impacto de Netanyahu en la política energética",
+      "purpose": "Explorar la visión de Netanyahu sobre la energía y el conflicto en Oriente Medio",
+      "summary": "Se discuten las ideas de Netanyahu desde 1994 sobre Israel como un centro energético, en el contexto del caos energético actual."
+    },
+    {
+      "section": "Estrategia de Trump y su impacto",
+      "purpose": "Examinar el papel de Trump en la dinámica actual",
+      "summary": "Trump busca un acuerdo con Irán, mientras Netanyahu es escéptico sobre la capacidad de negociación."
+    },
+    {
+      "section": "Condiciones de negociación y conflictos abiertos",
+      "purpose": "Detallar las demandas de Irán y la posición de Israel",
+      "summary": "Se observan las exigencias de Irán para cualquier diálogo, y cómo Israel busca neutralizar amenazas regionales."
+    },
+    {
+      "section": "Conclusión sobre el futuro económico y político",
+      "purpose": "Reflexionar sobre el impacto en el yuan y el futuro de la región",
+      "summary": "Se concluye que China se beneficia de la situación en Oriente Medio, afectando el comercio internacional."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "provocative statement",
+    "hook_text": "La fotografía viene al través de cómo...",
+    "why_it_works": "Engancha al espectador al sugerir una complejidad detrás de la política actual."
+  },
+  "claims": [
+    {
+      "claim": "Netanyahu está construyendo un nuevo orden energético",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Las decisiones de Trump influencian el conflicto en Oriente Medio",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El yuan está cobrando protagonismo en el comercio regional",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "La guerra de Irán abre una ventana de oro para el yuan chino.",
+    "Estados Unidos quiere concesiones verificables de Irán."
+  ],
+  "actionable_ideas": [
+    "Monitorear el impacto de la política energética israelí en el mercado internacional.",
+    "Analizar cómo funciona el comercio en yuanes en la región."
+  ],
+  "audience": "Personas interesadas en política internacional y economía.",
+  "tone": "informativo y crítico",
+  "content_style": "análisis profundo",
+  "retention_devices": [
+    "Citas impactantes de líderes políticos",
+    "Estadísticas sobre el comercio en yuanes"
+  ],
+  "title_supporting_quotes": [
+    "Mire, en un entorno donde el artículo va muy a favor de Netanyahu...",
+    "Trump tiene que detener la guerra o ganarla..."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video explicativo sobre la política en Oriente Medio.",
+    "Desarrollar un artículo sobre el impacto del yuan en la economía global."
+  ],
+  "risk_notes": [
+    "La polarización política puede llevar a conflictos mayores.",
+    "Las decisiones económicas pueden influir en la inestabilidad regional."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

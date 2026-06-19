@@ -1,0 +1,73 @@
+{
+  "video_id": "jXsHFSZwyds",
+  "language": "es",
+  "summary": "El video explora la relación entre la gratificación instantánea y la inversión a largo plazo. Se presentan ejemplos sobre cómo elegir entre cantidades de dinero hoy versus en el futuro, destacando la importancia de la paciencia en las inversiones.",
+  "main_topics": [
+    "Gratificación instantánea",
+    "Inversiones a largo plazo",
+    "Paciencia financiera"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la dilema de elegir entre dinero inmediato o futuro.",
+      "summary": "El presentador plantea una pregunta sobre elecciones financieras."
+    },
+    {
+      "section": "Discusión del dilema",
+      "purpose": "Ilustrar las consecuencias de elegir dinero inmediato.",
+      "summary": "Se discute la elección de 20 dólares hoy versus 200 dólares en un año."
+    },
+    {
+      "section": "Reflexión final",
+      "purpose": "Conclusión sobre la importancia de la paciencia en inversiones.",
+      "summary": "El presentador resalta cómo la falta de espera puede resultar en grandes pérdidas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta intrigante",
+    "hook_text": "¿Qué prefieres, 20 dólares hoy o 200 dólares dentro de un año?",
+    "why_it_works": "Capta la atención del espectador al presentar un dilema inmediato y relatable."
+  },
+  "claims": [
+    {
+      "claim": "Se sacrifica la gratificación en el corto plazo para ganar más dinero en el largo plazo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "La falta de paciencia lleva a perder dinero.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "20 dólares hoy vs. 200 dólares en un año",
+    "200 dólares hoy vs. 2,000 dólares en un año"
+  ],
+  "actionable_ideas": [
+    "Practicar la paciencia al invertir.",
+    "Evaluar las opciones financieras a largo plazo.",
+    "Buscar educación financiera para tomar mejores decisiones."
+  ],
+  "audience": "Personas interesadas en finanzas y inversiones",
+  "tone": "reflexivo y educativo",
+  "content_style": "diálogo informal",
+  "retention_devices": [
+    "Ejemplos claros y relevantes",
+    "Preguntas retóricas para involucrar al espectador"
+  ],
+  "title_supporting_quotes": [
+    "Si hubieras esperado tendrías 2,200 dólares.",
+    "El que no está dispuesto a esperar, dinero no va a ganar."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un video sobre estrategias de inversión a largo plazo.",
+    "Desarrollar contenido sobre la psicología del dinero."
+  ],
+  "risk_notes": [
+    "Algunas personas pueden rechazar la idea de esperar por dinero.",
+    "Puede haber confusión sobre inversiones a largo plazo."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

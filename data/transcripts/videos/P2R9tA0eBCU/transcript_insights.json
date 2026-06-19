@@ -1,0 +1,84 @@
+{
+  "video_id": "P2R9tA0eBCU",
+  "language": "es",
+  "summary": "El narrador habla sobre las personas que entran en tu vida no para apoyarte, sino para aprovecharse de ti. Advierte sobre la falta de reciprocidad en estas relaciones y aconseja alejarnos de quienes no nos valoran.",
+  "main_topics": [
+    "Relaciones tóxicas",
+    "Reciprocidad en las relaciones",
+    "Lealtad y beneficio",
+    "Autovaloración"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a las relaciones tóxicas",
+      "purpose": "Presentar la idea central sobre el tipo de personas que entran en nuestra vida.",
+      "summary": "El narrador expone que algunas personas no vienen a aportar valor, sino a aprovecharse."
+    },
+    {
+      "section": "Identificación de la falta de lealtad",
+      "purpose": "Demostrar cómo estas personas no son leales.",
+      "summary": "Se menciona que estas personas solo están interesadas en lo que pueden obtener, no en la persona misma."
+    },
+    {
+      "section": "Consequences of unreciprocated relationships",
+      "purpose": "Advertir sobre los riesgos de mantener relaciones unilaterales.",
+      "summary": "El narrador aconseja dejar de esforzarse por quienes no están dispuestos a ayudar."
+    },
+    {
+      "section": "Cierre y llamado a la auto-reflexión",
+      "purpose": "Invitar a la audiencia a reflexionar sobre sus relaciones.",
+      "summary": "Se sugiere practicar la reciprocidad y alejarse de relaciones tóxicas."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Cita impactante",
+    "hook_text": "Algunas personas no llegan a tu vida para quererte.",
+    "why_it_works": "Capta la atención mediante una afirmación contundente y genera curiosidad sobre el contenido."
+  },
+  "claims": [
+    {
+      "claim": "Hay personas que se aprovechan de los demás.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las relaciones deben ser recíprocas.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Las personas tóxicas no ofrecen ayuda.",
+      "support_level": "implicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Ejemplos de personas que solo te buscan en momentos de necesidad.",
+    "Situaciones en las que has dado más de lo que recibes."
+  ],
+  "actionable_ideas": [
+    "Evaluar las relaciones y alejarnos de las tóxicas.",
+    "Fomentar la reciprocidad y la lealtad en nuestras conexiones.",
+    "Reflexionar sobre el valor propio y establecer límites."
+  ],
+  "audience": "Personas en busca de mejorar sus relaciones personales.",
+  "tone": "Reflexivo y directo.",
+  "content_style": "Conversacional y personal.",
+  "retention_devices": [
+    "Uso de anécdotas personales.",
+    "Repetición de frases clave para enfatizar puntos importantes."
+  ],
+  "title_supporting_quotes": [
+    "No te ven como una persona, te ven como una oportunidad.",
+    "Trata a la gente exactamente como te tratan a ti."
+  ],
+  "creative_reuse_opportunities": [
+    "Desarrollo de un artículo sobre relaciones interpersonales.",
+    "Creación de un video sobre la importancia de la reciprocidad."
+  ],
+  "risk_notes": [
+    "Posible reacción emocional de la audiencia al reconocer relaciones tóxicas.",
+    "Requiere sensibilidad al abordar el tema para evitar malentendidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

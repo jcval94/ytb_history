@@ -1,0 +1,58 @@
+{
+  "video_id": "h25rgJFC9r0",
+  "language": "English",
+  "summary": "Penta retains the Intercontinental Champion title in an exciting match, with commentary highlighting Ethan Page's possible miscalculation.",
+  "main_topics": [
+    "Penta's victory",
+    "Intercontinental Champion title",
+    "Ethan Page's tactics"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Match Result",
+      "purpose": "To announce the winner and title retention.",
+      "summary": "Penta defeated his opponent and remains the Intercontinental Champion."
+    },
+    {
+      "section": "Commentary",
+      "purpose": "To provide insight into the match dynamics.",
+      "summary": "Commentary reflects on Ethan Page's strategy and its implications."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Exciting Moment",
+    "hook_text": "Penta retains the title! What a match!",
+    "why_it_works": "It grabs attention by highlighting the excitement and significance of the victory."
+  },
+  "claims": [
+    {
+      "claim": "Penta is the Intercontinental Champion.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "Ethan Page may have made a strategic error.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [],
+  "audience": "Wrestling fans",
+  "tone": "Excited",
+  "content_style": "Sports commentary",
+  "retention_devices": [
+    "Use of dramatic announcements",
+    "Highlighting key moments"
+  ],
+  "title_supporting_quotes": [
+    "What a match!",
+    "Penta retains the title!"
+  ],
+  "creative_reuse_opportunities": [
+    "Highlights for promotional content",
+    "Analysis videos on match strategies"
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

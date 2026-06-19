@@ -1,0 +1,20 @@
+{
+  "video_id": "P2R9tA0eBCU",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Por esto llegan algunas personas a tu vida #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\P2R9tA0eBCU.mp3",
+  "transcribed_at": "2026-06-19T21:33:32.463760+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 817,
+  "text_sha256": "10f7ed042bcdbdff40bcd9c04846066beabf577c1bfb4f5461c6a8a263e2cc59",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\P2R9tA0eBCU\\transcript_segments.jsonl",
+  "segment_count": 20,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-19T22:13:44.000086+00:00",
+  "duration_seconds": 39.84000015258789
+}

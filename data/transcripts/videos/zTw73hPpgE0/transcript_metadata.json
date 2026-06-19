@@ -1,0 +1,14 @@
+{
+  "video_id": "zTw73hPpgE0",
+  "channel_id": "UCtvu0f5wRLBRYISBw_3NDsg",
+  "channel_name": "Fuera de Foco",
+  "title": "MANDALORIAN & GROGU: GROGU ME MANIPULO Y CAÍ",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\zTw73hPpgE0.mp3",
+  "transcribed_at": "2026-06-19T21:36:36.949434+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8785,
+  "text_sha256": "e0bbcccd0909d9c9affd78d09ad32202e82277f736180116c2ee7b0398b13237",
+  "repo_schema_version": "transcript_metadata_v1"
+}

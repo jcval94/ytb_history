@@ -1,0 +1,14 @@
+{
+  "video_id": "T41pOww9TFw",
+  "channel_id": "UCS0lmlVIYVz2qeWlZ_ynIWg",
+  "channel_name": "AJ+ Español",
+  "title": "Israel: ¿Por qué nadie avisó?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\T41pOww9TFw.mp3",
+  "transcribed_at": "2026-06-19T21:36:55.785618+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1836,
+  "text_sha256": "a68772b0efb90417ef0eb6c49e567e9445b761d82a26e81df55ca626cdef43ac",
+  "repo_schema_version": "transcript_metadata_v1"
+}

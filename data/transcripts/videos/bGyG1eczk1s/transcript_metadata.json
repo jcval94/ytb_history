@@ -1,0 +1,14 @@
+{
+  "video_id": "bGyG1eczk1s",
+  "channel_id": "UCt7k7y_xTkkc1Jeh7cdAjDQ",
+  "channel_name": "SinEmbargo Al Aire",
+  "title": "Zapatero a tus zapatos. Por Muna D. Buchahin",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\bGyG1eczk1s.mp3",
+  "transcribed_at": "2026-06-19T21:35:19.730637+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9078,
+  "text_sha256": "764884c69d22fdaac0f94e87327e8a279162693aa8f671b0d678a387138f9f71",
+  "repo_schema_version": "transcript_metadata_v1"
+}

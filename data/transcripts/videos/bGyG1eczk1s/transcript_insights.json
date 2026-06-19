@@ -1,0 +1,92 @@
+{
+  "video_id": "bGyG1eczk1s",
+  "language": "es",
+  "summary": "Muna Buchaín, experta en anticorrupción, discute la importancia de la rendición de cuentas en el contexto de la corrupción en México y presenta el caso del expresidente español José Luis Rodríguez Zapatero. Acentúa la necesidad de investigadores capacitables y la comparativa entre las prácticas en España y México en cuanto a la lucha contra la corrupción.",
+  "main_topics": [
+    "Anticorrupción",
+    "Rendición de cuentas",
+    "Corrupción en México",
+    "Caso José Luis Rodríguez Zapatero",
+    "Investigaciones internas"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema y la experta",
+      "summary": "Muna Buchaín saluda y explica su background en anticorrupción y la importancia de entender las tendencias del fraude."
+    },
+    {
+      "section": "Concepto de 'Zapatero a tus zapatos'",
+      "purpose": "Explicar el proverbio y su relevancia",
+      "summary": "Comenta sobre el proverbio y su aplicación en la crítica hacia aquellos que opinan fuera de su ámbito de conocimiento."
+    },
+    {
+      "section": "Análisis del caso de Zapatero",
+      "purpose": "Profundizar en el caso judicial y su impacto",
+      "summary": "Discute el caso del expresidente español y su relación con la corrupción, enfatizando la claridad del juez en la resolución."
+    },
+    {
+      "section": "Comparativa entre México y España",
+      "purpose": "Iluminar diferencias en la rendición de cuentas",
+      "summary": "Destaca las fallas en México en temas de transparencia y vigilancia a la corrupción en comparación con prácticas observadas en España."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Llamar a la acción y reflexión",
+      "summary": "Invita a conocer y cuestionar la corrupción en las estructuras de poder y a exigir accountability en el ejercicio del gobierno."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal anecdote",
+    "hook_text": "Zapatero a tus zapatos es un dicho, un proverbio que viene de una anécdota atribuida al pintor griego Apeles.",
+    "why_it_works": "La anécdota establece un vínculo emocional y contextualiza el tema de manera accesible."
+  },
+  "claims": [
+    {
+      "claim": "La corrupción es un problema sistemático en México.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "El caso de Zapatero ejemplifica la necesidad de rendición de cuentas.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Las investigaciones en México son inadecuadas y superficiales.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Cirel como empresa vinculada a la corrupción",
+    "Estafa maestra y su impacto en México"
+  ],
+  "actionable_ideas": [
+    "Promover la capacitación en temas de anticorrupción para empleados.",
+    "Fomentar una cultura de transparencia dentro de las instituciones.",
+    "Realizar investigaciones más profundas y comprensivas sobre corrupción."
+  ],
+  "audience": "Profesionales interesados en la lucha contra la corrupción y el público en general",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y educativo",
+  "retention_devices": [
+    "Ejemplos concretos",
+    "Anécdotas históricas",
+    "Citas intelectuales"
+  ],
+  "title_supporting_quotes": [
+    "\"Zapatero a tus zapatos\" como un llamado a la especialización en temas.",
+    "\"La rendición de cuentas no se da en este gobierno.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre corrupción en México basados en este análisis.",
+    "Podcasts que discuten casos de corrupción en comparación internacional.",
+    "Charlas y talleres sobre ética empresarial y anticorrupción."
+  ],
+  "risk_notes": [
+    "Críticas potenciales por abordar temas sensibles.",
+    "Reacción adversa de figuras públicas relacionadas con los casos mencionados."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
