@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T14:36:40+00:00",
+  "generated_at": "2026-06-22T15:37:59+00:00",
   "content_format": "videos",
   "status": "not_ready",
   "recommended_status": "ready_for_baseline",
@@ -24,7 +24,7 @@
   "target_diagnostics": [],
   "forecast": {
     "status": "ok",
-    "daily_trainable_growth": 1499.8965937610467,
+    "daily_trainable_growth": 899.1892499447913,
     "estimated_days_to_exploratory": 0.0,
     "estimated_days_to_baseline": 0.0
   },
