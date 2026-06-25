@@ -1,0 +1,20 @@
+{
+  "video_id": "JsVmHF6xrI4",
+  "channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+  "channel_name": "Fazt",
+  "title": "El Nuevo Rol que Está Revolucionando la IA (y Nadie te lo Contaba)",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\JsVmHF6xrI4.mp3",
+  "transcribed_at": "2026-06-25T05:17:08.117977+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9524,
+  "text_sha256": "0ad7558b8db31ce35faa78f0343690b7c020b3313cd5fc0a3e0fc1254ff983e9",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\JsVmHF6xrI4\\transcript_segments.jsonl",
+  "segment_count": 440,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-25T05:22:24.309340+00:00",
+  "duration_seconds": 1058.8499755859375
+}

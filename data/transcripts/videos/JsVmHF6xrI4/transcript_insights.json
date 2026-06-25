@@ -1,0 +1,92 @@
+{
+  "video_id": "JsVmHF6xrI4",
+  "language": "es",
+  "summary": "El video presenta el rol emergente de Forward Deployment Engineer (FDE), explicando su relevancia en el ámbito de la IA y la programación, así como su similitud con el rol de un desarrollador de software. También se menciona la plataforma CNote para desplegar proyectos web a buen precio y se analiza cómo las empresas de IA están incorporando este rol para resolver problemas de cliente rápidamente.",
+  "main_topics": [
+    "Forward Deployment Engineer (FDE)",
+    "Inteligencia Artificial (IA)",
+    "Despliegue de software",
+    "CNote",
+    "Experiencia laboral requerida"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción al FDE",
+      "purpose": "Presentar el nuevo rol y su relevancia",
+      "summary": "El FDE es un rol que combina programación y IA, similar al desarrollador de software."
+    },
+    {
+      "section": "Introducción de CNote",
+      "purpose": "Promocionar una plataforma para desplegar proyectos",
+      "summary": "CNote permite a los desarrolladores subir proyectos de manera sencilla y económica."
+    },
+    {
+      "section": "Descripción del rol FDE",
+      "purpose": "Detallar las responsabilidades y requisitos del FDE",
+      "summary": "El FDE necesita experiencia en ingeniería y conocimiento en IA para construir y desplegar soluciones."
+    },
+    {
+      "section": "Comparación con otros roles",
+      "purpose": "Comparar con el rol de otros tipos de ingenieros de IA",
+      "summary": "Roles similares en otras empresas muestran que la demanda por este tipo de perfil está en aumento."
+    },
+    {
+      "section": "Cierre y reflexiones",
+      "purpose": "Reflexionar sobre el futuro de este rol",
+      "summary": "La creciente necesidad de FDEs en el mercado es impulsada por la evolución de tecnologías de IA."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Intrigante",
+    "hook_text": "Justo ahora hay una nueva posición que se está hablando bastante, que es el FDE.",
+    "why_it_works": "Engancha al espectador al presentar un nuevo rol en un campo relevante y de actualidad."
+  },
+  "claims": [
+    {
+      "claim": "El rol de FDE es una evolución del desarrollador de software.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "CNote permite desplegar proyectos fácilmente y a bajo costo.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "El rol de FDE es cada vez más demandado por empresas de IA.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "CNote permite subir proyectos de Node.js, Python, Go, etc.",
+    "OpenAI y Antropic están empleando FDEs para resolver problemas en empresas."
+  ],
+  "actionable_ideas": [
+    "Explorar la carrera de Forward Deployment Engineer.",
+    "Probar la plataforma CNote para proyectos web.",
+    "Adquirir habilidades en IA y lenguajes de programación mencionados."
+  ],
+  "audience": "Desarrolladores de software y profesionales interesados en inteligencia artificial.",
+  "tone": "Informativo y motivador.",
+  "content_style": "Conversacional con información técnica.",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Comparaciones con roles conocidos",
+    "Datos sobre demanda de empleo"
+  ],
+  "title_supporting_quotes": [
+    "El FDE trabaja en un equipo más pequeño y la ejecución es mucho más rápida.",
+    "Este rol se está volviendo como un tren desde el año anterior."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre la evolución de roles en programación e IA.",
+    "Hacer videos explicativos sobre plataformas como CNote.",
+    "Publicar artículos sobre la demanda creciente de FDEs."
+  ],
+  "risk_notes": [
+    "El contenido puede volverse obsoleto si las tendencias cambian rápidamente.",
+    "Hay una dependencia en la disponibilidad de trabajos para FDEs en el futuro."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

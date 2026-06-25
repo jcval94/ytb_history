@@ -1,0 +1,20 @@
+{
+  "video_id": "HC03ZrUDdEc",
+  "channel_id": "UCujyjxsq5FZNVnQro51zKSQ",
+  "channel_name": "fuslie",
+  "title": "\"they said you sound like an owl\" 💀",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\HC03ZrUDdEc.mp3",
+  "transcribed_at": "2026-06-25T05:18:55.722859+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 133,
+  "text_sha256": "0b18995491ca38bf978c4e7e7deb9a08b4d9109ee5ce3464ee042757cc4cf04c",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\HC03ZrUDdEc\\transcript_segments.jsonl",
+  "segment_count": 5,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-25T05:21:18.349518+00:00",
+  "duration_seconds": 15.949999809265137
+}

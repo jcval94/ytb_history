@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 1170,
   "text_sha256": "a740d089ddcdcc52d6ae3688bd0448af70425821f1bcdfc7ea6143264d5f6ef8",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Px-Zr1lrtNA\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-25T05:23:06.760118+00:00",
+  "duration_seconds": 72.26000213623047
 }

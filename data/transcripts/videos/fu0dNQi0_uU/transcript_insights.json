@@ -1,0 +1,134 @@
+{
+  "video_id": "fu0dNQi0_uU",
+  "language": "Spanish",
+  "summary": "La presentación destaca nuevos lanzamientos de Platzi enfocados en mejorar el proceso de aprendizaje a través de un sistema de evaluaciones personalizadas, simuladores de casos reales en los cursos y una comunidad sólida para el apoyo entre estudiantes. También se presenta la Academia de AI y la importancia de tener fundamentos en programación, además de la apertura de un programa de apoyo para startups llamado DemoDay.",
+  "main_topics": [
+    "Nuevos lanzamientos de Platzi",
+    "Assessments y aprendizaje personalizado",
+    "Simuladores de práctica",
+    "Platzi Answers",
+    "Academia de AI",
+    "Fundamentos de programación",
+    "Startup DemoDay"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a los lanzamientos",
+      "purpose": "Presentar los nuevos productos de Platzi",
+      "summary": "Se presentan tres ideas principales sobre cómo Platzi ayuda a aprender y cómo las empresas pueden beneficiarse."
+    },
+    {
+      "section": "Assessments",
+      "purpose": "Describir el nuevo sistema de evaluaciones",
+      "summary": "Platzi implementará un sistema que evalúa el conocimiento previo del estudiante antes de iniciar un curso."
+    },
+    {
+      "section": "Platzi Answers",
+      "purpose": "Explicar cómo funciona la nueva herramienta",
+      "summary": "Un sistema de respuestas personalizado que ofrece respuestas específicas basadas en el contexto del estudiante."
+    },
+    {
+      "section": "Simuladores de casos",
+      "purpose": "Ilustrar la aplicabilidad práctica de los conocimientos",
+      "summary": "Lanzamiento de simuladores que permiten practicar situaciones reales en diferentes áreas de estudio."
+    },
+    {
+      "section": "Cambios en los exámenes",
+      "purpose": "Detallar la nueva estructura de los exámenes",
+      "summary": "Los exámenes ahora tendrán un formato de videojuego para hacer el aprendizaje más dinámico."
+    },
+    {
+      "section": "Comunidad Platzi",
+      "purpose": "Resaltar la importancia de la comunidad",
+      "summary": "Se crea un chat de comunidad para conectar a estudiantes que aprueban cursos, fomentando el aprendizaje colaborativo."
+    },
+    {
+      "section": "Academia de AI",
+      "purpose": "Anunciar el lanzamiento de cursos de AI",
+      "summary": "Una nueva academia que enseñará desde conceptos básicos hasta avanzados en inteligencia artificial."
+    },
+    {
+      "section": "Importancia de la programación",
+      "purpose": "Argumentar el valor de aprender programación",
+      "summary": "Se anuncia un curso gratuito de programación básica para entender el papel de la AI en la programación."
+    },
+    {
+      "section": "DemoDay",
+      "purpose": "Promover la iniciativa para startups",
+      "summary": "Apertura de inscripciones para un programa que apoya a startups en su crecimiento y conexión con expertos."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Reflexionar sobre el impacto de Platzi",
+      "summary": "Platzi se compromete a transformar vidas y negocios a través de la educación continua."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Qué aprendemos en Platzi?",
+    "why_it_works": "Invita a la reflexión y establece una conexión con la audiencia, haciendo que se pregunten sobre su propio aprendizaje."
+  },
+  "claims": [
+    {
+      "claim": "Platzi ahora personaliza el aprendizaje a través de Assessments.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "Los Simuladores de casos reales mejoran la aplicación práctica de los conocimientos.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "El nuevo sistema de exámenes es más efectivo y dinámico.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "La comunidad es un superpoder en el aprendizaje.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "La academia de AI proporciona capacitación crucial en el contexto actual.",
+      "support_level": "explicit",
+      "risk": "none"
+    },
+    {
+      "claim": "El curso de programación básica es necesario en la era de la AI.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Platzi Answers responde preguntas con contexto específico.",
+    "Los simuladores permiten practicar inglés y ventas en tiempo real."
+  ],
+  "actionable_ideas": [
+    "Inscribirse a los nuevos cursos de Platzi.",
+    "Participar en la comunidad de estudiantes.",
+    "Aplicar a la convocatoria del DemoDay."
+  ],
+  "audience": "Estudiantes de Platzi y profesionales en búsqueda de mejorar su aprendizaje.",
+  "tone": "Enthusiastic and motivational",
+  "content_style": "Conversational and engaging",
+  "retention_devices": [
+    "Ejemplos prácticos",
+    "Preguntas retóricas",
+    "Estadísticas sobre alumnos y empresas"
+  ],
+  "title_supporting_quotes": [
+    "Aprender es solo una cosa, aplicar lo aprendido.",
+    "La comunidad es ese superpoder que es muy difícil de ver y de conectar."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido de curso sobre AI.",
+    "Desarrollar un programa de mentoría en la comunidad.",
+    "Producir videos explicativos de simuladores."
+  ],
+  "risk_notes": [
+    "Dependencia alta en la tecnología para el aprendizaje.",
+    "Rotación de estudiantes en la comunidad si no se mantiene el interés."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

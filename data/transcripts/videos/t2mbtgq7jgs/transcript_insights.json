@@ -1,0 +1,82 @@
+{
+  "video_id": "t2mbtgq7jgs",
+  "language": "es",
+  "summary": "El ponente discute la superioridad de Android, especialmente en el contexto de la inteligencia artificial, pero expresa su decepción por la preferencia continua de los consumidores por el iPhone, a pesar de las mejoras en Android.",
+  "main_topics": [
+    "Evolución de Android",
+    "Inteligencia artificial en tecnología",
+    "Preferencia del consumidor por iPhone"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a Android y AI",
+      "purpose": "Establecer la importancia actual de Android y la IA.",
+      "summary": "Se menciona que Android nunca ha estado en un mejor momento, destacando la llegada de nuevas tecnologías."
+    },
+    {
+      "section": "Mejoras en Android",
+      "purpose": "Detallar avances en aplicaciones y funcionalidades.",
+      "summary": "Se enumeran mejoras en aplicaciones como Instagram y la capacidad de uso más eficiente del teléfono."
+    },
+    {
+      "section": "Preferencia por el iPhone",
+      "purpose": "Reflejar la frustración del ponente sobre la fidelidad a la marca Apple.",
+      "summary": "A pesar de las mejoras, muchos consumidores aún prefieren el iPhone por su marca."
+    },
+    {
+      "section": "Llamado a la audiencia",
+      "purpose": "Invitar a la interacción y conocer las opiniones del público.",
+      "summary": "Se invita a los espectadores a comentar sobre su preferencia por el iPhone."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿te compras un iPhone porque solo tiene la manzana?",
+    "why_it_works": "Provoca curiosidad y un deseo de participar en el debate, conectando emocionalmente con la audiencia."
+  },
+  "claims": [
+    {
+      "claim": "Android nunca ha estado en un mejor momento.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las mejoras en IA en Android son significativas.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los usuarios prefieren comprar un iPhone sobre un Android a pesar de las mejoras.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Mejoras en Instagram",
+    "Funcionalidades avanzadas de Android"
+  ],
+  "actionable_ideas": [
+    "Explorar las últimas funciones de Android.",
+    "Realizar comparativas de productos Android vs. iPhone."
+  ],
+  "audience": "Usuarios de tecnología interesados en smartphones.",
+  "tone": "Conversacional y crítico.",
+  "content_style": "Opiniones personales y análisis.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Llamados a la acción"
+  ],
+  "title_supporting_quotes": [
+    "Mejoras en aplicaciones, véase en Instagram.",
+    "La gente tiene grabado a fuego que quiere un iPhone."
+  ],
+  "creative_reuse_opportunities": [
+    "Comparaciones de smartphones.",
+    "Análisis de tendencias en tecnología."
+  ],
+  "risk_notes": [
+    "Posible polarización de opiniones entre usuarios de Android e iPhone.",
+    "Frustración del ponente podría alienar a parte de la audiencia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

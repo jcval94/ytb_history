@@ -1,0 +1,14 @@
+{
+  "video_id": "fu0dNQi0_uU",
+  "channel_id": "UC55-mxUj5Nj3niXFReG44OQ",
+  "channel_name": "Platzi",
+  "title": "Así es la nueva educación impulsada por AI",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\fu0dNQi0_uU.mp3",
+  "transcribed_at": "2026-06-25T05:18:47.694663+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 22533,
+  "text_sha256": "11af3f0ff931578ca189272ad3bdcb3b48c90b61254d1269393bfc1f6cb8b66e",
+  "repo_schema_version": "transcript_metadata_v1"
+}
