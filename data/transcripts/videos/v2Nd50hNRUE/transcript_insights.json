@@ -1,0 +1,82 @@
+{
+  "video_id": "v2Nd50hNRUE",
+  "language": "en",
+  "summary": "A recent explosion on a railway track in Quetta, Pakistan has killed at least 10 people and injured more than 50 others. The blast derailed a cargo train and was followed by heavy gunfire. The attack comes amidst ongoing unrest in Balochistan, linked to Baloch separatist groups. The situation is evolving, with potential links to previous violent incidents in the region.",
+  "main_topics": [
+    "Explosion in Quetta",
+    "Baloch separatist insurgency",
+    "Impact on the China-Pakistan economic corridor"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the news event",
+      "purpose": "Provide immediate information about the explosion",
+      "summary": "An explosion on a railway track in Quetta has resulted in casualties."
+    },
+    {
+      "section": "Details of the incident",
+      "purpose": "Explain the specifics of the attack",
+      "summary": "The blast derailed a cargo train and also affected nearby vehicles, indicating a potential bomb."
+    },
+    {
+      "section": "Context of Balochistan",
+      "purpose": "Give background about the region's unrest",
+      "summary": "Balochistan has a history of insurgency led by Baloch armed groups opposed to the state."
+    },
+    {
+      "section": "Link to broader geopolitical issues",
+      "purpose": "Highlight the implications for the China-Pakistan economic corridor",
+      "summary": "Baloch separatists' attacks target projects related to the China-Pakistan economic corridor."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "breaking news",
+    "hook_text": "Well, we have some breaking news for you from Pakistan.",
+    "why_it_works": "Captures immediate attention, emphasizing urgency and relevance."
+  },
+  "claims": [
+    {
+      "claim": "The explosion killed at least 10 people.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Baloch separatists have been carrying out a series of attacks.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "The separatists target the China-Pakistan economic corridor.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Follow up on the evolving situation in Quetta.",
+    "Investigate the impact of Baloch insurgency on regional stability.",
+    "Explore international responses to Baloch separatism."
+  ],
+  "audience": "General public, particularly those interested in world news and geopolitics.",
+  "tone": "serious and urgent",
+  "content_style": "breaking news report",
+  "retention_devices": [
+    "live updates from the correspondent",
+    "historical context of the region",
+    "links to broader geopolitical themes"
+  ],
+  "title_supporting_quotes": [
+    "There's been an explosion on a railway track in Quetta, reportedly killed at least 10 people.",
+    "Balochistan province has been rattled by a wave of insurgency."
+  ],
+  "creative_reuse_opportunities": [
+    "Analyze the impact of such violence on local governance.",
+    "Create a timeline of attacks in Balochistan.",
+    "Discuss international involvement and responses in Balochistan."
+  ],
+  "risk_notes": [
+    "Ongoing violence may escalate further.",
+    "Attacks on infrastructure could lead to higher security measures."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

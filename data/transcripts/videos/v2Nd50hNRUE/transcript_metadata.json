@@ -1,0 +1,14 @@
+{
+  "video_id": "v2Nd50hNRUE",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Powerful blast hits train in Pakistan's Quetta, killing at least 10",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\v2Nd50hNRUE.mp3",
+  "transcribed_at": "2026-06-26T06:13:58.658518+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2847,
+  "text_sha256": "e6d7890f8f0305f066a9ebbc0bc87d3dc6b83f9afa6db7b85e922bd0340a60fa",
+  "repo_schema_version": "transcript_metadata_v1"
+}

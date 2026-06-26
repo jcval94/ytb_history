@@ -1,0 +1,97 @@
+{
+  "video_id": "NV0bSBlxF6s",
+  "language": "spanish",
+  "summary": "En este video, se discute una propuesta de ley en México que busca anular elecciones en caso de intervención extranjera. Los participantes analizan el contexto de las elecciones venideras y las implicaciones de esta medida para el poder político en el país. Se menciona la percepción de una lucha por la soberanía nacional y el control sobre los procesos electorales, así como las conexiones entre la política mexicana y los poderes extranjeros.",
+  "main_topics": [
+    "Propuesta de ley sobre nulidad de elecciones",
+    "Intervención extranjera en procesos electorales",
+    "Impacto electoral y estrategias políticas",
+    "Corrupción y crimen organizado en México",
+    "Relaciones internacionales y soberanía"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción y presentación",
+      "purpose": "Establecer el tema de discusión y presentar a los participantes.",
+      "summary": "El video comienza con un saludo entre los presentadores y se establece el tema de la propuesta de ley relacionada con la intervención extranjera."
+    },
+    {
+      "section": "Análisis de la propuesta de ley",
+      "purpose": "Profundizar en las implicaciones y características de la ley propuesta.",
+      "summary": "Se discuten las motivaciones detrás de la propuesta de ley y se vincula con eventos electorales pasados y futuros."
+    },
+    {
+      "section": "Reacciones sobre el control político",
+      "purpose": "Examinar el control actual del partido Morena sobre las elecciones.",
+      "summary": "Se expresa preocupación por el control que tiene Morena sobre los procesos electorales y los tribunales."
+    },
+    {
+      "section": "Contexto internacional y corrupción",
+      "purpose": "Conectar la problemática nacional con actores y eventos internacionales.",
+      "summary": "Se analizan las relaciones entre México y otros países y cómo influyen en la política nacional."
+    },
+    {
+      "section": "Cierre y reflexiones finales",
+      "purpose": "Concluir con un llamado a la acción para una nueva clase política.",
+      "summary": "Se hace hincapié en la necesidad de una nueva clase política en México que responda a las crisis actuales."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Y quién va a decidir eso?",
+    "why_it_works": "Despierta la curiosidad del espectador sobre las implicaciones de la ley propuesta, planteando un argumento crítico que requiere reflexión."
+  },
+  "claims": [
+    {
+      "claim": "La intervención extranjera ha sido un tema recurrente en la política mexicana.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "La propuesta de ley de Morena es un intento de controlar los procesos electorales.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Los vínculos entre políticos mexicanos y el narcotráfico son significativos.",
+      "support_level": "implicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Estados Unidos está jugando un papel importante en las elecciones latinoamericanas.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "El caso de Rocha Moya.",
+    "Las elecciones en Sinaloa y otros estados en 2027."
+  ],
+  "actionable_ideas": [
+    "Fomentar una nueva clase política en México.",
+    "Aumentar la transparencia en los procesos electorales.",
+    "Iniciar un diálogo sobre la soberanía y la intervención extranjera."
+  ],
+  "audience": "Ciudadanos interesados en política y elecciones en México.",
+  "tone": "Crítico e informal.",
+  "content_style": "Conversacional y analítico.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Narrativas de eventos futuros",
+    "Citas impactantes"
+  ],
+  "title_supporting_quotes": [
+    "De aquí no nos saca nadie.",
+    "Emerger una nueva clase política es fundamental."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre políticas electorales en América Latina.",
+    "Debates en redes sociales sobre soberanía y elecciones.",
+    "Videos educativos sobre corrupción y narcotráfico."
+  ],
+  "risk_notes": [
+    "La polarización política podría intensificarse.",
+    "La percepción pública sobre el control de elecciones puede erosionar la confianza en el sistema."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,83 @@
+{
+  "video_id": "cqqltcRo-FA",
+  "language": "es",
+  "summary": "Un grupo de expertos de la OMS advierte que el mundo no está preparado para enfrentar una nueva pandemia, a pesar de las crecientes amenazas sanitarias y la falta de inversión en sistemas de salud.",
+  "main_topics": [
+    "Preparación para pandemias",
+    "Inversión en salud global",
+    "Desigualdades en salud",
+    "Emergencias sanitarias",
+    "Cambio en la respuesta ante pandemias"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Introducir el tema de la pandemia y las advertencias de la OMS.",
+      "summary": "La OMS advierte que el mundo no está preparado para otra pandemia."
+    },
+    {
+      "section": "Análisis de la situación",
+      "purpose": "Describir la falta de preparación y sus causas.",
+      "summary": "Falta de inversión y aumento de desigualdades afectan la respuesta a emergencias sanitarias."
+    },
+    {
+      "section": "Situación actual",
+      "purpose": "Brindar contexto sobre la situación de salud pública actual.",
+      "summary": "Recientes brotes de Ébola resaltan la urgencia de mejorar la preparación global."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Transmitir el mensaje central del informe.",
+      "summary": "El mundo no es más seguro que antes y se necesita urgentemente mejorar la preparación."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Advertencia",
+    "hook_text": "El mundo no está preparado para afrontar una nueva pandemia.",
+    "why_it_works": "Capta la atención al abordar un tema crítico y relevante que afecta a la salud global."
+  },
+  "claims": [
+    {
+      "claim": "El mundo no está preparado para una nueva pandemia.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La inversión en salud global ha disminuido.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Existen desigualdades crecientes en el acceso a la salud.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Incrementar la inversión en sistemas de salud.",
+    "Fomentar la cooperación internacional en salud pública.",
+    "Desarrollar sistemas de respuesta rápida ante emergencias sanitarias."
+  ],
+  "audience": "Profesionales de salud, policymakers, medios de comunicación.",
+  "tone": "Urgente",
+  "content_style": "Informativo",
+  "retention_devices": [
+    "Datos alarmantes",
+    "Citas de expertos",
+    "Estadísticas sobre brotes de enfermedades"
+  ],
+  "title_supporting_quotes": [
+    "El mundo no es más seguro que antes.",
+    "La falta de inversión y cooperación está poniendo en riesgo la salud global."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre preparación para pandemias.",
+    "Charlas o seminarios sobre salud pública."
+  ],
+  "risk_notes": [
+    "La falta de acción podría llevar a una crisis sanitaria mayor.",
+    "Desigualdades podrían agravarse si no se aborda correctamente."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

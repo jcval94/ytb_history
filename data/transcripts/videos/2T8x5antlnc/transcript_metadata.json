@@ -1,0 +1,20 @@
+{
+  "video_id": "2T8x5antlnc",
+  "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+  "channel_name": "Linus Tech Tips",
+  "title": "The Internet was WRONG: Trump Phone is \"Shipping\"",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\2T8x5antlnc.mp3",
+  "transcribed_at": "2026-06-26T06:18:37.682487+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9635,
+  "text_sha256": "227f487c9611583a971690ed649b9db2b72a2fa59d34f7d6375a828fe85b26dd",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\2T8x5antlnc\\transcript_segments.jsonl",
+  "segment_count": 361,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-26T06:19:42.888910+00:00",
+  "duration_seconds": 848.010009765625
+}

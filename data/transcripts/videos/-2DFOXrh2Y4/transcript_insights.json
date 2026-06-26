@@ -1,0 +1,69 @@
+{
+  "video_id": "-2DFOXrh2Y4",
+  "language": "es",
+  "summary": "El mensaje principal es sobre la importancia de valorar nuestras relaciones y no esforzarse por aquellas personas que no muestran interés o aprecio. Se trata de ser conscientes de la reciprocidad en las relaciones y de no buscar la validación de quienes no están dispuestos a dárnosla.",
+  "main_topics": [
+    "Relaciones personales",
+    "Reciprocidad en el cariño",
+    "Valoración de uno mismo"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción de la idea",
+      "purpose": "Establecer un enfoque sobre las relaciones",
+      "summary": "Se invita a reflexionar sobre cómo interactuar con los demás."
+    },
+    {
+      "section": "Consejos sobre relaciones",
+      "purpose": "Ofrecer orientación sobre cómo manejar las relaciones",
+      "summary": "Se aconseja no perseguir a quienes no hacen el esfuerzo de comunicarse."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Consolidar el mensaje de autovaloración",
+      "summary": "Se enfatiza que todos son adultos y que deben ser responsables de sus elecciones."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emocional",
+    "hook_text": "Nunca persigas a alguien que está cómodo perdiéndote.",
+    "why_it_works": "Es un recordatorio impactante que resuena con experiencias comunes de abandono o desinterés en relaciones."
+  },
+  "claims": [
+    {
+      "claim": "Las personas saben exactamente lo que hacen.",
+      "support_level": "implicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "No debes arrastrarte detrás de quienes no te valoran.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Ignorar a alguien que no te responde.",
+    "Enfocarse en cultivar relaciones recíprocas."
+  ],
+  "actionable_ideas": [
+    "Identificar relaciones que no aportan valor.",
+    "Fomentar conexiones con personas que te apoyan."
+  ],
+  "audience": "Adultos en busca de mejorar sus relaciones",
+  "tone": "Reflexivo y empoderador",
+  "content_style": "Directo y motivacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Ejemplos de relaciones"
+  ],
+  "title_supporting_quotes": [
+    "Llama a quien te llama.",
+    "Apoya a quien te apoya."
+  ],
+  "creative_reuse_opportunities": [
+    "Publicaciones en redes sociales sobre relaciones saludables.",
+    "Artículos sobre autovaloración y límites personales."
+  ],
+  "risk_notes": [],
+  "schema_version": "transcript_insights_v1"
+}

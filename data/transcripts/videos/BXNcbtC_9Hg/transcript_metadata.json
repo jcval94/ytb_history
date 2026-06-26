@@ -1,0 +1,20 @@
+{
+  "video_id": "BXNcbtC_9Hg",
+  "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+  "channel_name": "Al Jazeera English",
+  "title": "Over 1.6 million pilgrims arrive in Saudi Arabia for hajj pilgrimage",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BXNcbtC_9Hg.mp3",
+  "transcribed_at": "2026-06-26T06:18:53.796850+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 384,
+  "text_sha256": "5246d27ed3bcfdf0af813d496b7651987debf88820eff7843fd511e91b144e12",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\BXNcbtC_9Hg\\transcript_segments.jsonl",
+  "segment_count": 12,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-26T06:22:14.337641+00:00",
+  "duration_seconds": 63.709999084472656
+}

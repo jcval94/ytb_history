@@ -1,0 +1,83 @@
+{
+  "video_id": "SojDjob_ICs",
+  "language": "es",
+  "summary": "Unos estudiantes del Instituto Politécnico Nacional han tomado las instalaciones de Canal 11 en protesta pacífica, exigiendo un diálogo público con las autoridades educativas. Durante una manifestación anterior, al menos cinco alumnos resultaron heridos debido a la agresión de la policía. Los estudiantes planean mantener la toma hasta que sean escuchados y su pliego petitorio sea recibido.",
+  "main_topics": [
+    "Protesta estudiantil",
+    "Toma de instalaciones",
+    "Agresión policial",
+    "Diálogo con autoridades",
+    "Pliego petitorio"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación actual de la protesta",
+      "summary": "Scarlett Romero informa sobre la toma de Canal 11 por estudiantes del IPN."
+    },
+    {
+      "section": "Desarrollo de la protesta",
+      "purpose": "Describir la situación de la manifestación",
+      "summary": "Los estudiantes mantienen la toma y se quejan de la agresión sufrida y de la falta de respuesta de las autoridades."
+    },
+    {
+      "section": "Declaraciones de los líderes",
+      "purpose": "Compartir el punto de vista estudiantil",
+      "summary": "Un líder estudiantil explica la situación de agresión y sus demandas para un diálogo público."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Conclusiones sobre la situación actual",
+      "summary": "Se destaca la falta de acceso para el personal del canal y la continuación de la protesta."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Controversial Event",
+    "hook_text": "agresión que resultó en cinco alumnos lesionados durante la protesta",
+    "why_it_works": "Capta la atención al presentar un conflicto entre estudiantes y autoridades, enfatizando la violencia y la urgencia de la situación."
+  },
+  "claims": [
+    {
+      "claim": "Los estudiantes sostienen que están siendo agredidos por las autoridades.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Piden un diálogo público y la recepción de su pliego petitorio.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "La toma de Canal 11 continuará hasta ser escuchados.",
+      "support_level": "explicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promover un diálogo abierto entre estudiantes y autoridades.",
+    "Documentar las protestas y sus causas a través de medios de comunicación.",
+    "Apoyar a los estudiantes en su demanda de transparencia."
+  ],
+  "audience": "Interesados en derechos estudiantiles y situaciones de protesta social.",
+  "tone": "Informativo y serio.",
+  "content_style": "Periodístico.",
+  "retention_devices": [
+    "Entrevistas con líderes estudiantiles.",
+    "Testimonios de estudiantes heridos.",
+    "Actualizaciones en tiempo real sobre la situación."
+  ],
+  "title_supporting_quotes": [
+    "Estamos en un plantón hasta que vengan las instancias gubernamentales.",
+    "Nos están negando el diálogo que pedimos."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un reportaje sobre la historia del IPN y sus protestas.",
+    "Producir un análisis sobre la relación entre estudiantes y autoridades educativas."
+  ],
+  "risk_notes": [
+    "Posibilidad de escalada en la violencia durante las protestas.",
+    "Impacto mediático negativo sobre las autoridades si la situación no se resuelve."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

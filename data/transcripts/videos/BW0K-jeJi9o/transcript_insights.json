@@ -1,0 +1,77 @@
+{
+  "video_id": "BW0K-jeJi9o",
+  "language": "es",
+  "summary": "El análisis del viaje de Donald Trump a China y su relación con la élite empresarial que influencia las políticas económicas de EE. UU. Explora la arrogancia de Trump y cómo el orgullo puede interferir con decisiones lógicas en un contexto de tensiones globales, especialmente con China e Irán.",
+  "main_topics": [
+    "Viaje de Trump a China",
+    "Influencia de la élite empresarial",
+    "Estrategias de guerra comercial",
+    "Dinámica con Irán",
+    "Superpotencias en conflicto"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema del viaje de Trump a China.",
+      "summary": "Se plantea la importancia de la élite empresarial que acompaña a Trump y su influencia en las políticas."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Analizar la actitud y decisiones de Trump.",
+      "summary": "Se discute cómo el orgullo de Trump incide en su toma de decisiones respecto a las tensiones con China e Irán."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la situación global.",
+      "summary": "Se plantea el posicionamiento estratégico de Irán y la naturaleza de las superpotencias."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Pregunta retórica",
+    "hook_text": "¿Qué implica este viaje de Donald Trump a China?",
+    "why_it_works": "Engancha al espectador al plantear una pregunta que invita a la reflexión sobre el impacto político y económico."
+  },
+  "claims": [
+    {
+      "claim": "La élite empresarial influye en las decisiones de Trump.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Trump prioriza su ego en decisiones políticas.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Irán está mejor posicionado que antes del ataque.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Estudiar el impacto de los viajes diplomáticos en la política internacional.",
+    "Analizar la relación entre ego personal y decisiones de estado en líderes mundiales."
+  ],
+  "audience": "Interesados en política internacional y relaciones exteriores.",
+  "tone": "Crítico y analítico",
+  "content_style": "Informativo y reflexivo",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Referencia a eventos históricos",
+    "Uso de metáforas"
+  ],
+  "title_supporting_quotes": [
+    "El orgullo, el ego de Trump...",
+    "Irán hoy está mejor posicionado..."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre influencia empresarial en política.",
+    "Videos de análisis sobre superpotencias."
+  ],
+  "risk_notes": [
+    "La interpretación de las motivaciones de Trump puede ser subjetiva.",
+    "Las afirmaciones sobre el estado de Irán deben ser verificadas."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "-2DFOXrh2Y4",
+  "channel_id": "UCF0L4jd9LcSIxsj5gKITMqQ",
+  "channel_name": "Jaime Higuera",
+  "title": "Así funciona la vida #shorts",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-2DFOXrh2Y4.mp3",
+  "transcribed_at": "2026-06-26T06:17:56.275522+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 363,
+  "text_sha256": "b30b340b6a2894a338876593d446e4433f77b3c90ad61f752994ba838068d205",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-2DFOXrh2Y4\\transcript_segments.jsonl",
+  "segment_count": 4,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-26T06:18:56.404518+00:00",
+  "duration_seconds": 23.450000762939453
+}

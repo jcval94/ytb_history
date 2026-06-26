@@ -1,0 +1,83 @@
+{
+  "video_id": "whqO6La-gCE",
+  "language": "hebrew",
+  "summary": "In the video, there is a strong commentary on pride and heroism contrasted with the current state of individuals. It highlights a tense environment with shouts about Palestine and a reference to inhumane acts.",
+  "main_topics": [
+    "Pride and heroism",
+    "Current state of individuals",
+    "Conflict in Palestine",
+    "Human rights"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Set the tone of disillusionment",
+      "summary": "Opening remarks highlight the loss of former pride."
+    },
+    {
+      "section": "Personal observation",
+      "purpose": "Illustrate the contrast between past and present",
+      "summary": "The speaker reflects on the state of individuals previously seen as heroes."
+    },
+    {
+      "section": "Call to action",
+      "purpose": "Encourage resilience",
+      "summary": "Prompt viewers to remain calm despite provocations regarding Palestine."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "Emphasize human rights concerns",
+      "summary": "The speaker mentions witnessing inhumane behavior."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocative statement",
+    "hook_text": "¡Free, free Palestine!",
+    "why_it_works": "It captures attention and resonates with a critical global issue."
+  },
+  "claims": [
+    {
+      "claim": "There is a stark contrast between past pride and current disillusionment.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "The atmosphere requires calm amidst political tensions.",
+      "support_level": "implicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "There are human rights violations occurring.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [
+    "Contrast of present and past heroism.",
+    "Political chants in a tense environment."
+  ],
+  "actionable_ideas": [
+    "Promote peaceful dialogue about Palestine.",
+    "Raise awareness on human rights issues."
+  ],
+  "audience": "Individuals interested in global political issues",
+  "tone": "Confrontational yet reflective",
+  "content_style": "Direct and impactful",
+  "retention_devices": [
+    "Emotional appeals",
+    "Provocative imagery"
+  ],
+  "title_supporting_quotes": [
+    "תראה איך נראים עכשיו, תסתכלי",
+    "He podido ver un vídeo monstruoso, inhumano"
+  ],
+  "creative_reuse_opportunities": [
+    "Create educational content on the Israel-Palestine conflict.",
+    "Use quotes for social media awareness campaigns."
+  ],
+  "risk_notes": [
+    "Potential backlash from polarized viewpoints.",
+    "Handling sensitive topics requires caution."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

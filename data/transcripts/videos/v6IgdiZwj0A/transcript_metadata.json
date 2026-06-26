@@ -1,0 +1,14 @@
+{
+  "video_id": "v6IgdiZwj0A",
+  "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+  "channel_name": "DW Documentary",
+  "title": "Trump's America - Is US democracy in danger? | DW Documentary",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\v6IgdiZwj0A.mp3",
+  "transcribed_at": "2026-06-26T06:17:40.127412+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 40280,
+  "text_sha256": "d2e36bcb8445ecfb0764665654611920499248f3c63a2a068e345fbb5bc6aa0c",
+  "repo_schema_version": "transcript_metadata_v1"
+}
