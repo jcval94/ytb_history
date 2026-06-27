@@ -1,0 +1,75 @@
+{
+  "video_id": "LI7uBl_Zjaw",
+  "language": "unknown",
+  "summary": "The speaker discusses their experiences selling golf carts and highlights challenges in lead generation. They suggest a giveaway campaign as a strategy to collect leads and engage customers effectively.",
+  "main_topics": [
+    "Lead generation",
+    "Marketing strategies",
+    "Giveaway campaigns",
+    "Customer engagement"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "Establish the speaker's background in selling golf carts.",
+      "summary": "The speaker introduces themselves and mentions their business and challenges."
+    },
+    {
+      "section": "Identifying the Problem",
+      "purpose": "Highlight the constraint in the business.",
+      "summary": "The speaker discusses the ongoing financial losses and the need for better lead generation."
+    },
+    {
+      "section": "Proposed Solution",
+      "purpose": "Suggest a marketing strategy.",
+      "summary": "The speaker recommends running a giveaway campaign to attract customers and gather leads."
+    },
+    {
+      "section": "Execution Plan",
+      "purpose": "Detail the mechanics of the giveaway.",
+      "summary": "Recommendations include offering prizes, collecting customer information, and following up with leads."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Engaging proposition",
+    "hook_text": "We're giving out this souped up insane golf cart.",
+    "why_it_works": "It captures attention by proposing a desirable prize and creates excitement and urgency."
+  },
+  "claims": [
+    {
+      "claim": "Running a giveaway can significantly boost lead generation.",
+      "support_level": "explicit",
+      "risk": "Low"
+    },
+    {
+      "claim": "Gathering detailed customer info can improve sales prospects.",
+      "support_level": "implicit",
+      "risk": "Medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Run a local giveaway campaign targeting potential customers.",
+    "Offer additional prizes to maintain interest and engagement.",
+    "Collect as much customer information as possible during the registration."
+  ],
+  "audience": "Small business owners in retail or niche markets.",
+  "tone": "Practical and motivational",
+  "content_style": "Conversational and instructional",
+  "retention_devices": [
+    "Engaging storytelling",
+    "Clear call-to-action",
+    "Relatable personal experiences"
+  ],
+  "title_supporting_quotes": [],
+  "creative_reuse_opportunities": [
+    "Create blog posts about lead generation strategies.",
+    "Develop social media content based on the giveaway idea.",
+    "Host webinars discussing marketing techniques for small businesses."
+  ],
+  "risk_notes": [
+    "Potential costs associated with the giveaway",
+    "Need for secure and professional handling of collected customer data"
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "LI7uBl_Zjaw",
+  "channel_id": "UCUyDOdBWhC1MCxEjC46d-zw",
+  "channel_name": "Alex Hormozi",
+  "title": "“I’m not getting enough customers in my store”",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\LI7uBl_Zjaw.mp3",
+  "transcribed_at": "2026-06-27T19:46:30.293514+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1567,
+  "text_sha256": "119eeb499a7d1541206cb3cdc23aebb35e0d98440348592c7d389371a2cd9396",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\LI7uBl_Zjaw\\transcript_segments.jsonl",
+  "segment_count": 34,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-27T19:55:18.873652+00:00",
+  "duration_seconds": 68.12000274658203
+}

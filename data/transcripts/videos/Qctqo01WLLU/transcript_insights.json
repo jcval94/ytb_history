@@ -1,0 +1,59 @@
+{
+  "video_id": "Qctqo01WLLU",
+  "language": "es",
+  "summary": "El video narra un momento emocionante de un partido donde el Real Madrid anota un gol a través de Mbappé, mientras Ancelotti realiza ajustes estratégicos en el juego.",
+  "main_topics": [
+    "Estrategias de juego",
+    "Gol del Real Madrid",
+    "Movimientos de Ancelotti"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la situación del partido.",
+      "summary": "Se describe el contexto del partido donde el Real Madrid necesita anotar."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Describir el momento del gol.",
+      "summary": "El locutor destaca la acción de Mbappé que finalmente resulta en un gol."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Emoción",
+    "hook_text": "¡gol del Real Madrid!",
+    "why_it_works": "Genera entusiasmo y anticipación en la audiencia sobre el desenlace del partido."
+  },
+  "claims": [
+    {
+      "claim": "El Real Madrid necesita anotar en los últimos minutos.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Las estrategias de Ancelotti son cruciales.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [],
+  "audience": "Aficionados del fútbol, seguidores del Real Madrid.",
+  "tone": "Entusiasta",
+  "content_style": "Narrativo",
+  "retention_devices": [
+    "Suspenso",
+    "Emoción"
+  ],
+  "title_supporting_quotes": [
+    "¡No podía ser de otra manera!"
+  ],
+  "creative_reuse_opportunities": [
+    "Resumen de partidos",
+    "Clips de momentos destacados"
+  ],
+  "risk_notes": [
+    "El enfoque en un solo jugador puede limitar la perspectiva del juego."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

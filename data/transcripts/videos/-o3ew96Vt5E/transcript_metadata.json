@@ -1,0 +1,20 @@
+{
+  "video_id": "-o3ew96Vt5E",
+  "channel_id": "UC16niRr50-MSBwiO3YDb3RA",
+  "channel_name": "BBC News",
+  "title": "Ebola outbreak may be spreading faster than first thought, WHO doctor warns | BBC News",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\-o3ew96Vt5E.mp3",
+  "transcribed_at": "2026-06-27T19:49:42.760708+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 3709,
+  "text_sha256": "b2c06384786da7d6eb68cadbbc6d40e97957a2f4740294870f25410982d1c6c1",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\-o3ew96Vt5E\\transcript_segments.jsonl",
+  "segment_count": 39,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-27T19:51:07.726718+00:00",
+  "duration_seconds": 246.66000366210938
+}

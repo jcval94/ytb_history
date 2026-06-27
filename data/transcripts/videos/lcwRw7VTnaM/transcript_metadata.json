@@ -1,0 +1,14 @@
+{
+  "video_id": "lcwRw7VTnaM",
+  "channel_id": "UCJ5v_MCY6GNUBTO8-D3XoAg",
+  "channel_name": "WWE",
+  "title": "Blake Monroe is definitely about to change the landscape 💎",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lcwRw7VTnaM.mp3",
+  "transcribed_at": "2026-06-27T19:48:23.356642+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 445,
+  "text_sha256": "5d65343d32266015198aea24e640011e57b7fd7ad7f136e13ff80393ec5917dd",
+  "repo_schema_version": "transcript_metadata_v1"
+}

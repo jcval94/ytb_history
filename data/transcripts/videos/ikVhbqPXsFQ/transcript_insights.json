@@ -1,0 +1,81 @@
+{
+  "video_id": "ikVhbqPXsFQ",
+  "language": "es",
+  "summary": "El video trata sobre la presión social relacionada con la aceptación del propio cuerpo y la libertad de expresarse sin el juicio de los demás. Se anima a la audiencia a mostrar su cuerpo con orgullo y a liberarse de las construcciones sociales que generan inseguridades.",
+  "main_topics": [
+    "Presión social sobre la apariencia",
+    "Aceptar diferentes tipos de cuerpos",
+    "Libertad personal y autoaceptación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el dilema de sentirse juzgado en situaciones sociales",
+      "summary": "La narradora comparte una experiencia común sobre la inseguridad en una fiesta en la piscina."
+    },
+    {
+      "section": "Problema y reflexión",
+      "purpose": "Reflexionar sobre el juicio propio y ajeno",
+      "summary": "Se destaca que la mayoría de las veces, somos nosotros mismos los que nos juzgamos más que los demás."
+    },
+    {
+      "section": "Llamado a la acción",
+      "purpose": "Incentivar a aceptar todos los tipos de cuerpos",
+      "summary": "La narradora insta a mostrar los cuerpos con orgullo y vivir libremente sin la carga de la imagen perfecta."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Preguntas retóricas",
+    "hook_text": "¿Cuál era su expectativa? ¿Qué va a pensar de mí? ¿Pero por qué?",
+    "why_it_works": "Invita a la introspección y a identificar las inseguridades comunes en situaciones sociales."
+  },
+  "claims": [
+    {
+      "claim": "La mayoría de las críticas que percibimos son autoimpuestas.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Es necesario verse y aceptarse tal como uno es.",
+      "support_level": "implicit",
+      "risk": "Medio"
+    },
+    {
+      "claim": "La sociedad crea estándares de belleza poco realistas.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    }
+  ],
+  "examples": [
+    "Cuerpos con estrías",
+    "Cuerpos con celulitis",
+    "Cuerpos de todas las formas y tamaños"
+  ],
+  "actionable_ideas": [
+    "Comienza a mostrar tu cuerpo con confianza.",
+    "Visibiliza diferentes tipos de cuerpos en tu entorno.",
+    "Reflexiona sobre tus propios juicios y esos fortalecen tu inseguridad."
+  ],
+  "audience": "Personas jóvenes e adultas que luchan con la aceptación del cuerpo.",
+  "tone": "Inspirador y reflexivo",
+  "content_style": "Conversacional",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Recuerdos personales",
+    "Conexiones emocionales"
+  ],
+  "title_supporting_quotes": [
+    "La única prisión que tenemos es esta y no es tu culpa.",
+    "Veamos más cuerpos con orgullo."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear contenido sobre aceptación del cuerpo en redes sociales.",
+    "Desarrollar talleres sobre autoaceptación y autoestima.",
+    "Realizar campañas visuales que celebren la diversidad de cuerpos."
+  ],
+  "risk_notes": [
+    "El mensaje podría ser malinterpretado como alentar conductas poco saludables.",
+    "Puede haber resistencia cultural a la aceptación de la diversidad corporal."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

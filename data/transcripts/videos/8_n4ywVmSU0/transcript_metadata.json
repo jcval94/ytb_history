@@ -1,0 +1,20 @@
+{
+  "video_id": "8_n4ywVmSU0",
+  "channel_id": "UCEQXxiYxNZbym9Fad7-n2Lg",
+  "channel_name": "Doctor Fisión",
+  "title": "ANALIZAN DIRECTAMENTE LA SUPERFICIE DE UN EXOPLANETA 🛰️",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\8_n4ywVmSU0.mp3",
+  "transcribed_at": "2026-06-27T19:50:51.597192+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1375,
+  "text_sha256": "3840c4025aea8ca5da1258d247a110ddbcffd7e809dc92f7bfc4570189d2b058",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\8_n4ywVmSU0\\transcript_segments.jsonl",
+  "segment_count": 18,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-06-27T19:52:03.388661+00:00",
+  "duration_seconds": 69.26000213623047
+}

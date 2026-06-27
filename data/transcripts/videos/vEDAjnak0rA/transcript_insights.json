@@ -1,0 +1,87 @@
+{
+  "video_id": "vEDAjnak0rA",
+  "language": "es",
+  "summary": "El video discute la problemática de los precios dinámicos y personalizados en plataformas como Mercado Libre y Uber, así como en supermercados como Walmart. Se analiza cómo estos precios dependen de diversos factores relacionados con el comprador, como el tipo de dispositivo, el método de pago y otros datos personales, generando desigualdades en las compras.",
+  "main_topics": [
+    "Precios dinámicos",
+    "Precios personalizados",
+    "Comportamiento del consumidor",
+    "Desigualdad en el comercio",
+    "Tecnología y precios"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar la problemática de los precios variables en el mercado",
+      "summary": "El presentador expresa su descontento con la frase ‘de acuerdo al sapo es la pedrada’ y cómo se aplica en la determinación de precios según el cliente."
+    },
+    {
+      "section": "Ejemplos de precios dinámicos",
+      "purpose": "Ilustrar cómo los precios pueden variar entre iguales",
+      "summary": "Se presentan casos reales de Mercado Libre y Uber donde el precio varía según dispositivo y método de pago."
+    },
+    {
+      "section": "Innovaciones tecnológicas en precios",
+      "purpose": "Explicar la implementación de precios digitales en supermercados",
+      "summary": "Walmart ha implementado precios digitales que permiten cambios rápidos y crean una nueva forma de definir precios."
+    },
+    {
+      "section": "El lado oscuro de los precios personalizados",
+      "purpose": "Profundizar en los riesgos de precios basados en datos personales",
+      "summary": "Se analiza cómo el uso de datos personales puede llevar a precios injustos y a la vigilancia del consumidor."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Reflexionar sobre la confianza en el mercado",
+      "summary": "Se concluye que la desconfianza se ha incrementado en los consumidores debido a la falta de precios fijos y la manipulación de precios."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Personal anecdote",
+    "hook_text": "‘de acuerdo al sapo es la pedrada’",
+    "why_it_works": "Esta frase familiar crea una conexión emocional al describir una experiencia común de descontento con precios injustos."
+  },
+  "claims": [
+    {
+      "claim": "Mercado Libre y Uber aplican precios distintos según el usuario",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "Los precios digitales permiten un ajuste rápido y personalizado",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "El uso de datos personales en la fijación de precios genera desigualdad",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Conocer tus derechos como consumidor ante políticas de precios variables.",
+    "Investigar sobre cómo diferentes plataformas pueden ofrecer precios distintos.",
+    "Estar atento a los métodos de pago que utilizas y su impacto en el precio final."
+  ],
+  "audience": "Consumidores que compran en línea y están afectados por precios dinámicos.",
+  "tone": "Crítico y reflexivo",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Ejemplos concretos",
+    "Estadísticas impactantes",
+    "Referencias culturales"
+  ],
+  "title_supporting_quotes": [
+    "‘Esto ya no es un comercio justo y ya no existe el mercado libre.’"
+  ],
+  "creative_reuse_opportunities": [
+    "Contenido educativo sobre derechos del consumidor",
+    "Artículos de opinión sobre ética en el comercio digital"
+  ],
+  "risk_notes": [
+    "Posible confusión del público ante cambios de precios.",
+    "Desconfianza hacia las plataformas comerciales."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

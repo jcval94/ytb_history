@@ -1,0 +1,93 @@
+{
+  "video_id": "8_n4ywVmSU0",
+  "language": "Spanish",
+  "summary": "El telescopio James Webb ha analizado por primera vez la superficie del exoplaneta LHS 3844b, revelando que su superficie es oscura y similar al basalto, y ha descartado la presencia de polvos orgánicos, mostrando signos de haber sido bombardeado por radiación cósmica.",
+  "main_topics": [
+    "James Webb Space Telescope",
+    "Exoplanetas",
+    "Análisis geológico",
+    "LHS 3844b",
+    "Espectroscopía infrarroja"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el logro del James Webb",
+      "summary": "Se destaca el primer análisis directo de un exoplaneta."
+    },
+    {
+      "section": "Descripción del Exoplaneta",
+      "purpose": "Dar detalles sobre LHS 3844b",
+      "summary": "Se describe la superficie y características geológicas del planeta."
+    },
+    {
+      "section": "Resultados del Análisis",
+      "purpose": "Explicar los hallazgos del estudio",
+      "summary": "Se evidencian características volcánicas y el efecto del clima espacial."
+    },
+    {
+      "section": "Conclusiones",
+      "purpose": "Cierre y llamada a la acción",
+      "summary": "Invitación a ver más contenido relacionado en YouTube."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Curiosidad científica",
+    "hook_text": "James Webb ha analizado directamente por primera vez la superficie de un exoplaneta.",
+    "why_it_works": "Genera interés al presentar un hito en la astronomía reciente."
+  },
+  "claims": [
+    {
+      "claim": "James Webb ha caracterizado geológicamente la superficie de LHS 3844b.",
+      "support_level": "explicit",
+      "risk": "baja"
+    },
+    {
+      "claim": "La superficie es oscura y similar al basalto.",
+      "support_level": "explicit",
+      "risk": "baja"
+    },
+    {
+      "claim": "Se descartan polvos finos orgánicos.",
+      "support_level": "explicit",
+      "risk": "media"
+    },
+    {
+      "claim": "El planeta es geológicamente inactivo.",
+      "support_level": "implicit",
+      "risk": "media"
+    }
+  ],
+  "examples": [
+    "Análisis espectroscópico",
+    "Comparaciones con la Luna y Marte",
+    "Efectos de la radiación cósmica"
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre espectroscopía infrarroja.",
+    "Comparar LHS 3844b con otros exoplanetas.",
+    "Crear contenido educativo sobre astronomía."
+  ],
+  "audience": "Personas interesadas en astronomía y ciencia.",
+  "tone": "Informal y educativo.",
+  "content_style": "Narrativo con datos científicos.",
+  "retention_devices": [
+    "Preguntas retóricas",
+    "Llamadas a la acción",
+    "Referencias visuales a otros vídeos"
+  ],
+  "title_supporting_quotes": [
+    "Estamos mirando un mundo rocoso muy parecido a zonas volcánicas.",
+    "El análisis ha permitido descartar la presencia de polvos finos orgánicos."
+  ],
+  "creative_reuse_opportunities": [
+    "Videos educativos sobre exoplanetas.",
+    "Infografías sobre el James Webb.",
+    "Artículos sobre espectroscopía."
+  ],
+  "risk_notes": [
+    "Posible desinformación si los hallazgos se interpretan incorrectamente.",
+    "Necesidad de explicar conceptos técnicos a la audiencia."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

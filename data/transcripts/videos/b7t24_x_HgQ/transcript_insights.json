@@ -1,0 +1,84 @@
+{
+  "video_id": "b7t24_x_HgQ",
+  "language": "Spanish",
+  "summary": "En la discusión se abordan las irregularidades en la operación realizada en Chihuahua que involucró a agentes de la CIA y la gobernadora María Eugenia Campos. Se revelan inconsistencias en las declaraciones de la gobernadora sobre la presencia de los agentes, así como la supuesta complicidad de funcionarios de su administración.",
+  "main_topics": [
+    "Presencia de agentes de la CIA en Chihuahua",
+    "Inconsistencias de la gobernadora",
+    "Renuncias de funcionarios",
+    "Impacto en la seguridad pública",
+    "Colaboración entre México y agencias estadounidenses"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el contexto de la conversación y el tema principal.",
+      "summary": "Se da la bienvenida a los participantes y se introduce el tema de la presencia de agentes de la CIA en el despacho de la gobernadora."
+    },
+    {
+      "section": "Análisis de la situación",
+      "purpose": "Discutir las inconsistencias en las declaraciones y los efectos de la operación.",
+      "summary": "Se analiza la situación de la gobernadora y la respuesta de distintos funcionarios sobre el operativo y la presencia de agentes."
+    },
+    {
+      "section": "Conclusiones y reflexiones",
+      "purpose": "Ofrecer conclusiones sobre las implicaciones de la información discutida.",
+      "summary": "Se reflexiona sobre la responsabilidad de la gobernadora y la falta de transparencia en la gestión."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Declaración impactante",
+    "hook_text": "Estados Unidos tiene pruebas de que estuvieron en su despacho los agentes de la CIA.",
+    "why_it_works": "Genera shock e interés inmediato al revelar una implicación seria y potencialmente escandalosa sobre la gobernadora."
+  },
+  "claims": [
+    {
+      "claim": "Los agentes de la CIA estuvieron en el despacho de la gobernadora.",
+      "support_level": "explicit",
+      "risk": "alto"
+    },
+    {
+      "claim": "La gobernadora niega haber conocido a los agentes.",
+      "support_level": "implicit",
+      "risk": "medio"
+    },
+    {
+      "claim": "Funcionarios fueron instruidos para culpar al fallecido Oseguera.",
+      "support_level": "weak",
+      "risk": "bajo"
+    }
+  ],
+  "examples": [
+    "Presencia confirmada de un agente llamado Michael en Palacio de Gobierno.",
+    "Testimonios contradictorios sobre la operación de los agentes.",
+    "Vínculos entre la administración estatal y las agencias estadounidenses."
+  ],
+  "actionable_ideas": [
+    "Investigar más sobre la colaboración entre agencias estadounidenses y el gobierno local.",
+    "Revisar los protocolos de transparencia en la administración pública.",
+    "Monitorear las reacciones de la gobernadora ante nueva evidencia."
+  ],
+  "audience": "Espectadores interesados en políticas de seguridad y corrupción.",
+  "tone": "Crítico e investigativo",
+  "content_style": "Conversacional y analítico",
+  "retention_devices": [
+    "Preguntas retóricas para mantener el interés.",
+    "Referencias directas a testimonios impactantes.",
+    "Revelación de nuevas evidencias a lo largo del diálogo."
+  ],
+  "title_supporting_quotes": [
+    "La gobernadora tiene conocimiento.",
+    "Sería lo más sensato de un gobernador hablarle con la verdad a su pueblo.",
+    "No era la Delegación de Estados Unidos sino agentes de la CIA."
+  ],
+  "creative_reuse_opportunities": [
+    "Creación de un artículo de análisis sobre corrupción política.",
+    "Podcast sobre la implicación de agencias extranjeras en políticas locales.",
+    "Videos informativos sobre el impacto de la seguridad en Chihuahua."
+  ],
+  "risk_notes": [
+    "Alto riesgo de controversia con las autoridades debido a la naturaleza de las acusaciones.",
+    "Posibilidad de represalias políticas contra los informantes."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

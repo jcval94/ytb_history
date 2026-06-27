@@ -1,0 +1,79 @@
+{
+  "video_id": "CJKMbZp_nZY",
+  "language": "es",
+  "summary": "El video sigue a un grupo de extras durante un día de rodaje. La interacción entre ellos refleja la dinámica del trabajo en un set, con diálogos coloquiales, bromas y la preparación para la filmación.",
+  "main_topics": [
+    "Experiencia en rodajes",
+    "Dinámicas de trabajo como extra",
+    "Interacciones entre el equipo",
+    "Preparativos para la grabación"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Establecer el contexto",
+      "summary": "Se presenta la llegada al rodaje y el entusiasmo de ser el mejor extra."
+    },
+    {
+      "section": "Desarrollo",
+      "purpose": "Mostrar la dinámica en el set",
+      "summary": "Los extras interactúan mientras se preparan para la grabación, compartiendo chistes y consejos."
+    },
+    {
+      "section": "Clímax",
+      "purpose": "Resaltar los desafíos del rodaje",
+      "summary": "Discuten aspectos técnicos del rodaje y realizan ajustes necesarios."
+    },
+    {
+      "section": "Cierre",
+      "purpose": "Concluir la jornada",
+      "summary": "Refuerzan la camaradería y el humor entre el equipo."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "anecdotal",
+    "hook_text": "Hoy voy a ser el mejor extra del mundo.",
+    "why_it_works": "Crea curiosidad sobre cómo se desarrollará su ambición y la dinámica con los demás."
+  },
+  "claims": [
+    {
+      "claim": "La experiencia de ser extra es divertida y llena de interacción.",
+      "support_level": "explicit",
+      "risk": "bajo"
+    },
+    {
+      "claim": "Los extras enfrentan desafíos únicos durante el rodaje.",
+      "support_level": "implicit",
+      "risk": "medio"
+    }
+  ],
+  "examples": [
+    "Las interacciones entre extras y la dirección.",
+    "Las bromas sobre la comida y el vestuario."
+  ],
+  "actionable_ideas": [
+    "Fomentar un ambiente de trabajo colaborativo en sets de filmación.",
+    "Incorporar momentos de humor para aliviar tensiones en el rodaje."
+  ],
+  "audience": "Entusiastas del cine, aspirantes a actores, y profesionales de la producción.",
+  "tone": "informal y humorístico",
+  "content_style": "conversacional y dinámico",
+  "retention_devices": [
+    "Humor en la interacción",
+    "Detalles técnicos sobre el rodaje",
+    "Momentos de camaradería"
+  ],
+  "title_supporting_quotes": [
+    "Hoy voy a ser tu mejor extra.",
+    "Es algo malo del marco legal."
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un vlog sobre la vida de un extra.",
+    "Hacer un tutorial sobre cómo prepararse para un rodaje."
+  ],
+  "risk_notes": [
+    "Evitando revelar información confidencial sobre producciones.",
+    "Cuidado en la representación de procesos legales en la industria."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

@@ -1,0 +1,83 @@
+{
+  "video_id": "-o3ew96Vt5E",
+  "language": "English",
+  "summary": "The Ebola outbreak in Central Africa is accelerating, with over 130 deaths and 500 infections. Sir Peter Horby discusses the outbreak's severity, challenges in containment due to regional instability, and the importance of international cooperation in response efforts.",
+  "main_topics": [
+    "Ebola outbreak scale and speed",
+    "Current statistics of infection and mortality",
+    "Geographical and socio-political challenges",
+    "International response and cooperation"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of the outbreak",
+      "purpose": "Set the context about the spread of Ebola in Central Africa",
+      "summary": "WHO reports that the outbreak is wider and faster than anticipated, affecting largely the DRC and Uganda."
+    },
+    {
+      "section": "Expert interview",
+      "purpose": "Provide insights on the situation from an expert's perspective",
+      "summary": "Sir Peter Horby discusses the outbreak's rapid spread and challenges in tracing contacts due to the complicated socio-political landscape."
+    },
+    {
+      "section": "International cooperation",
+      "purpose": "Highlight the need for global assistance and coordination",
+      "summary": "The expert elaborates on the need for public engagement and international cooperation to prevent further spread."
+    },
+    {
+      "section": "Risk assessment",
+      "purpose": "Evaluate the risk of further spreading",
+      "summary": "Horby assesses the risk to neighboring countries and the importance of vigilant screening."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistical revelation",
+    "hook_text": "131 people have died and more than 500 are infected",
+    "why_it_works": "This shocking statistic captures immediate attention and highlights the severity of the situation."
+  },
+  "claims": [
+    {
+      "claim": "The Ebola outbreak is spreading faster and more widely than previously thought.",
+      "support_level": "explicit",
+      "risk": "high"
+    },
+    {
+      "claim": "The positivity rate among suspected Ebola cases is high (50-60%).",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "International coordination is crucial to prevent further spread.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Increase awareness of Ebola symptoms in affected areas.",
+    "Implement robust contact tracing measures.",
+    "Prepare healthcare systems in neighboring countries for potential cases."
+  ],
+  "audience": "Public health officials, general public interested in health updates",
+  "tone": "Informative and serious",
+  "content_style": "Conversational and expert-led",
+  "retention_devices": [
+    "Expert interviews",
+    "Statistical data",
+    "Real-time updates on the situation"
+  ],
+  "title_supporting_quotes": [
+    "It's a fast-moving situation",
+    "The outbreak is quite widespread",
+    "The risk to immediate neighboring countries is high"
+  ],
+  "creative_reuse_opportunities": [
+    "Infographics summarizing outbreak statistics",
+    "Public awareness campaigns based on expert interviews"
+  ],
+  "risk_notes": [
+    "Potential for widespread panic due to high mortality rates.",
+    "Challenges in maintaining effective communication due to region instability."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
