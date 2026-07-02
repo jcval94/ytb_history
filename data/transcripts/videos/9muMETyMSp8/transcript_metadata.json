@@ -1,0 +1,20 @@
+{
+  "video_id": "9muMETyMSp8",
+  "channel_id": "UCJ5v_MCY6GNUBTO8-D3XoAg",
+  "channel_name": "WWE",
+  "title": "Jade Cargill pins the champ‼️",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\9muMETyMSp8.mp3",
+  "transcribed_at": "2026-07-02T17:47:38.442617+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 302,
+  "text_sha256": "43ff33c99a4a6288b9c507ac9013955c72ae0249ff182f69e37b6ea04468f0d2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\9muMETyMSp8\\transcript_segments.jsonl",
+  "segment_count": 7,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-07-02T17:49:45.270178+00:00",
+  "duration_seconds": 30.600000381469727
+}

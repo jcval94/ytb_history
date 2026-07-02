@@ -1,0 +1,66 @@
+{
+  "video_id": "9muMETyMSp8",
+  "language": "unknown",
+  "summary": "The transcript details a wrestling match where Jade Cargill and her team win against Rhea Ripley, culminating in a pinfall. Cargill's finishing move 'Jaded' is highlighted, creating suspense about future events.",
+  "main_topics": [
+    "Wrestling match",
+    "Jade Cargill",
+    "Rhea Ripley",
+    "Victory and suspense"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Match conclusion",
+      "purpose": "To announce the winner of the match",
+      "summary": "Cargill pins Ripley during the match, signaling a victory."
+    },
+    {
+      "section": "Post-match anticipation",
+      "purpose": "To build suspense for upcoming events",
+      "summary": "Cargill's signature move hints at potential future conflicts."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Suspense",
+    "hook_text": "Will that be the case a week from tomorrow?",
+    "why_it_works": "This line provokes curiosity and anticipation for future events."
+  },
+  "claims": [
+    {
+      "claim": "Jade Cargill pinned the WWE Champion",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Cargill's finishing move is impactful",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Promote upcoming matches featuring Cargill",
+    "Highlight Cargill's signature moves in marketing"
+  ],
+  "audience": "Wrestling fans",
+  "tone": "Exciting and dramatic",
+  "content_style": "Sports commentary",
+  "retention_devices": [
+    "Live commentary",
+    "Dramatic move names",
+    "Encouraging fan engagement"
+  ],
+  "title_supporting_quotes": [
+    "Cargill has pinned the WWE Champion!",
+    "Jade Cargill has hit Ripley with Jaded!"
+  ],
+  "creative_reuse_opportunities": [
+    "Create highlight reels of Cargill's matches",
+    "Develop merchandise featuring signature moves"
+  ],
+  "risk_notes": [
+    "Potential backlash if Cargill loses in future matches",
+    "Fans may have mixed reactions to match results."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

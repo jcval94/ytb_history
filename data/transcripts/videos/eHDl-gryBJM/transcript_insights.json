@@ -1,0 +1,73 @@
+{
+  "video_id": "eHDl-gryBJM",
+  "language": "unknown",
+  "summary": "This video highlights the top 10 plays from the NBA, showcasing incredible athleticism and skill, particularly emphasizing Victor Wimbanyama's dominant performances and clutch moments from various players.",
+  "main_topics": [
+    "Top NBA Plays",
+    "Victor Wimbanyama Highlights",
+    "Defensive Skills",
+    "Clutch Performances"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction",
+      "purpose": "To introduce the concept of the top 10 best plays in an engaging manner.",
+      "summary": "Sets the tone for an exciting compilation of basketball highlights."
+    },
+    {
+      "section": "Play Highlights",
+      "purpose": "To showcase each play and analyze its significance.",
+      "summary": "Describes each top play, emphasizing player names, the actions performed, and the context of the plays."
+    },
+    {
+      "section": "Conclusion",
+      "purpose": "To wrap up the highlight reel and leave a memorable impression.",
+      "summary": "Encourages viewers to appreciate the skills displayed and creates anticipation for future highlights."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Exciting Commentary",
+    "hook_text": "Oh mama, it's Wimbanyama once again at the rim.",
+    "why_it_works": "It builds excitement and emphasizes the player's remarkable skills, keeping viewers engaged."
+  },
+  "claims": [
+    {
+      "claim": "Victor Wimbanyama is a standout player in the league.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Defensive plays are just as thrilling as offensive highlights.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [
+    "Devin Vassell's defensive block on Jalen Williams.",
+    "Wimbanyama scoring from a Steph Curry-range shot."
+  ],
+  "actionable_ideas": [
+    "Include more player statistics to enhance the narrative.",
+    "Engage viewers by prompting them to vote for their favorite play."
+  ],
+  "audience": "Basketball fans and sports enthusiasts",
+  "tone": "Energetic and enthusiastic",
+  "content_style": "Fast-paced and descriptive",
+  "retention_devices": [
+    "Suspenseful commentary",
+    "Visual highlights of the best plays"
+  ],
+  "title_supporting_quotes": [
+    "Oh mama, it's Wimbanyama once again at the rim.",
+    "What in the Steph Curry is happening?"
+  ],
+  "creative_reuse_opportunities": [
+    "Create behind-the-scenes content about the players.",
+    "Make a series analyzing the techniques used in each play."
+  ],
+  "risk_notes": [
+    "Wimbanyama's dominance could overshadow other players.",
+    "Highlighting only offensive plays might alienate defensive play fans."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

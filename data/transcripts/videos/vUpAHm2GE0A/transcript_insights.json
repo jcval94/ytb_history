@@ -1,0 +1,93 @@
+{
+  "video_id": "vUpAHm2GE0A",
+  "language": "unknown",
+  "summary": "In this baseball commentary, the focus is on pitcher Kai Wei Tang, who has been building up his pitch count and making a strong impression during his starts. The discussion covers the struggles of the Cubs, lineup changes, and Tang's performance, including multiple strikeouts and an impressive outing against the Cubs.",
+  "main_topics": [
+    "Kai Wei Tang's pitching performance",
+    "Cubs lineup changes",
+    "Cubs' recent struggles",
+    "Strikeout statistics",
+    "Astros vs Cubs matchup"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of Kai Wei Tang",
+      "purpose": "Set the stage for the game and introduce players",
+      "summary": "Kai Wei Tang's preparation and pitch count as he faces the Cubs."
+    },
+    {
+      "section": "Cubs lineup update",
+      "purpose": "Highlight changes and strategies",
+      "summary": "Craig Council's strategic adjustments to the Cubs lineup due to recent losses."
+    },
+    {
+      "section": "Game performance analysis",
+      "purpose": "Breakdown of Tang's performance in the game",
+      "summary": "Detailed analysis of strikeouts, pitch count, and overall effectiveness against the Cubs."
+    },
+    {
+      "section": "Audience engagement",
+      "purpose": "Connect with fans",
+      "summary": "Mentioning Astros fans in the stands supporting the team."
+    },
+    {
+      "section": "Game progression",
+      "purpose": "Highlight key moments in the game",
+      "summary": "Discussing pivotal plays and outcomes as the game advances."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Statistic",
+    "hook_text": "Kai Wei Tang's pitch count steadily increasing.",
+    "why_it_works": "It captures attention by presenting a dynamic performance metric and builds anticipation for the player's performance."
+  },
+  "claims": [
+    {
+      "claim": "Kai Wei Tang is becoming a key player in the Astros' rotation.",
+      "support_level": "explicit",
+      "risk": "medium"
+    },
+    {
+      "claim": "Cubs' lineup changes are a response to their offensive struggles.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The Astros' strong fan presence positively influences team morale.",
+      "support_level": "implicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Kai Wei Tang recorded multiple strikeouts today, showcasing his improving skills.",
+    "Cubs made significant changes to their batting order after a string of losses."
+  ],
+  "actionable_ideas": [
+    "Monitor Kai Wei Tang's performance for fantasy baseball purposes.",
+    "Consider the impact of lineup changes on team performance.",
+    "Engage with local fan communities for game day experiences."
+  ],
+  "audience": "Baseball fans, sports analysts, and commentators",
+  "tone": "Analytical and engaging",
+  "content_style": "Play-by-play commentary",
+  "retention_devices": [
+    "Statistics",
+    "Player performance updates",
+    "Game recaps"
+  ],
+  "title_supporting_quotes": [
+    "\"He's been slowly building up 63, then 76 pitches...\"",
+    "\"One of the big struggles for the Cubs during their stretch of losing...\"",
+    "\"Kaiwe Tang with that changeup getting the strikeout.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Future analysis on player development of Kai Wei Tang.",
+    "Creating highlight reels from key moments in the game.",
+    "Exploring Cubs' lineup strategies in a broader context."
+  ],
+  "risk_notes": [
+    "Potential over-reliance on recent statistics could mislead future assessments.",
+    "Lineup changes impact should be monitored for long-term team dynamics."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

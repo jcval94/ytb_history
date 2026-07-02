@@ -1,0 +1,14 @@
+{
+  "video_id": "eHDl-gryBJM",
+  "channel_id": "UCWJ2lWNubArHWmf3FIHbfcQ",
+  "channel_name": "NBA",
+  "title": "NBA's Top 10 Plays of the Night | May 18, 2026",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\eHDl-gryBJM.mp3",
+  "transcribed_at": "2026-07-02T17:47:30.865846+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2038,
+  "text_sha256": "fb61cefb5ce6dc7b76d1772a1b000a80cde7b49de5a7ef54888bd35f545bd92d",
+  "repo_schema_version": "transcript_metadata_v1"
+}
