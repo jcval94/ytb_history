@@ -1,0 +1,20 @@
+{
+  "video_id": "MEBzm2u970Y",
+  "channel_id": "UCGXbLrVe8vnkiFv7q2vYv3w",
+  "channel_name": "El Mundo",
+  "title": "Altercados y cargas policiales a la llegada de miembros de la Flotilla a Bilbao",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\MEBzm2u970Y.mp3",
+  "transcribed_at": "2026-07-04T19:04:43.467650+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1,
+  "text_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\MEBzm2u970Y\\transcript_segments.jsonl",
+  "segment_count": 5,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-07-04T19:09:55.603622+00:00",
+  "duration_seconds": 37.2400016784668
+}

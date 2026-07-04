@@ -1,0 +1,83 @@
+{
+  "video_id": "Z_fLw4l-o2g",
+  "language": "es",
+  "summary": "El video aborda las percepciones contrastantes sobre México entre extranjeros y locales, destacando la existencia de 'dos Méxicos': uno para turistas o personas con alto poder adquisitivo y otro que refleja la realidad de la población en general. Se mencionan aspectos que atraen a los extranjeros, como la calidad de vida, la calidez humana, y las bellezas naturales, contrastándolos con las dificultades que enfrentan muchos mexicanos, como la inseguridad y la falta de servicios básicos.",
+  "main_topics": [
+    "Dos Méxicos",
+    "Perspectiva de extranjeros",
+    "Atracción hacia México",
+    "Desigualdad social",
+    "Experiencias de vida"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción",
+      "purpose": "Presentar el tema de las dos realidades en México",
+      "summary": "Se plantea la idea de que existen dos Méxicos, uno para turistas y otro para la población local."
+    },
+    {
+      "section": "Perspectiva de extranjeros",
+      "purpose": "Detallar las razones por las que los extranjeros encuentran atractivo a México",
+      "summary": "Los extranjeros disfrutan de la vida social, la cultura, la calidez humana y la riqueza natural de México."
+    },
+    {
+      "section": "Desigualdad social",
+      "purpose": "Contrastar las vivencias de los mexicanos con las de los extranjeros",
+      "summary": "Se discuten las dificultades que enfrenta la población local, como la inseguridad y servicios deficientes."
+    },
+    {
+      "section": "Conclusión",
+      "purpose": "Invitar a la reflexión sobre la percepción de México",
+      "summary": "Se anima a comentar y dialogar sobre las diferencias de percepción y la realidad vivida."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "pregunta evocativa",
+    "hook_text": "¿Por qué pasan los extranjeros y les encanta México?",
+    "why_it_works": "La pregunta invita a reflexionar y a unirse a la conversación sobre las percepciones y experiencias en México."
+  },
+  "claims": [
+    {
+      "claim": "Existen dos realidades en México: una para turistas y otra para la población local.",
+      "support_level": "explicit",
+      "risk": "Moderado"
+    },
+    {
+      "claim": "Los extranjeros disfrutan de la vida social y la calidez humana en México.",
+      "support_level": "explicit",
+      "risk": "Bajo"
+    },
+    {
+      "claim": "Muchos mexicanos enfrentan problemas de inseguridad y falta de servicios.",
+      "support_level": "explicit",
+      "risk": "Alto"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Crear espacios de conversación sobre percepciones de México.",
+    "Promover el turismo responsable que incluya áreas menos conocidas.",
+    "Fomentar el entendimiento entre locales y extranjeros."
+  ],
+  "audience": "Público general interesado en la cultura y realidad mexicana",
+  "tone": "Reflexivo y crítico",
+  "content_style": "Informativo y analítico",
+  "retention_devices": [
+    "Preguntas abiertas al inicio y fin del video",
+    "Ejemplos personales de extranjeras en México",
+    "Citas de fuentes externas sobre migración y turismo"
+  ],
+  "title_supporting_quotes": [
+    "\"México es un país seguro, puede estar en la calle a las 10, 11, 12 de la madrugada, no me pasa nada.\"",
+    "\"La vida todavía ocurre afuera en México, en mercados y plazas.\""
+  ],
+  "creative_reuse_opportunities": [
+    "Crear un segmento sobre experiencias de vida real de extranjeros en México.",
+    "Entrevistar a residentes locales y extranjeros sobre sus percepciones."
+  ],
+  "risk_notes": [
+    "La percepción negativa de México por parte de algunos sectores podría intensificarse.",
+    "Es importante abordar temas sensibles con cuidado para evitar malentendidos."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

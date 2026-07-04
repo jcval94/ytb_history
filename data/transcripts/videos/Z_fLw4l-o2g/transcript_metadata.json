@@ -1,0 +1,14 @@
+{
+  "video_id": "Z_fLw4l-o2g",
+  "channel_id": "UCRDQzsHtx2cXvzEXnEhbxBg",
+  "channel_name": "Mister Krax",
+  "title": "¿Porque el \"Primer Mundo\" se enamora de México? Pero a algunos mexicanos no les gusta",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Z_fLw4l-o2g.mp3",
+  "transcribed_at": "2026-07-04T19:07:13.247399+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 47116,
+  "text_sha256": "255e6d8ad2d30d6d9661be46b6d92c17641a682516d3942af07d1f9ec9bfac7e",
+  "repo_schema_version": "transcript_metadata_v1"
+}

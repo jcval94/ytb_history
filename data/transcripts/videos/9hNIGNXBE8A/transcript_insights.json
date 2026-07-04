@@ -1,0 +1,84 @@
+{
+  "video_id": "9hNIGNXBE8A",
+  "language": "spanish",
+  "summary": "El análisis discute la relación económica entre México y Estados Unidos, subrayando la necesidad de diversificación económica y fortalecer lazos comerciales con otras regiones, incluyendo la Unión Europea y América Latina, dadas las inestabilidades políticas de Estados Unidos.",
+  "main_topics": [
+    "Relaciones comerciales México-Estados Unidos",
+    "Diversificación económica de México",
+    "Acuerdos comerciales con la Unión Europea",
+    "Multilateralismo en comercio",
+    "Relaciones con América Latina y Asia"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introducción a la relación México-Estados Unidos",
+      "purpose": "Presentar la inevitabilidad del vecindario y la necesidad de negocios.",
+      "summary": "Se destaca la importancia de la relación con Estados Unidos y la necesidad de diversificación económica."
+    },
+    {
+      "section": "Importancia de la renovación del acuerdo con la Unión Europea",
+      "purpose": "Explicar la relevancia de nuevos acuerdos comerciales.",
+      "summary": "La firma de la Comisión Europea es crucial para nuevas oportunidades comerciales."
+    },
+    {
+      "section": "Relaciones con otras regiones",
+      "purpose": "Enfatizar la extensión de lazos comerciales y políticos.",
+      "summary": "Se menciona la importancia de fortalecer relaciones con América Latina y Asia."
+    },
+    {
+      "section": "Crítica a la dependencia de Estados Unidos",
+      "purpose": "Advertir de los riesgos asociados a una dependencia excesiva.",
+      "summary": "Estados Unidos es considerado un país volátil e inestable, lo que genera la necesidad de un enfoque multilateral."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Provocador",
+    "hook_text": "Estados Unidos es un país muy voluble.",
+    "why_it_works": "Genera sorpresa e intriga sobre la estabilidad del socio comercial más grande de México."
+  },
+  "claims": [
+    {
+      "claim": "La economía mexicana debe diversificarse.",
+      "support_level": "explicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "El multilateralismo es esencial para naciones emergentes como México.",
+      "support_level": "implicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Estados Unidos es un país inestable.",
+      "support_level": "explicit",
+      "risk": "high"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Fortalecer relaciones comerciales con la Unión Europea.",
+    "Explorar y consolidar lazos con América Latina.",
+    "Incrementar acuerdos comerciales con naciones asiáticas."
+  ],
+  "audience": "Personas interesadas en relaciones internacionales y economía mexicana.",
+  "tone": "Analítico y crítico.",
+  "content_style": "Reflexivo y con un enfoque en política económica.",
+  "retention_devices": [
+    "Estadísticas sobre comercio",
+    "Análisis de relaciones anteriores",
+    "Citas de expertos en economía"
+  ],
+  "title_supporting_quotes": [
+    "La renovación de este acuerdo con la Unión Europea es de enorme relevancia.",
+    "Lo que más conviene es, en efecto, el multilateralismo."
+  ],
+  "creative_reuse_opportunities": [
+    "Artículos sobre comercio internacional",
+    "Debates sobre políticas económicas en Latinoamérica",
+    "Documentales sobre relaciones comerciales"
+  ],
+  "risk_notes": [
+    "Inestabilidad política puede afectar acuerdos futuros.",
+    "Dependencia excesiva de un solo país puede ser perjudicial."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

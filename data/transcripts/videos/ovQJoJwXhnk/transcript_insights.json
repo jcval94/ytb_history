@@ -1,0 +1,76 @@
+{
+  "video_id": "ovQJoJwXhnk",
+  "language": "unknown",
+  "summary": "The speaker shares their exhilarating experience at the Camp Nou, emphasizing the thrill of seeing a packed stadium during a women's football match that set a world record.",
+  "main_topics": [
+    "Experience at Camp Nou",
+    "Women's football",
+    "Record-breaking event"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction to the game",
+      "purpose": "Set the scene of excitement",
+      "summary": "Describes the initial thrill of attending a game."
+    },
+    {
+      "section": "Personal reflection",
+      "purpose": "Share personal significance",
+      "summary": "Expresses unforgettable feelings from the event."
+    },
+    {
+      "section": "Significance of the match",
+      "purpose": "Highlight the importance of the event",
+      "summary": "Points out the global recognition of women's football after the match."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Anecdote",
+    "hook_text": "I would say that it's one of the best things I've ever experienced.",
+    "why_it_works": "The personal connection invites the audience to engage emotionally with the story."
+  },
+  "claims": [
+    {
+      "claim": "The first game at the Camp Nou was thrilling.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The match set a world record.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "Women's football is gaining serious recognition.",
+      "support_level": "implicit",
+      "risk": "medium"
+    }
+  ],
+  "examples": [],
+  "actionable_ideas": [
+    "Organize more women's football events to break records.",
+    "Promote women's sports to elevate visibility and support.",
+    "Create emotional marketing campaigns around sporting events."
+  ],
+  "audience": "Sports fans, particularly those interested in women's sports",
+  "tone": "Excited and nostalgic",
+  "content_style": "Personal narrative",
+  "retention_devices": [
+    "Emotional storytelling",
+    "Personal anecdotes",
+    "Highlighting significant achievements"
+  ],
+  "title_supporting_quotes": [
+    "I'm never gonna forget the feeling of just going out of the tunnel in Camp Nou.",
+    "This team is something special."
+  ],
+  "creative_reuse_opportunities": [
+    "Highlighting personal stories in promotional materials for sports events.",
+    "Using the anecdote in campaigns that celebrate women's achievements."
+  ],
+  "risk_notes": [
+    "Claims about recognition may vary depending on different perspectives.",
+    "Emotional appeals may not resonate with all audience segments."
+  ],
+  "schema_version": "transcript_insights_v1"
+}

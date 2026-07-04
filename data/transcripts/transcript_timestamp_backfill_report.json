@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T17:49:30.132360+00:00",
+  "generated_at": "2026-07-04T19:08:52.943806+00:00",
   "status": "partial_success",
   "data_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data",
   "audio_source_dir": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources",
@@ -8,56 +8,56 @@
   "limit": 10,
   "processed": 10,
   "generated": 3,
-  "skipped_existing_segments": 227,
+  "skipped_existing_segments": 209,
   "skipped_missing_audio": 0,
   "failed": 7,
   "success_video_ids": [
-    "9muMETyMSp8",
-    "NV0bSBlxF6s",
-    "Qctqo01WLLU"
+    "9hNIGNXBE8A",
+    "IZFambTgDQA",
+    "MEBzm2u970Y"
   ],
   "failed_details": [
     {
       "video_id": "59Z1adATWRA",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\59Z1adATWRA.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26277122 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26239524 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     },
     {
       "video_id": "AJdiXIiYMYY",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\AJdiXIiYMYY.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26214788 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26272614 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     },
     {
       "video_id": "B-uGbpPxm_o",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\B-uGbpPxm_o.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26336922 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26392850 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+    },
+    {
+      "video_id": "BXe1Artm2-E",
+      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\BXe1Artm2-E.mp3",
+      "error_type": "APIStatusError",
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26369372 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     },
     {
       "video_id": "HBluLfX2F_k",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\HBluLfX2F_k.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26446856 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26331330 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     },
     {
       "video_id": "MiUHjLxm3V0",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\MiUHjLxm3V0.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26244146 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26339718 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     },
     {
       "video_id": "NIk_0AW5hFU",
       "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\NIk_0AW5hFU.mp3",
       "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26314886 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
-    },
-    {
-      "video_id": "Q8b0HOGijSY",
-      "audio_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Q8b0HOGijSY.mp3",
-      "error_type": "APIStatusError",
-      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26267912 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
+      "error_message": "Error code: 413 - {'error': {'message': '413: Maximum content size limit (26214400) exceeded (26398258 bytes read)', 'type': 'server_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}"
     }
   ],
   "warnings": []
