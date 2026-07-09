@@ -1,6 +1,6 @@
 # Content Driver Models Report
 
-Generated at: 2026-07-06T14:09:35.609016+00:00
+Generated at: 2026-07-09T13:34:39.171782+00:00
 
 ## Targets evaluados
 - future_log_views_delta_7d
@@ -37,7 +37,7 @@ Ver `latest_content_driver_feature_direction.csv` para detalle por feature.
 - content_value_score_7d / linear_regularized_regressor / engagement_context: 30.21346516
 - future_relative_views_delta_7d / linear_regularized_regressor / model_decision: 19.84066128
 - content_value_score_7d / linear_regularized_regressor / topic_metrics: 17.90842764
-- future_relative_views_delta_7d / linear_regularized_regressor / semantic_cluster: 14.13504757
+- future_relative_views_delta_7d / linear_regularized_regressor / semantic_cluster: 14.13504758
 - content_value_score_7d / linear_regularized_regressor / channel_context: 9.81527546
 
 **Estas importancias son predictivas, no causales.**

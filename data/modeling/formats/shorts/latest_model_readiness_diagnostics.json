@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T14:08:10+00:00",
+  "generated_at": "2026-07-09T13:32:53+00:00",
   "content_format": "shorts",
   "status": "not_ready",
   "recommended_status": "ready_for_baseline",
@@ -24,7 +24,7 @@
   "target_diagnostics": [],
   "forecast": {
     "status": "ok",
-    "daily_trainable_growth": 344.89567812760123,
+    "daily_trainable_growth": 325.15118430021437,
     "estimated_days_to_exploratory": 0.0,
     "estimated_days_to_baseline": 0.0
   },
