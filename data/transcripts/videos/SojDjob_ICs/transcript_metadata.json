@@ -10,5 +10,11 @@
   "language": null,
   "text_char_count": 2784,
   "text_sha256": "0e04d64f74041b8ba5d5b2a0e0ef6715a952c192c490d5045e78a2b6a79c1ecb",
-  "repo_schema_version": "transcript_metadata_v1"
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\SojDjob_ICs\\transcript_segments.jsonl",
+  "segment_count": 40,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-07-18T17:19:32.576987+00:00",
+  "duration_seconds": 192.50999450683594
 }

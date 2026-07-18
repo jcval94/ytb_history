@@ -1,0 +1,14 @@
+{
+  "video_id": "lR6n1fCcPyc",
+  "channel_id": "UCoOae5nYA7VqaXzerajD0lg",
+  "channel_name": "Ali Abdaal",
+  "title": "Try walking Zoom calls",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lR6n1fCcPyc.mp3",
+  "transcribed_at": "2026-07-18T17:18:26.580357+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 765,
+  "text_sha256": "6044df6c8d485781714c106591d08173e29f8aede37fa345f4e7e95c730fa4be",
+  "repo_schema_version": "transcript_metadata_v1"
+}

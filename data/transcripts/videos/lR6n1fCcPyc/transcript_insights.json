@@ -1,0 +1,81 @@
+{
+  "video_id": "lR6n1fCcPyc",
+  "language": "unknown",
+  "summary": "The speaker discusses the time-saving mini habit of taking walking Zoom calls to combine exercise with work commitments, aiming for 10,000 steps daily.",
+  "main_topics": [
+    "Walking Zoom Calls",
+    "Time Management",
+    "Physical Activity",
+    "Creativity Boost",
+    "Health Benefits"
+  ],
+  "narrative_structure": [
+    {
+      "section": "Introduction of Mini Habit",
+      "purpose": "To introduce the concept of walking during Zoom calls.",
+      "summary": "The speaker shares their practice of combining Zoom meetings with walking."
+    },
+    {
+      "section": "Benefits of Walking Zoom Calls",
+      "purpose": "To highlight the advantages of this mini habit.",
+      "summary": "The speaker experiences increased creativity, health benefits, and saves time."
+    },
+    {
+      "section": "Call to Action",
+      "purpose": "Encourage viewers to explore more mini habits.",
+      "summary": "The speaker invites viewers to check out more habits that save time."
+    }
+  ],
+  "hook_analysis": {
+    "hook_type": "Practical Tip",
+    "hook_text": "Walking Zoom calls.",
+    "why_it_works": "It presents a simple, actionable idea that appeals to busy professionals looking to maximize productivity and health simultaneously."
+  },
+  "claims": [
+    {
+      "claim": "Walking during Zoom calls increases creativity.",
+      "support_level": "implicit",
+      "risk": "moderate"
+    },
+    {
+      "claim": "Walking in sunlight is beneficial for well-being.",
+      "support_level": "explicit",
+      "risk": "low"
+    },
+    {
+      "claim": "The habit saves time weekly.",
+      "support_level": "explicit",
+      "risk": "low"
+    }
+  ],
+  "examples": [
+    "Having Zoom meetings outdoors.",
+    "Scheduling walking meetings to reach step goals."
+  ],
+  "actionable_ideas": [
+    "Implement walking Zoom calls into your daily routine.",
+    "Set step goals for work hours.",
+    "Explore more mini habits for efficiency."
+  ],
+  "audience": "Busy professionals seeking efficiency and health benefits.",
+  "tone": "Encouraging and informative",
+  "content_style": "Conversational and practical",
+  "retention_devices": [
+    "Personal anecdote",
+    "Statistics on steps and time",
+    "Direct engagement with the audience"
+  ],
+  "title_supporting_quotes": [
+    "This is game-changing because then I'm getting sunlight...",
+    "I'm feeling good, and I'm more creative."
+  ],
+  "creative_reuse_opportunities": [
+    "Expand on walking habits in the workplace.",
+    "Create a series on integrating physical activity with professional life."
+  ],
+  "risk_notes": [
+    "Walking meetings may not be feasible for all types of discussions.",
+    "Potential distraction from the meeting topic if not managed."
+  ],
+  "schema_version": "transcript_insights_v1"
+}
