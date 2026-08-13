@@ -1,7 +1,7 @@
 # Model Suite Report
 
 ## Champions by target
-- is_top_growth_7d: videos-linear_regularized-is_top_growth_7d-20260803T133054Z (precision_at_10=1.0)
-- future_log_views_delta_7d: videos-linear_regularized-future_log_views_delta_7d-20260803T133054Z (spearman_corr=0.989779)
+- future_log_views_delta_7d: videos-linear_regularized-future_log_views_delta_7d-20260813T112744Z (spearman_corr=0.989779)
+- is_top_growth_7d: videos-linear_regularized-is_top_growth_7d-20260813T112744Z (precision_at_10=1.0)
 
 **Advertencia**: RF direction es estimada por directional analysis, no por impurity importance.
