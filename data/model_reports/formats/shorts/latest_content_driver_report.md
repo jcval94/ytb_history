@@ -1,6 +1,6 @@
 # Content Driver Models Report
 
-Generated at: 2026-08-13T11:24:52.663265+00:00
+Generated at: 2026-08-17T11:00:50.412928+00:00
 
 ## Targets evaluados
 - future_log_views_delta_7d
