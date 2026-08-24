@@ -1,50 +1,50 @@
 {
   "schema_version": "latest_model_manifest_v2",
   "status": "success",
-  "suite_id": "suite-20260820T110445Z",
+  "suite_id": "suite-20260824T110816Z",
   "content_format": null,
   "content_formats": [
     "shorts",
     "videos"
   ],
-  "artifact_name": "ytb-model-suite-32361458583",
-  "workflow_run_id": "32361458583",
-  "created_at": "2026-08-20T11:04:45.020994+00:00",
+  "artifact_name": "ytb-model-suite-32719754509",
+  "workflow_run_id": "32719754509",
+  "created_at": "2026-08-24T11:08:16.689325+00:00",
   "expires_at_estimate": null,
   "champions": {
     "shorts": {
-      "is_top_growth_7d": {
-        "model_id": "shorts-linear_regularized-is_top_growth_7d-20260820T110355Z",
-        "model_family": "linear_regularized",
-        "metric": "precision_at_10",
-        "metric_value": 1.0
-      },
       "future_log_views_delta_7d": {
-        "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260820T110355Z",
+        "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260824T110736Z",
         "model_family": "linear_regularized",
         "metric": "spearman_corr",
         "metric_value": 0.982532
-      }
-    },
-    "videos": {
+      },
       "is_top_growth_7d": {
-        "model_id": "videos-linear_regularized-is_top_growth_7d-20260820T110413Z",
+        "model_id": "shorts-linear_regularized-is_top_growth_7d-20260824T110736Z",
         "model_family": "linear_regularized",
         "metric": "precision_at_10",
         "metric_value": 1.0
-      },
+      }
+    },
+    "videos": {
       "future_log_views_delta_7d": {
-        "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260820T110413Z",
+        "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260824T110751Z",
         "model_family": "linear_regularized",
         "metric": "spearman_corr",
         "metric_value": 0.989779
+      },
+      "is_top_growth_7d": {
+        "model_id": "videos-linear_regularized-is_top_growth_7d-20260824T110751Z",
+        "model_family": "linear_regularized",
+        "metric": "precision_at_10",
+        "metric_value": 1.0
       }
     }
   },
   "models": [
     {
       "content_format": "shorts",
-      "model_id": "shorts-linear_regularized-is_top_growth_7d-20260820T110355Z",
+      "model_id": "shorts-linear_regularized-is_top_growth_7d-20260824T110736Z",
       "model_family": "linear_regularized",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -61,7 +61,7 @@
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-random_forest-is_top_growth_7d-20260820T110355Z",
+      "model_id": "shorts-random_forest-is_top_growth_7d-20260824T110736Z",
       "model_family": "random_forest",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -78,7 +78,7 @@
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-shallow_tree-is_top_growth_7d-20260820T110355Z",
+      "model_id": "shorts-shallow_tree-is_top_growth_7d-20260824T110736Z",
       "model_family": "shallow_tree",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -95,7 +95,7 @@
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260820T110355Z",
+      "model_id": "shorts-linear_regularized-future_log_views_delta_7d-20260824T110736Z",
       "model_family": "linear_regularized",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -111,7 +111,7 @@
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-random_forest-future_log_views_delta_7d-20260820T110355Z",
+      "model_id": "shorts-random_forest-future_log_views_delta_7d-20260824T110736Z",
       "model_family": "random_forest",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -127,7 +127,7 @@
     },
     {
       "content_format": "shorts",
-      "model_id": "shorts-shallow_tree-future_log_views_delta_7d-20260820T110355Z",
+      "model_id": "shorts-shallow_tree-future_log_views_delta_7d-20260824T110736Z",
       "model_family": "shallow_tree",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -143,7 +143,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-linear_regularized-is_top_growth_7d-20260820T110413Z",
+      "model_id": "videos-linear_regularized-is_top_growth_7d-20260824T110751Z",
       "model_family": "linear_regularized",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -160,7 +160,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-random_forest-is_top_growth_7d-20260820T110413Z",
+      "model_id": "videos-random_forest-is_top_growth_7d-20260824T110751Z",
       "model_family": "random_forest",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -177,7 +177,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-shallow_tree-is_top_growth_7d-20260820T110413Z",
+      "model_id": "videos-shallow_tree-is_top_growth_7d-20260824T110751Z",
       "model_family": "shallow_tree",
       "target": "is_top_growth_7d",
       "task_type": "classification",
@@ -194,7 +194,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260820T110413Z",
+      "model_id": "videos-linear_regularized-future_log_views_delta_7d-20260824T110751Z",
       "model_family": "linear_regularized",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -210,7 +210,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-random_forest-future_log_views_delta_7d-20260820T110413Z",
+      "model_id": "videos-random_forest-future_log_views_delta_7d-20260824T110751Z",
       "model_family": "random_forest",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
@@ -226,7 +226,7 @@
     },
     {
       "content_format": "videos",
-      "model_id": "videos-shallow_tree-future_log_views_delta_7d-20260820T110413Z",
+      "model_id": "videos-shallow_tree-future_log_views_delta_7d-20260824T110751Z",
       "model_family": "shallow_tree",
       "target": "future_log_views_delta_7d",
       "task_type": "regression",
