@@ -1,0 +1,19 @@
+{
+  "execution_date": "2026-09-06T23:09:20.774678-06:00",
+  "estimated_units": {
+    "channels.list": 0,
+    "playlistItems.list": 100,
+    "videos.list": 499
+  },
+  "total_estimated_units": 599,
+  "operational_limit": 7000,
+  "warning_limit": 5000,
+  "soft_warning_limit": 1000,
+  "limit_status": "ok",
+  "observed_units": {
+    "playlistItems.list": 17,
+    "videos.list": 501
+  },
+  "total_observed_units": 518,
+  "should_abort": false
+}
