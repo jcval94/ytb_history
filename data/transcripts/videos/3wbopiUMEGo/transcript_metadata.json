@@ -1,0 +1,20 @@
+{
+  "video_id": "3wbopiUMEGo",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La trampa del ingreso universal",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\3wbopiUMEGo.mp3",
+  "transcribed_at": "2026-09-13T04:59:13.363679+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 713,
+  "text_sha256": "0a4e80d493ce952e6d4f55a7f1ddba162264cc1357dd1e747748e06bd4c431c2",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\3wbopiUMEGo\\transcript_segments.jsonl",
+  "segment_count": 11,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:10:28.776985+00:00",
+  "duration_seconds": 30.530000686645508
+}

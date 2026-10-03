@@ -1,0 +1,14 @@
+{
+  "video_id": "lmp8dOTbwRQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Tu forma de usar la IA ya quedó atrás",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\lmp8dOTbwRQ.mp3",
+  "transcribed_at": "2026-09-13T05:08:56.372399+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 39169,
+  "text_sha256": "7ef1b7efc600e3f2766950607ea216f0beeb41dee1ec9292c0fc7ceca19c07ee",
+  "repo_schema_version": "transcript_metadata_v1"
+}

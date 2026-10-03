@@ -1,0 +1,14 @@
+{
+  "video_id": "WLozIkPPa0o",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Por qué abuchearon a la IA en una graduación?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\WLozIkPPa0o.mp3",
+  "transcribed_at": "2026-09-13T04:48:55.781659+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 946,
+  "text_sha256": "35d864625a0a8979be9a79337a83b35ec062e2de0e125357e76051b0482f19c2",
+  "repo_schema_version": "transcript_metadata_v1"
+}

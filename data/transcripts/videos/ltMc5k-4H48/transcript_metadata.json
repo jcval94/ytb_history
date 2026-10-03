@@ -1,0 +1,14 @@
+{
+  "video_id": "ltMc5k-4H48",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Los 3 bandos frente a la IA",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\ltMc5k-4H48.mp3",
+  "transcribed_at": "2026-09-13T05:06:11.953196+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1839,
+  "text_sha256": "c19162c7b895e9591e9d303e953e614ba504527dec95930793ea4d6c8fdb1575",
+  "repo_schema_version": "transcript_metadata_v1"
+}

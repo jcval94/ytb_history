@@ -1,0 +1,20 @@
+{
+  "video_id": "LqNbQsr2I_U",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El lado más peligroso de la IA",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\LqNbQsr2I_U.mp3",
+  "transcribed_at": "2026-09-07T05:21:00.466836+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1773,
+  "text_sha256": "b5baab035fe141decd08151507a2215ef47535c4168c761b29118f80c2e3b4ae",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\LqNbQsr2I_U\\transcript_segments.jsonl",
+  "segment_count": 34,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:31:51.972047+00:00",
+  "duration_seconds": 83.11000061035156
+}

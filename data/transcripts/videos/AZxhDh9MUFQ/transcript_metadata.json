@@ -1,0 +1,20 @@
+{
+  "video_id": "AZxhDh9MUFQ",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "Capablanca: La Máquina del Ajedrez",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\AZxhDh9MUFQ.mp3",
+  "transcribed_at": "2026-09-13T05:03:21.072925+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9361,
+  "text_sha256": "c33215e7d4aae225285311e3f87822cfda44676d53c594010207d2fdb0ea7cbf",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\AZxhDh9MUFQ\\transcript_segments.jsonl",
+  "segment_count": 61,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:14:11.558491+00:00",
+  "duration_seconds": 1346.9100341796875
+}

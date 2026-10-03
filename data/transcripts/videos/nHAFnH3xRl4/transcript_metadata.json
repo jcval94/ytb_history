@@ -1,0 +1,14 @@
+{
+  "video_id": "nHAFnH3xRl4",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Could identical twins commit the perfect crime?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\nHAFnH3xRl4.mp3",
+  "transcribed_at": "2026-09-13T04:54:00.142937+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1172,
+  "text_sha256": "f7cd213e8ae5cc00ec59e79762aff3a303d2ec23be1a20eb2a419c9cb016b09c",
+  "repo_schema_version": "transcript_metadata_v1"
+}

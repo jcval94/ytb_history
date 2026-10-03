@@ -1,0 +1,14 @@
+{
+  "video_id": "WqtXyEP8VEM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿La IA va a eliminar los títulos universitarios?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\WqtXyEP8VEM.mp3",
+  "transcribed_at": "2026-09-13T04:57:18.396855+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 2211,
+  "text_sha256": "b668eab3f05e5335bb69d6628347b003a56b29a888a4d03c79c965eea537edac",
+  "repo_schema_version": "transcript_metadata_v1"
+}

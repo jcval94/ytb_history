@@ -1,0 +1,20 @@
+{
+  "video_id": "IRN1524MV00",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El millonario negocio de producir odio en las redes",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\IRN1524MV00.mp3",
+  "transcribed_at": "2026-09-13T05:02:03.740564+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8849,
+  "text_sha256": "35cd6334447b4067c3d9439d04db4682ec957bbdc01464c4d1943f817f07e144",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\IRN1524MV00\\transcript_segments.jsonl",
+  "segment_count": 533,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:27:16.166542+00:00",
+  "duration_seconds": 1254.0999755859375
+}

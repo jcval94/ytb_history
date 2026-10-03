@@ -1,0 +1,20 @@
+{
+  "video_id": "5fC3ILrS3JI",
+  "channel_id": "UCa1fgYaJ1uCIzW8GhlNH6mw",
+  "channel_name": "Mitos y Mentes",
+  "title": "100.000 mentes unidas, una misma historia",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5fC3ILrS3JI.mp3",
+  "transcribed_at": "2026-09-13T04:46:34.057894+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 5985,
+  "text_sha256": "54254de6a5512d7fe77782279b8a0c89d4656337af656b0e66996fa76a1ac6ae",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5fC3ILrS3JI\\transcript_segments.jsonl",
+  "segment_count": 80,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:12:31.433305+00:00",
+  "duration_seconds": 385.3999938964844
+}

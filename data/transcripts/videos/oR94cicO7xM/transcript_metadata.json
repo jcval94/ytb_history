@@ -1,0 +1,14 @@
+{
+  "video_id": "oR94cicO7xM",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "The Most Dangerous Escalator In Europe",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\oR94cicO7xM.mp3",
+  "transcribed_at": "2026-09-07T05:18:51.945350+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1257,
+  "text_sha256": "cbaadccbb48f5b2c33d3e0b355272c816bea6577479cd0b5d5e9fc17e428e802",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Gi41ACR6dYc",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Es infidelidad enamorarte de una IA?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Gi41ACR6dYc.mp3",
+  "transcribed_at": "2026-09-13T05:03:46.674296+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 882,
+  "text_sha256": "25ff7538e5ef2a8a9ab44dc9e618af308d34b552603017d1b914e2413144ce91",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Gi41ACR6dYc\\transcript_segments.jsonl",
+  "segment_count": 19,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:24:58.476231+00:00",
+  "duration_seconds": 39.61000061035156
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "wt4p2oalmRY",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "Is spider web really stronger than steel?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\wt4p2oalmRY.mp3",
+  "transcribed_at": "2026-09-13T05:05:55.291080+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 25250,
+  "text_sha256": "669b16dd602eebee883ad01286965be0a23c22280839c7cf418531f1b1ac4735",
+  "repo_schema_version": "transcript_metadata_v1"
+}

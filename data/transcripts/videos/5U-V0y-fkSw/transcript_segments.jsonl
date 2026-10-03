@@ -1,0 +1,37 @@
+{"video_id": "5U-V0y-fkSw", "segment_index": 0, "start_seconds": 0.0, "end_seconds": 3.4000000953674316, "text": "In math, you can't truly pick things at random", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 1, "start_seconds": 3.4000000953674316, "end_seconds": 6.360000133514404, "text": "because formulas always give the same result,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 2, "start_seconds": 6.360000133514404, "end_seconds": 7.920000076293945, "text": "which is why computers don't have", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 3, "start_seconds": 7.920000076293945, "end_seconds": 9.899999618530273, "text": "true random number generators.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 4, "start_seconds": 9.899999618530273, "end_seconds": 12.119999885559082, "text": "Instead, they usually run an algorithm", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 5, "start_seconds": 12.119999885559082, "end_seconds": 13.640000343322754, "text": "on your current local time", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 6, "start_seconds": 13.640000343322754, "end_seconds": 16.1200008392334, "text": "to generate numbers that appear random.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 7, "start_seconds": 16.1200008392334, "end_seconds": 18.420000076293945, "text": "So if we can't pick randomly,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 8, "start_seconds": 18.420000076293945, "end_seconds": 20.799999237060547, "text": "how do we select anything in math?", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 9, "start_seconds": 20.799999237060547, "end_seconds": 24.520000457763672, "text": "Well, the only way is to follow a rule of some sort.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 10, "start_seconds": 24.520000457763672, "end_seconds": 28.040000915527344, "text": "So a rule could be always choose the smallest thing.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 11, "start_seconds": 28.1200008392334, "end_seconds": 31.1200008392334, "text": "For example, if we're looking at whole positive integers,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 12, "start_seconds": 31.1200008392334, "end_seconds": 32.70000076293945, "text": "the smallest is one.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 13, "start_seconds": 32.70000076293945, "end_seconds": 34.84000015258789, "text": "For prime numbers, it would be two.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 14, "start_seconds": 34.84000015258789, "end_seconds": 35.84000015258789, "text": "Easy.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 15, "start_seconds": 35.84000015258789, "end_seconds": 37.91999816894531, "text": "But what about the real numbers?", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 16, "start_seconds": 37.91999816894531, "end_seconds": 40.97999954223633, "text": "That's any number, positive, negative, whole, fraction,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 17, "start_seconds": 40.97999954223633, "end_seconds": 44.52000045776367, "text": "even irrational, like pi or the square root of two.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 18, "start_seconds": 44.52000045776367, "end_seconds": 47.040000915527344, "text": "Now try to choose the smallest one.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 19, "start_seconds": 47.040000915527344, "end_seconds": 48.560001373291016, "text": "It's impossible.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 20, "start_seconds": 48.560001373291016, "end_seconds": 52.08000183105469, "text": "The real numbers stretch off to negative infinity.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 21, "start_seconds": 52.08000183105469, "end_seconds": 53.79999923706055, "text": "Even if we try to fix our rule", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 22, "start_seconds": 53.79999923706055, "end_seconds": 55.400001525878906, "text": "by making it super specific,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 23, "start_seconds": 55.400001525878906, "end_seconds": 57.939998626708984, "text": "like choose the smallest number after one,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 24, "start_seconds": 58.720001220703125, "end_seconds": 60.13999938964844, "text": "we still get stuck.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 25, "start_seconds": 60.13999938964844, "end_seconds": 64.26000213623047, "text": "There's 1.01, then 1.0001,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 26, "start_seconds": 64.26000213623047, "end_seconds": 68.94000244140625, "text": "then 1.0000001, and so on.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 27, "start_seconds": 68.94000244140625, "end_seconds": 72.0999984741211, "text": "So really, what number comes after one?", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 28, "start_seconds": 73.5, "end_seconds": 76.37999725341797, "text": "If we can't begin to specify the order of the real numbers,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 29, "start_seconds": 76.37999725341797, "end_seconds": 79.77999877929688, "text": "next and previous, first and last, we're stuck.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 30, "start_seconds": 79.77999877929688, "end_seconds": 83.33999633789062, "text": "The ridiculous part is we know we have infinite options,", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 31, "start_seconds": 83.33999633789062, "end_seconds": 85.41999816894531, "text": "but despite that, we can't figure out", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 32, "start_seconds": 85.41999816894531, "end_seconds": 87.0999984741211, "text": "how to just pick one.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 33, "start_seconds": 87.9800033569336, "end_seconds": 92.26000213623047, "text": "The mission to resolve this began with one man in 1870.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 34, "start_seconds": 92.26000213623047, "end_seconds": 94.45999908447266, "text": "He took on the task of putting the real numbers", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 35, "start_seconds": 94.45999908447266, "end_seconds": 98.0999984741211, "text": "in a definitive order, even if it killed him.", "transcription_model": "whisper-1"}
+{"video_id": "5U-V0y-fkSw", "segment_index": 36, "start_seconds": 98.0999984741211, "end_seconds": 99.94000244140625, "text": "And it nearly did.", "transcription_model": "whisper-1"}

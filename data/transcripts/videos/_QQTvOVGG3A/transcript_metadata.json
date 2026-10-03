@@ -1,0 +1,14 @@
+{
+  "video_id": "_QQTvOVGG3A",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Las parejas felices también pelean",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\_QQTvOVGG3A.mp3",
+  "transcribed_at": "2026-09-13T04:44:01.575548+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1457,
+  "text_sha256": "40480a68e23da50fb8055ae8c10e9bbed59f6794a300ab2d0fbe386306a7cc01",
+  "repo_schema_version": "transcript_metadata_v1"
+}

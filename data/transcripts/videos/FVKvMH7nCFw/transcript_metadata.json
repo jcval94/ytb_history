@@ -1,0 +1,20 @@
+{
+  "video_id": "FVKvMH7nCFw",
+  "channel_id": "UCti03qHTTTuFIKGhfgzIyEA",
+  "channel_name": "Alan Flores",
+  "title": "La Verdad Detrás Del Equipo De Trineo Jamaiquino",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\FVKvMH7nCFw.mp3",
+  "transcribed_at": "2026-09-13T05:00:57.092635+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 12900,
+  "text_sha256": "b8ba202eea698d9313fd02bc2949c2b0a6eab5253bf378dbd16df2c5774ecade",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\FVKvMH7nCFw\\transcript_segments.jsonl",
+  "segment_count": 415,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:24:48.940951+00:00",
+  "duration_seconds": 1515.9300537109375
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "nDajPm1RApE",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Criticaron a la IA y les salió mal",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\nDajPm1RApE.mp3",
+  "transcribed_at": "2026-09-13T05:03:56.691637+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1267,
+  "text_sha256": "7a057118376ad645ce0e83a6fb9eb85eb450b21e9633ef675f5920ed07eb5ace",
+  "repo_schema_version": "transcript_metadata_v1"
+}

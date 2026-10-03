@@ -1,0 +1,14 @@
+{
+  "video_id": "heVfMFegMyc",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿La IA está haciendo que el talento valga menos?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\heVfMFegMyc.mp3",
+  "transcribed_at": "2026-09-07T05:21:27.311027+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1441,
+  "text_sha256": "31f503683a9d76e248170f58f3d92699dea52d0b085a70acd9f56180d872eefd",
+  "repo_schema_version": "transcript_metadata_v1"
+}

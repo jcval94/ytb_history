@@ -1,0 +1,20 @@
+{
+  "video_id": "A-GzjSyuv0k",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El lado más oscuro de la IA",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\A-GzjSyuv0k.mp3",
+  "transcribed_at": "2026-09-13T05:09:05.341439+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 910,
+  "text_sha256": "2eda40dee31a465a7fb5a7ccec7b3c8d7153e0a614d9dec643afae092e23ab20",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\A-GzjSyuv0k\\transcript_segments.jsonl",
+  "segment_count": 10,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:12:42.969612+00:00",
+  "duration_seconds": 45.880001068115234
+}

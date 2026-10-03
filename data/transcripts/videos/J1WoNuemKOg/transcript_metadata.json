@@ -1,0 +1,14 @@
+{
+  "video_id": "J1WoNuemKOg",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "We sent a camera to space to film the solar eclipse",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\J1WoNuemKOg.mp3",
+  "transcribed_at": "2026-09-13T04:55:14.689627+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 9150,
+  "text_sha256": "e30ac10896c9949250a29e7382d53e68749df89a6dc9d421bfb8bdc2a8421ffa",
+  "repo_schema_version": "transcript_metadata_v1"
+}

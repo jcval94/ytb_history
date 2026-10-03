@@ -1,0 +1,14 @@
+{
+  "video_id": "TboOG4krLBg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "¿Cómo rompimos la magia de la música?",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\TboOG4krLBg.mp3",
+  "transcribed_at": "2026-09-13T04:50:50.173915+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 8388,
+  "text_sha256": "84c31284e87a7f2f9a2b7b8cf2dc6e02f2778e015ac1721363bc918160d77402",
+  "repo_schema_version": "transcript_metadata_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "F5_G0AHfYhI",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "channel_name": "Veritasium",
+  "title": "A Physics Professor Bet Me $10,000 I'm Wrong...",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\F5_G0AHfYhI.mp3",
+  "transcribed_at": "2026-09-07T05:21:16.135842+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1385,
+  "text_sha256": "a5e6e5cc1a3bffc22fded40fdc49c9ff7b8b9a827c755cfc09f0304c3d2704b4",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\F5_G0AHfYhI\\transcript_segments.jsonl",
+  "segment_count": 35,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:23:14.025392+00:00",
+  "duration_seconds": 91.0199966430664
+}

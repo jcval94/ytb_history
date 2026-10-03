@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-18T17:17:00.410891+00:00",
-  "limit": 10,
-  "expected_ranked_count": 10,
-  "expected_selected_count": 10,
+  "generated_at": "2026-09-07T05:18:20.693172+00:00",
+  "limit": 0,
+  "expected_ranked_count": 0,
+  "expected_selected_count": 50,
   "ranked_shortfall": 0,
-  "candidates_considered": 24659,
-  "available_ranked_count": 24161,
+  "candidates_considered": 24841,
+  "available_ranked_count": 24292,
   "source_artifacts": {
     "decision": {
       "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\decision\\latest_action_candidates.csv",
@@ -44,15 +44,15 @@
       "modified_at": "2026-05-26T03:35:05.042860+00:00"
     },
     "latest_snapshots": {
-      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-05-28\\run=232754-0600\\snapshots.jsonl.gz",
+      "path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\snapshots\\dt=2026-09-06\\run=230920-0600\\snapshots.jsonl.gz",
       "exists": true,
-      "row_count": 24622,
-      "modified_at": "2026-05-29T05:37:00.933320+00:00"
+      "row_count": 24722,
+      "modified_at": "2026-09-07T05:18:17.696554+00:00"
     }
   },
-  "selected_count": 10,
-  "selected_forced_count": 0,
-  "selected_ranked_count": 10,
+  "selected_count": 50,
+  "selected_forced_count": 50,
+  "selected_ranked_count": 0,
   "forced_channels_configured": [
     "https://www.youtube.com/@bilinkis",
     "https://www.youtube.com/@Veritasium",
@@ -60,43 +60,50 @@
     "https://www.youtube.com/@Alan-Flores",
     "https://www.youtube.com/@MitosyMentes"
   ],
-  "forced_channels_matched": [],
+  "forced_channels_matched": [
+    "https://www.youtube.com/@Alan-Flores",
+    "https://www.youtube.com/@MitosyMentes",
+    "https://www.youtube.com/@Veritasium",
+    "https://www.youtube.com/@bilinkis",
+    "https://www.youtube.com/@noesposible"
+  ],
   "forced_channels_without_matches": [],
   "forced_match_counts": {
-    "https://www.youtube.com/@bilinkis": 278,
-    "https://www.youtube.com/@Veritasium": 66,
-    "https://www.youtube.com/@noesposible": 89,
-    "https://www.youtube.com/@Alan-Flores": 15,
-    "https://www.youtube.com/@MitosyMentes": 27
+    "https://www.youtube.com/@bilinkis": 366,
+    "https://www.youtube.com/@Veritasium": 92,
+    "https://www.youtube.com/@noesposible": 142,
+    "https://www.youtube.com/@Alan-Flores": 18,
+    "https://www.youtube.com/@MitosyMentes": 39
   },
-  "forced_candidate_pool_count": 475,
-  "available_forced_before_truncation": 0,
-  "forced_window_cutoff_date": "2026-05-14",
-  "latest_upload_date": "2026-05-28",
+  "forced_candidate_pool_count": 657,
+  "available_forced_before_truncation": 283,
+  "forced_window_cutoff_date": "2025-09-11",
+  "latest_upload_date": "2026-09-06",
   "forced_channels_max_per_run": 50,
-  "registry_existing_success_count": 498,
-  "persisted_transcript_success_count": 498,
+  "registry_existing_success_count": 499,
+  "persisted_transcript_success_count": 499,
   "artifact_only_success_count": 0,
   "registry_existing_in_progress_count": 0,
   "registry_existing_recent_failed_count": 0,
-  "skipped_already_transcribed": 498,
+  "skipped_already_transcribed": 499,
   "skipped_in_progress": 0,
   "skipped_recent_failures": 0,
   "skipped_forced_already_transcribed": 277,
   "skipped_forced_in_progress": 0,
   "skipped_forced_recent_failures": 0,
-  "skipped_forced_outside_window": 198,
+  "skipped_forced_outside_window": 97,
   "skipped_duplicate_selected": 0,
   "skipped_invalid_video_id_count": 0,
   "skipped_invalid_video_ids": [],
   "top_selected": [
-    "49VXwE9HrPo",
-    "7vNOj6kzvck",
-    "zc8Nh4TMB1s",
-    "m5fqDQMG_y0",
-    "7MbAaYCR5nU"
+    "oR94cicO7xM",
+    "4_jn_5aEKos",
+    "5Jw06yoLefQ",
+    "LqNbQsr2I_U",
+    "F5_G0AHfYhI"
   ],
   "warnings": [
-    "forced_channels_window_anchored_to_latest_upload_date"
+    "forced_channels_window_anchored_to_latest_upload_date",
+    "forced_channels_truncated_max_per_run"
   ]
 }

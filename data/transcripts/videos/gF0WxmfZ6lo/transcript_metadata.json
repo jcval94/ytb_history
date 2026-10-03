@@ -1,0 +1,14 @@
+{
+  "video_id": "gF0WxmfZ6lo",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La verdad detrás de las apps de citas",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\gF0WxmfZ6lo.mp3",
+  "transcribed_at": "2026-09-13T05:04:08.361762+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1375,
+  "text_sha256": "2ff8cada23e9b3e06f185cb63ece4b76ac008d7cb8b8275cf9caf26a2bb5b7e6",
+  "repo_schema_version": "transcript_metadata_v1"
+}

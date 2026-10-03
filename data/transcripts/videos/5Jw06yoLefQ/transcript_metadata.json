@@ -1,0 +1,20 @@
+{
+  "video_id": "5Jw06yoLefQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La IA DOMÓ A SANTI",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\5Jw06yoLefQ.mp3",
+  "transcribed_at": "2026-09-07T05:20:45.174156+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1231,
+  "text_sha256": "b00a27d92fa12902553927c3b69f08e05574f39c39476e57c4cb6739e15965ba",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\5Jw06yoLefQ\\transcript_segments.jsonl",
+  "segment_count": 23,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:12:03.234770+00:00",
+  "duration_seconds": 64.29000091552734
+}

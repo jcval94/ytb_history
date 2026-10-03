@@ -1,0 +1,20 @@
+{
+  "video_id": "Mk_r7vQeJVM",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "Tu cerebro puede arruinar tu mejor momento",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\Mk_r7vQeJVM.mp3",
+  "transcribed_at": "2026-09-13T05:09:15.962046+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1114,
+  "text_sha256": "039eb92df065b7af1d2820955bfa000e86c6189738500fd5238b57fef62c4bf6",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\Mk_r7vQeJVM\\transcript_segments.jsonl",
+  "segment_count": 15,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:33:49.543847+00:00",
+  "duration_seconds": 57.58000183105469
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "8hBHaMk-DdQ",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "IA: Sacarse un 10 sin aprender nada",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\8hBHaMk-DdQ.mp3",
+  "transcribed_at": "2026-09-13T04:42:14.510360+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1251,
+  "text_sha256": "0a4a9edc818719de47965ad5d6975eecac99024faaa00d668255441c1c74ba93",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\8hBHaMk-DdQ\\transcript_segments.jsonl",
+  "segment_count": 29,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:12:39.030181+00:00",
+  "duration_seconds": 55.650001525878906
+}

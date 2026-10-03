@@ -1,0 +1,14 @@
+{
+  "video_id": "mJT4Nb0YESg",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "La paradoja del amor",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\mJT4Nb0YESg.mp3",
+  "transcribed_at": "2026-09-13T04:55:32.569114+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1675,
+  "text_sha256": "5e2b8c9d529ce4962536469eeeede65a8a3688cc3cc681e24d94133d3fa5efc1",
+  "repo_schema_version": "transcript_metadata_v1"
+}

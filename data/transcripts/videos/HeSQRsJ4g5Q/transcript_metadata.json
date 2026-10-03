@@ -1,0 +1,20 @@
+{
+  "video_id": "HeSQRsJ4g5Q",
+  "channel_id": "UC5PwIMtLiIBCBhsu8f_-6UQ",
+  "channel_name": "Santiago Bilinkis",
+  "title": "El truco de tu cerebro para recordar",
+  "source_type": "audio_file",
+  "source_uri_or_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\audio_sources\\HeSQRsJ4g5Q.mp3",
+  "transcribed_at": "2026-09-13T05:09:58.260970+00:00",
+  "transcription_model": "gpt-4o-mini-transcribe",
+  "language": null,
+  "text_char_count": 1679,
+  "text_sha256": "6cc586e59585f22cc02c28a42d56ae3c4e47e15ffb72c62a1c216604cd31c59f",
+  "repo_schema_version": "transcript_metadata_v2",
+  "segments_path": "C:\\Users\\ASUS\\Documents\\GitHub\\ytb_history\\data\\transcripts\\videos\\HeSQRsJ4g5Q\\transcript_segments.jsonl",
+  "segment_count": 38,
+  "timestamp_granularity": "segment",
+  "timestamp_model": "whisper-1",
+  "timestamps_generated_at": "2026-09-13T05:25:29.709901+00:00",
+  "duration_seconds": 89.0199966430664
+}
