@@ -10,8 +10,8 @@ github_monitor,YouTube Monitor,github,github_workflow,daily,Periods,workflow,sta
 github_monitor,YouTube Monitor,github,github_workflow,daily,Alerts,workflow,stale,2026-09-07T05:09:20.774678+00:00,True
 github_monitor,YouTube Monitor,github,github_workflow,daily,Data Quality,workflow,stale,2026-09-07T05:09:20.774678+00:00,True
 github_monitor,YouTube Monitor,github,github_workflow,daily,Operations,observability,stale,2026-09-07T05:09:20.774678+00:00,True
-github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Creative,workflow,success,2026-10-10T15:58:54.197045+00:00,False
-github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Operations,observability,success,2026-10-10T15:58:54.197045+00:00,False
+github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Creative,workflow,success,2026-10-11T16:27:03.938411+00:00,False
+github_heatmaps,YouTube Heatmaps,github,github_workflow,daily,Operations,observability,success,2026-10-11T16:27:03.938411+00:00,False
 github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Overview,workflow,not_initialized,,False
 github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Videos,workflow,not_initialized,,False
 github_pages,Deploy Dashboard to GitHub Pages,github,github_workflow,daily_or_on_data_change,Channels,workflow,not_initialized,,False
@@ -111,24 +111,24 @@ cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,
 cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Creative,publication,not_initialized,,False
 cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Brief,publication,not_initialized,,False
 cli_build_pages_dashboard,Build pages dashboard,publishing,cli,after_operations,Operations,observability,not_initialized,,False
-cli_build_operations,Build operations telemetry,operations,cli,after_pipeline_or_before_pages,Operations,observability,success,2026-10-10T15:58:55.612228+00:00,False
-cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Models,derived_signal,success,2026-10-10T15:57:39.505445+00:00,False
-cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Operations,observability,success,2026-10-10T15:57:39.505445+00:00,False
+cli_build_operations,Build operations telemetry,operations,cli,after_pipeline_or_before_pages,Operations,observability,success,2026-10-11T16:27:05.282602+00:00,False
+cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Models,derived_signal,success,2026-10-11T16:25:50.033653+00:00,False
+cli_build_model_dataset,Build model dataset,ml,cli,before_model_training,Operations,observability,success,2026-10-11T16:25:50.033653+00:00,False
 cli_analyze_model_readiness,Analyze model readiness,ml,cli,before_model_training,Models,derived_signal,stale,2026-09-24T15:26:19+00:00,True
 cli_analyze_model_readiness,Analyze model readiness,ml,cli,before_model_training,Operations,observability,stale,2026-09-24T15:26:19+00:00,True
-cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Models,derived_signal,success,2026-10-10T15:57:39.429445+00:00,False
-cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Operations,observability,success,2026-10-10T15:57:39.429445+00:00,False
+cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Models,derived_signal,success,2026-10-11T16:25:49.959652+00:00,False
+cli_train_model_suite,Train model suite,ml,cli,twice_weekly,Operations,observability,success,2026-10-11T16:25:49.959652+00:00,False
 cli_predict_with_model_artifact,Predict with model artifact,ml,cli,after_model_training,Models,derived_signal,stale,2026-09-24T15:32:44.448206+00:00,True
 cli_predict_with_model_artifact,Predict with model artifact,ml,cli,after_model_training,Operations,observability,stale,2026-09-24T15:32:44.448206+00:00,True
 cli_select_transcription_candidates,Select transcription candidates,transcription,cli,daily_after_monitor,Creative,derived_signal,stale,2026-09-07T05:18:20.693172+00:00,True
 cli_select_transcription_candidates,Select transcription candidates,transcription,cli,daily_after_monitor,Operations,observability,stale,2026-09-07T05:18:20.693172+00:00,True
-cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Creative,derived_signal,success,2026-10-10T15:58:54.197045+00:00,False
-cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Operations,observability,success,2026-10-10T15:58:54.197045+00:00,False
+cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Creative,derived_signal,success,2026-10-11T16:27:03.938411+00:00,False
+cli_extract_heatmaps,Extract public heatmaps,transcription,cli,daily_after_transcripts,Operations,observability,success,2026-10-11T16:27:03.938411+00:00,False
 cli_transcribe_selected_videos,Transcribe selected videos,transcription,cli,local_manual_or_scheduled,Creative,derived_signal,stale,2026-09-13T05:09:58.353319+00:00,True
 cli_transcribe_selected_videos,Transcribe selected videos,transcription,cli,local_manual_or_scheduled,Operations,observability,stale,2026-09-13T05:09:58.353319+00:00,True
 cli_generate_transcript_insights,Generate transcript insights,transcription,cli,local_manual_or_scheduled,Creative,derived_signal,stale,2026-07-18T17:19:55.342274+00:00,True
 cli_generate_transcript_insights,Generate transcript insights,transcription,cli,local_manual_or_scheduled,Operations,observability,stale,2026-07-18T17:19:55.342274+00:00,True
-cli_transcript_registry_report,Transcript registry report,transcription,cli,local_manual_or_scheduled,Operations,observability,success,2026-10-10T15:57:39.899446+00:00,False
+cli_transcript_registry_report,Transcript registry report,transcription,cli,local_manual_or_scheduled,Operations,observability,success,2026-10-11T16:25:50.408653+00:00,False
 local_transcription_automation,Local transcription automation,local,local_automation,every_6_hours_0920_1520_2120_with_logon_catchup,Creative,workflow,skipped,,False
 local_transcription_automation,Local transcription automation,local,local_automation,every_6_hours_0920_1520_2120_with_logon_catchup,Operations,observability,skipped,,False
 local_repo_sync,Local repo sync,local,local_automation,every_6_hours_0900_1500_2100_with_logon_catchup,Operations,observability,skipped,,False
