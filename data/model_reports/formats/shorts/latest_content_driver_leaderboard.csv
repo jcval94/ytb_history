@@ -3,7 +3,7 @@ shorts,future_log_views_delta_7d,random_forest_regressor,0.493164,0.807739,0.933
 shorts,future_log_views_delta_7d,linear_regularized_regressor,0.752324,1.007189,0.904882,0.1,0.778004,0.682214,7.070581,-0.13603,19634,4909
 shorts,future_log_views_delta_7d,shallow_tree_regressor,0.636215,0.879668,0.922059,0.7,0.841141,0.830103,7.21847,0.011858,19634,4909
 shorts,future_relative_views_delta_7d,random_forest_regressor,14.771189,244.977558,0.591953,0.6,0.645621,30.010677,134.556872,49.010792,19634,4909
-shorts,future_relative_views_delta_7d,linear_regularized_regressor,49.526483,374.917633,0.437629,0.6,0.472505,20.199326,124.745521,39.19944,19634,4909
+shorts,future_relative_views_delta_7d,linear_regularized_regressor,49.526483,374.917633,0.437627,0.6,0.472505,20.199326,124.745521,39.19944,19634,4909
 shorts,future_relative_views_delta_7d,shallow_tree_regressor,14.813385,239.531653,0.160649,0.6,0.588595,27.222705,131.7689,46.22282,19634,4909
 shorts,future_engagement_delta_7d,random_forest_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,19634,4909
 shorts,future_engagement_delta_7d,linear_regularized_regressor,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,19634,4909
