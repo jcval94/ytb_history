@@ -1,6 +1,6 @@
 {
   "schema_version": "operations_process_status_v1",
-  "generated_at": "2026-10-22T15:42:04.157374+00:00",
+  "generated_at": "2026-10-23T15:30:38.106642+00:00",
   "source_registry": "config/operations.yaml",
   "processes": [
     {
@@ -56,7 +56,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-09-07T05:09:20.774678+00:00",
-      "age_hours": 1090.55,
+      "age_hours": 1114.35,
       "is_stale": true,
       "expected_artifacts_count": 2,
       "existing_artifacts_count": 2,
@@ -66,7 +66,7 @@
           "resolved_path": "reports/dt=2026-09-06/run=230920-0600/run_summary.json",
           "observed_at": "2026-09-07T05:09:20.774678+00:00",
           "observed_at_iso": "2026-09-07T05:09:20.774678+00:00",
-          "age_hours": 1090.55,
+          "age_hours": 1114.35,
           "status": "success_with_warnings",
           "summary": {
             "execution_date": "2026-09-06T23:09:20.774678-06:00",
@@ -107,7 +107,7 @@
           "resolved_path": "reports/dt=2026-09-06/run=230920-0600/quota_report.json",
           "observed_at": "2026-09-07T05:09:20.774678+00:00",
           "observed_at_iso": "2026-09-07T05:09:20.774678+00:00",
-          "age_hours": 1090.55,
+          "age_hours": 1114.35,
           "status": "success",
           "summary": {
             "execution_date": "2026-09-06T23:09:20.774678-06:00",
@@ -194,7 +194,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:42:03.037546+00:00",
+      "last_run_at": "2026-10-23T15:30:36.722716+00:00",
       "age_hours": 0.0,
       "is_stale": false,
       "expected_artifacts_count": 2,
@@ -203,14 +203,14 @@
       "artifacts": [
         {
           "resolved_path": "heatmaps/latest_heatmap_run_report.json",
-          "observed_at": "2026-10-22T15:41:57.618998+00:00",
-          "observed_at_iso": "2026-10-22T15:41:57.618998+00:00",
+          "observed_at": "2026-10-23T15:30:30.072085+00:00",
+          "observed_at_iso": "2026-10-23T15:30:30.072085+00:00",
           "age_hours": 0.0,
           "status": "success",
           "summary": {
             "status": "success",
             "schema_version": "heatmap_run_report_v1",
-            "generated_at": "2026-10-22T15:41:57.618998+00:00",
+            "generated_at": "2026-10-23T15:30:30.072085+00:00",
             "mode": "extract",
             "data_dir": "data",
             "bucket": "all",
@@ -220,7 +220,7 @@
             "attempted_count": 0,
             "status_counts_keys_count": 0,
             "selection_counters_keys_count": 9,
-            "run_dir": "data/heatmaps/runs/dt=2026-10-22/run=154157Z",
+            "run_dir": "data/heatmaps/runs/dt=2026-10-23/run=153030Z",
             "registry_path": "data/heatmaps/heatmap_registry.jsonl",
             "warnings_count": 0,
             "errors_count": 0
@@ -239,8 +239,8 @@
         },
         {
           "resolved_path": "heatmaps/heatmap_registry.jsonl",
-          "observed_at": "2026-10-22T15:42:03.037546+00:00",
-          "observed_at_iso": "2026-10-22T15:42:03.037546+00:00",
+          "observed_at": "2026-10-23T15:30:36.722716+00:00",
+          "observed_at_iso": "2026-10-23T15:30:36.722716+00:00",
           "age_hours": 0.0,
           "status": "success",
           "summary": {
@@ -372,7 +372,7 @@
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
       "last_run_at": "2026-10-22T15:36:57.109238+00:00",
-      "age_hours": 0.09,
+      "age_hours": 23.89,
       "is_stale": false,
       "expected_artifacts_count": 2,
       "existing_artifacts_count": 2,
@@ -382,7 +382,7 @@
           "resolved_path": "model_registry/latest_model_manifest.json",
           "observed_at": "2026-10-22T15:36:57.109238+00:00",
           "observed_at_iso": "2026-10-22T15:36:57.109238+00:00",
-          "age_hours": 0.09,
+          "age_hours": 23.89,
           "status": "success",
           "summary": {
             "schema_version": "latest_model_manifest_v2",
@@ -412,7 +412,7 @@
           "resolved_path": "modeling/latest_model_readiness_diagnostics.json",
           "observed_at": "2026-05-14T12:12:01+00:00",
           "observed_at_iso": "2026-05-14T12:12:01+00:00",
-          "age_hours": 3867.5,
+          "age_hours": 3891.31,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-14T12:12:01+00:00",
@@ -501,7 +501,7 @@
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
       "last_run_at": "2026-10-22T15:38:12.949402+00:00",
-      "age_hours": 0.06,
+      "age_hours": 23.87,
       "is_stale": false,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -511,7 +511,7 @@
           "resolved_path": "predictions/prediction_summary.json",
           "observed_at": "2026-10-22T15:38:12.949402+00:00",
           "observed_at_iso": "2026-10-22T15:38:12.949402+00:00",
-          "age_hours": 0.06,
+          "age_hours": 23.87,
           "status": "success",
           "summary": {
             "status": "success",
@@ -570,7 +570,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-09-07T05:09:20.774678+00:00",
-      "age_hours": 1090.55,
+      "age_hours": 1114.35,
       "is_stale": true,
       "expected_artifacts_count": 2,
       "existing_artifacts_count": 2,
@@ -580,7 +580,7 @@
           "resolved_path": "reports/dt=2026-09-06/run=230920-0600/run_summary.json",
           "observed_at": "2026-09-07T05:09:20.774678+00:00",
           "observed_at_iso": "2026-09-07T05:09:20.774678+00:00",
-          "age_hours": 1090.55,
+          "age_hours": 1114.35,
           "status": "success_with_warnings",
           "summary": {
             "execution_date": "2026-09-06T23:09:20.774678-06:00",
@@ -621,7 +621,7 @@
           "resolved_path": "reports/dt=2026-09-06/run=230920-0600/quota_report.json",
           "observed_at": "2026-09-07T05:09:20.774678+00:00",
           "observed_at_iso": "2026-09-07T05:09:20.774678+00:00",
-          "age_hours": 1090.55,
+          "age_hours": 1114.35,
           "status": "success",
           "summary": {
             "execution_date": "2026-09-06T23:09:20.774678-06:00",
@@ -787,7 +787,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T12:54:00.716806+00:00",
-      "age_hours": 3602.8,
+      "age_hours": 3626.61,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -797,7 +797,7 @@
           "resolved_path": "exports/dt=2026-05-25/run=124656Z/export_summary.json",
           "observed_at": "2026-05-25T12:54:00.716806+00:00",
           "observed_at_iso": "2026-05-25T12:54:00.716806+00:00",
-          "age_hours": 3602.8,
+          "age_hours": 3626.61,
           "status": "success",
           "summary": {
             "execution_date": "2026-05-25T12:46:56.763303+00:00",
@@ -865,7 +865,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:00:45.170160+00:00",
-      "age_hours": 3602.69,
+      "age_hours": 3626.5,
       "is_stale": true,
       "expected_artifacts_count": 4,
       "existing_artifacts_count": 4,
@@ -875,7 +875,7 @@
           "resolved_path": "analytics/latest/analytics_manifest.json",
           "observed_at": "2026-05-25T12:58:11.528023+00:00",
           "observed_at_iso": "2026-05-25T12:58:11.528023+00:00",
-          "age_hours": 3602.73,
+          "age_hours": 3626.54,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T12:58:11.528023+00:00",
@@ -919,7 +919,7 @@
           "resolved_path": "analytics/latest/dashboard_index.json",
           "observed_at": "2026-05-25T12:58:11.527892+00:00",
           "observed_at_iso": "2026-05-25T12:58:11.527892+00:00",
-          "age_hours": 3602.73,
+          "age_hours": 3626.54,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T12:58:11.527892+00:00",
@@ -948,7 +948,7 @@
           "resolved_path": "analytics/formats/shorts/latest/analytics_manifest.json",
           "observed_at": "2026-05-25T12:58:43.918960+00:00",
           "observed_at_iso": "2026-05-25T12:58:43.918960+00:00",
-          "age_hours": 3602.72,
+          "age_hours": 3626.53,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T12:58:43.918960+00:00",
@@ -992,7 +992,7 @@
           "resolved_path": "analytics/formats/videos/latest/analytics_manifest.json",
           "observed_at": "2026-05-25T13:00:45.170160+00:00",
           "observed_at_iso": "2026-05-25T13:00:45.170160+00:00",
-          "age_hours": 3602.69,
+          "age_hours": 3626.5,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:00:45.170160+00:00",
@@ -1075,7 +1075,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-05-25T13:01:03.529440+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1085,7 +1085,7 @@
           "resolved_path": "nlp_features/nlp_feature_summary.json",
           "observed_at": "2026-05-25T13:01:03.529440+00:00",
           "observed_at_iso": "2026-05-25T13:01:03.529440+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-05-25T13:01:03.529440+00:00",
@@ -1160,7 +1160,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:05.319304+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 2,
       "existing_artifacts_count": 2,
@@ -1170,7 +1170,7 @@
           "resolved_path": "alerts/alert_summary.json",
           "observed_at": "2026-05-25T13:01:05.319304+00:00",
           "observed_at_iso": "2026-05-25T13:01:05.319304+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:01:05.319304+00:00",
@@ -1199,7 +1199,7 @@
           "resolved_path": "signals/signal_summary.json",
           "observed_at": "2026-05-25T13:01:05.319304+00:00",
           "observed_at_iso": "2026-05-25T13:01:05.319304+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:01:05.319304+00:00",
@@ -1267,7 +1267,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:09.791227+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1277,7 +1277,7 @@
           "resolved_path": "decision/decision_summary.json",
           "observed_at": "2026-05-25T13:01:09.791227+00:00",
           "observed_at_iso": "2026-05-25T13:01:09.791227+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:01:09.791227+00:00",
@@ -1352,7 +1352,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:14.006379+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 3,
       "existing_artifacts_count": 3,
@@ -1362,7 +1362,7 @@
           "resolved_path": "model_intelligence/model_intelligence_summary.json",
           "observed_at": "2026-05-25T13:01:14.006379+00:00",
           "observed_at_iso": "2026-05-25T13:01:14.006379+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "status": "success",
@@ -1389,7 +1389,7 @@
           "resolved_path": "model_intelligence/formats/shorts/model_intelligence_summary.json",
           "observed_at": "2026-05-25T13:01:13.638058+00:00",
           "observed_at_iso": "2026-05-25T13:01:13.638058+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "status": "success",
@@ -1417,7 +1417,7 @@
           "resolved_path": "model_intelligence/formats/videos/model_intelligence_summary.json",
           "observed_at": "2026-05-25T13:01:13.905239+00:00",
           "observed_at_iso": "2026-05-25T13:01:13.905239+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "status": "success",
@@ -1482,7 +1482,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:17.636326+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1492,7 +1492,7 @@
           "resolved_path": "topic_intelligence/topic_intelligence_summary.json",
           "observed_at": "2026-05-25T13:01:17.636326+00:00",
           "observed_at_iso": "2026-05-25T13:01:17.636326+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:01:17.636326+00:00",
@@ -1557,7 +1557,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-05-25T13:01:18.910935+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1567,7 +1567,7 @@
           "resolved_path": "creative_packages/creative_packages_summary.json",
           "observed_at": "2026-05-25T13:01:18.910935+00:00",
           "observed_at_iso": "2026-05-25T13:01:18.910935+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-05-25T13:01:18.910935+00:00",
@@ -1643,7 +1643,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:21.340601+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1653,7 +1653,7 @@
           "resolved_path": "briefs/latest_weekly_brief.json",
           "observed_at": "2026-05-25T13:01:21.340601+00:00",
           "observed_at_iso": "2026-05-25T13:01:21.340601+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-25T13:01:21.340601+00:00",
@@ -1732,7 +1732,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-05-25T13:01:26.240692+00:00",
-      "age_hours": 3602.68,
+      "age_hours": 3626.49,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -1742,7 +1742,7 @@
           "resolved_path": "commercial_radar/spanish-business-ai/latest_opportunity_radar.json",
           "observed_at": "2026-05-25T13:01:26.240692+00:00",
           "observed_at_iso": "2026-05-25T13:01:26.240692+00:00",
-          "age_hours": 3602.68,
+          "age_hours": 3626.49,
           "status": "success",
           "summary": {
             "schema_version": "commercial_opportunity_radar_v1",
@@ -1910,7 +1910,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:42:04.157374+00:00",
+      "last_run_at": "2026-10-23T15:30:38.106642+00:00",
       "age_hours": 0.0,
       "is_stale": false,
       "expected_artifacts_count": 1,
@@ -1919,13 +1919,13 @@
       "artifacts": [
         {
           "resolved_path": "operations/latest_process_status.json",
-          "observed_at": "2026-10-21T15:40:18.396484+00:00",
-          "observed_at_iso": "2026-10-21T15:40:18.396484+00:00",
-          "age_hours": 24.03,
+          "observed_at": "2026-10-22T15:42:04.157374+00:00",
+          "observed_at_iso": "2026-10-22T15:42:04.157374+00:00",
+          "age_hours": 23.81,
           "status": "success",
           "summary": {
             "schema_version": "operations_process_status_v1",
-            "generated_at": "2026-10-21T15:40:18.396484+00:00",
+            "generated_at": "2026-10-22T15:42:04.157374+00:00",
             "source_registry": "config/operations.yaml",
             "processes_count": 34
           },
@@ -1975,7 +1975,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:40:58.765234+00:00",
+      "last_run_at": "2026-10-23T15:29:20.602396+00:00",
       "age_hours": 0.02,
       "is_stale": false,
       "expected_artifacts_count": 3,
@@ -1984,8 +1984,8 @@
       "artifacts": [
         {
           "resolved_path": "modeling/latest_training_gap_report.json",
-          "observed_at": "2026-10-22T15:40:58.765234+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.765234+00:00",
+          "observed_at": "2026-10-23T15:29:20.602396+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.602396+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2012,8 +2012,8 @@
         },
         {
           "resolved_path": "modeling/formats/shorts/model_readiness_report.json",
-          "observed_at": "2026-10-22T15:40:58.727234+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.727234+00:00",
+          "observed_at": "2026-10-23T15:29:20.573396+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.573396+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2046,8 +2046,8 @@
         },
         {
           "resolved_path": "modeling/formats/videos/model_readiness_report.json",
-          "observed_at": "2026-10-22T15:40:58.751234+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.751234+00:00",
+          "observed_at": "2026-10-23T15:29:20.592396+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.592396+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2116,7 +2116,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Latest artifact exists but reports warnings, errors, or partial failures.",
       "last_run_at": "2026-10-22T15:31:10+00:00",
-      "age_hours": 0.18,
+      "age_hours": 23.99,
       "is_stale": false,
       "expected_artifacts_count": 3,
       "existing_artifacts_count": 3,
@@ -2126,7 +2126,7 @@
           "resolved_path": "modeling/latest_model_readiness_diagnostics.json",
           "observed_at": "2026-05-14T12:12:01+00:00",
           "observed_at_iso": "2026-05-14T12:12:01+00:00",
-          "age_hours": 3867.5,
+          "age_hours": 3891.31,
           "status": "success",
           "summary": {
             "generated_at": "2026-05-14T12:12:01+00:00",
@@ -2174,7 +2174,7 @@
           "resolved_path": "modeling/formats/shorts/latest_model_readiness_diagnostics.json",
           "observed_at": "2026-10-22T15:31:10+00:00",
           "observed_at_iso": "2026-10-22T15:31:10+00:00",
-          "age_hours": 0.18,
+          "age_hours": 23.99,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-10-22T15:31:10+00:00",
@@ -2223,7 +2223,7 @@
           "resolved_path": "modeling/formats/videos/latest_model_readiness_diagnostics.json",
           "observed_at": "2026-10-22T15:31:10+00:00",
           "observed_at_iso": "2026-10-22T15:31:10+00:00",
-          "age_hours": 0.18,
+          "age_hours": 23.99,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-10-22T15:31:10+00:00",
@@ -2304,7 +2304,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:40:58.668235+00:00",
+      "last_run_at": "2026-10-23T15:29:20.527396+00:00",
       "age_hours": 0.02,
       "is_stale": false,
       "expected_artifacts_count": 4,
@@ -2313,8 +2313,8 @@
       "artifacts": [
         {
           "resolved_path": "model_reports/latest_model_leaderboard.csv",
-          "observed_at": "2026-10-22T15:40:58.668235+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.668235+00:00",
+          "observed_at": "2026-10-23T15:29:20.527396+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.527396+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2335,8 +2335,8 @@
         },
         {
           "resolved_path": "model_reports/latest_model_suite_report.html",
-          "observed_at": "2026-10-22T15:40:58.668235+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.668235+00:00",
+          "observed_at": "2026-10-23T15:29:20.527396+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.527396+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2357,8 +2357,8 @@
         },
         {
           "resolved_path": "model_reports/formats/shorts/latest_model_leaderboard.csv",
-          "observed_at": "2026-10-22T15:40:58.667361+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.667361+00:00",
+          "observed_at": "2026-10-23T15:29:20.525850+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.525850+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2379,8 +2379,8 @@
         },
         {
           "resolved_path": "model_reports/formats/videos/latest_model_leaderboard.csv",
-          "observed_at": "2026-10-22T15:40:58.668235+00:00",
-          "observed_at_iso": "2026-10-22T15:40:58.668235+00:00",
+          "observed_at": "2026-10-23T15:29:20.527219+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.527219+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
@@ -2437,7 +2437,7 @@
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
       "last_run_at": "2026-10-22T15:38:12.949402+00:00",
-      "age_hours": 0.06,
+      "age_hours": 23.87,
       "is_stale": false,
       "expected_artifacts_count": 3,
       "existing_artifacts_count": 3,
@@ -2447,7 +2447,7 @@
           "resolved_path": "predictions/prediction_summary.json",
           "observed_at": "2026-10-22T15:38:12.949402+00:00",
           "observed_at_iso": "2026-10-22T15:38:12.949402+00:00",
-          "age_hours": 0.06,
+          "age_hours": 23.87,
           "status": "success",
           "summary": {
             "status": "success",
@@ -2473,7 +2473,7 @@
           "resolved_path": "predictions/formats/shorts/prediction_summary.json",
           "observed_at": "2026-10-22T15:38:12.518817+00:00",
           "observed_at_iso": "2026-10-22T15:38:12.518817+00:00",
-          "age_hours": 0.06,
+          "age_hours": 23.87,
           "status": "success",
           "summary": {
             "status": "success",
@@ -2504,7 +2504,7 @@
           "resolved_path": "predictions/formats/videos/prediction_summary.json",
           "observed_at": "2026-10-22T15:38:12.830217+00:00",
           "observed_at_iso": "2026-10-22T15:38:12.830217+00:00",
-          "age_hours": 0.06,
+          "age_hours": 23.87,
           "status": "success",
           "summary": {
             "status": "success",
@@ -2568,7 +2568,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-09-07T05:18:20.693172+00:00",
-      "age_hours": 1090.4,
+      "age_hours": 1114.2,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -2578,7 +2578,7 @@
           "resolved_path": "transcripts/transcript_selection_report.json",
           "observed_at": "2026-09-07T05:18:20.693172+00:00",
           "observed_at_iso": "2026-09-07T05:18:20.693172+00:00",
-          "age_hours": 1090.4,
+          "age_hours": 1114.2,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-09-07T05:18:20.693172+00:00",
@@ -2680,7 +2680,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:42:03.037546+00:00",
+      "last_run_at": "2026-10-23T15:30:36.722716+00:00",
       "age_hours": 0.0,
       "is_stale": false,
       "expected_artifacts_count": 2,
@@ -2689,14 +2689,14 @@
       "artifacts": [
         {
           "resolved_path": "heatmaps/latest_heatmap_run_report.json",
-          "observed_at": "2026-10-22T15:41:57.618998+00:00",
-          "observed_at_iso": "2026-10-22T15:41:57.618998+00:00",
+          "observed_at": "2026-10-23T15:30:30.072085+00:00",
+          "observed_at_iso": "2026-10-23T15:30:30.072085+00:00",
           "age_hours": 0.0,
           "status": "success",
           "summary": {
             "status": "success",
             "schema_version": "heatmap_run_report_v1",
-            "generated_at": "2026-10-22T15:41:57.618998+00:00",
+            "generated_at": "2026-10-23T15:30:30.072085+00:00",
             "mode": "extract",
             "data_dir": "data",
             "bucket": "all",
@@ -2706,7 +2706,7 @@
             "attempted_count": 0,
             "status_counts_keys_count": 0,
             "selection_counters_keys_count": 9,
-            "run_dir": "data/heatmaps/runs/dt=2026-10-22/run=154157Z",
+            "run_dir": "data/heatmaps/runs/dt=2026-10-23/run=153030Z",
             "registry_path": "data/heatmaps/heatmap_registry.jsonl",
             "warnings_count": 0,
             "errors_count": 0
@@ -2725,8 +2725,8 @@
         },
         {
           "resolved_path": "heatmaps/heatmap_registry.jsonl",
-          "observed_at": "2026-10-22T15:42:03.037546+00:00",
-          "observed_at_iso": "2026-10-22T15:42:03.037546+00:00",
+          "observed_at": "2026-10-23T15:30:36.722716+00:00",
+          "observed_at_iso": "2026-10-23T15:30:36.722716+00:00",
           "age_hours": 0.0,
           "status": "success",
           "summary": {
@@ -2785,7 +2785,7 @@
       "base_status": "success_with_warnings",
       "status_detail": "Last successful artifact is older than SLA; base status was success_with_warnings.",
       "last_run_at": "2026-09-13T05:09:58.353319+00:00",
-      "age_hours": 946.53,
+      "age_hours": 970.34,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -2795,7 +2795,7 @@
           "resolved_path": "transcripts/transcription_run_report.json",
           "observed_at": "2026-09-13T05:09:58.353319+00:00",
           "observed_at_iso": "2026-09-13T05:09:58.353319+00:00",
-          "age_hours": 946.53,
+          "age_hours": 970.34,
           "status": "success_with_warnings",
           "summary": {
             "generated_at": "2026-09-13T05:09:58.353319+00:00",
@@ -2918,7 +2918,7 @@
       "base_status": "success",
       "status_detail": "Last successful artifact is older than SLA; base status was success.",
       "last_run_at": "2026-07-18T17:19:55.342274+00:00",
-      "age_hours": 2302.37,
+      "age_hours": 2326.18,
       "is_stale": true,
       "expected_artifacts_count": 1,
       "existing_artifacts_count": 1,
@@ -2928,7 +2928,7 @@
           "resolved_path": "transcripts/transcript_insights_run_report.json",
           "observed_at": "2026-07-18T17:19:55.342274+00:00",
           "observed_at_iso": "2026-07-18T17:19:55.342274+00:00",
-          "age_hours": 2302.37,
+          "age_hours": 2326.18,
           "status": "success",
           "summary": {
             "generated_at": "2026-07-18T17:19:55.342274+00:00",
@@ -2991,7 +2991,7 @@
       "status": "success",
       "base_status": "success",
       "status_detail": "Latest durable artifact is within expected state.",
-      "last_run_at": "2026-10-22T15:40:59.166231+00:00",
+      "last_run_at": "2026-10-23T15:29:20.989397+00:00",
       "age_hours": 0.02,
       "is_stale": false,
       "expected_artifacts_count": 1,
@@ -3000,8 +3000,8 @@
       "artifacts": [
         {
           "resolved_path": "transcripts/transcript_registry.jsonl",
-          "observed_at": "2026-10-22T15:40:59.166231+00:00",
-          "observed_at_iso": "2026-10-22T15:40:59.166231+00:00",
+          "observed_at": "2026-10-23T15:29:20.989397+00:00",
+          "observed_at_iso": "2026-10-23T15:29:20.989397+00:00",
           "age_hours": 0.02,
           "status": "success",
           "summary": {
