@@ -1,13 +1,13 @@
 {
   "status": "success",
   "content_format": "shorts",
-  "suite_id": "suite-20261022T153657Z",
-  "artifact_name": "ytb-model-suite-39805222657",
-  "workflow_run_id": "39805222657",
-  "model_id": "shorts-linear_regularized-is_top_growth_7d-20261022T153603Z",
+  "suite_id": "suite-20261026T165628Z",
+  "artifact_name": "ytb-model-suite-40363190503",
+  "workflow_run_id": "40363190503",
+  "model_id": "shorts-linear_regularized-is_top_growth_7d-20261026T165558Z",
   "model_family": "linear_regularized",
   "target": "is_top_growth_7d",
   "prediction_rows": 7666,
-  "generated_at": "2026-10-22T15:38:12.518817+00:00",
+  "generated_at": "2026-10-26T16:57:43.671257+00:00",
   "warnings": []
 }
