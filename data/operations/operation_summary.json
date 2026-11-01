@@ -1,13 +1,12 @@
 {
   "schema_version": "operations_summary_v1",
-  "generated_at": "2026-10-31T15:54:39.458557+00:00",
+  "generated_at": "2026-11-01T16:56:25.616846+00:00",
   "processes_total": 34,
   "status_counts": {
     "unknown": 3,
-    "stale": 15,
-    "success": 9,
+    "stale": 19,
+    "success": 6,
     "not_initialized": 2,
-    "success_with_warnings": 1,
     "skipped": 4
   },
   "domain_counts": {
@@ -44,15 +43,17 @@
     "Videos"
   ],
   "dashboard_impact_rows": 135,
-  "healthy_count": 9,
-  "warning_count": 1,
-  "stale_count": 15,
+  "healthy_count": 6,
+  "warning_count": 0,
+  "stale_count": 19,
   "failed_count": 0,
   "not_initialized_count": 2,
   "unknown_count": 3,
-  "action_required_count": 15,
+  "action_required_count": 19,
   "stale_processes": [
     "github_monitor",
+    "github_train_model",
+    "github_predict_model",
     "cli_run",
     "cli_export_latest",
     "cli_build_analytics",
@@ -64,14 +65,14 @@
     "cli_generate_creative_packages",
     "cli_generate_weekly_brief",
     "cli_generate_opportunity_radar",
+    "cli_analyze_model_readiness",
+    "cli_predict_with_model_artifact",
     "cli_select_transcription_candidates",
     "cli_transcribe_selected_videos",
     "cli_generate_transcript_insights"
   ],
   "failed_processes": [],
-  "warning_processes": [
-    "cli_analyze_model_readiness"
-  ],
+  "warning_processes": [],
   "not_initialized_processes": [
     "github_pages",
     "cli_build_pages_dashboard"
@@ -82,7 +83,7 @@
     "cli_validate_latest"
   ],
   "warnings": [
-    "stale_processes:15",
+    "stale_processes:19",
     "not_initialized_processes:2"
   ]
 }
