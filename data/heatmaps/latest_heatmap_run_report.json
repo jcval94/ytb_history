@@ -1,7 +1,7 @@
 {
   "status": "success",
   "schema_version": "heatmap_run_report_v1",
-  "generated_at": "2026-11-07T16:39:59.855370+00:00",
+  "generated_at": "2026-11-08T16:48:42.241836+00:00",
   "mode": "extract",
   "data_dir": "data",
   "bucket": "all",
@@ -21,7 +21,7 @@
     "skipped_waiting_next_bucket": 545,
     "skipped_exhausted_after_8w": 0
   },
-  "run_dir": "data/heatmaps/runs/dt=2026-11-07/run=163959Z",
+  "run_dir": "data/heatmaps/runs/dt=2026-11-08/run=164842Z",
   "registry_path": "data/heatmaps/heatmap_registry.jsonl",
   "warnings": [],
   "errors": []
