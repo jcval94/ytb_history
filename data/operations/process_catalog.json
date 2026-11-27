@@ -1,6 +1,6 @@
 {
   "schema_version": "operations_process_catalog_v1",
-  "generated_at": "2026-11-25T20:14:51.578977+00:00",
+  "generated_at": "2026-11-27T19:40:57.939352+00:00",
   "processes": [
     {
       "process_id": "github_ci",
